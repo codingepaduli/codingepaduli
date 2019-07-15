@@ -1,3 +1,4 @@
-baseURL = "http://codingepaduli.github.org/"
+baseURL = "http://codingepaduli.github.io/"
 languageCode = "it"
 title = "Coding e Paduli"
+footnoteReturnLinkContents = "true"
