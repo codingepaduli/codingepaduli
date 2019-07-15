@@ -1,4 +1,9 @@
 baseURL = "http://codingepaduli.github.io/"
 languageCode = "it"
 title = "Coding e Paduli"
-footnoteReturnLinkContents = "true"
+
+theme = "ananke"
+
+[params]
+  author = "Seth Kenlon"
+  description = "My hugo demo"
