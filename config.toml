@@ -1,9 +1,19 @@
 baseURL = "http://codingepaduli.github.io/"
 languageCode = "it"
 title = "Coding e Paduli"
+paginate = "10"
 
-theme = "ananke"
+theme = "mainroad"
 
 [params]
   author = "codingepaduli"
+  subtitle = "Ennesimo sito/blog di programmazione ed informatica in generale"
   description = "Ennesimo sito/blog di programmazione ed informatica in generale"
+  toc = true # Enable Table of Contents
+  post_meta = ["date", "categories", "translations"] # Order of post meta information
+
+[[menu.main]]
+  identifier = "home"
+  name   = "Home"
+  url    = "/"
+  weight = 0
