@@ -4,6 +4,28 @@ date: 2019-07-16T17:10:46+02:00
 draft: false
 ---
 
+
+<p>La struttura base di un documento html e' la seguente:</p>
+<pre>
+  &lt;html&gt;
+    &lt;head&gt;
+      &lt;meta name="author" content="John Doe"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Titolo pagina web&lt;/h1&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;
+</pre>
+
+<p>In questa struttura sono presenti i 3 tag principali che devono sempre essere presenti: </p>
+<ol>
+    <li>Il tag <code>html</code> che viene aperto ad inizio documento (con il simbolo <code>&lt;html&gt;</code>) e chiuso (con il simbolo <code>&lt;/html&gt;</code>) alla fine del documento;</li>
+    <li>Il tag di informazioni <code>head</code> (non indirizzate all'utente, ma al browser o ai motori di ricerca) che viene aperto (con il simbolo <code>&lt;head&gt;</code>) e chiuso (con il simbolo <code>&lt;/head&gt;</code>);</li>
+    <li>Il tag di contenuti <code>body</code> che viene aperto (con il simbolo <code>&lt;body&gt;</code>) e poi chiuso (con il simbolo <code>&lt;/body&gt;</code>) appena prima della fine del documento.</li>
+</ol>
+
+ <p>Si fa notare nuovamente che tutti i tag nell'esempio sono prima aperti e poi chiusi.</p>
+
 <h2>Tag principali</h2>
 <p>I tag principali dell'HTML, tutti da inserire all'interno del tag <code>body</code> sono:</p>
 
