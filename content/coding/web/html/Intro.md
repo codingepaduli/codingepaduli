@@ -23,12 +23,12 @@ notesforauthors: ""
 summary: "Tag principali dell'HTML"
 ---
 
-<p>Un documento HTML è l'insieme di etichette, chiamate TAG (in inglese), che indicano l'inizio e la fine dei vari contenuti del documento. La struttura base di un documento HTML e' la seguente:</p>
+<p>Un documento HTML è composto da un insieme di etichette, chiamate TAG (in inglese), che indicano l'inizio e la fine dei vari contenuti del documento. La struttura base di un documento HTML e' la seguente:</p>
 <pre>
   &lt;!doctype html&gt;
   &lt;html&gt;
     &lt;head&gt;
-      &lt;meta name="author" content="John Doe"&gt;
+      &lt;meta name="author" content="codingepaduli"&gt;
     &lt;/head&gt;
     &lt;body&gt;
       &lt;h1&gt;Titolo pagina web&lt;/h1&gt;
@@ -38,17 +38,17 @@ summary: "Tag principali dell'HTML"
   &lt;/html&gt;
 </pre>
 
-<p>In questa struttura sono presenti i 4 tag principali che devono sempre essere presenti: </p>
+<p>In questa struttura si evidenziano i 4 elementi principali che devono sempre essere presenti: </p>
 <ol>
-    <li>Il tag <code>doctype</code> indica semplicemente che il documento è di tipo HTML (versione 5) e non prevede simbolo di chiusura;</li>
-    <li>Il tag <code>html</code> che viene aperto ad inizio documento (con il simbolo <code>&lt;html&gt;</code>) e chiuso (con il simbolo <code>&lt;/html&gt;</code>) alla fine del documento;</li>
+    <li>L'indicazione <code>doctype</code> (non è un tag, quindi non va chiuso) indica semplicemente che il documento è di tipo HTML (versione 5);</li>
+    <li>Il tag <code>html</code> indica l'inizio del documento HTML (con il simbolo di apertura <code>&lt;html&gt;</code>) e la fine del documento HTML (con il simbolo di chiusura <code>&lt;/html&gt;</code>);</li>
     <li>Il tag di informazioni <code>head</code> (non indirizzate all'utente, ma al browser o ai motori di ricerca) che viene aperto (con il simbolo <code>&lt;head&gt;</code>) e chiuso (con il simbolo <code>&lt;/head&gt;</code>);</li>
     <li>Il tag di contenuti <code>body</code> che viene aperto (con il simbolo <code>&lt;body&gt;</code>) e poi chiuso (con il simbolo <code>&lt;/body&gt;</code>) appena prima della fine del documento.</li>
 </ol>
 
  <p>Si fa notare nuovamente che tutti i tag nell'esempio sono prima aperti e poi chiusi. Inoltre, si fa notare che il testo è <strong>indentato</strong>, ovvero che, nella riga successiva ad un simbolo di apertura, vengono aggiunti 2 o 4 spazi. Questi spazi vengono tolti quando il tag viene chiuso (simbolo di chiusura). L'indentazione è una caratteristica dei documenti molto apprezzata, ed alcuni editor di testo permettono di indentare il documento in automatico, con combinazioni di tasti e/o plugins. Altra caratteristica apprezzata è la presenza di <strong>commenti</strong>, che l'autore scrive come informazioni aggiuntive e promemoria al fine di fare chiarezza.</p>
 
- <p>Tutti i contenuti vanno inseriti nel tag <code>body</code>, tra i simboli di apertura <code>&lt;body&gt;</code> e chiusura <code>&lt;/body&gt;</code>, come nell'esempio precedente, in cui il titolo <code>h1</code> ed il paragrafo <code>p</code> si trovano nel tag dei contenuti <code>body</code>.</p>
+<p>Tutti i contenuti vanno inseriti nel tag <code>body</code>, tra i simboli di apertura <code>&lt;body&gt;</code> e chiusura <code>&lt;/body&gt;</code>, come nell'esempio precedente, in cui il titolo <code>h1</code> ed il paragrafo <code>p</code> si trovano nel tag dei contenuti <code>body</code>.</p>
 
 <p>Possiamo dividere i tag in differenti categorie:</p>
 
@@ -61,23 +61,24 @@ summary: "Tag principali dell'HTML"
 
 <h3 id="tagTesto">Tag di testo</h3>
 
-<p>Il titolo, come visto nell'esempio precedente, è generato dal TAG <code>h1</code>, che ha il simbolo di apertura <code>&lt;h1&gt;</code> ed il simbolo di chiusura <code>&lt;/h1&gt;</code>. In realtà, esistono 7 livelli di titolo, che servono a dividere il documento in più capitoli e sotto-capitoli, in modo da poter dare una struttura "alberata" al documento. Questi livelli sono espressi dai tag <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> ed <code>h7</code>, ma nella realtà si consiglia l'uso fino al terzo livello.</p>
+<p>Il titolo, come visto nell'esempio precedente, è generato dal tag <code>h1</code>, che ha il simbolo di apertura <code>&lt;h1&gt;</code> ed il simbolo di chiusura <code>&lt;/h1&gt;</code>. In realtà, esistono 7 livelli di titolo, che servono a dividere il documento in più capitoli e sotto-capitoli, in modo da poter dare una struttura "alberata" al documento. Questi livelli sono espressi dai tag <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> ed <code>h7</code>, ma nella realtà si consiglia l'uso fino al terzo livello.</p>
 
-<p> Di seguito si riporta un esempio dei primi tre livelli:
+<p>Di seguito si riporta un esempio dei primi tre livelli:</p>
 <pre>
     &lt;h1&gt; Titolo primo livello &lt;/h1&gt;
     &lt;h2&gt; Titolo secondo livello &lt;h2&gt;
     &lt;h3&gt; Titolo terzo livello &lt;h2&gt;
 </pre>
-    che vengono poi trasformati dal browser come si vede di seguito:
+
+<p>che vengono poi trasformati dal browser come si vede di seguito:</p>
 <pre>
 <h3>Titolo primo livello</h3>
 <h4>Titolo secondo livello</h4>
 <h5>Titolo terzo livello</h5>
 </pre>
-</p>
 
-<p>Il paragrafo è generato dal TAG <code>p</code> che ha il simbolo di apertura <code>&lt;p&gt;</code> ed il simbolo di chiusura <code>&lt;/p&gt;</code>;</p>
+
+<p>Il paragrafo è generato dal tag <code>p</code> che ha il simbolo di apertura <code>&lt;p&gt;</code> ed il simbolo di chiusura <code>&lt;/p&gt;</code>;</p>
 
 <p>il tag <code>del</code> genera un testo cancellato come ad esempio questo testo <del>cancellato</del> generato dal seguente codice:
     <code>&lt;del&gt;cancellato&lt;/del&gt;</code>;</p>
@@ -107,12 +108,6 @@ summary: "Tag principali dell'HTML"
         &lt;/mark&gt;
     &lt;/strong&gt;
 </pre>
-</p>
-
-
-<p>il tag <code>hr</code> genera una semplice linea orizzontale, come la seguente, generata dal codice <code>&lt;hr&gt;&lt;/hr&gt;</code>.</p>
-
-<hr></hr>
 
 <h3 id="tagArticoli">Tag di articoli e libri</h3>
 
@@ -132,10 +127,10 @@ summary: "Tag principali dell'HTML"
 
 <p>Il tag <code>nav</code> è usato per indicare i collegamenti principali della pubblicazione.</p>
 
-Un esempio di articolo potrebbe essere:
+<p>Un esempio di articolo potrebbe essere</p>:
 <pre>
+&lt;nav&gt;link1, link2, ...&lt;/nav&gt;
 &lt;main&gt;
-  &lt;nav&gt;link1, link2, ...&lt;/nav&gt;
   &lt;article&gt;
     &lt;header&gt;
         &lt;h1&gt;Titolo 1° livello&lt;/h1&gt;
@@ -163,4 +158,39 @@ Un esempio di articolo potrebbe essere:
         &lt;p&gt;Contattami a someone@example.com&lt;/p&gt;
     &lt;/footer&gt;
   &lt;/article&gt;
+&lt;/main&gt;
 </pre>
+
+<p>Il codice HTML precedente genera il seguente documento:</p>
+<!-- sostituisco i tag di documento con i tag "div" per
+     evitare problemi di validazione a causa di duplicati nella pagina -->
+<div>
+  <div>link1, link2, ...</div>
+  <div>
+    <div>
+        <h3>Titolo 1° livello</h3>
+        <h4>Titolo 3° livello (sottotitolo)</h4>
+        <p>Altre informazioni</p>
+    </div>
+
+    <div>
+        <h3>Titolo sezione</h3>
+        <p>contenuto sezione...</p>
+    </div>
+
+    <div>
+        <h3>Titolo sezione</h3>
+        <p>contenuto sezione...</p>
+    </div>
+
+    <div>
+        <h3>Titolo contenuti legati</h3>
+        <p>contenuti legati...</p>
+    </div>
+
+    <div>
+        <p>Scritto da: Me</p>
+        <p>Contattami a someone@example.com</p>
+    </div>
+  </div>
+</div>

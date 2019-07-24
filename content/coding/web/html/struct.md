@@ -21,6 +21,8 @@ summary: "Tag per liste e tabelle"
 
 <h3 id="tagListe">Tag di liste e tabelle</h3>
 
+<p>il tag <code>hr</code> genera una semplice linea orizzontale, come la seguente, generata dal codice <code>&lt;hr&gt;&lt;/hr&gt;</code>.</p>
+
 <p>Il tag <code>ul</code> genera una lista di elementi non ordinata, ogni elemento della lista è contenuto nel tag <code>li</code>. Ad esempio il seguente codice genera la lista non ordinata di browser ottimi per la navigazione:
     <pre>
       &lt;ul&gt;
