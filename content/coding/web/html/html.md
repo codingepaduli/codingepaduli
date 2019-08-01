@@ -9,8 +9,7 @@ menu:
   docs:
     identifier: "html"
     parent: "web"
-    weight: 01
-weight: 01	#rem
+    weight: 02
 categories: ["html"]
 keywords: ["html"]
 draft: false

@@ -1,9 +1,5 @@
 ---
 title: "Tag principali dell'HTML"
-date: 2019-07-16T17:10:46+02:00
-draft: false
-
-title: "Tag principali dell'HTML"
 linktitle: "Tag principali dell'HTML"
 description: "Tag principali dell'HTML"
 date: 2019-07-16T17:10:46+02:00
@@ -13,8 +9,7 @@ menu:
   docs:
     identifier: "tags"
     parent: "web"
-    weight: 01
-weight: 01	#rem
+    weight: 03
 categories: ["html"]
 keywords: ["html"]
 draft: false
@@ -25,6 +20,7 @@ summary: "Tag principali dell'HTML"
 
 <p>Un documento HTML è composto da un insieme di etichette, chiamate TAG (in inglese), che indicano l'inizio e la fine dei vari contenuti del documento. La struttura base di un documento HTML e' la seguente:</p>
 <pre>
+  <code class="html">
   &lt;!doctype html&gt;
   &lt;html&gt;
     &lt;head&gt;
@@ -36,6 +32,7 @@ summary: "Tag principali dell'HTML"
       &lt;!-- commento in html--&gt;
     &lt;/body&gt;
   &lt;/html&gt;
+  </code>
 </pre>
 
 <p>In questa struttura si evidenziano i 4 elementi principali che devono sempre essere presenti: </p>
@@ -65,18 +62,17 @@ summary: "Tag principali dell'HTML"
 
 <p>Di seguito si riporta un esempio dei primi tre livelli:</p>
 <pre>
+  <code class="html">
     &lt;h1&gt; Titolo primo livello &lt;/h1&gt;
     &lt;h2&gt; Titolo secondo livello &lt;h2&gt;
     &lt;h3&gt; Titolo terzo livello &lt;h2&gt;
+  </code>
 </pre>
 
 <p>che vengono poi trasformati dal browser come si vede di seguito:</p>
-<pre>
 <h3>Titolo primo livello</h3>
 <h4>Titolo secondo livello</h4>
 <h5>Titolo terzo livello</h5>
-</pre>
-
 
 <p>Il paragrafo è generato dal tag <code>p</code> che ha il simbolo di apertura <code>&lt;p&gt;</code> ed il simbolo di chiusura <code>&lt;/p&gt;</code>;</p>
 
@@ -97,16 +93,19 @@ summary: "Tag principali dell'HTML"
     <code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code>;</p>
 
 <!-- Obsolete TAG <acronym title="as soon as possible">ASAP</acronym> -->
+
 <!-- Obsolete TAG <big>This text is big</big> -->
 
 <p>E' ovvio che i tag possono essere inseriti (innestati) l'uno dentro l'altro per creare le combinazioni desiderate, ad esempio per generare un testo grassetto, evidenziato e sottolineato, come <strong><mark><ins>questo testo</ins></mark></strong> si usa il codice</p>
 
 <pre>
+  <code class="html">
     &lt;strong&gt;
         &lt;mark&gt;
             &lt;ins&gt;questo testo&lt;/ins&gt;
         &lt;/mark&gt;
     &lt;/strong&gt;
+  </code>
 </pre>
 
 <h3 id="tagArticoli">Tag di articoli e libri</h3>
@@ -127,40 +126,38 @@ summary: "Tag principali dell'HTML"
 
 <p>Il tag <code>nav</code> è usato per indicare i collegamenti principali della pubblicazione.</p>
 
-<p>Un esempio di articolo potrebbe essere</p>:
+<p>Un esempio di articolo potrebbe essere:</p>
 <pre>
-&lt;nav&gt;link1, link2, ...&lt;/nav&gt;
-&lt;main&gt;
-  &lt;article&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Titolo 1° livello&lt;/h1&gt;
-        &lt;h3&gt;Titolo 3° livello (sottotitolo)&lt;/h3&gt;
-        &lt;p&gt;Altre informazioni&lt;/p&gt;
-    &lt;/header&gt;
-
-    &lt;section&gt;
-        &lt;h2&gt;Titolo sezione&lt;/h2&gt;
-        &lt;p&gt;contenuto sezione...&lt;/p&gt;
-    &lt;/section&gt;
-
-    &lt;section&gt;
-        &lt;h2&gt;Titolo sezione&lt;/h2&gt;
-        &lt;p&gt;contenuto sezione...&lt;/p&gt;
-    &lt;/section&gt;
-
-    &lt;aside&gt;
-        &lt;h4&gt;Titolo contenuti legati&lt;/h4&gt;
-        &lt;p&gt;contenuti legati...&lt;/p&gt;
-    &lt;/aside&gt;
-
-    &lt;footer&gt;
-        &lt;p&gt;Scritto da: Me&lt;/p&gt;
-        &lt;p&gt;Contattami a someone@example.com&lt;/p&gt;
-    &lt;/footer&gt;
-  &lt;/article&gt;
-&lt;/main&gt;
+  <code class="html">
+    &lt;nav&gt;link1, link2, ...&lt;/nav&gt;
+    &lt;article&gt;
+      &lt;header&gt;
+          &lt;h1&gt;Titolo 1° livello&lt;/h1&gt;
+          &lt;h3&gt;Titolo 3° livello (sottotitolo)&lt;/h3&gt;
+          &lt;p&gt;Altre informazioni&lt;/p&gt;
+      &lt;/header&gt;
+      &lt;main id="principale"&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Titolo sezione&lt;/h2&gt;
+            &lt;p&gt;contenuto sezione...&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Titolo sezione&lt;/h2&gt;
+            &lt;p&gt;contenuto sezione...&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;aside&gt;
+            &lt;h4&gt;Titolo contenuti legati&lt;/h4&gt;
+            &lt;p&gt;contenuti legati...&lt;/p&gt;
+        &lt;/aside&gt;
+      &lt;/main&gt;
+      &lt;footer&gt;
+          &lt;p&gt;Scritto da: Me&lt;/p&gt;
+          &lt;p&gt;Contattami a someone@example.com&lt;/p&gt;
+      &lt;/footer&gt;
+    &lt;/article&gt;
+  </code>
 </pre>
-
+<!-- TODO without this comment, somethings go wrong in html validation -->
 <p>Il codice HTML precedente genera il seguente documento:</p>
 <!-- sostituisco i tag di documento con i tag "div" per
      evitare problemi di validazione a causa di duplicati nella pagina -->
@@ -172,25 +169,22 @@ summary: "Tag principali dell'HTML"
         <h4>Titolo 3° livello (sottotitolo)</h4>
         <p>Altre informazioni</p>
     </div>
-
     <div>
         <h3>Titolo sezione</h3>
         <p>contenuto sezione...</p>
     </div>
-
     <div>
         <h3>Titolo sezione</h3>
         <p>contenuto sezione...</p>
     </div>
-
     <div>
         <h3>Titolo contenuti legati</h3>
         <p>contenuti legati...</p>
     </div>
-
     <div>
         <p>Scritto da: Me</p>
         <p>Contattami a someone@example.com</p>
     </div>
   </div>
 </div>
+<!-- TODO without this comment, somethings go wrong in html validation -->
