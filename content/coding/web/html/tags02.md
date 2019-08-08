@@ -7,7 +7,7 @@ publishdate: 2019-07-25
 lastmod: 2019-07-25
 categories: ["html"]
 keywords: ["html"]
-draft: true
+draft: false
 toc: false
 notesforauthors: "HTML Lez. 03 - Tag di collegamento, liste, tabelle"
 summary: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno uso di attributi"
