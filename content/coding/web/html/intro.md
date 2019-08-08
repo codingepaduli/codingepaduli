@@ -1,24 +1,20 @@
 ---
-title: "HTML"
-linktitle: "HTML"
-description: "HTML"
-date: 2019-07-15T17:10:46+02:00
-publishdate: 2019-07-19
-lastmod: 2019-07-19
-menu:
-  docs:
-    identifier: "html"
-    parent: "web"
-    weight: 02
+type: "html"
+title: "HTML Lez. 01 - Introduzione"
+description: "HTML Lez. 01 - Introduzione"
+date: 2019-07-15
+publishdate: 2019-07-15
+lastmod: 2019-07-15
 categories: ["html"]
 keywords: ["html"]
 draft: false
 toc: false
-notesforauthors: ""
-summary: "Introduzione al linguaggio HTML e allo sviluppo di pagine web."
+notesforauthors: "HTML Lez. 01 - Introduzione al linguaggio HTML ed alla creazione, validazione e pubblicazione di pagine web"
+summary: "HTML Lez. 01 - Introduzione al linguaggio HTML ed alla creazione, validazione e pubblicazione di pagine web"
+menu: "html"
 ---
 
-<p>Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un Linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).</p>
+<p>Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).</p>
 
 <p>L'<strong>ipertesto</strong> e' un testo contenente immagini, collegamenti, video, ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web (oltre ai contenuti, abbiamo gli effetti grafici, le animazioni, le azioni, che sono comunque parte della pagina web, ma sono scritte in altri linguaggi). Le <strong>etichette</strong> (in inglese Markup o TAG) indicano un elemento della pagina web ed hanno un simbolo di inizio elemento ed uno di fine elemento: inizio e fine di un titolo, di un'immagine, di un video, di una tabella...</p>
 
@@ -30,8 +26,11 @@ summary: "Introduzione al linguaggio HTML e allo sviluppo di pagine web."
 
 <p>La creazione di pagine web può avvenire anche attraverso strumenti di sviluppo visuale, che permettono di disegnarle e configurarle, piuttosto che scriverle. Esistono software che permettono di amministrare anche l'intero sito, pur avendo poche conoscenze tecniche, e sono chiamati genericamente <a href="https://it.wikipedia.org/wiki/Content_management_system">CMS</a>. Tra i CMS più noti troviamo <a href="https://wordpress.org/">WordPress</a> e <a href="https://www.joomla.org/">Joomla</a>, ma la scelta è ampia.</p>
 
+<p>L'ultimo step consiste nel pubblicare la pagina o il sito web su un dominio, quindi è necessario costruire le competenze necessarie sia alla scelta del dominio, sia all'uso di strumenti per il trasferimento o la sincronizzazione delle pagine sul dominio.</p>
+
 <p>Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio HTML, degni di nota sono:
     <a href="https://www.html.it/guide/guida-html/">html.it</a> (in italiano),
-    <a href="https://www.w3schools.com/html/">w3schools.com</a> (in inglese)
+    <a href="https://www.w3schools.com/html/">w3schools.com</a> (in inglese),
+    <a href="https://internetingishard.com/html-and-css/">internetingishard.com</a> (in inglese, per principianti),
     <a href="https://developer.mozilla.org/it/docs/Web/HTML">developer.mozilla.org</a>, sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione) ed infine
     <a href="https://guide.freecodecamp.org/html/">freecodecamp.org</a>, organizzazione no-profit per aiutare le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese).</p>

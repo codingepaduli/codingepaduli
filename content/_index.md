@@ -11,5 +11,5 @@ toc: false
 notesforauthors:
 # menu identifier and text to show
 menu: "main"
-linktitle: "Coding e Paduli"
+linktitle: "Home"
 ---

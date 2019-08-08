@@ -1,37 +1,32 @@
 ---
-title: "Tag principali dell'HTML"
-linktitle: "Tag principali dell'HTML"
-description: "Tag principali dell'HTML"
-date: 2019-07-16T17:10:46+02:00
-publishdate: 2019-07-19
-lastmod: 2019-07-19
-menu:
-  docs:
-    identifier: "tags"
-    parent: "web"
-    weight: 03
+type: "html"
+title: "HTML Lez. 02 - Etichette (tag)"
+description: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
+date: 2019-07-16
+publishdate: 2019-07-16
+lastmod: 2019-07-16
 categories: ["html"]
 keywords: ["html"]
 draft: false
 toc: false
-notesforauthors: ""
-summary: "Tag principali dell'HTML"
+notesforauthors: "HTML Lez. 02 - Prima pagina web ed etichette (tag) di testo"
+summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 ---
 
 <p>Un documento HTML è composto da un insieme di etichette, chiamate TAG (in inglese), che indicano l'inizio e la fine dei vari contenuti del documento. La struttura base di un documento HTML e' la seguente:</p>
 <pre>
   <code class="html">
-  &lt;!doctype html&gt;
-  &lt;html&gt;
-    &lt;head&gt;
-      &lt;meta name="author" content="codingepaduli"&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;h1&gt;Titolo pagina web&lt;/h1&gt;
-      &lt;p&gt;paragrafo della pagina web.&lt;/p&gt;
-      &lt;!-- commento in html--&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;
+    &lt;!doctype html&gt;
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;meta name="author" content="codingepaduli"&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        &lt;h1&gt;Titolo pagina web&lt;/h1&gt;
+        &lt;p&gt;paragrafo della pagina web.&lt;/p&gt;
+        &lt;!-- commento in html--&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;
   </code>
 </pre>
 
@@ -47,16 +42,7 @@ summary: "Tag principali dell'HTML"
 
 <p>Tutti i contenuti vanno inseriti nel tag <code>body</code>, tra i simboli di apertura <code>&lt;body&gt;</code> e chiusura <code>&lt;/body&gt;</code>, come nell'esempio precedente, in cui il titolo <code>h1</code> ed il paragrafo <code>p</code> si trovano nel tag dei contenuti <code>body</code>.</p>
 
-<p>Possiamo dividere i tag in differenti categorie:</p>
-
-<ol>
-    <li><a href="#tagTesto">Tag di testo;</a></li>
-    <li><a href="#tagArticoli">Tag di articoli;</a></li>
-    <li><a href="#tagListe">Tag di liste e tabelle;</a></li>
-    <li><a href="#tagAttr">Tag di immagini e video;</a></li>
-</ol>
-
-<h3 id="tagTesto">Tag di testo</h3>
+<p>Di seguito vengono elencati i tag per la gestione del testo:</p>
 
 <p>Il titolo, come visto nell'esempio precedente, è generato dal tag <code>h1</code>, che ha il simbolo di apertura <code>&lt;h1&gt;</code> ed il simbolo di chiusura <code>&lt;/h1&gt;</code>. In realtà, esistono 7 livelli di titolo, che servono a dividere il documento in più capitoli e sotto-capitoli, in modo da poter dare una struttura "alberata" al documento. Questi livelli sono espressi dai tag <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> ed <code>h7</code>, ma nella realtà si consiglia l'uso fino al terzo livello.</p>
 
@@ -107,84 +93,3 @@ summary: "Tag principali dell'HTML"
     &lt;/strong&gt;
   </code>
 </pre>
-
-<h3 id="tagArticoli">Tag di articoli e libri</h3>
-
-<p>Esistono diversi tag che permettono di definire le varie sezioni di una pubblicazione: intestazione, articolo, corpo, sezioni, pie di pagina, ecc..</p>
-
-<p>Il tag <code>header</code> è usato sia come intestazione principale della pubblicazione, sia come intestazione di ogni sezione.</p>
-
-<p>Il tag <code>article</code> indica il contenuto dell'articolo pubblicato, che deve essere "auto-contenuto", cioè che si può leggere indipendentemente dal resto.</p>
-
-<p>Il tag <code>section</code> è usato per raggruppare contenuti dell'articolo che trattano la stessa tematica.</p>
-
-<p>Il tag <code>aside</code> è usato per indicare contenuti legati all'articolo, ma in maniera trasversale, come digressioni e divagazioni che interrompono la linearità dell'articolo.</p>
-
-<p>Il tag <code>main</code> raggruppa sia l'articolo che i contenuti trasversali. Ha la limitazione che un solo main può essere contenuto nella pagina web.</p>
-
-<p>Il tag <code>footer</code> è usato per indicare l'autore, la data di pubblicazione, il copyright, i collegamenti esterni e tutte le informazioni della pubblicazione.</p>
-
-<p>Il tag <code>nav</code> è usato per indicare i collegamenti principali della pubblicazione.</p>
-
-<p>Un esempio di articolo potrebbe essere:</p>
-<pre>
-  <code class="html">
-    &lt;nav&gt;link1, link2, ...&lt;/nav&gt;
-    &lt;article&gt;
-      &lt;header&gt;
-          &lt;h1&gt;Titolo 1° livello&lt;/h1&gt;
-          &lt;h3&gt;Titolo 3° livello (sottotitolo)&lt;/h3&gt;
-          &lt;p&gt;Altre informazioni&lt;/p&gt;
-      &lt;/header&gt;
-      &lt;main id="principale"&gt;
-        &lt;section&gt;
-            &lt;h2&gt;Titolo sezione&lt;/h2&gt;
-            &lt;p&gt;contenuto sezione...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;section&gt;
-            &lt;h2&gt;Titolo sezione&lt;/h2&gt;
-            &lt;p&gt;contenuto sezione...&lt;/p&gt;
-        &lt;/section&gt;
-        &lt;aside&gt;
-            &lt;h4&gt;Titolo contenuti legati&lt;/h4&gt;
-            &lt;p&gt;contenuti legati...&lt;/p&gt;
-        &lt;/aside&gt;
-      &lt;/main&gt;
-      &lt;footer&gt;
-          &lt;p&gt;Scritto da: Me&lt;/p&gt;
-          &lt;p&gt;Contattami a someone@example.com&lt;/p&gt;
-      &lt;/footer&gt;
-    &lt;/article&gt;
-  </code>
-</pre>
-<!-- TODO without this comment, somethings go wrong in html validation -->
-<p>Il codice HTML precedente genera il seguente documento:</p>
-<!-- sostituisco i tag di documento con i tag "div" per
-     evitare problemi di validazione a causa di duplicati nella pagina -->
-<div>
-  <div>link1, link2, ...</div>
-  <div>
-    <div>
-        <h3>Titolo 1° livello</h3>
-        <h4>Titolo 3° livello (sottotitolo)</h4>
-        <p>Altre informazioni</p>
-    </div>
-    <div>
-        <h3>Titolo sezione</h3>
-        <p>contenuto sezione...</p>
-    </div>
-    <div>
-        <h3>Titolo sezione</h3>
-        <p>contenuto sezione...</p>
-    </div>
-    <div>
-        <h3>Titolo contenuti legati</h3>
-        <p>contenuti legati...</p>
-    </div>
-    <div>
-        <p>Scritto da: Me</p>
-        <p>Contattami a someone@example.com</p>
-    </div>
-  </div>
-</div>
-<!-- TODO without this comment, somethings go wrong in html validation -->

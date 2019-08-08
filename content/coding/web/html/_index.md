@@ -1,20 +1,16 @@
 ---
-title: "Linguaggio HTML"
-linktitle: "Linguaggio HTML"
-description: "Linguaggio HTML"
-date: 2017-02-01
-publishdate: 2019-07-19
-lastmod: 2019-07-19
-menu:
-  docs:
-    identifier: "LinguaggioHTML"
-    parent: "web"
-    weight: 01
-weight: 01	#rem
+type: "html"
+title: "Lezioni sul linguaggio HTML"
+description: "Lezioni sul linguaggio HTML"
+date: 2019-07-01
+publishdate: 2019-07-01
+lastmod: 2019-07-01
 categories: ["html"]
 keywords: ["html"]
 draft: false
-aliases: ["/coding/web/html/overview/","/coding/web/html/content"]
 toc: false
-notesforauthors: ""
+notesforauthors: "Lezioni sul linguaggio HTML"
+summary: "Lezioni sul linguaggio HTML"
+menu: "main"
+linktitle: "HTML"
 ---
