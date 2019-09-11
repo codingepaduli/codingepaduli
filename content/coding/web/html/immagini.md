@@ -7,7 +7,7 @@ publishdate: 2019-08-26
 lastmod: 2019-08-26
 categories: ["html"]
 keywords: ["html"]
-draft: true
+draft: false
 toc: false
 notesforauthors: "HTML Lez. 06 - Immagini, aree cliccabili sopra l'immagine, lazy loading e scelta immagine in base a larghezza e risoluzione del display"
 summary: "HTML Lez. 06 - Immagini, aree e caricamento asincrono"
