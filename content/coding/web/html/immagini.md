@@ -41,10 +41,10 @@ summary: "HTML Lez. 06 - Immagini, aree e caricamento asincrono"
 
 <p>Ci possono essere casi in cui l'immagine non puó trovarsi su un file a parte e non puó essere scaricata da internet, perchè magari il dispositivo IoT è collegato ad una rete locale senza accesso ad internet, quindi l'immagine puó contenuta direttamente nel tag,  ma a patto che sia stata convertita in base 64 data-URI e che sia specificato il tipo con <code>data:image/png;base64,</code>, come nel seguente esempio:</p>
 
-<code>&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO 9TXL0Y4OHwAAAABJRU5ErkJggg=="  alt="Immagine" /&gt;</code>
+<code>&lt;img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="  alt="Immagine" /&gt;</code>
 
 <p>Il risultato dell'esempio è il seguente:</p>
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO 9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
 
 <p>Per la conversione dell'immagine in base64 data-URI si puó usare il servizio on-line <a href="https://websemantics.uk/tools/image-to-data-uri-converter/">https://websemantics.uk/tools/image-to-data-uri-converter/</a>.</p>
 
@@ -87,13 +87,13 @@ Si tenga presente che, su uno schermo di 1200px di larghezza, non è detto si de
 <p>Il codice indicato descrive 3 associazioni: la prima indica che a schermi con risoluzione massima di 500 pixel, l'immagine deve essere presentata a schermo intero;
 la seconda indica che a schermi con risoluzione massima di 1500 pixel, l'immagine deve essere presentata a metá schermo, nell'ultimo caso, con schermi piú grandi di 1500 (per esclusione), l'immagine deve essere presentata ad un quarto dello schermo.</p>
 
-<p>Il browser, quindi,  conoscendo la grandezza del display e la pixel-ratio, conoscendo le dimensioni che deve occupare l'immagine per lo schermo utilizzato, descritte nel tag <code>sizes</code>, puó scegliere l'immagine appropriata tra le immagini (e le relative dimensioni) indicate nel tag <code>sources</code>.</p>
+<p>Il browser, quindi,  conoscendo la grandezza del display e la pixel-ratio, conoscendo le dimensioni che deve occupare l'immagine per lo schermo utilizzato, descritte nel tag <code>sizes</code>, puó scegliere l'immagine appropriata tra le immagini (e le relative dimensioni) indicate nel tag <code>sources</code>. Se nessuna delle immagini viene selezionata, il browser di default visualizza l'immagine descritta dal tag <code>src</code>.</p>
 
 <p>L'esempio completo è il seguente:</p>
-    <code>&lt;img srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w" sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm" alt="esempio tag immagine" /&gt;</code>
+    <code>&lt;img srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w" sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm" src="immagine.png" alt="esempio tag immagine"  /&gt;</code>
 
  che genera l'immagine:
-    <img srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w" sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm" alt="esempio tag immagine" />
+    <img srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w" sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm" src="immagine.png" alt="esempio tag immagine" />
 
 <p>Le immagini possono essere arricchite di <strong>mappe</strong>, cioè di aree cliccabili sovrapposte all'immagine. Le mappe sono descritte dal tag <code>map</code> che prevede l'attributo <code>name</code> come unico attributo di identificazione della mappa.</p>
 
