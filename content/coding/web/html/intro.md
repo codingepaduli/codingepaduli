@@ -43,6 +43,8 @@ Create le pagine web, queste si devono:
 
 <p>Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio HTML, degni di nota sono:
     <a href="https://www.html.it/guide/guida-html/">html.it</a> (in italiano),
+    <a href="https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html">corsidia.com</a> (in italiano),
+    <a href="https://it.m.wikibooks.org/wiki/HTML">it.wikibooks.org</a> (un buon manuale in italiano),
     <a href="https://www.w3schools.com/html/">w3schools.com</a> (in inglese),
     <a href="https://internetingishard.com/html-and-css/">internetingishard.com</a> (in inglese, per principianti),
     <a href="https://developer.mozilla.org/it/docs/Web/HTML">developer.mozilla.org</a>, sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione) ed infine
