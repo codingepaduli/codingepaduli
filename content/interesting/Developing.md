@@ -20,6 +20,10 @@ summary: "Set di link relativi al coding"
     virtual globe API;
   </li>
   <li>
+    <a href="To space and beyond with open source">To space and beyond</a>: an open source 
+    OpenSpace simulation;
+  </li>
+  <li>
     <a href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">Fluid Simulator in WebGL</a>: an open source 
     fluid simulation in WebGL;
   </li>
@@ -52,4 +56,15 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://opensource.com/article/19/9/ansible-documentation-kids-laptops">A tail about Ansible</a>: a tail about Ansible;
   </li>
+  <li>
+    <a href="https://opensource.com/article/19/9/must-know-ansible-modules">10 Ansible modules you need to know</a>: 10 Ansible modules you need to know;
+  </li>
+  <li>
+    <a href="https://opensource.com/article/19/10/building-container-images-ansible">Building container images with the ansible-bender tool</a>: Learn how to use Ansible to execute commands in a containe;
+  </li>
+
+
+
+
+
 </ul>
