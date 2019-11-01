@@ -37,10 +37,23 @@ summary: "Set di link relativi al coding"
   </li>
 </ul>
 
+<h3>Hystory</h3>
+<ul>
+  <li>
+    <a href="https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/">DRM Broke Its Promise</a>: DRM like feudalism;
+  </li>
+</ul>
+
 <h3>Containers e Virtual Machines</h3>
 <ul>
   <li>
     <a href="https://podman.io/">Podman.io</a>: Manage pods, containers, and container images;
+  </li>
+</ul>
+
+<ul>
+  <li>
+    <a href="https://www.docker.com/products/docker-hub">Docker-Hub</a>: repository of container images ready to install;
   </li>
 </ul>
 
@@ -62,9 +75,23 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://opensource.com/article/19/10/building-container-images-ansible">Building container images with the ansible-bender tool</a>: Learn how to use Ansible to execute commands in a containe;
   </li>
+</ul>
 
 
 
+<h3>Coding</h3>
+<ul>
+  <li>
+    <a href="https://htmlhead.dev/">Html head</a>: All the content of the head tag;
+  </li>
+  <li>
+    <a href="https://ericportis.com/posts/2014/srcset-sizes/">Html image sizes and srcset</a>: media queries aren’t the right tool for responsive images, srcset and sizes are;
+  </li>
+  <li>
+    <a href="https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">Html images with srcset</a>: Build Responsive Images with srcset (I don't completely trust this link;
+  </li>
 
-
+  <li>
+    <a href="https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques">Html images done right</a>: Images rendering, compression, formats. Video formats;
+  </li>
 </ul>
