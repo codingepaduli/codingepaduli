@@ -47,6 +47,9 @@ summary: "Set di link relativi al coding"
 <h3>Containers e Virtual Machines</h3>
 <ul>
   <li>
+    <a href="https://opensource.com/article/19/11/microservices-cheat-sheet">microservices build with containers</a>: key terminologies in the microservices ecosystem and some of the open source software available to build out a microservices architecture;
+  </li>
+  <li>
     <a href="https://podman.io/">Podman.io</a>: Manage pods, containers, and container images;
   </li>
 </ul>
@@ -61,6 +64,13 @@ summary: "Set di link relativi al coding"
 <ul>
   <li>
     <a href="https://chocolatey.org/docs">Chocolatey</a>: Software Management for Windows, great community packages;
+  </li>
+</ul>
+
+<h3>Network</h3>
+<ul>
+  <li>
+    <a href="https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard/">WireGuard VPN</a>: Configure your home VPN server with WireGuard;
   </li>
 </ul>
 
@@ -94,4 +104,9 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques">Html images done right</a>: Images rendering, compression, formats. Video formats;
   </li>
+
+  <li>
+    <a href="https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434">Never use MySQL UTF-8 encoding, use UTF-8mb4</a>;
+  </li>
+
 </ul>
