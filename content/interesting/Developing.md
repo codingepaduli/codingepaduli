@@ -90,6 +90,8 @@ summary: "Set di link relativi al coding"
 
 
 <h3>Coding</h3>
+
+<h4>HTML, CSS, JS, Node, ...</h4>
 <ul>
   <li>
     <a href="https://htmlhead.dev/">Html head</a>: All the content of the head tag;
@@ -106,7 +108,18 @@ summary: "Set di link relativi al coding"
   </li>
 
   <li>
-    <a href="https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434">Never use MySQL UTF-8 encoding, use UTF-8mb4</a>;
+    <a href="https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques">Lighthouse</a>: an open-source, automated tool for improving the quality of web pages;
   </li>
 
+  <li>
+    <a href="http://browsershots.org/">Browsershots</a>: makes screenshots of your web design in different operating systems and browsers. It is a convenient way to test website's browser compatibility in one place;
+  </li>
+
+</ul>
+
+<h4>Database</h4>
+<ul>
+  <li>
+    <a href="https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434">Never use MySQL UTF-8 encoding, use UTF-8mb4</a>;
+  </li>
 </ul>
