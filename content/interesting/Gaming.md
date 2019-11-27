@@ -29,12 +29,17 @@ summary: "Set di link relativi al gaming"
   <li>
     <a href="https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself">A star exploded so violently that it *completely* annihilated itself </a>
   </li>
+
+  <li>
+    <a href="http://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn">20 new moons orbiting Saturn</a>
+  </li>
+
 </ul>
 
 <h3>Tech</h3>
 <ul>
   <li>
-    <a href="https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html">Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them.</a>
+    <a href="https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html">Alcohol breath tests are often unreliable</a> Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them
   </li>
 </ul>
 

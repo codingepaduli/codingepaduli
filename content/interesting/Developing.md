@@ -65,6 +65,11 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://chocolatey.org/docs">Chocolatey</a>: Software Management for Windows, great community packages;
   </li>
+
+  <li>
+    <a href="https://www.pika.dev/registry">Pika</a>: a package registry and Cdn;
+  </li>
+
 </ul>
 
 <h3>Network</h3>
@@ -72,6 +77,16 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard/">WireGuard VPN</a>: Configure your home VPN server with WireGuard;
   </li>
+
+  <li>
+    <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
+  </li>
+
+<li>
+    <a href="http://www.webmin.com">WebMin</a>: a web interface for system administrator;
+  </li>
+
+
 </ul>
 
 <h3>Automation tools</h3>
@@ -108,7 +123,7 @@ summary: "Set di link relativi al coding"
   </li>
 
   <li>
-    <a href="https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques">Lighthouse</a>: an open-source, automated tool for improving the quality of web pages;
+    <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>: an open-source, automated tool for improving the quality of web pages;
   </li>
 
   <li>
