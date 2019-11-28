@@ -1,6 +1,6 @@
 ---
 type: "interesting"
-title: "Coding"
+title: "Link relativi al coding"
 description: "Set di link relativi al coding"
 date: 2019-10-20
 publishdate: 2019-10-20

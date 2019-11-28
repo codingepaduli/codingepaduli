@@ -1,6 +1,6 @@
 ---
 type: "interesting"
-title: "interessanti"
+title: "Link interessanti"
 description: "Set di link interessanti"
 date: 2019-10-20
 publishdate: 2019-10-20
