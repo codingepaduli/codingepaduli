@@ -1,16 +1,16 @@
 ---
-type: "gaming"
-title: "Gaming"
-description: "Set di link relativi al gaming"
+type: "interesting"
+title: "interessanti"
+description: "Set di link interessanti"
 date: 2019-10-20
 publishdate: 2019-10-20
 lastmod: 2019-10-20
-categories: ["gaming"]
-keywords: ["gaming"]
+categories: ["interesting"]
+keywords: ["interesting"]
 draft: false
 toc: false
-notesforauthors: "Set di link relativi al gaming"
-summary: "Set di link relativi al gaming"
+notesforauthors: "Set di link interessanti"
+summary: "Set di link interessanti"
 ---
 
 <h3>Gaming</h3>
@@ -42,4 +42,3 @@ summary: "Set di link relativi al gaming"
     <a href="https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html">Alcohol breath tests are often unreliable</a> Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them
   </li>
 </ul>
-
