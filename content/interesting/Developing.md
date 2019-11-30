@@ -86,6 +86,10 @@ summary: "Set di link relativi al coding"
     <a href="http://www.webmin.com">WebMin</a>: a web interface for system administrator;
   </li>
 
+<li>
+    <a href="https://opensource.com/article/19/11/monitoring-linux-glances">Glance</a>: cross-platform monitoring tool for your system;
+  </li>
+
 
 </ul>
 
@@ -129,6 +133,12 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="http://browsershots.org/">Browsershots</a>: makes screenshots of your web design in different operating systems and browsers. It is a convenient way to test website's browser compatibility in one place;
   </li>
+
+ <li>
+    <a href="https://github.com/dosycorp/browsergap.ce/blob/master/README.md">BrowserGap</a>:  access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web;
+  </li>
+
+
 
 </ul>
 
