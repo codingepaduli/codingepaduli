@@ -94,6 +94,10 @@ summary: "Set di link relativi al coding"
     <a href="http://www.webmin.com">WebMin</a>: a web interface for system administrator;
   </li>
 
+<li>
+    <a href="https://opensource.com/article/19/11/monitoring-linux-glances">Glance</a>: cross-platform monitoring tool for your system;
+  </li>
+
 
 </ul>
 
@@ -139,6 +143,9 @@ summary: "Set di link relativi al coding"
   </li>
   <li>
     <a href="https://frontendmasters.com/books/">The frontend developer book</a>: updated every year, can be read online;
+  </li>
+  <li>
+    <a href="https://github.com/dosycorp/browsergap.ce/blob/master/README.md">BrowserGap</a>:  access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web;
   </li>
 </ul>
 
