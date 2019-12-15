@@ -47,14 +47,20 @@ summary: "Set di link relativi al coding"
 <h3>Containers e Virtual Machines</h3>
 <ul>
   <li>
+    <a href="https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/">Get Started with containers</a>: Mircosoft explains what Containers, Docker and Kubernetes are;
+  </li>
+  <li>
     <a href="https://opensource.com/article/19/11/microservices-cheat-sheet">microservices build with containers</a>: key terminologies in the microservices ecosystem and some of the open source software available to build out a microservices architecture;
   </li>
   <li>
     <a href="https://podman.io/">Podman.io</a>: Manage pods, containers, and container images;
   </li>
-</ul>
-
-<ul>
+  <li>
+    <a href="https://github.com/jesseduffield/lazydocker">LazyDocker</a>: Memorising docker commands is hard. Keeping track of your containers across multiple terminal windows is near impossible. Lazydocker has all the information you needed in one terminal window with every common command living one keypress away (and the ability to add custom commands as well);
+  </li>
+  <li>
+    <a href="https://github.com/docker-slim/docker-slim">Docker Slim</a>: Minify and Secure your Docker containers (free and open source!). No need to change anything. You shouldn't have to become an expert to have secure containers; Docker Slim will create security profiles and will throw away what you don't need, reducing the attack surface of your container. 
+  </li>
   <li>
     <a href="https://www.docker.com/products/docker-hub">Docker-Hub</a>: repository of container images ready to install;
   </li>
@@ -81,7 +87,9 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
   </li>
-
+  <li>
+    <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
+  </li>
 <li>
     <a href="http://www.webmin.com">WebMin</a>: a web interface for system administrator;
   </li>
@@ -117,19 +125,21 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/">Html images with srcset</a>: Build Responsive Images with srcset (I don't completely trust this link;
   </li>
-
   <li>
     <a href="https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques">Html images done right</a>: Images rendering, compression, formats. Video formats;
   </li>
-
   <li>
     <a href="https://developers.google.com/web/tools/lighthouse/">Lighthouse</a>: an open-source, automated tool for improving the quality of web pages;
   </li>
-
   <li>
     <a href="http://browsershots.org/">Browsershots</a>: makes screenshots of your web design in different operating systems and browsers. It is a convenient way to test website's browser compatibility in one place;
   </li>
-
+  <li>
+    <a href="https://css-tricks.com/animating-with-clip-path/">clip-path Css property</a>: clip-path can be used to create pretty complex animations and transitions;
+  </li>
+  <li>
+    <a href="https://frontendmasters.com/books/">The frontend developer book</a>: updated every year, can be read online;
+  </li>
 </ul>
 
 <h4>Database</h4>
