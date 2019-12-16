@@ -95,7 +95,7 @@ summary: "Set di link relativi al coding"
   </li>
 
 <li>
-    <a href="https://opensource.com/article/19/11/monitoring-linux-glances">Glance</a>: cross-platform monitoring tool for your system;
+    <a href="https://opensource.com/article/19/11/monitoring-linux-glances">Glances</a>: cross-platform monitoring tool for your system;
   </li>
 
 
@@ -146,6 +146,9 @@ summary: "Set di link relativi al coding"
   </li>
   <li>
     <a href="https://github.com/dosycorp/browsergap.ce/blob/master/README.md">BrowserGap</a>:  access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web;
+  </li>
+  <li>
+    <a href="https://buttercms.com/blog/javascript-seo-best-practices">How does Javascript affect SEO?</a>: an overview to essential SEO tags that every page should have, and implications using frameworks;
   </li>
 </ul>
 
