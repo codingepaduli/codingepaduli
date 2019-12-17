@@ -35,9 +35,20 @@ summary: "Set di link relativi al coding"
     <a href="https://github.com/nbarkhina/MarioHTML/blob/master/readme.md">Mario Bros</a>: an open source 
     Super Mario Bros;
   </li>
+  <li>
+    <a href="https://www.codecks.io/blog/2019/creating-a-hit-steam-game-in-html5/">Tools for creating a game</a>: a list of tools used during the development of the game with opinions about reusing them or not;
+  </li>
+  
 </ul>
 
 <h3>Hystory</h3>
+<ul>
+  <li>
+    <a href="https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/">DRM Broke Its Promise</a>: DRM like feudalism;
+  </li>
+</ul>
+
+<h3>Hacking</h3>
 <ul>
   <li>
     <a href="https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/">DRM Broke Its Promise</a>: DRM like feudalism;
@@ -71,11 +82,9 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://chocolatey.org/docs">Chocolatey</a>: Software Management for Windows, great community packages;
   </li>
-
   <li>
     <a href="https://www.pika.dev/registry">Pika</a>: a package registry and Cdn;
   </li>
-
 </ul>
 
 <h3>Network</h3>
@@ -90,15 +99,12 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
   </li>
-<li>
+  <li>
     <a href="http://www.webmin.com">WebMin</a>: a web interface for system administrator;
   </li>
-
-<li>
+  <li>
     <a href="https://opensource.com/article/19/11/monitoring-linux-glances">Glances</a>: cross-platform monitoring tool for your system;
   </li>
-
-
 </ul>
 
 <h3>Automation tools</h3>

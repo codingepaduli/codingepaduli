@@ -41,4 +41,7 @@ summary: "Set di link interessanti"
   <li>
     <a href="https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html">Alcohol breath tests are often unreliable</a> Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them
   </li>
+  <li>
+    <a href="https://crontab.guru/">crontab<a>: An useful crontab expression generator;
+  </li>      
 </ul>
