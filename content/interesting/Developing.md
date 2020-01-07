@@ -38,21 +38,6 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://www.codecks.io/blog/2019/creating-a-hit-steam-game-in-html5/">Tools for creating a game</a>: a list of tools used during the development of the game with opinions about reusing them or not;
   </li>
-  
-</ul>
-
-<h3>Hystory</h3>
-<ul>
-  <li>
-    <a href="https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/">DRM Broke Its Promise</a>: DRM like feudalism;
-  </li>
-</ul>
-
-<h3>Hacking</h3>
-<ul>
-  <li>
-    <a href="https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/">DRM Broke Its Promise</a>: DRM like feudalism;
-  </li>
 </ul>
 
 <h3>Containers e Virtual Machines</h3>
@@ -93,9 +78,6 @@ summary: "Set di link relativi al coding"
     <a href="https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard/">WireGuard VPN</a>: Configure your home VPN server with WireGuard;
   </li>
 
-  <li>
-    <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
-  </li>
   <li>
     <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
   </li>
@@ -151,10 +133,22 @@ summary: "Set di link relativi al coding"
     <a href="https://frontendmasters.com/books/">The frontend developer book</a>: updated every year, can be read online;
   </li>
   <li>
-    <a href="https://github.com/dosycorp/browsergap.ce/blob/master/README.md">BrowserGap</a>:  access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web;
+    <a href="https://github.com/dosycorp/browsergap.ce/blob/master/README.md">BrowserGap</a>: access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web;
   </li>
   <li>
     <a href="https://buttercms.com/blog/javascript-seo-best-practices">How does Javascript affect SEO?</a>: an overview to essential SEO tags that every page should have, and implications using frameworks;
+  </li>
+  
+  <li>
+    <a href="https://24ways.org/2019/microbrowsers-are-everywhere/">Microbrowsers</a> and little thumbnail preview in a tweet or in WhatsApp chat are probably more important than google bot, can be the most influential part for attracting new audiences and increasing engagement - possibly more than SEO;
+  </li>
+  
+  <li>
+    <a href="https://24ways.org/2019/microbrowsers-are-everywhere/">Issues and limitations of Semantic Web Technologies</a>;
+  </li>
+  
+  <li>
+    <a href="https://jvns.ca/blog/how-tracking-pixels-work/">How tracking pixels work</a>;
   </li>
 </ul>
 
@@ -163,4 +157,13 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434">Never use MySQL UTF-8 encoding, use UTF-8mb4</a>;
   </li>
+  
+  <li>
+    <a href="https://postgrest.org/">PostgREST is a standalone web server that turns your PostgreSQL database directly into a RESTful API</a>;
+  </li>
+  
+  <li>
+    <a href="https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/">Doing a database join with CSV files</a>;
+  </li>
+  
 </ul>

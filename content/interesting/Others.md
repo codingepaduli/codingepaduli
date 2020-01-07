@@ -33,7 +33,10 @@ summary: "Set di link interessanti"
   <li>
     <a href="http://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn">20 new moons orbiting Saturn</a>
   </li>
-
+  
+  <li>
+    <a href="https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html">The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong</a>. This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020
+  </li>
 </ul>
 
 <h3>Tech</h3>
@@ -43,5 +46,8 @@ summary: "Set di link interessanti"
   </li>
   <li>
     <a href="https://crontab.guru/">crontab<a>: An useful crontab expression generator;
-  </li>      
+  </li>
+  <li>
+    <a href="https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/">DRM Broke Its Promise</a>: DRM like feudalism;
+  </li>
 </ul>
