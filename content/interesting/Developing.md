@@ -144,7 +144,7 @@ summary: "Set di link relativi al coding"
   </li>
   
   <li>
-    <a href="https://24ways.org/2019/microbrowsers-are-everywhere/">Issues and limitations of Semantic Web Technologies</a>;
+    <a href="http://www.lespetitescases.net/why-I-dont-use-semantic-web-technologies-anymore-even-if-they-still-influence-me">Issues and limitations of Semantic Web Technologies</a>;
   </li>
   
   <li>
