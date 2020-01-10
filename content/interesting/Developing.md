@@ -16,12 +16,7 @@ summary: "Set di link relativi al coding"
 <h3>Scienze</h3>
 <ul>
   <li>
-    <a href="https://worldwind.arc.nasa.gov/">WorldWind</a>: an open source 
-    virtual globe API;
-  </li>
-  <li>
-    <a href="To space and beyond with open source">To space and beyond</a>: an open source 
-    OpenSpace simulation;
+    <a href="https://worldwind.arc.nasa.gov/">WorldWind</a>: an open source virtual globe API;
   </li>
   <li>
     <a href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">Fluid Simulator in WebGL</a>: an open source 
@@ -77,7 +72,6 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard/">WireGuard VPN</a>: Configure your home VPN server with WireGuard;
   </li>
-
   <li>
     <a href="https://github.com/cloudflare/flan/blob/master/README.md">FlanScan</a>: a lightweight network vulnerability scanner;
   </li>
@@ -102,7 +96,12 @@ summary: "Set di link relativi al coding"
   </li>
 </ul>
 
-
+<h3>Privacy and hacking</h3>
+<ul>
+  <li>
+    <a href="https://github.com/tycrek/degoogle">Cutting Google out of your life (2019)</a> A list of alternative services useful to improve your privacy;
+  </li>
+</ul>
 
 <h3>Coding</h3>
 
@@ -150,6 +149,10 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://jvns.ca/blog/how-tracking-pixels-work/">How tracking pixels work</a>;
   </li>
+  <li>
+    <a href="https://flaviocopes.com/start-blog-with-hugo/">Start a blog using Hugo</a>;
+  </li>
+  
 </ul>
 
 <h4>Database</h4>
@@ -165,5 +168,4 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/">Doing a database join with CSV files</a>;
   </li>
-  
 </ul>
