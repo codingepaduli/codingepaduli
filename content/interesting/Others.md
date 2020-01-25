@@ -27,11 +27,14 @@ summary: "Set di link interessanti"
 <h3>Scienze</h3>
 <ul>
   <li>
-    <a href="https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself">A star exploded so violently that it *completely* annihilated itself </a>
+    <a href="https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself">A star exploded so violently that it *completely* annihilated itself;</a>
   </li>
 
   <li>
     <a href="http://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn">20 new moons orbiting Saturn;</a>
+  </li>
+  <li>
+    <a href="https://physics.aps.org/articles/v13/1">Dark Energy Cosmology</a>: new generation of experiments about the nature of dark energy;
   </li>
   
   <li>
