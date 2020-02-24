@@ -19,17 +19,15 @@ summary: "Set di link interessanti"
     <a href="https://archive.org/details/softwarelibrary_msdos">archive.org</a>: un archivio di giochi Ms-Dos, tra cui <a href="https://www.mobygames.com/game/dos/fire-ice/release-info">Fire and Ice</a>;
   </li>
   <li>
-    <a href="https://www.haxball.com/">HaxBall</a>: physics-based multiplayer 
-    soccer game where teamwork is key;
+    <a href="https://www.haxball.com/">HaxBall</a>: physics-based multiplayer soccer game where teamwork is key;
   </li>
 </ul>
 
 <h3>Scienze</h3>
 <ul>
   <li>
-    <a href="https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself">A star exploded so violently that it *completely* annihilated itself;</a>
+    <a href="https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself">A star exploded so violently that it completely annihilated itself;</a>
   </li>
-
   <li>
     <a href="http://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn">20 new moons orbiting Saturn;</a>
   </li>
@@ -44,8 +42,21 @@ summary: "Set di link interessanti"
   </li>
   
   <li>
-    <a href="https://www.openspaceproject.com/">To space and beyond</a>: an open source 
-    visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more;
+    <a href="https://www.openspaceproject.com/">To space and beyond</a>: an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more;
+  </li>
+</ul>
+
+<h3>Medicine</h3>
+<ul>
+  <li>
+    <a href="https://blogs.scientificamerican.com/cross-check/the-cancer-industry-hype-vs-reality/">Cancer</a>: Overdiagnosis, overtreatment and marginal benefits for patients;
+  </li>
+</ul>
+
+<h3>Arts</h3>
+<ul>
+  <li>
+    <a href="https://learningmusic.ableton.com/">Music</a>: learning music;
   </li>
 </ul>
 

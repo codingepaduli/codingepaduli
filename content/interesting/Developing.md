@@ -105,7 +105,10 @@ summary: "Set di link relativi al coding"
     <a href="https://wiki.debian.org/SSH">Open-SSH</a>: Install SSH client e server on your machine;
   </li>
   <li>
-    <a href="https://opensource.com/article/19/9/ansible-documentation-kids-laptops">A tail about Ansible</a>: a tail about Ansible;
+    <a href="https://opensource.com/article/20/2/ssh-tools">Tools for SSH key management</a>;
+  </li>
+  <li>
+    <a href="https://opensource.com/article/19/9/ansible-documentation-kids-laptops">A tail about Ansible</a>;
   </li>
   <li>
     <a href="https://opensource.com/article/19/9/must-know-ansible-modules">10 Ansible modules you need to know</a>: 10 Ansible modules you need to know;
@@ -121,6 +124,13 @@ summary: "Set di link relativi al coding"
   </li>
   <li>
     <a href="https://chriskiehl.com/article/gooey-as-a-universal-frontend">Gooey</a>: An Universal Frontend for any CLI Application;
+  </li>
+  <li>
+    <a href="https://github.com/Checksum/critic.sh">critic.sh</a>: Dead simple testing framework for Bash with coverage;
+  </li>
+  
+  <li>
+    <a href="https://github.com/atanunq/viu">viu</a>: A command-line application to view images from the terminal written in Rust;
   </li>
 </ul>
 
@@ -141,7 +151,19 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://github.com/luisfarzati/localdots">localDots</a>: HTTPS domains for localhost;
   </li>
+  <li>
+    <a href="https://github.com/AlessandroZ/LaZagne">The LaZagne project</a>: an open source application used to retrieve lots of passwords stored on a local computer by Firefox, Google Chrome, Skype, Pidgin, Outlook, Thunderbird, Keepass, Tortoise, Docker, FileZilla, GNOME Keyring, Kwallet, OpenSSH, OpenVPN and more..
+  </li>
+  <li>
+    <a href="https://www.varonis.com/blog/what-is-mimikatz/">Mimikatz</a>: a tool to steal credentials and escalate privileges;
+  </li>
+  <li>
+    <a href="https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html">The Encrypted Email Problem</a>: Avoid encrypted email;
+  </li>
   
+  <li>
+    <a href="https://latacora.micro.blog/2019/07/16/the-pgp-problem.html">The PGP Problem</a>: Serious cryptographers don’t spend much time publishing on PGP anymore;
+  </li>
 </ul>
 
 <h3>Coding</h3>
@@ -228,6 +250,9 @@ summary: "Set di link relativi al coding"
     <a href="https://utteranc.es/">Utterances</a>: A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!;
   </li>
   <li>
+    <a href="https://amontalenti.com/2019/08/10/javascript-the-modern-parts">JavaScript: The Modern Parts</a>: JavaScript in 2018-2019;
+  </li>
+  <li>
     <a href="https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada">Console methods for logging from javascript</a>;
   </li>
   <li>
@@ -263,4 +288,8 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/">Doing a database join with CSV files</a>;
   </li>
+  <li>
+    <a href="https://pragprog.com/book/bksqla/sql-antipatterns">SQL Antipatterns</a>:  This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes;
+  </li>
+  
 </ul>
