@@ -4,7 +4,7 @@ title: "OpenTasks"
 description: "OpenTasks, un'app open source per la gestione delle proprie attivitá"
 date: 2020-03-03
 publishdate: 2020-03-03
-lastmod: 2020-03-04
+lastmod: 2020-03-03
 categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
