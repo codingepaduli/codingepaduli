@@ -60,6 +60,9 @@ summary: "Set di link interessanti"
   <li>
     <a href="https://it.wikipedia.org/wiki/Influenza_spagnola">Influenza spagnola</a>: Pandemia influenzale causata dal virus H1N1;
   </li>
+  <li>
+    <a href="https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220">Artificial intelligence yields new antibiotic</a>A deep-learning model identifies a powerful new drug that can kill many species of antibiotic-resistant bacteria;
+  </li>
   
 </ul>
 
