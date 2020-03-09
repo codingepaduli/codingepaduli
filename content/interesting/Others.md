@@ -51,6 +51,16 @@ summary: "Set di link interessanti"
   <li>
     <a href="https://blogs.scientificamerican.com/cross-check/the-cancer-industry-hype-vs-reality/">Cancer</a>: Overdiagnosis, overtreatment and marginal benefits for patients;
   </li>
+  <li>
+    <a href="https://www.quantamagazine.org/how-do-animal-viruses-like-coronavirus-jump-species-20200225/">Sars-Covid-19</a>: The Animal Origins of Coronavirus and Flu;
+  </li>
+  <li>
+    <a href="https://www.physiciansweekly.com/the-neuroinvasive-potential-of-sars-cov2-may-be-at-least-partially-responsible-for-the-respiratory-failure-of-covid-19-patients/">Sars-Covid-19</a>: Neurological disease from Covid-19;
+  </li>
+  <li>
+    <a href="https://it.wikipedia.org/wiki/Influenza_spagnola">Influenza spagnola</a>: Pandemia influenzale causata dal virus H1N1;
+  </li>
+  
 </ul>
 
 <h3>Arts</h3>
@@ -75,7 +85,7 @@ summary: "Set di link interessanti"
     <a href="https://qifi.org/">QiFi</a>: WiFi QR Code Generator;
   </li>
   <li>
-    <a href="https://hackernoon.com/weather-sat-9620228789c8">: Download Live Images From Government Weather Satellites;</a>
+    <a href="https://hackernoon.com/weather-sat-9620228789c8">Weather Satellites</a>: Download Live Images From Government Weather Satellites;
   </li>
   <li>
     <a href="https://www.freetechbooks.com/">freetechbooks.com</a>: Database of Free / Open Access Online Computer Science Books, Textbooks, and Lecture Notes;
