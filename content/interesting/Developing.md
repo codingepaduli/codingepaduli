@@ -84,6 +84,9 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="https://www.pika.dev/registry">Pika</a>: a package registry and Cdn;
   </li>
+  <li>
+    <a href="https://opensource.com/article/20/3/rust-cargo">Cargo</a>: the Rust package manager;
+  </li>
 </ul>
 
 <h3>Network</h3>
@@ -134,7 +137,9 @@ summary: "Set di link relativi al coding"
   <li>
     <a href="http://www.mbtest.org/">mountebank</a>: open source tool for cross-platform, multi-protocol test;
   </li>
-  
+  <li>
+    <a href="https://jeffrafter.com/working-with-github-actions/">Github Actions</a>: Working with GitHub Actions;
+  </li>
   <li>
     <a href="https://github.com/atanunq/viu">viu</a>: A command-line application to view images from the terminal written in Rust;
   </li>
@@ -159,6 +164,9 @@ summary: "Set di link relativi al coding"
   </li>
   <li>
     <a href="https://cablehaunt.com/">Cable Haunt</a>: is a critical vulnerability found in cable modems from various manufacturers across the world. The number of modems initially vulnerable in Europe is estimated to be close to 200 million;
+  </li>
+  <li>
+    <a href="https://ipleak.net/">IP Leak</a>: information that all the sites you visit, as well as their advertisers and any embedded widget, can see and collect about you;
   </li>
   <li>
     <a href="https://smallstep.com/blog/step-v0-8-6-valid-https-certificates-for-dev-pre-prod/">Bring development closer to production with valid HTTPS certificates;</a>
@@ -190,7 +198,7 @@ summary: "Set di link relativi al coding"
     <a href="https://rosettagit.org/">RosettaGit</a>: solutions to the same task in as many different programming languages as possible;
   </li>
   <li>
-    <a href="https://rosettagit.org/">Grep.app</a>: Search across a half million git repos;
+    <a href="https://grep.app/">Grep.app</a>: Search across a half million git repos;
   </li>
   <li>
     <a href="https://aosabook.org/en/index.html">AOSA Book</a>: The Architecture of Open Source Applications;
@@ -290,6 +298,9 @@ summary: "Set di link relativi al coding"
   </li>
   <li>
     <a href="https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app">Progressive Web App (PWA)</a>: How to make your web app work offline;
+  </li>
+  <li>
+    <a href="https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/">Progressive Web App (PWA)</a>: Implement it in your Static Hugo Website;
   </li>
   <li>
     <a href="https://github.com/aurelia/aurelia">Aurelia 2</a>: core and plugin packages, examples, benchmarks, and documentation for the upcoming major version;
