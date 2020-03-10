@@ -20,6 +20,7 @@ La differenza di Session rispetto alle altre app di messaggistica è che non ric
 ![Image](/static/openSource/Session-SessionID.png "Session - Session ID")
 
 Sempre all'avvio, Session crea la propria frase di recupero, in modo che l'utente possa accedere in qualunque momento alle proprie comunicazioni.
+
 ![Image](/static/openSource/Session-RecoveryPhrase.png "Session - Recovery Phrase")
 
 Dato che Session non usa il numero di telefono, non può creare una lista di contatti a partire da quelli presenti in rubrica. 
@@ -28,6 +29,7 @@ Questo comporta che per iniziare una comunicazione è necessario inserire il Ses
 ![Image](/static/openSource/Session-NewChat.png "Session - New Chat")
 
 L'interfaccia si presenta del tutto simile alle altre app di messaggistica, con l'elenco di chat avviate.
+
 ![Image](/static/openSource/Session-ChatList.png "Session - Chat List")
 
 Le funzionalità sono molteplici, la creazione di gruppi aperti o chiusi, l'invio di messaggi che si autodistruggono dopo tot minuti, la possibilità di collegare più dispositivi allo stesso Session ID e tante altre.

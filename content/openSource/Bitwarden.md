@@ -46,3 +46,5 @@ A questo punto, installare l'estensione per il browser, ad esempio per Mozilla F
 Durante la navigazione, quando si effettua il login ad un sito tramite utente e password, Bitwarden chiederà di memorizzare le credenziali.
 
 La seconda volta che l'utente ha necessità di effettuare il login sul sito, sarà possibile cliccare sull'icona dell'estensione di Bitwarden per far si che Bitwarden inserisca le credenziali di login (precedentemente memorizzate) al posto dell'utente.
+
+Installa l'app da [F-Droid](/opensource/fdroid/ "F-Droid").

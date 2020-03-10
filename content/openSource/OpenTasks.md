@@ -37,4 +37,4 @@ Inoltre è possibile sincronizzare le proprie attivitá su server compatibile co
 
 Manca il supporto alle attivitá ricorrenti (attivitá da tenersi settimanalmente, mensilmente, ...).
 
-L'app si puó scaricare da [F-Droid](https://f-droid.org/).
+Installa l'app da [F-Droid](/opensource/fdroid/ "F-Droid").
