@@ -10,6 +10,6 @@ draft: false
 toc: false
 notesforauthors:
 # menu identifier and text to show
-menu: "main"
-linktitle: "Home"
+# menu: "main"
+# linktitle: "Home"
 ---

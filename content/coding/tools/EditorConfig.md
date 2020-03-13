@@ -1,12 +1,12 @@
 ---
-type: "coding"
+type: "tools"
 title: "EditorConfig"
 description: "EditorConfig, uno strumento per condividere le stesse impostazioni di stile e codifica tra gli sviluppatori che lavorano sullo stesso progetto con vari editors e IDEs"
 date: 2019-08-20
 publishdate: 2019-08-20
 lastmod: 2019-08-20
-categories: ["coding"]
-keywords: ["coding"]
+categories: ["coding, tools"]
+keywords: ["coding, tools"]
 draft: false
 toc: false
 notesforauthors: "EditorConfig, installazione su Atom"

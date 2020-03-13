@@ -10,6 +10,6 @@ draft: false
 toc: false
 notesforauthors: "Tools di sviluppo"
 # menu identifier and text to show
-menu: "main"
-linktitle: "tools"
+# menu: "main"
+# linktitle: "tools"
 ---
