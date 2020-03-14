@@ -11,6 +11,6 @@ draft: false
 toc: false
 notesforauthors: "Lezioni sui comandi del prompt di windows"
 summary: "Lezioni sui comandi del prompt di windows"
-menu: "main"
-linktitle: "prompt dei comandi"
+#menu: "main"
+#linktitle: "prompt dei comandi"
 ---

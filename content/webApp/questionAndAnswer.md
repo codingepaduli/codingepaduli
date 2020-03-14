@@ -1,18 +1,19 @@
 ---
-type: "WebApp"
+type: "webApp"
 title: "Question And Answer WebApp"
-description: "Question And Answer WebApp"
-date: 2019-12-27T10:10:10+02:00
+description: "Question and Answer WebApp, per domande sul diritto allo studio."
+date: 2019-12-27
 publishdate: 2019-12-27
 lastmod: 2019-12-27
-categories: ["webapp"]
-keywords: ["webapp"]
+categories: ["webApp"]
+keywords: ["webApp"]
 draft: false
 toc: false
-notesforauthors:
-summary: "Domande di cultura generale"
-menu: "main"
-linktitle: "Question And Answer WebApp"
+notesforauthors: "Question and Answer WebApp, per domande sul diritto allo studio."
+summary: "Question and Answer WebApp, per domande sul diritto allo studio."
+# menu identifier and text to show
+# menu: "main"
+# linktitle: "Question And Answer WebApp"
 ---  
   
   <script type="text/javascript" src="/static/webApp/questionAndAnswer.js"></script>

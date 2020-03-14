@@ -5,8 +5,8 @@ description: "Corso di programmazione web"
 date: 2020-03-13
 publishdate: 2020-03-13
 lastmod: 2020-03-13
-categories: ["coding"]
-keywords: ["coding"]
+categories: [""]
+keywords: [""]
 draft: false
 toc: false
 notesforauthors: ""

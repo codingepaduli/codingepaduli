@@ -9,7 +9,7 @@ categories: ["coding"]
 keywords: ["coding"]
 draft: false
 toc: false
-notesforauthors: ""
+notesforauthors: "Programmazione e strumenti connessi"
 summary: "Programmazione e strumenti connessi"
 # menu identifier and text to show
 menu: "main"
