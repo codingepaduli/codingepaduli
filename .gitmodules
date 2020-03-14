@@ -13,6 +13,3 @@
 [submodule "themes/mainroad"]
 	path = themes/mainroad
 	url = https://github.com/Vimux/Mainroad.git
-[submodule "public"]
-	path = public
-	url = https://github.com/codingepaduli/codingepaduli.github.io.git
