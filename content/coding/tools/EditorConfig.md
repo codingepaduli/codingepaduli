@@ -5,8 +5,8 @@ description: "EditorConfig, uno strumento per condividere le stesse impostazioni
 date: 2019-08-20
 publishdate: 2019-08-20
 lastmod: 2019-08-20
-categories: ["coding, tools"]
-keywords: ["coding, tools"]
+categories: ["coding", "tools"]
+keywords: ["coding", "tools"]
 draft: false
 toc: false
 notesforauthors: "EditorConfig, installazione su Atom"

@@ -5,8 +5,8 @@ description: "Aqemu, uno strumento open-source per la creazione di macchine virt
 date: 2020-03-15
 publishdate: 2020-03-15
 lastmod: 2020-03-15
-categories: ["coding, tools"]
-keywords: ["coding, tools"]
+categories: ["coding", "tools"]
+keywords: ["coding", "tools"]
 draft: false
 toc: false
 notesforauthors: "Aqemu, uno strumento open-source per la creazione di macchine virtuali."

@@ -5,12 +5,12 @@ description: "VirtualBox, uno strumento open-source per la creazione di macchine
 date: 2020-03-15
 publishdate: 2020-03-15
 lastmod: 2020-03-15
-categories: ["coding, tools"]
-keywords: ["coding, tools"]
+categories: ["coding", "tools"]
+keywords: ["coding", "tools"]
 draft: false
 toc: false
 notesforauthors: "VirtualBox, uno strumento open-source per la creazione di macchine virtuali."
-summary: "VirtualBox, uno strumento proprietario per la creazione di macchine virtuali."
+summary: "VirtualBox, uno strumento open-source per la creazione di macchine virtuali."
 ---
 
 VirtualBox è uno software open-source per la gestione di macchine virtuali. 
