@@ -29,7 +29,7 @@ Quando si vuole avviare, stoppare, sospendere o riavviare una macchina virtuale,
 
 Si consiglia quindi la creazione di una nuova cartella per ogni macchina virtuale (o ambiente virtuale) che si intende creare ed eseguire i comandi di creazione e gestione dell macchina virtuale (o dell'ambiente virtuale) nella cartella contenente il Vagrantfile. 
 
-## Gestione macchine virtuale
+## Gestione macchine virtuali
 
 Per creare una macchina virtuale si deve scegliere il nome del box.
 Una volta scelto il box della macchina virtuale (sul sito di Vagrant), ad esempio "debian/buster64", si può creare la macchina virtuale attraverso il comando seguente: 
@@ -160,4 +160,256 @@ Per elencare tutte le versioni vecchie di tutti i box che potrebbero essere rimo
 vagrant box prune --dry-run
 ```
 
-![](/static/coding/tools/VirtualBox-VM-Shutdownd.png "VirtualBox - Shutdown")
+## Sintassi del Vagrantfile e variabili definite
+
+Il Vagrantfile è il file che contiene la configurazione dell'ambiente virtuale ed è scritto in linguaggio ruby. In esso sono specificate le configurazioni di tutte le macchina virtuali appartenenti all'ambiente virtuale.
+
+Per fare un riferimento alla sintassi del file, un blocco di istruzioni in Ruby è definito da 
+
+```ruby
+do |variabile| 
+	# blocco istruzioni
+end
+```
+
+Quindi il seguente blocco di istruzioni definisce la variabile config come ambiente virtuale.
+
+```ruby
+Vagrant.configure("2") do |config|
+
+end
+```
+
+Allo stesso modo il seguente blocco di istruzioni definisce la variabile vb come provider della macchina virtuale vm appartenente all'ambiente config (l'ambiente virtuale):
+
+```ruby
+config.vm.provider "virtualbox" do |vb|
+
+end
+```
+
+Partendo da queste poche informazioni sulla sintassi, possiamo analizzare il Vagrantfile creato quando si crea una macchina virtuale:
+
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian/buster64"
+  config.vm.hostname = "debianBuster"
+  
+  config.vm.provider "virtualbox" do |vb|
+    vb.name = "exe1DebianBuster"
+    vb.gui = true
+    vb.memory = "1024"
+    vb.cpus = "2"
+   end
+end
+```
+
+Si notano i due blocchi descritti in precedenza che definiscono le seguenti variabili:
+- config indica l'ambiente virtuale (la configurazione desiderata);
+- vb indica il provider della macchina virtuale indicata da config.vm
+
+Inoltre si nota la variabile "vm" che appartiene a config e che in pratica indica la macchina virtuale.
+
+## Proprietà di una macchina virtuale definite nel Vagrantfile
+
+A partire dalle regole di sintassi e dal Vagrantfile appena visto, possiamo indicare le proprietà della macchina virtuale chè sarà creata:
+
+- il box da utilizzare per creare la macchina virtuale
+
+```ruby
+config.vm.box = "debian/buster64"
+```
+
+- il nome della macchina virtuale
+
+```ruby
+config.vm.hostname = 'database'
+```
+
+- il provider (hypervisor) della macchina virtuale
+
+```ruby
+config.vm.provider "virtualbox"
+```
+
+Tra le proprietà non viste che è comunque possibile definire, abbiamo:
+
+- l'ip virtuale di una rete privata:
+
+```ruby
+config.vm.network "private_network", ip: "192.168.33.12
+```
+
+- le porte da aprire sulla macchina virtuale e far corrispondere a quelle della macchina ospitante:
+
+```ruby
+config.vm.network "forwarded_port", guest: 80, host: 8082
+config.vm.network "forwarded_port", guest: 22, host: 10124, id: "ssh"
+```
+
+- le cartelle da condividere tra macchina virtuale e macchina ospitante:
+
+```ruby
+config.vm.synced_folder "../data", "/vagrant_data"
+```
+
+Per un elenco completo di tutte le proprietà che è possibile definire, si faccia comunque riferimento alla documentazione online.
+
+Tra le proprietà del provider (hypervisor) che sono ancora definite nel Vagrantfile visto precedentemente sono:
+
+- il nome della macchina virtuale per il provider (hypervisor) 
+
+```ruby
+vb.name = "exe1DebianBuster"
+```
+
+- la memoria che il provider (hypervisor) dovrà fornire alla macchina virtuale
+
+```ruby
+vb.memory = "1024"
+```
+
+- il numero di CPU che il provider (hypervisor) dovrà fornire alla macchina virtuale
+
+```ruby
+vb.cpus = "2"
+```
+
+- il modo in cui il provider (hypervisor) dovrà avviare la macchina virtuale (con interfaccia grafica o in modalità headless)
+
+```ruby
+vb.gui = true
+```
+
+Un esempio completo di Vagrantfile con tutte le proprietà appena viste è di seguito riportato:
+
+```ruby
+Vagrant.configure("2") do |config|
+
+    config.vm.hostname = 'web'
+    config.vm.box = "debian/buster64"
+    config.vm.box_url = "debian/buster64"
+
+    config.vm.network "forwarded_port", guest: 80, host: 8080
+    config.vm.network "forwarded_port", guest: 22, host: 10122, id: "ssh"
+
+    config.vm.network "private_network", ip: "192.168.33.10"
+
+    # Share an additional folder to the guest VM.
+    config.vm.synced_folder "../data", "/vagrant_data"
+
+    config.vm.provider "virtualbox" do |vb|
+      vb.gui = true
+      vb.name = "web"
+      vb.memory = "1024"
+      vb.cpus = "2"
+    end
+end
+```
+
+## Macchine virtuali multiple
+
+All'interno dell'ambiente virtuale è possibile definire più macchine virtuali, ognuna con la propria configurazione ed il proprio hypervisor (provider).
+
+Per definire 2 macchine virtuali assegnate rispettivamente alle variabili "web" e "database", si devono creare due blocchi del tipo: 
+
+```ruby
+Vagrant.configure("2") do |config|
+	config.vm.define "web" do |web|
+        web.vm.box = "debian/buster64"
+        web.vm.hostname = 'web'
+        
+        web.vm.provider "virtualbox" do |vb|
+  			vb.gui = true
+          	vb.name = "vm1-Debian"
+  			vb.memory = "1024"
+            vb.cpus = "2"
+   		end
+    end
+      
+	config.vm.define "database" do |database|
+    	database.vm.box = "debian/buster64"
+        database.vm.hostname = 'database'
+        
+        database.vm.provider "virtualbox" do |vb|
+  			vb.gui = true
+          	vb.name = "vm2-Debian"
+  			vb.memory = "1024"
+            vb.cpus = "2"
+   		end
+	end
+end
+```
+
+Se molte opzioni sono comuni, si può ridurre il codice rendendolo parametrico e definendo tutti i parametri differenti in un array:
+
+```ruby
+vm1 = {'name' => "web",     'v-name' => "vm1-Debian", 'ip' => "192.168.5.224"}
+vm2 = {'name' => "databas", 'v-name' => "vm2-Debian", 'ip' => "192.168.5.225"}
+vms = [vm1, vm2]
+
+Vagrant.configure(2) do |config|
+	vms.each do |node|
+    	
+        config.vm.define node['name'] do |node_config|
+        	node['name'].vm.box = "debian/buster64"
+            node['name'].vm.hostname = node['name'] 
+            node['name'].vm.network "private_network", ip: node['ip']
+
+            node['name'].vm.provider "virtualbox" do |vb|
+				vb.gui = true
+				vb.name = node['v-name']
+				vb.memory = "1024"
+				vb.cpus = "2"
+            end
+        end
+    end
+end
+```
+
+## Provisioning
+
+Le macchine virtuali create a partire dai box devono poter essere ulteriormente configurare, installando software o configurando servizi di rete.
+
+Per far cio si usa la tecnica del provisioning, ovvero si crea una "ricetta" (in stile Chef o Ansible) o uno script (in Bash o Powershell) che viene eseguito alla creazione della macchina virtuale.
+
+Per associare uno script Bash si può usare la proprietà:
+
+```ruby
+config.vm.provision :shell, path: "bootstrap.sh"
+```
+
+Per associare una ricetta ansible, si può usare la proprietà:
+
+```ruby
+config.vm.provision :ansible_local, playbook: "bootstrap.yaml"
+```
+
+Quando si modificano gli script e si vuole aggiornare tutte le macchine virtuali con gli script aggiornati, si usa il comando:
+
+```bash
+vagrant reload --provision
+```
+
+## Deploy su macchine ospitanti
+
+Le macchine virtuali definite nel file Vagrant vengono create sulla macchina locale, possono però essere "deployate" sull'ambiente reale (sui propri server) attraverso il comando:
+
+```bash
+vagrant push
+```
+
+Per deployare le macchine esistono diverse strategie:
+- deploy in locale
+- deploy via FTP
+- deploy attraverso i servizi Heroku o Atlas
+
+
+```ruby
+config.push.define "ftp" do |push| 
+	push.host = "ftp.company.com" 
+    push.username = "username"
+    push.password = "mypassword"
+end
+```
+
