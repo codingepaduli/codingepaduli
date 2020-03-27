@@ -4,7 +4,7 @@ title: "Gradle"
 description: "Gradle è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo"
 date: 2020-03-22
 publishdate: 2020-03-22
-lastmod: 2020-03-22
+lastmod: 2020-03-27
 keywords: ["coding", "tools"]
 draft: false
 toc: false
@@ -14,17 +14,11 @@ summary: "Gradle è un sistema open source per automatizzare le fasi di compilaz
 
 Gradle è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo. 
 
-I principali concetti su cui si basa Gradle sono i **progetti** ed i **task**.
-
-Un progetto in Gradle può rappresentare un'applicazione web scritta in java, una libreria scritta in c++, ecc.. Un progetto può a sua volta essere composto da più progetti.
-
-I task sono invece le azioni che Gradle effettua sui progetti. Un esempio di task può essere la compilarezione dei sorgenti, la creazione di un pacchetto, la generazione della documentazione, ecc...
-
-Nel corso di questo articolo, si vedrà all'opera Gradle con un progetto Java.
+Nel corso di questo articolo si descriveranno i concetti fondamentali (validi per qualsiasi tipo di progetto) e si utilizzerà Gradle per la gestione di un progetto Java.
 
 ## Gestione progetto con Gradle
 
-### Creazione progetto
+### Creazione progetto Java
 
 Il comando da utilizzare per creare un nuovo progetto è:
 
@@ -76,71 +70,43 @@ Il wrapper si può eseguire attraverso il comando ``gradlew`` per Linux e ``grad
 
 Se presente il file ``gradlew`` per Linux o ``gradlew.bat`` per Windows, allora è buona norma utilizzare il wrapper per eseguire tutti i task.
 
-### Primi tasks
+### Primi task
 
-Creato il progetto, è possibile visualizzare quali azioni è possibile eseguire su Gradle:
+Creato il progetto, è possibile eseguire, nella cartella principale di progetto, i seguenti task (utilizzando il wrapper di gradle):
 
-```bash
-gradle tasks
-```
+- Task di pulizia (cancella la cartella ``build``):
+  
+  ```bash
+  gradle clean
+  ```
 
-Dato che è presente il wrapper di Gradle, di seguito si utilizzerà il wrapper, quindi il comando precedente diventa:
+- Task di compilazione dei sorgenti java, di creazione del pacchetto "jar" e di creazione dei pacchetti da distribuire:
+  
+  ```bash
+  gradlew build
+  ```
 
-```bash
-gradlew tasks
-```
+- Task di esecuzione dell'applicazione java:
+  
+  ```bash
+  gradlew run
+  ```
 
-Della lunga lista di task visualizzata in output si evidenziano i seguenti task:
+- Task per la generezione della documentazione dei sorgenti:
+  
+  ```bash
+  gradlew javadoc
+  ```
 
-- ``clean``                   - Pulizia della directory di build;
-- ``compileJava``         - Compila i sorgenti java;
-- ``jar``                       - Crea il file jar;
-- ``compileTestJava``  - Compila i sorgenti delle classi di test;
-- ``test``                     - Esegue gli "unit test";
-- ``javadoc``                - Genera la documentazione Javadoc;
-- ``run``                       - Esegue l'applicazione;
-- ``projectReport``     - Crea il report dell'intero progetto (una sorta di sito web).
-
-Per compilare ed eseguire l'applicazione java è necessario lanciare il comando:
-
-```bash
-gradlew run
-```
-
-Si possono anche eseguire più task con un singolo comando. Per pulire la cartella di "lavoro" ed eseguire gil "unit test", ad esempio, è necessario lanciare il comando:
+Si possono anche eseguire più task con un singolo comando. Per pulire la cartella di "lavoro" ``build``, eseguire la compilazione, creare i pacchetti da distribuire ed eseguire l'applicazione, è possibile, sempre nella cartella principale di progetto, eseguire il comando:
 
 ```bash
-gradlew clean test
+gradlew clean build javadoc run
 ```
 
-Gradle non segue l'ordine dei task presente sulla linea di comando, ma li esegue in base ad un proprio "ordine" interno. 
-Specificare che si desidera l'esecuzione dei test sottintende l'esecuzione dei task precedenti per la compilazione dei sorgenti e per la compilazione degli "unit test".
+Tutti i file prodotti vengono memorizzati nella cartella ``build``.
 
-Sulla base di questa regola, il comando di esecuzione degli "unit test" appena visto corrisponde al comando:
-
-```bash
-gradlew clean compileJava compileTestJava test
-```
-
-E' possibile averne conferma visualizzando il piano di esecuzione di tutti i task che saranno eseguiti quando si esegue il task ``test``, attraverso il comando:
-
-```bash
-gradlew test --dry-run
-```
-
-L'output prodotto, di seguito riportato, ci da conferma di questa equivalenza in quanto indica tra i task da eseguire sia ``compileJava``, sia  ``compileTestJava``, sia ``test``.
-
-```bash
-:compileJava SKIPPED
-:processResources SKIPPED
-:classes SKIPPED
-:compileTestJava SKIPPED
-:processTestResources SKIPPED
-:testClasses SKIPPED
-:test SKIPPED
-```
-
-Per una descrizione più dettagliata dei task da utilizzare in un progetto Java, si rimanda ai capitoli sui plugins.
+Per una descrizione più dettagliata dei task da utilizzare in un progetto Java, si rimanda ai capitoli successivi.
 
 ### Struttura progetto
 
@@ -191,11 +157,23 @@ Tutti i file prodotti, dalle classi compilate al jar prodotto, alla documentazio
 
 ## Concetti principali di Gradle
 
-### Plugins
+I principali concetti su cui si basa Gradle sono i **progetti**, i **plugin**, i **task** e le **configurazioni di dipendenza**.
+
+Un **progetto** in Gradle può rappresentare un'applicazione web scritta in java, una libreria scritta in c++, ecc..
+
+Possiamo desiderare di automatizzare diverse fasi in un progetto, dalla compilazione dei sorgenti al deploy su server, dalla realizzazione della documentazione al report di progetto.
+
+I **task** servono ad automatizzare queste fasi. Gradle mette a disposizione task per compilare, task per realizzare la documentazione, task per avviare il server ed effettuare il deploy dell'applicazione web sullo stesso.
+
+Sono i **plugin** a rendere disponibili i task nel progetto: il plugin per applicazioni java rende disponibili i task per la compilazione e la realizzazione della documentazione. Il plugin per i report rende disponibili i task per la generazione dei report di progetto.
+
+I plugin mettono a disposizione anche le **configurazioni di dipendenza**, che permettono allo sviluppatore di gestire le dipendenze dell'applicazione.
+
+### Plugin
 
 E' necessario indicare la tipologia dei progetti sui quali si lavora: progetti java, c++ o anche progetti con sorgenti html o file zip.
 
-Questa tipologia viene indicata attraverso i plugins, che devono essere specificati nel file ``build.gradle`` attraverso la sezione ``plugins``.
+Questa tipologia viene indicata attraverso i plugin, che devono essere specificati nel file ``build.gradle`` attraverso la sezione ``plugins``.
 
 E' possibile aggiungere vari tipi di plugin allo stesso progetto.
 
@@ -210,7 +188,7 @@ Gradle fornisce di base una serie di plugin "core", che sono elencati all'indiri
 
 Per importare un plugin "core" di Gradle è necessario semplicemente indicarne il nome nella sezione "plugins" del file `build.gradle`.
 
-Tra i vari plugin core ci sono:
+Tra i vari plugin core abbiamo:
 
 - Il Build Init plugin, che fornisce il task di ``init`` per la creazione di nuovi progetti; Non necessita configurazione;
 
@@ -260,6 +238,72 @@ plugins {
     id 'com.jfrog.bintray' version '0.4.1'
 }
 ```
+
+### Task
+
+I task sono le azioni che è possibile effettuare su un progetto.
+
+Per eseguire dei task, dalla cartella principale del progetto è necessario eseguire il comando `gradlew` passando i vari task come parametri:
+
+```bash
+gradle task1 task2 task3
+```
+
+E' possibile crearne di personalizzati, aggiungendoli al file ``build.gradle``, come nel seguente esempio:
+
+```groovy
+task('hello') {
+    doLast {
+        println "Hello world!"
+    }
+}
+```
+
+Per eseguire il task creato, è necessario eseguire il comando:
+
+```bash
+gradlew hello
+```
+
+L'output del comando è il seguente:
+
+```bash
+Hello world!
+```
+
+Oltre ai task personalizzati aggiunti al progetto, è possibile comunque invocare i task messi a disposizione dai plugin configurati nel progetto. 
+
+Per visualizzare una lista di task disponibili in un progetto,  dalla cartella principale del progetto è necessario lanciare:
+
+```bash
+gradlew tasks
+```
+
+Gradle non esegue i task secondo l'ordine presente sulla linea di comando, ma crea un proprio piano di esecuzione dei task. Per visualizzarlo, è necessario aggiungere il flag ``--dry-run``  alla linea di comando. 
+
+Ad esempio, per visualizzare il piano di esecuzione dei task per il comando ``build``:
+
+```bash
+gradlew build --dry-run
+```
+
+L'output prodotto, per un progetto java, è il seguente:
+
+```bash
+:compileJava SKIPPED
+:processResources SKIPPED
+:classes SKIPPED
+:jar SKIPPED
+:assemble SKIPPED
+:compileTestJava SKIPPED
+:processTestResources SKIPPED
+:testClasses SKIPPED
+:test SKIPPED
+:check SKIPPED
+:build SKIPPED
+```
+
+Il piano di esecuzione indica che per eseguire il task ``jar`` per la creazione del pacchetto java è necessario prima eseguire il task ``compileJava`` che compila le classi java. Il che è un ragionamento ovvio.
 
 ### Configurazioni di dipendenza
 
@@ -357,9 +401,9 @@ Per visualizzare le dipendenze di una singola configurazione
 ./gradlew -q dependencies --configuration api
 ```
 
-## Scelta ed uso dei plugins per l'ambiente java
+## Scelta ed uso dei plugin per l'ambiente java
 
-### Scelta di plugin per java
+### Plugin per java
 
 Per configurare il progetto come "progetto java", bisogna aggiungere uno dei plugin java messi a disposizione da Gradle . In questo modo Gradle viene configurato per l'uso di tutti i task e di tutte le configurazioni relativi alla compilazione del codice Java, come visto nei capitoli precedenti.
 
@@ -375,7 +419,7 @@ Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
 - ``war``: è un plugin che estende il plugin `java` ed è specializzato nella gestione di un'applicazione web;
 
-- ``ear``: è un plugin che estende il plugin `java` ed è specializzato nella gestione di un'applicazione enterprise; Non sarà trattato in questo articolo basilare.
+- ``ear``: è un plugin che estende il plugin `java` ed è specializzato nella gestione di un'applicazione enterprise; Non sarà trattato in questo articolo basilare;
 
 - ``gretty``: è un plugin che in questo articolo viene aggiunto per completezza; Serve ad automatizzare ulteriormente le fasi di progetto gestendo il server ed il deploy dell'applicazione.
 
@@ -392,7 +436,6 @@ I task a messi a disposizione dal plugin ``java`` sono i seguenti:
 - ``compileTestJava``  : Compila i sorgenti delle classi di test;
 - ``test``                     : Esegue gli "unit test";
 - ``build``                   : Esegue tutte le fasi di costruzione del progetto.
-- ``projectReport``     : Crea i reports dell'intero progetto (una sorta di sito web).
 
 Di seguito se ne riporta un grafo completo:
 
@@ -513,8 +556,8 @@ Gretty è un plugin che serve ad automatizzare ulteriormente la gestione del pro
 
 I task che il plugin mette a disposizione sono molteplici, ma gli essenziali sono:
 
-- appStart: Scarica ed avvia il server, se necessario, poi effettua il deploy dell'applicazione sul server;
-- appStop: Ferma il server.
+- ``appStart``: Scarica ed avvia il server, se necessario, poi effettua il deploy dell'applicazione sul server;
+- ``appStop``: Ferma il server.
 
 Questo plugin non prevede configurazioni di dipendenza.
 
@@ -583,10 +626,15 @@ application {
 }
 ```
 
+Si nota che è stato aggiunto sia il plugin `application` per la gestione e l'esecuzione di un progetto java, sia il plugin `project-report` per la creazione dei report di progetto.
+
+E stata definita la lista (quasi completa) di task che si desidera vengano lanciati di default, sono state configurate delle voci da aggiungere al file ``Manifest.mf`` del pacchetto "jar" ed è indicata la classe java che contiene il metodo "main" da eseguire per lanciare l'applicazione.
+
 ## Esempio completo per applicazioni web in java
 
-```groovy
+Di seguito un esempio completo per la gestione di un'applicazione web Java con Gradle:
 
+```groovy
 plugins {
     // add support for building a Java application.
     id 'war'
@@ -628,3 +676,7 @@ gretty {
     contextPath '/web'
 }
 ```
+
+Si nota che è stato aggiunto sia il plugin `war` per la gestione di un'applicazione web in java, sia il plugin `project-report` per la creazione dei report di progetto, sia il plugin ``org.gretty`` per la gestione del servletContainer.
+
+E stata definita la lista di task che si desidera vengano lanciati di default, sono state configurate le opzioni relative al server da avviare per deployare ed eseguire l'applicazione.
