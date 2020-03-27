@@ -149,7 +149,7 @@ Gradle provvede poi alla creazione delle classiche directory di un progetto java
 
 - ``src/test/resources`` contiene altri file necessari durante i test;
 
-Troviamo poi i file eseguibili ``gradlew`` per eseguire il "wrapper" su Linux e ``gradlew.bat`` per eseguire il wrapper su Windows.
+Sono presenti poi i file ``gradlew`` per eseguire il "wrapper" su Linux e ``gradlew.bat`` per eseguire il wrapper su Windows.
 
 La cartella ``gradle/wrapper`` contiene il wrapper mentre la cartella ``.gradle`` contiene la versione di Gradle che il wrapper scarica.
 
@@ -161,7 +161,7 @@ I principali concetti su cui si basa Gradle sono i **progetti**, i **plugin**, i
 
 Un **progetto** in Gradle può rappresentare un'applicazione web scritta in java, una libreria scritta in c++, ecc..
 
-Possiamo desiderare di automatizzare diverse fasi in un progetto, dalla compilazione dei sorgenti al deploy su server, dalla realizzazione della documentazione al report di progetto.
+Si può decidere di automatizzare diverse fasi in un progetto, dalla compilazione dei sorgenti al deploy su server, dalla realizzazione della documentazione al report di progetto.
 
 I **task** servono ad automatizzare queste fasi. Gradle mette a disposizione task per compilare, task per realizzare la documentazione, task per avviare il server ed effettuare il deploy dell'applicazione web sullo stesso.
 
@@ -188,11 +188,11 @@ Gradle fornisce di base una serie di plugin "core", che sono elencati all'indiri
 
 Per importare un plugin "core" di Gradle è necessario semplicemente indicarne il nome nella sezione "plugins" del file `build.gradle`.
 
-Tra i vari plugin core abbiamo:
+Tra i vari plugin core elenchiamo:
 
 - Il Build Init plugin, che fornisce il task di ``init`` per la creazione di nuovi progetti; Non necessita configurazione;
 
-- Il Base Plugin, che fornisce i vari task quali ``clean`` e ``build``; Va configurato:
+- Il Base Plugin, che fornisce i vari task quali ``clean`` e ``build``; Deve essere configurato:
   
   ```groovy
   plugins {
@@ -307,7 +307,7 @@ Il piano di esecuzione indica che per eseguire il task ``jar`` per la creazione 
 
 ### Configurazioni di dipendenza
 
-In un progetto possiamo avere diversi tipi di dipendenze:
+In un progetto si possono avere diversi tipi di dipendenze:
 
 - dipendenza da una libreria necessaria per la compilazione e l'esecuzione;
 
