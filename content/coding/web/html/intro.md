@@ -31,18 +31,19 @@ menu: "html"
 Create le pagine web, queste si devono:
 
 <ul>
-  <li><strong>validare</strong>, utilizzando un validatore HTML come quello della <a href="https://validator.w3.org/">W3C Validator</a>, per individuare e correggere errori;</li>
+  <li><strong>validare</strong>, utilizzando un validatore HTML come quello della <a href="https://validator.w3.org/">W3C Validator</a>, per individuare e correggere errori. Inoltre devono essere periodicamente controllati i link, per evitare che possano essere "rotti" (cioè puntare a risorse su internet rimosse o spostate). Per controllare i link si usano strumenti come il <a href="https://validator.w3.org/checklink">W3C Link Checker</a>;</li>
   <li>rendere <strong>accessibili</strong> a chiunque, anche a chi ha difficoltà visive o motorie. Il controllo avviene attraverso strumenti specifici;<!-- TODO add accessibility tools--></li>
   <li>rendere <strong>"responsive"</strong>, cioè fruibili su differenti risoluzioni e formati, da quelli piccoli dei cellulari e palmari, a quelli classici dei computer e tablet, a quelli extra-large delle smart-TV;
 <!-- TODO add responsive tools--></li>
   <li>rendere <strong> performanti</strong>, cioè che abbiano tempi di caricamento ridotti, soprattutto su connessioni lente, usando strumenti quali <a href="https://developers.google.com/web/tools/lighthouse/">lighthouse</a>; opzionalmente si puó rendere il sito capace di funzionare anche senza connessione internet (<a href="https://it.m.wikipedia.org/wiki/Progressive_Web_App">PWA</a>);</li>
   <li><strong>ottimizzare per i motori di ricerca</strong> (<a href="https://it.m.wikipedia.org/wiki/Ottimizzazione_(motori_di_ricerca)">SEO</a>) ed adattare al <a href="https://it.m.wikipedia.org/wiki/Web_semantico">semantic-web</a>;</li>
-  <li>integrare eventuali servizi esterni, quali social, servizi di pagamento, pubblicitari e di gestione contenuti (come youtube);</li>
+  <li>integrare con eventuali servizi esterni, quali social, servizi di pagamento, servizi pubblicitari e di gestione contenuti (come youtube);</li>
   <li><strong>pubblicare</strong> sul web, scegliendo le caratteristiche del servizio di hosting o di cloud, i certificati di sicurezza e gli strumenti adatti per il trasferimento e la sincronizzazione delle pagine sul dominio.</li>
 </ul>
 
 <p>Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio HTML, degni di nota sono:
     <a href="https://www.html.it/guide/guida-html/">html.it</a> (in italiano),
+    <a href="https://www.html.it/guide/guida-html5/">html.it (versione 5)</a> ( Guida HTML5 in italiano),
     <a href="https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html">corsidia.com</a> (in italiano),
     <a href="https://it.m.wikibooks.org/wiki/HTML">it.wikibooks.org</a> (un buon manuale in italiano),
     <a href="https://www.w3schools.com/html/">w3schools.com</a> (in inglese),

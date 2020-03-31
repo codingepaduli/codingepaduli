@@ -1,0 +1,5 @@
+---
+title: Appunti di Laboratorio di TPSIT
+author: ME
+rights: (c) ME
+...
