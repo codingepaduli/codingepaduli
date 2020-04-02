@@ -5,20 +5,22 @@ BUILD="$CURRENT_DIR/build/"
 CONTENT_DIR="$CURRENT_DIR/.." # NO ending "/"
 RESOURCE_DIR="$CURRENT_DIR/../static"
 
-TITLE="title.txt"
 METADATA="metadata.xml"
-TOC="--toc --toc-depth=3"
-LATEX_CLASS="report"
 
-# REM Set LATEX_CLASS to article, report, book, memoir
 STYLESHEET="stylesheet.css"
 
 COVER_IMAGE="cover.jpg"
 
-IMAGE_PREPROCESS="replace_image_source.lua"
+IMAGE_PREPROCESS_FILTER_EBOOK="replace_image_source.lua"
+PAGEBREAK_PREPROCESS_FILTER="pagebreak.lua"
 
 BOOKNAME="Appunti-di-laboratorio-di-TPSIT"
 CHAPTERS="$CONTENT_DIR/content/coding/tools/Gradle.md $CONTENT_DIR/content/coding/tools/MacchineVirtuali.md"
+
+
+# Common pandoc command for all formats
+PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --top-level-division=section --toc --toc-depth=3 --lua-filter=$PUB_DIR$IMAGE_PREPROCESS_FILTER_EBOOK --lua-filter=$PUB_DIR$PAGEBREAK_PREPROCESS_FILTER --resource-path=$RESOURCE_DIR "  # --fail-if-warnings
+
 
 if [ -d $BUILD ]
 then
@@ -28,16 +30,25 @@ then
 	# mkdir "$BUILD"
 fi
 
+
 cd $CONTENT_DIR
-ROW="pandoc -o "$BUILD$BOOKNAME.epub" "$PUB_DIR$TITLE" "$CHAPTERS" "$TOC" --epub-metadata="$PUB_DIR$METADATA" --epub-cover-image="$PUB_DIR$COVER_IMAGE" --css="$PUB_DIR$STYLESHEET" --lua-filter="$PUB_DIR$IMAGE_PREPROCESS"  --resource-path="$RESOURCE_DIR" "
 
-echo "$ROW"
+echo "Generating ebook"
+PANDOC_COMMAND_EBOOK="$PANDOC_COMMAND -o $BUILD$BOOKNAME.epub $PUB_DIR/ebook_title.txt $CHAPTERS $TOC --epub-chapter-level=1 --epub-metadata=$PUB_DIR/epub_metadata.xml --epub-cover-image=$PUB_DIR$COVER_IMAGE --css=$PUB_DIR$STYLESHEET --listings" #
 
-$ROW
+$PANDOC_COMMAND_EBOOK
+
+# Generating ebook
+echo "Generating pdf"
+PANDOC_COMMAND_PDF="$PANDOC_COMMAND -o $BUILD$BOOKNAME.pdf $PUB_DIR/cover.md $PUB_DIR/ebook_title.txt  $CHAPTERS $TOC -t latex -V documentclass=scrreprt --css=$PUB_DIR$STYLESHEET " # --verbose --metadata-file=metadata.yml
+
+$PANDOC_COMMAND_PDF
+
 #@REM OPTION 1 for PDF: Use HTML5 rendering engine (wkhtmltopdf)
 #@REM pandoc -o %BUILD%%BOOKNAME%.pdf %PUB_DIR%%TITLE% %CHAPTERS% %TOC% -t html5 --standalone
 
 #@REM OPTION 2 for PDF: Use LATEX Library
+# REM Set documentclass to article, report, book, memoir
 #pandoc -o %BUILD%%BOOKNAME%.pdf %PUB_DIR%%TITLE% %CHAPTERS% %TOC% --standalone -t latex -V documentclass=%LATEX_CLASS%
 
 #cd %PUB_DIR%

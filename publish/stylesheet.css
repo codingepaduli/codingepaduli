@@ -10,8 +10,8 @@ h6 { text-align: left; }
 h1.title { }
 h2.author { }
 h3.date { }
-ol.toc { padding: 0; margin-left: 1em; }
-ol.toc li { list-style-type: none; margin: 0; padding: 0; }
+ol.toc { margin-left: 1em; padding: 0; }
+ol.toc li { margin: 0; padding: 0; list-style-type: none; }
 a.footnote-ref { vertical-align: super; }
-em, em em em, em em em em em { font-style: italic;}
+em, em em em, em em em em em { font-style: italic; }
 em em, em em em em { font-style: normal; }
