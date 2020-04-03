@@ -13,36 +13,35 @@ notesforauthors: "EditorConfig, installazione su Atom"
 summary: "EditorConfig, uno strumento per condividere le stesse impostazioni di stile e codifica tra gli sviluppatori che lavorano sullo stesso progetto con vari editors e IDEs"
 ---
 
-<p><a href="https://editorconfig.org">EditorConfig</a> è uno strumento per condividere le stesse impostazioni di stile e codifica tra gli sviluppatori, che lavorano sullo stesso progetto con vari editors e IDEs. 
-Alcuni di questi editors e IDEs sono giá abilitati all'uso di EditorConfig, mentre per altri è necessario installare un plugin (vedere sul sito la lista di editor giá abilitati o che prevedono dei plugin x supportarlo).</p>
+# EditorConfig
 
-<p>EditorConfig si configura creando, nella cartella principale del sito web, un file di testo con nome <code class="html">.editorconfig</code>, in cui impostare le opzioni di codifica, spaziatura e indentazione. Questo file va condiviso su tutti gli ambienti e tra tutti gli sviluppatori.</p>
+[EditorConfig](https://editorconfig.org) è uno strumento per condividere le stesse impostazioni di stile e codifica tra gli sviluppatori, che lavorano sullo stesso progetto con vari editors e IDEs. Alcuni di questi editors e IDEs sono giá abilitati all'uso di EditorConfig, mentre per altri è necessario installare un plugin (vedere sul sito la lista di editor giá abilitati o che prevedono dei plugin x supportarlo).
 
-<p>Il contenuto di questo file prevede poche regole:</p>
+EditorConfig si configura creando, nella cartella principale del sito web, un file di testo con nome ``.editorconfig``, in cui impostare le opzioni di codifica, spaziatura e indentazione. Questo file va condiviso su tutti gli ambienti e tra tutti gli sviluppatori.
 
-<pre>
-  <code class="html">
-    root = true
+Il contenuto di questo file prevede poche regole:
 
-    [*] 
-    end_of_line = lf
-    insert_final_newline = true
-    charset = utf-8
-    indent_style = space
-    indent_size = 4
-  </code>
-</pre>
+```ini
+root = true
 
-<p><strong>root</strong> impostato a <code class="html">true</code>, indica la cartella principale di progetto, altrimenti deve avere valore <code class="html">false</code>.</p>
+[*] 
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 4
+```
 
-<p><strong>[*]</strong> indica che le impostazioni presenti nelle righe successive devono essere applicate a tutti i files.</p>
+**root** impostato a ``true``, indica che è la cartella principale di progetto. In caso non fosse la cartella principale,  deve essere impostato a ``false``, in modo che la cartella principale viene cercata tra le .
 
-<p><strong>end_of_line</strong> indica il carattere di <a href="https://it.m.wikipedia.org/wiki/Ritorno_a_capo">"Ritorno a capo"</a> ("invio") da utilizzare nei file di testo. Puó essere il carattere <code class="html">LF</code> (utilizzato su Unix o Linux) oppure <code class="html">CRLF</code> (utilizzato su Windows).</p>
+**[*]** indica che le impostazioni presenti nelle righe successive devono essere applicate a tutti i files.
 
-<p><strong>insert_final_newline</strong> impostato a <code class="html">true</code>, viene aggiunta una riga vuota, se non presente, alla fine del file, ogni volta che si salva il file. Impostato a <code class="html">false</code> non sono aggiunte righe.</p>
+**end_of_line** indica il carattere di ["Ritorno a capo"](https://it.m.wikipedia.org/wiki/Ritorno_a_capo), cioè "invio", da utilizzare nei file di testo. Puó essere il carattere **LF** (utilizzato su Unix o Linux) oppure **CRLF** (utilizzato su Windows).
 
-<p><strong>charset</strong> indica la codifica del file, di default è UTF-8.</p>
+**insert_final_newline** impostato a ``true``, viene aggiunta una riga vuota, se non presente, alla fine del file, ogni volta che si salva il file. Impostato a ``false`` non sono aggiunte righe.
 
-<p><strong>indent_style</strong> indica il carattere per indentare il codice. Puó essere <code class="html">space</code> per usare lo spazio, oppure <code class="html">tab</code> per utilizzare il TAB.</p>
+**charset** indica la codifica del file, di default è UTF-8.
 
-<p><strong>indent_size</strong> indica il numero di spazi da usare per l'indentazione.</p>
+**indent_style** indica il carattere per indentare il codice. Puó essere ``space`` per usare lo spazio, oppure ``tab`` per utilizzare il carattere di tabulazione "TAB".
+
+**indent_size** indica il numero di spazi da usare per l'indentazione.

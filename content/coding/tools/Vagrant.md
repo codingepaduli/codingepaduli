@@ -12,6 +12,8 @@ notesforauthors: "Vagrant, uno strumento open-source per la creazione e la gesti
 summary: "Vagrant, uno strumento open-source per la creazione e la gestione di ambiente virtualizzato attraverso un workflow, seguendo la metodologia DevOps."
 ---
 
+# Vagrant
+
 Vagrant, uno strumento open-source per la creazione e la gestione di ambiente virtualizzato attraverso un workflow, seguendo la metodologia DevOps. 
 
 Per workflow si intende l'automazione parziale o totale di un'attività. Nel caso di Vagrant, il workflow consiste nella creazione e gestione delle macchine virtuali che fanno parte dell'ambiente virtuale.
@@ -412,4 +414,3 @@ config.push.define "ftp" do |push|
     push.password = "mypassword"
 end
 ```
-

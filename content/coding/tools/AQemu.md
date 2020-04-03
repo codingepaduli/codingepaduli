@@ -13,6 +13,8 @@ notesforauthors: "Aqemu, uno strumento open-source per la creazione di macchine 
 summary: "Aqemu, uno strumento open-source per la creazione di macchine virtuali."
 ---
 
+# AQemu
+
 Aqemu è l'interfaccia grafica che permette di interagire di Qemu, uno software open-source per la gestione di macchine virtuali. 
 
 Al primo avvio all'utente viene presentata la procedura guidata di configurazione dell'ambiente. 

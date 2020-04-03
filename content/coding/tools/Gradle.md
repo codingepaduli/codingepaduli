@@ -12,7 +12,9 @@ notesforauthors: "Gradle è un sistema open source per automatizzare le fasi di 
 summary: "Gradle è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo"
 ---
 
-Gradle è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo. 
+# Gradle
+
+[Gradle](https://gradle.org/) è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo. 
 
 Nel corso di questo articolo si descriveranno i concetti fondamentali (validi per qualsiasi tipo di progetto) e si utilizzerà Gradle per la gestione di un progetto Java.
 
@@ -76,27 +78,27 @@ Creato il progetto, è possibile eseguire, nella cartella principale di progetto
 
 - Task di pulizia (cancella la cartella ``build``):
   
-  ```bash
-  gradle clean
-  ```
+```bash
+  gradlew clean
+```
 
 - Task di compilazione dei sorgenti java, di creazione del pacchetto "jar" e di creazione dei pacchetti da distribuire:
   
-  ```bash
+```bash
   gradlew build
-  ```
+```
 
 - Task di esecuzione dell'applicazione java:
   
-  ```bash
+```bash
   gradlew run
-  ```
+```
 
 - Task per la generezione della documentazione dei sorgenti:
   
-  ```bash
+```bash
   gradlew javadoc
-  ```
+```
 
 Si possono anche eseguire più task con un singolo comando. Per pulire la cartella di "lavoro" ``build``, eseguire la compilazione, creare i pacchetti da distribuire ed eseguire l'applicazione, è possibile, sempre nella cartella principale di progetto, eseguire il comando:
 
@@ -186,7 +188,7 @@ plugins {
 
 Gradle fornisce di base una serie di plugin "core", che sono elencati all'indirizzo: [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html).
 
-Per importare un plugin "core" di Gradle è necessario semplicemente indicarne il nome nella sezione "plugins" del file `build.gradle`.
+Per importare un plugin "core" di Gradle è necessario semplicemente indicarne il nome nella sezione "plugins" del file ``build.gradle``.
 
 Tra i vari plugin core elenchiamo:
 
@@ -194,21 +196,21 @@ Tra i vari plugin core elenchiamo:
 
 - Il Base Plugin, che fornisce i vari task quali ``clean`` e ``build``; Deve essere configurato:
   
-  ```groovy
+```groovy
   plugins {
-   id 'base'
+      id 'base'
   }
-  ```
+```
 
-- Il Project Report Plugin, che fornisce funzionalità basilari per la gestione dei report di progetto attraverso il task ```projectReport``;
+- Il Project Report Plugin, che fornisce funzionalità basilari per la gestione dei report di progetto attraverso il task ``projectReport``;
   
   Questo plugin deve essere configurato:
   
-  ```groovy
+```groovy
   plugins {
       id 'project-report'
   }
-  ```
+```
 
 Ogni plugin importa uno specifico insieme di task. Se nel file ``build.gradle`` non fosse presente l'indicazione del plugin (che indica la tipologia di progetto), Gradle non saprebbe su cosa deve lavorare, quindi utilizzarebbe il plugin di ``init`` . I task disponibili sarebbero quindi:
 
@@ -243,10 +245,10 @@ plugins {
 
 I task sono le azioni che è possibile effettuare su un progetto.
 
-Per eseguire dei task, dalla cartella principale del progetto è necessario eseguire il comando `gradlew` passando i vari task come parametri:
+Per eseguire dei task, dalla cartella principale del progetto è necessario eseguire il comando ``gradlew`` passando i vari task come parametri:
 
 ```bash
-gradle task1 task2 task3
+gradlew task1 task2 task3
 ```
 
 E' possibile crearne di personalizzati, aggiungendoli al file ``build.gradle``, come nel seguente esempio:
@@ -323,28 +325,28 @@ Una congiruazione può dichiarare differenti tipi di dipendenze:
 
 - dipendenza da moduli (pubblicati sui repository, tipo Maven Central o Ivy). Si può usare nella seguente forma:
   
-  ```groovy
+```groovy
   dependencies {
       nomeConfigurazione: 'org.hibernate:hibernate:3.0.5'
   }
-  ```
+```
 
 - dipendenza da file presenti su disco. Si può usare nella seguente forma:
   
-  ```groovy
+```groovy
   dependencies {
       nomeConfigurazione: files('libs/lang.jar', 'libs/log4j.jar')
       nomeConfigurazione: fileTree('tools') { include '*.exe' }
   }
-  ```
+```
 
 - dipendenza tra progetti, da usare nella seguente forma:
   
-  ```groovy
+```groovy
   dependencies {
       nomeConfigurazione project(':shared')
   }
-  ```
+```
 
 Un concetto chiave sul quale Gradle basa la risoluzione delle dipendenze è la prospettiva con cui il produttore ed il consumatore vedono il progetto.
 
@@ -392,13 +394,13 @@ allora il consumatore che utilizza il nostro progetto riscontrerebbe errori di c
 Per visualizzare le dipendenze di tutte le configurazioni:
 
 ```bash
-./gradlew -q dependencies
+gradlew -q dependencies
 ```
 
 Per visualizzare le dipendenze di una singola configurazione
 
 ```bash
-./gradlew -q dependencies --configuration api
+gradlew -q dependencies --configuration api
 ```
 
 ## Scelta ed uso dei plugin per l'ambiente java
@@ -417,9 +419,9 @@ Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
 - ``java-platform``: è un plugin che permette la dichiarazione di una piattaforma, uno speciale tipo di componente software che non contiene sorgenti ma solo altre librerie. Non può essere usato nè in combinazione con il plugin ``java-library`` nè in combinazione con il plugin ``java-application``; 
 
-- ``war``: è un plugin che estende il plugin `java` ed è specializzato nella gestione di un'applicazione web;
+- ``war``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione web;
 
-- ``ear``: è un plugin che estende il plugin `java` ed è specializzato nella gestione di un'applicazione enterprise; Non sarà trattato in questo articolo basilare;
+- ``ear``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione enterprise; Non sarà trattato in questo articolo basilare;
 
 - ``gretty``: è un plugin che in questo articolo viene aggiunto per completezza; Serve ad automatizzare ulteriormente le fasi di progetto gestendo il server ed il deploy dell'applicazione.
 
@@ -432,7 +434,7 @@ I task a messi a disposizione dal plugin ``java`` sono i seguenti:
 - ``clean``                   : Pulizia della directory build;
 - ``compileJava``         : Compila i sorgenti java;
 - ``jar``                       : Crea il file jar;
-- `javadoc`                : Genera la documentazione Javadoc;
+- ``javadoc``                : Genera la documentazione Javadoc;
 - ``compileTestJava``  : Compila i sorgenti delle classi di test;
 - ``test``                     : Esegue gli "unit test";
 - ``build``                   : Esegue tutte le fasi di costruzione del progetto.
@@ -460,7 +462,7 @@ Allo stesso modo sono messe a disposizione, per le fasi di compilazione ed esecu
 - ``testCompileOnly``: dipendenze necessarie solo per la fase di compilazione dei tests;
 - ``testCompileClasspath`` estende ~~``testCompile``~~, ``testCompileOnly`` e ``testImplementation``;
 - ~~``testRuntime``~~: (Deprecated) estende ~~``runtime``~~ e ~~``testCompile``~~;  
-- ``testRuntimeOnly`` estende `runtimeOnly`: dipendenze necessarie solo per la fase di esecuzione dei tests;  
+- ``testRuntimeOnly`` estende ``runtimeOnly``: dipendenze necessarie solo per la fase di esecuzione dei tests;  
 - ``testRuntimeClasspath`` estende ~~``testRuntime``~~, ``testRuntimeOnly`` e ``testImplementation``.
 
 ## Plugin application
@@ -626,7 +628,7 @@ application {
 }
 ```
 
-Si nota che è stato aggiunto sia il plugin `application` per la gestione e l'esecuzione di un progetto java, sia il plugin `project-report` per la creazione dei report di progetto.
+Si nota che è stato aggiunto sia il plugin ``application`` per la gestione e l'esecuzione di un progetto java, sia il plugin ``project-report`` per la creazione dei report di progetto.
 
 E stata definita la lista (quasi completa) di task che si desidera vengano lanciati di default, sono state configurate delle voci da aggiungere al file ``Manifest.mf`` del pacchetto "jar" ed è indicata la classe java che contiene il metodo "main" da eseguire per lanciare l'applicazione.
 
@@ -677,6 +679,6 @@ gretty {
 }
 ```
 
-Si nota che è stato aggiunto sia il plugin `war` per la gestione di un'applicazione web in java, sia il plugin `project-report` per la creazione dei report di progetto, sia il plugin ``org.gretty`` per la gestione del servletContainer.
+Si nota che è stato aggiunto sia il plugin ``war`` per la gestione di un'applicazione web in java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``org.gretty`` per la gestione del servletContainer.
 
 E stata definita la lista di task che si desidera vengano lanciati di default, sono state configurate le opzioni relative al server da avviare per deployare ed eseguire l'applicazione.

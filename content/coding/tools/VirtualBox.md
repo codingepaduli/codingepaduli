@@ -13,6 +13,8 @@ notesforauthors: "VirtualBox, uno strumento open-source per la creazione di macc
 summary: "VirtualBox, uno strumento open-source per la creazione di macchine virtuali."
 ---
 
+# VirtualBox
+
 VirtualBox è uno software open-source per la gestione di macchine virtuali. 
 
 All'avvio si presenta con un'interfaccia molto semplice, che permette di gestire le preferenze, l'importazione, l'esportazione, la creazione e l'aggiunta di macchine virtuali.

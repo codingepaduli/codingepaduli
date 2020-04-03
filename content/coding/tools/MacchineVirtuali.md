@@ -13,6 +13,8 @@ notesforauthors: "Macchine virtuali, cosa sono, che vantaggi e svantaggi present
 summary: "Macchine virtuali, cosa sono, che vantaggi e svantaggi presentano."
 ---
 
+# Macchine virtuali
+
 Una macchina virtuale è una macchina che ha tutte le componenti hardware simulate da un'altra macchina (la macchina "host", dall'inglese "macchina ospitante"). Hard disk, processore, RAM, scheda di rete e tutte le altre componenti sono disponibili come risorse virtuali. E' possibile eseguire più macchine virtuali (chiamate "guest", dall'inglese "ospite") sulla macchina ospitante ("host")
 
 ## Vantaggi

@@ -13,6 +13,8 @@ notesforauthors: "Guida passo passo all'installazione di OpenJDK, l'ambiente di 
 summary: "Guida passo passo all'installazione di OpenJDK, l'ambiente di sviluppo per applicazioni Java"
 ---
 
+# OpenJDK
+
 OpenJDK è un'implementazione open-source della piattaforma Java, un insieme di software per lo sviluppo e l'esecuzione di applicazioni scritte in linguaggio Java.
 
 Il JDK rappresenta l'ambiente di sviluppo; Il JRE rappresenta l'ambiente di esecuzione che contiene la macchina virtuale Java (dall'inglese Java Virtual Machine);
