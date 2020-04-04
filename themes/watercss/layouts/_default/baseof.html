@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+    <head>
+        {{ partial "head.html" . }}
+        {{ partial "custom_head.html" . }}
+    </head>
+    <body>
+        {{ partial "header.html" . }}
+        <div id="content">
+        {{ block "main" . }}
+            {{ with .Content }}
+            <div>
+                {{ . }}
+            </div>
+            {{ end }}
+        {{ end }}
+        </div>
+        {{ partial "sidebar.html" . }}
+        {{ partial "footer.html" . }}
+        {{ partial "custom_footer.html" . }}
+    </body>
+</html>

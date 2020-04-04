@@ -1,0 +1,55 @@
+        {{ printf `<!-- include js files listed into the front matter yml to the head -->` | safeHTML }}
+        {{ range .Site.Params.customJS -}}
+            <script src="{{ . | relURL }}"></script>
+        {{- end }}
+
+
+<style>
+    /* Extra Small Devices, Phones */
+    @media screen and (min-width : 320px) {
+        img {
+            width: 100%;
+            object-fit: contain;
+            max-width: 80vw;
+            max-height: 75vh;
+        }
+    }
+    /* Small Devices, Tablets */
+    @media screen and (min-width : 768px) {
+        img {
+            width: 100%;
+            object-fit: contain;
+            max-width: 80vw;
+            max-height: 75vh;
+        }
+    }
+    /* Medium Devices, Desktops */
+    @media screen and (min-width : 992px) {
+        img {
+            width: 100%;
+            object-fit: contain;
+            max-width: 100vw;
+            max-height: 75vh;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media screen and (min-width : 1200px) {
+        img {
+            width: 100%;
+            object-fit: contain;
+            max-width: 100vw;
+            max-height: 75vh;
+        }
+    }
+
+    @media print {
+        img {
+            width: 100%;
+            object-fit: contain;
+            max-width: 80vw;
+            max-height: 40vh;
+        }
+    }
+
+</style>
