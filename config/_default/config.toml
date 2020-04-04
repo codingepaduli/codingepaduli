@@ -3,7 +3,7 @@ languageCode = "it"
 title = "Coding e Paduli"
 paginate = "10"
 
-theme = "mainroad"
+theme = "watercss" # hugo-academic mainroad watercss
 
 [params]
   author = "codingepaduli"
@@ -15,9 +15,21 @@ theme = "mainroad"
 
 # [[menu.main]] not needed, use "menu" in content/_index.html
 
+[mediaTypes]
+  [mediaTypes."text/html"]
+    suffixes = ["htm", "html", "HTM", "HTML"]
+
 [markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    ordered = false
+    startLevel = 1
   [markup.goldmark]
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = true
       xHTML = false
+    [markup.highlight]
+      codeFences = true
+      guessSyntax = true
+      tabWidth = 4
