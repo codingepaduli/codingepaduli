@@ -3,7 +3,7 @@ languageCode = "it"
 title = "Coding e Paduli"
 paginate = "10"
 
-theme = "watercss" # hugo-academic mainroad watercss
+theme = "mainroad" # hugo-academic mainroad watercss
 
 [params]
   author = "codingepaduli"
