@@ -1,0 +1,14 @@
+theme = "watercss" # hugo-academic mainroad watercss
+
+publishDir = "watercss-public"
+
+[mediaTypes]
+  [mediaTypes."text/html"]
+    suffixes = ["htm", "html", "HTM", "HTML"]
+
+[markup]
+  [markup.goldmark]
+    [markup.highlight]
+      codeFences = false
+      guessSyntax = false
+      tabWidth = 4
