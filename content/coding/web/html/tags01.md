@@ -5,13 +5,14 @@ description: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web
 date: 2019-07-16
 publishdate: 2019-07-16
 lastmod: 2019-07-16
-categories: ["html"]
-keywords: ["html"]
+categories: ["coding", "web", "HTML"]
+keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-notesforauthors: "HTML Lez. 02 - Prima pagina web ed etichette (tag) di testo"
 summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 ---
+
+<h1>Etichette (tag)</h1>
 
 <p>Un documento HTML è composto da un insieme di etichette, chiamate TAG (in inglese), che indicano l'inizio e la fine dei vari contenuti del documento. La struttura base di un documento HTML e' la seguente:</p>
 <pre>

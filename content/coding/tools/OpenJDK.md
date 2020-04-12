@@ -9,7 +9,6 @@ categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "Guida passo passo all'installazione di OpenJDK, l'ambiente di sviluppo per applicazioni Java"
 summary: "Guida passo passo all'installazione di OpenJDK, l'ambiente di sviluppo per applicazioni Java"
 ---
 

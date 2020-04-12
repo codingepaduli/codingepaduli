@@ -9,8 +9,8 @@ categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
-notesforauthors: "Set di link interessanti di cui tener traccia"
 summary: "Set di link interessanti di cui tener traccia"
+# menu identifier and text to show
 menu: "main"
 linktitle: "Interessanti"
 ---

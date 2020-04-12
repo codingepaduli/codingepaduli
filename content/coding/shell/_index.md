@@ -9,9 +9,5 @@ categories: ["coding", "shell"]
 keywords: ["coding", "shell"]
 draft: false
 toc: false
-notesforauthors: "Lezioni sulle shell (DOS - Bash - Powershell) e sulla programmazione di script"
 summary: "Lezioni sulle shell (DOS - Bash - Powershell) e sulla programmazione di script"
-# menu identifier and text to show
-# menu: "main"
-# linktitle: "Coding e tools"
 ---

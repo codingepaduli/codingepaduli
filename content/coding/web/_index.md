@@ -9,9 +9,5 @@ categories: ["coding", "web", "html"]
 keywords: ["coding", "web", "html"]
 draft: false
 toc: false
-notesforauthors: "Lezioni di programmazione sulle diverse Tecnologie Web"
 summary: "Lezioni di programmazione sulle diverse Tecnologie Web"
-# menu identifier and text to show
-# menu: "main"
-# linktitle: "Tecnologie Web"
 ---

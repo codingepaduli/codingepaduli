@@ -7,7 +7,7 @@ publishdate: 2020-04-10
 lastmod: 2020-04-10
 categories: ["coding", "tools", "shell", "powershell"]
 keywords: ["coding", "tools", "shell", "powershell"]
-draft: false
+draft: true
 toc: false
 summary: "Uso di CommandLet"
 ---
@@ -43,12 +43,6 @@ Un esempio di CommandLet utilizzato per pulire lo schermo è il seguente:
 Clear-Host
 ```
 
-Per una lista completa di CmdLet disponibili, eseguire il comando:
-
-```powershell
-Get-Command
-```
-
 ## Parametri
 
 I CmdLet possono prendere in input una lista di parametri. I parametri vengono passati al CmdLet come coppie "nome valore", col nome del parametro preceduto dal carattere ``-`` e separato dal valore da uno spazio o anche come lista di valori.
@@ -58,6 +52,8 @@ Tutti i CommandLet prendono una serie comune di argomenti, tra cui:
 - ``-?`` che mostra la guida in linea del CommandLet invocato; 
 - ``-WhatIf`` simula il CommandLet, ma non lo esegue;
 - ``-Verbose`` mostra un output molto dettagliato.
+
+
 
 Un esempio di CmdLet che prende in input un parametro e lo stampa in output nel terminale è il seguente:
 
@@ -120,10 +116,10 @@ La guida in linea mostrata è la seguente:
 ```powershell
 NAME
     Write-Output
-
+    
 SYNTAX
     Write-Output [-InputObject] <psobject> [-NoEnumerate] [<CommonParameters>]
-
+    
 ALIASES
     echo
 
@@ -131,7 +127,7 @@ REMARKS
     Get-Help cannot find the Help files for this cmdlet on this computer. 
         It is displaying only partial help.
         -- To download and install Help files for the module that 
-           includes this cmdlet, use Update-Help.
+           includes this cmdlet, use .
         -- To view the Help topic for this cmdlet online, type: 
            "Get-Help Write-Output -Online" or go to 
            https://go.microsoft.com/fwlink/?LinkID=2097117
@@ -147,4 +143,28 @@ La guida mostra:
 
 - il messaggio che indica che la guida completa non è presente e che è possibile scaricarla invocando il CmdLet ``Update-Help`` oppure si può visualizzare al link indicato nel messaggio.
 
-Aggiornata la guida in linea, verranno mostrate le descrizioni di tutti i parametri, di tutti gli oggetti in input ed in output, gli esempi ed i collegamenti consigliati.
+## Comandi
+
+Tra i CommandLet più usati, ci sono:
+
+- ``Get-Help``: mostra la guida in linea di powershell;
+
+- ``Get-Help -Name cmdLet``: mostra la guida in linea del comando passato come argomento;
+
+
+
+
+
+- ``Get-Command``: mostra la lista di comandi;
+
+- 
+
+- ``Write-Output "stringa"``: scrive la stringa passata come argomento in output;
+
+- 
+
+
+
+# Get-Command | where { $_.parameters.keys -Contains "WhatIf"}
+
+# Get-Command -commandType cmdlet | where { $_.parameters.keys -Contains "Confirm"}

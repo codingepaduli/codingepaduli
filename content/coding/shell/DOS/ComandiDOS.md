@@ -5,13 +5,14 @@ description: "Comandi della CLI di Windows"
 date: 2020-01-23
 publishdate: 2020-01-23
 lastmod: 2020-01-23
-categories: ["shell"]
-keywords: ["shell"]
+categories: ["coding", "shell", "DOS"]
+keywords: ["coding", "shell", "DOS"]
 draft: true
 toc: false
-notesforauthors: "Comandi della CLI di Windows"
 summary: "Comandi della CLI di Windows"
 ---
+
+<h1>Comandi DOS</h1>
 
 <p>La linea di comando è detta anche prompt dei comandi o Command	Line 
 	Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si accede 

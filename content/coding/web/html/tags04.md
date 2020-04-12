@@ -5,13 +5,14 @@ description: "HTML Lez. 05 - Tag audio e  video"
 date: 2019-08-22
 publishdate: 2019-08-22
 lastmod: 2019-08-22
-categories: ["html"]
-keywords: ["html"]
+categories: ["coding", "web", "HTML"]
+keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
-notesforauthors: "HTML Lez. 05 - tag audio e video con mime type, sottotitoli"
 summary: "HTML Lez. 05 - Tag audio e  video"
 ---
+
+<h1>Tag audio e  video</h1>
 
 <p>È consigliabile, per questioni di performance, proporre i contenuti audio e video in streaming. Comunque si possono proporre anche come file o collegamenti.</p>
 

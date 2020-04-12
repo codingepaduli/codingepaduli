@@ -9,8 +9,8 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-notesforauthors: "Software open source"
 summary: "Software open source"
+# menu identifier and text to show
 menu: "main"
 linktitle: "Open Source"
 ---

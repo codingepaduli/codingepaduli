@@ -5,10 +5,10 @@ description: "Gradle è un sistema open source per automatizzare le fasi di comp
 date: 2020-03-22
 publishdate: 2020-03-22
 lastmod: 2020-03-27
+categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "Gradle è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo"
 summary: "Gradle è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo"
 ---
 

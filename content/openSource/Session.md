@@ -9,9 +9,10 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-notesforauthors: "Software open source"
 summary: "Session, un'app open source per la messaggistica progettata per offrire comunicazioni criptate e orientate al rispetto della privacy."
 ---
+
+# Session
 
 Session, un'app open source per la messaggistica (simile a whatsapp e signal) progettata per offrire comunicazioni criptate e orientate al rispetto della privacy. 
 

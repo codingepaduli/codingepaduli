@@ -9,11 +9,7 @@ categories: ["webApp"]
 keywords: ["webApp"]
 draft: false
 toc: false
-notesforauthors: "Question and Answer WebApp, per domande sul diritto allo studio."
 summary: "Question and Answer WebApp, per domande sul diritto allo studio."
-# menu identifier and text to show
-# menu: "main"
-# linktitle: "Question And Answer WebApp"
 ---  
   
   <script type="text/javascript" src="/static/webApp/questionAndAnswer.js"></script>
@@ -45,6 +41,8 @@ summary: "Question and Answer WebApp, per domande sul diritto allo studio."
       word-break: normal;
     }
   </style>
+  
+  <h1>Question and Answer WebApp</h1>
   
   <form>
     <fieldset>

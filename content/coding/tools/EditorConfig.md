@@ -9,7 +9,6 @@ categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "EditorConfig, installazione su Atom"
 summary: "EditorConfig, uno strumento per condividere le stesse impostazioni di stile e codifica tra gli sviluppatori che lavorano sullo stesso progetto con vari editors e IDEs"
 ---
 

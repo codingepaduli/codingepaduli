@@ -5,10 +5,10 @@ description: "Vagrant, uno strumento open-source per la creazione e la gestione 
 date: 2020-03-19
 publishdate: 2020-03-19
 lastmod: 2020-03-19
+categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "Vagrant, uno strumento open-source per la creazione e la gestione di ambiente virtualizzato attraverso un workflow, seguendo la metodologia DevOps"
 summary: "Vagrant, uno strumento open-source per la creazione e la gestione di ambiente virtualizzato attraverso un workflow, seguendo la metodologia DevOps."
 ---
 

@@ -5,13 +5,14 @@ description: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che f
 date: 2019-07-25
 publishdate: 2019-07-25
 lastmod: 2019-07-25
-categories: ["html"]
-keywords: ["html"]
+categories: ["coding", "web", "HTML"]
+keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-notesforauthors: "HTML Lez. 03 - Tag di collegamento, liste, tabelle"
 summary: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno uso di attributi"
 ---
+
+<h1>Etichette con attributi</h1>
 
 <p>I tag possono avere degli <strong>attributi</strong> che servono ad aggiungere informazioni al tag. Alcuni attributi sono comuni a tutti i tag, ad esempio gli attributi <code>id</code> (che identifica in maniera univoca il tag) e <code>style</code> (che indica lo stile grafico del tag), mentre altri attributi sono specifici del singolo tag.</p>
 

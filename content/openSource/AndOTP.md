@@ -9,9 +9,10 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-notesforauthors: "Software open source"
 summary: "AndOTP, un'app open source per l'autenticazione a due fattori."
 ---
+
+# AndOTP
 
 AndOTP è un'app open source per l'autenticazione a due fattori. Si occupa della generazione di una password valida "una volta sola", dall'inglese "one time password" (OTP).
 

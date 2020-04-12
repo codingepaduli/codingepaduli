@@ -9,11 +9,13 @@ categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
-notesforauthors: "Set di link interessanti"
 summary: "Set di link interessanti"
 ---
 
+<h1>Altri link interessanti</h1>
+
 <h3>Gaming</h3>
+
 <ul>
   <li>
     <a href="https://archive.org/details/softwarelibrary_msdos">archive.org</a>: un archivio di giochi Ms-Dos, tra cui <a href="https://www.mobygames.com/game/dos/fire-ice/release-info">Fire and Ice</a>;

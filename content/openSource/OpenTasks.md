@@ -9,9 +9,10 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-notesforauthors: "Software open source"
 summary: "OpenTasks, un'app open source per la gestione delle proprie attivitá."
 ---
+
+# OpenTasks
 
 OpenTasks è un'app open source per la gestione delle proprie attivitá. 
 

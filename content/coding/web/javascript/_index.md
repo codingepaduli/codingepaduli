@@ -9,9 +9,5 @@ categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
-notesforauthors: "Lezioni sul linguaggio Javascript"
 summary: "Lezioni sul linguaggio Javascript"
-# menu identifier and text to show
-# menu: "main"
-# linktitle: "HTML"
 ---

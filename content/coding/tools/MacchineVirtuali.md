@@ -9,7 +9,6 @@ categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "Macchine virtuali, cosa sono, che vantaggi e svantaggi presentano."
 summary: "Macchine virtuali, cosa sono, che vantaggi e svantaggi presentano."
 ---
 

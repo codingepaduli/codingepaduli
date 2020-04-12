@@ -9,9 +9,10 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-notesforauthors: "Software open source"
 summary: "F-Droid, un'app store open source, simile a Google Play Store, per la distribuzione di app free ed open source (FOSS) per Android"
 ---
+
+# F-Droid
 
 F-Droid è un'app store, simile a Google Play Store, scaricabile liberamente dal sito [https://f-droid.org/](https://f-droid.org/). 
 

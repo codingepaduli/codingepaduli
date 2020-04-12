@@ -1,7 +1,7 @@
 ---
 type: "tools"
-title: "Aqemu"
-description: "Aqemu, uno strumento open-source per la creazione di macchine virtuali."
+title: "AQemu"
+description: "AQemu, uno strumento open-source per la creazione di macchine virtuali."
 date: 2020-03-15
 publishdate: 2020-03-15
 lastmod: 2020-03-15
@@ -9,8 +9,7 @@ categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "Aqemu, uno strumento open-source per la creazione di macchine virtuali."
-summary: "Aqemu, uno strumento open-source per la creazione di macchine virtuali."
+summary: "AQemu, uno strumento open-source per la creazione di macchine virtuali."
 ---
 
 # AQemu

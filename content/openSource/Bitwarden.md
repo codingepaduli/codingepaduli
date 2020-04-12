@@ -9,9 +9,10 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-notesforauthors: "Software open source"
 summary: "Bitwarden, un servizio di gestione credenziali/password open source."
 ---
+
+# Bitwarden
 
 Bitwarden è un servizio di gestione credenziali/password open source che memorizza le credenziali e le password dell'utente e permette di utilizzarle con un semplice "click" da un qualsiasi dispositivo (computer, smartphone, raspberry, ecc...).
 

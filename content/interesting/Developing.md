@@ -9,9 +9,10 @@ categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
-notesforauthors: "Set di link relativi al coding"
 summary: "Set di link relativi al coding"
 ---
+
+<h1>Link interessanti</h1>
 
 <h3>Scienze</h3>
 <ul>

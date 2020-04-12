@@ -9,7 +9,6 @@ categories: ["coding", "tools", "shell", "powershell"]
 keywords: ["coding", "tools", "shell", "powershell"]
 draft: false
 toc: false
-notesforauthors: "Introduzione a PowerShell"
 summary: "Introduzione a PowerShell"
 ---
 

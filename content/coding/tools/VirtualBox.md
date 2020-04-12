@@ -9,7 +9,6 @@ categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-notesforauthors: "VirtualBox, uno strumento open-source per la creazione di macchine virtuali."
 summary: "VirtualBox, uno strumento open-source per la creazione di macchine virtuali."
 ---
 

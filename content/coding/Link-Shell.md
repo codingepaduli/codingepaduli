@@ -1,5 +1,5 @@
 ---
-type: "coding"
+type: "link"
 title: "Shell"
 description: "Lezioni sulle shell (DOS - Bash - Powershell) e sulla programmazione di script"
 date: 2020-03-13
@@ -9,7 +9,6 @@ categories: [""]
 keywords: [""]
 draft: false
 toc: false
-notesforauthors: ""
 summary: "Lezioni sulle shell (DOS - Bash - Powershell) e sulla programmazione di script nella sezione <a href='/coding/shell'>Shell</a>"
 ---
 

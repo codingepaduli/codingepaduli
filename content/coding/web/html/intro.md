@@ -5,14 +5,14 @@ description: "HTML Lez. 01 - Introduzione"
 date: 2019-07-15
 publishdate: 2019-07-15
 lastmod: 2019-07-15
-categories: ["html"]
-keywords: ["html"]
+categories: ["coding", "web", "HTML"]
+keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-notesforauthors: "HTML Lez. 01 - Introduzione al linguaggio HTML ed alla creazione, validazione e pubblicazione di pagine web"
 summary: "HTML Lez. 01 - Introduzione al linguaggio HTML ed alla creazione, validazione e pubblicazione di pagine web"
-menu: "html"
 ---
+
+<h1>Introduzione al linguaggio HTML</h1>
 
 <p>Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).</p>
 

@@ -1,17 +1,18 @@
 ---
 type: "html"
-title: "HTML Lez. 04 - Validazione e codifica UTF-8"
+title: "HTML Lez. 04 - Validazione, codifica UTF-8, HTML entities ed emoji"
 description: "HTML Lez. 04 - Validazione del codice HTML e codifica UTF-8 delle pagine web, HTML entities ed emoji"
 date: 2019-07-30
 publishdate: 2019-07-30
 lastmod: 2019-07-30
-categories: ["html"]
-keywords: ["html"]
+categories: ["coding", "web", "HTML"]
+keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-notesforauthors: "HTML Lez. 04 - Spiegati i messaggi di validazione, la codifica UNICODE, gli html entities e l'uso di emoji"
 summary: "HTML Lez. 04 - Validazione del codice HTML e codifica UTF-8 delle pagine web, HTML entities ed emoji"
 ---
+
+<h1>Validazione, codifica UTF-8, HTML entities ed emoji</h1>
 
 <p>É importante che il documento HTML sia salvato con codifica <a href="https://it.wikipedia.org/wiki/UTF-8">UTF-8</a>, in modo tale da poter inserire nel documento qualsiasi carattere o simbolo, dall'alfabeto cinese a quello arabo, dalle lingue morte come latino e greco ai simboli matematici, alle figure geometriche, fino agli emoticons ed emoji.</p>
 
