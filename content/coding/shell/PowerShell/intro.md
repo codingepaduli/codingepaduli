@@ -24,7 +24,9 @@ PowerShell ha una lista estendibile di comandi che è possibile eseguire. Ogni c
 
 Il fatto che i CmdLet lavorino con oggetti permette la gestione delle informazioni in maniera strutturata, evitando di ricorrere alla scansione del testo in input per accedere ad una specifica informazione o in output per scrivere un particolare dato.
 
-Per questioni di sicurezza, le impostazioi predefinite prevedono che non sia possibile eseguire gli script con il doppio click e che gli script debbano essere firmati. 
+Powershell usa i provider per gestire i dati memorizzati. I provider sono moduli che fanno parte del ``.Net Framework`` (lo stesso di PowerShell) e che forniscono un accesso specializzato ad una collezione di dati. Vi è un provider che gestisce file e cartelle, uno che gestire gli alias, uno che gestire le variabili d'ambiente, ecc... E' possibile scrivere nuovi provider per gestire altre collezioni di dati.
+
+Per questioni di sicurezza, le impostazioni predefinite prevedono che non sia possibile eseguire gli script con il doppio click e che gli script debbano essere firmati. 
 
 Per eseguire uno script, cliccare sullo script con il secondo tasto e scegliere la voce "Esegui con powershell".
 

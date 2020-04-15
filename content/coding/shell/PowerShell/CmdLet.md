@@ -2,9 +2,9 @@
 type: "powershell"
 title: "02 - Uso di CommandLet"
 description: "Uso di CommandLet"
-date: 2020-04-10
-publishdate: 2020-04-10
-lastmod: 2020-04-10
+date: 2020-04-11
+publishdate: 2020-04-11
+lastmod: 2020-04-11
 categories: ["coding", "tools", "shell", "powershell"]
 keywords: ["coding", "tools", "shell", "powershell"]
 draft: false
@@ -79,7 +79,13 @@ Hello World!!
 
 ## Alias
 
-Powershell associa ai diversi CmdLet conosciuti una serie di alias gia familiari a chi proviene da altre shell, facilitando il passaggio a Powershell.
+Powershell associa ai diversi CmdLet disponibili una serie di alias gia familiari a chi proviene da altre shell, facilitando il passaggio a Powershell.
+
+Per ottenere la lista completa di alias, si usa la CmdLet:
+
+```powershell
+Get-Alias
+```
 
 E' possibile personalizzare la lista di alias per i CmdLet, aggiungendone di nuovi con il comando:
 
@@ -99,7 +105,7 @@ E' possibile cancellare un alias con il CmdLet:
 Remove-Alias -Name "wo"
 ```
 
-Per visualizzare il comando corrispondente ad un alias si utilizza il CmdLet seguente:
+Per visualizzare il CommandLet corrispondente ad un alias, si utilizza il CmdLet seguente:
 
 ```powershell
 Get-Alias "Write-Output"
