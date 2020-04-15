@@ -14,12 +14,12 @@ COVER_IMAGE="cover.jpg"
 IMAGE_PREPROCESS_FILTER_EBOOK="replace_image_source.lua"
 PAGEBREAK_PREPROCESS_FILTER="pagebreak.lua"
 
-BOOKNAME="Appunti-di-laboratorio-di-TPSIT"
-CHAPTERS="$CONTENT_DIR/content/coding/tools/Gradle.md $CONTENT_DIR/content/coding/tools/MacchineVirtuali.md"
+BOOKNAME="Appunti-di-laboratorio"
+CHAPTERS="$CONTENT_DIR/content/coding/shell/PowerShell/intro.md $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet.md $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-Path.md $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-FileCartelle.md"
 
 
 # Common pandoc command for all formats
-PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --top-level-division=section --toc --toc-depth=3 --lua-filter=$PUB_DIR$IMAGE_PREPROCESS_FILTER_EBOOK --lua-filter=$PUB_DIR$PAGEBREAK_PREPROCESS_FILTER --resource-path=$RESOURCE_DIR "  # --fail-if-warnings
+PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --toc --toc-depth=3 --lua-filter=$PUB_DIR$IMAGE_PREPROCESS_FILTER_EBOOK --lua-filter=$PUB_DIR$PAGEBREAK_PREPROCESS_FILTER --resource-path=$RESOURCE_DIR "  # --fail-if-warnings --top-level-division=section
 
 
 if [ -d $BUILD ]
@@ -34,13 +34,13 @@ fi
 cd $CONTENT_DIR
 
 echo "Generating ebook"
-PANDOC_COMMAND_EBOOK="$PANDOC_COMMAND -o $BUILD$BOOKNAME.epub $PUB_DIR/ebook_title.txt $CHAPTERS $TOC --epub-chapter-level=1 --epub-metadata=$PUB_DIR/epub_metadata.xml --epub-cover-image=$PUB_DIR$COVER_IMAGE --css=$PUB_DIR$STYLESHEET --listings" #
+PANDOC_COMMAND_EBOOK="$PANDOC_COMMAND --output=$BUILD$BOOKNAME.epub $PUB_DIR/ebook_title.txt $CHAPTERS --epub-chapter-level=1 --epub-metadata=$PUB_DIR/epub_metadata.xml --epub-cover-image=$PUB_DIR$COVER_IMAGE --css=$PUB_DIR$STYLESHEET --listings" #
 
 $PANDOC_COMMAND_EBOOK
 
 # Generating ebook
 echo "Generating pdf"
-PANDOC_COMMAND_PDF="$PANDOC_COMMAND -o $BUILD$BOOKNAME.pdf $PUB_DIR/cover.md $PUB_DIR/ebook_title.txt  $CHAPTERS $TOC -t latex -V documentclass=scrreprt --css=$PUB_DIR$STYLESHEET " # --verbose --metadata-file=metadata.yml
+PANDOC_COMMAND_PDF="  $PANDOC_COMMAND --output=$BUILD$BOOKNAME.pdf $PUB_DIR/cover.md $PUB_DIR/ebook_title.txt  $CHAPTERS     --to=latex --pdf-engine=xelatex --top-level-division=chapter --number-sections --variable=geometry:margin=2cm --highlight-style=tango --css=$PUB_DIR$STYLESHEET " # --verbose --metadata-file=metadata.yml -V documentclass=scrreprt
 
 $PANDOC_COMMAND_PDF
 
