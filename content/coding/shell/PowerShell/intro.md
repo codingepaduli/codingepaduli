@@ -24,22 +24,4 @@ PowerShell ha una lista estendibile di comandi che è possibile eseguire. Ogni c
 
 Il fatto che i CmdLet lavorino con oggetti permette la gestione delle informazioni in maniera strutturata, evitando di ricorrere alla scansione del testo in input per accedere ad una specifica informazione o in output per scrivere un particolare dato.
 
-Powershell usa i provider per gestire i dati memorizzati. I provider sono moduli che fanno parte del ``.Net Framework`` (lo stesso di PowerShell) e che forniscono un accesso specializzato ad una collezione di dati. Vi è un provider che gestisce file e cartelle, uno che gestire gli alias, uno che gestire le variabili d'ambiente, ecc... E' possibile scrivere nuovi provider per gestire altre collezioni di dati.
-
-Per questioni di sicurezza, le impostazioni predefinite prevedono che non sia possibile eseguire gli script con il doppio click e che gli script debbano essere firmati. 
-
-Per eseguire uno script, cliccare sullo script con il secondo tasto e scegliere la voce "Esegui con powershell".
-
-Le politiche di esecuzione degli script sono:
-
-- Restricted: script non permessi;
-
-- AllSigned: script eseguiti solo se firmati;
-
-- RemoteSigned: script eseguiti se propri o se firmati;
-
-- Unrestricted: script eseguiti sempre.
-
-Per impostare la politica di esecuzione degli script anche se non firmati, è necessario eseguire il comando ``Set-ExecutionPolicy Unrestricted``;
-
 Tra le guide disponibili online, quella sul sito del produttore è completamente in italiano [Guida a Powershell](https://docs.microsoft.com/it-it/powershell/scripting/overview?view=powershell-7 "Guida a Powershell"), oltre ad altre guide in inglese come [https://www.guru99.com/powershell-tutorial.html](https://www.guru99.com/powershell-tutorial.html "Guida a powershell") ed a [https://www.tutorialspoint.com/powershell/index.htm](https://www.tutorialspoint.com/powershell/index.htm "Guida a powershell").

@@ -7,7 +7,7 @@ publishdate: 2020-04-13
 lastmod: 2020-04-13
 categories: ["coding", "tools", "shell", "powershell"]
 keywords: ["coding", "tools", "shell", "powershell"]
-draft: true
+draft: false
 toc: false
 summary: "Filesystem - Gestione percorsi"
 ---
