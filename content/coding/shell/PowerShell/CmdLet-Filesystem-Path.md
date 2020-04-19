@@ -1,6 +1,6 @@
 ---
 type: "powershell"
-title: "03 - Filesystem - Gestione percorsi"
+title: "04 - Filesystem - Gestione percorsi"
 description: "Filesystem - Gestione percorsi"
 date: 2020-04-13
 publishdate: 2020-04-13
@@ -20,9 +20,11 @@ Il provider ``FileSystem`` fornisce l'accesso al filesystem, ovvero gestisce fil
 
 Essendo un provider di tipo **gerarchico**, l'accesso alle risorse è gestito attraverso un percorso.
 
+Questo provider fornisce più punti d'accesso al filesystem. L'accesso al filesystem su ambienti Windows è fornito attraverso i drive ``c:``, ``d:``, ..., ognuno dei quali fornisce un punto d'accesso ad un disco logico. Su ambiente Gnu/Linux il punto d'accesso è fornito dal drive **root** indicato dal simbolo ``/``.
+
 Il percorso in cui si posiziona l'utente è detto **percorso corrente**. Quando l'utente avvia PowerShell, il percorso corrente viene mostrato.
 
-```powershell
+```
 PowerShell 7.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
@@ -44,11 +46,9 @@ Ogni file o cartella è identificato attraverso un percorso.
 
 Su sistema operativo Windows, il percorso è composto dalla lettera dell'unità che identifica il disco logico (la partizione), dalle cartelle da attraversare per raggiungere il file o la cartella, ed opzionalmente dal nome del file. Il carattere ``\`` è utilizzato per separare i nomi delle cartelle da attraversare.
 
-
-
 Si prenda ad esempio il seguente percorso:
 
-```powershell
+```
 c:\Windows\Temp\temp.txt
 ```
 
@@ -62,7 +62,7 @@ Nei sistemi operativi Gnu/Linux, Mac e Unix, i dischi non hanno una lettera di u
 
 Si prenda ad esempio il seguente percorso:
 
-```powershell
+```
 /home/temp/temp.txt
 ```
 
@@ -72,7 +72,7 @@ Il percorso indica che il file si trova nella partizione di root ``/``, le carte
 
 Si consideri un ulteriore esempio di percorso:
 
-```powershell
+```
 c:\utenti\
 ```
 
@@ -90,7 +90,7 @@ Il sistema operativo si occupa della risoluzione dei percorsi contenenti i simbo
 
 Prendendo ad esempio il percorso:
 
-```powershell
+```
 c:\utenti\prof\Documenti\.\elenco.txt
 ```
 
@@ -104,7 +104,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Docume
 
 Prendendo ad esempio il percorso:
 
-```powershell
+```
 c:\utenti\.\prof\.\Documenti\.\elenco.txt
 ```
 
@@ -128,7 +128,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Docume
 
 Prendendo ad esempio il percorso:
 
-```powershell
+```
 /home/prof/./Documenti/./elenco.txt
 ```
 
@@ -146,7 +146,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Docume
 
 Prendendo ad esempio il percorso:
 
-```powershell
+```
 .\elenco.txt
 ```
 
@@ -160,7 +160,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``prof``
 
 Prendendo ad esempio il percorso:
 
-```powershell
+```
 c:\utenti\prof\Documenti\..\elenco.txt
 ```
 
@@ -174,7 +174,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``prof``
 
 Prendendo ad esempio il percorso:
 
-```powershell
+```
 c:\utenti\.\prof\..\mario\..\elenco.txt
 ```
 
@@ -202,7 +202,9 @@ La gestione del percorso è svolta principalmente dalle seguenti CmdLet:
 
 - ``Set-Location``: Imposta la cartella indicata come cartella di lavoro corrente;
 
-- ``Test-Path``: Verifica l'esistenza del file o della cartella.
+- ``Test-Path``: Verifica l'esistenza del file o della cartella;
+
+- ``Get-PSDrive``: Restituisce la lista di drive disponibili nel sistema (le lettere delle ).
 
 ### Impostare la cartella di lavoro corrente
 
@@ -268,9 +270,9 @@ I parametri indicati nella sintassi hanno il seguente significato:
   
   - ``Container``: una cartella;
   
-  - ``Leaf`` un file o un collegamento;
+  - ``Leaf``: un file o un collegamento;
   
-  - ``Any`` qualsiasi tipo.
+  - ``Any``: qualsiasi tipo.
 
 Per verificare l'esistenza di una cartella, si usa il comando:
 
@@ -289,3 +291,34 @@ Per verificare che il file indicato esista e sia effettivamente un file, si usa 
 ```powershell
 Test-Path -Path "file.txt" -PathType "leaf"
 ```
+
+### Ottenere la lista di drive disponibili
+
+Per visualizzare o ottenere la lista di drive disponibili nel sistema si utilizza la CmdLet ``Get-PSDrive``, che ha la seguente sintassi:
+
+```powershell
+Get-PSDrive
+```
+
+Esempio:
+
+```powershell
+Get-PSDrive
+```
+
+Output:
+```
+Name           Used (GB)     Free (GB) Provider      Root
+----           ---------     --------- --------      ----
+Alias                                  Alias
+C                 202.06      23718.91 FileSystem    C:\
+Cert                                   Certificate   \
+D                1211.06     123642.32 FileSystem    D:\
+Env                                    Environment
+Function                               Function
+HKCU                                   Registry      HKEY_CURRENT_USER
+HKLM                                   Registry      HKEY_LOCAL_MACHINE
+Variable                               Variable
+```
+
+Dall'output mostrato si notano, tra gli altri, i drive ``c:`` e ``d:`` per l'accesso ai dischi logici. 

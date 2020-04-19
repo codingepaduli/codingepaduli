@@ -50,7 +50,7 @@ Il CommandLet utilizzato per scrivere sul flusso di output è ``Write-Output`` c
 ```powershell
 SYNTAX
     Write-Output [-InputObject] <PSObject[]>[<CommonParameters>]
-    
+
 ALIASES
     echo
 ```
@@ -66,6 +66,7 @@ Write-Output "Hello" "World" "!!"
 ```
 
 L'output è il seguente:
+
 ```powershell
 Hello
 World
@@ -79,6 +80,7 @@ echo "Hello" "World" "!!"
 ```
 
 L'output è il seguente:
+
 ```powershell
 Hello
 World
@@ -129,6 +131,7 @@ Write-Debug "Hello"
 ```
 
 Il comando non presenta nessun output, perchè le impostazioni predefinite non visualizzano sul terminale lo stream di output. Nel caso fosse attivato, l'output sarebbe il seguente:
+
 ```powershell
 DEBUG: Hello
 ```
@@ -253,12 +256,33 @@ $nome = Read-Host "Inserisci il nome" -AsSecureString
 E' possibile aggiungere commenti attraverso il carattere ``#``. In caso di commenti su più righe, questi vanno racchiusi tra i simboli di apertura e chiusura commento rappresentati da ``<#`` e ``#>``.
 
 Ad esempio:
+
 ```powershell
  # Questo è un commento
- 
+
  <# Questo è un 
     commento su 
     più righe #>
+```
+
+## Creazione e rimozione di Alias
+
+E' possibile personalizzare la lista di alias per i CmdLet, aggiungendone di nuovi con il comando:
+
+```powershell
+Set-Alias -Name "wo" -Value "Write-Output"
+```
+
+A questo punto è possibile utilizzare l'alias `wo` al posto di `Write-Output`, come nell'esempio seguente:
+
+```powershell
+wo "Hello"
+```
+
+E' possibile cancellare un alias con il CmdLet:
+
+```powershell
+Remove-Alias -Name "wo"
 ```
 
 ## Primi script
@@ -270,19 +294,19 @@ Prima di creare uno script è consigliato impostare le opzioni di salvataggio (q
 E' possibile creare il primo script salvando le seguenti istruzioni in un file ``esempio.ps1``:
 
 ```powershell
- # Questo è il primo script
- 
- # Scrivo un messaggio
- Write-Host "Inserisci il nome"
- 
-  <# procedo con la lettura
+# Questo è il primo script
+
+# Scrivo un messaggio
+Write-Host "Inserisci il nome"
+
+<# procedo con la lettura
     del nome dell'utente #>
-  
-  $nome = Read-Host
-  
-  # Scrivo il nome sullo stream di errore
-  Write-Error $nome
-``` 
+
+$nome = Read-Host
+
+# Scrivo il nome sullo stream di errore
+Write-Error $nome
+```
 
 Per questioni di sicurezza, le impostazioni predefinite prevedono che l'esecuzione di script sia disabilitata. Per verificare le impostazioni, aprire il terminale di PowerShell ed eseguire:
 

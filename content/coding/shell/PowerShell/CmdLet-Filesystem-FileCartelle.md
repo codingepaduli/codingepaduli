@@ -1,13 +1,13 @@
 ---
 type: "powershell"
-title: "04 - Filesystem - Gestione file e cartelle"
+title: "05 - Filesystem - Gestione file e cartelle"
 description: "Gestione file e cartelle"
 date: 2020-04-15
 publishdate: 2020-04-15
 lastmod: 2020-04-15
 categories: ["coding", "tools", "shell", "powershell"]
 keywords: ["coding", "tools", "shell", "powershell"]
-draft: true
+draft: false
 toc: false
 summary: "Gestione file e cartelle"
 ---
@@ -16,14 +16,12 @@ summary: "Gestione file e cartelle"
 
 La gestione di file e cartelle è gestita dal provider ``Filesystem``. 
 
-Questo provider permette la selezione multipla di file e cartelle;
-
 ## CmdLet per la gestione di file e cartelle
 
 La gestione di file e cartelle è fatta dalle seguenti CmdLet:
 
 - ``Copy-Item``: copia un file, una cartella o una voce di registro;
-- ``Get-Item``: restituisce il file o la cartella riferita dal percorso;
+- ``Get-Item``: accedere al file o alla cartella riferita dal percorso;
 - ``Get-ChildItem``: restituisce i file contenuti in una cartella o le voci di registro contenute in un percorso;
 - ``Move-Item``: sposta un file, una cartella o una voce di registro;
 - ``New-Item``: crea un file, una cartella o una voce di registro;
@@ -35,26 +33,29 @@ La gestione di file e cartelle è fatta dalle seguenti CmdLet:
 La creazione di un file o una cartella avviene con la CmdLet ``New-Item``, che ha la seguente sintassi:
 
 ```powershell
-New-Item [-Path] <String[]> -Name <String> [-ItemType <String>] [-Value <Object>] [-Force]
+New-Item [-Path] <String[]> -Name <String> 
+    [-ItemType <String>] [-Value <Object>] [-Force]
 ```
 
 I parametri indicati nella sintassi hanno il seguente significato:
 
-- ``Path`` indica il percorso in cui creare il file o la cartella;
+- ``Path``: indica il percorso in cui creare il file o la cartella;
 
-- ``Name`` indica il nome del file o della cartella da creare;
+- ``Name``: indica il nome del file o della cartella da creare;
 
-- ``Value`` indica il contenuto iniziale del nuovo file o il file a cui si fa riferimento in un nuovo collegamento;
+- ``Value``: indica il contenuto iniziale del nuovo file o il file a cui si fa riferimento in un nuovo collegamento;
 
-- ``Force`` forza l'eliminazione di file nascosti o di sola lettura;
+- ``Force``: forza l'eliminazione di file nascosti o di sola lettura;
 
-- ``ItemType`` serve ad indicare il tipo di contenuto da creare e può assumere uno dei seguenti valori:
+- ``ItemType``: serve ad indicare il tipo di contenuto da creare e può assumere uno dei seguenti valori:
   
-  - File;
+  - ``File``;
   
-  - Directory;
+  - ``Directory``;
   
-  - SymbolicLink;
+  - ``SymbolicLink``;
+
+Esempi d'uso:
 
 Per creare un file di nome "nuovo.txt" nella locazione di lavoro corrente si usa quindi il seguente comando:
 
@@ -74,10 +75,10 @@ Per creare un file di nome "nuovo.txt" alla locazione "/" e con il contenuto ini
 New-Item -Path "/" -Name "nuovo.txt" -ItemType "file" -Value "nuovo file"
 ```
 
-Per creare una directory, si usa il comando:
+Per creare una cartella, si usa il comando:
 
 ```powershell
-New-Item -Name "nuovo.txt" -ItemType "directory"
+New-Item -Name "nuovo.txt" -ItemType "Directory"
 ```
 
 Per creare un collegamento simbolico, si usa il comando:
@@ -93,25 +94,26 @@ Per una descrizione accurata della CommandLet, si rimanda alla guida online.
 La rimozione di un file, una cartella o un collegamento avviene con il CmdLet ``Remove-Item``, che ha la seguente sintassi:
 
 ```powershell
-Remove-Item [-Path] <String[]> [-Filter <String>] [-Include <String[]>]
-      [-Exclude <String[]>] [-Recurse] [-Force]
+Remove-Item [-Path] <String[]> [-Filter <String>] 
+    [-Include <String[]>] [-Exclude <String[]>] 
+    [-Recurse] [-Force]
 ```
 
 I parametri indicati nella sintassi hanno il seguente significato:
 
-- ``Path`` indica il percorso in cui eliminare file o cartelle;
+- ``Path``: indica il percorso in cui eliminare file o cartelle;
 
-- ``Filter`` indica di selezionare i file o le cartelle corrispondenti al filtro indicato;
+- ``Filter``: indica di selezionare i file o le cartelle corrispondenti al filtro indicato;
 
-- ``Include`` indica uno schema per selezionare file o cartelle da eliminare;
+- ``Include``: indica uno schema per selezionare file o cartelle da eliminare;
 
-- ``Exclude`` indica uno schema per escludere file o cartelle dall'eliminazione;
+- ``Exclude``: indica uno schema per escludere file o cartelle dall'eliminazione;
 
-- ``Recurse`` elimina ricorsivamente anche tutte le voci innestate;
+- ``Recurse``: elimina ricorsivamente anche tutte le voci innestate;/
 
-- ``Force`` forza l'eliminazione di file nascosti o di sola lettura.
+- ``Force``: forza l'eliminazione di file nascosti o di sola lettura.
 
-Per eliminare un file si esegue il comando:
+Esempio d'uso:
 
 ```powershell
 Remove-Item -Path "C:\Test\hidden-RO-file.txt"
@@ -141,11 +143,11 @@ Rename-Item [-Path] <String> [-NewName] <String> [-Force]
 
 I parametri indicati nella precedente sintassi hanno il seguente significato:
 
-- ``Path`` indica il percorso in cui testare file o cartelle;
-- ``NewName`` indica il nuovo nome da assegnare;
-- ``Force`` forza la rinominazione di un file nascosto o di sola lettura;
+- ``Path``: indica il percorso in cui testare file o cartelle;
+- ``NewName``: indica il nuovo nome da assegnare;
+- ``Force``: forza la rinominazione di un file nascosto o di sola lettura;
 
-Per rinominare un file si usa il comando:
+Esempio d'uso:
 
 ```powershell
 Rename-Item -Path "daily_file.txt" -NewName "monday_file.txt"
@@ -161,13 +163,13 @@ Move-Item [-Path] <String[]> [[-Destination] <String>] [-Force]
 
 I parametri indicati nella sintassi hanno il seguente significato:
 
-- ``Path`` indica il file o la cartella da spostare;
+- ``Path``: indica il file o la cartella da spostare;
 
-- ``Destination`` indica dove spostare il file o la cartella;
+- ``Destination``: indica dove spostare il file o la cartella;
 
-- ``Force`` forza lo spostamento di file nascosti o di sola lettura;
+- ``Force``: forza lo spostamento di file nascosti o di sola lettura;
 
-Per spostare un file o una cartella si usa il comando:
+Esempio d'uso:
 
 ```powershell
 Move-Item -Path "C:\test.txt" -Destination "E:\Temp\tst.txt"
@@ -183,14 +185,75 @@ Copy-Item [-Path] <String[]> [[-Destination] <String>] [-Force]
 
 I parametri indicati nella sintassi hanno il seguente significato:
 
-- ``Path`` indica il file o la cartella da spostare;
+- ``Path``: indica il file o la cartella da spostare;
 
-- ``Destination`` indica dove spostare il file o la cartella;
+- ``Destination``: indica dove spostare il file o la cartella;
 
-- ``Force`` forza lo spostamento di file nascosti o di sola lettura;
+- ``Force``: forza lo spostamento di file nascosti o di sola lettura;
 
-Per spostare un file o una cartella si usa il comando:
+Esempio d'uso:
 
 ```powershell
 Copy-Item -Path "C:\test.txt" -Destination "E:\Temp\tst.txt"
+```
+
+### Accesso al file o alla cartella
+
+Per accedere al file o alla cartella indicata nel percorso si usa il CmdLet ``Get-Item`` che ha la seguente sintassi:
+
+```powershell
+Get-Item [-Path] <String[]> [-Force]
+```
+
+I parametri indicati nella precedente sintassi hanno il seguente significato:
+
+- ``Path``: indica il percorso del file o della cartella a cui accedere;
+- ``Force``: forza l'accesso ad un file nascosto o di sola lettura;
+
+
+Esempio d'uso:
+
+```powershell
+Get-Item -Path "C:\test.txt"
+```
+
+### Accesso ai file e cartelle contenute in un percorso
+
+Per accedere ai file e cartelle contenute in un percorso si usa il CmdLet ``Get-ChildItem`` che ha la seguente sintassi:
+
+```powershell
+Get-ChildItem [-Path] <String[]> [-Recurse] [-Depth <uint32>]
+    [-FollowSymlink] [-Directory] [-File] [-Hidden] [-ReadOnly]
+```
+
+I parametri indicati nella precedente sintassi hanno il seguente significato:
+
+- ``Path``: indica il percorso del file o della cartella a cui accedere;
+- ``Recurse``: effettua un accesso ricorsivo a tutti i file e cartelle contenuti nel percorso indicato e ne restituisce tutti i file e cartelle trovati;
+- ``Depth``: indica la profondità massima di sotto-cartelle a cui accedere durante l'operazione ricorsiva;
+- ``FollowSymlink``: indica di accedere anche ai link simbolici durante l'operazione di accesso ricorsivo e restituire i file e cartelle contenuti in questi ultimi;
+- ``Directory``: indica di restituire solo la lista di cartelle;
+- ``File``: indica di restituire solo la lista di file;
+- ``Hidden``: indica di restituire solo i file nascosti;
+- ``ReadOnly``: indica di restituire solo i file di sola lettura;
+
+Esempio d'uso:
+
+```powershell
+Get-ChildItem -Path "C:\test"
+```
+
+L'output prodotto è il seguente:
+
+```
+Directory: C:\Test
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        2/15/2019     13:21                cartella1
+d-----        2/15/2019     08:28                cartella2
+d-----        2/15/2019     13:21                Backup
+-a----        2/12/2019     16:16             20 fileTemp2.txt
+-a----        2/13/2019     13:26             20 fileTemp2.txt
+-a----        2/12/2019     16:24             23 systemlog1.log
 ```

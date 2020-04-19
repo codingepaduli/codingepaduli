@@ -28,7 +28,7 @@ Get-Module -ListAvailable
 
 L'output riportato è il seguente:
 
-```powershell
+```
 Directory: /opt/microsoft/powershell/7/Modules
 
 ModuleType Version    PreRelease Name                                PSEdition
@@ -45,9 +45,9 @@ Script     2.0.0                 PSReadLine                          Desk
 Binary     2.0.3                 ThreadJob                           Desk 
 ```
 
-## Providers
+## Providers e drive
 
-I provider sono moduli che fanno parte del ``.Net Framework`` (lo stesso di PowerShell) e che forniscono un accesso specializzato ad una collezione di dati. Vi è un provider che gestisce file e cartelle, uno che gestire gli alias, uno che gestire le variabili d'ambiente, ecc... 
+I provider sono oggetti che fanno parte del ``.Net Framework`` (lo stesso di PowerShell) e che forniscono un accesso specializzato ad una collezione di dati. Vi è un provider che gestisce file e cartelle, uno che gestire gli alias, uno che gestire le variabili d'ambiente, ecc... 
 
 L'utente può creare nuovi provider per gestire altre collezioni di dati.
 
@@ -59,7 +59,7 @@ Get-PSProvider
 
 L'output riportato è il seguente:
 
-```powershell
+```
 Name                 Capabilities                  Drives
 ----                 ------------                  ------
 Alias                ShouldProcess                 {Alias}
@@ -69,6 +69,8 @@ Function             ShouldProcess                 {Function}
 Variable             ShouldProcess                 {Variable}
 ```
 
+Un provider può fornire più punti d'accesso alla collezione di dati. Ad esempio l'accesso al filesystem su ambienti Windows è fornito attraverso i drive ``c:``, ``d:``, ..., ognuno dei quali fornisce un punto d'accesso ad un disco logico.
+
 ## Sessioni
 
 Le sessioni sono utilizzate per memorizzare le informazioni relative ad una connessione locale o remota ad un computer, 
@@ -77,7 +79,11 @@ Le sessioni sono memorizzate sul computer a cui ci si collega, in modo tale da p
 
 ## CommandLet
 
-I CommandLet sono i comandi "interni" che è possibile eseguire nell'ambiente PowerShell.
+I CommandLet sono i comandi "interni" che è possibile eseguire nell'ambiente PowerShell. Per una lista completa di CmdLet disponibili, eseguire il comando:
+
+```powershell
+Get-Command
+```
 
 I CommandLet hanno un nome composto ``Verbo-Oggetto`` in modo da identificare in maniera semplice l'operazione eseguita.
 
@@ -98,21 +104,15 @@ Tra gli oggetti comunemente usati vi sono:
 - Member; un parametro;
 - Item: un oggetto generico.
 
-Un esempio di CommandLet utilizzato per pulire lo schermo è il seguente:
+Ad esempio il CommandLet utilizzato per pulire lo schermo è il seguente:
 
 ```powershell
 Clear-Host
 ```
 
-Per una lista completa di CmdLet disponibili, eseguire il comando:
-
-```powershell
-Get-Command
-```
-
 ### Parametri
 
-I CmdLet possono prendere in input una lista di parametri. I parametri vengono generalmente passati al CmdLet come coppie "nome valore", col nome del parametro preceduto dal carattere ``-`` e separato dal valore da uno spazio o anche come lista di valori.
+I CmdLet possono prendere in input una lista di parametri. I parametri vengono generalmente passati al CmdLet come coppie "nome valore", col nome del parametro generalmente preceduto dal carattere ``-``.
 
 Tutti i CommandLet prendono una serie comune di argomenti, tra cui:
 
@@ -125,15 +125,9 @@ Un esempio di CmdLet che prende in input un parametro e lo stampa in output nel 
 Write-Output -InputObject "Hello World!!"
 ```
 
-E' possibile scriverlo anche passando la lista di valori:
+L'output generato dal CmdLet è di seguito riportato:
 
-```powershell
-Write-Output "Hello World!!"
 ```
-
-L'output generato da entrambi i precedenti CmdLet è di seguito riportato:
-
-```powershell
 Hello World!!
 ```
 
@@ -145,24 +139,6 @@ Per ottenere la lista completa di alias, si usa la CmdLet:
 
 ```powershell
 Get-Alias
-```
-
-E' possibile personalizzare la lista di alias per i CmdLet, aggiungendone di nuovi con il comando:
-
-```powershell
-Set-Alias -Name "wo" -Value "Write-Output"
-```
-
-A questo punto è possibile utilizzare l'alias ``wo`` al posto di ``Write-Output``, come nell'esempio seguente:
-
-```powershell
-wo "Hello"
-```
-
-E' possibile cancellare un alias con il CmdLet:
-
-```powershell
-Remove-Alias -Name "wo"
 ```
 
 Per visualizzare il CommandLet corrispondente ad un alias, si utilizza il CmdLet seguente:
@@ -191,31 +167,42 @@ Command-1 | Command-2 | Command-3
 
 ## Variabili
 
-Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. PowerShell utilizza le variabili per memorizzare informazioni sull'utente, sull'ambiente di esecuzione, ecc...
-
-Ogni variabile ha un nome che inizia con il carattere ``$``. Essendo PowerShell un linguaggio tipizzato, le variabili hanno un tipo associato, ad esempio tipo numerico, tipo booleano o tipo "stringa".
-
-Per l'elenco completo dei tipi, si rimanda alle specifiche del ``.Net Framework``.
+Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato, ad esempio tipo numerico, tipo booleano o tipo "stringa". PowerShell utilizza le variabili per memorizzare informazioni sull'utente, sull'ambiente di esecuzione, ecc...
 
 L'utente può creare le proprie variabili per memorizzare dati e preferenze. Ad esempio:
 
 ```powershell
-$variabile = 2;
+$variabileNumerica = 2;
+$variabileTestuale = "2";
 ```
+
+Dato che PowerShell è basato su oggetti, una variabile può contenere un oggetto ed è possibile accedere ai campi ed ai metodi dell'oggetto.
+
+Per i dettagli relativI ad un tipo di dato, si rimanda alla documentazione del ``.Net Framework``.
 
 ## Guida in linea
 
-La guida in linea è il punto di partenza per imparare ad usare uno specifico CommandLet, per visualizzare i parametri obbligatori e facoltativi e per visualizzare la lista di alias conosciuti.
+La guida in linea è il punto di riferimento per informazioni dettagliate su uno specifico argomento. Per visualizzare la guida in linea, eseguire:
 
-Ad esempio la guida in linea del CmdLet ``Write-Output`` è generata dal comando seguente:
+```powershell
+Get-Help
+```
+
+Per visualizzare la guida in linea su uno specifico CommandLet si può utilizzare il comando ``Get-Help`` passando come parametro il nome del comando, come nel seguente esempio:
+
+```powershell
+Get-Help Write-Output
+```
+
+Allo stesso modo si può visualizzare la guida in linea del CmdLet invocandolo con il parametro ``-?``, come ne seguente esempio:
 
 ```powershell
 Write-Output -?
 ```
 
-La guida in linea mostrata è la seguente:
+La guida in linea mostrata in entrambi gli esempi è la seguente:
 
-```powershell
+```
 NAME
     Write-Output
 
@@ -246,3 +233,13 @@ La guida mostra:
 - il messaggio che indica che la guida completa non è presente e che è possibile scaricarla invocando il CmdLet ``Update-Help`` oppure si può visualizzare al link indicato nel messaggio.
 
 Aggiornata la guida in linea, verranno mostrate le descrizioni di tutti i parametri, di tutti gli oggetti in input ed in output, gli esempi ed i collegamenti consigliati.
+
+<!-- 
+
+Per la lista di comandi con il parametro WhatIf
+
+# Get-Command | where { $_.parameters.keys -Contains "WhatIf"}
+
+# Get-Command -commandType cmdlet | where { $_.parameters.keys -Contains "Confirm"}
+
+-->
