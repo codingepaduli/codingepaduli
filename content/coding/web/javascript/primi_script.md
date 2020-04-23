@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "03 - Primi script"
+title: "02 - Primi script"
 description: "Primi script"
 date: 2020-04-03
 publishdate: 2020-04-03
@@ -34,6 +34,24 @@ Javascript utilizza due modalità di esecuzione degli script:
 
 ```javascript
 "use strict";
+```
+
+## Commenti
+
+Javascript permette di commentare il codice su una sola riga utilizzando il simbolo ``//`` seguito dal commento, mentre i commenti su più righe includono i commenti tra i caratteri ``/*`` e ``*/``.
+
+Un esempio di commenti è il seguente:
+
+```javascript
+
+'use strict';
+
+// commento su una rigida
+
+/*
+  commento su
+  più righe
+*/
 ```
 
 ## Inserimento script in pagina
