@@ -67,7 +67,7 @@ La rappresentazione binaria si esprime anteponendo al valore da assegnare alla v
 let naturalNumberBinary = 0b010111;
 ```
 
-Il valore decimale può essere espresso in forma esponenziale, nella classica forma **mantissa**, simbolo ``e`` /indicante l'esponenziale) ed **esponente**, come nel seguente esempio:
+Il valore intero o decimale può essere espresso in [notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica), nella classica forma **mantissa**, simbolo ``e`` (indicante l'esponenziale) ed **esponente**, come nel seguente esempio:
 
 ```javascript
 let realNumberExponentiation = 0.1E100;
@@ -238,7 +238,7 @@ Ad esempio, per la conversione in binario, ottale ed esadecimale si usa il segue
 let x = 10;
 let x2 = (10).toString(2);
 let x8 = x.toString(8);
-let x16 = (10).toString(16);
+let x16 = x.toString(16);
 ```
 
 Il codice converte il numero nelle seguenti stringhe:
@@ -258,4 +258,41 @@ let xC2 = (x >>> 0).toString()
 Il numero è convertito in una stringa rappresentata da 32 bit:
 ```
 xC2 = "11111111111111111111111111111111"
+```
+
+Per la conversione in formato esponenziale si utilizza il metodo ``toExponential()``, come nel seguente esempio:
+
+```javascript
+let x = 1;
+let y = 1.4;
+let w = 14;
+let z = 123456789.123456;
+let stringX = x.toExponential();
+let stringY = y.toExponential();
+let stringW = w.toExponential();
+let stringZ = z.toExponential();
+```
+
+Il codice converte il numero nelle seguenti stringhe:
+```
+"1e+0"
+"1.4e+0"
+"1.4e+1"
+"1.2346e+8"
+```
+
+Si può passare al metodo il parametro opzionale indicante il numero di cifre decimali da utilizzare per la mantissa, come nel seguente esempio:
+
+```javascript
+let z = 123456789.123456;
+let stringZ = z.toExponential(2);
+let stringZ = z.toExponential(8);
+let stringZ = z.toExponential(16);
+```
+
+Il codice converte il numero nelle seguenti stringhe:
+```
+"1.23e+8"
+"1.23456789e+8"
+"1.2345678912345600e+8"
 ```
