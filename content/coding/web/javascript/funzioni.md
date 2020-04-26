@@ -129,4 +129,41 @@ Pinco Pallino
 Tizio Caio
 ```
 
-L'uso dei parametri ci permette quindi di rendere più "generica" l'operazione definita dalla funzione.
+L'uso dei parametri ci permette quindi di rendere "generica" l'operazione definita dalla funzione.
+
+## Parametri di default
+
+E' possibile assegnare ai parametri un valore predefinito, come per il seguente esempio:
+
+```javascript
+function scriviNome(nome = "Mario", cognome = "Rossi") {
+    'use strict';
+    
+    alert(nome + " " + cognome);
+}
+```
+
+## Parametri rimanenti (rest parameter)
+
+E' possibile definire funzioni che prendano un numero variabile di parametri, precedendo l'unico o l'ultimo parametro  con i tre punti ``...``.
+
+Dato che questo tipo di sintassi crea di fatto una collezione di valori, è possibile accedervi attraverso l'istruzione iterativa ``for-in``.
+
+Supponendo, ad esempio, di voler creare una funzione che scriva un numero imprecisato di nomi, il codice sarà il seguente:
+
+```javascript
+function scriviNome(...nomi) {
+    'use strict';
+    
+    for (nome in nomi) {
+      console.info(nome);
+    }
+}
+```
+
+Definita la funzione, è possibile invocarla passando tutti i parametri di cui si ha necessità, come nei seguenti esempi:
+
+```javascript
+scriviNome("Mario Rossi");
+scriviNome("Giuseppe Verdi", "Pinco Pallino", "Tizio Caio");
+```
