@@ -90,8 +90,33 @@ Le variabili possono avere assegnata una sequenza di caratteri e quindi il tipo 
 Un esempio di dichiarazione di variabile a cui viene associato un tipo stringa è il seguente:
 
 ```javascript
-let stringVariable = "Una stringa";
+let stringVariable = 'Una stringa';
 let stringVariable2 = 'Seconda stringa';
+```
+
+Per definire una sequenza di caratteri che occupi più righe, si può racchiudere tra apici inversi `` ` ``, come nel seguente esempio:
+
+```javascript
+let stringVariable = `Una 
+stringa`;
+```
+
+Questo tipo di definizione è utilizzato anche per concatenare variabili o il risultato di un'espressione all'interno della stringa. Le variabili e le espressioni devono essere racchiuse tra simboli ``${`` e ``}``, come nel seguente esempio:
+
+```javascript
+let num1 = 9;
+let num2 = 18;
+let messaggio = `La somma dei 
+numeri ${num1} e ${num2} 
+vale ${num1 + num2}.`;
+```
+
+L'esempio precedente produce il seguente output (su più righe):
+
+```
+La somma dei 
+numeri 9 e 18 
+vale 27.
 ```
 
 ## Tipo oggetto
