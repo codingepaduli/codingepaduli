@@ -26,7 +26,11 @@
 		{{- end }}
 	</article>
 </main>
+<!-- TODO remember to update this code -->
+{{ range .Params.customJS -}}
+	<script src="{{ . | relURL }}"></script>
+{{- end }}
 {{ partial "authorbox.html" . }}
-{{ partial "post_nav.html" . }}
+{{ partial "pager.html" . }}
 {{ partial "comments.html" . }}
 {{ end }}
