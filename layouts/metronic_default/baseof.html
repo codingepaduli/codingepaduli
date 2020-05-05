@@ -16,12 +16,18 @@
     {{ end -}}
     <!-- link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" -->
     {{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
+
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
     {{ range .Site.Params.customCSS -}}
     <link rel="stylesheet" href="{{ . | relURL }}">
     {{- end }}
-    <link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
 
+    <link rel="shortcut icon" href="/static/wifi-5.svg" type="image/svg+xml">
+
+    {{ if .Site.Params.seoKeyword }}
+        <meta name="keywords" content="{{ range .Site.Params.seoKeyword -}} {{ . | safeHTMLAttr }} {{ " " }} {{- end }}">
+    {{- end }}
 </head>
 <body class="body">
     <div class="container container--outer">

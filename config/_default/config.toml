@@ -5,13 +5,19 @@ paginate = "10"
 
 theme = "mainroad" # hugo-academic mainroad watercss
 
+
 [params]
   author = "codingepaduli"
   subtitle = "Ennesimo sito/blog di programmazione ed informatica in generale"
   description = "Ennesimo sito/blog di programmazione ed informatica in generale"
   toc = true # Enable Table of Contents
+  opengraph = true # Enable OpenGraph if true
+  twitter_cards = true # Enable Twitter Cards if true
+  images = ["/static/wifi-5.svg"] # Twitter Cards and OpenGraph images
   post_meta = ["date", "categories", "translations"] # Order of post meta information
   mainSections = ["posts", "openSource"]
+  customCSS = ["/static/css/customImages.css"]
+  seoKeyword = ["coding", "programmazione", "open-source", "sviluppo", "web"]
 
 # [[menu.main]] not needed, use "menu" in content/_index.html
 
