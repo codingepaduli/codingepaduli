@@ -1,18 +1,18 @@
 ---
 type: "powershell"
-title: "05.1 Esercizi sulla gestione di file e cartelle"
-description: "Esercizi sulla gestione di file e cartelle"
-date: 2020-04-21
-publishdate: 2020-04-21
-lastmod: 2020-04-10
+title: "05.2 Soluzioni esercizi sulla gestione di file e cartelle"
+description: "Soluzioni esercizi sulla gestione di file e cartelle"
+date: 2020-05-06
+publishdate: 2020-05-06
+lastmod: 2020-05-06
 categories: ["coding", "tools", "shell", "powershell"]
 keywords: ["coding", "tools", "shell", "powershell"]
 draft: true
 toc: false
-summary: "Esercizi sulla gestione di file e cartelle"
+summary: "Soluzioni esercizi sulla gestione di file e cartelle"
 ---
 
-# Esercizi sulla gestione di file e cartelle
+# Soluzioni esercizi sulla gestione di file e cartelle
 
 ## Esercizio 01 - Traccia
 
@@ -31,7 +31,29 @@ Mario\
     copia.txt
 ```
 
-##Esercizio 02 - Traccia
+## Esercizio 01 - Soluzione
+
+```powershell
+# creazione cartella "Mario"
+New-Item -Name "Mario" -ItemType "Directory"
+
+# cambio cartella di lavoro
+Set-Location "Mario"
+
+# creazione nuovo file con contenuto
+New-Item -Name "compito.txt" -ItemType "File" -Value "Rossi"
+
+# copia del file
+Copy-Item -Path "compito.txt" -Destination "copia.txt" 
+
+# creazione nuova cartella
+New-Item -Name "Rossi" -ItemType "Directory"
+
+# spostamento della copia del file nella nuova cartella
+Move-Item -Path "copia.txt" -Destination "Rossi"
+```
+
+## Esercizio 02 - Traccia
 
 Realizzare in PowerShell uno script che abbia come nome il proprio cognome e che:
 1. crei una cartella con nome dell'oggetto assegnato;
