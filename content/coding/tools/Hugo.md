@@ -116,6 +116,28 @@ Solo i contenuti che non sono bozze e che hanno una data di scrittura contenuta 
 
 Le pagine del sito devono avere un nome che non inizi con il carattere ``_``, devono contenere il **front-matter** ed il contenuto espresso in linguaggio **HTML** oppure **Markdown**;
 
+## Analytics e meta informations per social network
+
+Hugo mette a disposizione dei template interni per disqus, google analytics, opengraph e twitter_cards.
+
+Disqus e Google analytics forniscono le chiavi di identificazione per attivarli. Queste chiavi devono essere impostare nel file ``config.toml``:
+
+```
+disqusShortname = "yourdiscussshortname"
+googleAnalytics = "UA-123-45"
+```
+
+I tag per i social si attivano impostando le seguenti informazioni nel file ``config.toml``:
+
+```ini
+opengraph = true                # Abilita OpenGraph se impostato a true
+twitter_cards = true            # Abilita Twitter Cards se impostato a true
+images = ["/static/wifi-5.svg"] # Immagini per Twitter Cards and OpenGraph
+title = "My cool site"          # Titolo del sito
+```
+
+Impostate queste informazioni, automaticamente le informazioni da presentare sui social, quali data, titolo, descrizione, immagini o video, vengono incluse nelle pagine web. In ogni pagina è possibile indicare espressamente una di queste informazioni utilizzando la relativa proprietà del **front-matter**. 
+
 ## Menu
 
 Per aggiungere una pagina al menu, inserire nel **front-matter** le seguenti proprietà:
