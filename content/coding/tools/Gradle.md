@@ -423,7 +423,9 @@ Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
 - ``ear``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione enterprise; Non sarà trattato in questo articolo basilare;
 
-- ``gretty``: è un plugin che in questo articolo viene aggiunto per completezza; Serve ad automatizzare ulteriormente le fasi di progetto gestendo il server ed il deploy dell'applicazione.
+- ``gretty``: è un plugin che in questo articolo viene aggiunto per completezza; Serve ad automatizzare ulteriormente le fasi di progetto gestendo il server ed il deploy dell'applicazione;
+
+- ``eclipse-wtp``: è un plugin che che estende il plugin ``eclipse`` ed in questo articolo viene aggiunto per completezza; Serve ad automatizzare la creazione di file necessari a lavorare con Eclipse IDE.
 
 ### Plugin java
 
@@ -552,7 +554,7 @@ plugins {
 }
 ```
 
-### Gretty
+### Plugin Gretty
 
 Gretty è un plugin che serve ad automatizzare ulteriormente la gestione del progetto. Permette di scaricare automaticamente il server, di avviarlo, riavviarlo e stopparlo, ed ancora di effettuare il deploy dell'applicazione web sul server. 
 
@@ -578,6 +580,23 @@ gretty {
 }
 ```
 
+### Plugin eclipse-wtp
+
+eclipse-wtp è un plugin che estende il plugin ``eclipse`` e serve ad automatizzare la creazione di file necessari ad Eclipse IDE.
+
+I task che il plugin mette a disposizione sono principalmente:
+
+- ``cleanEclipse``: Rimuove i file ``.project``, ``.classpath`` e ``.settings/org.eclipse.jdt.core.prefs``;
+- ``eclipse``: Crea i file ``.project``, ``.classpath`` e ``.settings/org.eclipse.jdt.core.prefs``.
+
+La configurazione del proprio progetto per l'uso del plugin prevede la sola dichiarazione del plugin:
+
+```groovy
+plugins {
+    id 'eclipse-wtp'
+}
+```
+
 ## Esempio completo per applicazioni java
 
 Di seguito un esempio completo per la gestione di un'applicazione Java con Gradle:
@@ -588,11 +607,13 @@ plugins {
     id 'application'
     // add support for generating project's reports.
     id 'project-report'
+    // add support for Eclipse IDE.
+    id 'eclipse-wtp'
 }
 
 // all these tasks to execute by default. 
 // To get a complete list, run ./gradle run --dry-run
-defaultTasks 'clean', 'compileJava', 'jar', 'assemble', 'compileTestJava', 'test', 'build', 'javadoc', 'projectReport', 'run'
+defaultTasks 'clean', 'compileJava', 'jar', 'assemble', 'compileTestJava', 'test', 'build', 'eclipse', 'javadoc', 'projectReport', 'run'
 
 repositories {
     // Use jcenter for resolving dependencies.
@@ -628,7 +649,7 @@ application {
 }
 ```
 
-Si nota che è stato aggiunto sia il plugin ``application`` per la gestione e l'esecuzione di un progetto java, sia il plugin ``project-report`` per la creazione dei report di progetto.
+Si nota che è stato aggiunto sia il plugin ``application`` per la gestione e l'esecuzione di un progetto java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE.
 
 E stata definita la lista (quasi completa) di task che si desidera vengano lanciati di default, sono state configurate delle voci da aggiungere al file ``Manifest.mf`` del pacchetto "jar" ed è indicata la classe java che contiene il metodo "main" da eseguire per lanciare l'applicazione.
 
@@ -642,13 +663,15 @@ plugins {
     id 'war'
     // add support for generating project's reports.    
     id 'project-report'
+    // add support for Eclipse IDE.
+    id 'eclipse-wtp'
     // add support for managing the servlet containers.
     id 'org.gretty' version '3.0.1' 
 }
 
 // all these tasks to execute by default.
  // To get a complete list, run ./gradle run --dry-run
-defaultTasks 'clean', 'war', 'appStart'
+defaultTasks 'clean', 'war', 'eclipse', 'appStart'
 
 repositories {
     // Use jcenter for resolving dependencies.
@@ -679,6 +702,6 @@ gretty {
 }
 ```
 
-Si nota che è stato aggiunto sia il plugin ``war`` per la gestione di un'applicazione web in java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``org.gretty`` per la gestione del servletContainer.
+Si nota che è stato aggiunto sia il plugin ``war`` per la gestione di un'applicazione web in java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE, sia il plugin ``org.gretty`` per la gestione del servletContainer.
 
 E stata definita la lista di task che si desidera vengano lanciati di default, sono state configurate le opzioni relative al server da avviare per deployare ed eseguire l'applicazione.
