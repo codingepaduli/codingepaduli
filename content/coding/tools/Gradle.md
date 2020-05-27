@@ -686,6 +686,7 @@ description = "Applicazione web."
 dependencies {
     implementation 'jstl:jstl:1.2'
     implementation 'org.eclipse.jetty:jetty-annotations:9.4.20.v20190813'
+    implementation 'org.eclipse.jetty:jetty-servlets:9.4.20.v20190813'
     implementation 'javax:javaee-api:8.0'
 
     // This dependency is used by the application.
@@ -705,3 +706,45 @@ gretty {
 Si nota che è stato aggiunto sia il plugin ``war`` per la gestione di un'applicazione web in java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE, sia il plugin ``org.gretty`` per la gestione del servletContainer.
 
 E stata definita la lista di task che si desidera vengano lanciati di default, sono state configurate le opzioni relative al server da avviare per deployare ed eseguire l'applicazione.
+
+### Esempio di file src/main/webapp/WEB-INF/web.xml per chiamate CORS
+
+Per abilitare le chiamate CORS (Cross-Origin resource sharing) sul server Jetty, è necessario aggiungere al progetto il seguente file di configurazione ``src/main/webapp/WEB-INF/web.xml``:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:web="http://java.sun.com/xml/ns/javaee" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+	version="3.0">	
+	<filter>
+	   <filter-name>cross-origin</filter-name>
+	   <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
+	   <init-param>
+	       <param-name>allowedOrigins</param-name>
+	       <param-value>*</param-value>
+	   </init-param>
+	   <init-param>
+	       <param-name>allowedMethods</param-name>
+	       <param-value>GET,POST,OPTIONS,DELETE,PUT,HEAD</param-value>
+	   </init-param>
+	   <init-param>
+	       <param-name>allowedHeaders</param-name>
+	       <param-value>origin, content-type, accept, authorization</param-value>
+	   </init-param>
+	 </filter>
+	 <filter-mapping>
+	     <filter-name>cross-origin</filter-name>
+	     <url-pattern>*</url-pattern>
+	 </filter-mapping>
+</web-app>
+```
+
+Come si nota, il filtro ``org.eclipse.jetty.servlets.CrossOriginFilter``, a cui è stato assegnato il nome ``cross-origin``, abilita le richieste:
+ - effettuate attraverso HTTP **GET, POST, OPTIONS, DELETE, PUT, HEAD**, (come indicato in ``allowedMethods``);
+ - di qualsiasi risorsa (quindi su qualsiasi URL, come indicato in ``url-pattern``);
+ - provenienti da qualsiasi origine (come indicato in ``allowedOrigins``);
+ - solo se indicano nell'header HTTP uno dei parametri a scelta tra **origin, content-type, accept, authorization** (come indicato in ``allowedHeaders``).
+
