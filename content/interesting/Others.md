@@ -1,7 +1,7 @@
 ---
 type: "interesting"
-title: "Link interessanti3"
-description: "Set di link interessanti3"
+title: "Link interessanti"
+description: "Set di link interessanti"
 date: 2020-06-26
 publishdate: 2020-06-26
 lastmod: 2020-06-26
@@ -9,7 +9,7 @@ categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
-summary: "Set di link interessanti3"
+summary: "Set di link interessanti"
 ---
 
  
