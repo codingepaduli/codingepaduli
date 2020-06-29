@@ -580,6 +580,15 @@ gretty {
 }
 ```
 
+Una scelta opinabile riguarda il salvataggio dei log del server nella cartella "home" dell'utente. Per cambiare tale scelta, si utilizzano le seguenti proprietà:
+
+```
+    // logging configuration 
+    logDir "${buildDir}/log" // pay attention to double quote 
+    logFileName 'calcolatrice'
+    loggingLevel 'TRACE'     // (loggingLevel 'ALL', 'DEBUG', 'ERROR', 'INFO', 'OFF', 'TRACE', 'WARN')
+```
+
 ### Plugin eclipse-wtp
 
 eclipse-wtp è un plugin che estende il plugin ``eclipse`` e serve ad automatizzare la creazione di file necessari ad Eclipse IDE.
@@ -700,6 +709,12 @@ gretty {
     servletContainer 'jetty9.4'
     httpPort 8080
     contextPath '/web'
+    
+    // logging configuration 
+    logDir "${buildDir}/log" // pay attention to double quote 
+    logFileName 'calcolatrice'
+    loggingLevel 'TRACE'     // (loggingLevel 'ALL', 'DEBUG', 'ERROR', 'INFO', 'OFF', 'TRACE', 'WARN')
+
 }
 ```
 
