@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-06-29
-publishdate: 2020-06-29
-lastmod: 2020-06-29
+date: 2020-07-03
+publishdate: 2020-07-03
+lastmod: 2020-07-03
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -141,6 +141,7 @@ summary: "Set di link relativi al coding"
 [Dataset list — A list of the biggest datasets for machine learning](https://www.datasetlist.com/) - \
 [Playing Mortal Kombat with TensorFlow.js.](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/) - Transfer learning and data augmentation\
 [CNN Explainer](https://poloclub.github.io/cnn-explainer/) - Learn Convolutional Neural Network\
+[ml5js·Friendly Machine Learning For The Web](https://ml5js.org/) - \
 
 ### .Net
 [Integrate Jenkins with MSBuild and NuGet](https://www.codeproject.com/Articles/878203/Integrate-Jenkins-with-MSBuild-and-NuGet) - \
@@ -433,7 +434,7 @@ summary: "Set di link relativi al coding"
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
-[<video>: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) - HTML: HyperText Markup Language | MDN\
+[video tag: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) - HTML: HyperText Markup Language | MDN\
 
 #### CSS
 [Floating and inline-block](http://www.w3schools.com/css/css_inline-block.asp) - \

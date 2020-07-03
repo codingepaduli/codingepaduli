@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-06-29
-publishdate: 2020-06-29
-lastmod: 2020-06-29
+date: 2020-07-03
+publishdate: 2020-07-03
+lastmod: 2020-07-03
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -32,6 +32,7 @@ summary: "Set di link interessanti"
 
 ### Math
 [Pythagoras theorem](https://www.forbes.com/sites/startswithabang/2020/03/06/the-bizarre-math-of-why-10%C2%B2-11%C2%B2-12%C2%B2-13%C2%B2-14%C2%B2/) - This One Equation, 10² + 11² + 12² = 13² + 14², Takes Pythagoras To A Whole New Level\
+[New Geometric Perspective Cracks Old Problem About Rectangles](https://www.quantamagazine.org/new-geometric-perspective-cracks-old-problem-about-rectangles-20200625/) - \
 [BASE Cinque](http://utenti.quipo.it/base5/) - Appunti di Matematica Ricreativa\
 [Math.it](https://www.math.it/) - Didattica e divulgazione della matematica\
 [Enigma machine simulator](https://observablehq.com/@tmcw/enigma-machine) - \
