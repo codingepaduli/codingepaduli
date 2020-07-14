@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-07-03
-publishdate: 2020-07-03
-lastmod: 2020-07-03
+date: 2020-07-14
+publishdate: 2020-07-14
+lastmod: 2020-07-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -30,7 +30,7 @@ summary: "Set di link relativi al coding"
 [Hosted Weblate](https://hosted.weblate.org/) - \
 [phpMyAdmin](http://localhost:8888/phpmyadmin/) - localhost :8888\
 [pittStamachin.org localhost](http://www.pittstamachin.org/webPages/login.php) - \
-[Roadmaps to becoming a modern developer](https://roadmap.sh/) - \
+[Education Ecosystem | The project-based learning for building real products](https://www.education-ecosystem.com/) - \
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
 [Speed tests](http://www.dslreports.com/tools) - dslreports.com\
 [NASA World Wind](http://worldwind.arc.nasa.gov/) - \
@@ -112,6 +112,7 @@ summary: "Set di link relativi al coding"
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [Working with GitHub Actions | Jeff Rafter](https://jeffrafter.com/working-with-github-actions/) - \
+[xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
 
 #### Ansible
 [Ansible Tutorial](https://www.softwaretestinghelp.com/ansible-tutorial-1/) - Installation, Configuration and Usage with Modules\
@@ -142,6 +143,7 @@ summary: "Set di link relativi al coding"
 [Playing Mortal Kombat with TensorFlow.js.](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/) - Transfer learning and data augmentation\
 [CNN Explainer](https://poloclub.github.io/cnn-explainer/) - Learn Convolutional Neural Network\
 [ml5js·Friendly Machine Learning For The Web](https://ml5js.org/) - \
+[Teachable Machine](https://teachablemachine.withgoogle.com/) - Google\
 
 ### .Net
 [Integrate Jenkins with MSBuild and NuGet](https://www.codeproject.com/Articles/878203/Integrate-Jenkins-with-MSBuild-and-NuGet) - \
@@ -254,6 +256,7 @@ summary: "Set di link relativi al coding"
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [SolydXK | Home of SolydX and SolydK](http://solydxk.com/) - \
 [SolydXK forums](http://forums.solydxk.com/) - \
+[SolydXK 32bit download page](https://downloads.solydxk.com/ce/testing/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
 [Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
@@ -290,6 +293,9 @@ summary: "Set di link relativi al coding"
 [Watch YouTube videos at the Linux terminal | Opensource.com](https://opensource.com/article/18/12/linux-toy-youtube-dl) - \
 [linrunner.de: TLP – Linux Advanced Power Management](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - \
 [An important safety note about chown and symlinks (also chmod and chgrp)](https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ChownSymlinkSafety) - \
+[Building binary deb packages: a practical guide](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - Internal Pointers\
+[5 modern alternatives to essential Linux command-line tools | Opensource.com](https://opensource.com/article/20/6/modern-linux-command-line-tools) - \
+[use systemd timers instead of cronjob at DuckDuckGo](https://duckduckgo.com/?q=use+systemd+timers+instead+of+cronjob&ia=web) - \
 
 ### Mozilla Firefox
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
@@ -307,6 +313,7 @@ summary: "Set di link relativi al coding"
 [Configure your home VPN server with WireGuard](https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard) - \
 [Glances](https://opensource.com/article/19/11/monitoring-linux-glances) - cross-platform monitoring tool for your system; \
 [6 open source tools for making your own VPN | Opensource.com](https://opensource.com/article/18/8/open-source-tools-vpn) - \
+[Turn your Raspberry Pi homelab into a network filesystem | Opensource.com](https://opensource.com/article/20/5/nfs-raspberry-pi) - \
 
 ### PHP
 [Guida PHP di base | php.html.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
@@ -356,6 +363,12 @@ summary: "Set di link relativi al coding"
 [Build and host a website with Git | Opensource.com](https://opensource.com/article/19/4/building-hosting-website-git) - \
 [GitHub](https://github.com/honkit/honkit) - honkit/honkit: HonKit is building beautiful books using Markdown - Fork of GitBook\
 [honkit/honkit](https://github.com/honkit/honkit) - Fork of GitBook for building beautiful books using Markdown\
+[Making an ebook](https://medium.com/@davidgrophland/making-an-ebook-from-markdown-to-kindle-cf224326b1a2) - From Markdown to Kindle - David Grophland - Medium\
+[Create web tutorials with Reveal.js and Git | Opensource.com](https://opensource.com/article/20/4/create-web-tutorial-git) - \
+[PDF.to](https://pdf.to/) - converti pdf in documenti e viceversa\
+[trubitsyn/bookmarks2markdown: Convert bookmarks to Markdown](https://github.com/trubitsyn/bookmarks2markdown) - \
+[scraggo/bookmarks-markdown-utils: Collection of command-line tools for Chrome, OneTab, Evernote, and FireFox bookmark management. The tools are mostly to convert proprietary formats to markdown and organizing and add tags.](https://github.com/scraggo/bookmarks-markdown-utils) - \
+[Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
 
 #### Hugo static site generator
 [Chapter 2 Hugo | blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/hugo.html) - \
@@ -387,8 +400,6 @@ summary: "Set di link relativi al coding"
 [Converting Markdown to Beautiful PDF with Pandoc](https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/) - jdhao's blog\
 [pandoc-img-glob · PyPI](https://pypi.org/project/pandoc-img-glob/) - \
 [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
-[Making an ebook](https://medium.com/@davidgrophland/making-an-ebook-from-markdown-to-kindle-cf224326b1a2) - From Markdown to Kindle - David Grophland - Medium\
-[Create web tutorials with Reveal.js and Git | Opensource.com](https://opensource.com/article/20/4/create-web-tutorial-git) - \
 
 ### Web, web-app e servizi rest
 [W3C](http://www.w3.org/TR/) - All Standards and Drafts\
@@ -402,6 +413,7 @@ summary: "Set di link relativi al coding"
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
 [jsonbox.io](https://jsonbox.io/) - HTTP based JSON storage\
+[Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
 [Egyptian Hieroglyphs – Test for Unicode support in Web browsers](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - \
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
 [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
@@ -506,3 +518,4 @@ summary: "Set di link relativi al coding"
 [Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - todomvc/index.html - bigopon/todomvc · GitHub\
 [Aurelia 2](https://github.com/aurelia/aurelia) - GitHub aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
+[The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
