@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-07-14
-publishdate: 2020-07-14
-lastmod: 2020-07-14
+date: 2020-07-17
+publishdate: 2020-07-17
+lastmod: 2020-07-17
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -296,6 +296,7 @@ summary: "Set di link relativi al coding"
 [Building binary deb packages: a practical guide](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - Internal Pointers\
 [5 modern alternatives to essential Linux command-line tools | Opensource.com](https://opensource.com/article/20/6/modern-linux-command-line-tools) - \
 [use systemd timers instead of cronjob at DuckDuckGo](https://duckduckgo.com/?q=use+systemd+timers+instead+of+cronjob&ia=web) - \
+[Access control lists and external drives on Linux: What you need to know | Opensource.com](https://opensource.com/article/20/3/external-drives-linux) - \
 
 ### Mozilla Firefox
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
@@ -314,6 +315,8 @@ summary: "Set di link relativi al coding"
 [Glances](https://opensource.com/article/19/11/monitoring-linux-glances) - cross-platform monitoring tool for your system; \
 [6 open source tools for making your own VPN | Opensource.com](https://opensource.com/article/18/8/open-source-tools-vpn) - \
 [Turn your Raspberry Pi homelab into a network filesystem | Opensource.com](https://opensource.com/article/20/5/nfs-raspberry-pi) - \
+[Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - \
+[Setting up VoIP phone system for use with RepairShopr.](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - YouTube\
 
 ### PHP
 [Guida PHP di base | php.html.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
@@ -352,6 +355,8 @@ summary: "Set di link relativi al coding"
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
 [What Is the Business Model for DuckDuckGo?](https://spreadprivacy.com/duckduckgo-revenue-model/) - \
 [The Brave web browser is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - \
+[Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser · GitHub](https://github.com/brave/brave-browser/issues/9929) - \
+[Runnaroo | A Better Private Search Engine](https://www.runnaroo.com/) - \
 
 ### Scrivere documenti e conversione tra formati 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
@@ -519,3 +524,4 @@ summary: "Set di link relativi al coding"
 [Aurelia 2](https://github.com/aurelia/aurelia) - GitHub aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
+[BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
