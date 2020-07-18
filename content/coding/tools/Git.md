@@ -284,6 +284,7 @@ dove il numero zero è l'indice dell'area temporanea da cancellare.
 
 ## Branches
 
+### Modalità di lavoro con i Branches
 Il repository principale ha un ramo di sviluppo principale chiamato **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con git.
  
 Tipicamente sul repository vengono creati diversi branches (rami di sviluppo) per le diverse funzionalità da sviluppare, e su ogni singolo branch (ramo) viene sviluppata una singola funzionalità da parte di uno o più sviluppatori del team.
@@ -298,7 +299,7 @@ Volendo fare un'analogia, si può immaginare la scrittura di una trilogia di lib
 
 Volendo fare una seconda analogia, si può immaginare che in uno dei libri della trilogia i personaggi principali si separino, vivendo storie indipendenti, e quindi nel ramo di sviluppo del singolo libro si creano diversi rami in cui si scrivono le storie dei diversi personaggi. Una volta che la storia di un personaggio è completa, il ramo di sviluppo del singolo personaggio viene fuso con il ramo di sviluppo del libro della trilogia.
 
-### Lavorare con i vari branches
+### Creazione e gestione dei branches
 
 Per creare un nuovo branch con nome **development** si utilizza il comando: 
 ```
@@ -314,16 +315,23 @@ Per spostarsi sul ramo "development" appena creato, si utilizza il comando:
 ```
 git checkout development
 ```
+Git aggiunge i file alla staging area ed effettua il commit sul branch correntemente selezionato, i comandi di aggiunta e commit sono quelli già visti in precedenza, che per comodità si riportano nuovamente di seguito:
+```
+git add file.txt
+git commit -m "aggiunto file.txt"
+```
 
 Per visualizzare la lista di commit nei vari branches del repository, si è gia visto di utilizzare il comando di log con grafico:
 ```
 git log --pretty=format:"%h %s" --graph
-``` 
+```
 
-Quando si crea un branch in locale, si deve ricordare che il repository remoto non ne ha una copia, e quindi un'azione di sincronizzazione genera errore. Per indicare di creare un branch anche in remoto ed al contempo sincronizzare il branch, si utilizza il comando:
+Quando si crea un branch in locale, si deve ricordare che il repository remoto non ne possiede una copia, e quindi un'azione di sincronizzazione genera errore. Per indicare di creare un branch anche in remoto ed al contempo sincronizzare il branch, si utilizza il comando:
 ```
 git push --set-upstream origin development
 ```
+
+### Merge dei rami in modalità grafica
 
 Quando si vuole effettuare la fusione del ramo "development" con il ramo "master", si può utilizzare lo strumento grafico messo a disposizione dai servizi online.
 
