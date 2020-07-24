@@ -12,19 +12,11 @@ toc: false
 summary: "Git - Un sistema per il controllo di versione distribuito"
 ---
 
-# Introduzione a Git
+# Introduzione a Git ed ai sistemi per il controllo di versione
 
-Git è un sistema per il controllo di versione distribuito, in cui le versioni dei file sono mantenute nel repository locale dell'utente, il quale può lavorare senza il bisogno di una connessione ad internet o di un server centrale.
-
-Git è stato inizialmente sviluppato da Linux Torvalds per gestire lo sviluppo del kernel Linux ed oggi è utilizzato dalle aziende informatiche di tutto il mondo. Costituisce anche un requisito basilare delle conoscenze di uno sviluppatore informatico.
-
-E' nato come strumento a linea di comando, poi è stato integrato negli IDE (software di sviluppo) ed è stata creata un'interfaccia grafica ed una web.
+Git è un sistema per il controllo di versione distribuito. Inizialmente sviluppato da Linus Torvalds per gestire lo sviluppo del kernel Linux, oggi è utilizzato dalle aziende informatiche di tutto il mondo. Costituisce anche un requisito basilare delle conoscenze di uno sviluppatore informatico.
 
 Oggi, i progetti pubblicamente esposti dagli sviluppatore sui vari servizi di controllo di versione rappresentano una sorta di "Instagram" utilizzato però non per condividere foto e video di se, ma per condividere i propri lavori quali libri, animazioni 2D e 3D, software e così via.
-
-## Controllo di versione, analogia e concetti principali
-
-### Analogia
 
 Per rendere l'idea di cosa significhi "controllo di versione" (dall'inglese Version Control System), si può immaginare un gruppo di studenti che devono svolgere un progetto da consegnare per un esame universitario. Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro.
 
@@ -48,7 +40,7 @@ Uno studente che decide di scrivere un "prequel" o una storia "parallela", può 
 
 Se ad un certo punto, un nuovo studente si aggiunge al gruppo di lavoro, questo studente deve comprare un proprio quaderno ad anelli e poi effettuare una copia del quaderno ad anelli del professore per poter iniziare a lavorare. Questa operazione è detta clonazione.
 
-### Concetti principali
+## Concetti principali di git
 
 I concetti principali sui quali si basa git sono:
 
@@ -56,7 +48,7 @@ I concetti principali sui quali si basa git sono:
 
 - L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente i lavori presenti nell'area di lavoro. Nell'analogia precedente, è rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
 
-- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente, è rappresentato dal completamento di un lavoro che viene spostato dall'area di lavoro al proprio quaderno ad anelli. 
+- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente, è rappresentato dal completamento di un lavoro che viene spostato dall'area di lavoro (la scrivania) al proprio quaderno ad anelli. 
 
 - Le **versioni**: le operazioni di commit generano una nuova versione del lavoro svolto. Il lavoro precedente non viene cancellato, ma salvato, in modo da poter sempre tornare ad una versione precedente.
 
@@ -90,7 +82,7 @@ git config --global --list
 git config --local --list
 ```
 
-E' buona norma disabilitare la configurazione di sistema, attraverso il comando:
+E' buona norma evitare di usare la configurazione di sistema, disabilitandola attraverso il comando:
 ```
 git config --global user.useConfigOnly true
 ```
@@ -101,7 +93,8 @@ git config --global user.name "User"
 git config --global user.email "user@user.com"
 ```
 
-Altra operazione generalmente consigliata è l'impostazione del carattere di fine riga, dato che su Linux e Mac il carattere di fine riga (INVIO) è LF (linefeed) mentre su Windows il carattere di fine riga (INVIO) è CR + LF (carriage return + linefeed). 
+Altra operazione generalmente consigliata è l'impostazione del carattere di fine riga, dato che su Linux e Mac il carattere di fine riga (INVIO) è LF (linefeed) mentre su Windows il carattere di fine riga (INVIO) è CR + LF (carriage return + linefeed).
+
 Questa differenza di caratteri porta ad avere confusione quando un file è modificato sia da utenti Mac/Linux sia da utenti Windows. Molti editors su Windows sostituiscono i caratteri di fine riga LF con i caratteri CR + LF, oppure lasciano gli LF ma inseriscono CR + LF quando si preme invio.
 
 Una macchina windows deve quindi essere configurata per la conversione automatica da LF a CR + LF e viceversa:
@@ -301,9 +294,9 @@ Volendo fare una seconda analogia, si può immaginare che in uno dei libri della
 
 ### Creazione e gestione dei branches
 
-Per creare un nuovo branch con nome **development** si utilizza il comando: 
+Per creare un nuovo branch con nome **git-merge** si utilizza il comando: 
 ```
-git branch development
+git branch git-merge
 ```
 
 Per visualizzare l'elenco di branches con l'ultimo commit presente si utilizza il comando
@@ -311,9 +304,9 @@ Per visualizzare l'elenco di branches con l'ultimo commit presente si utilizza i
 git branch -vv
 ```
 
-Per spostarsi sul ramo "development" appena creato, si utilizza il comando:
+Per spostarsi sul ramo "git-merge" appena creato, si utilizza il comando:
 ```
-git checkout development
+git checkout git-merge
 ```
 Git aggiunge i file alla staging area ed effettua il commit sul branch correntemente selezionato, i comandi di aggiunta e commit sono quelli già visti in precedenza, che per comodità si riportano nuovamente di seguito:
 ```
@@ -328,13 +321,44 @@ git log --pretty=format:"%h %s" --graph
 
 Quando si crea un branch in locale, si deve ricordare che il repository remoto non ne possiede una copia, e quindi un'azione di sincronizzazione genera errore. Per indicare di creare un branch anche in remoto ed al contempo sincronizzare il branch, si utilizza il comando:
 ```
-git push --set-upstream origin development
+git push --set-upstream origin git-merge
 ```
 
 ### Merge dei rami in modalità grafica
 
-Quando si vuole effettuare la fusione del ramo "development" con il ramo "master", si può utilizzare lo strumento grafico messo a disposizione dai servizi online.
+Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "master", si può utilizzare lo strumento grafico messo a disposizione dai servizi online.
 
-I passi consistono nel creare una "New pull request", confrontando "master" -> "development", e quindi "crea pull request" e conferma.
+I passi consistono nel creare una "New pull request", cliccando sul relativo pulsante:
 
-Creata la pull request, si deve effettuare l'operazione di "merge e pull" e confermare.
+![Image](/static/coding/tools/GitHub-NewPullRequest-step1.png "GitHub - New Pull Request - step 1")
+
+Il servizio online mostra una coppia di branch da selezionare per la fusione:
+
+![Image](/static/coding/tools/GitHub-NewPullRequest-step2.png "GitHub - New Pull Request - step 2")
+
+
+L'utente deve selezionare come base il ramo che deve contenere la modifica, in questo caso il ramo principale (master), e, come ramo da confrontare, il ramo "git-merge" del quale effettuare la fusione. Appena viene selezionato, comparirà la seguente finestra:
+
+![Image](/static/coding/tools/GitHub-NewPullRequest-step3.png "GitHub - New Pull Request - step 3")
+
+La finestra indica, attraverso la scritta "Able to merge", che è possibile effettuare la fusione dei due rami in maniera automatica. A questo punto bisogna quindi solo confermare la creazione della pull request, cliccando sull'apposito tasto.
+
+L'utente può opzionalmente aggiungere un commento prima di completare l'operazione:
+
+![Image](/static/coding/tools/GitHub-NewPullRequest-step4.png "GitHub - New Pull Request - step 4")
+
+Ad operazione completata, nella sezione "Pull request" si può verificare che la nuova pull request è stata creata.
+
+![Image](/static/coding/tools/GitHub-MergePullRequest-step1.png "GitHub - Merge Pull Request - step 1")
+
+Creata la pull request, si deve effettuare l'operazione di "merge della pull request". Per far ciò, l'utente deve selezionare la pull request nell'elenco precedente e quindi può visualizzare il dettaglio della pull request creata. Tra le altre cose, è descritto che il branch non ha conflitti e quindi l'operazione di fusione può essere effettuata automaticamente confermando l'operazione di "merge della pull request"..
+
+![Image](/static/coding/tools/GitHub-MergePullRequest-step2.png "GitHub - Merge Pull Request - step 2")
+
+All'utente è richiesto l'inserimento di un commento opzionale e di completare l'operazione:
+
+![Image](/static/coding/tools/GitHub-MergePullRequest-step3.png "GitHub - Merge Pull Request - step 3")
+
+Completata l'operazione, la pull request risulta correttamente fusa nel ramo di sviluppo indicato.
+
+![Image](/static/coding/tools/GitHub-MergePullRequest-step4.png "GitHub - Merge Pull Request - step 4")
