@@ -2,7 +2,7 @@
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PUB_DIR="$CURRENT_DIR/"
 BUILD="$CURRENT_DIR/build/"
-CONTENT_DIR="$CURRENT_DIR/.." # NO ending "/"
+CONTENT_DIR="$CURRENT_DIR/.." # NO ending slash "/"
 RESOURCE_DIR="$CURRENT_DIR/../static"
 
 METADATA="metadata.xml"
@@ -14,9 +14,23 @@ COVER_IMAGE="cover.jpg"
 IMAGE_PREPROCESS_FILTER_EBOOK="replace_image_source.lua"
 PAGEBREAK_PREPROCESS_FILTER="pagebreak.lua"
 
-BOOKNAME="Appunti-di-laboratorio"
-CHAPTERS="$CONTENT_DIR/content/coding/shell/PowerShell/intro.md $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet.md $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-Path.md $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-FileCartelle.md"
+: ' commento multilinea
+BOOKNAME="Appunti-di-laboratorio-Sistemi-Reti"
+CHAPTERS="$CONTENT_DIR/content/coding/shell/PowerShell/intro.md
+          $CONTENT_DIR/content/coding/shell/PowerShell/Concetti.md
+          $CONTENT_DIR/content/coding/shell/PowerShell/PrimiScript.md
+          $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-Path.md
+          $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-FileCartelle.md"
+'
 
+BOOKNAME="Appunti-di-laboratorio-TPSIT"
+CHAPTERS="$CONTENT_DIR/content/coding/web/javascript/intro.md
+          $CONTENT_DIR/content/coding/web/javascript/primi_script.md
+          $CONTENT_DIR/content/coding/web/javascript/Variabili.md
+          $CONTENT_DIR/content/coding/web/javascript/operatori.md
+          $CONTENT_DIR/content/coding/web/javascript/istruzioni_condizionali_iterative.md
+		  $CONTENT_DIR/content/coding/web/javascript/funzioni.md
+		  $CONTENT_DIR/content/coding/web/javascript/interazioneHtml.md"
 
 # Common pandoc command for all formats
 PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --toc --toc-depth=3 --lua-filter=$PUB_DIR$IMAGE_PREPROCESS_FILTER_EBOOK --lua-filter=$PUB_DIR$PAGEBREAK_PREPROCESS_FILTER --resource-path=$RESOURCE_DIR "  # --fail-if-warnings --top-level-division=section
