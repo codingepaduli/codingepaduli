@@ -7,7 +7,7 @@ publishdate: 2020-07-01
 lastmod: 2020-07-01
 categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
-draft: true
+draft: false
 toc: false
 summary: "Git - Un sistema per il controllo di versione distribuito"
 ---
@@ -398,6 +398,26 @@ git fetch --all
 Per poter pulire i branch locali, cancellando quelli che anche in remoto sono stati rimossi, si utilizza il comando:
 ```
 git fetch --prune
+```
+
+### Merge dei rami in modalità a linea di comando
+
+Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "master", da linea di comando bisogna spostarsi sul ramo di sviluppo principale **master**.
+```
+git checkout master
+```
+
+Effettuato ciò, si può effettuare la fusione del ramo "git-merge", eseguendo il comando:
+```
+git merge git-merge
+```
+
+L'output indica che l'operazione è stata eseguita:
+```
+Merge made by the 'recursive' strategy.
+ content/coding/tools/Git.md                          |  84 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
+ coding/tools/Git.md | Bin 39000 -> 39569 bytes
+ 2 files changed, 80 insertions(+), 4 deletions(-)
 ```
 
 ### Merge dei rami in modalità grafica
