@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-07-14
-publishdate: 2020-07-14
-lastmod: 2020-07-14
+date: 2020-07-30
+publishdate: 2020-07-30
+lastmod: 2020-07-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -30,6 +30,8 @@ summary: "Set di link interessanti"
 [The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
+[Paradosso del gatto di Schrödinger](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Wikipedia\
+[When Hubble Stared at Nothing for 100 Hours](https://www.nationalgeographic.com/science/phenomena/2015/04/24/when-hubble-stared-at-nothing-for-100-hours/) - “nothing” was actually stuffed with of galaxies. More than 3,000 of them came spilling out, some roughly 12 billion years old. Spiral, elliptical, irregular...\
 
 ### Math
 [Pythagoras theorem](https://www.forbes.com/sites/startswithabang/2020/03/06/the-bizarre-math-of-why-10%C2%B2-11%C2%B2-12%C2%B2-13%C2%B2-14%C2%B2/) - This One Equation, 10² + 11² + 12² = 13² + 14², Takes Pythagoras To A Whole New Level\
@@ -38,6 +40,7 @@ summary: "Set di link interessanti"
 [Math.it](https://www.math.it/) - Didattica e divulgazione della matematica\
 [Enigma machine simulator](https://observablehq.com/@tmcw/enigma-machine) - \
 [Enigma machine's plugboard](https://observablehq.com/@tmcw/enigma-machine-plugboard) - a software emulator for the hardware plugboard that allowed for scrambling of characters at the input & output stages of the Enigma machine’s process\
+[CindyJS](https://cindyjs.org/) - a framework to create interactive (mathematics and physics) content for the web\
 
 ### Medicine
 [The Cancer Industry](https://blogs.scientificamerican.com/cross-check/the-cancer-industry-hype-vs-reality/) - Overdiagnosis, overtreatment and marginal benefits for patients\
@@ -55,3 +58,4 @@ summary: "Set di link interessanti"
 [QiFi](https://qifi.org/) - WiFi QR Code Generator\
 [HaxBall](https://www.haxball.com/) - physics-based multiplayer soccer game where teamwork is key\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
+[Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\

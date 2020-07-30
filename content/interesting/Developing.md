@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-07-17
-publishdate: 2020-07-17
-lastmod: 2020-07-17
+date: 2020-07-30
+publishdate: 2020-07-30
+lastmod: 2020-07-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -67,6 +67,7 @@ summary: "Set di link relativi al coding"
 [ProtonMail](https://protonmail.com/) - A secure free encrypted email.\
 [ThrowAwayMail.com](http://www.throwawaymail.com/) - free temporary email, disposable e-mail address\
 [fake mail generator](http://www.fakemailgenerator.com/) - \
+[https://www.mytrashmailer.com/](https://www.mytrashmailer.com/) - \
 
 ### Cloud, Containers, Emulators and Virtual Machines
 [What is Istio? | Opensource.com](https://opensource.com/article/18/9/what-istio) - \
@@ -139,11 +140,14 @@ summary: "Set di link relativi al coding"
 ### AI
 [fast.ai · Making neural nets uncool again](http://www.fast.ai/) - \
 [Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn) - Red Hat\
-[Dataset list — A list of the biggest datasets for machine learning](https://www.datasetlist.com/) - \
+[Dataset list](https://www.datasetlist.com/) - A list of the biggest datasets for machine learning\
 [Playing Mortal Kombat with TensorFlow.js.](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/) - Transfer learning and data augmentation\
 [CNN Explainer](https://poloclub.github.io/cnn-explainer/) - Learn Convolutional Neural Network\
 [ml5js·Friendly Machine Learning For The Web](https://ml5js.org/) - \
 [Teachable Machine](https://teachablemachine.withgoogle.com/) - Google\
+[Python Machine Learning Projects - A DigitalOcean eBook | DigitalOcean](https://www.digitalocean.com/community/books/python-machine-learning-projects-a-digitalocean-ebook) - \
+[Deeplearning4j](https://www.infoworld.com/article/3567055/deeplearning4j-deep-learning-and-etl-for-the-jvm.html) - Deep learning and ETL for the JVM | InfoWorld\
+[PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
 
 ### .Net
 [Integrate Jenkins with MSBuild and NuGet](https://www.codeproject.com/Articles/878203/Integrate-Jenkins-with-MSBuild-and-NuGet) - \
@@ -175,6 +179,7 @@ summary: "Set di link relativi al coding"
 [PostgREST](https://postgrest.org/en/v7.0.0/) - a standalone web server that turns your PostgreSQL database directly into a RESTful API; \
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns) - This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes\
+[FastoNoSQL](https://fastonosql.com/) - cross-platform GUI Manager for NoSQL databases.\
 
 ### Giochi
 [Primi Passi nel Game Development](https://davideaversa.it/slashcode/2012/04/primi-passi-nel-game-development/) - \
@@ -185,20 +190,14 @@ summary: "Set di link relativi al coding"
 [Open Source Game Clones](https://osgameclones.com/) - \
 
 ### GIT
-[Git 02, the stupid content tracker | MokaByte](http://www.mokabyte.it/2016/10/git-2/) - \
-[Git 03, the stupid content tracker | MokaByte](http://www.mokabyte.it/2017/01/git-3/) - \
-[Getting started with Git: Terminology 101 | Opensource.com](https://opensource.com/article/19/2/git-terminology) - \
 [Oh, shit, git!](http://ohshitgit.com/) - \
 [Git basics](https://areknawo.com/git-basics-the-only-introduction-you-will-ever-need/) - the only introduction you'll ever need!\
 [The Smart Ways to Correct Mistakes in Git | CSS-Tricks](https://css-tricks.com/the-smart-ways-to-correct-mistakes-in-git/) - \
-[A beginner’s guide to Git — how to start and create your first repository](https://www.freecodecamp.org/news/a-beginners-guide-to-git-how-to-create-your-first-github-project-c3ff53f56861/) - \
-[Git](https://www.git-scm.com/book/en/v2) - Book\
-[Configuring Git to handle line endings](https://help.github.com/en/github/using-git/configuring-git-to-handle-line-endings) - GitHub Help\
-[Make advanced Git tasks simple with Lazygit | Opensource.com](https://opensource.com/article/20/3/lazygit) - \
 [Setting Up Git Identities · Micah Henning](https://www.micah.soy/posts/setting-up-git-identities/) - \
 [5 Git Commands to Know Just After You Get the Basics | Coders Bible](https://codersbible.com/5-git-commands-to-know-just-after-you-get-the-basics/) - \
-[Install hub to make your Git command-line as fully featured as GitHub | Opensource.com](https://opensource.com/article/20/3/github-hub) - \
 [Managing Git projects with submodules and subtrees | Opensource.com](https://opensource.com/article/20/5/git-submodules-subtrees) - \
+[Make advanced Git tasks simple with Lazygit | Opensource.com](https://opensource.com/article/20/3/lazygit) - \
+[Install hub to make your Git command-line as fully featured as GitHub | Opensource.com](https://opensource.com/article/20/3/github-hub) - \
 
 ### Java
 [Free web hosting for Java+MySQL websites?](https://www.quora.com/Free-web-hosting-for-Java+MySQL-websites) - Quora\
@@ -250,8 +249,13 @@ summary: "Set di link relativi al coding"
 [Spring Boot | GraphQLize](https://www.graphqlize.org/docs/getting_started/java/springboot) - \
 [Configuring Spring Security for a RESTful Web Services](http://www.networkedassets.com/configuring-spring-security-for-a-restful-web-services/) - \
 
+#### Java to native or WebAssembly
+[Mandrel](https://www.infoq.com/news/2020/07/mandrel-graalvm/) - Red Hat Makes Java Native\
+[CheerpJ](https://www.infoworld.com/article/3536576/cheerpj-java-to-javascript-compiler-boosts-exception-handling-native-methods.html) - the CheerpJ compiler converts Java clients to HTML, JavaScript, and WebAssembly\
+
 ### Linux
 [The Debian Administrator's Handbook](https://debian-handbook.info/) - \
+[tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [Capitolo 4. Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [SolydXK | Home of SolydX and SolydK](http://solydxk.com/) - \
@@ -259,6 +263,8 @@ summary: "Set di link relativi al coding"
 [SolydXK 32bit download page](https://downloads.solydxk.com/ce/testing/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
+[cron](https://duckduckgo.com/?q=use+systemd+timers+instead+of+cronjob&ia=web) - use systemd timers instead of cronjob at DuckDuckGo\
+[cron](https://opensource.com/article/20/7/systemd-calendar-timespans) - Analyzing systemd calendar and timespans | Opensource.com\
 [Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
 [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/) - \
 [KDE Store](https://store.kde.org/) - \
@@ -271,12 +277,14 @@ summary: "Set di link relativi al coding"
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
 [https://mosermichael.github.io/jq-illustrated/dir/content.html](https://mosermichael.github.io/jq-illustrated/dir/content.html) - \
+[ssh](https://gravitational.com/blog/how-to-ssh-properly/) - How to SSH Properly\
 [ssh](https://wiki.debian.org/SSH) - Debian Wiki\
 [ssh](https://opensource.com/article/20/2/ssh-tools) - Tools for SSH key management\
 [ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit: local vs remote\
 [ssh](https://smallstep.com/blog/ssh-tricks-and-tips/) - Tips & Tricks\
 [VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
 [VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
+[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
 [The script command](https://www.ostechnix.com/record-everything-terminal/) - How To Record Everything You Do In Terminal\
 [critic.sh](https://github.com/Checksum/critic.sh) - Dead simple testing framework for Bash with coverage reporting\
 [viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
@@ -284,7 +292,6 @@ summary: "Set di link relativi al coding"
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL: Cryptography basics | Opensource.com\
 [gocryptfs](https://opensource.com/article/19/8/how-encrypt-files-gocryptfs) - How to encrypt files with gocryptfs on Linux | Opensource.com\
 [Thunar Custom Action](http://blogs.dailynews.com/click/2013/03/12/direct-delete-trash-xfces-thunar-file-manager/) - Delete directly without using/needing Trash in Xfce\
-[tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [Five Years of Btrfs](https://markmcb.com/2020/01/07/five-years-of-btrfs/) - use the Btrfs file system to store all my data\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
 [Linux firewalls: What you need to know about iptables and firewalld | Opensource.com](https://opensource.com/article/18/9/linux-iptables-firewalld) - \
@@ -295,8 +302,10 @@ summary: "Set di link relativi al coding"
 [An important safety note about chown and symlinks (also chmod and chgrp)](https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ChownSymlinkSafety) - \
 [Building binary deb packages: a practical guide](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - Internal Pointers\
 [5 modern alternatives to essential Linux command-line tools | Opensource.com](https://opensource.com/article/20/6/modern-linux-command-line-tools) - \
-[use systemd timers instead of cronjob at DuckDuckGo](https://duckduckgo.com/?q=use+systemd+timers+instead+of+cronjob&ia=web) - \
 [Access control lists and external drives on Linux: What you need to know | Opensource.com](https://opensource.com/article/20/3/external-drives-linux) - \
+[WhyTheName](https://wiki.debian.org/WhyTheName) - It explains the strange name of linux packages\
+[WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
+[Import functions and variables into Bash with the source command | Opensource.com](https://opensource.com/article/20/6/bash-source-command) - \
 
 ### Mozilla Firefox
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
@@ -357,6 +366,8 @@ summary: "Set di link relativi al coding"
 [The Brave web browser is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - \
 [Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser · GitHub](https://github.com/brave/brave-browser/issues/9929) - \
 [Runnaroo | A Better Private Search Engine](https://www.runnaroo.com/) - \
+[Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
+[DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/learning/dns/dns-over-tls/) - \
 
 ### Scrivere documenti e conversione tra formati 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
@@ -374,6 +385,8 @@ summary: "Set di link relativi al coding"
 [trubitsyn/bookmarks2markdown: Convert bookmarks to Markdown](https://github.com/trubitsyn/bookmarks2markdown) - \
 [scraggo/bookmarks-markdown-utils: Collection of command-line tools for Chrome, OneTab, Evernote, and FireFox bookmark management. The tools are mostly to convert proprietary formats to markdown and organizing and add tags.](https://github.com/scraggo/bookmarks-markdown-utils) - \
 [Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
+[GitHub](https://github.com/robinsloan/perfect-edition) - robinsloan/perfect-edition: A lightweight, responsive web e-book template\
+[Typesetting Markdown – Part 2: Tool Review (Dave Jarvis)](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - \
 
 #### Hugo static site generator
 [Chapter 2 Hugo | blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/hugo.html) - \
@@ -424,6 +437,7 @@ summary: "Set di link relativi al coding"
 [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
 [Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
 [PWA Store](https://progressiveapp.store/pwa/64) - \
+[PWA](https://chromeunboxed.com/google-play-store-microsoft-pwa-builder/) - Google and Microsoft collaborate to help deliver better PWAs to the Play Store\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
 [BrowserGap](https://github.com/dosyago/RemoteView/blob/master/README.md) - access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web\
 [Microbrowsers](https://24ways.org/2019/microbrowsers-are-everywhere/) - little thumbnail preview in a tweet or in WhatsApp chat are probably more important than google bot, can be the most influential part for attracting new audiences and increasing engagement - possibly more than SEO\
@@ -439,7 +453,7 @@ summary: "Set di link relativi al coding"
 [html HEAD](https://htmlhead.dev/) - All the contents of the head tag\
 [html images srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) - media queries aren’t the right tool for responsive images, srcset and sizes are\
 [html images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) - How to Build Responsive Images with srcset\
-[html images done right: Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - \
+[html images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
 [html image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
 [html images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
@@ -507,6 +521,7 @@ summary: "Set di link relativi al coding"
 [NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
 [sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
+[BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 
 ##### Aurelia
 [Aurelia JS](http://aurelia.io/) - \
@@ -524,4 +539,3 @@ summary: "Set di link relativi al coding"
 [Aurelia 2](https://github.com/aurelia/aurelia) - GitHub aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
-[BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
