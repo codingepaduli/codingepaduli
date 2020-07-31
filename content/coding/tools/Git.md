@@ -16,7 +16,7 @@ summary: "Git - Un sistema per il controllo di versione distribuito"
 
 Git è un sistema per il controllo di versione distribuito. Inizialmente sviluppato da Linus Torvalds per gestire lo sviluppo del kernel Linux, oggi è utilizzato dalle aziende informatiche di tutto il mondo. Costituisce anche un requisito basilare delle conoscenze di uno sviluppatore informatico.
 
-Oggi, i progetti pubblicamente esposti dagli sviluppatore sui vari servizi di controllo di versione rappresentano una sorta di "Instagram" utilizzato però non per condividere foto e video di se, ma per condividere i propri lavori quali libri, animazioni 2D e 3D, software e così via.
+Oggi, i progetti pubblicamente esposti dagli sviluppatore sui vari servizi di controllo di versione rappresentano una sorta di "Instagram", utilizzato per condividere non foto e video, ma i propri lavori, quali libri, animazioni 2D e 3D, software e così via.
 
 Per rendere l'idea di cosa significhi "controllo di versione" (dall'inglese Version Control System), si può immaginare un gruppo di studenti che devono svolgere un progetto da consegnare per un esame universitario. Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro.
 
@@ -58,25 +58,68 @@ I concetti principali sui quali si basa git sono:
 
 - Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente, è rappresentato dal completamento di un lavoro che viene spostato dall'area di lavoro (la scrivania) al proprio quaderno ad anelli. 
 
-- Le **versioni**: le operazioni di commit generano una nuova versione del lavoro svolto. Il lavoro precedente non viene cancellato, ma salvato, in modo da poter sempre tornare ad una versione precedente.
+- Le **versioni**: le operazioni di commit generano una nuova versione del lavoro svolto. Il lavoro precedente non viene cancellato, ma salvato, in modo da poter sempre tornare ad una versione precedente. L'ultima versione sul ramo di sviluppo sul quale lavora l'utente è detta **HEAD**.
 
-- Il **repository locale**: un insieme di file che si trovano ad una specifica versione. E' ospitato sul proprio computer e non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
+- Il **repository locale**: l'insieme di file versionati e tracciati. Rappresenta l'insieme di file su cui git lavora in locale. E' ospitato sul proprio computer e non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
 
-- Il **repository remoto**: un insieme di file che si trovano ad una specifica versione. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro degli altri studenti e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
+- Il **repository remoto**: l'insieme di file versionati e tracciati. Rappresenta l'insieme di file su cui git lavora in remoto. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro degli altri studenti e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
 
 - La **sincronizzazione**: l'operazione effettuata dall'utente che permette di inviare i lavori dal proprio repository locale al remoto remoto (in git è l'operazione di **push**) e, viceversa, di ricevere i lavori dal repository remoto a quello locale (in git è l'operazione di **pull**). Nell'analogia precedente, è rappresentato dall'azione di copia del lavoro presente nel proprio quaderno ad anelli al quaderno ad anelli dello studio del professore e, viceversa, dall'azione di copia del lavoro presente nel quaderno ad anelli dello studio nel proprio quaderno ad anelli.
 
-- La **fusione**: l'operazione effettuata dall'utente che permette di unire due lavori. Nell'analogia precedente, è rappresentata dall'unione delle modifiche apportate da studenti diversi ad uno stesso capitolo o uno stesso disegno.
+- I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo principale su git è detto **master**, nei sistemi di controllo versione è chiamato **trunk**. Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
 
 - La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che viene aggiunto al gruppo, e che quindi compra un nuovo quaderno ad anelli nel quale poi clona il contenuto del quaderno ad anelli del professore.
 
-## Registrazione 
+## Gestione repository
+
+I servizi online permettono la gestione di un repository git tramite interfaccia web, che rende semplice l'interazione con l'utente. 
 
 Per la creazione di un repository remoto. ci si può registrare su uno dei vari servizi online. Tra i più noti ci sono GitHub, GitLab e BitBucket.
 
 Una volta registrati e creato il proprio repository, si può procedere alla configurazione di git, alla clonazione del repository e quindi alla condivisione con altri utenti del proprio lavoro presente sul repository.
 
-## Prima configurazione
+### Creazione repository su GitHub
+
+GitHub permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
+
+![Image](/static/coding/tools/GitHub-Repository-New.png "GitHub - New Repository")
+
+Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
+
+![Image](/static/coding/tools/GitHub-Repository-URL.png "GitHub - Repository URL")
+
+L'indirizzo completo del repository su GitHub, non completamente riportato nell'immagine, è il seguente:
+
+https://github.com/codingepaduli/gitmergetutorial.git
+
+### Creazione repository su GitLab
+
+GitLab permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
+
+![Image](/static/coding/tools/GitLab-Repository-New.png "GitLab - New Repository")
+
+Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
+
+![Image](/static/coding/tools/GitLab-Repository-URL.png "GitLab - Repository URL")
+
+L'indirizzo completo del repository su GitLab, non completamente riportato nell'immagine, è il seguente:
+
+https://gitlab.com/codingepaduli/gitmergetutorial.git
+
+### Clonazione repository 
+
+Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione, attraverso il seguente comando:
+
+```
+git clone https://github.com/codingepaduli/codingepaduli.git
+```
+
+Si può verificare che il repository locale ha un riferimento al repository remoto, accedendo alla cartella creata ed utilizzando, al suo interno, il comando:
+```
+git remote -v
+```
+
+### Prima configurazione del repository
 
 Git ha 3 livelli di configurazione:
 - configurazione di sistema, su linux si trova in ``/etc/gitconfig``, su Windows si trova in ``\Git\mingw64\etc\gitconfig``;
@@ -120,51 +163,6 @@ Nella configurazione è utile anche impostare l'editor di riferimento:
 git config --global core.editor "atom --wait"
 ```
 
-## Gestione repository
-
-I servizi online permettono la gestione di un repository git tramite interfaccia web, che rende semplice l'interazione con l'utente. 
-
-### Creazione repository su GitHub
-
-GitHub permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
-
-![Image](/static/coding/tools/GitHub-Repository-New.png "GitHub - New Repository")
-
-Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
-
-![Image](/static/coding/tools/GitHub-Repository-URL.png "GitHub - Repository URL")
-
-L'indirizzo completo del repository su GitHub, non completamente riportato nell'immagine, è il seguente:
-
-https://github.com/codingepaduli/gitmergetutorial.git
-
-### Creazione repository su GitLab
-
-GitLab permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
-
-![Image](/static/coding/tools/GitLab-Repository-New.png "GitLab - New Repository")
-
-Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
-
-![Image](/static/coding/tools/GitLab-Repository-URL.png "GitLab - Repository URL")
-
-L'indirizzo completo del repository su GitLab, non completamente riportato nell'immagine, è il seguente:
-
-https://gitlab.com/codingepaduli/gitmergetutorial.git
-
-### Clonazione repository 
-
-Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione, attraverso il seguente comando:
-
-```
-git clone https://github.com/codingepaduli/codingepaduli.git
-```
-
-Si può verificare che il repository locale ha un riferimento al repository remoto, accedendo alla cartella creata ed utilizzando, al suo interno, il comando:
-```
-git remote -v
-```
-
 ### Staging area e commit
 
 Per creare una nuova versione del repository locale e poi sincronizzarla con il repository remoto, si può partire dalla creazione di tre file, ``file1.txt``, ``file2.txt`` e ``file3.txt``, in modo da seguire le varie operazioni.
@@ -202,7 +200,7 @@ Effettuando ulteriori modifiche al file ``file1.txt``, questo risulta modificato
 ```
 git status
 ```
-
+ tenendo presente che per ora si sta facendo riferimento al  semplicemente
 L'output è il seguente:
 ```
 Sul branch master
@@ -319,17 +317,29 @@ dove il numero zero è l'indice dell'area temporanea da cancellare.
 
 ### Lavorare con più origini remote
 
-Quando si effettua la clonazione di un repository, git crea un riferimento a questo repository remoto, chiamato **origin**, come evidenziato dal comando:
-```
-git remote -v
-```
+Quando si effettua la clonazione di un repository, git crea un riferimento a questo repository remoto, chiamato **origin**:
 
 E' però possibile utilizzate più repository remoti, semplicemente aggiungendo un riferimento remoto, di seguito chiamato **gitlab**, al repository locale:
 ```
 git remote add gitlab https://gitlab.com/codingepaduli/codingepaduli.git
 ```
 
-Aggiunto il repository remoto, è possibile sincronizzarlo con il locale, semplicemente effettuando le classiche operazioni di **push** e **pull**, facendo però attenzione ad indicare l'origine **gitlab** appena creata.
+Per visualizzare i repository remoti, si può utilizzare il comando:
+```
+git remote -v
+```
+
+L'output mostrato è il seguente:
+```
+gitlab	https://gitlab.com/codingepaduli/codingepaduli.git (fetch)
+gitlab	https://gitlab.com/codingepaduli/codingepaduli.git (push)
+origin	https://github.com/codingepaduli/codingepaduli.git (fetch)
+origin	https://github.com/codingepaduli/codingepaduli.git (push)
+```
+
+Come si nota, i riferimenti remoti per le operazioni di invio e ricezione dati ("push" e "fetch") possono essere differenti.
+
+Per sincronizzare il ramo di sviluppo principale **master** del repository remoto con il repository locale, si effettuano le classiche operazioni di **push** e **pull**, facendo però attenzione ad indicare l'origine **gitlab** appena creata.
 ```
 git push gitlab master
 git pull gitlab master
@@ -420,6 +430,19 @@ Merge made by the 'recursive' strategy.
  2 files changed, 80 insertions(+), 4 deletions(-)
 ```
 
+E' possibile verificare che i 2 branch sono stati fusi in un'unico branch, attraverso il comando:
+```
+git log --pretty=format:"%h %s" --graph
+```
+
+L'output indica in forma grafica che i rami di sviluppo sono stati fusi e che effettivamente confluiscono in un'unico ramo:
+```
+*   b21a312 Merge pull request #1 
+|\  
+| * ae55ada Updated posts about tools
+|/  
+```
+
 ### Merge dei rami in modalità grafica
 
 Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "master", si può utilizzare lo strumento grafico messo a disposizione dai servizi online.
@@ -458,3 +481,32 @@ All'utente è richiesto l'inserimento di un commento opzionale e di completare l
 Completata l'operazione, la pull request risulta correttamente fusa nel ramo di sviluppo indicato.
 
 ![Image](/static/coding/tools/GitHub-MergePullRequest-step4.png "GitHub - Merge Pull Request - step 4")
+
+## Contribuire ad altri progetti
+
+Git permette di contribuire ai progetti esterni (di altri sviluppatori, anche sconosciuti) inviando sui loro repository delle pull request contenenti le proprie modifiche.
+
+Per questioni di sicurezza, però, non è possibile inviare lavoro su un repository che non è il proprio. Dato che si vuole apportare una modifica ad un repository di cui non si possiede la titolarità, è necessaria un'operazione preliminare: la **fork**. Con questa operazione, si effettua una copia del repository dello sviluppatore e di questa copia si è titolari.
+
+Per contribuire al repository dell'altro sviluppatore si effettuata la fork e la clonazione del repository, sul quale si apporteranno le modifiche, e quindi si crea una pull request tra il proprio repository ed il repository dell'altro sviluppatore.
+
+L'altro sviluppatore può quindi accettare (ed effettuare l'operazione di merge) della pull request effettuata oppure può scegliere di rifiutare di includere le modifiche inviate.
+
+## Approfondimenti
+
+L'introduzione a git non parla delle molteplici funzionalità avanzate che possono essere però approfondite nelle varie guide e libri, tra i quali si segnala:
+
+La serie di articoli su Mokabyte:
+1. [http://www.mokabyte.it/2016/09/git-1/](http://www.mokabyte.it/2016/09/git-1/);
+2. [http://www.mokabyte.it/2016/10/git-2/](http://www.mokabyte.it/2016/10/git-2/);
+3. [http://www.mokabyte.it/2017/01/git-3/](http://www.mokabyte.it/2017/01/git-3/);
+4. [http://www.mokabyte.it/2017/02/git-4/](http://www.mokabyte.it/2017/02/git-4/);
+5. [http://www.mokabyte.it/2017/04/git-5/](http://www.mokabyte.it/2017/04/git-5/);
+6. [http://www.mokabyte.it/2017/05/git-6/](http://www.mokabyte.it/2017/05/git-6/);
+7. [http://www.mokabyte.it/2017/07/git-7/](http://www.mokabyte.it/2017/07/git-7/);
+8. [http://www.mokabyte.it/2017/10/git-8/](http://www.mokabyte.it/2017/10/git-8/);
+9. [http://www.mokabyte.it/2017/12/git-9/](http://www.mokabyte.it/2017/12/git-9/);
+10. [http://www.mokabyte.it/2018/01/git-10/](http://www.mokabyte.it/2018/01/git-10/);
+
+Il libro su git:
+[https://www.git-scm.com/book/en/v2](https://www.git-scm.com/book/en/v2).
