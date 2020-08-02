@@ -25,7 +25,9 @@ I nuovi selettori, definiti nei livelli "superiori" vanno a potenziare e rendere
 
 I selettori possono essere combinati in modo da formare combinazioni molto potenti.
 
+
 ## Selettore universale
+
 Selettore | Descrizione
 --- | ---
 \*  | Seleziona tutti gli elementi;
@@ -46,7 +48,9 @@ let elements = document.querySelectorAll('*');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#univ *')" value="seleziona">
 
+
 ## Selettore per id
+
 Selettore | Descrizione
 --- | ---
 \#E | Seleziona il tag con id E;
@@ -69,7 +73,9 @@ let elements = document.querySelector('#paragrafo1');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#paragrafo1')" value="seleziona">
 
+
 ## Selettore per classe
+
 Selettore | Descrizione
 --- | ---
 .C  | Seleziona i tag che hanno classe C;
@@ -94,7 +100,9 @@ let elements = document.querySelectorAll('.paragrafo');
 Esempio di selezione:
 <input type="button" onclick="seleziona('.paragrafo')" value="seleziona">
 
+
 ## Selettore per elemento (tag)
+
 Selettore | Descrizione
 --- | ---
 E  | Seleziona i tag E;
@@ -121,7 +129,9 @@ let elements = document.querySelectorAll('p');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#elem p')" value="seleziona">
 
+
 ## Selettori per attributi
+
 Selettore | Descrizione
 --- | ---
 [A]       | Seleziona i tag con attributo A avente qualsiasi valore;
@@ -133,7 +143,6 @@ Selettore | Descrizione
 [A\*="V"] | Seleziona i tag con attributo A il cui valore contiene V;
 [A\|="V"]  | Seleziona i tag con attributo A il cui valore è V oppure è V seguito immediatamente da un carattere "trattino" ``-``;
 [A~="V"]  | Seleziona i tag con attributo A il cui valore è una lista di stringhe separata da uno spazio contenente, tra i vari valori, il valore V;
-
 
 ### Esempio d'uso del selettore per attributi
 
@@ -157,7 +166,6 @@ let elements = document.querySelectorAll('[title]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title]')" value="seleziona">
 
-
 Per selezionare i link con l'attributo "title" avente valore "Link1" (si noti che è case-sensitive), si può utilizzare l'istruzione javascript:
 ```javascript
 let elements = document.querySelectorAll('[title="Link1" s]');
@@ -165,7 +173,6 @@ let elements = document.querySelectorAll('[title="Link1" s]');
 
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title=\'Link1\' s]')" value="seleziona">
-
 
 Per selezionare i link con l'attributo "title" avente valore "link1" (si noti che non è case-sensitive), si può utilizzare l'istruzione javascript:
 ```javascript
@@ -193,7 +200,6 @@ let elements = document.querySelectorAll('[title$="k1"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title$=\'k1\']')" value="seleziona">
 
-
 Per selezionare i link con l'attributo "title" contenente il valore "ink", si può utilizzare l'istruzione javascript:
 ```javascript
 let elements = document.querySelectorAll('[title*="ink"]');
@@ -201,7 +207,6 @@ let elements = document.querySelectorAll('[title*="ink"]');
 
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title*=\'ink\']')" value="seleziona">
-
 
 Per selezionare i link con l'attributo "data-custom", contenente il valore che inizia con "value" e seguito opzionalmente dal carattere "-" e quindi da altra sequenza opzionale di caratteri, si può utilizzare l'istruzione javascript:
 ```javascript
@@ -211,7 +216,6 @@ let elements = document.querySelectorAll('[data-custom|="value"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [data-custom|=\'value\']')" value="seleziona">
 
-
 Per selezionare i link con l'attributo "data-custom" contenente una lista di valori separati da uno spazio, e con la lista contenente il valore "value-v4" , si può utilizzare l'istruzione javascript:
 ```javascript
 let elements = document.querySelectorAll('[data-custom~="value-v2"]');
@@ -220,11 +224,12 @@ let elements = document.querySelectorAll('[data-custom~="value-v2"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [data-custom~=\'value-v2\']')" value="seleziona">
 
-### Selettori per raggruppamento
+
+## Selettori per raggruppamento
+
 Selettore | Descrizione
 --- | ---
 S1,S2       | Seleziona i tag selezionati dal selettore S1 o dal selettore S2;
-
 
 ### Esempio d'uso del selettore per raggruppamento
 
@@ -249,15 +254,65 @@ Esempio di selezione:
 <input type="button" onclick="seleziona('#group p, #group a')" value="seleziona">
 
 
-### Selettori per relazione di "parentela"
+## Selettori per relazione di "parentela"
+
 Selettore | Descrizione
 --- | ---
-E F       | Seleziona i tag F discendenti dei tag E;
-E > F     | Seleziona i tag F figli diretti dei tag E;
-E + F     | Seleziona i tag F, fratelli di E, che seguono immediatamente i tag E;
-E ~ F     | Seleziona i tag F, fratelli di E, che seguono (anche non immediatamente) i tag E;
+ S1 S2   | Seleziona i tag selezionati dal selettore S2 discendenti dei tag selezionati dal selettore S1;
+S1 > S2  | Seleziona i tag selezionati dal selettore S2 figli diretti dei tag selezionati dal selettore S1;
+S1 + S2  | Seleziona i tag selezionati dal selettore S2 che seguono, direttamente e sullo stesso livello di profondità, i tag selezionati dal selettore S1;
+S1 ~ S2  | Seleziona i tag selezionati dal selettore S2 che seguono, anche non immediatamente ma che sono sullo stesso livello di profondità, i tag selezionati dal selettore S1;
 
-### Selettori per posizione
+### Esempio d'uso del selettore per relazione di "parentela"
+
+Supponendo che la pagina HTML contenga un paragrafo al cui interno ci sono 3 link, di cui il terzo in grassetto, come nel seguente esempio:
+```html
+<p>paragrafo con <a>primo</a>, <a id="link2">secondo</a>, <strong> <a>terzo</a> (in grassetto) </strong> e <a>quarto</a> link.</p>
+<a>link esterno al paragrafo.</a>
+<a>link2 esterno al paragrafo.</a>
+```
+
+Il codice elencato produce il seguente risultato:
+<div id="parent">
+  <p>paragrafo con <a>primo</a>, <a id="link2">secondo</a>, <strong> <a>terzo</a> (in grassetto) </strong> e <a>quarto</a> link.</p>
+  <a>link esterno al paragrafo.</a>
+  <a>link2 esterno al paragrafo.</a>
+</div>
+
+Per selezionare tutti i link interni al paragrafo, si può utilizzare l'istruzione javascript:
+```javascript
+let elements = document.querySelectorAll('p a');
+```
+
+Esempio di selezione:
+<input type="button" onclick="seleziona('#parent p a')" value="seleziona">
+
+Per selezionare i link che sono figli "diretti" del paragrafo, si può utilizzare l'istruzione javascript:
+```javascript
+let elements = document.querySelectorAll('p > a');
+```
+
+Esempio di selezione:
+<input type="button" onclick="seleziona('#parent p > a')" value="seleziona">
+
+Per selezionare i link immediatamente successivi al paragrafo, si può utilizzare l'istruzione javascript:
+```javascript
+let elements = document.querySelectorAll('p + a');
+```
+
+Esempio di selezione:
+<input type="button" onclick="seleziona('#parent p + a')" value="seleziona">
+
+Per selezionare i link successivi (anche non immediatamente) al paragrafo, si può utilizzare l'istruzione javascript:
+```javascript
+let elements = document.querySelectorAll('p ~ a');
+```
+
+Esempio di selezione:
+<input type="button" onclick="seleziona('#parent p ~ a')" value="seleziona">
+
+## Selettori per posizione
+
 Selettore | Descrizione
 --- | ---
 :first-child  | Seleziona il primo figlio (diretto);
@@ -278,7 +333,9 @@ S1:nth-last-of-type(I) | Seleziona l'elemento in posizione **I**-esima del tipo 
 S1:nth-last-of-type(even|odd) | Seleziona gli elementi in posizione pari del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
 S1:nth-last-of-type(Xn+Y) | Seleziona gli elementi in posizione che è multiplo di X con spiazzamento Y del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
 
-### Selettori per pseudo-classi
+
+## Selettori per pseudo-classi
+
 Selettore | Descrizione
 --- | ---
 :active       | Seleziona gli elementi attivati, come link o pulsanti;
@@ -304,9 +361,31 @@ Selettore | Descrizione
 :valid        | Seleziona gli elementi del form validati;
 :visited      | Seleziona i link visitati;
 
-### Selettori per pseudo-elementi
+
+## Selettori per pseudo-elementi
+
 Selettore | Descrizione
 --- | ---
 ::after     | Seleziona lo pseudo-elemento ``::after``;
 ::before    | Seleziona lo pseudo-elemento ``::before``;
 ::selection | Seleziona lo pseudo-elemento corrispondente al testo selezionato;
+
+## Combinazioni
+
+E' possibile combinare i selettori illustrati nei capitoli precedenti, in modo da creare espressioni che risultano molto efficaci.
+
+Ad esempio è possibile combinare i selettori per ID, per classe, per elemento e per attributo in questa forma:
+```
+Tag#Id.class['attr']
+```
+
+In questo caso verranno selezionati i tag che soddisfano tutti i selettori, ovvero i tag che sono dell'elemento specificato, che hanno l'ID indicato, le classi associate e gli attributi specificati nel selettore.
+
+Un secondo esempio, di seguito riportato, permette di combinare i selettori per elemento, per classe, per attributo, per posizione e per pseudo-classe, in modo tale da selezionare gli elementi "vuoti" che sono contenuti nel primo figlio del gruppo di tag aventi la classe indicata che a loro volta seguono, direttamente e sullo stesso livello di profondità, gli elementi che hanno l'attributo indicato.
+
+```
+Tag['attr'] + .class:first-child :empty 
+```
+
+Le combinazioni permettono di creare delle selezioni effettivamente molto potenti, 
+anche se la sintassi di selezione risultante non è delle più semplici.
