@@ -1,9 +1,8 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+![GitHub stars](https://img.shields.io/github/stars/codingepaduli/codingepaduli?style=flat-square)
+![GitHub followers](https://img.shields.io/github/followers/codingepaduli?label=Followers&style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/codingepaduli/codingepaduli?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/y/codingepaduli/codingepaduli?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/codingepaduli/codingepaduli?style=flat-square)
 
 # Coding e Paduli
 
