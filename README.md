@@ -1,15 +1,69 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 # Coding e Paduli
 
-Ennesimo sito/blog di programmazione e paduli correlati
+Ennesimo sito/blog di programmazione e paduli correlati.
 
-## Deployment
+## Summary
 
-Deployed using GitHub pages
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## Built With
+## Getting Started
 
-* [Hugo](https://gohugo.io) - A popular open-source static site generators;
+This blog is built with [Hugo](https://gohugo.io) - A popular open-source static site generators;
 
-## Authors
+### Prerequisites
 
-Me
+You need to install the latest version of [Hugo](https://gohugo.io/). 
+
+### Installation
+
+- Clone the repo:
+  
+  ```git
+  git clone https://github.com/codingepaduli/codingepaduli.git
+  ```
+- Synchronize and update the sub-repositories:
+  
+  ```git
+  git submodule sync
+  git submodule init
+  git submodule update
+  git submodule foreach git pull origin master
+  ```
+
+- Start this site choosing the specific environment:
+  
+  ```git
+  hugo server --environment mainroad
+  ```
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork it (<`https://github.com/codingepaduli/codingepaduli/fork`>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+## License
+
+Copyright 2010 codingepaduli. All right reserved.
+
+## Contact
+
+codingepaduli - email@example.com
+
+Project Link: [GitHub - codingepaduli/codingepaduli](https://github.com/codingepaduli/codingepaduli)
