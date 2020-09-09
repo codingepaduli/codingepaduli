@@ -1,7 +1,7 @@
-theme = "watercss" # hugo-academic mainroad watercss
+theme = "mainroad" # hugo-academic mainroad watercss
 
-publishDir = "watercss-public"
-layoutDir = "layouts/watercss"
+publishDir = "public"
+layoutDir = "layouts/mainroad"
 
 [mediaTypes]
   [mediaTypes."text/html"]
