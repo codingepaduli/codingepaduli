@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-07-30
-publishdate: 2020-07-30
-lastmod: 2020-07-30
+date: 2020-09-10
+publishdate: 2020-09-10
+lastmod: 2020-09-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -55,6 +55,7 @@ summary: "Set di link relativi al coding"
 
 ### Blog News e Link
 [Hacker News](https://news.ycombinator.com/news) - \
+[Gitbar](https://www.gitbar.it/) - Il podcast dei developer italiani\
 [Developer.com](http://www.developer.com/) - \
 [http://codingjam.it/](http://codingjam.it/) - \
 [MokaByte](http://www.mokabyte.it/) - \
@@ -75,6 +76,7 @@ summary: "Set di link relativi al coding"
 [DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE](https://archive.org/details/msdos_Fire_and_Ice_1993) - \
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [Fire and Ice](http://www.lemonamiga.com/games/docs.php?id=643) - Manual, Docs, Documentation - Lemon Amiga\
+[infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 
 #### Cloud
 [localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack\
@@ -169,7 +171,7 @@ summary: "Set di link relativi al coding"
 [Rest services : JSON Web Service and JQuery](https://www.codeproject.com/Articles/37727/Prepare-a-JSON-Web-Service-and-access-it-with-JQue) - \
 [NancyFx/Nancy](https://github.com/NancyFx/Nancy) - Lightweight framework for building HTTP based services on .Net and Mono\
 
-### Database SQL e NoSql
+### Database SQL e NoSql - GraphQL
 [In MySQL, never use “utf8”. Use “utf8mb4”.](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434) - Adam Hooper - Medium\
 [PostgREST Documentation](https://postgrest.org/en/v7.0.0/) - PostgREST 7.0.1 documentation\
 [Modern SQL](https://modern-sql.com/) - A lot has changed since SQL-92\
@@ -180,6 +182,9 @@ summary: "Set di link relativi al coding"
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns) - This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes\
 [FastoNoSQL](https://fastonosql.com/) - cross-platform GUI Manager for NoSQL databases.\
+[SWAPI GraphQL API](https://graphql.org/swapi-graphql) - A graphical interactive in-browser GraphQL IDE\
+[Combine GraphQL with Java to build a flexible and modern API | Opensource.com](https://opensource.com/article/20/8/graphql-quarkus) - \
+[We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql) - Critique of SQL\
 
 ### Giochi
 [Primi Passi nel Game Development](https://davideaversa.it/slashcode/2012/04/primi-passi-nel-game-development/) - \
@@ -188,6 +193,8 @@ summary: "Set di link relativi al coding"
 [Create 3D games with friends, no experience required](https://www.blog.google/technology/area-120/create-3d-games-friends-no-experience-required/) - \
 [How to use MapTool to build an interactive dungeon RPG](https://opensource.com/article/19/6/how-use-maptools?sc_cid=70160000001273HAAQ) - \
 [Open Source Game Clones](https://osgameclones.com/) - \
+[How I made a 3D game in only 2KB of JavaScript | Killed By A Pixel](https://frankforce.com/how-i-made-a-3d-game-in-only-2k-of-javascript/) - \
+[Ct.js — a free game editor](https://ctjs.rocks/) - \
 
 ### GIT
 [Oh, shit, git!](http://ohshitgit.com/) - \
@@ -208,7 +215,6 @@ summary: "Set di link relativi al coding"
 [MokaByte 111](http://www2.mokabyte.it/cms/article.run?articleId=J74-ZHK-E4Y-62F_7f000001_30520983_51b9ed95) - Le applicazioni web e Java\
 [Sistemi Distribuiti LS](http://lia.deis.unibo.it/Courses/sd0809-info/) - slides\
 [HttpClient](http://hc.apache.org/httpclient-3.x/methods/multipartpost.html) - Multipart Post Method\
-[Jax-WS webservices REST endpoint](http://www.oracle.com/technetwork/articles/javase/index-137171.html) - \
 [Organizziamoci con Maven Parte I](http://www.cosenonjaviste.it/organizziamoci-con-maven-parte-i/) - \
 [How to Import Maven Remote Archetype Catalogs in Eclipse](https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/) - \
 [SpotBugs](https://github.com/spotbugs/spotbugs) - spotbugs/spotbugs is FindBugs' successor. A tool for static analysis to look for bugs in Java code.\
@@ -220,6 +226,8 @@ summary: "Set di link relativi al coding"
 [Oracle java tutorial ](https://docs.oracle.com/javase/tutorial/essential/io/misc.html) - \
 [Novita su Java7](http://blog.html.it/tag/java7/) - \
 [http://codingjam.it/json-web-token-jaas-stateless-authentication-per-tomcat/](http://codingjam.it/json-web-token-jaas-stateless-authentication-per-tomcat/) - \
+[An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
+[Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 
 #### JDBC e JPA
 [JPA Database Connection (EntityManagerFactory, EntityManager, EntityTransaction)](http://www.objectdb.com/java/jpa/persistence/overview) - \
@@ -387,6 +395,8 @@ summary: "Set di link relativi al coding"
 [Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
 [GitHub](https://github.com/robinsloan/perfect-edition) - robinsloan/perfect-edition: A lightweight, responsive web e-book template\
 [Typesetting Markdown – Part 2: Tool Review (Dave Jarvis)](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - \
+[Sigil-Ebook/Sigil](https://github.com/Sigil-Ebook/Sigil) - Sigil is a free, open source, multi-platform EPUB ebook editor that uses Qt\
+[Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
 
 #### Hugo static site generator
 [Chapter 2 Hugo | blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/hugo.html) - \
@@ -456,6 +466,7 @@ summary: "Set di link relativi al coding"
 [html images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
 [html image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
 [html images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
+[Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](http://www.asciitable.it/mimetypes.asp) - \
@@ -484,44 +495,41 @@ summary: "Set di link relativi al coding"
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP.css — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
+[html](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without javascript - Stack Overflow\
 
 #### Javascript
-[[Javascript]Selezione su lista checkbox](http://forum.masterdrive.it/html-xml-css-javascript-dom-9/javascript-selezione-lista-checkbox-15884/) - HTML, XML, CSS, Javascript, DOM - MasterDrive.it\
-[JS javadoc visionmedia/dox · GitHub](https://github.com/visionmedia/dox) - \
-[Promises chaining](https://javascript.info/promise-chaining) - \
-[utils](https://www.npmjs.com/package/utils) - npm\
-[Command Line Interface](https://eslint.org/docs/user-guide/command-line-interface) - ESLint - Pluggable JavaScript linter\
-[JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) - \
 [Top 5 skills to learn as a junior JavaScript developer](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - \
-[Functional JavaScript: How to use array reduce for more than just numbers](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/) - \
+[Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/) - \
 [PracticeJS](https://practicejs.com/) - \
+[JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
+[utils](https://www.npmjs.com/package/utils) - npm\
+[ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
+[JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) - \
+[console.log() Methods](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada?gi=82a8656ab788) - \
+[date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
+[Functional JavaScript](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/) - How to use array reduce for more than just numbers\
+[HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
 [8 DOM features you didn’t know existed](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - LogRocket Blog\
-[Zdog](http://digg.com/2019/zdog-pseudo-3d-rendering-desandro) - A Clever And Easy To Use Renderer For Browsers, Is A Joy To Behold - Digg\
-[qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
-[code editor](https://gamingjs.com/ice/) - \
-[Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
+[Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
+[jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
+[A brief look at async-await](https://javascript.christmas/2019/9) - \
+[Promises chaining](https://javascript.info/promise-chaining) - \
+[10 lesser-known Web APIs you may want to use](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - \
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
 [Webpack ed ECMAScript 6](https://codingjam.it/webpack-ecmascript-6-parte/) - Parte I\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
+[qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
 [cozmo/jsQR](https://github.com/cozmo/jsQR) - A pure javascript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within.\
 [sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
-[chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
-[HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
 [How does Javascript affect SEO?](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
-[JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
-[console.log() Methods](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada?gi=82a8656ab788) - \
-[Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) - Web APIs | MDN\
-[date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
-[Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
-[A brief look at async-await](https://javascript.christmas/2019/9) - \
 [Parcel](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/) - Web bundlers like Browserify and Webpack manage the development workflow; Parcel is a bundler that doesn’t need any configuration; \
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
 [PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
-[sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
+[JaidedAI/EasyOCR: Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai](https://github.com/JaidedAI/EasyOCR) - \
 
 ##### Aurelia
 [Aurelia JS](http://aurelia.io/) - \
@@ -539,3 +547,8 @@ summary: "Set di link relativi al coding"
 [Aurelia 2](https://github.com/aurelia/aurelia) - GitHub aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
+
+##### Three JS 3D
+[Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
+[chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
+[code editor](https://gamingjs.com/ice/) - \
