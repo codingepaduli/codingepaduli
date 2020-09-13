@@ -18,4 +18,7 @@ function draw() {
     ellipse(60, 220, 80, 40);
     arc(40, 300, 40, 40, PI, TWO_PI);
     arc(100, 300, 40, 80, PI, TWO_PI);
+
+    text("questo è un testo", 20, 340);
+    text("questo è un testo troppo lungo", 20, 360, 160, 20);
 }

@@ -77,7 +77,7 @@ Ogni primitiva è una funzione identificata da un nome e da una lista di paramet
 Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, che prevede come argomenti le coordinate ``x`` ed ``y`` del **punto**, come nel seguente esempio
 
 ```javascript
-point(40, 50);
+point(20, 20);
 ```
 
 ### Disegno di una linea
@@ -85,7 +85,7 @@ point(40, 50);
 La linea è rappresentata da un segmento che unisce due punti, per cui la si può realizzare attraverso la funzione ``line`` che prevede come argomenti le coordinate ``x1`` ed ``y1`` relative al **primo punto** e le coordinate ``x2`` ed ``y2`` relative al **secondo punto**, come nel seguente esempio:
 
 ```javascript
-line(10, 20, 50, 20);
+line(80, 20, 120, 40);
 ```
 
 ### Disegno di un triangolo
@@ -93,7 +93,7 @@ line(10, 20, 50, 20);
 La figura del triangolo è caratterizzata da tre punti in cui originano e terminano i lati che la vanno a formare, per cui la si può realizzare attraverso la funzione ``triangle`` che prevede come argomenti le coordinate ``x1`` ed ``y1`` relative al **primo punto**, le coordinate ``x2`` ed ``y2`` relative al **secondo punto** e  le coordinate ``x3`` ed ``y3`` relative al **terzo punto**, come nel seguente esempio:
 
 ```javascript
-triangle(10, 10, 10, 20, 20, 20);
+triangle(20, 60, 20, 100, 60, 100);
 ```
 
 ### Disegno di un cerchio
@@ -101,7 +101,7 @@ triangle(10, 10, 10, 20, 20, 20);
 Il cerchio lo si può realizzare attraverso la funzione ``circle`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** e la dimensione del **diametro**, come nel seguente esempio:
 
 ```javascript
-circle(10, 20, 20);
+circle(100, 80, 40);
 ```
 
 ### Disegno di un quadrato
@@ -109,7 +109,7 @@ circle(10, 20, 20);
 Si può realizzare un quadrato attraverso la funzione ``square`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative all'**angolo in alto a sinistra** e la dimensione del **lato**, come nel seguente esempio:
 
 ```javascript
-square(10, 20, 20);
+square(20, 140, 40);
 ```
 
 ### Disegno di un rettangolo
@@ -117,7 +117,7 @@ square(10, 20, 20);
 Il rettangolo è realizzabile attraverso la funzione ``rect`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative all'**angolo in alto a sinistra**, la dimensione della **base** e la dimensione dell'**altezza**, come nel seguente esempio:
 
 ```javascript
-rect(30, 20, 55, 55);
+rect(80, 140, 80, 20);
 ```
 
 ### Disegno di un ellisse
@@ -127,7 +127,7 @@ Un ellisse è una sorta di cerchio "schiacciato", lo si può interpretare come u
 Lo si può realizzare attraverso la funzione ``ellipse`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** e le dimensioni di **larghezza** ed **altezza**, come nel seguente esempio:
 
 ```javascript
-ellipse(10, 20, 50, 50);
+ellipse(60, 220, 80, 40);
 ```
 
 ### Disegno di un'arco di circonferenza e d'ellisse
@@ -135,22 +135,39 @@ ellipse(10, 20, 50, 50);
 Un arco di circonferenza è realizzabile attraverso la funzione ``arc`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Da sottolineare che entrambi gli angoli devono essere espressi in radianti.
  
 ```javascript
-arc(30, 20, 55, 55, PI, TWO_PI);
+arc(40, 300, 40, 40, PI, TWO_PI);
 ```
 
 L'arco d'ellisse si realizza con la stessa funzione ``arc`` che prevede gli stessi argomenti, con la sola distinzione che invece di specificare due volte il diametro, si deve specificare un valore per l'altezza ed uno per la larghezza dell'ellisse;
 
 ```javascript
-arc(30, 20, 15, 25, PI, TWO_PI);
+arc(100, 300, 40, 80, PI, TWO_PI);
 ```
 
 Gli archi non sono gli unici tipi di curve supportate. La libreria p5.js permette di disegnare curve complesse, come le curve **spline** e le curve di **Bézier**, ma per queste realizzazioni si rimanda alle specifiche e agli esempi ufficiali.
+
+
+### Disegno di un testo
+
+Il testo può essere racchiuso in un elemento HTML o gestito direttamente nell'area da disegno. Per realizzarlo graficamente si utilizza la funzione ``text``, che prevede come argomenti il testo e le coordinate ``x`` ed ``y`` del **punto in alto a sinistra** dal quale disegnare il testo, come nel seguente esempio:
+
+```javascript
+text("questo è un testo", 20, 340);
+```
+
+Un'alternativa è rappresentata dalla stessa funzione che utilizza però come argomenti le coordinate ``x`` ed ``y`` relative al **punto in alto a sinistra** e la dimensione della **base** e la dimensione dell'**altezza** del rettangolo nel quale racchiudere il testo, , come nel seguente esempio:
+
+```javascript
+text("questo è un testo troppo lungo", 20, 360, 160, 20);
+```
+
+Da prestare attenzione che se il testo è troppo lungo e non può essere racchiuso nello spazio indicato, il testo rimanente non sarà disegnato.
 
 ## Esempio completo
 
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
-![Image](/static/coding/web/p5js/OnlineEditor.png "p5js - Editor online")
+![Image](/static/coding/web/p5js/basics.png "p5js - Basi della grafica 2D")
 
 In ambiente web è visualizzabile l'esempio funzionante dell'animazione realizzata.
 
