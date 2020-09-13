@@ -10,6 +10,6 @@ layoutDir = "layouts/mainroad"
 [markup]
   [markup.goldmark]
     [markup.highlight]
-      codeFences = false
+      codeFences = true
       guessSyntax = false
       tabWidth = 4
