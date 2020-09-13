@@ -151,4 +151,4 @@ Altra cosa interessante da notare, è che se si cancella l'istruzione per disegn
 
 Di seguito, l'esempio funzionante in ambiente web dell'animazione realizzata.
 
-<div id="example02"</div>
+<div id="example02"></div>

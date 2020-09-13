@@ -38,7 +38,6 @@ Supponiamo, ad esempio, di avere una pagina HTML contenente un paragrafo con id 
 Per riposizionare il canvas all'interno del paragrafo, utilizzeremo la funzione ``parent``, passando come argomento l'identificativo del paragrafo ``area``, come nel seguente esempio:
 
 ```javascript
-
 createCanvas(100, 100).parent('area');
 ```
 
@@ -171,4 +170,4 @@ Di seguito, si visualizza un esempio completo delle figure realizzate mediante i
 
 In ambiente web è visualizzabile l'esempio funzionante dell'animazione realizzata.
 
-<div id="basics"</div>
+<div id="basics"></div>
