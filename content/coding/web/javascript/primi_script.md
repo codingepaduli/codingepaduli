@@ -18,29 +18,41 @@ Per la scrittura di programmi in javascript si consiglia innanzitutto di configu
 
 Gli script vengono eseguiti man mano che la pagina web viene "letta" dal browser e mostrata all'utente. Quindi conta l'ordine in cui il codice è scritto nella pagina web.
 
-L'istruzione più conosciuta di javascript è ``alert()``, che permette di mostrare un messaggio all'utente.
-
-```javascript
-alert("Hello World!!");
-```
-
-I prossimi esempi faranno uso di questa istruzione per illustrare l'inserimento degli script in pagina.
-
 ## Modalità di esecuzione strict e sloppy
 
 Javascript utilizza due modalità di esecuzione degli script:
-- **sloppy**: una modalità che permette che alcuni errori non vengano segnalati, ma ignorati silenziosamente, portando a malfunzionamenti non semplici da individuare; Questa modalità è quella applicata di default e talvolta;
+- **sloppy**: una modalità che permette che alcuni errori non vengano segnalati, ma ignorati silenziosamente, portando a malfunzionamenti non semplici da individuare; Questa modalità è quella applicata in maniera predefinita;
 - **strict**: una modalità che segnala alcuni errori non facilmente riscontrabili e che rende più rigida e chiara l'esecuzione degli script. Deve essere specificata all'inizio di ogni script e di ogni funzione dalla seguente stringa:
 
 ```javascript
 "use strict";
 ```
 
+## Istruzione alert
+
+Per istruzioni si intendono comandi impartiti ad un esecutore.
+
+L'istruzione più conosciuta di javascript è ``alert()``, che permette di mostrare un messaggio all'utente, come nell'esempio di seguito:
+
+```javascript
+"use strict";
+
+alert("Hello World!!");
+```
+
+## Uso del punto e virgola ";"
+
+Il **punto e virgola** viene utilizzato per identificare la fine di un’istruzione, per cui ogni istruzione deve terminare con un carattere ``;``.
+
+Si precisa che non tutto il codice è composto da istruzioni, esistono blocchi e strutture che non sono istruzioni e, quindi, non prevedono la terminazione con il carattere di fine istruzione ``;``, si ponga quindi attenzione all'inserimento di questo carattere;
+
 ## Commenti
+
+I commenti sono delle note, delle spiegazioni che il programmatore inserisce per descrivere e documentare parti di codice. In fase di esecuzione, i commenti sono completamente ignorati.
 
 Javascript permette di commentare il codice su una sola riga utilizzando il simbolo ``//`` seguito dal commento, mentre i commenti su più righe includono i commenti tra i caratteri ``/*`` e ``*/``.
 
-Un esempio di commenti è il seguente:
+Un esempio di script che fa uso di commenti è il seguente:
 
 ```javascript
 
@@ -52,9 +64,10 @@ Un esempio di commenti è il seguente:
   commento su
   più righe
 */
+alert("Hello World!!");
 ```
 
-## Inserimento script in pagina
+## Inserimento script in pagina web
 
 Per inserire uno script in una pagina web esistono diverse possibilità:
 
@@ -64,28 +77,32 @@ Per inserire uno script in una pagina web esistono diverse possibilità:
 
 ### Inserimento script inline
 
-Per inserire il tag **inline**, lo si può allegare ai tag HTML che lo prevedono; ad esempio al tag button:
+Per inserire uno script **inline**, lo si può allegare ai tag HTML che lo prevedono; 
+
+Si supponga, ad esempio, di voler allegare al tag HTML ``button`` lo script (composto da una sola istruzione) ``alert('Script contenuto inline');``. Il codice risultante sarà il seguente:
 
 ```html
 <input type="button" onclick="alert('Script contenuto inline');">  
 ```
-Quando l'utente clicca sul pulsante, si attiva l'azione "onclick" e quindi si visualizza il messaggio.
+
+Si nota che nella stessa riga di codice è presente sia il codice ``HTML`` sia il codice ``javascript`` (inline). 
 
 ### Inserimento script nella pagina HTML
 
-Per inserire uno script direttamente nella pagina web, si usa il tag ``script`` per includere il codice. Di seguito un esempio:
+Per inserire uno script in una sezione apposita della pagina web, si usa il tag ``script``, la cui apertura e chiusura delimita lo script. Di seguito un esempio:
 
 ```javascript
 <script>
   "use strict";
 
+  // messaggio all'utente
   alert("script contenuto nella pagina web");
 </script>
 ```
 
 ### Inserimento script in un file esterno
 
-Per inserire un collegamento ad un file esterno, si inserisce il tag ``script`` con l'attributo ``src`` che contiene il collegamento al file javascript esterno. Di seguito un esempio:
+Per inserire un collegamento ad uno script contenuto in un file esterno, si inserisce il tag ``script`` con l'attributo ``src`` contenente il collegamento al file. Di seguito un esempio:
 
 ```javascript
 <script src="file.js"></script>
@@ -101,10 +118,9 @@ alert("script contenuto in un file esterno");
 
 ## Console javascript
 
-Lo strumento che più aiuta nello sviluppo di codice javascript è la console del browser, che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie
-la voce "Ispeziona".
+Lo strumento che più aiuta nello sviluppo di codice javascript è la console del browser, che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona".
 
-![Browser's console](/static/coding/web/javascript/javascript-console.png)
+![console del browser](/static/coding/web/javascript/javascript-console.png "console del browser")
 
 ### Informazioni, avvisi ed errori
 
@@ -161,4 +177,4 @@ console.dir(obj);
 
 Un esempio completo della console contenente l'output di tutte le istruzioni viste è il seguente:
 
-![Browser's console](/static/coding/web/javascript/javascript-console-primi-script.png)
+![Immagine della console contenente l’output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Immagine della console contenente l’output di tutte le istruzioni")

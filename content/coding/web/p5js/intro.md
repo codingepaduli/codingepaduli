@@ -16,22 +16,17 @@ customJS: ["/static/coding/web/p5js/Example02.js"]
 
 # Introduzione alla libreria grafica p5.js
 
-p5.js e' una libreria grafica opensource focalizzata al coding in Javascript in un contesto creativo e multimediale. Rappresenta, inoltre, una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
+p5.js e' una libreria grafica opensource focalizzata al coding in Javascript in un contesto creativo e multimediale. p5.js rappresenta anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui sia Processing, sia questa libreria sono entrambi supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
-p5.js rappresenta anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui sia Processing, sia questa libreria sono entrambi supportati dalla [Processing Foundation](https://processingfoundation.org).
-
-Esistono numerose librerie che estendono p5.js, aggiungendo strumenti per la gestione audio, per la comunicazione con diversi dispositivi, quali Arduino, per strumenti di gestione grafica in 2D, 3D ed anche in più dimensioni, per la gestione della geolocalizzazione e delle mappe, per la gestione della webcam ed anche per la semplificazione nell'applicazione di algoritmi di intelligenza artificiale.
-
-Il prerequisito necessario all'uso di questa libreria è, quindi, l'interesse alla programmazione in linguaggio javascript.
+Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2D, 3D ed anche in più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geolocalizzazione, delle mappe, della webcam ed anche per la semplificazione nell'applicazione di algoritmi di intelligenza artificiale.
 
 ## Editor integrato per p5.js
 
 Il punto di partenza è sicuramente l'uso dell'editor integrato al link [https://editor.p5js.org](https://editor.p5js.org), che permette di iniziare velocemente ad esplorare le potenzialità dell'ambiente.
 
-All'utente è mostrata una schermata con i menù tipici dei classici ambienti di sviluppo, i pulstanti per avviare e fermare il proprio lavoro, ed infine l'area di lavoro, divisa in un'area di testo per la scrittura del codice e l'area di visualizzazione per visualizzare il lavoro creato.
+![p5js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5js - Editor online")
 
-![Image](/static/coding/web/p5js/OnlineEditor.png "p5js - Editor online")
-
+La schermata mostrata all'utente presenta i menù tipici dei classici ambienti di sviluppo, la barra dei pulstanti per avviare e fermare il proprio lavoro e l'area di lavoro, divisa in un'area di testo per la scrittura del codice e l'area di visualizzazione per presentare il lavoro creato.
 
 L'area del codice presenta già un esempio minimale di programma, valido come punto di partenza e descritto nel seguito di questo articolo.
 
@@ -48,10 +43,7 @@ Richiamando il corso su ``HTML``, si riporta un'esempio di codice HTML di una  p
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
         <meta charset="utf-8" />
         <style>
-            html, body {
-                margin: 0;
-                padding: 0;
-            }
+            html, body { margin: 0; padding: 0; }
             canvas { display: block; }
         </style>
     </head>
@@ -103,7 +95,7 @@ Nell'esempio riportato sopra, questa funzione contiene un richiamo alla funzione
 
 Il risultato è il seguente:
 
-![Image](/static/coding/web/p5js/Example01.png "p5js - Esempio 01")
+![p5js - Esempio 01](/static/coding/web/p5js/Example01.png "p5js - Esempio 01")
 
 ## Prima animazione
 
@@ -121,8 +113,6 @@ Per realizzare il movimento, è necessario incrementare di un'unità questa vari
 x = x+1;
 ```
 
-
-
 L'esempio completo è di seguito riportato:
 
 ```javascript
@@ -139,16 +129,12 @@ function draw() {
 }
 ```
 
-
-
 E' interessante notare che se l'istruzione di incremento ``x = x + 1``la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene fatto una sola volta, quindi il cerchio resta immobile.
-
-
 
 Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita", quindi lo spostamento del cerchio lascerà una "scia" dovuta alle precedenti posizioni, come nella seguente immagine;
 
-![Image](/static/coding/web/p5js/Example02.png "p5js - Esempio 02")
+![p5js - Esempio 02](/static/coding/web/p5js/Example02.png "p5js - Esempio 02")
 
-Di seguito, l'esempio funzionante in ambiente web dell'animazione realizzata.
+In ambiente web è visualizzabile l'esempio funzionante dell'animazione realizzata.
 
 <div id="example02"></div>

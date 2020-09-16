@@ -23,14 +23,34 @@ CHAPTERS="$CONTENT_DIR/content/coding/shell/PowerShell/intro.md
           $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-FileCartelle.md"
 '
 
+: ' commento multilinea
 BOOKNAME="Appunti-di-laboratorio-TPSIT"
-CHAPTERS="$CONTENT_DIR/content/coding/web/javascript/intro.md
+CHAPTERS="$CONTENT_DIR/content/coding/tools/EditorConfig.md
+          $CONTENT_DIR/content/coding/tools/Git.md
+          $CONTENT_DIR/content/coding/tools/MacchineVirtuali.md
+          $CONTENT_DIR/content/coding/tools/VirtualBox.md
+          $CONTENT_DIR/content/coding/tools/AQemu.md
+          $CONTENT_DIR/content/coding/tools/Vagrant.md
+          $CONTENT_DIR/content/coding/tools/Gradle.md
+          $CONTENT_DIR/content/coding/web/javascript/intro.md
           $CONTENT_DIR/content/coding/web/javascript/primi_script.md
           $CONTENT_DIR/content/coding/web/javascript/Variabili.md
           $CONTENT_DIR/content/coding/web/javascript/operatori.md
           $CONTENT_DIR/content/coding/web/javascript/istruzioni_condizionali_iterative.md
 		  $CONTENT_DIR/content/coding/web/javascript/funzioni.md
-		  $CONTENT_DIR/content/coding/web/javascript/interazioneHtml.md"
+		  $CONTENT_DIR/content/coding/web/javascript/interazioneHtml.md
+          $CONTENT_DIR/content/coding/web/javascript/selettoriCSS.md"
+'
+
+BOOKNAME="Appunti-di-laboratorio-di-informatica"
+CHAPTERS="$CONTENT_DIR/content/coding/web/javascript/intro.md
+          $CONTENT_DIR/content/coding/web/javascript/primi_script.md
+          $CONTENT_DIR/content/coding/web/p5js/intro.md
+          $CONTENT_DIR/content/coding/web/p5js/basics.md
+          $CONTENT_DIR/content/coding/web/p5js/colorsAndStyles.md
+          $CONTENT_DIR/content/coding/web/javascript/Variabili.md
+          $CONTENT_DIR/content/coding/web/javascript/operatori.md
+          "
 
 # Common pandoc command for all formats
 PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --toc --toc-depth=3 --lua-filter=$PUB_DIR$IMAGE_PREPROCESS_FILTER_EBOOK --lua-filter=$PUB_DIR$PAGEBREAK_PREPROCESS_FILTER --resource-path=$RESOURCE_DIR "  # --fail-if-warnings --top-level-division=section
@@ -44,6 +64,7 @@ then
 	# mkdir "$BUILD"
 fi
 
+cat $CHAPTERS | grep -e '^#' > epub_index.md
 
 cd $CONTENT_DIR
 
@@ -54,7 +75,7 @@ $PANDOC_COMMAND_EBOOK
 
 # Generating ebook
 echo "Generating pdf"
-PANDOC_COMMAND_PDF="  $PANDOC_COMMAND --output=$BUILD$BOOKNAME.pdf $PUB_DIR/cover.md $PUB_DIR/ebook_title.txt  $CHAPTERS     --to=latex --pdf-engine=xelatex --top-level-division=chapter --number-sections --variable=geometry:margin=2cm --highlight-style=tango --css=$PUB_DIR$STYLESHEET " # --verbose --metadata-file=metadata.yml -V documentclass=scrreprt
+PANDOC_COMMAND_PDF="  $PANDOC_COMMAND --output=$BUILD$BOOKNAME.pdf $PUB_DIR/cover.md $PUB_DIR/ebook_title.txt  $CHAPTERS     --to=latex --pdf-engine=xelatex --top-level-division=chapter --number-sections -V geometry:margin=2cm --highlight-style=tango --css=$PUB_DIR$STYLESHEET" # --verbose --metadata-file=metadata.yml -V documentclass=scrreprt
 
 $PANDOC_COMMAND_PDF
 
