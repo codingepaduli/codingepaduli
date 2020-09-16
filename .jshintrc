@@ -1,0 +1,7 @@
+{
+    "esversion": 7,
+    
+    "unstable": {
+        "bigint": true
+    }
+}
