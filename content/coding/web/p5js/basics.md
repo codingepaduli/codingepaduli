@@ -18,7 +18,7 @@ customJS: ["/static/coding/web/p5js/basics.js"]
 
 ## Area da disegno
 
-L'area da disegno è creata attraverso la funzione ``createCanvas``, già vista in precedenza, la quale prevede larghezza e lunghezza dell'elemento, come nel seguente esempio:
+L'area da disegno è creata attraverso la funzione ``createCanvas``, già accennata in precedenza, la quale prevede larghezza e lunghezza dell'elemento, come nel seguente esempio:
 
 ```javascript
 createCanvas(100, 50);
@@ -41,9 +41,17 @@ Per riposizionare il canvas all'interno del paragrafo, utilizzeremo la funzione 
 createCanvas(100, 100).parent('area');
 ```
 
+### Dimensioni memorizzate dell'area da disegno
+
+Una volta creata l'area da disegno attraverso la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate rispettivamente nelle variabili ``width`` ed ``height``, in modo da essere sempre disponibili.
+
 ## Sistema di coordinate
 
-Il sistema di coordinate **cartesiane** tipicamente usato da librerie di grafica 2D computerizzata è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dello schermo ed ha la particolarità dell'asse Y invertito. Di seguito si mostrano le differenze tra i due sistemi di coordinate:
+Il sistema di coordinate **cartesiane** tipicamente usato da librerie di grafica 2D computerizzata è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dello schermo, che rappresenta il punto di coordinate (0,0). 
+
+La particolarità di questo sistema di coordinate è che l'asse Y è invertito, cioè i valori positivi sono in basso ed i negativi in alto. Si nota inoltre che saranno disegnati sullo schermo del computer solo i punti che hanno entrambe le coordinate (x, y) con valore positivo.
+
+Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
 
 ![Image](https://p5js.org/assets/learn/coordinate-system-and-shapes/images/drawing-03.svg "p5js - Sistema di coordinate")
 
@@ -51,7 +59,9 @@ Il sistema di coordinate **cartesiane** tipicamente usato da librerie di grafica
 
 In ambito matematico, gli angoli sono tipicamente espressi mediante due differenti unità di misura: il **grado d'arco** (detto anche **grado sessagesimale**) ed il **radiante** (che fa parte del **sistema internazionale di unità di misura**).
 
-La libreria p5.js permette al programmatore di utilizzare l'una o l'altra unità di misura, specificandola attraverso la funzione ``angleMode``, che prende come parametro una delle seguenti costanti:
+Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
+
+La libreria p5.js permette al programmatore di esprimere le grandezze angolari in **gradi sessagesimali** o **radianti**, specificando l'unità di misura attraverso la funzione ``angleMode``, che prende come parametro una delle seguenti costanti:
 - ``DEGREES``: indica che l'unità di misura degli angoli che si intende usare è il **grado d'arco**;
 - ``RADIANS``: indica che l'unità di misura degli angoli che si intende usare è il **radiante**.
 
@@ -59,7 +69,7 @@ Una caratteristica importante della libreria p5.js è che gli angoli sono misura
 
 Volendo fare un parallelo con il quadrante di un l'orologio, in cui la lancetta delle ore è posta sul numero tre (ore 3) e la lancetta dei minuti completa l'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrispone alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
 
-Per favorire l'uso del **radiante**, la libreria p5.js mette a disposizione le seguenti costanti:
+Per facilitare l'uso del radiante, la libreria p5.js mette a disposizione le seguenti costanti:
 - ``PI``, ovvero la famosa costante matematica **pi greco**, dal valore (approssimato) **3.14**, corrispondente a centottanta gradi d'arco;
 - ``HALF_PI``, ovvero **pi greco mezzi**, corrispondenti a novanta gradi gradi d'arco;
 - ``QUARTER_PI``, ovvero **pi greco quarti**, corrispondenti a quarantacinque gradi d'arco;
@@ -73,7 +83,7 @@ Ogni primitiva è una funzione identificata da un nome e da una lista di paramet
 
 ### Disegno di un punto
 
-Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, che prevede come argomenti le coordinate ``x`` ed ``y`` del **punto**, come nel seguente esempio
+Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, che prevede come argomenti le coordinate ``x`` ed ``y`` del **punto**, come nel seguente esempio:
 
 ```javascript
 point(20, 20);
@@ -154,7 +164,7 @@ Il testo può essere racchiuso in un elemento HTML o gestito direttamente nell'a
 text("questo è un testo", 20, 340);
 ```
 
-Un'alternativa è rappresentata dalla stessa funzione che utilizza però come argomenti le coordinate ``x`` ed ``y`` relative al **punto in alto a sinistra** e la dimensione della **base** e la dimensione dell'**altezza** del rettangolo nel quale racchiudere il testo, , come nel seguente esempio:
+Un'alternativa è rappresentata dalla stessa funzione che utilizza però come argomenti le coordinate ``x`` ed ``y`` relative al **punto in alto a sinistra** e la dimensione della **base** e la dimensione dell'**altezza** del rettangolo nel quale racchiudere il testo, come nel seguente esempio:
 
 ```javascript
 text("questo è un testo troppo lungo", 20, 360, 160, 20);

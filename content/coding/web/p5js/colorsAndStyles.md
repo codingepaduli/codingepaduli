@@ -11,7 +11,6 @@ draft: false
 toc: false
 summary: "Colori e stili"
 externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
-customJS: ["/static/coding/web/p5js/colors01.js", "/static/coding/web/p5js/colors02.js", "/static/coding/web/p5js/colors03.js"]
 ---
 
 # Colori e stili
@@ -22,9 +21,9 @@ I colori, in ambito informatico, sono espressi attraverso differenti modelli. Qu
 
 ## Modello di colori RGB
 
-Il modello **RGB** esprime i colori come combinazione di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. 
+Il modello **RGB** esprime i colori come combinazione di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu.
 
-![Image](https://p5js.org/assets/learn/color/rgb.jpg "p5js - Modello RGB")
+![p5.js - Modello di colori RGB](https://p5js.org/assets/learn/color/rgb.jpg "p5.js - Modello di colori RGB")
 
 Ogni colore è definito come una combinazione di quantità dei tre colori elencati. La quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
@@ -41,7 +40,7 @@ Il problema di questo modello è che per una persona non è intuitivo indicare l
 
 Il modello Hue-Saturation-Brightness è un modello più intuitivo per le persone, perchè definisce il colore nel seguente spazio dei colori:
 
-![Image](https://p5js.org/assets/learn/color/hsb.png "p5js - Modello HSB")
+![p5.js - Modello di colori HSB](https://p5js.org/assets/learn/color/hsb.png "p5.js - Modello di colori HSB")
 
 In questo spazio curvo, l'angolo definisce la tonalità, detta anche tinta. Quindi troviamo la tonalità rossa a 0 gradi, la tonalità verde a 120 gradi e la tonalità blu a 240 gradi, e nel mezzo tutte le altre sfumature di tonalità di colori.
 
@@ -108,7 +107,7 @@ rect(80, 140, 80, 20);
 
 Il risultato sarà il seguente:
 
-![Image](/static/coding/web/p5js/colors01.png "p5js - Uso di colori differenti")
+![p5.js - Uso di colori differenti](/static/coding/web/p5js/colors01.png "p5.js - Uso di colori differenti")
 
 ### Usare uno stile di linea
 
@@ -145,9 +144,9 @@ square(20, 140, 40);
 rect(80, 140, 80, 20);
 ```
 
-Il risultato sarà il seguente:
+Il risultato sarà il seguente: 
 
-![Image](/static/coding/web/p5js/colors02.png "p5js - Uso di colori differenti anche per i contorni")
+![p5.js - Uso di colori differenti anche per i contorni](/static/coding/web/p5js/colors02.png "p5.js - Uso di colori differenti anche per i contorni")
 
 ### Usare uno stile di testo
 
@@ -206,4 +205,4 @@ text("testo", 100, 50);
 
 Il risultato sarà il seguente:
 
-![Image](/static/coding/web/p5js/colors03.png "p5js - Uso dello stile del testo")
+![p5.js - Uso dello stile del testo](/static/coding/web/p5js/colors03.png "p5.js - Uso dello stile del testo")

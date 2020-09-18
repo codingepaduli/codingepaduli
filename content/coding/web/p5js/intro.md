@@ -16,15 +16,15 @@ customJS: ["/static/coding/web/p5js/Example02.js"]
 
 # Introduzione alla libreria grafica p5.js
 
-p5.js e' una libreria grafica opensource focalizzata al coding in Javascript in un contesto creativo e multimediale. p5.js rappresenta anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui sia Processing, sia questa libreria sono entrambi supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
+p5.js e' una libreria grafica opensource focalizzata al coding in Javascript in un contesto creativo e multimediale. Questa libreria è di fatto anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
-Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2D, 3D ed anche in più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geolocalizzazione, delle mappe, della webcam ed anche per la semplificazione nell'applicazione di algoritmi di intelligenza artificiale.
+Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2D, 3D ed anche in più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geolocalizzazione, delle mappe, della webcam ed anche per l'applicazione di algoritmi di intelligenza artificiale.
 
 ## Editor integrato per p5.js
 
 Il punto di partenza è sicuramente l'uso dell'editor integrato al link [https://editor.p5js.org](https://editor.p5js.org), che permette di iniziare velocemente ad esplorare le potenzialità dell'ambiente.
 
-![p5js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5js - Editor online")
+![p5.js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5.js - Editor online")
 
 La schermata mostrata all'utente presenta i menù tipici dei classici ambienti di sviluppo, la barra dei pulstanti per avviare e fermare il proprio lavoro e l'area di lavoro, divisa in un'area di testo per la scrittura del codice e l'area di visualizzazione per presentare il lavoro creato.
 
@@ -32,9 +32,9 @@ L'area del codice presenta già un esempio minimale di programma, valido come pu
 
 ## Prima pagina web con p5.js
 
-L'editor è di grande utilità, ma per poter pubblicare un lavoro su un sito, è necessario realizzare una pagina web che include la libreria ed il lavoro svolto.
+L'editor online è di grande utilità per iniziare, ma è necessario comunque conoscere la struttura completa della pagina web che permette di presentare e pubblicare il lavoro.
 
-Richiamando il corso su ``HTML``, si riporta un'esempio di codice HTML di una  pagina web che contiene la libreria suddetta:
+Dando per assunti i fondamentali sul linguaggio ``HTML``, si riporta il codice di una pagina web che contiene un esempio minimale di programma:
 
 ```html
 <!DOCTYPE html>
@@ -62,17 +62,17 @@ Richiamando il corso su ``HTML``, si riporta un'esempio di codice HTML di una  p
 </html>
 ```
 
-Come si può notare, la libreria viene inclusa attraverso il tag ``script`` con collegamento esterno.
+Come si può notare, la libreria viene inclusa attraverso un collegamento esterno definito nel tag ``script``, presente nell'intestazione della pagina web.
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
 ```
 
-Le funzioni di ``setup`` e ``draw`` sono contenute nel tag ``script``, dato che rappresentano codice ``javascript``.
+L'esempio minimale di programma, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice javascript).
 
 ## Primo programma
 
-Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, nel primo programma dovremo dichiarare due funzioni principali, come nel seguente esempio.
+Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, nel programma devono sempre essere dichiarate le due funzioni principali ``setup`` e ``draw``, come nel seguente esempio.
 
 ```javascript
 function setup() {
@@ -95,19 +95,19 @@ Nell'esempio riportato sopra, questa funzione contiene un richiamo alla funzione
 
 Il risultato è il seguente:
 
-![p5js - Esempio 01](/static/coding/web/p5js/Example01.png "p5js - Esempio 01")
+![p5.js - Primo esempio](/static/coding/web/p5js/Example01.png "p5.js - Primo esempio")
 
 ## Prima animazione
 
 Supponendo di voler far "muovere" il cerchio verso destra nell'area di lavoro, si necessita di una variabile che permetta in primis di indicare la posizione corrente del cerchio nell'area di lavoro, e poi che permetta di modificarla con un incremento unitario.
 
-La dichiarazione della variabile può avvenire prima delle due funzioni, mediante il classico codice:
+La dichiarazione della variabile può avvenire prima delle due funzioni, mediante la classica dichiarazione:
 
 ```javascript
 let x = 100;
 ```
 
-Per realizzare il movimento, è necessario incrementare di un'unità questa variabile, mediante il codice:
+Per realizzare il movimento, è necessario incrementare di un'unità questa variabile, mediante l'istruzione:
 
 ```javascript
 x = x+1;
@@ -129,12 +129,12 @@ function draw() {
 }
 ```
 
-E' interessante notare che se l'istruzione di incremento ``x = x + 1``la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene fatto una sola volta, quindi il cerchio resta immobile.
+E' interessante notare che se l'istruzione di incremento ``x = x + 1`` la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene fatto una sola volta, quindi il cerchio resta immobile.
 
 Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita", quindi lo spostamento del cerchio lascerà una "scia" dovuta alle precedenti posizioni, come nella seguente immagine;
 
-![p5js - Esempio 02](/static/coding/web/p5js/Example02.png "p5js - Esempio 02")
+![p5.js - Esempio dell'animazione senza il disegno dello sfondo](/static/coding/web/p5js/Example02.png "p5.js - Esempio dell'animazione senza il disegno dello sfondo")
 
-In ambiente web è visualizzabile l'esempio funzionante dell'animazione realizzata.
+In ambiente web è visualizzabile quest'ultimo esempio dell'animazione.
 
 <div id="example02"></div>

@@ -45,10 +45,11 @@ CHAPTERS="$CONTENT_DIR/content/coding/tools/EditorConfig.md
 BOOKNAME="Appunti-di-laboratorio-di-informatica"
 CHAPTERS="$CONTENT_DIR/content/coding/web/javascript/intro.md
           $CONTENT_DIR/content/coding/web/javascript/primi_script.md
+          $CONTENT_DIR/content/coding/web/javascript/Variabili.md
+          $CONTENT_DIR/content/coding/web/javascript/primi_script_exe.md
           $CONTENT_DIR/content/coding/web/p5js/intro.md
           $CONTENT_DIR/content/coding/web/p5js/basics.md
           $CONTENT_DIR/content/coding/web/p5js/colorsAndStyles.md
-          $CONTENT_DIR/content/coding/web/javascript/Variabili.md
           $CONTENT_DIR/content/coding/web/javascript/operatori.md
           "
 

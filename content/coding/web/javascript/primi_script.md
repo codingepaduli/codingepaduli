@@ -21,6 +21,7 @@ Gli script vengono eseguiti man mano che la pagina web viene "letta" dal browser
 ## Modalità di esecuzione strict e sloppy
 
 Javascript utilizza due modalità di esecuzione degli script:
+
 - **sloppy**: una modalità che permette che alcuni errori non vengano segnalati, ma ignorati silenziosamente, portando a malfunzionamenti non semplici da individuare; Questa modalità è quella applicata in maniera predefinita;
 - **strict**: una modalità che segnala alcuni errori non facilmente riscontrabili e che rende più rigida e chiara l'esecuzione degli script. Deve essere specificata all'inizio di ogni script e di ogni funzione dalla seguente stringa:
 
