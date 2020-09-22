@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - master
+  pull_request:
+    branches:
+    - master
   schedule:
   # Run everyday at 10:00 AM
   - cron: "0 10 * * *"
@@ -14,9 +17,8 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Run markdownlint
-      uses: actionshub/markdownlint@master
     - name: Run markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v1.1.1
       with:
         files: .
+        config_file: ".markdownlint.yaml"
