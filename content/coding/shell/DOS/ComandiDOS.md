@@ -16,8 +16,8 @@ summary: "Comandi della CLI di Windows"
 
 La linea di comando è detta anche prompt dei comandi o Command Line
 Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si
-accede alla linea di comando di Windows da menù Start - Sistema Windows
-- Prompt dei comandi.
+accede alla linea di comando di Windows da menù Start - Sistema 
+Windows - Prompt dei comandi.
 
 E' spesso utilizzata per l'accesso remoto ai sistemi, soprattutto ai
 sistemi di "produzione", in particolare ai server Linux che non sono
@@ -32,17 +32,17 @@ Il prompt mostra innanzitutto il percorso in cui ci troviamo:
 
 Il percorso è definito da:
 
-  - `c:` La lettera dell'unità in cui ci troviamo;
-  - `\` La cartella principale dell'unità;
-  - `windows\users\utente` il percorso fatto di cartelle e sottocartelle
-    separate dal carattere di separazione cartelle `\`.
+- `c:` La lettera dell'unità in cui ci troviamo;
+- `\` La cartella principale dell'unità;
+- `windows\users\utente` il percorso fatto di cartelle e sottocartelle
+  separate dal carattere di separazione cartelle `\`.
 
 Alle unità di archiviazione viene associata una lettera identificativa.
 Per spostarsi da un'unità all'altra, è necessario scrivere la lettera
 dell'unità (che possiamo vedere in Risorse del computer). Ad esempio:
 
-  - `c:` Si sposta sull'unità c:
-  - `d:` Si sposta sull'unità d:
+- `c:` Si sposta sull'unità c:
+- `d:` Si sposta sull'unità d:
 
 Supponendo di essere nel percorso `c:\windows\users\utente`, per
 visualizzare le cartelle esistenti nel percorso corrente (ovvero nella
@@ -90,36 +90,35 @@ variable, utilizzare `set nomeVariabile`.
 Una funzionalità particolarmente usata è la redirezione degli standard
 input ed output, che avviene mediante i seguenti operatori:
 
-  - `>` Redirezione output in un nuovo file;
-  - `>>` Redirezione output in un file esistente in modalita "APPEND"
-    (in aggiunta);
-  - `<` Redirezione dell'input in un comando;
-  - `nul` operatore speciale che serve a cestinare tutti i dati che sono
-    scritti all'interno.
+- `>` Redirezione output in un nuovo file;
+- `>>` Redirezione output in un file esistente in modalita "APPEND"
+  (in aggiunta);
+- `<` Redirezione dell'input in un comando;
+- `nul` operatore speciale che serve a cestinare tutti i dati che sono
+  scritti all'interno.
 
 Ad esempio:
 
-  - `dir > file.txt` Redirezione output del comando dir nel nuovo file
-    file.txt;
-  - `echo messaggio >> file.txt` Redirezione output del comando echo nel
-    file file.txt in modalita "APPEND" (in aggiunta);
-  - `dir 2> file.txt` Redirezione dei messaggi di errore del comando dir
-    nel nuovo file file.txt;
-  - `dir > file.txt 2>&1` Redirezione dei messaggi di output e di errore
-    del comando dir nel file file.txt;
-  - `dir > file.txt 2> file2.txt` Redirezione dei messaggi di output nel
-    file file.txt e dei messaggi di errore nel file file2.txt;
-  - `dir > file.txt 2> nul` Redirezione dei messaggi di output del
-    comando dir nel file file.txt e dei messaggi di errore nel cestino;
-  - `dir 2> nul` Redirezione dei messaggi di errore nel cestino;
-  - `dir > nul 2>&1` Redirezione dei messaggi di output e di errore nel
+- `dir > file.txt` Redirezione output del comando dir nel nuovo file
+  file.txt;
+- `echo messaggio >> file.txt` Redirezione output del comando echo nel
+  file file.txt in modalita "APPEND" (in aggiunta);
+- `dir 2> file.txt` Redirezione dei messaggi di errore del comando dir
+  nel nuovo file file.txt;
+- `dir > file.txt 2>&1` Redirezione dei messaggi di output e di errore
+  del comando dir nel file file.txt;
+- `dir > file.txt 2> file2.txt` Redirezione dei messaggi di output nel
+  file file.txt e dei messaggi di errore nel file file2.txt;
+- `dir > file.txt 2> nul` Redirezione dei messaggi di output del
+  comando dir nel file file.txt e dei messaggi di errore nel cestino;
+- `dir 2> nul` Redirezione dei messaggi di errore nel cestino;
+- `dir > nul 2>&1` Redirezione dei messaggi di output e di errore nel
     cestino;
 
 Per visualizzare i comandi disponibili da CLI in Windows si usa il
 comando `help` che visualizza il seguente output:
 
-``` 
-  
+```output
 Per ulteriori informazioni su uno specifico comando, digitare HELP nome comando
 ASSOC          Visualizza o modifica le associazioni alle estensioni dei file.
 ATTRIB         Visualizza o modifica gli attributi del file.
@@ -225,10 +224,9 @@ XCOPY          Copia file e alberi di directory.
 WMIC           Visualizza le informazioni relative a WMI all'interno della shell dei comandi interattivi.
 
 Per ulteriori informazioni sulle utilità, vedere la documentazione di riferimento sulla riga di comando nella Guida.
-  
 ```
 
-Ogni comando viene eseguito con `COMANDO parametro1 parametro2 ... `.
+Ogni comando viene eseguito con `COMANDO parametro1 parametro2 ...`.
 
 E' possibile visualizzare la guida dettagliata di uno specifico comando
 invocando il comando con l'opzione `/?` ad esempio `dir /?` oppure `cd
@@ -244,8 +242,7 @@ L'elenco dei principali comandi con la relativa guida è il seguente:
 
 `cd /?`
 
-``` 
-  
+```output
   Visualizza il nome della directory corrente o consente di passare
   a un'altra directory.
 
@@ -286,17 +283,16 @@ L'elenco dei principali comandi con la relativa guida è il seguente:
 
 Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-  - `cd 3InfB` cambia directory in c:\\windows\\3InfB;
-  - `cd \` cambia directory in c:\\;
-  - `cd users\utente` cambia directory in c:\\windows\\users\\utente.
-  - `cd ..` cambia directory tornando alla cartella padre c:\\
+- `cd 3InfB` cambia directory in c:\\windows\\3InfB;
+- `cd \` cambia directory in c:\\;
+- `cd users\utente` cambia directory in c:\\windows\\users\\utente.
+- `cd ..` cambia directory tornando alla cartella padre c:\\
 
 ## CLS: Clear screen
 
 `cls /?`
 
-``` 
-  
+```output
   Cancella lo schermo.
 
   CLS
@@ -308,8 +304,7 @@ Esempi d'uso: `cls` cancella lo schermo.
 
 `color /?`
 
-``` 
-  
+```output
   Imposta i colori di primo piano e di sfondo predefiniti per la console.
 
   COLOR [attr]
@@ -346,8 +341,7 @@ bianco come colore di sfondo.
 
 `COPY /?`
 
-``` 
-  
+```output
   Copia uno o più file in un'altra posizione.
 
   COPY [/D] [/V] [/N] [/Y] [/-Y] [/Z] [/L] [/A | /B] origine [/A | /B]
@@ -383,18 +377,17 @@ bianco come colore di sfondo.
 
 Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-  - `copy 3InfB.txt 3InfA.txt` copia il file 3InfB.txt nella cartella
-    corrente con nome 3InfA.txt
-  - `copy 3InfB.txt \3InfA.txt` cambia directory in c:\\;
-  - `cd users\utente` cambia directory in c:\\windows\\users\\utente.
-  - `cd ..` cambia directory tornando alla cartella padre c:\\
+- `copy 3InfB.txt 3InfA.txt` copia il file 3InfB.txt nella cartella
+  corrente con nome 3InfA.txt
+- `copy 3InfB.txt \3InfA.txt` cambia directory in c:\\;
+- `cd users\utente` cambia directory in c:\\windows\\users\\utente.
+- `cd ..` cambia directory tornando alla cartella padre c:\\
 
 ## Date
 
 `date /?`
 
-``` 
-  
+```output
   Visualizza o imposta la data.
 
   DATE [/T | data]
@@ -413,8 +406,7 @@ Esempi d'uso: `date /t` visualizza la data corrente.
 
 `del /?`
 
-``` 
-
+```output
   Elimina uno o piu file.
     /P            Chiede conferma prima di eliminare ogni file.
     /F            Forza l'eliminazione dei file di sola lettura.
@@ -435,17 +427,16 @@ Esempi d'uso: `date /t` visualizza la data corrente.
 
 Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-  - `del 3InfB.txt` cancella il file c:\\windows\\3InfB.txt;
-  - `del \3InfB.txt` cancella il file c:\\3InfB.txt;
-  - `del p:\3InfB.txt` cancella il file p:\\3InfB.txt.
-  - `del ..\3InfB.txt` cancella il file c:\\3InfB.txt.
+- `del 3InfB.txt` cancella il file c:\\windows\\3InfB.txt;
+- `del \3InfB.txt` cancella il file c:\\3InfB.txt;
+- `del p:\3InfB.txt` cancella il file p:\\3InfB.txt.
+- `del ..\3InfB.txt` cancella il file c:\\3InfB.txt.
 
 ## Echo
 
 `echo /?`
 
-``` 
-  
+```output
   Visualizza messaggi oppure attiva/disattiva la ripetizione dei comandi.
 
     ECHO [ON | OFF]
@@ -456,20 +447,19 @@ Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
 Esempi d'uso: `echo 3InfB` visualizza il messaggio 3InfB.
 
-  - `echo 3InfB` visualizza il messaggio 3InfB;
-  - `echo %path%` visualizza il valore della variabile %path%;
-  - `echo %userprofile%\3InfB.txt` visualizza il valore della variabile
-    %userprofile% seguito dal testo \\3infB.txt;
-  - `echo mi trovo nella cartella %userprofile%\3InfB.txt` visualizza il
-    testo "mi trovo nella cartella" seguito dal valore della variabile
-    %userprofile% seguito dal testo \\3infB.txt.
+- `echo 3InfB` visualizza il messaggio 3InfB;
+- `echo %path%` visualizza il valore della variabile %path%;
+- `echo %userprofile%\3InfB.txt` visualizza il valore della variabile
+  %userprofile% seguito dal testo \\3infB.txt;
+- `echo mi trovo nella cartella %userprofile%\3InfB.txt` visualizza il
+  testo "mi trovo nella cartella" seguito dal valore della variabile
+  %userprofile% seguito dal testo \\3infB.txt.
 
 ## mkdir
 
 `mkdir /?`
 
-``` 
-  
+```output
   Crea una directory.
 
   MKDIR [unità:]percorso
@@ -499,17 +489,16 @@ Esempi d'uso: `echo 3InfB` visualizza il messaggio 3InfB.
 
 Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-  - `mkdir 3InfB.txt` crea la cartella c:\\windows\\3InfB.txt;
-  - `mkdir \3InfB.txt` crea la cartella c:\\3InfB.txt;
-  - `mkdir p:\3InfB.txt` crea la cartella p:\\3InfB.txt.
-  - `mkdir ..\3InfB.txt` crea la cartella c:\\3InfB.txt.
+- `mkdir 3InfB.txt` crea la cartella c:\\windows\\3InfB.txt;
+- `mkdir \3InfB.txt` crea la cartella c:\\3InfB.txt;
+- `mkdir p:\3InfB.txt` crea la cartella p:\\3InfB.txt.
+- `mkdir ..\3InfB.txt` crea la cartella c:\\3InfB.txt.
 
 ## move
 
 `move /?`
 
-``` 
-  
+```output
   Consente di spostare file e rinominare file e directory.
 
   Per spostare uno o più file:
@@ -551,8 +540,7 @@ Lab\\3InfA.
 
 `ren /?`
 
-``` 
-
+```output
   Rinomina uno o più file.
 
   RENAME [unità:][percorso]nomefile1 nomefile2.
@@ -568,8 +556,7 @@ Esempi d'uso: `ren 3InfB.txt.txt 3InfA.txt` rinomina il file
 
 `rmdir /?`
 
-``` 
-
+```output
   RMDIR [/S] [/Q] [unità:]percorso
   RD [/S] [/Q] [unità:]percorso
 
@@ -589,8 +576,7 @@ Esempi d'uso: `rmdir 3InfB` rimuove la cartella 3InfB.
 
 `time /?`
 
-``` 
-
+```output
   Visualizza o imposta l'ora di sistema.
 
   TIME [/T | ora]

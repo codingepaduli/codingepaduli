@@ -24,14 +24,14 @@ Questo provider fornisce più punti d'accesso al filesystem. L'accesso al filesy
 
 Il percorso in cui si posiziona l'utente è detto **percorso corrente**. Quando l'utente avvia PowerShell, il percorso corrente viene mostrato.
 
-```
+```output
 PowerShell 7.0.0
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 https://aka.ms/powershell
 Type &#39;help&#39; to get help.
 
-PS /home/user > 
+PS /home/user >
 ```
 
 Come si nota nell'esempio, l'ultima riga indica il percorso corrente ``/home/user``, anche detto **cartella di lavoro** o cartella corrente. Quindi l'utente "si trova" o "sta lavorando" nella cartella ``/home/user``.
@@ -48,35 +48,29 @@ Su sistema operativo Windows, il percorso è composto dalla lettera dell'unità 
 
 Si prenda ad esempio il seguente percorso:
 
-```
+```output
 c:\Windows\Temp\temp.txt
 ```
 
 Il percorso indica che il file si trova nella partizione ``c:``, le cartelle da attraversare per raggiungerlo sono ``Windows`` e ``Temp`` ed il nome del file è ``temp.txt``.
 
-
-
 Nei sistemi operativi Gnu/Linux, Mac e Unix, i dischi non hanno una lettera di unità, ma devono essere montati nel sistema principale di gestione del filesystem. Sui questi sistemi è utilizzato il carattere ``/`` per separare i nomi delle cartelle da attraversare ed il percorso inizia sempre dalla cartella principale "**/**" (detta "root", da non confondere con l'utente amministratore, anch'egli chiamato "root"), è seguito dalle cartelle da attraversare ed opzionalmente dal nome del file desiderato.
-
-
 
 Si prenda ad esempio il seguente percorso:
 
-```
+```output
 /home/temp/temp.txt
 ```
 
 Il percorso indica che il file si trova nella partizione di root ``/``, le cartelle da attraversare sono ``home`` e ``temp`` ed il nome del file è ``temp.txt``.
 
-
-
 Si consideri un ulteriore esempio di percorso:
 
-```
+```output
 c:\utenti\
 ```
 
-Il percorso indica, all'interno dell'unita ``c:`` la cartella ``utenti ``. In questo caso non è stato indicato un file, ma una cartella. 
+Il percorso indica, all'interno dell'unita ``c:`` la cartella ``utenti``. In questo caso non è stato indicato un file, ma una cartella.
 
 ## Percorsi relativi ed assoluti
 
@@ -84,19 +78,19 @@ PowerShell utilizza il simbolo ``.`` per indicare la cartella corrente e ``..`` 
 
 E' importante sottolineare che questi simboli sono relativi al percorso, non alla cartella di lavoro.
 
-Il sistema operativo si occupa della risoluzione dei percorsi contenenti i simboli ``.`` e ``..`` trasformandoli in percorsi assoluti. 
+Il sistema operativo si occupa della risoluzione dei percorsi contenenti i simboli ``.`` e ``..`` trasformandoli in percorsi assoluti.
 
 ### Primo esempio risoluzione percorso
 
 Prendendo ad esempio il percorso:
 
-```
+```output
 c:\utenti\prof\Documenti\.\elenco.txt
 ```
 
-La risoluzione del percorso inizia accedendo all'unità ``c:``, accedendo poi alle directory ``utenti``, ``prof``, ``Documenti``. A questo punto della risoluzione, la cartella **corrente** è ``c:\utenti\prof\Documenti``. 
+La risoluzione del percorso inizia accedendo all'unità ``c:``, accedendo poi alle directory ``utenti``, ``prof``, ``Documenti``. A questo punto della risoluzione, la cartella **corrente** è ``c:\utenti\prof\Documenti``.
 
-Il simbolo ``.``, dato che si riferisce alla cartella corrente, viene risolto come un riferimento alla cartella ``Documenti``. 
+Il simbolo ``.``, dato che si riferisce alla cartella corrente, viene risolto come un riferimento alla cartella ``Documenti``.
 
 Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Documenti``. Il percorso iniziale è stato trasformato nel percorso assoluto ``c:\utenti\prof\Documenti\elenco.txt``.
 
@@ -104,7 +98,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Docume
 
 Prendendo ad esempio il percorso:
 
-```
+```output
 c:\utenti\.\prof\.\Documenti\.\elenco.txt
 ```
 
@@ -128,7 +122,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Docume
 
 Prendendo ad esempio il percorso:
 
-```
+```output
 /home/prof/./Documenti/./elenco.txt
 ```
 
@@ -146,7 +140,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``Docume
 
 Prendendo ad esempio il percorso:
 
-```
+```output
 .\elenco.txt
 ```
 
@@ -160,7 +154,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``prof``
 
 Prendendo ad esempio il percorso:
 
-```
+```output
 c:\utenti\prof\Documenti\..\elenco.txt
 ```
 
@@ -174,7 +168,7 @@ Il file ``elenco.txt`` è quindi individuato all'interno della cartella ``prof``
 
 Prendendo ad esempio il percorso:
 
-```
+```output
 c:\utenti\.\prof\..\mario\..\elenco.txt
 ```
 
@@ -235,7 +229,7 @@ cd "c:\utenti\prof"
 Per visualizzare o ottenere la cartella di lavoro corrente si utilizza la CmdLet ``Get-Location``, che ha la seguente sintassi:
 
 ```powershell
-Get-Location 
+Get-Location
 ```
 
 Esempio:
@@ -307,7 +301,8 @@ Get-PSDrive
 ```
 
 Output:
-```
+
+```output
 Name           Used (GB)     Free (GB) Provider      Root
 ----           ---------     --------- --------      ----
 Alias                                  Alias
@@ -321,4 +316,4 @@ HKLM                                   Registry      HKEY_LOCAL_MACHINE
 Variable                               Variable
 ```
 
-Dall'output mostrato si notano, tra gli altri, i drive ``c:`` e ``d:`` per l'accesso ai dischi logici. 
+Dall'output mostrato si notano, tra gli altri, i drive ``c:`` e ``d:`` per l'accesso ai dischi logici.

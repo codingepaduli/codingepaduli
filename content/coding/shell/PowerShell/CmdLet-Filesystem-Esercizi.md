@@ -17,6 +17,7 @@ summary: "Esercizi sulla gestione di file e cartelle"
 ## Esercizio 01 - Traccia
 
 Realizzare uno script in PowerShell che crei una nuova cartella avente il proprio nome. All'interno di questa cartella:
+
 1. scriva un nuovo file di testo assegnandogli nome a piacere ed il proprio cognome come contenuto;
 2. effettui una copia del file assegnandogli il nuovo nome "copia.txt";
 3. crei una seconda cartella avente il proprio cognome;
@@ -24,7 +25,7 @@ Realizzare uno script in PowerShell che crei una nuova cartella avente il propri
 5. commentare ogni riga dello script e salvarlo assegnandogli il proprio cognome e nome.
 
 Ipotizzando che lo studente si chiami "Mario Rossi", lo script avrà nome ``Mario Rossi.ps1`` e genererà i seguenti file:
-```
+```output
 Mario\
   nome_a_piacere.txt  (contenuto: Rossi)
   Rossi\
@@ -34,6 +35,7 @@ Mario\
 ## Esercizio 02 - Traccia
 
 Realizzare in PowerShell uno script che abbia come nome il proprio cognome e che:
+
 1. crei una cartella con nome dell'oggetto assegnato;
 2. utilizzi come cartella di lavoro la cartella creata al punto 1;
 3. per ogni proprietà a scelta multipla, crei una nuova cartella avente il nome della proprietà stessa;
@@ -42,7 +44,7 @@ Realizzare in PowerShell uno script che abbia come nome il proprio cognome e che
 
 Supponendo che l'oggetto sia un form di registrazione con nome utente, password e titolo di studio a scelta tra "diploma", "laurea" e "master", lo script realizzato dall'utente "Mario Rossi" avrà nome ``Rossi.ps1`` e genererà i seguenti file e cartelle:
 
-```
+```output
 Form\
   nome_utente.txt (contenuto Mario)
   password.txt (contenuto 0123456789)
@@ -53,6 +55,7 @@ Form\
 ```
 
 Elenco degli oggetti da assegnare:
+
 - Oggetto **canzone** con le proprietà Autore, Album, Genere (a scelta tra le voci "Pop", "Rock", "Rap"); 
 - Oggetto **film** con le proprietà Regista, Protagonista, Genere (a scelta tra le voci "Fantasy", "Horror", "Drammatico");
 - Oggetto **biglietto** con le proprietà Numero, Intestatario, TipoEvento (a scelta tra le voci "Calcio", "Concerto", "Teatro");

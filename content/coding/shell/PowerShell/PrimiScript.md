@@ -178,7 +178,7 @@ Per scrivere un messaggio di verbose sul terminale, si usa quindi:
 Write-Verbose "Hello"
 ```
 
-Il comando non presenta nessun output, perchè le impostazioni predefinite non visualizzano sul terminale lo stream di output. Questo stream si attiva passando il parametro ``-Verbose``, comune a tutti i CommandLet. 
+Il comando non presenta nessun output, perchè le impostazioni predefinite non visualizzano sul terminale lo stream di output. Questo stream si attiva passando il parametro ``-Verbose``, comune a tutti i CommandLet.
 
 Per visualizzare il messaggio di verbose sul terminale, si usa quindi:
 
@@ -214,8 +214,8 @@ La lista di colori disponibili è la seguente: ``Black``, ``DarkBlue``, ``DarkGr
 Per scrivere un messaggio di output sul terminale con sfondo nero e colore testo rosso, si usa quindi:
 
 ```powershell
-Write-Host "Red" "on white" "text." -NoNewline -Separator " -- " 
-  -ForegroundColor red -BackgroundColor white 
+Write-Host "Red" "on white" "text." -NoNewline -Separator " -- "
+  -ForegroundColor red -BackgroundColor white
 ```
 
 L'output è il seguente:
@@ -224,7 +224,7 @@ L'output è il seguente:
 Red -- on white -- text.
 ```
 
-Si nota che i vari oggetti sono separati dal separatore `` -- `` e non è presente nessun carattere 'a capo'; Il testo è in rosso e lo sfondo è in bianco.
+Si nota che i vari oggetti sono separati dal separatore " -- " e non è presente nessun carattere 'a capo'; Il testo è in rosso e lo sfondo è in bianco.
 
 ### Leggere dal terminale
 
@@ -260,8 +260,8 @@ Ad esempio:
 ```powershell
  # Questo è un commento
 
- <# Questo è un 
-    commento su 
+ <# Questo è un
+    commento su
     più righe #>
 ```
 
@@ -310,7 +310,7 @@ Write-Error $nome
 
 Per questioni di sicurezza, le impostazioni predefinite prevedono che l'esecuzione di script sia disabilitata. Per verificare le impostazioni, aprire il terminale di PowerShell ed eseguire:
 
-```
+```powershell
 Get-ExecutionPolicy
 ```
 

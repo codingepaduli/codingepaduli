@@ -28,21 +28,21 @@ Get-Module -ListAvailable
 
 L'output riportato è il seguente:
 
-```
+```output
 Directory: /opt/microsoft/powershell/7/Modules
 
 ModuleType Version    PreRelease Name                                PSEdition
 ---------- -------    ---------- ----                                ---------
-Manifest   1.2.5                 Microsoft.PowerShell.Archive        Desk     
-Manifest   7.0.0.0               Microsoft.PowerShell.Host           Core     
-Manifest   7.0.0.0               Microsoft.PowerShell.Management     Core     
-Manifest   7.0.0.0               Microsoft.PowerShell.Security       Core     
-Manifest   7.0.0.0               Microsoft.PowerShell.Utility        Core     
-Script     1.4.6                 PackageManagement                   Desk     
-Script     2.2.3                 PowerShellGet                       Desk     
-Script     2.0.5                 PSDesiredStateConfiguration         Core     
-Script     2.0.0                 PSReadLine                          Desk     
-Binary     2.0.3                 ThreadJob                           Desk 
+Manifest   1.2.5                 Microsoft.PowerShell.Archive        Desk
+Manifest   7.0.0.0               Microsoft.PowerShell.Host           Core
+Manifest   7.0.0.0               Microsoft.PowerShell.Management     Core
+Manifest   7.0.0.0               Microsoft.PowerShell.Security       Core
+Manifest   7.0.0.0               Microsoft.PowerShell.Utility        Core
+Script     1.4.6                 PackageManagement                   Desk
+Script     2.2.3                 PowerShellGet                       Desk
+Script     2.0.5                 PSDesiredStateConfiguration         Core
+Script     2.0.0                 PSReadLine                          Desk
+Binary     2.0.3                 ThreadJob                           Desk
 ```
 
 ## Providers e drive
@@ -59,7 +59,7 @@ Get-PSProvider
 
 L'output riportato è il seguente:
 
-```
+```output
 Name                 Capabilities                  Drives
 ----                 ------------                  ------
 Alias                ShouldProcess                 {Alias}
@@ -73,7 +73,7 @@ Un provider può fornire più punti d'accesso alla collezione di dati. Ad esempi
 
 ## Sessioni
 
-Le sessioni sono utilizzate per memorizzare le informazioni relative ad una connessione locale o remota ad un computer, 
+Le sessioni sono utilizzate per memorizzare le informazioni relative ad una connessione locale o remota ad un computer.
 
 Le sessioni sono memorizzate sul computer a cui ci si collega, in modo tale da permettere la disconnessione e la successiva riconnessione da un altro computer.
 
@@ -127,7 +127,7 @@ Write-Output -InputObject "Hello World!!"
 
 L'output generato dal CmdLet è di seguito riportato:
 
-```
+```output
 Hello World!!
 ```
 
@@ -149,13 +149,13 @@ Get-Alias "Write-Output"
 
 ## Redirezioni
 
-Le redirezioni permettono di inviare un flusso di dati ad un file o alla console. Invocando comandi e funzioni vengono generati dei flussi di dati, tipicamente due, quello di errore e quello di successo, che sono inviati alla console. 
+Le redirezioni permettono di inviare un flusso di dati ad un file o alla console. Invocando comandi e funzioni vengono generati dei flussi di dati, tipicamente due, quello di errore e quello di successo, che sono inviati alla console.
 
 Powershell, invece, genera più di due flussi: di errore, di successo, di debug, di informazioni, di allarmi, ecc.. Questa gestione è più vicina alle modalità di lavoro di un programmatore.
 
 ## Pipeline
 
-Le pipeline, identificate dal carattere ``|``, permettono di collegare due comandi. 
+Le pipeline, identificate dal carattere ``|``, permettono di collegare due comandi.
 
 Collegati in pipeline, il risultato di un comando precedente viene inviato in input ad un successivo comando che lo elabora. A sua volta, questo risultato prodotto può essere inviato, sempre tramite pipeline, ad un ulteriore comando che lo elabora.
 
@@ -202,7 +202,7 @@ Write-Output -?
 
 La guida in linea mostrata in entrambi gli esempi è la seguente:
 
-```
+```output
 NAME
     Write-Output
 
@@ -213,12 +213,12 @@ ALIASES
     echo
 
 REMARKS
-    Get-Help cannot find the Help files for this cmdlet on this computer. 
+    Get-Help cannot find the Help files for this cmdlet on this computer.
         It is displaying only partial help.
-        -- To download and install Help files for the module that 
+        -- To download and install Help files for the module that
            includes this cmdlet, use Update-Help.
-        -- To view the Help topic for this cmdlet online, type: 
-           "Get-Help Write-Output -Online" or go to 
+        -- To view the Help topic for this cmdlet online, type:
+           "Get-Help Write-Output -Online" or go to
            https://go.microsoft.com/fwlink/?LinkID=2097117
 ```
 

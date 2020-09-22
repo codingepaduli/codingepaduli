@@ -14,7 +14,7 @@ summary: "Gestione file e cartelle"
 
 # Gestione di file e cartelle
 
-La gestione di file e cartelle è gestita dal provider ``Filesystem``. 
+La gestione di file e cartelle è gestita dal provider ``Filesystem``.
 
 ## CmdLet per la gestione di file e cartelle
 
@@ -33,7 +33,7 @@ La gestione di file e cartelle è fatta dalle seguenti CmdLet:
 La creazione di un file o una cartella avviene con la CmdLet ``New-Item``, che ha la seguente sintassi:
 
 ```powershell
-New-Item [-Path] <String[]> -Name <String> 
+New-Item [-Path] <String[]> -Name <String>
     [-ItemType <String>] [-Value <Object>] [-Force]
 ```
 
@@ -94,8 +94,8 @@ Per una descrizione accurata della CommandLet, si rimanda alla guida online.
 La rimozione di un file, una cartella o un collegamento avviene con il CmdLet ``Remove-Item``, che ha la seguente sintassi:
 
 ```powershell
-Remove-Item [-Path] <String[]> [-Filter <String>] 
-    [-Include <String[]>] [-Exclude <String[]>] 
+Remove-Item [-Path] <String[]> [-Filter <String>]
+    [-Include <String[]>] [-Exclude <String[]>]
     [-Recurse] [-Force]
 ```
 
@@ -109,7 +109,7 @@ I parametri indicati nella sintassi hanno il seguente significato:
 
 - ``Exclude``: indica uno schema per escludere file o cartelle dall'eliminazione;
 
-- ``Recurse``: elimina ricorsivamente anche tutte le voci innestate;/
+- ``Recurse``: elimina ricorsivamente anche tutte le voci innestate;
 
 - ``Force``: forza l'eliminazione di file nascosti o di sola lettura.
 
@@ -125,7 +125,7 @@ Per eliminare una cartella vuota si esegue il comando:
 Remove-Item -Path "C:\Test\"
 ```
 
-Nel caso la cartella non fosse vuota, il comando chiederebbe conferma all'utente della cancellazione di tutte le voci contenute. 
+Nel caso la cartella non fosse vuota, il comando chiederebbe conferma all'utente della cancellazione di tutte le voci contenute.
 
 Per eliminare in maniera ricorsiva una cartella con tutte le sottocartelle ed i file contenuti si esegue il comando:
 
@@ -210,7 +210,6 @@ I parametri indicati nella precedente sintassi hanno il seguente significato:
 - ``Path``: indica il percorso del file o della cartella a cui accedere;
 - ``Force``: forza l'accesso ad un file nascosto o di sola lettura;
 
-
 Esempio d'uso:
 
 ```powershell
@@ -245,7 +244,7 @@ Get-ChildItem -Path "C:\test"
 
 L'output prodotto è il seguente:
 
-```
+```output
 Directory: C:\Test
 
 Mode                LastWriteTime         Length Name

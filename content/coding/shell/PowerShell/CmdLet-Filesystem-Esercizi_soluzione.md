@@ -17,6 +17,7 @@ summary: "Soluzioni esercizi sulla gestione di file e cartelle"
 ## Esercizio 01 - Traccia
 
 Realizzare uno script in PowerShell che crei una nuova cartella avente il proprio nome. All'interno di questa cartella:
+
 1. scriva un nuovo file di testo assegnandogli nome a piacere ed il proprio cognome come contenuto;
 2. effettui una copia del file assegnandogli il nuovo nome "copia.txt";
 3. crei una seconda cartella avente il proprio cognome;
@@ -25,7 +26,7 @@ Realizzare uno script in PowerShell che crei una nuova cartella avente il propri
 
 Ipotizzando che lo studente si chiami "Mario Rossi", lo script avrà nome ``Mario Rossi.ps1`` e genererà i seguenti file:
 
-```
+```output
 Mario\
   nome_a_piacere.txt  (contenuto: Rossi)
   Rossi\
@@ -57,6 +58,7 @@ Move-Item -Path "copia.txt" -Destination "Rossi"
 ## Esercizio 02 - Traccia
 
 Realizzare in PowerShell uno script che abbia come nome il proprio cognome e che:
+
 1. crei una cartella con nome dell'oggetto assegnato;
 2. utilizzi come cartella di lavoro la cartella creata al punto 1;
 3. per ogni proprietà a scelta multipla, crei una nuova cartella avente il nome della proprietà stessa;
@@ -65,7 +67,7 @@ Realizzare in PowerShell uno script che abbia come nome il proprio cognome e che
 
 Supponendo che l'oggetto sia un form di registrazione con nome utente, password e titolo di studio a scelta tra "diploma", "laurea" e "master", lo script realizzato dall'utente "Mario Rossi" avrà nome ``Rossi.ps1`` e genererà i seguenti file:
 
-```
+```output
 Form\
   nome_utente.txt (contenuto Mario)
   password.txt (contenuto 0123456789)
@@ -131,7 +133,6 @@ New-Item -Name "citta.txt"  -ItemType "File"
 Set-Location -Path "../../"
 ```
 
-
 Script per la creazioe dell'oggetto "documento":
 
 ```powershell
@@ -150,7 +151,6 @@ New-item -Name "Patente.txt"        -ItemType "File" -Path "Documento\Tipo"
 New-item -Name "CartaIdentita.txt"  -ItemType "File" -Path "Documento\Tipo"
 New-item -Name "Passaporto.txt"     -ItemType "File" -Path "Documento\Tipo"
 ```
-
 
 Script per la creazioe dell'oggetto "indirizzo":
 
@@ -192,7 +192,6 @@ New-Item -ItemType "File" -Name "Cap.txt"  -Value "28845"
 # ritorna alla cartella in cui è stato richiamato lo script
 Set-Location  ".."
 ```
-
 
 Script per la creazioe dell'oggetto "ospedale":
 
