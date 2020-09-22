@@ -14,91 +14,91 @@ summary: "Comandi della CLI di Windows"
 
 <h1>Comandi DOS</h1>
 
-<p>La linea di comando è detta anche prompt dei comandi o Command	Line 
-	Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si accede 
-	alla linea di comando di Windows da menù Start - Sistema Windows - 
-	Prompt dei comandi.</p>
+<p>La linea di comando è detta anche prompt dei comandi o Command Line 
+  Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si accede 
+  alla linea di comando di Windows da menù Start - Sistema Windows - 
+  Prompt dei comandi.</p>
 
 <p>E' spesso utilizzata per l'accesso remoto ai sistemi, soprattutto ai 
-	sistemi di "produzione", in particolare ai server Linux che non
-	sono provvisti di una interfaccia grafica, ma solo dell'interfaccia
-	a linea di comando e del minimo indispensabile per poter eseguire
-	il compito per cui sono stati progettati (server email, server
-	per siti web, ...).</p> 
-	
+  sistemi di "produzione", in particolare ai server Linux che non
+  sono provvisti di una interfaccia grafica, ma solo dell'interfaccia
+  a linea di comando e del minimo indispensabile per poter eseguire
+  il compito per cui sono stati progettati (server email, server
+  per siti web, ...).</p> 
+  
 <h2>Path (percorso di un file o di una cartella)</h2>
 
 <p>Il prompt mostra innanzitutto il percorso in cui ci troviamo:
-	<code>c:\windows\users\utente</code>. </p>
+  <code>c:\windows\users\utente</code>. </p>
 
 <p>Il percorso è definito da:</p>
 
 <ul>
-	<li><code>c:</code> La lettera dell'unità in cui ci troviamo;</li>
-	<li><code>\</code> La cartella principale dell'unità;</li>
-	<li><code>windows\users\utente</code> il percorso fatto di cartelle
+  <li><code>c:</code> La lettera dell'unità in cui ci troviamo;</li>
+  <li><code>\</code> La cartella principale dell'unità;</li>
+  <li><code>windows\users\utente</code> il percorso fatto di cartelle
       e sottocartelle separate dal carattere di separazione cartelle "\".</li>
 </ul>
 
 <p>Alle unità di archiviazione viene associata una lettera identificativa.
-	Per spostarsi da un'unità all'altra, è necessario scrivere la lettera
+  Per spostarsi da un'unità all'altra, è necessario scrivere la lettera
   dell'unità (che possiamo vedere in Risorse del computer). Ad esempio: </p>
 <ul>
-	<li><code>c:</code> Si sposta sull'unità c:</li>
-	<li><code>d:</code> Si sposta sull'unità d:</li>
+  <li><code>c:</code> Si sposta sull'unità c:</li>
+  <li><code>d:</code> Si sposta sull'unità d:</li>
 </ul>
 
 <p>Supponendo di essere nel percorso <code>c:\windows\users\utente</code>, 
-	per visualizzare le cartelle esistenti nel percorso corrente (ovvero
-	nella cartella corrente), si usa il comando <code>dir</code> che elenca
+  per visualizzare le cartelle esistenti nel percorso corrente (ovvero
+  nella cartella corrente), si usa il comando <code>dir</code> che elenca
  i file e le cartelle presenti nella cartella corrente.</p>
 
 <p>Per visualizzare invece i file in una cartella, ad esempio in 
-	<code>c:\windows</code> posso utilizzare il comando
-	<code>dir c:\windows</code> che elenca i file e le cartelle presenti 
-	nella cartella indicata.</p>
+  <code>c:\windows</code> posso utilizzare il comando
+  <code>dir c:\windows</code> che elenca i file e le cartelle presenti 
+  nella cartella indicata.</p>
 
 <p>Sempre supponendo di essere nel percorso <code>c:\windows\users\utente</code>, 
-	per accedere ad una cartella di nome "cartella1" si usa il comando 
-	<code>cd cartella1</code> che ci permette di entrare quindi in
-	<code>c:\windows\users\utente\cartella1</code>.</p>
+  per accedere ad una cartella di nome "cartella1" si usa il comando 
+  <code>cd cartella1</code> che ci permette di entrare quindi in
+  <code>c:\windows\users\utente\cartella1</code>.</p>
 
 <p>Per tornare invece alla cartella precedente si usa il comando 
-	<code>cd ..</code> che ci permette di ritornare in
-	<code>c:\windows\users\utente</code>.</p>
+  <code>cd ..</code> che ci permette di ritornare in
+  <code>c:\windows\users\utente</code>.</p>
 
 <p>Da notare che gli operatori <code>..</code> e <code>.</code> servono
-	per indicare i percorsi con nomi relativi e non assoluti, ovvero servono
-	ad indicare i percorsi a partire da quello in cui ci troviamo. </p>
-	
+  per indicare i percorsi con nomi relativi e non assoluti, ovvero servono
+  ad indicare i percorsi a partire da quello in cui ci troviamo. </p>
+  
 <p>Supponendo di essere nel percorso <code>c:\windows\users\utente</code>
-	e di voler visualizzare tutti i file e cartelle in <code>c:\windows</code>,
-	posso utilizzare sia il comando <code>dir c:\windows</code>, sia
-	<code>dir ..\..</code> dato che <code>..\..</code> torna indietro di due 
-	cartelle, sia <code>dir c:\windows\..\windows\.\</code> dato che il primo
-	<code>..</code> torna indietro a <code>c:</code> quindi si accede nuovamente
-	alla cartella "windows" e poi si accede alla cartella corrente, che è
-	ancora "windows", e di questa si visualizza l'elenco di file e cartelle.</p>
+  e di voler visualizzare tutti i file e cartelle in <code>c:\windows</code>,
+  posso utilizzare sia il comando <code>dir c:\windows</code>, sia
+  <code>dir ..\..</code> dato che <code>..\..</code> torna indietro di due 
+  cartelle, sia <code>dir c:\windows\..\windows\.\</code> dato che il primo
+  <code>..</code> torna indietro a <code>c:</code> quindi si accede nuovamente
+  alla cartella "windows" e poi si accede alla cartella corrente, che è
+  ancora "windows", e di questa si visualizza l'elenco di file e cartelle.</p>
 
 <h2>Variabili di ambiente</h2>
 
 <p>Il sistema operativo usa delle variabili dette "variabili di ambiente",
     che sono accessibili e configurabili dal prompt dei comandi. 
-		In particolare abbiamo la variabile <code>userprofile</code>, che contiene
+    In particolare abbiamo la variabile <code>userprofile</code>, che contiene
     il percorso della cartella "home" dell'utente, e la variabile 
-		<code>path</code>, che contiene l'elenco di cartelle in cui sono 
-		contenuti i file eseguibili.</p>
+    <code>path</code>, che contiene l'elenco di cartelle in cui sono 
+    contenuti i file eseguibili.</p>
 
 <p>per visualizzare l'elenco di tutte le variabili di ambiente, utilizzare il 
-		comando <code>set</code>, oppure, per visualizzare il valore di una singola
-		variable, utilizzare <code>set nomeVariabile</code>. </p>
+    comando <code>set</code>, oppure, per visualizzare il valore di una singola
+    variable, utilizzare <code>set nomeVariabile</code>. </p>
 
 <h2>Redirezione dell'output, dell'input o degli errori su file</h2>
 
 <p>Una funzionalità particolarmente usata è la redirezione degli standard
     input ed output, che avviene mediante i seguenti operatori:</p>
 <ul>
-	<li><code>&gt;</code> Redirezione output in un nuovo file;</li>
+  <li><code>&gt;</code> Redirezione output in un nuovo file;</li>
   <li><code>&gt;&gt;</code> Redirezione output in un file esistente
       in modalita "APPEND" (in aggiunta);</li>
   <li><code>&lt;</code> Redirezione dell'input in un comando;</li>
@@ -108,7 +108,7 @@ summary: "Comandi della CLI di Windows"
 
 <p>Ad esempio: </p>
 <ul>
-	<li><code>dir &gt; file.txt</code> Redirezione output del comando dir
+  <li><code>dir &gt; file.txt</code> Redirezione output del comando dir
       nel nuovo file file.txt;</li>
   <li><code>echo messaggio &gt;&gt; file.txt</code> Redirezione output del
       comando echo nel file file.txt in modalita "APPEND" (in aggiunta);</li>
@@ -138,56 +138,56 @@ ASSOC          Visualizza o modifica le associazioni alle estensioni dei file.
 ATTRIB         Visualizza o modifica gli attributi del file.
 BREAK          Attiva o disattiva il controllo esteso di CTRL+C.
 BCDEDIT        Imposta le proprietà nel database di avvio per il controllo del
-			   caricamento avvio.
+         caricamento avvio.
 CACLS          Visualizza o modifica gli elenchi di controllo di accesso
-			   (ACL) dei file.
+         (ACL) dei file.
 CALL           Richiama un programma batch da un altro.
 CD             Visualizza il nome della directory corrente o consente
-			   di passare a un'altra directory.
+         di passare a un'altra directory.
 CHCP           Visualizza o imposta il numero di tabella codici attiva.
 CHDIR          Visualizza il nome della directory corrente o consente
-			   di passare a un'altra directory.
+         di passare a un'altra directory.
 CHKDSK         Controlla un disco e visualizza il relativo
-			   rapporto sullo stato.
+         rapporto sullo stato.
 CHKNTFS        Visualizza o modifica la verifica di un disco durante l'avvio.
 CLS            Cancella lo schermo.
 CMD            Avvia una nuova istanza dell'interprete dei comandi di Windows.
 COLOR          Imposta i colori predefiniti in primo piano e dello sfondo
-			   della console.
+         della console.
 COMP           Confronta il contenuto di due file o di due gruppi di file.
 COMPACT        Visualizza o modifica la compressione di file su
-			   partizioni NTFS.
+         partizioni NTFS.
 CONVERT        Converte volumi FAT in NTFS. Non è possibile convertire
-			   l'unità in uso.
+         l'unità in uso.
 COPY           Copia uno o più file in un'altra posizione.
 DATE           Visualizza o imposta la data.
 DEL            Elimina uno o più file.
 DIR            Visualizza un elenco di file e sottodirectory in una directory.
 DISKPART       Visualizza o configura le proprietà di Partizione disco.
 DOSKEY         Modifica righe di comando, richiama comandi di Windows
-			   e crea macro.
+         e crea macro.
 DRIVERQUERY    Visualizza stato e proprietà del driver di dispositivo corrente.
 ECHO           Visualizza messaggi o attiva e disattiva la ripetizione a video dei comandi.
 ENDLOCAL       Termina la localizzazione di modifiche di ambiente in un file batch.
 ERASE          Elimina uno o più file.
 EXIT           Termina il programma CMD.EXE (interprete dei comandi).
 FC             Confronta due file o set di file e ne visualizza le
-			   differenze.
+         differenze.
 FIND           Ricerca una stringa di testo in uno o più file.
 FINDSTR        Ricerca stringhe nei file.
 FOR            Esegue un comando specificato per ogni file in un set di file.
 FORMAT         Formatta un disco per l'utilizzo con Windows.
 FSUTIL         Visualizza o configura le proprietà del file system.
 FTYPE          Visualizza o modifica i tipi di file utilizzati nelle
-			   associazioni delle estensioni di file.
+         associazioni delle estensioni di file.
 GOTO           Indirizza l'interprete dei comandi di Windows a una riga con
-			   etichetta in un programma batch.
+         etichetta in un programma batch.
 GPRESULT       Visualizza le informazioni relative a Criteri di gruppo per il computer o l'utente.
 GRAFTABL       Abilita Windows alla visualizzazione di un set di
-			   caratteri estesi in modalità grafica.
+         caratteri estesi in modalità grafica.
 HELP           Fornisce informazioni della Guida per i comandi di Windows.
 ICACLS         Visualizza, modifica ed esegue il backup o il ripristino
-			   degli ACL per file e directory.
+         degli ACL per file e directory.
 IF             Esegue un'elaborazione condizionale in un programma batch.
 LABEL          Crea, cambia o elimina l'etichetta di volume di un disco.
 MD             Crea una directory.
@@ -196,12 +196,12 @@ MKLINK         Crea collegamenti simbolici e reali
 MODE           Configura un dispositivo di sistema.
 MORE           Visualizza l'output una schermata alla volta.
 MOVE           Sposta uno o più file da una directory a un'altra
-			   directory.
+         directory.
 OPENFILES      Visualizza i file aperti dagli utenti remoti per una determinata condivisione di file.
 PATH           Visualizza o imposta un percorso di ricerca per file eseguibili.
 PAUSE          Sospende l'elaborazione di un file batch e visualizza un messaggio.
 POPD           Ripristina il valore precedente della directory corrente
-			   salvato con PUSHD.
+         salvato con PUSHD.
 PRINT          Stampa un file di testo.
 PROMPT         Cambia il prompt dei comandi di Windows.
 PUSHD          Salva la directory corrente e poi la cambia.
@@ -228,11 +228,11 @@ TASKKILL       Interrompe o arresta un processo o un'applicazione in esecuzione.
 TIME           Visualizza o imposta l'ora del sistema.
 TITLE          Imposta il titolo della finestra per una sessione CMD.EXE.
 TREE           Visualizza graficamente la struttura di directory di un'unità o
-			   percorso.
+         percorso.
 TYPE           Visualizza il contenuto di un file di testo.
 VER            Visualizza la versione di Windows.
 VERIFY         Indica se effettuare o meno la verifica della corretta scrittura
-			   dei file sul disco.
+         dei file sul disco.
 VOL            Visualizza l'etichetta di volume e il numero di serie del disco.
 XCOPY          Copia file e alberi di directory.
 WMIC           Visualizza le informazioni relative a WMI all'interno della shell dei comandi interattivi.
@@ -244,13 +244,13 @@ Per ulteriori informazioni sulle utilità, vedere la documentazione di riferimen
 <p>Ogni comando viene eseguito con <code>COMANDO parametro1 parametro2 ... </code>.</p>
 
 <p>E' possibile visualizzare la guida dettagliata di uno specifico comando
-	invocando il comando con l'opzione <code>/?</code> ad esempio 
-	<code>dir /?</code> oppure <code>cd /?</code>. La guida indica la lista di 
-	parametri facoltativi tra parentesi quadre e la lista di 
-	parametri obbligatori senza parentesi quadre. Ad esempio 
-	<code>DIR [/P] [/Ax] path</code>, indica che i parametri <code>/p</code>
-	e <code>/ax</code> sono facoltativi perchè tra parentesi quadre, mentre 
-	il parametro path è obbligatorio perchè non è tra parentesi quadre.</p>
+  invocando il comando con l'opzione <code>/?</code> ad esempio 
+  <code>dir /?</code> oppure <code>cd /?</code>. La guida indica la lista di 
+  parametri facoltativi tra parentesi quadre e la lista di 
+  parametri obbligatori senza parentesi quadre. Ad esempio 
+  <code>DIR [/P] [/Ax] path</code>, indica che i parametri <code>/p</code>
+  e <code>/ax</code> sono facoltativi perchè tra parentesi quadre, mentre 
+  il parametro path è obbligatorio perchè non è tra parentesi quadre.</p>
 
 <p>L'elenco dei principali comandi con la relativa guida è il seguente:</p>
 
@@ -258,60 +258,60 @@ Per ulteriori informazioni sulle utilità, vedere la documentazione di riferimen
 <code>cd /?</code>
 <pre>
   <code class="language-batchfile">
-	Visualizza il nome della directory corrente o consente di passare
-	a un'altra directory.
+  Visualizza il nome della directory corrente o consente di passare
+  a un'altra directory.
 
-	CHDIR [/D] [unità][percorso]
-	CHDIR [..]
-	CD [/D] [unità][percorso]
-	CD [..]
+  CHDIR [/D] [unità][percorso]
+  CHDIR [..]
+  CD [/D] [unità][percorso]
+  CD [..]
 
-	  ..   Indica che si desidera passare alla directory padre.
+    ..   Indica che si desidera passare alla directory padre.
 
-	CD unità visualizza la directory corrente dell'unità specificata.
-	CD senza parametri visualizza l'unità e la directory correnti.
+  CD unità visualizza la directory corrente dell'unità specificata.
+  CD senza parametri visualizza l'unità e la directory correnti.
 
-	Usare l'opzione /D per cambiare l'unità corrente insieme al cambiamento
-	della directory corrente per l'unità.
+  Usare l'opzione /D per cambiare l'unità corrente insieme al cambiamento
+  della directory corrente per l'unità.
 
-	Se le estensioni ai comandi sono abilitate, CHDIR cambia come segue:
+  Se le estensioni ai comandi sono abilitate, CHDIR cambia come segue:
 
-	la stringa di directory corrente utilizzerà lo stesso caso,
-	maiuscole/minuscole, presente sui nomi di disco. Quindi CD C:\TEMP
-	imposta in realtà la directory corrente su C:\Temp se questo il
-	formato su disco.
+  la stringa di directory corrente utilizzerà lo stesso caso,
+  maiuscole/minuscole, presente sui nomi di disco. Quindi CD C:\TEMP
+  imposta in realtà la directory corrente su C:\Temp se questo il
+  formato su disco.
 
-	Il comando CHDIR non considera gi spazi come delimitatori, ed 
-	quindi possibile impiegare CD in in un nome di sottodirectory che
-	contenga uno spazio senza racchiudere il nome entro virgolette.
-	Ad esempio:
+  Il comando CHDIR non considera gi spazi come delimitatori, ed 
+  quindi possibile impiegare CD in in un nome di sottodirectory che
+  contenga uno spazio senza racchiudere il nome entro virgolette.
+  Ad esempio:
 
-		cd \winnt\profili\nomeutente\programmi\menu Start
+    cd \winnt\profili\nomeutente\programmi\menu Start
 
-		analogo a:
+    analogo a:
 
-		cd "\winnt\profili\nomeutente\programmi\menu Start"
+    cd "\winnt\profili\nomeutente\programmi\menu Start"
 
     che rappresenta ci che si deve digitare con le estensioni
-	disabilitate.
+  disabilitate.
 </code>
 </pre>
 
 Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
 <ul>
-	<li><code>cd 3InfB</code> cambia directory in c:\windows\3InfB;</li>
-	<li><code>cd \</code> cambia directory in c:\;</li>
-	<li><code>cd users\utente</code> cambia directory in c:\windows\users\utente.</li>
-	<li><code>cd ..</code> cambia directory tornando alla cartella padre c:\</li>
+  <li><code>cd 3InfB</code> cambia directory in c:\windows\3InfB;</li>
+  <li><code>cd \</code> cambia directory in c:\;</li>
+  <li><code>cd users\utente</code> cambia directory in c:\windows\users\utente.</li>
+  <li><code>cd ..</code> cambia directory tornando alla cartella padre c:\</li>
 </ul>
 
 <h2>CLS: Clear screen</h2>
 <code>cls /?</code>
 <pre>
   <code class="language-batchfile">
-	Cancella lo schermo.
+  Cancella lo schermo.
 
-	CLS
+  CLS
 </code>
 </pre>
 
@@ -321,33 +321,33 @@ Esempi d'uso: <code>cls</code> cancella lo schermo.
 <code>color /?</code>
 <pre>
   <code class="language-batchfile">
-	Imposta i colori di primo piano e di sfondo predefiniti per la console.
+  Imposta i colori di primo piano e di sfondo predefiniti per la console.
 
-	COLOR [attr]
+  COLOR [attr]
 
-	  attr        Specifica l'attributo relativo ai colori dell'output della console.
+    attr        Specifica l'attributo relativo ai colori dell'output della console.
 
-	L'attributo relativo ai colori è costituito da DUE cifre esadecimali: la
-	prima per lo sfondo, la seconda per il colore di primo piano. Per ognuno di
-	tali valori è possibile scegliere una delle cifre seguenti:
+  L'attributo relativo ai colori è costituito da DUE cifre esadecimali: la
+  prima per lo sfondo, la seconda per il colore di primo piano. Per ognuno di
+  tali valori è possibile scegliere una delle cifre seguenti:
 
-		0 = Nero       8 = Grigio
-		1 = Blu scuro        9 = Blu
-		2 = Verde       A = Verde limone
-		3 = Verde acqua        B = Azzurro
-		4 = Bordeaux         C = Rosso
-		5 = Viola      D = Fucsia
-		6 = Verde oliva      E = Giallo
-		7 = Grigio chiaro       F = Bianco
+    0 = Nero       8 = Grigio
+    1 = Blu scuro        9 = Blu
+    2 = Verde       A = Verde limone
+    3 = Verde acqua        B = Azzurro
+    4 = Bordeaux         C = Rosso
+    5 = Viola      D = Fucsia
+    6 = Verde oliva      E = Giallo
+    7 = Grigio chiaro       F = Bianco
 
-	Se non viene specificato alcun argomento, verranno ripristinati i colori
-	usati al momento dell'avvio di CMD.EXE. Tali informazioni vengono
-	ottenute dalla finestra di console corrente, dall'opzione /T della riga
-	di comando o dal valore DefaultColor del Registro di sistema.
+  Se non viene specificato alcun argomento, verranno ripristinati i colori
+  usati al momento dell'avvio di CMD.EXE. Tali informazioni vengono
+  ottenute dalla finestra di console corrente, dall'opzione /T della riga
+  di comando o dal valore DefaultColor del Registro di sistema.
 
-	Se si tenta di impostare lo stesso colore per il primo piano
-	e lo sfondo, il comando COLOR imposterà ERRORLEVEL
-	su 1.
+  Se si tenta di impostare lo stesso colore per il primo piano
+  e lo sfondo, il comando COLOR imposterà ERRORLEVEL
+  su 1.
 </code>
 </pre>
 
@@ -359,62 +359,62 @@ di primo piano e il bianco come colore di sfondo.
 <code>COPY /?</code>
 <pre>
   <code class="language-batchfile">
-	Copia uno o più file in un'altra posizione.
+  Copia uno o più file in un'altra posizione.
 
-	COPY [/D] [/V] [/N] [/Y] [/-Y] [/Z] [/L] [/A | /B] origine [/A | /B]
-		 [+ origine [/A | /B] [+ ...]] [destinazione [/A | /B]]
+  COPY [/D] [/V] [/N] [/Y] [/-Y] [/Z] [/L] [/A | /B] origine [/A | /B]
+     [+ origine [/A | /B] [+ ...]] [destinazione [/A | /B]]
 
-	  origine       Indica i file da copiare.
-	  /A            Indica un file di testo ASCII.
-	  /B            Indica un file binario.
-	  /D            Consente la creazione del file di destinazione come
-					decrittografato destinazione  specifica la directory
-					e/o il nome dei nuovi file.
-	  /V            Verifica che i nuovi file siano stati copiati correttamente.
-	  /N            Utilizza nomi file brevi, se disponibili, durante
-					la copia di file con nome lungo.
-	  /Y            Non chiede la conferma prima di sovrascrivere
-					un file di destinazione esistente.
-	  /-Y           Chiede la conferma prima di sovrascrivere
-					un file di destinazione esistente.
-	  /Z            Copia i file dalla rete in modalità riavviabile.
-	  /L            Se l'origine è un collegamento simbolico, copia nella
-					Destinazione il collegamento anzich‚ il file rappresentato
-					dal collegamento.
+    origine       Indica i file da copiare.
+    /A            Indica un file di testo ASCII.
+    /B            Indica un file binario.
+    /D            Consente la creazione del file di destinazione come
+          decrittografato destinazione  specifica la directory
+          e/o il nome dei nuovi file.
+    /V            Verifica che i nuovi file siano stati copiati correttamente.
+    /N            Utilizza nomi file brevi, se disponibili, durante
+          la copia di file con nome lungo.
+    /Y            Non chiede la conferma prima di sovrascrivere
+          un file di destinazione esistente.
+    /-Y           Chiede la conferma prima di sovrascrivere
+          un file di destinazione esistente.
+    /Z            Copia i file dalla rete in modalità riavviabile.
+    /L            Se l'origine è un collegamento simbolico, copia nella
+          Destinazione il collegamento anzich‚ il file rappresentato
+          dal collegamento.
 
-	L'opzione /Y potrebbe essere preimpostata nella variabile di ambiente COPYCMD.
-	Questa operazione può essere annullata inserendo /-Y nella riga di comando.
-	Per impostazione predefinita la conferma viene richiesta a meno che il comando
-	COPY non venga eseguito da uno script di tipo batch.
+  L'opzione /Y potrebbe essere preimpostata nella variabile di ambiente COPYCMD.
+  Questa operazione può essere annullata inserendo /-Y nella riga di comando.
+  Per impostazione predefinita la conferma viene richiesta a meno che il comando
+  COPY non venga eseguito da uno script di tipo batch.
 
-	Per concatenare i file, specificare un solo file di destinazione
-	e più file di origine (utilizzando caratteri jolly o il formato
-	file1+file2+file3).
+  Per concatenare i file, specificare un solo file di destinazione
+  e più file di origine (utilizzando caratteri jolly o il formato
+  file1+file2+file3).
 </code>
 </pre>
 
 Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
 <ul>
-	<li><code>copy 3InfB.txt 3InfA.txt</code> copia il file 3InfB.txt nella cartella corrente con nome 3InfA.txt</li>
-	<li><code>copy 3InfB.txt \3InfA.txt</code> cambia directory in c:\;</li>
-	<li><code>cd users\utente</code> cambia directory in c:\windows\users\utente.</li>
-	<li><code>cd ..</code> cambia directory tornando alla cartella padre c:\</li>
+  <li><code>copy 3InfB.txt 3InfA.txt</code> copia il file 3InfB.txt nella cartella corrente con nome 3InfA.txt</li>
+  <li><code>copy 3InfB.txt \3InfA.txt</code> cambia directory in c:\;</li>
+  <li><code>cd users\utente</code> cambia directory in c:\windows\users\utente.</li>
+  <li><code>cd ..</code> cambia directory tornando alla cartella padre c:\</li>
 </ul>
 
 <h2>Date</h2>
 <code>date /?</code>
 <pre>
   <code class="language-batchfile">
-	Visualizza o imposta la data.
+  Visualizza o imposta la data.
 
-	DATE [/T | data]
+  DATE [/T | data]
 
-	Digitare DATE senza parametri per visualizzare la data corrente e reimpostarla.
-	Premere INVIO per mantenere la stessa data.
+  Digitare DATE senza parametri per visualizzare la data corrente e reimpostarla.
+  Premere INVIO per mantenere la stessa data.
 
-	Se le estensioni dei comandi sono attivate, il comando DATE supporta
-	l'opzione /T, che consente al comando di mostrare la data corrente senza
-	richiedere l'immissione di una nuova data.
+  Se le estensioni dei comandi sono attivate, il comando DATE supporta
+  l'opzione /T, che consente al comando di mostrare la data corrente senza
+  richiedere l'immissione di una nuova data.
 </code>
 </pre>
 
@@ -424,53 +424,53 @@ Esempi d'uso: <code>date /t</code> visualizza la data corrente.
 <code>del /?</code>
 <pre>
 <code class="language-batchfile">
-	Elimina uno o piu file.
-	  /P            Chiede conferma prima di eliminare ogni file.
-	  /F            Forza l'eliminazione dei file di sola lettura.
-	  /S            Elimina i file specificati da tutte le sottodirectory.
-	  /Q            Modalità non interattiva, non chiede conferma per eliminazioni globali.
-	  /A            Seleziona i file da eliminare in base agli attributi.
-	  attributi    R  File di sola lettura            S  File di sistema
-					H  File nascosti               A  File di archivio
-					I  File non indicizzati  L  Reparse point
-					O  File offline              -  Prefisso per negare l'attributo
+  Elimina uno o piu file.
+    /P            Chiede conferma prima di eliminare ogni file.
+    /F            Forza l'eliminazione dei file di sola lettura.
+    /S            Elimina i file specificati da tutte le sottodirectory.
+    /Q            Modalità non interattiva, non chiede conferma per eliminazioni globali.
+    /A            Seleziona i file da eliminare in base agli attributi.
+    attributi    R  File di sola lettura            S  File di sistema
+          H  File nascosti               A  File di archivio
+          I  File non indicizzati  L  Reparse point
+          O  File offline              -  Prefisso per negare l'attributo
 
-	Se le estensioni dei comandi sono attivate, i comandi DEL ed ERASE verranno
-	modificati come segue:
+  Se le estensioni dei comandi sono attivate, i comandi DEL ed ERASE verranno
+  modificati come segue:
 
-	La semantica di visualizzazione dell'opzione /S viene invertita, poich‚
-	mostra solo i file eliminati anzich‚ quelli che non è possibile trovare.
+  La semantica di visualizzazione dell'opzione /S viene invertita, poich‚
+  mostra solo i file eliminati anzich‚ quelli che non è possibile trovare.
 </code>
 </pre>
 
 Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
 <ul>
-	<li><code>del 3InfB.txt</code> cancella il file c:\windows\3InfB.txt;</li>
-	<li><code>del \3InfB.txt</code> cancella il file c:\3InfB.txt;</li>
-	<li><code>del p:\3InfB.txt</code> cancella il file p:\3InfB.txt.</li>
-	<li><code>del ..\3InfB.txt</code> cancella il file c:\3InfB.txt.</li>
+  <li><code>del 3InfB.txt</code> cancella il file c:\windows\3InfB.txt;</li>
+  <li><code>del \3InfB.txt</code> cancella il file c:\3InfB.txt;</li>
+  <li><code>del p:\3InfB.txt</code> cancella il file p:\3InfB.txt.</li>
+  <li><code>del ..\3InfB.txt</code> cancella il file c:\3InfB.txt.</li>
 </ul>
 
 <h2>Echo</h2>
 <code>echo /?</code>
 <pre>
   <code class="language-batchfile">
-	Visualizza messaggi oppure attiva/disattiva la ripetizione dei comandi.
+  Visualizza messaggi oppure attiva/disattiva la ripetizione dei comandi.
 
-	  ECHO [ON | OFF]
-	  ECHO [messaggio]
+    ECHO [ON | OFF]
+    ECHO [messaggio]
 
-	Digita ECHO senza parametri per visualizzare l'impostazione corrente.
+  Digita ECHO senza parametri per visualizzare l'impostazione corrente.
 </code>
 </pre>
 
 Esempi d'uso: <code>echo 3InfB</code> visualizza il messaggio 3InfB.
     <ul>
-	<li><code>echo 3InfB</code> visualizza il messaggio 3InfB;</li>
-	<li><code>echo %path%</code> visualizza il valore della variabile %path%;</li>
-	<li><code>echo %userprofile%\3InfB.txt</code> visualizza il valore
+  <li><code>echo 3InfB</code> visualizza il messaggio 3InfB;</li>
+  <li><code>echo %path%</code> visualizza il valore della variabile %path%;</li>
+  <li><code>echo %userprofile%\3InfB.txt</code> visualizza il valore
             della variabile %userprofile% seguito dal testo \3infB.txt;</li>
-	<li><code>echo mi trovo nella cartella %userprofile%\3InfB.txt</code>
+  <li><code>echo mi trovo nella cartella %userprofile%\3InfB.txt</code>
             visualizza il testo "mi trovo nella cartella" seguito dal valore
             della variabile %userprofile% seguito dal testo \3infB.txt.</li>
 </ul>
@@ -479,78 +479,78 @@ Esempi d'uso: <code>echo 3InfB</code> visualizza il messaggio 3InfB.
 <code>mkdir /?</code>
 <pre>
   <code class="language-batchfile">
-	Crea una directory.
+  Crea una directory.
 
-	MKDIR [unità:]percorso
-	MD [unità:]percorso
+  MKDIR [unità:]percorso
+  MD [unità:]percorso
 
-	Se le estensioni dei comandi sono attivate, il comando MKDIR verrà modificato
-	come segue:
+  Se le estensioni dei comandi sono attivate, il comando MKDIR verrà modificato
+  come segue:
 
-	MKDIR crea tutte le directory intermedie eventualmente necessarie nel
-	percorso. Se ad esempio il percorso \a non esiste:
+  MKDIR crea tutte le directory intermedie eventualmente necessarie nel
+  percorso. Se ad esempio il percorso \a non esiste:
 
-		mkdir \a\b\c\d
+    mkdir \a\b\c\d
 
-	Corrisponde a:
+  Corrisponde a:
 
-		mkdir \a
-		chdir \a
-		mkdir b
-		chdir b
-		mkdir c
-		chdir c
-		mkdir d
+    mkdir \a
+    chdir \a
+    mkdir b
+    chdir b
+    mkdir c
+    chdir c
+    mkdir d
 
-	Questi sono infatti i comandi che è necessario digitare quando le estensioni
-	sono disattivate.
+  Questi sono infatti i comandi che è necessario digitare quando le estensioni
+  sono disattivate.
 </code>
 </pre>
 
 Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
 <ul>
-	<li><code>mkdir 3InfB.txt</code> crea la cartella c:\windows\3InfB.txt;</li>
-	<li><code>mkdir \3InfB.txt</code> crea la cartella c:\3InfB.txt;</li>
-	<li><code>mkdir p:\3InfB.txt</code> crea la cartella p:\3InfB.txt.</li>
-	<li><code>mkdir ..\3InfB.txt</code> crea la cartella c:\3InfB.txt.</li>
+  <li><code>mkdir 3InfB.txt</code> crea la cartella c:\windows\3InfB.txt;</li>
+  <li><code>mkdir \3InfB.txt</code> crea la cartella c:\3InfB.txt;</li>
+  <li><code>mkdir p:\3InfB.txt</code> crea la cartella p:\3InfB.txt.</li>
+  <li><code>mkdir ..\3InfB.txt</code> crea la cartella c:\3InfB.txt.</li>
 </ul>
 
 <h2>move</h2>
 <code>move /?</code>
 <pre>
   <code class="language-batchfile">
-	Consente di spostare file e rinominare file e directory.
+  Consente di spostare file e rinominare file e directory.
 
-	Per spostare uno o più file:
-	MOVE [/Y | /-Y] [unità:][percorso]nomefile1[,...] destinazione
+  Per spostare uno o più file:
+  MOVE [/Y | /-Y] [unità:][percorso]nomefile1[,...] destinazione
 
-	Per rinominare una directory:
-	MOVE [/Y | /-Y] [unità:][percorso]nomedir1 nomedir2
+  Per rinominare una directory:
+  MOVE [/Y | /-Y] [unità:][percorso]nomedir1 nomedir2
 
-	  [unità:][percorso]nomefile1 Specifica il percorso e il nome del o dei file
-								  da spostare.
-	  destinazione                Specifica il nuovo percorso del file. La
-								  destinazione può essere costituita da una
-								  lettera di unità seguita da due punti, da un
-								  nome di directory o da una combinazione di
-								  entrambi. Se si sposta solo un file, sarà
-								  possibile includere anche un nome di file per
-								  rinominare il file durante lo spostamento.
-	  [unità:][percorso]nomedir1  Specifica la directory da rinominare.
-	  nomedir2                    Specifica il nuovo nome della directory.
+    [unità:][percorso]nomefile1 Specifica il percorso e il nome del o dei file
+                  da spostare.
+    destinazione                Specifica il nuovo percorso del file. La
+                  destinazione può essere costituita da una
+                  lettera di unità seguita da due punti, da un
+                  nome di directory o da una combinazione di
+                  entrambi. Se si sposta solo un file, sarà
+                  possibile includere anche un nome di file per
+                  rinominare il file durante lo spostamento.
+    [unità:][percorso]nomedir1  Specifica la directory da rinominare.
+    nomedir2                    Specifica il nuovo nome della directory.
 
-	  /Y                          Elimina la richiesta di conferma della
-								  sovrascrittura di un file di destinazione
-								  esistente.
-	  /-Y                         Visualizza la richiesta di conferma della
-								  sovrascrittura di un file di destinazione
-								  esistente.
+    /Y                          Elimina la richiesta di conferma della
+                  sovrascrittura di un file di destinazione
+                  esistente.
+    /-Y                         Visualizza la richiesta di conferma della
+                  sovrascrittura di un file di destinazione
+                  esistente.
 
-	Se l'opzione /Y è presente nella variabile di ambiente COPYCMD,
-	può essere sostituita specificando /-Y nella riga di comando. La richiesta
-	di conferma della sovrascrittura viene visualizzata per impostazione
-	predefinita, a meno che il comando MOVE non venga eseguito dall'interno di
-	uno script batch.
+  Se l'opzione /Y è presente nella variabile di ambiente COPYCMD,
+  può essere sostituita specificando /-Y nella riga di comando. La richiesta
+  di conferma della sovrascrittura viene visualizzata per impostazione
+  predefinita, a meno che il comando MOVE non venga eseguito dall'interno di
+  uno script batch.
 </code>
 </pre>
 
@@ -561,12 +561,12 @@ Lab\3InfA.
 <code>ren /?</code>
 <pre>
 <code class="language-batchfile">
-	Rinomina uno o più file.
+  Rinomina uno o più file.
 
-	RENAME [unità:][percorso]nomefile1 nomefile2.
-	REN [unità:][percorso]nomefile1 nomefile2.
+  RENAME [unità:][percorso]nomefile1 nomefile2.
+  REN [unità:][percorso]nomefile1 nomefile2.
 
-	Impossibile specificare una nuova unità o percorso per il file di destinazione.
+  Impossibile specificare una nuova unità o percorso per il file di destinazione.
 </code>
 </pre>
 
@@ -577,16 +577,16 @@ Esempi d'uso: <code>ren 3InfB.txt.txt 3InfA.txt</code> rinomina il file
 <code>rmdir /?</code>
 <pre>
 <code class="language-batchfile">
-	RMDIR [/S] [/Q] [unità:]percorso
-	RD [/S] [/Q] [unità:]percorso
+  RMDIR [/S] [/Q] [unità:]percorso
+  RD [/S] [/Q] [unità:]percorso
 
-	  /S        Rimuove tutte le directory e file nella directory
-			specificata oltre alla directory stessa. Usato per
-			rimuovere l'intero albero di una directory.
+    /S        Rimuove tutte le directory e file nella directory
+      specificata oltre alla directory stessa. Usato per
+      rimuovere l'intero albero di una directory.
 
-	  /Q        Modalità non interattiva, non richiede alcuna conferma
-			per la rimozione di un albero di directory eseguita
-			con /S
+    /Q        Modalità non interattiva, non richiede alcuna conferma
+      per la rimozione di un albero di directory eseguita
+      con /S
 
 </code>
 </pre>
@@ -597,16 +597,16 @@ Esempi d'uso: <code>rmdir 3InfB</code> rimuove la cartella 3InfB.
 <code>time /?</code>
 <pre>
 <code class="language-batchfile">
-	Visualizza o imposta l'ora di sistema.
+  Visualizza o imposta l'ora di sistema.
 
-	TIME [/T | ora]
+  TIME [/T | ora]
 
-	Digitare TIME senza parametri per visualizzare l'ora corrente e reimpostarla.
-	Premere INVIO per mantenere la stessa ora.
+  Digitare TIME senza parametri per visualizzare l'ora corrente e reimpostarla.
+  Premere INVIO per mantenere la stessa ora.
 
-	Se le estensioni dei comandi sono attivate, il comando TIME supporta
-	l'opzione /T, che consente al comando di mostrare l'ora corrente, senza
-	richiedere l'immissione di una nuova ora.
+  Se le estensioni dei comandi sono attivate, il comando TIME supporta
+  l'opzione /T, che consente al comando di mostrare l'ora corrente, senza
+  richiedere l'immissione di una nuova ora.
 </code>
 </pre>
 
