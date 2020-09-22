@@ -1,0 +1,22 @@
+name: Check Markdown 
+
+on: 
+  push:
+    branches:
+    - master
+  schedule:
+  # Run everyday at 10:00 AM 
+  - cron: "0 10 * * *"
+  
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Run mdl
+      uses: actionshub/markdownlint@master
+    - name: markdownlint-cli
+      uses: nosborn/github-action-markdown-cli@v1.1.1
+        with:
+          files: .
