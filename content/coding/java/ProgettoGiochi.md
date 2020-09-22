@@ -59,7 +59,7 @@ Progettare un'applicazione web che permetta ad un utente di giocare a dadi sfida
  2. mostrare i dadi tirati ed il corrispondente messaggio di parità, vittoria o sconfitta, invitando al tempo stesso a giocare ancora;
  3. tenere traccia del punteggio dei due giocatori;
 
-<!-- markdownlint-disable MD026 MD036 -->
+<!-- markdownlint-disable MD009 MD036 -->
 
  |              |     |     |     |     | 
 ---       | --- | --- | --- | --- | --- | 
@@ -69,4 +69,4 @@ Punti     |           |           |           |           |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
-<!-- markdownlint-enable MD026 MD036 -->
+<!-- markdownlint-enable MD009 MD036 -->

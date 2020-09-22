@@ -38,7 +38,7 @@ Rispondere alle seguenti domande:
 
 8. Che funzione svolge un’espressione in una JSP? Fai un esempio;
 
-<!-- markdownlint-disable MD026 MD036 -->
+<!-- markdownlint-disable MD009 MD036 -->
 
  |              |     |     |     |     |     |     |     | 
 ---       | --- | --- | --- | --- | --- | --- | --- | --- | ---
@@ -48,4 +48,4 @@ Punti     |     |     |     |     |     |     |     |     |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
-<!-- markdownlint-enable MD026 MD036 -->
+<!-- markdownlint-enable MD009 MD036 -->
