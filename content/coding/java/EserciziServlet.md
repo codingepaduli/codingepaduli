@@ -18,7 +18,7 @@ summary: "Esercizi in java su MVC, Servlet e JSP"
 
 Rispondere alle seguenti domande:
 
-1. Dato un servizio di somma algebrica tra due numeri offerto sull’indirizzo [](http://localhost:9877/somma?num1=100&num2=146 "http://localhost:9877/somma?num1=100&num2=146") descrivere le varie parti dell’URL. Su quale path è stato fatto il deploy dell’applicazione web?
+1. Dato un servizio di somma algebrica tra due numeri offerto sull’indirizzo [http://localhost:9877/somma?num1=100&num2=146](http://localhost:9877/somma?num1=100&num2=146 "http://localhost:9877/somma?num1=100&num2=146") descrivere le varie parti dell’URL. Su quale path è stato fatto il deploy dell’applicazione web?
 
 2. Spiegare a cosa serve il file **web.xml**;
 
@@ -38,6 +38,8 @@ Rispondere alle seguenti domande:
 
 8. Che funzione svolge un’espressione in una JSP? Fai un esempio;
 
+<!-- markdownlint-disable MD026 MD036 -->
+
  |              |     |     |     |     |     |     |     | 
 ---       | --- | --- | --- | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  | Totale Punti
@@ -45,3 +47,5 @@ Max punti |  2  |  1  |  1  |  2  |  1  |  1  |  1  |  1  | 10
 Punti     |     |     |     |     |     |     |     |     | 
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
+
+<!-- markdownlint-enable MD026 MD036 -->
