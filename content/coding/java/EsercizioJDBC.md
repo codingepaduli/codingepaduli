@@ -41,7 +41,6 @@ summary: "Esercizi JDBC"
   4. PreparedStatement
 
 <!-- markdownlint-disable MD026 MD036 -->
-
  |              |     |     |     |     | 
 ---       | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  | Totale Punti
@@ -49,5 +48,4 @@ Max punti |  2  |  1  |  1  |  2  |  1  | 10
 Punti     |     |     |     |     |     | 
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
-
 <!-- markdownlint-enable MD026 MD036 -->
