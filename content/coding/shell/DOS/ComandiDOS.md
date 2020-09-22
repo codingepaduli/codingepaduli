@@ -16,7 +16,7 @@ summary: "Comandi della CLI di Windows"
 
 La linea di comando è detta anche prompt dei comandi o Command Line
 Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si
-accede alla linea di comando di Windows da menù Start - Sistema 
+accede alla linea di comando di Windows da menù Start - Sistema
 Windows - Prompt dei comandi.
 
 E' spesso utilizzata per l'accesso remoto ai sistemi, soprattutto ai
@@ -266,7 +266,7 @@ L'elenco dei principali comandi con la relativa guida è il seguente:
   imposta in realtà la directory corrente su C:\Temp se questo il
   formato su disco.
 
-  Il comando CHDIR non considera gi spazi come delimitatori, ed 
+  Il comando CHDIR non considera gi spazi come delimitatori, ed
   quindi possibile impiegare CD in in un nome di sottodirectory che
   contenga uno spazio senza racchiudere il nome entro virgolette.
   Ad esempio:

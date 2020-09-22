@@ -25,6 +25,7 @@ Realizzare uno script in PowerShell che crei una nuova cartella avente il propri
 5. commentare ogni riga dello script e salvarlo assegnandogli il proprio cognome e nome.
 
 Ipotizzando che lo studente si chiami "Mario Rossi", lo script avrà nome ``Mario Rossi.ps1`` e genererà i seguenti file:
+
 ```output
 Mario\
   nome_a_piacere.txt  (contenuto: Rossi)
@@ -39,7 +40,7 @@ Realizzare in PowerShell uno script che abbia come nome il proprio cognome e che
 1. crei una cartella con nome dell'oggetto assegnato;
 2. utilizzi come cartella di lavoro la cartella creata al punto 1;
 3. per ogni proprietà a scelta multipla, crei una nuova cartella avente il nome della proprietà stessa;
-4. per ogni voce delle proprietà a scelta multipla, crei, all'interno della cartella creata al punto 3, un nuovo file avente il nome della proprietà stessa; 
+4. per ogni voce delle proprietà a scelta multipla, crei, all'interno della cartella creata al punto 3, un nuovo file avente il nome della proprietà stessa;
 5. per le rimanenti proprietà dell'oggetto assegnato, non considerate nei punti 3 e 4, crei un nuovo file per ogni proprietà. Il file avrà il nome della proprietà e, come contenuto, un valore a scelta del tipo corrispondente;
 
 Supponendo che l'oggetto sia un form di registrazione con nome utente, password e titolo di studio a scelta tra "diploma", "laurea" e "master", lo script realizzato dall'utente "Mario Rossi" avrà nome ``Rossi.ps1`` e genererà i seguenti file e cartelle:
@@ -56,12 +57,12 @@ Form\
 
 Elenco degli oggetti da assegnare:
 
-- Oggetto **canzone** con le proprietà Autore, Album, Genere (a scelta tra le voci "Pop", "Rock", "Rap"); 
+- Oggetto **canzone** con le proprietà Autore, Album, Genere (a scelta tra le voci "Pop", "Rock", "Rap");
 - Oggetto **film** con le proprietà Regista, Protagonista, Genere (a scelta tra le voci "Fantasy", "Horror", "Drammatico");
 - Oggetto **biglietto** con le proprietà Numero, Intestatario, TipoEvento (a scelta tra le voci "Calcio", "Concerto", "Teatro");
 - Oggetto **viaggio** con le proprietà Prezzo, Compagnia e Localita (a scelta tra le voci "Roma", "Milano", "Torino");
-- Oggetto **auto** con le proprietà Targa, Colore e Marca (a scelta tra le voci "Fiat", "Mercedes", "Audi"); 
-- Oggetto **documento** con le proprietà Numero, Scadenza e Tipo (a scelta tra le voci "Patente", "Carta identità", "Passaporto"); 
+- Oggetto **auto** con le proprietà Targa, Colore e Marca (a scelta tra le voci "Fiat", "Mercedes", "Audi");
+- Oggetto **documento** con le proprietà Numero, Scadenza e Tipo (a scelta tra le voci "Patente", "Carta identità", "Passaporto");
 - Oggetto **indirizzo** con le proprietà Comune (a scelta tra le voci "Domodossola", "Verbania", "Anzola"), Provincia (a scelta tra le voci "Verbania", "Milano", "Roma"), Cap;
 - Oggetto **squadra** con le proprietà Nome, Sport (a scelta tra le voci "Calcio", "Tennis", "Ippica"), Allenatore;
 - Oggetto **libro** con le proprietà Autore, Genere (a scelta tra le voci "Fantasy", "Drammatico", "ISBN");

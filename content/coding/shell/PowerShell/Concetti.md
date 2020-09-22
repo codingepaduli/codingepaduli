@@ -47,7 +47,7 @@ Binary     2.0.3                 ThreadJob                           Desk
 
 ## Providers e drive
 
-I provider sono oggetti che fanno parte del ``.Net Framework`` (lo stesso di PowerShell) e che forniscono un accesso specializzato ad una collezione di dati. Vi è un provider che gestisce file e cartelle, uno che gestire gli alias, uno che gestire le variabili d'ambiente, ecc... 
+I provider sono oggetti che fanno parte del ``.Net Framework`` (lo stesso di PowerShell) e che forniscono un accesso specializzato ad una collezione di dati. Vi è un provider che gestisce file e cartelle, uno che gestire gli alias, uno che gestire le variabili d'ambiente, ecc...
 
 L'utente può creare nuovi provider per gestire altre collezioni di dati.
 
