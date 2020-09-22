@@ -17,7 +17,7 @@ summary: "Esercizi JDBC"
 - L’interfaccia JDBC è utilizzata per:
   1. Interagire con il database SQL in maniera dipendente dal driver utilizzato;
   2. Interagire con il database SQL in maniera dipendente dalla stringa di connessione;
-  3. Interagire con il database SQL in maniera dipendente dalla query da effettuare; 
+  3. Interagire con il database SQL in maniera dipendente dalla query da effettuare;
   4. Interagire con un qualunque tipo di database SQL in maniera astratta;
 - Una stringa di connessione valida per collegarsi ad un database è:
   1. Jdbc:mysql://localhost/db
@@ -40,7 +40,6 @@ summary: "Esercizi JDBC"
   3. DriverManager;
   4. PreparedStatement
 
-
  |              |     |     |     |     | 
 ---       | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  | Totale Punti
@@ -48,4 +47,3 @@ Max punti |  2  |  1  |  1  |  2  |  1  | 10
 Punti     |     |     |     |     |     | 
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
-

@@ -31,17 +31,17 @@ In windows si può installare attraverso il package manager ```choco```:
 choco install openjdk11
 ```
 
-In alternativa, si può scaricare dal sito [https://adoptopenjdk.net/](https://adoptopenjdk.net/) 
+In alternativa, si può scaricare dal sito [https://adoptopenjdk.net/](https://adoptopenjdk.net/).
 
-![image](/static/coding/tools/OpenJDK-ChooseSO.png "OpenJDK - Scelta Sistema Operativo")
+![OpenJDK - Scelta Sistema Operativo](/static/coding/tools/OpenJDK-ChooseSO.png "OpenJDK - Scelta Sistema Operativo")
 
 Cliccando sul tasto ``Altre piattaforme``, si ha la possibilità di scegliere sia la versione che la macchina virtuale.
 
-![image](/static/coding/tools/OpenJDK-Choose.png "OpenJDK - Scelta versione e JVM")
+![OpenJDK - Scelta versione e JVM](/static/coding/tools/OpenJDK-Choose.png "OpenJDK - Scelta versione e JVM")
 
 Si sceglie la versione OpenJDK 11, la Java Virtual Machine "OpenJ9" poi si prosegue nella scelta del pacchetto adatto al sistema operativo:
 
-![image](/static/coding/tools/OpenJDK-Download.png "OpenJDK - Download pacchetto")
+![OpenJDK - Download pacchetto](/static/coding/tools/OpenJDK-Download.png "OpenJDK - Download pacchetto")
 
 Si sceglie il sistema operativo, si verifica l'architettura (x86 o x64) e si scarica il pacchetto eseguibile (con estensione ".msi" per Windows o ".pkg" per Linux).
 
