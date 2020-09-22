@@ -12,127 +12,114 @@ toc: false
 summary: "Comandi della CLI di Windows"
 ---
 
-<h1>Comandi DOS</h1>
+# Comandi DOS
 
-<p>La linea di comando è detta anche prompt dei comandi o Command Line 
-  Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si accede 
-  alla linea di comando di Windows da menù Start - Sistema Windows - 
-  Prompt dei comandi.</p>
+La linea di comando è detta anche prompt dei comandi o Command Line
+Interface (abbreviata CLI) cioè interfaccia a linea di comando. Si
+accede alla linea di comando di Windows da menù Start - Sistema Windows
+- Prompt dei comandi.
 
-<p>E' spesso utilizzata per l'accesso remoto ai sistemi, soprattutto ai 
-  sistemi di "produzione", in particolare ai server Linux che non
-  sono provvisti di una interfaccia grafica, ma solo dell'interfaccia
-  a linea di comando e del minimo indispensabile per poter eseguire
-  il compito per cui sono stati progettati (server email, server
-  per siti web, ...).</p> 
+E' spesso utilizzata per l'accesso remoto ai sistemi, soprattutto ai
+sistemi di "produzione", in particolare ai server Linux che non sono
+provvisti di una interfaccia grafica, ma solo dell'interfaccia a linea
+di comando e del minimo indispensabile per poter eseguire il compito per
+cui sono stati progettati (server email, server per siti web, ...).
+
+## Path (percorso di un file o di una cartella)
+
+Il prompt mostra innanzitutto il percorso in cui ci troviamo:
+`c:\windows\users\utente`.
+
+Il percorso è definito da:
+
+  - `c:` La lettera dell'unità in cui ci troviamo;
+  - `\` La cartella principale dell'unità;
+  - `windows\users\utente` il percorso fatto di cartelle e sottocartelle
+    separate dal carattere di separazione cartelle `\`.
+
+Alle unità di archiviazione viene associata una lettera identificativa.
+Per spostarsi da un'unità all'altra, è necessario scrivere la lettera
+dell'unità (che possiamo vedere in Risorse del computer). Ad esempio:
+
+  - `c:` Si sposta sull'unità c:
+  - `d:` Si sposta sull'unità d:
+
+Supponendo di essere nel percorso `c:\windows\users\utente`, per
+visualizzare le cartelle esistenti nel percorso corrente (ovvero nella
+cartella corrente), si usa il comando `dir` che elenca i file e le
+cartelle presenti nella cartella corrente.
+
+Per visualizzare invece i file in una cartella, ad esempio in
+`c:\windows` posso utilizzare il comando `dir c:\windows` che elenca i
+file e le cartelle presenti nella cartella indicata.
+
+Sempre supponendo di essere nel percorso `c:\windows\users\utente`, per
+accedere ad una cartella di nome "cartella1" si usa il comando `cd
+cartella1` che ci permette di entrare quindi in
+`c:\windows\users\utente\cartella1`.
+
+Per tornare invece alla cartella precedente si usa il comando `cd ..`
+che ci permette di ritornare in `c:\windows\users\utente`.
+
+Da notare che gli operatori `..` e `.` servono per indicare i percorsi
+con nomi relativi e non assoluti, ovvero servono ad indicare i percorsi
+a partire da quello in cui ci troviamo.
+
+Supponendo di essere nel percorso `c:\windows\users\utente` e di voler
+visualizzare tutti i file e cartelle in `c:\windows`, posso utilizzare
+sia il comando `dir c:\windows`, sia `dir ..\..` dato che `..\..` torna
+indietro di due cartelle, sia `dir c:\windows\..\windows\.\` dato che il
+primo `..` torna indietro a `c:` quindi si accede nuovamente alla
+cartella "windows" e poi si accede alla cartella corrente, che è ancora
+"windows", e di questa si visualizza l'elenco di file e cartelle.
+
+## Variabili di ambiente
+
+Il sistema operativo usa delle variabili dette "variabili di ambiente",
+che sono accessibili e configurabili dal prompt dei comandi. In
+particolare abbiamo la variabile `userprofile`, che contiene il percorso
+della cartella "home" dell'utente, e la variabile `path`, che contiene
+l'elenco di cartelle in cui sono contenuti i file eseguibili.
+
+per visualizzare l'elenco di tutte le variabili di ambiente, utilizzare
+il comando `set`, oppure, per visualizzare il valore di una singola
+variable, utilizzare `set nomeVariabile`.
+
+## Redirezione dell'output, dell'input o degli errori su file
+
+Una funzionalità particolarmente usata è la redirezione degli standard
+input ed output, che avviene mediante i seguenti operatori:
+
+  - `>` Redirezione output in un nuovo file;
+  - `>>` Redirezione output in un file esistente in modalita "APPEND"
+    (in aggiunta);
+  - `<` Redirezione dell'input in un comando;
+  - `nul` operatore speciale che serve a cestinare tutti i dati che sono
+    scritti all'interno.
+
+Ad esempio:
+
+  - `dir > file.txt` Redirezione output del comando dir nel nuovo file
+    file.txt;
+  - `echo messaggio >> file.txt` Redirezione output del comando echo nel
+    file file.txt in modalita "APPEND" (in aggiunta);
+  - `dir 2> file.txt` Redirezione dei messaggi di errore del comando dir
+    nel nuovo file file.txt;
+  - `dir > file.txt 2>&1` Redirezione dei messaggi di output e di errore
+    del comando dir nel file file.txt;
+  - `dir > file.txt 2> file2.txt` Redirezione dei messaggi di output nel
+    file file.txt e dei messaggi di errore nel file file2.txt;
+  - `dir > file.txt 2> nul` Redirezione dei messaggi di output del
+    comando dir nel file file.txt e dei messaggi di errore nel cestino;
+  - `dir 2> nul` Redirezione dei messaggi di errore nel cestino;
+  - `dir > nul 2>&1` Redirezione dei messaggi di output e di errore nel
+    cestino;
+
+Per visualizzare i comandi disponibili da CLI in Windows si usa il
+comando `help` che visualizza il seguente output:
+
+``` 
   
-<h2>Path (percorso di un file o di una cartella)</h2>
-
-<p>Il prompt mostra innanzitutto il percorso in cui ci troviamo:
-  <code>c:\windows\users\utente</code>. </p>
-
-<p>Il percorso è definito da:</p>
-
-<ul>
-  <li><code>c:</code> La lettera dell'unità in cui ci troviamo;</li>
-  <li><code>\</code> La cartella principale dell'unità;</li>
-  <li><code>windows\users\utente</code> il percorso fatto di cartelle
-      e sottocartelle separate dal carattere di separazione cartelle "\".</li>
-</ul>
-
-<p>Alle unità di archiviazione viene associata una lettera identificativa.
-  Per spostarsi da un'unità all'altra, è necessario scrivere la lettera
-  dell'unità (che possiamo vedere in Risorse del computer). Ad esempio: </p>
-<ul>
-  <li><code>c:</code> Si sposta sull'unità c:</li>
-  <li><code>d:</code> Si sposta sull'unità d:</li>
-</ul>
-
-<p>Supponendo di essere nel percorso <code>c:\windows\users\utente</code>, 
-  per visualizzare le cartelle esistenti nel percorso corrente (ovvero
-  nella cartella corrente), si usa il comando <code>dir</code> che elenca
- i file e le cartelle presenti nella cartella corrente.</p>
-
-<p>Per visualizzare invece i file in una cartella, ad esempio in 
-  <code>c:\windows</code> posso utilizzare il comando
-  <code>dir c:\windows</code> che elenca i file e le cartelle presenti 
-  nella cartella indicata.</p>
-
-<p>Sempre supponendo di essere nel percorso <code>c:\windows\users\utente</code>, 
-  per accedere ad una cartella di nome "cartella1" si usa il comando 
-  <code>cd cartella1</code> che ci permette di entrare quindi in
-  <code>c:\windows\users\utente\cartella1</code>.</p>
-
-<p>Per tornare invece alla cartella precedente si usa il comando 
-  <code>cd ..</code> che ci permette di ritornare in
-  <code>c:\windows\users\utente</code>.</p>
-
-<p>Da notare che gli operatori <code>..</code> e <code>.</code> servono
-  per indicare i percorsi con nomi relativi e non assoluti, ovvero servono
-  ad indicare i percorsi a partire da quello in cui ci troviamo. </p>
-  
-<p>Supponendo di essere nel percorso <code>c:\windows\users\utente</code>
-  e di voler visualizzare tutti i file e cartelle in <code>c:\windows</code>,
-  posso utilizzare sia il comando <code>dir c:\windows</code>, sia
-  <code>dir ..\..</code> dato che <code>..\..</code> torna indietro di due 
-  cartelle, sia <code>dir c:\windows\..\windows\.\</code> dato che il primo
-  <code>..</code> torna indietro a <code>c:</code> quindi si accede nuovamente
-  alla cartella "windows" e poi si accede alla cartella corrente, che è
-  ancora "windows", e di questa si visualizza l'elenco di file e cartelle.</p>
-
-<h2>Variabili di ambiente</h2>
-
-<p>Il sistema operativo usa delle variabili dette "variabili di ambiente",
-    che sono accessibili e configurabili dal prompt dei comandi. 
-    In particolare abbiamo la variabile <code>userprofile</code>, che contiene
-    il percorso della cartella "home" dell'utente, e la variabile 
-    <code>path</code>, che contiene l'elenco di cartelle in cui sono 
-    contenuti i file eseguibili.</p>
-
-<p>per visualizzare l'elenco di tutte le variabili di ambiente, utilizzare il 
-    comando <code>set</code>, oppure, per visualizzare il valore di una singola
-    variable, utilizzare <code>set nomeVariabile</code>. </p>
-
-<h2>Redirezione dell'output, dell'input o degli errori su file</h2>
-
-<p>Una funzionalità particolarmente usata è la redirezione degli standard
-    input ed output, che avviene mediante i seguenti operatori:</p>
-<ul>
-  <li><code>&gt;</code> Redirezione output in un nuovo file;</li>
-  <li><code>&gt;&gt;</code> Redirezione output in un file esistente
-      in modalita "APPEND" (in aggiunta);</li>
-  <li><code>&lt;</code> Redirezione dell'input in un comando;</li>
-  <li><code>nul</code> operatore speciale che serve a cestinare tutti i
-      dati che sono scritti all'interno.</li>
-</ul>
-
-<p>Ad esempio: </p>
-<ul>
-  <li><code>dir &gt; file.txt</code> Redirezione output del comando dir
-      nel nuovo file file.txt;</li>
-  <li><code>echo messaggio &gt;&gt; file.txt</code> Redirezione output del
-      comando echo nel file file.txt in modalita "APPEND" (in aggiunta);</li>
-  <li><code>dir 2&gt; file.txt</code> Redirezione dei messaggi di errore
-      del comando dir nel nuovo file file.txt;</li>
-  <li><code>dir &gt; file.txt 2&gt;&1</code>  Redirezione dei messaggi
-      di output e di errore del comando dir nel file file.txt;</li>
-  <li><code>dir &gt; file.txt 2&gt; file2.txt</code>  Redirezione dei
-      messaggi di output nel file file.txt e dei messaggi di errore
-      nel file file2.txt;</li>
-  <li><code>dir &gt; file.txt 2&gt; nul</code>  Redirezione dei
-      messaggi di output del comando dir nel file file.txt e dei
-      messaggi di errore nel cestino;</li>
-  <li><code>dir 2&gt; nul</code> Redirezione dei messaggi di errore
-      nel cestino;</li>
-  <li><code>dir &gt; nul 2&gt;&1</code>  Redirezione dei messaggi
-      di output e di errore nel cestino;</li>
-</ul>
-
-<p>Per visualizzare i comandi disponibili da CLI in Windows si usa il comando 
-  <code>help</code> che visualizza il seguente output: </p>
-
-<pre>
-  <code class="language-batchfile">
 Per ulteriori informazioni su uno specifico comando, digitare HELP nome comando
 ASSOC          Visualizza o modifica le associazioni alle estensioni dei file.
 ATTRIB         Visualizza o modifica gli attributi del file.
@@ -238,26 +225,27 @@ XCOPY          Copia file e alberi di directory.
 WMIC           Visualizza le informazioni relative a WMI all'interno della shell dei comandi interattivi.
 
 Per ulteriori informazioni sulle utilità, vedere la documentazione di riferimento sulla riga di comando nella Guida.
-  </code>
-</pre>
+  
+```
 
-<p>Ogni comando viene eseguito con <code>COMANDO parametro1 parametro2 ... </code>.</p>
+Ogni comando viene eseguito con `COMANDO parametro1 parametro2 ... `.
 
-<p>E' possibile visualizzare la guida dettagliata di uno specifico comando
-  invocando il comando con l'opzione <code>/?</code> ad esempio 
-  <code>dir /?</code> oppure <code>cd /?</code>. La guida indica la lista di 
-  parametri facoltativi tra parentesi quadre e la lista di 
-  parametri obbligatori senza parentesi quadre. Ad esempio 
-  <code>DIR [/P] [/Ax] path</code>, indica che i parametri <code>/p</code>
-  e <code>/ax</code> sono facoltativi perchè tra parentesi quadre, mentre 
-  il parametro path è obbligatorio perchè non è tra parentesi quadre.</p>
+E' possibile visualizzare la guida dettagliata di uno specifico comando
+invocando il comando con l'opzione `/?` ad esempio `dir /?` oppure `cd
+/?`. La guida indica la lista di parametri facoltativi tra parentesi
+quadre e la lista di parametri obbligatori senza parentesi quadre. Ad
+esempio `DIR [/P] [/Ax] path`, indica che i parametri `/p` e `/ax` sono
+facoltativi perchè tra parentesi quadre, mentre il parametro path è
+obbligatorio perchè non è tra parentesi quadre.
 
-<p>L'elenco dei principali comandi con la relativa guida è il seguente:</p>
+L'elenco dei principali comandi con la relativa guida è il seguente:
 
-<h2>CD: Change Directory</h2>
-<code>cd /?</code>
-<pre>
-  <code class="language-batchfile">
+## CD: Change Directory
+
+`cd /?`
+
+``` 
+  
   Visualizza il nome della directory corrente o consente di passare
   a un'altra directory.
 
@@ -294,33 +282,34 @@ Per ulteriori informazioni sulle utilità, vedere la documentazione di riferimen
 
     che rappresenta ci che si deve digitare con le estensioni
   disabilitate.
-</code>
-</pre>
+```
 
-Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
-<ul>
-  <li><code>cd 3InfB</code> cambia directory in c:\windows\3InfB;</li>
-  <li><code>cd \</code> cambia directory in c:\;</li>
-  <li><code>cd users\utente</code> cambia directory in c:\windows\users\utente.</li>
-  <li><code>cd ..</code> cambia directory tornando alla cartella padre c:\</li>
-</ul>
+Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-<h2>CLS: Clear screen</h2>
-<code>cls /?</code>
-<pre>
-  <code class="language-batchfile">
+  - `cd 3InfB` cambia directory in c:\\windows\\3InfB;
+  - `cd \` cambia directory in c:\\;
+  - `cd users\utente` cambia directory in c:\\windows\\users\\utente.
+  - `cd ..` cambia directory tornando alla cartella padre c:\\
+
+## CLS: Clear screen
+
+`cls /?`
+
+``` 
+  
   Cancella lo schermo.
 
   CLS
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>cls</code> cancella lo schermo.
+Esempi d'uso: `cls` cancella lo schermo.
 
-<h2>Color</h2>
-<code>color /?</code>
-<pre>
-  <code class="language-batchfile">
+## Color
+
+`color /?`
+
+``` 
+  
   Imposta i colori di primo piano e di sfondo predefiniti per la console.
 
   COLOR [attr]
@@ -348,17 +337,17 @@ Esempi d'uso: <code>cls</code> cancella lo schermo.
   Se si tenta di impostare lo stesso colore per il primo piano
   e lo sfondo, il comando COLOR imposterà ERRORLEVEL
   su 1.
-</code>
-</pre>
+```
 
-Esempi d'uso:
-<code>COLOR f0</code> imposta il nero come colore
-di primo piano e il bianco come colore di sfondo.
+Esempi d'uso: `COLOR f0` imposta il nero come colore di primo piano e il
+bianco come colore di sfondo.
 
-<h2>COPY</h2>
-<code>COPY /?</code>
-<pre>
-  <code class="language-batchfile">
+## COPY
+
+`COPY /?`
+
+``` 
+  
   Copia uno o più file in un'altra posizione.
 
   COPY [/D] [/V] [/N] [/Y] [/-Y] [/Z] [/L] [/A | /B] origine [/A | /B]
@@ -390,21 +379,22 @@ di primo piano e il bianco come colore di sfondo.
   Per concatenare i file, specificare un solo file di destinazione
   e più file di origine (utilizzando caratteri jolly o il formato
   file1+file2+file3).
-</code>
-</pre>
+```
 
-Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
-<ul>
-  <li><code>copy 3InfB.txt 3InfA.txt</code> copia il file 3InfB.txt nella cartella corrente con nome 3InfA.txt</li>
-  <li><code>copy 3InfB.txt \3InfA.txt</code> cambia directory in c:\;</li>
-  <li><code>cd users\utente</code> cambia directory in c:\windows\users\utente.</li>
-  <li><code>cd ..</code> cambia directory tornando alla cartella padre c:\</li>
-</ul>
+Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-<h2>Date</h2>
-<code>date /?</code>
-<pre>
-  <code class="language-batchfile">
+  - `copy 3InfB.txt 3InfA.txt` copia il file 3InfB.txt nella cartella
+    corrente con nome 3InfA.txt
+  - `copy 3InfB.txt \3InfA.txt` cambia directory in c:\\;
+  - `cd users\utente` cambia directory in c:\\windows\\users\\utente.
+  - `cd ..` cambia directory tornando alla cartella padre c:\\
+
+## Date
+
+`date /?`
+
+``` 
+  
   Visualizza o imposta la data.
 
   DATE [/T | data]
@@ -415,15 +405,16 @@ Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</cod
   Se le estensioni dei comandi sono attivate, il comando DATE supporta
   l'opzione /T, che consente al comando di mostrare la data corrente senza
   richiedere l'immissione di una nuova data.
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>date /t</code> visualizza la data corrente.
+Esempi d'uso: `date /t` visualizza la data corrente.
 
-<h2>Del: Delete</h2>
-<code>del /?</code>
-<pre>
-<code class="language-batchfile">
+## Del: Delete
+
+`del /?`
+
+``` 
+
   Elimina uno o piu file.
     /P            Chiede conferma prima di eliminare ogni file.
     /F            Forza l'eliminazione dei file di sola lettura.
@@ -440,45 +431,45 @@ Esempi d'uso: <code>date /t</code> visualizza la data corrente.
 
   La semantica di visualizzazione dell'opzione /S viene invertita, poich‚
   mostra solo i file eliminati anzich‚ quelli che non è possibile trovare.
-</code>
-</pre>
+```
 
-Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
-<ul>
-  <li><code>del 3InfB.txt</code> cancella il file c:\windows\3InfB.txt;</li>
-  <li><code>del \3InfB.txt</code> cancella il file c:\3InfB.txt;</li>
-  <li><code>del p:\3InfB.txt</code> cancella il file p:\3InfB.txt.</li>
-  <li><code>del ..\3InfB.txt</code> cancella il file c:\3InfB.txt.</li>
-</ul>
+Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-<h2>Echo</h2>
-<code>echo /?</code>
-<pre>
-  <code class="language-batchfile">
+  - `del 3InfB.txt` cancella il file c:\\windows\\3InfB.txt;
+  - `del \3InfB.txt` cancella il file c:\\3InfB.txt;
+  - `del p:\3InfB.txt` cancella il file p:\\3InfB.txt.
+  - `del ..\3InfB.txt` cancella il file c:\\3InfB.txt.
+
+## Echo
+
+`echo /?`
+
+``` 
+  
   Visualizza messaggi oppure attiva/disattiva la ripetizione dei comandi.
 
     ECHO [ON | OFF]
     ECHO [messaggio]
 
   Digita ECHO senza parametri per visualizzare l'impostazione corrente.
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>echo 3InfB</code> visualizza il messaggio 3InfB.
-    <ul>
-  <li><code>echo 3InfB</code> visualizza il messaggio 3InfB;</li>
-  <li><code>echo %path%</code> visualizza il valore della variabile %path%;</li>
-  <li><code>echo %userprofile%\3InfB.txt</code> visualizza il valore
-            della variabile %userprofile% seguito dal testo \3infB.txt;</li>
-  <li><code>echo mi trovo nella cartella %userprofile%\3InfB.txt</code>
-            visualizza il testo "mi trovo nella cartella" seguito dal valore
-            della variabile %userprofile% seguito dal testo \3infB.txt.</li>
-</ul>
+Esempi d'uso: `echo 3InfB` visualizza il messaggio 3InfB.
 
-<h2>mkdir</h2>
-<code>mkdir /?</code>
-<pre>
-  <code class="language-batchfile">
+  - `echo 3InfB` visualizza il messaggio 3InfB;
+  - `echo %path%` visualizza il valore della variabile %path%;
+  - `echo %userprofile%\3InfB.txt` visualizza il valore della variabile
+    %userprofile% seguito dal testo \\3infB.txt;
+  - `echo mi trovo nella cartella %userprofile%\3InfB.txt` visualizza il
+    testo "mi trovo nella cartella" seguito dal valore della variabile
+    %userprofile% seguito dal testo \\3infB.txt.
+
+## mkdir
+
+`mkdir /?`
+
+``` 
+  
   Crea una directory.
 
   MKDIR [unità:]percorso
@@ -504,21 +495,21 @@ Esempi d'uso: <code>echo 3InfB</code> visualizza il messaggio 3InfB.
 
   Questi sono infatti i comandi che è necessario digitare quando le estensioni
   sono disattivate.
-</code>
-</pre>
+```
 
-Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</code>
-<ul>
-  <li><code>mkdir 3InfB.txt</code> crea la cartella c:\windows\3InfB.txt;</li>
-  <li><code>mkdir \3InfB.txt</code> crea la cartella c:\3InfB.txt;</li>
-  <li><code>mkdir p:\3InfB.txt</code> crea la cartella p:\3InfB.txt.</li>
-  <li><code>mkdir ..\3InfB.txt</code> crea la cartella c:\3InfB.txt.</li>
-</ul>
+Esempi d'uso simulando di lanciare il comando dal percorso `c:\windows`
 
-<h2>move</h2>
-<code>move /?</code>
-<pre>
-  <code class="language-batchfile">
+  - `mkdir 3InfB.txt` crea la cartella c:\\windows\\3InfB.txt;
+  - `mkdir \3InfB.txt` crea la cartella c:\\3InfB.txt;
+  - `mkdir p:\3InfB.txt` crea la cartella p:\\3InfB.txt.
+  - `mkdir ..\3InfB.txt` crea la cartella c:\\3InfB.txt.
+
+## move
+
+`move /?`
+
+``` 
+  
   Consente di spostare file e rinominare file e directory.
 
   Per spostare uno o più file:
@@ -551,32 +542,34 @@ Esempi d'uso simulando di lanciare il comando dal percorso <code>c:\windows</cod
   di conferma della sovrascrittura viene visualizzata per impostazione
   predefinita, a meno che il comando MOVE non venga eseguito dall'interno di
   uno script batch.
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>move 3InfB Lab\3InfA</code> sposta la cartella 3InfB in
-Lab\3InfA.
+Esempi d'uso: `move 3InfB Lab\3InfA` sposta la cartella 3InfB in
+Lab\\3InfA.
 
-<h2>ren</h2>
-<code>ren /?</code>
-<pre>
-<code class="language-batchfile">
+## ren
+
+`ren /?`
+
+``` 
+
   Rinomina uno o più file.
 
   RENAME [unità:][percorso]nomefile1 nomefile2.
   REN [unità:][percorso]nomefile1 nomefile2.
 
   Impossibile specificare una nuova unità o percorso per il file di destinazione.
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>ren 3InfB.txt.txt 3InfA.txt</code> rinomina il file
-        3InfB.txt.txt in 3InfA.txt.
+Esempi d'uso: `ren 3InfB.txt.txt 3InfA.txt` rinomina il file
+3InfB.txt.txt in 3InfA.txt.
 
-<h2>rmdir</h2>
-<code>rmdir /?</code>
-<pre>
-<code class="language-batchfile">
+## rmdir
+
+`rmdir /?`
+
+``` 
+
   RMDIR [/S] [/Q] [unità:]percorso
   RD [/S] [/Q] [unità:]percorso
 
@@ -588,15 +581,16 @@ Esempi d'uso: <code>ren 3InfB.txt.txt 3InfA.txt</code> rinomina il file
       per la rimozione di un albero di directory eseguita
       con /S
 
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>rmdir 3InfB</code> rimuove la cartella 3InfB.
+Esempi d'uso: `rmdir 3InfB` rimuove la cartella 3InfB.
 
-<h2>time</h2>
-<code>time /?</code>
-<pre>
-<code class="language-batchfile">
+## time
+
+`time /?`
+
+``` 
+
   Visualizza o imposta l'ora di sistema.
 
   TIME [/T | ora]
@@ -607,7 +601,6 @@ Esempi d'uso: <code>rmdir 3InfB</code> rimuove la cartella 3InfB.
   Se le estensioni dei comandi sono attivate, il comando TIME supporta
   l'opzione /T, che consente al comando di mostrare l'ora corrente, senza
   richiedere l'immissione di una nuova ora.
-</code>
-</pre>
+```
 
-Esempi d'uso: <code>time /t</code> visualizza l'ora corrente.
+Esempi d'uso: `time /t` visualizza l'ora corrente.
