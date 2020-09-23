@@ -24,17 +24,18 @@ This blog is built with [Hugo](https://gohugo.io) - A popular open-source static
 
 ### Prerequisites
 
-You need to install the latest version of [Hugo](https://gohugo.io/). 
+You need to install the latest version of [Hugo](https://gohugo.io/).
 
 ### Installation
 
 - Clone the repo:
-  
+
   ```git
   git clone https://github.com/codingepaduli/codingepaduli.git
   ```
+
 - Synchronize and update the sub-repositories:
-  
+
   ```git
   git submodule sync
   git submodule init
@@ -43,7 +44,7 @@ You need to install the latest version of [Hugo](https://gohugo.io/).
   ```
 
 - Start this site choosing the specific environment:
-  
+
   ```git
   hugo server --environment mainroad
   ```
@@ -66,4 +67,4 @@ Copyright 2010 codingepaduli. All right reserved.
 
 codingepaduli - email@example.com
 
-Project Link: [GitHub - codingepaduli/codingepaduli](https://github.com/codingepaduli/codingepaduli)
+Project Link: [GitHub - codingepaduli/codingepaduli](https://github.com/codingepaduli/codingepaduli "Project link")

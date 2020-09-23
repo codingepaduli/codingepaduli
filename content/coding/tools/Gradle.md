@@ -173,7 +173,7 @@ I plugin mettono a disposizione anche le **configurazioni di dipendenza**, che p
 
 ### Plugin
 
-E' necessario indicare la tipologia dei progetti sui quali si lavora: progetti Java, c++ o anche progetti con sorgenti html o file zip.
+E' necessario indicare la tipologia dei progetti sui quali si lavora: progetti Java, c++ o anche progetti con sorgenti HTML o file zip.
 
 Questa tipologia viene indicata attraverso i plugin, che devono essere specificati nel file ``build.gradle`` attraverso la sezione ``plugins``.
 

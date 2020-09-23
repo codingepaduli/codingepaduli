@@ -12,7 +12,7 @@ toc: false
 summary: "Esercizi in Java su MVC, Servlet e JSP"
 ---
 
-# Esercizi in Java sulle servlet
+# Esercizi in Java sulle Servlet
 
 ## Esercizio 1: MVC, Servlet e JSP
 

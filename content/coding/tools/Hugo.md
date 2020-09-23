@@ -14,7 +14,7 @@ summary: "Hugo - An open-source static site generators"
 
 # Hugo
 
-[Hugo](https://gohugo.io/ "Sito web di Hugo") è un generatore di siti "statici". Un sito web statico ha le pagine web salvate in semplici file html, a differenza di un sito web dinamico, in cui le pagine web sono salvate in un database e gestite attraverso un CMS (Content Site Management).
+[Hugo](https://gohugo.io/ "Sito web di Hugo") è un generatore di siti "statici". Un sito web statico ha le pagine web salvate in semplici file HTML, a differenza di un sito web dinamico, in cui le pagine web sono salvate in un database e gestite attraverso un CMS (Content Site Management).
 
 ## Creazione di un sito web
 

@@ -102,7 +102,6 @@ let elements = document.querySelectorAll('.paragrafo');
 Esempio di selezione:
 <input type="button" onclick="seleziona('.paragrafo')" value="seleziona">
 
-
 ## Selettore per elemento (tag)
 
 Selettore | Descrizione
@@ -132,7 +131,6 @@ let elements = document.querySelectorAll('p');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#elem p')" value="seleziona">
 
-
 ## Selettori per attributi
 
 Selettore | Descrizione
@@ -150,6 +148,7 @@ Selettore | Descrizione
 ### Esempio d'uso del selettore per attributi
 
 Supponendo che la pagina HTML contenga due link come nel seguente esempio:
+
 ```html
 <a title="Link1" data-custom="value-v1 value-v2 value-v3">link 1</p>
 <a title="Link2" data-custom="value-v1 value-v2 value-v4">link 2</p>
@@ -188,7 +187,6 @@ let elements = document.querySelectorAll('[title="link1" i]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title=\'link1\' i]')" value="seleziona">
 
-
 Per selezionare i link con l'attributo "title" che inizi con il valore "Lin", si può utilizzare l'istruzione JavaScript:
 
 ```javascript
@@ -197,7 +195,6 @@ let elements = document.querySelectorAll('[title^="Lin"]');
 
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title^=\'Lin\']')" value="seleziona">
-
 
 Per selezionare i link con l'attributo "title" terminante il valore "k1", si può utilizzare l'istruzione JavaScript:
 
@@ -235,7 +232,6 @@ let elements = document.querySelectorAll('[data-custom~="value-v2"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [data-custom~=\'value-v2\']')" value="seleziona">
 
-
 ## Selettori per raggruppamento
 
 Selettore | Descrizione
@@ -245,6 +241,7 @@ S1,S2       | Seleziona i tag selezionati dal selettore S1 o dal selettore S2;
 ### Esempio d'uso del selettore per raggruppamento
 
 Supponendo che la pagina HTML contenga un paragrafo ed un link, come nel seguente esempio:
+
 ```html
 <p>paragrafo 1</p>
 <a>link 1</a>
@@ -265,7 +262,6 @@ let elements = document.querySelectorAll('p,a');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#group p, #group a')" value="seleziona">
 
-
 ## Selettori per relazione di "parentela"
 
 Selettore | Descrizione
@@ -278,6 +274,7 @@ S1 ~ S2  | Seleziona i tag selezionati dal selettore S2 che seguono, anche non i
 ### Esempio d'uso del selettore per relazione di "parentela"
 
 Supponendo che la pagina HTML contenga un paragrafo al cui interno ci sono 3 link, di cui il terzo in grassetto, come nel seguente esempio:
+
 ```html
 <p>paragrafo con <a>primo</a>, <a id="link2">secondo</a>, <strong> <a>terzo</a> (in grassetto) </strong> e <a>quarto</a> link.</p>
 <a>link esterno al paragrafo.</a>
@@ -349,7 +346,6 @@ S1:nth-last-of-type(I) | Seleziona l'elemento in posizione **I**-esima del tipo 
 S1:nth-last-of-type(even|odd) | Seleziona gli elementi in posizione pari del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
 S1:nth-last-of-type(Xn+Y) | Seleziona gli elementi in posizione che è multiplo di X con spiazzamento Y del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
 
-
 ## Selettori per pseudo-classi
 
 Selettore | Descrizione
@@ -377,7 +373,6 @@ Selettore | Descrizione
 :valid        | Seleziona gli elementi del form validati;
 :visited      | Seleziona i link visitati;
 
-
 ## Selettori per pseudo-elementi
 
 Selettore | Descrizione
@@ -391,7 +386,8 @@ Selettore | Descrizione
 E' possibile combinare i selettori illustrati nei capitoli precedenti, in modo da creare espressioni che risultano molto efficaci.
 
 Ad esempio è possibile combinare i selettori per ID, per classe, per elemento e per attributo in questa forma:
-```
+
+```output
 Tag#Id.class['attr']
 ```
 
@@ -399,8 +395,8 @@ In questo caso verranno selezionati i tag che soddisfano tutti i selettori, ovve
 
 Un secondo esempio, di seguito riportato, permette di combinare i selettori per elemento, per classe, per attributo, per posizione e per pseudo-classe, in modo tale da selezionare gli elementi "vuoti" che sono contenuti nel primo figlio del gruppo di tag aventi la classe indicata che a loro volta seguono, direttamente e sullo stesso livello di profondità, gli elementi che hanno l'attributo indicato.
 
-```
-Tag['attr'] + .class:first-child :empty
+```output
+Tag['attr'].class:first-child :empty
 ```
 
 Le combinazioni permettono di creare delle selezioni effettivamente molto potenti,

@@ -18,7 +18,7 @@ AndOTP è un'app open source per l'autenticazione a due fattori. Si occupa della
 
 Queste password "OTP" sono utili nell'autenticazione a due fattori, cioè l'accesso ad un servizio tramite prima l'inserimento di utente e password e poi (in seconda fase) l'inserimento di una password OTP.
 
-In generale la password OTP cambia ogni 30 secondi (algoritmo temporale) o cambia a seconda della password usata in precedenza o ancora può essere generata casualmente ed inviata all'utente (tramite SMS o email). 
+In generale la password OTP cambia ogni 30 secondi (algoritmo temporale) o cambia a seconda della password usata in precedenza o ancora può essere generata casualmente ed inviata all'utente (tramite SMS o email).
 
 Il vantaggio dell'uso di un'autenticazione a due fattori è che se un potenziale intruso riesce a intercettare utente e password, deve comunque inserire una OTP per accedere al servizio. Nel caso il potenziale intruso avesse intercettato anche la password OTP, non potrebbe comunque riutilizzarla, in quanto non più valida (è valida "una volta sola").
 
