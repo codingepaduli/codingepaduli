@@ -17,6 +17,10 @@ MD036: false  # no-emphasis-as-heading
 MD044:        # proper-names
   names:
     - JavaScript
+    - EcmaScript
+    - Java
+    - HTML
+    - CSS
   code_blocks: false
 MD046:        # code-block-style
   style: fenced
