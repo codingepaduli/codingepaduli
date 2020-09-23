@@ -14,13 +14,12 @@ summary: "F-Droid, un'app store open source, simile a Google Play Store, per la 
 
 # F-Droid
 
-F-Droid è un'app store, simile a Google Play Store, scaricabile liberamente dal sito [https://f-droid.org/](https://f-droid.org/). 
+F-Droid è un'app store, simile a Google Play Store, scaricabile liberamente dal sito [https://f-droid.org/](https://f-droid.org/).
 
-F-Droid non richiede nessuna registrazione e può essere consultato anche senza connessione. Le app presenti sul catalogo F-Droid sono esclusivamente di tipo Free ed Open Source (FOSS) e si possono anche scaricare direttamente dal sito internet [https://f-droid.org/it/packages/](https://f-droid.org/it/packages/), senza bisogno di installare F-Droid. 
+F-Droid non richiede nessuna registrazione e può essere consultato anche senza connessione. Le app presenti sul catalogo F-Droid sono esclusivamente di tipo Free ed Open Source (FOSS) e si possono anche scaricare direttamente dal sito internet [https://f-droid.org/it/packages/](https://f-droid.org/it/packages/), senza bisogno di installare F-Droid.
 
 La ricerca di un'app tra le categorie è semplice ed intuitiva.
 ![Image](/static/openSource/FDroid-Categories.png "FDroid - Categories")
-
 
 ![Image](/static/openSource/FDroid-Search.png "FDroid - Search")
 
@@ -39,4 +38,4 @@ E' possibile inotre gestire il download di app sia su rete WiFi sia su rete dati
 
 ![Image](/static/openSource/FDroid-Settings.png "FDroid - Settings")
 
-Installa subito [F-Droid](https://f-droid.org/). 
+Installa subito [F-Droid](https://f-droid.org/).

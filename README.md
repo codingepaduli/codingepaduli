@@ -1,11 +1,11 @@
+# Coding e Paduli
+
 ![GitHub stars](https://img.shields.io/github/stars/codingepaduli/codingepaduli?style=flat-square)
 ![GitHub followers](https://img.shields.io/github/followers/codingepaduli?label=Followers&style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/codingepaduli/codingepaduli?style=flat-square)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/codingepaduli/codingepaduli?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/codingepaduli/codingepaduli?style=flat-square)
 ![GitHub contributors](https://img.shields.io/github/contributors/codingepaduli/codingepaduli?style=flat-square)
 ![GitHub Actions](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Markdown/badge.svg)]
-
-# Coding e Paduli
 
 Ennesimo sito/blog di programmazione e paduli correlati.
 
