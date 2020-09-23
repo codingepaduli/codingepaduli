@@ -54,7 +54,7 @@ summary: "HTML Lez. 04 - Validazione del codice HTML e codifica UTF-8 delle pagi
 
 <p>Altro esempio, il simbolo dell'euro &euro; è associato al codice numerico decimale 8364 ed al codice numerico esadecimale 20AC, quindi possiamo scrivere questo carattere o con la notazione decimale <code class="html">&amp;#8364;</code> (con risultato &#8364;) oppure con quella esadecimale <code class="html">&amp;#x20AC;</code> (con risultato &#x20AC;).</p>
 
-<p>Anche gli emoticons e gli <a href="https://www.unicode.org/emoji/charts/full-emoji-list.html">emoji</a> fanno parte della specifica Unicode, per cui o li si scrive nel documento "cosi come sono" o li si puó includere attraverso 
+<p>Anche gli emoticons e gli <a href="https://www.unicode.org/emoji/charts/full-emoji-list.html">emoji</a> fanno parte della specifica Unicode, per cui o li si scrive nel documento "cosi come sono" o li si puó includere attraverso
 "html entities" o attraverso rappresentazione con codice decimale/esadecimale.</p>
 
 <p>Ad esempio, l'emoji "rolling on the floor laughing" (rotola sul pavimento ridendo) è associata al codice numerico esadecimale 1F923, quindi possiamo scrivere questo carattere con la notazione esadecimale <code class="html">&amp;#x1F923;</code> (con risultato &#x1F923;).</p>
@@ -69,7 +69,7 @@ summary: "HTML Lez. 04 - Validazione del codice HTML e codifica UTF-8 delle pagi
 <img src="/static/coding/web/html/html-W3C-validator.webp" alt="immagine del validatore">
 </p>
 
-<p>L'operazione di validazione, con il servizio della W3C, puó indicare che in pagina non sono presenti errori, come da immagine seguente: 
+<p>L'operazione di validazione, con il servizio della W3C, puó indicare che in pagina non sono presenti errori, come da immagine seguente:
 <img src="/static/coding/web/html/html-W3C-validator-OK.webp" alt="immagine del validatore senza errori"></p>
 
 <p> Nel caso siano presenti errori, vengono elencati uno ad uno, e viene riportata sia la presunta riga d'errore, sia viene evidenziato il codice con tutti gli errori, come nella seguente immagine:
@@ -77,7 +77,7 @@ summary: "HTML Lez. 04 - Validazione del codice HTML e codifica UTF-8 delle pagi
 
 <p>Tra i diversi messaggi, di avviso o di errore, abbiamo:</p>
 
-<p><strong>Consider adding a lang attribute to the html start tag to declare the language of this document</strong>: 
+<p><strong>Consider adding a lang attribute to the html start tag to declare the language of this document</strong>:
 È un messaggio di avviso per indicare che il tag <code>html</code> manca dell'attributo che indica la lingua in cui è scritta la pagina, quindi bisogna correggere con: <code class="html">&lt;html lang="it"&gt;</code>.</p>
 
 <p><strong>Non-space characters found without seeing a doctype first. Expected <code class="html">&lt;!DOCTYPE html&gt;</code></strong>:

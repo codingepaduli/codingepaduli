@@ -26,10 +26,14 @@ summary: "HTML Lez. 03.1 - Esercizi basilari su HTML"
 
 6. Spiega a cosa serve l’indentazione e la validazione di una pagina web;
 
- |        |     |     |     |     |     | 
+<!-- markdownlint-disable MD009 MD036 -->
+
+ |        |     |     |     |     |     |
 ---       | --- | --- | --- | --- | --- | --- |
 Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
-Max punti |  2  |  2  |  1  |  1  |  2  |  2  | 
-Punti     |     |     |     |     |     |     | 
+Max punti |  2  |  2  |  1  |  1  |  2  |  2  |
+Punti     |     |     |     |     |     |     |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
+
+<!-- markdownlint-enable MD009 MD036 -->

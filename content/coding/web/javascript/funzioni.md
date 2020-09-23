@@ -53,32 +53,32 @@ scriviNome();
 scriviNome();
 ```
 
-Il vantaggio principale dell'uso delle funzioni è che permettono di organizzare il programma in termini di operazioni da svolgere e consentono di separare i compiti tra i vari programmatori, ognuno dei quali si occuperà di sviluppare alcune funzionalità. 
+Il vantaggio principale dell'uso delle funzioni è che permettono di organizzare il programma in termini di operazioni da svolgere e consentono di separare i compiti tra i vari programmatori, ognuno dei quali si occuperà di sviluppare alcune funzionalità.
 
-## Modalità di esecuzione 
+## Modalità di esecuzione
 
-Le funzioni possono essere eseguite in modalità ``strict`` o ``sloppy``, indipendentemente dalla modalità di esecuzione indicata negli script. 
+Le funzioni possono essere eseguite in modalità ``strict`` o ``sloppy``, indipendentemente dalla modalità di esecuzione indicata negli script.
 
 Per cui, per specificare la modalità ``strict`` è necessario indicarla all'inizio di ogni funzione, come nel seguente esempio.
 
 ```javascript
 function scriviNome() {
     'use strict';
-    
+
     alert("Mario Rossi");
 }
 ```
 
 ## Valore di ritorno
 
-Le funzioni sono progettate per eseguire un'operazione. Il risultato di questa operazione può essere restituito, attraverso la parola chiave ``return``, a chi invoca la funzione. 
+Le funzioni sono progettate per eseguire un'operazione. Il risultato di questa operazione può essere restituito, attraverso la parola chiave ``return``, a chi invoca la funzione.
 
 Supponendo ad esempio di voler **definire** una funzione che scriva il proprio nome nella console e che lo restituisca anche al chiamante, il codice sarà il seguente:
 
 ```javascript
 function scriviNome() {
     'use strict';
-  
+
     let nome ="Mario Rossi";
     console.info(nome);
     return nome;
@@ -95,7 +95,7 @@ La variabile ``ris`` assume quindi valore ``Mario Rossi``, dato che l'istruzione
 
 ## Parametri
 
-L'operazione che viene svolta da una funzione può necessitare di uno o più parametri su cui lavorare. 
+L'operazione che viene svolta da una funzione può necessitare di uno o più parametri su cui lavorare.
 
 L'esempio visto fin'ora della funzione ``scriviNome`` mostrava sempre lo stesso nome (Mario Rossi). Questa funzione potrebbe essere generalizzata permettendo di scrivere un qualsiasi nome e cognome. Ciò significa che è necessario passare alla funzione ``scriviNome`` il nome ed il cognome da mostrare, **passandoli come parametri**.
 
@@ -104,7 +104,7 @@ Per poter usare i parametri, questi devono essere indicati nella definizione tra
 ```javascript
 function scriviNome(nome, cognome) {
     'use strict';
-    
+
     alert(nome + " " + cognome);
 }
 ```
@@ -122,7 +122,7 @@ scriviNome("Tizio", "Caio");
 
 L'esempio precedente mostra il seguente output:
 
-```
+```output
 Mario Rossi
 Giuseppe Verdi
 Pinco Pallino
@@ -138,7 +138,7 @@ E' possibile assegnare ai parametri un valore predefinito, come per il seguente 
 ```javascript
 function scriviNome(nome = "Mario", cognome = "Rossi") {
     'use strict';
-    
+
     alert(nome + " " + cognome);
 }
 ```
@@ -154,7 +154,7 @@ Supponendo, ad esempio, di voler creare una funzione che scriva un numero imprec
 ```javascript
 function scriviNome(...nomi) {
     'use strict';
-    
+
     for (nome in nomi) {
       console.info(nome);
     }

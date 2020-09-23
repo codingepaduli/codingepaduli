@@ -14,13 +14,13 @@ summary: "Primi script"
 
 # Primi script
 
-Per la scrittura di programmi in javascript si consiglia innanzitutto di configurare l'editor di testi per utilizzare caratteristiche generali quali la codifica di caratteri o il carattere di fine riga, magari usando strumenti come [EditorConfig](/coding/tools/editorconfig/).
+Per la scrittura di programmi in JavaScript si consiglia innanzitutto di configurare l'editor di testi per utilizzare caratteristiche generali quali la codifica di caratteri o il carattere di fine riga, magari usando strumenti come [EditorConfig](/coding/tools/editorconfig/ "Link a EditorConfig").
 
 Gli script vengono eseguiti man mano che la pagina web viene "letta" dal browser e mostrata all'utente. Quindi conta l'ordine in cui il codice è scritto nella pagina web.
 
 ## Modalità di esecuzione strict e sloppy
 
-Javascript utilizza due modalità di esecuzione degli script:
+JavaScript utilizza due modalità di esecuzione degli script:
 
 - **sloppy**: una modalità che permette che alcuni errori non vengano segnalati, ma ignorati silenziosamente, portando a malfunzionamenti non semplici da individuare; Questa modalità è quella applicata in maniera predefinita;
 - **strict**: una modalità che segnala alcuni errori non facilmente riscontrabili e che rende più rigida e chiara l'esecuzione degli script. Deve essere specificata all'inizio di ogni script e di ogni funzione dalla seguente stringa:
@@ -33,7 +33,7 @@ Javascript utilizza due modalità di esecuzione degli script:
 
 Per istruzioni si intendono comandi impartiti ad un esecutore.
 
-L'istruzione più conosciuta di javascript è ``alert()``, che permette di mostrare un messaggio all'utente, come nell'esempio di seguito:
+L'istruzione più conosciuta di JavaScript è ``alert()``, che permette di mostrare un messaggio all'utente, come nell'esempio di seguito:
 
 ```javascript
 "use strict";
@@ -51,7 +51,7 @@ Si precisa che non tutto il codice è composto da istruzioni, esistono blocchi e
 
 I commenti sono delle note, delle spiegazioni che il programmatore inserisce per descrivere e documentare parti di codice. In fase di esecuzione, i commenti sono completamente ignorati.
 
-Javascript permette di commentare il codice su una sola riga utilizzando il simbolo ``//`` seguito dal commento, mentre i commenti su più righe includono i commenti tra i caratteri ``/*`` e ``*/``.
+JavaScript permette di commentare il codice su una sola riga utilizzando il simbolo ``//`` seguito dal commento, mentre i commenti su più righe includono i commenti tra i caratteri ``/*`` e ``*/``.
 
 Un esempio di script che fa uso di commenti è il seguente:
 
@@ -74,19 +74,19 @@ Per inserire uno script in una pagina web esistono diverse possibilità:
 
 - inserire uno script **inline** ovvero nei tag HTML che ne permettono la possibilità;
 - inserire uno script direttamente nella pagina HTML, utilizzando il tag ``script``;
-- inserire un collegamento ad un file javascript esterno, che ha tipicamente estensione ``.js``, utilizzando il tag ``script``;
+- inserire un collegamento ad un file JavaScript esterno, che ha tipicamente estensione ``.js``, utilizzando il tag ``script``;
 
 ### Inserimento script inline
 
-Per inserire uno script **inline**, lo si può allegare ai tag HTML che lo prevedono; 
+Per inserire uno script **inline**, lo si può allegare ai tag HTML che lo prevedono;
 
 Si supponga, ad esempio, di voler allegare al tag HTML ``button`` lo script (composto da una sola istruzione) ``alert('Script contenuto inline');``. Il codice risultante sarà il seguente:
 
 ```html
-<input type="button" onclick="alert('Script contenuto inline');">  
+<input type="button" onclick="alert('Script contenuto inline');">
 ```
 
-Si nota che nella stessa riga di codice è presente sia il codice ``HTML`` sia il codice ``javascript`` (inline). 
+Si nota che nella stessa riga di codice è presente sia il codice ``HTML`` sia il codice ``javascript`` (inline).
 
 ### Inserimento script nella pagina HTML
 
@@ -109,7 +109,7 @@ Per inserire un collegamento ad uno script contenuto in un file esterno, si inse
 <script src="file.js"></script>
 ```
 
-Il file esterno ovviamente conterrà tutte le istruzioni javascript, come nel seguente esempio
+Il file esterno ovviamente conterrà tutte le istruzioni JavaScript, come nel seguente esempio
 
 ```javascript
 "use strict";
@@ -117,11 +117,11 @@ Il file esterno ovviamente conterrà tutte le istruzioni javascript, come nel se
 alert("script contenuto in un file esterno");
 ```
 
-## Console javascript
+## Console JavaScript
 
-Lo strumento che più aiuta nello sviluppo di codice javascript è la console del browser, che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona".
+Lo strumento che più aiuta nello sviluppo di codice JavaScript è la console del browser, che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona".
 
-![console del browser](/static/coding/web/javascript/javascript-console.png "console del browser")
+![Console del browser](/static/coding/web/javascript/javascript-console.png "Console del browser")
 
 ### Informazioni, avvisi ed errori
 
@@ -132,6 +132,7 @@ console.info("informazione");
 console.warn("allarme");
 console.error("errore");
 ```
+
 ### Raggruppare messaggi
 
 E' possibile creare gruppi di messaggi, utilizzando le istruzioni ``console.group()`` e ``console.groupEnd()``:
@@ -153,7 +154,7 @@ let vettore = ['uno', 'due', 'tre'];
 console.table(vettore);
 ```
 
-### Tempo di esecuzione 
+### Tempo di esecuzione
 
 Utilissima pure la scrittura in console del tempo di esecuzione intercorso tra due punti dello script, indicati dalle istruzioni
 ``console.time()`` e ``console.timeEnd()``:
@@ -178,4 +179,4 @@ console.dir(obj);
 
 Un esempio completo della console contenente l'output di tutte le istruzioni viste è il seguente:
 
-![Immagine della console contenente l’output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Immagine della console contenente l’output di tutte le istruzioni")
+![Console - output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Console - output di tutte le istruzioni")

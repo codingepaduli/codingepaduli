@@ -28,10 +28,10 @@ L'istruzione utilizzata per eseguire un azione piuttosto che un'altra è l'istru
 
 ```javascript
 if (condition) {
-  // gruppo di istruzioni eseguite se la 
+  // gruppo di istruzioni eseguite se la
   // condizione viene valutata con valore true
 } else {
-  // gruppo di istruzioni eseguite se la 
+  // gruppo di istruzioni eseguite se la
   // condizione viene valutata con valore false
 }
 ```
@@ -46,7 +46,7 @@ if (batteria < 6) {
 }
 ```
 
-## Operatore ternario ?
+## Operatore ternario "?"
 
 L'operatore ternario è un operatore che valuta una condizione e restituisce un valore piuttosto che un altro a seconda che una condizione si verifichi o meno. La sintassi è una sorta di abbreviazione dell'istruzione ``if-else`` ed è generalmente utilizzata nelle assegnazioni.
 

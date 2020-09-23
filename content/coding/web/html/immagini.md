@@ -31,8 +31,8 @@ summary: "HTML Lez. 06 - Immagini, aree e caricamento asincrono"
 <img src="/static/coding/web/html/program_CC0.png" width="145" height="126" alt="Immagine" />
 
 <p style="font-size: 0.9rem;font-style: italic;">
-  <a href="https://svgsilh.com/3f51b5/image/1970468.html">Immagine</a> 
-  rilasciata con Licenza 
+  <a href="https://svgsilh.com/3f51b5/image/1970468.html">Immagine</a>
+  rilasciata con Licenza
   <a href="https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html">CC0 1.0</a>
   <a href="https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html" target="_blank" rel="noopener noreferrer" style="display: inline-block">
   <img style="display: inline-block;height: 22px;" src="https://search.creativecommons.org/static/img/cc_icon.svg" alt="logo licenza cc" />
@@ -70,7 +70,7 @@ Il browser, peró, utilizza una propria misura, detta <strong>pixel CSS</strong>
 
 <p>Non puó, perchè non conosce la larghezza dell'immagine "immagine1.png". Per conoscere la risoluzione di ogni immagine, dovrebbe scaricarle tutte dal server. Per evitare questo spreco di tempo e risorse, è necessario che sia lo sviluppatore ad indicare, per ogni immagine, la rispettiva risoluzione.</p>
 
-<p>Per ora, l'unico parametro che viene considerato della risoluzione è la larghezza (in futuro forse anche l'altezza??), che viene indicata esplicitamente aggiungendo al valore la lettera <strong>w</strong> (che sta per "weight" ovvero "larghezza"). 
+<p>Per ora, l'unico parametro che viene considerato della risoluzione è la larghezza (in futuro forse anche l'altezza??), che viene indicata esplicitamente aggiungendo al valore la lettera <strong>w</strong> (che sta per "weight" ovvero "larghezza").
 Quindi, per permettere al browser di scegliere l'immagine con la larghezza adatta allo spazio da riempire sullo schermo, il programmatore deve indicare la lista di immagini, con rispettive larghezze, nell'attributo <code>srcset</code>, come da seguente esempio:</p>
 
 <code>srcset="immagine1.png 200w, immagine2.png 600w,
@@ -120,13 +120,13 @@ la seconda indica che a schermi con risoluzione massima di 1500 pixel, l'immagin
 
 <p>Cliccare su uno dei pianeti per collegarsi sulla pagina corrispondente al pianeta scelto.</p>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" usemap="#planetmap" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" usemap="#planetmap" />
 
-    <map name="planetmap">
-        <area shape="rect" coords="0,0,82,126" alt="Terra" title="Terra" href="https://it.wikipedia.org/wiki/Terra" />
-        <area shape="circle" coords="90,58,3" alt="Mercury" title="Mercury" href="https://it.wikipedia.org/wiki/Mercurio_(astronomia)" />
-        <area shape="circle" coords="124,58,8" alt="Venus" title="Venus" href="https://it.m.wikipedia.org/wiki/Venere_(astronomia)" />
-    </map>
+<map name="planetmap">
+    <area shape="rect" coords="0,0,82,126" alt="Terra" title="Terra" href="https://it.wikipedia.org/wiki/Terra" />
+    <area shape="circle" coords="90,58,3" alt="Mercury" title="Mercury" href="https://it.wikipedia.org/wiki/Mercurio_(astronomia)" />
+    <area shape="circle" coords="124,58,8" alt="Venus" title="Venus" href="https://it.m.wikipedia.org/wiki/Venere_(astronomia)" />
+</map>
 
 <p>Le immagini possono essere caricate su richiesta utilizzando le tecniche di <strong>lazy loading</strong>, ovvero le immagini che si trovano in aree non visibili (l'utente deve scorrere la pagina o deve cliccare qualche area per renderle visibili sullo schermo) possono essere caricate in modalitá <strong>eager</strong>, cioè immediatamente, oppure in modalitá <strong>lazy</strong>, cioè solo quando l'utente scorre la pagina o rende visibile l'area e quindi arriva a "vedere" l'immagine.</p>
 

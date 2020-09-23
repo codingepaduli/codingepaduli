@@ -17,7 +17,7 @@ summary: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno
 <p>I tag possono avere degli <strong>attributi</strong> che servono ad aggiungere informazioni al tag. Alcuni attributi sono comuni a tutti i tag, ad esempio gli attributi <code>id</code> (che identifica in maniera univoca il tag) e <code>style</code> (che indica lo stile grafico del tag), mentre altri attributi sono specifici del singolo tag.</p>
 
 <p>Gli attributi sono aggiunti solo nei simboli di apertura di un tag, non nei simboli di chiusura, e hanno la forma <strong>nome='valore'</strong>. Il valore deve essere sempre racchiuso da apici singoli o doppi.</p>
- 
+
 <p>Di seguito, elenchiamo altri tag dell'HTML che utilizzano gli attributi.</p>
 
 <p>Il tag <code>a</code> serve a creare un collegamento (in inglese "link") verso un ipertesto (un'altra pagina web). Questo tag ha gli attributi:</p>
@@ -26,9 +26,7 @@ summary: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno
   <li><code>target</code>, che permette di indicare come aprire l'ipertesto, e può assumere solo i seguenti valori: <code>&#95;blank</code>, per aprire l'ipertesto in una nuova pagina, e <code>&#95;self</code>, per aprire l'ipertesto nella stessa pagina.</li>
 </ul>
 
-<p>Un esempio di collegamento è questo <a href="/" target="&#95;blank">collegamento alla home</a>, generato dal codice
-    <code>&lt;a href="/" target="&#95;blank"&gt;collegamento alla home&lt;/a&gt;</code>; 
-    in cui si evidenzia sia l'indirizzo dell'ipertesto "/", cioè la home page, sia l'attributo <code>target="&#95;blank"</code>, cioè l'indicazione di aprire la home page in una nuova scheda del browser</p>
+<p>Un esempio di collegamento è questo <a href="/" target="&#95;blank">collegamento alla home</a>, generato dal codice <code>&lt;a href="/" target="&#95;blank"&gt;collegamento alla home&lt;/a&gt;</code>; in cui si evidenzia sia l'indirizzo dell'ipertesto "/", cioè la home page, sia l'attributo <code>target="&#95;blank"</code>, cioè l'indicazione di aprire la home page in una nuova scheda del browser</p>
 
 <p>Il tag <code>ol</code> genera una lista numerata di elementi, analogamente il tag <code>ul</code> genera una lista di elementi non ordinata. Entrambi i tag prevedono che ogni elemento della lista  deve essere contenuto nel tag <code>li</code>. Entrambi i tag di lista hanno l'attributo <code>type</code> (di recente sostituito dalla proprietà CSS list-style-type) che può avere uno dei seguenti valori:</p>
 <ul>
