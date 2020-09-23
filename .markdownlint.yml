@@ -17,8 +17,11 @@ MD036: false  # no-emphasis-as-heading
 MD044:        # proper-names
   names:
     - JavaScript
-    - EcmaScript
+    - ECMAScript
     - Java
+    - MVC
+    - Servlet
+    - JSP
     - HTML
     - CSS
   code_blocks: false

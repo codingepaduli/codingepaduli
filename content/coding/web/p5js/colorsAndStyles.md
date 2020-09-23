@@ -16,6 +16,7 @@ externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
 # Colori e stili
 
 I colori, in ambito informatico, sono espressi attraverso differenti modelli. Quelli utilizzabili nella libreria p5.js sono i seguenti:
+
 - **RGB**: indica il modello Red-Green-Blue, nel quale i colori sono espressi come combinazione di rosso, verde, blu;
 - **HSB**: indica il modello Hue-Saturation-Brightness, nel quale i colori sono espressi come combinazione di tonalità, saturazione e luminosità.
 
@@ -28,6 +29,7 @@ Il modello **RGB** esprime i colori come combinazione di colori "primari", che i
 Ogni colore è definito come una combinazione di quantità dei tre colori elencati. La quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
 Come ci si può aspettare, quindi, in questo modello:
+
 - il colore rosso si esprime impostando solo la quantità massima di rosso: (255, 0, 0);
 - il colore verde si esprime impostando solo la quantità massima di verde: (0, 255, 0);
 - il colore blue si esprime impostando solo la quantità massima di blu: (0, 0, 255);
@@ -45,8 +47,8 @@ Il modello Hue-Saturation-Brightness è un modello più intuitivo per le persone
 In questo spazio curvo, l'angolo definisce la tonalità, detta anche tinta. Quindi troviamo la tonalità rossa a 0 gradi, la tonalità verde a 120 gradi e la tonalità blu a 240 gradi, e nel mezzo tutte le altre sfumature di tonalità di colori.
 
 La saturazione indica quanto forte o, al contrario, pallida si vuole la tonalità di colore. Saturazioni forti rendono la tonalità di colore molto accesa, saturazioni deboli la rendono vicina ad un colore bianco.
- 
-La brillantezza indica quanto luminosa si vuole la tonalità di colore. 
+
+La brillantezza indica quanto luminosa si vuole la tonalità di colore.
 
 Ogni colore è definito come una combinazione delle tre componenti elencate. Il valore applicabile per ogni componente va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**h**, **s**, **b**), in cui **h** è il valore che esprime la tonalità, **s** è il valore che indica la saturazione e **b** è il valore che definisce la brillantezza.
 
@@ -56,10 +58,12 @@ Come ci si può aspettare, quindi, in questo modello, una volta scelta la tonali
 
 Per passare da un modello all'altro, è necessario utilizzare la funzione ``colorMode``, che prende come parametro una costante rappresentativa del modello di colori da utilizzare.
 Le costanti sono le seguenti:
+
 - ``RGB``, costante che indica di utilizzare il modello RGB;
 - ``HSB``, costante che indica di utilizzare il modello HSB.
 
 Un esempio d'uso per scegliere il modello di colori da utilizzare è il seguente:
+
 ```javascript
 colorMode(RGB);
 ```
@@ -86,9 +90,9 @@ background(0, 0, 255);
 
 ### Usare un colore di riempimento
 
-Per scegliere il colore (sempre riferito al modello di colori utilizzato) di **riempimento** da utilizzare per qualsiasi entità da disegnare, si utilizza la funzione ``fill``, che usa tre parametri per indicare il colore. 
+Per scegliere il colore (sempre riferito al modello di colori utilizzato) di **riempimento** da utilizzare per qualsiasi entità da disegnare, si utilizza la funzione ``fill``, che usa tre parametri per indicare il colore.
 
-Una volta impostato il colore di **riempimento**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di riempimento, bisogna richiamare nuovamente la funzione ``fill`` impostando un'altro colore. 
+Una volta impostato il colore di **riempimento**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di riempimento, bisogna richiamare nuovamente la funzione ``fill`` impostando un'altro colore.
 
 Ad esempio, supponiamo di voler disegnare un triangolo ed un cerchio di un colore, e poi un rettangolo ed un quadrato di un secondo colore, si utilizzerà il seguente codice:
 
@@ -107,7 +111,7 @@ rect(80, 140, 80, 20);
 
 Il risultato sarà il seguente:
 
-![p5.js - Uso di colori differenti](/static/coding/web/p5js/colors01.png "p5.js - Uso di colori differenti")
+![p5.js - Uso di più colori](/static/coding/web/p5js/colors01.png "p5.js - Uso di più colori")
 
 ### Usare uno stile di linea
 
@@ -119,9 +123,9 @@ Per impostare lo spessore, si utilizza la funzione ``strokeWeight`` che prende c
 strokeWeight(4);
 ```
 
-Per scegliere il colore (sempre riferito al modello di colori utilizzato) di **linea** da utilizzare per qualsiasi entità da disegnare, si utilizza la funzione ``stroke``, che usa tre parametri per indicare il colore. 
+Per scegliere il colore (sempre riferito al modello di colori utilizzato) di **linea** da utilizzare per qualsiasi entità da disegnare, si utilizza la funzione ``stroke``, che usa tre parametri per indicare il colore.
 
-Una volta impostato il colore di **linea**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di linea, bisogna richiamare nuovamente la funzione ``stroke`` impostando un'altro colore. 
+Una volta impostato il colore di **linea**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di linea, bisogna richiamare nuovamente la funzione ``stroke`` impostando un'altro colore.
 
 Ad esempio, supponiamo di riprendere l'esempio precedente e di voler aggiungere anche stile di linea e colore di contorno delle figure. Per effettuare ciò, si utilizzerà il seguente codice:
 
@@ -144,7 +148,7 @@ square(20, 140, 40);
 rect(80, 140, 80, 20);
 ```
 
-Il risultato sarà il seguente: 
+Il risultato sarà il seguente:
 
 ![p5.js - Uso di colori differenti anche per i contorni](/static/coding/web/p5js/colors02.png "p5.js - Uso di colori differenti anche per i contorni")
 
@@ -159,11 +163,12 @@ textSize(16);
 text("testo", 100, 50);
 ```
 
-Una volta impostata la dimensione del testo, questa sarà **memorizzato** e quindi sarà utilizzata per qualsiasi testo da disegnare. Se si vuole cambiare la dimensione del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un'altro colore. 
+Una volta impostata la dimensione del testo, questa sarà **memorizzato** e quindi sarà utilizzata per qualsiasi testo da disegnare. Se si vuole cambiare la dimensione del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un'altro colore.
 
 Lo stesso discorso vale per l'allineamento, che viene memorizzato e quindi utilizzato per qualsiasi testo da disegnare.
 
 L'allineameno può essere verticale e/o orizzontale e si imposta mediante la funzione ``textAlign``, che prende come parametri due costanti che indichino rispettivamente l'allineameno verticale e orizzontale da applicare; La libreria p5.js prevede le seguenti costanti:
+
 - ``LEFT`` indica l'allineameno orizzontale a sinistra;
 - ``CENTER`` indica l'allineameno orizzontale centrale;
 - ``RIGHT`` indica l'allineameno orizzontale a destra;
@@ -173,12 +178,14 @@ L'allineameno può essere verticale e/o orizzontale e si imposta mediante la fun
 - ``BASELINE`` indica l'allineameno verticale sulla linea di base;
 
 Un esempio d'uso dell'allineamento del testo è il seguente:
+
 ```javascript
 textAlign(RIGHT, CENTER);
 text("testo", 100, 50);
 ```
 
 Anche i classici stili del testo sono indicati attraverso delle costanti, di seguito elencate:
+
 - ``NORMAL``: indica lo stile di testo **normale**;
 - ``ITALIC``: indica lo stile di testo **corsivo**;
 - ``BOLD``: indica lo stile di testo **grassetto**;
@@ -191,11 +198,12 @@ textStyle(ITALIC);
 text("testo", 100, 50);
 ```
 
-Una volta impostato lo stile del testo, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi testo da disegnare. Se si vuole cambiare lo stile del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un'altro colore. 
+Una volta impostato lo stile del testo, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi testo da disegnare. Se si vuole cambiare lo stile del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un'altro colore.
 
 Per il caricamento e la scelta del carattere da utilizzare (in inglese il **font**), si rimanda alle specifiche della libreria.
 
 Di seguito un esempio completo del disegno del testo con il codice fino ad ora utilizzato:
+
 ```javascript
 textSize(16);
 textAlign(RIGHT, CENTER);

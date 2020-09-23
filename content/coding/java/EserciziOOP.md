@@ -1,7 +1,7 @@
 ---
 type: "java"
-title: "Esercizi in java su OOP"
-description: "Esercizi in java su OOP"
+title: "Esercizi in Java su OOP"
+description: "Esercizi in Java su OOP"
 date: 2020-04-20
 publishdate: 2020-04-20
 lastmod: 2020-04-20
@@ -9,10 +9,10 @@ categories: ["coding", "tools", "java"]
 keywords: ["coding", "tools", "java"]
 draft: true
 toc: false
-summary: "Esercizi in java su OOP"
+summary: "Esercizi in Java su OOP"
 ---
 
-# Esercizi in java su OOP
+# Esercizi in Java su OOP
 
 ## Esercizio 1
 

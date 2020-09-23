@@ -82,13 +82,13 @@ Creato il progetto, è possibile eseguire, nella cartella principale di progetto
   gradlew clean
 ```
 
-- Task di compilazione dei sorgenti java, di creazione del pacchetto "jar" e di creazione dei pacchetti da distribuire:
+- Task di compilazione dei sorgenti Java, di creazione del pacchetto "jar" e di creazione dei pacchetti da distribuire:
 
 ```bash
   gradlew build
 ```
 
-- Task di esecuzione dell'applicazione java:
+- Task di esecuzione dell'applicazione Java:
 
 ```bash
   gradlew run
@@ -141,13 +141,13 @@ Il file ``settings.gradle`` contiene le proprietà del progetto Gradle;
 
 Il file ``build.gradle`` contiene le dipendenze, i repository, i plugin e tutte le istruzioni necessarie alle varie fasi del progetto quali compilazione, esecuzione, deploy, ...,  .
 
-Gradle provvede poi alla creazione delle classiche directory di un progetto java:
+Gradle provvede poi alla creazione delle classiche directory di un progetto Java:
 
-- ``src/main/java`` contiene i sorgenti java per l'applicazione (Gradle ha creato il file ``App.java`` nel package ``example`` );
+- ``src/main/java`` contiene i sorgenti Java per l'applicazione (Gradle ha creato il file ``App.java`` nel package ``example`` );
 
 - ``src/main/resources`` contiene altri file necessari durante l'esecuzione;
 
-- ``src/test/java`` contiene i sorgenti java per gli "unit test" java (Gradle ha creato un esempio di test ``AppTest.java`` nel package ``example``);
+- ``src/test/java`` contiene i sorgenti Java per gli "unit test" Java (Gradle ha creato un esempio di test ``AppTest.java`` nel package ``example``);
 
 - ``src/test/resources`` contiene altri file necessari durante i test;
 
@@ -161,19 +161,19 @@ Tutti i file prodotti, dalle classi compilate al jar prodotto, alla documentazio
 
 I principali concetti su cui si basa Gradle sono i **progetti**, i **plugin**, i **task** e le **configurazioni di dipendenza**.
 
-Un **progetto** in Gradle può rappresentare un'applicazione web scritta in java, una libreria scritta in c++, ecc..
+Un **progetto** in Gradle può rappresentare un'applicazione web scritta in Java, una libreria scritta in c++, ecc..
 
 Si può decidere di automatizzare diverse fasi in un progetto, dalla compilazione dei sorgenti al deploy su server, dalla realizzazione della documentazione al report di progetto.
 
 I **task** servono ad automatizzare queste fasi. Gradle mette a disposizione task per compilare, task per realizzare la documentazione, task per avviare il server ed effettuare il deploy dell'applicazione web sullo stesso.
 
-Sono i **plugin** a rendere disponibili i task nel progetto: il plugin per applicazioni java rende disponibili i task per la compilazione e la realizzazione della documentazione. Il plugin per i report rende disponibili i task per la generazione dei report di progetto.
+Sono i **plugin** a rendere disponibili i task nel progetto: il plugin per applicazioni Java rende disponibili i task per la compilazione e la realizzazione della documentazione. Il plugin per i report rende disponibili i task per la generazione dei report di progetto.
 
 I plugin mettono a disposizione anche le **configurazioni di dipendenza**, che permettono allo sviluppatore di gestire le dipendenze dell'applicazione.
 
 ### Plugin
 
-E' necessario indicare la tipologia dei progetti sui quali si lavora: progetti java, c++ o anche progetti con sorgenti html o file zip.
+E' necessario indicare la tipologia dei progetti sui quali si lavora: progetti Java, c++ o anche progetti con sorgenti html o file zip.
 
 Questa tipologia viene indicata attraverso i plugin, che devono essere specificati nel file ``build.gradle`` attraverso la sezione ``plugins``.
 
@@ -289,7 +289,7 @@ Ad esempio, per visualizzare il piano di esecuzione dei task per il comando ``bu
 gradlew build --dry-run
 ```
 
-L'output prodotto, per un progetto java, è il seguente:
+L'output prodotto, per un progetto Java, è il seguente:
 
 ```bash
 :compileJava SKIPPED
@@ -305,7 +305,7 @@ L'output prodotto, per un progetto java, è il seguente:
 :build SKIPPED
 ```
 
-Il piano di esecuzione indica che per eseguire il task ``jar`` per la creazione del pacchetto java è necessario prima eseguire il task ``compileJava`` che compila le classi java. Il che è un ragionamento ovvio.
+Il piano di esecuzione indica che per eseguire il task ``jar`` per la creazione del pacchetto Java è necessario prima eseguire il task ``compileJava`` che compila le classi Java. Il che è un ragionamento ovvio.
 
 ### Configurazioni di dipendenza
 
@@ -403,19 +403,19 @@ Per visualizzare le dipendenze di una singola configurazione
 gradlew -q dependencies --configuration api
 ```
 
-## Scelta ed uso dei plugin per l'ambiente java
+## Scelta ed uso dei plugin per l'ambiente Java
 
-### Plugin per java
+### Plugin per Java
 
-Per configurare il progetto come "progetto java", bisogna aggiungere uno dei plugin java messi a disposizione da Gradle . In questo modo Gradle viene configurato per l'uso di tutti i task e di tutte le configurazioni relativi alla compilazione del codice Java, come visto nei capitoli precedenti.
+Per configurare il progetto come "progetto Java", bisogna aggiungere uno dei plugin Java messi a disposizione da Gradle . In questo modo Gradle viene configurato per l'uso di tutti i task e di tutte le configurazioni relativi alla compilazione del codice Java, come visto nei capitoli precedenti.
 
 Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
-- ~~``java``~~:  è un plugin da non usare direttamente, poichè viene esteso dai plugin java ``java-library`` e ``application``che sono più specifici. Questo plugin serve solo a fornire le operazioni e le configurazioni basilari per la gestione di un progetto java.
+- ~~``java``~~:  è un plugin da non usare direttamente, poichè viene esteso dai plugin Java ``java-library`` e ``application``che sono più specifici. Questo plugin serve solo a fornire le operazioni e le configurazioni basilari per la gestione di un progetto Java.
 
-- ``java-library``: è un plugin che estende il plugin ``java`` ed è specializzato per la gestione di una libreria java. La differenza chiave di questo plugin è l'uso di due configurazioni (in ottica produttore / consumatore) esposte;
+- ``java-library``: è un plugin che estende il plugin ``java`` ed è specializzato per la gestione di una libreria Java. La differenza chiave di questo plugin è l'uso di due configurazioni (in ottica produttore / consumatore) esposte;
 
-- ``application``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione java che deve essere eseguibile (anche durante lo sviluppo) e deve includere script di avvio per il sistema operativo considerato;
+- ``application``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione Java che deve essere eseguibile (anche durante lo sviluppo) e deve includere script di avvio per il sistema operativo considerato;
 
 - ``java-platform``: è un plugin che permette la dichiarazione di una piattaforma, uno speciale tipo di componente software che non contiene sorgenti ma solo altre librerie. Non può essere usato nè in combinazione con il plugin ``java-library`` nè in combinazione con il plugin ``java-application``;
 
@@ -427,16 +427,16 @@ Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
 - ``eclipse-wtp``: è un plugin che che estende il plugin ``eclipse`` ed in questo articolo viene aggiunto per completezza; Serve ad automatizzare la creazione di file necessari a lavorare con Eclipse IDE.
 
-### Plugin java
+### Plugin Java
 
-Il plugin Java non deve essere usato direttamente, ma fornisce i task basilari per la gestione di un progetto java.
+Il plugin Java non deve essere usato direttamente, ma fornisce i task basilari per la gestione di un progetto Java.
 
 I task a messi a disposizione dal plugin ``java`` sono i seguenti:
 
 - ``clean``                   : Pulizia della directory build;
-- ``compileJava``         : Compila i sorgenti java;
+- ``compileJava``         : Compila i sorgenti Java;
 - ``jar``                       : Crea il file jar;
-- ``javadoc``                : Genera la documentazione Javadoc;
+- ``javadoc``                : Genera la documentazione JavaDoc;
 - ``compileTestJava``  : Compila i sorgenti delle classi di test;
 - ``test``                     : Esegue gli "unit test";
 - ``build``                   : Esegue tutte le fasi di costruzione del progetto.
@@ -532,7 +532,7 @@ plugins {
 
 ### Plugin war
 
-Il plugin ``war`` estende il plugin `java` e serve a facilitare la creazione di un'applicazione web. L'applicazione viene impacchettata come file "war", e la generazione del file "jar" (ereditata dal plugin java) viene disabilitata.
+Il plugin ``war`` estende il plugin ``java`` e serve a facilitare la creazione di un'applicazione web. L'applicazione viene impacchettata come file "war", e la generazione del file "jar" (ereditata dal plugin ``java``) viene disabilitata.
 
 I task che il plugin mette a disposizione sono:
 
@@ -606,7 +606,7 @@ plugins {
 }
 ```
 
-## Esempio completo per applicazioni java
+## Esempio completo per applicazioni Java
 
 Di seguito un esempio completo per la gestione di un'applicazione Java con Gradle:
 
@@ -658,11 +658,11 @@ application {
 }
 ```
 
-Si nota che è stato aggiunto sia il plugin ``application`` per la gestione e l'esecuzione di un progetto java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE.
+Si nota che è stato aggiunto sia il plugin ``application`` per la gestione e l'esecuzione di un progetto Java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE.
 
-E stata definita la lista (quasi completa) di task che si desidera vengano lanciati di default, sono state configurate delle voci da aggiungere al file ``Manifest.mf`` del pacchetto "jar" ed è indicata la classe java che contiene il metodo "main" da eseguire per lanciare l'applicazione.
+E stata definita la lista (quasi completa) di task che si desidera vengano lanciati di default, sono state configurate delle voci da aggiungere al file ``Manifest.mf`` del pacchetto "jar" ed è indicata la classe Java che contiene il metodo "main" da eseguire per lanciare l'applicazione.
 
-## Esempio completo per applicazioni web in java
+## Esempio completo per applicazioni web in Java
 
 Di seguito un esempio completo per la gestione di un'applicazione web Java con Gradle:
 
@@ -718,7 +718,7 @@ gretty {
 }
 ```
 
-Si nota che è stato aggiunto sia il plugin ``war`` per la gestione di un'applicazione web in java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE, sia il plugin ``org.gretty`` per la gestione del servletContainer.
+Si nota che è stato aggiunto sia il plugin ``war`` per la gestione di un'applicazione web in Java, sia il plugin ``project-report`` per la creazione dei report di progetto, sia il plugin ``eclipse`` per gestire il progetto con Eclipse IDE, sia il plugin ``org.gretty`` per la gestione del servletContainer.
 
 E stata definita la lista di task che si desidera vengano lanciati di default, sono state configurate le opzioni relative al server da avviare per deployare ed eseguire l'applicazione.
 

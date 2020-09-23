@@ -19,12 +19,11 @@ Il Document Object Model (DOM) è un'interfaccia che permette di rappresentare l
 
 Le operazioni di selezione di un'elemento del documento avvengono attraverso i selettori CSS. Le funzioni principali per la selezione di elementi sono ``document.querySelector`` e ``document.querySelectorAll``.
 
-Man mano che gli standard di Ecmascript si evolvevano, venivano definiti nuovi tipi di selettori, che anche oggi sono identificati per livelli: dal primo al quarto livello.
+Man mano che gli standard di ECMAScript si evolvevano, venivano definiti nuovi tipi di selettori, che anche oggi sono identificati per livelli: dal primo al quarto livello.
 
 I nuovi selettori, definiti nei livelli "superiori" vanno a potenziare e rendere più compatta la sintassi per la selezione degli elementi del DOM.
 
 I selettori possono essere combinati in modo da formare combinazioni molto potenti.
-
 
 ## Selettore universale
 
@@ -40,14 +39,14 @@ Supponendo che la pagina HTML contenga solo gli elementi:
   <p>paragrafo2</p>
 </div>
 
-Per selezionare gli elementi della pagina HTML, si può utilizzare l'istruzione javascript:
+Per selezionare gli elementi della pagina HTML, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('*');
 ```
 
 Esempio di selezione:
 <input type="button" onclick="seleziona('#univ *')" value="seleziona">
-
 
 ## Selettore per id
 
@@ -58,6 +57,7 @@ Selettore | Descrizione
 ### Esempio d'uso del selettore per id
 
 Supponendo che la pagina HTML contenga il paragrafo identificato da un id, come nel seguente esempio:
+
 ```html
 <p id="paragrafo1">paragrafo 1</p>
 ```
@@ -65,14 +65,14 @@ Supponendo che la pagina HTML contenga il paragrafo identificato da un id, come 
 Il codice elencato produce il seguente risultato:
 <p id="paragrafo1">paragrafo 1</p>
 
-Per selezionare il paragrafo, si può utilizzare l'istruzione javascript:
+Per selezionare il paragrafo, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelector('#paragrafo1');
 ```
 
 Esempio di selezione:
 <input type="button" onclick="seleziona('#paragrafo1')" value="seleziona">
-
 
 ## Selettore per classe
 
@@ -83,6 +83,7 @@ Selettore | Descrizione
 ### Esempio d'uso del selettore per classe
 
 Supponendo che la pagina HTML contenga due paragrafi identificati dalla  stessa classe, come nel seguente esempio:
+
 ```html
 <p class="paragrafo">paragrafo 1</p>
 <p class="paragrafo">paragrafo 2</p>
@@ -92,7 +93,8 @@ Il codice elencato produce il seguente risultato:
 <p class="paragrafo">paragrafo 1</p>
 <p class="paragrafo">paragrafo 2</p>
 
-Per selezionare i paragrafi, si può utilizzare l'istruzione javascript:
+Per selezionare i paragrafi, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('.paragrafo');
 ```
@@ -121,7 +123,8 @@ Il codice elencato produce il seguente risultato:
   <p>paragrafo 2</p>
 </div>
 
-Per selezionare i paragrafi, si può utilizzare l'istruzione javascript:
+Per selezionare i paragrafi, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('p');
 ```
@@ -158,7 +161,8 @@ Il codice elencato produce il seguente risultato:
   <a title="Link2" data-custom="value-v1 value-v2 value-v4">link 2</a>
 </div>
 
-Per selezionare i link con l'attributo "title", si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "title", si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[title]');
 ```
@@ -166,7 +170,8 @@ let elements = document.querySelectorAll('[title]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title]')" value="seleziona">
 
-Per selezionare i link con l'attributo "title" avente valore "Link1" (si noti che è case-sensitive), si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "title" avente valore "Link1" (si noti che è case-sensitive), si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[title="Link1" s]');
 ```
@@ -174,7 +179,8 @@ let elements = document.querySelectorAll('[title="Link1" s]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title=\'Link1\' s]')" value="seleziona">
 
-Per selezionare i link con l'attributo "title" avente valore "link1" (si noti che non è case-sensitive), si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "title" avente valore "link1" (si noti che non è case-sensitive), si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[title="link1" i]');
 ```
@@ -183,7 +189,8 @@ Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title=\'link1\' i]')" value="seleziona">
 
 
-Per selezionare i link con l'attributo "title" che inizi con il valore "Lin", si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "title" che inizi con il valore "Lin", si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[title^="Lin"]');
 ```
@@ -192,7 +199,8 @@ Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title^=\'Lin\']')" value="seleziona">
 
 
-Per selezionare i link con l'attributo "title" terminante il valore "k1", si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "title" terminante il valore "k1", si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[title$="k1"]');
 ```
@@ -200,7 +208,8 @@ let elements = document.querySelectorAll('[title$="k1"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title$=\'k1\']')" value="seleziona">
 
-Per selezionare i link con l'attributo "title" contenente il valore "ink", si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "title" contenente il valore "ink", si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[title*="ink"]');
 ```
@@ -208,7 +217,8 @@ let elements = document.querySelectorAll('[title*="ink"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [title*=\'ink\']')" value="seleziona">
 
-Per selezionare i link con l'attributo "data-custom", contenente il valore che inizia con "value" e seguito opzionalmente dal carattere "-" e quindi da altra sequenza opzionale di caratteri, si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "data-custom", contenente il valore che inizia con "value" e seguito opzionalmente dal carattere "-" e quindi da altra sequenza opzionale di caratteri, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[data-custom|="value"]');
 ```
@@ -216,7 +226,8 @@ let elements = document.querySelectorAll('[data-custom|="value"]');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#attr [data-custom|=\'value\']')" value="seleziona">
 
-Per selezionare i link con l'attributo "data-custom" contenente una lista di valori separati da uno spazio, e con la lista contenente il valore "value-v4" , si può utilizzare l'istruzione javascript:
+Per selezionare i link con l'attributo "data-custom" contenente una lista di valori separati da uno spazio, e con la lista contenente il valore "value-v4" , si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('[data-custom~="value-v2"]');
 ```
@@ -245,7 +256,8 @@ Il codice elencato produce il seguente risultato:
   <a>link 1</a>
 </div>
 
-Per selezionare il paragrafo ed il link, si può utilizzare l'istruzione javascript:
+Per selezionare il paragrafo ed il link, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('p,a');
 ```
@@ -279,7 +291,8 @@ Il codice elencato produce il seguente risultato:
   <a>link2 esterno al paragrafo.</a>
 </div>
 
-Per selezionare tutti i link interni al paragrafo, si può utilizzare l'istruzione javascript:
+Per selezionare tutti i link interni al paragrafo, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('p a');
 ```
@@ -287,7 +300,8 @@ let elements = document.querySelectorAll('p a');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#parent p a')" value="seleziona">
 
-Per selezionare i link che sono figli "diretti" del paragrafo, si può utilizzare l'istruzione javascript:
+Per selezionare i link che sono figli "diretti" del paragrafo, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('p > a');
 ```
@@ -295,7 +309,8 @@ let elements = document.querySelectorAll('p > a');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#parent p > a')" value="seleziona">
 
-Per selezionare i link immediatamente successivi al paragrafo, si può utilizzare l'istruzione javascript:
+Per selezionare i link immediatamente successivi al paragrafo, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('p + a');
 ```
@@ -303,7 +318,8 @@ let elements = document.querySelectorAll('p + a');
 Esempio di selezione:
 <input type="button" onclick="seleziona('#parent p + a')" value="seleziona">
 
-Per selezionare i link successivi (anche non immediatamente) al paragrafo, si può utilizzare l'istruzione javascript:
+Per selezionare i link successivi (anche non immediatamente) al paragrafo, si può utilizzare l'istruzione JavaScript:
+
 ```javascript
 let elements = document.querySelectorAll('p ~ a');
 ```
@@ -384,8 +400,8 @@ In questo caso verranno selezionati i tag che soddisfano tutti i selettori, ovve
 Un secondo esempio, di seguito riportato, permette di combinare i selettori per elemento, per classe, per attributo, per posizione e per pseudo-classe, in modo tale da selezionare gli elementi "vuoti" che sono contenuti nel primo figlio del gruppo di tag aventi la classe indicata che a loro volta seguono, direttamente e sullo stesso livello di profondità, gli elementi che hanno l'attributo indicato.
 
 ```
-Tag['attr'] + .class:first-child :empty 
+Tag['attr'] + .class:first-child :empty
 ```
 
-Le combinazioni permettono di creare delle selezioni effettivamente molto potenti, 
+Le combinazioni permettono di creare delle selezioni effettivamente molto potenti,
 anche se la sintassi di selezione risultante non è delle più semplici.

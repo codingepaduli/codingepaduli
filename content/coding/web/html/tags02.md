@@ -126,7 +126,7 @@ summary: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno
         &lt;td&gt;34£&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-        &lt;!&minus;&minus; Cella mancante perchè occupata dalla cella che si è espansa 	&minus;	&minus;&gt;
+        &lt;!&minus;&minus; Cella mancante perchè occupata dalla cella che si è espansa &minus;	&minus;&gt;
         &lt;td&gt;$100&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;

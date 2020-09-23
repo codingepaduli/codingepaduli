@@ -40,7 +40,7 @@ scriviNome();
 
 Questo esempio produce in output il messaggio seguente:
 
-```
+```output
 Mario Rossi
 ```
 

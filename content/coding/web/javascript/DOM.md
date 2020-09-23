@@ -73,7 +73,7 @@ refEle.insertAdjacentElement('afterend', ele);
 
 ## Gestione di codice HTML degli elementi
 
-Per ottenere il codice HTML (alcuni caratteri sono convertiti in "html entities") contenuto all'interno di un elemento dalla pagina, si utilizza la seguente funzione:
+Per ottenere il codice HTML (alcuni caratteri sono convertiti in "HTML entities") contenuto all'interno di un elemento dalla pagina, si utilizza la seguente funzione:
 
 ```javascript
 const text = ele.innerHTML;

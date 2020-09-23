@@ -22,9 +22,9 @@ Gli script in esecuzione possono **selezionare** gli elementi della pagina HTML 
 
 Gli **eventi**, detti tecnicamente **eventi DOM**, hanno natura diversa: principalmente possono essere automatici, come il caricamento della pagina, o dovuti all'interazione con l'utente o con il sistema, come ad esempio un click su un pulsante o una notifica di batteria in esaurimento da parte del sistema.
 
-L'elenco di eventi è vasto per cui si rimanda alle specifiche Ecmascript per un dettaglio completo.
+L'elenco di eventi è vasto per cui si rimanda alle specifiche ECMAScript per un dettaglio completo.
 
-Per poter invocare una funzione quando un determinato evento viene notificato su un elemento di una pagina web, si utilizza il corrispondente attributo html, che tipicamente ha il nome composto dal prefisso ``on`` seguito dal nome dell'evento, come nei seguenti esempi:
+Per poter invocare una funzione quando un determinato evento viene notificato su un elemento di una pagina web, si utilizza il corrispondente attributo HTML, che tipicamente ha il nome composto dal prefisso ``on`` seguito dal nome dell'evento, come nei seguenti esempi:
 
 - ``onblur``: l'elemento non ha più il focus;
 - ``onclick``: l'elemento è stato cliccato;
@@ -53,11 +53,11 @@ Ovviamente le funzioni JavaScript possono essere definite dal programmatore, com
 <input type="button" value="clicca" onclick="definitaDaUtente()">
 ```
 
-La selezione di un elemento da uno script avviene attraverso le funzioni `` document.querySelector`` e `` document.querySelectorAll``, che permettono di selezionare rispettivamente un'elemento ed una collezione di elementi.
+La selezione di un elemento da uno script avviene attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``, che permettono di selezionare rispettivamente un'elemento ed una collezione di elementi.
 
 Entrambe le funzioni prendono come parametro un **selettore CSS**, ovvero una stringa indicante l'elemento o gli elementi da selezionare.
 
-Per un dettaglio completo sulla **sintassi CSS** si rimanda agli articoli successivi ed alle specifiche di Ecmascript. Al momento si descriveranno i 3 selettori principali:
+Per un dettaglio completo sulla **sintassi CSS** si rimanda agli articoli successivi ed alle specifiche di ECMAScript. Al momento si descriveranno i 3 selettori principali:
 
 - ``#ID``: serve a selezionare un elemento avente l'ID indicato;
 - ``.class``: serve a selezionare gli elementi aventi la classe indicata;
@@ -91,7 +91,6 @@ Gli elementi HTML selezionati possiedono molte proprietà a cui è possibile far
 - ``value``: proprietà accessibile solo per i campi di input, restituisce il valore in formato stringa.
 
 Riprendendo l'esempio precedente, è possibile scrivere nella console sia il contenuto che il valore degli elementi HTML, attraverso il seguente codice:
-
 
 ```html
 <h1 id="titolo">Titolo</h1>

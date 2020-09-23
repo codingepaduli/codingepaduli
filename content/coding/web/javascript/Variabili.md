@@ -14,15 +14,15 @@ summary: "Costanti, variabili e conversioni"
 
 # Costanti, variabili e conversioni
 
-Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato, ad esempio tipo numerico, tipo booleano o tipo "stringa". 
+Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato, ad esempio tipo numerico, tipo booleano o tipo "stringa".
 
-Quando si dichiara una variabile e si assegna un valore, allora alla variabile viene associato un tipo di dato. Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza. 
+Quando si dichiara una variabile e si assegna un valore, allora alla variabile viene associato un tipo di dato. Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza.
 
 Questo tipo di tipizzazione delle variabili è detto tipizzazione **debole**, in contrapposizione alla tipizzazione **forte**, in cui una variabile non può cambiare il tipo di dato associato.
 
 I tipi di dato possono essere semplici o complessi. Quelli semplici sono detti ``primitivi`` e quelli complessi sono gli oggetti.
 
-Dalla versione di Ecmascript 6 le variabili si dichiarano utilizzando la parola chiave ``let``, anche se la parola chiave ``var`` usata in Ecmascript 5 è ancora valida. 
+Dalla versione di ECMAScript 6 le variabili si dichiarano utilizzando la parola chiave ``let``, anche se la parola chiave ``var`` usata in ECMAScript 5 è ancora valida.
 
 Le costanti sono spazi di memoria con un nome, un tipo associato ed un valore associato che non è più possibile modificare. Si dichiarano con la parola chiave ``const``;
 
@@ -47,7 +47,8 @@ Le variabili possono avere assegnato un valore numerico, e quindi il tipo associ
 let naturalNumber = 10;
 let realNumber = 10.5;
 ```
-Il valore intero può essere rappresentato in decimale, esadecimale e binario. 
+
+Il valore intero può essere rappresentato in decimale, esadecimale e binario.
 
 La rappresentazione decimale del valore da assegnare avviene nella forma classica, come nel seguente esempio:
 
@@ -97,7 +98,7 @@ let stringVariable2 = 'Seconda stringa';
 Per definire una sequenza di caratteri che occupi più righe, si può racchiudere tra apici inversi `` ` ``, come nel seguente esempio:
 
 ```javascript
-let stringVariable = `Una 
+let stringVariable = `Una
 stringa`;
 ```
 
@@ -106,16 +107,16 @@ Questo tipo di definizione è utilizzato anche per concatenare variabili o il ri
 ```javascript
 let num1 = 9;
 let num2 = 18;
-let messaggio = `La somma dei 
-numeri ${num1} e ${num2} 
+let messaggio = `La somma dei
+numeri ${num1} e ${num2}
 vale ${num1 + num2}.`;
 ```
 
 L'esempio precedente produce il seguente output (su più righe):
 
-```
-La somma dei 
-numeri 9 e 18 
+```output
+La somma dei
+numeri 9 e 18
 vale 27.
 ```
 
@@ -135,7 +136,7 @@ let persona = {
 };
 ```
 
-### Tipi oggetto wrapper 
+### Tipi oggetto wrapper
 
 E' possibile creare una versione ad oggetti (detta "wrapper")
 dei tipi primitivi di dato numerici, stringhe o booleani:
@@ -178,7 +179,7 @@ chiave `typeof`. Partendo dal seguente esempio:
 ```javascript
 'use strict'
 
-// variabili primitive 
+// variabili primitive
 let naturalNumber = 10;
 let realNumber = 10.5;
 let toBeOrNotToBe = true;
@@ -209,7 +210,7 @@ Identificando i tipi di dato delle variabili dichiarate nel precedente esempio s
 Come si può notare, sia la variabile oggetto, sia le variabili con valore ``null``, sia la variabile sia tutte le variabili "wrapper" sono di tipo oggetto.
 
 Una precisazione però è da fare sulla variabile inizializzata a `null`:
-la specifica di Ecmascript prevede che, nonostante la variabile sia da
+la specifica di ECMAScript prevede che, nonostante la variabile sia da
 considerare come tipo "null", l'operazione `typeof null` restituisca
 `object`.
 
@@ -255,7 +256,7 @@ let x = 1;
 let stringX = x.toString();
 ```
 
-E' possibile convertire il numero in una base specificata passando come argomento al metodo ``toString()`` la base in cui si vuole convertire il numero. 
+E' possibile convertire il numero in una base specificata passando come argomento al metodo ``toString()`` la base in cui si vuole convertire il numero.
 
 Ad esempio, per la conversione in binario, ottale ed esadecimale si usa il seguente codice:
 
@@ -267,7 +268,8 @@ let x16 = x.toString(16);
 ```
 
 Il codice converte il numero nelle seguenti stringhe:
-```
+
+```output
 x2 = "1010"
 x8 = "12"
 x16 = "a"
@@ -281,7 +283,8 @@ let xC2 = (x >>> 0).toString()
 ```
 
 Il numero è convertito in una stringa rappresentata da 32 bit:
-```
+
+```output
 xC2 = "11111111111111111111111111111111"
 ```
 
@@ -299,7 +302,8 @@ let stringZ = z.toExponential();
 ```
 
 Il codice converte il numero nelle seguenti stringhe:
-```
+
+```output
 "1e+0"
 "1.4e+0"
 "1.4e+1"
@@ -316,7 +320,8 @@ let stringZ = z.toExponential(16);
 ```
 
 Il codice converte il numero nelle seguenti stringhe:
-```
+
+```output
 "1.23e+8"
 "1.23456789e+8"
 "1.2345678912345600e+8"

@@ -47,13 +47,13 @@ Una volta creata l'area da disegno attraverso la funzione ``createCanvas``, la l
 
 ## Sistema di coordinate
 
-Il sistema di coordinate **cartesiane** tipicamente usato da librerie di grafica 2D computerizzata è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dello schermo, che rappresenta il punto di coordinate (0,0). 
+Il sistema di coordinate **cartesiane** tipicamente usato da librerie di grafica 2D computerizzata è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dello schermo, che rappresenta il punto di coordinate (0,0).
 
 La particolarità di questo sistema di coordinate è che l'asse Y è invertito, cioè i valori positivi sono in basso ed i negativi in alto. Si nota inoltre che saranno disegnati sullo schermo del computer solo i punti che hanno entrambe le coordinate (x, y) con valore positivo.
 
 Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
 
-![Image](https://p5js.org/assets/learn/coordinate-system-and-shapes/images/drawing-03.svg "p5js - Sistema di coordinate")
+![p5.js - Sistema di coordinate](https://p5js.org/assets/learn/coordinate-system-and-shapes/images/drawing-03.svg "p5.js - Sistema di coordinate")
 
 ### Gestione angoli
 
@@ -62,6 +62,7 @@ In ambito matematico, gli angoli sono tipicamente espressi mediante due differen
 Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
 
 La libreria p5.js permette al programmatore di esprimere le grandezze angolari in **gradi sessagesimali** o **radianti**, specificando l'unità di misura attraverso la funzione ``angleMode``, che prende come parametro una delle seguenti costanti:
+
 - ``DEGREES``: indica che l'unità di misura degli angoli che si intende usare è il **grado d'arco**;
 - ``RADIANS``: indica che l'unità di misura degli angoli che si intende usare è il **radiante**.
 
@@ -70,6 +71,7 @@ Una caratteristica importante della libreria p5.js è che gli angoli sono misura
 Volendo fare un parallelo con il quadrante di un l'orologio, in cui la lancetta delle ore è posta sul numero tre (ore 3) e la lancetta dei minuti completa l'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrispone alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
 
 Per facilitare l'uso del radiante, la libreria p5.js mette a disposizione le seguenti costanti:
+
 - ``PI``, ovvero la famosa costante matematica **pi greco**, dal valore (approssimato) **3.14**, corrispondente a centottanta gradi d'arco;
 - ``HALF_PI``, ovvero **pi greco mezzi**, corrispondenti a novanta gradi gradi d'arco;
 - ``QUARTER_PI``, ovvero **pi greco quarti**, corrispondenti a quarantacinque gradi d'arco;
@@ -142,7 +144,7 @@ ellipse(60, 220, 80, 40);
 ### Disegno di un'arco di circonferenza e d'ellisse
 
 Un arco di circonferenza è realizzabile attraverso la funzione ``arc`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Da sottolineare che entrambi gli angoli devono essere espressi in radianti.
- 
+
 ```javascript
 arc(40, 300, 40, 40, PI, TWO_PI);
 ```
@@ -154,7 +156,6 @@ arc(100, 300, 40, 80, PI, TWO_PI);
 ```
 
 Gli archi non sono gli unici tipi di curve supportate. La libreria p5.js permette di disegnare curve complesse, come le curve **spline** e le curve di **Bézier**, ma per queste realizzazioni si rimanda alle specifiche e agli esempi ufficiali.
-
 
 ### Disegno di un testo
 
@@ -176,7 +177,7 @@ Da prestare attenzione che se il testo è troppo lungo e non può essere racchiu
 
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
-![Image](/static/coding/web/p5js/basics.png "p5js - Basi della grafica 2D")
+![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")
 
 In ambiente web è visualizzabile l'esempio funzionante dell'animazione realizzata.
 

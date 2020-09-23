@@ -1,7 +1,7 @@
 ---
 type: "java"
-title: "Esercizi in java su MVC, Servlet e JSP"
-description: "Esercizi in java su MVC, Servlet e JSP"
+title: "Esercizi in Java su MVC, Servlet e JSP"
+description: "Esercizi in Java su MVC, Servlet e JSP"
 date: 2020-05-27
 publishdate: 2020-05-27
 lastmod: 2020-05-27
@@ -9,10 +9,10 @@ categories: ["coding", "tools", "java"]
 keywords: ["coding", "tools", "java"]
 draft: true
 toc: false
-summary: "Esercizi in java su MVC, Servlet e JSP"
+summary: "Esercizi in Java su MVC, Servlet e JSP"
 ---
 
-# Esercizi in java sulle servlet
+# Esercizi in Java sulle servlet
 
 ## Esercizio 1: MVC, Servlet e JSP
 
@@ -40,11 +40,11 @@ Rispondere alle seguenti domande:
 
 <!-- markdownlint-disable MD009 MD036 -->
 
- |              |     |     |     |     |     |     |     | 
+ |              |     |     |     |     |     |     |     |
 ---       | --- | --- | --- | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  | Totale Punti
 Max punti |  2  |  1  |  1  |  2  |  1  |  1  |  1  |  1  | 10
-Punti     |     |     |     |     |     |     |     |     | 
+Punti     |     |     |     |     |     |     |     |     |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 

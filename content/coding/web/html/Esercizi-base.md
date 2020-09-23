@@ -14,7 +14,7 @@ summary: "HTML Lez. 03.1 - Esercizi basilari su HTML"
 
 # Esercizi basilari su HTML
 
-1. Spiega a cosa serve la prima riga di una pagina html ``<!doctype html>``;
+1. Spiega a cosa serve la prima riga di una pagina HTML ``<!doctype html>``;
 
 2. Spiegare a cosa serve il tag ``head``;
 

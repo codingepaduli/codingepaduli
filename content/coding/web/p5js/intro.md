@@ -16,7 +16,7 @@ customJS: ["/static/coding/web/p5js/Example02.js"]
 
 # Introduzione alla libreria grafica p5.js
 
-p5.js e' una libreria grafica opensource focalizzata al coding in Javascript in un contesto creativo e multimediale. Questa libreria è di fatto anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
+p5.js e' una libreria grafica opensource focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è di fatto anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
 Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2D, 3D ed anche in più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geolocalizzazione, delle mappe, della webcam ed anche per l'applicazione di algoritmi di intelligenza artificiale.
 
@@ -68,7 +68,7 @@ Come si può notare, la libreria viene inclusa attraverso un collegamento estern
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
 ```
 
-L'esempio minimale di programma, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice javascript).
+L'esempio minimale di programma, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice JavaScript).
 
 ## Primo programma
 
