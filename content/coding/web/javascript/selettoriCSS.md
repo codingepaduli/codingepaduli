@@ -111,6 +111,7 @@ E  | Seleziona i tag E;
 ### Esempio d'uso del selettore per elemento
 
 Supponendo che la pagina HTML contenga due paragrafi come nel seguente esempio:
+
 ```html
 <p>paragrafo 1</p>
 <p>paragrafo 2</p>

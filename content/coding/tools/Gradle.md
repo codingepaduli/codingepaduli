@@ -427,7 +427,7 @@ Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
 - ``eclipse-wtp``: è un plugin che che estende il plugin ``eclipse`` ed in questo articolo viene aggiunto per completezza; Serve ad automatizzare la creazione di file necessari a lavorare con Eclipse IDE.
 
-### Plugin Java
+### Plugin ``java``
 
 Il plugin Java non deve essere usato direttamente, ma fornisce i task basilari per la gestione di un progetto Java.
 
@@ -467,7 +467,7 @@ Allo stesso modo sono messe a disposizione, per le fasi di compilazione ed esecu
 - ``testRuntimeOnly`` estende ``runtimeOnly``: dipendenze necessarie solo per la fase di esecuzione dei tests;
 - ``testRuntimeClasspath`` estende ~~``testRuntime``~~, ``testRuntimeOnly`` e ``testImplementation``.
 
-## Plugin application
+## Plugin ``application``
 
 Il plugin ``application`` estende il plugin ``java`` e serve a facilitare la creazione di un'applicazione eseguibile. L'applicazione viene impacchettata come file "tar" o "zip" e vengono inclusi gli script per il sistema operativo utilizzato.
 
@@ -510,7 +510,7 @@ application {
 
 Le configurazioni di dipendenza di questo plugin sono ereditate dal plugin ``java``.
 
-### Plugin java-library
+### Plugin ``java-library``
 
 Il plugin ``java-library`` estende il plugin ``java`` e serve a facilitare la creazione di una libreria che deve essere "consumata" da altre applicazioni.
 
@@ -530,7 +530,7 @@ plugins {
 }
 ```
 
-### Plugin war
+### Plugin ``war``
 
 Il plugin ``war`` estende il plugin ``java`` e serve a facilitare la creazione di un'applicazione web. L'applicazione viene impacchettata come file "war", e la generazione del file "jar" (ereditata dal plugin ``java``) viene disabilitata.
 
@@ -554,7 +554,7 @@ plugins {
 }
 ```
 
-### Plugin Gretty
+### Plugin ``gretty``
 
 Gretty è un plugin che serve ad automatizzare ulteriormente la gestione del progetto. Permette di scaricare automaticamente il server, di avviarlo, riavviarlo e stopparlo, ed ancora di effettuare il deploy dell'applicazione web sul server.
 
@@ -589,7 +589,7 @@ Una scelta opinabile riguarda il salvataggio dei log del server nella cartella "
     loggingLevel 'TRACE'     // (loggingLevel 'ALL', 'DEBUG', 'ERROR', 'INFO', 'OFF', 'TRACE', 'WARN')
 ```
 
-### Plugin eclipse-wtp
+### Plugin ``eclipse-wtp``
 
 eclipse-wtp è un plugin che estende il plugin ``eclipse`` e serve ad automatizzare la creazione di file necessari ad Eclipse IDE.
 
