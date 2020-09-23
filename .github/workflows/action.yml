@@ -22,4 +22,4 @@ jobs:
       with:
         files: .
         config_file: ".markdownlint.yml"
-        ignore_files: "content/interesting, publish"
+        ignore_files: "'content/interesting/** publish/**'"
