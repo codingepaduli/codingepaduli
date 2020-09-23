@@ -407,7 +407,6 @@ Per deployare le macchine esistono diverse strategie:
 - deploy via FTP
 - deploy attraverso i servizi Heroku o Atlas
 
-
 ```ruby
 config.push.define "ftp" do |push|
   push.host = "ftp.company.com"

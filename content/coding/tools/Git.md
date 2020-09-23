@@ -362,10 +362,10 @@ git remote -v
 L'output mostrato è il seguente:
 
 ```output
-gitlab	https://gitlab.com/codingepaduli/codingepaduli.git (fetch)
-gitlab	https://gitlab.com/codingepaduli/codingepaduli.git (push)
-origin	https://github.com/codingepaduli/codingepaduli.git (fetch)
-origin	https://github.com/codingepaduli/codingepaduli.git (push)
+gitlab https://gitlab.com/codingepaduli/codingepaduli.git (fetch)
+gitlab https://gitlab.com/codingepaduli/codingepaduli.git (push)
+origin https://github.com/codingepaduli/codingepaduli.git (fetch)
+origin https://github.com/codingepaduli/codingepaduli.git (push)
 ```
 
 Come si nota, i riferimenti remoti per le operazioni di invio e ricezione dati ("push" e "fetch") possono essere differenti.
@@ -382,6 +382,7 @@ Si nota che in questo caso viene sincronizzato il ramo di sviluppo principale **
 ## Branches
 
 ### Modalità di lavoro con i Branches
+
 Il repository principale ha un ramo di sviluppo principale chiamato **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con git.
 
 Tipicamente sul repository vengono creati diversi branches (rami di sviluppo) per le diverse funzionalità da sviluppare, e su ogni singolo branch (ramo) viene sviluppata una singola funzionalità da parte di uno o più sviluppatori del team.
@@ -500,7 +501,6 @@ I passi consistono nel creare una "New pull request", cliccando sul relativo pul
 Il servizio online mostra una coppia di branch da selezionare per la fusione:
 
 ![GitHub - Nuova Pull Request - passo 2](/static/coding/tools/GitHub-NewPullRequest-step2.png "GitHub - Nuova Pull Request - passo 2")
-
 
 L'utente deve selezionare come base il ramo che deve contenere la modifica, in questo caso il ramo principale (master), e, come ramo da confrontare, il ramo "git-merge" del quale effettuare la fusione. Appena viene selezionato, comparirà la seguente finestra:
 
