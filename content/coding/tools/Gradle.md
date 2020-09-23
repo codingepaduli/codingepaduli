@@ -14,7 +14,7 @@ summary: "Gradle è un sistema open source per automatizzare le fasi di compilaz
 
 # Gradle
 
-[Gradle](https://gradle.org/) è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo. 
+[Gradle](https://gradle.org/ "Sito web di Gradle") è un sistema open source per automatizzare le fasi di compilazione, test, pacchettizzazione, deploy e tutte le altre fasi di sviluppo.
 
 Nel corso di questo articolo si descriveranno i concetti fondamentali (validi per qualsiasi tipo di progetto) e si utilizzerà Gradle per la gestione di un progetto Java.
 
@@ -25,7 +25,7 @@ Nel corso di questo articolo si descriveranno i concetti fondamentali (validi pe
 Il comando da utilizzare per creare un nuovo progetto è:
 
 ```bash
-gradle init 
+gradle init
 ```
 
 Attraverso una procedura guidata, all'utente vengono chieste le opzioni sulle quali creare un progetto:
@@ -64,11 +64,11 @@ Source package (default: gradle-example): example
 
 ### Gradle wrapper
 
-La creazione di un progetto basato su Gradle comporta anche la creazione di un "wrapper" di Gradle.  
+La creazione di un progetto basato su Gradle comporta anche la creazione di un "wrapper" di Gradle.
 
 Questo "wrapper" permette a tutti gli utenti che non hanno installato Gradle di poter comunque eseguire i task di Gradle, dalla compilazione all'esecuzione, poichè scarica una versione di Gradle nella macchina dell'utente.
 
-Il wrapper si può eseguire attraverso il comando ``gradlew`` per Linux e ``gradlew.bat`` per Windows. 
+Il wrapper si può eseguire attraverso il comando ``gradlew`` per Linux e ``gradlew.bat`` per Windows.
 
 Se presente il file ``gradlew`` per Linux o ``gradlew.bat`` per Windows, allora è buona norma utilizzare il wrapper per eseguire tutti i task.
 
@@ -77,25 +77,25 @@ Se presente il file ``gradlew`` per Linux o ``gradlew.bat`` per Windows, allora 
 Creato il progetto, è possibile eseguire, nella cartella principale di progetto, i seguenti task (utilizzando il wrapper di gradle):
 
 - Task di pulizia (cancella la cartella ``build``):
-  
+
 ```bash
   gradlew clean
 ```
 
 - Task di compilazione dei sorgenti java, di creazione del pacchetto "jar" e di creazione dei pacchetti da distribuire:
-  
+
 ```bash
   gradlew build
 ```
 
 - Task di esecuzione dell'applicazione java:
-  
+
 ```bash
   gradlew run
 ```
 
 - Task per la generezione della documentazione dei sorgenti:
-  
+
 ```bash
   gradlew javadoc
 ```
@@ -186,7 +186,7 @@ plugins {
 }
 ```
 
-Gradle fornisce di base una serie di plugin "core", che sono elencati all'indirizzo: [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html).
+Gradle fornisce di base una serie di plugin "core", che sono elencati all'indirizzo: [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html "Gradle - Pagina web contenente l'elenco di plugin 'core' disponibili").
 
 Per importare un plugin "core" di Gradle è necessario semplicemente indicarne il nome nella sezione "plugins" del file ``build.gradle``.
 
@@ -195,7 +195,7 @@ Tra i vari plugin core elenchiamo:
 - Il Build Init plugin, che fornisce il task di ``init`` per la creazione di nuovi progetti; Non necessita configurazione;
 
 - Il Base Plugin, che fornisce i vari task quali ``clean`` e ``build``; Deve essere configurato:
-  
+
 ```groovy
   plugins {
       id 'base'
@@ -203,9 +203,9 @@ Tra i vari plugin core elenchiamo:
 ```
 
 - Il Project Report Plugin, che fornisce funzionalità basilari per la gestione dei report di progetto attraverso il task ``projectReport``;
-  
+
   Questo plugin deve essere configurato:
-  
+
 ```groovy
   plugins {
       id 'project-report'
@@ -229,9 +229,9 @@ tasks - Displays the tasks runnable from root project 'example'.
 ...
 ```
 
-Oltre ai plugin "core" di Gradle, sono disponibili una serie di plugin pubblicati dalla comunità sul portale Gradle all'indirizzo: [https://plugins.gradle.org/](https://plugins.gradle.org/). 
+Oltre ai plugin "core" di Gradle, sono disponibili una serie di plugin pubblicati dalla comunità sul portale Gradle all'indirizzo: [https://plugins.gradle.org/](https://plugins.gradle.org/ "Gradle - Pagina web contenente l'elenco di plugin pubblicati dalla comunità").
 
-Questi plugin forniscono l'integrazione di tools quali Jetty (con plugin org.gretty), SpotBugs (con plugin com.github.spotbugs) e tanti altri. 
+Questi plugin forniscono l'integrazione di tools quali Jetty (con plugin org.gretty), SpotBugs (con plugin com.github.spotbugs) e tanti altri.
 
 Per applicare un plugin dal portale, è necessario indicare nome e versione, come da esempio seguente:
 
@@ -273,7 +273,7 @@ L'output del comando è il seguente:
 Hello world!
 ```
 
-Oltre ai task personalizzati aggiunti al progetto, è possibile comunque invocare i task messi a disposizione dai plugin configurati nel progetto. 
+Oltre ai task personalizzati aggiunti al progetto, è possibile comunque invocare i task messi a disposizione dai plugin configurati nel progetto.
 
 Per visualizzare una lista di task disponibili in un progetto,  dalla cartella principale del progetto è necessario lanciare:
 
@@ -281,7 +281,7 @@ Per visualizzare una lista di task disponibili in un progetto,  dalla cartella p
 gradlew tasks
 ```
 
-Gradle non esegue i task secondo l'ordine presente sulla linea di comando, ma crea un proprio piano di esecuzione dei task. Per visualizzarlo, è necessario aggiungere il flag ``--dry-run``  alla linea di comando. 
+Gradle non esegue i task secondo l'ordine presente sulla linea di comando, ma crea un proprio piano di esecuzione dei task. Per visualizzarlo, è necessario aggiungere il flag ``--dry-run``  alla linea di comando.
 
 Ad esempio, per visualizzare il piano di esecuzione dei task per il comando ``build``:
 
@@ -319,12 +319,12 @@ In un progetto si possono avere diversi tipi di dipendenze:
 
 - ...
 
-Una configurazione rappresenta proprio l'insieme di dipendenze necessarie ad un preciso scopo ed è rappresentata da un nome univoco. 
+Una configurazione rappresenta proprio l'insieme di dipendenze necessarie ad un preciso scopo ed è rappresentata da un nome univoco.
 
 Una congiruazione può dichiarare differenti tipi di dipendenze:
 
 - dipendenza da moduli (pubblicati sui repository, tipo Maven Central o Ivy). Si può usare nella seguente forma:
-  
+
 ```groovy
   dependencies {
       nomeConfigurazione: 'org.hibernate:hibernate:3.0.5'
@@ -332,7 +332,7 @@ Una congiruazione può dichiarare differenti tipi di dipendenze:
 ```
 
 - dipendenza da file presenti su disco. Si può usare nella seguente forma:
-  
+
 ```groovy
   dependencies {
       nomeConfigurazione: files('libs/lang.jar', 'libs/log4j.jar')
@@ -341,7 +341,7 @@ Una congiruazione può dichiarare differenti tipi di dipendenze:
 ```
 
 - dipendenza tra progetti, da usare nella seguente forma:
-  
+
 ```groovy
   dependencies {
       nomeConfigurazione project(':shared')
@@ -365,7 +365,7 @@ Il motivo per cui una dipendenza deve essere visibile al consumatore è che un'i
  Un esempio d'uso delle dipendenze quindi può essere il seguente:
 
 ```groovy
-dependencies {    
+dependencies {
     api 'org.apache.httpcomponents:httpclient:4.5.7'
     implementation 'org.apache.commons:commons-lang3:3.5'
 }
@@ -375,7 +375,7 @@ Supponendo di avere le dipendenze appena citate nel nostro progetto personale, s
 
 ```java
 int getResponseCode(HttpResponse response) throws ClientProtocolException {
-    ... 
+    ...
 }
 ```
 
@@ -411,13 +411,13 @@ Per configurare il progetto come "progetto java", bisogna aggiungere uno dei plu
 
 Esistono diversi tipi di plugin Java, ognuno con il proprio specifico compito:
 
-- ~~``java``~~:  è un plugin da non usare direttamente, poichè viene esteso dai plugin java ``java-library`` e ``application``che sono più specifici. Questo plugin serve solo a fornire le operazioni e le configurazioni basilari per la gestione di un progetto java. 
+- ~~``java``~~:  è un plugin da non usare direttamente, poichè viene esteso dai plugin java ``java-library`` e ``application``che sono più specifici. Questo plugin serve solo a fornire le operazioni e le configurazioni basilari per la gestione di un progetto java.
 
 - ``java-library``: è un plugin che estende il plugin ``java`` ed è specializzato per la gestione di una libreria java. La differenza chiave di questo plugin è l'uso di due configurazioni (in ottica produttore / consumatore) esposte;
 
 - ``application``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione java che deve essere eseguibile (anche durante lo sviluppo) e deve includere script di avvio per il sistema operativo considerato;
 
-- ``java-platform``: è un plugin che permette la dichiarazione di una piattaforma, uno speciale tipo di componente software che non contiene sorgenti ma solo altre librerie. Non può essere usato nè in combinazione con il plugin ``java-library`` nè in combinazione con il plugin ``java-application``; 
+- ``java-platform``: è un plugin che permette la dichiarazione di una piattaforma, uno speciale tipo di componente software che non contiene sorgenti ma solo altre librerie. Non può essere usato nè in combinazione con il plugin ``java-library`` nè in combinazione con il plugin ``java-application``;
 
 - ``war``: è un plugin che estende il plugin ``java`` ed è specializzato nella gestione di un'applicazione web;
 
@@ -443,7 +443,7 @@ I task a messi a disposizione dal plugin ``java`` sono i seguenti:
 
 Di seguito se ne riporta un grafo completo:
 
-![](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png)
+![Gradle - Grafo dei task](https://docs.gradle.org/current/userguide/img/javaPluginTasks.png "Gradle - Grafo dei task")
 
 Le configurazioni di dipendenza messe a disposizione dal plugin ``java`` per le fasi di compilazione ed esecuzione sono le seguenti:
 
@@ -463,8 +463,8 @@ Allo stesso modo sono messe a disposizione, per le fasi di compilazione ed esecu
 - ``testImplementation`` estende ~~``testCompile``~~ ed ``implementation``: dipendenze necessarie per la fase di consumazione ed esecuzione dei tests;
 - ``testCompileOnly``: dipendenze necessarie solo per la fase di compilazione dei tests;
 - ``testCompileClasspath`` estende ~~``testCompile``~~, ``testCompileOnly`` e ``testImplementation``;
-- ~~``testRuntime``~~: (Deprecated) estende ~~``runtime``~~ e ~~``testCompile``~~;  
-- ``testRuntimeOnly`` estende ``runtimeOnly``: dipendenze necessarie solo per la fase di esecuzione dei tests;  
+- ~~``testRuntime``~~: (Deprecated) estende ~~``runtime``~~ e ~~``testCompile``~~;
+- ``testRuntimeOnly`` estende ``runtimeOnly``: dipendenze necessarie solo per la fase di esecuzione dei tests;
 - ``testRuntimeClasspath`` estende ~~``testRuntime``~~, ``testRuntimeOnly`` e ``testImplementation``.
 
 ## Plugin application
@@ -556,7 +556,7 @@ plugins {
 
 ### Plugin Gretty
 
-Gretty è un plugin che serve ad automatizzare ulteriormente la gestione del progetto. Permette di scaricare automaticamente il server, di avviarlo, riavviarlo e stopparlo, ed ancora di effettuare il deploy dell'applicazione web sul server. 
+Gretty è un plugin che serve ad automatizzare ulteriormente la gestione del progetto. Permette di scaricare automaticamente il server, di avviarlo, riavviarlo e stopparlo, ed ancora di effettuare il deploy dell'applicazione web sul server.
 
 I task che il plugin mette a disposizione sono molteplici, ma gli essenziali sono:
 
@@ -569,7 +569,7 @@ La configurazione del proprio progetto per l'uso del plugin prevede la dichiaraz
 
 ```groovy
 plugins {
-    id 'org.gretty' version '3.0.1' 
+    id 'org.gretty' version '3.0.1'
 }
 
 
@@ -582,9 +582,9 @@ gretty {
 
 Una scelta opinabile riguarda il salvataggio dei log del server nella cartella "home" dell'utente. Per cambiare tale scelta, si utilizzano le seguenti proprietà:
 
-```
-    // logging configuration 
-    logDir "${buildDir}/log" // pay attention to double quote 
+```output
+    // logging configuration
+    logDir "${buildDir}/log" // pay attention to double quote
     logFileName 'calcolatrice'
     loggingLevel 'TRACE'     // (loggingLevel 'ALL', 'DEBUG', 'ERROR', 'INFO', 'OFF', 'TRACE', 'WARN')
 ```
@@ -620,7 +620,7 @@ plugins {
     id 'eclipse-wtp'
 }
 
-// all these tasks to execute by default. 
+// all these tasks to execute by default.
 // To get a complete list, run ./gradle run --dry-run
 defaultTasks 'clean', 'compileJava', 'jar', 'assemble', 'compileTestJava', 'test', 'build', 'eclipse', 'javadoc', 'projectReport', 'run'
 
@@ -636,12 +636,12 @@ description = "Java application"
 
 dependencies {
     // These dependencies are NOT exported to consumers.
-    implementation 'org.apache.commons:commons-math3:3.6.1' 
+    implementation 'org.apache.commons:commons-math3:3.6.1'
 
     // This dependency is used by Gradle.
     implementation 'com.google.guava:guava:28.1-jre'
 
-    // These dependencies are only used for unit test 
+    // These dependencies are only used for unit test
     testImplementation 'junit:junit:4.12'
 }
 
@@ -670,12 +670,12 @@ Di seguito un esempio completo per la gestione di un'applicazione web Java con G
 plugins {
     // add support for building a Java application.
     id 'war'
-    // add support for generating project's reports.    
+    // add support for generating project's reports.
     id 'project-report'
     // add support for Eclipse IDE.
     id 'eclipse-wtp'
     // add support for managing the servlet containers.
-    id 'org.gretty' version '3.0.1' 
+    id 'org.gretty' version '3.0.1'
 }
 
 // all these tasks to execute by default.
@@ -709,9 +709,9 @@ gretty {
     servletContainer 'jetty9.4'
     httpPort 8080
     contextPath '/web'
-    
-    // logging configuration 
-    logDir "${buildDir}/log" // pay attention to double quote 
+
+    // logging configuration
+    logDir "${buildDir}/log" // pay attention to double quote
     logFileName 'calcolatrice'
     loggingLevel 'TRACE'     // (loggingLevel 'ALL', 'DEBUG', 'ERROR', 'INFO', 'OFF', 'TRACE', 'WARN')
 
@@ -728,38 +728,38 @@ Per abilitare le chiamate CORS (Cross-Origin resource sharing) sul server Jetty,
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns="http://java.sun.com/xml/ns/javaee" 
-	xmlns:web="http://java.sun.com/xml/ns/javaee" 
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
-	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
-	version="3.0">	
-	<filter>
-	   <filter-name>cross-origin</filter-name>
-	   <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
-	   <init-param>
-	       <param-name>allowedOrigins</param-name>
-	       <param-value>*</param-value>
-	   </init-param>
-	   <init-param>
-	       <param-name>allowedMethods</param-name>
-	       <param-value>GET,POST,OPTIONS,DELETE,PUT,HEAD</param-value>
-	   </init-param>
-	   <init-param>
-	       <param-name>allowedHeaders</param-name>
-	       <param-value>origin, content-type, accept, authorization</param-value>
-	   </init-param>
-	 </filter>
-	 <filter-mapping>
-	     <filter-name>cross-origin</filter-name>
-	     <url-pattern>*</url-pattern>
-	 </filter-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:web="http://java.sun.com/xml/ns/javaee"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+  <filter>
+     <filter-name>cross-origin</filter-name>
+     <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>
+     <init-param>
+         <param-name>allowedOrigins</param-name>
+         <param-value>*</param-value>
+     </init-param>
+     <init-param>
+         <param-name>allowedMethods</param-name>
+         <param-value>GET,POST,OPTIONS,DELETE,PUT,HEAD</param-value>
+     </init-param>
+     <init-param>
+         <param-name>allowedHeaders</param-name>
+         <param-value>origin, content-type, accept, authorization</param-value>
+     </init-param>
+   </filter>
+   <filter-mapping>
+       <filter-name>cross-origin</filter-name>
+       <url-pattern>*</url-pattern>
+   </filter-mapping>
 </web-app>
 ```
 
 Come si nota, il filtro ``org.eclipse.jetty.servlets.CrossOriginFilter``, a cui è stato assegnato il nome ``cross-origin``, abilita le richieste:
- - effettuate attraverso HTTP **GET, POST, OPTIONS, DELETE, PUT, HEAD**, (come indicato in ``allowedMethods``);
- - di qualsiasi risorsa (quindi su qualsiasi URL, come indicato in ``url-pattern``);
- - provenienti da qualsiasi origine (come indicato in ``allowedOrigins``);
- - solo se indicano nell'header HTTP uno dei parametri a scelta tra **origin, content-type, accept, authorization** (come indicato in ``allowedHeaders``).
 
+- effettuate attraverso HTTP **GET, POST, OPTIONS, DELETE, PUT, HEAD**, (come indicato in ``allowedMethods``);
+- di qualsiasi risorsa (quindi su qualsiasi URL, come indicato in ``url-pattern``);
+- provenienti da qualsiasi origine (come indicato in ``allowedOrigins``);
+- solo se indicano nell'header HTTP uno dei parametri a scelta tra **origin, content-type, accept, authorization** (come indicato in ``allowedHeaders``).

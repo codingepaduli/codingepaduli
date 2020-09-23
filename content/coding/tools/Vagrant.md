@@ -14,7 +14,7 @@ summary: "Vagrant, uno strumento open-source per la creazione e la gestione di a
 
 # Vagrant
 
-Vagrant, uno strumento open-source per la creazione e la gestione di ambiente virtualizzato attraverso un workflow, seguendo la metodologia DevOps. 
+Vagrant, uno strumento open-source per la creazione e la gestione di ambiente virtualizzato attraverso un workflow, seguendo la metodologia DevOps.
 
 Per workflow si intende l'automazione parziale o totale di un'attività. Nel caso di Vagrant, il workflow consiste nella creazione e gestione delle macchine virtuali che fanno parte dell'ambiente virtuale.
 
@@ -22,19 +22,19 @@ Funziona con molti software "hypervisor", denominati providers, tra cui l'hyperv
 
 ## Concetti base di Vagrant
 
-Vagrant crea le macchine virtuali partendo da dei "box", ovvero delle immagini di macchine virtuali già configurate con determinati sistemi operativi, che possono essere scelti all'indirizzo: 
-[https://vagrantcloud.com/search](https://vagrantcloud.com/search). 
+Vagrant crea le macchine virtuali partendo da dei "box", ovvero delle immagini di macchine virtuali già configurate con determinati sistemi operativi, che possono essere scelti all'indirizzo:
+[https://vagrantcloud.com/search](https://vagrantcloud.com/search "Vagrant - Pagina web contenente i 'box'").
 
 Quando si crea una macchina virtuale (a partire da un box), Vagrant crea un file, di nome "Vagrantfile", che contiene la configurazione della macchina virtuale creata. Questo file può essere esteso per creare un'intero ambiente virtuale composto da più macchine virtuali.
 
 Quando si vuole avviare, stoppare, sospendere o riavviare una macchina virtuale, Vagrant deve leggere il file "Vagrantfile" che descrive l'ambiente virtuale. Per questo motivo, i comandi di  Vagrant devono essere eseguiti nella stessa cartella che contiene il "Vagrantfile".
 
-Si consiglia quindi la creazione di una nuova cartella per ogni macchina virtuale (o ambiente virtuale) che si intende creare ed eseguire i comandi di creazione e gestione dell macchina virtuale (o dell'ambiente virtuale) nella cartella contenente il Vagrantfile. 
+Si consiglia quindi la creazione di una nuova cartella per ogni macchina virtuale (o ambiente virtuale) che si intende creare ed eseguire i comandi di creazione e gestione dell macchina virtuale (o dell'ambiente virtuale) nella cartella contenente il Vagrantfile.
 
 ## Gestione macchine virtuali
 
 Per creare una macchina virtuale si deve scegliere il nome del box.
-Una volta scelto il box della macchina virtuale (sul sito di Vagrant), ad esempio "debian/buster64", si può creare la macchina virtuale attraverso il comando seguente: 
+Una volta scelto il box della macchina virtuale (sul sito di Vagrant), ad esempio "debian/buster64", si può creare la macchina virtuale attraverso il comando seguente:
 
 ```bash
 vagrant init debian/buster64
@@ -68,7 +68,7 @@ Anche per SSH il login avviene il più delle volte con username "vagrant" e pass
 logout
 ```
 
-La  macchina virtuale si può avviare anche per nome o ID, per cui si esegue (nella stessa cartella che contiene il Vagrantfile) il comando:
+La macchina virtuale si può avviare anche per nome o ID, per cui si esegue (nella stessa cartella che contiene il Vagrantfile) il comando:
 
 ```bash
 vagrant up nome_macchina # avvia la macchina virtuale per nome
@@ -135,13 +135,13 @@ vagrant box remove debian/buster64
 Per un elenco dei box aggiungi:
 
 ```bash
-vagrant box list 
+vagrant box list
 ```
 
 Per un elenco dei box da aggiornare:
 
 ```bash
-vagrant box list outdated --global 
+vagrant box list outdated --global
 ```
 
 Per aggiornare i box:
@@ -166,11 +166,11 @@ vagrant box prune --dry-run
 
 Il Vagrantfile è il file che contiene la configurazione dell'ambiente virtuale ed è scritto in linguaggio ruby. In esso sono specificate le configurazioni di tutte le macchina virtuali appartenenti all'ambiente virtuale.
 
-Per fare un riferimento alla sintassi del file, un blocco di istruzioni in Ruby è definito da 
+Per fare un riferimento alla sintassi del file, un blocco di istruzioni in Ruby è definito da
 
 ```ruby
-do |variabile| 
-	# blocco istruzioni
+do |variabile|
+  # blocco istruzioni
 end
 ```
 
@@ -196,7 +196,7 @@ Partendo da queste poche informazioni sulla sintassi, possiamo analizzare il Vag
 Vagrant.configure("2") do |config|
   config.vm.box = "debian/buster64"
   config.vm.hostname = "debianBuster"
-  
+
   config.vm.provider "virtualbox" do |vb|
     vb.name = "exe1DebianBuster"
     vb.gui = true
@@ -207,6 +207,7 @@ end
 ```
 
 Si notano i due blocchi descritti in precedenza che definiscono le seguenti variabili:
+
 - config indica l'ambiente virtuale (la configurazione desiderata);
 - vb indica il provider della macchina virtuale indicata da config.vm
 
@@ -259,7 +260,7 @@ Per un elenco completo di tutte le proprietà che è possibile definire, si facc
 
 Tra le proprietà del provider (hypervisor) che sono ancora definite nel Vagrantfile visto precedentemente sono:
 
-- il nome della macchina virtuale per il provider (hypervisor) 
+- il nome della macchina virtuale per il provider (hypervisor)
 
 ```ruby
 vb.name = "exe1DebianBuster"
@@ -313,33 +314,33 @@ end
 
 All'interno dell'ambiente virtuale è possibile definire più macchine virtuali, ognuna con la propria configurazione ed il proprio hypervisor (provider).
 
-Per definire 2 macchine virtuali assegnate rispettivamente alle variabili "web" e "database", si devono creare due blocchi del tipo: 
+Per definire 2 macchine virtuali assegnate rispettivamente alle variabili "web" e "database", si devono creare due blocchi del tipo:
 
 ```ruby
 Vagrant.configure("2") do |config|
-	config.vm.define "web" do |web|
+  config.vm.define "web" do |web|
         web.vm.box = "debian/buster64"
         web.vm.hostname = 'web'
-        
+
         web.vm.provider "virtualbox" do |vb|
-  			vb.gui = true
-          	vb.name = "vm1-Debian"
-  			vb.memory = "1024"
+        vb.gui = true
+            vb.name = "vm1-Debian"
+        vb.memory = "1024"
             vb.cpus = "2"
-   		end
+      end
     end
-      
-	config.vm.define "database" do |database|
-    	database.vm.box = "debian/buster64"
+
+  config.vm.define "database" do |database|
+      database.vm.box = "debian/buster64"
         database.vm.hostname = 'database'
-        
+
         database.vm.provider "virtualbox" do |vb|
-  			vb.gui = true
-          	vb.name = "vm2-Debian"
-  			vb.memory = "1024"
+        vb.gui = true
+            vb.name = "vm2-Debian"
+        vb.memory = "1024"
             vb.cpus = "2"
-   		end
-	end
+      end
+  end
 end
 ```
 
@@ -351,18 +352,17 @@ vm2 = {'name' => "databas", 'v-name' => "vm2-Debian", 'ip' => "192.168.5.225"}
 vms = [vm1, vm2]
 
 Vagrant.configure(2) do |config|
-	vms.each do |node|
-    	
-        config.vm.define node['name'] do |node_config|
-        	node['name'].vm.box = "debian/buster64"
-            node['name'].vm.hostname = node['name'] 
+  vms.each do |node|
+                config.vm.define node['name'] do |node_config|
+          node['name'].vm.box = "debian/buster64"
+            node['name'].vm.hostname = node['name']
             node['name'].vm.network "private_network", ip: node['ip']
 
             node['name'].vm.provider "virtualbox" do |vb|
-				vb.gui = true
-				vb.name = node['v-name']
-				vb.memory = "1024"
-				vb.cpus = "2"
+        vb.gui = true
+        vb.name = node['v-name']
+        vb.memory = "1024"
+        vb.cpus = "2"
             end
         end
     end
@@ -402,14 +402,15 @@ vagrant push
 ```
 
 Per deployare le macchine esistono diverse strategie:
+
 - deploy in locale
 - deploy via FTP
 - deploy attraverso i servizi Heroku o Atlas
 
 
 ```ruby
-config.push.define "ftp" do |push| 
-	push.host = "ftp.company.com" 
+config.push.define "ftp" do |push|
+  push.host = "ftp.company.com"
     push.username = "username"
     push.password = "mypassword"
 end

@@ -30,7 +30,7 @@ Quando un secondo studente si reca nello studio per consegnare il materiale, ved
 
 Un terzo studente che si rechi nello studio effettua le stesse operazioni degli altri due studenti e cosi via fino al completamento del lavoro.
 
-In queste operazioni può capitare che il professore e gli studenti modifichino uno stesso capitolo o uno stesso disegno. In questa situazione, c'è bisogno che entrambe le modifiche siano fuse in una terza del capitolo o del disegno che viene poi inclusa nel quaderno ad anelli del professore. Anche questa operazione di fusione viene indicata nel registro. 
+In queste operazioni può capitare che il professore e gli studenti modifichino uno stesso capitolo o uno stesso disegno. In questa situazione, c'è bisogno che entrambe le modifiche siano fuse in una terza del capitolo o del disegno che viene poi inclusa nel quaderno ad anelli del professore. Anche questa operazione di fusione viene indicata nel registro.
 
 Si fa notare inoltre che nessuna modifica o cancellazione viene cestinata, ma tutte vengono conservate, in questo modo se il professore preferisce la prima versione del capitolo, quindi senza le modifiche apportate successivamente, la può recuperare e la sostituisce nel quaderno ad anelli presente nello studio, indicando sempre nel registro questa operazione.
 
@@ -44,7 +44,7 @@ E' utile notare che, in questo scenario, è possibile utilizzare molteplici moda
 
 Si può utilizzare una modalità di lavoro centralizzata, in cui tutti i componenti riportano il lavoro sul quaderno ad anelli del professore.
 
-Si può utilizzare una modalità di lavoro con team leader, che si occupa di coordinare il lavoro e quindi riportare il lavoro degli studenti sul quaderno ad anelli del professore. 
+Si può utilizzare una modalità di lavoro con team leader, che si occupa di coordinare il lavoro e quindi riportare il lavoro degli studenti sul quaderno ad anelli del professore.
 
 Si può utilizzare una modalità di lavoro detta "dittatore - tenente", in cui il lavoro è suddiviso in differenti sotto-progetti, ognuno dei quali è gestito da un team leader, detto "tenente", che fa riferimento ad un proprio quaderno ad anelli (sempre appartenente allo studio del professore). Il professore coordina il lavoro dei vari "tenenti" e si occupa di recuperare il lavoro dai quaderni ad anelli dei vari "tenenti" per comporre il progetto completo da tenere nel quaderno ad anelli presente nello studio. Questo metodo di lavoro, tra l'altro, è quello utilizzato per lo sviluppo del kernel Linux, in cui Linus Torvalds è il dittatore.
 
@@ -56,7 +56,7 @@ I concetti principali sui quali si basa git sono:
 
 - L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente i lavori presenti nell'area di lavoro. Nell'analogia precedente, è rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
 
-- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente, è rappresentato dal completamento di un lavoro che viene spostato dall'area di lavoro (la scrivania) al proprio quaderno ad anelli. 
+- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente, è rappresentato dal completamento di un lavoro che viene spostato dall'area di lavoro (la scrivania) al proprio quaderno ad anelli.
 
 - Le **versioni**: le operazioni di commit generano una nuova versione del lavoro svolto. Il lavoro precedente non viene cancellato, ma salvato, in modo da poter sempre tornare ad una versione precedente. L'ultima versione sul ramo di sviluppo sul quale lavora l'utente è detta **HEAD**.
 
@@ -72,7 +72,7 @@ I concetti principali sui quali si basa git sono:
 
 ## Gestione repository
 
-I servizi online permettono la gestione di un repository git tramite interfaccia web, che rende semplice l'interazione con l'utente. 
+I servizi online permettono la gestione di un repository git tramite interfaccia web, che rende semplice l'interazione con l'utente.
 
 Per la creazione di un repository remoto. ci si può registrare su uno dei vari servizi online. Tra i più noti ci sono GitHub, GitLab e BitBucket.
 
@@ -82,64 +82,69 @@ Una volta registrati e creato il proprio repository, si può procedere alla conf
 
 GitHub permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
 
-![Image](/static/coding/tools/GitHub-Repository-New.png "GitHub - New Repository")
+![GitHub - Nuovo Repository](/static/coding/tools/GitHub-Repository-New.png "GitHub - Nuovo Repository")
 
 Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
 
-![Image](/static/coding/tools/GitHub-Repository-URL.png "GitHub - Repository URL")
+![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-URL.png "GitHub - URL del Repository")
 
 L'indirizzo completo del repository su GitHub, non completamente riportato nell'immagine, è il seguente:
 
-https://github.com/codingepaduli/gitmergetutorial.git
+[https://github.com/codingepaduli/gitmergetutorial.git](https://github.com/codingepaduli/gitmergetutorial.git "GitHub - URL completo del Repository")
 
 ### Creazione repository su GitLab
 
 GitLab permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
 
-![Image](/static/coding/tools/GitLab-Repository-New.png "GitLab - New Repository")
+![GitLab - Nuovo Repository](/static/coding/tools/GitLab-Repository-New.png "GitLab - Nuovo Repository")
 
 Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
 
-![Image](/static/coding/tools/GitLab-Repository-URL.png "GitLab - Repository URL")
+![GitLab - URL del Repository](/static/coding/tools/GitLab-Repository-URL.png "GitLab - URL del Repository")
 
 L'indirizzo completo del repository su GitLab, non completamente riportato nell'immagine, è il seguente:
 
-https://gitlab.com/codingepaduli/gitmergetutorial.git
+[https://gitlab.com/codingepaduli/gitmergetutorial.git](https://gitlab.com/codingepaduli/gitmergetutorial.git "GitLab - URL completo del Repository")
 
-### Clonazione repository 
+### Clonazione repository
 
 Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione, attraverso il seguente comando:
 
-```
+```bash
 git clone https://github.com/codingepaduli/codingepaduli.git
 ```
 
 Si può verificare che il repository locale ha un riferimento al repository remoto, accedendo alla cartella creata ed utilizzando, al suo interno, il comando:
-```
+
+```bash
 git remote -v
 ```
 
 ### Prima configurazione del repository
 
 Git ha 3 livelli di configurazione:
+
 - configurazione di sistema, su linux si trova in ``/etc/gitconfig``, su Windows si trova in ``\Git\mingw64\etc\gitconfig``;
 - configurazione globale (o utente), si trova nella cartella Home nel file ``.gitconfig``);
 - configurazione locale al repository, si trova nella cartella ``.git``;
 
 Per verificare le configurazioni presenti ad ogni livello, si usano i seguenti comandi:
-```
+
+```bash
 git config --system --list
 git config --global --list
 git config --local --list
 ```
 
 E' buona norma evitare di usare la configurazione di sistema, disabilitandola attraverso il comando:
-```
+
+```bash
 git config --global user.useConfigOnly true
 ```
 
 Per configurare globalmente l'identità da utilizzare nei propri repository, si utilizzano i seguenti comandi:
-```
+
+```bash
 git config --global user.name "User"
 git config --global user.email "user@user.com"
 ```
@@ -149,17 +154,20 @@ Altra operazione generalmente consigliata è l'impostazione del carattere di fin
 Questa differenza di caratteri porta ad avere confusione quando un file è modificato sia da utenti Mac/Linux sia da utenti Windows. Molti editors su Windows sostituiscono i caratteri di fine riga LF con i caratteri CR + LF, oppure lasciano gli LF ma inseriscono CR + LF quando si preme invio.
 
 Una macchina windows deve quindi essere configurata per la conversione automatica da LF a CR + LF e viceversa:
-```
+
+```bash
 git config --global core.autocrlf true
 ```
 
 Una macchina Linux invece deve essere abilitata per la correzione automatica di tutti i file che arrivano dal repository trasformando i caratteri CR + LF con il carattere LF:
-```
+
+```bash
 git config --global core.autocrlf input
 ```
 
 Nella configurazione è utile anche impostare l'editor di riferimento:
-```
+
+```bash
 git config --global core.editor "atom --wait"
 ```
 
@@ -168,17 +176,20 @@ git config --global core.editor "atom --wait"
 Per creare una nuova versione del repository locale e poi sincronizzarla con il repository remoto, si può partire dalla creazione di tre file, ``file1.txt``, ``file2.txt`` e ``file3.txt``, in modo da seguire le varie operazioni.
 
 Creati i  tre file, si può aggiungere il primo file all'area di lavoro, chiamata **staging area** o **caching area**, utilizzando il comando:
-```
+
+```bash
 git add file1.txt
 ```
 
 Per visualizzare ora lo stato dei file, si utilizza il comando:
-```
+
+```bash
 git status
 ```
 
 L'output è il seguente:
-```
+
+```output
 Sul branch master
 Your branch is up to date with 'origin/master'.
 
@@ -197,12 +208,15 @@ Untracked files:
 Si nota che il file ``file1.txt`` risulta pronto per il commit ("to be committed"), mentre i file ``file2.txt`` e ``file3.txt`` risultano tra i file non tracciati ("untracked").
 
 Effettuando ulteriori modifiche al file ``file1.txt``, questo risulta modificato, come si nota visualizzando lo stato dei file attraverso il comando:
-```
+
+```bash
 git status
 ```
+
  tenendo presente che per ora si sta facendo riferimento al  semplicemente
 L'output è il seguente:
-```
+
+```output
 Sul branch master
 Your branch is up to date with 'origin/master'.
 
@@ -210,7 +224,7 @@ Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   file1.txt
+  modified:   file1.txt
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
@@ -220,6 +234,7 @@ Untracked files:
 ```
 
 I file possono avere 4 stati:
+
 - untracked: non tracciati da git;
 - modified: modificati rispetto all'ultimo commit;
 - staged (to be committed): pronti ad essere inclusi in un commit;
@@ -227,19 +242,20 @@ I file possono avere 4 stati:
 
 Per committare il primo file ``file.txt``, questo deve essere innanzitutto aggiunto all'area di lavoro, poi si può indicare che si vuole effettuare un commit dell'area di lavoro (la staging area).
 
-```
+```bash
 git add file1.txt
 git commit -m "Primo commit"
 ```
 
 A questo punto il commit è stato completato ed è stata salvata la nuova versione del repository locale. Per visualizzare la lista di commit e relative versioni del repository locale, si utilizza il comando:
-```
+
+```bash
 git log --pretty=format:"%h %s" --graph
 ```
 
 Questo comando permetta anche di avere una vista grafica delle varie versioni del repository locale.
 
-E' utile sottolineare che **HEAD** è solo un riferimento al commit (e quindi alla versione) su cui ci si trova, ovviamente riferito al ramo di sviluppo su cui si lavora. 
+E' utile sottolineare che **HEAD** è solo un riferimento al commit (e quindi alla versione) su cui ci si trova, ovviamente riferito al ramo di sviluppo su cui si lavora.
 
 Quando si scaricano le ultime versioni da repository remoto nel repository locale, il riferimento **HEAD** viene aggiornato all'ultimo commit scaricato da remoto, sempre per il ramo di sviluppo su cui si sta lavorando. Quando invece si effettua un commit in locale, il riferimento **HEAD** viene aggiornato a questo commit.
 
@@ -248,41 +264,48 @@ Quando si scaricano le ultime versioni da repository remoto nel repository local
 Effettuati i vari commit sul repository locale, ci si trova nella situazione in cui il repository locale si trova in una versione più avanzata rispetto al repository remoto (che è stato clonato).
 
 Per sincronizzare il lavoro (tutti i commit sul repository locale) con il repository remoto, si utilizza il comando:
-```
+
+```bash
 git push origin master
 ```
 
 L'operazione di push invia tutti i commit (che sono stati eseguiti sul repository locale) al repository remoto.
 
 Per effettuare l'operazione inversa, cioè per ricevere nel repository locale tutti i commit dal repository remoto (eseguiti dallo stesso utente attraverso computer differenti o eseguiti da altri utenti),  si utilizza il comando:
-```
+
+```bash
 git pull origin master
 ```
 
 ### Pulizia della staging area
 
 Può capitare di aggiungere per errore un file alla staging area, per cui lo si vuole togliere, senza però cancellarlo e perdere il contenuto, ma lasciandolo intatto nella cartella in cui si trova. Il comando da utilizzare è:
-```
+
+```bash
 git rm --cached file
 ```
 
 Se invece si è modificato un file in staging area e si vuole cancellare le ultime modifiche effettuate, lasciando il file con le modifiche precedenti in staging area, si utilizza il comando:
-```
+
+```bash
 git reset HEAD file
 ```
 
 Se si vuole ripristinare lo stato dell'ultimo commit, allora bisogna cancellare la staging area, e quindi si utilizza il comando:
-```
+
+```bash
 git checkout .
 ```
 
 Se si vuole cancellare tutti i file e cartelle che non sono tracciati, si utilizza il comando:
-```
+
+```bash
 git clean -fd
 ```
 
 Per cancellare la cache, in caso di "malfunzionamenti", si usa:
-```
+
+```bash
 git gc --auto
 ```
 
@@ -291,46 +314,54 @@ git gc --auto
 Quando si stanno applicando modifiche ai file e si deve interrompere l'attività per dare priorità ad altri lavori, si possono spostare i file modificati in un'area di conservazione temporanea: la **stashing area**.
 
 Per spostare tutti i file modificati e i file non tracciati in un'area temporanea si utilizza il comando:
-```
+
+```bash
 git stash
 ```
 
 Per visualizzare la lista di aree temporanee disponibili, si utilizza il comando:
-```
+
+```bash
 git stash list
 ```
 
 Questo comando elenca tutte le aree temporanee (che possono essere più di una) identificandole con un numero. Questo numero è utilizzato per identificare l'area temporanea.
 
 Per riportare nella staging area i file precedentemente spostati in stashing area, si utilizza il comando:
-```
+
+```bash
 git stash apply stash@{0}
 ```
 
-dove il numero zero è l'indice dell'area temporanea dalla quale prendere i file. 
+dove il numero zero è l'indice dell'area temporanea dalla quale prendere i file.
 
 Per eliminare un'area temporanea, si utilizza il comando:
-```
+
+```bash
 git stash drop stash@{0}
 ```
-dove il numero zero è l'indice dell'area temporanea da cancellare. 
+
+dove il numero zero è l'indice dell'area temporanea da cancellare.
 
 ### Lavorare con più origini remote
 
 Quando si effettua la clonazione di un repository, git crea un riferimento a questo repository remoto, chiamato **origin**:
 
 E' però possibile utilizzate più repository remoti, semplicemente aggiungendo un riferimento remoto, di seguito chiamato **gitlab**, al repository locale:
-```
+
+```bash
 git remote add gitlab https://gitlab.com/codingepaduli/codingepaduli.git
 ```
 
 Per visualizzare i repository remoti, si può utilizzare il comando:
-```
+
+```bash
 git remote -v
 ```
 
 L'output mostrato è il seguente:
-```
+
+```output
 gitlab	https://gitlab.com/codingepaduli/codingepaduli.git (fetch)
 gitlab	https://gitlab.com/codingepaduli/codingepaduli.git (push)
 origin	https://github.com/codingepaduli/codingepaduli.git (fetch)
@@ -340,7 +371,8 @@ origin	https://github.com/codingepaduli/codingepaduli.git (push)
 Come si nota, i riferimenti remoti per le operazioni di invio e ricezione dati ("push" e "fetch") possono essere differenti.
 
 Per sincronizzare il ramo di sviluppo principale **master** del repository remoto con il repository locale, si effettuano le classiche operazioni di **push** e **pull**, facendo però attenzione ad indicare l'origine **gitlab** appena creata.
-```
+
+```bash
 git push gitlab master
 git pull gitlab master
 ```
@@ -351,12 +383,12 @@ Si nota che in questo caso viene sincronizzato il ramo di sviluppo principale **
 
 ### Modalità di lavoro con i Branches
 Il repository principale ha un ramo di sviluppo principale chiamato **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con git.
- 
+
 Tipicamente sul repository vengono creati diversi branches (rami di sviluppo) per le diverse funzionalità da sviluppare, e su ogni singolo branch (ramo) viene sviluppata una singola funzionalità da parte di uno o più sviluppatori del team.
 
-Gli sviluppatori che lavorano su un singolo branch creano quindi la prima versione della funzionalità da sviluppare effettuando il primo commit, poi gli sviluppi proseguono e viene creata la seconda versione con un secondo commit, poi la terza versione a cui corrisponde un terzo commit, e cosi via. 
+Gli sviluppatori che lavorano su un singolo branch creano quindi la prima versione della funzionalità da sviluppare effettuando il primo commit, poi gli sviluppi proseguono e viene creata la seconda versione con un secondo commit, poi la terza versione a cui corrisponde un terzo commit, e cosi via.
 
-Quando la funzionalità viene completata, questo singolo ramo di sviluppo può essere fuso con il ramo di sviluppo principale (il master). 
+Quando la funzionalità viene completata, questo singolo ramo di sviluppo può essere fuso con il ramo di sviluppo principale (il master).
 
 Sul ramo principale vengono quindi fusi tutti i diversi rami di sviluppo e quindi di volta in volta le varie funzionalità vengono aggiunte al ramo di sviluppo principale **master**.
 
@@ -366,64 +398,76 @@ Volendo fare una seconda analogia, si può immaginare che in uno dei libri della
 
 ### Creazione e gestione dei branches
 
-Per creare un nuovo branch con nome **git-merge** si utilizza il comando: 
-```
+Per creare un nuovo branch con nome **git-merge** si utilizza il comando:
+
+```bash
 git branch git-merge
 ```
 
-Per visualizzare l'elenco di branches con l'ultimo commit presente si utilizza il comando
-```
+Per visualizzare l'elenco di branches con l'ultimo commit presente si utilizza il comando:
+
+```bash
 git branch -vv
 ```
 
 Per spostarsi sul ramo "git-merge" appena creato, si utilizza il comando:
-```
+
+```bash
 git checkout git-merge
 ```
+
 Git aggiunge i file alla staging area ed effettua il commit sul branch correntemente selezionato, i comandi di aggiunta e commit sono quelli già visti in precedenza, che per comodità si riportano nuovamente di seguito:
-```
+
+```bash
 git add file.txt
 git commit -m "aggiunto file.txt"
 ```
 
 Per visualizzare la lista di commit nei vari branches del repository, si è gia visto di utilizzare il comando di log con grafico:
-```
+
+```bash
 git log --pretty=format:"%h %s" --graph
 ```
 
 ### Sincronizzazione dei branches tra locale e remoto
 
 Quando si crea un branch in locale, si deve ricordare che il repository remoto non ne possiede una copia, e quindi un'azione di sincronizzazione genera errore. Per indicare di creare un branch anche in remoto ed al contempo sincronizzare il branch, si utilizza il comando:
-```
+
+```bash
 git push --set-upstream origin git-merge
 ```
 
 In remoto è possibile che siano stati creati o cancellati branch, quindi è necessario sincronizzare repository locale e remoto per poter avere disponibili tutti i branch.
 
 Per poter scaricare tutti i branch, si utilizza il comando:
-```
+
+```bash
 git fetch --all
 ```
 
 Per poter pulire i branch locali, cancellando quelli che anche in remoto sono stati rimossi, si utilizza il comando:
-```
+
+```bash
 git fetch --prune
 ```
 
 ### Merge dei rami in modalità a linea di comando
 
 Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "master", da linea di comando bisogna spostarsi sul ramo di sviluppo principale **master**.
-```
+
+```bash
 git checkout master
 ```
 
 Effettuato ciò, si può effettuare la fusione del ramo "git-merge", eseguendo il comando:
-```
+
+```bash
 git merge git-merge
 ```
 
 L'output indica che l'operazione è stata eseguita:
-```
+
+```output
 Merge made by the 'recursive' strategy.
  content/coding/tools/Git.md                          |  84 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
  coding/tools/Git.md | Bin 39000 -> 39569 bytes
@@ -431,16 +475,18 @@ Merge made by the 'recursive' strategy.
 ```
 
 E' possibile verificare che i 2 branch sono stati fusi in un'unico branch, attraverso il comando:
-```
+
+```bash
 git log --pretty=format:"%h %s" --graph
 ```
 
 L'output indica in forma grafica che i rami di sviluppo sono stati fusi e che effettivamente confluiscono in un'unico ramo:
-```
-*   b21a312 Merge pull request #1 
-|\  
+
+```output
+*   b21a312 Merge pull request #1
+|\
 | * ae55ada Updated posts about tools
-|/  
+|/
 ```
 
 ### Merge dei rami in modalità grafica
@@ -449,38 +495,38 @@ Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "master",
 
 I passi consistono nel creare una "New pull request", cliccando sul relativo pulsante:
 
-![Image](/static/coding/tools/GitHub-NewPullRequest-step1.png "GitHub - New Pull Request - step 1")
+![GitHub - Nuova Pull Request - passo 1](/static/coding/tools/GitHub-NewPullRequest-step1.png "GitHub - Nuova Pull Request - passo 1")
 
 Il servizio online mostra una coppia di branch da selezionare per la fusione:
 
-![Image](/static/coding/tools/GitHub-NewPullRequest-step2.png "GitHub - New Pull Request - step 2")
+![GitHub - Nuova Pull Request - passo 2](/static/coding/tools/GitHub-NewPullRequest-step2.png "GitHub - Nuova Pull Request - passo 2")
 
 
 L'utente deve selezionare come base il ramo che deve contenere la modifica, in questo caso il ramo principale (master), e, come ramo da confrontare, il ramo "git-merge" del quale effettuare la fusione. Appena viene selezionato, comparirà la seguente finestra:
 
-![Image](/static/coding/tools/GitHub-NewPullRequest-step3.png "GitHub - New Pull Request - step 3")
+![GitHub - Nuova Pull Request - passo 3](/static/coding/tools/GitHub-NewPullRequest-step3.png "GitHub - Nuova Pull Request - passo 3")
 
 La finestra indica, attraverso la scritta "Able to merge", che è possibile effettuare la fusione dei due rami in maniera automatica. A questo punto bisogna quindi solo confermare la creazione della pull request, cliccando sull'apposito tasto.
 
 L'utente può opzionalmente aggiungere un commento prima di completare l'operazione:
 
-![Image](/static/coding/tools/GitHub-NewPullRequest-step4.png "GitHub - New Pull Request - step 4")
+![GitHub - Nuova Pull Request - passo 4](/static/coding/tools/GitHub-NewPullRequest-step4.png "GitHub - Nuova Pull Request - passo 4")
 
 Ad operazione completata, nella sezione "Pull request" si può verificare che la nuova pull request è stata creata.
 
-![Image](/static/coding/tools/GitHub-MergePullRequest-step1.png "GitHub - Merge Pull Request - step 1")
+![GitHub - Merge della Pull Request - passo 1](/static/coding/tools/GitHub-MergePullRequest-step1.png "GitHub - Merge Pull Request - passo 1")
 
 Creata la pull request, si deve effettuare l'operazione di "merge della pull request". Per far ciò, l'utente deve selezionare la pull request nell'elenco precedente e quindi può visualizzare il dettaglio della pull request creata. Tra le altre cose, è descritto che il branch non ha conflitti e quindi l'operazione di fusione può essere effettuata automaticamente confermando l'operazione di "merge della pull request"..
 
-![Image](/static/coding/tools/GitHub-MergePullRequest-step2.png "GitHub - Merge Pull Request - step 2")
+![GitHub - Merge della Pull Request - passo 2](/static/coding/tools/GitHub-MergePullRequest-step2.png "GitHub - Merge Pull Request - passo 2")
 
 All'utente è richiesto l'inserimento di un commento opzionale e di completare l'operazione:
 
-![Image](/static/coding/tools/GitHub-MergePullRequest-step3.png "GitHub - Merge Pull Request - step 3")
+![GitHub - Merge della Pull Request - passo 3](/static/coding/tools/GitHub-MergePullRequest-step3.png "GitHub - Merge Pull Request - passo 3")
 
 Completata l'operazione, la pull request risulta correttamente fusa nel ramo di sviluppo indicato.
 
-![Image](/static/coding/tools/GitHub-MergePullRequest-step4.png "GitHub - Merge Pull Request - step 4")
+![GitHub - Merge della Pull Request - passo 4](/static/coding/tools/GitHub-MergePullRequest-step4.png "GitHub - Merge della Pull Request - passo 4")
 
 ## Contribuire ad altri progetti
 
@@ -497,16 +543,17 @@ L'altro sviluppatore può quindi accettare (ed effettuare l'operazione di merge)
 L'introduzione a git non parla delle molteplici funzionalità avanzate che possono essere però approfondite nelle varie guide e libri, tra i quali si segnala:
 
 La serie di articoli su Mokabyte:
-1. [http://www.mokabyte.it/2016/09/git-1/](http://www.mokabyte.it/2016/09/git-1/);
-2. [http://www.mokabyte.it/2016/10/git-2/](http://www.mokabyte.it/2016/10/git-2/);
-3. [http://www.mokabyte.it/2017/01/git-3/](http://www.mokabyte.it/2017/01/git-3/);
-4. [http://www.mokabyte.it/2017/02/git-4/](http://www.mokabyte.it/2017/02/git-4/);
-5. [http://www.mokabyte.it/2017/04/git-5/](http://www.mokabyte.it/2017/04/git-5/);
-6. [http://www.mokabyte.it/2017/05/git-6/](http://www.mokabyte.it/2017/05/git-6/);
-7. [http://www.mokabyte.it/2017/07/git-7/](http://www.mokabyte.it/2017/07/git-7/);
-8. [http://www.mokabyte.it/2017/10/git-8/](http://www.mokabyte.it/2017/10/git-8/);
-9. [http://www.mokabyte.it/2017/12/git-9/](http://www.mokabyte.it/2017/12/git-9/);
-10. [http://www.mokabyte.it/2018/01/git-10/](http://www.mokabyte.it/2018/01/git-10/);
+
+1. [http://www.mokabyte.it/2016/09/git-1/](http://www.mokabyte.it/2016/09/git-1/ "Mokabyte - Articolo 1 su Git");
+2. [http://www.mokabyte.it/2016/10/git-2/](http://www.mokabyte.it/2016/10/git-2/ "Mokabyte - Articolo 2 su Git");
+3. [http://www.mokabyte.it/2017/01/git-3/](http://www.mokabyte.it/2017/01/git-3/ "Mokabyte - Articolo 3 su Git");
+4. [http://www.mokabyte.it/2017/02/git-4/](http://www.mokabyte.it/2017/02/git-4/ "Mokabyte - Articolo 4 su Git");
+5. [http://www.mokabyte.it/2017/04/git-5/](http://www.mokabyte.it/2017/04/git-5/ "Mokabyte - Articolo 5 su Git");
+6. [http://www.mokabyte.it/2017/05/git-6/](http://www.mokabyte.it/2017/05/git-6/ "Mokabyte - Articolo 6 su Git");
+7. [http://www.mokabyte.it/2017/07/git-7/](http://www.mokabyte.it/2017/07/git-7/ "Mokabyte - Articolo 7 su Git");
+8. [http://www.mokabyte.it/2017/10/git-8/](http://www.mokabyte.it/2017/10/git-8/ "Mokabyte - Articolo 8 su Git");
+9. [http://www.mokabyte.it/2017/12/git-9/](http://www.mokabyte.it/2017/12/git-9/ "Mokabyte - Articolo 9 su Git");
+10. [http://www.mokabyte.it/2018/01/git-10/](http://www.mokabyte.it/2018/01/git-10/ "Mokabyte - Articolo 10 su Git");
 
 Il libro su git:
-[https://www.git-scm.com/book/en/v2](https://www.git-scm.com/book/en/v2).
+[https://www.git-scm.com/book/en/v2](https://www.git-scm.com/book/en/v2 "Libro Git SCM").
