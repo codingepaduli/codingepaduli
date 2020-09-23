@@ -5,7 +5,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/codingepaduli/codingepaduli?style=flat-square)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/codingepaduli/codingepaduli?style=flat-square)
 ![GitHub contributors](https://img.shields.io/github/contributors/codingepaduli/codingepaduli?style=flat-square)
-![GitHub Actions](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Markdown/badge.svg)]
+![GitHub Actions](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Markdown/badge.svg)
 
 Ennesimo sito/blog di programmazione e paduli correlati.
 
