@@ -39,7 +39,7 @@ dai singoli browser è mantenuta al link:
 Inoltre è possibile verificare se una specifica è implementata completamente o parzialmente dai vari browser scrivendo il nome della specifica al link [https://caniuse.com/](https://caniuse.com/ "Link al sito caniuse.com")
 
 Esistono diversi corsi basilari su JavaScript:
-[html.it](https://www.html.it/guide/guida-javascript-di-base/ "Link al sito html.it") (in
+[HTML.it](https://www.html.it/guide/guida-javascript-di-base/ "Link al sito html.it") (in
 italiano);
 [it.wikibooks.org](https://it.m.wikibooks.org/wiki/JavaScript "Link al sito it.wikibooks.org") (un buon manuale in italiano);
 [www.w3schools.com](https://www.w3schools.com/js/default.asp "Link al sito www.w3schools.com") (in

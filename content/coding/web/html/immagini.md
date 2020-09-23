@@ -116,7 +116,11 @@ la seconda indica che a schermi con risoluzione massima di 1500 pixel, l'immagin
 
 <p>La mappa poi viene associata all'immagine indicando l'id della mappa nell'attributo <code>usemap</code> del tag <code>img</code>, come nel seguente esempio:</p>
 
+<!-- markdownlint-disable MD034 -->
+
 <code>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" usemap="#planetmap" /&gt;</code>
+
+<!-- markdownlint-enable MD034 -->
 
 <p>Cliccare su uno dei pianeti per collegarsi sulla pagina corrispondente al pianeta scelto.</p>
 
@@ -134,7 +138,11 @@ la seconda indica che a schermi con risoluzione massima di 1500 pixel, l'immagin
 
 <p>Per attivare il caricamento delle immagini in modalitá lazy (o eager), si utilizza l'attributo <code>loading</code> del tag <code>img</code>, che puó assumere il valore "eager" o "lazy", come nell'esempio seguente:
 
+<!-- markdownlint-disable MD034 -->
+
 <code>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" loading="lazy" /&gt;</code>
+
+<!-- markdownlint-enable MD034 -->
 
 <p>Ricapitolando quindi gli attributi del tag img, abbiamo:</p>
 <ul>
