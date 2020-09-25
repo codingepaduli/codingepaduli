@@ -12,71 +12,93 @@ toc: false
 summary: "HTML Lez. 05 - Tag audio e  video"
 ---
 
-<h1>Tag audio e  video</h1>
+# Tag audio e video
 
-<p>È consigliabile, per questioni di performance, proporre i contenuti audio e video in streaming. Comunque si possono proporre anche come file o collegamenti.</p>
+È consigliabile, per questioni di performance, proporre i contenuti
+audio e video in streaming. Comunque si possono proporre anche come file
+o collegamenti.
 
-<p>L'aggiunta di audio e video ad una pagina web è semplice, ma, spesso, è necessario preparare questi contenuti, affinchè siano utilizzabili su risoluzioni diverse, dagli smartphone alle smart-tv, e su connessioni a differenti velocitá, dal 3G alla fibra.</p>
+L'aggiunta di audio e video ad una pagina web è semplice, ma, spesso, è
+necessario preparare questi contenuti, affinchè siano utilizzabili su
+risoluzioni diverse, dagli smartphone alle smart-tv, e su connessioni a
+differenti velocitá, dal 3G alla fibra.
 
-<p>Su connessioni lente e su dispositivi con schermi piccoli, quali gli smartphone, è preferibile mostrare video che abbiano qualitá ridotta e immagini con le dimensioni adattate (in verticale), in modo che siano completamente visibili e che possano essere caricati piú velocemente. In caso di connessioni veloci e schermi grandi, invece, è preferibile aumentare la qualitá, preferendo video Full-HD e immagini ad alta risoluzione, preferibilmente orientate in orizzontale.</p>
+Su connessioni lente e su dispositivi con schermi piccoli, quali gli
+smartphone, è preferibile mostrare video che abbiano qualitá ridotta e
+immagini con le dimensioni adattate (in verticale), in modo che siano
+completamente visibili e che possano essere caricati piú velocemente. In
+caso di connessioni veloci e schermi grandi, invece, è preferibile
+aumentare la qualitá, preferendo video Full-HD e immagini ad alta
+risoluzione, preferibilmente orientate in orizzontale.
 
-<p>Per inserire un file audio, che l'utente puó ascoltare, si utilizza il seguente codice:</p>
+Per inserire un file audio, che l'utente puó ascoltare, si utilizza il
+seguente codice:
 
-<pre>
-  <code class="html">
-    &lt;audio controls autoplay&gt;
-      &lt;source src="horse.ogg" type="audio/ogg"&gt;
-      &lt;source src="horse.mp3" type="audio/mpeg"&gt;
-      &lt;source src="horse.wav" type="audio/wav"&gt;
-    &lt;/audio&gt;
-  </code>
-</pre>
+```html
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  <source src="horse.wav" type="audio/wav">
+</audio>
+```
 
-<p>Per inserire un file video, che l'utente puó guardare, si utilizza il seguente codice:</p>
+Per inserire un file video, che l'utente puó guardare, si utilizza il
+seguente codice:
 
-<pre>
-  <code class="html">
-    &lt;video controls autoplay width="800px" height="600px" poster="poster.png"&gt;
-      &lt;source src="horse.mp4" type="video/mp4"&gt;
-      &lt;source src="horse.ogg" type="video/ogg"&gt;
-      &lt;source src="horse.webm" type="video/webm"&gt;
-      &lt;track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default&gt;
-    &lt;/video&gt;
-  </code>
-</pre>
+```html
+<video controls autoplay width="800px" height="600px" poster="poster.png">
+  <source src="horse.mp4" type="video/mp4">
+  <source src="horse.ogg" type="video/ogg">
+  <source src="horse.webm" type="video/webm">
+  <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
+</video>
+```
 
-<p>Come si vede, entrambi i tag <code class="html">audio</code> e <code class="html">video</code> hanno gli attributi: </p>
+Come si vede, entrambi i tag `audio` e `video` hanno gli attributi:
 
-<ul>
-    <li><code>mute</code>, per silenziare il video;</li>
-    <li><code>loop</code>, per riavviare l'audio o il video una volta terminato;</li>
-  <li><code>autoplay</code>, per avviare automaticamente l'audio o il video; Le specifiche indicano che deve essere usato insieme all'attributo <code>mute</code> per poter effettuare l'autoplay sui dispositivi mobile;</li>
-  <li><code>controls</code>, per visualizzare i pulsanti di controllo "play", "pause", "stop", ....</li>
-  <li><code>controlsList</code>, una lista di tre possibili valori: <code class="hrml">nodownload</code> non permette all'utente di scaricare il file; <code>nofullscreen</code> non permette all'utente di vedere il video a tutto schermo; <code>noremoteplayback</code>, non permette all'utente di riprodurre il contenuto in remoto; Essendo una lista, questo attributo viene utilizzato come nel seguente esempio: <code class="hrml">controlsList="nodownload nofullscreen noremoteplayback"</code></li>
-</ul>
+- `mute`, per silenziare il video;
+- `loop`, per riavviare l'audio o il video una volta terminato;
+- `autoplay`, per avviare automaticamente l'audio o il video; Le
+  specifiche indicano che deve essere usato insieme all'attributo
+  `mute` per poter effettuare l'autoplay sui dispositivi mobile;
+- `controls`, per visualizzare i pulsanti di controllo "play",
+  "pause", "stop", ....
+- `controlsList`, una lista di tre possibili valori: `nodownload` non
+  permette all'utente di scaricare il file; `nofullscreen` non
+  permette all'utente di vedere il video a tutto schermo;
+  `noremoteplayback`, non permette all'utente di riprodurre il
+  contenuto in remoto; Essendo una lista, questo attributo viene
+  utilizzato come nel seguente esempio: `controlsList="nodownload
+  nofullscreen noremoteplayback"`
 
-<p>Ovviamente, solo il tag video ha gli attributi:
-<ul>
-    <li><code>poster</code>, l'immagine di anteprima da mostrare;</li>
-    <li><code>width</code>, la larghezza del video (in pixel);</li>
-  <li><code>height</code>, l'altezza del video (in pixel); </li>
-</ul>
+Ovviamente, solo il tag video ha gli attributi:
 
-<p>Entrambi i tag <code class="html">audio</code> e <code class="html">video</code> fanno uso del tag <code class="html">source</code>, per indicare i video o gli audio da riprodurre. Di questi, solo uno viene effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il primo file che riesce a riprodurre (in base ai formati supportati).</p>
+- `poster`, l'immagine di anteprima da mostrare;
+- `width`, la larghezza del video (in pixel);
+- `height`, l'altezza del video (in pixel);
 
-<p>Il tag <code class="html">source</code> prevede diversi attributi, ma alcuni sono ad uso esclusivo per le immagini, per cui quelli maggiormente utilizzabili per <strong>audio e video</strong> sono: </p>
+Entrambi i tag `audio` e `video` fanno uso del tag `source`, per
+indicare i video o gli audio da riprodurre. Di questi, solo uno viene
+effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il
+primo file che riesce a riprodurre (in base ai formati supportati).
 
-<ul>
-  <li><code>src</code>, per indicare il percorso del file da riprodurre;</li>
-  <li><code>type</code>, per indicare il mime-type del file da riprodurre. Tra i possibili mime-type <strong>audio</strong> abbiamo <code>audio/mpeg</code> per i file mp3, <code>audio/wav</code> per i file wav e <code>audio/ogg</code> per i file ogg. Tra i possibili mime-type <strong>video</strong> abbiamo <code>video/mp4</code> per i file mp4, <code>video/webm</code> per i file webm e <code>video/ogg</code> per i file ogg.</li>
-</ul>
+Il tag `source` prevede diversi attributi, ma alcuni sono ad uso
+esclusivo per le immagini, per cui quelli maggiormente utilizzabili per
+**audio e video** sono:
 
-<p>Il tag <code class="html">video</code> permette anche di specificare dei possibili sottotitoli da mostrare sopra il video. I sottotitoli sono indicati nei tag <code class="html">track</code>, che prevede i seguenti attributi:</p>
+- `src`, per indicare il percorso del file da riprodurre;
+- `type`, per indicare il mime-type del file da riprodurre. Tra i
+  possibili mime-type **audio** abbiamo `audio/mpeg` per i file mp3,
+  `audio/wav` per i file wav e `audio/ogg` per i file ogg. Tra i
+  possibili mime-type **video** abbiamo `video/mp4` per i file mp4,
+  `video/webm` per i file webm e `video/ogg` per i file ogg.
 
-<ul>
-    <li><code>label</code>, una descrizione, generalmente la lingua del sottotitolo;</li>
-    <li><code>kind</code>, il tipo di traccia (per ora subtitles);</li>
-    <li><code>srclang</code> il codice del linguaggio;</li>
-    <li><code>src</code> il percorso del file di sottotitoli; Il formato del file è VTT.</li>
-    <li><code>default</code> il sottotitolo da mostrare di default.</li>
-</ul>
+Il tag `video` permette anche di specificare dei possibili sottotitoli
+da mostrare sopra il video. I sottotitoli sono indicati nei tag `track`,
+che prevede i seguenti attributi:
+
+- `label`, una descrizione, generalmente la lingua del sottotitolo;
+- `kind`, il tipo di traccia (per ora subtitles);
+- `srclang` il codice del linguaggio;
+- `src` il percorso del file di sottotitoli; Il formato del file è VTT.
+- `default` il sottotitolo da mostrare di default.
