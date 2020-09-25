@@ -55,38 +55,38 @@ Esistono poi i framework per lo sviluppo web, quali
 
 Create le pagine web, queste si devono:
 
-  - **validare**, utilizzando un validatore HTML come quello della [W3C Validator](https://validator.w3.org/ "Link al validatore HTML"), per individuare e correggere
-    errori. Inoltre devono essere periodicamente controllati i link, per
-    evitare che possano essere "rotti" (cioè puntare a risorse su
-    internet rimosse o spostate). Per controllare i link si usano
-    strumenti come il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link per HTML");
-  - rendere **accessibili** <!-- TODO add accessibility tools--> a chiunque, anche a chi ha difficoltà visive
-    o motorie. Il controllo avviene attraverso strumenti specifici;
-  - rendere **"responsive"**, <!-- TODO add responsive tools--> cioè fruibili su differenti risoluzioni e
-    formati, da quelli piccoli dei cellulari e palmari, a quelli
-    classici dei computer e tablet, a quelli extra-large delle smart-TV;
-  - rendere **performanti**, cioè che abbiano tempi di caricamento
-    ridotti, soprattutto su connessioni lente, usando strumenti quali
-    [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
-    opzionalmente si puó rendere il sito capace di funzionare anche
-    senza connessione internet
-    ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
-  - **ottimizzare per i motori di ricerca**
-    ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su PWA su wikipedia.it"))
-    ed adattare al
-    [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico  "Link all'articolo su PWA su wikipedia.it");
-  - integrare con eventuali servizi esterni, quali social, servizi di
-    pagamento, servizi pubblicitari e di gestione contenuti (come
-    youtube);
-  - **pubblicare** sul web, scegliendo le caratteristiche del servizio
-    di hosting o di cloud, i certificati di sicurezza e gli strumenti
-    adatti per il trasferimento e la sincronizzazione delle pagine sul
-    dominio.
+- **validare**, utilizzando un validatore HTML come quello della [W3C Validator](https://validator.w3.org/ "Link al validatore HTML"), per individuare e correggere
+  errori. Inoltre devono essere periodicamente controllati i link, per
+  evitare che possano essere "rotti" (cioè puntare a risorse su
+  internet rimosse o spostate). Per controllare i link si usano
+  strumenti come il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link per HTML");
+- rendere **accessibili** <!-- TODO add accessibility tools--> a chiunque, anche a chi ha difficoltà visive
+  o motorie. Il controllo avviene attraverso strumenti specifici;
+- rendere **"responsive"**, <!-- TODO add responsive tools--> cioè fruibili su differenti risoluzioni e
+  formati, da quelli piccoli dei cellulari e palmari, a quelli
+  classici dei computer e tablet, a quelli extra-large delle smart-TV;
+- rendere **performanti**, cioè che abbiano tempi di caricamento
+  ridotti, soprattutto su connessioni lente, usando strumenti quali
+  [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
+  opzionalmente si puó rendere il sito capace di funzionare anche
+  senza connessione internet
+  ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
+- **ottimizzare per i motori di ricerca**
+  ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su PWA su wikipedia.it"))
+  ed adattare al
+  [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico  "Link all'articolo su PWA su wikipedia.it");
+- integrare con eventuali servizi esterni, quali social, servizi di
+  pagamento, servizi pubblicitari e di gestione contenuti (come
+  youtube);
+- **pubblicare** sul web, scegliendo le caratteristiche del servizio
+  di hosting o di cloud, i certificati di sicurezza e gli strumenti
+  adatti per il trasferimento e la sincronizzazione delle pagine sul
+  dominio.
 
 Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio
 HTML, degni di nota sono:
-[html.it](https://www.html.it/guide/guida-html/ "Link al sito web di html.it") (in italiano),
-[html.it (versione 5)](https://www.html.it/guide/guida-html5/ "Link al sito web di html.it") ( Guida HTML5 in italiano),
+[HTML.it](https://www.html.it/guide/guida-html/ "Link al sito web di html.it") (in italiano),
+[HTML.it (versione 5)](https://www.html.it/guide/guida-html5/ "Link al sito web di html.it") ( Guida HTML5 in italiano),
 [corsidia.com](https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html "Link al sito web di corsidia.com") (in italiano),
 [it.wikibooks.org](https://it.m.wikibooks.org/wiki/HTML "Link al sito web di wikibooks.org") (un buon manuale in italiano),
 [w3schools.com](https://www.w3schools.com/html/ "Link al sito web di w3schools.com") (in inglese),

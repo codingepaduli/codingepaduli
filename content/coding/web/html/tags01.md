@@ -12,85 +12,134 @@ toc: false
 summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 ---
 
-<h1>Etichette (tag)</h1>
+# Etichette (tag)
 
-<p>Un documento HTML è composto da un insieme di etichette, chiamate TAG (in inglese), che indicano l'inizio e la fine dei vari contenuti del documento. La struttura base di un documento HTML e' la seguente:</p>
-<pre>
-  <code class="html">
-    &lt;!doctype html&gt;
-    &lt;html&gt;
-      &lt;head&gt;
-        &lt;meta name="author" content="codingepaduli"&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
-        &lt;h1&gt;Titolo pagina web&lt;/h1&gt;
-        &lt;p&gt;paragrafo della pagina web.&lt;/p&gt;
-        &lt;!-- commento in html--&gt;
-      &lt;/body&gt;
-    &lt;/html&gt;
-  </code>
-</pre>
+Un documento HTML è composto da un insieme di etichette, chiamate TAG
+(in inglese), che indicano l'inizio e la fine dei vari contenuti del
+documento. La struttura base di un documento HTML e' la seguente:
 
-<p>In questa struttura si evidenziano i 4 elementi principali che devono sempre essere presenti: </p>
-<ol>
-    <li>L'indicazione <code>doctype</code> (non è un tag, quindi non va chiuso) indica semplicemente che il documento è di tipo HTML (versione 5);</li>
-    <li>Il tag <code>html</code> indica l'inizio del documento HTML (con il simbolo di apertura <code>&lt;html&gt;</code>) e la fine del documento HTML (con il simbolo di chiusura <code>&lt;/html&gt;</code>);</li>
-    <li>Il tag di informazioni <code>head</code> (non indirizzate all'utente, ma al browser o ai motori di ricerca) che viene aperto (con il simbolo <code>&lt;head&gt;</code>) e chiuso (con il simbolo <code>&lt;/head&gt;</code>);</li>
-    <li>Il tag di contenuti <code>body</code> che viene aperto (con il simbolo <code>&lt;body&gt;</code>) e poi chiuso (con il simbolo <code>&lt;/body&gt;</code>) appena prima della fine del documento.</li>
-</ol>
+```html
+<!doctype html>
+<html>
+  <head>
+    <meta name="author" content="codingepaduli">
+  </head>
+  <body>
+    <h1>Titolo pagina web</h1>
+    <p>paragrafo della pagina web.</p>
+    <!-- commento in html-->
+  </body>
+</html>
+```
 
- <p>Si fa notare nuovamente che tutti i tag nell'esempio sono prima aperti e poi chiusi. Inoltre, si fa notare che il testo è <strong>indentato</strong>, ovvero che, nella riga successiva ad un simbolo di apertura, vengono aggiunti 2 o 4 spazi. Questi spazi vengono tolti quando il tag viene chiuso (simbolo di chiusura). L'indentazione è una caratteristica dei documenti molto apprezzata, ed alcuni editor di testo permettono di indentare il documento in automatico, con combinazioni di tasti e/o plugins. Altra caratteristica apprezzata è la presenza di <strong>commenti</strong>, che l'autore scrive come informazioni aggiuntive e promemoria al fine di fare chiarezza.</p>
+In questa struttura si evidenziano i 4 elementi principali che devono
+sempre essere presenti:
 
-<p>Tutti i contenuti vanno inseriti nel tag <code>body</code>, tra i simboli di apertura <code>&lt;body&gt;</code> e chiusura <code>&lt;/body&gt;</code>, come nell'esempio precedente, in cui il titolo <code>h1</code> ed il paragrafo <code>p</code> si trovano nel tag dei contenuti <code>body</code>.</p>
+1. L'indicazione ``doctype`` (non è un tag, quindi non va chiuso) indica
+    semplicemente che il documento è di tipo HTML (versione 5);
+2. Il tag ``html`` indica l'inizio del documento HTML (con il simbolo di
+    apertura ``<html>``) e la fine del documento HTML (con il simbolo di
+    chiusura ``</html>``);
+3. Il tag di informazioni ``head`` (non indirizzate all'utente, ma al
+    browser o ai motori di ricerca) che viene aperto (con il simbolo
+    ``<head>``) e chiuso (con il simbolo ``</head>``);
+4. Il tag di contenuti ``body`` che viene aperto (con il simbolo
+    ``<body>``) e poi chiuso (con il simbolo ``</body>``) appena prima della
+    fine del documento.
 
-<p>Di seguito vengono elencati i tag per la gestione del testo:</p>
+Si fa notare nuovamente che tutti i tag nell'esempio sono prima aperti e
+poi chiusi. Inoltre, si fa notare che il testo è **indentato**, ovvero
+che, nella riga successiva ad un simbolo di apertura, vengono aggiunti 2
+o 4 spazi. Questi spazi vengono tolti quando il tag viene chiuso
+(simbolo di chiusura). L'indentazione è una caratteristica dei documenti
+molto apprezzata, ed alcuni editor di testo permettono di indentare il
+documento in automatico, con combinazioni di tasti e/o plugins. Altra
+caratteristica apprezzata è la presenza di **commenti**, che l'autore
+scrive come informazioni aggiuntive e promemoria al fine di fare
+chiarezza.
 
-<p>Il titolo, come visto nell'esempio precedente, è generato dal tag <code>h1</code>, che ha il simbolo di apertura <code>&lt;h1&gt;</code> ed il simbolo di chiusura <code>&lt;/h1&gt;</code>. In realtà, esistono 7 livelli di titolo, che servono a dividere il documento in più capitoli e sotto-capitoli, in modo da poter dare una struttura "alberata" al documento. Questi livelli sono espressi dai tag <code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code> ed <code>h7</code>, ma nella realtà si consiglia l'uso fino al terzo livello.</p>
+Tutti i contenuti vanno inseriti nel tag ``body``, tra i simboli di
+apertura ``<body>`` e chiusura ``</body>``, come nell'esempio precedente, in
+cui il titolo `h1` ed il paragrafo `p` si trovano nel tag dei contenuti
+``body``.
 
-<p>Di seguito si riporta un esempio dei primi tre livelli:</p>
-<pre>
-  <code class="html">
-    &lt;h1&gt; Titolo primo livello &lt;/h1&gt;
-    &lt;h2&gt; Titolo secondo livello &lt;h2&gt;
-    &lt;h3&gt; Titolo terzo livello &lt;h2&gt;
-  </code>
-</pre>
+Di seguito vengono elencati i tag per la gestione del testo:
 
-<p>che vengono poi trasformati dal browser come si vede di seguito:</p>
-<h3>Titolo primo livello</h3>
-<h4>Titolo secondo livello</h4>
-<h5>Titolo terzo livello</h5>
+Il titolo, come visto nell'esempio precedente, è generato dal tag ``h1``,
+che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
+In realtà, esistono 7 livelli di titolo, che servono a dividere il
+documento in più capitoli e sotto-capitoli, in modo da poter dare una
+struttura "alberata" al documento. Questi livelli sono espressi dai tag
+``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` ed ``h7``, ma nella realtà si consiglia
+l'uso fino al terzo livello.
 
-<p>Il paragrafo è generato dal tag <code>p</code> che ha il simbolo di apertura <code>&lt;p&gt;</code> ed il simbolo di chiusura <code>&lt;/p&gt;</code>;</p>
+Di seguito si riporta un esempio di codice per generare i titoli dei primi tre livelli:
 
-<p>il tag <code>del</code> genera un testo cancellato come ad esempio questo testo <del>cancellato</del> generato dal seguente codice:
-    <code>&lt;del&gt;cancellato&lt;/del&gt;</code>;</p>
-<p>il tag <code>ins</code> genera un testo sottolineato come ad esempio questo testo <ins>sottolineato</ins> generato dal seguente codice: <code>&lt;ins&gt;sottolineato&lt;/ins&gt;</code>;</p>
-<p>il tag <code>sup</code> genera un testo in apice come ad esempio questo testo <sup>in apice</sup> generato dal seguente codice:
-    <code>&lt;sup&gt;in apice&lt;/sup&gt;</code>;</p>
-<p>il tag <code>sub</code> genera un testo in pedice come ad esempio questo testo <sub>in pedice</sub> generato dal seguente codice:
-    <code>&lt;sub&gt;in pedice&lt;/sub&gt;</code>;</p>
-<p>il tag <code>strong</code> genera un testo in grassetto, come ad esempio questo testo <strong>in grassetto</strong> generato dal seguente codice:
-    <code>&lt;strong&gt;in grassetto&lt;/strong&gt;</code>;</p>
-<p>il tag <code>em</code> genera un testo in corsivo, come ad esempio questo testo <em>in corsivo</em> generato dal seguente codice:
-    <code>&lt;em&gt;in corsivo&lt;/em&gt;</code>;</p>
-<p>il tag <code>mark</code> genera un testo evidenziato, come ad esempio questo testo <mark>evidenziato</mark> generato dal seguente codice:
-    <code>&lt;mark&gt;evidenziato&lt;/mark&gt;</code>;</p>
-<p>il tag <code>abbr</code> è usato per visualizzarne il significato di un acronimo quando il mouse si ferma sopra questo, come ad esempio questo acronimo <abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
-    <code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code>;</p>
+```html
+<h1> Esempio di titolo di primo livello </h1>
+<h2> Esempio di titolo di secondo livello <h2>
+<h3> Esempio di titolo di terzo livello <h2>
+```
+
+che vengono poi trasformati dal browser come si vede di seguito:
+
+<!-- TODO replace with an image of titles -->
+
+### Esempio di titolo di primo livello
+
+#### Esempio di titolo di secondo livello
+
+##### Esempio di titolo di terzo livello
+
+Il paragrafo è generato dal tag ``p`` che ha il simbolo di apertura ``<p>``
+ed il simbolo di chiusura ``</p>``;
+
+il tag ``del`` genera un testo cancellato come ad esempio questo testo
+<del>cancellato</del> generato dal seguente codice:
+``<del>cancellato</del>``;
+
+il tag ``ins`` genera un testo sottolineato come ad esempio questo testo
+<ins>sottolineato</ins> generato dal seguente codice:
+``<ins>sottolineato</ins>``;
+
+il tag ``sup`` genera un testo in apice come ad esempio questo testo
+<sup>in apice</sup> generato dal seguente codice:
+``<sup>in apice</sup>``;
+
+il tag ``sub`` genera un testo in pedice come ad esempio questo testo
+<sub>in pedice</sub> generato dal seguente codice:
+``<sub>in pedice</sub>``;
+
+il tag ``strong`` genera un testo in grassetto, come ad esempio questo
+testo **in grassetto** generato dal seguente codice:
+``<strong>in grassetto</strong>``;
+
+il tag ``em`` genera un testo in corsivo, come ad esempio questo testo *in
+corsivo* generato dal seguente codice:
+``<em>in corsivo</em>``;
+
+il tag ``mark`` genera un testo evidenziato, come ad esempio questo testo
+<mark>evidenziato</mark> generato dal seguente codice:
+``<mark>evidenziato</mark>``;
+
+il tag ``abbr`` è usato per visualizzarne il significato di un acronimo
+quando il mouse si ferma sopra questo, come ad esempio questo acronimo
+<abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
+``<abbr title="HyperText Markup Language">HTML</abbr>``;
 
 <!-- Obsolete TAG <acronym title="as soon as possible">ASAP</acronym> -->
 
 <!-- Obsolete TAG <big>This text is big</big> -->
 
-<p>E' ovvio che i tag possono essere inseriti (innestati) l'uno dentro l'altro per creare le combinazioni desiderate, ad esempio per generare un testo grassetto, evidenziato e sottolineato, come <strong><mark><ins>questo testo</ins></mark></strong> si usa il codice</p>
+E' ovvio che i tag possono essere inseriti (innestati) l'uno dentro
+l'altro per creare le combinazioni desiderate, ad esempio per generare
+un testo grassetto, evidenziato e sottolineato, come
+<strong><mark><ins>questo testo</ins></mark></strong> si usa il codice
 
-<pre>
-  <code class="html">
-    &lt;strong&gt;
-        &lt;mark&gt;
-            &lt;ins&gt;questo testo&lt;/ins&gt;
-        &lt;/mark&gt;
-    &lt;/strong&gt;
-  </code>
-</pre>
+```html
+<strong>
+    <mark>
+        <ins>questo testo</ins>
+    </mark>
+</strong>
+```
