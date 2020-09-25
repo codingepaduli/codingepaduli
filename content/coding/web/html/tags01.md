@@ -63,8 +63,9 @@ apertura ``<body>`` e chiusura ``</body>``, come nell'esempio precedente, in
 cui il titolo `h1` ed il paragrafo `p` si trovano nel tag dei contenuti
 ``body``.
 
-Di seguito vengono elencati i tag per la gestione del testo:
+## Tag per la gestione del testo
 
+Alcuni tag servono a gestire il testo.
 Il titolo, come visto nell'esempio precedente, è generato dal tag ``h1``,
 che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
 In realtà, esistono 7 livelli di titolo, che servono a dividere il
@@ -127,9 +128,18 @@ quando il mouse si ferma sopra questo, come ad esempio questo acronimo
 <abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
 ``<abbr title="HyperText Markup Language">HTML</abbr>``;
 
-<!-- Obsolete TAG <acronym title="as soon as possible">ASAP</acronym> -->
+## Tag obsoleti
 
-<!-- Obsolete TAG <big>This text is big</big> -->
+Alcuni tag sono stati "cancellati" dalle specifiche HTML e non devono più essere utilizzati, ad esempio:
+
+```html
+<acronym title="as soon as possible">ASAP</acronym> -->
+<big>This text is big</big>
+```
+
+Gli strumenti di validazione del codice HTML aiutano a rilevarli e sostituirli.
+
+## Tag innestati
 
 E' ovvio che i tag possono essere inseriti (innestati) l'uno dentro
 l'altro per creare le combinazioni desiderate, ad esempio per generare
