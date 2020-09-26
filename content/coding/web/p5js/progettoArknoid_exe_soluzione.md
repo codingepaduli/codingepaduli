@@ -2,9 +2,9 @@
 type: "p5js"
 title: "04.4 - Soluzione progetto Arknoid"
 description: "Implementazione del videogioco in stile 'arknoid'"
-date: 2020-09-23
-publishdate: 2020-09-23
-lastmod: 2020-09-23
+date: 2020-09-25
+publishdate: 2020-09-25
+lastmod: 2020-09-25
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false

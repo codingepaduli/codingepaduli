@@ -2,9 +2,9 @@
 type: "p5js"
 title: "04.3 - Progetto Arknoid"
 description: "Sviluppo di un videogioco in stile 'arknoid'"
-date: 2020-09-22
-publishdate: 2020-09-22
-lastmod: 2020-09-22
+date: 2020-09-24
+publishdate: 2020-09-24
+lastmod: 2020-09-24
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
