@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-09-10
-publishdate: 2020-09-10
-lastmod: 2020-09-10
+date: 2020-09-26
+publishdate: 2020-09-26
+lastmod: 2020-09-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,11 +14,15 @@ summary: "Set di link interessanti"
 
  
 
+
 # Menu segnalibri
+
 
 ## Scienze
 
+
 ### Spacetime
+
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
@@ -32,10 +36,12 @@ summary: "Set di link interessanti"
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
+[Quantum](https://www.sciencemag.org/news/2020/09/one-quantum-physics-greatest-paradoxes-may-have-lost-its-leading-explanation) - One of quantum physics’ greatest paradoxes may have lost its leading explanation\
 [When Hubble Stared at Nothing for 100 Hours](https://www.nationalgeographic.com/science/phenomena/2015/04/24/when-hubble-stared-at-nothing-for-100-hours/) - “nothing” was actually stuffed with of galaxies. More than 3,000 of them came spilling out, some roughly 12 billion years old. Spiral, elliptical, irregular...\
 [Physics](https://physics.aps.org/articles/v13/114) - A Lopsided Merger\
 
 ### Math
+
 [Pythagoras theorem](https://www.forbes.com/sites/startswithabang/2020/03/06/the-bizarre-math-of-why-10%C2%B2-11%C2%B2-12%C2%B2-13%C2%B2-14%C2%B2/) - This One Equation, 10² + 11² + 12² = 13² + 14², Takes Pythagoras To A Whole New Level\
 [New Geometric Perspective Cracks Old Problem About Rectangles](https://www.quantamagazine.org/new-geometric-perspective-cracks-old-problem-about-rectangles-20200625/) - \
 [BASE Cinque](http://utenti.quipo.it/base5/) - Appunti di Matematica Ricreativa\
@@ -44,8 +50,10 @@ summary: "Set di link interessanti"
 [Enigma machine's plugboard](https://observablehq.com/@tmcw/enigma-machine-plugboard) - a software emulator for the hardware plugboard that allowed for scrambling of characters at the input & output stages of the Enigma machine’s process\
 [CindyJS](https://cindyjs.org/) - a framework to create interactive (mathematics and physics) content for the web\
 [Mathematicians Report New Discovery About the Dodecahedron | Quanta Magazine](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - \
+[Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
 
 ### Medicine
+
 [The Cancer Industry](https://blogs.scientificamerican.com/cross-check/the-cancer-industry-hype-vs-reality/) - Overdiagnosis, overtreatment and marginal benefits for patients\
 [Harry Perkins Institute of Medical Research study finds honeybee venom rapidly kills aggressive breast cancer cells](https://www.abc.net.au/news/2020-09-01/new-aus-research-finds-honey-bee-venom-kills-breast-cancer-cells/12618064) - \
 [COVID-19](https://www.quantamagazine.org/how-do-animal-viruses-like-coronavirus-jump-species-20200225/) - The Animal Origins of Coronavirus and Flu\
@@ -57,6 +65,7 @@ summary: "Set di link interessanti"
 [Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
 
 ### Tech
+
 [Learning Music (Beta)](https://learningmusic.ableton.com/) - \
 [Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
 [Alcohol breath tests are often unreliable](https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html) - New York Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them\

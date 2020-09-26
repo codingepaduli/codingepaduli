@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-09-10
-publishdate: 2020-09-10
-lastmod: 2020-09-10
+date: 2020-09-26
+publishdate: 2020-09-26
+lastmod: 2020-09-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,9 +14,12 @@ summary: "Set di link relativi al coding"
 
  
 
+
 # Menu segnalibri
 
+
 ## Programmazione
+
 [Roadmaps to becoming a modern developer](https://roadmap.sh/) - \
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 [Tips for using Flood Element for performance testing | Opensource.com](https://opensource.com/article/18/12/tips-flood-element-testing) - \
@@ -54,6 +57,7 @@ summary: "Set di link relativi al coding"
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
 
 ### Blog News e Link
+
 [Hacker News](https://news.ycombinator.com/news) - \
 [Gitbar](https://www.gitbar.it/) - Il podcast dei developer italiani\
 [Developer.com](http://www.developer.com/) - \
@@ -71,6 +75,7 @@ summary: "Set di link relativi al coding"
 [https://www.mytrashmailer.com/](https://www.mytrashmailer.com/) - \
 
 ### Cloud, Containers, Emulators and Virtual Machines
+
 [What is Istio? | Opensource.com](https://opensource.com/article/18/9/what-istio) - \
 [Build a retro gaming console with RetroPie | Opensource.com](https://opensource.com/article/19/1/retropie) - \
 [DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE](https://archive.org/details/msdos_Fire_and_Ice_1993) - \
@@ -79,14 +84,18 @@ summary: "Set di link relativi al coding"
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 
 #### Cloud
+
 [localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack\
 [Google Cloud Run](https://alexolivier.me/posts/deploy-container-stateless-cheap-google-cloud-run-serverless) - Deploy your side-projects at scale for basically nothing\
+[titanoboa.io](https://www.titanoboa.io/index.html#features) - distributed workflow orchestration platform for Java and JVM\
 
 #### Vagrant and Virtual Machines
+
 [Vagrant](https://buildvirtual.net/using-vagrant-to-deploy-multiple-vms-on-vsphere/) - Deploy Multiple VMs on vSphere\
 [KVM/qemu](https://stackoverflow.com/questions/42155213/using-vagrant-to-set-up-a-vm-with-kvm-qemu-without-virtualbox) - Using Vagrant to set up a VM with KVM/qemu without VirtualBox\
 
 #### Containers
+
 [Get Started with containers](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/) - Mircosoft explains what Containers, Docker and Kubernetes are\
 [microservices build with containers](https://opensource.com/article/19/11/microservices-cheat-sheet) - key terminologies in the microservices ecosystem and some of the open source software available to build out a microservices architecture; \
 [podman.io](https://podman.io/) - Manage pods, containers, and container images; \
@@ -104,6 +113,7 @@ summary: "Set di link relativi al coding"
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
 
 ### Ansible, Shell, CI, CD ed automazione
+
 [Automating with Jenkins and PowerShell on Windows Part 1](https://hodgkins.io/automating-with-jenkins-and-powershell-on-windows-part-1) - \
 [Why GoCD over Jenkins | GoCD Blog](https://www.gocd.org/2017/04/25/gocd-over-jenkins/) - \
 [Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
@@ -114,18 +124,20 @@ summary: "Set di link relativi al coding"
 [Puppeteer](https://codingjam.it/puppeteer-usare-chrome-come-un-api/) - usare Chrome come un API\
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
-[Working with GitHub Actions | Jeff Rafter](https://jeffrafter.com/working-with-github-actions/) - \
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
 
 #### Ansible
+
 [Ansible Tutorial](https://www.softwaretestinghelp.com/ansible-tutorial-1/) - Installation, Configuration and Usage with Modules\
 [Create your Playbook](https://symfonycasts.com/screencast/ansible/playbook#play) - Ansible for Automation\
 [Using Testinfra with Ansible to verify server state](https://opensource.com/article/19/5/using-testinfra-ansible-verify-server-state) - \
 [10 Ansible modules you need to know](https://opensource.com/article/19/9/must-know-ansible-modules) - \
 [How Ansible brought peace to my home](https://opensource.com/article/19/9/ansible-documentation-kids-laptops) - \
 [Building container images with the ansible-bender tool](https://opensource.com/article/19/10/building-container-images-ansible) - Learn how to use Ansible to execute commands in a container.\
+[How to install software with Ansible | Opensource.com](https://opensource.com/article/20/9/install-packages-ansible) - \
 
 #### PowerShell
+
 [PowerShell Tutorial](https://simpleprogrammer.com/powershell-tutorial/) - Especially for People Who Hate PowerShell\
 [Powershell](https://www.tutorialspoint.com/powershell/powershell_files_create_folders.htm) - Create Folder\
 [Powershell Tutorial for Beginners](https://www.guru99.com/powershell-tutorial.html#4) - Learn in 1 Day\
@@ -133,6 +145,7 @@ summary: "Set di link relativi al coding"
 [PowerShell Commands Cheat Sheet](https://www.comparitech.com/net-admin/powershell-cheat-sheet/) - Basic Commands You'll Need +PDF\
 
 #### Package managers
+
 [Chocolatey](https://chocolatey.org/docs) - Software Management for Windows, great community packages\
 [Chocolatey](https://blog.ipswitch.com/installing-chocolatey-packages-remotely-with-powershell) - Installing Packages Remotely with PowerShell\
 [Cargo](https://opensource.com/article/20/3/rust-cargo) - the Rust package manager\
@@ -140,6 +153,7 @@ summary: "Set di link relativi al coding"
 [Windows Package Manager Preview](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - \
 
 ### AI
+
 [fast.ai · Making neural nets uncool again](http://www.fast.ai/) - \
 [Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn) - Red Hat\
 [Dataset list](https://www.datasetlist.com/) - A list of the biggest datasets for machine learning\
@@ -152,6 +166,7 @@ summary: "Set di link relativi al coding"
 [PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
 
 ### .Net
+
 [Integrate Jenkins with MSBuild and NuGet](https://www.codeproject.com/Articles/878203/Integrate-Jenkins-with-MSBuild-and-NuGet) - \
 [Build a cross-platform app with .NET Core](https://opensource.com/article/17/5/cross-platform-console-apps) - \
 [Comunicazione seriale rs232 con c#](http://www.hwupgrade.it/forum/showthread.php?t=2158096) - \
@@ -172,6 +187,7 @@ summary: "Set di link relativi al coding"
 [NancyFx/Nancy](https://github.com/NancyFx/Nancy) - Lightweight framework for building HTTP based services on .Net and Mono\
 
 ### Database SQL e NoSql - GraphQL
+
 [In MySQL, never use “utf8”. Use “utf8mb4”.](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434) - Adam Hooper - Medium\
 [PostgREST Documentation](https://postgrest.org/en/v7.0.0/) - PostgREST 7.0.1 documentation\
 [Modern SQL](https://modern-sql.com/) - A lot has changed since SQL-92\
@@ -187,6 +203,7 @@ summary: "Set di link relativi al coding"
 [We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql) - Critique of SQL\
 
 ### Giochi
+
 [Primi Passi nel Game Development](https://davideaversa.it/slashcode/2012/04/primi-passi-nel-game-development/) - \
 [Game Development](https://davideaversa.it/slashcode/2012/05/game-development-architettura-component-based/) - Architettura Component-Based\
 [Come non perdersi nel Game Loop](https://davideaversa.it/slashcode/2012/08/come-non-perdersi-nel-game-loop/) - \
@@ -197,6 +214,7 @@ summary: "Set di link relativi al coding"
 [Ct.js — a free game editor](https://ctjs.rocks/) - \
 
 ### GIT
+
 [Oh, shit, git!](http://ohshitgit.com/) - \
 [Git basics](https://areknawo.com/git-basics-the-only-introduction-you-will-ever-need/) - the only introduction you'll ever need!\
 [The Smart Ways to Correct Mistakes in Git | CSS-Tricks](https://css-tricks.com/the-smart-ways-to-correct-mistakes-in-git/) - \
@@ -207,6 +225,7 @@ summary: "Set di link relativi al coding"
 [Install hub to make your Git command-line as fully featured as GitHub | Opensource.com](https://opensource.com/article/20/3/github-hub) - \
 
 ### Java
+
 [Free web hosting for Java+MySQL websites?](https://www.quora.com/Free-web-hosting-for-Java+MySQL-websites) - Quora\
 [AdoptOpenJDK](https://adoptopenjdk.net/) - Open source, prebuilt OpenJDK binaries\
 [Eclipse All Releases | Packages](https://www.eclipse.org/downloads/packages/all) - \
@@ -230,27 +249,32 @@ summary: "Set di link relativi al coding"
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 
 #### JDBC e JPA
+
 [JPA Database Connection (EntityManagerFactory, EntityManager, EntityTransaction)](http://www.objectdb.com/java/jpa/persistence/overview) - \
 [Java Persistence API (JPA) Tutorials](http://www.objectdb.com/tutorial) - \
 [Standardized schema generation and data loading with JPA 2.1](https://www.thoughts-on-java.org/standardized-schema-generation-data-loading-jpa-2-1/) - \
 [Understanding JDBC Connection Pooling](http://www.developer.com/java/data/understanding-jdbc-connection-pooling.html) - \
 
 #### Apache OpenEJB
+
 [Apache OpenEJB Documentation](https://tomee.apache.org/documentation.html) - \
 [Apache OpenEJB examples](https://openejb.apache.org/examples/index.html) - \
 [EJB3 Tutorial](http://tomee.apache.org/ejb3-tutorial.html) - \
 
 #### Containers
+
 [Quarkus](https://quarkus.io/) - Supersonic Subatomic Java\
 [Docker e microservizi Java con Jib](https://codingjam.it/docker-e-microservizi-java-con-jib/) - \
 [Using Docker from Maven and Maven from Docker](https://codefresh.io/howtos/using-docker-maven-maven-docker/) - \
 
 #### IO NIO NIO2 XML e serializzazione
+
 [How to Validate XML using Java](http://www.edankert.com/validate.html) - configure SAX, DOM, dom4j and XOM to validate XML Documents with DTD and Schema(s)\
 [Read and write file | nio java 1.4 Path and channels | Java Development Journal](https://www.javadevjournal.com/java/write-to-file-java/) - \
 [Read and write file | nio2 java 1.7 Asynchronous file channel | Baeldung](http://www.baeldung.com/java-nio2-async-file-channel) - \
 
 #### Spring
+
 [How to handle static content in Spring MVC?](https://stackoverflow.com/questions/1483063/how-to-handle-static-content-in-spring-mvc#4423844) - \
 [read value from application properties in spring-log4j2.xml file](https://stackoverflow.com/questions/48639930/read-value-from-application-properties-in-spring-log4j2-xml-file) - \
 [JUnit 5 tutorial, part 2: Unit testing Spring MVC with JUnit 5](https://www.javaworld.com/article/3543268/junit-5-tutorial-part-2-unit-testing-spring-mvc-with-junit-5.html) - \
@@ -258,10 +282,12 @@ summary: "Set di link relativi al coding"
 [Configuring Spring Security for a RESTful Web Services](http://www.networkedassets.com/configuring-spring-security-for-a-restful-web-services/) - \
 
 #### Java to native or WebAssembly
+
 [Mandrel](https://www.infoq.com/news/2020/07/mandrel-graalvm/) - Red Hat Makes Java Native\
 [CheerpJ](https://www.infoworld.com/article/3536576/cheerpj-java-to-javascript-compiler-boosts-exception-handling-native-methods.html) - the CheerpJ compiler converts Java clients to HTML, JavaScript, and WebAssembly\
 
 ### Linux
+
 [The Debian Administrator's Handbook](https://debian-handbook.info/) - \
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [Capitolo 4. Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
@@ -316,6 +342,7 @@ summary: "Set di link relativi al coding"
 [Import functions and variables into Bash with the source command | Opensource.com](https://opensource.com/article/20/6/bash-source-command) - \
 
 ### Mozilla Firefox
+
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
 [Get Bookmark Add-ons](https://addons.mozilla.org/en-US/firefox/bookmarks/) - \
 [Firefox OS](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS) - Mozilla Developers | MDN\
@@ -326,6 +353,7 @@ summary: "Set di link relativi al coding"
 [Come iniziare](https://www.mozilla.org/it/firefox/central/) - \
 
 ### Network
+
 [flan](https://github.com/cloudflare/flan/blob/master/README.md) - a lightweight network vulnerability scanner\
 [Webmin](http://www.webmin.com/) - a web interface for system administrator\
 [Configure your home VPN server with WireGuard](https://mikkel.hoegh.org/2019/11/01/home-vpn-server-wireguard) - \
@@ -336,6 +364,7 @@ summary: "Set di link relativi al coding"
 [Setting up VoIP phone system for use with RepairShopr.](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - YouTube\
 
 ### PHP
+
 [Guida PHP di base | php.html.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
 [Building a RESTful Web application with PHP | Gareth Jones](http://blog.garethj.com/2009/02/17/building-a-restful-web-application-with-php/) - \
 [REST API Authentication](http://community.sitepoint.com/t/rest-api-authentication/6200) - The SitePoint Forums\
@@ -347,6 +376,7 @@ summary: "Set di link relativi al coding"
 [Chiarimenti su "Antifurto banda"](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/158679-chiarimenti-su-antifurto-banda.html) - \
 
 ### Privacy, Security and Hacking
+
 [/e/ – un fork Android completamente de-Google-izzato](https://e.foundation/) - \
 [redecentralize/alternative-internet](https://github.com/redecentralize/alternative-internet) - A collection of interesting new networks and tech aiming at decentralisation (in some form)\
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
@@ -378,6 +408,7 @@ summary: "Set di link relativi al coding"
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/learning/dns/dns-over-tls/) - \
 
 ### Scrivere documenti e conversione tra formati 
+
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
 [Getting started with Docbook | Opensource.com](https://opensource.com/article/17/9/docbook) - \
@@ -399,6 +430,7 @@ summary: "Set di link relativi al coding"
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
 
 #### Hugo static site generator
+
 [Chapter 2 Hugo | blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/hugo.html) - \
 [Markdown to pdf using Hugo and beautiful styling](https://www.martinkaptein.com/blog/hugo-md-to-pdf/) - Martin Kaptein\
 [Switching the lights on: Hugo vs Hugo config files · Code with Hugo](https://codewithhugo.com/switching-the-lights-on-hugo-vs-hugo-config-files/) - \
@@ -420,6 +452,7 @@ summary: "Set di link relativi al coding"
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
 
 #### Pandoc
+
 [prashanth1k/pandoc-ebook-template-windows: An easy way to generate eBooks from multiple markdown files using Pandoc.](https://github.com/prashanth1k/pandoc-ebook-template-windows) - \
 [Convert files at the command line with Pandoc](https://opensource.com/article/18/9/intro-pandoc) - \
 [htdebeer/pandocomatic](https://github.com/htdebeer/pandocomatic) - Automate the use of pandoc\
@@ -430,6 +463,7 @@ summary: "Set di link relativi al coding"
 [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
 
 ### Web, web-app e servizi rest
+
 [W3C](http://www.w3.org/TR/) - All Standards and Drafts\
 [Pantry Cloud](https://getpantry.cloud/) - free service data storage for small projects\
 [freeCodeCamp](https://www.freecodecamp.org/) - Learn to Code and Help Nonprofits\
@@ -460,6 +494,7 @@ summary: "Set di link relativi al coding"
 [How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - \
 
 #### HTML
+
 [html HEAD](https://htmlhead.dev/) - All the contents of the head tag\
 [html images srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) - media queries aren’t the right tool for responsive images, srcset and sizes are\
 [html images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) - How to Build Responsive Images with srcset\
@@ -479,6 +514,7 @@ summary: "Set di link relativi al coding"
 [video tag: The Video Embed element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) - HTML: HyperText Markup Language | MDN\
 
 #### CSS
+
 [Floating and inline-block](http://www.w3schools.com/css/css_inline-block.asp) - \
 [Visual formatting model](http://www.w3.org/TR/CSS2/visuren.html#q24) - \
 [kognise/water.css · A css without classes](https://github.com/kognise/water.css/blob/master/README.md) - \
@@ -498,8 +534,8 @@ summary: "Set di link relativi al coding"
 [html](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without javascript - Stack Overflow\
 
 #### Javascript
+
 [Top 5 skills to learn as a junior JavaScript developer](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - \
-[Can I use... Support tables for HTML5, CSS3, etc](https://caniuse.com/) - \
 [PracticeJS](https://practicejs.com/) - \
 [JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
 [utils](https://www.npmjs.com/package/utils) - npm\
@@ -532,6 +568,7 @@ summary: "Set di link relativi al coding"
 [JaidedAI/EasyOCR: Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai](https://github.com/JaidedAI/EasyOCR) - \
 
 ##### Aurelia
+
 [Aurelia JS](http://aurelia.io/) - \
 [Projects · AUCS Project Guide](https://aurelia-community.gitbooks.io/aucs-project-guide/initial-project-structure/projects.html) - \
 [Guide To Bundling & Exporting In Aurelia](https://ilikekillnerds.com/2016/02/the-definitive-guide-to-bundling-exporting-in-aurelia/) - \
@@ -549,6 +586,7 @@ summary: "Set di link relativi al coding"
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
 
 ##### Three JS 3D
+
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
 [code editor](https://gamingjs.com/ice/) - \
