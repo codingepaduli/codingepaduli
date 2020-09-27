@@ -16,7 +16,14 @@ PAGEBREAK_PREPROCESS_FILTER="pagebreak.lua"
 
 : ' commento multilinea
 BOOKNAME="Appunti-di-laboratorio-Sistemi-Reti"
-CHAPTERS="$CONTENT_DIR/content/coding/shell/PowerShell/intro.md
+CHAPTERS="
+          $CONTENT_DIR/content/coding/tools/EditorConfig.md
+          $CONTENT_DIR/content/coding/tools/Git.md
+          $CONTENT_DIR/content/coding/tools/MacchineVirtuali.md
+          $CONTENT_DIR/content/coding/tools/VirtualBox.md
+          $CONTENT_DIR/content/coding/tools/AQemu.md
+          $CONTENT_DIR/content/coding/tools/Vagrant.md
+          $CONTENT_DIR/content/coding/shell/PowerShell/intro.md
           $CONTENT_DIR/content/coding/shell/PowerShell/Concetti.md
           $CONTENT_DIR/content/coding/shell/PowerShell/PrimiScript.md
           $CONTENT_DIR/content/coding/shell/PowerShell/CmdLet-Filesystem-Path.md
@@ -25,13 +32,13 @@ CHAPTERS="$CONTENT_DIR/content/coding/shell/PowerShell/intro.md
 
 : ' commento multilinea
 BOOKNAME="Appunti-di-laboratorio-TPSIT"
-CHAPTERS="$CONTENT_DIR/content/coding/tools/EditorConfig.md
-          $CONTENT_DIR/content/coding/tools/Git.md
-          $CONTENT_DIR/content/coding/tools/MacchineVirtuali.md
-          $CONTENT_DIR/content/coding/tools/VirtualBox.md
-          $CONTENT_DIR/content/coding/tools/AQemu.md
-          $CONTENT_DIR/content/coding/tools/Vagrant.md
-          $CONTENT_DIR/content/coding/tools/Gradle.md
+CHAPTERS="
+          $CONTENT_DIR/content/coding/web/html/intro.md
+          $CONTENT_DIR/content/coding/web/html/tags01.md
+          $CONTENT_DIR/content/coding/web/html/tags02.md
+          $CONTENT_DIR/content/coding/web/html/tags03.md
+          $CONTENT_DIR/content/coding/web/html/tags04.md
+          $CONTENT_DIR/content/coding/web/html/immagini.md
           $CONTENT_DIR/content/coding/web/javascript/intro.md
           $CONTENT_DIR/content/coding/web/javascript/primi_script.md
           $CONTENT_DIR/content/coding/web/javascript/Variabili.md
@@ -39,7 +46,8 @@ CHAPTERS="$CONTENT_DIR/content/coding/tools/EditorConfig.md
           $CONTENT_DIR/content/coding/web/javascript/istruzioni_condizionali_iterative.md
 		  $CONTENT_DIR/content/coding/web/javascript/funzioni.md
 		  $CONTENT_DIR/content/coding/web/javascript/interazioneHtml.md
-          $CONTENT_DIR/content/coding/web/javascript/selettoriCSS.md"
+          $CONTENT_DIR/content/coding/web/javascript/selettoriCSS.md
+          $CONTENT_DIR/content/coding/tools/Gradle.md"
 '
 
 BOOKNAME="Appunti-di-laboratorio-di-informatica"
