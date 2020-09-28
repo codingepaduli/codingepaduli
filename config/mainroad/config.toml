@@ -3,6 +3,8 @@ theme = "mainroad" # hugo-academic mainroad watercss
 publishDir = "public"
 layoutDir = "layouts/mainroad"
 
+customCSS = ["/static/css/customImages.css"]
+
 [mediaTypes]
   [mediaTypes."text/html"]
     suffixes = ["htm", "html", "HTM", "HTML"]

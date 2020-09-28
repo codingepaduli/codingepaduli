@@ -16,7 +16,6 @@ theme = "mainroad" # hugo-academic mainroad watercss
   images = ["/static/wifi-5.svg"] # Twitter Cards and OpenGraph images
   post_meta = ["date", "categories", "translations"] # Order of post meta information
   mainSections = ["posts", "openSource"]
-  customCSS = ["/static/css/customImages.css"]
   seoKeyword = ["coding", "programmazione", "open-source", "sviluppo", "web"]
 
 # [[menu.main]] not needed, use "menu" in content/_index.html
