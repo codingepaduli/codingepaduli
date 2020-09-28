@@ -26,7 +26,7 @@ Per leggere l'immagine si fa uso della funzione ``loadImage``, come di seguito r
 img = loadImage('https://live.staticflickr.com/2838/9541969423_9c513ed6a1_b.jpg');
 ```
 
-Si fa uso della variabile ``drawingContext`` di p5.js, che effettua quel che in javascript corrisponde a ``canvas.getContext('2d');`` e che permette l'accesso diretto ai dati del canvas, come di seguito riportato:
+Si fa uso della variabile ``drawingContext`` di p5.js, che effettua quel che in JavaScript corrisponde a ``canvas.getContext('2d');`` e che permette l'accesso diretto ai dati del canvas, come di seguito riportato:
 
 ```javascript
 canvas = createCanvas(800, 700).parent('pixelAccess');
