@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-09-26
-publishdate: 2020-09-26
-lastmod: 2020-09-26
+date: 2020-09-30
+publishdate: 2020-09-30
+lastmod: 2020-09-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -23,14 +23,17 @@ summary: "Set di link interessanti"
 
 ### Spacetime
 
+[Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
 [Twenty New Moons Found Orbiting Saturn](https://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn) - \
+[Renormalization group is as a “theory of theories” connecting the microscopic with the macroscopic](https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/) - It helps identify which big-picture quantities are useful to measure and which convoluted microscopic details can be ignored\
 [Dark Energy](https://physics.aps.org/articles/v13/1) - new generation of experiments about the nature of dark energy\
 [Entropy in the Universe](https://johncarlosbaez.wordpress.com/2020/01/25/entropy-in-the-universe/) - entropy of interstellar and intergalactic gas and dust is about ten times more the entropy of all the stars in the observable Universe\
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
+[Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
 [The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
