@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-09-30
-publishdate: 2020-09-30
-lastmod: 2020-09-30
+date: 2020-10-07
+publishdate: 2020-10-07
+lastmod: 2020-10-07
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -25,6 +25,7 @@ summary: "Set di link interessanti"
 
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
+[Faster than Light in Our Model of Physics](https://writings.stephenwolfram.com/2020/10/faster-than-light-in-our-model-of-physics-some-preliminary-thoughts/) - Some Preliminary Thoughts on Space, Time, Geometry of the Universe,  \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
 [Twenty New Moons Found Orbiting Saturn](https://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn) - \
@@ -66,6 +67,7 @@ summary: "Set di link interessanti"
 [Artificial intelligence yields new antibiotic](https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220) - A deep-learning model identifies a powerful new drug that can kill many species of antibiotic-resistant bacteria\
 [A Supercomputer's Covid-19 Analysis Yields a New Way to Understand the Virus](https://elemental.medium.com/a-supercomputer-analyzed-covid-19-and-an-interesting-new-theory-has-emerged-31cb8eba9d63) - \
 [Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
+[A whopping 91% of plastic isn't recycled, say national geographic](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - \
 
 ### Tech
 
