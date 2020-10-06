@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-07
-publishdate: 2020-10-07
-lastmod: 2020-10-07
+date: 2020-10-06
+publishdate: 2020-10-06
+lastmod: 2020-10-06
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -12,7 +12,7 @@ toc: false
 summary: "Set di link relativi al coding"
 ---
 
- 
+
 
 
 # Menu segnalibri
@@ -409,7 +409,7 @@ summary: "Set di link relativi al coding"
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/learning/dns/dns-over-tls/) - \
 
-### Scrivere documenti e conversione tra formati 
+### Scrivere documenti e conversione tra formati
 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \

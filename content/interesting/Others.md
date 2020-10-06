@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-10-07
-publishdate: 2020-10-07
-lastmod: 2020-10-07
+date: 2020-10-06
+publishdate: 2020-10-06
+lastmod: 2020-10-06
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -12,7 +12,7 @@ toc: false
 summary: "Set di link interessanti"
 ---
 
- 
+
 
 
 # Menu segnalibri
