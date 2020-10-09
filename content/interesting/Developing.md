@@ -2,18 +2,15 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-06
-publishdate: 2020-10-06
-lastmod: 2020-10-06
+date: 2020-10-08
+publishdate: 2020-10-08
+lastmod: 2020-10-08
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
 summary: "Set di link relativi al coding"
 ---
-
-
-
 
 # Menu segnalibri
 
@@ -409,7 +406,7 @@ summary: "Set di link relativi al coding"
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/learning/dns/dns-over-tls/) - \
 
-### Scrivere documenti e conversione tra formati
+### Scrivere documenti e conversione tra formati 
 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
@@ -592,3 +589,4 @@ summary: "Set di link relativi al coding"
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
 [code editor](https://gamingjs.com/ice/) - \
+
