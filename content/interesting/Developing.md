@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-08
-publishdate: 2020-10-08
-lastmod: 2020-10-08
+date: 2020-10-09
+publishdate: 2020-10-09
+lastmod: 2020-10-09
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -18,7 +18,6 @@ summary: "Set di link relativi al coding"
 ## Programmazione
 
 [Roadmaps to becoming a modern developer](https://roadmap.sh/) - \
-[Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 [Tips for using Flood Element for performance testing | Opensource.com](https://opensource.com/article/18/12/tips-flood-element-testing) - \
 [CopperheadOS: Security features, installing apps, and more | Opensource.com](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - \
 [IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - Wikipedia\
@@ -34,11 +33,10 @@ summary: "Set di link relativi al coding"
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
 [Speed tests](http://www.dslreports.com/tools) - dslreports.com\
 [NASA World Wind](http://worldwind.arc.nasa.gov/) - \
-[download libri java](http://www.dilhaidesi.com/forum/showthread.php?28974-Java-SE-EE-JavaFX-JSP-JSF-JBOSS-eBook-Collection) - \
+[download libri Java](http://www.dilhaidesi.com/forum/showthread.php?28974-Java-SE-EE-JavaFX-JSP-JSF-JBOSS-eBook-Collection) - \
 [All IT eBooks](http://www.allitebooks.com/) - Free IT eBooks Download\
 [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md) - \
 [Sugar Labs](https://sugarlabs.org/) - \
-[How to configure "flatpak run org.gnome.meld" as git diff.tool and merge.tool](https://askubuntu.com/questions/1140455/how-to-configure-flatpak-run-org-gnome-meld-as-git-diff-tool-and-merge-tool) - Ask Ubuntu\
 [Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
 [Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
 [freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
@@ -70,6 +68,7 @@ summary: "Set di link relativi al coding"
 [ThrowAwayMail.com](http://www.throwawaymail.com/) - free temporary email, disposable e-mail address\
 [fake mail generator](http://www.fakemailgenerator.com/) - \
 [https://www.mytrashmailer.com/](https://www.mytrashmailer.com/) - \
+[https://generator.email/](https://generator.email/) - \
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
@@ -79,6 +78,8 @@ summary: "Set di link relativi al coding"
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [Fire and Ice](http://www.lemonamiga.com/games/docs.php?id=643) - Manual, Docs, Documentation - Lemon Amiga\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
+[Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
+[Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 
 #### Cloud
 
@@ -241,7 +242,7 @@ summary: "Set di link relativi al coding"
 [Guida JSP](http://java.html.it/guide/leggi/23/guida-jsp/) - \
 [REST : How to GET a Cup of Coffee](http://www.infoq.com/articles/webber-rest-workflow) - \
 [How to Start Embedded HTTP Jersey server during Java Application Startup](http://crunchify.com/how-to-start-embedded-http-jersey-server-during-java-application-startup/) - \
-[Oracle java tutorial ](https://docs.oracle.com/javase/tutorial/essential/io/misc.html) - \
+[Oracle Java tutorial](https://docs.oracle.com/javase/tutorial/essential/io/misc.html) - \
 [Novita su Java7](http://blog.html.it/tag/java7/) - \
 [http://codingjam.it/json-web-token-jaas-stateless-authentication-per-tomcat/](http://codingjam.it/json-web-token-jaas-stateless-authentication-per-tomcat/) - \
 [An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
@@ -269,8 +270,8 @@ summary: "Set di link relativi al coding"
 #### IO NIO NIO2 XML e serializzazione
 
 [How to Validate XML using Java](http://www.edankert.com/validate.html) - configure SAX, DOM, dom4j and XOM to validate XML Documents with DTD and Schema(s)\
-[Read and write file | nio java 1.4 Path and channels | Java Development Journal](https://www.javadevjournal.com/java/write-to-file-java/) - \
-[Read and write file | nio2 java 1.7 Asynchronous file channel | Baeldung](http://www.baeldung.com/java-nio2-async-file-channel) - \
+[Read and write file | nio Java 1.4 Path and channels | Java Development Journal](https://www.javadevjournal.com/java/write-to-file-java/) - \
+[Read and write file | nio2 Java 1.7 Asynchronous file channel | Baeldung](http://www.baeldung.com/java-nio2-async-file-channel) - \
 
 #### Spring
 
@@ -288,12 +289,13 @@ summary: "Set di link relativi al coding"
 ### Linux
 
 [The Debian Administrator's Handbook](https://debian-handbook.info/) - \
+[Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
+[Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
+[Guide debianizzati](https://guide.debianizzati.org/index.php/Pagina_principale) - \
+[50 UNIX / Linux Sysadmin Tutorials](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - \
 [Capitolo 4. Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
-[SolydXK | Home of SolydX and SolydK](http://solydxk.com/) - \
-[SolydXK forums](http://forums.solydxk.com/) - \
-[SolydXK 32bit download page](https://downloads.solydxk.com/ce/testing/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
 [cron](https://duckduckgo.com/?q=use+systemd+timers+instead+of+cronjob&ia=web) - use systemd timers instead of cronjob at DuckDuckGo\
@@ -302,12 +304,7 @@ summary: "Set di link relativi al coding"
 [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/) - \
 [KDE Store](https://store.kde.org/) - \
 [Eyecandy for your XFCE-Desktop](https://www.xfce-look.org/) - xfce-look.org\
-[Hosted Weblate](https://hosted.weblate.org/) - \
-[Guide debianizzati](https://guide.debianizzati.org/index.php/Pagina_principale) - \
-[Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
-[50 UNIX / Linux Sysadmin Tutorials](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - \
-[Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
-[Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
+[Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
 [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
 [https://mosermichael.github.io/jq-illustrated/dir/content.html](https://mosermichael.github.io/jq-illustrated/dir/content.html) - \
 [ssh](https://gravitational.com/blog/how-to-ssh-properly/) - How to SSH Properly\
@@ -339,6 +336,7 @@ summary: "Set di link relativi al coding"
 [WhyTheName](https://wiki.debian.org/WhyTheName) - It explains the strange name of linux packages\
 [WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
 [Import functions and variables into Bash with the source command | Opensource.com](https://opensource.com/article/20/6/bash-source-command) - \
+[How to configure "flatpak run org.gnome.meld" as git diff.tool and merge.tool](https://askubuntu.com/questions/1140455/how-to-configure-flatpak-run-org-gnome-meld-as-git-diff-tool-and-merge-tool) - Ask Ubuntu\
 
 ### Mozilla Firefox
 
@@ -364,10 +362,10 @@ summary: "Set di link relativi al coding"
 
 ### PHP
 
-[Guida PHP di base | php.html.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
+[Guida PHP di base | PHP.HTML.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
 [Building a RESTful Web application with PHP | Gareth Jones](http://blog.garethj.com/2009/02/17/building-a-restful-web-application-with-php/) - \
 [REST API Authentication](http://community.sitepoint.com/t/rest-api-authentication/6200) - The SitePoint Forums\
-[PHP: La Retta Via](http://it.phptherightway.com/) - \
+[PHP](http://it.phptherightway.com/) - La Retta Via\
 [Primi Passi Con Composer | VincenzoStira Dot Com](http://v1.vincenzostira.com/?p=1610) - \
 [mod_rewrite](https://www.cheatography.com/davechild/cheat-sheets/mod-rewrite/) - Cheat Sheets For Every Occasion\
 [Configurazione virtual host su web server Apache](http://www.compago.it/manuali/35-utilita/190-configurazione-web-server-apache-virtual-host.html) - \
@@ -406,7 +404,7 @@ summary: "Set di link relativi al coding"
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/learning/dns/dns-over-tls/) - \
 
-### Scrivere documenti e conversione tra formati 
+### Scrivere documenti e conversione tra formati
 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
@@ -415,7 +413,6 @@ summary: "Set di link relativi al coding"
 [PDF-Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/pandoc-pdf) - \
 [c4s4/sweetohm: Sources of my website](https://github.com/c4s4/sweetohm) - \
 [Build and host a website with Git | Opensource.com](https://opensource.com/article/19/4/building-hosting-website-git) - \
-[GitHub](https://github.com/honkit/honkit) - honkit/honkit: HonKit is building beautiful books using Markdown - Fork of GitBook\
 [honkit/honkit](https://github.com/honkit/honkit) - Fork of GitBook for building beautiful books using Markdown\
 [Making an ebook](https://medium.com/@davidgrophland/making-an-ebook-from-markdown-to-kindle-cf224326b1a2) - From Markdown to Kindle - David Grophland - Medium\
 [Create web tutorials with Reveal.js and Git | Opensource.com](https://opensource.com/article/20/4/create-web-tutorial-git) - \
@@ -456,7 +453,7 @@ summary: "Set di link relativi al coding"
 [Convert files at the command line with Pandoc](https://opensource.com/article/18/9/intro-pandoc) - \
 [htdebeer/pandocomatic](https://github.com/htdebeer/pandocomatic) - Automate the use of pandoc\
 [pandoc-include-code snippet](https://groups.google.com/forum/#!searchin/pandoc-discuss/javascript|sort:date/pandoc-discuss/XR14gYSf1bo/AGnEsEVgAAAJ) - Google Gruppi\
-[pandoc-stylesheet/pub.css at master · manuelp/pandoc-stylesheet · GitHub](https://github.com/manuelp/pandoc-stylesheet/blob/master/pub.css) - \
+[manuelp/pandoc-stylesheet · Publication CSS](https://github.com/manuelp/pandoc-stylesheet/blob/master/pub.css) - \
 [Converting Markdown to Beautiful PDF with Pandoc](https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/) - jdhao's blog\
 [pandoc-img-glob · PyPI](https://pypi.org/project/pandoc-img-glob/) - \
 [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
@@ -494,12 +491,12 @@ summary: "Set di link relativi al coding"
 
 #### HTML
 
-[html HEAD](https://htmlhead.dev/) - All the contents of the head tag\
-[html images srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) - media queries aren’t the right tool for responsive images, srcset and sizes are\
-[html images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) - How to Build Responsive Images with srcset\
-[html images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
-[html image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
-[html images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
+[HTML HEAD](https://htmlhead.dev/) - All the contents of the head tag\
+[HTML images srcset and sizes](https://ericportis.com/posts/2014/srcset-sizes/) - media queries aren’t the right tool for responsive images, srcset and sizes are\
+[HTML images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) - How to Build Responsive Images with srcset\
+[HTML images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
+[HTML image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
+[HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
 [Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
@@ -516,7 +513,7 @@ summary: "Set di link relativi al coding"
 
 [Floating and inline-block](http://www.w3schools.com/css/css_inline-block.asp) - \
 [Visual formatting model](http://www.w3.org/TR/CSS2/visuren.html#q24) - \
-[kognise/water.css · A css without classes](https://github.com/kognise/water.css/blob/master/README.md) - \
+[kognise water CSS · A CSS without classes](https://github.com/kognise/water.css/blob/master/README.md) - \
 [Flexible data tables with CSS Grid](https://adamlynch.com/flexible-data-tables-with-css-grid/?1) - \
 [CSSFX](https://cssfx.dev/) - Beautifully simple click-to-copy CSS effects\
 [How to convert Excel files to HTML or JSON | Opensource.com](https://opensource.com/article/19/5/convert-excel-files-html-json) - \
@@ -528,9 +525,9 @@ summary: "Set di link relativi al coding"
 [Making Tables Responsive With Minimal CSS · Bradley Taunt](https://bradleytaunt.com/2019/06/11/responsive-tables/) - \
 [Why we prefer CSS Custom Properties to SASS variables | CodyHouse](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - \
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
-[andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP.css — Minimalist stylesheet for HTML elements\
+[andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
-[html](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without javascript - Stack Overflow\
+[HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
 
 #### Javascript
 
@@ -589,4 +586,3 @@ summary: "Set di link relativi al coding"
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
 [code editor](https://gamingjs.com/ice/) - \
-
