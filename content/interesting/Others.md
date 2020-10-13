@@ -2,15 +2,17 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-10-08
-publishdate: 2020-10-08
-lastmod: 2020-10-08
+date: 2020-10-12
+publishdate: 2020-10-12
+lastmod: 2020-10-12
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
 summary: "Set di link interessanti"
 ---
+
+<!-- markdownlint-disable-file MD012 -->
 
 # Menu segnalibri
 
@@ -76,4 +78,3 @@ summary: "Set di link interessanti"
 [HaxBall](https://www.haxball.com/) - physics-based multiplayer soccer game where teamwork is key\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
-

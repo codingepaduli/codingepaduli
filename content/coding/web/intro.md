@@ -22,5 +22,4 @@ Il testo intende mettere al centro del percorso di studi le tecnologie web ed in
 
  Il percorso è progettato per insegnare allo studente la realizzazione di semplici pagine web in linguaggio **HTML** già nelle prime lezioni, per poi insegnare (sempre in ambiente web) le basi della programmazione imperativa attraverso la creazione di semplici giochi ed animazioni, facendo uso del linguaggio **JavaScript** associato alla libreria grafica **p5.js**, che è sviluppata dalla **Processing Foundation** (nota per i fini didattici ed anche per lo sviluppo di **Processing**).
 
-
 ## Contenuti del volume

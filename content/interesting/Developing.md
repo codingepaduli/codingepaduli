@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-09
-publishdate: 2020-10-09
-lastmod: 2020-10-09
+date: 2020-10-12
+publishdate: 2020-10-12
+lastmod: 2020-10-12
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -12,6 +12,7 @@ toc: false
 summary: "Set di link relativi al coding"
 ---
 
+<!-- markdownlint-disable-file MD012 -->
 # Menu segnalibri
 
 
