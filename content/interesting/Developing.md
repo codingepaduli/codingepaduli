@@ -12,7 +12,7 @@ toc: false
 summary: "Set di link relativi al coding"
 ---
 
-<!-- markdownlint-disable-file MD012 -->
+<!-- markdownlint-disable MD012 -->
 
 # Menu segnalibri
 
