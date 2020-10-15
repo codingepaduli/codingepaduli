@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-12
-publishdate: 2020-10-12
-lastmod: 2020-10-12
+date: 2020-10-14
+publishdate: 2020-10-14
+lastmod: 2020-10-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -531,7 +531,7 @@ summary: "Set di link relativi al coding"
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
 
-#### Javascript
+#### JavaScript
 
 [Top 5 skills to learn as a junior JavaScript developer](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - \
 [PracticeJS](https://practicejs.com/) - \
@@ -553,9 +553,9 @@ summary: "Set di link relativi al coding"
 [Webpack ed ECMAScript 6](https://codingjam.it/webpack-ecmascript-6-parte/) - Parte I\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
 [qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
-[cozmo/jsQR](https://github.com/cozmo/jsQR) - A pure javascript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within.\
+[cozmo/jsQR](https://github.com/cozmo/jsQR) - A pure JavaScript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within.\
 [sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
-[How does Javascript affect SEO?](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
+[How does JavaScript affect SEO?](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
 [Parcel](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/) - Web bundlers like Browserify and Webpack manage the development workflow; Parcel is a bundler that doesn’t need any configuration; \
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
 [PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
@@ -578,7 +578,7 @@ summary: "Set di link relativi al coding"
 [Aurelia Promise and Async Bindings](http://www.sobell.net/aurelia-async-bindings/) - \
 [asynchronous](https://stackoverflow.com/questions/42050823/aurelia-how-to-handle-a-async-request-in-a-view) - Aurelia: How to handle a async request in a view? - Stack Overflow\
 [Jujens' blog](https://www.jujens.eu/) - Aurelia developer\
-[Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - todomvc/index.html - bigopon/todomvc · GitHub\
+[Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - bigopon/todomvc · GitHub\
 [Aurelia 2](https://github.com/aurelia/aurelia) - GitHub aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
