@@ -12,7 +12,7 @@ on:
   - cron: "0 10 * * *"
 
 jobs:
-  markdown-link-check:
+  markdown-check:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
@@ -23,3 +23,5 @@ jobs:
         files: .
         config_file: ".markdownlint.yml"
         # ignore_files: "content/interesting"
+    - name: Run markdown-link-check
+      uses: ruzickap/action-my-markdown-link-checker@v1
