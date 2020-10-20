@@ -9,72 +9,54 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 01 - Introduzione al linguaggio HTML ed alla creazione, validazione e pubblicazione di pagine web"
+summary: "HTML Lez. 01 - Creazione ed amministrazione di siti web"
 ---
 
-# Introduzione al linguaggio HTML
+# Creazione ed amministrazione di siti web
 
-Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
+## World Wide Web
 
-L'**ipertesto** e' un testo contenente immagini, collegamenti, video,
-ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web. Le
-**etichette** (in inglese Markup o TAG) indicano un elemento della
-pagina web ed hanno un simbolo di inizio elemento ed uno di fine
-elemento: inizio e fine di un titolo, di un'immagine, di un video, di
-una tabella...
+Il World Wide Web (dall'inglese "Rete di Ampiezza Globale) è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
 
-Per esempio l'etichetta ``h1`` è l'etichetta del "titolo", ed ha il
-simbolo di apertura ``<h1>``, che indica l'inizio del titolo, ed il
-simbolo di chiusura ``</h1>`` che indica la fine del titolo, quindi, il
-titolo in HTML sarà scritto usando il codice: ``<h1>Titolo</h1>``
+Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi ritrovarsi a vedere un video su una piattaforma web americana ed ancora visualizzare un'offerta di un prodotto presente su un e-commerce australiano, e così via.
 
-Da sottolineare che il linguaggio HTML non definisce lo stile grafico
-del documento, ma solo la **struttura** di un ipertesto. Imparare il
-linguaggio HTML corrisponde ad imparare tutte le etichette. Gli effetti
-grafici, le animazioni, le azioni, che sono comunque parte della pagina
-web, sono scritte in altri linguaggi, ed interagiscono con la struttura
-del documento.
+Il <abbr title="World Wide Web">WWW</abbr> ha avuto un diffusione capillare nella società grazie anche alla presenza dei motori di ricerca che permettono di trovare le informazioni presenti sui vari siti web. Oggi la disponibilità di tablet, smartphone e dispositivi mobile ha permesso la diffusione del <abbr title="World Wide Web">WWW</abbr> a quasi tutta la popolazione mondiale.
 
-Per creare una pagina HTML serve un semplice editor di testi, tra quelli
-consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, mentre tra quelli da evitare assolutamente si elenca l'editor Word di
-Office, e l'editor Notepad di Windows.
+## Tecnologie e software per la creazione di siti web
 
-La creazione di pagine web può avvenire anche attraverso strumenti di
-sviluppo visuale, che permettono di disegnarle e configurarle, piuttosto
-che scriverle. Esistono software che permettono di amministrare anche
-l'intero sito, pur avendo poche conoscenze tecniche, e sono chiamati
-genericamente
+Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web attraverso delle interfacce grafiche che guidano l'utente. Questi software sono chiamati genericamente
 [CMS](https://it.wikipedia.org/wiki/Content_management_system "Link all'articolo sui CMS su wikipedia.it"). Tra i CMS più noti troviamo
 [WordPress](https://wordpress.org/ "Link al sito web di WordPress") e
 [Joomla](https://www.joomla.org/ "Link al sito web di Joomla"), ma la scelta è ampia.
 
-Esistono poi i framework per lo sviluppo web, quali
+E' possibile creare dei siti web "statici", cioè scritti con software che trasformano un insieme di articoli e contenuti in un sito web. Questi strumenti prendono il nome di "Static site generator" (generatori di siti web statici).
+
+I software per la costruzione di un sito web, sia in modalità grafica, sia "statica", si basano su framework per lo sviluppo web, quali
 [Bootstrap](http://getbootstrap.com/ "Link al sito web di Bootstrap"),
 [ZURB foundation](http://foundation.zurb.com/ "Link al sito web di ZURB") e
 [Pure CSS](http://purecss.io/ "Link al sito web di Pure CSS"), giusto per nominarne alcuni, che intendono essere la base sulla quale poggiarsi per sviluppare siti web.
 
-Create le pagine web, queste si devono:
+## Attività di amministrazione
 
-- **validare**, utilizzando un validatore HTML come quello della [W3C Validator](https://validator.w3.org/ "Link al validatore HTML"), per individuare e correggere
-  errori. Inoltre devono essere periodicamente controllati i link, per
-  evitare che possano essere "rotti" (cioè puntare a risorse su
-  internet rimosse o spostate). Per controllare i link si usano
-  strumenti come il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link per HTML");
+Dal punto di vista tecnico, l'amministrazione di un sito web comporta una serie di attività da svolgere, dato che le pagine del sito si devono:
+
+- **validare**, per individuare e correggere errori. Per questi compiti troviamo strumenti per la correzione grammaticale, validatori delle pagine web, validatori dei link (per
+  evitare che possano riferirsi a risorse rimosse o spostate). Uno strumento di controllo dei link è il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link"). Per validare il codice HTML si può utilizzare il validatore [W3C Validator](https://validator.w3.org/ "Link al validatore HTML");
 - rendere **accessibili** <!-- TODO add accessibility tools--> a chiunque, anche a chi ha difficoltà visive
   o motorie. Il controllo avviene attraverso strumenti specifici;
-- rendere **"responsive"**, <!-- TODO add responsive tools--> cioè fruibili su differenti risoluzioni e
+- rendere **"responsive"**, cioè fruibili su differenti risoluzioni e
   formati, da quelli piccoli dei cellulari e palmari, a quelli
-  classici dei computer e tablet, a quelli extra-large delle smart-TV;
-- rendere **performanti**, cioè che abbiano tempi di caricamento
+  classici dei computer e tablet, a quelli extra-large delle smart-TV. Uno strumento per il controllo delle varie risoluzioni è [Responsively.App](https://responsively.app/ "App open source per simulare in un'unica schermata la visualizzazione del sito su più dispositivi");
+- rendere **performanti**, cioè far si che i tempi di caricamento siano
   ridotti, soprattutto su connessioni lente, usando strumenti quali
   [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
   opzionalmente si puó rendere il sito capace di funzionare anche
   senza connessione internet
   ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
 - **ottimizzare per i motori di ricerca**
-  ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su PWA su wikipedia.it"))
+  ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su SEO su wikipedia.it"))
   ed adattare al
-  [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico  "Link all'articolo su PWA su wikipedia.it");
+  [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Link all'articolo sul Web semantico su wikipedia.it");
 - integrare con eventuali servizi esterni, quali social, servizi di
   pagamento, servizi pubblicitari e di gestione contenuti (come
   youtube);
@@ -82,6 +64,10 @@ Create le pagine web, queste si devono:
   di hosting o di cloud, i certificati di sicurezza e gli strumenti
   adatti per il trasferimento e la sincronizzazione delle pagine sul
   dominio.
+
+## Riferimenti alle risorse online
+
+Le pagine web sono scritte in linguaggio "HTML", un linguaggio che descrive la struttura dei vari contenuti della pagina.
 
 Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio
 HTML, degni di nota sono:
@@ -91,8 +77,12 @@ HTML, degni di nota sono:
 [it.wikibooks.org](https://it.m.wikibooks.org/wiki/HTML "Link al sito web di wikibooks.org") (un buon manuale in italiano),
 [w3schools.com](https://www.w3schools.com/html/ "Link al sito web di w3schools.com") (in inglese),
 [internetingishard.com](https://internetingishard.com/html-and-css/ "Link al sito web di internetingishard.com") (in inglese, per principianti),
-[developer.mozilla.org](https://developer.mozilla.org/it/docs/Web/HTML "Link al sito web di developer.mozilla.org"),sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione), ed infine
+[developer.mozilla.org](https://developer.mozilla.org/it/docs/Web/HTML "Link al sito web di developer.mozilla.org"), sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione), ed infine
 [freecodecamp.org](https://guide.freecodecamp.org/html/ "Link al sito web di freecodecamp.org"), organizzazione
 no-profit per aiutare le persone ad apprendere l'arte della
 programmazione, con corsi e certificazioni disponibili gratuitamente (in
 inglese).
+
+Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare.
+
+Le informazioni della pagina web possono invece essere elaborate dai programmi, chiamati script, che risiedono nella pagina web e che sono realizzati principalmente in linguaggio di programmazione JavaScript.

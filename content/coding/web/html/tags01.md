@@ -12,22 +12,81 @@ toc: false
 summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 ---
 
+# Il linguaggio HTML
+
+Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
+
+L'**ipertesto** e' un testo "potenziato", cioè contenente immagini, collegamenti, video,
+ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web.
+
+Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
+l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
+
+Da sottolineare che il linguaggio HTML non definisce lo stile grafico
+del documento, ma solo la **struttura** di un ipertesto. Conoscere il
+linguaggio HTML significa conoscere le regole di utilizzo di queste etichette. Gli effetti
+grafici, le animazioni, le azioni, che sono comunque parte della pagina
+web, sono scritte in altri linguaggi, ed interagiscono con la struttura
+del documento.
+
+Per scrivere il codice HTML serve un semplice editor di testi. Tra quelli
+consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), mentre tra quelli da evitare assolutamente si elenca l'editor Word di
+Office e l'editor "Blocco Note" (Notepad) di Windows.
+
 # Etichette (tag)
 
-Un documento HTML è composto da un insieme di etichette, chiamate TAG
-(in inglese), che indicano l'inizio e la fine dei vari contenuti del
-documento. La struttura base di un documento HTML e' la seguente:
+Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
+l'inizio e la fine di un elemento della pagina web.
+
+Ogni etichetta ha un nome, ad esempio
+``h1`` è l'etichetta del titolo,
+``p`` è l'etichetta del paragrafo,
+``mark`` è l'etichetta per il testo evidenziato.
+
+E' importante comprendere che, quando si parla di un'etichetta, in realtà ci si riferisce a due etichette: l'etichetta di inizio (o apertura) e l'etichetta di fine (o chiusura).
+
+Ad esempio,
+``h1`` è l'etichetta del titolo, quindi ci si riferisce all'etichetta di inizio del titolo e l'etichetta di fine del titolo; Allo stesso modo,
+``p`` è l'etichetta del paragrafo, quindi ci si riferisce all'etichetta di inizio del paragrafo e l'etichetta di fine del paragrafo; Ancora,
+``mark`` è l'etichetta per il testo evidenziato, quindi ci si riferisce all'etichetta di inizio del testo evidenziato e l'etichetta di fine del testo evidenziato.
+
+Queste etichette di apertura e chiusura sono scritte secondo le seguenti regole:
+- l'etichetta di apertura è composta dal nome dell'etichetta racchiuso tra parentesi angolari (i caratteri ``<`` e ``>`` nel campo della programmazione sono detti appunto parentesi angolari).
+- l'etichetta di chiusura è composta dalle parentesi angolari contenenti il nome dell'etichetta preceduto dal carattere ``/``.
+
+Per esempio,
+l'etichetta di inizio del titolo è ``<h1>`` e l'etichetta di fine titolo è ``</h1>``, quindi, il titolo in HTML sarà scritto usando il codice: ``<h1>Titolo</h1>``;
+l'etichetta di inizio paragrafo è ``<p>`` e l'etichetta di fine paragrafo è ``</p>``, quindi, il paragrafo in HTML sarà scritto usando il codice: ``<p>paragrafo</p>``;
+l'etichetta di inizio testo evidenziato è ``<mark>`` e l'etichetta di fine testo evidenziato è ``</mark>``, quindi, il testo evidenziato in HTML sarà scritto usando il codice: ``<mark>testo evidenziato</mark>``;
+
+Non tutte le etichette prevedono un'etichetta di chiusura, esistono delle eccezioni di cui tenere conto.
+
+# Struttura basilare di una pagina web
+
+Un documento HTML contiene principalmente i contenuti della pagina (titoli, paragrafi,
+  immagini, ecc..) che l'utente visualizza, ma non solo.
+
+Un documento HTML contiene i metadati, che sono informazioni relative alla pagina web (autore, icona, descrizione, immagine di anteprima, ecc...). Questi metadati non sono mostrati all'utente, ma utilizzati dai motori di ricerca e dai social network per presentare e catalogare la pagina web.
+
+Ad esempio, quando si condivide agli amici un'articolo sui social, questi visualizzano, oltre al collegamento, sia il titolo dell'articolo, sia la descrizione, sia un'immagine o un video di anteprima. Queste informazioni di anteprima i social le recuperano dai metadati allegati alla pagina web.
+
+Un'indicazione fondamentale che deve essere inserita **nella prima riga** della pagina web (del file HTML) è la dichiarazione del tipo di documento: si deve indicare che il documento è scritto in HTML, utilizzando il codice ``<!doctype html>``.
+
+Si fa notare che "doctype" è l'abbreviazione di "document type", che tradotto significa "tipo di documento", quindi il tipo di documento è "HTML". Inoltre questa non un'etichetta, è una dichiarazione.
+
+La struttura base di un documento HTML e' la seguente:
 
 ```html
 <!doctype html>
 <html>
   <head>
-    <meta name="author" content="codingepaduli">
+    <!-- metadati della pagina html -->
+    <meta name="author" content="Bill Gates">
   </head>
   <body>
+    <!-- contenuti della pagina html -->
     <h1>Titolo pagina web</h1>
     <p>paragrafo della pagina web.</p>
-    <!-- commento in html-->
   </body>
 </html>
 ```
@@ -35,17 +94,18 @@ documento. La struttura base di un documento HTML e' la seguente:
 In questa struttura si evidenziano i 4 elementi principali che devono
 sempre essere presenti:
 
-1. L'indicazione ``doctype`` (non è un tag, quindi non va chiuso) indica
-    semplicemente che il documento è di tipo HTML (versione 5);
-2. Il tag ``html`` indica l'inizio del documento HTML (con il simbolo di
-    apertura ``<html>``) e la fine del documento HTML (con il simbolo di
-    chiusura ``</html>``);
-3. Il tag di informazioni ``head`` (non indirizzate all'utente, ma al
-    browser o ai motori di ricerca) che viene aperto (con il simbolo
-    ``<head>``) e chiuso (con il simbolo ``</head>``);
-4. Il tag di contenuti ``body`` che viene aperto (con il simbolo
-    ``<body>``) e poi chiuso (con il simbolo ``</body>``) appena prima della
-    fine del documento.
+1. La dichiarazione del tipo di documento ``doctype`` (abbreviazione di
+  "document type") indica che il documento è di tipo HTML (versione 5).
+  E' una dichiarazione, non un tag, quindi non ha una chiusura;
+2. Il tag ``html`` delimita l'intera pagina web (l'etichetta di
+    apertura ``<html>`` indica l'inizio del documento HTML e l'etichetta
+    di chiusura ``</html>`` indica la fine del documento HTML);
+3. Il tag ``head`` delimita i metadati (l'etichetta di
+    apertura ``<head>`` indica l'inizio dei metadati e l'etichetta
+    di chiusura ``</head>`` indica la fine dei metadati);
+4. Il tag ``body`` delimita i contenuti (l'etichetta di
+    apertura ``<body>`` indica l'inizio dei contenuti e l'etichetta
+    di chiusura ``</body>`` indica la fine dei contenuti);.
 
 Si fa notare nuovamente che tutti i tag nell'esempio sono prima aperti e
 poi chiusi. Inoltre, si fa notare che il testo è **indentato**, ovvero
@@ -57,11 +117,6 @@ documento in automatico, con combinazioni di tasti e/o plugins. Altra
 caratteristica apprezzata è la presenza di **commenti**, che l'autore
 scrive come informazioni aggiuntive e promemoria al fine di fare
 chiarezza.
-
-Tutti i contenuti vanno inseriti nel tag ``body``, tra i simboli di
-apertura ``<body>`` e chiusura ``</body>``, come nell'esempio precedente, in
-cui il titolo `h1` ed il paragrafo `p` si trovano nel tag dei contenuti
-``body``.
 
 ## Tag per la gestione del testo
 
@@ -128,17 +183,6 @@ quando il mouse si ferma sopra questo, come ad esempio questo acronimo
 <abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
 ``<abbr title="HyperText Markup Language">HTML</abbr>``;
 
-## Tag obsoleti
-
-Alcuni tag sono stati "cancellati" dalle specifiche HTML e non devono più essere utilizzati, ad esempio:
-
-```html
-<acronym title="as soon as possible">ASAP</acronym> -->
-<big>This text is big</big>
-```
-
-Gli strumenti di validazione del codice HTML aiutano a rilevarli e sostituirli.
-
 ## Tag innestati
 
 E' ovvio che i tag possono essere inseriti (innestati) l'uno dentro
@@ -153,3 +197,15 @@ un testo grassetto, evidenziato e sottolineato, come
     </mark>
 </strong>
 ```
+
+
+## Tag obsoleti
+
+Alcuni tag sono stati "cancellati" dalle specifiche HTML e non devono più essere utilizzati, ad esempio:
+
+```html
+<acronym title="as soon as possible">ASAP</acronym> -->
+<big>This text is big</big>
+```
+
+Gli strumenti di validazione del codice HTML aiutano a rilevarli e sostituirli.
