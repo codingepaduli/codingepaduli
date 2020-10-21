@@ -12,27 +12,6 @@ toc: false
 summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 ---
 
-# Il linguaggio HTML
-
-Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
-
-L'**ipertesto** e' un testo "potenziato", cioè contenente immagini, collegamenti, video,
-ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web.
-
-Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
-l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
-
-Da sottolineare che il linguaggio HTML non definisce lo stile grafico
-del documento, ma solo la **struttura** di un ipertesto. Conoscere il
-linguaggio HTML significa conoscere le regole di utilizzo di queste etichette. Gli effetti
-grafici, le animazioni, le azioni, che sono comunque parte della pagina
-web, sono scritte in altri linguaggi, ed interagiscono con la struttura
-del documento.
-
-Per scrivere il codice HTML serve un semplice editor di testi. Tra quelli
-consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), mentre tra quelli da evitare assolutamente si elenca l'editor Word di
-Office e l'editor "Blocco Note" (Notepad) di Windows.
-
 # Etichette (tag)
 
 Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano

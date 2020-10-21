@@ -106,16 +106,16 @@ puó servire di servizi esterni, come il
 Il servizio di validazione della W3C permette di validare attraverso un
 link, facendo l'upload del file, oppure inserendo in input (con copia e
 incolla) il codice HTML da validare, come da immagine seguente:
-![immagine del validatore](/static/coding/web/html/html-W3C-validator.webp "immagine del validatore")
+![immagine del validatore](/static/coding/web/html/html-W3C-validator.png "immagine del validatore")
 
 L'operazione di validazione, con il servizio della W3C, puó indicare che
 in pagina non sono presenti errori, come da immagine seguente:
-![immagine del validatore senza errori](/static/coding/web/html/html-W3C-validator-OK.webp "immagine del validatore")
+![immagine del validatore senza errori](/static/coding/web/html/html-W3C-validator-OK.png "immagine del validatore")
 
 Nel caso siano presenti errori, vengono elencati uno ad uno, e viene
 riportata sia la presunta riga d'errore, sia viene evidenziato il codice
 con tutti gli errori, come nella seguente immagine:
-![immagine del validatore con errori](/static/coding/web/html/html-W3C-validator-Errors.webp "immagine del validatore con errori")
+![immagine del validatore con errori](/static/coding/web/html/html-W3C-validator-Errors.png "immagine del validatore con errori")
 
 Tra i diversi messaggi, di avviso o di errore, abbiamo:
 
