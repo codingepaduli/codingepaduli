@@ -2,9 +2,9 @@
 type: "html"
 title: "HTML Lez. 03.1 - Esercizi basilari su HTML"
 description: "HTML Lez. 03.1 - Esercizi basilari su HTML"
-date: 2020-04-22
-publishdate: 2020-04-22
-lastmod: 2020-04-22
+date: 2019-07-18
+publishdate: 2019-07-18
+lastmod: 2019-07-18
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
@@ -20,9 +20,9 @@ summary: "HTML Lez. 03.1 - Esercizi basilari su HTML"
 
 3. Spiegare il significato della sigla HTML;
 
-4. Spiegare il significato della parola Markup;
+4. Spiegare cosa è il WWW;
 
-5. Spiegare la differenza tra il tag ``title`` ed il tag ``h1``;
+5. Spiegare cosa sono i tag "obsoleti";
 
 6. Spiega a cosa serve l’indentazione e la validazione di una pagina web;
 

@@ -9,22 +9,28 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 04 - Etichette con attributi - Spiegazione dei tag che fanno uso di attributi"
+summary: "HTML Lez. 04 - Etichette che richiedono l'uso di attributi"
 ---
 
 # Etichette con attributi
 
 I tag possono avere degli **attributi** che servono ad aggiungere
-informazioni al tag. Alcuni attributi sono comuni a tutti i tag, ad
-esempio gli attributi ``id`` (che identifica in maniera univoca il tag) e
-``style`` (che indica lo stile grafico del tag), mentre altri attributi
-sono specifici del singolo tag.
+informazioni al tag.
 
 Gli attributi sono aggiunti solo nei simboli di apertura di un tag, non
 nei simboli di chiusura, e hanno la forma **nome='valore'**. Il valore
 deve essere sempre racchiuso da apici singoli o doppi.
 
-Di seguito, elenchiamo altri tag dell'HTML che utilizzano gli attributi.
+Alcuni attributi sono comuni a tutti i tag, ad
+esempio gli attributi ``id`` (che identifica in maniera univoca il tag), ``class`` e
+``style`` (che indica lo stile grafico del tag), mentre altri attributi
+sono specifici del singolo tag.
+
+Il tag ``html`` finora visto prevede l'attributo ``lang`` che serve ad indicare il codice del linguaggio in cui è scritta la pagina web. I codici dei linguaggi sono espressi secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a wikipedia per lo standard ISO 639-1").
+
+Le pagine web in italiano devono avere l'etichetta di apertura ``<html lang="it">``.
+
+Di seguito, sono elencati altre etichette dell'HTML che richiedono attributi.
 
 Il tag ``a`` serve a creare un collegamento (in inglese "link") verso un
 ipertesto (un'altra pagina web). Questo tag ha gli attributi:
@@ -32,15 +38,13 @@ ipertesto (un'altra pagina web). Questo tag ha gli attributi:
 - ``href``, che permette di indicare l'indirizzo dell'ipertesto da
   raggiungere;
 - ``target``, che permette di indicare come aprire l'ipertesto, e può
-  assumere solo i seguenti valori: ``_blank``, per aprire l'ipertesto in
-  una nuova pagina, e ``_self``, per aprire l'ipertesto nella stessa
-  pagina.
+  assumere solo i seguenti valori:
+  1. ``_blank`` indica al browser di aprire l'ipertesto in una nuova scheda o finestra;
+  2. ``_self`` indica al browser di aprire l'ipertesto nella stessa scheda o finestra.
 
-Un esempio di collegamento è questo [collegamento alla home](/ "collegamento alla home"),
-generato dal codice ``<a href="/" target="_blank">collegamento alla
-home</a>`` in cui si evidenzia sia l'indirizzo dell'ipertesto "/", cioè
-la home page, sia l'attributo ``target="_blank"``, cioè l'indicazione di
-aprire la home page in una nuova scheda del browser.
+Un esempio di collegamento è questo <a href="/" target="_blank">collegamento alla
+home</a>, generato dal codice ``<a href="/" target="_blank">collegamento alla
+home</a>`` in cui si evidenzia sia l'indirizzo della home page "/", sia l'attributo ``target="_blank"`` che indica di aprire la home page in una nuova scheda.
 
 Il tag ``ol`` genera una lista numerata di elementi, analogamente il tag
 ``ul`` genera una lista di elementi non ordinata. Entrambi i tag prevedono
