@@ -34,22 +34,38 @@ CHAPTERS="
 BOOKNAME="Appunti-di-laboratorio-TPSIT"
 CHAPTERS="
           $CONTENT_DIR/content/coding/web/html/intro.md
-          $CONTENT_DIR/content/coding/web/html/tags01.md
-          $CONTENT_DIR/content/coding/web/html/tags02.md
-          $CONTENT_DIR/content/coding/web/html/tags03.md
-          $CONTENT_DIR/content/coding/web/html/tags04.md
+          $CONTENT_DIR/content/coding/web/html/etichette.md
+          $CONTENT_DIR/content/coding/web/html/tagTesto.md
+          $CONTENT_DIR/content/coding/web/html/tagAttributes.md
+          $CONTENT_DIR/content/coding/web/html/metadati.md
+          $CONTENT_DIR/content/coding/web/html/codificaUnicode.md
+          $CONTENT_DIR/content/coding/web/html/validazione.md
           $CONTENT_DIR/content/coding/web/html/immagini.md
           $CONTENT_DIR/content/coding/web/javascript/intro.md
           $CONTENT_DIR/content/coding/web/javascript/primi_script.md
           $CONTENT_DIR/content/coding/web/javascript/Variabili.md
           $CONTENT_DIR/content/coding/web/javascript/operatori.md
           $CONTENT_DIR/content/coding/web/javascript/istruzioni_condizionali_iterative.md
-		  $CONTENT_DIR/content/coding/web/javascript/funzioni.md
-		  $CONTENT_DIR/content/coding/web/javascript/interazioneHtml.md
+          $CONTENT_DIR/content/coding/web/javascript/funzioni.md
+          $CONTENT_DIR/content/coding/web/javascript/interazioneHtml.md
           $CONTENT_DIR/content/coding/web/javascript/selettoriCSS.md
           $CONTENT_DIR/content/coding/tools/Gradle.md"
 '
 
+
+BOOKNAME="Appunti-di-laboratorio-di-informatica-per-telecomunicazioni"
+CHAPTERS="
+          $CONTENT_DIR/content/coding/web/html/intro.md
+          $CONTENT_DIR/content/coding/web/html/etichette.md
+          $CONTENT_DIR/content/coding/web/html/tagTesto.md
+          $CONTENT_DIR/content/coding/web/html/tagAttributes.md
+          $CONTENT_DIR/content/coding/web/html/metadati.md
+          $CONTENT_DIR/content/coding/web/html/codificaUnicode.md
+          $CONTENT_DIR/content/coding/web/html/validazione.md
+          "
+          #$CONTENT_DIR/content/coding/web/html/immagini.md
+
+: ' commento multilinea
 BOOKNAME="Appunti-di-laboratorio-di-informatica"
 CHAPTERS="$CONTENT_DIR/content/coding/web/javascript/intro.md
           $CONTENT_DIR/content/coding/web/javascript/primi_script.md
@@ -60,6 +76,7 @@ CHAPTERS="$CONTENT_DIR/content/coding/web/javascript/intro.md
           $CONTENT_DIR/content/coding/web/p5js/colorsAndStyles.md
           $CONTENT_DIR/content/coding/web/javascript/operatori.md
           "
+'
 
 # Common pandoc command for all formats
 PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --toc --toc-depth=3 --lua-filter=$PUB_DIR$IMAGE_PREPROCESS_FILTER_EBOOK --lua-filter=$PUB_DIR$PAGEBREAK_PREPROCESS_FILTER --resource-path=$RESOURCE_DIR "  # --fail-if-warnings --top-level-division=section
@@ -67,10 +84,10 @@ PANDOC_COMMAND="pandoc --standalone --from=markdown+yaml_metadata_block --toc --
 
 if [ -d $BUILD ]
 then
-	echo "";
-    # echo "Cancella prima la cartella: $BUILD"
-	# rm -rf "$BUILD"
-	# mkdir "$BUILD"
+  echo "";
+  # echo "Cancella prima la cartella: $BUILD"
+  # rm -rf "$BUILD"
+  # mkdir "$BUILD"
 fi
 
 cat $CHAPTERS | grep -e '^#' > epub_index.md
