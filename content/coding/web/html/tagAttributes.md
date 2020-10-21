@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 03 - Etichette con attributi"
-description: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno uso di attributi"
+title: "HTML Lez. 04 - Etichette con attributi"
+description: "HTML Lez. 04 - Etichette con attributi"
 date: 2019-07-25
 publishdate: 2019-07-25
 lastmod: 2019-07-25
@@ -9,7 +9,7 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 03 - Etichette con attributi - Spiegazione dei tag che fanno uso di attributi"
+summary: "HTML Lez. 04 - Etichette con attributi - Spiegazione dei tag che fanno uso di attributi"
 ---
 
 # Etichette con attributi
