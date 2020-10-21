@@ -42,16 +42,27 @@ Non tutte le etichette prevedono un'etichetta di chiusura, esistono delle eccezi
 
 # Struttura basilare di una pagina web
 
-Un documento HTML contiene principalmente i contenuti della pagina (titoli, paragrafi,
-  immagini, ecc..) che l'utente visualizza, ma non solo.
+## Dichiarazione del tipo di documento
+
+Un'indicazione fondamentale che deve essere inserita **nella prima riga** della pagina web (del file HTML) è la dichiarazione del tipo di documento: si deve indicare che il documento è scritto in HTML, utilizzando il codice ``<!doctype html>``.
+
+Si fa notare che "doctype" è l'abbreviazione di "document type", che tradotto significa "tipo di documento", quindi il tipo di documento è "HTML". Inoltre questa non un'etichetta, è una dichiarazione.
+
+## Metadati
 
 Un documento HTML contiene i metadati, che sono informazioni relative alla pagina web (autore, icona, descrizione, immagine di anteprima, ecc...). Questi metadati non sono mostrati all'utente, ma utilizzati dai motori di ricerca e dai social network per presentare e catalogare la pagina web.
 
 Ad esempio, quando si condivide agli amici un'articolo sui social, questi visualizzano, oltre al collegamento, sia il titolo dell'articolo, sia la descrizione, sia un'immagine o un video di anteprima. Queste informazioni di anteprima i social le recuperano dai metadati allegati alla pagina web.
 
-Un'indicazione fondamentale che deve essere inserita **nella prima riga** della pagina web (del file HTML) è la dichiarazione del tipo di documento: si deve indicare che il documento è scritto in HTML, utilizzando il codice ``<!doctype html>``.
+La codifica della pagina, la parte della pagina visibile (detta viewport) ed il titolo sono metadati obbligatori, per cui devono essere sempre presenti rispettivamente in prima, seconda e terza posizione tra i metadati.
 
-Si fa notare che "doctype" è l'abbreviazione di "document type", che tradotto significa "tipo di documento", quindi il tipo di documento è "HTML". Inoltre questa non un'etichetta, è una dichiarazione.
+Per un riferimento completo ai metadati si rimanda al link [https://htmlhead.dev/](https://htmlhead.dev/ "Link al sito di riferimento per i metadati").
+
+## Contenuti
+
+Un documento HTML contiene il "corpo della pagina", nel quale sono inseriti tutti i contenuti (titoli, paragrafi, immagini, ecc..) che l'utente visualizza.
+
+## Codice HTML basilare di una pagina web
 
 La struttura base di un documento HTML e' la seguente:
 
@@ -59,8 +70,15 @@ La struttura base di un documento HTML e' la seguente:
 <!doctype html>
 <html>
   <head>
-    <!-- metadati della pagina html -->
+    <!-- metadati obbligatori, vanno nelle prime posizioni -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+
+    <!-- altri metadati della pagina html -->
     <meta name="author" content="Bill Gates">
+    <meta name="description" content="Descrizione pagina">
+    <meta name="subject" content="Linguaggio HTML">
   </head>
   <body>
     <!-- contenuti della pagina html -->
@@ -70,7 +88,7 @@ La struttura base di un documento HTML e' la seguente:
 </html>
 ```
 
-In questa struttura si evidenziano i 4 elementi principali che devono
+In questo codice si evidenziano alcuni elementi principali che devono
 sempre essere presenti:
 
 1. La dichiarazione del tipo di documento ``doctype`` (abbreviazione di
@@ -90,7 +108,9 @@ Si fa notare nuovamente che tutti i tag nell'esempio sono prima aperti e
 poi chiusi. Inoltre, si fa notare che il testo è **indentato**, ovvero
 che, nella riga successiva ad un simbolo di apertura, vengono aggiunti 2
 o 4 spazi. Questi spazi vengono tolti quando il tag viene chiuso
-(simbolo di chiusura). L'indentazione è una caratteristica dei documenti
+(simbolo di chiusura).
+
+L'indentazione è una caratteristica dei documenti
 molto apprezzata, ed alcuni editor di testo permettono di indentare il
 documento in automatico, con combinazioni di tasti e/o plugins. Altra
 caratteristica apprezzata è la presenza di **commenti**, che l'autore
@@ -118,7 +138,7 @@ Di seguito si riporta un esempio di codice per generare i titoli dei primi tre l
 
 che vengono poi trasformati dal browser come si vede di seguito:
 
-<!-- TODO replace with an image of titles -->
+<!-- TODO replace with an image of titles ?? -->
 
 ### Esempio di titolo di primo livello
 
@@ -164,7 +184,7 @@ quando il mouse si ferma sopra questo, come ad esempio questo acronimo
 
 ## Tag innestati
 
-E' ovvio che i tag possono essere inseriti (innestati) l'uno dentro
+I tag possono essere inseriti (innestati) l'uno dentro
 l'altro per creare le combinazioni desiderate, ad esempio per generare
 un testo grassetto, evidenziato e sottolineato, come
 <strong><mark><ins>questo testo</ins></mark></strong> si usa il codice
@@ -177,6 +197,17 @@ un testo grassetto, evidenziato e sottolineato, come
 </strong>
 ```
 
+Se si vuole che solo una parte del testo sia sottolineata, come
+<strong><mark>questo <ins>testo</ins></mark></strong> si usa il codice
+
+```html
+<strong>
+    <mark>
+      questo
+      <ins>testo</ins>
+    </mark>
+</strong>
+```
 
 ## Tag obsoleti
 

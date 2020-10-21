@@ -9,10 +9,10 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 01 - Creazione ed amministrazione di siti web"
+summary: "HTML Lez. 01 - Introduzione al linguaggio HTML"
 ---
 
-# Creazione ed amministrazione di siti web
+# Introduzione al linguaggio HTML
 
 ## World Wide Web
 
@@ -20,9 +20,27 @@ Il World Wide Web (dall'inglese "Rete di Ampiezza Globale) è il servizio di int
 
 Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi ritrovarsi a vedere un video su una piattaforma web americana ed ancora visualizzare un'offerta di un prodotto presente su un e-commerce australiano, e così via.
 
-Il <abbr title="World Wide Web">WWW</abbr> ha avuto un diffusione capillare nella società grazie anche alla presenza dei motori di ricerca che permettono di trovare le informazioni presenti sui vari siti web. Oggi la disponibilità di tablet, smartphone e dispositivi mobile ha permesso la diffusione del <abbr title="World Wide Web">WWW</abbr> a quasi tutta la popolazione mondiale.
+Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in formato elettronico indipendente dalla piattaforma utilizzata.
+
+Insieme al WWW nasce il linguaggio HTML, che serve a strutturare i documenti scientifici da pubblicare, e quindi nascono i siti web.
+
+## Il linguaggio HTML
+
+Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
+
+L'**ipertesto** e' un testo "potenziato", cioè contenente immagini, collegamenti, video,
+ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web.
+
+Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
+l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
+
+Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica nè le azioni o elaborazioni da eseguire.
+
+Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazione e l'elaborazione di dati contenuti nella pagina web sono scritti con linguaggi di programmazione come JavaScript.
 
 ## Tecnologie e software per la creazione di siti web
+
+I siti web possono essere costruiti in mille modi.
 
 Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web attraverso delle interfacce grafiche che guidano l'utente. Questi software sono chiamati genericamente
 [CMS](https://it.wikipedia.org/wiki/Content_management_system "Link all'articolo sui CMS su wikipedia.it"). Tra i CMS più noti troviamo
@@ -31,7 +49,10 @@ Esistono software che permettono, anche con poche conoscenze tecniche, di disegn
 
 E' possibile creare dei siti web "statici", cioè scritti con software che trasformano un insieme di articoli e contenuti in un sito web. Questi strumenti prendono il nome di "Static site generator" (generatori di siti web statici).
 
-I software per la costruzione di un sito web, sia in modalità grafica, sia "statica", si basano su framework per lo sviluppo web, quali
+E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor
+open source consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), o ancora [VSCodium](https://vscodium.com/ "Link all'editor VSCodium"), un clone open source di Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
+
+I software per la costruzione di un sito web, sia in modalità grafica, sia "statica", sia partendo da zero, si basano su framework per lo sviluppo web, quali
 [Bootstrap](http://getbootstrap.com/ "Link al sito web di Bootstrap"),
 [ZURB foundation](http://foundation.zurb.com/ "Link al sito web di ZURB") e
 [Pure CSS](http://purecss.io/ "Link al sito web di Pure CSS"), giusto per nominarne alcuni, che intendono essere la base sulla quale poggiarsi per sviluppare siti web.
@@ -65,30 +86,7 @@ Dal punto di vista tecnico, l'amministrazione di un sito web comporta una serie 
   adatti per il trasferimento e la sincronizzazione delle pagine sul
   dominio.
 
-## Il linguaggio HTML
-
-Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
-
-L'**ipertesto** e' un testo "potenziato", cioè contenente immagini, collegamenti, video,
-ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web.
-
-Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
-l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
-
-Da sottolineare che il linguaggio HTML non definisce lo stile grafico
-del documento, ma solo la **struttura** di un ipertesto. Conoscere il
-linguaggio HTML significa conoscere le regole di utilizzo di queste etichette. Gli effetti
-grafici, le animazioni, le azioni, che sono comunque parte della pagina
-web, sono scritte in altri linguaggi, ed interagiscono con la struttura
-del documento.
-
-Per scrivere il codice HTML serve un semplice editor di testi. Tra quelli
-consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), mentre tra quelli da evitare assolutamente si elenca l'editor Word di
-Office e l'editor "Blocco Note" (Notepad) di Windows.
-
 ## Riferimenti alle risorse online
-
-Le pagine web sono scritte in linguaggio "HTML", un linguaggio che descrive la struttura dei vari contenuti della pagina.
 
 Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio
 HTML, degni di nota sono:
@@ -103,7 +101,3 @@ HTML, degni di nota sono:
 no-profit per aiutare le persone ad apprendere l'arte della
 programmazione, con corsi e certificazioni disponibili gratuitamente (in
 inglese).
-
-Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare.
-
-Le informazioni della pagina web possono invece essere elaborate dai programmi, chiamati script, che risiedono nella pagina web e che sono realizzati principalmente in linguaggio di programmazione JavaScript.
