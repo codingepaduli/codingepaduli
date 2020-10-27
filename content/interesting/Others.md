@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-10-12
-publishdate: 2020-10-12
-lastmod: 2020-10-12
+date: 2020-10-26
+publishdate: 2020-10-26
+lastmod: 2020-10-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -23,6 +23,7 @@ summary: "Set di link interessanti"
 ### Spacetime
 
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
+[A New Map of the Standard Model of Particle Physics | Quanta Magazine](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - \
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Faster than Light in Our Model of Physics](https://writings.stephenwolfram.com/2020/10/faster-than-light-in-our-model-of-physics-some-preliminary-thoughts/) - Some Preliminary Thoughts on Space, Time, Geometry of the Universe,  \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
@@ -34,6 +35,7 @@ summary: "Set di link interessanti"
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
+[Particle Physicists Continue To Make Empty Promises](https://backreaction.blogspot.com/2020/10/particle-physicists-continue-to-make.html) - \
 [The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
@@ -67,6 +69,7 @@ summary: "Set di link interessanti"
 [A Supercomputer's Covid-19 Analysis Yields a New Way to Understand the Virus](https://elemental.medium.com/a-supercomputer-analyzed-covid-19-and-an-interesting-new-theory-has-emerged-31cb8eba9d63) - \
 [Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
 [A whopping 91% of plastic isn't recycled, say national geographic](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - \
+[Japan to release Fukushima's contaminated water into sea: reports | Reuters](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - \
 
 ### Tech
 
@@ -78,3 +81,8 @@ summary: "Set di link interessanti"
 [HaxBall](https://www.haxball.com/) - physics-based multiplayer soccer game where teamwork is key\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
+[MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
+[shapez.io](https://shapez.io/) - Build automated factories to build, combine and color shapes!\
+[Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
+[100,000 Stars](https://stars.chromeexperiments.com/) - \
+[Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - A blog – Fractal Learning\

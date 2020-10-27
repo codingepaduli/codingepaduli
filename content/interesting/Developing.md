@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-14
-publishdate: 2020-10-14
-lastmod: 2020-10-14
+date: 2020-10-26
+publishdate: 2020-10-26
+lastmod: 2020-10-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -214,6 +214,7 @@ summary: "Set di link relativi al coding"
 [Open Source Game Clones](https://osgameclones.com/) - \
 [How I made a 3D game in only 2KB of JavaScript | Killed By A Pixel](https://frankforce.com/how-i-made-a-3d-game-in-only-2k-of-javascript/) - \
 [Ct.js — a free game editor](https://ctjs.rocks/) - \
+[deepnight.net | LEd – 2D map editor](https://deepnight.net/tools/led-2d-level-editor/) - \
 
 ### GIT
 
@@ -422,10 +423,11 @@ summary: "Set di link relativi al coding"
 [trubitsyn/bookmarks2markdown: Convert bookmarks to Markdown](https://github.com/trubitsyn/bookmarks2markdown) - \
 [scraggo/bookmarks-markdown-utils: Collection of command-line tools for Chrome, OneTab, Evernote, and FireFox bookmark management. The tools are mostly to convert proprietary formats to markdown and organizing and add tags.](https://github.com/scraggo/bookmarks-markdown-utils) - \
 [Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
-[GitHub](https://github.com/robinsloan/perfect-edition) - robinsloan/perfect-edition: A lightweight, responsive web e-book template\
+[GitHub robinsloan/perfect-edition](https://github.com/robinsloan/perfect-edition) - A lightweight, responsive web e-book template\
 [Typesetting Markdown – Part 2: Tool Review (Dave Jarvis)](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - \
 [Sigil-Ebook/Sigil](https://github.com/Sigil-Ebook/Sigil) - Sigil is a free, open source, multi-platform EPUB ebook editor that uses Qt\
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
+[GitHub charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
 
 #### Hugo static site generator
 
@@ -530,6 +532,7 @@ summary: "Set di link relativi al coding"
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
+[bansal/filters.css](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 
 #### JavaScript
 
