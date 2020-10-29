@@ -26,7 +26,7 @@ che assegna un
 numero univoco ad ogni carattere di ogni lingua, ad ogni simbolo e ad
 ogni emoticons o emoji.
 
-Per salvare i file nella codifica UTF-8, si consiglia il tool [EditorConfig](/coding/tools/EditorConfig/ "Link ad EditorConfig su wikipedia"), leggendo il relativo articolo.
+Per salvare i file nella codifica UTF-8, si consiglia il tool [EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su wikipedia"), leggendo il relativo articolo.
 
 Una volta che le pagine web sono state salvate con la codifica giusta, è
 consigliato indicarla nelle informazioni della pagina, all'interno del
