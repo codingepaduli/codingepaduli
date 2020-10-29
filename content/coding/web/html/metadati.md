@@ -25,6 +25,7 @@ Tutti i metadati devono essere contenuti nel tag ``head`` della pagina web, ad e
 ## Metadati obbligatori
 
 I seguenti metadati sono obbligatori e devono essere inseriti rispettivamente in prima, seconda e terza posizione tra i metadati della pagina web:
+
 1. la codifica della pagina web ("utf-8" è la codifica standard) descritta in un capitolo successivo;
 2. la "viewport" che imposta la parte della pagina visibile sui dispositivi. L'impostazione aiuta a rendere "responsive" la pagina web (cioè correttamente visualizzabile sui vari schermi, dalle smart TV agli smartphone). Per un dettaglio maggiore sull'argomento si rimanda alle specifiche HTML;
 3. il titolo del documento.

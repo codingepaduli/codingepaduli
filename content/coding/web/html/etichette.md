@@ -30,6 +30,7 @@ Ad esempio,
 ``mark`` è l'etichetta per il testo evidenziato, quindi ci si riferisce all'etichetta di inizio del testo evidenziato e l'etichetta di fine del testo evidenziato.
 
 Queste etichette di apertura e chiusura sono scritte secondo le seguenti regole:
+
 - l'etichetta di apertura è composta dal nome dell'etichetta racchiuso tra parentesi angolari (i caratteri ``<`` e ``>`` nel campo della programmazione sono detti appunto parentesi angolari).
 - l'etichetta di chiusura è composta dalle parentesi angolari contenenti il nome dell'etichetta preceduto dal carattere ``/``.
 
