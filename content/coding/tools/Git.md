@@ -90,6 +90,7 @@ Creato il repository, viene fornito un URL per l'accesso e la clonazione dello s
 
 L'indirizzo completo del repository su GitHub, non completamente riportato nell'immagine, è il seguente:
 
+<!-- markdown-link-check-disable-next-line -->
 [https://github.com/codingepaduli/gitmergetutorial.git](https://github.com/codingepaduli/gitmergetutorial.git "GitHub - URL completo del Repository")
 
 ### Creazione repository su GitLab
@@ -104,6 +105,7 @@ Creato il repository, viene fornito un URL per l'accesso e la clonazione dello s
 
 L'indirizzo completo del repository su GitLab, non completamente riportato nell'immagine, è il seguente:
 
+<!-- markdown-link-check-disable-next-line -->
 [https://gitlab.com/codingepaduli/gitmergetutorial.git](https://gitlab.com/codingepaduli/gitmergetutorial.git "GitLab - URL completo del Repository")
 
 ### Clonazione repository
