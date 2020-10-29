@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-26
-publishdate: 2020-10-26
-lastmod: 2020-10-26
+date: 2020-10-28
+publishdate: 2020-10-28
+lastmod: 2020-10-28
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -532,7 +532,7 @@ summary: "Set di link relativi al coding"
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
-[bansal/filters.css](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
+[bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 
 #### JavaScript
 
