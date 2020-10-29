@@ -10,7 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Area da disegno e primitive per la grafica 2D"
-externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
+externalJS: ['https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js']
 customJS: ["/static/coding/web/p5js/basics.js"]
 ---
 
