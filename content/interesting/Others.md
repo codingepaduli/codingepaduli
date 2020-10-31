@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-10-26
-publishdate: 2020-10-26
-lastmod: 2020-10-26
+date: 2020-10-30
+publishdate: 2020-10-30
+lastmod: 2020-10-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -38,6 +38,7 @@ summary: "Set di link interessanti"
 [Particle Physicists Continue To Make Empty Promises](https://backreaction.blogspot.com/2020/10/particle-physicists-continue-to-make.html) - \
 [The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
+[Einstein's missed opportunity to rid us of 'spooky actions at a distance': The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - \
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\

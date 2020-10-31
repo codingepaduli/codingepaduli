@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-28
-publishdate: 2020-10-28
-lastmod: 2020-10-28
+date: 2020-10-30
+publishdate: 2020-10-30
+lastmod: 2020-10-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -67,6 +67,7 @@ summary: "Set di link relativi al coding"
 [Upcase by thoughtbot](https://thoughtbot.com/upcase) - Learn Web Development Online\
 [News ubuntu](http://wiki.ubuntu-it.org/NewsletterItaliana/) - ubuntu wiki\
 [ProtonMail](https://protonmail.com/) - A secure free encrypted email.\
+[freepn.org](https://www.freepn.org/) - Free and open source VPN\
 [ThrowAwayMail.com](http://www.throwawaymail.com/) - free temporary email, disposable e-mail address\
 [fake mail generator](http://www.fakemailgenerator.com/) - \
 [https://www.mytrashmailer.com/](https://www.mytrashmailer.com/) - \
@@ -137,6 +138,8 @@ summary: "Set di link relativi al coding"
 [How Ansible brought peace to my home](https://opensource.com/article/19/9/ansible-documentation-kids-laptops) - \
 [Building container images with the ansible-bender tool](https://opensource.com/article/19/10/building-container-images-ansible) - Learn how to use Ansible to execute commands in a container.\
 [How to install software with Ansible | Opensource.com](https://opensource.com/article/20/9/install-packages-ansible) - \
+[10 Ansible modules for Linux system automation | Opensource.com](https://opensource.com/article/20/10/ansible-modules-linux) - \
+[My first day using Ansible | Opensource.com](https://opensource.com/article/20/10/first-day-ansible) - \
 
 #### PowerShell
 
@@ -532,7 +535,7 @@ summary: "Set di link relativi al coding"
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
-[bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
+[bansal/filters.css](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 
 #### JavaScript
 
