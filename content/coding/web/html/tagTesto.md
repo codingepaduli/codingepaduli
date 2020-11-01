@@ -16,12 +16,12 @@ summary: "HTML Lez. 03 - Etichette per la formattazione del testo"
 
 ## Titoli
 
-Il titolo, come visto nell'esempio precedente, è generato dal tag ``h1``,
+Il titolo, come visto nell'esempio precedente, è generato dall'etichetta ``h1``,
 che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
 
 Esistono 7 livelli di titolo, che servono a dividere il
 documento in più capitoli e sotto-capitoli, in modo da poter dare una
-struttura "alberata" al documento. Questi livelli sono espressi dai tag
+struttura "alberata" al documento. Questi livelli sono espressi dalle etichette
 ``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` ed ``h7``, anche se si consiglia
 l'uso fino al terzo livello.
 
@@ -45,48 +45,50 @@ che vengono poi trasformati dal browser come si vede di seguito:
 
 ## Formattazione testo
 
-Il paragrafo è generato dal tag ``p`` che ha il simbolo di apertura ``<p>``
+Il paragrafo è generato dall'etichetta ``p`` che ha il simbolo di apertura ``<p>``
 ed il simbolo di chiusura ``</p>``;
 
-il tag ``del`` genera un testo cancellato come ad esempio questo testo
+l'etichetta ``del`` genera un testo cancellato come ad esempio questo testo
 <del>cancellato</del> generato dal seguente codice:
 ``<del>cancellato</del>``;
 
-il tag ``ins`` genera un testo sottolineato come ad esempio questo testo
+l'etichetta ``ins`` genera un testo sottolineato come ad esempio questo testo
 <ins>sottolineato</ins> generato dal seguente codice:
 ``<ins>sottolineato</ins>``;
 
-il tag ``sup`` genera un testo in apice come ad esempio questo testo
+l'etichetta ``sup`` genera un testo in apice come ad esempio questo testo
 <sup>in apice</sup> generato dal seguente codice:
 ``<sup>in apice</sup>``;
 
-il tag ``sub`` genera un testo in pedice come ad esempio questo testo
+l'etichetta ``sub`` genera un testo in pedice come ad esempio questo testo
 <sub>in pedice</sub> generato dal seguente codice:
 ``<sub>in pedice</sub>``;
 
-il tag ``strong`` genera un testo in grassetto, come ad esempio questo
+l'etichetta ``strong`` genera un testo in grassetto, come ad esempio questo
 testo **in grassetto** generato dal seguente codice:
 ``<strong>in grassetto</strong>``;
 
-il tag ``em`` genera un testo in corsivo, come ad esempio questo testo *in
+l'etichetta ``em`` genera un testo in corsivo, come ad esempio questo testo *in
 corsivo* generato dal seguente codice:
 ``<em>in corsivo</em>``;
 
-il tag ``mark`` genera un testo evidenziato, come ad esempio questo testo
+l'etichetta ``mark`` genera un testo evidenziato, come ad esempio questo testo
 <mark>evidenziato</mark> generato dal seguente codice:
 ``<mark>evidenziato</mark>``;
 
-il tag ``abbr`` è usato per visualizzarne il significato di un acronimo
+l'etichetta ``abbr`` è usato per visualizzarne il significato di un acronimo
 quando il mouse si ferma sopra questo, come ad esempio questo acronimo
 <abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
 ``<abbr title="HyperText Markup Language">HTML</abbr>``;
 
 ## Combinazioni innestate per la formattazione
 
-I tag possono essere inseriti (innestati) l'uno dentro
-l'altro per creare le combinazioni desiderate, ad esempio per generare
+Le etichette possono essere inserite (innestate) l'una dentro
+l'altra per creare le formattazioni di testo desiderate.
+
+Ad esempio, per generare
 un testo grassetto, evidenziato e sottolineato, come
-<strong><mark><ins>questo testo</ins></mark></strong> si usa il codice
+<strong><mark><ins>questo testo</ins></mark></strong> si usa il codice:
 
 ```html
 <strong>
@@ -96,8 +98,8 @@ un testo grassetto, evidenziato e sottolineato, come
 </strong>
 ```
 
-Se si vuole che solo una parte del testo sia sottolineata, come
-<strong><mark>questo <ins>testo</ins></mark></strong> si usa il codice
+Se si vuole che tutto il testo sia grassetto ed evidenziato, ma solo una parte del testo sia sottolineata, come
+<strong><mark>questo <ins>testo</ins></mark></strong> si usa il codice:
 
 ```html
 <strong>

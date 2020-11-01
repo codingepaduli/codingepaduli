@@ -45,7 +45,7 @@ Non tutte le etichette prevedono un'etichetta di chiusura, esistono delle eccezi
 
 Un'indicazione fondamentale che deve essere inserita **nella prima riga** della pagina web (del file HTML) è la dichiarazione del "tipo di documento": si deve indicare che il documento è scritto in HTML, utilizzando il codice ``<!doctype html>`` ("doctype" è l'abbreviazione di "document type", che tradotto significa "tipo di documento", quindi si dichiara che il tipo di documento è "HTML").
 
-Si precisa che non si tratta di un'etichetta, è una dichiarazione, difatti quindi ha una chiusura;
+Si precisa che non si tratta di un'etichetta, è una dichiarazione, per cui **non necessita di un'etichetta di chiusura**;
 
 Il tag ``html`` delimita l'intera pagina web (l'etichetta di
 apertura ``<html>`` indica l'inizio del documento HTML e l'etichetta
