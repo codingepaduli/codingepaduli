@@ -7,6 +7,9 @@
       "pattern": "^http(s)?://cdnjs.cloudflare.com"
     },
     {
+      "pattern": "^http(s)?://www.cloudflare.com/"
+    },
+    {
       "pattern": "^http(s)?://www2.mokabyte.it"
     }
   ],
