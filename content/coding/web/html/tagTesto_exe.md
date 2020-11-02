@@ -75,6 +75,7 @@ Ad ogni studente, nel seguito dell'esercizio, è assegnata una classe di oggetti
 5. Si applichino le accortezze necessarie per una leggibilità del codice ottimale.
 
 Di seguito le assegnazioni per ogni studente:
+<!-- markdownlint-disable MD009 MD029 MD036 -->
 
 1. **canzone** con le proprietà Titolo (formattazione testo: grassetto), Autore (formattazione testo: in apice, sottolineato), Album (formattazione testo: cancellato), Genere (formattazione testo: evidenziato);
 1. **film** con le proprietà Titolo (formattazione testo: grassetto), Regista (formattazione testo: evidenziato, sottolineato), Protagonista (formattazione testo: in pedice), Genere (formattazione testo: in apice, evidenziato);
@@ -98,8 +99,6 @@ Di seguito le assegnazioni per ogni studente:
 20. **social network** con le proprietà SitoWeb (formattazione: grassetto), ValoreStimato (formattazione: cancellato evidenziato), Fatturato (formattazione: in pedice) ed UtentiGiornalieri (formattazione: evidenziato);
 1. **CanaleTV** con le proprietà Nome (formattazione testo: grassetto), Frequenza (formattazione testo: corsivo, evidenziato), NumeroCanale (formattazione testo: in apice, grassetto) e Azienda (formattazione testo: corsivo, in pedice);
 1. **ProgrammaTV** con le proprietà Nome (formattazione testo: grassetto), Conduttore (formattazione testo: corsivo, grassetto), DataInOnda (formattazione testo: in pedice) e CanaleTV (formattazione testo: in apice);
-
-<!-- markdownlint-disable MD009 MD029 MD036 -->
 
  |        |     |     |     |     |     |
 ---       | --- | --- | --- | --- | --- | --- |
