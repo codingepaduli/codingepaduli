@@ -9,7 +9,7 @@
     {
       "pattern": "^http(s)?://www2.mokabyte.it"
     }
-  ]
+  ],
   "replacementPatterns": [
     {
       "pattern": "^/",
