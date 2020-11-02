@@ -14,7 +14,7 @@
     },
     {
       "pattern": "^http(s)?://savoir-sans-frontieres.com"
-    },
+    }
   ],
   "replacementPatterns": [
     {
