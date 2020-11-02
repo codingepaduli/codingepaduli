@@ -11,7 +11,10 @@
     },
     {
       "pattern": "^http(s)?://www2.mokabyte.it"
-    }
+    },
+    {
+      "pattern": "^http(s)?://savoir-sans-frontieres.com"
+    },
   ],
   "replacementPatterns": [
     {
