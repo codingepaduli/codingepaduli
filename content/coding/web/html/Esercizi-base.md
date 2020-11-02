@@ -1,15 +1,15 @@
 ---
 type: "html"
-title: "HTML Lez. 03.1 - Esercizi basilari su HTML"
-description: "HTML Lez. 03.1 - Esercizi basilari su HTML"
-date: 2019-07-18
-publishdate: 2019-07-18
-lastmod: 2019-07-18
+title: "HTML Lez. 02.1 - Esercizi basilari su HTML"
+description: "HTML Lez. 02.1 - Esercizi basilari su HTML"
+date: 2019-07-17
+publishdate: 2019-07-17
+lastmod: 2019-07-17
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
-summary: "HTML Lez. 03.1 - Esercizi basilari su HTML"
+summary: "HTML Lez. 02.1 - Esercizi basilari su HTML"
 ---
 
 # Esercizi basilari su HTML

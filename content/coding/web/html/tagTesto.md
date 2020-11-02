@@ -2,9 +2,9 @@
 type: "html"
 title: "HTML Lez. 03 - Etichette per la formattazione del testo"
 description: "HTML Lez. 03 - Etichette per la formattazione del testo"
-date: 2019-07-17
-publishdate: 2019-07-17
-lastmod: 2019-07-17
+date: 2019-07-18
+publishdate: 2019-07-18
+lastmod: 2019-07-18
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
