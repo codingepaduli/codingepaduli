@@ -1,4 +1,15 @@
 {
+  "ignorePatterns": [
+    {
+      "pattern": "^http(s)?://browsershots.org"
+    },
+    {
+      "pattern": "^http(s)?://cdnjs.cloudflare.com"
+    },
+    {
+      "pattern": "^http(s)?://www2.mokabyte.it"
+    }
+  ]
   "replacementPatterns": [
     {
       "pattern": "^/",
