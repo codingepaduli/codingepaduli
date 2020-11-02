@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-10-30
-publishdate: 2020-10-30
-lastmod: 2020-10-30
+date: 2020-11-01
+publishdate: 2020-11-01
+lastmod: 2020-11-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -29,15 +29,12 @@ summary: "Set di link relativi al coding"
 [IBM developerWorks : Open source tutorials and projects](http://www.ibm.com/developerworks/opensource/) - \
 [Oracle Database Library](http://www.oracle.com/pls/db102/portal.all_books) - \
 [Hosted Weblate](https://hosted.weblate.org/) - \
-[phpMyAdmin](http://localhost:8888/phpmyadmin/) - localhost :8888\
-[pittStamachin.org localhost](http://www.pittstamachin.org/webPages/login.php) - \
 [Education Ecosystem | The project-based learning for building real products](https://www.education-ecosystem.com/) - \
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
 [Speed tests](http://www.dslreports.com/tools) - dslreports.com\
 [NASA World Wind](http://worldwind.arc.nasa.gov/) - \
-[download libri Java](http://www.dilhaidesi.com/forum/showthread.php?28974-Java-SE-EE-JavaFX-JSP-JSF-JBOSS-eBook-Collection) - \
 [All IT eBooks](http://www.allitebooks.com/) - Free IT eBooks Download\
-[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books · GitHub](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md) - \
+[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md) - \
 [Sugar Labs](https://sugarlabs.org/) - \
 [Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
 [Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
@@ -178,8 +175,6 @@ summary: "Set di link relativi al coding"
 [JSON Web Token Handler for the Microsoft .NET Framework 4.5](https://blogs.msdn.microsoft.com/vbertocci/2012/11/20/introducing-the-developer-preview-of-the-json-web-token-handler-for-the-microsoft-net-framework-4-5/) - \
 [.NET Framework Tools](https://msdn.microsoft.com/it-it/library/d9kh6s92(v=vs.110).aspx) - \
 [Linguaggio di programmazione C# per sviluppatori Java](http://msdn.microsoft.com/it-it/library/ms228602(v=VS.90).aspx) - \
-[Leggere un file XML in C#](http://blog.shareoffice.it/emanuele/archive/2008/10/15/9770.aspx) - \
-[Trasformazione XSLT in C# | CodeSnippet](http://codesnippet.altervista.org/trasformazione-xslt-in-c-sharp/) - \
 [Ensure.That v5.0.0 Library for validating arguments](https://www.nuget.org/packages/Ensure.That/) - \
 [Entity Framework Tutorial](http://www.entityframeworktutorial.net/) - \
 [SQL Server Connection Pooling (ADO.NET)](https://msdn.microsoft.com/en-us/library/8xx3tyca(v=vs.110).aspx) - \
@@ -209,9 +204,6 @@ summary: "Set di link relativi al coding"
 
 ### Giochi
 
-[Primi Passi nel Game Development](https://davideaversa.it/slashcode/2012/04/primi-passi-nel-game-development/) - \
-[Game Development](https://davideaversa.it/slashcode/2012/05/game-development-architettura-component-based/) - Architettura Component-Based\
-[Come non perdersi nel Game Loop](https://davideaversa.it/slashcode/2012/08/come-non-perdersi-nel-game-loop/) - \
 [Create 3D games with friends, no experience required](https://www.blog.google/technology/area-120/create-3d-games-friends-no-experience-required/) - \
 [How to use MapTool to build an interactive dungeon RPG](https://opensource.com/article/19/6/how-use-maptools?sc_cid=70160000001273HAAQ) - \
 [Open Source Game Clones](https://osgameclones.com/) - \
@@ -234,8 +226,6 @@ summary: "Set di link relativi al coding"
 
 [Free web hosting for Java+MySQL websites?](https://www.quora.com/Free-web-hosting-for-Java+MySQL-websites) - Quora\
 [AdoptOpenJDK](https://adoptopenjdk.net/) - Open source, prebuilt OpenJDK binaries\
-[Eclipse All Releases | Packages](https://www.eclipse.org/downloads/packages/all) - \
-[Java lato web](http://www.agentgroup.unimo.it/didattica/curriculum/marco/MAIN/didattica/TECN_APP_WEB/PDF/) - \
 [Wikibooks, manuali e libri di testo liberi](https://it.wikibooks.org/wiki/Java) - \
 [MokaByte 111](http://www2.mokabyte.it/cms/article.run?articleId=J74-ZHK-E4Y-62F_7f000001_30520983_51b9ed95) - Le applicazioni web e Java\
 [Sistemi Distribuiti LS](http://lia.deis.unibo.it/Courses/sd0809-info/) - slides\
@@ -285,7 +275,6 @@ summary: "Set di link relativi al coding"
 [read value from application properties in spring-log4j2.xml file](https://stackoverflow.com/questions/48639930/read-value-from-application-properties-in-spring-log4j2-xml-file) - \
 [JUnit 5 tutorial, part 2: Unit testing Spring MVC with JUnit 5](https://www.javaworld.com/article/3543268/junit-5-tutorial-part-2-unit-testing-spring-mvc-with-junit-5.html) - \
 [Spring Boot | GraphQLize](https://www.graphqlize.org/docs/getting_started/java/springboot) - \
-[Configuring Spring Security for a RESTful Web Services](http://www.networkedassets.com/configuring-spring-security-for-a-restful-web-services/) - \
 
 #### Java to native or WebAssembly
 
@@ -298,7 +287,6 @@ summary: "Set di link relativi al coding"
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
-[Guide debianizzati](https://guide.debianizzati.org/index.php/Pagina_principale) - \
 [50 UNIX / Linux Sysadmin Tutorials](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - \
 [Capitolo 4. Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
@@ -369,10 +357,8 @@ summary: "Set di link relativi al coding"
 ### PHP
 
 [Guida PHP di base | PHP.HTML.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
-[Building a RESTful Web application with PHP | Gareth Jones](http://blog.garethj.com/2009/02/17/building-a-restful-web-application-with-php/) - \
 [REST API Authentication](http://community.sitepoint.com/t/rest-api-authentication/6200) - The SitePoint Forums\
 [PHP](http://it.phptherightway.com/) - La Retta Via\
-[Primi Passi Con Composer | VincenzoStira Dot Com](http://v1.vincenzostira.com/?p=1610) - \
 [mod_rewrite](https://www.cheatography.com/davechild/cheat-sheets/mod-rewrite/) - Cheat Sheets For Every Occasion\
 [Configurazione virtual host su web server Apache](http://www.compago.it/manuali/35-utilita/190-configurazione-web-server-apache-virtual-host.html) - \
 [fatal error](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/241817-fatal-error.html) - \
@@ -405,10 +391,10 @@ summary: "Set di link relativi al coding"
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
 [What Is the Business Model for DuckDuckGo?](https://spreadprivacy.com/duckduckgo-revenue-model/) - \
 [The Brave web browser is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - \
-[Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser · GitHub](https://github.com/brave/brave-browser/issues/9929) - \
+[Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser](https://github.com/brave/brave-browser/issues/9929) - \
 [Runnaroo | A Better Private Search Engine](https://www.runnaroo.com/) - \
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
-[DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/learning/dns/dns-over-tls/) - \
+[DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -426,11 +412,11 @@ summary: "Set di link relativi al coding"
 [trubitsyn/bookmarks2markdown: Convert bookmarks to Markdown](https://github.com/trubitsyn/bookmarks2markdown) - \
 [scraggo/bookmarks-markdown-utils: Collection of command-line tools for Chrome, OneTab, Evernote, and FireFox bookmark management. The tools are mostly to convert proprietary formats to markdown and organizing and add tags.](https://github.com/scraggo/bookmarks-markdown-utils) - \
 [Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
-[GitHub robinsloan/perfect-edition](https://github.com/robinsloan/perfect-edition) - A lightweight, responsive web e-book template\
+[robinsloan/perfect-edition](https://github.com/robinsloan/perfect-edition) - A lightweight, responsive web e-book template\
 [Typesetting Markdown – Part 2: Tool Review (Dave Jarvis)](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - \
 [Sigil-Ebook/Sigil](https://github.com/Sigil-Ebook/Sigil) - Sigil is a free, open source, multi-platform EPUB ebook editor that uses Qt\
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
-[GitHub charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
+[charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
 
 #### Hugo static site generator
 
@@ -473,7 +459,6 @@ summary: "Set di link relativi al coding"
 [W3Schools Online Web Tutorials](http://www.w3schools.com/) - \
 [Caching Tutorial for Web Authors and Webmasters](http://www.mnot.net/cache_docs/#BROWSER) - \
 [HttpURLConnection: upload di un file](http://www.nicolacolonna.it/?p=668) - \
-[Free Web Hosting](http://www.zymic.com/free-web-hosting/) - Zymic\
 [Google Structured Data Testing Tool (see schema.org)](http://www.google.com/webmasters/tools/richsnippets) - \
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
@@ -504,10 +489,11 @@ summary: "Set di link relativi al coding"
 [HTML images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
 [HTML image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
 [HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
+[HTML APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding HTML APIs\
 [Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
-[MIME Types](http://www.asciitable.it/mimetypes.asp) - \
+[MIME Types](https://www.asciitable.it/mime-types) - \
 [Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
 [Emoji List, v12.0](https://www.unicode.org/emoji/charts/emoji-list.html) - \
 [Ready to validate](http://validator.w3.org/nu/) - Nu Markup Validation Service - W3C\
@@ -522,20 +508,19 @@ summary: "Set di link relativi al coding"
 [Visual formatting model](http://www.w3.org/TR/CSS2/visuren.html#q24) - \
 [kognise water CSS · A CSS without classes](https://github.com/kognise/water.css/blob/master/README.md) - \
 [Flexible data tables with CSS Grid](https://adamlynch.com/flexible-data-tables-with-css-grid/?1) - \
-[CSSFX](https://cssfx.dev/) - Beautifully simple click-to-copy CSS effects\
 [How to convert Excel files to HTML or JSON | Opensource.com](https://opensource.com/article/19/5/convert-excel-files-html-json) - \
 [CSS Grid Generator](https://cssgrid-generator.netlify.com/) - \
 [CSS rules that will make your life easier](https://www.freecodecamp.org/news/css-rules-to-live-by-962a051e1eb2/) - \
 [CSS Grid Level 2](https://hacks.mozilla.org/2019/06/css-grid-level-2-subgrid-is-coming-to-firefox/) - subgrid is coming to Firefox\
 [The CSS Mindset | Max Böck](https://mxb.dev/blog/the-css-mindset/) - Frontend Web Developer\
 [Relearn CSS layout: Every Layout](https://every-layout.dev/) - \
-[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://bradleytaunt.com/2019/06/11/responsive-tables/) - \
+[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/responsive-tables/) - \
 [Why we prefer CSS Custom Properties to SASS variables | CodyHouse](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - \
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
-[bansal/filters.css](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
+[bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 
 #### JavaScript
 
@@ -574,7 +559,6 @@ summary: "Set di link relativi al coding"
 ##### Aurelia
 
 [Aurelia JS](http://aurelia.io/) - \
-[Projects · AUCS Project Guide](https://aurelia-community.gitbooks.io/aucs-project-guide/initial-project-structure/projects.html) - \
 [Guide To Bundling & Exporting In Aurelia](https://ilikekillnerds.com/2016/02/the-definitive-guide-to-bundling-exporting-in-aurelia/) - \
 [ES6 Modules import and export](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/) - \
 [Angular2 and Aurelia Comparison](https://opensourcedotnetter.blogspot.it/2016/11/creating-todomvc-application-using_69.html) - Todo web app\
@@ -584,8 +568,8 @@ summary: "Set di link relativi al coding"
 [Aurelia Promise and Async Bindings](http://www.sobell.net/aurelia-async-bindings/) - \
 [asynchronous](https://stackoverflow.com/questions/42050823/aurelia-how-to-handle-a-async-request-in-a-view) - Aurelia: How to handle a async request in a view? - Stack Overflow\
 [Jujens' blog](https://www.jujens.eu/) - Aurelia developer\
-[Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - bigopon/todomvc · GitHub\
-[Aurelia 2](https://github.com/aurelia/aurelia) - GitHub aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
+[Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - bigopon/todomvc\
+[Aurelia 2](https://github.com/aurelia/aurelia) - aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
 

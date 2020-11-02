@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-10-30
-publishdate: 2020-10-30
-lastmod: 2020-10-30
+date: 2020-11-01
+publishdate: 2020-11-01
+lastmod: 2020-11-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -25,6 +25,7 @@ summary: "Set di link interessanti"
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
 [A New Map of the Standard Model of Particle Physics | Quanta Magazine](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - \
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
+[Gravity Is Not A Force](https://timhutton.github.io/GravityIsNotAForce/) - Under general relativity, gravity is a distortion of spacetime, not a force. See it in this simulation.\
 [Faster than Light in Our Model of Physics](https://writings.stephenwolfram.com/2020/10/faster-than-light-in-our-model-of-physics-some-preliminary-thoughts/) - Some Preliminary Thoughts on Space, Time, Geometry of the Universe,  \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
@@ -38,7 +39,7 @@ summary: "Set di link interessanti"
 [Particle Physicists Continue To Make Empty Promises](https://backreaction.blogspot.com/2020/10/particle-physicists-continue-to-make.html) - \
 [The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
-[Einstein's missed opportunity to rid us of 'spooky actions at a distance': The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - \
+[Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
@@ -71,19 +72,24 @@ summary: "Set di link interessanti"
 [Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
 [A whopping 91% of plastic isn't recycled, say national geographic](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - \
 [Japan to release Fukushima's contaminated water into sea: reports | Reuters](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - \
+[The Earth Is Pulsating Every 26 Seconds, and Seismologists Don't Agree Why](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - \
 
 ### Tech
 
 [Learning Music (Beta)](https://learningmusic.ableton.com/) - \
-[Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
 [Alcohol breath tests are often unreliable](https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html) - New York Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them\
 [DRM Broke Its Promise – DRM like feudalism](https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/) - \
 [QiFi](https://qifi.org/) - WiFi QR Code Generator\
-[HaxBall](https://www.haxball.com/) - physics-based multiplayer soccer game where teamwork is key\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
-[MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
-[shapez.io](https://shapez.io/) - Build automated factories to build, combine and color shapes!\
 [Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
-[100,000 Stars](https://stars.chromeexperiments.com/) - \
-[Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - A blog – Fractal Learning\
+[100,000 Stars](https://stars.chromeexperiments.com/) - A tour from our Sun to the far away stars of our Milky Way Galaxy\
+[Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
+
+### Games
+
+[shapez.io](https://shapez.io/) - Build automated factories to build, combine and color shapes!\
+[HaxBall](https://www.haxball.com/) - physics-based multiplayer soccer game where teamwork is key\
+[MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
+[eXoDOS V4.0](https://exodos.the-eye.us/) - an attempt to catalog, obtain, and make playable every game developed for the DOS and PC Booter platform\
+[Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
