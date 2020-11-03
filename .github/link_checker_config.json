@@ -1,20 +1,11 @@
 {
   "ignorePatterns": [
-    {
-      "pattern": "^http(s)?://browsershots.org"
-    },
-    {
-      "pattern": "^http(s)?://cdnjs.cloudflare.com"
-    },
-    {
-      "pattern": "^http(s)?://www.cloudflare.com/"
-    },
-    {
-      "pattern": "^http(s)?://www2.mokabyte.it"
-    },
-    {
-      "pattern": "^http(s)?://savoir-sans-frontieres.com"
-    }
+    { "pattern": "^http(s)?://browsershots.org" },
+    { "pattern": "^http(s)?://cdnjs.cloudflare.com" },
+    { "pattern": "^http(s)?://www.cloudflare.com/" },
+    { "pattern": "^http(s)?://www2.mokabyte.it" },
+    { "pattern": "^http(s)?://savoir-sans-frontieres.com" },
+    { "pattern": "^http(s)://www.nationalgeographic.com/science/phenomena/2015/04/24/when-hubble-stared-at-nothing-for-100-hours/" }
   ],
   "replacementPatterns": [
     {
