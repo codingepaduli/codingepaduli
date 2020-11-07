@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-11-01
-publishdate: 2020-11-01
-lastmod: 2020-11-01
+date: 2020-11-06
+publishdate: 2020-11-06
+lastmod: 2020-11-06
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -85,6 +85,12 @@ summary: "Set di link interessanti"
 [Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
 [100,000 Stars](https://stars.chromeexperiments.com/) - A tour from our Sun to the far away stars of our Milky Way Galaxy\
 [Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
+
+### History
+
+[Secessio plebis](https://it.wikipedia.org/wiki/Secessio_plebis) - Per ottenere una parificazione di diritti con i patrizi, la plebe effettuava una secessione, ovvero abbandonava in massa la città e rendeva impossibile convocare le leve militari tra i plebei.\
+[Nsibidi](https://en.wikipedia.org/wiki/Nsibidi) - a 4,000 years old system of symbols indigenous to what is now southeastern Nigeria that are apparently pictograms, though there\
+[Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
 
 ### Games
 

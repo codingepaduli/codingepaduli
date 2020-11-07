@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-11-01
-publishdate: 2020-11-01
-lastmod: 2020-11-01
+date: 2020-11-06
+publishdate: 2020-11-06
+lastmod: 2020-11-06
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -227,7 +227,7 @@ summary: "Set di link relativi al coding"
 [Free web hosting for Java+MySQL websites?](https://www.quora.com/Free-web-hosting-for-Java+MySQL-websites) - Quora\
 [AdoptOpenJDK](https://adoptopenjdk.net/) - Open source, prebuilt OpenJDK binaries\
 [Wikibooks, manuali e libri di testo liberi](https://it.wikibooks.org/wiki/Java) - \
-[MokaByte 111](http://www2.mokabyte.it/cms/article.run?articleId=J74-ZHK-E4Y-62F_7f000001_30520983_51b9ed95) - Le applicazioni web e Java\
+[MokaByte 111](http://www.mokabyte.it/2006/09/javawebapp-1/) - Le applicazioni web e Java\
 [Sistemi Distribuiti LS](http://lia.deis.unibo.it/Courses/sd0809-info/) - slides\
 [HttpClient](http://hc.apache.org/httpclient-3.x/methods/multipartpost.html) - Multipart Post Method\
 [Organizziamoci con Maven Parte I](http://www.cosenonjaviste.it/organizziamoci-con-maven-parte-i/) - \
