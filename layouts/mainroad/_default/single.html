@@ -7,31 +7,38 @@
 </style>
 
 <main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<!-- h1 class="post__title">{{ .Title }}</h1 -->
-			{{- with .Params.lead }}
-			<p class="post__lead">{{ . }}</p>
-			{{- end }}
-			{{ with partial "post_meta.html" . -}}
-			<div class="post__meta meta">{{ . }}</div>
-			{{- end }}
-		</header>
-		{{- if .Params.thumbnail }}
-		<figure class="post__thumbnail">
-			<img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
-		</figure>
-		{{- end }}
-		{{- partial "post_toc.html" . -}}
-		<div class="content post__content clearfix">
-			{{ .Content }}
-		</div>
-		{{- if .Params.tags }}
-		<footer class="post__footer">
-			{{ partial "post_tags.html" . }}
-		</footer>
-		{{- end }}
-	</article>
+  <article class="post">
+    <header class="post__header">
+      <!-- h1 class="post__title">{{ .Title }}</h1 -->
+      {{- with .Params.lead }}
+      <p class="post__lead">{{ . }}</p>
+      {{- end }}
+      {{ with partial "post_meta.html" . -}}
+      <div class="post__meta meta">{{ . }}</div>
+      {{- end }}
+    </header>
+    {{- if .Params.thumbnail }}
+    <figure class="post__thumbnail">
+      <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+    </figure>
+    {{- end }}
+    {{- partial "post_toc.html" . -}}
+    <div class="content post__content clearfix">
+      {{ .Content }}
+    </div>
+    {{- if .Params.references }}
+      <hr>
+      <h2>Riferimenti</h2>
+      {{ range $element := .Params.references -}}
+        <p><a href="{{$element.link | absURL}}" style="font-weight: 700; color: #e22d30;">{{$element.title}}</a>: {{$element.description}}</p>
+      {{- end }}
+    {{- end }}
+    {{- if .Params.tags }}
+    <footer class="post__footer">
+      {{ partial "post_tags.html" . }}
+    </footer>
+    {{- end }}
+  </article>
 </main>
 {{ .Site.Params.customCSS }}
 <!-- TODO remember to update this code -->
@@ -39,7 +46,7 @@
     <link rel="stylesheet" href="{{ . | relURL }}">
 {{- end }}
 {{ range .Params.customJS -}}
-	<script src="{{ . | relURL }}"></script>
+  <script src="{{ . | relURL }}"></script>
 {{- end }}
 {{ range .Params.externalJS -}}
     <script src="{{ . | absURL }}"></script>
