@@ -10,6 +10,11 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 05 - Metadati: Informazioni relative ad una pagina web"
+
+references:
+  - title: "https://htmlhead.dev/"
+    link: "https://htmlhead.dev/"
+    description: "Guida (in inglese) all'elemento 'head' dell'HTML;"
 ---
 
 # Metadati

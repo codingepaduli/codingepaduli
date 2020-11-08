@@ -14,26 +14,66 @@ summary: "HTML Lez. 04 - Etichette che richiedono l'uso di attributi"
 
 # Etichette con attributi
 
-I tag possono avere degli **attributi** che servono ad aggiungere
-informazioni al tag.
+Le etichette possono avere degli **attributi** che forniscono informazioni aggiuntive all'etichetta.
 
-Gli attributi sono aggiunti solo nei simboli di apertura di un tag, non
-nei simboli di chiusura, e hanno la forma **nome='valore'**. Il valore
-deve essere sempre racchiuso da apici singoli o doppi.
+Ogni etichetta ha i propri attributi specifici, per cui non è possibile utilizzare un'attributo in una etichetta che non lo preveda. Inoltre, gli attributi devono essere aggiunti esclusivamente nelle etichette di apertura, non nelle etichette di chiusura.
 
-Alcuni attributi sono comuni a tutti i tag, ad
-esempio gli attributi ``id`` (che identifica in maniera univoca il tag), ``class`` e
-``style`` (che indica lo stile grafico del tag), mentre altri attributi
-sono specifici del singolo tag.
+Un attributo ha la forma **nome='valore'**, con il valore sempre racchiuso da apici singoli o doppi.
 
-Il tag ``html`` finora visto prevede l'attributo ``lang`` che serve ad indicare il codice del linguaggio in cui è scritta la pagina web. I codici dei linguaggi sono espressi secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a wikipedia per lo standard ISO 639-1").
+La sintassi delle etichette con attributi è la seguente:
 
-Le pagine web in italiano devono avere l'etichetta di apertura ``<html lang="it">``.
+```html
+<etichetta nome1="valore1" nome2="valore2" ... >
+  contenuti etichetta
+</etichetta>
+```
 
-Di seguito, sono elencati altre etichette dell'HTML che richiedono attributi.
+Alcuni attributi sono comuni a tutte le etichette:
 
-Il tag ``a`` serve a creare un collegamento (in inglese "link") verso un
-ipertesto (un'altra pagina web). Questo tag ha gli attributi:
+- l'attributo ``id`` identifica in maniera univoca l'etichetta, è anche utilizzato per collegamenti che fanno riferimento ad un preciso punto della pagina;
+- l'attributo ``class`` serve ad identificare gruppi di etichette come facenti parte dello stesso insieme, per poi poter elaborare l'intero insieme o per applicare lo stile grafico a tutto l'insieme; Un'etichetta può appartenere a più insiemi;
+- l'attributo ``style`` indica lo stile grafico da applicare per l'etichetta, è rappresentato da un valore scritto in linguaggio CSS;
+
+Un esempio di questi attributi è il seguente:
+
+```html
+<p id="paragrafo1" class="insieme1">paragrafo 1</p>
+<p id="paragrafo2" class="insieme1">paragrafo 2</p>
+<p id="paragrafo3" class="insieme1 citazione">paragrafo 3</p>
+<p id="paragrafo4" class="citazione">paragrafo 4</p>
+```
+
+Dall'esempio, si nota che ogni paragrafo ha un suo identificativo, e che i primi tre paragrafi fanno parte dello stesso insieme (chiamato "insieme1"), dato che il valore dell'attributo ``class`` è lo stesso; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato "citazione"); Per un apprefondimento, si rimanda alle specifiche sui selettori CSS.
+
+## Etichetta ``html`` e l'attributo ``lang``
+
+L'etichetta ``html``, già vista nei capitoli precedenti, prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
+Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in biellorusso con alfabeto cirillico, o ancora biellorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Biellorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
+
+1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a wikipedia per lo standard ISO 639-1");
+2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a wikipedia per lo standard ISO 15924");
+3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a wikipedia per lo standard ISO 3166").
+
+Le pagine web in italiano, non avendo particolari complicazioni di linguaggio, devono avere l'etichetta di apertura ``<html lang="it">``.
+
+L'attributo ``lang`` può però essere usato per indicare che un particolare contenuto è scritto in un linguaggio differente rispetto alla pagina; Questa informazione aggiuntiva può aiutare enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce del testo.
+
+Un esempio in cui la pagina è in italiano, ma un paragrafo è in spagnolo è il seguente:
+
+```html
+<html lang="it">
+    <head>…</head>
+    <body>
+        <p>Informazioni in italiano</p>
+        <p lang="es">Información para hispanohablantes</p>
+    </body>
+</html>
+```
+
+## Etichetta di collegamento con attributi ``href`` e ``target``
+
+L'etichetta ``a`` serve a creare un collegamento (in inglese "link") verso un
+ipertesto (un'altra pagina web). Questa etichetta ha gli attributi:
 
 - ``href``, che permette di indicare l'indirizzo dell'ipertesto da
   raggiungere;
@@ -42,16 +82,63 @@ ipertesto (un'altra pagina web). Questo tag ha gli attributi:
   1. ``_blank`` indica al browser di aprire l'ipertesto in una nuova scheda o finestra;
   2. ``_self`` indica al browser di aprire l'ipertesto nella stessa scheda o finestra.
 
-Un esempio di collegamento è questo <a href="/" target="_blank">collegamento alla
-home</a>, generato dal codice ``<a href="/" target="_blank">collegamento alla
-home</a>`` in cui si evidenzia sia l'indirizzo della home page "/", sia l'attributo ``target="_blank"`` che indica di aprire la home page in una nuova scheda.
+Un esempio di collegamento è il seguente:
 
-Il tag ``ol`` genera una lista numerata di elementi, analogamente il tag
-``ul`` genera una lista di elementi non ordinata. Entrambi i tag prevedono
-che ogni elemento della lista deve essere contenuto nel tag ``li``.
-Entrambi i tag di lista hanno l'attributo ``type`` (di recente sostituito
-dalla proprietà CSS list-style-type) che può avere uno dei seguenti
-valori:
+```html
+ <a href="www.google.it" target="_blank">collegamento a Google</a>
+```
+
+Da questo esempio, si evidenziano sia l'indirizzo web di "Google", sia l'attributo ``target="_blank"`` che indica di aprire il sito web in una nuova scheda.
+
+L'etichetta ``a`` può essere utilizzata per creare collegamenti ad un punto specifico del documento, ad esempio al sotto-capitolo sulle tabelle, indicando l'identificativo del sotto-capitolo nell'attributo ``href``;
+
+Supponendo che il sotto-capitolo sia stato creato con l'identificativo ``idTabella``, come nel seguente esempio:
+
+```html
+<h2 id="idTabella">Sotto-capitolo sulle tabelle</h2>
+```
+
+Per creare un collegamento al sotto-capitolo, l'indirizzo di collegamento deve iniziare con il carattere ``#`` seguito dall'identificativo di cui sopra, come nel codice seguente:
+
+```html
+ <a href="#idTabella">Link al Sotto-capitolo sulle tabelle</a>
+```
+
+E' possibile utilizzare entrambe le forme viste in precedenza, creando un collegamento ad un punto preciso di un documento presente su web.
+
+Ad esempio, per effettuare un collegamento al sotto-capitolo "Struttura di un documento HTML" della pagina web "HTML" ospitata su wikipedia, supponendo che il sotto-capitolo sia identificato dalla voce univoca ``Struttura_di_un_documento_HTML``, allora per creare il collegamento si utilizza il codice seguente:
+
+```html
+<a href="https://it.wikipedia.org/wiki/HTML#Struttura_di_un_documento_HTML">Link al Sotto-capitolo "Struttura di un documento HTML"</a>
+```
+
+Sono state previste tipologie di indirizzi speciali per email e numeri di telefono. Con queste tipologie di collegamenti, il browser delega ad un'applicazione esterna il compito di inviare una email, di effettuare una chiamata telefonica e di inviare SMS verso l'identificativo indicato.
+
+Di seguito si riportano gli esempi per queste tipologie di indirizzi:
+
+```html
+<a href="mailto:bianchi@email.com,rossi@email.com?cc=paolo@email.com&subject=Oggetto">Scrivi una mail</a>
+<a href="tel:+390001234567">Chiama</a>
+<a href="sms:+390001234567">Invia un SMS</a>
+```
+
+## Etichette di lista con attributo ``type``
+
+L'etichetta ``ol`` genera una lista numerata di elementi, analogamente l'etichetta ``ul`` genera una lista di elementi non ordinata.
+Gli elementi della lista devono essere contenuti nell'etichetta ``li``.
+
+Ad esempio, il seguente codice genera la lista numerata (con numeri
+romani) di browser pessimi per la navigazione:
+
+```html
+<ol>
+  <li>Internet Explorer</li>
+  <li>Safari</li>
+</ol>
+```
+
+Entrambe le liste prevedono lo stile di numerazione, desritto dall'attributo ``type`` (di recente sostituito
+dalla proprietà CSS ``list-style-type``) che può avere uno dei seguenti valori:
 
 - ``1`` elementi della lista elencati con numeri latini;
 - ``A`` oppure ``a`` elementi della lista elencati con lettere alfabetiche
@@ -98,14 +185,23 @@ La lista viene visualizzata di seguito:
   <li>Edge (Microsoft)</li>
 </ul>
 
-Il tag ``table`` genera una tabella, e può contenere una descrizione del
-contenuto generata dal tag ``caption``. Il tag di tabella deve contenere i
-tag ``tr``, che generano le righe della tabella. Ogni tag ``tr`` deve
-contenere all'interno delle celle che formano le colonne. Le celle
-possono essere di intestazione, e sono generate dai tag ``th``, oppure di
-dati, e sono generate dai tag ``td``.
+## Etichette di tabella con attributi ``colspan`` e ``rowspan``
 
-I tag delle celle ``th`` e ``td`` hanno gli attributi:
+L'etichetta ``table`` indica l'inizio e la fine di una tabella.
+
+Una tabella può contenere le righe, racchiuse dall'etichetta ``tr``
+(in inglese "table row"), ed, opzionalmente, una descrizione del
+contenuto, indicato nell'etichetta ``caption``.
+
+Tutte le righe contengono delle celle.
+Le celle delle prime righe e/o colonne di una tabella possono essere
+di intestazione (in inglese "table header"), e quindi devono essere
+racchiuse dalle etichette ``th``, mentre le celle successive contengono
+i dati, e quindi devono essere racchiusi dalle etichette ``td`` (in
+inglese "table data").
+
+
+Le etichette delle celle ``th`` e ``td`` hanno gli attributi:
 
 - ``colspan``, che permette ad una cella di espandersi su più colonne;
 - ``rowspan``, che permette ad una cella di espandersi su più righe.
@@ -172,7 +268,7 @@ la prima cella in alto a sinistra occupa due righe:
 </table>
 ```
 
-La lista viene visualizzata di seguito:
+La tabella viene visualizzata di seguito:
 
 <table style="border: 5px solid green;">
   <caption>Tabella con stile</caption>
