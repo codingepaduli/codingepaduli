@@ -55,7 +55,7 @@ Di seguito, le squadre assegnate ad ogni studente:
 1. Verona
 
  |        |     |     |     |     |     |
----       | --- | --- | --- | --- | --- | --- |
+---       | --- | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
 Max punti |  2  |  2  |  1  |  1  |  2  |  2  |
 Punti     |     |     |     |     |     |     |
@@ -66,9 +66,9 @@ Punti     |     |     |     |     |     |     |
 
 ## Esercizio 02
 
-Ad ogni studente, nel seguito dell'esercizio, è assegnata una classe di oggetti con delle proprietà. Lo studente dovrà quindi realizzare una pagina web contenente 5 oggetti, a propria scelta, con le seguenti specifiche tecniche:
+Ad ogni studente, nel seguito dell'esercizio, è assegnato un oggetto con delle proprietà. Lo studente dovrà quindi realizzare una pagina web che mostri all'utente cinque istanze di oggetti, rispettando le seguenti specifiche tecniche:
 
-1. Al file deve essere assegnato come nome **il cognome dello studente**, seguito, ovviamente, dall'estensione ``.html``;
+1. Il nome del file deve essere **il cognome dello studente**. L'estensione del file deve essere ``.html``;
 2. La pagina web deve avere come titolo il nome dell'oggetto assegnato;
 3. La pagina web deve avere cinque paragrafi contenenti cinque esempi dell'oggetto assegnato;
 4. In ogni paragrafo, le proprietà dell'oggetto devono essere formattate secondo le regole di formattazione del testo associate;
@@ -80,28 +80,32 @@ Di seguito le assegnazioni per ogni studente:
 1. **canzone** con le proprietà Titolo (formattazione testo: grassetto), Autore (formattazione testo: in apice, sottolineato), Album (formattazione testo: cancellato), Genere (formattazione testo: evidenziato);
 1. **film** con le proprietà Titolo (formattazione testo: grassetto), Regista (formattazione testo: evidenziato, sottolineato), Protagonista (formattazione testo: in pedice), Genere (formattazione testo: in apice, evidenziato);
 1. **biglietto** con le proprietà Numero (formattazione testo: grassetto), Intestatario (formattazione testo: cancellato, evidenziato), TipoEvento (formattazione testo: corsivo, in apice), Prezzo (formattazione testo: corsivo, evidenziato);
-1. **viaggio** con le proprietà Localita (formattazione testo: grassetto), Prezzo (formattazione testo: corsivo, evidenziato), CompagniaViaggi (formattazione testo: in apice, grassetto) e Data (formattazione testo: corsivo, in pedice);
+1. **viaggio** con le proprietà Località (formattazione testo: grassetto), Prezzo (formattazione testo: corsivo, evidenziato), CompagniaViaggi (formattazione testo: in apice, grassetto) e Data (formattazione testo: corsivo, in pedice);
 1. **auto** con le proprietà Nome (formattazione testo: grassetto), Targa (formattazione testo: corsivo, grassetto), Colore (formattazione testo: in pedice) e Marca (formattazione testo: in apice);
-1. **documento** con le proprietà Tipo (formattazione testo: grassetto), Numero (formattazione testo: cancellato, grassetto), Scadenza (formattazione testo: corsivo) e Tipo (formattazione testo: corsivo);
+1. **documento** con le proprietà Tipo (formattazione testo: grassetto), Numero (formattazione testo: cancellato, grassetto), Scadenza (formattazione testo: corsivo) e EnteRilascio (formattazione testo: corsivo);
 1. **indirizzo** con le proprietà Comune (formattazione testo: grassetto), Provincia (formattazione testo: cancellato, corsivo), Cap (formattazione testo: in pedice) e Nazione (formattazione testo: evidenziato);
 1. **squadra** con le proprietà Nome (formattazione testo: grassetto), Sport (formattazione testo: grassetto, in apice), Allenatore (formattazione testo: in pedice) e Stadio (formattazione testo: sottolineato);
 1. **libro** con le proprietà Titolo (formattazione testo: grassetto), Genere (formattazione testo: sottolineato, in apice), Autore (formattazione testo: corsivo) ed Editore (formattazione testo: in pedice);
 10. **albergo** con le proprietà Nome (formattazione testo: grassetto), Stelle (formattazione testo: sottolineato, corsivo), Comune (formattazione testo: in pedice) e Provincia (formattazione testo: in apice);
 1. **videogioco** con le proprietà Marca (formattazione: grassetto), Nome (formattazione testo: in apice, corsivo), Genere (formattazione testo: sottolineato) e Costo (formattazione testo: corsivo);
-1. **scarpe** con le proprietà Costo (formattazione: grassetto), Colore (formattazione testo: in apice, grassetto), Marca (formattazione testo: sottolineato) e Tipo (formattazione testo: in apice);
+1. **stato** con le proprietà Nome (formattazione: grassetto), Estensione (formattazione testo: in apice, grassetto), Capitale (formattazione testo: sottolineato) e Abitanti (formattazione testo: in apice);
 1. **foto** con le proprietà Risoluzione (formattazione: grassetto), Dimensioni (formattazione: grassetto, corsivo), Protagonisti (formattazione: sottolineato) e Sfondo (formattazione: evidenziato);
 1. **biblioteca** con le proprietà Nome (formattazione: grassetto), Paese (formattazione: evidenziato, grassetto), Provincia (formattazione: in pedice) e Nazione (formattazione: in apice);
 1. **smartphone** con le proprietà Schermo (formattazione: grassetto), Batteria (formattazione: sottolineato, corsivo), Marca (formattazione: corsivo) e Prezzo (formattazione: sottolineato);
 1. **sito web** con le proprietà Indirizzo (formattazione: grassetto), Categoria (formattazione: cancellato evidenziato), DataCreazione (formattazione: in pedice) ed UtentiGiornalieri (formattazione: evidenziato);
 1. **ristorante** con le proprietà Nome (formattazione: grassetto), NumeroTavoli (formattazione: corsivo cancellato), Stelle (formattazione: evidenziato, grassetto), Provincia (formattazione: in pedice);
-1. **canzone** con le proprietà Titolo (formattazione testo: grassetto), Autore (formattazione testo: in apice, sottolineato), Album (formattazione testo: cancellato), Genere (formattazione testo: evidenziato);
-1. **recensione** con le proprietà Titolo (formattazione testo: grassetto), Autore (formattazione testo: evidenziato, sottolineato), Voto (formattazione testo: in pedice), Sito (formattazione testo: in apice, evidenziato);
+1. **discoteca** con le proprietà Nome (formattazione testo: grassetto), NumeroSale (formattazione testo: in apice, sottolineato), DJ (formattazione testo: cancellato), MassimoPosti (formattazione testo: evidenziato);
+1. **pianeta** con le proprietà Nome (formattazione testo: grassetto), SistemaSolare (formattazione testo: evidenziato, sottolineato), DistanzaDallaTerra (formattazione testo: in pedice), Diametro (formattazione testo: in apice, evidenziato);
 20. **social network** con le proprietà SitoWeb (formattazione: grassetto), ValoreStimato (formattazione: cancellato evidenziato), Fatturato (formattazione: in pedice) ed UtentiGiornalieri (formattazione: evidenziato);
-1. **CanaleTV** con le proprietà Nome (formattazione testo: grassetto), Frequenza (formattazione testo: corsivo, evidenziato), NumeroCanale (formattazione testo: in apice, grassetto) e Azienda (formattazione testo: corsivo, in pedice);
-1. **ProgrammaTV** con le proprietà Nome (formattazione testo: grassetto), Conduttore (formattazione testo: corsivo, grassetto), DataInOnda (formattazione testo: in pedice) e CanaleTV (formattazione testo: in apice);
+1. **Canale TV** con le proprietà Nome (formattazione testo: grassetto), Frequenza (formattazione testo: corsivo, evidenziato), NumeroCanale (formattazione testo: in apice, grassetto) e Azienda (formattazione testo: corsivo, in pedice);
+1. **Programma TV** con le proprietà Nome (formattazione testo: grassetto), Conduttore (formattazione testo: corsivo, grassetto), DataInOnda (formattazione testo: in pedice) e CanaleTV (formattazione testo: in apice);
+1. **cinema** con le proprietà Nome (formattazione testo: grassetto), NumeroSale (formattazione testo: in apice, sottolineato), NumeroSale3D (formattazione testo: cancellato), OrarioApertura (formattazione testo: evidenziato);
+1. **scuola** con le proprietà Nome (formattazione testo: grassetto), TipoIstituto (formattazione testo: in apice, corsivo), Preside (formattazione testo: in pedice) e NumeroStudenti (formattazione testo: in apice);
+1. **costellazione** con le proprietà Nome (formattazione testo: grassetto), NumeroStelle (formattazione testo: evidenziato, sottolineato), DistanzaDalSole (formattazione testo: in pedice), StellaPiuLuminosa (formattazione testo: in apice, evidenziato);
+1. **merendine** con le proprietà Nome (formattazione: grassetto), Marca (formattazione: cancellato evidenziato), QuantitàZuccheri (formattazione: in pedice) ed QuantitàGrassi (formattazione: evidenziato);
 
  |        |     |     |     |     |     |
----       | --- | --- | --- | --- | --- | --- |
+---       | --- | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
 Max punti |  2  |  2  |  1  |  1  |  2  |  2  |
 Punti     |     |     |     |     |     |     |
