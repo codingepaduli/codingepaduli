@@ -24,7 +24,7 @@ Un documento HTML deve contenere i **metadati**, ovvero informazioni relative al
 
 Ad esempio, quando si condivide agli amici un'articolo sui social, questi visualizzano, oltre al collegamento, sia il titolo dell'articolo, sia la descrizione, sia un'immagine o un video di anteprima. Queste informazioni di anteprima i social le recuperano dai metadati allegati alla pagina web.
 
-Per un riferimento completo ai metadati si rimanda al link [https://www.joomla.org/](https://www.joomla.org/ "Link al sito di riferimento per i metadati") ed alle specifiche del linguaggio HTML.
+Per un riferimento completo ai metadati si rimanda al link [https://htmlhead.dev/](https://htmlhead.dev/ "Link al sito di riferimento per i metadati") ed alle specifiche del linguaggio HTML.
 
 Tutti i metadati devono essere contenuti nel tag ``head`` della pagina web, ad eccezione dell'icona principale del sito web: non è descritta da nessun tag, deve essere semplicemente salvata nel file ``favicon.ico`` nella cartella principale del sito per poter essere recuperata.
 
