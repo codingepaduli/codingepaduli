@@ -30,7 +30,7 @@ Le specifiche tecniche sono le seguenti:
 6. Ogni scheda deve contenere una tabella con le opere o canzoni o mascalzonate degne di nota;
 7. Devono essere usate le accortezze necessarie per produrre codice di qualità.
 
-<!-- markdownlint-enable MD009 MD036 -->
+<!-- markdownlint-disable MD036 -->
 
 |        |     |     |     |     |     |
 ---       | --- | --- | --- | --- | --- | --- | --- | ---
@@ -40,4 +40,4 @@ Punti     |     |     |     |     |     |     |     |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
-<!-- markdownlint-enable MD009 MD036 -->
+<!-- markdownlint-enable MD036 -->
