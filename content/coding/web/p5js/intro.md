@@ -10,7 +10,8 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Introduzione alla libreria grafica p5.js"
-externalJS: ["https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.min.js"]
+disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
 customJS: ["/static/coding/web/p5js/Example02.js"]
 ---
 
