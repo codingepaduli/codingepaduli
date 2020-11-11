@@ -200,7 +200,6 @@ racchiuse dalle etichette ``th``, mentre le celle successive contengono
 i dati, e quindi devono essere racchiusi dalle etichette ``td`` (in
 inglese "table data").
 
-
 Le etichette delle celle ``th`` e ``td`` hanno gli attributi:
 
 - ``colspan``, che permette ad una cella di espandersi su più colonne;
