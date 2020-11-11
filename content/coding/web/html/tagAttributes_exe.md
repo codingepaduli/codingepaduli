@@ -10,6 +10,10 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 04.1 - Esercizi su liste, tabelle e collegamenti"
+references:
+  - title: "Sito htmlhead.dev"
+    link: "https://htmlhead.dev/"
+    description: "Guida (in inglese) all'elemento 'head' dell'HTML;"
 ---
 
 # Esercizi su liste, tabelle e collegamenti
