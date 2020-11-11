@@ -12,7 +12,8 @@ toc: false
 summary: "HTML Lez. 05 - Metadati: Informazioni relative ad una pagina web"
 
 references:
-  - title: "https://htmlhead.dev/"
+  - title: "Sito htmlhead.dev"
+    disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
     link: "https://htmlhead.dev/"
     description: "Guida (in inglese) all'elemento 'head' dell'HTML;"
 ---
