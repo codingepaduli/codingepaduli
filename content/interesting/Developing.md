@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-11-06
-publishdate: 2020-11-06
-lastmod: 2020-11-06
+date: 2020-11-14
+publishdate: 2020-11-14
+lastmod: 2020-11-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -57,6 +57,7 @@ summary: "Set di link relativi al coding"
 [Developer.com](http://www.developer.com/) - \
 [http://codingjam.it/](http://codingjam.it/) - \
 [MokaByte](http://www.mokabyte.it/) - \
+[Turkogluc.com | Personal Blog](https://turkogluc.com/) - \
 [opensource.com](http://opensource.com/) - \
 [LWN.net](https://lwn.net/) - Linux Weekly News\
 [Changelog](http://changelog.com/) - News and podcasts for developers\
@@ -109,6 +110,7 @@ summary: "Set di link relativi al coding"
 [portainer/portainer](https://github.com/portainer/portainer) - Making Docker management easy.\
 [25 Basic Docker Commands for Beginners](https://codeopolis.com/posts/25-basic-docker-commands-for-beginners/) - \
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
+[Docker in 10 minutes](https://smalldata.tech/blog/2019/06/08/docker-in-10-minutes) - \
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -210,6 +212,7 @@ summary: "Set di link relativi al coding"
 [How I made a 3D game in only 2KB of JavaScript | Killed By A Pixel](https://frankforce.com/how-i-made-a-3d-game-in-only-2k-of-javascript/) - \
 [Ct.js — a free game editor](https://ctjs.rocks/) - \
 [deepnight.net | LEd – 2D map editor](https://deepnight.net/tools/led-2d-level-editor/) - \
+[Build a game this November with GitHub Game Off](https://github.blog/2020-10-27-github-game-off-2020/) - The GitHub Blog\
 
 ### GIT
 
@@ -221,6 +224,7 @@ summary: "Set di link relativi al coding"
 [Managing Git projects with submodules and subtrees | Opensource.com](https://opensource.com/article/20/5/git-submodules-subtrees) - \
 [Make advanced Git tasks simple with Lazygit | Opensource.com](https://opensource.com/article/20/3/lazygit) - \
 [Install hub to make your Git command-line as fully featured as GitHub | Opensource.com](https://opensource.com/article/20/3/github-hub) - \
+[Tweak your Git config for multiple user IDs | Opensource.com](https://opensource.com/article/20/10/git-config) - \
 
 ### Java
 
@@ -331,6 +335,15 @@ summary: "Set di link relativi al coding"
 [WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
 [Import functions and variables into Bash with the source command | Opensource.com](https://opensource.com/article/20/6/bash-source-command) - \
 [How to configure "flatpak run org.gnome.meld" as git diff.tool and merge.tool](https://askubuntu.com/questions/1140455/how-to-configure-flatpak-run-org-gnome-meld-as-git-diff-tool-and-merge-tool) - Ask Ubuntu\
+[ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
+
+### Microcontrollori arduino esp8266 e simulatori
+
+[Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
+[Quick Start to Nodemcu (ESP8266) on Arduino IDE: 3 Steps (with Pictures)](https://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/) - \
+[arduino/arduino-cli](https://hub.docker.com/r/arduino/arduino-cli) - Docker Hub\
+[MicroBlocks](https://microblocks.fun/) - Small, Fast, Human Friendly\
+[Program your microcontroller with MicroBlocks | Opensource.com](https://opensource.com/article/20/11/microblocks) - \
 
 ### Mozilla Firefox
 
@@ -342,6 +355,7 @@ summary: "Set di link relativi al coding"
 [Recommended Extensions program](https://support.mozilla.org/en-US/kb/recommended-extensions-program) - Firefox Help\
 [Collabora con noi](https://www.mozilla.org/it/contribute/) - \
 [Come iniziare](https://www.mozilla.org/it/firefox/central/) - \
+[Firefox Voice](https://voice.mozilla.org/firefox-voice/) - browse the internet with your voice\
 
 ### Network
 
@@ -417,6 +431,8 @@ summary: "Set di link relativi al coding"
 [Sigil-Ebook/Sigil](https://github.com/Sigil-Ebook/Sigil) - Sigil is a free, open source, multi-platform EPUB ebook editor that uses Qt\
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
 [charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
+[text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
+[curlpipe/ox](https://github.com/curlpipe/ox) - An independent Rust text editor that runs in your terminal!\
 
 #### Hugo static site generator
 

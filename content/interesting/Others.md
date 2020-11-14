@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-11-06
-publishdate: 2020-11-06
-lastmod: 2020-11-06
+date: 2020-11-14
+publishdate: 2020-11-14
+lastmod: 2020-11-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -73,6 +73,7 @@ summary: "Set di link interessanti"
 [A whopping 91% of plastic isn't recycled, say national geographic](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - \
 [Japan to release Fukushima's contaminated water into sea: reports | Reuters](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - \
 [The Earth Is Pulsating Every 26 Seconds, and Seismologists Don't Agree Why](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - \
+[Diluting blood plasma rejuvenates tissue, reverses aging in mice](https://www.sciencedaily.com/releases/2020/06/200615115724.htm) - Plasma exchange could be the key to unlocking the body's regenerative capacities\
 
 ### Tech
 
@@ -82,7 +83,6 @@ summary: "Set di link interessanti"
 [QiFi](https://qifi.org/) - WiFi QR Code Generator\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
-[Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
 [100,000 Stars](https://stars.chromeexperiments.com/) - A tour from our Sun to the far away stars of our Milky Way Galaxy\
 [Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
 
@@ -91,6 +91,7 @@ summary: "Set di link interessanti"
 [Secessio plebis](https://it.wikipedia.org/wiki/Secessio_plebis) - Per ottenere una parificazione di diritti con i patrizi, la plebe effettuava una secessione, ovvero abbandonava in massa la città e rendeva impossibile convocare le leve militari tra i plebei.\
 [Nsibidi](https://en.wikipedia.org/wiki/Nsibidi) - a 4,000 years old system of symbols indigenous to what is now southeastern Nigeria that are apparently pictograms, though there\
 [Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
+[Remote learning via Radio instruction in the 1937 polio epidemic](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - \
 
 ### Games
 
