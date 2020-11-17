@@ -31,33 +31,41 @@ Di seguito, le squadre assegnate ad ogni studente:
 1. Atalanta
 1. Benevento
 1. Bologna
+1. Brescia
 1. Cagliari
 1. Catania
+1. Chievo
+1. Cosenza
 1. Crotone
-1. Empoli
+10. Empoli
 1. Fiorentina
 1. Genoa
-10. Hellas Verona
+1. Hellas Verona
 1. Inter
 1. Juventus
 1. Lazio
 1. Milan
 1. Napoli
 1. Parma
-1. Palermo
+20. Palermo
+1. Pescara
+1. Pisa
+1. Reggiana
+1. Reggina
 1. Roma
 1. Salernitana
-20. Sampdoria
+1. Sampdoria
 1. Sassuolo
 1. Spezia
-1. Torino
+30. Torino
 1. Udinese
 1. Verona
+1. Vicenza
 
  |        |     |     |     |     |     |
 ---       | --- | --- | --- | --- | --- | --- | ---
 Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
-Max punti |  2  |  2  |  1  |  1  |  2  |  2  |
+Max punti |  2  |  1  |  1  |  2  |  2  |  2  |
 Punti     |     |     |     |     |     |     |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
