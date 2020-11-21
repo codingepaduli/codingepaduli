@@ -49,11 +49,9 @@ Lo studente realizzi una pagina web contenente le informazioni su una serie TV o
 1. Il nome del file deve essere **il cognome dello studente**; L'estensione del file deve essere ``.html``;
 2. La pagina web deve essere composta dal titolo, seguito da una breve descrizione dell'argomento scelto, comprensiva di un'immagine e di un collegamento ad un articolo di approfondimento presente sul web;
 3. Il seguito della pagina web deve contenere:
-
-  - nel caso sia stato scelto un personaggio televisivo, una lista di film in cui ha recitato, seguito, ognuno, da una tabella dei personaggi principali del relativo film;
-  - nel caso sia stato scelto un cantante, una lista di album realizzati dal cantante, seguito, ognuno, da una tabella di canzoni contenute nell'album corrispondente;
-  - nel caso sia stata scelta una serie TV, una lista delle stagioni trasmesse e, per ogni stagione, crei una tabella degli episodi della corrispondente stagione;
-
+    - nel caso sia stato scelto un personaggio televisivo, una lista di film in cui ha recitato, seguito, ognuno, da una tabella dei personaggi principali del relativo film;
+    - nel caso sia stato scelto un cantante, una lista di album realizzati dal cantante, seguito, ognuno, da una tabella di canzoni contenute nell'album corrispondente;
+    - nel caso sia stata scelta una serie TV, una lista delle stagioni trasmesse e, per ogni stagione, crei una tabella degli episodi della corrispondente stagione;
 4. Devono essere usate le accortezze necessarie per produrre codice di qualità.
 
 <!-- markdownlint-disable MD036 -->
