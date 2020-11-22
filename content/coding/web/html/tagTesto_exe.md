@@ -14,15 +14,15 @@ summary: "HTML Lez. 03.1 - Esercizi sulla formattazione del testo"
 
 # Esercizi basilari sulla formattazione del testo
 
-## Esercizio 01
+## Esercizio 01 - Rosa di una squadra di calcio
 
-Ad ogni studente, nel seguito dell'esercizio, è assegnata una squadra di calcio di cui comporre la rosa e la formazione titolare, rispettando le seguenti specifiche tecniche:
+Ad ogni studente sia assegnata una squadra di calcio oppure gli sia lasciata la possibilità di sceglierla. Di tale squadra, lo studente componga la rosa ed evidenzi la formazione titolare, rispettando le seguenti specifiche tecniche:
 
-1. Al file deve essere assegnato come nome **il cognome dello studente**, seguito, ovviamente, dall'estensione ``.html``;
-2. La pagina web deve avere come titolo il nome della squadra assegnata;
-3. La rosa della squadra deve essere divisa in 4 sezioni: portieri, difensori, centrocampisti ed attaccanti, da formattare come titolo di secondo livello;
-4. Ogni sezione deve contenere i giocatori corrispondenti al ruolo indicato, formattando il testo con le seguenti regole: i portieri in corsivo, i difensori senza nessuna formattazione, i centrocampisti in grassetto e gli attaccanti con testo sottolineato;
-5. In aggiunta alle regole di formattazione del testo indicate al punto 4, siano evidenziati gli 11 giocatori titolari;
+1. Il nome del file deve essere **il cognome dello studente**. L'estensione del file deve essere ``.html``;
+2. Il titolo della pagina web deve essere il nome della squadra scelta o assegnata;
+3. Al titolo devono seguire i ruoli "portieri", "difensori", "centrocampisti" ed "attaccanti", da formattare come titolo di secondo livello;
+4. Ad ogni sezione deve seguire l'elenco dei giocatori corrispondenti, con il testo da formattare secondo le seguenti regole: i portieri in corsivo, i difensori senza nessuna formattazione, i centrocampisti in grassetto e gli attaccanti con testo sottolineato;
+5. In aggiunta alle regole di formattazione del testo indicate al punto 4, siano formattati con testo evidenziato gli 11 giocatori titolari;
 6. Si applichino le accortezze necessarie per una leggibilità del codice ottimale.
 
 Di seguito, le squadre assegnate ad ogni studente:
@@ -72,17 +72,23 @@ Punti     |     |     |     |     |     |     |
 
 <!-- markdownlint-enable MD009 MD029 MD036 -->
 
-## Esercizio 02
+## Esercizio 02 - Elenco di oggetti
 
-Ad ogni studente, nel seguito dell'esercizio, è assegnato un oggetto con delle proprietà. Lo studente dovrà quindi realizzare una pagina web che mostri all'utente cinque istanze di oggetti, rispettando le seguenti specifiche tecniche:
+Ad ogni studente sia assegnato un oggetto tra quelli elencati di seguito, o gli sia lasciata la possibilità di sceglierne uno in elenco. Lo studente dovrà quindi realizzare una pagina web che mostri all'utente cinque istanze di tale oggetto, rispettando le seguenti specifiche tecniche:
 
 1. Il nome del file deve essere **il cognome dello studente**. L'estensione del file deve essere ``.html``;
-2. La pagina web deve avere come titolo il nome dell'oggetto assegnato;
-3. La pagina web deve avere cinque paragrafi contenenti cinque esempi dell'oggetto assegnato;
+2. La pagina web deve avere come titolo il nome dell'oggetto scelto o assegnato;
+3. La pagina web deve avere cinque paragrafi contenenti, ognuno, un esempio dell'oggetto, scelto o assegnato, con le relative proprietà;
 4. In ogni paragrafo, le proprietà dell'oggetto devono essere formattate secondo le regole di formattazione del testo associate;
 5. Si applichino le accortezze necessarie per una leggibilità del codice ottimale.
 
-Di seguito le assegnazioni per ogni studente:
+Un esempio di elenco risultante a partire da tipi di **animali** è il seguente:
+
+- Cane (**mammifero**, carnivoro, *pelo corto*);
+- Coccodrillo (**rettile**, carnivoro, *squame*);
+- Colibrì (**uccello**, erbivoro, *piume*);
+
+Di seguito la lista di oggetti disponibili:
 <!-- markdownlint-disable MD009 MD029 MD036 -->
 
 1. **canzone** con le proprietà Titolo (formattazione testo: grassetto), Autore (formattazione testo: in apice, sottolineato), Album (formattazione testo: cancellato), Genere (formattazione testo: evidenziato);
@@ -112,11 +118,11 @@ Di seguito le assegnazioni per ogni studente:
 1. **costellazione** con le proprietà Nome (formattazione testo: grassetto), NumeroStelle (formattazione testo: evidenziato, sottolineato), DistanzaDalSole (formattazione testo: in pedice), StellaPiuLuminosa (formattazione testo: in apice, evidenziato);
 1. **merendine** con le proprietà Nome (formattazione: grassetto), Marca (formattazione: cancellato evidenziato), QuantitàZuccheri (formattazione: in pedice) ed QuantitàGrassi (formattazione: evidenziato);
 
- |        |     |     |     |     |     |
----       | --- | --- | --- | --- | --- | --- | ---
-Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
-Max punti |  2  |  2  |  1  |  1  |  2  |  2  |
-Punti     |     |     |     |     |     |     |
+ |        |     |     |     |     |
+---       | --- | --- | --- | --- | --- | ---
+Esercizio |  1  |  2  |  3  |  4  |  5  | Totale Punti
+Max punti |  2  |  2  |  2  |  2  |  2  |
+Punti     |     |     |     |     |     |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
