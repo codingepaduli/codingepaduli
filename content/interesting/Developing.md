@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-11-14
-publishdate: 2020-11-14
-lastmod: 2020-11-14
+date: 2020-11-22
+publishdate: 2020-11-22
+lastmod: 2020-11-22
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -139,6 +139,7 @@ summary: "Set di link relativi al coding"
 [How to install software with Ansible | Opensource.com](https://opensource.com/article/20/9/install-packages-ansible) - \
 [10 Ansible modules for Linux system automation | Opensource.com](https://opensource.com/article/20/10/ansible-modules-linux) - \
 [My first day using Ansible | Opensource.com](https://opensource.com/article/20/10/first-day-ansible) - \
+[Getting started with Ansible | XLAB Steampunk blog](https://steampunk.si/blog/getting-started-with-ansible/) - \
 
 #### PowerShell
 
@@ -168,6 +169,7 @@ summary: "Set di link relativi al coding"
 [Python Machine Learning Projects - A DigitalOcean eBook | DigitalOcean](https://www.digitalocean.com/community/books/python-machine-learning-projects-a-digitalocean-ebook) - \
 [Deeplearning4j](https://www.infoworld.com/article/3567055/deeplearning4j-deep-learning-and-etl-for-the-jvm.html) - Deep learning and ETL for the JVM | InfoWorld\
 [PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
+[MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 
 ### .Net
 
@@ -193,7 +195,6 @@ summary: "Set di link relativi al coding"
 [In MySQL, never use “utf8”. Use “utf8mb4”.](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434) - Adam Hooper - Medium\
 [PostgREST Documentation](https://postgrest.org/en/v7.0.0/) - PostgREST 7.0.1 documentation\
 [Modern SQL](https://modern-sql.com/) - A lot has changed since SQL-92\
-[The best Postgres feature you're not using](http://www.craigkerstiens.com/2013/11/18/best-postgres-feature-youre-not-using/) - \
 [Learn SQL while solving crimes! SQL Police Department](https://sqlpd.com/) - \
 [Beekeeper Studio](https://www.beekeeperstudio.io/) - Free & Open Source SQL editor and database manager for MySQL, Postgres, SQLite, SQL Server, and more. Available for Windows, Mac, and Linux.\
 [PostgREST](https://postgrest.org/en/v7.0.0/) - a standalone web server that turns your PostgreSQL database directly into a RESTful API; \
@@ -319,7 +320,6 @@ summary: "Set di link relativi al coding"
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL: Hashes, digital signatures, and more\
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL: Cryptography basics | Opensource.com\
 [gocryptfs](https://opensource.com/article/19/8/how-encrypt-files-gocryptfs) - How to encrypt files with gocryptfs on Linux | Opensource.com\
-[Thunar Custom Action](http://blogs.dailynews.com/click/2013/03/12/direct-delete-trash-xfces-thunar-file-manager/) - Delete directly without using/needing Trash in Xfce\
 [Five Years of Btrfs](https://markmcb.com/2020/01/07/five-years-of-btrfs/) - use the Btrfs file system to store all my data\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
 [Linux firewalls: What you need to know about iptables and firewalld | Opensource.com](https://opensource.com/article/18/9/linux-iptables-firewalld) - \
@@ -367,6 +367,7 @@ summary: "Set di link relativi al coding"
 [Turn your Raspberry Pi homelab into a network filesystem | Opensource.com](https://opensource.com/article/20/5/nfs-raspberry-pi) - \
 [Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - \
 [Setting up VoIP phone system for use with RepairShopr.](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - YouTube\
+[Centralized vs. P2P: Inside ProtonDrive’s security](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - \
 
 ### PHP
 
@@ -409,6 +410,7 @@ summary: "Set di link relativi al coding"
 [Runnaroo | A Better Private Search Engine](https://www.runnaroo.com/) - \
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
+[Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -466,6 +468,7 @@ summary: "Set di link relativi al coding"
 [Converting Markdown to Beautiful PDF with Pandoc](https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/) - jdhao's blog\
 [pandoc-img-glob · PyPI](https://pypi.org/project/pandoc-img-glob/) - \
 [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
+[Sublist: Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2575) - \
 
 ### Web, web-app e servizi rest
 

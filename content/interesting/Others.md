@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-11-14
-publishdate: 2020-11-14
-lastmod: 2020-11-14
+date: 2020-11-22
+publishdate: 2020-11-22
+lastmod: 2020-11-22
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -58,6 +58,7 @@ summary: "Set di link interessanti"
 [CindyJS](https://cindyjs.org/) - a framework to create interactive (mathematics and physics) content for the web\
 [Mathematicians Report New Discovery About the Dodecahedron | Quanta Magazine](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - \
 [Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
+[An Interactive Introduction to Fourier Transforms](https://jezzamon.com/fourier/index.html) - \
 
 ### Medicine
 
