@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-11-22
-publishdate: 2020-11-22
-lastmod: 2020-11-22
+date: 2020-11-28
+publishdate: 2020-11-28
+lastmod: 2020-11-28
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -52,6 +52,7 @@ summary: "Set di link relativi al coding"
 
 ### Blog News e Link
 
+[Introducing the PinePhone](https://kde.org/announcements/pinephone-plasma-mobile-edition/) - KDE Community edition\
 [Hacker News](https://news.ycombinator.com/news) - \
 [Gitbar](https://www.gitbar.it/) - Il podcast dei developer italiani\
 [Developer.com](http://www.developer.com/) - \
@@ -111,6 +112,7 @@ summary: "Set di link relativi al coding"
 [25 Basic Docker Commands for Beginners](https://codeopolis.com/posts/25-basic-docker-commands-for-beginners/) - \
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
 [Docker in 10 minutes](https://smalldata.tech/blog/2019/06/08/docker-in-10-minutes) - \
+[Transitioning from Docker to Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Red Hat Developer\
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -170,6 +172,7 @@ summary: "Set di link relativi al coding"
 [Deeplearning4j](https://www.infoworld.com/article/3567055/deeplearning4j-deep-learning-and-etl-for-the-jvm.html) - Deep learning and ETL for the JVM | InfoWorld\
 [PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
+[TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 
 ### .Net
 
@@ -198,7 +201,6 @@ summary: "Set di link relativi al coding"
 [Learn SQL while solving crimes! SQL Police Department](https://sqlpd.com/) - \
 [Beekeeper Studio](https://www.beekeeperstudio.io/) - Free & Open Source SQL editor and database manager for MySQL, Postgres, SQLite, SQL Server, and more. Available for Windows, Mac, and Linux.\
 [PostgREST](https://postgrest.org/en/v7.0.0/) - a standalone web server that turns your PostgreSQL database directly into a RESTful API; \
-[Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns) - This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes\
 [FastoNoSQL](https://fastonosql.com/) - cross-platform GUI Manager for NoSQL databases.\
 [SWAPI GraphQL API](https://graphql.org/swapi-graphql) - A graphical interactive in-browser GraphQL IDE\
@@ -305,7 +307,6 @@ summary: "Set di link relativi al coding"
 [Eyecandy for your XFCE-Desktop](https://www.xfce-look.org/) - xfce-look.org\
 [Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
 [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
-[https://mosermichael.github.io/jq-illustrated/dir/content.html](https://mosermichael.github.io/jq-illustrated/dir/content.html) - \
 [ssh](https://gravitational.com/blog/how-to-ssh-properly/) - How to SSH Properly\
 [ssh](https://wiki.debian.org/SSH) - Debian Wiki\
 [ssh](https://opensource.com/article/20/2/ssh-tools) - Tools for SSH key management\
@@ -344,6 +345,7 @@ summary: "Set di link relativi al coding"
 [arduino/arduino-cli](https://hub.docker.com/r/arduino/arduino-cli) - Docker Hub\
 [MicroBlocks](https://microblocks.fun/) - Small, Fast, Human Friendly\
 [Program your microcontroller with MicroBlocks | Opensource.com](https://opensource.com/article/20/11/microblocks) - \
+[Moddable](https://www.moddable.com/) - Tools to create open IoT products using standard JavaScript on low cost microcontrollers\
 
 ### Mozilla Firefox
 
@@ -411,6 +413,7 @@ summary: "Set di link relativi al coding"
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
 [Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
+[Introducing another free CA as an alternative to Let's Encrypt](https://scotthelme.co.uk/introducing-another-free-ca-as-an-alternative-to-lets-encrypt/) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -433,7 +436,6 @@ summary: "Set di link relativi al coding"
 [Sigil-Ebook/Sigil](https://github.com/Sigil-Ebook/Sigil) - Sigil is a free, open source, multi-platform EPUB ebook editor that uses Qt\
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
 [charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
-[text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
 [curlpipe/ox](https://github.com/curlpipe/ox) - An independent Rust text editor that runs in your terminal!\
 
 #### Hugo static site generator
@@ -447,7 +449,6 @@ summary: "Set di link relativi al coding"
 [Page Bundles | Hugo](https://gohugo.io/content-management/page-bundles/#fn:fn-1) - \
 [Taxonomies | Hugo](https://gohugo.io/content-management/taxonomies/) - \
 [Hugo Themes](https://themes.gohugo.io/) - \
-[Markdown to pdf using Hugo and beautiful styling](https://www.martinkaptein.com/blog/hugo-md-to-pdf/) - Martin Kaptein\
 [Is there a way to group and filter site.mainSections?](https://discourse.gohugo.io/t/is-there-a-way-to-group-and-filter-site-mainsections/19920/2) - support - Hugo\
 [Hugo Page Resources, and how to use them... | Regis Philibert](https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/) - \
 [Laura Kalbag – Processing Responsive Images with Hugo](https://laurakalbag.com/processing-responsive-images-with-hugo/) - \
@@ -469,6 +470,14 @@ summary: "Set di link relativi al coding"
 [pandoc-img-glob · PyPI](https://pypi.org/project/pandoc-img-glob/) - \
 [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
 [Sublist: Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2575) - \
+
+#### YAML - JSON - TOML ecc..
+
+[tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron) - \
+[How to convert Excel files to HTML or JSON | Opensource.com](https://opensource.com/article/19/5/convert-excel-files-html-json) - \
+[text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
+[Illustrated jq tutorial](https://mosermichael.github.io/jq-illustrated/dir/content.html) - \
+[Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 
 ### Web, web-app e servizi rest
 
@@ -527,7 +536,6 @@ summary: "Set di link relativi al coding"
 [Visual formatting model](http://www.w3.org/TR/CSS2/visuren.html#q24) - \
 [kognise water CSS · A CSS without classes](https://github.com/kognise/water.css/blob/master/README.md) - \
 [Flexible data tables with CSS Grid](https://adamlynch.com/flexible-data-tables-with-css-grid/?1) - \
-[How to convert Excel files to HTML or JSON | Opensource.com](https://opensource.com/article/19/5/convert-excel-files-html-json) - \
 [CSS Grid Generator](https://cssgrid-generator.netlify.com/) - \
 [CSS rules that will make your life easier](https://www.freecodecamp.org/news/css-rules-to-live-by-962a051e1eb2/) - \
 [CSS Grid Level 2](https://hacks.mozilla.org/2019/06/css-grid-level-2-subgrid-is-coming-to-firefox/) - subgrid is coming to Firefox\
@@ -574,6 +582,7 @@ summary: "Set di link relativi al coding"
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [JaidedAI/EasyOCR: Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai](https://github.com/JaidedAI/EasyOCR) - \
+[OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
 
 ##### Aurelia
 
@@ -591,6 +600,7 @@ summary: "Set di link relativi al coding"
 [Aurelia 2](https://github.com/aurelia/aurelia) - aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
 [aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
 [The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
+[Aurelia Weekly](https://www.aureliaweekly.com/#/home) - \
 
 ##### Three JS 3D
 

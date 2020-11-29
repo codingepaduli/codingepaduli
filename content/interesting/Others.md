@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-11-22
-publishdate: 2020-11-22
-lastmod: 2020-11-22
+date: 2020-11-28
+publishdate: 2020-11-28
+lastmod: 2020-11-28
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -23,6 +23,7 @@ summary: "Set di link interessanti"
 ### Spacetime
 
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
+[Fottuti geni](https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMjk1MjYwMC9lcGlzb2Rlcy9mZWVk) - Podcast\
 [A New Map of the Standard Model of Particle Physics | Quanta Magazine](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - \
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Gravity Is Not A Force](https://timhutton.github.io/GravityIsNotAForce/) - Under general relativity, gravity is a distortion of spacetime, not a force. See it in this simulation.\
@@ -75,6 +76,7 @@ summary: "Set di link interessanti"
 [Japan to release Fukushima's contaminated water into sea: reports | Reuters](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - \
 [The Earth Is Pulsating Every 26 Seconds, and Seismologists Don't Agree Why](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - \
 [Diluting blood plasma rejuvenates tissue, reverses aging in mice](https://www.sciencedaily.com/releases/2020/06/200615115724.htm) - Plasma exchange could be the key to unlocking the body's regenerative capacities\
+[Ospedali San Paolo e Carlo, parla un medico: 'Inumano, noi e i pazienti abbandonati in una vera bolgia, ammassati come carne da macello'](https://www.ilfattoquotidiano.it/2020/11/23/ospedali-san-paolo-e-carlo-parla-un-medico-inumano-noi-e-i-pazienti-abbandonati-in-una-vera-bolgia-ammassati-come-carne-da-macello/6012418/) - Il Fatto Quotidiano\
 
 ### Tech
 
