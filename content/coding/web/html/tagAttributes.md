@@ -14,13 +14,13 @@ summary: "HTML Lez. 04 - Etichette che richiedono l'uso di attributi"
 
 # Etichette con attributi
 
-Le etichette possono avere degli **attributi** che forniscono informazioni aggiuntive all'etichetta.
+Le etichette possono avere una lista di **attributi** che forniscono informazioni aggiuntive all'etichetta.
 
-Ogni etichetta ha i propri attributi specifici, per cui non è possibile utilizzare un'attributo in una etichetta che non lo preveda. Inoltre, gli attributi devono essere aggiunti esclusivamente nelle etichette di apertura, non nelle etichette di chiusura.
+Gli attributi devono essere aggiunti esclusivamente nelle etichette di apertura, non nelle etichette di chiusura, e devono essere separati l'uno dall'altro da uno spazio. 
 
-Un attributo ha la forma **nome='valore'**, con il valore sempre racchiuso da apici singoli o doppi.
+Ogni attributo è una coppia **nome='valore'**. La regola di scrittura indica il nome dell'attributo seguito da un carattere ``=`` e poi dal valore, che deve essere sempre racchiuso da apici singoli o doppi.
 
-La sintassi delle etichette con attributi è la seguente:
+Riepilogando, la sintassi delle etichette con attributi è la seguente:
 
 ```html
 <etichetta nome1="valore1" nome2="valore2" ... >
@@ -45,20 +45,24 @@ Un esempio di questi attributi è il seguente:
 
 Dall'esempio, si nota che ogni paragrafo ha un suo identificativo, e che i primi tre paragrafi fanno parte dello stesso insieme (chiamato "insieme1"), dato che il valore dell'attributo ``class`` è lo stesso; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato "citazione"); Per un apprefondimento, si rimanda alle specifiche sui selettori CSS.
 
+Non tutti gli attributi sono comuni a tutte le etichette, vi sono attributi specifici per una singola etichetta, per cui è possibile associarli solo ed esclusivamente a questa etichetta.
+
 ## Etichetta ``html`` e l'attributo ``lang``
 
-L'etichetta ``html``, già vista nei capitoli precedenti, prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
+L'etichetta ``html`` prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
 Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in biellorusso con alfabeto cirillico, o ancora biellorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Biellorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
 
 1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a wikipedia per lo standard ISO 639-1");
 2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a wikipedia per lo standard ISO 15924");
 3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a wikipedia per lo standard ISO 3166").
 
+L'indicazione della lingua corretta aiuta gli strumenti di traduzione e quelli di lettura ad alta voce del testo nella corretta interpretazione del testo.
+
 Le pagine web in italiano, non avendo particolari complicazioni di linguaggio, devono avere l'etichetta di apertura ``<html lang="it">``.
 
-L'attributo ``lang`` può però essere usato per indicare che un particolare contenuto è scritto in un linguaggio differente rispetto alla pagina; Questa informazione aggiuntiva può aiutare enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce del testo.
+Possono esservi casi in cui un particolare contenuto è scritto in un linguaggio differente rispetto al resto della pagina web. In questi casi, l'attributo ``lang`` può essere usato per indicare il linguaggio utilizzato per lo specifico contenuto.
 
-Un esempio in cui la pagina è in italiano, ma un paragrafo è in spagnolo è il seguente:
+Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un paragrafo è in spagnolo:
 
 ```html
 <html lang="it">
@@ -69,6 +73,8 @@ Un esempio in cui la pagina è in italiano, ma un paragrafo è in spagnolo è il
     </body>
 </html>
 ```
+
+Nell'esempio appena visto, l'indicazione aggiuntiva del paragrafo con lingua differente aiuta enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce a leggere e tradurre correttamente il testo spagnolo.
 
 ## Etichetta di collegamento con attributi ``href`` e ``target``
 
@@ -88,23 +94,31 @@ Un esempio di collegamento è il seguente:
  <a href="www.google.it" target="_blank">collegamento a Google</a>
 ```
 
-Da questo esempio, si evidenziano sia l'indirizzo web di "Google", sia l'attributo ``target="_blank"`` che indica di aprire il sito web in una nuova scheda.
+Da questo esempio, si evidenziano sia l'indirizzo web di "Google", che è un indirizzo **assoluto**, sia l'attributo ``target="_blank"`` che indica di aprire il sito web in una nuova scheda.
 
-L'etichetta ``a`` può essere utilizzata per creare collegamenti ad un punto specifico del documento, ad esempio al sotto-capitolo sulle tabelle, indicando l'identificativo del sotto-capitolo nell'attributo ``href``;
+Un secondo esempio di collegamento è il seguente:
 
-Supponendo che il sotto-capitolo sia stato creato con l'identificativo ``idTabella``, come nel seguente esempio:
+```html
+ <a href="pagina1.html" target="_self">collegamento a Google</a>
+```
+
+Da questo secondo esempio, si evidenzia sia l'attributo ``target="_self"`` che indica di aprire il sito web nella stessa scheda, sia l'indirizzo della pagina web ``pagina1.html``, che in questo caso è un indirizzo **relativo** al sito web sul quale sta navigando l'utente;
+
+L'etichetta ``a`` può essere utilizzata per creare collegamenti ad un punto preciso del documento, inserendo nell'attributo ``href`` **l'identificativo** dello specifico punto preceduto dal carattere ``#``;
+
+Ad esempio, supponiamo che nella parte finale del documento sia stato creato il sotto-capitolo con l'identificativo ``idTabella``, come nel codice seguente:
 
 ```html
 <h2 id="idTabella">Sotto-capitolo sulle tabelle</h2>
 ```
 
-Per creare un collegamento al sotto-capitolo, l'indirizzo di collegamento deve iniziare con il carattere ``#`` seguito dall'identificativo di cui sopra, come nel codice seguente:
+Per creare, in cima al documento, un collegamento al sotto-capitolo che si trova in fondo alla pagina, l'indirizzo di collegamento deve iniziare con il carattere ``#`` seguito dall'identificativo di cui sopra, come nel codice seguente:
 
 ```html
  <a href="#idTabella">Link al Sotto-capitolo sulle tabelle</a>
 ```
 
-E' possibile utilizzare entrambe le forme viste in precedenza, creando un collegamento ad un punto preciso di un documento presente su web.
+Questo tipo di collegamento non è limitato allo stesso documento, per cui è possibile anche creare un collegamento ad un punto preciso di una qualsiasi pagina web presente online, a patto che in questa pagina web siano presenti dei punti con un identificativo al quale collegarsi.
 
 Ad esempio, per effettuare un collegamento al sotto-capitolo "Struttura di un documento HTML" della pagina web "HTML" ospitata su wikipedia, supponendo che il sotto-capitolo sia identificato dalla voce univoca ``Struttura_di_un_documento_HTML``, allora per creare il collegamento si utilizza il codice seguente:
 
@@ -112,9 +126,15 @@ Ad esempio, per effettuare un collegamento al sotto-capitolo "Struttura di un do
 <a href="https://it.wikipedia.org/wiki/HTML#Struttura_di_un_documento_HTML">Link al Sotto-capitolo "Struttura di un documento HTML"</a>
 ```
 
-Sono state previste tipologie di indirizzi speciali per email e numeri di telefono. Con queste tipologie di collegamenti, il browser delega ad un'applicazione esterna il compito di inviare una email, di effettuare una chiamata telefonica e di inviare SMS verso l'identificativo indicato.
+Sempre trattando i collegamenti, state previste tipologie di indirizzi speciali per email e numeri di telefono che vengono gestite tramite collegamenti. Quando l'utente clicca su un collegamento con un indirizzo "speciale", il browser delega ad un'applicazione esterna il compito di inviare una email, di effettuare una chiamata telefonica e di inviare SMS verso il numero di telefono indicato.
 
-Di seguito si riportano gli esempi per queste tipologie di indirizzi:
+In particolare, gli indirizzi speciali hanno un prefisso ben definito:
+
+- ``mailto:`` è il prefisso che indica un indirizzo speciale per l'invio di una mail;
+- ``tel:`` è il prefisso che indica un indirizzo speciale per effettuare una chiamata telefonica;
+- ``sms`` è il prefisso che indica un indirizzo speciale per inviare un SMS.
+
+Di seguito si riporta un esempio d'uso dei collegamenti verso queste tipologie di indirizzi:
 
 ```html
 <a href="mailto:bianchi@email.com,rossi@email.com?cc=paolo@email.com&subject=Oggetto">Scrivi una mail</a>
