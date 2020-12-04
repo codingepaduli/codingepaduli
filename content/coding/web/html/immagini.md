@@ -7,7 +7,7 @@ publishdate: 2019-08-26
 lastmod: 2019-08-26
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: false
+draft: true
 toc: false
 summary: "HTML Lez. 06 - Immagini, aree e caricamento asincrono"
 ---
