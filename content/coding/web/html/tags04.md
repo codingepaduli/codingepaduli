@@ -55,15 +55,15 @@ Come si vede, entrambe le etichette ``audio`` e ``video`` hanno gli attributi:
 - ``controlsList``, una lista di tre possibili valori:
     - ``nodownload`` non permette all'utente di scaricare il file;
     - ``nofullscreen`` non permette all'utente di vedere il video a tutto schermo;
-    - ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto;
+    - ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto.
 
-Essendo una lista, l'attributo ``controlsList`` può avere uno o più valori, come nel seguente esempio: ``controlsList="nodownload nofullscreen noremoteplayback"``
+Essendo una lista, l'attributo ``controlsList`` può avere uno o più valori, come nel seguente esempio: ``controlsList="nodownload nofullscreen noremoteplayback"``.
 
 Ovviamente, solo l'etichetta video ha gli attributi:
 
 - ``poster``, l'immagine di anteprima da mostrare;
 - ``width``, la larghezza del video (in pixel);
-- ``height``, l'altezza del video (in pixel);
+- ``height``, l'altezza del video (in pixel).
 
 Entrambe le etichette ``audio`` e ``video`` fanno uso dell'etichetta ``source``, per indicare i video o gli audio da riprodurre. Di questi, solo uno viene effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il primo file che riesce a riprodurre (in base ai formati supportati).
 
@@ -77,5 +77,5 @@ L'etichetta ``video`` permette anche di specificare dei possibili sottotitoli da
 - ``label``, una descrizione, generalmente la lingua del sottotitolo;
 - ``kind``, il tipo di traccia (per ora subtitles);
 - ``srclang`` il codice del linguaggio;
-- ``src`` il percorso del file di sottotitoli; Il formato del file è VTT.
+- ``src`` il percorso del file di sottotitoli; Il formato del file è VTT;
 - ``default`` il sottotitolo da mostrare di default.
