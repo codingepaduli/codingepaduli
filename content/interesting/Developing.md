@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-11-28
-publishdate: 2020-11-28
-lastmod: 2020-11-28
+date: 2020-12-06
+publishdate: 2020-12-06
+lastmod: 2020-12-06
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -471,7 +471,7 @@ summary: "Set di link relativi al coding"
 [Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
 [Sublist: Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc](https://github.com/jgm/pandoc/issues/2575) - \
 
-#### YAML - JSON - TOML ecc..
+#### YAML - JSON - TOML - CSV - altri
 
 [tomnomnom/gron: Make JSON greppable!](https://github.com/tomnomnom/gron) - \
 [How to convert Excel files to HTML or JSON | Opensource.com](https://opensource.com/article/19/5/convert-excel-files-html-json) - \
