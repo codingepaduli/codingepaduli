@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 06 - Immagini ed aree"
-description: "HTML Lez. 06 - Immagini, aree e caricamento asincrono"
+title: "HTML Lez. 08 - Immagini"
+description: "HTML Lez. 08 - Immagini, figure, caricamento asincrono, selezione dell'immagine adatta allo schermo e selezione delle aree dell'immagine, "
 date: 2019-08-26
 publishdate: 2019-08-26
 lastmod: 2019-08-26
@@ -9,7 +9,29 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
-summary: "HTML Lez. 06 - Immagini, aree e caricamento asincrono"
+summary: "HTML Lez. 08 - Immagini, figure, caricamento asincrono, selezione dell'immagine adatta allo schermo e selezione delle aree dell'immagine"
+
+references:
+    -   title: "WebP image compression"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/20/4/webp-image-compression"
+        description: "HTML images - Drop PNG and JPG for your online images: Use WebP"
+    -   title: "HTML images done right - Web graphics, good to the last byte"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques"
+        description: "HTML images done right - Web graphics, good to the last byte"
+    -   title: "HTML images with srcset"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/"
+        description: "How to Build Responsive Images with srcset"
+    -   title: "HTML images srcset and sizes"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://ericportis.com/posts/2014/srcset-sizes/"
+        description: "media queries aren’t the right tool for responsive images, srcset and sizes are"
+    -   title: "HTML Images to base64 data-URI converter"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://websemantics.uk/tools/image-to-data-uri-converter/"
+        description: "A tool to convert images to base64 data-URI"
 ---
 
 # Immagini ed aree

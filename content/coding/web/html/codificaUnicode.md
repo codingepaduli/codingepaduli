@@ -1,21 +1,37 @@
 ---
 type: "html"
-title: "HTML Lez. 06 - Codifica UTF-8, HTML entities ed emoji"
-description: "HTML Lez. 06 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
-date: 2019-07-30
-publishdate: 2019-07-30
-lastmod: 2019-07-30
+title: "HTML Lez. 07 - Codifica UTF-8, HTML entities ed emoji"
+description: "HTML Lez. 07 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
+date: 2019-08-05
+publishdate: 2019-08-05
+lastmod: 2019-08-05
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 06 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
+summary: "HTML Lez. 07 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
 
 references:
     -   title: "EditorConfig"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "/coding/tools/editorconfig/"
         description: "Articolo per la configurazione di Editorconfig"
+    -   title: "Unicode In Five Minutes"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://richardjharris.github.io/unicode-in-five-minutes.html"
+        description: "A description of five minutes about Unicode"
+    -   title: "Unicode Converter - Unicodes and text converter"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.branah.com/unicode-converter"
+        description: "A tool to convert between Unicode and plain text"
+    -   title: "Unicode Converter - Unicode code converter"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://r12a.github.io/app-conversion/"
+        description: "Another tool to convert between Unicode and plain text"
+    -   title: "Emoji Chart, v12.0"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.unicode.org/emoji/charts/full-emoji-list.html"
+        description: "A full list of Emoji"
 ---
 
 # Codifica UTF-8, HTML entities ed emoji
@@ -35,7 +51,7 @@ Una soluzione a più ampio raggio consiste nel configurare strumenti quali
 [EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su wikipedia"),
 in modo da poter condividere le impostazioni di codifica (e di scrittura dei documenti di testo) con l'intero gruppo di lavoro o nell'intera azienda.
 
-Una volta che le pagine web sono state salvate con la codifica giusta, è necessario indicarla nelle informazioni della pagina, all'interno del tag ``head``:
+Una volta che le pagine web sono state salvate con la codifica giusta, è necessario indicarla nelle informazioni della pagina, all'interno dell'etichetta ``head``:
 
 ```html
 <head>
@@ -70,5 +86,3 @@ Anche gli emoticons e gli
 fanno parte della specifica Unicode, per cui o li si scrive nel documento "cosi come sono" o li si puó includere attraverso "HTML entities" o attraverso rappresentazione con codice decimale/esadecimale.
 
 Ad esempio, l'emoji "rolling on the floor laughing" (rotola sul pavimento ridendo) è associata al codice numerico esadecimale 1F923, quindi possiamo scrivere questo carattere con la notazione esadecimale ``&#x1F923;`` (con risultato &#x1F923; <!-- 🤣 -->).
-
-I tag, gli attributi e le rappresentazioni in decimale/esadecimale fin qui visti, possono portare ad una vasta serie di errori, che devono essere corretti mediante validazione.

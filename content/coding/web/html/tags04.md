@@ -1,104 +1,81 @@
 ---
 type: "html"
-title: "HTML Lez. 05 - Tag audio e  video"
-description: "HTML Lez. 05 - Tag audio e  video"
-date: 2019-08-22
-publishdate: 2019-08-22
-lastmod: 2019-08-22
+title: "HTML Lez. 09 - Etichette audio e video"
+description: "HTML Lez. 09 - Etichette audio e video"
+date: 2019-08-29
+publishdate: 2019-08-29
+lastmod: 2019-08-29
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
-summary: "HTML Lez. 05 - Tag audio e  video"
+summary: "HTML Lez. 09 - Etichette audio e video"
+
+references:
+    -   title: "MIME Types"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.asciitable.it/mime-types"
+        description: "A list of mime types"
 ---
 
-# Tag audio e video
+# Etichette audio e video
 
-È consigliabile, per questioni di performance, proporre i contenuti
-audio e video in streaming. Comunque si possono proporre anche come file
-o collegamenti.
+Le pagine web, oggi, presentano all'utente molti contenuti multimediali, tra cui audio e video.
 
-L'aggiunta di audio e video ad una pagina web è semplice, ma, spesso, è
-necessario preparare questi contenuti, affinchè siano utilizzabili su
-risoluzioni diverse, dagli smartphone alle smart-tv, e su connessioni a
-differenti velocitá, dal 3G alla fibra.
+È consigliabile, per questioni di performance, proporre i contenuti audio e video attraverso servizi **streaming**, in modo che la risoluzione dei contenuti si adatti alla velocità di trasmissione dati della linea dell'utente.
 
-Su connessioni lente e su dispositivi con schermi piccoli, quali gli
-smartphone, è preferibile mostrare video che abbiano qualitá ridotta e
-immagini con le dimensioni adattate (in verticale), in modo che siano
-completamente visibili e che possano essere caricati piú velocemente. In
-caso di connessioni veloci e schermi grandi, invece, è preferibile
-aumentare la qualitá, preferendo video Full-HD e immagini ad alta
-risoluzione, preferibilmente orientate in orizzontale.
-
-Per inserire un file audio, che l'utente puó ascoltare, si utilizza il
-seguente codice:
+Volendo, però, evitare lo streaming ed inserire direttamente un file audio nella pagina web, si utilizza il seguente codice:
 
 ```html
 <audio controls autoplay>
-  <source src="horse.ogg" type="audio/ogg">
-  <source src="horse.mp3" type="audio/mpeg">
-  <source src="horse.wav" type="audio/wav">
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    <source src="horse.wav" type="audio/wav">
 </audio>
 ```
 
-Per inserire un file video, che l'utente puó guardare, si utilizza il
-seguente codice:
+Allo stesso modo, per inserire direttamente un file video, si utilizza il seguente codice:
 
 ```html
 <video controls autoplay width="800px" height="600px" poster="poster.png">
-  <source src="horse.mp4" type="video/mp4">
-  <source src="horse.ogg" type="video/ogg">
-  <source src="horse.webm" type="video/webm">
-  <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
+    <source src="horse.mp4" type="video/mp4">
+    <source src="horse.ogg" type="video/ogg">
+    <source src="horse.webm" type="video/webm">
+    <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
 </video>
 ```
 
-Come si vede, entrambi i tag `audio` e `video` hanno gli attributi:
+Come si vede, entrambe le etichette ``audio`` e ``video`` hanno gli attributi:
 
-- `mute`, per silenziare il video;
-- `loop`, per riavviare l'audio o il video una volta terminato;
-- `autoplay`, per avviare automaticamente l'audio o il video; Le
-  specifiche indicano che deve essere usato insieme all'attributo
-  `mute` per poter effettuare l'autoplay sui dispositivi mobile;
-- `controls`, per visualizzare i pulsanti di controllo "play",
-  "pause", "stop", ....
-- `controlsList`, una lista di tre possibili valori: `nodownload` non
-  permette all'utente di scaricare il file; `nofullscreen` non
-  permette all'utente di vedere il video a tutto schermo;
-  `noremoteplayback`, non permette all'utente di riprodurre il
-  contenuto in remoto; Essendo una lista, questo attributo viene
-  utilizzato come nel seguente esempio: `controlsList="nodownload
-  nofullscreen noremoteplayback"`
+- ``mute``, per silenziare il video;
+- ``loop``, per riavviare l'audio o il video una volta terminato;
+- ``autoplay``, per avviare automaticamente l'audio o il video; Le specifiche indicano che deve essere usato insieme all'attributo
+  ``mute`` per poter effettuare l'autoplay sui dispositivi mobile;
+- ``controls``, per visualizzare i pulsanti di controllo "play", "pause", "stop", ....
+- ``controlsList``, una lista di tre possibili valori:
+    - ``nodownload`` non permette all'utente di scaricare il file;
+    - ``nofullscreen`` non permette all'utente di vedere il video a tutto schermo;
+    - ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto;
 
-Ovviamente, solo il tag video ha gli attributi:
+Essendo una lista, l'attributo ``controlsList`` può avere uno o più valori, come nel seguente esempio: ``controlsList="nodownload nofullscreen noremoteplayback"``
 
-- `poster`, l'immagine di anteprima da mostrare;
-- `width`, la larghezza del video (in pixel);
-- `height`, l'altezza del video (in pixel);
+Ovviamente, solo l'etichetta video ha gli attributi:
 
-Entrambi i tag `audio` e `video` fanno uso del tag `source`, per
-indicare i video o gli audio da riprodurre. Di questi, solo uno viene
-effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il
-primo file che riesce a riprodurre (in base ai formati supportati).
+- ``poster``, l'immagine di anteprima da mostrare;
+- ``width``, la larghezza del video (in pixel);
+- ``height``, l'altezza del video (in pixel);
 
-Il tag `source` prevede diversi attributi, ma alcuni sono ad uso
-esclusivo per le immagini, per cui quelli maggiormente utilizzabili per
-**audio e video** sono:
+Entrambe le etichette ``audio`` e ``video`` fanno uso dell'etichetta ``source``, per indicare i video o gli audio da riprodurre. Di questi, solo uno viene effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il primo file che riesce a riprodurre (in base ai formati supportati).
 
-- `src`, per indicare il percorso del file da riprodurre;
-- `type`, per indicare il mime-type del file da riprodurre. Tra i
-  possibili mime-type **audio** abbiamo `audio/mpeg` per i file mp3,
-  `audio/wav` per i file wav e `audio/ogg` per i file ogg. Tra i
-  possibili mime-type **video** abbiamo `video/mp4` per i file mp4,
-  `video/webm` per i file webm e `video/ogg` per i file ogg.
+L'etichetta ``source`` prevede diversi attributi, ma alcuni sono ad uso esclusivo per le immagini, per cui quelli maggiormente utilizzabili per **audio e video** sono:
 
-Il tag `video` permette anche di specificare dei possibili sottotitoli
-da mostrare sopra il video. I sottotitoli sono indicati nei tag `track`,
-che prevede i seguenti attributi:
+- ``src``, per indicare il percorso del file da riprodurre;
+- ``type``, per indicare il mime-type del file da riprodurre. Tra i possibili mime-type **audio** abbiamo ``audio/mpeg`` (per i file mp3), ``audio/wav`` e ``audio/ogg`` per i file audio wav/ogg. Tra i possibili mime-type **video** abbiamo ``video/mp4``, ``video/webm`` e ``video/ogg`` per i rispettivi file.
 
-- `label`, una descrizione, generalmente la lingua del sottotitolo;
-- `kind`, il tipo di traccia (per ora subtitles);
-- `srclang` il codice del linguaggio;
-- `src` il percorso del file di sottotitoli; Il formato del file è VTT.
-- `default` il sottotitolo da mostrare di default.
+L'etichetta ``video`` permette anche di specificare dei possibili sottotitoli da mostrare sopra il video. I sottotitoli sono indicati nelle etichette ``track``, che prevede i seguenti attributi:
+
+- ``label``, una descrizione, generalmente la lingua del sottotitolo;
+- ``kind``, il tipo di traccia (per ora subtitles);
+- ``srclang`` il codice del linguaggio;
+- ``src`` il percorso del file di sottotitoli; Il formato del file è VTT.
+- ``default`` il sottotitolo da mostrare di default.
