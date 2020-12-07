@@ -274,7 +274,7 @@ Volendo riportare un esempio di codice che preveda l'espansione delle celle su p
 
 La tabella viene visualizzata di seguito:
 
-    <table style="border: 5px solid green;">
+<table style="border: 5px solid green;">
     <caption>Tabella con stile</caption>
     <tr>
         <th rowspan="2">Cella espansa su 2 righe grazie all'attributo <code>rowspan="2"</code></th>

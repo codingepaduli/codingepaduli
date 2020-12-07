@@ -53,9 +53,9 @@ Come si vede, entrambe le etichette ``audio`` e ``video`` hanno gli attributi:
   ``mute`` per poter effettuare l'autoplay sui dispositivi mobile;
 - ``controls``, per visualizzare i pulsanti di controllo "play", "pause", "stop", ....
 - ``controlsList``, una lista di tre possibili valori:
-    - ``nodownload`` non permette all'utente di scaricare il file;
-    - ``nofullscreen`` non permette all'utente di vedere il video a tutto schermo;
-    - ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto.
+    1. ``nodownload`` non permette all'utente di scaricare il file;
+    2. ``nofullscreen`` non permette all'utente di vedere il video a tutto schermo;
+    3. ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto.
 
 Essendo una lista, l'attributo ``controlsList`` può avere uno o più valori, come nel seguente esempio: ``controlsList="nodownload nofullscreen noremoteplayback"``.
 
