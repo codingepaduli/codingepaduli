@@ -170,7 +170,7 @@ Per fare un riferimento alla sintassi del file, un blocco di istruzioni in Ruby 
 
 ```ruby
 do |variabile|
-  # blocco istruzioni
+    # blocco istruzioni
 end
 ```
 
@@ -194,15 +194,15 @@ Partendo da queste poche informazioni sulla sintassi, possiamo analizzare il Vag
 
 ```ruby
 Vagrant.configure("2") do |config|
-  config.vm.box = "debian/buster64"
-  config.vm.hostname = "debianBuster"
+    config.vm.box = "debian/buster64"
+    config.vm.hostname = "debianBuster"
 
-  config.vm.provider "virtualbox" do |vb|
-    vb.name = "exe1DebianBuster"
-    vb.gui = true
-    vb.memory = "1024"
-    vb.cpus = "2"
-   end
+    config.vm.provider "virtualbox" do |vb|
+        vb.name = "exe1DebianBuster"
+        vb.gui = true
+        vb.memory = "1024"
+        vb.cpus = "2"
+    end
 end
 ```
 
@@ -240,7 +240,7 @@ Tra le proprietà non viste che è comunque possibile definire, abbiamo:
 - l'ip virtuale di una rete privata:
 
 ```ruby
-config.vm.network "private_network", ip: "192.168.33.12
+config.vm.network "private_network", ip: "192.168.33.12"
 ```
 
 - le porte da aprire sulla macchina virtuale e far corrispondere a quelle della macchina ospitante:
@@ -302,10 +302,10 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder "../data", "/vagrant_data"
 
     config.vm.provider "virtualbox" do |vb|
-      vb.gui = true
-      vb.name = "web"
-      vb.memory = "1024"
-      vb.cpus = "2"
+        vb.gui = true
+        vb.name = "web"
+        vb.memory = "1024"
+        vb.cpus = "2"
     end
 end
 ```
@@ -318,29 +318,29 @@ Per definire 2 macchine virtuali assegnate rispettivamente alle variabili "web" 
 
 ```ruby
 Vagrant.configure("2") do |config|
-  config.vm.define "web" do |web|
+    config.vm.define "web" do |web|
         web.vm.box = "debian/buster64"
         web.vm.hostname = 'web'
 
         web.vm.provider "virtualbox" do |vb|
-        vb.gui = true
+            vb.gui = true
             vb.name = "vm1-Debian"
-        vb.memory = "1024"
+            vb.memory = "1024"
             vb.cpus = "2"
-      end
+        end
     end
 
-  config.vm.define "database" do |database|
-      database.vm.box = "debian/buster64"
+    config.vm.define "database" do |database|
+        database.vm.box = "debian/buster64"
         database.vm.hostname = 'database'
 
         database.vm.provider "virtualbox" do |vb|
-        vb.gui = true
+            vb.gui = true
             vb.name = "vm2-Debian"
-        vb.memory = "1024"
+            vb.memory = "1024"
             vb.cpus = "2"
-      end
-  end
+        end
+    end
 end
 ```
 
@@ -352,17 +352,17 @@ vm2 = {'name' => "databas", 'v-name' => "vm2-Debian", 'ip' => "192.168.5.225"}
 vms = [vm1, vm2]
 
 Vagrant.configure(2) do |config|
-  vms.each do |node|
-                config.vm.define node['name'] do |node_config|
-          node['name'].vm.box = "debian/buster64"
+    vms.each do |node|
+        config.vm.define node['name'] do |node_config|
+            node['name'].vm.box = "debian/buster64"
             node['name'].vm.hostname = node['name']
             node['name'].vm.network "private_network", ip: node['ip']
 
             node['name'].vm.provider "virtualbox" do |vb|
-        vb.gui = true
-        vb.name = node['v-name']
-        vb.memory = "1024"
-        vb.cpus = "2"
+                vb.gui = true
+                vb.name = node['v-name']
+                vb.memory = "1024"
+                vb.cpus = "2"
             end
         end
     end
@@ -409,7 +409,7 @@ Per deployare le macchine esistono diverse strategie:
 
 ```ruby
 config.push.define "ftp" do |push|
-  push.host = "ftp.company.com"
+    push.host = "ftp.company.com"
     push.username = "username"
     push.password = "mypassword"
 end
