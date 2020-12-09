@@ -142,8 +142,7 @@ let persona = {
 
 ### Tipi oggetto wrapper
 
-E' possibile creare una versione ad oggetti (detta "wrapper")
-dei tipi primitivi di dato numerici, stringhe o booleani:
+E' possibile creare una versione ad oggetti (detta "wrapper") dei tipi primitivi di dato, siano essi numerici, stringhe o booleani:
 
 ```javascript
 var naturalNumberObj = new Number(10);
@@ -174,3 +173,73 @@ Un esempio di dichiarazione di variabile con valore ancora non definito è il se
 let variabileIndefinita;
 let variabileIndefinita2 = undefined;
 ```
+
+## Uso della console JavaScript
+
+Uno strumento che aiuta moltissimo nello sviluppo di codice JavaScript è la console del browser, che fa parte degli strumenti di sviluppo e che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona".
+
+![Console del browser](/static/coding/web/javascript/javascript-console.png "Console del browser")
+
+La console visualizza, in fase di esecuzione, eventuali errori generati, in modo che il programmatore possa correggerli. Inoltre, visualizza i messaggi informativi, di avviso e di errore che il programmatore inserisce negli script per avere in output il valore di variabili, di oggetti, il tempo di esecuzione e così via.
+
+### Messaggi informativi, di avviso e di errore
+
+Nella console è possibile scrivere messaggi informativi, di avviso e di errore attraverso le istruzioni ``console.info()``, ``console.warn()`` e ``console.error()``, che prendono come parametro il messaggio da mostrare.
+
+```javascript
+console.info("informazione");
+console.warn("allarme");
+console.error("errore");
+
+let x = 10;
+console.info(x);
+```
+
+### Raggruppare messaggi
+
+E' possibile creare gruppi di messaggi, utilizzando le istruzioni ``console.group()`` e ``console.groupEnd()``:
+
+```javascript
+console.group("gruppo di informazioni");
+console.info("informazione 1");
+console.info("informazione 2");
+console.warn("allarme 1");
+console.groupEnd();
+```
+
+### Dati in tabella
+
+La scrittura di una tabella nella console, attraverso l'istruzione ``console.table()``, è particolarmente utile poichè permette di visualizzare array e matrici in un formato molto comprensibile:
+
+```javascript
+let vettore = ['uno', 'due', 'tre'];
+console.table(vettore);
+```
+
+### Tempo di esecuzione
+
+Utilissima pure la scrittura in console del tempo di esecuzione intercorso tra due punti dello script, indicati dalle istruzioni ``console.time()`` e ``console.timeEnd()``:
+
+```javascript
+console.time("tempo impiegato:");
+
+// istruzioni
+// console.warn("allarme 1");
+
+console.timeEnd("tempo impiegato:");
+```
+
+In output sarà mostrato il tempo impiegato nell'esecuzione delle istruzioni, ad esempio "tempo impiegato: 12.014 ms".
+
+### Struttura di un oggetto
+
+Per stampare la struttura di un oggetto si usa l'utilissima istruzione ``console.dir()``, come nel seguente esempio:
+
+```javascript
+let obj = {nome: "Pippo", cognome: "Pluto"};
+console.dir(obj);
+```
+
+Un esempio completo della console contenente l'output di tutte le istruzioni viste è il seguente:
+
+![Console - output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Console - output di tutte le istruzioni")

@@ -32,8 +32,7 @@ In JavaScript sono presenti due modalità di esecuzione degli script:
 ```
 
 Come per la scrittura di pagine web, anche per la stesura di programmi JavaScript si consiglia di configurare correttamente il proprio editor di testo o il proprio strumento di sviluppo, oppure, di utilizzare soluzioni a più ampio raggio come
-<!-- TODO: impostare il link a wikipedia -->
-[EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su wikipedia"),
+[EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su wikipedia") <!-- TODO: impostare il link a wikipedia -->,
 in modo da poter condividere le impostazioni di codifica (e di scrittura dei documenti di testo) con l'intero gruppo di lavoro o nell'intera azienda.
 
 Ancor di più, si consiglia l'uso di strumenti per la verifica del codice sorgente, in modo da individuare e correggere eventuali errori non rilevati dal programmatore.
@@ -132,70 +131,3 @@ I file esterni ovviamente conterranno gli script, come nel seguente esempio:
 
 alert("script contenuto in un file esterno");
 ```
-
-### Console JavaScript
-
-Uno strumento che aiuta moltissimo nello sviluppo di codice JavaScript è la console del browser, che fa parte degli strumenti di sviluppo e che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona".
-
-![Console del browser](/static/coding/web/javascript/javascript-console.png "Console del browser")
-
-La console visualizza, in fase di esecuzione, eventuali errori generati, in modo che il programmatore possa correggerli. Inoltre, visualizza i messaggi informativi, di avviso e di errore che il programmatore inserisce negli script per avere in output il valore di variabili, di oggetti, il tempo di esecuzione e così via.
-
-#### Messaggi informativi, di avviso e di errore
-
-Nella console è possibile scrivere messaggi informativi, di avviso e di errore attraverso le istruzioni ``console.info()``, ``console.warn()`` e ``console.error()``, che prendono come parametro il messaggio da mostrare.
-
-```javascript
-console.info("informazione");
-console.warn("allarme");
-console.error("errore");
-```
-
-#### Raggruppare messaggi
-
-E' possibile creare gruppi di messaggi, utilizzando le istruzioni ``console.group()`` e ``console.groupEnd()``:
-
-```javascript
-console.group("gruppo di informazioni");
-console.info("informazione 1");
-console.info("informazione 2");
-console.warn("allarme 1");
-console.groupEnd();
-```
-
-### Tabelle
-
-La scrittura di una tabella nella console, attraverso l'istruzione ``console.table()``, è particolarmente utile poichè permette di visualizzare array e matrici in un formato molto comprensibile:
-
-```javascript
-let vettore = ['uno', 'due', 'tre'];
-console.table(vettore);
-```
-
-### Tempo di esecuzione
-
-Utilissima pure la scrittura in console del tempo di esecuzione intercorso tra due punti dello script, indicati dalle istruzioni ``console.time()`` e ``console.timeEnd()``:
-
-```javascript
-console.time("tempo impiegato:");
-
-// istruzioni
-// console.warn("allarme 1");
-
-console.timeEnd("tempo impiegato:");
-```
-
-In output sarà mostrato il tempo impiegato nell'esecuzione delle istruzioni, ad esempio "tempo impiegato: 12.014 ms".
-
-### Struttura di un oggetto
-
-Per stampare la struttura di un oggetto si usa l'utilissima istruzione ``console.dir()``, come nel seguente esempio:
-
-```javascript
-let obj = {nome: "Pippo", cognome: "Pluto"};
-console.dir(obj);
-```
-
-Un esempio completo della console contenente l'output di tutte le istruzioni viste è il seguente:
-
-![Console - output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Console - output di tutte le istruzioni")
