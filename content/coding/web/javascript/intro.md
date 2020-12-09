@@ -16,19 +16,19 @@ summary: "Introduzione al linguaggio JavaScript"
 
 JavaScript e' un linguaggio di programmazione che ricalca la sintassi dei linguaggi di programmazione **c** e **Java**. Si sottolinea subito che, nonostante il nome simile, Java è un linguaggio di programmazione differente da JavaScript.
 
-In origine, i programmi JavaScript, chiamati comunemente **script**, venivano inclusi nelle pagine web allo scopo di alleggerire il lavoro del server. Le elaborazioni e animazioni che si potevano realizzare nella pagina web, quindi lato client, erano modeste, dato che all'epoca i personal computer avevano una capacità di elaborazione molto limitata.
+In origine, i programmi JavaScript, chiamati comunemente **script**, venivano inclusi nelle pagine web allo scopo di alleggerire il lavoro del server. Le elaborazioni e animazioni che si potevano realizzare nella pagina web, quindi lato client, erano modeste, dato che, all'epoca, i personal computer avevano una capacità di elaborazione molto limitata.
 
 JavaScript, in origine, era solo una delle varie implementazioni disponibili per l'elaborazione dati lato client, poichè esistevano anche varianti quali JScript, ActionScript, ecc... Tutte queste varianti sono poi state indirizzate verso delle specifiche comuni, standardizzate con il nome di **ECMAScript**.
 
-Oggi, il linguaggio ECMAScript è in evoluzione, passando dalla versione ECMAScript 6 (ES6) del 2015 alla ES10 del 2019 e si evolverà ancora. Le specifiche sono pubblicate sul sito
+Oggi, le specifiche ECMAScript sono in evoluzione, avanzando dalla versione ECMAScript 6 (ES6) del 2015 alla ES10 del 2019 e si arricchiranno ancora di nuove funzionalità. Le specifiche sono pubblicate sul sito
 [https://www.ecma-international.org/ecma-262](https://www.ecma-international.org/ecma-262 "Sito web delle specifiche ECMAScript").
 
-Ogni browser ha comunque la propria implementazione di ECMAScript, da
+Ogni browser sviluppa la propria implementazione di ECMAScript, e sia
 [Mozilla](http://www.mozilla.org/js/language/ "Mozilla - implementazione ECMAScript"),
-a Chrome, a Safari, ma tutti i browser garantiscono nel tempo il pieno supporto alle nuove specifiche. Una tabella di compatibilità delle funzionalità supportate dai singoli browser è mantenuta al link
+sia Chrome, sia Safari, per citare i browser più conosciuti, garantiscono nel tempo il pieno supporto alle nuove specifiche. Una tabella di compatibilità delle funzionalità supportate dai singoli browser è mantenuta al link
 [https://kangax.github.io/compat-table/es6/](https://kangax.github.io/compat-table/es6/ "ECMAScript - tabella di compatibilità").
 
-Per verificare se una specifica è implementata completamente o parzialmente dai vari browser, si può utilizzare il servizio [https://caniuse.com/](https://caniuse.com/ "Link al sito caniuse.com"), inserendo il nome della specifica a cui si è interessati.
+Per verificare se una specifica è implementata completamente o parzialmente dai vari browser, si può utilizzare il servizio [https://caniuse.com/](https://caniuse.com/ "Link al sito caniuse.com"). Inserendo per nome la specifica a cui si è interessati, ad esempio "WebGL" o "WebStorage", si visualizzano i browser che la supportano appieno, solo in parte oppure non la supportano ancora.
 
 Esistono diversi corsi basilari su JavaScript,
 [HTML.it](https://www.html.it/guide/guida-javascript-di-base/ "Link al sito html.it") (in
@@ -38,7 +38,7 @@ italiano),
 [freecodecamp.org](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/ "Link al sito freecodecamp.org"),
 organizzazione no-profit per aiutare le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese), e tanti altri.
 
-ECMAScript è un linguaggio debolmente tipato nato come procedurale, e che con il tempo ha inglobato sia caratteristiche dei linguaggi funzionali sia la possibilità di creare classi ed oggetti, anche se non supporta completamente la programmazione ad oggetti. L'enorme espansione del web, accessibile anche da smartphone e dispositivi IoT, hanno diffuso notevolmente il linguaggio, che è diventato un valido linguaggio anche per applicazioni lato server. Restano purtropppo i limiti dovuti alla mancanza di una tipizzazione forte ed al mancato supporto alla OOP (Object Oriented Programming).
+JavaScript è un linguaggio debolmente tipato nato come procedurale, e che con il tempo ha inglobato sia caratteristiche dei linguaggi funzionali sia la possibilità di creare classi ed oggetti, anche se non supporta completamente la programmazione ad oggetti. L'enorme espansione del web, accessibile anche da smartphone e dispositivi IoT, hanno diffuso notevolmente il linguaggio, che è diventato un valido linguaggio anche per applicazioni lato server. Restano purtroppo i limiti dovuti alla mancanza di una tipizzazione forte ed al mancato supporto alla OOP (Object Oriented Programming).
 
 Per ovviare a queste mancanze, sono nati linguaggi come TypeScript, che estendono ECMAScript e che permettono sia la tipizzazione forte sia la programmazione ad oggetti. Questi linguaggi permettono la scrittura di programmi che, una volta compilati, generano codice JavaScript da includere nelle applicazioni (come per TypeScript).
 
