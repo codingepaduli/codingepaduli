@@ -16,11 +16,13 @@ summary: "HTML Lez. 01 - Introduzione al linguaggio HTML"
 
 ## World Wide Web
 
-Il World Wide Web (dall'inglese "Rete di Ampiezza Globale) è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
+Il World Wide Web (dall'inglese "Rete di Ampiezza Globale") è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
 
-Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi ritrovarsi a vedere un video su una piattaforma web americana ed ancora visualizzare un'offerta di un prodotto presente su un e-commerce australiano, e così via.
+Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi vedere un video su una piattaforma web americana ed ancora visualizzare un prodotto in vendita su un e-commerce australiano, e così via.
 
 Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in formato elettronico indipendente dalla piattaforma utilizzata.
+
+Il <abbr title="World Wide Web">WWW</abbr> viene realizzato come un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
 
 Insieme al WWW nasce il linguaggio HTML, che serve a strutturare i documenti scientifici da pubblicare, e quindi nascono i siti web.
 
@@ -28,13 +30,10 @@ Insieme al WWW nasce il linguaggio HTML, che serve a strutturare i documenti sci
 
 Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
 
-L'**ipertesto** e' un testo "potenziato", cioè contenente immagini, collegamenti, video,
-ecc... quindi l'ipertesto rappresenta i contenuti di una pagina web.
-
 Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
 l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
 
-Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica nè le azioni o elaborazioni da eseguire.
+Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, nè le azioni o le elaborazioni da eseguire.
 
 Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazione e l'elaborazione di dati contenuti nella pagina web sono scritti con linguaggi di programmazione come JavaScript.
 
@@ -42,20 +41,20 @@ Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica st
 
 I siti web possono essere costruiti in mille modi.
 
-Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web attraverso delle interfacce grafiche che guidano l'utente. Questi software sono chiamati genericamente
+Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web utilizzando delle interfacce grafiche che guidano l'utente nei vari passi. Questi software sono chiamati genericamente
 [CMS](https://it.wikipedia.org/wiki/Content_management_system "Link all'articolo sui CMS su wikipedia.it"). Tra i CMS più noti troviamo
 [WordPress](https://wordpress.org/ "Link al sito web di WordPress") e
 [Joomla](https://www.joomla.org/ "Link al sito web di Joomla"), ma la scelta è ampia.
 
-E' possibile creare dei siti web "statici", cioè scritti con software che trasformano un insieme di articoli e contenuti in un sito web. Questi strumenti prendono il nome di "Static site generator" (generatori di siti web statici).
+E' possibile creare dei siti web "statici", cioè scritti con software che trasformano un insieme di articoli e contenuti in un sito web. Questi strumenti prendono il nome di "static site generator" (generatori di siti web statici).
 
 E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor
 open source consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), o ancora [VSCodium](https://vscodium.com/ "Link all'editor VSCodium"), un clone open source di Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
 
-I software per la costruzione di un sito web, sia in modalità grafica, sia "statica", sia partendo da zero, si basano su framework per lo sviluppo web, quali
+Esistono dei framework che intendono essere la base sulla quale poggiarsi per sviluppare siti web, quali
 [Bootstrap](http://getbootstrap.com/ "Link al sito web di Bootstrap"),
 [ZURB foundation](http://foundation.zurb.com/ "Link al sito web di ZURB") e
-[Pure CSS](http://purecss.io/ "Link al sito web di Pure CSS"), giusto per nominarne alcuni, che intendono essere la base sulla quale poggiarsi per sviluppare siti web.
+[Pure CSS](http://purecss.io/ "Link al sito web di Pure CSS"), giusto per nominarne alcuni.
 
 ## Attività di amministrazione
 
@@ -68,23 +67,16 @@ Dal punto di vista tecnico, l'amministrazione di un sito web comporta una serie 
 - rendere **"responsive"**, cioè fruibili su differenti risoluzioni e
   formati, da quelli piccoli dei cellulari e palmari, a quelli
   classici dei computer e tablet, a quelli extra-large delle smart-TV. Uno strumento per il controllo delle varie risoluzioni è [Responsively.App](https://responsively.app/ "App open source per simulare in un'unica schermata la visualizzazione del sito su più dispositivi");
-- rendere **performanti**, cioè far si che i tempi di caricamento siano
-  ridotti, soprattutto su connessioni lente, usando strumenti quali
+- rendere **performanti**, cioè far si che i tempi di caricamento siano ridotti, soprattutto su connessioni lente, usando strumenti quali
   [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
-  opzionalmente si puó rendere il sito capace di funzionare anche
-  senza connessione internet
+  opzionalmente si puó rendere il sito capace di funzionare anche senza connessione internet
   ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
 - **ottimizzare per i motori di ricerca**
   ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su SEO su wikipedia.it"))
   ed adattare al
   [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Link all'articolo sul Web semantico su wikipedia.it");
-- integrare con eventuali servizi esterni, quali social, servizi di
-  pagamento, servizi pubblicitari e di gestione contenuti (come
-  youtube);
-- **pubblicare** sul web, scegliendo le caratteristiche del servizio
-  di hosting o di cloud, i certificati di sicurezza e gli strumenti
-  adatti per il trasferimento e la sincronizzazione delle pagine sul
-  dominio.
+- integrare con eventuali servizi esterni, quali social, servizi di pagamento, servizi pubblicitari e di gestione contenuti (come youtube);
+- **pubblicare** sul web, scegliendo le caratteristiche del servizio di hosting o di cloud, i certificati di sicurezza e gli strumenti adatti per il trasferimento e la sincronizzazione delle pagine sul dominio.
 
 ## Riferimenti alle risorse online
 
