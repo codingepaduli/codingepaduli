@@ -20,9 +20,9 @@ Il World Wide Web (dall'inglese "Rete di Ampiezza Globale") è il servizio di in
 
 Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi vedere un video su una piattaforma web americana ed ancora visualizzare un prodotto in vendita su un e-commerce australiano, e così via.
 
-Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in formato elettronico indipendente dalla piattaforma utilizzata.
+Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
 
-Il <abbr title="World Wide Web">WWW</abbr> viene realizzato come un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
+Il <abbr title="World Wide Web">WWW</abbr> diventa un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
 
 Insieme al WWW nasce il linguaggio HTML, che serve a strutturare i documenti scientifici da pubblicare, e quindi nascono i siti web.
 
@@ -35,13 +35,13 @@ l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di 
 
 Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, nè le azioni o le elaborazioni da eseguire.
 
-Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazione e l'elaborazione di dati contenuti nella pagina web sono scritti con linguaggi di programmazione come JavaScript.
+Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazioni e l'elaborazione dei dati contenuti della pagina web sono scritti con linguaggi di programmazione come JavaScript.
 
 ## Tecnologie e software per la creazione di siti web
 
 I siti web possono essere costruiti in mille modi.
 
-Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web utilizzando delle interfacce grafiche che guidano l'utente nei vari passi. Questi software sono chiamati genericamente
+Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web mediante interfacce grafiche che guidano l'utente nei vari passi. Questi software sono chiamati genericamente
 [CMS](https://it.wikipedia.org/wiki/Content_management_system "Link all'articolo sui CMS su wikipedia.it"). Tra i CMS più noti troviamo
 [WordPress](https://wordpress.org/ "Link al sito web di WordPress") e
 [Joomla](https://www.joomla.org/ "Link al sito web di Joomla"), ma la scelta è ampia.
