@@ -69,15 +69,17 @@ La pagina HTML risultante  (ancora incompleta) è la seguente:
 ```
 
 Si fa notare nuovamente che tutte le etichette nell'esempio riportato sono prima aperte e
-poi chiuse. Inoltre, i contenuti della pagina web (titolo e paragrafo) si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
+poi chiuse. 
 
-L'indentazione è una caratteristica molto apprezzata, perchè migliora la leggibilità e permette di rilevare gli errori più rapidamente. Difatti, il codice riportato nell'esempio è **indentato**. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
+Inoltre, sempre dall'esempio precedente, si nota che le etichette possono essere inserite (innestate) l'una dentro l'altra, come per i contenuti della pagina web (titolo e paragrafo) che si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
 
-Anche la presenza di **commenti** è molto apprezzata, poichè rappresentano informazioni aggiuntive e promemoria che rendono più chiaro il codice.
+Anche l'indentazione è una caratteristica molto apprezzata, perchè migliora la leggibilità e permette di rilevare gli errori più rapidamente. Difatti, il codice riportato nell'esempio è **indentato**. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
+
+Ed ancora, la presenza di **commenti** è praticamente d'obbligo, poichè rappresentano informazioni aggiuntive e promemoria che chiariscono lo scopo del programmatore.
 
 I commenti si scrivono tra i caratteri ``<!--`` e ``-->``, l'unica attenzione da porre è che non devono essere presenti spazi tra i caratteri indicati. Un commento puó occupare più righe.
 
-Di seguito un esempio di commento multilinea:
+Di seguito, un esempio di commento multilinea:
 
 ```html
 <!-- commento relativo i
@@ -91,7 +93,7 @@ Alcune etichette sono state "cancellate" dalle specifiche HTML e non devono più
 
 Il termine **obsoleto**, nel linguaggio tecnico, è utilizzato per indicare tecnologie antiquate e quindi in disuso, magari perchè non più competitive rispetto ad altre basate su idee più avanzate.
 
-Il termine significa anche "logorato", e lo si utilizza soprattutto quando si parla di **obsolescenza programmata**, ovvero quella odiosa strategia commerciale utilizzata per rendere "logorato", e quindi inutilizzabile, un prodotto dopo un certo tempo di utilizzo.
+Il termine significa anche "logorato", e lo si utilizza soprattutto quando si parla di **obsolescenza programmata**, ovvero quella odiosa strategia commerciale utilizzata per rendere logoro, e quindi inutilizzabile, un prodotto dopo un certo tempo di utilizzo.
 
 Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche pagina web non aggiornata:
  
@@ -100,4 +102,4 @@ Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche
 <big>This text is big</big>
 ```
 
-Gli strumenti di validazione del codice HTML aiutano a rilevare, e quindi aggiornare, queste etichette.
+Gli strumenti di validazione del codice HTML aiutano a rilevare, e quindi sostituire, le etichette obsolete.
