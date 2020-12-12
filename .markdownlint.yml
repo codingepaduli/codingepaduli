@@ -18,12 +18,25 @@ MD044:        # proper-names
   names:
     - JavaScript
     - ECMAScript
+    - WebAssembly
+    - TypeScript
+    - ActionScript
+    - JScript
+    - PWA
+    - EditorConfig
     - Java
     - MVC
     - Servlet
     - JSP
     - HTML
     - CSS
+    - IoT
+    - RGB
+    - HSB
+    - Wikipedia
+    - UTF-8
+    - OOP
+    - CMS
   code_blocks: false
 MD046:        # code-block-style
   style: fenced
