@@ -5,6 +5,7 @@ description: "Dichiarazione di costanti e variabili per i vari tipi di dato"
 date: 2020-04-04
 publishdate: 2020-04-04
 lastmod: 2020-04-04
+spellcheck: 2020-12-11
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
@@ -22,7 +23,7 @@ Anche le costanti sono spazi di memoria con un nome ed un tipo associato, ma non
 
 Quando si dichiara una variabile e si assegna un valore, allora alla variabile viene associato un tipo di dato.
 
-Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza. Questo è permesso poichè JavaScript ha una tipizzazione **debole**, a differenza di linguaggi con tipizzazione **forte**, in cui una variabile non può cambiare il tipo di dato associato.
+Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza. Questo è permesso poiché JavaScript ha una tipizzazione **debole**, a differenza di linguaggi con tipizzazione **forte**, in cui una variabile non può cambiare il tipo di dato associato.
 
 I tipi di dato possono essere **primitivi** o **complessi**. Ai tipi primitivi è associato un solo valore, mentre liste di valori, oggetti con più proprietà sono considerati tipi complessi.
 
@@ -70,7 +71,7 @@ La rappresentazione binaria si esprime anteponendo al valore da assegnare alla v
 let naturalNumberBinary = 0b010111;
 ```
 
-Il valore intero o decimale può essere espresso in [notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica), nella classica forma **mantissa**, simbolo ``e`` (indicante l'esponenziale) ed **esponente**, come nel seguente esempio:
+Il valore intero o decimale può essere espresso in [notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica "Link a Wikipedia sulla notazione scientifica"), nella classica forma **mantissa**, simbolo ``e`` (indicante l'esponenziale) ed **esponente**, come nel seguente esempio:
 
 ```javascript
 let realNumberExponentiation = 0.1E100;
@@ -78,7 +79,7 @@ let realNumberExponentiation = 0.1E100;
 
 Tra i valori numerici esistono dei casi particolari:
 
-- `Nan` valore utilizzato per indicare un risultato che [Non è un Numero](https://it.wikipedia.org/wiki/NaN) (dall'inglese Not a Number). Questo valore è assegnato quando si tentano operazioni del tipo "radice quadrata di meno uno", che non ha risultato nell'insieme dei numeri reali;
+- `Nan` valore utilizzato per indicare un risultato che [Non è un Numero](https://it.wikipedia.org/wiki/NaN "Link a Wikipedia su Not A Number") (dall'inglese Not a Number). Questo valore è assegnato quando si tentano operazioni del tipo "radice quadrata di meno uno", che non ha risultato nell'insieme dei numeri reali;
 - ``Infinity`` utilizzato per indicare un valore infinito. Può essere specificato l'infinito positivo ``+Infinity`` o anche negativo ``-Infinity``.
 
 ```javascript
@@ -130,7 +131,7 @@ Un oggetto in ambito informatico è un dato complesso che risiede in memoria ed 
 
 L'operazione di inserimento di un oggetto in memoria è detta **allocazione**, quindi tecnicamente un oggetto è **allocato** in memoria.
 
-Un'esempio di oggetto può essere una persona, che contiene proprietà quali nome, cognome, data di nascita, ecc..
+Un esempio di oggetto può essere una persona, che contiene proprietà quali nome, cognome, data di nascita, ecc..
 
 ```javascript
 let persona = {
@@ -209,7 +210,7 @@ console.groupEnd();
 
 ### Dati in tabella
 
-La scrittura di una tabella nella console, attraverso l'istruzione ``console.table()``, è particolarmente utile poichè permette di visualizzare array e matrici in un formato molto comprensibile:
+La scrittura di una tabella nella console, attraverso l'istruzione ``console.table()``, è particolarmente utile poiché permette di visualizzare array e matrici in un formato molto comprensibile:
 
 ```javascript
 let vettore = ['uno', 'due', 'tre'];

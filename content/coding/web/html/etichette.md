@@ -5,6 +5,7 @@ description: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web
 date: 2019-07-16
 publishdate: 2019-07-16
 lastmod: 2019-07-16
+spellcheck: 2020-12-11
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -22,12 +23,12 @@ Ogni etichetta ha un nome, ad esempio
 ``p`` è l'etichetta del paragrafo,
 ``mark`` è l'etichetta per il testo evidenziato.
 
-E' importante comprendere che, quando si parla di un'etichetta, in realtà si sottointende il riferimento a due etichette: l'etichetta di inizio (o apertura) e l'etichetta di fine (o chiusura).
+E' importante comprendere che, quando si parla di un'etichetta, in realtà si sottintende il riferimento a due etichette: l'etichetta di inizio (o apertura) e l'etichetta di fine (o chiusura).
 
 Ad esempio,
-``h1`` è l'etichetta del titolo, quindi si sottointende il riferimento all'etichetta di inizio del titolo e l'etichetta di fine del titolo; Allo stesso modo,
-``p`` è l'etichetta del paragrafo, quindi si sottointende il riferimento all'etichetta di inizio del paragrafo e l'etichetta di fine del paragrafo; Ancora,
-``mark`` è l'etichetta per il testo evidenziato, quindi si sottointende il riferimento all'etichetta di inizio del testo evidenziato e l'etichetta di fine del testo evidenziato.
+``h1`` è l'etichetta del titolo, quindi si sottintende il riferimento all'etichetta di inizio del titolo e l'etichetta di fine del titolo; Allo stesso modo,
+``p`` è l'etichetta del paragrafo, quindi si sottintende il riferimento all'etichetta di inizio del paragrafo e l'etichetta di fine del paragrafo; Ancora,
+``mark`` è l'etichetta per il testo evidenziato, quindi si sottintende il riferimento all'etichetta di inizio del testo evidenziato e l'etichetta di fine del testo evidenziato.
 
 Queste etichette di apertura e chiusura sono scritte secondo le seguenti regole:
 
@@ -47,7 +48,7 @@ Un'indicazione fondamentale che deve essere inserita **nella prima riga** della 
 
 Si precisa che non si tratta di un'etichetta, è una dichiarazione, per cui **non necessita di un'etichetta di chiusura**;
 
-Dopo la dichiarazione del tipo di documento, deve iniziare il documento web vero e proprio. L'etichetta ``html`` delimita l'intera pagina web (l'etichetta di 
+Dopo la dichiarazione del tipo di documento, deve iniziare il documento web vero e proprio. L'etichetta ``html`` delimita l'intera pagina web (l'etichetta di
 apertura ``<html>`` indica l'inizio del documento HTML e l'etichetta
 di chiusura ``</html>`` indica la fine del documento HTML);
 
@@ -69,21 +70,21 @@ La pagina HTML risultante  (ancora incompleta) è la seguente:
 ```
 
 Si fa notare nuovamente che tutte le etichette nell'esempio riportato sono prima aperte e
-poi chiuse. 
+poi chiuse.
 
 Inoltre, sempre dall'esempio precedente, si nota che le etichette possono essere inserite (innestate) l'una dentro l'altra, come per i contenuti della pagina web (titolo e paragrafo) che si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
 
-Anche l'indentazione è una caratteristica molto apprezzata, perchè migliora la leggibilità e permette di rilevare gli errori più rapidamente. Difatti, il codice riportato nell'esempio è **indentato**. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
+Anche l'indentazione è una caratteristica molto apprezzata, perché migliora la leggibilità e permette di rilevare gli errori più rapidamente. Difatti, il codice riportato nell'esempio è **indentato**. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
 
-Ed ancora, la presenza di **commenti** è praticamente d'obbligo, poichè rappresentano informazioni aggiuntive e promemoria che chiariscono lo scopo del programmatore.
+Ed ancora, la presenza di **commenti** è praticamente d'obbligo, poiché rappresentano informazioni aggiuntive e promemoria che chiariscono lo scopo del programmatore.
 
-I commenti si scrivono tra i caratteri ``<!--`` e ``-->``, l'unica attenzione da porre è che non devono essere presenti spazi tra i caratteri indicati. Un commento puó occupare più righe.
+I commenti si scrivono tra i caratteri ``<!--`` e ``-->``, l'unica attenzione da porre è che non devono essere presenti spazi tra i caratteri indicati. Un commento può occupare più righe.
 
 Di seguito, un esempio di commento multilinea:
 
 ```html
 <!-- commento relativo i
-     contenuti della 
+     contenuti della
      pagina html -->
 ```
 
@@ -91,12 +92,12 @@ Di seguito, un esempio di commento multilinea:
 
 Alcune etichette sono state "cancellate" dalle specifiche HTML e non devono più essere utilizzate. Queste etichette sono dette **obsolete**.
 
-Il termine **obsoleto**, nel linguaggio tecnico, è utilizzato per indicare tecnologie antiquate e quindi in disuso, magari perchè non più competitive rispetto ad altre basate su idee più avanzate.
+Il termine **obsoleto**, nel linguaggio tecnico, è utilizzato per indicare tecnologie antiquate e quindi in disuso, magari perché non più competitive rispetto ad altre basate su idee più avanzate.
 
 Il termine significa anche "logorato", e lo si utilizza soprattutto quando si parla di **obsolescenza programmata**, ovvero quella odiosa strategia commerciale utilizzata per rendere logoro, e quindi inutilizzabile, un prodotto dopo un certo tempo di utilizzo.
 
 Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche pagina web non aggiornata:
- 
+
 ```html
 <acronym title="as soon as possible">ASAP</acronym> -->
 <big>This text is big</big>

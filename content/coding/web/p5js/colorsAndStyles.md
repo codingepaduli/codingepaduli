@@ -5,6 +5,7 @@ description: "Colori e stili"
 date: 2020-09-13
 publishdate: 2020-09-13
 lastmod: 2020-09-13
+spellcheck: 2020-12-11
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
@@ -41,7 +42,7 @@ Il problema di questo modello è che per una persona non è intuitivo indicare l
 
 ## Modello di colori HSB
 
-Il modello Hue-Saturation-Brightness è un modello più intuitivo per le persone, perchè definisce il colore nel seguente spazio dei colori:
+Il modello Hue-Saturation-Brightness è un modello più intuitivo per le persone, perché definisce il colore nel seguente spazio dei colori:
 
 ![p5.js - Modello di colori HSB](https://p5js.org/assets/learn/color/hsb.png "p5.js - Modello di colori HSB")
 
@@ -93,7 +94,7 @@ background(0, 0, 255);
 
 Per scegliere il colore (sempre riferito al modello di colori utilizzato) di **riempimento** da utilizzare per qualsiasi entità da disegnare, si utilizza la funzione ``fill``, che usa tre parametri per indicare il colore.
 
-Una volta impostato il colore di **riempimento**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di riempimento, bisogna richiamare nuovamente la funzione ``fill`` impostando un'altro colore.
+Una volta impostato il colore di **riempimento**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di riempimento, bisogna richiamare nuovamente la funzione ``fill`` impostando un altro colore.
 
 Ad esempio, supponiamo di voler disegnare un triangolo ed un cerchio di un colore, e poi un rettangolo ed un quadrato di un secondo colore, si utilizzerà il seguente codice:
 
@@ -126,7 +127,7 @@ strokeWeight(4);
 
 Per scegliere il colore (sempre riferito al modello di colori utilizzato) di **linea** da utilizzare per qualsiasi entità da disegnare, si utilizza la funzione ``stroke``, che usa tre parametri per indicare il colore.
 
-Una volta impostato il colore di **linea**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di linea, bisogna richiamare nuovamente la funzione ``stroke`` impostando un'altro colore.
+Una volta impostato il colore di **linea**, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi entità da disegnare. Se si vuole cambiare il colore di linea, bisogna richiamare nuovamente la funzione ``stroke`` impostando un altro colore.
 
 Ad esempio, supponiamo di riprendere l'esempio precedente e di voler aggiungere anche stile di linea e colore di contorno delle figure. Per effettuare ciò, si utilizzerà il seguente codice:
 
@@ -155,7 +156,7 @@ Il risultato sarà il seguente:
 
 ### Usare uno stile di testo
 
-Il testo può essere stilizzato impostando il carattere, la dimensione, l'allineameno, ecc...
+Il testo può essere stilizzato impostando il carattere, la dimensione, l'allineamento, ecc...
 
 Per impostare la dimensione del testo, si utilizza la funzione ``textSize``, che prende come parametro la dimensione in pixel del testo, come nel seguente esempio:
 
@@ -164,19 +165,19 @@ textSize(16);
 text("testo", 100, 50);
 ```
 
-Una volta impostata la dimensione del testo, questa sarà **memorizzato** e quindi sarà utilizzata per qualsiasi testo da disegnare. Se si vuole cambiare la dimensione del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un'altro colore.
+Una volta impostata la dimensione del testo, questa sarà **memorizzato** e quindi sarà utilizzata per qualsiasi testo da disegnare. Se si vuole cambiare la dimensione del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un altro colore.
 
 Lo stesso discorso vale per l'allineamento, che viene memorizzato e quindi utilizzato per qualsiasi testo da disegnare.
 
-L'allineameno può essere verticale e/o orizzontale e si imposta mediante la funzione ``textAlign``, che prende come parametri due costanti che indichino rispettivamente l'allineameno verticale e orizzontale da applicare; La libreria p5.js prevede le seguenti costanti:
+L'allineamento può essere verticale e/o orizzontale e si imposta mediante la funzione ``textAlign``, che prende come parametri due costanti che indichino rispettivamente l'allineamento verticale e orizzontale da applicare; La libreria p5.js prevede le seguenti costanti:
 
-- ``LEFT`` indica l'allineameno orizzontale a sinistra;
-- ``CENTER`` indica l'allineameno orizzontale centrale;
-- ``RIGHT`` indica l'allineameno orizzontale a destra;
-- ``TOP``  indica l'allineameno verticale in alto;
-- ``BOTTOM`` indica l'allineameno verticale in basso;
-- ``CENTER`` indica l'allineameno verticale al centro;
-- ``BASELINE`` indica l'allineameno verticale sulla linea di base;
+- ``LEFT`` indica l'allineamento orizzontale a sinistra;
+- ``CENTER`` indica l'allineamento orizzontale centrale;
+- ``RIGHT`` indica l'allineamento orizzontale a destra;
+- ``TOP``  indica l'allineamento verticale in alto;
+- ``BOTTOM`` indica l'allineamento verticale in basso;
+- ``CENTER`` indica l'allineamento verticale al centro;
+- ``BASELINE`` indica l'allineamento verticale sulla linea di base;
 
 Un esempio d'uso dell'allineamento del testo è il seguente:
 
@@ -192,14 +193,14 @@ Anche i classici stili del testo sono indicati attraverso delle costanti, di seg
 - ``BOLD``: indica lo stile di testo **grassetto**;
 - ``BOLDITALIC``: indica lo stile di testo **corsivo-grassetto**.
 
-Per impostare la dimensione del testo, si utilizza la funzione ``textStyle``, che prende come parametro la costante di allineameno tra quelle precedentemente elencate, come nel seguente esempio:
+Per impostare la dimensione del testo, si utilizza la funzione ``textStyle``, che prende come parametro la costante di allineamento tra quelle precedentemente elencate, come nel seguente esempio:
 
 ```javascript
 textStyle(ITALIC);
 text("testo", 100, 50);
 ```
 
-Una volta impostato lo stile del testo, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi testo da disegnare. Se si vuole cambiare lo stile del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un'altro colore.
+Una volta impostato lo stile del testo, questo sarà **memorizzato** e quindi sarà utilizzato per qualsiasi testo da disegnare. Se si vuole cambiare lo stile del testo, bisogna richiamare nuovamente la funzione ``textSize`` impostando un altro colore.
 
 Per il caricamento e la scelta del carattere da utilizzare (in inglese il **font**), si rimanda alle specifiche della libreria.
 

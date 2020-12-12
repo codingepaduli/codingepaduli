@@ -5,6 +5,7 @@ description: "HTML Lez. 04 - Etichette con attributi"
 date: 2019-07-25
 publishdate: 2019-07-25
 lastmod: 2019-07-25
+spellcheck: 2020-12-11
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -43,7 +44,7 @@ Un esempio di questi attributi è il seguente:
 <p id="paragrafo4" class="citazione">paragrafo 4</p>
 ```
 
-Dall'esempio, si nota che ogni paragrafo ha un suo identificativo, e che i primi tre paragrafi fanno parte dello stesso insieme (chiamato "insieme1"), dato che il valore dell'attributo ``class`` è lo stesso; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato "citazione"); Per un apprefondimento, si rimanda alle specifiche sui selettori CSS.
+Dall'esempio, si nota che ogni paragrafo ha un suo identificativo, e che i primi tre paragrafi fanno parte dello stesso insieme (chiamato "insieme1"), dato che il valore dell'attributo ``class`` è lo stesso; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato "citazione"); Per un approfondimento, si rimanda alle specifiche sui selettori CSS.
 
 Non tutti gli attributi sono comuni a tutte le etichette, vi sono attributi specifici per una singola etichetta, per cui è possibile associarli solo ed esclusivamente a questa etichetta.
 
@@ -51,11 +52,11 @@ Non tutti gli attributi sono comuni a tutte le etichette, vi sono attributi spec
 
 L'etichetta ``html`` prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
 
-Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in biellorusso con alfabeto cirillico, o ancora biellorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Biellorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
+Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in bielorusso con alfabeto cirillico, o ancora bielorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Bielorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
 
-1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a wikipedia per lo standard ISO 639-1");
-2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a wikipedia per lo standard ISO 15924");
-3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a wikipedia per lo standard ISO 3166").
+1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a Wikipedia per lo standard ISO 639-1");
+2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a Wikipedia per lo standard ISO 15924");
+3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a Wikipedia per lo standard ISO 3166").
 
 L'indicazione della lingua corretta aiuta gli strumenti di traduzione e quelli di lettura ad alta voce del testo nella corretta interpretazione del testo.
 
@@ -119,7 +120,7 @@ Per creare, in cima al documento, un collegamento al sotto-capitolo che si trova
 
 Questo tipo di collegamento non è limitato allo stesso documento, per cui è possibile anche creare un collegamento ad un punto preciso di una qualsiasi pagina web presente online, a patto che in questa pagina web siano presenti dei punti con un identificativo al quale collegarsi.
 
-Ad esempio, per effettuare un collegamento al sotto-capitolo "Struttura di un documento HTML" della pagina web "HTML" ospitata su wikipedia, supponendo che il sotto-capitolo sia identificato dalla voce univoca ``Struttura_di_un_documento_HTML``, allora per creare il collegamento si utilizza il codice seguente:
+Ad esempio, per effettuare un collegamento al sotto-capitolo "Struttura di un documento HTML" della pagina web "HTML" ospitata su Wikipedia, supponendo che il sotto-capitolo sia identificato dalla voce univoca ``Struttura_di_un_documento_HTML``, allora per creare il collegamento si utilizza il codice seguente:
 
 ```html
 <a href="https://it.wikipedia.org/wiki/HTML#Struttura_di_un_documento_HTML">
@@ -158,7 +159,7 @@ Ad esempio, il seguente codice genera la lista numerata (con numeri romani) di b
 </ol>
 ```
 
-Entrambe le liste prevedono lo stile di numerazione, desritto dall'attributo ``type`` (di recente sostituito dalla proprietà CSS ``list-style-type``) che può avere uno dei seguenti valori:
+Entrambe le liste prevedono lo stile di numerazione, descritto dall'attributo ``type`` (di recente sostituito dalla proprietà CSS ``list-style-type``) che può avere uno dei seguenti valori:
 
 - ``1`` elementi della lista elencati con numeri latini;
 - ``A`` oppure ``a`` elementi della lista elencati con lettere alfabetiche maiuscole o minuscole;
@@ -252,7 +253,7 @@ La tabella viene visualizzata di seguito:
     </tr>
 </table>
 
-Volendo riportare un esempio di codice che preveda l'espansione delle celle su piu righe o colonne, possiamo creare una tabella di 3 righe e 2 colonne, in cui l'ultima riga si espande su entrambe le colonne, mentre la prima cella in alto a sinistra occupa due righe:
+Volendo riportare un esempio di codice che preveda l'espansione delle celle su più righe o colonne, possiamo creare una tabella di 3 righe e 2 colonne, in cui l'ultima riga si espande su entrambe le colonne, mentre la prima cella in alto a sinistra occupa due righe:
 
 ```html
 <table style="border: 5px solid green;">
@@ -262,12 +263,12 @@ Volendo riportare un esempio di codice che preveda l'espansione delle celle su p
         <td>34£</td>
     </tr>
     <tr>
-        <!−− Cella mancante perchè occupata dalla cella che si è espansa −−>
+        <!−− Cella mancante perché occupata dalla cella che si è espansa −−>
         <td>$100</td>
     </tr>
     <tr>
         <th colspan="2">Cella espansa su 2 colonne, grazie all'attributo colspan="2"</th>
-        <!−− Cella mancante perchè occupata dalla cella che si è espansa −−>
+        <!−− Cella mancante perché occupata dalla cella che si è espansa −−>
     </tr>
 </table>
 ```
@@ -281,11 +282,11 @@ La tabella viene visualizzata di seguito:
         <td>34£</td>
     </tr>
     <tr>
-        <!-- Cella mancante perchè occupata dalla cella che si è espansa -->
+        <!-- Cella mancante perché occupata dalla cella che si è espansa -->
         <td>$100</td>
     </tr>
     <tr>
         <th colspan="2">Cella espansa su 2 colonne, grazie all'attributo <code>colspan="2"</code> </th>
-        <!-- Cella mancante perchè occupata dalla cella che si è espansa -->
+        <!-- Cella mancante perché occupata dalla cella che si è espansa -->
     </tr>
 </table>

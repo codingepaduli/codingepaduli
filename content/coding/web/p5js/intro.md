@@ -5,6 +5,7 @@ description: "Introduzione alla libreria grafica p5.js"
 date: 2020-09-10
 publishdate: 2020-09-10
 lastmod: 2020-09-10
+spellcheck: 2020-12-11
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
@@ -17,7 +18,7 @@ customJS: ["/static/coding/web/p5js/Example02.js"]
 
 # Introduzione alla libreria grafica p5.js
 
-p5.js e' una libreria grafica opensource focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è di fatto anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
+p5.js e' una libreria grafica open-source focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è di fatto anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
 Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2D, 3D ed anche in più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geolocalizzazione, delle mappe, della webcam ed anche per l'applicazione di algoritmi di intelligenza artificiale.
 
@@ -27,7 +28,7 @@ Il punto di partenza è sicuramente l'uso dell'editor integrato al link [https:/
 
 ![p5.js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5.js - Editor online")
 
-La schermata mostrata all'utente presenta i menù tipici dei classici ambienti di sviluppo, la barra dei pulstanti per avviare e fermare il proprio lavoro e l'area di lavoro, divisa in un'area di testo per la scrittura del codice e l'area di visualizzazione per presentare il lavoro creato.
+La schermata mostrata all'utente presenta i menù tipici dei classici ambienti di sviluppo, la barra dei pulsanti per avviare e fermare il proprio lavoro e l'area di lavoro, divisa in un'area di testo per la scrittura del codice e l'area di visualizzazione per presentare il lavoro creato.
 
 L'area del codice presenta già un esempio minimale di programma, valido come punto di partenza e descritto nel seguito di questo articolo.
 
@@ -92,7 +93,7 @@ In questo particolare caso, la funzione `setup` contiene un richiamo alla funzio
 
 La funzione `draw` viene richiamata ciclicamente e serve ad elaborare il lavoro realizzato.
 
-Nell'esempio riportato sopra, questa funzione contiene un richiamo alla funzione `background`, che serve ad impostare lo sfondo, ed un secondo richiamo alla funzione `circle`, che crea un cerchio con centro alle cordinate `x=100` ed `y=150` e con raggio `r=50`.
+Nell'esempio riportato sopra, questa funzione contiene un richiamo alla funzione `background`, che serve ad impostare lo sfondo, ed un secondo richiamo alla funzione `circle`, che crea un cerchio con centro alle coordinate `x=100` ed `y=150` e con raggio `r=50`.
 
 Il risultato è il seguente:
 
@@ -100,7 +101,7 @@ Il risultato è il seguente:
 
 ## Prima animazione
 
-Supponendo di voler far "muovere" il cerchio verso destra nell'area di lavoro, si necessita di una variabile che permetta in primis di indicare la posizione corrente del cerchio nell'area di lavoro, e poi che permetta di modificarla con un incremento unitario.
+Supponendo di voler far "muovere" il cerchio verso destra nell'area di lavoro, si necessita di una variabile che permetta, in primis, di indicare la posizione corrente del cerchio nell'area di lavoro, e poi, che permetta di modificarla con un incremento unitario.
 
 La dichiarazione della variabile può avvenire prima delle due funzioni, mediante la classica dichiarazione:
 

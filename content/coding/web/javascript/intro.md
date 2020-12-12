@@ -5,6 +5,7 @@ description: "Introduzione al linguaggio JavaScript"
 date: 2020-04-01
 publishdate: 2020-04-01
 lastmod: 2020-04-01
+spellcheck: 2020-12-11
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
@@ -18,7 +19,7 @@ JavaScript e' un linguaggio di programmazione che ricalca la sintassi dei lingua
 
 In origine, i programmi JavaScript, chiamati comunemente **script**, venivano inclusi nelle pagine web allo scopo di alleggerire il lavoro del server. Le elaborazioni e animazioni che si potevano realizzare nella pagina web, quindi lato client, erano modeste, dato che, all'epoca, i personal computer avevano una capacità di elaborazione molto limitata.
 
-JavaScript, in origine, era solo una delle varie implementazioni disponibili per l'elaborazione dati lato client, poichè esistevano anche varianti quali JScript, ActionScript, ecc... Tutte queste varianti sono poi state indirizzate verso delle specifiche comuni, standardizzate con il nome di **ECMAScript**.
+JavaScript, in origine, era solo una delle varie implementazioni disponibili per l'elaborazione dati lato client, poiché esistevano anche varianti quali JScript, ActionScript, ecc... Tutte queste varianti sono poi state indirizzate verso delle specifiche comuni, standardizzate con il nome di **ECMAScript**.
 
 Oggi, le specifiche ECMAScript sono in evoluzione, avanzando dalla versione ECMAScript 6 (ES6) del 2015 alla ES10 del 2019 e si arricchiranno ancora di nuove funzionalità. Le specifiche sono pubblicate sul sito
 [https://www.ecma-international.org/ecma-262](https://www.ecma-international.org/ecma-262 "Sito web delle specifiche ECMAScript").
@@ -44,6 +45,6 @@ Per ovviare a queste mancanze, sono nati linguaggi come TypeScript, che estendon
 
 Inoltre, sono nati molti framework che rendono l'elaborazione delle informazioni disponibili sul client un compito molto semplice e che permettono un dialogo **asincrono** con il server, cioè si permette agli script in esecuzione di inviare e ricevere dati dal server senza bloccare le elaborazioni in corso e, soprattutto, senza interrompere l'attività dell'utente nella pagina.
 
-Infine, è nato lo standard WebAssembly, che definisce un formato binario eseguibile dal browser. Utilizzando questa tecnologia, programmi scritti in altri linguaggi di programmazione (tra cui **c**, **c++**, **rust**, ecc...) possono essere compilati in formato binario webAssembly per essere inclusi ed eseguiti in una pagina web.
+Infine, è nato lo standard WebAssembly, che definisce un formato binario eseguibile dal browser. Utilizzando questa tecnologia, programmi scritti in altri linguaggi di programmazione (tra cui **c**, **c++**, **rust**, ecc...) possono essere compilati in formato binario WebAssembly per essere inclusi ed eseguiti in una pagina web.
 
 Data la continua diffusione dei servizi basati su web, la conoscenza in ambito lavorativo di JavaScript e delle tecnologie collegate è fortemente richiesta.

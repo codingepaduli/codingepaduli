@@ -5,6 +5,7 @@ description: "Interazione con l'utente mediante mouse e tastiera"
 date: 2020-09-17
 publishdate: 2020-09-17
 lastmod: 2020-09-17
+spellcheck: 2020-12-11
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false

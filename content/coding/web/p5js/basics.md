@@ -5,6 +5,7 @@ description: "Area da disegno e primitive per la grafica 2D"
 date: 2020-09-11
 publishdate: 2020-09-11
 lastmod: 2020-09-11
+spellcheck: 2020-12-11
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
@@ -27,7 +28,7 @@ createCanvas(100, 50);
 
 ### Posizionamento dell'area da disegno
 
-L'area da disegno viene generalmente posizionata alla fine della pagina web, è possibile però riposizionarla in un'altro elemento. Il riposizionamento avviene mediante l'uso della funzione ``parent``, passando come argomento un ID dell'elemento HTML in cui riposizionarla.
+L'area da disegno viene generalmente posizionata alla fine della pagina web, è possibile però riposizionarla in un altro elemento. Il riposizionamento avviene mediante l'uso della funzione ``parent``, passando come argomento un ID dell'elemento HTML in cui riposizionarla.
 
 Supponiamo, ad esempio, di avere una pagina HTML contenente un paragrafo con id ``area`` come nel seguente esempio:
 
@@ -69,7 +70,7 @@ La libreria p5.js permette al programmatore di esprimere le grandezze angolari i
 
 Una caratteristica importante della libreria p5.js è che gli angoli sono misurati seguendo un **senso orario**.
 
-Volendo fare un parallelo con il quadrante di un l'orologio, in cui la lancetta delle ore è posta sul numero tre (ore 3) e la lancetta dei minuti completa l'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrispone alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
+Volendo fare un parallelo con il quadrante di un l'orologio, in cui la lancetta delle ore è posta sul numero tre (ore 3) e la lancetta dei minuti completa l'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrisponde alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
 
 Per facilitare l'uso del radiante, la libreria p5.js mette a disposizione le seguenti costanti:
 
@@ -142,7 +143,7 @@ Lo si può realizzare attraverso la funzione ``ellipse`` che prevede come argome
 ellipse(60, 220, 80, 40);
 ```
 
-### Disegno di un'arco di circonferenza e d'ellisse
+### Disegno di un arco di circonferenza e d'ellisse
 
 Un arco di circonferenza è realizzabile attraverso la funzione ``arc`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Da sottolineare che entrambi gli angoli devono essere espressi in radianti.
 

@@ -5,6 +5,7 @@ description: "HTML Lez. 05 - Metadati"
 date: 2019-07-27
 publishdate: 2019-07-27
 lastmod: 2019-07-27
+spellcheck: 2020-12-11
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -20,9 +21,9 @@ references:
 
 # Metadati
 
-Un documento HTML deve contenere i **metadati**, ovvero informazioni relative alla pagina web (autore, icona, descrizione, immagine di anteprima, ecc...). Questi [metadati](https://it.wikipedia.org/wiki/Metadato "Link a wikipedia sui metadati") non sono mostrati all'utente, ma sono utilizzati dai motori di ricerca e dai social network per presentare e catalogare la pagina web.
+Un documento HTML deve contenere i **metadati**, ovvero informazioni relative alla pagina web (autore, icona, descrizione, immagine di anteprima, ecc...). Questi [metadati](https://it.wikipedia.org/wiki/Metadato "Link a Wikipedia sui metadati") non sono mostrati all'utente, ma sono utilizzati dai motori di ricerca e dai social network per presentare e catalogare la pagina web.
 
-Ad esempio, quando si condivide agli amici un'articolo sui social, questi visualizzano, oltre al collegamento, sia il titolo dell'articolo, sia la descrizione, sia un'immagine o un video di anteprima. Queste informazioni di anteprima i social le recuperano dai metadati allegati alla pagina web.
+Ad esempio, quando si condivide agli amici un articolo sui social, questi visualizzano, oltre al collegamento, sia il titolo dell'articolo, sia la descrizione, sia un'immagine o un video di anteprima. Queste informazioni di anteprima i social le recuperano dai metadati allegati alla pagina web.
 
 Per un riferimento completo ai metadati si rimanda al link [https://htmlhead.dev/](https://htmlhead.dev/ "Link al sito di riferimento per i metadati") ed alle specifiche del linguaggio HTML.
 
@@ -55,7 +56,7 @@ Tra le varie informazioni che si possono aggiungere sulla pagina abbiamo: autore
 
 Queste informazioni sono descritte dal tag ``meta`` che ha come attributi ``name`` e ``content``. In pratica ogni tag ``meta`` permette di aggiungere una coppia chiave-valore, in cui la chiave (definite con l'attributo ``name``) indica la proprietà del documento (autore, descrizione, ...) alla quale è assegnato il valore (definito per mezzo dell'attributo ``content``).
 
-Di seguito un'esempio di metadati facoltativi, da includere nel tag ``head``:
+Di seguito un esempio di metadati facoltativi, da includere nel tag ``head``:
 
 ```html
     <!-- altri metadati della pagina html -->
@@ -76,7 +77,7 @@ I social estraggono le informazioni di una pagina web dalle seguenti chiavi:
     <meta property="og:description" content="Descrizione pagina">
 ```
 
-Twitter fa eccezione, perchè usa le Twitter Card, una tecnologia proprietaria, a cui si rimanda per approfondimenti.
+Twitter fa eccezione, perché usa le Twitter Card, una tecnologia proprietaria, a cui si rimanda per approfondimenti.
 
 Twitter estrae le informazioni di una pagina web dalle seguenti chiavi:
 
@@ -95,7 +96,7 @@ Altre informazioni sulla pagina web sono invece le risorse collegate, come ad es
 
 Queste risorse sono indicate nel tag ``link`` che ha come attributi ``rel`` e ``href``. In pratica ogni tag ``link`` permette di aggiungere una coppia chiave-valore, in cui la chiave (definita con l'attributo ``rel``) indica quale risorsa si vuole collegare ed i valore (definito con l'attributo ``href``) indica il collegamento alla risorsa da collegare.
 
-Di seguito un'esempio di metadati relativi alle risorse collegate, da includere nel tag ``head``:
+Di seguito un esempio di metadati relativi alle risorse collegate, da includere nel tag ``head``:
 
 ```html
     <!-- Provides information about an author or another person -->

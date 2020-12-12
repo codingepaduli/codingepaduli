@@ -5,6 +5,7 @@ description: "HTML Lez. 01 - Introduzione"
 date: 2019-07-15
 publishdate: 2019-07-15
 lastmod: 2019-07-15
+spellcheck: 2020-12-11
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -33,7 +34,7 @@ Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguagg
 Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
 l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
 
-Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, nè le azioni o le elaborazioni da eseguire.
+Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, né le azioni o le elaborazioni da eseguire.
 
 Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazioni e l'elaborazione dei dati contenuti della pagina web sono scritti con linguaggi di programmazione come JavaScript.
 
@@ -69,7 +70,7 @@ Dal punto di vista tecnico, l'amministrazione di un sito web comporta una serie 
   classici dei computer e tablet, a quelli extra-large delle smart-TV. Uno strumento per il controllo delle varie risoluzioni è [Responsively.App](https://responsively.app/ "App open source per simulare in un'unica schermata la visualizzazione del sito su più dispositivi");
 - rendere **performanti**, cioè far si che i tempi di caricamento siano ridotti, soprattutto su connessioni lente, usando strumenti quali
   [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
-  opzionalmente si puó rendere il sito capace di funzionare anche senza connessione internet
+  opzionalmente si può rendere il sito capace di funzionare anche senza connessione internet
   ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
 - **ottimizzare per i motori di ricerca**
   ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su SEO su wikipedia.it"))

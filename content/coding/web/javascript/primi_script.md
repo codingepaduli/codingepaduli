@@ -5,6 +5,7 @@ description: "Introduzione alle prime istruzioni di JavaScript"
 date: 2020-04-03
 publishdate: 2020-04-03
 lastmod: 2020-04-03
+spellcheck: 2020-12-11
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
@@ -32,7 +33,7 @@ In JavaScript sono presenti due modalità di esecuzione degli script:
 ```
 
 Come per la scrittura di pagine web, anche per la stesura di programmi JavaScript si consiglia di configurare correttamente il proprio editor di testo o il proprio strumento di sviluppo, oppure, di utilizzare soluzioni a più ampio raggio come
-[EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su wikipedia") <!-- TODO: impostare il link a wikipedia -->,
+[EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su Wikipedia") <!-- TODO: impostare il link a Wikipedia -->,
 in modo da poter condividere le impostazioni di codifica (e di scrittura dei documenti di testo) con l'intero gruppo di lavoro o nell'intera azienda.
 
 Ancor di più, si consiglia l'uso di strumenti per la verifica del codice sorgente, in modo da individuare e correggere eventuali errori non rilevati dal programmatore.
@@ -98,11 +99,11 @@ Si supponga, ad esempio, di voler associare al ``click`` su un pulsante, realizz
 <input type="button" onclick="alert('Script contenuto inline');">
 ```
 
-Si nota che nella stessa riga di codice è presente sia il codice ``HTML`` sia il codice ``javascript`` (inline).
+Si nota che nella stessa riga di codice è presente sia il codice HTML sia il codice JavaScript (inline).
 
 #### Inserimento script nella pagina HTML
 
-Puo essere inopportuno, per questioni di leggibilità del codice, e difficoltoso inserire script complessi in modalità **inline**. L'etichetta ``script`` è ideata proprio allo scopo di contenere codice JavaScript. Di seguito un esempio:
+Può essere difficoltoso e inopportuno, per questioni di leggibilità del codice, inserire script complessi in modalità **inline**. L'etichetta ``script`` è ideata proprio allo scopo di contenere codice JavaScript. Di seguito un esempio:
 
 ```javascript
 <script>
