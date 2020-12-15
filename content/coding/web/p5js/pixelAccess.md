@@ -19,7 +19,7 @@ customJS: ["/static/coding/web/p5js/pixelAccess.js"]
 
 Di seguito, l'esempio funzionante in ambiente web dell'accesso ai pixel dell'immagine caricata nel canvas.
 
-Si ricorda che per motivi di sicurezza, è necessario dare il permesso al browser di accedere ai dati del canvas, altrimenti tutti i pixel restituiranno colore rgb=(255, 255, 255);
+Si ricorda che per motivi di sicurezza, è necessario dare il permesso al browser di accedere ai dati del canvas, altrimenti tutti i pixel restituiranno colore RGB=(255, 255, 255);
 
 Per leggere l'immagine si fa uso della funzione ``loadImage``, come di seguito riportato:
 
