@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-12-06
-publishdate: 2020-12-06
-lastmod: 2020-12-06
+date: 2020-12-16
+publishdate: 2020-12-16
+lastmod: 2020-12-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -33,8 +33,7 @@ summary: "Set di link relativi al coding"
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
 [Speed tests](http://www.dslreports.com/tools) - dslreports.com\
 [NASA World Wind](http://worldwind.arc.nasa.gov/) - \
-[All IT eBooks](http://www.allitebooks.com/) - Free IT eBooks Download\
-[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md) - \
+[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - \
 [Sugar Labs](https://sugarlabs.org/) - \
 [Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
 [Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
@@ -78,7 +77,6 @@ summary: "Set di link relativi al coding"
 [Build a retro gaming console with RetroPie | Opensource.com](https://opensource.com/article/19/1/retropie) - \
 [DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE](https://archive.org/details/msdos_Fire_and_Ice_1993) - \
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
-[Fire and Ice](http://www.lemonamiga.com/games/docs.php?id=643) - Manual, Docs, Documentation - Lemon Amiga\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 [Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
@@ -93,6 +91,7 @@ summary: "Set di link relativi al coding"
 
 [Vagrant](https://buildvirtual.net/using-vagrant-to-deploy-multiple-vms-on-vsphere/) - Deploy Multiple VMs on vSphere\
 [KVM/qemu](https://stackoverflow.com/questions/42155213/using-vagrant-to-set-up-a-vm-with-kvm-qemu-without-virtualbox) - Using Vagrant to set up a VM with KVM/qemu without VirtualBox\
+[GitHub](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support) - vagrant-libvirt/vagrant-libvirt: Vagrant provider for libvirt.\
 
 #### Containers
 
@@ -237,7 +236,6 @@ summary: "Set di link relativi al coding"
 [MokaByte 111](http://www.mokabyte.it/2006/09/javawebapp-1/) - Le applicazioni web e Java\
 [Sistemi Distribuiti LS](http://lia.deis.unibo.it/Courses/sd0809-info/) - slides\
 [HttpClient](http://hc.apache.org/httpclient-3.x/methods/multipartpost.html) - Multipart Post Method\
-[Organizziamoci con Maven Parte I](http://www.cosenonjaviste.it/organizziamoci-con-maven-parte-i/) - \
 [How to Import Maven Remote Archetype Catalogs in Eclipse](https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/) - \
 [SpotBugs](https://github.com/spotbugs/spotbugs) - spotbugs/spotbugs is FindBugs' successor. A tool for static analysis to look for bugs in Java code.\
 [Load environment-specific properties for use with PropertyPlaceholderConfigurer?](https://stackoverflow.com/questions/2204917/load-environment-specific-properties-for-use-with-propertyplaceholderconfigurer) - \
@@ -247,7 +245,6 @@ summary: "Set di link relativi al coding"
 [How to Start Embedded HTTP Jersey server during Java Application Startup](http://crunchify.com/how-to-start-embedded-http-jersey-server-during-java-application-startup/) - \
 [Oracle Java tutorial](https://docs.oracle.com/javase/tutorial/essential/io/misc.html) - \
 [Novita su Java7](http://blog.html.it/tag/java7/) - \
-[http://codingjam.it/json-web-token-jaas-stateless-authentication-per-tomcat/](http://codingjam.it/json-web-token-jaas-stateless-authentication-per-tomcat/) - \
 [An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 
@@ -351,7 +348,6 @@ summary: "Set di link relativi al coding"
 
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
 [Get Bookmark Add-ons](https://addons.mozilla.org/en-US/firefox/bookmarks/) - \
-[Firefox OS](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS) - Mozilla Developers | MDN\
 [Improving DNS Privacy in Firefox – Firefox Nightly News](https://blog.nightly.mozilla.org/2018/06/01/improving-dns-privacy-in-firefox/) - \
 [Mobile/GeckoView](https://wiki.mozilla.org/Mobile/GeckoView) - MozillaWiki\
 [Recommended Extensions program](https://support.mozilla.org/en-US/kb/recommended-extensions-program) - Firefox Help\
@@ -496,7 +492,6 @@ summary: "Set di link relativi al coding"
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
 [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
 [Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
-[PWA Store](https://progressiveapp.store/pwa/64) - \
 [PWA](https://chromeunboxed.com/google-play-store-microsoft-pwa-builder/) - Google and Microsoft collaborate to help deliver better PWAs to the Play Store\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
 [BrowserGap](https://github.com/dosyago/RemoteView/blob/master/README.md) - access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web\
@@ -518,11 +513,11 @@ summary: "Set di link relativi al coding"
 [HTML image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
 [HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
 [HTML APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding HTML APIs\
+[Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
 [Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](https://www.asciitable.it/mime-types) - \
-[Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
 [Emoji List, v12.0](https://www.unicode.org/emoji/charts/emoji-list.html) - \
 [Ready to validate](http://validator.w3.org/nu/) - Nu Markup Validation Service - W3C\
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
@@ -568,7 +563,6 @@ summary: "Set di link relativi al coding"
 [Promises chaining](https://javascript.info/promise-chaining) - \
 [10 lesser-known Web APIs you may want to use](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - \
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
-[Webpack ed ECMAScript 6](https://codingjam.it/webpack-ecmascript-6-parte/) - Parte I\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
 [qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
 [cozmo/jsQR](https://github.com/cozmo/jsQR) - A pure JavaScript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within.\
