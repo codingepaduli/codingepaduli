@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-11-28
-publishdate: 2020-11-28
-lastmod: 2020-11-28
+date: 2020-12-18
+publishdate: 2020-12-18
+lastmod: 2020-12-18
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -103,3 +103,4 @@ summary: "Set di link interessanti"
 [MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
 [eXoDOS V4.0](https://exodos.the-eye.us/) - an attempt to catalog, obtain, and make playable every game developed for the DOS and PC Booter platform\
 [Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
+[Giro armonico](http://www.aliek.com/corso_chitarra/i_giri_armonici/giro_do/index.php) - Corso di chitarra\

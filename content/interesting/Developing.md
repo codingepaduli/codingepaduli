@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-12-16
-publishdate: 2020-12-16
-lastmod: 2020-12-16
+date: 2020-12-18
+publishdate: 2020-12-18
+lastmod: 2020-12-18
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -32,14 +32,13 @@ summary: "Set di link relativi al coding"
 [Education Ecosystem | The project-based learning for building real products](https://www.education-ecosystem.com/) - \
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
 [Speed tests](http://www.dslreports.com/tools) - dslreports.com\
-[NASA World Wind](http://worldwind.arc.nasa.gov/) - \
+[NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
 [free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - \
 [Sugar Labs](https://sugarlabs.org/) - \
 [Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
 [Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
 [freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
 [HN Academy](https://yahnd.com/academy/) - The Best Online Courses of Hacker News\
-[Corso SO II](http://www.iac.rm.cnr.it/~massimo/Corso2008.html) - La sapienza\
 [rosettagit.org](https://rosettagit.org/) - solutions to the same task in as many different programming languages as possible\
 [grep.app](https://grep.app/) - Search across a half million git repos\
 [AOSA Book](https://aosabook.org/en/index.html) - The Architecture of Open Source Applications\
@@ -70,6 +69,9 @@ summary: "Set di link relativi al coding"
 [fake mail generator](http://www.fakemailgenerator.com/) - \
 [https://www.mytrashmailer.com/](https://www.mytrashmailer.com/) - \
 [https://generator.email/](https://generator.email/) - \
+[Check your IP address | MyIP.com](https://www.myip.com/) - \
+[Log In](https://helixteamhub.cloud/login) - Helix TeamHub\
+[Recruitment](http://stacktrace.it/2008/03/i-7-peccati-capitali-del-recruitment-di-hacker/) - 7 peccati capitali del recruitment\
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
