@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-12-18
-publishdate: 2020-12-18
-lastmod: 2020-12-18
+date: 2020-12-21
+publishdate: 2020-12-21
+lastmod: 2020-12-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -59,7 +59,7 @@ summary: "Set di link interessanti"
 [CindyJS](https://cindyjs.org/) - a framework to create interactive (mathematics and physics) content for the web\
 [Mathematicians Report New Discovery About the Dodecahedron | Quanta Magazine](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - \
 [Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
-[An Interactive Introduction to Fourier Transforms](https://jezzamon.com/fourier/index.html) - \
+[An Interactive Introduction to Fourier Transforms](https://github.com/Jezzamonn/fourier) - \
 
 ### Medicine
 
@@ -103,4 +103,3 @@ summary: "Set di link interessanti"
 [MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
 [eXoDOS V4.0](https://exodos.the-eye.us/) - an attempt to catalog, obtain, and make playable every game developed for the DOS and PC Booter platform\
 [Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
-[Giro armonico](http://www.aliek.com/corso_chitarra/i_giri_armonici/giro_do/index.php) - Corso di chitarra\

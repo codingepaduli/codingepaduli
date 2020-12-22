@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-12-18
-publishdate: 2020-12-18
-lastmod: 2020-12-18
+date: 2020-12-21
+publishdate: 2020-12-21
+lastmod: 2020-12-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -121,6 +121,7 @@ summary: "Set di link relativi al coding"
 [cron](https://askubuntu.com/questions/303148/why-anacron-does-not-call-the-crontab-user-files) - Why anacron does not call the crontab user files? - Ask Ubuntu\
 [scheduled](https://askubuntu.com/questions/235089/how-can-i-run-anacron-in-user-mode) - How can I run anacron in user mode? - Ask Ubuntu\
 [Automating with Jenkins and PowerShell on Windows Part 1](https://hodgkins.io/automating-with-jenkins-and-powershell-on-windows-part-1) - \
+[Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
 [Why GoCD over Jenkins | GoCD Blog](https://www.gocd.org/2017/04/25/gocd-over-jenkins/) - \
 [Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
 [webpro/awesome-dotfiles: A curated list of dotfiles resources.](https://github.com/webpro/awesome-dotfiles) - \
