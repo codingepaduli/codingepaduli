@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-12-21
-publishdate: 2020-12-21
-lastmod: 2020-12-21
+date: 2020-12-22
+publishdate: 2020-12-22
+lastmod: 2020-12-22
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -603,4 +603,3 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
-[code editor](https://gamingjs.com/ice/) - \
