@@ -11,6 +11,32 @@ keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "Introduzione al linguaggio JavaScript"
+
+references:
+    -   title: "Sito JavaScript.info"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://javascript.info/"
+        description: "The modern Javascript tutorial;"
+    -   title: "Sito JavaScript.christmas"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://javascript.christmas/"
+        description: "JavaScript articles;"
+    -   title: "Sito practicejs.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://practicejs.com/"
+        description: "Some JavaScript coding exercises;"
+    -   title: "Sito HTML.it"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.html.it/guide/guida-javascript-di-base/"
+        description: "Corso JavaScript in italiano su HTML.it"
+    -   title: "Sito it.wikibooks.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://it.m.wikibooks.org/wiki/JavaScript"
+        description: "Manuale in italiano su it.wikibooks.org"
+    -   title: "Sito freecodecamp.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/"
+        description: "Algorithms and data structures on freecodecamp.org"
 ---
 
 # Introduzione al linguaggio JavaScript
