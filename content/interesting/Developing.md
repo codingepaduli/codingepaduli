@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-12-22
-publishdate: 2020-12-22
-lastmod: 2020-12-22
+date: 2020-12-26
+publishdate: 2020-12-26
+lastmod: 2020-12-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -539,7 +539,7 @@ summary: "Set di link relativi al coding"
 [CSS Grid Level 2](https://hacks.mozilla.org/2019/06/css-grid-level-2-subgrid-is-coming-to-firefox/) - subgrid is coming to Firefox\
 [The CSS Mindset | Max Böck](https://mxb.dev/blog/the-css-mindset/) - Frontend Web Developer\
 [Relearn CSS layout: Every Layout](https://every-layout.dev/) - \
-[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/responsive-tables/) - \
+[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/making-tables-responsive-with-minimal-css/) - \
 [Why we prefer CSS Custom Properties to SASS variables | CodyHouse](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - \
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
@@ -563,6 +563,7 @@ summary: "Set di link relativi al coding"
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
 [A brief look at async-await](https://javascript.christmas/2019/9) - \
+[JavaScript Christmas](https://javascript.christmas/2020) - \
 [Promises chaining](https://javascript.info/promise-chaining) - \
 [10 lesser-known Web APIs you may want to use](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - \
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
