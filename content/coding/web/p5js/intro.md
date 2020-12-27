@@ -14,6 +14,12 @@ summary: "Introduzione alla libreria grafica p5.js"
 disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
 externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
 customJS: ["/static/coding/web/p5js/Example02.js"]
+
+references:
+    -   title: "Computer Graphics from scratch"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://gabrielgambetta.com/computer-graphics-from-scratch/introduction.html"
+        description: "Computer Graphics from scratch (for 3D rendering)"
 ---
 
 # Introduzione alla libreria grafica p5.js
