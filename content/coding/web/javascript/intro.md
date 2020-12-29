@@ -37,10 +37,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/"
         description: "Algorithms and data structures on freecodecamp.org"
-    -   title: "Sito www.w3schools.com"
+    -   title: "Sito w3schools.com"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.w3schools.com/js/default.asp"
-        description: "Sito www.w3schools.com"
+        description: "Sito w3schools.com"
 ---
 
 # Introduzione al linguaggio JavaScript
