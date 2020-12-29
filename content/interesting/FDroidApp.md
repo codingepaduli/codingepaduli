@@ -47,8 +47,10 @@ summary: "Set di link relativi alle app su F-Droid"
 - [Expression Evaluator](https://f-droid.org/it/packages/dudeofx.eval/)
 - [F-Droid](https://f-droid.org/it/packages/org.fdroid.fdroid/)
 - [FFUpdater](https://f-droid.org/it/packages/de.marmaro.krt.ffupdater/)
+<!-- markdown-link-check-disable-next-line -->
 - [Firefox](https://f-droid.org/it/packages/org.mozilla.firefox/)
 - [Frozen Bubble](https://f-droid.org/it/packages/org.jfedor.frozenbubble/)
+<!-- markdown-link-check-disable-next-line -->
 - [Haven](https://f-droid.org/it/packages/org.havenapp.main/)
 - [K-9 Mail](https://f-droid.org/it/packages/com.fsck.k9/)
 - [Kid3](https://f-droid.org/it/packages/net.sourceforge.kid3/)
@@ -73,6 +75,7 @@ summary: "Set di link relativi alle app su F-Droid"
 - [Podverse](https://f-droid.org/it/packages/com.podverse.fdroid/)
 - [Puzzles](https://f-droid.org/it/packages/name.boyle.chris.sgtpuzzles/)
 - [RadioDroid](https://f-droid.org/it/packages/net.programmierecke.radiodroid2/)
+<!-- markdown-link-check-disable-next-line -->
 - [Riot.im](https://f-droid.org/it/packages/im.vector.alpha/)
 - [Scrambled Exif](https://f-droid.org/it/packages/com.jarsilio.android.scrambledeggsif/)
 - [Seafood Berserker!](https://f-droid.org/it/packages/com.quaap.fishberserker/)
@@ -85,6 +88,7 @@ summary: "Set di link relativi alle app su F-Droid"
 - [Tempus Romanum](https://f-droid.org/it/packages/com.dev.xavier.tempusromanum/)
 - [Termux](https://f-droid.org/it/packages/com.termux/)
 - [Termux:Styling](https://f-droid.org/it/packages/com.termux.styling/)
+<!-- markdown-link-check-disable-next-line -->
 - [Tor Browser](https://f-droid.org/it/packages/org.torproject.torbrowser/)
 - [Tremotesf](https://f-droid.org/it/packages/org.equeim.tremotesf/)
 - [Tutanota](https://f-droid.org/it/packages/de.tutao.tutanota/)
