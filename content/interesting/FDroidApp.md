@@ -14,7 +14,6 @@ summary: "Set di link relativi alle app su F-Droid"
 
 # Interesting F-Droid App
 
-- [1010! Klooni](https://f-droid.org/it/packages/io.github.lonamiwebs.klooni/)
 - [A Photo Manager](https://f-droid.org/it/packages/de.k3b.android.androFotoFinder/)
 - [aFreeRDP](https://f-droid.org/it/packages/com.freerdp.afreerdp/)
 - [Altcoin Prices](https://f-droid.org/it/packages/eu.uwot.fabio.altcoinprices/)
@@ -41,7 +40,7 @@ summary: "Set di link relativi alle app su F-Droid"
 - [DAVx⁵](https://f-droid.org/it/packages/at.bitfire.davdroid/)
 - [Defendo](https://f-droid.org/it/packages/ir.hsn6.defendo/)
 - [Dialer](https://f-droid.org/it/packages/com.simplemobiletools.dialer/)
-- [Disegna](https://f-droid.org/it/packages/com.simplemobiletools.draw/)
+- [Disegna](https://f-droid.org/it/packages/com.simplemobiletools.draw.pro/)
 - [DiskUsage](https://f-droid.org/it/packages/com.google.android.diskusage/)
 - [Document Viewer](https://f-droid.org/it/packages/org.sufficientlysecure.viewer/)
 - [Elenca app](https://f-droid.org/it/packages/de.onyxbits.listmyapps/)
