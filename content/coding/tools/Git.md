@@ -10,6 +10,11 @@ keywords: ["coding", "tools"]
 draft: false
 toc: false
 summary: "Git - Un sistema per il controllo di versione distribuito"
+
+comments:
+    host: "mastodon.uno"
+    username: "padulodeveloper"
+    id: 105468922720281480
 ---
 
 # Introduzione a Git ed ai sistemi per il controllo di versione
