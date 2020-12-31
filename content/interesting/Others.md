@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-12-21
-publishdate: 2020-12-21
-lastmod: 2020-12-21
+date: 2020-12-30
+publishdate: 2020-12-30
+lastmod: 2020-12-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -37,9 +37,12 @@ summary: "Set di link interessanti"
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
+[Physicists Prove Anyons Exist](https://www.discovermagazine.com/the-sciences/physicists-prove-anyons-exist-a-third-type-of-particle-in-the-universe) - Anyons is a Third Type of Particle in the Universe (after fermions and bosons)\
 [Particle Physicists Continue To Make Empty Promises](https://backreaction.blogspot.com/2020/10/particle-physicists-continue-to-make.html) - \
 [The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
+[For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
+[Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - \
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
@@ -77,6 +80,7 @@ summary: "Set di link interessanti"
 [The Earth Is Pulsating Every 26 Seconds, and Seismologists Don't Agree Why](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - \
 [Diluting blood plasma rejuvenates tissue, reverses aging in mice](https://www.sciencedaily.com/releases/2020/06/200615115724.htm) - Plasma exchange could be the key to unlocking the body's regenerative capacities\
 [Ospedali San Paolo e Carlo, parla un medico: 'Inumano, noi e i pazienti abbandonati in una vera bolgia, ammassati come carne da macello'](https://www.ilfattoquotidiano.it/2020/11/23/ospedali-san-paolo-e-carlo-parla-un-medico-inumano-noi-e-i-pazienti-abbandonati-in-una-vera-bolgia-ammassati-come-carne-da-macello/6012418/) - Il Fatto Quotidiano\
+[The poison found in everyone, even unborn babies – and who is responsible for it | Environment | The Guardian](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - \
 
 ### Tech
 
@@ -95,6 +99,7 @@ summary: "Set di link interessanti"
 [Nsibidi](https://en.wikipedia.org/wiki/Nsibidi) - a 4,000 years old system of symbols indigenous to what is now southeastern Nigeria that are apparently pictograms, though there\
 [Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
 [Remote learning via Radio instruction in the 1937 polio epidemic](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - \
+[La stella rossa](https://it.wikipedia.org/wiki/La_stella_rossa) - un romanzo di fantascienza dello scrittore russo Aleksandr Bogdanov, \
 
 ### Games
 
