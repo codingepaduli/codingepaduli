@@ -19,69 +19,118 @@ comments:
 
 # Introduzione a Git ed ai sistemi per il controllo di versione
 
-Git è un sistema per il controllo di versione distribuito. Inizialmente sviluppato da Linus Torvalds per gestire lo sviluppo del kernel Linux, oggi è utilizzato dalle aziende informatiche di tutto il mondo. Costituisce anche un requisito basilare delle conoscenze di uno sviluppatore informatico.
+Git è un sistema per il controllo di versione distribuito. Inizialmente sviluppato da Linus Torvalds per gestire lo sviluppo del kernel Linux, oggi è utilizzato dalle aziende informatiche di tutto il mondo.
 
-Oggi, i progetti pubblicamente esposti dagli sviluppatore sui vari servizi di controllo di versione rappresentano una sorta di "Instagram", utilizzato per condividere non foto e video, ma i propri lavori, quali libri, animazioni 2D e 3D, software e così via.
+I progetti pubblicamente esposti dagli sviluppatori sui vari servizi di controllo di versione rappresentano una sorta di "Instagram", utilizzato per condividere non foto e video, ma i propri lavori: libri, personaggi 2D e 3D, animazioni, stili grafici e soprattutto software.
 
-Per rendere l'idea di cosa significhi "controllo di versione" (dall'inglese Version Control System), si può immaginare un gruppo di studenti che devono svolgere un progetto da consegnare per un esame universitario. Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro.
+## Concetto di controllo di versione
 
-Nell'analogia presentata, ogni studente ha una propria area di lavoro in cui crea le varie bozze ed effettua le varie prove, poi quando un proprio lavoro è completo lo si sposta in un quaderno ad anelli. Il quaderno ad anelli contiene solo ed esclusivamente i lavori completati, come la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo l'arredamento di una stanza di un palazzo.
+Per rendere l'idea di cosa significhi "sistema per il controllo di versione" (dall'inglese Version Control System), si può fare un'analogia con un'attività più vicina agli studenti: la realizzazione, da parte di un gruppo di studenti, di un progetto comune da consegnare ad uno o più insegnanti. Ogni studente prende in carico una parte specifica del progetto e si adopera per portarla a compimento.
 
-Anche nello studio del professore universitario si trova un quaderno ad anelli. I singoli studenti, periodicamente, si recano nello studio ed ognuno effettua una copia dei propri lavori e la mette nel quaderno ad anelli del professore. Allo stesso modo, effettua una copia dei lavori svolti dagli altri studenti, prendendoli dal quaderno ad anelli del professore, e la porta via per metterla nel proprio quaderno ad anelli personale.
+Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro, e può essere diviso in varie fasi, al termine delle quali si può avere, eventualmente, un confronto con gli insegnanti interessati.
 
-E' importante tenere presente che ogni quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando uno studente si reca nello studio per consegnare il materiale, annota nome e data nella pagina di registro del quaderno ad anelli del professore ed aggiunge l'elenco di operazioni, indicando che ha inserito un nuovo capitolo, che ha cancellato un capitolo precedente, scrivendo una "X" a matita sulle pagine del capitolo cancellato (facendo si che siano ancora leggibili), ed infine che ha corretto un capitolo, ad esempio il primo.
+Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, in cui crea le varie bozze ed effettua le varie prove. Quando un lavoro è completo, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo l'arredamento di una stanza di un palazzo, allora questo lavoro è spostato in un quaderno ad anelli.
+
+E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente completa un lavoro, annota nome e data nella pagina di registro ed aggiunge l'elenco di operazioni, indicando che ha inserito un nuovo capitolo, che ha cancellato una pagina web e che ne ha modificato un disegno tecnico.
+
+Le pagine cancellate non vengono effettivamente cestinate, ma vengono annotate con una "X" rossa in un angolo (in modo tale che siano ancora leggibili) e spostate in coda al quaderno ad anelli. Le pagine da modificare vengono prima corrette con la penna rossa, e poi, a modifica terminata, le pagine corrette con la penna rossa vengono posizionate in coda al quaderno ad anelli, infine viene effettuata una copia completa di queste pagine e questa copia viene posizionata nel punto in cui si trovavano le pagine prima della modifica.
+
+**Questo utilizzo del quaderno ad anelli, con la pagina di registro e le modifiche/cancellazioni allegate in coda, realizzano un primo rudimentale sistema di controllo di versione.** Grazie al controllo di versione realizzato, lo studente può decidere di ripristinare un capitolo che in precedenza aveva cancellato, semplicemente recuperandolo dalla coda del quaderno ad anelli. Allo stesso modo, può vedere dal registro il tempo impiegato per scrivere un nuovo capitolo o per realizzare una nuova pagina web. Ed ancora, può vedere tutte le modifiche apportate ad un certo disegno tecnico nel corso del tempo, recuperando tutte le correzioni effettuate dalla coda del quaderno ad anelli.
+
+## Controllo di versione centralizzato
+
+Il quaderno ad anelli può essere condiviso tra tutti gli studenti che partecipano al progetto. Per poterlo condividere fisicamente, il quaderno ad anelli può essere lasciato nel laboratorio o nello studio di un insegnante.
+
+I singoli studenti quando completano un lavoro, aggiungendo, modificando o cancellando parti del progetto, sono tenuti a recarsi presso il laboratorio o lo studio dell'insegnante per poter inserire a registro le operazioni effettuate e, contestualmente, aggiungere i nuovi lavori o spostare in coda le pagine modificate e cancellate.
+
+Questo tipo di controllo di versione realizzato con il quaderno ad anelli comune è detto **centralizzato**.
+
+Avere un quaderno ad anelli in comune permette agli studenti di lavorare in squadra, ma presenta alcuni svantaggi tipici di un sistema centralizzato:
+
+- Non è possibile consegnare un lavoro se il quaderno ad anelli non è "raggiungibile", ad esempio perché il laboratorio o lo studio dell'insegnante è chiuso per ferie o malattia;
+- Se il quaderno ad anelli viene smarrito o distrutto, si perde tutto il lavoro.
+- Se uno studente porta via per un certo periodo un capitolo o un progetto dal quaderno ad anelli, gli altri studenti non possono più accedervi, rimanendo di fatto bloccati;
+
+## Controllo di versione distribuito
+
+Il quaderno ad anelli può essere personale, ogni studente che partecipa al progetto ha il suo.
+
+Quando lo studente completa un lavoro, annota nome e data nella pagina di registro ed aggiunge l'elenco di operazioni, indicando che ha inserito un nuovo capitolo, che ha cancellato una pagina web e che ne ha modificato un disegno tecnico.
+
+Nello studio del professore universitario si trova un ulteriore quaderno ad anelli.
+
+I singoli studenti, periodicamente, si recano nello studio, ognuno di loro effettua una copia dei propri lavori e la mette nel quaderno ad anelli del professore. Allo stesso modo, effettua una copia dei lavori svolti dagli altri studenti, prendendoli dal quaderno ad anelli del professore, e la mette nel proprio quaderno ad anelli personale. Anche le pagine modificate e cancellate, sia sue, sia degli altri studenti vengono copiate e scambiate. Ed anche le pagine di registro vengono copiate. In questo modo, i due quaderni ad anelli sono sincronizzati, di fatto sono identici.
 
 Quando un secondo studente si reca nello studio per consegnare il materiale, vede nella pagina di registro che è presente la nota (con data e autore) relativa ad un nuovo capitolo aggiunto ed ad un secondo capitolo modificato, quindi si fa una copia di questi due capitoli e li mette nel proprio quaderno ad anelli, poi vede che un capitolo è stato cancellato e mette nel proprio quaderno ad anelli personale una "X" a matita sulle pagine del capitolo interessato. A questo punto, consegna i propri lavori al professore, facendone una copia da allegare nel quaderno ad anelli del professore ed avendo cura di segnare nella pagina di registro il proprio nome, la data e le operazioni di inserimento, modifica e cancellazione effettuate.
 
-Un terzo studente che si rechi nello studio effettua le stesse operazioni degli altri due studenti e cosi via fino al completamento del lavoro.
+Un terzo studente che si reca nello studio effettua le stesse operazioni degli altri due studenti e cosi via fino al completamento del lavoro.
 
-In queste operazioni può capitare che il professore e gli studenti modifichino uno stesso capitolo o uno stesso disegno. In questa situazione, c'è bisogno che entrambe le modifiche siano fuse in una terza del capitolo o del disegno che viene poi inclusa nel quaderno ad anelli del professore. Anche questa operazione di fusione viene indicata nel registro.
+Il fatto che ogni studente ha il proprio quaderno ad anelli e che ne hanno uno in comune realizza un sistema di controllo di versione **distribuito**.
 
-Si fa notare inoltre che nessuna modifica o cancellazione viene cestinata, ma tutte vengono conservate, in questo modo se il professore preferisce la prima versione del capitolo, quindi senza le modifiche apportate successivamente, la può recuperare e la sostituisce nel quaderno ad anelli presente nello studio, indicando sempre nel registro questa operazione.
+Il sistema distribuito comporta alcuni vantaggi:
 
-Nel caso il quaderno ad anelli nello studio venga smarrito, il lavoro può continuare a partire da una copia aggiornata del quaderno ad anelli di uno qualsiasi degli studenti.
+- Se il quaderno ad anelli in comune non è "raggiungibile", ad esempio perché il laboratorio o lo studio dell'insegnante è chiuso per ferie o malattia, lo studente può continuare a lavorare sulla propria copia del quaderno.
+- Se il quaderno ad anelli in comune viene smarrito o distrutto, si può ricrearlo facendo la copia di un quaderno ad anelli di uno degli studenti (quello più aggiornato).
 
-Uno studente che decide di scrivere un "prequel" o una storia "parallela", può benissimo lavorare anche a questa storia sul proprio quaderno ad anelli e non consegnare il lavoro nello studio del professore, bensi consegnarlo alle varie aziende che si occupano di pubblicazione.
+### Modalità di lavoro con un sistema di controllo di versione **distribuito**.
 
-Se ad un certo punto, un nuovo studente si aggiunge al gruppo di lavoro, questo studente deve comprare un proprio quaderno ad anelli e poi effettuare una copia del quaderno ad anelli del professore per poter iniziare a lavorare. Questa operazione è detta clonazione.
+E' possibile utilizzare molteplici modalità di lavoro per adattarsi alle diverse esigenze di sviluppo del progetto.
 
-E' utile notare che, in questo scenario, è possibile utilizzare molteplici modalità di lavoro, per adattarsi alle diverse esigenze di sviluppo del progetto.
+Si può utilizzare una modalità di lavoro con **team leader**, che si occupa di coordinare il lavoro del proprio team e quindi riportare il lavoro del team sul quaderno ad anelli del professore.
 
-Si può utilizzare una modalità di lavoro centralizzata, in cui tutti i componenti riportano il lavoro sul quaderno ad anelli del professore.
+[Workflow con manager d'integrazione](https://git-scm.com/figures/18333fig0502-tn.png)
 
-Si può utilizzare una modalità di lavoro con team leader, che si occupa di coordinare il lavoro e quindi riportare il lavoro degli studenti sul quaderno ad anelli del professore.
+Si può utilizzare una modalità di lavoro detta "dittatore - tenente" in cui sono presenti diverse squadre di lavoro, ognuna con il proprio team leader (in questo caso detto "tenente"), ed un leader di progetto (detto "dittatore benevolo") che coordina il lavoro dei vari "tenenti" e che si occupa di recuperare il lavoro dai quaderni ad anelli dei vari "tenenti" per comporre il progetto completo da condividere sul quaderno ad anelli condiviso. Tutti i team, poi, possono aggiornarsi sincronizzando i propri quaderni con questo quaderno condiviso. Questo metodo di lavoro, tra l'altro, è quello utilizzato per lo sviluppo del kernel Linux, in cui Linus Torvalds è il dittatore benevolo.
 
-Si può utilizzare una modalità di lavoro detta "dittatore - tenente", in cui il lavoro è suddiviso in differenti sotto-progetti, ognuno dei quali è gestito da un team leader, detto "tenente", che fa riferimento ad un proprio quaderno ad anelli (sempre appartenente allo studio del professore). Il professore coordina il lavoro dei vari "tenenti" e si occupa di recuperare il lavoro dai quaderni ad anelli dei vari "tenenti" per comporre il progetto completo da tenere nel quaderno ad anelli presente nello studio. Questo metodo di lavoro, tra l'altro, è quello utilizzato per lo sviluppo del kernel Linux, in cui Linus Torvalds è il dittatore.
+[Workflow con dittatore benevolo](https://git-scm.com/figures/18333fig0503-tn.png)
 
-## Concetti principali di git
+## Rami di lavoro, conflitti e fusioni
 
-I concetti principali sui quali si basa git sono:
+Sia che si lavori con un sistema di controllo di versione centralizzato che con uno distribuito, si può verificare la situazione in cui un singolo lavoro debba proseguire su due o più direzioni.
 
-- L'**area di lavoro**, detta **staging area** o **caching area**: E' l'area nella quale l'utente lavora. Nell'analogia precedente, è rappresentata dalla scrivania sulla quale il singolo studente lavora alle varie bozze.
+Si immagini, ad esempio, che uno scrittore venga contattato da casa editoriale per la pubblicazione di un libro, partendo dalla sua bozza di romanzo, ed allo stesso tempo da un'azienda cinematografica per realizzare una serie TV, sempre partendo dalla sua bozza di romanzo. Può accadere che la casa editoriale e l'azienda cinematografica abbiano interessi diversi, magari indirizzando la scrittura verso due finali distinti, magari richiedendo allo scrittore avventure differenti per il protagonista.
 
-- L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente i lavori presenti nell'area di lavoro. Nell'analogia precedente, è rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
+Lo scrittore, lavorando ad un'unica opera complessiva sia per la serie TV, sia per il romanzo, rischia di apportare incongruenze o, addirittura, a non poter soddisfare entrambe le aziende. Dato che sono lavori differenti, lo scrittore deve seguire due filoni diversi, partendo dalla bozza di romanzo comune ad entrambe le opere.
 
-- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente, è rappresentato dal completamento di un lavoro che viene spostato dall'area di lavoro (la scrivania) al proprio quaderno ad anelli.
+Questi due filoni distinti sono i due rami di sviluppo del lavoro e possono essere rappresentati come un quaderno ad anelli contenente un cartoncino di separazione. Nel caso di un sistema distribuito, anche il quaderno ad anelli condiviso deve contenente un cartoncino di separazione. Tutti i fogli prima del cartoncino di separazione sono relativi alla pubblicazione del libro mentre quelli successivi sono relativi alla serie TV. Qualsiasi lavoro apportato alla serie TV non modifica minimamente la storia del libro e viceversa.
+
+Per adattarsi alle diverse esigenze di sviluppo delle opere, è possibile creare un numero imprecisato di rami di sviluppo ed è possibile che più persone lavorino su uno stesso ramo di sviluppo.
+
+Quando due persone modificano uno stesso ramo di sviluppo, uno stesso capitolo, allora si può verificare che le due versioni siano in **conflitto** tra loro, indicando, ad esempio, che il protagonista è presente in due posti diversi nella stessa avventura.
+
+In questi casi, i due autori delle modifiche devono **fonderle** in una terza versione complessiva, prima di poterla includere nel quaderno ad anelli. Anche questa operazione di fusione viene indicata nel registro.
+
+Un'altra situazione che si può verificare è che si voglia fondere due rami di sviluppo dell'opera in un unico ramo, ad esempio, per far si che due capitoli sviluppati su due rami differenti siano fusi in un unico capitolo. Anche in questo caso bisogna procedere all'operazione di fusione ed indicarla nella pagina di registro.
+
+## Concetti principali di Git
+
+I concetti principali sui quali si basa Git sono:
+
+- L'**area di lavoro**, detta **staging area** o **caching area**: E' l'area nella quale l'utente lavora. Nell'analogia precedente è rappresentata dalla scrivania, sulla quale il singolo studente lavora alle varie bozze.
+
+- L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente i lavori presenti nell'area di lavoro. Può essere rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
+
+- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente è rappresentato dal completamento di un lavoro, cioè allo spostamento del lavoro dall'area di lavoro (la scrivania) al proprio quaderno ad anelli.
 
 - Le **versioni**: le operazioni di commit generano una nuova versione del lavoro svolto. Il lavoro precedente non viene cancellato, ma salvato, in modo da poter sempre tornare ad una versione precedente. L'ultima versione sul ramo di sviluppo sul quale lavora l'utente è detta **HEAD**.
 
-- Il **repository locale**: l'insieme di file versionati e tracciati. Rappresenta l'insieme di file su cui git lavora in locale. E' ospitato sul proprio computer e non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
+- Il **repository locale**: l'insieme di file versionati e tracciati. Rappresenta l'insieme di file su cui Git lavora in locale. E' ospitato sul proprio computer e non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
 
-- Il **repository remoto**: l'insieme di file versionati e tracciati. Rappresenta l'insieme di file su cui git lavora in remoto. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro degli altri studenti e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
+- Il **repository remoto**: l'insieme di file versionati e tracciati. Rappresenta l'insieme di file su cui Git lavora in remoto. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro degli altri studenti e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
 
-- La **sincronizzazione**: l'operazione effettuata dall'utente che permette di inviare i lavori dal proprio repository locale al remoto remoto (in git è l'operazione di **push**) e, viceversa, di ricevere i lavori dal repository remoto a quello locale (in git è l'operazione di **pull**). Nell'analogia precedente, è rappresentato dall'azione di copia del lavoro presente nel proprio quaderno ad anelli al quaderno ad anelli dello studio del professore e, viceversa, dall'azione di copia del lavoro presente nel quaderno ad anelli dello studio nel proprio quaderno ad anelli.
+- La **sincronizzazione**: l'operazione effettuata dall'utente che permette di inviare i lavori dal proprio repository locale al remoto remoto (in Git è l'operazione di **push**) e, viceversa, di ricevere i lavori dal repository remoto a quello locale (in Git è l'operazione di **pull**). Nell'analogia precedente, è rappresentato dall'azione di copia del lavoro presente nel proprio quaderno ad anelli al quaderno ad anelli dello studio del professore e, viceversa, dall'azione di copia del lavoro presente nel quaderno ad anelli dello studio nel proprio quaderno ad anelli.
 
-- I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo principale su git è detto **master**, nei sistemi di controllo versione è chiamato **trunk**. Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
+- I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo principale su Git è detto **master**, nei sistemi di controllo versione è chiamato **trunk**. Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
 
 - La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che viene aggiunto al gruppo, e che quindi compra un nuovo quaderno ad anelli nel quale poi clona il contenuto del quaderno ad anelli del professore.
 
 ## Gestione repository
 
-I servizi online permettono la gestione di un repository git tramite interfaccia web, che rende semplice l'interazione con l'utente.
+I servizi online permettono la gestione di un repository Git tramite interfaccia web, che rende semplice l'interazione con l'utente.
 
 Per la creazione di un repository remoto. ci si può registrare su uno dei vari servizi online. Tra i più noti ci sono GitHub, GitLab e BitBucket.
 
-Una volta registrati e creato il proprio repository, si può procedere alla configurazione di git, alla clonazione del repository e quindi alla condivisione con altri utenti del proprio lavoro presente sul repository.
+Una volta registrati e creato il proprio repository, si può procedere alla configurazione di Git, alla clonazione del repository e quindi alla condivisione con altri utenti del proprio lavoro presente sul repository.
 
 ### Creazione repository su GitHub
 
@@ -242,7 +291,7 @@ Untracked files:
 
 I file possono avere 4 stati:
 
-- untracked: non tracciati da git;
+- untracked: non tracciati da Git;
 - modified: modificati rispetto all'ultimo commit;
 - staged (to be committed): pronti ad essere inclusi in un commit;
 - unmodified: non modificati rispetto all'ultimo commit;
@@ -352,7 +401,7 @@ dove il numero zero è l'indice dell'area temporanea da cancellare.
 
 ### Lavorare con più origini remote
 
-Quando si effettua la clonazione di un repository, git crea un riferimento a questo repository remoto, chiamato **origin**:
+Quando si effettua la clonazione di un repository, Git crea un riferimento a questo repository remoto, chiamato **origin**:
 
 E' però possibile utilizzate più repository remoti, semplicemente aggiungendo un riferimento remoto, di seguito chiamato **gitlab**, al repository locale:
 
@@ -390,7 +439,7 @@ Si nota che in questo caso viene sincronizzato il ramo di sviluppo principale **
 
 ### Modalità di lavoro con i Branches
 
-Il repository principale ha un ramo di sviluppo principale chiamato **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con git.
+Il repository principale ha un ramo di sviluppo principale chiamato **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con Git.
 
 Tipicamente sul repository vengono creati diversi branches (rami di sviluppo) per le diverse funzionalità da sviluppare, e su ogni singolo branch (ramo) viene sviluppata una singola funzionalità da parte di uno o più sviluppatori del team.
 
