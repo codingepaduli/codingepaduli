@@ -76,7 +76,7 @@ Il sistema distribuito comporta alcuni vantaggi:
 - Se il quaderno ad anelli in comune non è "raggiungibile", ad esempio perché il laboratorio o lo studio dell'insegnante è chiuso per ferie o malattia, lo studente può continuare a lavorare sulla propria copia del quaderno.
 - Se il quaderno ad anelli in comune viene smarrito o distrutto, si può ricrearlo facendo la copia di un quaderno ad anelli di uno degli studenti (quello più aggiornato).
 
-#### Modalità di lavoro con un sistema di controllo di versione **distribuito**.
+#### Modalità di lavoro con un sistema di controllo di versione **distribuito**
 
 E' possibile utilizzare molteplici modalità di lavoro per adattarsi alle diverse esigenze di sviluppo del progetto.
 
@@ -128,8 +128,8 @@ I concetti principali sui quali si basa Git sono:
 
 - La **sincronizzazione**: l'operazione di allineamento di due repository. In Git è divisa in due operazioni distinte:
 
-    - l'operazione di **push** consiste nell'inviare tutte le operazioni svolte nel repository locale in quello remoto. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno comune tutte le modifiche che sono state effettuate sul proprio quaderno**
-    - l'operazione di **pull** consiste nel recuperare tutte le operazioni svolte sul repository remoto per copiarle in quello locale. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno proprio tutte le modifiche che sono state effettuate sul quaderno comune**.
+    1. l'operazione di **push** consiste nell'inviare tutte le operazioni svolte nel repository locale in quello remoto. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno comune tutte le modifiche che sono state effettuate sul proprio quaderno**;
+    2. l'operazione di **pull** consiste nel recuperare tutte le operazioni svolte sul repository remoto per copiarle in quello locale. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno proprio tutte le modifiche che sono state effettuate sul quaderno comune**.
 
 - I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo principale su Git è detto **master**, nei sistemi di controllo versione è chiamato **trunk**. Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
 
