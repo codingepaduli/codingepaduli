@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2020-12-26
-publishdate: 2020-12-26
-lastmod: 2020-12-26
+date: 2021-01-02
+publishdate: 2021-01-02
+lastmod: 2021-01-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -20,30 +20,20 @@ summary: "Set di link relativi al coding"
 ## Programmazione
 
 [Roadmaps to becoming a modern developer](https://roadmap.sh/) - \
-[Tips for using Flood Element for performance testing | Opensource.com](https://opensource.com/article/18/12/tips-flood-element-testing) - \
-[CopperheadOS: Security features, installing apps, and more | Opensource.com](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - \
-[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - Wikipedia\
-[DynamicJasper library](http://dynamicjasper.com/features/) - \
-[Discussioni](http://groups.google.it/group/it.comp.java/topics) - Google Gruppi\
-[Stacktrace news](http://stacktrace.it/) - \
-[IBM developerWorks : Open source tutorials and projects](http://www.ibm.com/developerworks/opensource/) - \
+[IBM developerWorks : Tutorials and projects](https://developer.ibm.com/tutorials/) - \
 [Oracle Database Library](http://www.oracle.com/pls/db102/portal.all_books) - \
-[Hosted Weblate](https://hosted.weblate.org/) - \
+[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - \
+[freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
 [Education Ecosystem | The project-based learning for building real products](https://www.education-ecosystem.com/) - \
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
-[Speed tests](http://www.dslreports.com/tools) - dslreports.com\
-[NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
-[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - \
 [Sugar Labs](https://sugarlabs.org/) - \
-[Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
-[Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
-[freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
 [HN Academy](https://yahnd.com/academy/) - The Best Online Courses of Hacker News\
 [rosettagit.org](https://rosettagit.org/) - solutions to the same task in as many different programming languages as possible\
 [grep.app](https://grep.app/) - Search across a half million git repos\
 [AOSA Book](https://aosabook.org/en/index.html) - The Architecture of Open Source Applications\
 [How I write backends](https://github.com/fpereiro/backendlore) - A document summarizes many aspects of how I write these pieces of code\
 [awesome · An awesome lists about everything from CLI applications to fantasy books](https://github.com/topics/awesome) - \
+[Computer science is not software engineering | Swizec Teller](https://swizec.com/blog/computer-science-is-not-software-engineering) - \
 [What is SAP](https://retool.com/blog/erp-for-engineers/) - ERP is where companies store their core operational data. We’re talking about sales projections, purchase orders, and inventory, as well as the processes that act upon that data (e.g. paying out vendors when a purchase order is issued)\
 [Rolstenhouse/unofficial-apis: A collection of unofficial apis. Designed to inspire your next Friday night hack](https://github.com/Rolstenhouse/unofficial-apis) - \
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
@@ -72,6 +62,9 @@ summary: "Set di link relativi al coding"
 [Check your IP address | MyIP.com](https://www.myip.com/) - \
 [Log In](https://helixteamhub.cloud/login) - Helix TeamHub\
 [Recruitment](http://stacktrace.it/2008/03/i-7-peccati-capitali-del-recruitment-di-hacker/) - 7 peccati capitali del recruitment\
+[Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
+[Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
+[Speed tests](http://www.dslreports.com/tools) - dslreports.com\
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
@@ -82,6 +75,7 @@ summary: "Set di link relativi al coding"
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 [Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
+[CopperheadOS: Security features, installing apps, and more | Opensource.com](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - \
 
 #### Cloud
 
@@ -175,6 +169,7 @@ summary: "Set di link relativi al coding"
 [PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
+[Kaggle: Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time](https://www.kaggle.com/) - \
 
 ### .Net
 
@@ -218,6 +213,7 @@ summary: "Set di link relativi al coding"
 [Ct.js — a free game editor](https://ctjs.rocks/) - \
 [deepnight.net | LEd – 2D map editor](https://deepnight.net/tools/led-2d-level-editor/) - \
 [Build a game this November with GitHub Game Off](https://github.blog/2020-10-27-github-game-off-2020/) - The GitHub Blog\
+[Learn the basics of Raycasting with JavaScript](https://courses.pikuma.com/courses/raycasting) - Learn the mathematics behind the ray casting technique used in the Wolfenstein 3D source code and implement it using JavaScript -pikuma course\
 
 ### GIT
 
@@ -287,6 +283,7 @@ summary: "Set di link relativi al coding"
 
 [Mandrel](https://www.infoq.com/news/2020/07/mandrel-graalvm/) - Red Hat Makes Java Native\
 [CheerpJ](https://www.infoworld.com/article/3536576/cheerpj-java-to-javascript-compiler-boosts-exception-handling-native-methods.html) - the CheerpJ compiler converts Java clients to HTML, JavaScript, and WebAssembly\
+[DynamicJasper library](http://dynamicjasper.com/features/) - \
 
 ### Linux
 
@@ -337,6 +334,7 @@ summary: "Set di link relativi al coding"
 [Import functions and variables into Bash with the source command | Opensource.com](https://opensource.com/article/20/6/bash-source-command) - \
 [How to configure "flatpak run org.gnome.meld" as git diff.tool and merge.tool](https://askubuntu.com/questions/1140455/how-to-configure-flatpak-run-org-gnome-meld-as-git-diff-tool-and-merge-tool) - Ask Ubuntu\
 [ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
+[Hosted Weblate](https://hosted.weblate.org/) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -346,6 +344,7 @@ summary: "Set di link relativi al coding"
 [MicroBlocks](https://microblocks.fun/) - Small, Fast, Human Friendly\
 [Program your microcontroller with MicroBlocks | Opensource.com](https://opensource.com/article/20/11/microblocks) - \
 [Moddable](https://www.moddable.com/) - Tools to create open IoT products using standard JavaScript on low cost microcontrollers\
+[Raspberry Pi Alternatives in 2021](https://blog.jmdawson.co.uk/9-raspberry-pi-alternatives-in-2021-hackboard-zimaboard-rockpi-odroid-and-more/) - James Dawson\
 
 ### Mozilla Firefox
 
@@ -413,6 +412,10 @@ summary: "Set di link relativi al coding"
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
 [Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
 [Introducing another free CA as an alternative to Let's Encrypt](https://scotthelme.co.uk/introducing-another-free-ca-as-an-alternative-to-lets-encrypt/) - \
+[devol/Servizi-Decentralizzati](https://gitea.it/devol/Servizi-Decentralizzati) - Elenco dei collettivi che ospitano volontariamente strumenti utilizzabili dal pubblico (o dagli attivisti) - Servizi-Decentralizzati - Gitea\
+[Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
+[Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
+[ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
 
 ### Scrivere documenti e conversione tra formati
 
@@ -457,6 +460,7 @@ summary: "Set di link relativi al coding"
 [Is it possible to insert HTML code in Markdown content?](https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/6) - support - HUGO\
 [How to start a blog using Hugo](https://flaviocopes.com/start-blog-with-hugo/) - \
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
+[Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
 
 #### Pandoc
 
@@ -522,7 +526,7 @@ summary: "Set di link relativi al coding"
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](https://www.asciitable.it/mime-types) - \
 [Emoji List, v12.0](https://www.unicode.org/emoji/charts/emoji-list.html) - \
-[Ready to validate](http://validator.w3.org/nu/) - Nu Markup Validation Service - W3C\
+[Ready to validate](https://html5.validator.nu/) - Nu Markup Validation Service\
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
@@ -539,13 +543,15 @@ summary: "Set di link relativi al coding"
 [CSS Grid Level 2](https://hacks.mozilla.org/2019/06/css-grid-level-2-subgrid-is-coming-to-firefox/) - subgrid is coming to Firefox\
 [The CSS Mindset | Max Böck](https://mxb.dev/blog/the-css-mindset/) - Frontend Web Developer\
 [Relearn CSS layout: Every Layout](https://every-layout.dev/) - \
-[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/making-tables-responsive-with-minimal-css/) - \
 [Why we prefer CSS Custom Properties to SASS variables | CodyHouse](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - \
+[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/making-tables-responsive-with-minimal-css/) - \
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
 [bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
+[Nodesign.dev | Design less develop more. 178 tools added..more on the way.](https://nodesign.dev/) - \
+[How to Favicon in 2021: Six files that fit most needs — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) - \
 
 #### JavaScript
 
@@ -604,3 +610,4 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
+[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - Wikipedia\

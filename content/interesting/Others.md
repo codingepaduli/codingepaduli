@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2020-12-30
-publishdate: 2020-12-30
-lastmod: 2020-12-30
+date: 2021-01-02
+publishdate: 2021-01-02
+lastmod: 2021-01-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -92,6 +92,7 @@ summary: "Set di link interessanti"
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
 [100,000 Stars](https://stars.chromeexperiments.com/) - A tour from our Sun to the far away stars of our Milky Way Galaxy\
 [Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
+[NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
 
 ### History
 
