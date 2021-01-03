@@ -82,9 +82,13 @@ E' possibile utilizzare molteplici modalità di lavoro per adattarsi alle divers
 
 Si può utilizzare una modalità di lavoro con **team leader**, che si occupa di coordinare il lavoro del proprio team e quindi riportare il lavoro del team sul quaderno ad anelli del professore.
 
+<-- TODO replace this image -->
+
 [Workflow con manager d'integrazione](https://git-scm.com/figures/18333fig0502-tn.png)
 
 Si può utilizzare una modalità di lavoro detta "dittatore - tenente" in cui sono presenti diverse squadre di lavoro, ognuna con il proprio team leader (in questo caso detto "tenente"), ed un leader di progetto (detto "dittatore benevolo") che coordina il lavoro dei vari "tenenti" e che si occupa di recuperare il lavoro dai quaderni ad anelli dei vari "tenenti" per comporre il progetto completo da condividere sul quaderno ad anelli condiviso. Tutti i team, poi, possono aggiornarsi sincronizzando i propri quaderni con questo quaderno condiviso. Questo metodo di lavoro, tra l'altro, è quello utilizzato per lo sviluppo del kernel Linux, in cui Linus Torvalds è il dittatore benevolo.
+
+<-- TODO replace this image -->
 
 [Workflow con dittatore benevolo](https://git-scm.com/figures/18333fig0503-tn.png)
 
