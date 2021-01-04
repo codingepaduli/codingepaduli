@@ -34,12 +34,12 @@ Per creare una pagina ``index.html`` si può utilizzare il comando:
 hugo new esempio.md
 ```
 
-I temi grafici che è possibile scegliere sono visualizzabili sul sito [Hugo Themes](https://themes.gohugo.io/ "Hugo - Sito web dei temi grafici"). Il tema scelto deve essere salvato all'interno della cartella ``themes`` del sito web.
+I temi grafici che è possibile scegliere sono visualizzabili sul sito [Hugo Themes](https://themes.gohugo.io/ "Hugo - Sito web dei temi grafici"). Il tema scelto deve essere salvato all'interno della cartella ``themes`` del sito web creato.
 
 Il tema può essere scaricato:
 
 - sia come file compresso, quindi da estrarre nella cartella ``themes``;
-- sia come sotto-modulo di ``git`` (utile per chi utilizza git), attraverso il comando:
+- sia come sotto-modulo di ``git`` (utile per chi utilizza git), come nei seguenti comandi:
 
 ```bash
 git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
@@ -80,7 +80,7 @@ hugo --debug --verbose --gc
 
 ## Creazione contenuti
 
-Tutti i contenuti di Hugo devono essere situati nella cartella ``content``. Questa cartella ed ogni sottocartella devono avere un file ``_index.md`` contenente solo il **front-matter**, ovvero le proprietà della pagina.
+Tutti i contenuti di Hugo devono essere situati nella cartella ``content``. Questa cartella ed ogni sotto-cartella devono avere un file ``_index.md`` contenente solo il **front-matter**, ovvero le proprietà della pagina.
 
 Le proprietà possono essere espresse nel linguaggio:
 
@@ -88,7 +88,7 @@ Le proprietà possono essere espresse nel linguaggio:
 - **YAML** nella forma ``chiave : valore`` e vanno racchiuse dai tre simboli ``---``;
 - **JSON** nella forma ``chiave : valore`` e vanno racchiuse dai simboli ``{`` e ``}``;
 
-Bisogna prestare attenzione a salvare le stringhe tra doppi apici perchè non sono gestite automaticamente e causano errori.
+Bisogna prestare attenzione a salvare le stringhe tra doppi apici perché possono causare errori di generazione della pagina.
 
 Di seguito un esempio di proprietà in YAML:
 
@@ -115,9 +115,15 @@ Le proprietà principali sono:
 - ``expiryDate`` indica la data di scadenza dell'articolo;
 - ``lastmod`` indica la data di ultima modifica;
 
-Solo i contenuti che non sono bozze e che hanno una data di scrittura contenuta tra la data di pubblicazione e di scadenza saranno generati nella cartella di pubblicazione.
+Solo i contenuti che non sono bozze (in inglese "draft") e che hanno una data di scrittura contenuta tra la data di pubblicazione e di scadenza saranno generati nella cartella di pubblicazione.
 
-Le pagine del sito devono avere un nome che non inizi con il carattere ``_``, devono contenere il **front-matter** ed il contenuto espresso in linguaggio **HTML** oppure **Markdown**;
+Creato il file ``index.md``, si può procedere alla creazione delle pagine del sito.
+
+Ogni file creato nella cartella ``content``, a parte i file ``index.md``, rappresenta una pagina del sito web e deve essere creata secondo le seguenti regole:
+
+- deve avere un nome che non inizi con il carattere ``_``;
+- deve contenere il **front-matter**;
+- dopo il front-matter si può aggiungere il contenuto, che può essere espresso in linguaggio **HTML** oppure **Markdown**;
 
 ## Analytics e meta informations per social network
 
@@ -139,7 +145,7 @@ images = ["/static/wifi-5.svg"] # Immagini per Twitter Cards and OpenGraph
 title = "My cool site"          # Titolo del sito
 ```
 
-Impostate queste informazioni, automaticamente le informazioni da presentare sui social, quali data, titolo, descrizione, immagini o video, vengono incluse nelle pagine web. In ogni pagina è possibile indicare espressamente una di queste informazioni utilizzando la relativa proprietà del **front-matter**.
+Impostate queste informazioni, vengono automaticamente incluse nelle pagine web le informazioni da presentare sui social, quali data, titolo, descrizione, immagini o video. In ogni pagina è possibile indicare espressamente una di queste informazioni utilizzando la relativa proprietà del **front-matter**.
 
 ## Menu
 
@@ -151,6 +157,102 @@ linktitle: "Open Source"
 ```
 
 La proprietà ``linktitle`` indica il testo da visualizzare nel menù, mentre la proprietà ``menu`` deve avere valore ``main`` indicante proprio il menu principale.
+
+## Personalizzazione della configurazione
+
+Si possono creare più ambienti di lavoro per il sito web, ad esempio in un ambiente di lavoro si può lavorare con il tema grafico scelto, in un altro ambiente di lavoro si può provare il sito con un tema grafico differente. Inoltre, è possibile che tutti gli ambienti condividano una configurazione predefinita (in inglese "default").
+
+Per creare più ambienti di lavoro è necessario spostare il file di configurazione dal percorso ``SITO_WEB/config.toml`` al percorso ``SITO_WEB/config/_default/config.toml``. In questo modo, tutti gli ambienti di lavoro utilizzeranno questo file come configurazione predefinita.
+
+Oltre alla configurazione predefinita, è possibile creare altri ambienti di lavoro, creando nella cartella ``SITO_WEB/config/`` altre cartelle, una per ogni nuovo ambiente da creare. In ogni cartella creata, è necessario creare il file ``config.toml`` contenente le proprietà che si intende aggiungere o sovrascrivere per il nuovo ambiente di lavoro.
+
+Ad esempio, è possibile creare tre ambienti di lavoro, uno predefinito, uno chiamato "mainroad" ed un secondo chiamato "watercss", si realizza la seguente alberatura:
+
+```
+SITO_WEB
+├── _default/config.toml
+├── mainroad/config.toml
+└── watercss/config.toml
+```
+
+Ogni ambiente può essere avviato specificando l'ambiente, ad esempio:
+
+```bash
+hugo server --environment watercss
+```
+
+Ipotizzando la seguente configurazione nel file ``mainroad/config.toml``:
+
+```ini
+theme = "mainroad"
+publishDir = "public"
+layoutDir = "layouts/mainroad"
+```
+
+Ipotizzando la seguente configurazione nel file``watercss/config.toml``:
+
+```ini
+theme = "watercss"
+publishDir = "watercss-public"
+layoutDir = "layouts/watercss"
+```
+
+Con le configurazioni precedenti, l'ambiente di lavoro "mainroad" utilizza il tema "mainroad", utilizza la cartella ``public`` per creare il sito web finale ed utilizza la cartella ``layouts/mainroad`` per la gestione dei template parziali.
+
+Sempre con le configurazioni precedenti, l'ambiente di lavoro "watercss" utilizza il tema "watercss", utilizza la cartella ``watercss-public`` per creare il sito web finale ed utilizza la cartella ``layouts/watercss`` per la gestione dei template parziali.
+
+Dato che entrambe le configurazioni non sovrascrivono il titolo del sito, questo sarà recuperato dalla configurazione predefinita che si trova nel file ``_default/config.toml``.
+
+## Gestione dei modelli parziali del tema
+
+I temi grafici si trovano nella cartella ``SITO_WEB/themes``. Ogni tema ha la sua cartella con, all'interno, il file di configurazione ``theme.toml`` ed una importante sotto-cartella ``layouts``.
+
+Questa cartella ``layouts`` contiene a sua volta due cartelle, ``_default`` e ``partials``. La prima contiene i modelli (in inglese "template") **di base** con i quali le varie pagine del sito saranno trasformate in HTML, la seconda contiene i modelli **parziali** dei singoli componenti, ad esempio il modello per i commenti, il modello per la paginazione, ecc..
+
+```
+SITO_WEB
+└── themes
+    └── TEMA-SCELTO
+        ├── theme.toml
+        └── layouts
+            ├── _default
+            ├── main.html
+            │   ├── baseof.html
+            │   └── ...
+            └── partials
+                ├── comments.html
+                ├── pagination.html
+                └── ...
+```
+
+La cartella del tema non deve essere modificata. Per sovrascrivere un tema, è necessario copiare la cartella ``layouts`` presente all'interno del tema nella cartella ``SITO_WEB/layouts``.
+
+Non è necessario copiare l'intera cartella, è possibile copiare anche solo il singolo file del modello parziale, rispettando però il percorso in cui si trova.
+
+Ad esempio, per modificare il modello con cui sono creati i commenti, nella cartella ``SITO_WEB/layouts`` è necessario creare la sotto-cartella ``partials`` e poi copiare all'interno di quest'ultima il file ``comments.html`` dalla cartella del tema.
+
+Attenzione, se si lavora con più ambienti di lavoro, si può aver sovrascritto il percorso della cartella ``layouts``, ad esempio con la configurazione
+
+```ini
+layoutDir = "layouts/mainroad"
+```
+
+In questo caso, è nella cartella ``layouts/mainroad`` che si deve lavorare.
+
+## Shortcodes
+
+Non tutti i componenti della pagina vengono gestiti attraverso i modelli parziali. Alcuni componenti sono gestiti attraverso gli "shortcodes", cioè attraverso delle abbreviazioni.
+
+Queste abbreviazioni evitano la presenza di codice HTML nel file Markdown. Inoltre, permettono la gestione centralizzata di tutti i componenti dello stesso tipo.
+
+Ad esempio, per includere video, tweet, si può usare una delle abbreviazioni già fornite da Hugo, includendola nella pagina del contenuto con:
+
+```html
+{{ < tweet 877500564405444608 > }}
+```
+Per una lista di tutti gli Shortcodes già disponibili di Hugo si rimanda alla documentazione ufficiale.
+
+Se si vuole creare nuove abbreviazioni personalizzate, queste devono essere posizionate nella cartella ``layouts/shortcodes``. Si rimanda alla documentazione ufficiale per le regole di creazione di nuovi Shortcodes.
 
 ## Gestione sottomoduli di git
 
