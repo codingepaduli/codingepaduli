@@ -15,17 +15,28 @@ summary: "Dichiarazione di costanti e variabili per i vari tipi di dato"
 
 # Costanti e variabili
 
-Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato, ad esempio tipo numerico, tipo booleano o tipo "stringa".
+Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato, ad esempio tipo numerico, tipo booleano (vero o falso) o tipo "stringa" (sequenza di caratteri).
 
 Dalla versione di ECMAScript 6 le variabili si dichiarano utilizzando la parola chiave ``let``, anche se la parola chiave ``var`` usata in ECMAScript 5 è ancora valida.
 
 Anche le costanti sono spazi di memoria con un nome ed un tipo associato, ma non è possibile modificare il valore assegnato. Si dichiarano con la parola chiave ``const``;
 
-Quando si dichiara una variabile e si assegna un valore, allora alla variabile viene associato un tipo di dato.
+Di seguito, un esempio di dichiarazione di una variabile con nome "valoreX" e valore ``10`` ed una dichiarazione di una costante con nome "VALORE_Y" e valore ``20``:
 
-Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza. Questo è permesso poiché JavaScript ha una tipizzazione **debole**, a differenza di linguaggi con tipizzazione **forte**, in cui una variabile non può cambiare il tipo di dato associato.
+```javascript
+let valoreX = 10;
+const VALORE_Y = 20;
+```
 
-I tipi di dato possono essere **primitivi** o **complessi**. Ai tipi primitivi è associato un solo valore, mentre liste di valori, oggetti con più proprietà sono considerati tipi complessi.
+Esiste una regola di stile nella scelta dei nomi delle variabili. Si consiglia che vengano scritte con **carattere a cammello** (in inglese "camelCase"), ovvero tutte le parole che compongono il nome vengono unite (togliendo gli spazi), trasformando tutte le loro iniziali, tranne la prima, in maiuscolo. Ad esempio, per il calcolo della "media punti delle partite effettuate" si può dichiarare una variabile con nome ``mediaPuntiDellePartiteEffettuate``.
+
+Esiste anche una regola di stile nella scelta dei nomi delle costanti: Si consiglia che vengano scritte trasformando tutti i **caratteri in maiuscolo** e trasformando gli spazi in "trattino basso" (in inglese "underscore"). Ad esempio, per il valore "pi greco" si può dichiarare una costante con nome ``PI_GRECO``.
+
+Quando ad una variabile viene assegnato un valore, allora alla variabile viene associato un tipo di dato, ad esempio il tipo numerico, il tipo booleano o tipo "stringa".
+
+Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza. Questo è permesso poiché JavaScript ha una tipizzazione **debole**, a differenza di linguaggi con tipizzazione **forte**, in cui, una volta associato il tipo di dato ad una variabile, questo non può più cambiare.
+
+I tipi di dato possono essere **primitivi** o **complessi**. Ai tipi primitivi è associato un solo valore, mentre sono considerati tipi complessi le liste di valori, gli oggetti con una o più proprietà, le strutture di dati, ecc... .
 
 ## Tipi primitivi
 
@@ -177,7 +188,9 @@ let variabileIndefinita2 = undefined;
 
 ## Uso della console JavaScript
 
-Uno strumento che aiuta moltissimo nello sviluppo di codice JavaScript è la console del browser, che fa parte degli strumenti di sviluppo e che appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona".
+Uno strumento che aiuta moltissimo nello sviluppo di codice JavaScript è la console del browser.
+
+Fa parte degli strumenti di sviluppo ed appare quando si preme il tasto "F12" o quando si clicca con il seconda tasto del mouse sulla pagina web e si sceglie la voce "Ispeziona". Sul browser Safari, la console fa parte del menu di sviluppo ("Develop Menu") e deve essere abilitata nelle impostazioni del browser per poterla poi attivare con la combinazione di tasti ``Cmd+Opt+C``.
 
 ![Console del browser](/static/coding/web/javascript/javascript-console.png "Console del browser")
 

@@ -13,34 +13,42 @@ toc: false
 summary: "Introduzione al linguaggio JavaScript"
 
 references:
-    -   title: "Sito HTML.it"
+    -   title: "HTML.it"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.html.it/guide/guida-javascript-di-base/"
-        description: "Corso JavaScript in italiano su HTML.it"
-    -   title: "Sito it.wikibooks.org"
+        description: "Corso JavaScript in italiano"
+    -   title: "it.wikibooks.org"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://it.m.wikibooks.org/wiki/JavaScript"
-        description: "Manuale in italiano su it.wikibooks.org"
-    -   title: "Sito JavaScript.info"
+        description: "Corso JavaScript in italiano su wikibooks"
+    -   title: "JavaScript.info"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://javascript.info/"
-        description: "The modern Javascript tutorial;"
-    -   title: "Sito JavaScript.christmas"
+        description: "The modern Javascript tutorial (in inglese)"
+    -   title: "JavaScript.christmas"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://javascript.christmas/"
-        description: "JavaScript articles;"
-    -   title: "Sito practicejs.com"
+        description: "JavaScript features (in inglese)"
+    -   title: "practicejs.com"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://practicejs.com/"
-        description: "Some JavaScript coding exercises;"
-    -   title: "Sito freecodecamp.org"
+        description: "Some JavaScript coding exercises (in inglese)"
+    -   title: "freecodecamp.org"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/"
-        description: "Algorithms and data structures on freecodecamp.org"
-    -   title: "Sito w3schools.com"
+        description: "Algorithms and data structures (in inglese)"
+    -   title: "w3schools.com"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.w3schools.com/js/default.asp"
-        description: "Sito w3schools.com"
+        description: "JavaScript lessons (in inglese)"
+    -   title: "https://kangax.github.io/compat-table/es6/"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://kangax.github.io/compat-table/es6/"
+        description: "Tabella di compatibilità delle funzionalità ECMAScript supportate dai singoli browser è mantenuta al link"
+    -   title: "caniuse.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://caniuse.com/"
+        description: "Sito per verificare se una specifica ECMAScript (ad es. WebGL o WebStorage0) è implementata completamente o parzialmente dai vari browser"
 ---
 
 # Introduzione al linguaggio JavaScript
@@ -56,10 +64,7 @@ Oggi, le specifiche ECMAScript sono in evoluzione, avanzando dalla versione ECMA
 
 Ogni browser sviluppa la propria implementazione di ECMAScript, e sia
 [Mozilla](http://www.mozilla.org/js/language/ "Mozilla - implementazione ECMAScript"),
-sia Chrome, sia Safari, per citare i browser più conosciuti, garantiscono nel tempo il pieno supporto alle nuove specifiche. Una tabella di compatibilità delle funzionalità supportate dai singoli browser è mantenuta al link
-[https://kangax.github.io/compat-table/es6/](https://kangax.github.io/compat-table/es6/ "ECMAScript - tabella di compatibilità").
-
-Per verificare se una specifica è implementata completamente o parzialmente dai vari browser, si può utilizzare il servizio [https://caniuse.com/](https://caniuse.com/ "Link al sito caniuse.com"). Inserendo per nome la specifica a cui si è interessati, ad esempio "WebGL" o "WebStorage", si visualizzano i browser che la supportano appieno, solo in parte oppure non la supportano ancora.
+sia Chrome, sia Safari, per citare i browser più conosciuti, garantiscono nel tempo il pieno supporto alle nuove specifiche.
 
 JavaScript è un linguaggio debolmente tipizzato nato come procedurale, e che con il tempo ha inglobato sia caratteristiche dei linguaggi funzionali sia la possibilità di creare classi ed oggetti, anche se non supporta completamente la programmazione ad oggetti. L'enorme espansione del web, accessibile anche da smartphone e dispositivi IoT, hanno diffuso notevolmente il linguaggio, che è diventato un valido linguaggio anche per applicazioni lato server. Restano purtroppo i limiti dovuti alla mancanza di una tipizzazione forte ed al mancato supporto alla OOP (Object Oriented Programming).
 
