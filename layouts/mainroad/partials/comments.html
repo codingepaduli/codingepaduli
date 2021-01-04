@@ -1,4 +1,7 @@
 <div class="article-content">
+
+  {{ if .Params.comments.id }}
+
   <h2>Commenti</h2>
   <p>Puoi commentare registrandoti o accedendo al tuo account <a href="https://mastodon.it/" style="color: #e22d30;">Mastodon</a> e rispondendo a questo <a class="link" href="https://{{ .Params.comments.host }}/@{{ .Params.comments.username }}/{{ .Params.comments.id }}" style="color: #e22d30;">post</a>.</p>
   <p><a class="button" href="https://{{ .Params.comments.host }}/interact/{{ .Params.comments.id }}?type=reply">Rispondi</a></p>
@@ -58,4 +61,7 @@
         });
       });
   </script>
+
+  {{ end }}
+
 </div>
