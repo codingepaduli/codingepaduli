@@ -28,9 +28,11 @@ let valoreX = 10;
 const VALORE_Y = 20;
 ```
 
-Esiste una regola di stile nella scelta dei nomi delle variabili. Si consiglia che vengano scritte con **carattere a cammello** (in inglese "camelCase"), ovvero tutte le parole che compongono il nome vengono unite (togliendo gli spazi), trasformando tutte le loro iniziali, tranne la prima, in maiuscolo. Ad esempio, per il calcolo della "media punti delle partite effettuate" si può dichiarare una variabile con nome ``mediaPuntiDellePartiteEffettuate``.
+Il nome di una variabile o di una costante è scelto dal programmatore, non può contenere caratteri particolari, non può iniziare con un carattere numerico e non può essere una parola utilizzata dal linguaggio JavaScript, altrimenti sarà generato un errore.
 
-Esiste anche una regola di stile nella scelta dei nomi delle costanti: Si consiglia che vengano scritte trasformando tutti i **caratteri in maiuscolo** e trasformando gli spazi in "trattino basso" (in inglese "underscore"). Ad esempio, per il valore "pi greco" si può dichiarare una costante con nome ``PI_GRECO``.
+Per i nomi delle variabili esiste una regola stilistica che consiglia di utilizzare solo caratteri alfanumerici e di scriverli con **carattere a cammello** (in inglese "camelCase"), ovvero tutte le parole che compongono il nome vengono unite (togliendo gli spazi), trasformando tutte le loro iniziali, tranne la prima, in maiuscolo. Ad esempio, per il calcolo della "media punti delle partite effettuate" si può dichiarare una variabile con nome ``mediaPuntiDellePartiteEffettuate``.
+
+Anche per i nomi delle costanti esiste una regola stilistica che consiglia di scriverle trasformando tutti i **caratteri in maiuscolo** e trasformando gli spazi in "trattino basso" (in inglese "underscore"). Ad esempio, per il valore "pi greco mezzi" si può dichiarare una costante con nome ``PI_GRECO_MEZZI``.
 
 Quando ad una variabile viene assegnato un valore, allora alla variabile viene associato un tipo di dato, ad esempio il tipo numerico, il tipo booleano o tipo "stringa".
 

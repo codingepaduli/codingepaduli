@@ -14,14 +14,24 @@ summary: "Esercizio sui tipi di dato e sulla console"
 
 # Esercizio sui tipi di dato e sulla console
 
-Dichiarare una variabile per ogni tipo di dato primitivo ed una variabile per ogni tipo di dato "wrapper". Scrivere poi a console sia il valore assegnato alla variabile, sia il tipo di ogni variabile utilizzando l'operatore ``typeof``.
+Dichiarare una variabile ed una costante per ogni tipo di dato primitivo ed, allo stesso modo, una variabile ed una costante per ogni tipo di dato "wrapper". Si utilizzino le regole stilistiche indicate per la composizione dei nomi. Dichiarate le variabili e le costanti, scrivere nella console il valore assegnato ad ognuna di esse.
 
 ## Esempio
 
 ```javascript
+// variabile e costante numerica intera
 let naturalNumber = 10;
-let realNumber = 10.5;
+const NATURAL_NUMBER = 10;
 
-console.log("" + naturalNumber + "->" + typeof naturalNumber);
-console.log("" + realNumber + "->" + typeof realNumber);
+// variabile e costante numerica decimale
+let realNumber = 10.5;
+const REAL_NUMBER = 29.1;
+
+console.info("Variabile e costante numerica intera");
+console.info(naturalNumber);
+console.info(NATURAL_NUMBER);
+
+console.info("Variabile e costante numerica decimale");
+console.info(realNumber);
+console.info(REAL_NUMBER);
 ```
