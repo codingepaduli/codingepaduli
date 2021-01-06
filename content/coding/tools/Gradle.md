@@ -30,7 +30,7 @@ gradle init
 
 Attraverso una procedura guidata, all'utente vengono chieste le opzioni sulle quali creare un progetto:
 
-```bash
+```plaintext
 Select type of project to generate:
   1: basic
   2: application
@@ -114,7 +114,7 @@ Per una descrizione più dettagliata dei task da utilizzare in un progetto Java,
 
 I file creati in un progetto Gradle sono i seguenti:
 
-```bash
+```plaintext
 example
 ├── build.gradle
 ├── gradle
@@ -214,7 +214,7 @@ Tra i vari plugin core elenchiamo:
 
 Ogni plugin importa uno specifico insieme di task. Se nel file ``build.gradle`` non fosse presente l'indicazione del plugin (che indica la tipologia di progetto), Gradle non saprebbe su cosa deve lavorare, quindi utilizzarebbe il plugin di ``init`` . I task disponibili sarebbero quindi:
 
-```groovy
+```plaintext
 gradlew tasks
 
 Build Setup tasks
@@ -291,7 +291,7 @@ gradlew build --dry-run
 
 L'output prodotto, per un progetto Java, è il seguente:
 
-```bash
+```plaintext
 :compileJava SKIPPED
 :processResources SKIPPED
 :classes SKIPPED
@@ -582,7 +582,7 @@ gretty {
 
 Una scelta opinabile riguarda il salvataggio dei log del server nella cartella "home" dell'utente. Per cambiare tale scelta, si utilizzano le seguenti proprietà:
 
-```output
+```plaintext
     // logging configuration
     logDir "${buildDir}/log" // pay attention to double quote
     logFileName 'calcolatrice'

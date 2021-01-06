@@ -256,7 +256,7 @@ git status
 
 L'output è il seguente:
 
-```output
+```plaintext
 Sul branch master
 Your branch is up to date with 'origin/master'.
 
@@ -283,7 +283,7 @@ git status
  tenendo presente che per ora si sta facendo riferimento al  semplicemente
 L'output è il seguente:
 
-```output
+```plaintext
 Sul branch master
 Your branch is up to date with 'origin/master'.
 
@@ -428,7 +428,7 @@ git remote -v
 
 L'output mostrato è il seguente:
 
-```output
+```plaintext
 gitlab https://gitlab.com/codingepaduli/codingepaduli.git (fetch)
 gitlab https://gitlab.com/codingepaduli/codingepaduli.git (push)
 origin https://github.com/codingepaduli/codingepaduli.git (fetch)
@@ -535,7 +535,7 @@ git merge git-merge
 
 L'output indica che l'operazione è stata eseguita:
 
-```output
+```plaintext
 Merge made by the 'recursive' strategy.
  content/coding/tools/Git.md                          |  84 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++----
  coding/tools/Git.md | Bin 39000 -> 39569 bytes
@@ -550,7 +550,7 @@ git log --pretty=format:"%h %s" --graph
 
 L'output indica in forma grafica che i rami di sviluppo sono stati fusi e che effettivamente confluiscono in un'unico ramo:
 
-```output
+```plaintext
 *   b21a312 Merge pull request #1
 |\
 | * ae55ada Updated posts about tools

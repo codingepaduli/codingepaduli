@@ -50,7 +50,7 @@ git submodule add https://github.com/alex-shpak/hugo-book.git  themes/hugo-book
 
 Una volta salvato il tema, è importante prendere nota del nome effettivo del tema, che si trova nel file ``theme.toml``, inoltre è importante verificare che questo file si trovi effettivamente nella cartella:
 
-```output
+```plaintext
 SITO_WEB/themes/TEMA_SCELTO/theme.toml
 ```
 
@@ -168,7 +168,7 @@ Oltre alla configurazione predefinita, è possibile creare altri ambienti di lav
 
 Ad esempio, è possibile creare tre ambienti di lavoro, uno predefinito, uno chiamato "mainroad" ed un secondo chiamato "watercss", si realizza la seguente alberatura:
 
-```
+```plaintext
 SITO_WEB
 ├── _default/config.toml
 ├── mainroad/config.toml
@@ -209,7 +209,7 @@ I temi grafici si trovano nella cartella ``SITO_WEB/themes``. Ogni tema ha la su
 
 Questa cartella ``layouts`` contiene a sua volta due cartelle, ``_default`` e ``partials``. La prima contiene i modelli (in inglese "template") **di base** con i quali le varie pagine del sito saranno trasformate in HTML, la seconda contiene i modelli **parziali** dei singoli componenti, ad esempio il modello per i commenti, il modello per la paginazione, ecc..
 
-```
+```plaintext
 SITO_WEB
 └── themes
     └── TEMA-SCELTO
