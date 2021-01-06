@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-01-02
-publishdate: 2021-01-02
-lastmod: 2021-01-02
+date: 2021-01-05
+publishdate: 2021-01-05
+lastmod: 2021-01-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -37,6 +37,7 @@ summary: "Set di link relativi al coding"
 [What is SAP](https://retool.com/blog/erp-for-engineers/) - ERP is where companies store their core operational data. We’re talking about sales projections, purchase orders, and inventory, as well as the processes that act upon that data (e.g. paying out vendors when a purchase order is issued)\
 [Rolstenhouse/unofficial-apis: A collection of unofficial apis. Designed to inspire your next Friday night hack](https://github.com/Rolstenhouse/unofficial-apis) - \
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
+[SharePad.io](https://sharepad.io/) -  A collaborative code editor and compiler\
 
 ### Blog News e Link
 
@@ -345,6 +346,7 @@ summary: "Set di link relativi al coding"
 [Program your microcontroller with MicroBlocks | Opensource.com](https://opensource.com/article/20/11/microblocks) - \
 [Moddable](https://www.moddable.com/) - Tools to create open IoT products using standard JavaScript on low cost microcontrollers\
 [Raspberry Pi Alternatives in 2021](https://blog.jmdawson.co.uk/9-raspberry-pi-alternatives-in-2021-hackboard-zimaboard-rockpi-odroid-and-more/) - James Dawson\
+[TerraPi modular case system for Raspberry Pi supports multiple SSD's, DIN rail, horizontal & vertical mounts](https://www.cnx-software.com/2020/12/19/terrapi-modular-case-for-raspberry-pi-supports-multiple-ssds-din-rail-horizontal-vertical-mounts/) - \
 
 ### Mozilla Firefox
 
@@ -416,6 +418,7 @@ summary: "Set di link relativi al coding"
 [Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
+[Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -548,10 +551,12 @@ summary: "Set di link relativi al coding"
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
+[new.css](https://newcss.net/) - \
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
 [bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 [Nodesign.dev | Design less develop more. 178 tools added..more on the way.](https://nodesign.dev/) - \
 [How to Favicon in 2021: Six files that fit most needs — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) - \
+[Bootstrap Shuffle | Create Bootstrap templates in minutes](https://bootstrapshuffle.com/) - \
 
 #### JavaScript
 
@@ -587,6 +592,8 @@ summary: "Set di link relativi al coding"
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [JaidedAI/EasyOCR: Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai](https://github.com/JaidedAI/EasyOCR) - \
 [OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
+[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - Wikipedia\
+[AssemblyScript](https://www.assemblyscript.org/) - \
 
 ##### Aurelia
 
@@ -610,4 +617,3 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
-[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - Wikipedia\

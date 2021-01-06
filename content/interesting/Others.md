@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-01-02
-publishdate: 2021-01-02
-lastmod: 2021-01-02
+date: 2021-01-05
+publishdate: 2021-01-05
+lastmod: 2021-01-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -81,6 +81,7 @@ summary: "Set di link interessanti"
 [Diluting blood plasma rejuvenates tissue, reverses aging in mice](https://www.sciencedaily.com/releases/2020/06/200615115724.htm) - Plasma exchange could be the key to unlocking the body's regenerative capacities\
 [Ospedali San Paolo e Carlo, parla un medico: 'Inumano, noi e i pazienti abbandonati in una vera bolgia, ammassati come carne da macello'](https://www.ilfattoquotidiano.it/2020/11/23/ospedali-san-paolo-e-carlo-parla-un-medico-inumano-noi-e-i-pazienti-abbandonati-in-una-vera-bolgia-ammassati-come-carne-da-macello/6012418/) - Il Fatto Quotidiano\
 [The poison found in everyone, even unborn babies – and who is responsible for it | Environment | The Guardian](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - \
+[Photocatalyst that can Split Water into Hydrogen and oxygen at a Quantum Efficiency Close to 100%](https://fuelcellsworks.com/news/photocatalyst-that-can-split-water-into-hydrogen-and-oxygen-at-a-quantum-efficiency-close-to-100/) - FuelCellsWorks\
 
 ### Tech
 
