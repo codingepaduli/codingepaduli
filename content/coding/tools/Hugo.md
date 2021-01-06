@@ -250,6 +250,7 @@ Ad esempio, per includere video, tweet, si può usare una delle abbreviazioni gi
 ```html
 {{ < tweet 877500564405444608 > }}
 ```
+
 Per una lista di tutti gli Shortcodes già disponibili di Hugo si rimanda alla documentazione ufficiale.
 
 Se si vuole creare nuove abbreviazioni personalizzate, queste devono essere posizionate nella cartella ``layouts/shortcodes``. Si rimanda alla documentazione ufficiale per le regole di creazione di nuovi Shortcodes.
