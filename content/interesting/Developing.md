@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-01-05
-publishdate: 2021-01-05
-lastmod: 2021-01-05
+date: 2021-01-09
+publishdate: 2021-01-09
+lastmod: 2021-01-09
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -109,6 +109,7 @@ summary: "Set di link relativi al coding"
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
 [Docker in 10 minutes](https://smalldata.tech/blog/2019/06/08/docker-in-10-minutes) - \
 [Transitioning from Docker to Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Red Hat Developer\
+[Jonathan Bergknoff: Run More Stuff in Docker](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - \
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -215,6 +216,7 @@ summary: "Set di link relativi al coding"
 [deepnight.net | LEd – 2D map editor](https://deepnight.net/tools/led-2d-level-editor/) - \
 [Build a game this November with GitHub Game Off](https://github.blog/2020-10-27-github-game-off-2020/) - The GitHub Blog\
 [Learn the basics of Raycasting with JavaScript](https://courses.pikuma.com/courses/raycasting) - Learn the mathematics behind the ray casting technique used in the Wolfenstein 3D source code and implement it using JavaScript -pikuma course\
+[Introduction](https://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html) - Computer Graphics from scratch - Gabriel Gambetta\
 
 ### GIT
 
@@ -247,6 +249,7 @@ summary: "Set di link relativi al coding"
 [Novita su Java7](http://blog.html.it/tag/java7/) - \
 [An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
+[JEP 392: Packaging Tool for packaging self-contained Java applications](https://openjdk.java.net/jeps/392) - \
 
 #### JDBC e JPA
 
@@ -336,6 +339,7 @@ summary: "Set di link relativi al coding"
 [How to configure "flatpak run org.gnome.meld" as git diff.tool and merge.tool](https://askubuntu.com/questions/1140455/how-to-configure-flatpak-run-org-gnome-meld-as-git-diff-tool-and-merge-tool) - Ask Ubuntu\
 [ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
 [Hosted Weblate](https://hosted.weblate.org/) - \
+[Lei Mao's Log Book – ~/.bashrc VS ~/.profile VS ~/.bash_profile](https://leimao.github.io/blog/bashrc-VS-profile-VS-bash_profile/) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -347,6 +351,9 @@ summary: "Set di link relativi al coding"
 [Moddable](https://www.moddable.com/) - Tools to create open IoT products using standard JavaScript on low cost microcontrollers\
 [Raspberry Pi Alternatives in 2021](https://blog.jmdawson.co.uk/9-raspberry-pi-alternatives-in-2021-hackboard-zimaboard-rockpi-odroid-and-more/) - James Dawson\
 [TerraPi modular case system for Raspberry Pi supports multiple SSD's, DIN rail, horizontal & vertical mounts](https://www.cnx-software.com/2020/12/19/terrapi-modular-case-for-raspberry-pi-supports-multiple-ssds-din-rail-horizontal-vertical-mounts/) - \
+[GitHub](https://github.com/geerlingguy/pi-webcam) - geerlingguy/pi-webcam: Automation to configure a Raspberry Pi as a USB OTG webcam\
+[Build a motion detection system with a Raspberry Pi | Opensource.com](https://opensource.com/article/20/11/motion-detection-raspberry-pi) - \
+[Why I use Home Assistant for open source home automation | Opensource.com](https://opensource.com/article/20/11/home-assistant) - \
 
 ### Mozilla Firefox
 
@@ -383,6 +390,7 @@ summary: "Set di link relativi al coding"
 
 ### Privacy, Security and Hacking
 
+[PEN-200 and the OSCP Certification](https://www.offensive-security.com/pwk-oscp/) - Offensive Security\
 [/e/ – un fork Android completamente de-Google-izzato](https://e.foundation/) - \
 [redecentralize/alternative-internet](https://github.com/redecentralize/alternative-internet) - A collection of interesting new networks and tech aiming at decentralisation (in some form)\
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
@@ -412,13 +420,16 @@ summary: "Set di link relativi al coding"
 [Runnaroo | A Better Private Search Engine](https://www.runnaroo.com/) - \
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
+[DNS Privacy with Oblivious DoH in 1.1.1.1](https://blog.cloudflare.com/oblivious-dns/) - \
 [Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
 [Introducing another free CA as an alternative to Let's Encrypt](https://scotthelme.co.uk/introducing-another-free-ca-as-an-alternative-to-lets-encrypt/) - \
 [devol/Servizi-Decentralizzati](https://gitea.it/devol/Servizi-Decentralizzati) - Elenco dei collettivi che ospitano volontariamente strumenti utilizzabili dal pubblico (o dagli attivisti) - Servizi-Decentralizzati - Gitea\
+[Beaker Browser](https://beakerbrowser.com/) - An experimental peer-to-peer Web browser\
 [Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
 [Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
+[How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -528,7 +539,7 @@ summary: "Set di link relativi al coding"
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](https://www.asciitable.it/mime-types) - \
-[Emoji List, v12.0](https://www.unicode.org/emoji/charts/emoji-list.html) - \
+[Emoji List, latest added and proposal emoji](https://unicode.org/emoji/charts/index.html) - \
 [Ready to validate](https://html5.validator.nu/) - Nu Markup Validation Service\
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
@@ -589,11 +600,13 @@ summary: "Set di link relativi al coding"
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
+[SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [JaidedAI/EasyOCR: Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai](https://github.com/JaidedAI/EasyOCR) - \
 [OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
-[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - Wikipedia\
-[AssemblyScript](https://www.assemblyscript.org/) - \
+[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - IEEE Standard for Binary Floating-Point Arithmetic\
+[AssemblyScript](https://www.assemblyscript.org/) - compiles a subset of TypeScript to WebAssembly\
+[WebAssembly/binaryen: Compiler infrastructure and toolchain library for WebAssembly](https://github.com/WebAssembly/binaryen) - \
 
 ##### Aurelia
 

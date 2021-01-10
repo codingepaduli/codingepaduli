@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-01-05
-publishdate: 2021-01-05
-lastmod: 2021-01-05
+date: 2021-01-09
+publishdate: 2021-01-09
+lastmod: 2021-01-09
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -102,6 +102,7 @@ summary: "Set di link interessanti"
 [Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
 [Remote learning via Radio instruction in the 1937 polio epidemic](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - \
 [La stella rossa](https://it.wikipedia.org/wiki/La_stella_rossa) - un romanzo di fantascienza dello scrittore russo Aleksandr Bogdanov, \
+[The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
 
 ### Games
 
@@ -110,3 +111,4 @@ summary: "Set di link interessanti"
 [MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
 [eXoDOS V4.0](https://exodos.the-eye.us/) - an attempt to catalog, obtain, and make playable every game developed for the DOS and PC Booter platform\
 [Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
+[Anarch](https://drummyfish.gitlab.io/anarch/) - an experimental game from 1990. No build system, library, internet connection or package manager is inherently required for compilation as the whole game is written in pure C language\
