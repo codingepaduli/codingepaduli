@@ -1,0 +1,24 @@
+name: Check Links
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+  schedule:
+  # Run everyday at 4:30 AM
+  - cron: "30 4 * * *"
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Run markdown-link-check
+      uses: ruzickap/action-my-markdown-link-checker@v1
+      with:
+        config_file: '.github/link_checker_config.json'
+        exclude: '/content/coding/java'

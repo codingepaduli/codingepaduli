@@ -22,9 +22,4 @@ jobs:
       with:
         files: .
         config_file: ".markdownlint.yml"
-        # ignore_files: "content/interesting"
-    - name: Run markdown-link-check
-      uses: ruzickap/action-my-markdown-link-checker@v1
-      with:
-        config_file: '.github/link_checker_config.json'
-        exclude: '/content/coding/java'
+        # ignore_files: "content/interesting
