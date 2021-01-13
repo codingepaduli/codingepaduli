@@ -1,12 +1,14 @@
 # Coding e Paduli
 
-![GitHub stars](https://img.shields.io/github/stars/codingepaduli/codingepaduli?style=flat-square)
-![GitHub followers](https://img.shields.io/github/followers/codingepaduli?label=Followers&style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/codingepaduli/codingepaduli?style=flat-square)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/codingepaduli/codingepaduli?style=flat-square)
-![GitHub contributors](https://img.shields.io/github/contributors/codingepaduli/codingepaduli?style=flat-square)
+[![GitHub stars](https://img.shields.io/github/stars/codingepaduli/codingepaduli?style=flat-square)](https://github.com/codingepaduli/codingepaduli/stargazers)
+[![GitHub followers](https://img.shields.io/github/followers/codingepaduli?label=Followers&style=flat-square)](https://github.com/codingepaduli?tab=followers)
+[![GitHub issues](https://img.shields.io/github/issues/codingepaduli/codingepaduli?style=flat-square)](https://github.com/codingepaduli/codingepaduli/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/codingepaduli/codingepaduli?style=flat-square)](https://github.com/codingepaduli/codingepaduli/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/codingepaduli/codingepaduli?style=flat-square)](https://github.com/codingepaduli/codingepaduli/graphs/contributors)
 <!-- markdown-link-check-disable-next-line -->
-![GitHub Actions](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Markdown/badge.svg)
+[![GitHub Actions](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Markdown/badge.svg)](https://github.com/codingepaduli/codingepaduli/actions/)
+<!-- markdown-link-check-disable-next-line -->
+[![Check Links](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Links/badge.svg)](https://github.com/codingepaduli/codingepaduli/actions/)
 
 Ennesimo sito/blog di programmazione e paduli correlati.
 
@@ -52,7 +54,7 @@ You need to install the latest version of [Hugo](https://gohugo.io/).
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make this community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork it (<`https://github.com/codingepaduli/codingepaduli/fork`>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
@@ -62,7 +64,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Copyright 2010 codingepaduli. All right reserved.
+Copyright © 2010 codingepaduli. All right reserved.
 
 ## Contact
 
