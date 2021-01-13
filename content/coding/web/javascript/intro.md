@@ -41,11 +41,11 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.w3schools.com/js/default.asp"
         description: "JavaScript lessons (in inglese)"
-    -   title: "https://kangax.github.io/compat-table/es6/"
+    -   title: "compatibilità ECMAScript"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://kangax.github.io/compat-table/es6/"
         description: "Tabella di compatibilità delle funzionalità ECMAScript supportate dai singoli browser è mantenuta al link"
-    -   title: "caniuse.com"
+    -   title: "Verifica specifiche ECMAScript implementate"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://caniuse.com/"
         description: "Sito per verificare se una specifica ECMAScript (ad es. WebGL o WebStorage0) è implementata completamente o parzialmente dai vari browser"
