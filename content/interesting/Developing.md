@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-01-09
-publishdate: 2021-01-09
-lastmod: 2021-01-09
+date: 2021-01-12
+publishdate: 2021-01-12
+lastmod: 2021-01-12
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -38,34 +38,6 @@ summary: "Set di link relativi al coding"
 [Rolstenhouse/unofficial-apis: A collection of unofficial apis. Designed to inspire your next Friday night hack](https://github.com/Rolstenhouse/unofficial-apis) - \
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
 [SharePad.io](https://sharepad.io/) -  A collaborative code editor and compiler\
-
-### Blog News e Link
-
-[Introducing the PinePhone](https://kde.org/announcements/pinephone-plasma-mobile-edition/) - KDE Community edition\
-[Hacker News](https://news.ycombinator.com/news) - \
-[Gitbar](https://www.gitbar.it/) - Il podcast dei developer italiani\
-[Developer.com](http://www.developer.com/) - \
-[http://codingjam.it/](http://codingjam.it/) - \
-[MokaByte](http://www.mokabyte.it/) - \
-[Turkogluc.com | Personal Blog](https://turkogluc.com/) - \
-[opensource.com](http://opensource.com/) - \
-[LWN.net](https://lwn.net/) - Linux Weekly News\
-[Changelog](http://changelog.com/) - News and podcasts for developers\
-[JavaWorld.com](https://www.javaworld.com/) - \
-[Upcase by thoughtbot](https://thoughtbot.com/upcase) - Learn Web Development Online\
-[News ubuntu](http://wiki.ubuntu-it.org/NewsletterItaliana/) - ubuntu wiki\
-[ProtonMail](https://protonmail.com/) - A secure free encrypted email.\
-[freepn.org](https://www.freepn.org/) - Free and open source VPN\
-[ThrowAwayMail.com](http://www.throwawaymail.com/) - free temporary email, disposable e-mail address\
-[fake mail generator](http://www.fakemailgenerator.com/) - \
-[https://www.mytrashmailer.com/](https://www.mytrashmailer.com/) - \
-[https://generator.email/](https://generator.email/) - \
-[Check your IP address | MyIP.com](https://www.myip.com/) - \
-[Log In](https://helixteamhub.cloud/login) - Helix TeamHub\
-[Recruitment](http://stacktrace.it/2008/03/i-7-peccati-capitali-del-recruitment-di-hacker/) - 7 peccati capitali del recruitment\
-[Accesso Gmail da App meno sicure](https://www.topcontributor.it/2016/05/outlook-thunderbird-mail-non-si-collegano-gmail/) - \
-[Sblocco Account Gmail](https://www.google.com/accounts/DisplayUnlockCaptcha) - \
-[Speed tests](http://www.dslreports.com/tools) - dslreports.com\
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
@@ -172,25 +144,6 @@ summary: "Set di link relativi al coding"
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 [Kaggle: Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time](https://www.kaggle.com/) - \
-
-### .Net
-
-[Integrate Jenkins with MSBuild and NuGet](https://www.codeproject.com/Articles/878203/Integrate-Jenkins-with-MSBuild-and-NuGet) - \
-[Build a cross-platform app with .NET Core](https://opensource.com/article/17/5/cross-platform-console-apps) - \
-[Comunicazione seriale rs232 con c#](http://www.hwupgrade.it/forum/showthread.php?t=2158096) - \
-[JSON Web Token Handler for the Microsoft .NET Framework 4.5](https://blogs.msdn.microsoft.com/vbertocci/2012/11/20/introducing-the-developer-preview-of-the-json-web-token-handler-for-the-microsoft-net-framework-4-5/) - \
-[.NET Framework Tools](https://msdn.microsoft.com/it-it/library/d9kh6s92(v=vs.110).aspx) - \
-[Linguaggio di programmazione C# per sviluppatori Java](http://msdn.microsoft.com/it-it/library/ms228602(v=VS.90).aspx) - \
-[Ensure.That v5.0.0 Library for validating arguments](https://www.nuget.org/packages/Ensure.That/) - \
-[Entity Framework Tutorial](http://www.entityframeworktutorial.net/) - \
-[SQL Server Connection Pooling (ADO.NET)](https://msdn.microsoft.com/en-us/library/8xx3tyca(v=vs.110).aspx) - \
-[SqlConnection.ConnectionString Property (System.Data.SqlClient)](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.110).aspx) - \
-[Startup.cs File and Injection In ASP.NET Core Project](http://www.c-sharpcorner.com/article/understanding-the-role-of-startup-cs-file-in-Asp-Net-core/) - \
-[Building a RESTful API with ASP.NET 5](http://blog.scottlogic.com/2016/01/20/restful-api-with-aspnet50.html) - \
-[Asynchronous programming | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/async) - \
-[Documenting your code with XML comments | Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc) - \
-[Rest services : JSON Web Service and JQuery](https://www.codeproject.com/Articles/37727/Prepare-a-JSON-Web-Service-and-access-it-with-JQue) - \
-[NancyFx/Nancy](https://github.com/NancyFx/Nancy) - Lightweight framework for building HTTP based services on .Net and Mono\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -562,7 +515,7 @@ summary: "Set di link relativi al coding"
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
-[new.css](https://newcss.net/) - \
+[new CSS](https://newcss.net/) - A CSS without classes\
 [HTML](https://stackoverflow.com/questions/4873604/css-menu-without-javascript) - CSS Menu without JavaScript - Stack Overflow\
 [bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 [Nodesign.dev | Design less develop more. 178 tools added..more on the way.](https://nodesign.dev/) - \
