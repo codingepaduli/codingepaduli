@@ -5,7 +5,7 @@ description: "Introduzione alla libreria grafica p5.js"
 date: 2020-09-10
 publishdate: 2020-09-10
 lastmod: 2020-09-10
-spellcheck: 2020-12-11
+spellcheck: 2021-01-14
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
@@ -24,25 +24,35 @@ references:
 
 # Introduzione alla libreria grafica p5.js
 
-p5.js e' una libreria grafica open-source focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è di fatto anche un "porting" della piattaforma [Processing](https://processing.org/) in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
+[p5.js](https://p5js.org "Sito web di p5.js") è una libreria grafica open-source, focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è, di fatto, anche un "porting" della piattaforma [Processing](https://processing.org/ "Sito web di processing") in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org "Sito web della Processing Foundation"), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
-Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2D, 3D ed anche in più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geolocalizzazione, delle mappe, della webcam ed anche per l'applicazione di algoritmi di intelligenza artificiale.
+Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2, 3 ed anche più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geo-localizzazione, delle mappe, della webcam ed anche per l'applicazione di algoritmi di intelligenza artificiale.
 
-## Editor integrato per p5.js
+## API e documentazione
 
-Il punto di partenza è sicuramente l'uso dell'editor integrato al link [https://editor.p5js.org](https://editor.p5js.org), che permette di iniziare velocemente ad esplorare le potenzialità dell'ambiente.
+Per poter utilizzare correttamente la libreria p5.js, è necessario conoscere l'interfaccia esposta dalla libreria stessa.
+
+Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia") esposta da un sistema, al fine di potervi interagire. Un esempio sono le interfacce grafiche di Microsoft Windows, che permettono di interagire con i calcolatori, oppure le interfacce vocali di iPhone ed Android, con "Siri" ed il famoso "OK Google", che permettono di interagire con gli smartphone.
+
+Nello sviluppo di applicazioni, le interfacce esposte da librerie ed ambienti di sviluppo, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
+
+Le API espongono strutture, funzioni, costanti, e tutti gli altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono **sempre** accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si trova sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js")
+
+## Editor online per p5.js
+
+Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità della libreria p5.js, è sicuramente l'editor presente sul sito web [https://editor.p5js.org](https://editor.p5js.org "Editor online di p5.js"), che si presenta con la seguente interfaccia grafica:
 
 ![p5.js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5.js - Editor online")
 
-La schermata mostrata all'utente presenta i menù tipici dei classici ambienti di sviluppo, la barra dei pulsanti per avviare e fermare il proprio lavoro e l'area di lavoro, divisa in un'area di testo per la scrittura del codice e l'area di visualizzazione per presentare il lavoro creato.
+L'interfaccia grafica presenta i menù tipici dei classici ambienti di sviluppo, quali la barra dei pulsanti, per avviare e fermare il proprio lavoro, l'area del codice, per la scrittura del codice JavaScript, e l'area di visualizzazione, per visualizzare il lavoro realizzato.
 
 L'area del codice presenta già un esempio minimale di programma, valido come punto di partenza e descritto nel seguito di questo articolo.
 
 ## Prima pagina web con p5.js
 
-L'editor online è di grande utilità per iniziare, ma è necessario comunque conoscere la struttura completa della pagina web che permette di presentare e pubblicare il lavoro.
+L'editor online è di grande utilità per iniziare, tuttavia si può voler includere il lavoro realizzato in una pagina web. Per far ciò, è necessario conoscere la struttura ``HTML`` nella quale includerlo.
 
-Dando per assunti i fondamentali sul linguaggio ``HTML``, si riporta il codice di una pagina web che contiene un esempio minimale di programma:
+Dando per assunti i fondamentali sul linguaggio ``HTML``, di seguito si riporta la struttura ``HTML`` che include l'esempio minimale del programma visualizzato nell'editor online:
 
 ```html
 <!DOCTYPE html>
@@ -70,13 +80,14 @@ Dando per assunti i fondamentali sul linguaggio ``HTML``, si riporta il codice d
 </html>
 ```
 
-Come si può notare, la libreria viene inclusa attraverso un collegamento esterno definito nel tag ``script``, presente nell'intestazione della pagina web.
+Come si può notare, la libreria p5.js viene inclusa attraverso un collegamento esterno definito nel tag ``script``, presente nell'intestazione della pagina web.
 
 ```html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
 ```
 
-L'esempio minimale di programma, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice JavaScript).
+Il codice JavaScript, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice JavaScript).
+
 
 ## Primo programma
 
@@ -93,11 +104,11 @@ function draw() {
 }
 ```
 
-La funzione `setup` viene svolta una sola volta e serve ad impostare gli strumenti e le condizioni iniziali.
+La funzione `setup()` viene eseguita una sola volta e serve ad impostare gli strumenti e le condizioni iniziali.
 
 In questo particolare caso, la funzione `setup` contiene un richiamo alla funzione `createCanvas` che crea all'interno della pagina web un'area di lavoro delle dimensioni indicate.
 
-La funzione `draw` viene richiamata ciclicamente e serve ad elaborare il lavoro realizzato.
+La funzione `draw()` viene richiamata ciclicamente e serve ad elaborare il lavoro realizzato.
 
 Nell'esempio riportato sopra, questa funzione contiene un richiamo alla funzione `background`, che serve ad impostare lo sfondo, ed un secondo richiamo alla funzione `circle`, che crea un cerchio con centro alle coordinate `x=100` ed `y=150` e con raggio `r=50`.
 
