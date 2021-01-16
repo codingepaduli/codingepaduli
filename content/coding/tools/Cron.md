@@ -69,29 +69,29 @@ Per schedulare un nuovo task, sono necessari i seguenti step:
 
 1. Selezionare l'editor per editare i task, aggiungendo al file ``.profile`` una riga in cui si specifica la variabile:
 
-```bash
-export EDITOR="/usr/bin/micro"
-```
+    ```bash
+    export EDITOR="/usr/bin/micro"
+    ```
 
 2. Eseguire il comando:
 
-```bash
-crontab -e
-```
+    ```bash
+    crontab -e
+    ```
 
 3. Indicare le variabili ``SHELL``, ``PATH`` ed eventualmente ``MAILTO``:
 
-```bash
-SHELL=/bin/bash
-PATH=/usr/sbin:/usr/bin:/sbin:/bin:/root/bin:/bin
-MAILTO=root@example.com
-```
+    ```bash
+    SHELL=/bin/bash
+    PATH=/usr/sbin:/usr/bin:/sbin:/bin:/root/bin:/bin
+    MAILTO=root@example.com
+    ```
 
 4. Inserire l'espressione che indica l'intervallo di ripetizione (da [https://crontab.guru/](https://crontab.guru/)) seguito dal comando (percorso completo) da eseguire:
 
-```bash
-@reboot /bin/date "+\%F-\%T - Cron started" >> /home/io/login.txt 2>&1
-```
+    ```bash
+    @reboot /bin/date "+\%F-\%T - Cron started" >> /home/io/login.txt 2>&1
+    ```
 
 Riavviando il sistema, l'utente dovrebbe trovare nella propria cartella ``/home/io`` il file ``login.txt`` con la data e l'ora di esecuzione del primo job schedulato.
 
