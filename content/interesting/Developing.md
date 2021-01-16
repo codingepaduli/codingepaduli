@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-01-12
-publishdate: 2021-01-12
-lastmod: 2021-01-12
+date: 2021-01-14
+publishdate: 2021-01-14
+lastmod: 2021-01-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -20,34 +20,29 @@ summary: "Set di link relativi al coding"
 ## Programmazione
 
 [Roadmaps to becoming a modern developer](https://roadmap.sh/) - \
-[IBM developerWorks : Tutorials and projects](https://developer.ibm.com/tutorials/) - \
+[IBM developerWorks](https://developer.ibm.com/tutorials/) - Tutorials and projects\
 [Oracle Database Library](http://www.oracle.com/pls/db102/portal.all_books) - \
-[free-programming-books/free-programming-books.md at master · EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - \
+[EbookFoundation](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - free programming books at EbookFoundation/free-programming-books\
 [freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
-[Education Ecosystem | The project-based learning for building real products](https://www.education-ecosystem.com/) - \
-[Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
-[Sugar Labs](https://sugarlabs.org/) - \
+[Education Ecosystem](https://www.education-ecosystem.com/) - The project-based learning for building real products\
+[Sugar Labs](https://sugarlabs.org/) - an activity-focused, free/libre open-source software learning platform for children\
 [HN Academy](https://yahnd.com/academy/) - The Best Online Courses of Hacker News\
 [rosettagit.org](https://rosettagit.org/) - solutions to the same task in as many different programming languages as possible\
 [grep.app](https://grep.app/) - Search across a half million git repos\
 [AOSA Book](https://aosabook.org/en/index.html) - The Architecture of Open Source Applications\
 [How I write backends](https://github.com/fpereiro/backendlore) - A document summarizes many aspects of how I write these pieces of code\
-[awesome · An awesome lists about everything from CLI applications to fantasy books](https://github.com/topics/awesome) - \
-[Computer science is not software engineering | Swizec Teller](https://swizec.com/blog/computer-science-is-not-software-engineering) - \
+[awesome](https://github.com/topics/awesome) - An awesome lists about everything from CLI applications to fantasy books\
+[Computer science is not software engineering](https://swizec.com/blog/computer-science-is-not-software-engineering) - \
 [What is SAP](https://retool.com/blog/erp-for-engineers/) - ERP is where companies store their core operational data. We’re talking about sales projections, purchase orders, and inventory, as well as the processes that act upon that data (e.g. paying out vendors when a purchase order is issued)\
-[Rolstenhouse/unofficial-apis: A collection of unofficial apis. Designed to inspire your next Friday night hack](https://github.com/Rolstenhouse/unofficial-apis) - \
+[Rolstenhouse/unofficial-apis](https://github.com/Rolstenhouse/unofficial-apis) - A collection of unofficial apis. Designed to inspire your next Friday night hack\
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
 [SharePad.io](https://sharepad.io/) -  A collaborative code editor and compiler\
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
-[What is Istio? | Opensource.com](https://opensource.com/article/18/9/what-istio) - \
-[Build a retro gaming console with RetroPie | Opensource.com](https://opensource.com/article/19/1/retropie) - \
-[DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE](https://archive.org/details/msdos_Fire_and_Ice_1993) - \
+[What is Istio?](https://opensource.com/article/18/9/what-istio) - a service mesh can help to manage your microservice deployments - Opensource.com\
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
-[Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
-[Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 [CopperheadOS: Security features, installing apps, and more | Opensource.com](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - \
 
 #### Cloud
@@ -60,7 +55,7 @@ summary: "Set di link relativi al coding"
 
 [Vagrant](https://buildvirtual.net/using-vagrant-to-deploy-multiple-vms-on-vsphere/) - Deploy Multiple VMs on vSphere\
 [KVM/qemu](https://stackoverflow.com/questions/42155213/using-vagrant-to-set-up-a-vm-with-kvm-qemu-without-virtualbox) - Using Vagrant to set up a VM with KVM/qemu without VirtualBox\
-[GitHub](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support) - vagrant-libvirt/vagrant-libvirt: Vagrant provider for libvirt.\
+[vagrant-libvirt/vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support) - Vagrant provider for libvirt.\
 
 #### Containers
 
@@ -73,7 +68,7 @@ summary: "Set di link relativi al coding"
 [Using Docker from Maven and Maven from Docker](https://codefresh.io/howtos/using-docker-maven-maven-docker/) - \
 [Maybe You Don't Need Kubernetes](https://endler.dev/2019/maybe-you-dont-need-kubernetes/) - Try Nomad\
 [Install Docker Engine](https://docs.docker.com/install/) - Community | Docker Documentation\
-[Broken by default: why you should avoid most Dockerfile examples](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - \
+[Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
 [From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/) - \
 [How to SSH into a running container](https://opensource.com/article/19/6/how-ssh-running-container) - \
 [portainer/portainer](https://github.com/portainer/portainer) - Making Docker management easy.\
@@ -81,7 +76,7 @@ summary: "Set di link relativi al coding"
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
 [Docker in 10 minutes](https://smalldata.tech/blog/2019/06/08/docker-in-10-minutes) - \
 [Transitioning from Docker to Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Red Hat Developer\
-[Jonathan Bergknoff: Run More Stuff in Docker](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - \
+[Jonathan Bergknoff](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - Run More Stuff in Docker\
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -126,29 +121,28 @@ summary: "Set di link relativi al coding"
 [Chocolatey](https://chocolatey.org/docs) - Software Management for Windows, great community packages\
 [Chocolatey](https://blog.ipswitch.com/installing-chocolatey-packages-remotely-with-powershell) - Installing Packages Remotely with PowerShell\
 [Cargo](https://opensource.com/article/20/3/rust-cargo) - the Rust package manager\
-[Appimage, Snapcraft e Flatpak: i formati di distribuzione per Linux a confronto](https://www.lffl.org/2020/04/appimage-snapcraft-e-flatpak-i-formati-di-distribuzione-per-linux-a-confronto.html) - \
-[Windows Package Manager Preview](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - \
+[Appimage, Snapcraft e Flatpak](https://www.lffl.org/2020/04/appimage-snapcraft-e-flatpak-i-formati-di-distribuzione-per-linux-a-confronto.html) - i formati di distribuzione per Linux a confronto\
+[Windows Package Manager](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - Preview\
 
 ### AI
 
-[fast.ai · Making neural nets uncool again](http://www.fast.ai/) - \
+[fast.ai](http://www.fast.ai/) - Making neural nets uncool again\
 [Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn) - Red Hat\
 [Dataset list](https://www.datasetlist.com/) - A list of the biggest datasets for machine learning\
 [Playing Mortal Kombat with TensorFlow.js.](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/) - Transfer learning and data augmentation\
 [CNN Explainer](https://poloclub.github.io/cnn-explainer/) - Learn Convolutional Neural Network\
-[ml5js·Friendly Machine Learning For The Web](https://ml5js.org/) - \
+[ml5js](https://ml5js.org/) - Friendly Machine Learning For The Web\
 [Teachable Machine](https://teachablemachine.withgoogle.com/) - Google\
 [Python Machine Learning Projects - A DigitalOcean eBook | DigitalOcean](https://www.digitalocean.com/community/books/python-machine-learning-projects-a-digitalocean-ebook) - \
 [Deeplearning4j](https://www.infoworld.com/article/3567055/deeplearning4j-deep-learning-and-etl-for-the-jvm.html) - Deep learning and ETL for the JVM | InfoWorld\
 [PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
-[Kaggle: Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time](https://www.kaggle.com/) - \
+[Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
 
 ### Database SQL e NoSql - GraphQL
 
-[In MySQL, never use “utf8”. Use “utf8mb4”.](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434) - Adam Hooper - Medium\
-[PostgREST Documentation](https://postgrest.org/en/v7.0.0/) - PostgREST 7.0.1 documentation\
+[MySQL utf8mb4](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434) - MySQL, never use “utf8”. Use “utf8mb4”. - Adam Hooper - Medium\
 [Modern SQL](https://modern-sql.com/) - A lot has changed since SQL-92\
 [Learn SQL while solving crimes! SQL Police Department](https://sqlpd.com/) - \
 [Beekeeper Studio](https://www.beekeeperstudio.io/) - Free & Open Source SQL editor and database manager for MySQL, Postgres, SQLite, SQL Server, and more. Available for Windows, Mac, and Linux.\
@@ -165,8 +159,8 @@ summary: "Set di link relativi al coding"
 [How to use MapTool to build an interactive dungeon RPG](https://opensource.com/article/19/6/how-use-maptools?sc_cid=70160000001273HAAQ) - \
 [Open Source Game Clones](https://osgameclones.com/) - \
 [How I made a 3D game in only 2KB of JavaScript | Killed By A Pixel](https://frankforce.com/how-i-made-a-3d-game-in-only-2k-of-javascript/) - \
-[Ct.js — a free game editor](https://ctjs.rocks/) - \
-[deepnight.net | LEd – 2D map editor](https://deepnight.net/tools/led-2d-level-editor/) - \
+[Ct.js](https://ctjs.rocks/) - a free game editor\
+[deepnight.net | LEd](https://deepnight.net/tools/led-2d-level-editor/) - 2D map editor\
 [Build a game this November with GitHub Game Off](https://github.blog/2020-10-27-github-game-off-2020/) - The GitHub Blog\
 [Learn the basics of Raycasting with JavaScript](https://courses.pikuma.com/courses/raycasting) - Learn the mathematics behind the ray casting technique used in the Wolfenstein 3D source code and implement it using JavaScript -pikuma course\
 [Introduction](https://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html) - Computer Graphics from scratch - Gabriel Gambetta\
@@ -307,6 +301,9 @@ summary: "Set di link relativi al coding"
 [GitHub](https://github.com/geerlingguy/pi-webcam) - geerlingguy/pi-webcam: Automation to configure a Raspberry Pi as a USB OTG webcam\
 [Build a motion detection system with a Raspberry Pi | Opensource.com](https://opensource.com/article/20/11/motion-detection-raspberry-pi) - \
 [Why I use Home Assistant for open source home automation | Opensource.com](https://opensource.com/article/20/11/home-assistant) - \
+[Build a retro gaming console with RetroPie | Opensource.com](https://opensource.com/article/19/1/retropie) - \
+[Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
+[Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 
 ### Mozilla Firefox
 
@@ -511,7 +508,7 @@ summary: "Set di link relativi al coding"
 [The CSS Mindset | Max Böck](https://mxb.dev/blog/the-css-mindset/) - Frontend Web Developer\
 [Relearn CSS layout: Every Layout](https://every-layout.dev/) - \
 [Why we prefer CSS Custom Properties to SASS variables | CodyHouse](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - \
-[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/making-tables-responsive-with-minimal-css/) - \
+[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/responsive-tables/) - \
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
@@ -583,3 +580,4 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
+[Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\

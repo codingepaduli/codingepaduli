@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-01-09
-publishdate: 2021-01-09
-lastmod: 2021-01-09
+date: 2021-01-14
+publishdate: 2021-01-14
+lastmod: 2021-01-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -112,3 +112,4 @@ summary: "Set di link interessanti"
 [eXoDOS V4.0](https://exodos.the-eye.us/) - an attempt to catalog, obtain, and make playable every game developed for the DOS and PC Booter platform\
 [Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
 [Anarch](https://drummyfish.gitlab.io/anarch/) - an experimental game from 1990. No build system, library, internet connection or package manager is inherently required for compilation as the whole game is written in pure C language\
+[Fire_and_Ice_1993](https://archive.org/details/msdos_Fire_and_Ice_1993) - DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE\
