@@ -1,0 +1,23 @@
+name: Validate against EditorConfig
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+  schedule:
+  # Run everyday at 4:00 AM
+  - cron: "0 5 * * *"
+
+jobs:
+  markdown-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Run EditorConfig Lint
+      - uses: snow-actions/eclint@v1.0.1
+        with:
+          args: 'check'
