@@ -88,7 +88,6 @@ Come si può notare, la libreria p5.js viene inclusa attraverso un collegamento 
 
 Il codice JavaScript, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice JavaScript).
 
-
 ## Primo programma
 
 Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, nel programma devono sempre essere dichiarate le due funzioni principali ``setup`` e ``draw``, come nel seguente esempio.
