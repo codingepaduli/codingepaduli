@@ -10,6 +10,20 @@ keywords: ["coding", "tools"]
 draft: false
 toc: false
 summary: "Cron e Crontab, strumenti per la schedulazione di un task con una specifica ricorrenza."
+
+references:
+    -   title: "How to use cron and anacron in Linux"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/17/11/how-use-cron-linux"
+        description: "Scheduling tasks with cron, crontab and anacron"
+    -   title: "Use systemd timers instead of cronjobs"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/20/7/systemd-timers"
+        description: "Use systemd timers instead of cronjobs"
+    -   title: "Analyzing systemd calendar and timespans"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/20/7/systemd-calendar-timespans"
+        description: "Analyzing systemd calendar and timespans"
 ---
 
 # Schedulazione task ricorrenti con cron e crontab

@@ -10,6 +10,24 @@ keywords: ["coding", "tools"]
 draft: false
 toc: false
 summary: "Anacron ed Anacrontab, strumenti per la schedulazione di un task con una specifica ricorrenza."
+
+references:
+    -   title: "How to use cron and anacron in Linux"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/17/11/how-use-cron-linux"
+        description: "Scheduling tasks with cron, crontab and anacron"
+    -   title: "Use systemd timers instead of cronjobs"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/20/7/systemd-timers"
+        description: "Use systemd timers instead of cronjobs"
+    -   title: "Analyzing systemd calendar and timespans"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://opensource.com/article/20/7/systemd-calendar-timespans"
+        description: "Analyzing systemd calendar and timespans"
+    -   title: "Linux Anacron Command Example for Background Jobs"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://linux.101hacks.com/unix/anacron/"
+        description: "Linux Anacron Command Example for Background Jobs"
 ---
 
 # Schedulazione task ricorrenti con anacron ed anacrontab
@@ -29,7 +47,7 @@ systemctl status anacron.service
 systemctl status anacron.timer
 ```
 
-Sia l'amministratore, sia le applicazioni di sistema possono inserire i propri task nelle directory:
+Sia l'amministratore, sia le applicazioni di sistema possono inserire i propri task nelle cartelle:
 
 ```plaintext
 /etc/cron.daily/
@@ -37,7 +55,11 @@ Sia l'amministratore, sia le applicazioni di sistema possono inserire i propri t
 /etc/cron.monthly/
 ```
 
-Queste directory sono configurate perché siano utilizzate da anacron. Nel file ``/etc/crontab`` si trovano, appunto, i comandi che indicano l'esecuzione di anacron sulle cartelle citate.
+Queste directory sono configurate perché siano utilizzate da anacron. Nel file ``/etc/crontab`` si trovano, appunto, i comandi che indicano l'esecuzione di anacron sulle cartelle citate. Inoltre, anacron legge la lista di job dalla cartella:
+
+```plaintext
+/etc/anacrontab
+```
 
 Ogni task eseguito prevede l'invio dell'output tramite una mail destinata all'utente. Le email sono memorizzate nella cartella:
 
@@ -46,6 +68,9 @@ Ogni task eseguito prevede l'invio dell'output tramite una mail destinata all'ut
 ```
 
 **Su alcune distribuzioni, anacron esegue i task solo se il pc è collegato alla rete elettrica**. Per verificare ciò, si può leggere il file della propria distribuzione, che su Debian è ``/usr/share/doc/anacron/README.Debian``.
+
+### Configurazione di anacron con alimentazione da batteria
+
 Per abilitare l'esecuzione dei task anche quando il pc è collegato alla batteria:
 
 - Su SysVinit occorre cambiare impostazioni nel file ``/etc/default/anacron``
@@ -77,7 +102,21 @@ visualizza il messaggio di 'failed':
 Condition: start failed at 'Tue 2020-09-29 08:31:19' - ConditionACPower=true was not met
 ```
 
-## Sintassi di anacron
+## Comando anacron per l'amministratore
+
+Per verificare la validità di un file, ad esempio ``/etc/anacrontab``, contenente la lista di job da eseguire:
+
+```bash
+anacron -T -t /etc/anacrontab # -T = test
+```
+
+Per forzare **l'immediata** esecuzione di un job indicato in un file, e non in background, ma in "foregraund", in modo da poter visualizzare l'output:
+
+```bash
+anacron -f -d -n -t /etc/anacrontab # -f = force, -d = display, -n = now
+```
+
+## Sintassi regole di anacron
 
 I tast di anacron giornalieri, settimanali, mensili ed annuali sono programmati per essere eseguiti secondo la sintassi:
 
