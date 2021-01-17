@@ -36,7 +36,7 @@ Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia
 
 Nello sviluppo di applicazioni, le interfacce esposte da librerie ed ambienti di sviluppo, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
 
-Le API espongono strutture, funzioni, costanti, e tutti gli altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono **sempre** accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si trova sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js")
+Le API espongono strutture, funzioni, costanti, e tutti gli altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono **sempre** accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js")
 
 ## Editor online per p5.js
 
@@ -50,9 +50,9 @@ L'area del codice presenta già un esempio minimale di programma, valido come pu
 
 ## Prima pagina web con p5.js
 
-L'editor online è di grande utilità per iniziare, tuttavia si può voler includere il lavoro realizzato in una pagina web. Per far ciò, è necessario conoscere la struttura ``HTML`` nella quale includerlo.
+L'editor online è di grande utilità per iniziare, tuttavia si può voler includere il lavoro realizzato in una pagina web. Per far ciò, è necessario conoscere la struttura HTML nella quale includerlo.
 
-Dando per assunti i fondamentali sul linguaggio ``HTML``, di seguito si riporta la struttura ``HTML`` che include l'esempio minimale del programma visualizzato nell'editor online:
+Dando per assunti i fondamentali sul linguaggio HTML, di seguito si riporta la struttura HTML che include l'esempio minimale del programma visualizzato nell'editor online:
 
 ```html
 <!DOCTYPE html>
@@ -90,7 +90,15 @@ Il codice JavaScript, descritto nel seguito di questo articolo, è invece conten
 
 ## Primo programma
 
-Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, nel programma devono sempre essere dichiarate le due funzioni principali ``setup`` e ``draw``, come nel seguente esempio.
+Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, i programmi in p5.js devono sempre dichiarare le due funzioni principali ``setup`` e ``draw``.
+
+La funzione ``setup`` viene eseguita una sola volta e serve ad impostare gli strumenti e le condizioni iniziali.
+
+La funzione ``draw`` viene richiamata ciclicamente, quindi ridisegna continuamente l'area di lavoro.
+
+Come già precedentemente descritto, la documentazione delle funzioni appena indicate e delle successive funzioni presentate, la si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
+
+Di seguito un primo programma d'esempio:
 
 ```javascript
 function setup() {
@@ -103,13 +111,9 @@ function draw() {
 }
 ```
 
-La funzione `setup()` viene eseguita una sola volta e serve ad impostare gli strumenti e le condizioni iniziali.
+In questo esempio, la funzione ``createCanvas`` crea all'interno della pagina web un'area da disegno delle dimensioni indicate. Dato che l'area da disegno deve essere creata una volta sola, è inserita nella funzione ``setup``.
 
-In questo particolare caso, la funzione `setup` contiene un richiamo alla funzione `createCanvas` che crea all'interno della pagina web un'area di lavoro delle dimensioni indicate.
-
-La funzione `draw()` viene richiamata ciclicamente e serve ad elaborare il lavoro realizzato.
-
-Nell'esempio riportato sopra, questa funzione contiene un richiamo alla funzione `background`, che serve ad impostare lo sfondo, ed un secondo richiamo alla funzione `circle`, che crea un cerchio con centro alle coordinate `x=100` ed `y=150` e con raggio `r=50`.
+Sempre nell'esempio riportato sopra, sono invocate le funzioni ``background``, che serve ad impostare lo sfondo, e ``circle``, che crea un cerchio con centro alle coordinate ``x=100`` ed ``y=150`` e con raggio ``r=50``.
 
 Il risultato è il seguente:
 
@@ -117,9 +121,9 @@ Il risultato è il seguente:
 
 ## Prima animazione
 
-Supponendo di voler far "muovere" il cerchio verso destra nell'area di lavoro, si necessita di una variabile che permetta, in primis, di indicare la posizione corrente del cerchio nell'area di lavoro, e poi, che permetta di modificarla con un incremento unitario.
+Supponendo di voler far "muovere" il cerchio verso destra nell'area di lavoro, si necessita di una variabile che permetta, in primis, di indicare la posizione iniziale del cerchio nell'area di lavoro, e poi, che permetta di modificarla, incrementandola di volta in volta.
 
-La dichiarazione della variabile può avvenire prima delle due funzioni, mediante la classica dichiarazione:
+La dichiarazione della variabile può avvenire prima delle due funzioni ``setup`` e ``draw``, mediante la classica dichiarazione:
 
 ```javascript
 let x = 100;
@@ -147,12 +151,12 @@ function draw() {
 }
 ```
 
-E' interessante notare che se l'istruzione di incremento ``x = x + 1`` la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene fatto una sola volta, quindi il cerchio resta immobile.
+E' interessante notare che se l'istruzione di incremento ``x = x + 1`` la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene eseguito una sola volta, quindi il cerchio resta immobile.
 
 Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita", quindi lo spostamento del cerchio lascerà una "scia" dovuta alle precedenti posizioni, come nella seguente immagine;
 
 ![p5.js - Esempio dell'animazione senza il disegno dello sfondo](/static/coding/web/p5js/Example02.png "p5.js - Esempio dell'animazione senza il disegno dello sfondo")
 
-In ambiente web è visualizzabile quest'ultimo esempio dell'animazione.
+In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
 <div id="example02"></div>
