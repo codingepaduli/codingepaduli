@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-01-14
-publishdate: 2021-01-14
-lastmod: 2021-01-14
+date: 2021-01-18
+publishdate: 2021-01-18
+lastmod: 2021-01-18
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -81,8 +81,6 @@ summary: "Set di link relativi al coding"
 ### Ansible, Shell, CI, CD ed automazione
 
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[cron](https://askubuntu.com/questions/303148/why-anacron-does-not-call-the-crontab-user-files) - Why anacron does not call the crontab user files? - Ask Ubuntu\
-[scheduled](https://askubuntu.com/questions/235089/how-can-i-run-anacron-in-user-mode) - How can I run anacron in user mode? - Ask Ubuntu\
 [Automating with Jenkins and PowerShell on Windows Part 1](https://hodgkins.io/automating-with-jenkins-and-powershell-on-windows-part-1) - \
 [Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
 [Why GoCD over Jenkins | GoCD Blog](https://www.gocd.org/2017/04/25/gocd-over-jenkins/) - \
@@ -247,7 +245,7 @@ summary: "Set di link relativi al coding"
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
-[cron](https://duckduckgo.com/?q=use+systemd+timers+instead+of+cronjob&ia=web) - use systemd timers instead of cronjob at DuckDuckGo\
+[cron](https://opensource.com/article/20/7/systemd-timers) - use systemd timers instead of cronjob | Opensource.com\
 [cron](https://opensource.com/article/20/7/systemd-calendar-timespans) - Analyzing systemd calendar and timespans | Opensource.com\
 [Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
 [DistroWatch.com: Put the fun back into computing. Use Linux, BSD.](https://distrowatch.com/) - \
