@@ -20,7 +20,8 @@ customJS: ["/static/coding/web/p5js/basics.js"]
 
 ## Esercizi sugli angoli
 
-Utilizzando la funzione ``arc``, realizzare gli archi di circonferenza per i seguenti gradi: 30, 45, 60, 90, 180, 270 e 360 gradi.
+Data una circonferenza di diametro a scelta dello studente, utilizzando la funzione ``arc``, disegnare gli archi di circonferenza aventi le seguenti ampiezze: 30, 45, 60, 90, 180, 270 e 360 gradi. Sotto ogni arco, aggiungere un testo indicante l'ampiezza dell'arco.
+Dato che la funzione ``arc`` disegna gli archi misurando gli angoli in senso orario, disegnare gli archi di circonferenza della stessa ampiezza indicata in precedenza, simulando però che gli archi siano disegnati misurando gli angoli in senso antiorario. Anche per questo punto, sotto ogni arco deve essere aggiunto un testo indicante l'ampiezza dell'arco.
 
 ## Disegno di un edificio
 
