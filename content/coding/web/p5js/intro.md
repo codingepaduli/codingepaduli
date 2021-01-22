@@ -36,7 +36,86 @@ Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia
 
 Nello sviluppo di applicazioni, le interfacce esposte da librerie ed ambienti di sviluppo, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
 
-Le API espongono strutture, funzioni, costanti, e tutti gli altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono **sempre** accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js")
+Le API espongono strutture, funzioni, costanti, e tutti gli altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono **sempre** accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
+
+La documentazione è organizzata per aree di interesse, tra le varie categorie troviamo:
+
+Area | Descrizione
+--- | ---
+Color           | Gestione colori di contorno, di riempimento, di sfondo
+Constants       | Costanti disponibili
+DOM             | Interazione con gli elementi della pagina web
+Data            | Gestione dei dati
+Environment     | Informazioni sull'ambiente di esecuzione
+Events          | Gestione eventi della tastiera, del mouse e del touch-screen
+Foundation      | Basi di JavaScript
+IO              | Gestione Input / Output
+Image           | Gestione immagini
+Lights, Camera  | Gestione luci, camera, materiali, ombre
+Math            | Funzioni matematiche
+Rendering       | Informazioni sul processo di disegno (rendering)
+Shape           | Funzioni per il disegno di forme 2D, 3D e curve
+Structure       | Informazioni sul ciclo di esecuzione
+Transform       | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
+Typography      | Caratteri, stili e formattazione testo
+
+Ogni categoria mostra le funzioni disponibili, con un link alla documentazione specifica. Ogni costante o funzione è documentata indicando:
+
+- uno o più esempi d'uso;
+- la descrizione;
+- la sintassi d'uso;
+
+Per le funzioni, la sintassi descrive la **firma della funzione**, che è composta dal nome e, tra parentesi tonde, dalla lista di parametri. La lista di parametri elenca prima quelli obbligatori e poi quelli facoltativi, indicati tra parentesi quadre. Ogni parametro è ulteriormente chiarito, indicando tipo, descrizione ed obbligatorietà.
+
+### Documentazione della funzione ``circle``
+
+La sintassi della funzione ``circle``, che serve a disegnare un cerchio nell'area da disegno, è la seguente:
+
+```plaintext
+Syntax: circle(x, y, d)
+
+Parameters:
+    x   Number: x-coordinate of the centre of the circle.
+    y   Number: y-coordinate of the centre of the circle.
+    d   Number: diameter of the circle.
+```
+
+Si deduce che la funzione ``circle`` non prevede parametri facoltativi, dato che nessun parametro è indicato tra parentesi quadre.
+
+Dalla descrizione dei parametri si comprende che sono tutti numerici, con ``x`` ed ``y`` che indicano le coordinate del centro del cerchio e ``d`` che indica il diametro del cerchio.
+
+### Documentazione della funzione ``square``
+
+La sintassi della funzione ``square``, che serve a disegnare un quadrato nell'area da disegno, è la seguente:
+
+```plaintext
+Syntax: square(x, y, s, [tl], [tr], [br], [bl])
+
+Parameters:
+    x   Number: x-coordinate of the square.
+    y   Number: y-coordinate of the square.
+    s   Number: side size of the square.
+    tl  Number: optional radius of top-left corner. (Optional)
+    tr  Number: optional radius of top-right corner. (Optional)
+    br  Number: optional radius of bottom-right corner. (Optional)
+    bl  Number: optional radius of bottom-left corner. (Optional)
+```
+
+Si deduce che la funzione ``square`` prevede i parametri **obbligatori** ``x``, ``y`` ed ``s``. I parametri facoltativi, indicati tra parentesi quadre, sono ``tl``, ``tr``, ``br``, ``bl``.
+
+La descrizione dei parametri obbligatori indica che ``x`` ed ``y`` sono le coordinate dell'angolo in alto a sinistra del quadrato ed ``s`` è la lunghezza del lato; I rimanenti parametri facoltativi rappresentano rispettivamente l'arrotondamento dell'angolo in alto a sinistra, in alto a destra, in basso a destra ed in basso a sinistra.
+
+Dalla documentazione si apprende che la funzione può essere usata per disegnare un quadrato senza angoli arrotondati oppure indicare l'arrotondamento dei vari angoli, come nelle seguenti istruzioni:
+
+```javascript
+square(50, 50, 100);
+square(160, 50, 100, 40, 5);
+square(270, 50, 100, 40, 5, 20, 20);
+```
+
+Il risultato è riportato di seguito:
+
+![p5.js - Editor online](/static/coding/web/p5js/api-doc-example.png "p5.js - Esempio risultante dalla documentazione delle API")
 
 ## Editor online per p5.js
 
@@ -44,15 +123,43 @@ Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità del
 
 ![p5.js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5.js - Editor online")
 
-L'interfaccia grafica presenta i menù tipici dei classici ambienti di sviluppo, quali la barra dei pulsanti, per avviare e fermare il proprio lavoro, l'area del codice, per la scrittura del codice JavaScript, e l'area di visualizzazione, per visualizzare il lavoro realizzato.
+L'interfaccia grafica presenta i menù tipici dei classici ambienti di sviluppo, quali la barra dei pulsanti, per avviare e fermare il proprio lavoro, l'area del codice, per la scrittura del codice JavaScript, l'area di visualizzazione, per visualizzare il lavoro realizzato e la console per visualizzare i messaggi di informazione, di avviso e di errore.
 
-L'area del codice presenta già un esempio minimale di programma, valido come punto di partenza e descritto nel seguito di questo articolo.
+L'area del codice si presenta con un esempio minimale di programma, valido come punto di partenza e descritto successivamente.
 
 ## Prima pagina web con p5.js
 
 L'editor online è di grande utilità per iniziare, tuttavia si può voler includere il lavoro realizzato in una pagina web. Per far ciò, è necessario conoscere la struttura HTML nella quale includerlo.
 
-Dando per assunti i fondamentali sul linguaggio HTML, di seguito si riporta la struttura HTML che include l'esempio minimale del programma visualizzato nell'editor online:
+Dando per assunti i fondamentali sul linguaggio HTML, nella pagina web è possibile definire un riferimento alla libreria p5.js mediante l'etichetta ``script``, come nel seguente esempio:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+```
+
+All'area da disegno è associato il seguente stile:
+
+```css
+html, body { margin: 0; padding: 0; }
+canvas { display: block; }
+```
+
+Il programma realizzato, magari tramite l'editor online, deve essere incluso come script, come nel seguente esempio:
+
+```html
+<script>
+    function setup() {
+        createCanvas(400, 400);
+    }
+
+    function draw() {
+        background(220);
+        circle(100,150, 50);
+    }
+</script>
+```
+
+L'esempio completo della pagina web è il seguente:
 
 ```html
 <!DOCTYPE html>
@@ -80,25 +187,15 @@ Dando per assunti i fondamentali sul linguaggio HTML, di seguito si riporta la s
 </html>
 ```
 
-Come si può notare, la libreria p5.js viene inclusa attraverso un collegamento esterno definito nel tag ``script``, presente nell'intestazione della pagina web.
-
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-```
-
-Il codice JavaScript, descritto nel seguito di questo articolo, è invece contenuto nel corpo della pagina web (nel tag ``body``) ed è incluso in un secondo tag ``script`` (dato che si tratta di codice JavaScript).
-
 ## Primo programma
 
 Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, i programmi in p5.js devono sempre dichiarare le due funzioni principali ``setup`` e ``draw``.
 
-La funzione ``setup`` viene eseguita una sola volta e serve ad impostare gli strumenti e le condizioni iniziali.
+Le istruzioni contenute nella funzione ``setup`` sono eseguite una sola volta e servono ad impostare gli strumenti e le condizioni iniziali.
 
-La funzione ``draw`` viene richiamata ciclicamente, quindi ridisegna continuamente l'area di lavoro.
+Le istruzioni contenute nella funzione ``draw`` sono eseguite ciclicamente e servono a ridisegnare continuamente l'area di lavoro.
 
-Come già precedentemente descritto, la documentazione delle funzioni appena indicate e delle successive funzioni presentate, la si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
-
-Di seguito un primo programma d'esempio:
+Di seguito sono descritte le istruzioni eseguite dal primo programma d'esempio, che per comodità è riportato di seguito:
 
 ```javascript
 function setup() {
@@ -111,9 +208,9 @@ function draw() {
 }
 ```
 
-In questo esempio, la funzione ``createCanvas`` crea all'interno della pagina web un'area da disegno delle dimensioni indicate. Dato che l'area da disegno deve essere creata una volta sola, è inserita nella funzione ``setup``.
+La funzione ``createCanvas`` crea all'interno della pagina web un'area da disegno delle dimensioni indicate. Dato che l'area da disegno deve essere creata una volta sola, questa istruzione è inserita nella funzione ``setup``.
 
-Sempre nell'esempio riportato sopra, sono invocate le funzioni ``background``, che serve ad impostare lo sfondo, e ``circle``, che crea un cerchio con centro alle coordinate ``x=100`` ed ``y=150`` e con raggio ``r=50``.
+Le funzione ``background`` serve ad impostare lo sfondo di colore grigio e la funzione ``circle`` serve a creare un cerchio. Dato che sono continuamente ridisegnate, sono state inserite nella funzione ``draw``.
 
 Il risultato è il seguente:
 
@@ -153,7 +250,7 @@ function draw() {
 
 E' interessante notare che se l'istruzione di incremento ``x = x + 1`` la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene eseguito una sola volta, quindi il cerchio resta immobile.
 
-Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita", quindi lo spostamento del cerchio lascerà una "scia" dovuta alle precedenti posizioni, come nella seguente immagine;
+Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita" e nell'area da disegno rimarrà una "scia" dovuta a tutte le precedenti posizioni occupate dal cerchio, come nella seguente immagine;
 
 ![p5.js - Esempio dell'animazione senza il disegno dello sfondo](/static/coding/web/p5js/Example02.png "p5.js - Esempio dell'animazione senza il disegno dello sfondo")
 

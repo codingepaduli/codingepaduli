@@ -28,16 +28,16 @@ createCanvas(100, 50);
 
 ### Posizionamento dell'area da disegno
 
-L'area da disegno viene generalmente posizionata alla fine della pagina web, è possibile però riposizionarla in un altro elemento. Il riposizionamento avviene mediante l'uso della funzione ``parent``, passando come argomento un ID dell'elemento HTML in cui riposizionarla.
+L'area da disegno è generalmente posizionata alla fine della pagina web, è possibile però spostarla all'interno di un altro elemento HTML. Lo spostamento è effettuato invocando la funzione ``parent``, la quale prevede come argomento un identificativo (``id``) dell'elemento HTML in cui si vuole spostare l'area da disegno.
 
-Supponiamo, ad esempio, di avere una pagina HTML contenente un paragrafo con id ``area`` come nel seguente esempio:
+Supponiamo, ad esempio, di avere una pagina HTML contenente un paragrafo il cui identificativo è ``area``, come nel seguente esempio:
 
 ```html
 <p id="area"></p>
 <p>altro paragrafo</p>
 ```
 
-Per riposizionare il canvas all'interno del paragrafo, utilizzeremo la funzione ``parent``, passando come argomento l'identificativo del paragrafo ``area``, come nel seguente esempio:
+Per spostare l'area da disegno all'interno del paragrafo, si utilizza la funzione ``parent`` con argomento ``area`` (identificativo del paragrafo), come nel seguente esempio:
 
 ```javascript
 createCanvas(100, 100).parent('area');
@@ -49,9 +49,9 @@ Una volta creata l'area da disegno attraverso la funzione ``createCanvas``, la l
 
 ## Sistema di coordinate
 
-Il sistema di coordinate **cartesiane** tipicamente usato da librerie di grafica 2D computerizzata è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dello schermo, che rappresenta il punto di coordinate (0,0).
+Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno'. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).
 
-La particolarità di questo sistema di coordinate è che l'asse Y è invertito, cioè i valori positivi sono in basso ed i negativi in alto. Si nota inoltre che saranno disegnati sullo schermo del computer solo i punti che hanno entrambe le coordinate (x, y) con valore positivo.
+La particolarità di questo sistema di coordinate è l'asse Y invertito, cioè i valori positivi sono in basso ed i negativi in alto. Solo i punti che hanno entrambe le coordinate (x, y) con valore positivo saranno disegnati nell'area da disegno.
 
 Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
 
@@ -63,14 +63,14 @@ In ambito matematico, gli angoli sono tipicamente espressi mediante due differen
 
 Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
 
-La libreria p5.js permette al programmatore di esprimere le grandezze angolari in **gradi sessagesimali** o **radianti**, specificando l'unità di misura attraverso la funzione ``angleMode``, che prende come parametro una delle seguenti costanti:
+Una caratteristica importante della libreria p5.js è che gli angoli sono misurati seguendo un **senso orario**.
+
+Volendo fare un parallelo con il quadrante di un l'orologio, in cui la lancetta delle ore è posta sempre sul numero tre (ore 3) e la lancetta dei minuti è usata per definire l'ampiezza dell'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrisponde alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
+
+La libreria p5.js permette al programmatore di esprimere le grandezze angolari in **gradi sessagesimali** o **radianti**, specificando l'unità di misura desiderata attraverso la funzione ``angleMode``, che prende come parametro una delle seguenti costanti:
 
 - ``DEGREES``: indica che l'unità di misura degli angoli che si intende usare è il **grado d'arco**;
 - ``RADIANS``: indica che l'unità di misura degli angoli che si intende usare è il **radiante**.
-
-Una caratteristica importante della libreria p5.js è che gli angoli sono misurati seguendo un **senso orario**.
-
-Volendo fare un parallelo con il quadrante di un l'orologio, in cui la lancetta delle ore è posta sul numero tre (ore 3) e la lancetta dei minuti completa l'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrisponde alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
 
 Per facilitare l'uso del radiante, la libreria p5.js mette a disposizione le seguenti costanti:
 
@@ -78,6 +78,8 @@ Per facilitare l'uso del radiante, la libreria p5.js mette a disposizione le seg
 - ``HALF_PI``, ovvero **pi greco mezzi**, corrispondenti a novanta gradi gradi d'arco;
 - ``QUARTER_PI``, ovvero **pi greco quarti**, corrispondenti a quarantacinque gradi d'arco;
 - ``TWO_PI``, ovvero **due pi greco**, corrispondenti a trecentosessanta gradi d'arco;
+
+Alcune funzioni della libreria permettono come parametri esclusivamente valori espressi  in radianti, per cui si rimanda alla documentazione ufficiale per verificare la possibilità d'uso di valori espressi in gradi sessagesimali.
 
 ## Primitive per la grafica 2D
 
@@ -145,11 +147,25 @@ ellipse(60, 220, 80, 40);
 
 ### Disegno di un arco di circonferenza e d'ellisse
 
-Un arco di circonferenza è realizzabile attraverso la funzione ``arc`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Da sottolineare che entrambi gli angoli devono essere espressi in radianti.
+Un **arco di circonferenza** è il tratto di linea curva che ha le due estremità definite da due raggi della circonferenza stessa.
+
+<!-- TODO inserire immagine arco di circonferenza -->
+
+Una **corda** è il tratto di linea retta che ha le due estremità definite da due raggi della circonferenza stessa.
+
+<!-- TODO inserire immagine corda -->
+
+Un **settore circolare** è l'area compresa tra l'arco di circonferenza ed i raggi che delimitano le estremità dell'arco.
+
+<!-- TODO inserire immagine settore circolare -->
+
+Le tre figure sono realizzabili attraverso la funzione ``arc`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Da sottolineare che l'unità di misura predefinita per esprimere l'angolo iniziale e finale è il radiante.
 
 ```javascript
 arc(40, 300, 40, 40, PI, TWO_PI);
 ```
+
+Per impostazione predefinita, questa funzione disegna settori circolari. Per disegnare archi di circonferenza o corde, è necessario utilizzare un ulteriore parametro, non obbligatorio, che indichi la chiusura dell'arco da applicare:
 
 L'arco d'ellisse si realizza con la stessa funzione ``arc`` che prevede gli stessi argomenti, con la sola distinzione che invece di specificare due volte il diametro, si deve specificare un valore per l'altezza ed uno per la larghezza dell'ellisse;
 
