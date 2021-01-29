@@ -1,0 +1,45 @@
+{{- if .Site.Menus.main }}
+<nav class="menu">
+
+	<ul class="menu__list">
+		{{- $currentNode := . }}
+    <li>
+      <button class="menu__btn menu__btn--active" aria-haspopup="true" aria-expanded="true" tabindex="0" style="display: block; width: 100%; padding: 0; background: #2a2a2a; border: 0; outline: 0; color: #e22d30;">
+        <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+      </button>
+    </li>
+		{{- range .Site.Menus.main }}
+		{{- if .Name }}
+		<li>
+			<a class="menu__link" href="{{ .URL }}">
+				{{ .Pre }}
+				<span class="menu__text">{{ .Name }}</span>
+				{{ .Post }}
+			</a>
+		</li>
+		{{- end }}
+		{{- end }}
+	</ul>
+</nav>
+{{ else -}}
+<div class="divider"></div>
+{{- end }}
+
+<script>
+  /*
+  var menuBtn = document.querySelector('.menu__btn');
+	var	menu = document.querySelector('.menu__list');
+
+  function toggleMenu() {
+    menu.classList.toggle("menu__list");
+  }
+
+  menuBtn.addEventListener('click', toggleMenu, false);
+  */
+</script>
+
+<style>
+  .menu__link { display: none; }
+  .menu__btn>li:hover>.menu__link { display: block; }
+
+</style>

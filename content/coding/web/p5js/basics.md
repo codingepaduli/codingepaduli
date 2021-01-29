@@ -83,9 +83,9 @@ Alcune funzioni della libreria permettono come parametri esclusivamente valori e
 
 ## Primitive per la grafica 2D
 
-Le primitive sono delle funzioni che realizzano le basi della grafica, sulle quali poi si poggia il lavoro per il rendering di scene complesse.
+Le primitive grafiche, nella moderna computer grafica, sono le funzioni che realizzano le figure geometriche più elementari, come punti, linee e triangoli. I poligoni e curve sono considerate primitive, anche se possono essere realizzate combinando altre primitive. Oggetti e scene più complesse sono realizzati combinando l'uso di più primitive.
 
-Ogni primitiva è una funzione identificata da un nome e da una lista di parametri obbligatori o facoltativi. Di seguito saranno elencate le primitive principali con i parametri necessari ad indirizzare il lettore ad uso basilare, per tutti gli altri dettagli si rimanda alle specifiche della libreria.
+Ogni primitiva è una funzione identificata da un nome e da una lista di parametri obbligatori o facoltativi. Di seguito saranno elencate le primitive principali con i parametri necessari ad indirizzare il lettore ad uso basilare, per tutti gli altri dettagli si rimanda alla documentazione ufficiale.
 
 ### Disegno di un punto
 
@@ -149,23 +149,27 @@ ellipse(60, 220, 80, 40);
 
 Un **arco di circonferenza** è il tratto di linea curva che ha le due estremità definite da due raggi della circonferenza stessa.
 
-<!-- TODO inserire immagine arco di circonferenza -->
-
-Una **corda** è il tratto di linea retta che ha le due estremità definite da due raggi della circonferenza stessa.
-
-<!-- TODO inserire immagine corda -->
-
-Un **settore circolare** è l'area compresa tra l'arco di circonferenza ed i raggi che delimitano le estremità dell'arco.
-
-<!-- TODO inserire immagine settore circolare -->
-
-Le tre figure sono realizzabili attraverso la funzione ``arc`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Da sottolineare che l'unità di misura predefinita per esprimere l'angolo iniziale e finale è il radiante.
+La funzione ``arc`` disegna un arco di circonferenza e prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Ad esempio:
 
 ```javascript
 arc(40, 300, 40, 40, PI, TWO_PI);
 ```
 
-Per impostazione predefinita, questa funzione disegna settori circolari. Per disegnare archi di circonferenza o corde, è necessario utilizzare un ulteriore parametro, non obbligatorio, che indichi la chiusura dell'arco da applicare:
+Per impostazione predefinita, questa funzione disegna l'arco come fosse una figura aperta. Lo si può disegnare come figura chiusa, indicando come collegare i due estremi d'arco.
+
+Le due estremità dell'arco possono essere unite con una **corda di circonferenza** oppure con i due raggi che si congiungono alle estremità dell'arco, disegnando un **settore circolare**.
+
+Una **corda di circonferenza** è un segmento che ha le due estremità definite da due punti della circonferenza stessa.
+
+Un **settore circolare** è l'area compresa tra l'arco di circonferenza ed i raggi che delimitano le estremità dell'arco.
+
+Per indicare come disegnare l'arco, si utilizza un ulteriore parametro, non obbligatorio, che è definito dalle seguenti costanti:
+
+- ``OPEN``: indica di realizzare l'arco come figura aperta, quindi senza linee di contorno per unire gli estremi;
+- ``CHORD``: indica di chiudere l'arco con una linea di contorno tracciata come corda di circonferenza;
+- ``PIE``: indica di chiudere l'arco realizzato con due raggi di contorno al fine di formare un settore circolare;
+
+![p5.js - Opzioni di disegno per gli archi di circonferenza](/static/coding/web/p5js/basics_arcs.png "p5.js - Opzioni di disegno per gli archi di circonferenza")
 
 L'arco d'ellisse si realizza con la stessa funzione ``arc`` che prevede gli stessi argomenti, con la sola distinzione che invece di specificare due volte il diametro, si deve specificare un valore per l'altezza ed uno per la larghezza dell'ellisse;
 
