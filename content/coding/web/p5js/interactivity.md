@@ -1,7 +1,7 @@
 ---
 type: "p5js"
 title: "04 - Interattività"
-description: "Interazione con l'utente mediante mouse e tastiera"
+description: "Interazione utente"
 date: 2020-09-17
 publishdate: 2020-09-17
 lastmod: 2020-09-17
@@ -10,34 +10,30 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: "Interazione con l'utente mediante mouse e tastiera"
+summary: "Interazione utente"
 disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
 externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
 ---
 
 # Interattività
 
-L'utente può interagire con l'area da disegno attraverso tastiera, mouse e tutti i dispositivi che permettono di fornire un input al computer.
+L'utente può interagire con l'area da disegno attraverso tastiera, mouse e tutti gli altri dispositivi di input. L'interazione con audio, webcam e dispositivi esterni, come il micro-controllore Arduino e la scheda Raspberry, sono garantiti da opportune estensioni che estendono le funzionalità di base.
 
-Il cursore del mouse è tipicamente usato per controllare la posizione o muovere in una posizione un personaggio o un oggetto sullo schermo. La tastiera permette un controllo in una modalità differente, dato che non ha un segnaposto sullo schermo, come il cursore del mouse.
+Per il programmatore è estremamente semplice scrivere programmi che interagiscano con questi dispositivi di input ed output, ad esempio può programmare l'area da disegno perché si adatti alle dimensioni del display, alla frequenza di disegno, alla rotazione dello schermo ed al funzionamento a tutto schermo.
 
-Ad esempio, in un videogioco "sparatutto", con il mouse è possibile indicare con precisione dove sparare, a differenza della tastiera, che tipicamente è utilizzata per spostare il giocatore.
+Di seguito vengono descritte le principali funzionalità di base che permettono di sviluppare l'interazione con l'utente, rimandando alla documentazione ufficiale gli approfondimenti dei concetti avanzati.
 
 ## Interazione con il mouse
 
-La libreria p5.js memorizza nelle variabili ``mouseX`` e ``mouseY`` le coordinate x ed y del mouse, quando questo si trova nell'area da disegno.
+L'input del mouse è gestito automaticamente dalla libreria p5.js, la quale, in maniera completamente trasparente al programmatore, memorizza nelle variabili ``mouseX`` e ``mouseY`` le coordinate X ed Y del mouse, quando questo si trova nell'area da disegno, e nella variabile ``mouseButton`` l'ultimo pulsante cliccato, che può essere identificato da una delle seguenti costanti:
 
-Allo stesso modo, memorizza nella variabile ``mouseIsPressed`` il fatto che un (qualsiasi) pulsante del mouse sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``.
+- ``LEFT``: indica che l'ultimo pulsante cliccato è il pulsante sinistro del mouse;
+- ``RIGHT``: indica che l'ultimo pulsante cliccato è il pulsante destro del mouse;
+- ``CENTER``: indica che l'ultimo pulsante cliccato è il pulsante centrale del mouse.
 
-Da prestare attenzione al fatto che questa variabile assume valore ``false`` appena il pulsante del mouse viene lasciato.
+Allo stesso modo, nella variabile ``mouseIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) pulsante del mouse sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``.
 
-Nella variabile ``mouseButton`` viene memorizzato il pulsante cliccato, che può essere identificato da una delle seguenti costanti:
-
-- ``LEFT``: indica che è stato cliccato il pulsante sinistro del mouse;
-- ``RIGHT``: indica che è stato cliccato il pulsante destro del mouse;
-- ``CENTER``: indica che è stato cliccato il pulsante centrale del mouse.
-
-Il valore della variabile ``mouseButton`` rimane memorizzato anche dopo che il pulsante è stato cliccato e resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
+Si deve prestare particolare attenzione a questa variabile, dato che al click assume valore ``true``, ma appena il click termina, assume immediatamente valore ``false``.
 
 ### Cursore del mouse
 
@@ -56,17 +52,17 @@ Per visualizzare nuovamente l'icona o per impostare una nuova icona del mouse si
 
 ## Interazione con la tastiera
 
-La libreria p5.js memorizza nelle variabili ``key`` e ``keyCode`` il tasto premuto sulla tastiera. Il valore  resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
+La libreria p5.js memorizza nelle variabili ``key`` e ``keyCode`` il tasto premuto sulla tastiera. Il valore resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
 
-La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere anche i tasti premuti che non appartengono alla prima categoria, ad esempio i tasti corrispondenti alle frecce, alla cancellazione, il tasto "invio", ecc..
+La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma anche i tasti corrispondenti alle frecce, alla cancellazione, al tasto "invio", ecc..
 
 La libreria p5.js cattura anche il fatto che un pulsante della tastiera sia stato cliccato o meno, e memorizza questa informazione nella variabile ``keyIsPressed``, che può assumere valore ``true`` o ``false``.
 
-Da prestare attenzione al fatto che la variabile ``keyIsPressed`` assume valore ``false`` appena il pulsante premuto viene lasciato.
+Da prestare attenzione al fatto che la variabile ``keyIsPressed``, alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
 
 ## Gestione aggiornamento area da disegno
 
-L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi (frame) per secondo (nota ai videogamer con la sigla "fps"); Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto.
+L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi (frame) per secondo (nota ai video-gamer con la sigla "fps"); Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto.
 
 Si può utilizzare la funzione ``frameRate()`` per ottenere la frequenza utilizzata. La funzione permette anche di impostare la frequenza desiderata passandola come argomento (opzionale). Ad esempio, per impostare la frequenza a 60fps, si utilizza:
 
@@ -78,10 +74,9 @@ La variabile ``frameCount`` messa a disposizione dalla libreria è un contatore 
 
 Anche la variabile ``deltaTime`` è messa a disposizione dalla libreria. Questa variabile contiene la differenza in millisecondi del tempo trascorso tra l'inizio del fotogramma precedente e l'inizio del fotogramma corrente.
 
-
 ## Gestione dimensioni e rotazione schermo
 
-La grandezza dello schermo può variare da dispositivo a dispositivo. Inoltre con tablet e smartphone, lo schermo può essere ruotato.
+La grandezza dello schermo può variare da dispositivo a dispositivo. Inoltre con tablet e smartphone, l'utente può ruotare lo schermo.
 
 La variabile ``deviceOrientation`` indica se lo schermo è orientato in orizzontale o verticale;
 
