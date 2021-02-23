@@ -23,6 +23,100 @@ Git è un sistema per il controllo di versione distribuito. Inizialmente svilupp
 
 I progetti pubblicamente esposti dagli sviluppatori sui vari servizi di controllo di versione rappresentano una sorta di "Instagram", utilizzato per condividere non foto e video, ma i propri lavori: libri, personaggi 2D e 3D, animazioni, stili grafici e soprattutto software.
 
+## Installazione di git
+
+Git è facilmente installabile attraverso i package manager. Di seguito sono elencati i comandi, relativi ai package manager più conosciuti, necessari per installare Git.
+
+Su package manager "choco" di Windows:
+
+```bash
+choco install git
+```
+
+Su package manager "apt" di Linux (Debian based):
+
+```bash
+sudo apt install git-all
+```
+
+Su package manager "apt" di Linux (RedHat based):
+
+```bash
+sudo dnf install git-all
+```
+
+Su package manager "homebrew":
+
+```bash
+brew install git
+```
+
+Per quanto riguarda l'installazione attraverso un file eseguibile, si può effettuare il download dal sito [https://git-scm.com/](https://git-scm.com/ "Sito Git SCM").
+
+Il processo di installazione guida l'utente nell'installazione e nella configurazione iniziale, per cui è necessario comprendere le scelte da effettuare durante questo processo.
+
+La prima schermata mostra la licenza da accettare.
+
+![git - Installazione - step 1](/static/coding/tools/Git-Installazione-Step01.png "Git - Installazione - Step1")
+
+La seconda schermata chiede all'utente di scegliere la cartella nella quale installare git. Si consiglia di accettare la cartella predefinita.
+
+![git - Installazione - step 2](/static/coding/tools/Git-Installazione-Step02.png "Git - Installazione - Step2")
+
+La terza schermata chiede all'utente di scegliere i componenti di git da installare. Si consiglia di lasciare tutti quelli già selezionati, assicurandosi di installare le voci "git Bash" e "git GUI" nel menù di explorer (il menù che appare cliccando con il tasto destro del mouse in un'area vuota), in modo tale da accedere velocemente al terminale da qualsiasi cartella.
+
+![git - Installazione - step 3](/static/coding/tools/Git-Installazione-Step03.png "Git - Installazione - Step3")
+
+La quarta schermata chiede all'utente di scegliere la voce del menu "Start" di Windows nella quale creare i collegamenti. La voce consigliata è una buona scelta.
+
+![git - Installazione - step 4](/static/coding/tools/Git-Installazione-Step04.png "Git - Installazione - Step4")
+
+La quinta schermata chiede all'utente di scegliere l'editor di testi da utilizzare. Si consigliano Atom o Notepad++, si sconsiglia caldamente l'opzione "Vim".
+
+![git - Installazione - step 5](/static/coding/tools/Git-Installazione-Step05.png "Git - Installazione - Step5")
+
+La sesta schermata chiede all'utente di scegliere il nome iniziale del ramo di sviluppo da usare quando si crea un nuovo repository. Si anticipa che il ramo iniziale può avere nome "main" (usato anche da GitHub) o "master" (usato da GitLab, BitBucket, ecc..). In questo capitolo non sarà creato un nuovo repository, quindi si può lasciare l'opzione predefinita, anche se si vedrà spesso utilizzato il nome "main".
+
+![git - Installazione - step 6](/static/coding/tools/Git-Installazione-Step06.png "Git - Installazione - Step6")
+
+La settima schermata chiede all'utente quali percorsi aggiungere alla variabile di sistema "PATH" (utilizzata per cercare i programmi da eseguire). Si consiglia di lasciare la scelta predefinita.
+
+![git - Installazione - step 7](/static/coding/tools/Git-Installazione-Step07.png "Git - Installazione - Step7")
+
+L'ottava schermata chiede all'utente quale componente utilizzare per validare i certificati. La libreria OpenSSL va bene per il singolo utente, mentre il componente di Windows "Secure Channel" è sicuramente più adatto in ambito aziendale, in contesti in cui i computer sono gestiti in maniera centralizzata dal sistemista.
+
+![git - Installazione - step 8](/static/coding/tools/Git-Installazione-Step08.png "Git - Installazione - Step8")
+
+La nona schermata chiede all'utente la codifica da utilizzare per il carattere di fine riga. Windows adotta la codifica "Carriage Return - Line Feed", Linux, Unix e Mac adottano la codifica "Line Feed". In generale il server che contiene il repository remoto adotta la codifica "Line Feed".
+
+Agli utenti Windows è consigliata la scelta della voce "Checkout Windows Style, commit Unix style line endings".
+
+Agli utenti Linux è consigliata la scelta della voce "Checkout as-is, commit Unix style line endings".
+
+![git - Installazione - step 9](/static/coding/tools/Git-Installazione-Step09.png "Git - Installazione - Step9")
+
+La decima schermata chiede all'utente di scegliere il terminale da utilizzare quando si lavora a linea di comando. Si consiglia PUTTY, si può in qualsiasi caso lavorare anche con il terminale di Windows.
+
+![git - Installazione - step 10](/static/coding/tools/Git-Installazione-Step10.png "Git - Installazione - Step10")
+
+L'undicesima schermata chiede all'utente di scegliere la strategia di fusione quando si allinea il contenuto dal repository remoto al repository locale. Si consiglia di lasciare la scelta predefinita "fast forward on merge".
+
+![git - Installazione - step 11](/static/coding/tools/Git-Installazione-Step11.png "Git - Installazione - Step11")
+
+La dodicesima schermata chiede all'utente di scegliere il componente per la gestione delle credenziali. Si consiglia di lasciare la scelta predefinita "Git Credential Manager".
+
+![git - Installazione - step 12](/static/coding/tools/Git-Installazione-Step12.png "Git - Installazione - Step12")
+
+La tredicesima schermata chiede all'utente di scegliere se abilitare la cache memory (per migliorare le prestazioni) e se abilitare i link simbolici. Si consiglia di abilitare la cache memory e di ignorare i link simbolici.
+
+![git - Installazione - step 13](/static/coding/tools/Git-Installazione-Step13.png "Git - Installazione - Step13")
+
+La quattordicesima schermata chiede all'utente di abilitare funzionalità sperimentali. Si consiglia di evitare.
+
+![git - Installazione - step 14](/static/coding/tools/Git-Installazione-Step14.png "Git - Installazione - Step14")
+
+A questo punto, l'installazione è terminata
+
 ## Concetto di controllo di versione
 
 Per rendere l'idea di cosa significhi "sistema per il controllo di versione" (dall'inglese Version Control System), si può fare un'analogia con un'attività più vicina agli studenti: la realizzazione, da parte di un gruppo di studenti, di un progetto comune da consegnare ad uno o più insegnanti. Ogni studente prende in carico una parte specifica del progetto e si adopera per portarla a compimento.
@@ -82,15 +176,15 @@ E' possibile utilizzare molteplici modalità di lavoro per adattarsi alle divers
 
 Si può utilizzare una modalità di lavoro con **team leader**, che si occupa di coordinare il lavoro del proprio team e quindi riportare il lavoro del team sul quaderno ad anelli del professore.
 
-<-- TODO replace this image -->
+<!-- TODO replace this image -->
 
-[Workflow con manager d'integrazione](https://git-scm.com/figures/18333fig0502-tn.png)
+![Workflow con manager d'integrazione](https://git-scm.com/figures/18333fig0502-tn.png)
 
 Si può utilizzare una modalità di lavoro detta "dittatore - tenente" in cui sono presenti diverse squadre di lavoro, ognuna con il proprio team leader (in questo caso detto "tenente"), ed un leader di progetto (detto "dittatore benevolo") che coordina il lavoro dei vari "tenenti" e che si occupa di recuperare il lavoro dai quaderni ad anelli dei vari "tenenti" per comporre il progetto completo da condividere sul quaderno ad anelli condiviso. Tutti i team, poi, possono aggiornarsi sincronizzando i propri quaderni con questo quaderno condiviso. Questo metodo di lavoro, tra l'altro, è quello utilizzato per lo sviluppo del kernel Linux, in cui Linus Torvalds è il dittatore benevolo.
 
-<-- TODO replace this image -->
+<!-- TODO replace this image -->
 
-[Workflow con dittatore benevolo](https://git-scm.com/figures/18333fig0503-tn.png)
+![Workflow con dittatore benevolo](https://git-scm.com/figures/18333fig0503-tn.png)
 
 ### Rami di lavoro, conflitti e fusioni
 
@@ -216,7 +310,7 @@ git config --global user.name "User"
 git config --global user.email "user@user.com"
 ```
 
-Altra operazione generalmente consigliata è l'impostazione del carattere di fine riga, dato che su Linux e Mac il carattere di fine riga (INVIO) è LF (linefeed) mentre su Windows il carattere di fine riga (INVIO) è CR + LF (carriage return + linefeed).
+Altra operazione generalmente consigliata è l'impostazione del carattere di fine riga, dato che su Linux e Mac il carattere di fine riga (INVIO) è LF (line feed) mentre su Windows il carattere di fine riga (INVIO) è CR + LF (carriage return + line feed).
 
 Questa differenza di caratteri porta ad avere confusione quando un file è modificato sia da utenti Mac/Linux sia da utenti Windows. Molti editors su Windows sostituiscono i caratteri di fine riga LF con i caratteri CR + LF, oppure lasciano gli LF ma inseriscono CR + LF quando si preme invio.
 
@@ -236,6 +330,12 @@ Nella configurazione è utile anche impostare l'editor di riferimento:
 
 ```bash
 git config --global core.editor "atom --wait"
+```
+
+Infine, è consigliato non ignorare la differenza tra caratteri minuscoli e maiuscoli nei nomi dei file, con il comando
+
+```bash
+git config --global core.ignorecase false
 ```
 
 ### Staging area e commit
