@@ -36,5 +36,5 @@ theme = "mainroad" # hugo-academic mainroad watercss
       xHTML = false
     [markup.highlight]
       codeFences = true
-      guessSyntax = true
+      guessSyntax = false
       tabWidth = 4

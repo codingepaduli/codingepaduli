@@ -10,13 +10,24 @@ customCSS = ["/static/css/customImages.css"]
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
   dateformat = "02-01-2006" # Change the format of dates to day-month-year
 
-[mediaTypes]
-  [mediaTypes."text/html"]
-    suffixes = ["htm", "html", "HTM", "HTML"]
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right" # Configure layout for list pages
+  single = false # Configure layout for single pages
+  sidemenu = true # Enable it in the frontmatter of single pages
+  # Enable widgets in given order
+  widgets = ["ddg-search", "social", "sidemenu", "categories", "taglist"]
+  # alternatively "ddg-search" can be used, to search via DuckDuckGo
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
 
-[markup]
-  [markup.goldmark]
-    [markup.highlight]
-      codeFences = true
-      guessSyntax = false
-      tabWidth = 4
+[Params.widgets.social]
+  # Enable parts of social widget
+  github = "codingepaduli"
+  gitlab = "codingepaduli"
+  mastodon = "mastodon"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Mastodon"
+  url = "https://mastodon.uno/@padulodeveloper"
+  icon = "id-301021---mastodon.svg"
