@@ -21,11 +21,11 @@ comments:
 
 Git è un sistema per il controllo di versione distribuito. Inizialmente sviluppato da Linus Torvalds per gestire lo sviluppo del kernel Linux, oggi è utilizzato dalle aziende informatiche di tutto il mondo.
 
-I progetti pubblicamente esposti dagli sviluppatori sui vari servizi di controllo di versione rappresentano una sorta di "Instagram", utilizzato per condividere non foto e video, ma i propri lavori: libri, personaggi 2D e 3D, animazioni, stili grafici e soprattutto software.
+I progetti pubblicamente esposti dagli sviluppatori sui vari servizi di controllo di versione rappresentano una sorta di "Instagram", utilizzato per condividere non foto e video, ma i propri lavori: libri, personaggi 2D e 3D, animazioni, stili grafici e soprattutto il codice sorgente dei software in corso di sviluppo.
 
 ## Installazione di git
 
-Git è facilmente installabile attraverso i package manager. Di seguito sono elencati i comandi, relativi ai package manager più conosciuti, necessari per installare Git.
+Git è facilmente installabile attraverso i package manager. Di seguito sono elencati i comandi, relativi ai package manager più conosciuti, necessari per installare Git. Si presuppone, ovviamente, che l'utente abbia installato il package manager a cui il comando si riferisce.
 
 Su package manager "choco" di Windows:
 
@@ -51,9 +51,9 @@ Su package manager "homebrew":
 brew install git
 ```
 
-Per quanto riguarda l'installazione attraverso un file eseguibile, si può effettuare il download dal sito [https://git-scm.com/](https://git-scm.com/ "Sito Git SCM").
+Se non si dispone di un package manager, si può effettuare il download del pacchetto di installazione dal sito [https://git-scm.com/](https://git-scm.com/ "Sito Git SCM").
 
-Il processo di installazione guida l'utente nell'installazione e nella configurazione iniziale, per cui è necessario comprendere le scelte da effettuare durante questo processo.
+Il processo guida l'utente nell'installazione e nella configurazione iniziale di git, per cui è necessario comprendere le scelte da effettuare durante questo processo.
 
 La prima schermata mostra la licenza da accettare.
 
@@ -67,11 +67,11 @@ La terza schermata chiede all'utente di scegliere i componenti di git da install
 
 ![git - Installazione - step 3](/static/coding/tools/Git-Installazione-Step03.png "Git - Installazione - Step3")
 
-La quarta schermata chiede all'utente di scegliere la voce del menu "Start" di Windows nella quale creare i collegamenti. La voce consigliata è una buona scelta.
+La quarta schermata chiede all'utente di scegliere la voce del menu "Start" di Windows nella quale creare i collegamenti. La voce consigliata "Git" è una buona scelta.
 
 ![git - Installazione - step 4](/static/coding/tools/Git-Installazione-Step04.png "Git - Installazione - Step4")
 
-La quinta schermata chiede all'utente di scegliere l'editor di testi da utilizzare. Si consigliano Atom o Notepad++, si sconsiglia caldamente l'opzione "Vim".
+La quinta schermata chiede all'utente di scegliere l'editor di testi da utilizzare. Si consiglia di installare Atom o Notepad++ e di selezionarlo in questo passo. L'editor "Vim" non è affatto semplice da utilizzare per un utente alle prime armi, Come indicato anche dal messaggio mostrato all'utente, si consiglia di installare e selezionare un editor moderno ed intuitivo.
 
 ![git - Installazione - step 5](/static/coding/tools/Git-Installazione-Step05.png "Git - Installazione - Step5")
 
@@ -79,7 +79,7 @@ La sesta schermata chiede all'utente di scegliere il nome iniziale del ramo di s
 
 ![git - Installazione - step 6](/static/coding/tools/Git-Installazione-Step06.png "Git - Installazione - Step6")
 
-La settima schermata chiede all'utente quali percorsi aggiungere alla variabile di sistema "PATH" (utilizzata per cercare i programmi da eseguire). Si consiglia di lasciare la scelta predefinita.
+La settima schermata chiede all'utente quali percorsi aggiungere alla variabile di sistema "PATH" (utilizzata per cercare i programmi da eseguire). Si consiglia di lasciare la scelta predefinita "command line and 3rd-party software".
 
 ![git - Installazione - step 7](/static/coding/tools/Git-Installazione-Step07.png "Git - Installazione - Step7")
 
@@ -95,7 +95,7 @@ Agli utenti Linux è consigliata la scelta della voce "Checkout as-is, commit Un
 
 ![git - Installazione - step 9](/static/coding/tools/Git-Installazione-Step09.png "Git - Installazione - Step9")
 
-La decima schermata chiede all'utente di scegliere il terminale da utilizzare quando si lavora a linea di comando. Si consiglia PUTTY, si può in qualsiasi caso lavorare anche con il terminale di Windows.
+La decima schermata chiede all'utente di scegliere il terminale da utilizzare quando si lavora a linea di comando. Si consiglia MinTTY, si può in qualsiasi caso lavorare anche con il terminale di Windows.
 
 ![git - Installazione - step 10](/static/coding/tools/Git-Installazione-Step10.png "Git - Installazione - Step10")
 
@@ -111,11 +111,11 @@ La tredicesima schermata chiede all'utente di scegliere se abilitare la cache me
 
 ![git - Installazione - step 13](/static/coding/tools/Git-Installazione-Step13.png "Git - Installazione - Step13")
 
-La quattordicesima schermata chiede all'utente di abilitare funzionalità sperimentali. Si consiglia di evitare.
+La quattordicesima schermata chiede all'utente di abilitare funzionalità sperimentali. Si consiglia di non abilitare funzionalità che possono creare instabilità e falle di sicurezza.
 
 ![git - Installazione - step 14](/static/coding/tools/Git-Installazione-Step14.png "Git - Installazione - Step14")
 
-A questo punto, l'installazione è terminata
+A questo punto, l'installazione è terminata.
 
 ## Concetto di controllo di versione
 
@@ -123,9 +123,9 @@ Per rendere l'idea di cosa significhi "sistema per il controllo di versione" (da
 
 Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro, e può essere diviso in varie fasi, al termine delle quali si può avere, eventualmente, un confronto con gli insegnanti interessati.
 
-Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, in cui crea le varie bozze ed effettua le varie prove. Quando un lavoro è completo, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo l'arredamento di una stanza, allora questo lavoro è spostato in un quaderno ad anelli.
+Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, sulla quale crea le varie bozze, effettua le varie prove ed un passo per volta svolge il compito giornaliero. Quando un lavoro è completo, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo ad una stanza o ad un'ala del palazzo, allora questo lavoro è spostato in un quaderno ad anelli.
 
-E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente completa un lavoro, annota nome e data nella pagina di registro ed aggiunge l'elenco di operazioni, indicando che ha inserito un nuovo capitolo, che ha cancellato una pagina web o che ne ha modificato un disegno tecnico.
+E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente completa un lavoro, annota nome e data nella pagina di registro ed aggiunge l'operazione effettuata, l'aggiunta del nuovo capitolo, la cancellazione della pagina web o la modifica del disegno tecnico della stanza o dell'ala del palazzo.
 
 Le pagine cancellate non vengono effettivamente cestinate, ma vengono annotate con una "X" rossa in un angolo (in modo tale che siano ancora leggibili) e spostate in coda al quaderno ad anelli. Le pagine da modificare vengono prima corrette con la penna rossa, e poi, a modifica terminata, le pagine corrette con la penna rossa vengono posizionate in coda al quaderno ad anelli, infine viene effettuata una copia completa di queste pagine e questa copia viene posizionata nel punto in cui si trovavano le pagine prima della modifica.
 
@@ -139,7 +139,7 @@ Il quaderno ad anelli può essere condiviso tra tutti gli studenti che partecipa
 
 Questo tipo di controllo di versione realizzato con il quaderno ad anelli **comune** è detto **centralizzato**.
 
-I singoli studenti, quando completano un lavoro, aggiungendo, modificando o cancellando parti del progetto, sono tenuti a recarsi presso il laboratorio o lo studio dell'insegnante per poter aggiornare il quaderno comune, inserendo a registro le operazioni effettuate e, contestualmente, aggiungendo i nuovi lavori, spostando in coda le pagine cancellate ed effettuando una copia di quelle modificate che poi sono spostate in coda).
+I singoli studenti, quando completano un lavoro, aggiungendo, modificando o cancellando parti del progetto, sono tenuti a recarsi presso il laboratorio o lo studio dell'insegnante per poter aggiornare il quaderno comune, inserendo a registro le operazioni effettuate e, contestualmente, aggiungendo i nuovi lavori, spostando in coda le pagine cancellate ed effettuando una copia di quelle modificate (che poi sono spostate in coda).
 
 Avere un quaderno ad anelli in comune permette agli studenti di lavorare in squadra, ma presenta alcuni svantaggi tipici di un sistema centralizzato:
 
@@ -163,7 +163,7 @@ Nel dettaglio, uno studente che sincronizza il proprio quaderno con il quaderno 
 
 Allo stesso modo, effettua una copia dei lavori svolti dagli altri studenti, prendendoli dal quaderno ad anelli del professore, e la mette nel proprio quaderno ad anelli personale. Anche le pagine modificate e cancellate dagli altri studenti vengono copiate ed aggiunte in coda. Ed anche le operazioni di registro vengono aggiunte al proprio registro. In questo modo, i due quaderni ad anelli sono sincronizzati, di fatto sono identici.
 
-Un secondo studente che si reca nello studio effettua le stesse operazioni e cosi via fino al completamento del lavoro.
+Un secondo studente che si reca nello studio effettua le stesse operazioni, cosi come un terzo ed un quarto studente, per tutta la durata del progetto.
 
 Il sistema distribuito comporta alcuni vantaggi:
 
@@ -223,11 +223,11 @@ I concetti principali sui quali si basa Git sono:
 - La **sincronizzazione**: l'operazione di allineamento di due repository. In Git è divisa in due operazioni distinte:
 
     1. l'operazione di **push** consiste nell'inviare tutte le operazioni svolte nel repository locale in quello remoto. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno comune tutte le modifiche che sono state effettuate sul proprio quaderno**;
-    2. l'operazione di **pull** consiste nel recuperare tutte le operazioni svolte sul repository remoto per copiarle in quello locale. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno proprio tutte le modifiche che sono state effettuate sul quaderno comune**.
+    2. l'operazione di **pull** consiste nel recuperare tutte le operazioni svolte sul repository remoto per copiarle in quello locale. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno proprio tutte le modifiche che sono state effettuate sul quaderno comune** dai vari studenti.
 
-- I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo principale su Git è detto **master**, nei sistemi di controllo versione è chiamato **trunk**. Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
+- I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo di sviluppo principale può essere chiamato **trunk** (come nel software SVN), **master** (come su GitLab) o **main** (come su GitHub). Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
 
-- La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che viene aggiunto al gruppo, e che quindi compra un nuovo quaderno ad anelli nel quale poi clona il contenuto del quaderno ad anelli del professore.
+- La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che viene aggiunto al gruppo, e che quindi compra un nuovo quaderno ad anelli nel quale poi clona (copia) il contenuto del quaderno ad anelli del professore.
 
 ## Gestione repository
 
@@ -239,18 +239,19 @@ Una volta registrati e creato il proprio repository, si può procedere alla conf
 
 ### Creazione repository su GitHub
 
-GitHub permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
+GitHub permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità del repository. Si può anche scegliere di creare un file ``README.md`` iniziale e di scegliere la licenza da adottare per il progetto.
 
-![GitHub - Nuovo Repository](/static/coding/tools/GitHub-Repository-New.png "GitHub - Nuovo Repository")
+![GitHub - Nuovo Repository](/static/coding/tools/GitHub-Repository-New2.png "GitHub - Nuovo Repository")
 
-Creato il repository, viene fornito un URL per l'accesso e la clonazione dello stesso, come in figura:
+La pagina web mostra il repository appena creato, contenente il file ``README.md``. In particolare, si nota il nome del ramo di sviluppo principale **main** e l'indicazione **1 branch** che indica un solo ramo di sviluppo presente (il branch "main"):
 
-![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-URL.png "GitHub - URL del Repository")
+![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-Page.png "GitHub - Pagina del Repository")
 
-L'indirizzo completo del repository su GitHub, non completamente riportato nell'immagine, è il seguente:
-
+L'indirizzo completo del repository su GitHub è visibile cliccando sul pulsante verde "code" ed è il seguente:
 <!-- markdown-link-check-disable-next-line -->
-[https://github.com/codingepaduli/gitmergetutorial.git](https://github.com/codingepaduli/gitmergetutorial.git "GitHub - URL completo del Repository")
+[https://github.com/progetto-git/progetto-git.github.io.git](https://github.com/progetto-git/progetto-git.github.io.git "GitHub - URL completo del Repository")
+
+![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-URL2.png "GitHub - Pagina del Repository")
 
 ### Creazione repository su GitLab
 
@@ -272,7 +273,7 @@ L'indirizzo completo del repository su GitLab, non completamente riportato nell'
 Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione, attraverso il seguente comando:
 
 ```bash
-git clone https://github.com/codingepaduli/codingepaduli.git
+git clone https://github.com/progetto-git/progetto-git.github.io.git
 ```
 
 Si può verificare che il repository locale ha un riferimento al repository remoto, accedendo alla cartella creata ed utilizzando, al suo interno, il comando:
@@ -357,8 +358,8 @@ git status
 L'output è il seguente:
 
 ```plaintext
-Sul branch master
-Your branch is up to date with 'origin/master'.
+Sul branch main
+Your branch is up to date with 'origin/main'.
 
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
@@ -380,12 +381,11 @@ Effettuando ulteriori modifiche al file ``file1.txt``, questo risulta modificato
 git status
 ```
 
- tenendo presente che per ora si sta facendo riferimento al  semplicemente
 L'output è il seguente:
 
 ```plaintext
-Sul branch master
-Your branch is up to date with 'origin/master'.
+Sul branch main
+Your branch is up to date with 'origin/main'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -433,7 +433,7 @@ Effettuati i vari commit sul repository locale, ci si trova nella situazione in 
 Per sincronizzare il lavoro (tutti i commit sul repository locale) con il repository remoto, si utilizza il comando:
 
 ```bash
-git push origin master
+git push origin main
 ```
 
 L'operazione di push invia tutti i commit (che sono stati eseguiti sul repository locale) al repository remoto.
@@ -441,7 +441,7 @@ L'operazione di push invia tutti i commit (che sono stati eseguiti sul repositor
 Per effettuare l'operazione inversa, cioè per ricevere nel repository locale tutti i commit dal repository remoto (eseguiti dallo stesso utente attraverso computer differenti o eseguiti da altri utenti),  si utilizza il comando:
 
 ```bash
-git pull origin master
+git pull origin main
 ```
 
 ### Pulizia della staging area
@@ -517,7 +517,7 @@ Quando si effettua la clonazione di un repository, Git crea un riferimento a que
 E' però possibile utilizzate più repository remoti, semplicemente aggiungendo un riferimento remoto, di seguito chiamato **gitlab**, al repository locale:
 
 ```bash
-git remote add gitlab https://gitlab.com/codingepaduli/codingepaduli.git
+git remote add gitlab https://gitlab.com/progetto-git/progetto-git.git
 ```
 
 Per visualizzare i repository remoti, si può utilizzare il comando:
@@ -529,36 +529,36 @@ git remote -v
 L'output mostrato è il seguente:
 
 ```plaintext
-gitlab https://gitlab.com/codingepaduli/codingepaduli.git (fetch)
-gitlab https://gitlab.com/codingepaduli/codingepaduli.git (push)
-origin https://github.com/codingepaduli/codingepaduli.git (fetch)
-origin https://github.com/codingepaduli/codingepaduli.git (push)
+gitlab https://gitlab.com/progetto-git/progetto-git.git (fetch)
+gitlab https://gitlab.com/progetto-git/progetto-git.git (push)
+origin https://github.com/progetto-git/progetto-git.github.io.git (fetch)
+origin https://github.com/progetto-git/progetto-git.github.io.git (push)
 ```
 
 Come si nota, i riferimenti remoti per le operazioni di invio e ricezione dati ("push" e "fetch") possono essere differenti.
 
-Per sincronizzare il ramo di sviluppo principale **master** del repository remoto con il repository locale, si effettuano le classiche operazioni di **push** e **pull**, facendo però attenzione ad indicare l'origine **gitlab** appena creata.
+Per sincronizzare il ramo di sviluppo principale **main** del repository remoto con il repository locale, si effettuano le classiche operazioni di **push** e **pull**, facendo però attenzione ad indicare l'origine **gitlab** appena creata.
 
 ```bash
-git push gitlab master
-git pull gitlab master
+git push gitlab main
+git pull gitlab main
 ```
 
-Si nota che in questo caso viene sincronizzato il ramo di sviluppo principale **master**.
+Si nota che in questo caso viene sincronizzato il ramo di sviluppo principale **main**.
 
 ## Branches
 
 ### Modalità di lavoro con i Branches
 
-Il repository principale ha un ramo di sviluppo principale chiamato **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con Git.
+Il repository principale ha un ramo di sviluppo principale chiamato **main** o **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con Git.
 
 Tipicamente sul repository vengono creati diversi branches (rami di sviluppo) per le diverse funzionalità da sviluppare, e su ogni singolo branch (ramo) viene sviluppata una singola funzionalità da parte di uno o più sviluppatori del team.
 
 Gli sviluppatori che lavorano su un singolo branch creano quindi la prima versione della funzionalità da sviluppare effettuando il primo commit, poi gli sviluppi proseguono e viene creata la seconda versione con un secondo commit, poi la terza versione a cui corrisponde un terzo commit, e cosi via.
 
-Quando la funzionalità viene completata, questo singolo ramo di sviluppo può essere fuso con il ramo di sviluppo principale (il master).
+Quando la funzionalità viene completata, questo singolo ramo di sviluppo può essere fuso con il ramo di sviluppo principale.
 
-Sul ramo principale vengono quindi fusi tutti i diversi rami di sviluppo e quindi di volta in volta le varie funzionalità vengono aggiunte al ramo di sviluppo principale **master**.
+Sul ramo principale vengono quindi fusi tutti i diversi rami di sviluppo e quindi di volta in volta le varie funzionalità vengono aggiunte al ramo di sviluppo principale **main**.
 
 Volendo fare un'analogia, si può immaginare la scrittura di una trilogia di libri, e quindi ogni singolo libro viene scritto in un ramo separato. Il ramo principale alla fine conterrà tutti e tre i volumi.
 
@@ -642,13 +642,13 @@ Merge made by the 'recursive' strategy.
  2 files changed, 80 insertions(+), 4 deletions(-)
 ```
 
-E' possibile verificare che i 2 branch sono stati fusi in un'unico branch, attraverso il comando:
+E' possibile verificare che i 2 branch sono stati fusi in un unico branch, attraverso il comando:
 
 ```bash
 git log --pretty=format:"%h %s" --graph
 ```
 
-L'output indica in forma grafica che i rami di sviluppo sono stati fusi e che effettivamente confluiscono in un'unico ramo:
+L'output indica in forma grafica che i rami di sviluppo sono stati fusi e che effettivamente confluiscono in un unico ramo:
 
 ```plaintext
 *   b21a312 Merge pull request #1
