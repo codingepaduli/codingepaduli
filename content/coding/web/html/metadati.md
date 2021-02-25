@@ -17,6 +17,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://htmlhead.dev/"
         description: "Guida (in inglese) all'elemento 'head' dell'HTML;"
+    -   title: "Icone del sito web nel 2021"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs"
+        description: "Articolo (in inglese) sulla scelta e sulla creazione delle icone del sito web nel 2021"
 ---
 
 # Metadati
