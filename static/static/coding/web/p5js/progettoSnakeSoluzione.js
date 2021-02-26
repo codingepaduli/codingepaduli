@@ -17,29 +17,40 @@ class PallinaColorata {
 
 // Random value between min (inclusive) and max (inclusive)
 function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min);
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-const diameter = 24;
-const radius = diameter/2;
-
-let snake = [];
 const snakeColor = new Colore(0, 255, 0);
 const labirintColor = new Colore(255, 0, 0);
 const preyColor = new Colore(0, 0, 255);
 
+const diameter = 20;
+const radius = diameter/2;
+
+let snake = [];
+let prey;
+
 let directionKey = "ArrowDown";
 
-let prey = new PallinaColorata(radius*9, radius*9, diameter, preyColor);
+let maxX, maxY;
 
 function setup() {
     createCanvas(800, 400);
 
     // snake iniziale con due palline
-    snake[0] = new PallinaColorata(radius*3, radius, diameter, snakeColor);
-    snake[1] = new PallinaColorata(radius*3, radius*3, diameter, snakeColor);
+    snake[0] = new PallinaColorata(3, 1, diameter, snakeColor);
+    snake[1] = new PallinaColorata(3, 2, diameter, snakeColor);
+    // preda
+    prey = new PallinaColorata(9, 9, diameter, preyColor);
+
+    console.info(`Area: ${width} ${height}`);
+
+    maxX = Math.floor((radius + width)/diameter) -1;
+    maxY = Math.floor((radius + height)/diameter) -1;
+
+    console.info(`Max: ${maxX} ${maxY}`);
 }
 
 function draw() {
@@ -47,9 +58,9 @@ function draw() {
 
     // disegno le possibili posizioni dello snake
     fill(255, 0, 0);
-    for(let X=radius; X<=width-radius; X=X+diameter) {
-        for (let Y=radius;Y<=height-radius;Y=Y+diameter) {
-            circle(X,Y,diameter);
+    for(let X=0; X<=maxX; X++) {
+        for (let Y=0; Y<=maxY; Y++) {
+            circle(radius + diameter * X, radius + diameter * Y, diameter);
         }
     }
 
@@ -63,22 +74,22 @@ function draw() {
 
     // valuto la direzione scelta dall'utente
     // e sposto la pallina aggiunta in testa allo snake
-    // se direzione SU, la nuova testa avrà coordinata Y = Y - diametro
-    // se direzione GIU, la nuova testa avrà coordinata Y = Y + diametro
-    // se direzione DX, la nuova testa avrà coordinata X = X + diametro
-    // se direzione SX, la nuova testa avrà coordinata X = X - diametro
+    // se direzione SU, la nuova testa avrà posizione Y=Y-1
+    // se direzione GIU, la nuova testa avrà posizione Y=Y+1
+    // se direzione DX, la nuova testa avrà posizione X=X+1
+    // se direzione SX, la nuova testa avrà posizione X=X-1
     switch (directionKey) {
         case "ArrowUp":
-            snake[snake.length-1].y = snake[snake.length-1].y - diameter;
+            snake[snake.length-1].y --;
             break;
         case "ArrowDown":
-            snake[snake.length-1].y = snake[snake.length-1].y + diameter;
+            snake[snake.length-1].y ++;
             break;
         case "ArrowRight":
-            snake[snake.length-1].x = snake[snake.length-1].x + diameter;
+            snake[snake.length-1].x ++;
             break;
         case "ArrowLeft":
-            snake[snake.length-1].x = snake[snake.length-1].x - diameter;
+            snake[snake.length-1].x --;
             break;
         default:
     }
@@ -86,8 +97,9 @@ function draw() {
     if (prey.x == snake[snake.length-1].x && prey.y == snake[snake.length-1].y) {
         // Se catturo la preda,
         // cambio posizione alla preda
-        prey.x = radius + diameter * getRandomInt(0, Math.floor((radius + width)/diameter) -1);
-        prey.y = radius + diameter * getRandomInt(0, Math.floor((radius + height)/diameter) -1);
+        prey.x = getRandomInt(0, maxX);
+        prey.y = getRandomInt(0, maxY);
+        console.info(`Snake length: ${snake.length}`);
         console.info(`Prey: ${prey.x} ${prey.y}`);
     } else {
         // SE non ho catturato la preda
@@ -98,11 +110,10 @@ function draw() {
     // disegno lo snake
     for (let i=0; i<snake.length; i++) {
         fill(snake[i].color.r,snake[i].color.g,snake[i].color.b);
-        circle(snake[i].x,snake[i].y,snake[i].d);
+        circle(radius + diameter * snake[i].x, radius + diameter *  snake[i].y, snake[i].d);
     }
-    console.info(`Snake length: ${snake.length}`);
 
     // disegno la preda
     fill(preyColor.r,preyColor.g,preyColor.b);
-    circle(prey.x,prey.y,prey.d);
+    circle(radius + diameter * prey.x, radius + diameter * prey.y,prey.d);
 }
