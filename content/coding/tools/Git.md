@@ -239,7 +239,13 @@ Una volta registrati e creato il proprio repository, si può procedere alla conf
 
 ### Creazione repository su GitHub
 
-GitHub permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità del repository. Si può anche scegliere di creare un file ``README.md`` iniziale e di scegliere la licenza da adottare per il progetto.
+L'utente, che completa il processo di registrazione su GitHub, accede alla pagina principale, nella quale è presente l'elenco dei propri repository (nell'area sinistra) e (in alto a destra) l'icona del proprio account con relativo menù visualizzabile al click.
+
+![GitHub - Profilo](/static/coding/tools/GitHub-Profile-Home.png "GitHub - Nuovo Repository")
+
+Accedendo alla pagina dei repository, l'utente può procedere alla creazione del proprio repository remoto, inserendo il nome del repository, la descrizione, la visibilità e indicando le opzioni relative la creazione del file ``README.md`` e la licenza da adottare per il progetto.
+
+Se si vuole creare il repository relativo alla propria GitHub Page, allora il nome del repository deve obbligatoriamente essere **username**.github.io (ovviamente indicando il proprio username, ad esempio **progetto-git.github.io**).
 
 ![GitHub - Nuovo Repository](/static/coding/tools/GitHub-Repository-New2.png "GitHub - Nuovo Repository")
 
