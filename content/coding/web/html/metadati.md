@@ -126,3 +126,40 @@ Di seguito un esempio di metadati relativi alle risorse collegate, da includere 
     <!-- Icon in the highest resolution -->
     <link rel="icon" sizes="192x192" href="/path/to/icon.png">
 ```
+
+### Icone del sito web
+
+Possono essere necessarie anche più di 30 icone, in formati e risoluzioni differenti, per poter mostrare correttamente l'icona del sito su tutti i dispositivi. Tablet, smartphone, computer o smart-TV scelgono l'icona da mostrare all'utente in base alla risoluzione ed alle caratteristiche dello schermo.
+
+Piuttosto che creare un così vasto numero di icone, in questi paragrafi sarà mostrato un approccio minimale, in cui solo le icone indispensabili saranno incluse nella pagina web.
+
+Per motivi storici, l'icona è memorizzata nel file ``favicon.ico`` e si deve trovare all'indirizzo ``/favicon.ico``.
+
+Le icone moderne sono, invece, in formato **SVG**, un formato vettoriale che permette di ingrandirle o ridurle senza perdere qualità.
+
+Il formato **SVG** non è supportato da tutti i dispositivi, quindi alcune icone sono ancora in formato ``PNG``.
+
+Alcune icone possono essere descritte nel file ``manifest.webmanifest``, un file che configura il sito web come una **PWA**.
+
+```html
+<!-- 32×32 px for legacy browsers -->
+<link rel="icon" href="/favicon.ico">
+
+<!-- Icone standard -->
+<link rel="icon" href="icona.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+
+<!-- Icona per dispositivi Apple 180×180 px -->
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+```
+
+Il file ``manifest.webmanifest`` descrive le icone da utilizzare attraverso le seguenti proprietà:
+
+```javascript
+{
+  "icons": [
+    { "src": "/192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
+```
