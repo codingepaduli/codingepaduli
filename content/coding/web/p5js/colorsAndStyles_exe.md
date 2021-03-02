@@ -23,3 +23,9 @@ customJS: ["/static/js/p5.min.js"]
 Creare una pagina web contenente un disegno a piacere di un robot con occhi, bocca, naso, antenne, corpo, braccia, ruote o gambe. Dimensioni e colori dei vari componenti sono a scelta dello studente. L'unico vincolo è che la parte destra e sinistra del robot siano simmetriche.
 
 ![p5.js - Disegno di un robot a colori](/static/coding/web/p5js/colors_and_styles_exe_robot.png "p5.js - Disegno di un robot a colori")
+
+## Disegno di un'astronave a colori
+
+Creare una pagina web contenente un disegno a piacere di un'astronave con 4 ali armate di missili, 2 turbine, oblò del pilota. La dimensione massima dell'astronave deve essere 150 per 150 punti. L'astronave deve essere simmetrica rispetto all'asse Y, i colori dei vari componenti sono a scelta dello studente.
+
+![p5.js - Disegno di un robot a colori](/static/coding/web/p5js/colors_and_styles_exe_astronavi.png "p5.js - Disegno di un'astronave a colori")
