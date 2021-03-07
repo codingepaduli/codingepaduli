@@ -11,8 +11,6 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Colori e stili"
-disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
 ---
 
 # Colori e stili

@@ -11,9 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Introduzione alla libreria grafica p5.js"
-disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
-customJS: ["/static/coding/web/p5js/Example02.js", "/static/coding/web/p5js/basics.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/Example02.js", "/static/coding/web/p5js/basics.js"]
 
 references:
     -   title: "Computer Graphics from scratch"
@@ -49,7 +47,7 @@ L'editor online è di grande utilità per iniziare, tuttavia si può voler inclu
 Dando per assunti i fondamentali sul linguaggio HTML, nella pagina web è possibile definire un riferimento alla libreria p5.js mediante l'etichetta ``script``, come nel seguente esempio:
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
 ```
 
 All'area da disegno è associato il seguente stile:
@@ -80,7 +78,7 @@ L'esempio completo della pagina web è il seguente:
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
         <meta charset="utf-8" />
         <style>
             html, body { margin: 0; padding: 0; }
@@ -129,7 +127,7 @@ Le funzione ``background`` serve ad impostare lo sfondo di colore grigio e la fu
 
 Il risultato è il seguente:
 
-![p5.js - Primo esempio](/static/coding/web/p5js/Example01.png "p5.js - Primo esempio")
+![p5.js - Primo esempio](/static/coding/web/p5js/basics01.png "p5.js - Primo esempio")
 
 ## Modalità di esecuzione globale e di istanza
 
@@ -449,10 +447,6 @@ Da prestare attenzione che se il testo è troppo lungo e non può essere racchiu
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
 ![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")
-
-In ambiente web è visualizzabile l'esempio funzionante dell'animazione realizzata.
-
-<div id="basics"></div>
 
 ## Prima animazione
 

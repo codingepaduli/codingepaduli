@@ -11,7 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Esercizi di grafica 2D"
-customJS: ["/static/js/p5.min.js"]
+customJS: ["/static/js/p5-1.2.0-min.js"]
 ---
 
 # Esercizi di grafica 2D

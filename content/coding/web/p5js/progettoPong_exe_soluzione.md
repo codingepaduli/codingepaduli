@@ -10,9 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Implementazione del videogioco in stile 'pong'"
-disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-externalJS: ["/static/js/p5.min.js"]
-customJS: ["/static/coding/web/p5js/progettoPongSoluzione.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoPongSoluzione.js"]
 ---
 
 # 04.2 - Soluzione progetto Pong

@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "05 - Accesso ai pixel di un'immagine con la libreria grafica p5.js"
+title: "05 - Accesso ai pixel di un'immagine"
 description: "Accesso ai pixel di un'immagine con la libreria grafica p5.js"
 date: 2020-09-26
 publishdate: 2020-09-26
@@ -10,12 +10,10 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Accesso ai pixel di un'immagine con la libreria grafica p5.js"
-disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-externalJS: ["https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"]
-customJS: ["/static/coding/web/p5js/pixelAccess.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/pixelAccess.js"]
 ---
 
-# Accesso ai pixel di un'immagine con la libreria grafica p5.js
+# Accesso ai pixel di un'immagine
 
 Di seguito, l'esempio funzionante in ambiente web dell'accesso ai pixel dell'immagine caricata nel canvas.
 

@@ -11,9 +11,6 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Esercizi di grafica 2D a colori"
-disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-externalJS: [""]
-customJS: ["/static/js/p5.min.js"]
 ---
 
 # Esercizi di grafica 2D a colori
