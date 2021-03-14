@@ -64,13 +64,17 @@ Source package (default: gradle-example): example
 
 ### Gradle wrapper
 
-La creazione di un progetto basato su Gradle comporta anche la creazione di un "wrapper" di Gradle.
+La creazione di un progetto basato su Gradle comporta anche la creazione di un "wrapper" di Gradle, salvato nel pacchetto java ``gradle/wrapper/gradle-wrapper.jar`` e di un corrispondente file di proprietà, salvato nel file ``gradle/wrapper/gradle-wrapper.properties``, che tra le varie opzioni indica la versione di Gradle utilizzata.
 
-Questo "wrapper" permette a tutti gli utenti che non hanno installato Gradle di poter comunque eseguire i task di Gradle, dalla compilazione all'esecuzione, poichè scarica una versione di Gradle nella macchina dell'utente.
+Tutti gli utenti che non hanno installato Gradle possono, quindi, utilizzare il "wrapper" per eseguire i task del progetto, usando il comando ``gradlew`` (per Linux) o ``gradlew.bat`` (per Windows).
 
-Il wrapper si può eseguire attraverso il comando ``gradlew`` per Linux e ``gradlew.bat`` per Windows.
+L'utente può in qualsiasi momento aggiornare la versione di Gradle da utilizzare, seguendo una delle due strade:
+- aggiornare manualmente la voce ``distributionUrl`` presente nel file ``gradle/wrapper/gradle-wrapper.properties``;
+- ricreare il "wrapper" presente nel progetto, specificando la versione di Gradle desiderata, utilizzando il comando:
 
-Se presente il file ``gradlew`` per Linux o ``gradlew.bat`` per Windows, allora è buona norma utilizzare il wrapper per eseguire tutti i task.
+```bash
+./gradlew wrapper --gradle-version 6.8.3
+```
 
 ### Primi task
 
@@ -503,7 +507,7 @@ plugins {
 applicationName = 'my-app'
 
 application {
-    mainClassName = 'org.gradle.sample.Main'
+    mainClass = 'org.gradle.sample.Main'
     applicationDefaultJvmArgs = ['-Dlanguage=en']
 }
 ```
@@ -654,7 +658,7 @@ jar {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'j2se.main.MainClass'
+    mainClass = 'j2se.main.MainClass'
 }
 ```
 
