@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-01-18
-publishdate: 2021-01-18
-lastmod: 2021-01-18
+date: 2021-03-19
+publishdate: 2021-03-19
+lastmod: 2021-03-19
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -37,6 +37,7 @@ summary: "Set di link relativi al coding"
 [Rolstenhouse/unofficial-apis](https://github.com/Rolstenhouse/unofficial-apis) - A collection of unofficial apis. Designed to inspire your next Friday night hack\
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
 [SharePad.io](https://sharepad.io/) -  A collaborative code editor and compiler\
+[Deskreen](https://deskreen.com/lang-en) - Turn any device into a secondary screen\
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
@@ -56,6 +57,7 @@ summary: "Set di link relativi al coding"
 [Vagrant](https://buildvirtual.net/using-vagrant-to-deploy-multiple-vms-on-vsphere/) - Deploy Multiple VMs on vSphere\
 [KVM/qemu](https://stackoverflow.com/questions/42155213/using-vagrant-to-set-up-a-vm-with-kvm-qemu-without-virtualbox) - Using Vagrant to set up a VM with KVM/qemu without VirtualBox\
 [vagrant-libvirt/vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support) - Vagrant provider for libvirt.\
+[Convert your Windows install into a VM on Linux | Opensource.com](https://opensource.com/article/21/1/virtualbox-windows-linux) - \
 
 #### Containers
 
@@ -105,6 +107,7 @@ summary: "Set di link relativi al coding"
 [10 Ansible modules for Linux system automation | Opensource.com](https://opensource.com/article/20/10/ansible-modules-linux) - \
 [My first day using Ansible | Opensource.com](https://opensource.com/article/20/10/first-day-ansible) - \
 [Getting started with Ansible | XLAB Steampunk blog](https://steampunk.si/blog/getting-started-with-ansible/) - \
+[4 lines of code to improve your Ansible play | Opensource.com](https://opensource.com/article/21/1/improve-ansible-play) - \
 
 #### PowerShell
 
@@ -137,6 +140,7 @@ summary: "Set di link relativi al coding"
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 [Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
+[This Anime Does Not Exist](https://thisanimedoesnotexist.ai/) - \
 
 ### Database SQL e NoSql - GraphQL
 
@@ -174,6 +178,7 @@ summary: "Set di link relativi al coding"
 [Make advanced Git tasks simple with Lazygit | Opensource.com](https://opensource.com/article/20/3/lazygit) - \
 [Install hub to make your Git command-line as fully featured as GitHub | Opensource.com](https://opensource.com/article/20/3/github-hub) - \
 [Tweak your Git config for multiple user IDs | Opensource.com](https://opensource.com/article/20/10/git-config) - \
+[ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
 
 ### Java
 
@@ -285,6 +290,7 @@ summary: "Set di link relativi al coding"
 [ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
 [Hosted Weblate](https://hosted.weblate.org/) - \
 [Lei Mao's Log Book – ~/.bashrc VS ~/.profile VS ~/.bash_profile](https://leimao.github.io/blog/bashrc-VS-profile-VS-bash_profile/) - \
+[Why you need to drop ifconfig for ip | Opensource.com](https://opensource.com/article/21/1/ifconfig-ip-linux) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -341,43 +347,46 @@ summary: "Set di link relativi al coding"
 [PEN-200 and the OSCP Certification](https://www.offensive-security.com/pwk-oscp/) - Offensive Security\
 [/e/ – un fork Android completamente de-Google-izzato](https://e.foundation/) - \
 [redecentralize/alternative-internet](https://github.com/redecentralize/alternative-internet) - A collection of interesting new networks and tech aiming at decentralisation (in some form)\
-[degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
-[De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
-[Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
 [Cable Haunt](https://cablehaunt.com/) -  a critical vulnerability found in cable modems from various manufacturers across the world. The number of modems initially vulnerable in Europe is estimated to be close to 200 million\
-[IpLeak](https://ipleak.net/) - Detect what informations you send to websites\
 [Aircrack-ng](https://www.aircrack-ng.org/) - \
-[Firefox to add Tor Browser anti-fingerprinting technique called letterboxing](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - \
-[File Sharing sicuro e criptato con Tor e il Tool OnionShare 2](https://www.lffl.org/2019/02/file-sharing-tor-onionshare-2.html) - \
 [www.sikurezza.org](http://www.sikurezza.org/) - \
 [Smallstep](https://smallstep.com/blog/step-v0-8-6-valid-https-certificates-for-dev-pre-prod/) - Bring Development Closer To Production w/ Valid HTTPS Certificates\
 [localdots](https://github.com/luisfarzati/localdots) - HTTPS domains for localhost\
 [John the Ripper password cracker](https://www.openwall.com/john/) - \
 [Free for Open Source Application Security Tools | OWASP](https://owasp.org/www-community/Free_for_Open_Source_Application_Security_Tools) - \
 [SadeghHayeri/GreenTunnel: GreenTunnel is an anti-censorship utility designed to bypass the DPI system that is put in place by various ISPs to block access to certain websites](https://github.com/SadeghHayeri/GreenTunnel) - \
-[How to replace CalDAV with a secure calendar protocol](https://opensource.com/article/20/3/caldav-security) - \
 [Panopticlick](https://panopticlick.eff.org/) - test how well you are protect against online tracking techniques\
-[Session](https://getsession.org/) - Private Messenger like Signal\
 [LaZagne](https://github.com/AlessandroZ/LaZagne) - an open source application used to retrieve lots of passwords stored on a local computer by Firefox, Google Chrome, Skype, Pidgin, Outlook, Thunderbird, Keepass, Tortoise, Docker, FileZilla, GNOME Keyring, Kwallet, OpenSSH, OpenVPN and more\
 [Mimikatz](https://www.varonis.com/blog/what-is-mimikatz/) - a tool to steal credentials and escalate privileges;\
-[The Encrypted Email Problem](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) - Avoid encrypted emai\
-[The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
-[What Is the Business Model for DuckDuckGo?](https://spreadprivacy.com/duckduckgo-revenue-model/) - \
-[The Brave web browser is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - \
-[Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser](https://github.com/brave/brave-browser/issues/9929) - \
-[Runnaroo | A Better Private Search Engine](https://www.runnaroo.com/) - \
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
-[DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
-[DNS Privacy with Oblivious DoH in 1.1.1.1](https://blog.cloudflare.com/oblivious-dns/) - \
-[Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
 [Introducing another free CA as an alternative to Let's Encrypt](https://scotthelme.co.uk/introducing-another-free-ca-as-an-alternative-to-lets-encrypt/) - \
 [devol/Servizi-Decentralizzati](https://gitea.it/devol/Servizi-Decentralizzati) - Elenco dei collettivi che ospitano volontariamente strumenti utilizzabili dal pubblico (o dagli attivisti) - Servizi-Decentralizzati - Gitea\
 [Beaker Browser](https://beakerbrowser.com/) - An experimental peer-to-peer Web browser\
-[Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
-[Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
+[Session](https://getsession.org/) - Private Messenger like Signal\
+
+#### Enhancing privacy
+
+[7 WhatsApp alternatives that won’t share your data with Facebook](https://protonmail.com/blog/whatsapp-alternatives/) - \
 [How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
+[Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
+[Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
+[DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
+[DNS Privacy with Oblivious DoH in 1.1.1.1](https://blog.cloudflare.com/oblivious-dns/) - \
+[What Is the Business Model for DuckDuckGo?](https://spreadprivacy.com/duckduckgo-revenue-model/) - \
+[degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
+[De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
+[Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
+[Firefox to add Tor Browser anti-fingerprinting technique called letterboxing](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - \
+[File Sharing sicuro e criptato con Tor e il Tool OnionShare 2](https://www.lffl.org/2019/02/file-sharing-tor-onionshare-2.html) - \
+[How to replace CalDAV with a secure calendar protocol](https://opensource.com/article/20/3/caldav-security) - \
+[IpLeak](https://ipleak.net/) - Detect what informations you send to websites\
+[The Encrypted Email Problem](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) - Avoid encrypted emai\
+[The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
+[The Brave web browser is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - \
+[Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser](https://github.com/brave/brave-browser/issues/9929) - \
+[Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
 
 ### Scrivere documenti e conversione tra formati
 
@@ -426,10 +435,9 @@ summary: "Set di link relativi al coding"
 
 #### Pandoc
 
-[prashanth1k/pandoc-ebook-template-windows: An easy way to generate eBooks from multiple markdown files using Pandoc.](https://github.com/prashanth1k/pandoc-ebook-template-windows) - \
 [Convert files at the command line with Pandoc](https://opensource.com/article/18/9/intro-pandoc) - \
 [htdebeer/pandocomatic](https://github.com/htdebeer/pandocomatic) - Automate the use of pandoc\
-[pandoc-include-code snippet](https://groups.google.com/forum/#!searchin/pandoc-discuss/javascript|sort:date/pandoc-discuss/XR14gYSf1bo/AGnEsEVgAAAJ) - Google Gruppi\
+[pandoc-discuss](https://groups.google.com/g/pandoc-discuss) - Google Gruppi\
 [manuelp/pandoc-stylesheet · Publication CSS](https://github.com/manuelp/pandoc-stylesheet/blob/master/pub.css) - \
 [Converting Markdown to Beautiful PDF with Pandoc](https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/) - jdhao's blog\
 [pandoc-img-glob · PyPI](https://pypi.org/project/pandoc-img-glob/) - \
@@ -472,6 +480,8 @@ summary: "Set di link relativi al coding"
 [Responsively App | A Web developer's browser to improve the developing of responsive design](https://responsively.app/) - \
 [Nodesign.dev | A collection of tools for developers who have little to no artistic talent](https://nodesign.dev/) - \
 [How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - \
+[Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
+[Iconduck](https://iconduck.com/licenses) - Open source icons\
 
 #### HTML
 
@@ -552,6 +562,7 @@ summary: "Set di link relativi al coding"
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [JaidedAI/EasyOCR: Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai](https://github.com/JaidedAI/EasyOCR) - \
 [OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
+[LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
 [IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - IEEE Standard for Binary Floating-Point Arithmetic\
 [AssemblyScript](https://www.assemblyscript.org/) - compiles a subset of TypeScript to WebAssembly\
 [WebAssembly/binaryen: Compiler infrastructure and toolchain library for WebAssembly](https://github.com/WebAssembly/binaryen) - \
@@ -578,4 +589,3 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
-[Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-01-14
-publishdate: 2021-01-14
-lastmod: 2021-01-14
+date: 2021-03-19
+publishdate: 2021-03-19
+lastmod: 2021-03-19
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -34,6 +34,7 @@ summary: "Set di link interessanti"
 [Renormalization group is as a “theory of theories” connecting the microscopic with the macroscopic](https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/) - It helps identify which big-picture quantities are useful to measure and which convoluted microscopic details can be ignored\
 [Dark Energy](https://physics.aps.org/articles/v13/1) - new generation of experiments about the nature of dark energy\
 [Entropy in the Universe](https://johncarlosbaez.wordpress.com/2020/01/25/entropy-in-the-universe/) - entropy of interstellar and intergalactic gas and dust is about ten times more the entropy of all the stars in the observable Universe\
+[Maybe 'dark matter' doesn't exist after all, new research suggests](https://www.nbcnews.com/science/space/maybe-dark-matter-doesn-t-exist-after-all-new-research-n1252995) - \
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
