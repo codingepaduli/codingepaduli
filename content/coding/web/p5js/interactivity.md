@@ -1,7 +1,7 @@
 ---
 type: "p5js"
-title: "04 - Interattività"
-description: "Interazione utente"
+title: "04 - Interattività ed animazioni"
+description: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
 date: 2020-09-17
 publishdate: 2020-09-17
 lastmod: 2020-09-17
@@ -10,16 +10,80 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: "Interazione utente"
+summary: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/interactivity01.js"]
 ---
 
-# Interattività
+# Interattività ed animazioni
 
-L'utente può interagire con l'area da disegno attraverso tastiera, mouse e tutti gli altri dispositivi di input. L'interazione con audio, webcam e dispositivi esterni, come il micro-controllore Arduino e la scheda Raspberry, sono garantiti da opportune estensioni che estendono le funzionalità di base.
+L'utente può interagire con l'area da disegno utilizzando i classici dispositivi di input, come tastiera, mouse e webcam. L'output è inviato allo schermo ed ai dispositivi audio. E' anche possibile comunicare con dispositivi esterni, quali il micro-controllore Arduino o la scheda integrata Raspberry.
 
-Per il programmatore è estremamente semplice scrivere programmi che interagiscano con questi dispositivi di input ed output, ad esempio può programmare l'area da disegno perché si adatti alle dimensioni del display, alla frequenza di disegno, alla rotazione dello schermo ed al funzionamento a tutto schermo.
+Alcune funzionalità. ad esempio la gestione delle dimensioni dello schermo, della frequenza di disegno o della rotazione dello schermo, sono implementate dalla libreria stessa, mentre altre funzionalità, come la gestione dei suoni o la comunicazione con dispositivi esterni, sono demandate ad opportune librerie esterne che estendono le funzionalità di base.
 
-Di seguito vengono descritte le principali funzionalità di base che permettono di sviluppare l'interazione con l'utente, rimandando alla documentazione ufficiale gli approfondimenti dei concetti avanzati.
+Il continuo ridisegnare l'area da disegno, gestito dalla libreria grafica, unito alla possibilità di modificare lo stato dei vari oggetti grafici, come la posizione ed il colore, permette lo sviluppo di animazioni con una semplicità notevole.
+
+L'unione delle caratteristiche precedentemente elencate permette al programmatore di poter sfruttare tutta la propria creatività e fantasia per realizzare applicazioni multimediali ed interattive con una notevole semplicità.
+
+Di seguito vengono descritte le principali funzionalità di base che permettono di gestire lo stato e interagire con i principali dispositivi, rimandando alla documentazione ufficiale gli approfondimenti dei concetti avanzati.
+
+## Animazioni
+
+Le animazioni sono basate principalmente sul cambiamento dello stato di uno o più oggetti grafici.
+
+Per realizzare il movimento di una figura basta spostare, nel corso del tempo, la posizione della figura e la si vedrà muovere. Per realizzare un passaggio dal giorno alla notte basta cambiare, nel corso del tempo, il colore del cielo da azzurro a blu notte e si vedrà calare la notte.
+
+Per poter effettuare un cambiamento di stato di un oggetto, è necessario memorizzare lo stato dell'oggetto in una variabile. Se un oggetto deve muoversi solo sull'asse X, è necessario memorizzare in una variabile la posizione X dell'oggetto stesso. Se, invece, l'oggetto deve muoversi su entrambi gli assi X ed Y, è necessario memorizzare in una variabile la posizione X, in una seconda variabile la posizione Y. Se è il colore che deve cambiare, le componenti del colore devono essere memorizzate ognuna in una variabile (nel modello RGB la quantità di rosso deve essere memorizzata in una variabile, la quantità di verde in una seconda variabile ed, infine, la quantità di blu in una terza variabile).
+
+Una volta memorizzato lo stato dell'oggetto in una o più variabili, si può realizzare il movimento cambiando il valore di queste variabili.
+
+### Esempio di movimento di un cerchio
+
+Partiamo dal disegno di un cerchio, realizzato attraverso il codice seguente:
+
+```javascript
+circle(100, 150, 50);
+```
+
+Per far muovere il cerchio verso destra (quindi lungo l'asse X), è necessario memorizzare in una variabile, che chiameremo ``x``, la posizione iniziale della coordinata X del cerchio.
+
+La dichiarazione della variabile può avvenire prima delle due funzioni ``setup`` e ``draw``, mediante la classica dichiarazione:
+
+```javascript
+let x = 100;
+```
+
+Per realizzare il movimento del cerchio verso destra, è necessario incrementare il valore della variabile ``x`` ad ogni operazione di ridisegno dell'area di lavoro. Ricordando che tutte le istruzioni contenute nella funzione ``draw`` sono eseguite ciclicamente e servono a ridisegnare continuamente l'area di lavoro, allora si intuisce facilmente che sia il disegno del cerchio, sia l'operazione di incremento della variabile ``x`` devono essere inserite nella funzione draw.
+
+```javascript
+circle(x, 150, 50);
+x = x+1;
+```
+
+L'esempio completo è di seguito riportato:
+
+```javascript
+let x = 100;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  circle(x, 150, 50);
+  x = x + 1;
+}
+```
+
+E' interessante notare che se l'istruzione di incremento ``x = x + 1`` la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene eseguito una sola volta, quindi il cerchio resta immobile.
+
+Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita" e nell'area da disegno rimarrà una "scia" dovuta a tutte le precedenti posizioni occupate dal cerchio, come nella seguente immagine;
+
+![p5.js - Esempio dell'animazione senza il disegno dello sfondo](/static/coding/web/p5js/interactivity01.png "p5.js - Esempio dell'animazione senza il disegno dello sfondo")
+
+In ambiente web è visualizzabile quest'ultimo esempio di animazione.
+
+<div id="example02"></div>
 
 ## Interazione con il mouse
 
