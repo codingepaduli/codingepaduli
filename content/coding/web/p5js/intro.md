@@ -200,10 +200,6 @@ Per spostare l'area da disegno all'interno del paragrafo, si utilizza la funzion
 createCanvas(100, 100).parent('area');
 ```
 
-### Dimensioni memorizzate dell'area da disegno
-
-Una volta creata l'area da disegno attraverso la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate rispettivamente nelle variabili ``width`` ed ``height``, in modo da essere sempre disponibili.
-
 ## Sistema di coordinate
 
 Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X,Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno'. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).

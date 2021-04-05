@@ -26,6 +26,29 @@ L'unione delle caratteristiche precedentemente elencate permette al programmator
 
 Di seguito vengono descritte le principali funzionalità di base che permettono di gestire lo stato e interagire con i principali dispositivi, rimandando alla documentazione ufficiale gli approfondimenti dei concetti avanzati.
 
+## Aggiornamento area da disegno
+
+Quando il programmatore definisce le dimensioni dell'area da disegno, utilizzando la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate automaticamente nelle rispettive variabili ``width`` ed ``height``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e sono continuamente aggiornate ad ogni cambiamento delle dimensioni dell'area.
+
+L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi per secondo (in inglese frame per second), il cui acronimo è noto ai video-giocatori con la sigla "fps"); Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto, ma richiede una maggiore potenza di elaborazione.
+
+Il primo fotogramma dell'area da disegno è disegnato eseguendo le istruzioni contenute nella funzione ``setup``, che è eseguita una sola volta. Le istruzioni contenute nella funzione ``draw`` sono eseguite ciclicamente per generare i fotogrammi successivi, in modo da ridisegnare continuamente l'area di lavoro. Per ottenere la frequenza di ridisegno, si può utilizzare la funzione ``frameRate()``, come nel seguente esempio:
+
+```javascript
+let freq = frameRate();
+```
+
+La stessa funzione permette anche di impostare la frequenza desiderata, indicandola come argomento (opzionale). Ad esempio, per impostare la frequenza a 60fps, si utilizza:
+
+```javascript
+frameRate(60);
+```
+
+La libreria grafica dichiara automaticamente due variabili che forniscono informazioni sullo stato di aggiornamento dell'area da disegno:
+
+- la variabile ``frameCount`` è un contatore nel quale viene salvato il numero di fotogrammi disegnati dall'inizio dell'animazione;
+- la variabile ``deltaTime`` contiene la differenza in millisecondi del tempo trascorso tra l'inizio del fotogramma precedente e l'inizio del fotogramma corrente.
+
 ## Animazioni
 
 Le animazioni sono basate principalmente sul cambiamento dello stato di uno o più oggetti grafici.
@@ -52,7 +75,7 @@ La dichiarazione della variabile può avvenire prima delle due funzioni ``setup`
 let x = 100;
 ```
 
-Per realizzare il movimento del cerchio verso destra, è necessario incrementare il valore della variabile ``x`` ad ogni operazione di ridisegno dell'area di lavoro. Ricordando che tutte le istruzioni contenute nella funzione ``draw`` sono eseguite ciclicamente e servono a ridisegnare continuamente l'area di lavoro, allora si intuisce facilmente che sia il disegno del cerchio, sia l'operazione di incremento della variabile ``x`` devono essere inserite nella funzione draw.
+Per realizzare il movimento del cerchio verso destra, è necessario incrementare il valore della variabile ``x`` ad ogni operazione di ridisegno dell'area di lavoro. Ricordando che l'aggiornamento dell'area di lavoro avviene nella funzione ``draw``, allora si intuisce facilmente che sia il disegno del cerchio, sia l'operazione di incremento della variabile ``x`` devono essere inserite all'interno di questa funzione.
 
 ```javascript
 circle(x, 150, 50);
@@ -145,34 +168,14 @@ In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
 <div id="interactivity02"></div>
 
+### Spostamento con il mouse di più figure unite
+
+Quando si intende disegnare più figure per poterle poi spostare contemporaneamente con il mouse, è necessario partire da un punto di riferimento (``x``, ``y``) dal quale disegnare tutte le figure. Ogni figura deve essere disegnata partendo da questo punto di riferimento e sommando uno spiazzamento per assegnare la posizione iniziale.
+
 ## Interazione con la tastiera
 
-La libreria p5.js memorizza nelle variabili ``key`` e ``keyCode`` il tasto premuto sulla tastiera. Il valore resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
+L'input della tastiera è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato tasto premuto e dal codice ASCII del tasto premuto, è memorizzato nelle variabili ``key`` e ``keyCode``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, ed il relativo valore resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
 
-La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma anche i tasti corrispondenti alle frecce, alla cancellazione, al tasto "invio", ecc..
+La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma comprende tutti i tasti, ad esempio il tasto "invio", il tasto di cancellazione, i tasti corrispondenti alle frecce, e tutti gli altri.
 
-La libreria p5.js cattura anche il fatto che un pulsante della tastiera sia stato cliccato o meno, e memorizza questa informazione nella variabile ``keyIsPressed``, che può assumere valore ``true`` o ``false``.
-
-Da prestare attenzione al fatto che la variabile ``keyIsPressed``, alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
-
-## Gestione aggiornamento area da disegno
-
-L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi (frame) per secondo (nota ai video-gamer con la sigla "fps"); Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto.
-
-Si può utilizzare la funzione ``frameRate()`` per ottenere la frequenza utilizzata. La funzione permette anche di impostare la frequenza desiderata passandola come argomento (opzionale). Ad esempio, per impostare la frequenza a 60fps, si utilizza:
-
-```javascript
-frameRate(60);
-```
-
-La variabile ``frameCount`` messa a disposizione dalla libreria è un contatore nel quale viene salvato il numero di fotogrammi disegnati dall'inizio dell'animazione.
-
-Anche la variabile ``deltaTime`` è messa a disposizione dalla libreria. Questa variabile contiene la differenza in millisecondi del tempo trascorso tra l'inizio del fotogramma precedente e l'inizio del fotogramma corrente.
-
-## Gestione dimensioni e rotazione schermo
-
-La grandezza dello schermo può variare da dispositivo a dispositivo. Inoltre con tablet e smartphone, l'utente può ruotare lo schermo.
-
-La variabile ``deviceOrientation`` indica se lo schermo è orientato in orizzontale o verticale;
-
-Le variabili ``windowWidth`` e ``windowHeight`` indicano rispettivamente larghezza ed altezza della finestra corrente.
+Sempre in maniera trasparente al programmatore, nella variabile ``keyIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) tasto sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
