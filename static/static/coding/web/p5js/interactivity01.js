@@ -1,9 +1,9 @@
 let x = 100;
 
 function setup() {
-    let canvasNode = document.querySelector('#example02');
+    let canvasNode = document.querySelector('#interactivity01');
     let cw = canvasNode.parentNode.clientWidth;
-    createCanvas(cw * 0.9, cw * 0.4).parent('example02');
+    createCanvas(cw * 0.9, cw * 0.4).parent('interactivity01');
 }
 
 function draw() {

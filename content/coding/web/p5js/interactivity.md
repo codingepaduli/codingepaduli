@@ -11,7 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/interactivity01.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/interactivity02.js"]
 ---
 
 # Interattività ed animazioni
@@ -83,34 +83,67 @@ Altra cosa interessante da notare, è che se si cancella l'istruzione per disegn
 
 In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
-<div id="example02"></div>
+<div id="interactivity01"></div>
 
 ## Interazione con il mouse
 
-L'input del mouse è gestito automaticamente dalla libreria p5.js, la quale, in maniera completamente trasparente al programmatore, memorizza nelle variabili ``mouseX`` e ``mouseY`` le coordinate X ed Y del mouse, quando questo si trova nell'area da disegno, e nella variabile ``mouseButton`` l'ultimo pulsante cliccato, che può essere identificato da una delle seguenti costanti:
+L'input del mouse è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato dalle coordinate X ed Y del cursore e dall'ultimo pulsante del mouse cliccato, è memorizzato nelle variabili ``mouseX``, ``mouseY`` e ``mouseButton``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e sono continuamente aggiornate ad ogni ridisegno dell'area.
+
+Allo stesso modo, nella variabile ``mouseIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) pulsante del mouse sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che al click assume valore ``true``, ma appena il click termina, assume immediatamente valore ``false``.
+
+Per quanto riguarda la variabile ``mouseButton``, l'ultimo pulsante cliccato può essere identificato da una delle seguenti costanti:
 
 - ``LEFT``: indica che l'ultimo pulsante cliccato è il pulsante sinistro del mouse;
 - ``RIGHT``: indica che l'ultimo pulsante cliccato è il pulsante destro del mouse;
 - ``CENTER``: indica che l'ultimo pulsante cliccato è il pulsante centrale del mouse.
 
-Allo stesso modo, nella variabile ``mouseIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) pulsante del mouse sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``.
+### Esempio di spostamento del cerchio utilizzando il mouse
 
-Si deve prestare particolare attenzione a questa variabile, dato che al click assume valore ``true``, ma appena il click termina, assume immediatamente valore ``false``.
+Partiamo dal disegno di un cerchio, realizzato attraverso il codice seguente:
 
-### Cursore del mouse
+```javascript
+circle(100, 150, 50);
+```
 
-E' possibile nascondere o impostare una nuova icona per il cursore del mouse. Le icone fanno parte del sistema operativo e quindi appaiono diverse su macchine e sistemi differenti.
+Per poter muovere il cerchio attraverso il mouse (quindi lungo l'asse X ed Y), è necessario memorizzare in una variabile, che chiameremo ``x``, la posizione della coordinata X del cerchio ed in una seconda variabile, che chiameremo ``y``, la posizione della coordinata Y del cerchio. Dato che non sappiamo ancora la posizione del mouse, possiamo inizializzare le due variabili con il valore zero, mediante la classica dichiarazione:
 
-Per nascondere il cursore, si utilizza la funzione ``noCursor``.
+```javascript
+let x = 0;
+let y = 0;
+```
 
-Per visualizzare nuovamente l'icona o per impostare una nuova icona del mouse si utilizza la funzione ``cursor``, che prende come argomento opzionale la costante che indica la nuova icona da usare. Tra le costanti disponibili ci sono:
+Per poter muovere il cerchio attraverso il mouse, è necessario assegnare alla variabile ``x`` la posizione X del mouse, che è memorizzata a sua volta nella variabile mouseX; Allo stesso modo, è necessario assegnare alla variabile ``y`` la posizione Y del mouse, che è memorizzata nella variabile mouseY;
 
-- ``ARROW``: indica l'icona a forma di freccia;
-- ``CROSS``: indica l'icona a forma di croce;
-- ``HAND``: indica l'icona a forma di mano;
-- ``MOVE``: indica l'icona che indica di effettuare uno spostamento;
-- ``TEXT``: indica l'icona a forma di cursore per l'inserimento testo;
-- ``WAIT``: indica l'icona a forma di clessidra d'attesa.
+```javascript
+x = mouseX;
+y = mouseY;
+circle(x, y, 50);
+```
+
+L'esempio completo è di seguito riportato:
+
+```javascript
+let x = 0;
+let y = 0;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+    x = mouseX;
+    y = mouseY;
+    circle(x, y, 50);
+}
+```
+
+L'utente può quindi spostare il cerchio utilizzando il mouse, come nella seguente immagine:
+
+![p5.js - Esempio di spostamento del cerchio utilizzando il mouse](/static/coding/web/p5js/interactivity02.png "p5.js - Esempio di spostamento del cerchio utilizzando il mouse")
+
+In ambiente web è visualizzabile quest'ultimo esempio di animazione.
+
+<div id="interactivity02"></div>
 
 ## Interazione con la tastiera
 
