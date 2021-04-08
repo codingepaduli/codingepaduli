@@ -170,7 +170,28 @@ In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
 ### Spostamento con il mouse di più figure unite
 
-Quando si intende disegnare più figure per poterle poi spostare contemporaneamente con il mouse, è necessario partire da un punto di riferimento (``x``, ``y``) dal quale disegnare tutte le figure. Ogni figura deve essere disegnata partendo da questo punto di riferimento e sommando uno spiazzamento per assegnare la posizione iniziale.
+Quando si intende disegnare più figure per poterle poi spostare contemporaneamente con il mouse, è necessario partire da un punto di riferimento (``x``, ``y``) dal quale disegnare tutte le figure. La posizione di ogni figura deve essere calcolata partendo da questo punto di riferimento e sommando uno spiazzamento per collocarla correttamente.
+
+Partiamo ad esempio dal simbolo dell'infinito, una figura composta da due cerchi:
+
+```javascript
+circle(100, 100, 50);
+circle(200, 100, 50);
+```
+
+Se si vuole spostare entrambi i cerchi partendo dal punto centrale del primo cerchio, allora il punto di riferimento sarà (``x``, ``y``) = (100, 100); A partire da questo punto, entrambi i cerchi devono essere disegnati con uno spiazzamento. Le coordinate del primo cerchio sono esattamente quelle del punto di riferimento, quindi non c'è spiazzamento, oppure lo si può considerare pari a zero su entrambi gli assi. Le coordinate del secondo cerchio, invece, devono essere calcolate a partire dal punto di riferimento, quindi alla coordinata x=100 deve essere aggiunto uno spiazzamento di altri 100 punti. Il codice risultante sarà il seguente:
+
+```javascript
+circle(100 + 0, 100 + 0, 50);
+circle(100 + 100, 100 + 0, 50);
+```
+
+Per poter spostare questa figura con il mouse, si deve sostituire al punto di riferimento (``x``, ``y``) = (100, 100) le coordinate del mouse, quindi sarà (``x``, ``y``) = (mouseX, mouseY):
+
+```javascript
+circle(mouseX + 0, mouseY + 0, 50);
+circle(mouseX + 100, mouseY + 0, 50);
+```
 
 ## Interazione con la tastiera
 

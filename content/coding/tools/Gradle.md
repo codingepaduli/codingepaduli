@@ -64,11 +64,12 @@ Source package (default: gradle-example): example
 
 ### Gradle wrapper
 
-La creazione di un progetto basato su Gradle comporta anche la creazione di un "wrapper" di Gradle, salvato nel pacchetto java ``gradle/wrapper/gradle-wrapper.jar`` e di un corrispondente file di proprietà, salvato nel file ``gradle/wrapper/gradle-wrapper.properties``, che tra le varie opzioni indica la versione di Gradle utilizzata.
+La creazione di un progetto basato su Gradle comporta anche la creazione di un "wrapper" di Gradle, salvato nel pacchetto ``gradle/wrapper/gradle-wrapper.jar``, e di un corrispondente file di proprietà, salvato nel file ``gradle/wrapper/gradle-wrapper.properties``, che tra le varie opzioni indica la versione di Gradle utilizzata.
 
 Tutti gli utenti che non hanno installato Gradle possono, quindi, utilizzare il "wrapper" per eseguire i task del progetto, usando il comando ``gradlew`` (per Linux) o ``gradlew.bat`` (per Windows).
 
 L'utente può in qualsiasi momento aggiornare la versione di Gradle da utilizzare, seguendo una delle due strade:
+
 - aggiornare manualmente la voce ``distributionUrl`` presente nel file ``gradle/wrapper/gradle-wrapper.properties``;
 - ricreare il "wrapper" presente nel progetto, specificando la versione di Gradle desiderata, utilizzando il comando:
 

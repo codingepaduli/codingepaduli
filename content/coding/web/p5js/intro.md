@@ -323,7 +323,6 @@ Il risultato è riportato di seguito:
 
 ![p5.js - Editor online](/static/coding/web/p5js/api-doc-example.png "p5.js - Esempio risultante dalla documentazione delle API")
 
-
 ## Primitive per la grafica 2D
 
 Le primitive grafiche, nella moderna computer grafica, sono le funzioni che realizzano le figure geometriche più elementari, come punti, linee e triangoli. I poligoni e curve sono considerate primitive, anche se possono essere realizzate combinando altre primitive. Oggetti e scene più complesse sono realizzati combinando l'uso di più primitive.
