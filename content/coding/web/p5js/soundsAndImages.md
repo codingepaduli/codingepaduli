@@ -15,7 +15,7 @@ customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js"]
 
 # Suoni ed immagini
 
-Il cervello umano interpreta come **suono** la variazione di pressione dell'aria generata da un corpo in oscillazione e  percepita attraverso l'orecchio.
+Il cervello umano interpreta come **suono** la variazione di pressione dell'aria generata da un corpo in oscillazione e percepita attraverso l'orecchio.
 
 In un programma, suoni ed immagini sono gestiti come risorse esterne salvate sotto forma di file ed accessibili attraverso un percorso assoluto o relativo. Quando un programma viene eseguito, queste risorse devono essere caricate in memoria, ma in questa fase si può incorrere in alcune problematiche, ad esempio le risorse possono essere non accessibili (perché spostate o cancellate) oppure è necessario un certo intervallo di tempo affinché siano trasmesse attraverso la rete (che può essere lenta o temporaneamente non disponibile).
 
@@ -116,7 +116,7 @@ Partendo dall'oggetto ``sound`` descritto in precedenza, per verificare se un fi
 let playing = sound.isPlaying();
 ```
 
-Per verificare se un file è in corso di riproduzione continua si utilizza il metodo `` isLooping``, che non prevede argomenti, come nell'esempio seguente:
+Per verificare se un file è in corso di riproduzione continua si utilizza il metodo ``isLooping``, che non prevede argomenti, come nell'esempio seguente:
 
 ```javascript
 let looping = sound.isLooping();
