@@ -170,27 +170,64 @@ In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
 ### Spostamento con il mouse di più figure unite
 
-Quando si intende disegnare più figure per poterle poi spostare contemporaneamente con il mouse, è necessario partire da un punto di riferimento (``x``, ``y``) dal quale disegnare tutte le figure. La posizione di ogni figura deve essere calcolata partendo da questo punto di riferimento e sommando uno spiazzamento per collocarla correttamente.
+Quando si intende disegnare più figure per poterle poi spostare contemporaneamente con il mouse, è necessario partire da un punto di riferimento (``x``, ``y``) dal quale disegnarle. La posizione di ogni figura deve essere calcolata partendo da questo punto di riferimento e sommando uno spiazzamento per collocarla correttamente.
 
 Partiamo ad esempio dal simbolo dell'infinito, una figura composta da due cerchi:
 
 ```javascript
-circle(100, 100, 50);
-circle(200, 100, 50);
+circle(100, 100, 100);
+circle(200, 100, 100);
 ```
 
-Se si vuole spostare entrambi i cerchi partendo dal punto centrale del primo cerchio, allora il punto di riferimento sarà (``x``, ``y``) = (100, 100); A partire da questo punto, entrambi i cerchi devono essere disegnati con uno spiazzamento. Le coordinate del primo cerchio sono esattamente quelle del punto di riferimento, quindi non c'è spiazzamento, oppure lo si può considerare pari a zero su entrambi gli assi. Le coordinate del secondo cerchio, invece, devono essere calcolate a partire dal punto di riferimento, quindi alla coordinata x=100 deve essere aggiunto uno spiazzamento di altri 100 punti. Il codice risultante sarà il seguente:
+Se si vuole spostare entrambi i cerchi partendo dal punto centrale del primo cerchio, allora il punto di riferimento sarà (``x``, ``y``) = (100, 100); A partire da questo punto, entrambi i cerchi devono essere disegnati con uno spiazzamento. Le coordinate del primo cerchio sono esattamente quelle del punto di riferimento, quindi lo spiazzamento lo si può considerare pari a zero su entrambi gli assi. Le coordinate del secondo cerchio, invece, devono essere calcolate a partire dal punto di riferimento, quindi alla coordinata x=100 deve essere aggiunto uno spiazzamento di altri 100 punti. Il codice risultante sarà il seguente:
 
 ```javascript
-circle(100 + 0, 100 + 0, 50);
-circle(100 + 100, 100 + 0, 50);
+circle(100 + 0, 100 + 0, 100);
+circle(100 + 100, 100 + 0, 100);
 ```
 
 Per poter spostare questa figura con il mouse, si deve sostituire al punto di riferimento (``x``, ``y``) = (100, 100) le coordinate del mouse, quindi sarà (``x``, ``y``) = (mouseX, mouseY):
 
 ```javascript
-circle(mouseX + 0, mouseY + 0, 50);
-circle(mouseX + 100, mouseY + 0, 50);
+circle(mouseX + 0, mouseY + 0, 100);
+circle(mouseX + 100, mouseY + 0, 100);
+```
+
+Se si vuole spostare queste figure partendo dal punto di unione (``x``, ``y``) = (150, 100), allora il primo cerchio avrà uno spiazzamento sull'asse X di -50 punti, mentre il secondo avrà uno spiazzamento di +50 punti.
+
+```javascript
+circle(mouseX - 50, mouseY + 0, 100);
+circle(mouseX + 50, mouseY + 0, 100);
+```
+
+Se si vuole spostare queste figure partendo dal punto centrale del secondo cerchio (``x``, ``y``) = (200, 100), allora il primo cerchio avrà uno spiazzamento sull'asse X di -100 punti, mentre il secondo avrà uno spiazzamento pari a zero.
+
+```javascript
+circle(mouseX - 100, mouseY + 0, 100);
+circle(mouseX + 0, mouseY + 0, 100);
+```
+
+## Calcolo della distanza tra due punti
+
+Il calcolo della distanza tra due punti del piano è un'operazione fondamentale per verificare se due figure collidono.
+
+Il teorema di Pitagora permette una visualizzazione grafica molto intuitiva della formula utilizzata per calcolare la distanza tra due punti (x1, y1) ed (x2, y2). Sul famoso triangolo rettangolo, la base è calcolata dalla differenza tra le ascisse dei due punti, quindi (x2-x1), mentre l'altezza è calcolata come differenza tra le ordinate dei due punti, quindi (y2-y1). L'ipotenusa è quindi calcolata con la nota formula: "radice quadrata della somma tra il quadrato della base e il quadrato dell'altezza".
+
+![p5.js - Distanza tra due punti](/static/coding/web/p5js/distanzaPunti.png "p5.js - Distanza tra due punti")
+
+I tre passi per implementare la formula sono quindi i seguenti:
+
+```javascript
+let differenzaAscisse = x2 - x1;
+let differenzaOrdinate = y2 - y1;
+let distanza = Math.sqrt( differenzaAscisse^2 + differenzaOrdinate^2);
+```
+
+Un'osservazione importante è che se due punti si trovano sulla stessa ascissa, allora la differenza tra le ascisse è pari a zero e il calcolo della distanza si riduce alla radice quadrata del quadrato della differenza delle ordinate. Ma le operazioni di calcolo del quadrato e della radice quadrata sono l'una l'inverso dell'altra, per cui si annullano a vicenda e, quindi, la distanza sarà semplicemente la differenza tra le ordinate espressa in valore assoluto:
+
+```javascript
+let differenzaOrdinate = y2 - y1;
+let distanza = Math.sqrt(differenzaOrdinate^2);
 ```
 
 ## Interazione con la tastiera
