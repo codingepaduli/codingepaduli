@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-03-19
-publishdate: 2021-03-19
-lastmod: 2021-03-19
+date: 2021-04-16
+publishdate: 2021-04-16
+lastmod: 2021-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -38,6 +38,10 @@ summary: "Set di link relativi al coding"
 [minimaxir/big-list-of-naughty-strings](https://github.com/minimaxir/big-list-of-naughty-strings) - The Big List of Naughty Strings is a list of strings which have a high probability of causing issues when used as user-input data.\
 [SharePad.io](https://sharepad.io/) -  A collaborative code editor and compiler\
 [Deskreen](https://deskreen.com/lang-en) - Turn any device into a secondary screen\
+
+### C/C++
+
+[Static and dynamic libraries in C](https://opensource.com/article/21/2/linux-software-libraries) - A guide to understanding Linux software libraries in C\
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
@@ -141,6 +145,7 @@ summary: "Set di link relativi al coding"
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 [Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
 [This Anime Does Not Exist](https://thisanimedoesnotexist.ai/) - \
+[Automating my job by using GPT-3 to generate database-ready SQL to answer business questions](https://blog.seekwell.io/gpt3) - \
 
 ### Database SQL e NoSql - GraphQL
 
@@ -154,6 +159,7 @@ summary: "Set di link relativi al coding"
 [SWAPI GraphQL API](https://graphql.org/swapi-graphql) - A graphical interactive in-browser GraphQL IDE\
 [Combine GraphQL with Java to build a flexible and modern API | Opensource.com](https://opensource.com/article/20/8/graphql-quarkus) - \
 [We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql) - Critique of SQL\
+[Dolt](https://github.com/dolthub/dolt#dolt) - a SQL database that you can fork, clone, branch, merge, push and pull just like a git repository\
 
 ### Giochi
 
@@ -170,7 +176,6 @@ summary: "Set di link relativi al coding"
 ### GIT
 
 [Oh, shit, git!](http://ohshitgit.com/) - \
-[Git basics](https://areknawo.com/git-basics-the-only-introduction-you-will-ever-need/) - the only introduction you'll ever need!\
 [The Smart Ways to Correct Mistakes in Git | CSS-Tricks](https://css-tricks.com/the-smart-ways-to-correct-mistakes-in-git/) - \
 [Setting Up Git Identities · Micah Henning](https://www.micah.soy/posts/setting-up-git-identities/) - \
 [5 Git Commands to Know Just After You Get the Basics | Coders Bible](https://codersbible.com/5-git-commands-to-know-just-after-you-get-the-basics/) - \
@@ -200,6 +205,7 @@ summary: "Set di link relativi al coding"
 [An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 [JEP 392: Packaging Tool for packaging self-contained Java applications](https://openjdk.java.net/jeps/392) - \
+[DynamicJasper library](http://dynamicjasper.com/features/) - \
 
 #### JDBC e JPA
 
@@ -237,13 +243,13 @@ summary: "Set di link relativi al coding"
 
 [Mandrel](https://www.infoq.com/news/2020/07/mandrel-graalvm/) - Red Hat Makes Java Native\
 [CheerpJ](https://www.infoworld.com/article/3536576/cheerpj-java-to-javascript-compiler-boosts-exception-handling-native-methods.html) - the CheerpJ compiler converts Java clients to HTML, JavaScript, and WebAssembly\
-[DynamicJasper library](http://dynamicjasper.com/features/) - \
 
 ### Linux
 
 [The Debian Administrator's Handbook](https://debian-handbook.info/) - \
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
+[Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [50 UNIX / Linux Sysadmin Tutorials](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - \
 [Capitolo 4. Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
@@ -368,6 +374,8 @@ summary: "Set di link relativi al coding"
 
 #### Enhancing privacy
 
+[DuckDuckGo HTML version](https://html.duckduckgo.com/html) - a search engine without JavaScript\
+[Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
 [7 WhatsApp alternatives that won’t share your data with Facebook](https://protonmail.com/blog/whatsapp-alternatives/) - \
 [How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
 [Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
@@ -387,9 +395,11 @@ summary: "Set di link relativi al coding"
 [The Brave web browser is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - \
 [Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser](https://github.com/brave/brave-browser/issues/9929) - \
 [Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
+[Invisible Web Tax](https://blog.mozilla.org/blog/2018/07/11/royalty-free-web-video-codecs/) - Modern codecs like AV1 can bring better quality video to the open web\
 
 ### Scrivere documenti e conversione tra formati
 
+[Diagram maker for developers](https://www.gleek.io/) - \
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
 [Getting started with Docbook | Opensource.com](https://opensource.com/article/17/9/docbook) - \
@@ -410,6 +420,7 @@ summary: "Set di link relativi al coding"
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
 [charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
 [curlpipe/ox](https://github.com/curlpipe/ox) - An independent Rust text editor that runs in your terminal!\
+[trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
 
 #### Hugo static site generator
 
@@ -431,6 +442,7 @@ summary: "Set di link relativi al coding"
 [Is it possible to insert HTML code in Markdown content?](https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/6) - support - HUGO\
 [How to start a blog using Hugo](https://flaviocopes.com/start-blog-with-hugo/) - \
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
+[Remarkbox](https://www.remarkbox.com/) - Hosted Comments Service\
 [Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
 
 #### Pandoc
@@ -481,7 +493,6 @@ summary: "Set di link relativi al coding"
 [Nodesign.dev | A collection of tools for developers who have little to no artistic talent](https://nodesign.dev/) - \
 [How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - \
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
-[Iconduck](https://iconduck.com/licenses) - Open source icons\
 
 #### HTML
 
@@ -526,6 +537,9 @@ summary: "Set di link relativi al coding"
 [Nodesign.dev | Design less develop more. 178 tools added..more on the way.](https://nodesign.dev/) - \
 [How to Favicon in 2021: Six files that fit most needs — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) - \
 [Bootstrap Shuffle | Create Bootstrap templates in minutes](https://bootstrapshuffle.com/) - \
+[white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) - CSS: Cascading Style Sheets | MDN\
+[Iconduck](https://iconduck.com/licenses) - Open source icons\
+[iconify](https://www.iconify.pro/) - app icon generator\
 
 #### JavaScript
 

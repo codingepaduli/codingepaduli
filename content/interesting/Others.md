@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-03-19
-publishdate: 2021-03-19
-lastmod: 2021-03-19
+date: 2021-04-16
+publishdate: 2021-04-16
+lastmod: 2021-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -64,6 +64,7 @@ summary: "Set di link interessanti"
 [Mathematicians Report New Discovery About the Dodecahedron | Quanta Magazine](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - \
 [Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
 [An Interactive Introduction to Fourier Transforms](https://github.com/Jezzamonn/fourier) - \
+[Graphtoy](https://graphtoy.com/) - create graph from math formulas\
 
 ### Medicine
 
@@ -71,24 +72,26 @@ summary: "Set di link interessanti"
 [Harry Perkins Institute of Medical Research study finds honeybee venom rapidly kills aggressive breast cancer cells](https://www.abc.net.au/news/2020-09-01/new-aus-research-finds-honey-bee-venom-kills-breast-cancer-cells/12618064) - \
 [COVID-19](https://www.quantamagazine.org/how-do-animal-viruses-like-coronavirus-jump-species-20200225/) - The Animal Origins of Coronavirus and Flu\
 [COVID-19](https://www.physiciansweekly.com/the-neuroinvasive-potential-of-sars-cov2-may-be-at-least-partially-responsible-for-the-respiratory-failure-of-covid-19-patients/) - Neurological disease from Covid-19\
-[How does coronavirus kill?](https://www.sciencemag.org/news/2020/04/how-does-coronavirus-kill-clinicians-trace-ferocious-rampage-through-body-brain-toes) - COVID-19 do a ferocious rampage through the body and it can extend to many organs including the heart and blood vessels, kidneys, gut, and brain\
+[COVID-19](https://www.ilfattoquotidiano.it/2020/11/23/ospedali-san-paolo-e-carlo-parla-un-medico-inumano-noi-e-i-pazienti-abbandonati-in-una-vera-bolgia-ammassati-come-carne-da-macello/6012418/) - Ospedali San Paolo e Carlo, parla un medico: 'Inumano, noi e i pazienti abbandonati in una vera bolgia, ammassati come carne da macello' - Il Fatto Quotidiano\
+[COVID-19](https://elemental.medium.com/a-supercomputer-analyzed-covid-19-and-an-interesting-new-theory-has-emerged-31cb8eba9d63) - A Supercomputer's Covid-19 Analysis Yields a New Way to Understand the Virus\
+[COVID-19](https://www.sciencemag.org/news/2020/04/how-does-coronavirus-kill-clinicians-trace-ferocious-rampage-through-body-brain-toes) - How does coronavirus kill? Covid-19 do a ferocious rampage through the body and it can extend to many organs including the heart and blood vessels, kidneys, gut, and brain\
 [Influenza spagnola](https://it.wikipedia.org/wiki/Influenza_spagnola) - Pandemia influenzale causata dal virus H1N1\
 [Artificial intelligence yields new antibiotic](https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220) - A deep-learning model identifies a powerful new drug that can kill many species of antibiotic-resistant bacteria\
-[A Supercomputer's Covid-19 Analysis Yields a New Way to Understand the Virus](https://elemental.medium.com/a-supercomputer-analyzed-covid-19-and-an-interesting-new-theory-has-emerged-31cb8eba9d63) - \
 [Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
-[A whopping 91% of plastic isn't recycled, say national geographic](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - \
-[Japan to release Fukushima's contaminated water into sea: reports | Reuters](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - \
-[The Earth Is Pulsating Every 26 Seconds, and Seismologists Don't Agree Why](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - \
+[A whopping 91% of plastic isn't recycled](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - say national geographic\
+[Japan to release Fukushima's contaminated water into sea](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - reports | Reuters\
+[The Earth Is Pulsating Every 26 Seconds](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - and Seismologists Don't Agree Why\
 [Diluting blood plasma rejuvenates tissue, reverses aging in mice](https://www.sciencedaily.com/releases/2020/06/200615115724.htm) - Plasma exchange could be the key to unlocking the body's regenerative capacities\
-[Ospedali San Paolo e Carlo, parla un medico: 'Inumano, noi e i pazienti abbandonati in una vera bolgia, ammassati come carne da macello'](https://www.ilfattoquotidiano.it/2020/11/23/ospedali-san-paolo-e-carlo-parla-un-medico-inumano-noi-e-i-pazienti-abbandonati-in-una-vera-bolgia-ammassati-come-carne-da-macello/6012418/) - Il Fatto Quotidiano\
-[The poison found in everyone, even unborn babies – and who is responsible for it | Environment | The Guardian](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - \
-[Photocatalyst that can Split Water into Hydrogen and oxygen at a Quantum Efficiency Close to 100%](https://fuelcellsworks.com/news/photocatalyst-that-can-split-water-into-hydrogen-and-oxygen-at-a-quantum-efficiency-close-to-100/) - FuelCellsWorks\
+[The poison found in everyone, even unborn babies](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - and who is responsible for it | Environment | The Guardian\
+[FuelCellsWorks](https://fuelcellsworks.com/news/photocatalyst-that-can-split-water-into-hydrogen-and-oxygen-at-a-quantum-efficiency-close-to-100/) - Photocatalyst that can Split Water into Hydrogen and oxygen at a Quantum Efficiency Close to 100%\
+[Reversing The Aging Clock With Epigenetic Reprogramming](https://www.bio-itworld.com/news/2021/01/13/reversing-the-aging-clock-with-epigenetic-reprogramming) - \
 
 ### Tech
 
-[Learning Music (Beta)](https://learningmusic.ableton.com/) - \
+[OpenLitterMap](https://openlittermap.com/) - Share what you see about trash, litter, brands and plastic pollution\
+[Learning Music (Beta)](https://learningmusic.ableton.com/) - Learn making music\
 [Alcohol breath tests are often unreliable](https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html) - New York Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them\
-[DRM Broke Its Promise – DRM like feudalism](https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/) - \
+[DRM Broke Its Promise](https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/) - DRM like feudalism\
 [QiFi](https://qifi.org/) - WiFi QR Code Generator\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
