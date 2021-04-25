@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-04-16
-publishdate: 2021-04-16
-lastmod: 2021-04-16
+date: 2021-04-29
+publishdate: 2021-04-29
+lastmod: 2021-04-29
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -45,6 +45,7 @@ summary: "Set di link interessanti"
 [For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
 [Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - \
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
+[The muon is more magnetic than predicted | Science | AAAS](https://www.sciencemag.org/news/2021/04/particle-mystery-deepens-physicists-confirm-muon-more-magnetic-predicted) - \
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
@@ -107,6 +108,7 @@ summary: "Set di link interessanti"
 [Remote learning via Radio instruction in the 1937 polio epidemic](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - \
 [La stella rossa](https://it.wikipedia.org/wiki/La_stella_rossa) - un romanzo di fantascienza dello scrittore russo Aleksandr Bogdanov, \
 [The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
+[The Little-Known Story of Violet Gibson, the Irish Woman Who Shot Mussolini | Smart News | Smithsonian Magazine](https://www.smithsonianmag.com/smart-news/1926-irish-woman-shot-benito-mussolini-and-almost-altered-history-forever-180977286/) - \
 
 ### Games
 

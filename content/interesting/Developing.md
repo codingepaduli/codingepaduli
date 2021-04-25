@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-04-16
-publishdate: 2021-04-16
-lastmod: 2021-04-16
+date: 2021-04-29
+publishdate: 2021-04-29
+lastmod: 2021-04-29
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -45,6 +45,7 @@ summary: "Set di link relativi al coding"
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
+[paiza.IO](https://paiza.io/en/) - Online editors and compilers for PHP/Java/C++... \
 [What is Istio?](https://opensource.com/article/18/9/what-istio) - a service mesh can help to manage your microservice deployments - Opensource.com\
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
@@ -112,6 +113,7 @@ summary: "Set di link relativi al coding"
 [My first day using Ansible | Opensource.com](https://opensource.com/article/20/10/first-day-ansible) - \
 [Getting started with Ansible | XLAB Steampunk blog](https://steampunk.si/blog/getting-started-with-ansible/) - \
 [4 lines of code to improve your Ansible play | Opensource.com](https://opensource.com/article/21/1/improve-ansible-play) - \
+[5 everyday sysadmin tasks to automate with Ansible | Opensource.com](https://opensource.com/article/21/3/ansible-sysadmin) - \
 
 #### PowerShell
 
@@ -160,6 +162,7 @@ summary: "Set di link relativi al coding"
 [Combine GraphQL with Java to build a flexible and modern API | Opensource.com](https://opensource.com/article/20/8/graphql-quarkus) - \
 [We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql) - Critique of SQL\
 [Dolt](https://github.com/dolthub/dolt#dolt) - a SQL database that you can fork, clone, branch, merge, push and pull just like a git repository\
+[Best practices for writing SQL queries](https://www.metabase.com/learn/building-analytics/sql-templates/sql-best-practices) - \
 
 ### Giochi
 
@@ -172,6 +175,7 @@ summary: "Set di link relativi al coding"
 [Build a game this November with GitHub Game Off](https://github.blog/2020-10-27-github-game-off-2020/) - The GitHub Blog\
 [Learn the basics of Raycasting with JavaScript](https://courses.pikuma.com/courses/raycasting) - Learn the mathematics behind the ray casting technique used in the Wolfenstein 3D source code and implement it using JavaScript -pikuma course\
 [Introduction](https://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html) - Computer Graphics from scratch - Gabriel Gambetta\
+[Kaboom!!](https://replit.com/kaboom) - a fun JavaScript game programming library & environment\
 
 ### GIT
 
@@ -183,6 +187,7 @@ summary: "Set di link relativi al coding"
 [Make advanced Git tasks simple with Lazygit | Opensource.com](https://opensource.com/article/20/3/lazygit) - \
 [Install hub to make your Git command-line as fully featured as GitHub | Opensource.com](https://opensource.com/article/20/3/github-hub) - \
 [Tweak your Git config for multiple user IDs | Opensource.com](https://opensource.com/article/20/10/git-config) - \
+[Experiment on your code freely with Git worktree | Opensource.com](https://opensource.com/article/21/4/git-worktree) - \
 [ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
 
 ### Java
@@ -375,16 +380,17 @@ summary: "Set di link relativi al coding"
 #### Enhancing privacy
 
 [DuckDuckGo HTML version](https://html.duckduckgo.com/html) - a search engine without JavaScript\
-[Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
 [7 WhatsApp alternatives that won’t share your data with Facebook](https://protonmail.com/blog/whatsapp-alternatives/) - \
 [How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
 [Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
 [Ok Google: please publish your DKIM secret keys – A Few Thoughts on Cryptographic Engineering](https://blog.cryptographyengineering.com/2020/11/16/ok-google-please-publish-your-dkim-secret-keys/) - \
+[LibreDNS](https://libredns.gr/) - a public encrypted DNS service that people can use to maintain the secrecy of their DNS traffic, but also circumvent censorship.\
 [DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
 [DNS Privacy with Oblivious DoH in 1.1.1.1](https://blog.cloudflare.com/oblivious-dns/) - \
 [What Is the Business Model for DuckDuckGo?](https://spreadprivacy.com/duckduckgo-revenue-model/) - \
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
 [De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
+[Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
 [Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
 [Firefox to add Tor Browser anti-fingerprinting technique called letterboxing](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - \
 [File Sharing sicuro e criptato con Tor e il Tool OnionShare 2](https://www.lffl.org/2019/02/file-sharing-tor-onionshare-2.html) - \
@@ -396,6 +402,7 @@ summary: "Set di link relativi al coding"
 [Clearing "History" doesn't remove "Top Sites" in the homepage. · Issue #9929 · brave/brave-browser](https://github.com/brave/brave-browser/issues/9929) - \
 [Running in Circles](https://citizenlab.ca/2020/12/running-in-circles-uncovering-the-clients-of-cyberespionage-firm-circles/) - Uncovering the Clients of Cyberespionage Firm Circles, a surveillance firm that reportedly exploits weaknesses in the global mobile phone system to snoop on calls, texts, and the location of phones around the globe - The Citizen Lab\
 [Invisible Web Tax](https://blog.mozilla.org/blog/2018/07/11/royalty-free-web-video-codecs/) - Modern codecs like AV1 can bring better quality video to the open web\
+[Flatpak](https://flatkill.org/2020/) - a security nightmare\
 
 ### Scrivere documenti e conversione tra formati
 
@@ -463,6 +470,13 @@ summary: "Set di link relativi al coding"
 [text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
 [Illustrated jq tutorial](https://mosermichael.github.io/jq-illustrated/dir/content.html) - \
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
+
+### UML, architetture ed ingegneria del software
+
+[Class Visualizer](http://www.class-visualizer.net/index.html) - interactive class diagrams generator from Java bytecode and Kotlin bytecode\
+[gleek.io](https://www.gleek.io/) - Diagram maker for developers\
+[eUML2 Modeler](http://www.soyatec.com/euml2/com.soyatec.uml.doc/reverse/reverse/index.html) - an UML flavour to java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
+[eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
 
 ### Web, web-app e servizi rest
 
@@ -538,6 +552,7 @@ summary: "Set di link relativi al coding"
 [How to Favicon in 2021: Six files that fit most needs — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) - \
 [Bootstrap Shuffle | Create Bootstrap templates in minutes](https://bootstrapshuffle.com/) - \
 [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) - CSS: Cascading Style Sheets | MDN\
+[-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp) - CSS: Cascading Style Sheets | MDN\
 [Iconduck](https://iconduck.com/licenses) - Open source icons\
 [iconify](https://www.iconify.pro/) - app icon generator\
 
