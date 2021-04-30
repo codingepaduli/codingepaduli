@@ -21,6 +21,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs"
         description: "Articolo (in inglese) sulla scelta e sulla creazione delle icone del sito web nel 2021"
+    -   title: "My current HTML template"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.matuzo.at/blog/html-boilerplate/"
+        description: "Articolo (in inglese) sugli elementi basilari utilizzati per construire un template di una pagina HTML"
 ---
 
 # Metadati
@@ -38,7 +42,7 @@ Tutti i metadati devono essere contenuti nel tag ``head`` della pagina web, ad e
 I seguenti metadati sono obbligatori e devono essere inseriti rispettivamente in prima, seconda e terza posizione tra i metadati della pagina web:
 
 1. la codifica della pagina web, per la quale si rimanda all'apposito capitolo sulla codifica Unicode e UTF-8;
-2. la "viewport", che indica come adattare la pagina web per far si che sia correttamente visibile sugli schermi dei vari dispositivi, dalle smart TV agli smartphone. Tecnicamente un sito web con le pagine che si adattano agli schermi dei vari dispositivi è detto **responsive**. Per un dettaglio maggiore sull'argomento si rimanda alle specifiche HTML;
+2. la "viewport", che indica come adattare la pagina web per far si che sia correttamente visibile sugli schermi dei vari dispositivi, dalle smart TV agli smartphone. Tecnicamente un sito web con le pagine che si adattano agli schermi dei vari dispositivi è detto **responsive**. Per un dettaglio maggiore sull'argomento si rimanda alle specifiche HTML; <!-- Nota 1: Nel viewport non è più necessario includere shrink-to-fit=no, dato che l'opzione è relativa ai vecchi dispositivi iOS 9 Nota 2: non è più necessario inserire per Internet Explorer X-UA-Compatible : ie=edge -->
 3. il titolo del documento.
 
 Il seguente codice, contenente i metadati obbligatori e comprensivo dell'etichetta ``head``, è da includere in tutte le pagine web:
@@ -46,7 +50,7 @@ Il seguente codice, contenente i metadati obbligatori e comprensivo dell'etichet
 ```html
 <head>
     <!-- metadati obbligatori, vanno nelle prime posizioni -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page Title</title>
 </head>
@@ -76,9 +80,17 @@ Le informazioni per i social network sono descritte attraverso l'Open Graph prot
 I social estraggono le informazioni di una pagina web dalle seguenti chiavi:
 
 ```html
-    <meta property="og:title" content="Page Title">
-    <meta property="og:image" content="https://example.com/image.jpg">
+    <!--indica il contenuto che si condivide, scegliendo tra:
+        website, article o video.movie -->
+    <meta property="og:type" content="website">
+    <!--indica il linguaggio utilizzato -->
+    <meta property="og:locale" content="it_IT">
+    <!--indica le informazioni sulla pagina web -->
+    <meta property="og:title" content="Titolo pagina">
     <meta property="og:description" content="Descrizione pagina">
+    <!--indica l'immagine principale della pagina con relativa descrizione -->
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:image:alt" content="Descrizione immagine">
 ```
 
 Twitter fa eccezione, perché usa le Twitter Card, una tecnologia proprietaria, a cui si rimanda per approfondimenti.
