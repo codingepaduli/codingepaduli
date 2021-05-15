@@ -28,7 +28,7 @@ references:
 
 [p5.js](https://p5js.org "Sito web di p5.js") è una libreria grafica open-source, focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è, di fatto, anche un "porting" della piattaforma [Processing](https://processing.org/ "Sito web di processing") in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org "Sito web della Processing Foundation"), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
-Numerose librerie estendono p5.js, aggiungendo strumenti per la gestione audio, per la gestione grafica in 2, 3 ed anche più dimensioni, per la comunicazione con diversi dispositivi, quali Arduino, per la gestione della geo-localizzazione, delle mappe, della webcam ed anche per l'applicazione di algoritmi di intelligenza artificiale.
+Esistono inoltre numerose estensioni che aggiungono strumenti per la gestione audio, per la gestione grafica in 3 dimensioni,  per la gestione della geo-localizzazione, delle mappe, della webcam, per l'applicazione di algoritmi di intelligenza artificiale e per la comunicazione con diversi dispositivi basati su micro-controllore, come Arduino.
 
 ## Editor online per p5.js
 
@@ -36,7 +36,7 @@ Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità del
 
 ![p5.js - Editor online](/static/coding/web/p5js/OnlineEditor.png "p5.js - Editor online")
 
-L'interfaccia grafica presenta i menù tipici dei classici ambienti di sviluppo, quali la barra dei pulsanti, per avviare e fermare il proprio lavoro, l'area del codice, per la scrittura del codice JavaScript, l'area di visualizzazione, per visualizzare il lavoro realizzato e la console per visualizzare i messaggi di informazione, di avviso e di errore.
+L'interfaccia grafica presenta i menù tipici dei classici ambienti di sviluppo, quali la barra dei pulsanti, per avviare e fermare il proprio lavoro, l'area del codice, per la scrittura del codice JavaScript, l'area di anteprima, per visualizzare il lavoro realizzato e la console per visualizzare i messaggi di informazione, di avviso e di errore.
 
 L'area del codice si presenta con un esempio minimale di programma, valido come punto di partenza e descritto successivamente.
 
@@ -100,13 +100,15 @@ L'esempio completo della pagina web è il seguente:
 </html>
 ```
 
-## Primo programma
+## Prime funzioni
 
 Sia che si utilizzi la pagina web, sia che si utilizzi l'editor online, i programmi in p5.js devono sempre dichiarare le due funzioni principali ``setup`` e ``draw``.
 
 Le istruzioni contenute nella funzione ``setup`` sono eseguite una sola volta e servono ad impostare gli strumenti e le condizioni iniziali.
 
 Le istruzioni contenute nella funzione ``draw`` sono eseguite ciclicamente e servono a ridisegnare continuamente l'area di lavoro.
+
+Come si può notare, sia le istruzioni iniziali, sia le istruzioni di disegno ciclico sono racchiuse tra le parentesi graffe ``{`` e ``}`` che indicano l'inizio e la fine del blocco istruzioni.
 
 Di seguito sono descritte le istruzioni eseguite dal primo programma d'esempio, che per comodità è riportato di seguito:
 
@@ -123,57 +125,11 @@ function draw() {
 
 La funzione ``createCanvas`` crea all'interno della pagina web un'area da disegno delle dimensioni indicate. Dato che l'area da disegno deve essere creata una volta sola, questa istruzione è inserita nella funzione ``setup``.
 
-Le funzione ``background`` serve ad impostare lo sfondo di colore grigio e la funzione ``circle`` serve a creare un cerchio. Dato che sono continuamente ridisegnate, sono state inserite nella funzione ``draw``.
+Le funzione ``background`` serve ad impostare lo sfondo, in questo caso di colore grigio, mentre la funzione ``circle`` serve a creare un cerchio. Si può scegliere di ridisegnare continuamente lo sfondo ed il cerchio, e quindi inserire queste istruzioni nella funzione ``draw``
 
 Il risultato è il seguente:
 
 ![p5.js - Primo esempio](/static/coding/web/p5js/basics01.png "p5.js - Primo esempio")
-
-## Modalità di esecuzione globale e di istanza
-
-Gli esempi proposti dichiarano variabili e funzioni da disegno nel contesto globale della pagina web, quindi questa modalità di lavoro è detta **modalità globale**. Dato che il contesto globale è unico, si è vincolati all'esecuzione di un unico lavoro nella pagina web.
-
-Una modalità più avanzata di lavoro è la **modalità di istanza**, in cui le variabili e le funzioni da disegno sono dichiarate in un contesto specifico dato da una sorta di oggetto, detto **closure**. Dato che possono essere create più istanze di questi oggetti, è possibile dichiarare più contesti di esecuzione, ognuno legato alla singola istanza, per cui nella pagina web possono essere eseguiti più lavori.
-
-Essendo comunque un argomento avanzato, nei capitoli seguenti sarà sempre utilizzata la modalità globale. Solo per completezza, si riporta un esempio di lavoro realizzato utilizzando la modalità di istanza.
-
-Elemento HTML che conterrà l'area da disegno:
-
-```html
-<p id="idElementoHTML"></p>
-```
-
-Dichiarazione delle variabili e delle funzioni da disegno in modalità di istanza:
-
-```javascript
-const lavoro = ( sketch ) => {
-
-  let x = 100;
-  let y = 100;
-
-  sketch.setup = () => {
-    sketch.createCanvas(200, 200);
-  };
-
-  sketch.draw = () => {
-    sketch.background(0);
-    sketch.fill(255);
-    sketch.rect(x,y,50,50);
-  };
-};
-```
-
-Creazione ed esecuzione dell'area da disegno definita nell'istanza ``lavoro`` ed inclusione della stessa nell'elemento HTML ``sketch`` definito in precedenza:
-
-```javascript
-let myp5 = new p5(lavoro, 'idElementoHTML');
-```
-
-Si fa notare come entrambi le funzioni ``draw`` e ``setup`` siano definite all'interno dell'oggetto ``sketch``, attraverso la sintassi ``sketch.setup`` e ``sketch.draw``.
-
-Si fa notare, inoltre, che entrambe le funzioni sono dichiarate come funzioni **lambda** al fine di non sovrascrivere il contesto dell'oggetto ``sketch``.
-
-Come già detto, sono argomenti avanzati, per cui non saranno utilizzati nei prossimi capitoli.
 
 ## Area da disegno
 
@@ -234,7 +190,7 @@ Per facilitare l'uso del radiante, la libreria p5.js mette a disposizione le seg
 
 Alcune funzioni della libreria permettono come parametri esclusivamente valori espressi  in radianti, per cui si rimanda alla documentazione ufficiale per verificare la possibilità d'uso di valori espressi in gradi sessagesimali.
 
-## API e documentazione
+## API, funzioni e documentazione
 
 Per poter utilizzare correttamente la libreria p5.js, è necessario conoscere l'interfaccia esposta dalla libreria stessa.
 
@@ -242,7 +198,7 @@ Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia
 
 Nello sviluppo di applicazioni, le interfacce esposte da librerie ed ambienti di sviluppo, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
 
-Le API espongono strutture, funzioni, costanti, e tutti gli altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono **sempre** accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
+Le API espongono strutture, funzioni, costanti e tanti altri elementi della libreria, che il programmatore può usare per realizzare la propria applicazione. Le API sono sempre accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione. La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
 
 La documentazione è organizzata per aree di interesse, tra le varie categorie troviamo:
 
@@ -265,17 +221,29 @@ Structure       | Informazioni sul ciclo di esecuzione
 Transform       | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
 Typography      | Caratteri, stili e formattazione testo
 
-Ogni categoria mostra le funzioni disponibili, con un link alla documentazione specifica. Ogni costante o funzione è documentata indicando:
+Ogni categoria mostra le costanti e le funzioni disponibili, con un link alla documentazione specifica.
+
+Le costanti, nell'ambito informatico come nell'ambito matematico, sono dei valori che non variano nel tempo, ed ai quali associamo un nome, come ad esempio la costante matematica **pi greco**, che definisce il rapporto tra la lunghezza della circonferenza e quella del suo diametro, oppure la costante fisica **c** che definisce la velocità della luce.
+
+Ogni costante è documentata indicando uno o più esempi d'uso, il nome, la descrizione ed il valore.
+
+Le funzioni sono delle istruzioni particolari che permettono di svolgere uno specifico compito, come il disegno di un cerchio o un quadrato o la creazione dell'area da disegno. Le funzioni possono prevedere dei **parametri** necessari alla realizzazione del compito. Ad esempio, per creare l'area da disegno abbiamo bisogno di due parametri, la larghezza e l'altezza dell'area da creare. Per disegnare un cerchio abbiamo bisogno di tre parametri, le coordinate x ed y del centro ed il raggio del cerchio. Alcuni parametri possono essere obbligatori, altri facoltativi, e tipicamente sono elencati prima quelli obbligatori e poi, tra parentesi quadre, quelli facoltativi.
+
+Il nome della funzione insieme alla lista dei parametri riportata tra parentesi tonde formano la **firma della funzione**.
+
+La documentazione di ogni funzione riporta:
 
 - uno o più esempi d'uso;
-- la descrizione;
-- la sintassi d'uso;
+- la descrizione del compito svolto;
+- la sintassi d'uso, ovvero la firma della funzione. Ogni parametro, obbligatorio o facoltativo, è ulteriormente chiarito con l'indicazione del tipo e della descrizione.
 
-Per le funzioni, la sintassi descrive la **firma della funzione**, che è composta dal nome e, tra parentesi tonde, dalla lista di parametri. La lista di parametri elenca prima quelli obbligatori e poi quelli facoltativi, indicati tra parentesi quadre. Ogni parametro è ulteriormente chiarito, indicando tipo, descrizione ed obbligatorietà.
+I parametri indicati nella documentazione sono detti **parametri formali** e, come si vedrà nel capitolo sulle funzioni, sono definiti dallo sviluppatore durante la creazione di una funzione.
 
 ### Documentazione della funzione ``circle``
 
-La sintassi della funzione ``circle``, che serve a disegnare un cerchio nell'area da disegno, è la seguente:
+La documentazione della funzione ``circle`` riporta i vari esempi e la descrizione del compito svolto, che è il disegno di un cerchio nell'area da disegno.
+
+La sintassi riporta la firma della funzione, ovvero il nome della funzione e la lista dei parametri **formali** tra parentesi tonde:
 
 ```plaintext
 Syntax: circle(x, y, d)
@@ -286,13 +254,15 @@ Parameters:
     d   Number: diameter of the circle.
 ```
 
-Si deduce che la funzione ``circle`` non prevede parametri facoltativi, dato che nessun parametro è indicato tra parentesi quadre.
+La funzione ``circle`` non prevede parametri facoltativi, dato che nessun parametro è indicato tra parentesi quadre.
 
 Dalla descrizione dei parametri si comprende che sono tutti numerici, con ``x`` ed ``y`` che indicano le coordinate del centro del cerchio e ``d`` che indica il diametro del cerchio.
 
 ### Documentazione della funzione ``square``
 
-La sintassi della funzione ``square``, che serve a disegnare un quadrato nell'area da disegno, è la seguente:
+La documentazione della funzione ``square`` riporta i vari esempi e la descrizione del compito svolto, che è il disegno di un quadrato nell'area da disegno.
+
+La sintassi riporta la firma della funzione, ovvero il nome della funzione e la lista dei parametri **formali** tra parentesi tonde:
 
 ```plaintext
 Syntax: square(x, y, s, [tl], [tr], [br], [bl])
@@ -307,7 +277,7 @@ Parameters:
     bl  Number: optional radius of bottom-left corner. (Optional)
 ```
 
-Si deduce che la funzione ``square`` prevede i parametri **obbligatori** ``x``, ``y`` ed ``s``. I parametri facoltativi, indicati tra parentesi quadre, sono ``tl``, ``tr``, ``br``, ``bl``.
+Dalla sintassi si deduce che la funzione ``square`` prevede i parametri **obbligatori** ``x``, ``y`` ed ``s``. I parametri facoltativi, indicati tra parentesi quadre, sono ``tl``, ``tr``, ``br``, ``bl``.
 
 La descrizione dei parametri obbligatori indica che ``x`` ed ``y`` sono le coordinate dell'angolo in alto a sinistra del quadrato ed ``s`` è la lunghezza del lato; I rimanenti parametri facoltativi rappresentano rispettivamente l'arrotondamento dell'angolo in alto a sinistra, in alto a destra, in basso a destra ed in basso a sinistra.
 
@@ -331,7 +301,13 @@ Ogni primitiva è una funzione identificata da un nome e da una lista di paramet
 
 ### Disegno di un punto
 
-Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, che prevede come argomenti le coordinate ``x`` ed ``y`` del **punto**, come nel seguente esempio:
+Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, la cui sintassi è la seguente:
+
+```plaintext
+Syntax: point(x, y)
+```
+
+I parametri formali sono ``x`` ed ``y``, che rappresentano le coordinate del **punto**.
 
 ```javascript
 point(20, 20);
@@ -339,7 +315,13 @@ point(20, 20);
 
 ### Disegno di una linea
 
-La linea è rappresentata da un segmento che unisce due punti, per cui la si può realizzare attraverso la funzione ``line`` che prevede come argomenti le coordinate ``x1`` ed ``y1`` relative al **primo punto** e le coordinate ``x2`` ed ``y2`` relative al **secondo punto**, come nel seguente esempio:
+La linea è un segmento che unisce due punti ed è realizzata dalla funzione ``line`` la cui sintassi è la seguente:
+
+```plaintext
+Syntax: line(x1, y1, x2, y2)
+```
+
+I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del punto da cui parte la linea ed i parametri formali ``x2`` ed ``y2`` rappresentano le coordinate del punto in cui la linea termina.
 
 ```javascript
 line(80, 20, 120, 40);
@@ -347,7 +329,13 @@ line(80, 20, 120, 40);
 
 ### Disegno di un triangolo
 
-La figura del triangolo è caratterizzata da tre punti in cui originano e terminano i lati che la vanno a formare, per cui la si può realizzare attraverso la funzione ``triangle`` che prevede come argomenti le coordinate ``x1`` ed ``y1`` relative al **primo punto**, le coordinate ``x2`` ed ``y2`` relative al **secondo punto** e  le coordinate ``x3`` ed ``y3`` relative al **terzo punto**, come nel seguente esempio:
+La figura del triangolo è caratterizzata da tre punti in cui originano e terminano i lati che la vanno a formare e la si può realizzare attraverso la funzione ``triangle`` la cui sintassi è la seguente:
+
+```plaintext
+Syntax: triangle(x1, y1, x2, y2, x3, y3)
+```
+
+I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del primo vertice,  ``x2`` ed ``y2`` rappresentano le coordinate del secondo vertice, ``x3`` ed ``y3`` le coordinate del terzo vertice, come nel seguente esempio:
 
 ```javascript
 triangle(20, 60, 20, 100, 60, 100);
@@ -355,7 +343,13 @@ triangle(20, 60, 20, 100, 60, 100);
 
 ### Disegno di un cerchio
 
-Il cerchio lo si può realizzare attraverso la funzione ``circle`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** e la dimensione del **diametro**, come nel seguente esempio:
+La circonferenza è caratterizzata da un punto centrale ed un diametro e la si può realizzare attraverso la funzione ``circle`` la cui sintassi è la seguente:
+
+```plaintext
+Syntax: circle(x, y, diameter)
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``diameter`` è la dimensione del diametro.
 
 ```javascript
 circle(100, 80, 40);
@@ -363,7 +357,13 @@ circle(100, 80, 40);
 
 ### Disegno di un quadrato
 
-Si può realizzare un quadrato attraverso la funzione ``square`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative all'**angolo in alto a sinistra** e la dimensione del **lato**, come nel seguente esempio:
+Il rettangolo è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensioni del lato. Si può disegnare attraverso la funzione ``square`` la cui sintassi è la seguente:
+
+```plaintext
+Syntax: square(x, y, side)
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto da cui iniziare a disegnare, ``side`` è la dimensione del lato.
 
 ```javascript
 square(20, 140, 40);
@@ -371,7 +371,13 @@ square(20, 140, 40);
 
 ### Disegno di un rettangolo
 
-Il rettangolo è realizzabile attraverso la funzione ``rect`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative all'**angolo in alto a sinistra**, la dimensione della **base** e la dimensione dell'**altezza**, come nel seguente esempio:
+Il rettangolo è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensioni della base e dell'altezza ed è realizzabile attraverso la funzione ``rect`` la cui sintassi è la seguente:
+
+```plaintext
+Syntax: rect(x, y, base, altezza)
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto da cui iniziare a disegnare, ``base`` ed ``altezza`` sono le dimensioni della base e dell'altezza del rettangolo, come nel seguente esempio:
 
 ```javascript
 rect(80, 140, 80, 20);
@@ -379,9 +385,15 @@ rect(80, 140, 80, 20);
 
 ### Disegno di un ellisse
 
-Un ellisse è una sorta di cerchio "schiacciato", lo si può interpretare come una sorta di cerchio con larghezza ed altezza differenti. Matematicamente parlando, l'ellisse ha due punti focali invece di uno (a differenza del cerchio che ha come unico fuoco il centro del cerchio).
+Un ellisse è una sorta di circonferenza "schiacciata", la si può interpretare come una sorta di circonferenza con larghezza ed altezza differenti. Matematicamente parlando, l'ellisse ha due punti focali invece di uno (a differenza della circonferenza che ha come unico fuoco il centro).
 
-Lo si può realizzare attraverso la funzione ``ellipse`` che prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** e le dimensioni di **larghezza** ed **altezza**, come nel seguente esempio:
+La funzione per realizzare un ellisse è ``ellipse``, la cui sintassi è la seguente:
+
+```plaintext
+Syntax: ellipse(x, y, larghezza, altezza)
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto da cui iniziare a disegnare, ``larghezza`` ed ``altezza`` sono le dimensioni della larghezza e dell'altezza dell'ellisse, come nel seguente esempio:
 
 ```javascript
 ellipse(60, 220, 80, 40);
@@ -389,15 +401,21 @@ ellipse(60, 220, 80, 40);
 
 ### Disegno di un arco di circonferenza e d'ellisse
 
-Un **arco di circonferenza** è il tratto di linea curva che ha le due estremità definite da due raggi della circonferenza stessa.
+Un **arco di circonferenza** è il tratto di linea curva che ha le due estremità definite da due raggi della circonferenza stessa. Un **arco d'ellisse** è simile ad un arco di circonferenza, con la differenza che il tratto di linea curva è parte dell'ellisse.
 
-La funzione ``arc`` disegna un arco di circonferenza e prevede come argomenti le coordinate ``x`` ed ``y`` relative al **centro** della circonferenza, **due volte** la dimensione del **diametro** del cerchio ed infine **l'angolo di inizio** e **l'angolo di fine** dell'arco. Ad esempio:
+La funzione per realizzare un arco è ``arc`` la cui sintassi è la seguente:
+
+```plaintext
+Syntax: arc(x, y, larghezza, altezza, angoloIniziale, angoloFinale, [type])
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``larghezza`` ed ``altezza`` sono le dimensioni della larghezza e dell'altezza dell'ellisse. Il parametro ``angoloIniziale`` indica l'angolo del primo raggio che fa da prima estremità all'arco, ``angoloFinale`` indica l'angolo del secondo raggio che fa da seconda estremità all'arco.
 
 ```javascript
 arc(40, 300, 40, 40, PI, TWO_PI);
 ```
 
-Per impostazione predefinita, questa funzione disegna l'arco come fosse una figura aperta. Lo si può disegnare come figura chiusa, indicando come collegare i due estremi d'arco.
+Per impostazione predefinita, questa funzione disegna l'arco come fosse una figura aperta. Lo si può disegnare come figura chiusa, utilizzando il parametro ``type`` per indicare come collegare i due estremi d'arco.
 
 Le due estremità dell'arco possono essere unite con una **corda di circonferenza** oppure con i due raggi che si congiungono alle estremità dell'arco, disegnando un **settore circolare**.
 
@@ -405,7 +423,7 @@ Una **corda di circonferenza** è un segmento che ha le due estremità definite 
 
 Un **settore circolare** è l'area compresa tra l'arco di circonferenza ed i raggi che delimitano le estremità dell'arco.
 
-Per indicare come disegnare l'arco, si utilizza un ulteriore parametro, non obbligatorio, che è definito dalle seguenti costanti:
+Per indicare come disegnare l'arco, si utilizza il parametro ``type``, non obbligatorio, che è definito dalle seguenti costanti:
 
 - ``OPEN``: indica di realizzare l'arco come figura aperta, quindi senza linee di contorno per unire gli estremi;
 - ``CHORD``: indica di chiudere l'arco con una linea di contorno tracciata come corda di circonferenza;
@@ -423,22 +441,80 @@ Gli archi non sono gli unici tipi di curve supportate. La libreria p5.js permett
 
 ### Disegno di un testo
 
-Il testo può essere racchiuso in un elemento HTML o gestito direttamente nell'area da disegno. Per realizzarlo graficamente si utilizza la funzione ``text``, che prevede come argomenti il testo e le coordinate ``x`` ed ``y`` del **punto in alto a sinistra** dal quale disegnare il testo, come nel seguente esempio:
+Il testo può essere racchiuso in un elemento HTML o gestito direttamente nell'area da disegno. Per realizzarlo graficamente si utilizza la funzione ``text``, che prevede la seguente sintassi:
+
+```plaintext
+Syntax: text(words, x, y)
+```
+
+Il parametro formale ``words`` indica il testo da disegnare, i parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare il testo, come nel seguente esempio:
 
 ```javascript
 text("questo è un testo", 20, 340);
 ```
 
-Un'alternativa è rappresentata dalla stessa funzione che utilizza però come argomenti le coordinate ``x`` ed ``y`` relative al **punto in alto a sinistra** e la dimensione della **base** e la dimensione dell'**altezza** del rettangolo nel quale racchiudere il testo, come nel seguente esempio:
+Un'alternativa è rappresentata dalla stessa funzione che utilizza però una sintassi alternativa:
+
+```plaintext
+Syntax: text(words, x, y, base, altezza)
+```
+
+Il parametro formale ``words`` indica il testo da disegnare, i parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare il testo, ``base`` ed ``altezza`` sono le dimensioni del rettangolo nel quale racchiudere il testo, come nel seguente esempio:
 
 ```javascript
 text("questo è un testo troppo lungo", 20, 360, 160, 20);
 ```
 
-Da prestare attenzione che se il testo è troppo lungo e non può essere racchiuso nello spazio indicato, il testo rimanente non sarà disegnato.
+Bisogna prestare attenzione al fatto che se il testo è troppo grande e non può essere racchiuso nell'area del rettangolo, la parte eccessiva del testo non sarà disegnata.
 
 ## Esempio completo
 
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
 ![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")
+
+## Modalità di esecuzione globale e di istanza
+
+Gli esempi proposti dichiarano variabili e funzioni da disegno nel contesto globale della pagina web, quindi questa modalità di lavoro è detta **modalità globale**. Dato che il contesto globale è unico, si è vincolati all'esecuzione di un unico lavoro nella pagina web.
+
+Una modalità più avanzata di lavoro è la **modalità di istanza**, in cui le variabili e le funzioni da disegno sono dichiarate in un contesto specifico dato da una sorta di oggetto, detto **closure**. Dato che possono essere create più istanze di questi oggetti, è possibile dichiarare più contesti di esecuzione, ognuno legato alla singola istanza, per cui nella pagina web possono essere eseguiti più lavori.
+
+Essendo comunque un argomento avanzato, nei capitoli seguenti sarà sempre utilizzata la modalità globale. Solo per completezza, si riporta un esempio di lavoro realizzato utilizzando la modalità di istanza.
+
+Elemento HTML che conterrà l'area da disegno:
+
+```html
+<p id="idElementoHTML"></p>
+```
+
+Dichiarazione delle variabili e delle funzioni da disegno in modalità di istanza:
+
+```javascript
+const lavoro = ( sketch ) => {
+
+  let x = 100;
+  let y = 100;
+
+  sketch.setup = () => {
+    sketch.createCanvas(200, 200);
+  };
+
+  sketch.draw = () => {
+    sketch.background(0);
+    sketch.fill(255);
+    sketch.rect(x,y,50,50);
+  };
+};
+```
+
+Creazione ed esecuzione dell'area da disegno definita nell'istanza ``lavoro`` ed inclusione della stessa nell'elemento HTML ``sketch`` definito in precedenza:
+
+```javascript
+let myp5 = new p5(lavoro, 'idElementoHTML');
+```
+
+Si fa notare come entrambi le funzioni ``draw`` e ``setup`` siano definite all'interno dell'oggetto ``sketch``, attraverso la sintassi ``sketch.setup`` e ``sketch.draw``.
+
+Si fa notare, inoltre, che entrambe le funzioni sono dichiarate come funzioni **lambda** al fine di non sovrascrivere il contesto dell'oggetto ``sketch``.
+
+Come già detto, sono argomenti avanzati, per cui non saranno utilizzati nei prossimi capitoli.
