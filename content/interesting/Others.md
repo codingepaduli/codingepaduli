@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-04-29
-publishdate: 2021-04-29
-lastmod: 2021-04-29
+date: 2021-05-26
+publishdate: 2021-05-26
+lastmod: 2021-05-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -24,28 +24,28 @@ summary: "Set di link interessanti"
 
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
 [Fottuti geni](https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMjk1MjYwMC9lcGlzb2Rlcy9mZWVk) - Podcast\
-[A New Map of the Standard Model of Particle Physics | Quanta Magazine](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - \
+[A New Map of the Standard Model of Particle Physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - Quanta Magazine\
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Gravity Is Not A Force](https://timhutton.github.io/GravityIsNotAForce/) - Under general relativity, gravity is a distortion of spacetime, not a force. See it in this simulation.\
 [Faster than Light in Our Model of Physics](https://writings.stephenwolfram.com/2020/10/faster-than-light-in-our-model-of-physics-some-preliminary-thoughts/) - Some Preliminary Thoughts on Space, Time, Geometry of the Universe,  \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
 [Twenty New Moons Found Orbiting Saturn](https://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn) - \
-[Renormalization group is as a “theory of theories” connecting the microscopic with the macroscopic](https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/) - It helps identify which big-picture quantities are useful to measure and which convoluted microscopic details can be ignored\
+[Renormalization group](https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/) - a “theory of theories” connecting the microscopic with the macroscopic - It helps identify which big-picture quantities are useful to measure and which convoluted microscopic details can be ignored\
 [Dark Energy](https://physics.aps.org/articles/v13/1) - new generation of experiments about the nature of dark energy\
 [Entropy in the Universe](https://johncarlosbaez.wordpress.com/2020/01/25/entropy-in-the-universe/) - entropy of interstellar and intergalactic gas and dust is about ten times more the entropy of all the stars in the observable Universe\
-[Maybe 'dark matter' doesn't exist after all, new research suggests](https://www.nbcnews.com/science/space/maybe-dark-matter-doesn-t-exist-after-all-new-research-n1252995) - \
+[Maybe 'dark matter' doesn't exist after all](https://www.nbcnews.com/science/space/maybe-dark-matter-doesn-t-exist-after-all-new-research-n1252995) - new research suggests\
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
 [Physicists Prove Anyons Exist](https://www.discovermagazine.com/the-sciences/physicists-prove-anyons-exist-a-third-type-of-particle-in-the-universe) - Anyons is a Third Type of Particle in the Universe (after fermions and bosons)\
 [Particle Physicists Continue To Make Empty Promises](https://backreaction.blogspot.com/2020/10/particle-physicists-continue-to-make.html) - \
-[The Janus cosmological model: a paradigm shift](https://januscosmologicalmodel.com/) - Modello cosmologico del Giano Bifronte\
+[The Janus cosmological model](https://januscosmologicalmodel.com/) - a paradigm shift (Modello cosmologico del Giano Bifronte)\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
-[For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
-[Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - \
+[The engine of the universe- For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
+[General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity\
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
-[The muon is more magnetic than predicted | Science | AAAS](https://www.sciencemag.org/news/2021/04/particle-mystery-deepens-physicists-confirm-muon-more-magnetic-predicted) - \
+[The muon is more magnetic than predicted](https://www.sciencemag.org/news/2021/04/particle-mystery-deepens-physicists-confirm-muon-more-magnetic-predicted) - Science | AAAS\
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
@@ -62,7 +62,7 @@ summary: "Set di link interessanti"
 [Enigma machine simulator](https://observablehq.com/@tmcw/enigma-machine) - \
 [Enigma machine's plugboard](https://observablehq.com/@tmcw/enigma-machine-plugboard) - a software emulator for the hardware plugboard that allowed for scrambling of characters at the input & output stages of the Enigma machine’s process\
 [CindyJS](https://cindyjs.org/) - a framework to create interactive (mathematics and physics) content for the web\
-[Mathematicians Report New Discovery About the Dodecahedron | Quanta Magazine](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - \
+[Mathematicians Report New Discovery About the Dodecahedron](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - Quanta Magazine\
 [Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
 [An Interactive Introduction to Fourier Transforms](https://github.com/Jezzamonn/fourier) - \
 [Graphtoy](https://graphtoy.com/) - create graph from math formulas\
@@ -105,10 +105,10 @@ summary: "Set di link interessanti"
 [Secessio plebis](https://it.wikipedia.org/wiki/Secessio_plebis) - Per ottenere una parificazione di diritti con i patrizi, la plebe effettuava una secessione, ovvero abbandonava in massa la città e rendeva impossibile convocare le leve militari tra i plebei.\
 [Nsibidi](https://en.wikipedia.org/wiki/Nsibidi) - a 4,000 years old system of symbols indigenous to what is now southeastern Nigeria that are apparently pictograms, though there\
 [Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
-[Remote learning via Radio instruction in the 1937 polio epidemic](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - \
+[Remote learning via Radio instruction](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - in the 1937 polio epidemic\
 [La stella rossa](https://it.wikipedia.org/wiki/La_stella_rossa) - un romanzo di fantascienza dello scrittore russo Aleksandr Bogdanov, \
 [The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
-[The Little-Known Story of Violet Gibson, the Irish Woman Who Shot Mussolini | Smart News | Smithsonian Magazine](https://www.smithsonianmag.com/smart-news/1926-irish-woman-shot-benito-mussolini-and-almost-altered-history-forever-180977286/) - \
+[The Little-Known Story of Violet Gibson](https://www.smithsonianmag.com/smart-news/1926-irish-woman-shot-benito-mussolini-and-almost-altered-history-forever-180977286/) - the Irish Woman Who Shot Mussolini | Smart News | Smithsonian Magazine\
 
 ### Games
 
