@@ -15,31 +15,45 @@ summary: "Colori e stili"
 
 # Colori e stili
 
-Il cervello umano interpreta lo spettro elettromagnetico come **colore**.
+<!-- TODO Cambiare titolo in "La luce ed i colori" ?? -->
 
-Le sezioni non visibili dello spettro sono da una parte onde radio ed infrarossi, che hanno bassa energia e raramente risultano dannosi per gli organismi viventi, e dall'altra ultravioletto e raggi gamma, che hanno alta energia e risultano dannosi per gli organismi viventi.
+<!-- Fonte: Fisicast - La luce -->
+Uno dei primi trattati scientifici sul funzionamento della luce e dei colori è il "Kitab al-Manazir" (Manuale di Ottica) pubblicato nel 1015 da Ibn Al-Haytham, uno scienziato vissuto in una zona corrispondente all'attuale Iraq. Questo trattato spiegava già alcuni fenomeni, come il funzionamento della vista o la creazione di un arcobaleno.
 
-La sezione centrale dello spettro è visibile e va dal rosso al violetto, passando per arancione, giallo, verde e blu. Se tutti questi colori sono percepiti insieme, cioè se tutto l'intervallo dello spettro visibile arriva all'occhio umano, il colore risultante è il bianco. Se nessuna parte dello spettro visibile arriva all'occhio umano, c'è il "buio" che interpretiamo come nero.
+Anche Newton nel 1704 pubblicò il suo trattato scientifico "Opticks", uno studio nel quale concluse che la luce è composta da particelle colorate, che si combinano apparendo bianche. Introdusse il termine **spettro dei colori** e decise di suddividerlo in sette colori: rosso, arancione, giallo, verde, blu, indaco e violetto. Il suo esperimento del fascio di luce che attraversava due prismi di vetro, il primo che suddivideva il fascio di luce nei suoi colori primari, ed il secondo che ricomponeva questi colori in un unico fascio di luce bianca, è molto famoso.
 
-Gli oggetti, però, non hanno un colore proprio, sono visti grazie alla luce che si riflette su di essi. Un foglio bianco riflette quasi tutta la luce che riceve. Un foglio nero la assorbe quasi del tutto.
+<!-- Fonte: Fottuti Geni - J. C. Maxwell -->
+Nel 1860 James Clerk Maxwell pubblico il suo lavoro sulla classificazione dei colori e sul principio della sintesi additiva dei colori, definendo i colori primari che compongono la luce: il rosso, il verde ed il blu. Nel 1861, come risultato di questo lavoro, proiettò nell'aula magna della Royal Institution di Londra la prima fotografia a colori della storia.
 
-Quando applichiamo il colore "giallo" ad un foglio bianco, parte della luce viene assorbita dall'inchiostro del pennarello, quindi la luce riflessa viene interpretata di colore "giallo". Si può affermare che l'inchiostro giallo "sottrae", in un certo qual modo, una parte dello spettro visibile.
+Nel 1864 Maxwell pubblicò il suo trattato "A Dynamical Theory of the Electromagnetic Field", in cui unificava le leggi che regolano i fenomeni elettrici, magnetici, la luce ed il calore radiante, evidenziando come il campo elettrico ed il campo magnetico avessero la stessa natura della luce, evidenziando che il segnale elettromagnetico si propaga come un'onda proprio alla velocità della luce.
 
-I colori, in ambito informatico, sono espressi attraverso differenti modelli:
+<!-- Fonte: Fisicast - Il principio fotoelettrico-->
+Infine, Einstein pubblicò il suo studio sull'effetto fotoelettrico, teorizzando che la luce è formata da corpuscoli chiamati fotoni, ognuno contenente un'energia (detta quanto di energia) direttamente proporzionale alla frequenza. Più è alta la frequenza, più energia trasporta un fotone.
 
-- **RGB**: indica il modello Red-Green-Blue, nel quale i colori sono espressi come combinazione di rosso, verde e blu;
-- **CMYK**: indica il modello Cyan-Magenta-Yellow-blacK, nel quale i colori sono espressi come combinazione di ciano, magenta, giallo e nero.
-- **HSB**: indica il modello Hue-Saturation-Brightness, nel quale i colori sono espressi come combinazione di tonalità, saturazione e luminosità.
+<!-- Fonte: Fisicast - il fotone Phòs -->
+Grazie al lavoro di tutti questi geniali scienziati, oggi sappiamo che la luce è irradiata dal Sole sotto forma di onda elettromagnetica e può essere chiamata radiazione elettromagnetica. Lo **spettro elettromagnetico** è l'insieme di tutte le frequenze dei fotoni che compongono il fascio di luce. Questo insieme può essere suddiviso in più categorie:
+
+- **raggi gamma**, **raggi X** ed **raggi ultravioletti**, che hanno alta frequenza ed alta energia, quindi risultano dannosi per gli organismi viventi;
+- **raggi visibili**, percepiti dall'uomo come **colore**. In base alla frequenza di questi raggi visibili, percepiamo i colori che vanno dal rosso al violetto, passando per arancione, giallo, verde e blu;
+- **onde radio**, **microonde** ed **infrarossi** hanno bassa frequenza e bassa energia, raramente risultano dannosi per gli organismi viventi.
+
+<!-- TODO Aggiungere spettro elettromagnetico e sezioni -->
+
+Aprendo una breve parentesi di approfondimento, sappiamo che i fotoni sono mediatori della forza elettromagnetica, responsabili dell'attrazione e della repulsione elettrica (come insegnano a scuola, le cariche opposte si attraggono, le cariche uguali si respingono scambiandosi fotoni).
 
 ## Modello di colori RGB
 
 Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu.
 
+E' un modello additivo perché quando questi tre colori primari sono miscelati insieme, (cioè se l'intero spettro visibile arriva all'occhio umano), il colore percepito è il bianco. Se nessuna parte dello spettro visibile arriva all'occhio umano, c'è il "buio" che è percepito come colore nero.
+
+Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
+
 ![p5.js - Modello di colori RGB](https://p5js.org/assets/learn/color/rgb.jpg "p5.js - Modello di colori RGB")
 
-Ogni colore è definito come una somma delle quantità dei tre colori elencati. La quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
+Su questo modello di colori è basato un modello computerizzato, chiamato appunto modello RGB. In questo modello computerizzato, la quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
-Come ci si può aspettare, quindi, in questo modello:
+Come ci si può aspettare, in questo modello:
 
 - il colore rosso si esprime impostando solo la quantità massima di rosso: (255, 0, 0);
 - il colore verde si esprime impostando solo la quantità massima di verde: (0, 255, 0);
@@ -53,7 +67,11 @@ Il problema principale di questo modello consiste nel fatto che non è intuitivo
 
 Il modello **CMYK** è un modello di colori **sottrattivo**, esprime i colori come combinazione di colori "primari", che in questo modello sono il ciano, il magenta, il giallo ed il nero.
 
-![p5.js - Modello di colori CMYK](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/CMYK_subtractive_color_mixing.svg/300px-CMYK_subtractive_color_mixing.svg.png "p5.js - Modello di colori CMYK")
+E' un modello sottrattivo perché questi tre colori primari sottraggono alla luce bianca una parte del colore. Infatti, miscelando insieme questi colori primari, il colore risultante che percepiamo è il nero (cioè l'intero spettro visibile viene "sottratto" prima di arrivare all'occhio umano).
+
+E' un modello che nasce dal fatto che gli oggetti non hanno un colore proprio, sono visti grazie alla luce che si riflette su di essi. Un foglio bianco riflette quasi tutta la luce che riceve. Un foglio nero la assorbe quasi del tutto.
+
+Quando applichiamo il colore "giallo" ad un foglio bianco, parte della luce bianca viene assorbita dall'inchiostro del pennarello, quindi la luce riflessa è solo quella "gialla". Si può affermare che l'inchiostro giallo "sottrae", in un certo qual modo, una parte dello spettro visibile e riflette solo la luce "gialla".
 
 Il colore ciano è il colore complementare al rosso, ovvero il colore che si ottiene sottraendo il colore rosso dalla luce bianca.
 
@@ -61,13 +79,17 @@ Il colore magenta è il colore complementare al verde, ovvero il colore che si o
 
 Il colore giallo è il colore complementare al viola, ovvero il colore che si ottiene sottraendo il colore viola dalla luce bianca.
 
+![p5.js - Modello di colori CMYK](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/CMYK_subtractive_color_mixing.svg/300px-CMYK_subtractive_color_mixing.svg.png "p5.js - Modello di colori CMYK")
+
 Dato che miscelando ciano, magenta e giallo si ottiene un colore molto scuro (il modello è sottrattivo), ma non un vero e proprio nero, in questo modello si è aggiunto il colore nero per completare lo spettro di colori visibili.
 
 Anche per questo modello, il problema principale consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste.
 
+In p5.js non esiste un modello computerizzato che ci permette di usare il modello di colori **CMYK**.
+
 ## Modello di colori HSB
 
-Il modello Hue-Saturation-Brightness è un modello utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
+Il modello Hue-Saturation-Brightness è un modello computerizzato, non basato su concetti fisici ma su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
 
 ![p5.js - Modello di colori HSB](https://p5js.org/assets/learn/color/hsb.png "p5.js - Modello di colori HSB")
 
