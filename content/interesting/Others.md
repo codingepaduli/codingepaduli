@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-05-26
-publishdate: 2021-05-26
-lastmod: 2021-05-26
+date: 2021-06-01
+publishdate: 2021-06-01
+lastmod: 2021-06-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -99,6 +99,7 @@ summary: "Set di link interessanti"
 [100,000 Stars](https://stars.chromeexperiments.com/) - A tour from our Sun to the far away stars of our Milky Way Galaxy\
 [Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
 [NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
+[PhotoRec IT](https://www.cgsecurity.org/wiki/PhotoRec_IT) - Digital Picture and File Recovery\
 
 ### History
 

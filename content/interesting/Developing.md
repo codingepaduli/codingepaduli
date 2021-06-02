@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-05-26
-publishdate: 2021-05-26
-lastmod: 2021-05-26
+date: 2021-06-01
+publishdate: 2021-06-01
+lastmod: 2021-06-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -112,6 +112,7 @@ summary: "Set di link relativi al coding"
 [4 lines of code to improve your Ansible play | Opensource.com](https://opensource.com/article/21/1/improve-ansible-play) - \
 [5 everyday sysadmin tasks to automate with Ansible | Opensource.com](https://opensource.com/article/21/3/ansible-sysadmin) - \
 [GitHub](https://github.com/mikecali/6_sysadmin_tasks) - mikecali/6_sysadmin_tasks\
+[5 ways to process JSON data in Ansible | Opensource.com](https://opensource.com/article/21/4/process-json-data-ansible) - \
 
 #### PowerShell
 
@@ -246,6 +247,7 @@ summary: "Set di link relativi al coding"
 
 [Mandrel](https://www.infoq.com/news/2020/07/mandrel-graalvm/) - Red Hat Makes Java Native\
 [CheerpJ](https://www.infoworld.com/article/3536576/cheerpj-java-to-javascript-compiler-boosts-exception-handling-native-methods.html) - the CheerpJ compiler converts Java clients to HTML, JavaScript, and WebAssembly\
+[i-net-software/JWebAssembly · JWebAssembly is a Java bytecode to WebAssembly compiler](https://github.com/i-net-software/JWebAssembly/wiki/Getting-Started) - \
 
 ### Linux
 
@@ -302,6 +304,9 @@ summary: "Set di link relativi al coding"
 [Hosted Weblate](https://hosted.weblate.org/) - \
 [Lei Mao's Log Book](https://leimao.github.io/blog/bashrc-VS-profile-VS-bash_profile/) - ~/.bashrc VS ~/.profile VS ~/.bash_profile\
 [ip](https://opensource.com/article/21/4/network-management) - A beginner's guide to network management | Opensource.com\
+[UFW](https://www.html.it/articoli/ufw-configurare-il-firewall-su-linux/) - configurare i limiti di connessione sul firewall\
+[Log Management Tools](https://www.tecmint.com/open-source-centralized-linux-log-management-tools/) - The 5 Most Notable Open Source Centralized Log Management Tools\
+[Log Management Tools](https://www.tecmint.com/best-linux-log-monitoring-and-management-tools/) - 4 Good Open Source Log Monitoring and Management Tools for Linux\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -319,6 +324,7 @@ summary: "Set di link relativi al coding"
 [RetroPie](https://opensource.com/article/19/1/retropie) - Build a retro gaming console with RetroPie | Opensource.com\
 [Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
+[Monitor your Raspberry Pi with Grafana Cloud | Opensource.com](https://opensource.com/article/21/3/raspberry-pi-grafana-cloud) - \
 
 ### Mozilla Firefox
 
@@ -434,6 +440,7 @@ summary: "Set di link relativi al coding"
 [curlpipe/ox](https://github.com/curlpipe/ox) - An independent Rust text editor that runs in your terminal!\
 [trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
 [Beautiful PDFs from HTML](https://pdf.math.dev/) - it allow you to create beautifully typeset digital content that can be viewed on any device\
+[https://hexo.press/](https://hexo.press/) - \
 
 #### Hugo static site generator
 
@@ -535,6 +542,7 @@ summary: "Set di link relativi al coding"
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
+[details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
 [video tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) - The Video Embed element - HTML: HyperText Markup Language | MDN\
 
 #### CSS
@@ -603,6 +611,9 @@ summary: "Set di link relativi al coding"
 [AssemblyScript](https://www.assemblyscript.org/) - compiles a subset of TypeScript to WebAssembly\
 [WebAssembly/binaryen](https://github.com/WebAssembly/binaryen) - Compiler infrastructure and toolchain library for WebAssembly\
 [MapLibre GL JS](https://maplibre.org/maplibre-gl-js-docs/api/) - A JavaScript library that uses WebGL to render interactive maps\
+[Protomaps](https://protomaps.com/blog/new-way-to-make-maps/) - A new way to make maps with OpenStreetMap\
+[How we use Web Components at GitHub | The GitHub Blog](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - \
+[github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
 
 ##### Aurelia
 
