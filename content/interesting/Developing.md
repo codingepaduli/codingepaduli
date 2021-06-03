@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-06-01
-publishdate: 2021-06-01
-lastmod: 2021-06-01
+date: 2021-06-02
+publishdate: 2021-06-02
+lastmod: 2021-06-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -36,6 +36,8 @@ summary: "Set di link relativi al coding"
 [SharePad.io](https://sharepad.io/) -  A collaborative code editor and compiler\
 [Deskreen](https://deskreen.com/lang-en) - Turn any device into a secondary screen\
 [index | TIOBE](https://www.tiobe.com/tiobe-index/) - The Software Quality Company\
+[FlutterFlow](https://flutterflow.io/) - Build Flutter Apps Visually\
+[Programming language popularity](https://www.zdnet.com/article/programming-language-popularity-javascript-leads-5-million-new-developers-since-2017/) - JavaScript leads – 5 million new developers since 2017 | ZDNet\
 
 ### C/C++
 
@@ -147,6 +149,8 @@ summary: "Set di link relativi al coding"
 [Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
 [This Anime Does Not Exist](https://thisanimedoesnotexist.ai/) - \
 [Automating my job by using GPT-3 to generate database-ready SQL to answer business questions](https://blog.seekwell.io/gpt3) - \
+[Predicting sex from retinal fundus photographs using automated deep learning | Scientific Reports](https://www.nature.com/articles/s41598-021-89743-x.epdf?sharing_token=Fe891D30KtzWj086Mix2BtRgN0jAjWel9jnR3ZoTv0MtpAfo4k5SUyr2ANoiCUj48aDnaVS1oiRvWR5Jq3W5vp2Xty3aFDSimt06-04o22tCkZ62X__WtnMTTtit3At8eCD1Y4VRife50LtwBhS8nU--GtD10XpQBfLSJk9Tc1tdTUwF5RuI--pQYDk9R8IJ) - \
+[The Fourier transform is a neural network | sidsite](https://sidsite.com/posts/fourier-nets/) - \
 
 ### Database SQL e NoSql - GraphQL
 
@@ -162,6 +166,8 @@ summary: "Set di link relativi al coding"
 [We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql) - Critique of SQL\
 [Dolt](https://github.com/dolthub/dolt#dolt) - a SQL database that you can fork, clone, branch, merge, push and pull just like a git repository\
 [Best practices for writing SQL queries](https://www.metabase.com/learn/building-analytics/sql-templates/sql-best-practices) - \
+[EXPLAIN ANALYZE](https://www.cybertec-postgresql.com/en/how-to-interpret-postgresql-explain-analyze-output/) - how to interpret it in PostgreSQL - Cybertec\
+[pg_stat_statements](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/) - Tracking down slow queries in PostgreSQL\
 
 ### Giochi
 
@@ -200,7 +206,6 @@ summary: "Set di link relativi al coding"
 [How to Import Maven Remote Archetype Catalogs in Eclipse](https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/) - \
 [SpotBugs](https://github.com/spotbugs/spotbugs) - spotbugs/spotbugs is FindBugs' successor. A tool for static analysis to look for bugs in Java code.\
 [Load environment-specific properties for use with PropertyPlaceholderConfigurer?](https://stackoverflow.com/questions/2204917/load-environment-specific-properties-for-use-with-propertyplaceholderconfigurer) - \
-[Implementing HTTP byte-range requests in Spring 4 and other framework](https://gist.github.com/davinkevin/b97e39d7ce89198774b4) - \
 [Guida JSP](http://java.html.it/guide/leggi/23/guida-jsp/) - \
 [REST](http://www.infoq.com/articles/webber-rest-workflow) - How to GET a Cup of Coffee\
 [How to Start Embedded HTTP Jersey server during Java Application Startup](http://crunchify.com/how-to-start-embedded-http-jersey-server-during-java-application-startup/) - \
@@ -210,6 +215,9 @@ summary: "Set di link relativi al coding"
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 [JEP 392](https://openjdk.java.net/jeps/392) - Packaging Tool for packaging self-contained Java applications\
 [DynamicJasper library](http://dynamicjasper.com/features/) - \
+[How do I setup GitHub Actions for my Gradle or Android project?](https://dev.to/jmfayard/how-do-i-setup-github-actions-for-my-gradle-or-android-project-3eal) - DEV Community\
+[A real-world example of a Stream Collector](https://blog.frankel.ch/real-world-stream-collector/) - \
+[Teeing Stream Collector](https://blog.frankel.ch/teeing-java-api/) - a hidden gem in the Java API\
 
 #### JDBC e JPA
 
@@ -242,6 +250,7 @@ summary: "Set di link relativi al coding"
 [read value from application properties in spring-log4j2.xml file](https://stackoverflow.com/questions/48639930/read-value-from-application-properties-in-spring-log4j2-xml-file) - \
 [JUnit 5 tutorial, part 2](https://www.javaworld.com/article/3543268/junit-5-tutorial-part-2-unit-testing-spring-mvc-with-junit-5.html) - Unit testing Spring MVC with JUnit 5\
 [Spring Boot | GraphQLize](https://www.graphqlize.org/docs/getting_started/java/springboot) - \
+[Implementing HTTP byte-range requests in Spring 4 and other framework](https://gist.github.com/davinkevin/b97e39d7ce89198774b4) - \
 
 #### Java to native or WebAssembly
 
@@ -307,6 +316,7 @@ summary: "Set di link relativi al coding"
 [UFW](https://www.html.it/articoli/ufw-configurare-il-firewall-su-linux/) - configurare i limiti di connessione sul firewall\
 [Log Management Tools](https://www.tecmint.com/open-source-centralized-linux-log-management-tools/) - The 5 Most Notable Open Source Centralized Log Management Tools\
 [Log Management Tools](https://www.tecmint.com/best-linux-log-monitoring-and-management-tools/) - 4 Good Open Source Log Monitoring and Management Tools for Linux\
+[ShellCheck – shell script analysis tool](https://www.shellcheck.net/) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -325,6 +335,7 @@ summary: "Set di link relativi al coding"
 [Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 [Monitor your Raspberry Pi with Grafana Cloud | Opensource.com](https://opensource.com/article/21/3/raspberry-pi-grafana-cloud) - \
+[Crossbar.io](https://crossbar.io/) - distributed, multi-language applications where components communicate using Publish & Subscribe and routed Remote Procedure Calls\
 
 ### Mozilla Firefox
 
@@ -348,6 +359,7 @@ summary: "Set di link relativi al coding"
 [Tor proxy](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com\
 [VoIP ](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - Setting up VoIP phone system for use with RepairShopr. - YouTube\
 [ProtonDrive](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - Centralized vs. P2P: Inside ProtonDrive’s security\
+[Use open source tools to set up a private VPN | Opensource.com](https://opensource.com/article/21/5/open-source-private-vpn) - \
 
 ### PHP
 
@@ -405,6 +417,7 @@ summary: "Set di link relativi al coding"
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
 [Invisible Web Tax](https://blog.mozilla.org/blog/2018/07/11/royalty-free-web-video-codecs/) - Modern codecs like AV1 can bring better quality video to the open web\
 [How to bypass CloudFlare bot protection ? | by jychp | Mar, 2021 | Medium](https://jychp.medium.com/how-to-bypass-cloudflare-bot-protection-1f2c6c0c36fb) - \
+[Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
 
 #### Security vulnerability and privacy abuse
 
@@ -544,9 +557,13 @@ summary: "Set di link relativi al coding"
 [W3C Link Checker](https://validator.w3.org/checklink) - \
 [details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
 [video tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) - The Video Embed element - HTML: HyperText Markup Language | MDN\
+[What I Learned by Relearning HTML](https://www.dannyguo.com/blog/what-i-learned-by-relearning-html) - \
+[Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
+[My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
 
 #### CSS
 
+[Learn CSS](https://web.dev/learn/css/) - \
 [Floating and inline-block](http://www.w3schools.com/css/css_inline-block.asp) - \
 [Visual formatting model](http://www.w3.org/TR/CSS2/visuren.html#q24) - \
 [kognise/waterCSS](https://github.com/kognise/water.css/blob/master/README.md) - A CSS without classes\
@@ -607,11 +624,11 @@ summary: "Set di link relativi al coding"
 [JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR) - Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai\
 [OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
 [LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
-[IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - IEEE Standard for Binary Floating-Point Arithmetic\
 [AssemblyScript](https://www.assemblyscript.org/) - compiles a subset of TypeScript to WebAssembly\
 [WebAssembly/binaryen](https://github.com/WebAssembly/binaryen) - Compiler infrastructure and toolchain library for WebAssembly\
 [MapLibre GL JS](https://maplibre.org/maplibre-gl-js-docs/api/) - A JavaScript library that uses WebGL to render interactive maps\
 [Protomaps](https://protomaps.com/blog/new-way-to-make-maps/) - A new way to make maps with OpenStreetMap\
+[DroidScript – Rapid development of mobile Apps, using JavaScript](https://droidscript.org/#page-content) - \
 [How we use Web Components at GitHub | The GitHub Blog](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - \
 [github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
 

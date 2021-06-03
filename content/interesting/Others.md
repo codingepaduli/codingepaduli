@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-06-01
-publishdate: 2021-06-01
-lastmod: 2021-06-01
+date: 2021-06-02
+publishdate: 2021-06-02
+lastmod: 2021-06-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -24,9 +24,11 @@ summary: "Set di link interessanti"
 
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
 [Fottuti geni](https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMjk1MjYwMC9lcGlzb2Rlcy9mZWVk) - Podcast\
+[Teorie MOND](https://it.m.wikipedia.org/wiki/Teorie_MOND) - MOdified Newtonian Dynamics\
 [A New Map of the Standard Model of Particle Physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - Quanta Magazine\
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Gravity Is Not A Force](https://timhutton.github.io/GravityIsNotAForce/) - Under general relativity, gravity is a distortion of spacetime, not a force. See it in this simulation.\
+[How Gravity Is a Double Copy of Other Forces | Quanta Magazine](https://www.quantamagazine.org/how-gravity-is-a-double-copy-of-other-forces-20210504/) - \
 [Faster than Light in Our Model of Physics](https://writings.stephenwolfram.com/2020/10/faster-than-light-in-our-model-of-physics-some-preliminary-thoughts/) - Some Preliminary Thoughts on Space, Time, Geometry of the Universe,  \
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
@@ -36,6 +38,7 @@ summary: "Set di link interessanti"
 [Entropy in the Universe](https://johncarlosbaez.wordpress.com/2020/01/25/entropy-in-the-universe/) - entropy of interstellar and intergalactic gas and dust is about ten times more the entropy of all the stars in the observable Universe\
 [Maybe 'dark matter' doesn't exist after all](https://www.nbcnews.com/science/space/maybe-dark-matter-doesn-t-exist-after-all-new-research-n1252995) - new research suggests\
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
+[Dark Matter](https://backreaction.blogspot.com/2021/05/dark-matter-situation-has-changed.html?m=1) - The Situation Has Changed\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
 [Physicists Prove Anyons Exist](https://www.discovermagazine.com/the-sciences/physicists-prove-anyons-exist-a-third-type-of-particle-in-the-universe) - Anyons is a Third Type of Particle in the Universe (after fermions and bosons)\
@@ -45,6 +48,7 @@ summary: "Set di link interessanti"
 [The engine of the universe- For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
 [General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity\
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
+[What did Einstein mean by “spooky action at a distance”?](https://backreaction.blogspot.com/2021/05/what-did-einstein-mean-by-spooky-action.html?m=1) - \
 [The muon is more magnetic than predicted](https://www.sciencemag.org/news/2021/04/particle-mystery-deepens-physicists-confirm-muon-more-magnetic-predicted) - Science | AAAS\
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
@@ -64,7 +68,8 @@ summary: "Set di link interessanti"
 [CindyJS](https://cindyjs.org/) - a framework to create interactive (mathematics and physics) content for the web\
 [Mathematicians Report New Discovery About the Dodecahedron](https://www.quantamagazine.org/mathematicians-report-new-discovery-about-the-dodecahedron-20200831/) - Quanta Magazine\
 [Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
-[An Interactive Introduction to Fourier Transforms](https://github.com/Jezzamonn/fourier) - \
+[Fourier Transform](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/) - An Interactive Guide – BetterExplained\
+[Fourier Transform](https://github.com/Jezzamonn/fourier) - An Interactive Introduction\
 [Graphtoy](https://graphtoy.com/) - create graph from math formulas\
 
 ### Medicine
@@ -92,6 +97,7 @@ summary: "Set di link interessanti"
 [OpenLitterMap](https://openlittermap.com/) - Share what you see about trash, litter, brands and plastic pollution\
 [Learning Music (Beta)](https://learningmusic.ableton.com/) - Learn making music\
 [Alcohol breath tests are often unreliable](https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html) - New York Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them\
+[Drinkable water extracted with solar-powered desalination system | E&T Magazine](https://eandt.theiet.org/content/articles/2021/04/drinkable-water-extracted-with-solar-powered-desalination-system/) - \
 [DRM Broke Its Promise](https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/) - DRM like feudalism\
 [QiFi](https://qifi.org/) - WiFi QR Code Generator\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
@@ -100,6 +106,7 @@ summary: "Set di link interessanti"
 [Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
 [NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
 [PhotoRec IT](https://www.cgsecurity.org/wiki/PhotoRec_IT) - Digital Picture and File Recovery\
+[leandromoreira/ffmpeg-libav-tutorial FFmpeg libav tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial) - learn how media works from basic to transmuxing, transcoding and more\
 
 ### History
 
