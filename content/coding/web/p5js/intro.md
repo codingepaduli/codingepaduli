@@ -9,7 +9,7 @@ spellcheck: 2021-01-14
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
-toc: true
+toc: false
 summary: "Introduzione alla libreria grafica p5.js"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/Example02.js", "/static/coding/web/p5js/basics.js"]
 
@@ -571,8 +571,9 @@ function draw() {
     createCanvas(400, 400);
 }
 ```
+<!-- TODO check it
 
-### Esercizio svolto
+Esercizio svolto
 
 Creiamo un'area da disegno, delle dimensioni di 600 per 400, nella quale disegnamo:
 
@@ -585,15 +586,12 @@ Creiamo un'area da disegno, delle dimensioni di 600 per 400, nella quale disegna
 - un ellisse con centro alle coordinate (60, 220), con larghezza 80 ed altezza 40;
 - un arco di circonferenza
 
-arc(40, 300, 40, 40, PI, TWO_PI);
-arc(100, 300, 40, 80, PI, TWO_PI);
-
-
-ricordando che la firma della funzione è ``createCanvas(w, h)``, per invocare la funzione bisogna scrivere:
 
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
 ![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")
+
+-->
 
 ## Posizionamento dell'area da disegno
 
