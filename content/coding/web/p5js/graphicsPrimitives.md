@@ -26,29 +26,45 @@ references:
 
 Le primitive grafiche, nella moderna computer grafica, sono le funzioni che realizzano le figure geometriche più elementari, come punti, linee e triangoli. I poligoni e le curve sono considerate primitive, anche se possono essere realizzate combinando altre primitive. Oggetti e scene più complesse sono realizzati combinando l'uso di più primitive.
 
-Ogni primitiva è una funzione, e quindi ha una firma composta da un nome e da una lista di parametri, che possono essere obbligatori o facoltativi, riportati tra parentesi tonde.
+Ogni primitiva è una funzione, e quindi ha una firma composta dal nome e dalla lista di parametri formali, che possono essere obbligatori o facoltativi, riportati tra parentesi tonde.
 
 Di seguito saranno elencate le primitive principali, con i relativi parametri necessari ad invocarle. Per ulteriori dettagli sulle primitive grafiche, si rimanda alla documentazione ufficiale.
 
 ## Creazione dell'area da disegno
 
-L'area da disegno è la tavola sulla quale disegnare ed è caratterizzata da una larghezza ed un'altezza. La funzione progettata allo scopo è ``createCanvas``, la cui sintassi è la seguente:
+L'area da disegno è la tavola sulla quale disegnare ed è caratterizzata da una larghezza ed un'altezza. La funzione progettata allo scopo è ``createCanvas``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: createCanvas(w, h)
+
+Parameters:
+    w    Number: width of the canvas
+    h    Number: height of the canvas
 ```
 
 I parametri formali sono ``w`` ed ``h``, che rappresentano la larghezza e l'altezza dell'area da disegno.
 
+Per creare un'area da disegno di larghezza 600 ed altezza 400 punti, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
+
+```javascript
+createCanvas(600, 400);
+```
+
 ## Disegno di un punto
 
-Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, la cui sintassi è la seguente:
+Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: point(x, y, [z])
+
+x   Number: the x-coordinate
+y   Number: the y-coordinate
+z   Number: the z-coordinate (for WebGL mode) (Optional)
 ```
 
-I parametri formali sono ``x``, ``y`` e ``z``, che rappresentano le coordinate del **punto**.  I primi due parametri sono obbligatori e rappresentano le coordinate in un piano, il terzo parametro è tra parentesi quadre, quindi è opzionale, e lo si utilizza per indicare una terza coordinata in un sistema a tre dimensioni (non più un piano, ma uno spazio).
+I parametri formali sono ``x``, ``y`` e ``z``, che rappresentano le coordinate del **punto**.  I primi due parametri sono obbligatori e rappresentano le coordinate in un piano, il terzo parametro è tra parentesi quadre, quindi è opzionale, e lo si utilizza per indicare una terza coordinata in un sistema a tre dimensioni (non più un piano, ma uno spazio). Questo terzo parametro si usa solo quando si attiva la modalità WebGL, che non sarà trattata in questo capitolo.
+
+Per creare un punto alle coordinate (20, 20), sostituiamo al parametro formale ``x`` (che indica la coordinata X) il valore ``20`` ed al parametro formale ``y`` (che indica la coordinata Y) il valore ``20``, invocando la funzione nel seguente modo:
 
 ```javascript
 point(20, 20);
