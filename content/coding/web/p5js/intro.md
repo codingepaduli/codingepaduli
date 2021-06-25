@@ -2,9 +2,9 @@
 type: "p5js"
 title: "01 - Introduzione alla libreria grafica p5.js"
 description: "Introduzione alla libreria grafica p5.js"
-date: 2020-09-10
-publishdate: 2020-09-10
-lastmod: 2020-09-10
+date: 2020-09-05
+publishdate: 2020-09-05
+lastmod: 2020-09-05
 spellcheck: 2021-01-14
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
@@ -47,6 +47,8 @@ In ambito matematico, gli angoli sono tipicamente espressi mediante due differen
 Un grado d'arco è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza che misura 1/360 della circonferenza di un cerchio.
 
 Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
+
+<!-- TODO da sistemare documentazione sugli angoli -->
 
 Una caratteristica importante della libreria p5.js è che gli angoli sono misurati seguendo un **senso orario**. Il programmatore può esprimere le grandezze angolari in gradi d'arco o radianti, anche se in alcune casistiche è possibile utilizzare esclusivamente valori espressi in radianti.
 
@@ -571,27 +573,6 @@ function draw() {
     createCanvas(400, 400);
 }
 ```
-<!-- TODO check it
-
-Esercizio svolto
-
-Creiamo un'area da disegno, delle dimensioni di 600 per 400, nella quale disegnamo:
-
-- un punto alle coordinate (20, 20);
-- una linea che parte dalle coordinate (80, 20) e termina alle coordinate (120, 40);
-- un triangolo con vertici i punti alle coordinate (20, 60), (20, 100) e (60, 100);
-- una circonferenza alle coordinate (100, 80) e di diametro 40;
-- un quadrato con angolo in alto a sinistra posizionato alle coordinate square(20, 140) e con lato 40;
-- un rettangolo con angolo in alto a sinistra posizionato alle coordinate (80, 140) e con larghezza 80 ed altezza 20;
-- un ellisse con centro alle coordinate (60, 220), con larghezza 80 ed altezza 40;
-- un arco di circonferenza
-
-
-Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
-
-![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")
-
--->
 
 ## Posizionamento dell'area da disegno
 
