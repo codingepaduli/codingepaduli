@@ -30,6 +30,17 @@ Ogni primitiva è una funzione, e quindi ha una firma composta dal nome e dalla 
 
 Di seguito saranno elencate le primitive principali, con i relativi parametri necessari ad invocarle. Per ulteriori dettagli sulle primitive grafiche, si rimanda alla documentazione ufficiale.
 
+## Concetti di geometria piana
+
+Alcuni concetti di geometria piana saranno necessari per chiarire il funzionamento delle primitive grafiche e saranno utilizzati nei capitoli seguenti.
+
+Il **vertice** è il punto di incontro di due lati di un poligono (triangolo, quadrilatero, ecc).
+
+Due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune si dicono **adiacenti**. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
+<!-- vedi https://it.wikipedia.org/wiki/Tassellazione_dello_spazio -->
+
+Due cerchi che hanno un solo punto in comune si dicono **tangenti**.
+
 ## Creazione dell'area da disegno
 
 L'area da disegno è la tavola sulla quale disegnare ed è caratterizzata da una larghezza ed un'altezza. La funzione progettata allo scopo è ``createCanvas``, la cui firma è la seguente:
@@ -57,9 +68,10 @@ Il punto è l'entità più semplice da realizzare. La funzione progettata allo s
 ```plaintext
 Syntax: point(x, y, [z])
 
-x   Number: the x-coordinate
-y   Number: the y-coordinate
-z   Number: the z-coordinate (for WebGL mode) (Optional)
+Parameters:
+    x   Number: the x-coordinate
+    y   Number: the y-coordinate
+    z   Number: the z-coordinate (for WebGL mode) (Optional)
 ```
 
 I parametri formali sono ``x``, ``y`` e ``z``, che rappresentano le coordinate del **punto**.  I primi due parametri sono obbligatori e rappresentano le coordinate in un piano, il terzo parametro è tra parentesi quadre, quindi è opzionale, e lo si utilizza per indicare una terza coordinata in un sistema a tre dimensioni (non più un piano, ma uno spazio). Questo terzo parametro si usa solo quando si attiva la modalità WebGL, che non sarà trattata in questo capitolo.
@@ -72,13 +84,21 @@ point(20, 20);
 
 ## Disegno di una linea
 
-La linea è un segmento che unisce due punti ed è realizzata dalla funzione ``line`` la cui sintassi è la seguente:
+La linea è un segmento che unisce due punti ed è realizzata dalla funzione ``line`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: line(x1, y1, x2, y2)
+
+Parameters:
+    x1    Number: the x-coordinate of the first point
+    y1    Number: the y-coordinate of the first point
+    x2    Number: the x-coordinate of the second point
+    y2    Number: the y-coordinate of the second point
 ```
 
 I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del punto da cui parte la linea ed i parametri formali ``x2`` ed ``y2`` rappresentano le coordinate del punto in cui la linea termina.
+
+Per creare una linea che parte dal punto alle coordinate (80, 20) e termina al punto alle coordinate (120, 40), sostituiamo al parametro formale ``x1`` (che indica la coordinata X del punto di partenza) il valore ``80``, al parametro formale ``y1`` (che indica la coordinata Y del punto di partenza) il valore ``20``, al parametro formale ``x2`` (che indica la coordinata X del punto di arrivo) il valore ``120`` ed al parametro formale ``y2`` (che indica la coordinata Y del punto di arrivo) il valore ``40``, invocando la funzione nel seguente modo:
 
 ```javascript
 line(80, 20, 120, 40);
@@ -86,13 +106,23 @@ line(80, 20, 120, 40);
 
 ## Disegno di un triangolo
 
-La figura del triangolo è caratterizzata da tre punti in cui originano e terminano i lati che la vanno a formare e la si può realizzare attraverso la funzione ``triangle`` la cui sintassi è la seguente:
+La figura del triangolo è caratterizzata da tre punti in cui originano e terminano i lati che la vanno a formare e la si può realizzare attraverso la funzione ``triangle`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: triangle(x1, y1, x2, y2, x3, y3)
+
+Parameters
+    x1    Number: x-coordinate of the first point
+    y1    Number: y-coordinate of the first point
+    x2    Number: x-coordinate of the second point
+    y2    Number: y-coordinate of the second point
+    x3    Number: x-coordinate of the third point
+    y3    Number: y-coordinate of the third point
 ```
 
-I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del primo vertice,  ``x2`` ed ``y2`` rappresentano le coordinate del secondo vertice, ``x3`` ed ``y3`` le coordinate del terzo vertice, come nel seguente esempio:
+I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del primo vertice,  ``x2`` ed ``y2`` rappresentano le coordinate del secondo vertice, ``x3`` ed ``y3`` le coordinate del terzo vertice.
+
+Per creare una triangolo i cui vertici si trovano alle coordinate (20, 60), (20, 100) e (60, 100), sostituiamo al parametro formale ``x1`` (che indica la coordinata X del primo vertice) il valore ``20``, al parametro formale ``y1`` (che indica la coordinata Y del primo vertice) il valore ``60``, al parametro formale ``x2`` (che indica la coordinata X del secondo vertice) il valore ``20``, al parametro formale ``y2`` (che indica la coordinata Y del secondo vertice) il valore ``100``, al parametro formale ``x3`` (che indica la coordinata X del terzo vertice) il valore ``60``, al parametro formale ``y2`` (che indica la coordinata Y del secondo vertice) il valore ``100``, invocando la funzione nel seguente modo:
 
 ```javascript
 triangle(20, 60, 20, 100, 60, 100);
@@ -100,13 +130,20 @@ triangle(20, 60, 20, 100, 60, 100);
 
 ## Disegno di un cerchio
 
-La circonferenza è caratterizzata da un punto centrale ed un diametro e la si può realizzare attraverso la funzione ``circle`` la cui sintassi è la seguente:
+Il cerchio è caratterizzata da un punto centrale ed un diametro e la si può realizzare attraverso la funzione ``circle`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: circle(x, y, diameter)
+
+Parameters:
+    x           Number: x-coordinate of the centre of the circle.
+    y           Number: y-coordinate of the centre of the circle.
+    diameter    Number: diameter of the circle.
 ```
 
 I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``diameter`` è la dimensione del diametro.
+
+Per creare un cerchio con centro nel punto (100, 80) e diametro 40, sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``, al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``80`` ed al parametro formale ``diameter`` (che indica il diametro) il valore ``40``, quindi invochiamo la funzione nel seguente modo:
 
 ```javascript
 circle(100, 80, 40);
@@ -114,13 +151,20 @@ circle(100, 80, 40);
 
 ## Disegno di un quadrato
 
-Il rettangolo è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensioni del lato. Si può disegnare attraverso la funzione ``square`` la cui sintassi è la seguente:
+Il quadrato è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensione del lato. Si può disegnare attraverso la funzione ``square`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: square(x, y, side)
+
+Parameters:
+    x     Number: the x-coordinate of the first point
+    y     Number: the y-coordinate of the first point
+    side  Number: side of the square
 ```
 
 I parametri formali ``x`` ed ``y`` sono le coordinate del punto da cui iniziare a disegnare, ``side`` è la dimensione del lato.
+
+Per creare un quadrato con vertice in alto a sinistra nel punto (20, 140) e lato 40, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``140`` ed al parametro formale ``side`` (che indica il lato) il valore ``40``, quindi invochiamo la funzione nel seguente modo:
 
 ```javascript
 square(20, 140, 40);
@@ -128,13 +172,21 @@ square(20, 140, 40);
 
 ## Disegno di un rettangolo
 
-Il rettangolo è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensioni della base e dell'altezza ed è realizzabile attraverso la funzione ``rect`` la cui sintassi è la seguente:
+Il rettangolo è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensioni della base e dell'altezza. Lo si può realizzare attraverso la funzione ``rect`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: rect(x, y, w, h)
+
+Parameters:
+    x     Number: the x-coordinate of the first point
+    y     Number: the y-coordinate of the first point
+    w     Number: width of the rectangle.
+    h     Number: height of the rectangle.
 ```
 
-I parametri formali ``x`` ed ``y`` sono le coordinate del punto da cui iniziare a disegnare, ``w`` ed ``h`` sono le dimensioni della base e dell'altezza del rettangolo, come nel seguente esempio:
+I parametri formali ``x`` ed ``y`` sono le coordinate del vertice in alto a sinistra da cui iniziare a disegnare, ``w`` ed ``h`` sono le dimensioni della base e dell'altezza del rettangolo.
+
+Per creare un rettangolo con vertice in alto a sinistra nel punto (80, 140), base 80 ed altezza 20, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``80``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``140``, al parametro formale ``w`` (che indica la base) il valore ``80`` ed al parametro formale ``h`` (che indica l'altezza) il valore ``20``, quindi invochiamo la funzione nel seguente modo:
 
 ```javascript
 rect(80, 140, 80, 20);
