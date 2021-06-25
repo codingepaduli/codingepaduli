@@ -26,9 +26,9 @@ theme = "mainroad" # hugo-academic mainroad watercss
 
 [markup]
   [markup.tableOfContents]
-    endLevel = 2
+    endLevel = 4
     ordered = false
-    startLevel = 1
+    startLevel = 2
   [markup.goldmark]
     [markup.goldmark.renderer]
       hardWraps = false
