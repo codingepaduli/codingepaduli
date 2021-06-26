@@ -1,0 +1,39 @@
+<!-- My custom menu CSS -->
+<!-- see header.html -->
+
+{{- if .Site.Menus.main }}
+  <style>
+    /* CSS Barra di navigazione */
+    .my_navbar ul {
+      display: flex; /* mette le voci una di fila all'altra */
+      background-color: black;
+      color: white;
+    }
+    .my_navbar li {
+      padding: 15px 30px;
+      list-style: none;
+      text-transform: uppercase;
+      justify-content: center;
+    }
+    .my_navbar a {
+      color: white;
+      font-weight: 700;
+    }
+
+    /* Layout mobile - barra di navigazione*/
+    @media screen and (max-width: 767px) {
+      .my_navbar ul {
+         flex-direction: column;
+         display: none; /* nascondo il menu per schermi piccoli */
+      }
+
+      /* barra di navigazione con menu aperto */
+      /* mostro il menu solo quando la chekcbox "my_menu" è checked.
+        Il selettore CSS "+" è fondamentale. */
+      #my_menu:checked + .my_navbar ul {
+         display: flex;
+         text-align: center;
+      }
+    }
+  </style>
+{{- end }}

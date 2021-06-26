@@ -1,0 +1,16 @@
+<!-- My custom menu button -->
+<!-- see header.html -->
+
+{{- if .Site.Menus.main }}
+  <div class="menu_button">
+    <!-- questo menu button è inutile,
+        serve solo a contenere la label
+        che permette di cliccarci sopra -->
+    <label for="my_menu">
+      {{ T "menu_label" }}
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+{{- end }}

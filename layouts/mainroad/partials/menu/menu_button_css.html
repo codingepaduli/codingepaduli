@@ -1,0 +1,38 @@
+<!-- My custom menu button CSS -->
+<!-- see header.html -->
+
+{{- if .Site.Menus.main }}
+  <style>
+    /* CSS Pulsante da cliccare (invisibile su desktop)*/
+    .menu_button {
+      display: none;
+    }
+    .menu_button label {
+      background-color: white;
+      color: black;
+      border: 2px solid white;
+      height: 70px;
+      width: 70px;
+      display: flex; /* serve a permettere l'allineamento centrale, null'altro. */
+      justify-content: center;
+      align-items: center; /* allinea le righe nel pulsante */
+      flex-direction: column;
+    }
+    /* Righe nel pulsante */
+    .menu_button label span {
+      background-color: black;
+      color: white;
+      height: 3px;
+      width: 80%;
+      margin: 5px 0px;
+    }
+
+    /* Layout mobile - pulsante del menu*/
+    @media screen and (max-width: 767px) {
+      .menu_button {
+        display: flex; /* serve a permettere l'allineamento a destra (con justify-content: flex-end), null'altro. */
+        justify-content: flex-end; /* pulsante menu a destra */
+      }
+    }
+  </style>
+{{- end }}
