@@ -57,6 +57,29 @@
 <script src="{{ . | relURL }}"></script>
 {{- end }}
 {{- partial "mathjax.html" . -}}
+
+{{ if .IsHome }}
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then( (registration) => {
+            console.info('codingepaduli serviceWorker registered with scope: ' + registration.scope);
+        })
+        .catch( (error) => {
+            console.error("Error registering the codingepaduli serviceWorker: ", error);
+        });
+        navigator.serviceWorker.ready.then(() => {
+            console.info('codingepaduli serviceWorker Ready');
+        })
+        .catch( (error) => {
+            console.error("serviceWorker not ready: ", error);
+        });
+    } else {
+      console.error('Service workers are not supported.');
+    }
+  </script>
+{{ end }}
+
 <script data-goatcounter="https://codingepaduli-github.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
