@@ -56,7 +56,7 @@ SITO_WEB/themes/TEMA_SCELTO/theme.toml
 
 Scelto il tema e creato il contenuto, si passa alla configurazione di Hugo, modificando il file ``config.toml`` presente nella cartella principale del sito web. Le voci principali sono le seguenti:
 
-```ini
+```toml
 baseURL = "http://codingepaduli.github.io/"
 languageCode = "it"
 title = "Coding e Paduli"
@@ -92,7 +92,7 @@ Bisogna prestare attenzione a salvare le stringhe tra doppi apici perché posson
 
 Di seguito un esempio di proprietà in YAML:
 
-```ini
+```YAML
 ---
 type: "pagina"
 title: "Titolo"
@@ -102,6 +102,7 @@ publishdate: 2020-04-21
 expiryDate: 2020-05-21
 lastmod: 2020-04-21
 draft: false
+categories: ["coding", "blog"]
 summary: "Descrizione"
 ---
 ```
@@ -114,12 +115,13 @@ Le proprietà principali sono:
 - ``publishdate`` indica la data di pubblicazione dell'articolo;
 - ``expiryDate`` indica la data di scadenza dell'articolo;
 - ``lastmod`` indica la data di ultima modifica;
+- ``categories`` indica le categorie delle quale l'articolo fa parte.
 
 Solo i contenuti che non sono bozze (in inglese "draft") e che hanno una data di scrittura contenuta tra la data di pubblicazione e di scadenza saranno generati nella cartella di pubblicazione.
 
 Creato il file ``index.md``, si può procedere alla creazione delle pagine del sito.
 
-Ogni file creato nella cartella ``content``, a parte i file ``index.md``, rappresenta una pagina del sito web e deve essere creata secondo le seguenti regole:
+Ogni file creato nella cartella ``content``, a parte il file ``_index.md``, rappresenta una pagina del sito web e deve essere creata secondo le seguenti regole:
 
 - deve avere un nome che non inizi con il carattere ``_``;
 - deve contenere il **front-matter**;
@@ -147,9 +149,30 @@ title = "My cool site"          # Titolo del sito
 
 Impostate queste informazioni, vengono automaticamente incluse nelle pagine web le informazioni da presentare sui social, quali data, titolo, descrizione, immagini o video. In ogni pagina è possibile indicare espressamente una di queste informazioni utilizzando la relativa proprietà del **front-matter**.
 
-## Menu
+## Contenuti della Home Page
 
-Per aggiungere una pagina al menu, inserire nel **front-matter** le seguenti proprietà:
+Per poter selezionare i contenuti della home page tra gli articoli creati, inserire nel file ``config.toml`` la seguente proprietà:
+
+```toml
+[params]
+  mainSections = ["coding", "news", "shopping"]
+```
+
+In questo modo, gli articoli che fanno parte di una categoria compresa tra quelle elencate nella proprietà ``mainSections`` saranno visualizzati anche sulla home page.
+
+Ad esempio, una pagina "page.md", con il seguente front-matter, comparirà tra gli articoli pubblicati sulla home page, perché fa parte della categoria ``coding`` che è tra quelle elencate in ``mainSections``.
+
+```YAML
+---
+type: "pagina"
+categories: ["coding", "blog"]
+...
+---
+```
+
+## Menu principale
+
+Per aggiungere una pagina al menu, inserire nel **front-matter** di una pagina le seguenti proprietà:
 
 ```ini
 menu: "main"
@@ -157,6 +180,8 @@ linktitle: "Open Source"
 ```
 
 La proprietà ``linktitle`` indica il testo da visualizzare nel menù, mentre la proprietà ``menu`` deve avere valore ``main`` indicante proprio il menu principale.
+
+Se si vuole aggiungere una intera categoria di pagine, queste proprietà possono essere aggiunte ad uno dei file ``_index.md``.
 
 ## Personalizzazione della configurazione
 
@@ -254,6 +279,12 @@ Ad esempio, per includere video, tweet, si può usare una delle abbreviazioni gi
 Per una lista di tutti gli Shortcodes già disponibili di Hugo si rimanda alla documentazione ufficiale.
 
 Se si vuole creare nuove abbreviazioni personalizzate, queste devono essere posizionate nella cartella ``layouts/shortcodes``. Si rimanda alla documentazione ufficiale per le regole di creazione di nuovi Shortcodes.
+
+## Code highlighting
+
+Per visualizzare i vari linguaggi supportati dal motore GoldMark (che processa i file ``,md`` e che si basa su Chroma per il code highlight), guardare al link:
+
+[https://github.com/alecthomas/chroma#supported-languages](https://github.com/alecthomas/chroma#supported-languages "https://github.com/alecthomas/chroma#supported-languages")
 
 ## Gestione sottomoduli di git
 
