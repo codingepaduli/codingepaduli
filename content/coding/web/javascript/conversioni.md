@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "04 - Identificazione del tipo e conversioni tra tipi"
+title: "JavaScript Lez. 04 - Identificazione del tipo e conversioni tra tipi"
 description: "Identificazione del tipo di dato di una variabile e conversioni tra i vari tipi"
 date: 2020-04-06
 publishdate: 2020-04-06

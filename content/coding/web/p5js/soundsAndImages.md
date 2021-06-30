@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "02 - Suoni ed immagini"
+title: "p5.js Lez. 02 - Suoni ed immagini"
 description: "Suoni ed immagini"
 date: 2020-09-11
 publishdate: 2020-09-11

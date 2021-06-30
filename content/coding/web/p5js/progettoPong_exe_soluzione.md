@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "04.2 - Soluzione progetto Pong"
+title: "p5.js Lez. 04.2 - Soluzione progetto Pong"
 description: "Implementazione del videogioco in stile 'pong'"
 date: 2020-09-23
 publishdate: 2020-09-23

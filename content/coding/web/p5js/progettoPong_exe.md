@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "04.1 - Progetto Pong"
+title: "p5.js Lez. 04.1 - Progetto Pong"
 description: "Sviluppo di un videogioco in stile 'pong'"
 date: 2020-09-22
 publishdate: 2020-09-22

@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "02 - Primitive grafiche"
+title: "p5.js Lez. 02 - Primitive grafiche"
 description: "Le primitive grafiche, ovvero le funzioni che realizzano le figure geometriche più elementari"
 date: 2020-09-10
 publishdate: 2020-09-10

@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "07.1 - Esercizi sull'interazione tra script ed elementi HTML"
+title: "JavaScript Lez. 07.1 - Esercizi sull'interazione tra script ed elementi HTML"
 description: "Esercizi sull'interazione tra script ed elementi HTML"
 date: 2020-05-01
 publishdate: 2020-05-01

@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "02.1 - Esercizi di grafica 2D"
+title: "p5.js Lez. 02.1 - Esercizi di grafica 2D"
 description: "Esercizi di grafica 2D"
 date: 2020-09-12
 publishdate: 2020-09-12

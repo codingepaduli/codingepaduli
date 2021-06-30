@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "05 - Istruzioni condizionali ed iterative"
+title: "JavaScript Lez. 05 - Istruzioni condizionali ed iterative"
 description: "Istruzioni condizionali ed iterative"
 date: 2020-04-25
 publishdate: 2020-04-25

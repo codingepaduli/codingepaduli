@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "03 - Colori e stili"
+title: "p5.js Lez. 03 - Colori e stili"
 description: "Colori e stili"
 date: 2020-09-13
 publishdate: 2020-09-13

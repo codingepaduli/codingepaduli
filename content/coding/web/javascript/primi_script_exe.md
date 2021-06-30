@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "03.1 - Esercizio sui tipi di dato e sulla console"
+title: "JavaScript Lez. 03.1 - Esercizio sui tipi di dato e sulla console"
 description: "Esercizio sui tipi di dato e sulla console"
 date: 2020-04-05
 publishdate: 2020-04-05

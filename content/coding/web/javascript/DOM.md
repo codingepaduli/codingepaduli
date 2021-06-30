@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "09 - Document Object Model (DOM)"
+title: "JavaScript Lez. 09 - Document Object Model (DOM)"
 description: "09 - Document Object Model (DOM)"
 date: 2020-08-01
 publishdate: 2020-08-01

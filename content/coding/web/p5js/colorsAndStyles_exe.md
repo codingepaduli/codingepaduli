@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "03.1 - Esercizi di grafica 2D a colori"
+title: "p5.js Lez. 03.1 - Esercizi di grafica 2D a colori"
 description: "Esercizi di grafica 2D a colori"
 date: 2020-09-15
 publishdate: 2020-09-15

@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "08 - DOM e selettori CSS"
+title: "JavaScript Lez. 08 - DOM e selettori CSS"
 description: "08 - DOM e selettori CSS"
 date: 2020-05-04
 publishdate: 2020-05-04

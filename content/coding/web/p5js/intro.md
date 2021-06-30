@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "01 - Introduzione alla libreria grafica p5.js"
+title: "p5.js Lez. 01 - Introduzione alla libreria grafica p5.js"
 description: "Introduzione alla libreria grafica p5.js"
 date: 2020-09-05
 publishdate: 2020-09-05
@@ -28,7 +28,7 @@ references:
 
 [p5.js](https://p5js.org "Sito web di p5.js") è una libreria grafica open-source, focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è, di fatto, anche un "porting" della piattaforma [Processing](https://processing.org/ "Sito web di processing") in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org "Sito web della Processing Foundation"), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
-Esistono inoltre numerose estensioni che aggiungono strumenti per la gestione audio, per la gestione grafica in 3 dimensioni,  per la gestione della geo-localizzazione, delle mappe, della webcam, per l'applicazione di algoritmi di intelligenza artificiale e per la comunicazione con diversi dispositivi basati su micro-controllore, come Arduino.
+Esistono inoltre numerose estensioni che aggiungono strumenti per la gestione audio, per la gestione grafica in 3 dimensioni, per la gestione della geo-localizzazione, delle mappe, della webcam, per l'applicazione di algoritmi di intelligenza artificiale e per la comunicazione con diversi dispositivi basati su micro-controllore, come Arduino.
 
 ## Sistema di coordinate
 

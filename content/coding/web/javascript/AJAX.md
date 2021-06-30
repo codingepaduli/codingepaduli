@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "10 - Asynchronous JavaScript And XML (AJAX)"
+title: "JavaScript Lez. 10 - Asynchronous JavaScript And XML (AJAX)"
 description: "10 - Asynchronous JavaScript And XML (AJAX)"
 date: 2020-08-05
 publishdate: 2020-08-05

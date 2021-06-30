@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "03 - Costanti, variabili e tipi di dato"
+title: "JavaScript Lez. 03 - Costanti, variabili e tipi di dato"
 description: "Dichiarazione di costanti e variabili per i vari tipi di dato"
 date: 2020-04-04
 publishdate: 2020-04-04

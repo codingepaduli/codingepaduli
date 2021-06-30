@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "02 - Primi script"
+title: "JavaScript Lez. 02 - Primi script"
 description: "Introduzione alle prime istruzioni di JavaScript"
 date: 2020-04-03
 publishdate: 2020-04-03

@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "04 - Operatori ed espressioni"
+title: "JavaScript Lez. 04 - Operatori ed espressioni"
 description: "Operatori ed espressioni"
 date: 2020-04-08
 publishdate: 2020-04-08

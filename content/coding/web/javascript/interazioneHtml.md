@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "07 - Istruzioni basilari per processare il contenuto di una pagina web"
+title: "JavaScript Lez. 07 - Istruzioni basilari per processare il contenuto di una pagina web"
 description: "07 - Istruzioni basilari per processare il contenuto di una pagina web"
 date: 2020-04-29
 publishdate: 2020-04-29

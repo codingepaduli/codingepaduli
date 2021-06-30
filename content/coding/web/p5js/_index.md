@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "Libreria grafica p5.js"
+title: "p5.js Lez. Libreria grafica p5.js"
 description: "Lezioni di programmazione sulla libreria grafica p5.js"
 date: 2020-09-10
 publishdate: 2020-09-10

@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "06 - Funzioni"
+title: "JavaScript Lez. 06 - Funzioni"
 description: "Funzioni"
 date: 2020-04-26
 publishdate: 2020-04-26

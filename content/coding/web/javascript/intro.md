@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "01 - Introduzione al linguaggio JavaScript"
+title: "JavaScript Lez. 01 - Introduzione al linguaggio JavaScript"
 description: "Introduzione al linguaggio JavaScript"
 date: 2020-04-01
 publishdate: 2020-04-01
