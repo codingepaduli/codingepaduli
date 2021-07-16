@@ -17,7 +17,7 @@ customJS: ["/static/coding/web/javascript/ajax.js"]
 
 Il modello AJAX è un modello nato per l'uso congiunto di un insieme di tecnologie preesistenti, permette al client di inviare e ricevere informazioni dal server in modalità asincrona. Il client può quindi aggiornare i singoli dati della pagina web senza dover ricaricare l'intera pagina.
 
-Le chiamate AJAX consentono di sfruttare, dalla pagina web e dalle varie applicazioni, i vari servizi offerti online, permettendo in questo modo di separare il front-end, ovvero la grafica di applicazioni web e app degli smartphone, dal back-end, ovvero dai servizi offerti dai server.
+Le chiamate AJAX consentono di sfruttare, dalla pagina web e dalle varie applicazioni, i vari servizi offerti online, permettendo in questo modo di separare il front-end, ovvero la grafica di applicazioni web e mobile app, dal back-end, ovvero dai servizi offerti dai server.
 
 L'invio e la ricezione dati sono soggette alle regole di sicurezza del browser e del server.
 
@@ -163,12 +163,59 @@ In particolare, la  risposta ``response`` del server può essere in uno qualsias
 
 La funzione ``catch`` serve a catturare errori nel caso la risposta del server non sia stata recapitata al client. In questo caso, l'unico oggetto disponibile è appunto un errore, che viene gestito dal programmatore in questa funzione.
 
-Esempio di selezione:
+Le proprietà dell'errore che sono accessibili dal programmatore sono:
+
+- ``name`` — il nome dell'errore (ad esempio SyntaxError o TypeError)
+- ``message`` — il messaggio contenente i dettagli dell'errore.
+
+Un esempio di codice della funzione ``catch`` potrebbe essere il seguente:
+
+```javascript
+catch( (error) => console.log('Errore nella richiesta della risorsa: ' + error.message) );
+```
+
+### Esempio completo di chiamata AJAX
+
+Codice HTML per generare un pulsante da cliccare:
+
+```html
 <div id="loadImage"></div>
 <input type="button" onclick="callGetJSON()" value="seleziona">
+```
+
+Codice JavaScript per effettuare una chiamata AJAX utilizzando le fetch API:
+
+```javascript
+const options = {
+  method: 'GET',
+  headers: { 'Content-Type': 'application/json' },
+  mode: 'cors',
+  cache: 'no-cache'
+};
+
+function callGetJSON() {
+    let source = document.querySelector('#loadImage');
+
+    fetch('https://my-json-server.typicode.com/typicode/demo/posts/1', options)
+    .then( (response) => response.ok ? response.json() : 
+            throw Error(`Request rejected with status ${response.status}`); 
+    .then( (post) => source.appendChild( document.createTextNode(post.id + ' ' + post.title ) ))
+    .catch( (error) => {
+        source.appendChild( document.createTextNode(error.name + ' ' + error.message) );
+    });
+```
+
+Il risultato è il seguente:
+
+<div id="loadImage"></div>
+<input type="button" onclick="callGetJSON()" value="seleziona">
+
 
 headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }
 encodeURI(uri)
 
 headers: { 'Content-Type': 'application/json' },
  JSON.stringify(record)
+ 
+ 
+    // https://i.imgur.com/X4vco9k.jpg 
