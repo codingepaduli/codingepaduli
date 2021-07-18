@@ -211,6 +211,54 @@ let x = 10;
 console.info(x);
 ```
 
+### Sostituzione dei segnaposto
+
+Nei messaggi da mostrare nella console è possibile utilizzare una formattazione personalizzata, specificandola attraverso dei segnaposto che sono molto simili a quelli utilizzati nei linguaggi _c/c++_ e _java_.
+
+I segnaposto sono i seguenti:
+
+- ``%s``: Segnaposto di una stringa;
+- ``%d`` oppure ``%i``: Segnaposto di un numero intero;
+- ``%f``: Segnaposto di un numero decimale;
+- ``%o``: Segnaposto di un oggetto o di un elemento HTML;
+- ``%c``: Segnaposto di uno stile CSS.
+
+Nei messaggi da mostrare nella console, ad ogni segnaposto deve essere associato un parametro, come nell'esempio seguente, nel quale sono presenti quattro segnaposto e quattro parametri.
+
+```javascript
+console.info("%s ha %i anni, è alto %f metri ed è amico di %s", "Alan", 7, 1.15, "Mike");
+```
+
+Ad ogni segnaposto presente nel messaggio sarà sostituito il parametro corrispondente, a patto che sia compatibile con il segnaposto utilizzato. Al segnaposto di un numero non può essere associato un parametro di tipo stringa, ma deve essere associato un parametro di tipo numerico.
+
+Nell'esempio precedente, al primo segnaposto ``%s`` viene sostituito il parametro ``"Alan"``, al secondo segnaposto ``%i`` viene sostituito il parametro ``7``, al terzo segnaposto ``%f`` viene sostituito il parametro ``1.15``, al quarto segnaposto viene sostituito il parametro ``"Mike"``, mostrando in console il messaggio "Alan ha 7 anni, è alto 1.15 metri ed è amico di Mike".
+
+Come si può notare, il primo argomento della funzione è il messaggio da mostrare, seguito poi dalla lista di parametri da sostituire ai segnaposto (uno per ogni segnaposto).
+
+La formattazione con stile CSS ha un effetto visivo molto efficace:
+
+```javascript
+console.warn( "%cThis is actually %cvery interesting", "color: blue; font-size: 55px; background-color: yellow;", "font-size: 55px; background-color: blue; color: yellow" );
+```
+
+Permette di mostrare in console tutti gli effetti grafici realizzabili attraverso CSS, inclusa la presentazione di immagini:
+
+```javascript
+console.error( "%cThis is an image", "color: blue; font-size: 55px; background-image: url(https://source.unsplash.com/random/1200x800)");
+```
+
+La formattazione di un oggetto HTML permette di scrivere nella console il codice HTML passato come parametro:
+
+```javascript
+console.info( "This is the image code: ", "<img src='https://source.unsplash.com/random/1200x800'>");
+```
+
+Il codice HTML puó anche essere recuperato dalla pagina web utilizzando le apposite funzioni JavaScript, come nel seguente esempio.
+
+```javascript
+console.error( "This is the image code: ", document.querySelector('#id'));
+```
+
 ### Raggruppare messaggi
 
 E' possibile creare gruppi di messaggi, utilizzando le istruzioni ``console.group()`` e ``console.groupEnd()``:
@@ -261,51 +309,3 @@ console.dir(obj);
 Un esempio completo della console contenente l'output di tutte le istruzioni viste è il seguente:
 
 ![Console - output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Console - output di tutte le istruzioni")
-
-### Formattazione personalizzata
-
-Nei messaggi da mostrare nella console è possibile utilizzare una formattazione personalizzata, specificandola attraverso degli indicatori che sono molto simili a quelli utilizzati nei linguaggi ``c/c++`` e ``java``.
-
-Gli indicatori sono i seguenti:
-
-- ``%s`` ⇒ Indicatore di una stringa;
-- ``%d`` oppure ``%i`` ⇒ Indicatore di un numero intero;
-- ``%f`` ⇒ Indicatore di un numero con la virgola;
-- ``%o`` ⇒ Indicatore di un oggetto o di un elemento DOM;
-- ``%c`` ⇒ Indicatore di uno stile CSS. 
-
-Nei messaggi da mostrare nella console, ad ogni indicatore deve essere associato un parametro, come nell'esempio seguente, nel quale sono presenti quattro indicatori e quattro parametri.
-
-```javascript
-console.log("%s ha %i anni, è alto %f metri ed è amico di %s", "Alan", 7, 1.15, "Mike");
-```
-
-Ad ogni indicatore presente nel messaggio sarà sostituito il parametro corrispondente, a patto che sia compatibile.
-
-Nell'esempio precedente, al primo indicatore ``%s`` viene sostituito il parametro ``"Alan"``, al secondo indicatore ``%i`` viene sostituito il parametro ``7``, al terzo indicatore ``%f`` viene sostituito il parametro ``1.15``, al quarto indicatore viene sostituito il parametro ``"Mike"``, mostrando in console il messaggio "Alan ha 7 anni, è alto 1.15 metri ed è amico di Mike".
-
-Come si può notare, il primo argomento della funzione è il messaggio da mostrare, seguito poi dalla lista di parametri da sostituire agli indicatori (uno per ogni indicatore).
-
-La formattazione con stile CSS ha un effetto visivo molto efficace:
-
-```javascript
-console.log( "%cThis is actually %cvery interesting", "color: blue; font-size: 55px; background-color: yellow;", "font-size: 55px; background-color: blue; color: yellow" );
-```
-
-Permette di mostrare in console tutti gli effetti grafici realizzabili attraverso CSS, inclusa la presentazione di immagini:
-
-```javascript
-console.log( "%cThis is an image", "color: blue; font-size: 55px; background-image: url(https://source.unsplash.com/random/1200x800)");
-```
-
-La formattazione con stile HTML permette di scrivere nella console il codice HTML passato come parametro:
-
-```javascript
-console.log( "This is the image code: ", "<img src='https://source.unsplash.com/random/1200x800'>");
-```
-
-Il codice HTML puó anche essere recuperato dalla pagina web utilizzando le apposite funzioni JavaScript, come nel seguente esempio.
-
-```javascript
-console.log( "This is the image code: ", document.querySelector('#id'));
-```
