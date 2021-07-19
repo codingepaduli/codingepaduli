@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 09 - Etichette audio e video"
-description: "HTML Lez. 09 - Etichette audio e video"
+title: "HTML Lez. 09 - Altre etichette"
+description: "HTML Lez. 09 - Altre etichette"
 date: 2019-08-29
 publishdate: 2019-08-29
 lastmod: 2019-08-29
@@ -9,7 +9,7 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
-summary: "HTML Lez. 09 - Etichette audio e video"
+summary: "HTML Lez. 09 - Altre etichette"
 
 references:
     -   title: "MIME Types"
@@ -18,7 +18,61 @@ references:
         description: "A list of mime types"
 ---
 
-# Etichette audio e video
+# Altre etichette
+
+Sono numerose le etichette HTML utili a descrivere i contenuti di una pagina web. Di seguito elenchiamo le etichette  che non sono state descritte nei capitoli precedenti, ma che possono risultare utili in più di una situazione e che possono aggiungere preziose informazioni per i motori di ricerca e per i lettori audio.
+
+## Etichetta per i contatti
+
+In molti casi è necessario visualizzare le informazioni di contatto di una persona o di un organizzazione, come un indirizzo (stradale), un numero di telefono, un sito web, una email, un nome su un social e cosí via.
+
+Tutte queste informazioni possono essere racchiuse nell'etichetta **address**, come nel seguente esempio:
+
+```html
+<address>
+    <p>Pubblicato da: <a href="https://me/">Me</a></p>
+
+    <p>Email: <a href="mailto:me@mail.me"> me@mail.me</a></p>
+
+    <p>Tel: <a href="tel:+39123456">+39123456</a></p>
+</address>
+```
+
+## Etichetta per data e ora
+
+Per indicare una data e/o un'ora, è possibile utilizzare l'etichetta **time**, come di seguito:
+
+```html
+<time datetime="2021-01-25">
+    25 Gennaio 2021
+</time>
+<time datetime="2001-05-15T19:00">
+    15 Maggio 2001 - ore 19.00
+</time>
+```
+
+Il formato in cui scrivere i dati deve essere ``YYYY-MM-DD``T``hh:mm:ss.KKK``, con il seguente significato:
+
+- ``YYYY``: Anno;
+- ``MM``: Mese;
+- ``GG``: Giorno;
+- T: è un carattere di separazione, deve essere inserito per separare la data dall'ora;
+- ``hh``: Ora;
+- ``mm``: Minuti;
+- ``ss``: Secondi;
+- ``kkk``: Millisecondi.
+
+Alcuni campi possono essere omessi, per maggiori informazioni si rimanda alle specidiche del W3C.
+
+## Etichetta per le variabili matematiche
+
+Le variabili matematiche possono essere indicate dall'etichetta **var**, come di seguito:
+
+```html
+<var>i</var> * <var>i</var> = -1
+```
+
+## Etichette audio e video
 
 Le pagine web, oggi, presentano all'utente molti contenuti multimediali, tra cui audio e video.
 
