@@ -32,7 +32,7 @@ Riepilogando, la sintassi delle etichette con attributi è la seguente:
 Alcuni attributi sono comuni a tutte le etichette:
 
 - l'attributo ``id`` identifica in maniera univoca l'etichetta, è anche utilizzato per collegamenti che fanno riferimento ad un preciso punto della pagina;
-- l'attributo ``class`` serve ad identificare gruppi di etichette come facenti parte dello stesso insieme, per poi poter elaborare l'intero insieme o per applicare lo stile grafico a tutto l'insieme; Un'etichetta può appartenere a più insiemi;
+- l'attributo ``class`` serve ad indicare i gruppi di cui le etichette fanno parte. Un'etichetta può appartenere a più insiemi;
 - l'attributo ``style`` indica lo stile grafico da applicare per l'etichetta, è rappresentato da un valore scritto in linguaggio CSS;
 
 Un esempio di questi attributi è il seguente:
@@ -44,7 +44,8 @@ Un esempio di questi attributi è il seguente:
 <p id="paragrafo4" class="citazione">paragrafo 4</p>
 ```
 
-Dall'esempio, si nota che ogni paragrafo ha un suo identificativo, e che i primi tre paragrafi fanno parte dello stesso insieme (chiamato "insieme1"), dato che il valore dell'attributo ``class`` è lo stesso; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato "citazione"); Per un approfondimento, si rimanda alle specifiche sui selettori CSS.
+Dall'esempio si nota che ogni paragrafo ha un suo identificativo e che i primi tre paragrafi fanno parte dello stesso insieme (chiamato "
+``insieme1``), dato che il valore dell'attributo ``class`` è presente in tutte e tre le etichette; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato ``citazione``) e che solo la terza etichetta fa parte di entrambi gli insiemi. Per un approfondimento, si rimanda alle specifiche sui selettori CSS.
 
 Non tutti gli attributi sono comuni a tutte le etichette, vi sono attributi specifici per una singola etichetta, per cui è possibile associarli solo ed esclusivamente a questa etichetta.
 
@@ -201,6 +202,17 @@ La lista viene visualizzata di seguito:
     <li>Chrome</li>
     <li>Edge (Microsoft)</li>
 </ul>
+
+## Etichetta di lista di definizione
+
+Per creare una lista di definizione si usano le etichette ``dl``, ``dt`` e ``dd``, come nel seguente esempio:
+
+```html
+<dl>
+    <dt>Firefox</dt>
+    <dd>A free, open source, cross-platform, graphical web browser.</dd>
+</dl> 
+```
 
 ## Etichette di tabella con attributi ``colspan`` e ``rowspan``
 
