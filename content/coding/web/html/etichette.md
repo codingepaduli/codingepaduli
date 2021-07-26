@@ -36,9 +36,9 @@ Queste etichette di apertura e chiusura sono scritte secondo le seguenti regole:
 - l'etichetta di chiusura è composta dalle parentesi angolari contenenti il nome dell'etichetta preceduto dal carattere ``/``.
 
 Per esempio,
-l'etichetta di inizio del titolo è ``<h1>`` e l'etichetta di fine titolo è ``</h1>``, quindi, il titolo in HTML sarà scritto usando il codice: ``<h1>Titolo</h1>``;
-l'etichetta di inizio paragrafo è ``<p>`` e l'etichetta di fine paragrafo è ``</p>``, quindi, il paragrafo in HTML sarà scritto usando il codice: ``<p>paragrafo</p>``;
-l'etichetta di inizio testo evidenziato è ``<mark>`` e l'etichetta di fine testo evidenziato è ``</mark>``, quindi, il testo evidenziato in HTML sarà scritto usando il codice: ``<mark>testo evidenziato</mark>``;
+l'etichetta di inizio del titolo è ``<h1>`` e l'etichetta di fine titolo è ``</h1>``, quindi, il titolo in HTML sarà scritto tra le due etichette usando il codice: ``<h1>Titolo</h1>``;
+l'etichetta di inizio paragrafo è ``<p>`` e l'etichetta di fine paragrafo è ``</p>``, quindi, il paragrafo in HTML sarà scritto tra le due etichette usando il codice: ``<p>paragrafo</p>``;
+l'etichetta di inizio testo evidenziato è ``<mark>`` e l'etichetta di fine testo evidenziato è ``</mark>``, quindi, il testo evidenziato in HTML sarà scritto tra le due etichette usando il codice: ``<mark>testo evidenziato</mark>``;
 
 **L'etichetta di chiusura non è sempre prevista, esistono delle eccezioni di cui tenere conto.**
 
@@ -72,11 +72,50 @@ La pagina HTML risultante  (ancora incompleta) è la seguente:
 Si fa notare nuovamente che tutte le etichette nell'esempio riportato sono prima aperte e
 poi chiuse.
 
-Inoltre, sempre dall'esempio precedente, si nota che le etichette possono essere inserite (innestate) l'una dentro l'altra, come per i contenuti della pagina web (titolo e paragrafo) che si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
+Sempre dall'esempio precedente, si nota che le etichette possono essere inserite (innestate) l'una dentro l'altra, come avviene per i contenuti della pagina web presentata (il titolo ed il paragrafo) che si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
 
-Anche l'indentazione è una caratteristica molto apprezzata, perché migliora la leggibilità e permette di rilevare gli errori più rapidamente. Difatti, il codice riportato nell'esempio è **indentato**. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
+## DOM
 
-Ed ancora, la presenza di **commenti** è praticamente d'obbligo, poiché rappresentano informazioni aggiuntive e promemoria che chiariscono lo scopo del programmatore.
+Esiste un modello che descrive la struttura della pagina web come una struttura gerarchica: il DOM (dall'inglese Document Object Model), utilizzato soprattutto in un contesto che tratta di JavaScript, ma molto ricorrente anche quando si parla di HTML.
+
+In questo modello gerarchico, ogni etichetta della pagina web (il documento ipertestuale) è interpretata come un oggetto posizionato all'interno di un albero (tipica struttura gerarchica).
+
+La radice dell'albero è l'etichetta ``html``, dato che al suo interno sono presenti tutti gli elementi della pagina web.
+
+Dalla radice si estendono poi i nodi di "primo livello", ovvero tutte le etichette contenute nell'etichetta ``html``.
+
+Da questi nodi di primo livello si estendono i nodi di secondo livello, ovvero le etichette contenute nelle etichette di primo livello, e cosi via per i successivi livelli.
+
+Le foglie dell'albero sono le etichette che non posseggono contenuti.
+
+Un esempio di rappresentazione della pagina web illustrata in precedenza, secondo il modello DOM è il seguente:
+
+```html
+html
+└── body
+    ├── h1
+    └── p
+```
+
+Data la struttura gerarchica, è possibile stabilire delle relazioni tra gli elementi. Un elemento che contiene altri elementi è detto elemento padre, e di conseguenza gli elementi contenuti in quel nodo sono detti figli. Gli elementi che si trovano nello stesso livello si dicono fratelli, e cosí via con le altre relazioni.
+
+## Indentazione
+
+L'indentazione è una caratteristica che migliora la leggibilità del codice e permette di rilevare gli errori più rapidamente. 
+
+Indentare il codice significa inserire un determinato nunero di spazi all'inizio di ogni riga, in maniera proporzionale al livello dell'etichetta presente sulla riga.
+
+Ad esempio, per l'etichetta radice ``html`` non sono previsti spazi di indentazione, dato che è a livello zero.
+
+Per l'etichetta di primo livello ``body``, è necessario aggiungere quattro spazi prima dell'etichetta stessa.
+
+Per le etichette di secondo livello è necessario aggiungere otto spazi, per quelle di terzo livello sono necessari dodici, e cosí via..
+
+Se si riguarda il codice riportato nell'esempio prededente, si può vedere che è indentato. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
+
+## Commenti
+
+La presenza di **commenti** è praticamente d'obbligo, poiché questi rappresentano informazioni aggiuntive e promemoria che chiariscono lo scopo del programmatore.
 
 I commenti si scrivono tra i caratteri ``<!--`` e ``-->``, l'unica attenzione da porre è che non devono essere presenti spazi tra i caratteri indicati. Un commento può occupare più righe.
 
