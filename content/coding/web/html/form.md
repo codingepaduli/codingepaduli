@@ -69,7 +69,7 @@ Un esempio di modulo (vuoto) è il seguente:
 
 Il modulo realizzato nell'esempio è un modulo vuoto, dato che non sono presenti campi di input, e non permette all'utente nemmeno l'invio dei dati perché manca del pulsante di invio.
 
-## Descrizione del campo di input
+## Descrizione dei campi
 
 Ogni campo in cui l'utente inserisce i dati deve essere corredato da una descrizione, realizzata attraverso l'etichetta ``label``.
 
@@ -313,13 +313,18 @@ Come si può notare, la descrizione è inserita successivamente alla voce selezi
 Si possono creare più voci selezionabili, con i nomi dei campi di input differenti, oppure, solo per i campi di selezione multipla, si può scegliere che tutti i campi di input abbiano lo stesso nome.
 
 ```html
-<input type="checkbox" id="coding" name="interest" value="programmazione">
+<input type="checkbox" id="coding" name="interest" value="programmazione" checked>
 <label for="coding">Coding</label>
 <input type="checkbox" id="soccer" name="interest" value="calcio">
 <label for="soccer">Calcio</label>
 ```
 
 Al momento dell'invio dei dati, il browser invierà solo le voci selezionate, nel formato ``nome1=voce1`` **&** ``nome2=voce2``. Nel caso in cui si utilizza sempre lo stesso nome (ovvero l'attributo ``name`` delle varie voci ha sempre lo stesso valore), il formato sarà ``interest=programmazione``**&**``interest=soccer``.
+
+<input type="checkbox" id="coding" name="interest" value="programmazione" checked>
+<label for="coding">Coding</label>
+<input type="checkbox" id="soccer" name="interest" value="calcio">
+<label for="soccer">Calcio</label>
 
 ### Input di selezione singola "radio"
 
@@ -342,6 +347,86 @@ L'attributo ``checked`` indica che la voce è pre-selezionata. L'attributo ``val
 
 Come si può notare, la descrizione è inserita successivamente alla voce selezionabile ed è legata a quest'ultima tramite l'attributo ``for`` che ha come valore l'identificativo della relativa voce;
 
+Un esempio è il seguente:
+
+<input type="radio" id="voce1" name="contatto" value="email">
+<label for="voce1">email</label>
+
+<input type="radio" id="voce2" name="contatto" value="telefono">
+<label for="voce2">telefono</label>
+
+<input type="radio" id="voce3" name="contatto" value="pec">
+<label for="pec">PEC</label>
+
+## Campi di selezione 
+
+I campi di selezione sono campi nei quali l'utente puó scegliere un valore tra quelli disponibili nel menú a tendina.
+
+Dato che anche i campi di selezione sono campi di input, devono essere inseriti all'interno di un form per poter inviare un valore al server,
+
+Per poter creare un campo di selezione, si utilizza l'etichetta ``select``, che condivide molti attributi di un campo di input:
+
+Gli attributi ``name``, ``required``, ``readonly``, ``hidden`` e ``disabled`` ricoprono le stesse funzionalità  viste per i campi di input.
+
+Le voci da mostrare nel menú a tendina devono essere inserite nell'etichetta ``option``, che prevede l'attributo ``value``, il cui valore viene inviato al server. 
+
+Un esempio di campo di selezione è il seguente:
+
+```html
+<label for="auto">auto</label>
+<select name="car" id="auto">
+      <option value="volvo">Volvo</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+</select>
+```
+
+Un esempio è il seguente:
+
+<label for="auto">auto</label>
+<select name="car" id="auto">
+      <option value="volvo">Volvo</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+</select>
+
+Le varie opzioni possono essere raggruppate per categoria, dimensione o altro criterio, inserendo le varie voci nell'etichetta ``optgroup``:
+
+```html
+<label for="auto">auto</label>
+<select name="car" id="auto">
+    <optgroup label="auto svedesi">
+      <option value="volvo">
+      Volvo</option>
+      <option value="saab">
+      Saab</option>
+    </optgroup>
+    <optgroup label="auto tedesche">
+      <option value="mercedes">
+      Mercedes</option>
+      <option value="audi">
+      Audi</option>
+    </optgroup>
+</select>
+```
+
+Un esempio è il seguente:
+
+<label for="auto">auto</label>
+<select name="car" id="auto">
+    <optgroup label="auto svedesi">
+      <option value="volvo">
+      Volvo</option>
+      <option value="saab">
+      Saab</option>
+    </optgroup>
+    <optgroup label="auto tedesche">
+      <option value="mercedes">
+      Mercedes</option>
+      <option value="audi">
+      Audi</option>
+    </optgroup>
+</select>
 
 <!--
 Ad esempio, la ricerca su google avviene su URL https://www.google.com/search?q=valore
