@@ -5,6 +5,7 @@ description: "Hugo - An open-source static site generators"
 date: 2020-04-21
 publishdate: 2020-04-21
 lastmod: 2020-04-21
+weight: 1
 categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: true
@@ -119,7 +120,7 @@ Le proprietà principali sono:
 
 Solo i contenuti che non sono bozze (in inglese "draft") e che hanno una data di scrittura contenuta tra la data di pubblicazione e di scadenza saranno generati nella cartella di pubblicazione.
 
-Creato il file ``index.md``, si può procedere alla creazione delle pagine del sito.
+Creato il file ``_index.md``, si può procedere alla creazione delle pagine del sito.
 
 Ogni file creato nella cartella ``content``, a parte il file ``_index.md``, rappresenta una pagina del sito web e deve essere creata secondo le seguenti regole:
 
@@ -147,7 +148,20 @@ images = ["/static/wifi-5.svg"] # Immagini per Twitter Cards and OpenGraph
 title = "My cool site"          # Titolo del sito
 ```
 
-Impostate queste informazioni, vengono automaticamente incluse nelle pagine web le informazioni da presentare sui social, quali data, titolo, descrizione, immagini o video. In ogni pagina è possibile indicare espressamente una di queste informazioni utilizzando la relativa proprietà del **front-matter**.
+Impostatala configurazione, vengono automaticamente incluse nelle pagine web le informazioni da presentare sui social, quali data, titolo, descrizione, immagini o video. In ogni pagina è possibile indicare espressamente una di queste informazioni utilizzando la relativa proprietà del **front-matter**.
+
+## Tipologie di pagine e ordinamento contenuti
+
+In hugo ci sono diversi tipi di pagine, in particolare la tipologia "lista di articoli" e la tipologia "articolo". La homepage è un tipo di pagina, ma la si può considerare comunque come una "lista di articoli".
+
+Una pagina della tipologia "lista di articoli" viene creata quando si crea il file ``_index.md`` nella cartella ``$SITE\content\`` o in una qualunque sottocartella.
+
+Gli articoli mostrati nella pagina "lista di articoli" sono tutti quelli che si trovano nella stessa cartella del file ``_index.md`` e saranno ordinati per priorità secondo i seguenti parametri:
+``weight`` > ``date`` > ``linktitle`` > FilePath.
+
+Prima si ordina per il parametro ``weight``, poi per ``date``, poi per ``linktitle`` e poi per file path, seguendo l'ordinamento numerico o alfanumerico naturale (A–Z, 1–100) per i parametri numerici ed alfanumerici, e seguendo l'ordinamento cronologico inverso per le date (prima i nuovi articoli, poi quelli piú vecchi).
+
+Per poter essere ordinato correttamente, un articolo deve avere impostate nel ``front-matter`` le proprietà appena elencate.
 
 ## Contenuti della Home Page
 
