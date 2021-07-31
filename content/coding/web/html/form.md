@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 10 - Moduli di invio dati"
-description: "HTML Lez. 10 - Moduli di invio dati"
+title: "HTML Lez. 10 - Comunicazione client server e moduli di invio dati"
+description: "HTML Lez. 10 - Comunicazione client server e moduli di invio dati"
 date: 2019-09-28
 publishdate: 2019-09-28
 lastmod: 2019-09-28
@@ -9,7 +9,7 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
-summary: "HTML Lez. 10 - I moduli permettono all'utente di inserire i dati nella pagina web e di inviarli al server."
+summary: "HTML Lez. 10 - Descrizione dei principi di comunicazione client-server e dei moduli di invio dati, che permettono all'utente di inserire i dati nella pagina web e di inviarli al server."
 
 references:
     -   title: "W3C Markup Validation Service"
@@ -18,23 +18,49 @@ references:
         description: "A W3C Markup Validation Service for your web pages"
 ---
 
-# Moduli di invio dati
+# Comunicazione client server e moduli di invio dati
 
-Le applicazioni web sono basate su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client. La comunicazione avviene sfruttando un protocollo ben definito, ovvero un insieme di regole che client e server seguono per poter comunicare. Quando si naviga su web, il protocollo utilizzato è HTTPS, che permette lo scambio di ipertesti tra client e server in maniera sicura.
+<!-- introduzione alle comunicazioni ? 
 
-## Comunicazione client server su web
+La rete internet continua ad espandersi con nuovi dispositivi, come smartphone e  dispositivi IoT, e nuovi servizi, come quelli cloud.
 
-Il server è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client. Esegue un programma, detto "server web", che può offrire contemporaneamente più servizi, ognuno su un indirizzo web differente, e che è sempre in attesa delle richieste dei client. Quando riceve la richiesta da un client, la elabora e genera una risposta che viene inviata al client.
+-->
 
-I client, dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta. La richiesta del client deve essere inviata su uno specifico indirizzo del server e può contenere dei dati da elaborare.
+<!-- Architettura client server -->
 
-I moduli per l'invio dei dati permettono sia l'invio al server dei dai compilati, sia la creazione di campi di inserimento dati nella pagina web, campi che poi saranno compilati dall'utente. Una volta sottomessi i dati al server, questi saranno elavorati ed il client riceverà una risposta dal server.
+Le applicazioni web sono basate su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client.
 
-## Esempio di comunicazione client-server
+Il **server** è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client.
 
-Un tipico esempio di comunicazione client server, molto familiare agli utenti, è rappresentato dalle operazioni di registrazione, di login e di logout.
+I **client** sono dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta.
 
-Un ipotetico server ``www.server.com`` potrebbe offrire i servizi di registrazione, di login e di logout rispettivamente agli indirizzi:
+Il **protocollo** di comunicazione definisce un insieme di regole che client e server seguono per poter comunicare.
+
+Sul server possono essere in esecuzione diversi software, ognuno dei quali puó offrire un servizio ai client. Tra questi citiamo:
+
+- il server di posta elettronica;
+- il database server (che memorizza tutti i dati delle applicazioni);
+- il web server, che offre il servizio di navigazione.
+
+I client hanno in esecuzione le varie applicazioni che permettono di utilizzare i servizi offerti dai server:
+
+- il client di posta elettronica;
+- il browser, che permette di navigare tra i siti web;
+- le app di uno smartphone, che  chiedono i dati necessari (tipicamente forniti dal web server).
+
+Quando si naviga su web, client e server utilizzano il protocollo HTTP, che permette lo scambio di ipertesti tra client e server. Purtroppo, è possibile leggere i messaggi che client e server si scambiano, installando un software adatto su un qualsiasi dispositivo posto tra client e server (ad esempio sul router di casa o su un ripetitore wireless). Per aggiungere uno strato di sicurezza al protocollo ed evitare il problema di sicurezza appena descritto, è nato il protocollo HTTPS, che permette la comunicazione client-server in sicurezza.
+
+<!-- ## Comunicazione su web -->
+
+Il server web espone le proprie risorse ed i propri servizi su un indirizzo web detto URL.
+
+Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer.
+
+I client possono richiedere le risorse (pagine web o dati) o sfuttare i servizi esposti specificando nella richiesta l'indirizzo web (URL) della risorsa.
+
+Oltre ad un URL, il client può inviare al server i dati da elaborare, indicando per ogni dato il nome ed il valore.
+
+Ad esempio, un ipotetico server ``www.server.com`` potrebbe offrire i servizi di registrazione, di login e di logout rispettivamente agli indirizzi:
 
 ```plaintext
 www.server.com/registrazione
@@ -42,15 +68,87 @@ www.server.com/login
 www.server.com/logout
 ```
 
-La richiesta del client per la registrazione di un nuovo utente deve quindi contenere i dati dell'utente, quali il nome, il cognome, la data di nascita e tutti gli altri dati necessari, e deve essere inviata all'indirizzo del server ``www.server.com/registrazione``.
+Per la registrazione di un nuovo utente, il client invia al server la richiesta, nella quale specifica come URL il servizio di registrazione utenti ed i dati dell'utente, come nel seguente esempio:
 
-Allo stesso modo, la richiesta di login deve contenere i dati di identificazione dell'utente, tipicamente il nome utente e la password, e deve essere inviata all'indirizzo del server ``www.server.com/login``.
+```plaintext
+www.server.com/registrazione
+nome=Mario
+cognome=Rossi
+dataDiNascita=2021-09-05
+```
 
-La richiesta di logout tipicamente non prevede dati da inviare al server e deve essere inviata all'indirizzo del server ``www.server.com/logout``.
+Allo stesso modo, invia la richiesta di login nella quale specifica l'URL del servizio ed i dati di identificazione dell'utente, tipicamente il nome utente e la password, come nel seguente esempio: 
 
-Ricevute le richieste del client, il server le elabora, controllando che i dati inviati siano validi, e conferma l'operazione richiesta, oppure la nega con un messaggio di errore.
+```plaintext
+www.server.com/login
+username=Mario
+password=A1b2C3d4
+```
 
-## I form
+La richiesta di logout tipicamente non prevede dati da inviare al server, per cui è sufficiente specificare l'URL del servizio di logout, come nel seguente esempio:
+
+ ```plaintext
+www.server.com/logout
+```
+
+Quando il server riceve la richiesta da un client, la elabora, verificando che l'URL richiesto esista e sia disponibile e che i dati inviati siano validi. In caso positivo conferma la richiesta del server e genera una risposta da inviare al client. In caso negativo restituisce al client un messaggio d'errore.
+
+## Collegamenti per richieste al server
+
+Ci sono solo due elementi HTML che consentono di richiedere una risorsa ad un server attraverso una pagina web: i collegamenti ed i moduli di invio dati.
+
+Quando l'utente clicca su un collegamento, il browser effettua una richiesta al server e gli invia i dati necessari, se presenti nel collegamento.
+
+Per poter aggiungere ad un collegamento i dati necessari da inviare al server, è sufficiente accodarli all'URL della risorsa richiesta, rispettando le seguenti regole:
+
+- L'URL è separato dai dati mediante il carattere ``?``;
+- Ogni dato da inviare è separato dal successivo con il carattere ``&``;
+- di ogni dato da inviare, si specifica il nome, seguito dal carattere ``=`` e poi dal valore associato;
+
+Considerando la richiesta di login vista nell'esempio precedente, la si può scrivere nella seguente forma:
+
+```plaintext
+www.server.com/login?username=Mario&password=A1b2C3d4
+```
+
+Il collegamento HTML risultante è il seguente:
+
+```html
+<a href="www.server.com/login?username=Mario&password=A1b2C3d4">richiesta login</a>
+```
+
+Allo stesso modo, la richiesta di registrazione utente vista in precedenza la si può scrivere nella seguente forma:
+
+```plaintext
+www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05
+```
+
+Il collegamento HTML risultante è il seguente:
+
+```html
+<a href='www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05">registra</a>
+```
+
+La richiesta di logout vista in precedenza non prevede dati da inviare, ma solo l'URL, quindi il collegamento HTML risultante è il seguente:
+
+```html
+<a href='www.server.com/logout">logout</a>
+```
+
+## I moduli di invio dati per richieste al server
+
+I moduli per l'invio dei dati permettono la creazione di campi di inserimento dati nella pagina web, che poi saranno compilati dall'utente ed inviati al server.
+
+A differenza dei collegamenti, che non sono modificabili dall'utente, i moduli di invio dati hanno il vantaggio di permettere all'utente di inserire i dati da inviare al server.
+
+I moduli devono indicare
+l'URL dell'indirizzo a cui inviare i dati. 
+
+Ogni campo da inviare al server deve avere un nome, un valore ed una descrizione allegata. Il valore sarà inserito dall'utente ed, associato al nome del campo, sarà inviato al server.
+
+La descrizione è semplicemente una indicazione per l'utente.
+
+
 
 L'etichetta ``form`` permette la creazione di un modulo di invio dati.
 
@@ -69,7 +167,7 @@ Un esempio di modulo (vuoto) è il seguente:
 
 Il modulo realizzato nell'esempio è un modulo vuoto, dato che non sono presenti campi di input, e non permette all'utente nemmeno l'invio dei dati perché manca del pulsante di invio.
 
-## Descrizione dei campi
+### Descrizione dei campi
 
 Ogni campo in cui l'utente inserisce i dati deve essere corredato da una descrizione, realizzata attraverso l'etichetta ``label``.
 
@@ -85,7 +183,7 @@ Ad esempio, supponendo che l'identificativo del campo sia ``nome``, allora l'eti
 <label for="nome">Inserisci il nome utente:</label>
 ```
 
-## Campi di input
+### Campi di input
 
 I campi di input permettono all'utente di inserire i dati e di interagire con il modulo di invio.
 
@@ -146,7 +244,7 @@ Se si vuole offrire all'utente la possibilità di cancellare tutti i dati inseri
 <input type="reset" value="Ripristina valori iniziali">
 ```
 
-### Esempio di modulo di invio dati
+#### Esempio di modulo di invio dati
 
 Per realizzare un modulo di invio dati che permetta il login dell'utente, sono necessarie solo due informazioni da inserire: il nome utente e la password.
 
@@ -181,7 +279,7 @@ Il risultato è il seguente:
 
 Si nota come i campi di tipo ``submit`` e ``reset`` siano visualizzati come pulsanti indicanti rispettivamente "Invia richiesta" e "Cancella dati". Il primo pulsante permette l'invio dei dati al server ed il secondo riporta tutti i campi ai valori iniziali.
 
-### Input testuale
+#### Input testuale
 
 Il campo di input, se non diversamente specificato, permette l'inserimento di testo. E' comunque buona norma specificare il tipo testuale, indicando l'attributo ``type="text"``.
 
@@ -196,7 +294,7 @@ Un esempio di campo di testo con entrambi i vincoli descritti è il seguente:
 <input type="text" name="descrizione" minlenght="10" maxlenght="150">
 ```
 
-### Input di una password
+#### Input di una password
 
 Una password è tipicamente nascosta allo sguardo di chi è davanti allo schermo. Per creare un campo di input che contenga una password (nascosta) è necessario indicare l'attributo ``type="password"``.
 
@@ -206,7 +304,7 @@ Un esempio di campo di inserimento password è il seguente:
 <input type="password" name="password">
 ```
 
-### Input di una email
+#### Input di una email
 
 Per creare un campo di input che contenga una email è necessario indicare l'attributo ``type="email"``. In questo modo, sui dispositivi mobile si permette la scelta della tastiera appropriata.
 
@@ -216,7 +314,7 @@ Un esempio di campo di inserimento per una email è il seguente:
 <input type="email" name="email">
 ```
 
-### Input di un numero di telefono
+#### Input di un numero di telefono
 
 Per creare un campo di input che contenga un numero di telefono è necessario indicare l'attributo ``type="tel"``. In questo modo, sui dispositivi mobile si permette la scelta del tastierino numerico per la composizione del numero.
 
@@ -226,7 +324,7 @@ Un esempio di campo di inserimento per un numero di telefono è il seguente:
 <input type="tel" name="telephone">
 ```
 
-### Input numerico
+#### Input numerico
 
 Per creare un campo di input che contenga un numero è necessario indicare l'attributo ``type="number"``. In questo modo, sui dispositivi mobile si permette la scelta del tastierino numerico per la composizione del numero.
 
@@ -249,7 +347,7 @@ Il risultato è il seguente
 
 <input type="number" name="valore" value="20" min="20" max="50" step="0.2">
 
-### Input di una data
+#### Input di una data
 
 Per creare un campo di input che contenga una data (senza l'ora), è necessario indicare l'attributo ``type="date"``. In questo modo, sui dispositivi mobile si permette la scelta della data attraverso il calendario.
 
@@ -273,7 +371,7 @@ Il risultato è il seguente:
 <input type="date" name="valore" min="2020-03-05" max="2020-06-05" step="7">
 
 
-### Input di un orario
+#### Input di un orario
 
 Per creare un campo di input che contenga un orario, è necessario indicare l'attributo ``type="time"``. In questo modo, sui dispositivi mobile si permette la scelta dell'orario attraverso l'orologio.
 
@@ -295,7 +393,7 @@ Il risultato è il seguente:
 
 <input type="time" name="valore" min="20:03:05" max="20:36:35" step="1">
 
-### Input di selezione multipla "chechbox"
+#### Input di selezione multipla "chechbox"
 
 Per creare un campo di selezione multipla, contenente più voci selezionabili, è necessario creare più campi di input, tutti con l'attributo ``type="checkbox"``.
 
@@ -326,7 +424,7 @@ Al momento dell'invio dei dati, il browser invierà solo le voci selezionate, ne
 <input type="checkbox" id="soccer" name="interest" value="calcio">
 <label for="soccer">Calcio</label>
 
-### Input di selezione singola "radio"
+#### Input di selezione singola "radio"
 
 Per creare una selezione singola, è necessario creare più campi di input, tutti con lo stesso nome, utilizzando l'attributo ``type="radio"``.
 
@@ -358,7 +456,7 @@ Un esempio è il seguente:
 <input type="radio" id="voce3" name="contatto" value="pec">
 <label for="pec">PEC</label>
 
-## Campi di selezione 
+### Campi di selezione singola da menú a tendina
 
 I campi di selezione sono campi nei quali l'utente puó scegliere un valore tra quelli disponibili nel menú a tendina.
 
