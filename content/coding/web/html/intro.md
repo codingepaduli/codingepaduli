@@ -13,7 +13,37 @@ toc: false
 summary: "HTML Lez. 01 - Introduzione al linguaggio HTML"
 ---
 
-# Introduzione al linguaggio HTML
+# Introduzione al WWW ed al linguaggio HTML
+
+Somo molti i servizi diffusi attraverso internet: posta elettronica, memorizzazione dati, streaming audio/video, navigazione, per citarne alcuni.
+
+Diversi servizi si basano su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client. 
+
+Altri si basano su un architettura peer to peer, in cui ogni dispositivo è un nodo "equivalente" o "paritario" (peer), in quanto puó svolgere in contemporanea il compito di client e server verso altri nodi (peer) della rete. 
+
+Ancora, alcune comunicazioni possono avvenire in broadcast, cioè i dati vengono inviati contemporaneamente ad un gruppo di nodi o un'intera rete.
+
+Ogni servizio sfrutta le potenzialità del tipo di architettura scelta.
+
+## Architettura client server
+
+Il **server** è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client.
+
+I **client** sono dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta.
+
+Il **protocollo** di comunicazione definisce un insieme di regole che client e server seguono per poter comunicare.
+
+Sul server devono essere in esecuzione i software che consentono di offrire i vari servizi, tra i quali citiamo:
+
+- il server di posta elettronica;
+- il database server (che memorizza tutti i dati delle applicazioni);
+- il web server, che offre il servizio di navigazione.
+
+I client hanno in esecuzione le varie applicazioni che permettono di utilizzare i servizi offerti dai server:
+
+- il client di posta elettronica;
+- il browser, che permette di navigare tra i siti web;
+- le app di uno smartphone, che  chiedono i dati necessari (tipicamente forniti dal web server).
 
 ## World Wide Web
 
@@ -25,7 +55,21 @@ Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importa
 
 Il <abbr title="World Wide Web">WWW</abbr> diventa un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
 
-Insieme al WWW nasce il linguaggio HTML, che serve a strutturare i documenti scientifici da pubblicare, e quindi nascono i siti web.
+Per permettere la navigazione su WWW ai client, sul server deve essere installato il **web server**, ovvero il software che offre il servizio di navigazione.
+
+I client, per poter navigare, devono utilizzare un software, chiamato **browser**.
+
+Il server web espone ogni singola risorsa o servizio su un indirizzo web detto URL.
+
+Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer.
+
+Ogni pagina web, immagine, file di testo e qualsiasi altra risorsa ha associato un proprio URL per poter essere raggiungibile su WWW. Man mano che gli utenti navigano sul web, il browser richiedere le risorse (delle pagine web, delle immagini, dei file) al server, specificando per ogni richiesta l'indirizzo web (URL) della risorsa.
+
+Il protocollo **HTTP** (HyperText Transfer Protocol) regola la navigazione, intesa come scambio di ipertesti, tra client e server.
+
+Purtroppo, quando si utilizza il protocollo HTTP, è possibile leggere i messaggi che client e server si scambiano, installando un software adatto su un qualsiasi dispositivo posto tra client e server (ad esempio sul router di casa o su un ripetitore wireless). 
+
+Il protocollo **HTTPS** (HTTP Secure) è nato per aggiungere al protocollo HTTP uno strato ulteriore che consenta di evitare il problema descritto in precedenza e garantisca la comunicazione client-server in sicurezza.
 
 ## Il linguaggio HTML
 
@@ -33,6 +77,8 @@ Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguagg
 
 Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
 l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
+
+Il linguaggio HTML nasce insieme al WWW con lo scopo di strutturare i documenti scientifici da pubblicare.
 
 Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, né le azioni o le elaborazioni da eseguire.
 

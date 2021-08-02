@@ -20,43 +20,9 @@ references:
 
 # Comunicazione client server e moduli di invio dati
 
-<!-- introduzione alle comunicazioni ? 
+Il server web espone le proprie risorse ed i propri servizi su un indirizzo web detto URL, che identifica univocamente una risorsa.
 
-La rete internet continua ad espandersi con nuovi dispositivi, come smartphone e  dispositivi IoT, e nuovi servizi, come quelli cloud.
-
--->
-
-<!-- Architettura client server -->
-
-Le applicazioni web sono basate su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client.
-
-Il **server** è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client.
-
-I **client** sono dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta.
-
-Il **protocollo** di comunicazione definisce un insieme di regole che client e server seguono per poter comunicare.
-
-Sul server possono essere in esecuzione diversi software, ognuno dei quali puó offrire un servizio ai client. Tra questi citiamo:
-
-- il server di posta elettronica;
-- il database server (che memorizza tutti i dati delle applicazioni);
-- il web server, che offre il servizio di navigazione.
-
-I client hanno in esecuzione le varie applicazioni che permettono di utilizzare i servizi offerti dai server:
-
-- il client di posta elettronica;
-- il browser, che permette di navigare tra i siti web;
-- le app di uno smartphone, che  chiedono i dati necessari (tipicamente forniti dal web server).
-
-Quando si naviga su web, client e server utilizzano il protocollo HTTP, che permette lo scambio di ipertesti tra client e server. Purtroppo, è possibile leggere i messaggi che client e server si scambiano, installando un software adatto su un qualsiasi dispositivo posto tra client e server (ad esempio sul router di casa o su un ripetitore wireless). Per aggiungere uno strato di sicurezza al protocollo ed evitare il problema di sicurezza appena descritto, è nato il protocollo HTTPS, che permette la comunicazione client-server in sicurezza.
-
-<!-- ## Comunicazione su web -->
-
-Il server web espone le proprie risorse ed i propri servizi su un indirizzo web detto URL.
-
-Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer.
-
-I client possono richiedere le risorse (pagine web o dati) o sfuttare i servizi esposti specificando nella richiesta l'indirizzo web (URL) della risorsa.
+I client possono richiedere le risorse specificando nella richiesta l'indirizzo web (URL) della risorsa.
 
 Oltre ad un URL, il client può inviare al server i dati da elaborare, indicando per ogni dato il nome ed il valore.
 
@@ -126,13 +92,13 @@ www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05
 Il collegamento HTML risultante è il seguente:
 
 ```html
-<a href='www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05">registra</a>
+<a href="www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05">registra</a>
 ```
 
 La richiesta di logout vista in precedenza non prevede dati da inviare, ma solo l'URL, quindi il collegamento HTML risultante è il seguente:
 
 ```html
-<a href='www.server.com/logout">logout</a>
+<a href="www.server.com/logout">logout</a>
 ```
 
 ## I moduli di invio dati per richieste al server
