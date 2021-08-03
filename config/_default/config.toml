@@ -1,7 +1,7 @@
 baseURL = "http://codingepaduli.github.io/"
 languageCode = "it"
 title = "Coding e Paduli"
-paginate = "10"
+paginate = "20"
 
 theme = "mainroad" # hugo-academic mainroad watercss
 
