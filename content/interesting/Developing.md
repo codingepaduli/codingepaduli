@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-06-02
-publishdate: 2021-06-02
-lastmod: 2021-06-02
+date: 2021-08-02
+publishdate: 2021-08-02
+lastmod: 2021-08-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -83,6 +83,7 @@ summary: "Set di link relativi al coding"
 [Docker in 10 minutes](https://smalldata.tech/blog/2019/06/08/docker-in-10-minutes) - \
 [Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Transitioning from Docker to Podman - Red Hat Developer\
 [Jonathan Bergknoff](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - Run More Stuff in Docker\
+[vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -459,21 +460,13 @@ summary: "Set di link relativi al coding"
 
 [Chapter 2 Hugo | blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/hugo.html) - \
 [Markdown to pdf using Hugo and beautiful styling](https://www.martinkaptein.com/blog/hugo-md-to-pdf/) - Martin Kaptein\
-[Switching the lights on: Hugo vs Hugo config files · Code with Hugo](https://codewithhugo.com/switching-the-lights-on-hugo-vs-hugo-config-files/) - \
-[Static Site Search With Hugo + App Engine + Search API + Python | Simo Ahava's blog](https://www.simoahava.com/web-development/static-site-search-google-app-engine-search-api/) - \
-[Hugo quick start](https://gohugo.io/getting-started/quick-start/) - \
-[Content Sections | Hugo](https://gohugo.io/content-management/sections/) - \
-[Page Bundles | Hugo](https://gohugo.io/content-management/page-bundles/#fn:fn-1) - \
-[Taxonomies | Hugo](https://gohugo.io/content-management/taxonomies/) - \
 [Hugo Themes](https://themes.gohugo.io/) - \
-[Is there a way to group and filter site.mainSections?](https://discourse.gohugo.io/t/is-there-a-way-to-group-and-filter-site-mainsections/19920/2) - support - Hugo\
 [Hugo Page Resources, and how to use them... | Regis Philibert](https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/) - \
 [Laura Kalbag](https://laurakalbag.com/processing-responsive-images-with-hugo/) - Processing Responsive Images with Hugo\
 [Deploy Hugo project to GitHub Pages with GitHub Actions](https://discourse.gohugo.io/t/deploy-hugo-project-to-github-pages-with-github-actions/20725) - tips & tricks - Hugo\
 [How are children menu entries detected?](https://discourse.gohugo.io/t/how-are-children-menu-entries-detected/21484) - support - Hugo\
 [Why my post is a directory and not a file?](https://discourse.gohugo.io/t/why-my-post-is-a-directory-and-not-a-file/21739) - support - Hugo\
 [Is it possible to insert HTML code in Markdown content?](https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/6) - support - HUGO\
-[How to start a blog using Hugo](https://flaviocopes.com/start-blog-with-hugo/) - \
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
 [Remarkbox](https://www.remarkbox.com/) - Hosted Comments Service\
 [Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
@@ -616,6 +609,7 @@ summary: "Set di link relativi al coding"
 [Parcel](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/) - Web bundlers like Browserify and Webpack manage the development workflow; Parcel is a bundler that doesn’t need any configuration; \
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
 [PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
+[How to make a PWA](https://dev.to/theyoungestcoder/how-to-make-a-pwa-4m4n) - DEV Community\
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\

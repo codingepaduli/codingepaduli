@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2021-06-23
-publishdate: 2021-06-23
-lastmod: 2021-06-23
+date: 2021-08-02
+publishdate: 2021-08-02
+lastmod: 2021-08-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -25,7 +25,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Scientificando](https://www.tutto-scienze.org/) - curiosità dalla scienza\
 [La mia scuola differente](https://www.lamiascuoladifferente.it/) - materiali e strumenti che supportino la didattica a distanza\
 [The Essence of Mathematics Through Elementary Problems](https://www.openbookpublishers.com/product/979) - Open Book Publishers\
-[Matematicapovolta: Didattica a distanza Matematica Scuole Medie e Superiori (flipped classroom liceo scientifico)](https://www.matematicapovolta.it/index.html) - \
+[Matematicapovolta](https://www.matematicapovolta.it/index.html) - Didattica a distanza Matematica Scuole Medie e Superiori (flipped classroom liceo scientifico)\
 
 #### Inglese
 
@@ -35,7 +35,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Dispensa d'Inglese](http://www.lewisdispensa.com/index.html) - una grammatica semplificata\
 [Dizionario Italiano-Inglese](http://www.wordreference.com/it/) - WordReference.com\
 [Corso di Inglese di Gelasio Adamoli](http://www.adamoli.org/gelasio67/) - \
-[filipeisho/pronounce: Never doubt how to pronounce a word. Double-click it and your browser will say it out loud for you!](https://github.com/filipeisho/pronounce) - \
+[filipeisho/pronounce](https://github.com/filipeisho/pronounce) - Never doubt how to pronounce a word. Double-click it and your browser will say it out loud for you!\
 
 #### Informatica
 
@@ -52,7 +52,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 ##### Office
 
-[PowerPoint: slide, caselle di testo, frecce, collegamenti ipertestuali](https://www.youtube.com/watch?v=2HAmS7QXtkc) - YouTube\
+[PowerPoint](https://www.youtube.com/watch?v=2HAmS7QXtkc) - slide, caselle di testo, frecce, collegamenti ipertestuali - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=oxCCWRhYRRo) - guida 01 / prima presentazione - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=NDC8firp0k4) - guida 02 / le note e il menu visualizza - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=8cX05x08Fi0) - guida 03 / collegamenti tra diapositive - YouTube\
