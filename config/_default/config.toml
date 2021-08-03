@@ -1,5 +1,5 @@
 baseURL = "http://codingepaduli.github.io/"
-languageCode = "it"
+defaultContentLanguage = "it"
 title = "Coding e Paduli"
 paginate = "20"
 
