@@ -15,7 +15,7 @@ theme = "mainroad" # hugo-academic mainroad watercss
   twitter_cards = true # Enable Twitter Cards if true
   images = ["/static/wifi-5.svg"] # Twitter Cards and OpenGraph images
   post_meta = ["date", "categories", "translations"] # Order of post meta information
-  mainSections = ["posts", "openSource"]
+  mainSections = ["html", "javascript", "p5js", "tools"]
   seoKeyword = ["coding", "programmazione", "open-source", "sviluppo", "web"]
 
 # [[menu.main]] not needed, use "menu" in content/_index.html
