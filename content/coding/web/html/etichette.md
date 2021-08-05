@@ -78,7 +78,7 @@ Sempre dall'esempio precedente, si nota che le etichette possono essere inserite
 
 Esiste un modello che descrive la struttura della pagina web come una struttura gerarchica: il DOM (dall'inglese Document Object Model), utilizzato soprattutto in un contesto che tratta di JavaScript, ma molto ricorrente anche quando si parla di HTML.
 
-In questo modello gerarchico, ogni etichetta della pagina web (il documento ipertestuale) è interpretata come un oggetto posizionato all'interno di un albero (tipica struttura gerarchica).
+In questo modello gerarchico, ogni etichetta della pagina web (il documento ipertestuale) è detta **nodo** ed ha una posizione ben definita all'interno di un albero (tipica struttura gerarchica).
 
 La radice dell'albero è l'etichetta ``html``, dato che al suo interno sono presenti tutti gli elementi della pagina web.
 
@@ -115,7 +115,7 @@ Se si riguarda il codice riportato nell'esempio prededente, si può vedere che �
 
 ## Commenti
 
-La presenza di **commenti** è praticamente d'obbligo, poiché questi rappresentano informazioni aggiuntive e promemoria che chiariscono lo scopo del programmatore.
+La presenza di **commenti** è praticamente d'obbligo, poiché questi rappresentano informazioni aggiuntive e promemoria che chiariscono le intenzioni del programmatore.
 
 I commenti si scrivono tra i caratteri ``<!--`` e ``-->``, l'unica attenzione da porre è che non devono essere presenti spazi tra i caratteri indicati. Un commento può occupare più righe.
 
