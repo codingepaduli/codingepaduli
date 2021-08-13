@@ -30,8 +30,8 @@ Di seguito si riporta un esempio di codice per generare i titoli dei primi tre l
 
 ```html
 <h1> Esempio di titolo di primo livello </h1>
-<h2> Esempio di titolo di secondo livello <h2>
-<h3> Esempio di titolo di terzo livello <h2>
+<h2> Esempio di titolo di secondo livello </h2>
+<h3> Esempio di titolo di terzo livello </h3>
 ```
 
 che vengono poi trasformati dal browser come si vede di seguito:
