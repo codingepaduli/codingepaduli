@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-08-02
-publishdate: 2021-08-02
-lastmod: 2021-08-02
+date: 2021-08-19
+publishdate: 2021-08-19
+lastmod: 2021-08-19
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -182,6 +182,7 @@ summary: "Set di link relativi al coding"
 [Learn the basics of Raycasting with JavaScript](https://courses.pikuma.com/courses/raycasting) - Learn the mathematics behind the ray casting technique used in the Wolfenstein 3D source code and implement it using JavaScript -pikuma course\
 [Introduction](https://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html) - Computer Graphics from scratch - Gabriel Gambetta\
 [Kaboom!!](https://replit.com/kaboom) - a fun JavaScript game programming library & environment\
+[Coding Challenges · The Coding Train](https://thecodingtrain.com/CodingChallenges/) - \
 
 ### GIT
 
@@ -549,8 +550,6 @@ summary: "Set di link relativi al coding"
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
 [details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
-[video tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) - The Video Embed element - HTML: HyperText Markup Language | MDN\
-[What I Learned by Relearning HTML](https://www.dannyguo.com/blog/what-i-learned-by-relearning-html) - \
 [Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
 
