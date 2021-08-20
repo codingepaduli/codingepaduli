@@ -2,8 +2,8 @@
 
 echo "Bash script run"
 
-if [ "a" == "b"]; then
-    echo "stop running";
+if [ "a" == "b" ]; then
+    echo "stop running"
 else
-    echo "continue running";
+    echo "continue running"
 fi
