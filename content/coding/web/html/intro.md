@@ -13,41 +13,9 @@ toc: false
 summary: "HTML Lez. 01 - Introduzione al linguaggio HTML"
 ---
 
-# Introduzione al WWW ed al linguaggio HTML
+#  WWW ed HTML
 
-Somo molti i servizi diffusi attraverso internet: posta elettronica, memorizzazione dati, streaming audio/video, navigazione, per citarne alcuni.
-
-Diversi servizi si basano su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client. 
-
-Altri si basano su un architettura peer to peer, in cui ogni dispositivo è un nodo "equivalente" o "paritario" (peer), in quanto puó svolgere in contemporanea il compito di client e server verso altri nodi (peer) della rete. 
-
-Ancora, alcune comunicazioni possono avvenire in broadcast, cioè i dati vengono inviati contemporaneamente ad un gruppo di nodi o un'intera rete.
-
-Ogni servizio sfrutta le potenzialità del tipo di architettura scelta.
-
-## Architettura client server
-
-Il **server** è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client.
-
-I **client** sono dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta.
-
-Il **protocollo** di comunicazione definisce un insieme di regole che client e server seguono per poter comunicare.
-
-Sul server devono essere in esecuzione i software che consentono di offrire i vari servizi, tra i quali citiamo:
-
-- il server di posta elettronica;
-- il database server (che memorizza tutti i dati delle applicazioni);
-- il web server, che offre il servizio di navigazione.
-
-I client hanno in esecuzione le varie applicazioni che permettono di utilizzare i servizi offerti dai server:
-
-- il client di posta elettronica;
-- il browser, che permette di navigare tra i siti web;
-- le app di uno smartphone, che  chiedono i dati necessari (tipicamente forniti dal web server).
-
-## World Wide Web
-
-Il World Wide Web (dall'inglese "Rete di Ampiezza Globale") è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
+Il **World Wide Web** (dall'inglese "Rete di Ampiezza Globale") è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
 
 Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi vedere un video su una piattaforma web americana ed ancora visualizzare un prodotto in vendita su un e-commerce australiano, e così via.
 
@@ -55,11 +23,21 @@ Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importa
 
 Il <abbr title="World Wide Web">WWW</abbr> diventa un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
 
-Per permettere la navigazione su WWW ai client, sul server deve essere installato il **web server**, ovvero il software che offre il servizio di navigazione.
+## Architettura client server
+
+Il World Wide Web si basa su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client. 
+
+Il **server** è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client.
+
+I **client** sono dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta.
+
+Il **protocollo** di comunicazione definisce un insieme di regole che client e server seguono per poter comunicare.
 
 I client, per poter navigare, devono utilizzare un software, chiamato **browser**.
 
-Il server web espone ogni singola risorsa o servizio su un indirizzo web detto URL.
+Per permettere la navigazione su WWW ai client, sul server deve essere installato il **web server**, ovvero il software che offre il servizio di navigazione.
+
+Il web server **ospita** (in inglese hosting) uno i piú siti web ed espone ogni singolo file, risorsa o servizio del sito web su un indirizzo web detto URL.
 
 Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer.
 
@@ -97,11 +75,6 @@ E' possibile creare dei siti web "statici", cioè scritti con software che trasf
 
 E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor
 open source consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), o ancora [VSCodium](https://vscodium.com/ "Link all'editor VSCodium"), un clone open source di Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
-
-Esistono dei framework che intendono essere la base sulla quale poggiarsi per sviluppare siti web, quali
-[Bootstrap](http://getbootstrap.com/ "Link al sito web di Bootstrap"),
-[ZURB foundation](http://foundation.zurb.com/ "Link al sito web di ZURB") e
-[Pure CSS](http://purecss.io/ "Link al sito web di Pure CSS"), giusto per nominarne alcuni.
 
 ## Attività di amministrazione
 
