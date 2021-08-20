@@ -17,9 +17,9 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@master
-    - name: Show working directory
+    - name: Show working directory "/home/runner/work/codingepaduli/codingepaduli"
       run: pwd
     - name: Add execution permission to the script
-      run: chmod +x ./bash_script.sh
+      run: chmod +x .github/workflows/bash_script.sh
     - name: Run the script
-      run: ./bash_script.sh
+      run: .github/workflows/bash_script.sh
