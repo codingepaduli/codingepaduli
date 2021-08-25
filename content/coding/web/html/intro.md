@@ -49,19 +49,6 @@ Purtroppo, quando si utilizza il protocollo HTTP, è possibile leggere i messagg
 
 Il protocollo **HTTPS** (HTTP Secure) è nato per aggiungere al protocollo HTTP uno strato ulteriore che consenta di evitare il problema descritto in precedenza e garantisca la comunicazione client-server in sicurezza.
 
-## Il linguaggio HTML
-
-Il linguaggio <abbr title="HyperText Markup Language">HTML</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText).
-
-Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
-l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
-
-Il linguaggio HTML nasce insieme al WWW con lo scopo di strutturare i documenti scientifici da pubblicare.
-
-Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, né le azioni o le elaborazioni da eseguire.
-
-Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazioni e l'elaborazione dei dati contenuti della pagina web sono scritti con linguaggi di programmazione come JavaScript.
-
 ## Tecnologie e software per la creazione di siti web
 
 I siti web possono essere costruiti in mille modi.
@@ -76,27 +63,24 @@ E' possibile creare dei siti web "statici", cioè scritti con software che trasf
 E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor
 open source consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), o ancora [VSCodium](https://vscodium.com/ "Link all'editor VSCodium"), un clone open source di Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
 
-## Attività di amministrazione
+Una volta costruito, il sito web deve essere **pubblicato** sul web, scegliendo le caratteristiche del servizio di hosting o di cloud, i certificati di sicurezza e gli strumenti adatti per il trasferimento e la sincronizzazione delle pagine sul dominio.
 
-Dal punto di vista tecnico, l'amministrazione di un sito web comporta una serie di attività da svolgere, dato che le pagine del sito si devono:
+## Caratteristiche di un sito web
 
-- **validare**, per individuare e correggere errori. Per questi compiti troviamo strumenti per la correzione grammaticale, validatori delle pagine web, validatori dei link (per
+Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisiti molto richiesti, seppur non obbligatori, che elenchiamo di seguito
+
+- **validità**: caratteristica che indica l'assenza di errori. L'attività di validazione è necessaria ad individuare e correggere gli errori prima che siano pubblicati sul sito web. Per svolgere questi compiti, troviamo strumenti per la correzione grammaticale, validatori delle pagine web, validatori dei link (per
   evitare che possano riferirsi a risorse rimosse o spostate). Uno strumento di controllo dei link è il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link"). Per validare il codice HTML si può utilizzare il validatore [W3C Validator](https://validator.w3.org/ "Link al validatore HTML");
-- rendere **accessibili** <!-- TODO add accessibility tools--> a chiunque, anche a chi ha difficoltà visive
-  o motorie. Il controllo avviene attraverso strumenti specifici;
-- rendere **"responsive"**, cioè fruibili su differenti risoluzioni e
-  formati, da quelli piccoli dei cellulari e palmari, a quelli
-  classici dei computer e tablet, a quelli extra-large delle smart-TV. Uno strumento per il controllo delle varie risoluzioni è [Responsively.App](https://responsively.app/ "App open source per simulare in un'unica schermata la visualizzazione del sito su più dispositivi");
-- rendere **performanti**, cioè far si che i tempi di caricamento siano ridotti, soprattutto su connessioni lente, usando strumenti quali
+- **accessibilità**: <!-- TODO add accessibility tools--> caratteristica che permette l'utilizzo del sito web anche a chi ha difficoltà visive o motorie. L'attività avviene attraverso strumenti specifici che consentono la visualizzazione del sito web con stili grafici ad alto contrasto oppure utilizzando il sito attraverso strumenti di sintesi vocale;
+- **"responsività"**: caratteristica indicante che il sito web è fruibile su schermi con differenti risoluzioni e formati, sia quelli piccoli dei cellulari e palmari, sia quelli classici dei computer e tablet, sia quelli extra-large delle smart-TV. Uno strumento per verificare che un sito web sia "responsive" è [Responsively.App](https://responsively.app/ "App open source per simulare in un'unica schermata la visualizzazione del sito su più dispositivi");
+- **rapidità**: Indica i tempi di caricamento della pagina e i tempi di risposta alle azioni dell'utente. L'attività fa si che i gli utenti possano interagire rapidamente col sito web, anche su connessioni lente, usando strumenti quali
   [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
   opzionalmente si può rendere il sito capace di funzionare anche senza connessione internet
   ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
-- **ottimizzare per i motori di ricerca**
-  ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su SEO su wikipedia.it"))
-  ed adattare al
+- **ottimizzazione per i motori di ricerca ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su SEO su wikipedia.it"))**: permette al sito web di posizionarsi piú in alto possibile in un motore di ricerca.
+  
+   Opzionalmente si può adattare al semantic web.
   [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Link all'articolo sul Web semantico su wikipedia.it");
-- integrare con eventuali servizi esterni, quali social, servizi di pagamento, servizi pubblicitari e di gestione contenuti (come youtube);
-- **pubblicare** sul web, scegliendo le caratteristiche del servizio di hosting o di cloud, i certificati di sicurezza e gli strumenti adatti per il trasferimento e la sincronizzazione delle pagine sul dominio.
 
 ## Riferimenti alle risorse online
 

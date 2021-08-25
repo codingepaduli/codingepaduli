@@ -13,7 +13,18 @@ toc: false
 summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 ---
 
-# Etichette (tag)
+# Il linguaggio HTML
+
+Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText), ha lo scopo di strutturare i documenti da pubblicare sul web.
+
+Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
+l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
+
+Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, né le azioni o le elaborazioni da eseguire.
+
+Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazioni e l'elaborazione dei dati contenuti della pagina web sono scritti con linguaggi di programmazione come JavaScript.
+
+## Etichette (tag)
 
 Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
 l'inizio e la fine di un elemento della pagina web.

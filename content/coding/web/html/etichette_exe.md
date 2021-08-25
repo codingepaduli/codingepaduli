@@ -15,12 +15,14 @@ summary: "HTML Lez. 02.1 - Esercizi basilari su HTML"
 
 # Esercizi basilari su HTML
 
-1. Un'etichetta è:
+## Esercizio 1
 
-    1. un segnaposto;
-    2. una descrizione di un contenuto;
-    3. un'indicazione all'utente;
-    4. un file.
+1. Le etichette:
+
+    1. sono i contenuti della pagina web;
+    2. indicano l’inizio e la fine di un elemento della pagina web;
+    3. sono gli indirizzi delle pagine web;
+    4. indicano il titolo della pagina web.
 
 2. Il codice HTML ``<!doctype html>`` presente all'inizio di una pagina web serve a:
 
@@ -75,3 +77,19 @@ Punti     |     |     |     |     |     |     |     |     |
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
 <!-- markdownlint-enable MD009 MD036 -->
+
+## Esercizio 2
+
+1. Il linguaggio HTML è:
+
+    1. un linguaggio di etichettatura degli ipertesti;
+    2. un linguaggio di programmazione di siti web;
+    3. un linguaggio per la comunicazione client server;
+    4. un servizio di navigazione su internet.
+
+2. Il linguaggio HTML definisce:
+
+    1. la struttura di un ipertesto;
+    2. gli stili grafici di un ipertesto;
+    3. le azioni da eseguire su un ipertesto;
+    4. le elaborazioni da eseguire su un ipertesto.
