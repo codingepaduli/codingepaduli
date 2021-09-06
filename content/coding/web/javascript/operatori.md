@@ -14,34 +14,6 @@ summary: "Operatori ed espressioni"
 
 # Operatori ed espressioni {#top}
 
-Le espressioni sono utilizzate per calcolare un risultato applicando gli operatori ai dati o alle variabili indicate. Ad esempio, la somma tra due numeri è calcolata dall'espressione ``3 + 4``. L'operazione di calcolo del risultato di un'espressione è detta **valutazione**, pertanto le espressioni sono **valutate**.
-
-Gli operatori possono essere applicati generalmente ad un singolo valore o ad una coppia di valori. I valori possono essere dati di tipo differente, come un numero ed una stringa.
-
-Ci sono operatori che hanno la precedenza rispetto ad altri, come ad esempio la moltiplicazione che ha precedenza sulla sottrazione. Per cui, nelle espressioni, si valutano prima le operazioni che hanno la precedenza. Quando tutte le precedenze sono state gestite, le operazioni in un'espressione sono valutate da sinistra verso destra.
-
-Ad esempio, data l'espressione
-
-``3 + 4 * 5 + 6``
-
-la moltiplicazione tra i numeri ``4`` e ``5`` ha la precedenza, quindi viene calcolata per prima, restituendo valore ``20``.
-
-L'espressione risultante è quindi
-
-``3 + 20 + 6``
-
-Dato che non ci sono altre precedenze da gestire, l'espressione viene valutata da sinistra verso destra, quindi prima viene fatta la somma tra ``3`` e ``20`` che restituisce il valore ``23`` e poi questo viene sommato a ``6``, restituendo il risultato ``29``. Per cui, la valutazione dell'espressione restituisce il risultato ``29``.
-
- E' possibile però modificare l'ordine delle operazioni da svolgere utilizzando le parentesi tonde ``(`` e ``)``.
-
- Ad esempio, data l'espressione
-
- ``((3 + 4) - 5) * 6``
-
- le parentesi tonde hanno la precedenza, per cui viene prima valutato il risultato della somma tra ``3`` e ``4``, restituendo ``7``. Vi è ancora una parentesi tonda che ha precedenza, quindi viene valutato il risultato della sottrazione tra ``7`` e ``5``, restituendo due. Quindi viene svolta la moltiplicazione tra ``2`` e ``6``, restituendo ``12``. Per cui, la valutazione dell'espressione restituisce il risultato ``12``.
-
-Nonostante la gestione delle precedenze possa sembrare semplice, quando si valutano espressioni con un vasto numero di operatori differenti nella stessa espressione si può incorrere in errori di valutazione dato che le precedenze non sono scontate.
-
 ## Operazioni ed operatori per le stringhe
 
 Diversi operatori possono lavorare sulle stringhe:
