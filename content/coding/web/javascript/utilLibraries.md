@@ -1,7 +1,7 @@
 ---
 type: "javascript"
-title: "Javascript - Operatori ed operazioni matematiche"
-description: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche, descrizione della libreria matematica per effettuare le operazioni matematiche piú comuni"
+title: "Javascript - Libreria matematica"
+description: "Descrizione delle funzioni della libreria matematica"
 date: 2021-08-26
 publishdate: 2021-08-26
 lastmod: 2021-08-26
@@ -10,22 +10,22 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: true
 toc: false
-summary: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche, descrizione della libreria matematica per effettuare le operazioni matematiche piú comuni"
+summary: "Descrizione delle funzioni della libreria matematica"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/basics.js"]
 
 references:
-    -   title: "algebra di Boole"
+    -   title: "Libreria matematica Math"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://it.m.wikipedia.org/wiki/Algebra_di_Boole"
-        description: "Algebra di Boole"
-    -   title: "standard IEEE 754"
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
+        description: "Firma e descrizione delle varie funzioni matematiche"
+    -   title: "Libreria matematica Number"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://it.m.wikipedia.org/wiki/IEEE_754"
-        description: "standard per l'aritmetica a virgola mobile in base binaria per i sistemi basati su microprocessore."
-        
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+        description: "Firma e descrizione delle varie funzioni sui numeri"
+
 ---
 
-# Librerie di utilità
+# Librerie matematiche di utilità
 
 Ogni linguaggio di programmazione ha una libreria matematica che mette a disposizione del programmatore le funzioni che eseguono le operazioni matematiche piú comuni, come quelle logaritmiche, esponenziali, trigonometriche e di arrotondamento.
 
@@ -159,7 +159,7 @@ La funzione progettata per eseguire tale operazione è ``random``, la cui firma 
 Syntax: Math.random(x)
 
 Returns:
-    Number: A floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive). 
+    Number: A floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive).
 ```
 
 Il valore restituito è un numero decimale casuale compreso tra zero (incluso) ed 1 (non incluso). Può essere salvato in una variabile.
@@ -217,7 +217,7 @@ Syntax: Math.pow(x, n)
 
 Parameters:
     x    Number: the base value
-    n    Number  the exponent 
+    n    Number  the exponent
 
 Returns:
     Number: x to the nth power
@@ -278,17 +278,3 @@ Per calcolare la radice cubica di 16, sostituiamo al parametro formale ``x`` il 
 ```javascript
 let i = Math.cbrt(16);
 ```
-
-
-    
-
-
-### alyro
-I parametri formali sono ``w`` ed ``h``, che rappresentano la larghezza e l'altezza dell'area da disegno.
-
-Per creare un'area da disegno di larghezza 600 ed altezza 400 punti, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
-
-```javascript
-createCanvas(600, 400);
-```
-

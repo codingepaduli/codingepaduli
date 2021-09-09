@@ -1,7 +1,7 @@
 ---
 type: "javascript"
-title: "Javascript - Operatori ed operazioni matematiche"
-description: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche, descrizione della libreria matematica per effettuare le operazioni matematiche piú comuni"
+title: "JavaScript - Operatori ed operazioni matematiche"
+description: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
 date: 2021-08-26
 publishdate: 2021-08-26
 lastmod: 2021-08-26
@@ -10,53 +10,59 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: true
 toc: false
-summary: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche, descrizione della libreria matematica per effettuare le operazioni matematiche piú comuni"
+summary: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/basics.js"]
 
 references:
-    -   title: "algebra di Boole"
+    -   title: "Algebra di Boole"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://it.m.wikipedia.org/wiki/Algebra_di_Boole"
         description: "Algebra di Boole"
-    -   title: "standard IEEE 754"
+    -   title: "Standard IEEE 754"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://it.m.wikipedia.org/wiki/IEEE_754"
-        description: "standard per l'aritmetica a virgola mobile in base binaria per i sistemi basati su microprocessore."
-        
+        description: "Standard per l'aritmetica a virgola mobile in base binaria per i sistemi basati su microprocessore"
+    -   title: "Floating Point Math"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://0.30000000000000004.com/"
+        description: "Aritmetica a virgola mobile per i vari linguaggi di programmazione"
 ---
 
 # Javascript - Operatori ed espressioni matematiche
 
 I moderni sistemi informatici sono notoriamente chiamati sistemi **digitali**, in quanto i numeri sono rappresentati utilizzando il sistema numerico binario, che fa uso di due soli simboli (0 e 1), e non il sistema numerico decimale, che ne utilizza dieci (da 0 a 9).
 
-Questi sistemi computerizzati sono gestiti da un microprocessore dotato di diverse unità per l'esecuzione delle operazioni matematiche e logiche. Si tratta di piú unità perchè i microprocessori odierni sono multi-core, per cui, un dual-core ha il doppio, un quad-core ha il quadruplo, un exa-core ha il sestuplo delle unità rispetto ai microprocessori single-core di un tempo,
+Questi sistemi computerizzati sono gestiti da un microprocessore dotato di diverse unità per l'esecuzione delle operazioni matematiche e logiche. Si tratta di più unità perché i microprocessori odierni sono multi-core, per cui, un dual-core ha il doppio, un quad-core ha il quadruplo, un exa-core ha il sestuplo delle unità rispetto ai microprocessori single-core di un tempo.
 
-Le **unità aritmetico logiche** contenute in un microprocessore svolgono operazioni aritmetiche (come la somma e la moltiplicazione) e logiche (come uguaglianza, congiunzione logica e negazione), esclusivamente sui numeri interi.
+<!-- introdurre il concetto di core ?? -->
 
-Le regole che definiscono la rappresentazione dei numeri e le operazioni che si possono effettuare sui numeri interi sono definite dall'algebra di Boole e dal sistema numerico binario.
+Un microprocessore contiene più **unità aritmetico logiche**, le quali svolgono operazioni aritmetiche (come la somma e la moltiplicazione) e logiche (come uguaglianza, congiunzione logica e negazione), esclusivamente sui numeri interi. Le regole che definiscono la rappresentazione dei numeri e le operazioni che si possono effettuare sui numeri interi sono definite dall'algebra di Boole e dal sistema numerico binario.
 
-Le **unità aritmetiche a virgola mobile** contenute in un microprocessore svolgono operazioni aritmetiche esclusivamente sui numeri decimali.
+Un microprocessore contiene più **unità aritmetiche a virgola mobile**, le quali svolgono operazioni aritmetiche esclusivamente sui numeri decimali. Le regole che definiscono la rappresentazione e le operazioni relative ai numeri in virgola mobile sono descritte dallo standard IEEE 754 e successiva revisione IEEE 754r, che in particolare indicano:
 
-Lo standard IEEE 754 e la successiva revisione IEEE 754r  definiscono il formato per la rappresentazione dei numeri in virgola mobile e le operazioni effettuabili su questi. 
-
-In particolare, questi due standard definiscono:
 - che i numeri in virgola mobile si rappresentano secondo la [notazione scientifica](https://it.m.wikipedia.org/wiki/Notazione_scientifica);
- - la precisione dei numeri a 32 bit, a 64 bit e a 128 bit;
- - i metodi di arrotondamento e perdita di precisione;
- - le casistiche eccezionali relative alle operazioni matematiche non valide, come una divisione per zero o una radice quadrata di un numero negativo, che sono gestite restituendo il valore speciale NaN (Not a Number);
- -  le casistiche eccezionali relative alle operazioni matematiche che restituiscono il valore "Infinito".
+- la precisione dei numeri a 32 bit, a 64 bit e a 128 bit;
+- i metodi di arrotondamento e perdita di precisione;
+- le casistiche eccezionali relative alle operazioni matematiche non valide, come una divisione per zero o una radice quadrata di un numero negativo, che sono gestite restituendo il valore speciale NaN (Not a Number);
+-  le casistiche eccezionali relative alle operazioni matematiche con risultato "Infinito", come ad esempio il calcolo di un numero elevato a potenza o la divisione di un numero per zero, che restituisce più o meno infinito (come da specifiche IEEE 754).
 
-Il programmatore puó riferirsi alle regole ed agli standard sopra citati per comprendere i dettagli matematici alla base di alcuni risultati. 
+Il programmatore può riferirsi alle regole ed agli standard sopra citati per comprendere i dettagli matematici alla base di alcuni risultati.
 
 Ad esempio, il risultato di ``0.1 + 0.2`` non fa ``0.3`` come ci si potrebbe aspettare, ma fa ``0.30000000000000004``, e questo avviene con qualsiasi linguaggio di programmazione, dato che ``0.3`` non può essere rappresentato precisamente utilizzando il sistema binario.
 
 ## Espressioni matematiche
 
-Le espressioni sono utilizzate per calcolare un risultato applicando gli operatori ai dati o alle variabili indicate. Ad esempio, la somma tra due numeri è calcolata dall'espressione ``3 + 4``. L'operazione di calcolo del risultato di un'espressione è detta **valutazione**, pertanto le espressioni sono **valutate**.
+Le espressioni sono sequenze di operazioni da eseguire su più numeri o variabili. Le operazioni da eseguire sono indicate dagli operatori matematici. Ad esempio, l'espressione ``3 + 4 * 5`` indica la somma dei numeri ``3`` e ``4`` e la successiva moltiplicazione del risultato con il numero ``5``.
 
-Gli operatori possono essere applicati generalmente ad un singolo valore o ad una coppia di valori. I valori possono essere dati di tipo differente, come un numero ed una stringa.
+L'operazione di calcolo del risultato di un'espressione è detta **valutazione**, pertanto le espressioni sono **valutate** calcolando le operazioni da sinistra verso destra, applicando passo dopo passo gli operatori ai dati o alle variabili indicate.
 
-Ci sono operatori che hanno la precedenza rispetto ad altri, come ad esempio la moltiplicazione che ha precedenza sulla sottrazione. Per cui, nelle espressioni, si valutano prima le operazioni che hanno la precedenza. Quando tutte le precedenze sono state gestite, le operazioni in un'espressione sono valutate da sinistra verso destra.
+Ad esempio, nell'espressione ``5 + 4 - 7`` si procede prima al calcolo della somma ``5 + 4``, che ha come risultato ``9``, e poi si prosegue al calcolo della differenza ``9 - 7``, che restituisce ``2``. Nel complesso, la valutazione dell'espressione menzionata ha come risultato ``2``.
+
+Gli operatori più comuni sono applicati ad una coppia di valori, in genere dello stesso tipo. Ad esempio, la somma, il prodotto, la differenza sono operatori che si applicano ad una coppia di numeri.
+
+Meno comuni sono gli operatori che si applicano ad un singolo valore, ad esempio la negazione.
+
+Nel processo di valutazione di un'espressione matematica, è importante tener presente che alcuni operatori hanno la precedenza rispetto ad altri, come ad esempio la moltiplicazione che ha precedenza sulla sottrazione. Per questo motivo, nella valutazione delle espressioni matematiche, si procede prima con il calcolo delle operazioni che hanno maggiore precedenza, per poi continuare con il calcolo delle operazioni con precedenza minore. Quando tutte le precedenze sono state gestite,
 
 Ad esempio, data l'espressione
 
@@ -95,9 +101,28 @@ In ambito informatico sono utilizzati anche gli operatori di incremento e decrem
 - ``++`` incrementa il numero di una singola unità;
 - ``--`` decrementa il numero di una singola unità.
 
+Un esempio d'uso degli operatori aritmetici è il seguente:
+
+```javascript
+console.info(3 + 4);
+console.info(3 - 4);
+console.info(3 * 4);
+console.info(3 / 4);
+console.info(3 % 4);
+
+let x1 = 3 + 4 * 5;
+console.info(x1);
+x1++;
+console.info(x1);
+x1--;
+console.info(x1);
+console.info(-x1);
+alert(-x1);
+```
+
 ## Operatori relazionali
 
-Gli operatori relazionali, utilizzati per vautare le relazioni tra i numeri, come quelle di maggioranza o di uguaglianza, sono i seguenti:
+Gli operatori relazionali, utilizzati per valutare le relazioni tra i numeri, come quelle di maggioranza o di uguaglianza, sono i seguenti:
 
 - ``>`` relazione di maggioranza;
 - ``<`` relazione di minoranza;
@@ -106,283 +131,71 @@ Gli operatori relazionali, utilizzati per vautare le relazioni tra i numeri, com
 - ``<=`` relazione di minoranza o uguaglianza;
 - ``!=`` relazione di disuguaglianza.
 
-A questi operatori, si aggiungono poi due operatori particolari, che confrontano anche i tipi di dato, oltre che i valori. Questi operatori sono comuni nei linguaggi debolmente tipati, come JavaScript, e sono:
+A questi operatori, si aggiungono poi due operatori particolari, che confrontano anche i tipi di dato, oltre che i valori. Questi operatori sono comuni nei linguaggi debolmente tipizzati, come JavaScript, e sono:
 
 - ``===`` relazione di uguaglianza stretta (valore e tipo di dato uguali);
 - ``!==`` relazione di disuguaglianza stretta (valore o tipo di dato differenti).
 
-## Operatori di assegnazione
-
-Gli operatori di assegnazione si utilizzano per assegnare il valore o il risultato di un'espressione ad una variabile.
-
-- ``=`` assegna il valore ad una variabile.
-
-
-
-## Libreria matematica
-
-Otre agli operatori matematici, ogni linguaggio di programmazione ha una libreria matematica che mette a disposizione del programmatore le funzioni che eseguono le operazioni matematiche piú comuni, come quelle logaritmiche, esponenziali, trigonometriche e di arrotondamento.
-
-Non è necessario riportare alla mente tutti i concetti matematici alla base delle suddette funzioni, corso di questo capitolo sarà illustrato solo come utilizzarle, lasciando poi al programmatore lo studio e l'analisi del contesto in cui utilizzarle.
-
-### Arrotondamenti
-
-L'arrotondamento è un'operazione ricorrente, puó avvenire per eccesso, per difetto, per troncamento. Per ogni tipo di arrotondamento  esiste un'apposita funzione che svolge questo compito.
-
-L'**arrotondamento per eccesso** consiste nell'associare ad un numero reale ``x`` il numero intero successivo.
-
-Come si può dedurre intuitivamente, l'arrotondamento per eccesso del numero ``2.13`` ha come risultato ``3``.
-
-Meno intuitivo è l'arrotondamento per eccesso del numero ``-2.13``, dato che come risultato si ottiene ``-2``, e sulle prime può essere fonte di confusione.
-
-La funzione progettata per eseguire tale operazione è ``ceil``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.ceil(x)
-
-Parameters:
-    x    Number: the real value
-
-Returns:
-    Number: the integer value
-```
-
-Il parametro formale ``x`` rappresenta il numero da arrotondare.
-
-Il valore restituito è il numero arrotondato. Può essere salvato in una variabile.
-
-Per effettuare un arrotondamento per eccesso del numero 3.14, sostituiamo al parametro formale ``x`` il valore ``3.14``. Salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+Un esempio d'uso degli operatori relazionali è il seguente:
 
 ```javascript
-let i = Math.ceil(3.14);
+console.info(3 < 4);
+console.info(3 == 4);
+console.info(3 > 4);
+console.info(3 != 4);
+console.info(4 >= 4);
+console.info(4 <= 4);
+
+let x2 = (3 <= 5);
+console.info(x2);
+alert(!x2);
 ```
 
-L'**arrotondamento per difetto** consiste nell'associare ad un numero reale ``x`` al numero intero precedente.
+## Operatori logici
 
-Come si può dedurre intuitivamente, l'arrotondamento per difetto del numero ``2.13`` ha come risultato ``2``.
+Gli operatori logici permettono di lavorare con i valori di verità delle proposizioni logiche, ovvero con i valori **vero** o **falso**. Ad esempio la proposizione ``3 < 4`` ha il valore **vero**. Gli operatori logici permettono quindi di congiungere, disgiungere o negare proposizioni, e sono di seguito elencati:
 
-Meno intuitivo è l'arrotondamento per difetto del numero ``-2.13``, dato che come risultato si ottiene ``-3``, e sulle prime può essere fonte di confusione.
+- ``&&`` congiunzione logica AND;
+- ``||`` disgiunzione logica OR;
+- ``!`` negazione logica NOT.
 
-La funzione progettata per eseguire tale operazione è ``floor``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.floor(x)
-
-Parameters:
-    x    Number: the real value
-
-Returns:
-    Number: the integer value
-```
-
-Il parametro formale ``x`` rappresenta il numero da arrotondare.
-
-Il valore restituito è il numero arrotondato. Può essere salvato in una variabile.
-
-Per effettuare un arrotondamento per difetto del numero 3.14, sostituiamo al parametro formale ``x`` il valore ``3.14``, ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+Un esempio d'uso degli operatori logici è il seguente:
 
 ```javascript
-let i = Math.floor(3.14);
+console.info( (3 < 4) && (4 < 5) );
+console.info( (3 < 4) || (4 > 5) );
+console.info( ! (3 < 4) );
+
+let x3 = (3 < 4) && (4 < 5)
+console.info(x3);
+
+x3 = (4 > 5) || true;
+console.info(x3);
 ```
 
-L'**arrotondamento** classico consiste nell'associare ad un numero reale ``x`` il numero intero piú vicino, sia esso precedente o successivo.
+## Operatori binari
 
-Come si può dedurre intuitivamente, l'arrotondamento del numero ``2.13`` ha come risultato ``2``, mentre l'arrotondamento del numero ``2.63`` ha come risultato ``3``.
+Gli operatori binari operano sulla rappresentazione binaria dei numeri e permettono le classiche operazioni disponibili nell'algebra di Boole.
 
-La situazione meno intuitiva si ha con il numero ``2.50``, che tipicamente si arrotonda a ``3``.
+- ``&`` operazione di and booleano tra due sequenze di bit;
+- ``|`` operazione di or booleano tra due sequenze di bit;
+- ``^`` operazione di xor booleano traue sequenze di bit;
+- ``~`` operazione di not booleano su una sequenza di bit;
+- ``<<`` shift sinistro di n posizioni;
+- ``>>`` shift destro di n posizioni;
+- ``>>>`` shift destro senza segno di n posizioni.
 
-La funzione progettata per eseguire tale operazione è ``round``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.round(x)
-
-Parameters:
-    x    Number: the real value
-
-Returns:
-    Number: the integer value
-```
-
-Il parametro formale ``x`` rappresenta il numero da arrotondare.
-
-Il valore restituito è il numero arrotondato. Può essere salvato in una variabile.
-
-Per effettuare un arrotondamento per eccesso del numero 3.14, sostituiamo al parametro formale ``x`` il valore ``3.14``, ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+Un esempio d'uso degli operatori binari è il seguente:
 
 ```javascript
-let i = Math.round(3.14);
+console.info(3 & 5);
+console.info(3 | 5);
+console.info(3 ^ 5);
+console.info(3 ~ 5);
+console.info(3 << 5);
+console.info(3 >> 5);
+console.info(3 >>> 5);
+
+let x4 = 3 & 5;
+console.info(x4);
 ```
-
-L'**arrotondamento per troncamento** consiste nell'associare ad un numero reale ``x`` il numero intero che si ottiene togliendo tutte le cifre decimali.
-
-Come ci si può aspettare, l'arrotondamento per troncamento del numero ``-2.13`` è ``-2``, quello del numero ``-2.83`` è ``-2``.
-
-La funzione progettata per eseguire tale operazione è ``trunc``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.trunc(x)
-
-Parameters:
-    x    Number: the real value
-
-Returns:
-    Number: the integer value
-```
-
-Il parametro formale ``x`` rappresenta il numero da arrotondare.
-
-Il valore restituito è il numero arrotondato. Può essere salvato in una variabile.
-
-Per effettuare un arrotondamento per troncamento del numero 3.14, sostituiamo al parametro formale ``x`` il valore ``3.14``, ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
-
-```javascript
-let i = Math.trunc(3.14);
-```
-
-### Generazione di un numero casuale
-
-Spesso è necessario generare un numero casuale, per simulare tante casistiche reali, come il lancio di un dado.
-
-Il numero casuale puó essere vincolato ad un determinato insieme, come nel caso del lancio del dado, in cui i valori accettabili vanno da un minimo di uno ad un massimo di sei ed includono solo numeri interi, oppure può essere libero.
-
-<!-- TODO aggiungi casistiche -->
-
-La funzione progettata per eseguire tale operazione è ``random``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.random(x)
-
-Returns:
-    Number: A floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive). 
-```
-
-Il valore restituito è un numero decimale casuale compreso tra zero (incluso) ed 1 (non incluso). Può essere salvato in una variabile.
-
-Per ottenere un numero casuale, invochiamo la funzione, salvando opzionalmente in una variabile ``i`` il risultato, come nel seguente esempio:
-
-```javascript
-let i = Math.random();
-```
-
-#### Impostare un valore massimo
-
-Spesso si desidera un numero decimale casuale ``x`` compreso tra zero (incluso) ed un valore massimo ``max`` (non incluso) definito dal programmatore o dall'utente.
-
-La via piú semplice consiste nel moltiplicare il numero casuale ``x`` per il valore ``max``, come nel seguente esempio:
-
-```javascript
-let i = max * Math.random();
-```
-
-Ad esempio, se il massimo desiderato è 5 (escluso), allora si possono avere, tra i tanti numeri casuali, i seguenti scenari:
-
-1. Il valore casuale ``x`` è ``0``, moltiplicato per ``5`` fa sempre ``0``;
-2. Il valore casuale ``x`` è ``0.20``, moltiplicato per ``5`` fa ``1``;
-3. Il valore casuale ``x`` è ``0.40``, moltiplicato per ``5`` fa ``2``;
-4. Il valore casuale ``x`` è ``0.60``, moltiplicato per ``5`` fa ``3``;
-5. Il valore casuale ``x`` è ``0.9999``, moltiplicato per ``5`` fa poco meno di ``5`` (che non è incluso nell'intervallo desiderato);
-
-#### Impostare un valore minimo ed un valore massimo
-
-Puó capitare che si desideri un numero decimale casuale ``x`` compreso tra un valore minimo ``min`` (incluso) ed un valore massimo ``max`` (non incluso) definiti dal programmatore o dall'utente.
-
-La via piú semplice consiste nel moltiplicare il numero casuale ``x`` per il valore ``max - min``, sommando poi il risultato al valore ``min`` come nel seguente esempio:
-
-```javascript
-let i = min + (max-min) * Math.random();
-```
-
-Ad esempio, se il minimo desiderato è 3 (incluso) ed il massimo desiderato è 10 (escluso), allora, considerata la differenza che è ``7``, si possono avere, tra i tanti numeri casuali, i seguenti scenari:
-
-1. Il valore casuale ``x`` è ``0``, moltiplicato per ``7`` fa sempre ``0``, che sommato a 3 restituisce il valore ``3``;
-2. Il valore casuale ``x`` è ``0.2``, moltiplicato per ``7`` fa ``1.4``, che sommato a 3 restituisce il valore ``4.4``;
-3. Il valore casuale ``x`` è ``0.3``, moltiplicato per ``7`` fa ``2.1``, che sommato a 3 restituisce il valore ``5.1``;
-4. Il valore casuale ``x`` è ``0.5``, moltiplicato per ``7`` fa ``3.5``, che sommato a 3 restituisce il valore ``6.5``;
-5. Il valore casuale ``x`` è ``0.9999``, moltiplicato per ``7`` fa poco meno di ``7``, che sommato a 3 restituisce un valore poco minore di ``10``;
-
-### Potenze e radici
-
-Non possono mancare le funzioni necessarie al calcolo di un numero elevato ad una certa potenza e quelle per il calcolo della radice quadrata o cubica di un numero.
-
-La funzione progettata per calcolare la potenza di un numero è ``pow(x, y)``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.pow(x, n)
-
-Parameters:
-    x    Number: the base value
-    n    Number  the exponent 
-
-Returns:
-    Number: x to the nth power
-```
-
-Il parametro formale ``x`` rappresenta la base della potenza.
-
-Il parametro formale ``n`` rappresenta l'esponente della potenza.
-
-Il valore restituito è x elevato all'ennesima potenza. Può essere salvato in una variabile.
-
-Per calcolare il valore di 2 elevato alla 20-esima potenza, sostituiamo al parametro formale ``x`` il valore ``2``, al parametro formale ``n`` il valore ``20``, ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
-
-```javascript
-let i = Math.pow(2, 20);
-```
-
-La funzione progettata per calcolare la radice quadrata di un numero è ``sqrt(x)``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.sqrt(x)
-
-Parameters:
-    x    Number: the value
-
-Returns:
-    Number: the square root of x
-```
-
-Il parametro formale ``x`` rappresenta il numero di cui calcolare la radice quadrata.
-
-Il valore restituito è la radice quadrata del numero ``x``. Può essere salvato in una variabile.
-
-Per calcolare la radice quadrata di 16, sostituiamo al parametro formale ``x`` il valore ``16``, ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
-
-```javascript
-let i = Math.sqrt(16);
-```
-
-La funzione progettata per calcolare la radice cubica di un numero è ``cbrt(x)``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Math.cbrt(x)
-
-Parameters:
-    x    Number: the value
-
-Returns:
-    Number: the cube root of x
-```
-
-Il parametro formale ``x`` rappresenta il numero di cui calcolare la radice cubica.
-
-Il valore restituito è la radice cubica del numero ``x``. Può essere salvato in una variabile.
-
-Per calcolare la radice cubica di 16, sostituiamo al parametro formale ``x`` il valore ``16``, ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
-
-```javascript
-let i = Math.cbrt(16);
-```
-
-
-    
-
-
-### alyro
-I parametri formali sono ``w`` ed ``h``, che rappresentano la larghezza e l'altezza dell'area da disegno.
-
-Per creare un'area da disegno di larghezza 600 ed altezza 400 punti, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
-
-```javascript
-createCanvas(600, 400);
-```
-

@@ -1,7 +1,7 @@
 ---
 type: "javascript"
 title: "JavaScript - Array"
-description: "Introduzione ad array e matrici, dichiarazione, accesso indicizzato, metodi disponibili"
+description: "Introduzione agli array, dichiarazione, accesso indicizzato in lettura e scrittura"
 date: 2021-08-21
 publishdate: 2021-08-21
 lastmod: 2021-08-21
@@ -10,7 +10,8 @@ categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: true
 toc: false
-summary: "Introduzione ad array e matrici, dichiarazione, accesso indicizzato, metodi disponibili"
+summary: "Introduzione agli array, dichiarazione, accesso indicizzato in lettura e scrittura"
+width: 5000
 ---
 
 # Array
@@ -27,21 +28,23 @@ Un array di lunghezza 10 contiene un primo elemento in posizione zero, un second
 
 Graficamente possiamo rappresentare un array come una tabella nella quale sono memorizzati gli elementi e sono visualizzate le posizioni.
 
+Per via della rappresentazione grafica, spesso si fa riferimento ad una generica posizione dell'array con il termine "cella".
+
 Ad esempio, un array di lunghezza 10 contenente numeri può essere rappresentato graficamente nel seguente modo:
 
-|           |     |     |     |     |     |     |     |     |     |     |
-| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|               |       |       |       |       |       |       |       |       |       |       |
+| ------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | **posizioni** | **0** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** |
-| elementi  |  7  |  5  |  8  |  2  |  4  |  9  |  9  |  0  |  4  | -4  |
+| elementi      |   7   |   5   |   8   |   2   |   4   |   9   |   9   |   0   |   4   |  -4   |
 
 Come si può notare nell'esempio precedente, la lunghezza dell'array è dieci, il primo elemento è memorizzato nella posizione 0 e l'ultimo elemento è memorizzato in posizione nove. In posizione due è memorizzato l'elemento otto ed in posizione sei è memorizzato l'elemento nove.
 
 Allo stesso modo, possiamo rappresentare graficamente un array di 7 caratteri, come nel successivo esempio:
 
-|           |     |     |     |     |     |     |     |
-| --------- | --- | --- | --- | --- | --- | --- | --- |
+|               |       |       |       |       |       |       |       |
+| ------------- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | **posizioni** | **0** | **1** | **2** | **3** | **4** | **5** | **6** |
-| elementi  | 'f' | 'a' | 'e' | 'p' | ' ' | '2' | '=' |
+| elementi      |  'f'  |  'a'  |  'e'  |  'p'  |  ' '  |  '2'  |  '='  |
 
 Come si può notare nell'esempio mostrato, la lunghezza dell'array è sette, il primo elemento è memorizzato nella posizione 0 e l'ultimo elemento è memorizzato in posizione sei. In posizione tre è memorizzato l'elemento ``p`` ed in posizione sei è memorizzato l'elemento ``=``.
 
@@ -114,3 +117,27 @@ v[7] = 0;
 v[8] = 0;
 v[9] = 0;
 ```
+
+## Automazione delle operazioni su un array
+
+Il vantaggio di utilizzare un array come struttura dati è quello di poter elaborare i dati contenuti senza la necessità di scrivere una ad una le operazioni sui dati.
+
+L'istruzione di dichiarazione dell'array permette di allocare lo spazio necessario a contenere il numero desiderato di elementi, evitando la dichiarazione delle singole variabili una per volta.
+
+Nell'esempio seguente, si confrontano le istruzioni necessarie a dichiarare un array di lunghezza 5 con quelle necessarie alla dichiarazione di 5 variabili.
+
+```javascript
+let etaPersona = [5];
+
+let etaPersona0 = 0;
+let etaPersona1 = 0;
+let etaPersona2 = 0;
+let etaPersona3 = 0;
+let etaPersona4 = 0;
+```
+
+Come si può notare, creare un alto numero di dati può essere un'operazione lunga, mentre creare un array con il numero desiderato di elementi è un'operazione molto veloce.
+
+Allo stesso modo, scrivere in console tutti i valori delle singole variabili è un operazione noiosa, mentre gli array permettono l'uso dei cicli iterativi per automatizzare le operazioni.
+
+Per poter scrivere un ciclo iterativo che esegua le operazioni su un array, è necessario indi l'operazione su una
