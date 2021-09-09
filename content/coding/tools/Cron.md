@@ -30,7 +30,7 @@ references:
 
 Cron e anacron permettono la schedulazione di un task utente con una specifica ricorrenza, ad esempio giornaliera o mensile. Per la scrittura dei task da eseguire, ci si avvale di due programmi: **crontab** ed **anacrontab**.
 
-Cron presume che il sistema sia attivo 24 ore su 24, quindi se in un certo periodo il computer è spento, i task schedulati in quel periodo non saranno eseguiti, ma saranno schedulati per la prossima occorrenza. Ad esempio, se un task schedulato il primo giorno di ogni mese non viene eseguito, magari perché il computer è spento, allora sarà eseguito il primo giorno del mese successivo.
+Cron presume che il sistema sia attivo 24 ore su 24, quindi se in un certo periodo il computer è spento, i task schedulati in quel periodo non saranno eseguiti, e si dovrà attendere successiva ricorrenza schedulata affinchè siano eseguiti. Ad esempio, se un task è schedulato per il primo giorno di ogni mese, ma il primo giorno di Giugno il computer è spento e sarà acceso solo il terzo giorno, allora i task non saranno eseguiti a Giugno, la successiva esecuzione avverrà il primo giorno di Luglio.
 
 Gli utenti comuni non possono usare cron, però possono gestire i propri task attraverso crontab, se l'amministratore da loro i permessi di esecuzione del programma.
 
@@ -115,6 +115,10 @@ Nel caso non sia stato eseguito, si può cercare una traccia di eventuali errori
 grep 'cron' /var/log/syslog
 grep 'cron' /var/log/messages
 ```
+
+**I commenti non sono ammessi sulla stella linea di un comando o di una variabile, poichè vengono interpretati come parte del comando o della variabile.**
+
+**Il carattere ``%`` è interpretato come ``new line``, per poterlo utilizzare come carattere deve essere preceduto da un "escape" ``\``.**
 
 ## Sintassi di schedulazione di cron
 
