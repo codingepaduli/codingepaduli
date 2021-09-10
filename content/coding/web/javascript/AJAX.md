@@ -219,4 +219,4 @@ encodeURI(uri)
 
 headers: { 'Content-Type': 'application/json' }, JSON.stringify(record) }
 
-// (img)[https://i.imgur.com/X4vco9k.jpg]
+// [https://i.imgur.com/X4vco9k.jpg](https://i.imgur.com/X4vco9k.jpg)
