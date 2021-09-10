@@ -213,7 +213,7 @@ console.info(x);
 
 ### Sostituzione dei segnaposto
 
-Nei messaggi da mostrare nella console è possibile utilizzare una formattazione personalizzata, specificandola attraverso dei segnaposto che sono molto simili a quelli utilizzati nei linguaggi _c/c++_ e _java_.
+Nei messaggi da mostrare nella console è possibile utilizzare una formattazione personalizzata, specificandola attraverso dei segnaposto che sono molto simili a quelli utilizzati nei linguaggi _c/c++_ e _Java_.
 
 I segnaposto sono i seguenti:
 

@@ -85,7 +85,7 @@ Per indicare un termine del quale si vuole dare una definizione, si usa l'etiche
 Quando si vuole indicare l'input di un software, si usa l'etichetta **kbd** (dall'inglese "keyboard input").
 
 Allo stesso modo, quando si vuole indicare l'output di un software, si usa l'etichetta **samp** (dall'inglese "sample output element").
- 
+
 Nel seguente esempio verrà mostrato l'uso di entrambe le etichette:
 
 ```html
@@ -117,7 +117,7 @@ L'etichetta **meter** permette di personalizzare l'intervallo, utilizzando gli a
 - ``value`` valore attuale, da mostrare sulla barra di progresso;
 - ``optimum`` valore ottimale.
 
-Vale la seguente relazione: 
+Vale la seguente relazione:
 
 min <= low <= high <= max
 
@@ -127,7 +127,7 @@ min <= low <= high <= max
 
 Gli attributi ``low`` e ``high`` permettono di dividere l'intervallo definito da [``min``, ``max``] in tre intervalli differenti: [``min``, ``low``], [``low``, ``high``] ed [``high``, ``max``].
 
-Il valore ``optimum`` sta semplicemente ad indicare quale intervallo è quello gradito. 
+Il valore ``optimum`` sta semplicemente ad indicare quale intervallo è quello gradito.
 
 Il browser adatta lo stile grafico del componente basandosi sul valore ``value`` da mostrare e sul valore ``optimum`` gradito.
 
@@ -138,7 +138,6 @@ Se il valore da mostrare ``value`` si trova nello stesso intervallo del valore g
 <meter min="12" low="18" high="30" max="35" value="32" optimum="24"> Esame superato.</meter>
 
 <meter min="12" low="18" high="30" max="35" value="32" optimum="34"> Esame superato.</meter>
-
 
 ## Etichette audio e video
 

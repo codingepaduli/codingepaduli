@@ -43,7 +43,7 @@ cognome=Rossi
 dataDiNascita=2021-09-05
 ```
 
-Allo stesso modo, invia la richiesta di login nella quale specifica l'URL del servizio ed i dati di identificazione dell'utente, tipicamente il nome utente e la password, come nel seguente esempio: 
+Allo stesso modo, invia la richiesta di login nella quale specifica l'URL del servizio ed i dati di identificazione dell'utente, tipicamente il nome utente e la password, come nel seguente esempio:
 
 ```plaintext
 www.server.com/login
@@ -107,14 +107,11 @@ I moduli per l'invio dei dati permettono la creazione di campi di inserimento da
 
 A differenza dei collegamenti, che non sono modificabili dall'utente, i moduli di invio dati hanno il vantaggio di permettere all'utente di inserire i dati da inviare al server.
 
-I moduli devono indicare
-l'URL dell'indirizzo a cui inviare i dati. 
+I moduli devono indicare l'URL dell'indirizzo a cui inviare i dati.
 
 Ogni campo da inviare al server deve avere un nome, un valore ed una descrizione allegata. Il valore sarà inserito dall'utente ed, associato al nome del campo, sarà inviato al server.
 
 La descrizione è semplicemente una indicazione per l'utente.
-
-
 
 L'etichetta ``form`` permette la creazione di un modulo di invio dati.
 
@@ -345,7 +342,7 @@ Un campo di input di un orario può avere dei vincoli legati all'orario minimo o
 
 - ``step``: indica che in input è richiesto l'inserimento anche dei secondi, quindi mostra il campo di input nel formato ``hh:mm:ss``;
 - ``min``: indica l'orario minimo che si può inserire (compreso), specificandolo nel formato ``hh:mm`` oppure ``hh:mm:ss``;
-- ``max``: indica la data massima che si può inserire (compreso), specificandolo nel formato ``hh:mm`` oppure ``hh:mm:ss``;
+- ``max``: indica la data massima che si può inserire (compreso), specificandolo nel formato ``hh:mm`` oppure ``hh:mm:ss``.
 
 L'attributo ``step`` indica principalmente che in input è richiesto l'inserimento anche dei secondi. Inoltre, indica il numero di secondi da incrementare o decrementare per i browser che visualizzano il campo di input con i due pulsanti laterali, anche se la maggior parte dei browser mostra un orologio dal quale selezionare ore, minuti e secondi.
 
@@ -432,7 +429,7 @@ Per poter creare un campo di selezione, si utilizza l'etichetta ``select``, che 
 
 Gli attributi ``name``, ``required``, ``readonly``, ``hidden`` e ``disabled`` ricoprono le stesse funzionalità  viste per i campi di input.
 
-Le voci da mostrare nel menú a tendina devono essere inserite nell'etichetta ``option``, che prevede l'attributo ``value``, il cui valore viene inviato al server. 
+Le voci da mostrare nel menú a tendina devono essere inserite nell'etichetta ``option``, che prevede l'attributo ``value``, il cui valore viene inviato al server.
 
 Un esempio di campo di selezione è il seguente:
 

@@ -325,7 +325,6 @@ Creiamo un'area da disegno, delle dimensioni di 600 per 400, nella quale disegni
 - un arco di circonferenza
 -->
 
-
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
 ![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")

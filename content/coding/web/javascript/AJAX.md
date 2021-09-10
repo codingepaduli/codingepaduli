@@ -197,12 +197,16 @@ function callGetJSON() {
     let source = document.querySelector('#loadImage');
 
     fetch('https://my-json-server.typicode.com/typicode/demo/posts/1', options)
-    .then( (response) => response.ok ? response.json() : 
-            throw Error(`Request rejected with status ${response.status}`); 
-    .then( (post) => source.appendChild( document.createTextNode(post.id + ' ' + post.title ) ))
-    .catch( (error) => {
-        source.appendChild( document.createTextNode(error.name + ' ' + error.message) );
-    });
+        .then( (response) => response.ok ? response.json() :
+                throw Error(`Request rejected with status ${response.status}`);
+            )
+        .then(
+            (post) => source.appendChild(document.createTextNode(`${post.id} ${post.title}`))
+        )
+        .catch( (error) => {
+            source.appendChild(document.createTextNode(`${error.name} ${error.message}`));
+        });
+}
 ```
 
 Il risultato è il seguente:
@@ -214,8 +218,6 @@ Il risultato è il seguente:
 headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }
 encodeURI(uri)
 
-headers: { 'Content-Type': 'application/json' },
- JSON.stringify(record)
- 
- 
-    // https://i.imgur.com/X4vco9k.jpg 
+headers: { 'Content-Type': 'application/json' }, JSON.stringify(record) }
+
+// https://i.imgur.com/X4vco9k.jpg

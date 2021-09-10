@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "Javascript - Libreria matematica"
+title: "JavaScript - Libreria matematica"
 description: "Descrizione delle funzioni della libreria matematica"
 date: 2021-08-26
 publishdate: 2021-08-26
@@ -31,7 +31,7 @@ Ogni linguaggio di programmazione ha una libreria matematica che mette a disposi
 
 Non è necessario riportare alla mente tutti i concetti matematici alla base delle suddette funzioni, corso di questo capitolo sarà illustrato solo come utilizzarle, lasciando poi al programmatore lo studio e l'analisi del contesto in cui utilizzarle.
 
-### Arrotondamenti
+## Arrotondamenti
 
 L'arrotondamento è un'operazione ricorrente, puó avvenire per eccesso, per difetto, per troncamento. Per ogni tipo di arrotondamento  esiste un'apposita funzione che svolge questo compito.
 
@@ -145,7 +145,7 @@ Per effettuare un arrotondamento per troncamento del numero 3.14, sostituiamo al
 let i = Math.trunc(3.14);
 ```
 
-### Generazione di un numero casuale
+## Generazione di un numero casuale
 
 Spesso è necessario generare un numero casuale, per simulare tante casistiche reali, come il lancio di un dado.
 
@@ -170,7 +170,7 @@ Per ottenere un numero casuale, invochiamo la funzione, salvando opzionalmente i
 let i = Math.random();
 ```
 
-#### Impostare un valore massimo
+## Impostare un valore massimo
 
 Spesso si desidera un numero decimale casuale ``x`` compreso tra zero (incluso) ed un valore massimo ``max`` (non incluso) definito dal programmatore o dall'utente.
 
@@ -188,7 +188,7 @@ Ad esempio, se il massimo desiderato è 5 (escluso), allora si possono avere, tr
 4. Il valore casuale ``x`` è ``0.60``, moltiplicato per ``5`` fa ``3``;
 5. Il valore casuale ``x`` è ``0.9999``, moltiplicato per ``5`` fa poco meno di ``5`` (che non è incluso nell'intervallo desiderato);
 
-#### Impostare un valore minimo ed un valore massimo
+## Impostare un valore minimo ed un valore massimo
 
 Puó capitare che si desideri un numero decimale casuale ``x`` compreso tra un valore minimo ``min`` (incluso) ed un valore massimo ``max`` (non incluso) definiti dal programmatore o dall'utente.
 
@@ -206,7 +206,7 @@ Ad esempio, se il minimo desiderato è 3 (incluso) ed il massimo desiderato è 1
 4. Il valore casuale ``x`` è ``0.5``, moltiplicato per ``7`` fa ``3.5``, che sommato a 3 restituisce il valore ``6.5``;
 5. Il valore casuale ``x`` è ``0.9999``, moltiplicato per ``7`` fa poco meno di ``7``, che sommato a 3 restituisce un valore poco minore di ``10``;
 
-### Potenze e radici
+## Potenze e radici
 
 Non possono mancare le funzioni necessarie al calcolo di un numero elevato ad una certa potenza e quelle per il calcolo della radice quadrata o cubica di un numero.
 

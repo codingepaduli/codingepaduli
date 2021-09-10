@@ -28,7 +28,7 @@ references:
         description: "Aritmetica a virgola mobile per i vari linguaggi di programmazione"
 ---
 
-# Javascript - Operatori ed espressioni matematiche
+# JavaScript - Operatori ed espressioni matematiche
 
 I moderni sistemi informatici sono notoriamente chiamati sistemi **digitali**, in quanto i numeri sono rappresentati utilizzando il sistema numerico binario, che fa uso di due soli simboli (0 e 1), e non il sistema numerico decimale, che ne utilizza dieci (da 0 a 9).
 
@@ -44,7 +44,7 @@ Un microprocessore contiene più **unità aritmetiche a virgola mobile**, le qua
 - la precisione dei numeri a 32 bit, a 64 bit e a 128 bit;
 - i metodi di arrotondamento e perdita di precisione;
 - le casistiche eccezionali relative alle operazioni matematiche non valide, come una divisione per zero o una radice quadrata di un numero negativo, che sono gestite restituendo il valore speciale NaN (Not a Number);
--  le casistiche eccezionali relative alle operazioni matematiche con risultato "Infinito", come ad esempio il calcolo di un numero elevato a potenza o la divisione di un numero per zero, che restituisce più o meno infinito (come da specifiche IEEE 754).
+- le casistiche eccezionali relative alle operazioni matematiche con risultato "Infinito", come ad esempio il calcolo di un numero elevato a potenza o la divisione di un numero per zero, che restituisce più o meno infinito (come da specifiche IEEE 754).
 
 Il programmatore può riferirsi alle regole ed agli standard sopra citati per comprendere i dettagli matematici alla base di alcuni risultati.
 

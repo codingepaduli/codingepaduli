@@ -211,7 +211,7 @@ Per creare una lista di definizione si usano le etichette ``dl``, ``dt`` e ``dd`
 <dl>
     <dt>Firefox</dt>
     <dd>A free, open source, cross-platform, graphical web browser.</dd>
-</dl> 
+</dl>
 ```
 
 ## Etichette di tabella con attributi ``colspan`` e ``rowspan``

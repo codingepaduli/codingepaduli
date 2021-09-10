@@ -185,6 +185,7 @@ Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità del
 ![p5.js - Editor online](/static/coding/web/p5js/basics-p5-js-editor.png "p5.js - Editor online")
 
 L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
+
 - la barra dei menù, con a sinistra i classici menu per salvare il progetto, accedere alla guida, mentre a destra troviamo i pulsanti per effettuare il login o la registrazione;
 - la barra dei pulsanti, contenente i pulsanti per avviare e fermare il proprio lavoro, la casella di scelta per aggiornare automaticamente l'area di lavoro mentre si scrive il codice, la casella di testo nella quale inserire il nome del progetto ed, infine, il pulsante delle impostazioni;
 - l'area di progetto, contenente i file che compongono il progetto;

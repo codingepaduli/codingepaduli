@@ -112,7 +112,7 @@ Data la struttura gerarchica, è possibile stabilire delle relazioni tra gli ele
 
 ## Indentazione
 
-L'indentazione è una caratteristica che migliora la leggibilità del codice e permette di rilevare gli errori più rapidamente. 
+L'indentazione è una caratteristica che migliora la leggibilità del codice e permette di rilevare gli errori più rapidamente.
 
 Indentare il codice significa inserire un determinato nunero di spazi all'inizio di ogni riga, in maniera proporzionale al livello dell'etichetta presente sulla riga.
 
