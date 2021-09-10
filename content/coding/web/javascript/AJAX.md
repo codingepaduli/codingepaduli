@@ -214,10 +214,9 @@ Il risultato è il seguente:
 <div id="loadImage"></div>
 <input type="button" onclick="callGetJSON()" value="seleziona">
 
-
 headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }
 encodeURI(uri)
 
 headers: { 'Content-Type': 'application/json' }, JSON.stringify(record) }
 
-// https://i.imgur.com/X4vco9k.jpg
+// (img)[https://i.imgur.com/X4vco9k.jpg]

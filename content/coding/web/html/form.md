@@ -333,7 +333,6 @@ Il risultato è il seguente:
 
 <input type="date" name="valore" min="2020-03-05" max="2020-06-05" step="7">
 
-
 #### Input di un orario
 
 Per creare un campo di input che contenga un orario, è necessario indicare l'attributo ``type="time"``. In questo modo, sui dispositivi mobile si permette la scelta dell'orario attraverso l'orologio.
