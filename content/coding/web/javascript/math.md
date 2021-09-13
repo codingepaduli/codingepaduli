@@ -11,7 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: true
 toc: false
 summary: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/basics.js"]
+customJS: ["/static/coding/web/javascript/espressioniMatematiche.js"]
 
 references:
     -   title: "Algebra di Boole"
@@ -86,6 +86,30 @@ Dato che non ci sono altre precedenze da gestire, l'espressione viene valutata d
 
 Nonostante la gestione delle precedenze possa sembrare semplice, quando si valutano espressioni con un vasto numero di operatori differenti nella stessa espressione si può incorrere in errori di valutazione dato che le precedenze non sono scontate.
 
+## Assegnazione ed uguaglianza
+
+Nelle espressioni matematiche il simbolo di uguaglianza ``=`` è usato anche come assegnazione. L'espressione ``x = 5`` indica al tempo stesso che i due valori sono uguali e che la variabile ``x`` assume valore ``5``.
+
+Nei linguaggi di programmazione, questi due concetti sono distinti, in modo tale da permettere al calcolatore di effettuare due azioni differenti.
+
+Tipicamente, il simbolo di uguaglianza è ``==``, ed è utilizzato per verificare che due espressioni siano uguali, come nel caso dell'espressione ``x + 3 == y - 2``.
+
+L'assegnazione è utilizzata per impostare il valore di una variabile, copiando nella relativa locazione di memoria il valore assegnato. In questo caso si parla di operatore di assegnazione, rappresentato dal simbolo ``=``, ed ha una regola di sintassi precisa:
+
+- a sinistra dell'operatore deve essere presente una variabile già dichiarata;
+- a destra dell'operatore deve essere presente un valore o un'espressione matematica.
+
+Due esempi di assegnazione sono i seguenti:
+
+```javascript
+let y = 5;
+let x = 5 * (6 + y);
+console.info(y);
+console.info(x);
+```
+
+Esistono molteplici operatori di assegnazione, che saranno trattati in dettaglio nei successivi paragrafi.
+
 ## Operatori aritmetici
 
 Gli operatori aritmetici utilizzati per svolgere le operazioni di base sono i seguenti:
@@ -117,7 +141,6 @@ console.info(x1);
 x1--;
 console.info(x1);
 console.info(-x1);
-alert(-x1);
 ```
 
 ## Operatori relazionali
@@ -148,7 +171,7 @@ console.info(4 <= 4);
 
 let x2 = (3 <= 5);
 console.info(x2);
-alert(!x2);
+console.info(!x2);
 ```
 
 ## Operatori logici
@@ -164,9 +187,9 @@ Un esempio d'uso degli operatori logici è il seguente:
 ```javascript
 console.info( (3 < 4) && (4 < 5) );
 console.info( (3 < 4) || (4 > 5) );
-console.info( ! (3 < 4) );
+console.info( !(3 < 4) );
 
-let x3 = (3 < 4) && (4 < 5)
+let x3 = (3 < 4) && (4 < 5);
 console.info(x3);
 
 x3 = (4 > 5) || true;
@@ -175,11 +198,11 @@ console.info(x3);
 
 ## Operatori binari
 
-Gli operatori binari operano sulla rappresentazione binaria dei numeri e permettono le classiche operazioni disponibili nell'algebra di Boole.
+Gli operatori binari operano sulla rappresentazione binaria dei numeri e permettono le classiche operazioni disponibili nell'algebra di Boole. Sono i seguenti:
 
 - ``&`` operazione di and booleano tra due sequenze di bit;
 - ``|`` operazione di or booleano tra due sequenze di bit;
-- ``^`` operazione di xor booleano traue sequenze di bit;
+- ``^`` operazione di xor booleano tra due sequenze di bit;
 - ``~`` operazione di not booleano su una sequenza di bit;
 - ``<<`` shift sinistro di n posizioni;
 - ``>>`` shift destro di n posizioni;
@@ -191,11 +214,45 @@ Un esempio d'uso degli operatori binari è il seguente:
 console.info(3 & 5);
 console.info(3 | 5);
 console.info(3 ^ 5);
-console.info(3 ~ 5);
+console.info(~ 5);
 console.info(3 << 5);
 console.info(3 >> 5);
 console.info(3 >>> 5);
 
 let x4 = 3 & 5;
 console.info(x4);
+```
+
+## Operatori di assegnazione
+
+Gli operatori di assegnazione si utilizzano per assegnare il valore o il risultato di un'espressione ad una variabile. L'elenco degli operatori di assegnazione è il seguente:
+
+- ``=`` assegna il valore ad una variabile;
+- ``+=`` somma il valore al valore della variabile e assegna il risultato alla variabile; stessa;
+- ``-=`` sottrae il valore della variabile il valore indicato e assegna il risultato alla variabile stessa ;
+- ``*=`` moltiplica il valore della variabile per il valore indicato e assegna il risultato alla variabile stessa;
+- ``/=`` divide il valore della variabile per il valore indicato e assegna il risultato alla variabile stessa;
+- ``%=`` calcola il resto della divisione tra il valore della variabile ed il valore indicato ed assegna il risultato alla variabile stessa;
+- ``&=``effettua l'operazione di and booleano tra due sequenze di bit ed assegna il risultato alla variabile stessa;
+- ``|=``effettua l'operazione di or booleano tra due sequenze di bit ed assegna il risultato alla variabile stessa;
+- ``^=``effettua l'operazione di xor booleano tra due sequenze di bit ed assegna il risultato alla variabile stessa;
+- ``<<=``effettua l'operazione di shift sinistro di n posizioni ed assegna il risultato alla variabile stessa;
+- ``>>=``effettua l'operazione di shift destro di n posizioni ed assegna il risultato alla variabile stessa;
+- ``>>>=``effettua l'operazione di shift destro senza segno di n posizioni ed assegna il risultato alla variabile stessa.
+
+Un esempio d'uso degli operatori di assegnazione è il seguente:
+
+```javascript
+let x5 = 5;
+x5 += 5;
+x5 -= 5;
+x5 *= 5;
+x5 /= 5;
+x5 %= 5;
+x5 &= 5;
+x5 |= 5;
+x5 ^= 5;
+x5 <<= 5;
+x5 >>= 5;
+x5 >>>= 5;
 ```

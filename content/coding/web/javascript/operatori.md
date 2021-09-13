@@ -1,7 +1,7 @@
 ---
 type: "javascript"
-title: "JavaScript Lez. 04 - Operatori ed espressioni"
-description: "Operatori ed espressioni"
+title: "JavaScript Lez. 04 - Operazioni ed operatori per le stringhe"
+description: "Operazioni ed operatori per le stringhe"
 date: 2020-04-08
 publishdate: 2020-04-08
 lastmod: 2020-04-08
@@ -9,12 +9,10 @@ categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
-summary: "Operatori ed espressioni"
+summary: "Operazioni ed operatori per le stringhe"
 ---
 
-# Operatori ed espressioni {#top}
-
-## Operazioni ed operatori per le stringhe
+# Operazioni ed operatori per le stringhe
 
 Diversi operatori possono lavorare sulle stringhe:
 
@@ -50,20 +48,7 @@ Metodi | Operazione | Esempio d'uso
 ``toUpperCase()`` | restituisce la stringa con tutti i caratteri in maiuscolo | ``"Questa è una stringa".toUpperCase()``
 ``trim()`` | rimuove tutti gli spazi iniziali e finali | ``"Questa è una stringa".trim()``
 
-## Operazioni sui numeri ed operatori aritmetici
-
-Gli operatori aritmetici si applicano a valori numerici e servono per le classiche operazioni aritmetiche.
-
-Simbolo operatore | Operatore aritmetico | Esempio d'uso
---- | --- | ---
-``+`` | somma tra due numeri | ``x = 3 + 4``
-``-`` | sottrazione tra due numeri o negazione di un numero | ``x = 3 - 4`` oppure ``x = -(-3)``
-``*`` | moltiplicazione tra due numeri | ``x = 3 * 4``
-``/`` | divisione tra due numeri | ``x = 3 / 4``
-``%`` | resto della divisione tra due numeri | ``x = 3 % 4``
-``**`` | esponenziale  | ``x = 3 ** 4``
-``++`` | incremento (incrementa il numero di un'unità) | ``x = 3++``
-``--`` | decremento (decrementa il numero di un'unità) | ``x = 3--``
+## Math
 
 Per tutte le altre operazioni sui numeri si utilizzano le proprietà ed i metodi della libreria ``Math`` e dell'oggetto ``Number``.
 
@@ -93,6 +78,8 @@ Metodi | Operazione | Esempio d'uso
 ``sqrt(x)`` | restituisce la radice quadrata di x | ``Math.sqrt(2)``
 ``trunc(x)`` | restituisce il valore di x senza la parte decimale | ``Math.trunc(3.2)``
 
+## Number
+
 Le costanti ed i metodi comunemente utilizzati dell'oggetto ``Number`` sono di seguito descritti:
 
 Costante | Operazione | Esempio d'uso
@@ -108,62 +95,3 @@ Metodi | Operazione | Esempio d'uso
 ``isInteger()`` | indica se il valore è un numero intero | ``Number.isInteger()``
 ``parseFloat(string)`` | converte la stringa in un numero decimale | ``Number.parseFloat("2.15")``
 ``parseInt(string)`` | converte la stringa in un numero intero | ``Number.parseInt("2.15")``
-
-## Operatori relazionali
-
-Permettodo di valutare le relazioni tra i valori indicati. I confronti possono avvenire anche tra tipi diversi, poichè JavaScript prevede delle conversioni automatiche da un tipo all'altro prima di confrontarli.
-
-Simbolo operatore | operatore relazionale | Esempio d'uso
---- | --- | ---
-``<`` | minore | ``3 < 4``
-``<=`` | minore o uguale | ``3 <= 4``
-``>`` | maggiore | ``3 > 4``
-``>=`` | maggiore o uguale | ``3 >= 4``
-``==`` | valore uguale | ``3 == 4``
-``!=`` | valore diverso | ``3 != 4``
-``===`` | strettamente uguale (valore e tipo di dato uguali) | ``3 === '3'``
-``!==`` | strettamente diverso (valore o tipo di dato differenti) | ``3 !== '4''``
-
-## Operatori logici
-
-Gli operatori logici permettono di lavorare con i valori di verità delle proposizioni logiche, ovvero con i valori **vero** o **falso**. Ad esempio la proposizione ``3 < 4`` ha il valore **vero**. Gli operatori logici permettono quindi di congiungere, disgiungere o negare proposizioni.
-
-Simbolo operatore | Operatore logico | Esempio d'uso
---- | --- | ---
-``&&`` | and (congiunzione logica) | ``x = (3 < 4) && (4 < 5)``
-``||`` | or (disgiunzione logica) | ``x = (3 < 4) || (4 < 5)``
-``!`` | not (negazione logica) | ``x = ! (3 < 4)``
-
-## Operatori binari
-
-Gli operatori binari operano sulla rappresentazione binaria dei numeri e permettono le classiche operazioni disponibili nell'algebra di Boole.
-
-Simbolo operatore | Operatore binario | Esempio d'uso
---- | --- | ---
-``&`` | operazione di and booleano tra due sequenze di bit | ``x = 3 & 5``
-``|`` | operazione di or booleano tra due sequenze di bit | ``x = 3 | 5``
-``^`` | operazione di xor booleano tra due sequenze di bit | ``x = 3 ^ 5``
-``~`` | operazione di not booleano su una sequenza di bit | ``x = 3 ~ 5``
-``<<`` | shift sinistro di n posizioni | ``x = 3 << 5``
-``>>`` | shift destro di n posizioni | ``x = 3 >> 5``
-``>>>`` | shift destro senza segno di n posizioni | ``x = 3 >>> 5``
-
-## Assegnazione
-
-Gli operatori di assegnazione si utilizzano per assegnare il valore o il risultato di un'espressione ad una variabile. L'elenco degli operatori di assegnazione è il seguente:
-
-Simbolo operatore | Operatore relazionale | Esempio d'uso
---- | --- | ---
-``=`` | assegna il valore ad una variabile | ``x = 5``
-``+=`` | somma il valore al valore della variabile e assegna il risultato alla variabile stessa | ``x += 5``
-``-=`` | sottrae il valore della variabile il valore indicato e assegna il risultato alla variabile stessa | ``x -= 5``
-``*=`` | moltiplica il valore della variabile per il valore indicato e assegna il risultato alla variabile stessa | ``x *= 5``
-``/=`` | divide il valore della variabile per il valore indicato e assegna il risultato alla variabile stessa | ``x /= 5``
-``%=`` | calcola il resto della divisione tra il valore della variabile ed il valore indicato ed assegna il risultato alla variabile stessa | ``x %= 5``
-``&=``| effettua l'operazione di and booleano tra due sequenze di bit ed assegna il risultato alla variabile stessa | ``x &= 5``
-``|=``| effettua l'operazione di or booleano tra due sequenze di bit ed assegna il risultato alla variabile stessa | ``x |= 5``
-``^=``| effettua l'operazione di xor booleano tra due sequenze di bit ed assegna il risultato alla variabile stessa | ``x ^= 5``
-``~=``| effettua l'operazione di not booleano su una sequenza di bit ed assegna il risultato alla variabile stessa | ``x ~= 5``
-``<<=``| effettua l'operazione di shift sinistro di n posizioni ed assegna il risultato alla variabile stessa | ``x <<= 5``
-``>>=``| effettua l'operazione di shift destro di n posizioni ed assegna il risultato alla variabile stessa | ``x >>= 5``
-``>>>=``| effettua l'operazione di shift destro senza segno di n posizioni ed assegna il risultato alla variabile stessa | ``x >>>= 5``
