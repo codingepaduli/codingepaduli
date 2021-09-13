@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-08-19
-publishdate: 2021-08-19
-lastmod: 2021-08-19
+date: 2021-09-12
+publishdate: 2021-09-12
+lastmod: 2021-09-12
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -359,7 +359,7 @@ summary: "Set di link relativi al coding"
 [6 open source tools for making your own VPN | Opensource.com](https://opensource.com/article/18/8/open-source-tools-vpn) - \
 [Turn your Raspberry Pi homelab into a network filesystem | Opensource.com](https://opensource.com/article/20/5/nfs-raspberry-pi) - \
 [Tor proxy](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com\
-[VoIP ](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - Setting up VoIP phone system for use with RepairShopr. - YouTube\
+[VoIP](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - Setting up VoIP phone system for use with RepairShopr. - YouTube\
 [ProtonDrive](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - Centralized vs. P2P: Inside ProtonDrive’s security\
 [Use open source tools to set up a private VPN | Opensource.com](https://opensource.com/article/21/5/open-source-private-vpn) - \
 
@@ -370,6 +370,7 @@ summary: "Set di link relativi al coding"
 [PHP](http://it.phptherightway.com/) - La Retta Via\
 [mod_rewrite](https://www.cheatography.com/davechild/cheat-sheets/mod-rewrite/) - Cheat Sheets For Every Occasion\
 [Configurazione virtual host su web server Apache](http://www.compago.it/manuali/35-utilita/190-configurazione-web-server-apache-virtual-host.html) - \
+[Apache2 Config Generator](https://apacheconfig.live/) - Apache Configs the easy way\
 [fatal error](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/241817-fatal-error.html) - \
 [Chiarimenti su "Antifurto banda"](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/158679-chiarimenti-su-antifurto-banda.html) - \
 
@@ -490,13 +491,14 @@ summary: "Set di link relativi al coding"
 [text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
 [jq](https://mosermichael.github.io/jq-illustrated/dir/content.html) - Illustrated jq tutorial\
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
+[ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
 
 ### UML, architetture ed ingegneria del software
 
 [Computer science is not software engineering](https://swizec.com/blog/computer-science-is-not-software-engineering) - \
 [Class Visualizer](http://www.class-visualizer.net/index.html) - interactive class diagrams generator from Java bytecode and Kotlin bytecode\
 [gleek.io](https://www.gleek.io/) - Diagram maker for developers\
-[eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
+[eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to Java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
 [AOSA Book](https://aosabook.org/en/index.html) - The Architecture of Open Source Applications\
 [How I write backends](https://github.com/fpereiro/backendlore) - A document summarizes many aspects of how I write these pieces of code\
 
