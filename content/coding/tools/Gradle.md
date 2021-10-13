@@ -178,28 +178,41 @@ I plugin mettono a disposizione anche le **configurazioni di dipendenza**, che p
 
 ### Plugin
 
-E' necessario indicare la tipologia dei progetti sui quali si lavora: progetti Java, c++ o anche progetti con sorgenti HTML o file zip.
-
-Questa tipologia viene indicata attraverso i plugin, che devono essere specificati nel file ``build.gradle`` attraverso la sezione ``plugins``.
-
-E' possibile aggiungere vari tipi di plugin allo stesso progetto.
-
-```groovy
-plugins {
-    id 'nome_plugin',
-    id 'nome_altro_plugin'
-}
-```
+La tipologia dei progetti sui quali si lavora, che siano progetti Java, c++, HTML o di altra natura, deve essere indicata attraverso i plugin.
 
 Gradle fornisce di base una serie di plugin "core", che sono elencati all'indirizzo: [https://docs.gradle.org/current/userguide/java_plugin.html](https://docs.gradle.org/current/userguide/java_plugin.html "Gradle - Pagina web contenente l'elenco di plugin 'core' disponibili").
 
-Per importare un plugin "core" di Gradle è necessario semplicemente indicarne il nome nella sezione "plugins" del file ``build.gradle``.
+Oltre ai plugin "core" di Gradle, sono disponibili una serie di plugin pubblicati dalla comunità sul portale Gradle all'indirizzo: [https://plugins.gradle.org/](https://plugins.gradle.org/ "Gradle - Pagina web contenente l'elenco di plugin pubblicati dalla comunità").
 
-Tra i vari plugin core elenchiamo:
+Ogni plugin fornisce determinate funzionalità, come la pulizia del progetto, l'integrazione di tools, la gestione dei reports, la pubblicazione su portali esterni, e così via. Ad esempio, il plugin ``java`` fornisce le funzionalità tipiche di un progetto Java, come la compilazione, la creazione di un pacchetto jar, e cosi via.
 
-- Il Build Init plugin, che fornisce il task di ``init`` per la creazione di nuovi progetti; Non necessita configurazione;
+E' possibile aggiungere più plugin allo stesso progetto.
 
-- Il Base Plugin, che fornisce i vari task quali ``clean`` e ``build``; Deve essere configurato:
+Una volta scelti i plugin **core** adatti al progetto, questi devono essere specificati nel file ``build.gradle``, includendoli nella sezione ``plugins``:
+
+```groovy
+plugins {
+    id 'nome_plugin_core',
+    id 'nome_altro_plugin_core'
+}
+```
+
+I plugin non core, scelti quindi dal portale, devono essere indicati inserendo nome e versione, come da esempio seguente:
+
+```groovy
+plugins {
+    id 'nome_plugin_core',
+    id 'nome_altro_plugin_core'
+    id 'plugin_non_core' version '0.4.1'
+    id 'altro_plugin_non_core' version '1.2.1'
+}
+```
+
+Alcuni plugin "core" meritano di essere menzionati:
+
+- Il Build Init Plugin permette la creazione di nuovi progetti. Non necessita configurazione. Mette a disposizione il task di ``init``.
+
+- Il Base Plugin permette la pulizia e la pacchettizzazione del progetto. Fornisce i vari task quali ``clean`` e ``build``. Deve essere configurato nell'apposita sezione:
 
 ```groovy
   plugins {
@@ -207,9 +220,7 @@ Tra i vari plugin core elenchiamo:
   }
 ```
 
-- Il Project Report Plugin, che fornisce funzionalità basilari per la gestione dei report di progetto attraverso il task ``projectReport``;
-
-  Questo plugin deve essere configurato:
+- Il Project Report Plugin abilita funzionalità basilari per la gestione dei report di progetto. Fornisce il task ``projectReport``. Deve essere configurato nell'apposita sezione:
 
 ```groovy
   plugins {
@@ -217,7 +228,17 @@ Tra i vari plugin core elenchiamo:
   }
 ```
 
-Ogni plugin importa uno specifico insieme di task. Se nel file ``build.gradle`` non fosse presente l'indicazione del plugin (che indica la tipologia di progetto), Gradle non saprebbe su cosa deve lavorare, quindi utilizzarebbe il plugin di ``init`` . I task disponibili sarebbero quindi:
+### Task
+
+I task sono le azioni che è possibile effettuare su un progetto. Ogni plugin importato rende disponibili nuovi ``task`` sul progetto, anche se è sempre possibile crearne dei nuovi.
+
+Per visualizzare una lista di task disponibili in un progetto, dalla cartella principale del progetto è necessario lanciare:
+
+```bash
+gradlew tasks
+```
+
+Dato che molti task sono importati specificando un plugin, se non fosse presente l'indicazione del plugin, Gradle utilizzerebbe il plugin di ``init``. In questo caso, utilizzando il comando ``gradlew tasks`` per visualizzare i task disponibili sul progetto, si otterrebbe il seguente elenco:
 
 ```plaintext
 gradlew tasks
@@ -233,22 +254,6 @@ help - Displays a help message.
 tasks - Displays the tasks runnable from root project 'example'.
 ...
 ```
-
-Oltre ai plugin "core" di Gradle, sono disponibili una serie di plugin pubblicati dalla comunità sul portale Gradle all'indirizzo: [https://plugins.gradle.org/](https://plugins.gradle.org/ "Gradle - Pagina web contenente l'elenco di plugin pubblicati dalla comunità").
-
-Questi plugin forniscono l'integrazione di tools quali Jetty (con plugin org.gretty), SpotBugs (con plugin com.github.spotbugs) e tanti altri.
-
-Per applicare un plugin dal portale, è necessario indicare nome e versione, come da esempio seguente:
-
-```groovy
-plugins {
-    id 'com.jfrog.bintray' version '0.4.1'
-}
-```
-
-### Task
-
-I task sono le azioni che è possibile effettuare su un progetto.
 
 Per eseguire dei task, dalla cartella principale del progetto è necessario eseguire il comando ``gradlew`` passando i vari task come parametri:
 
@@ -280,13 +285,7 @@ Hello world!
 
 Oltre ai task personalizzati aggiunti al progetto, è possibile comunque invocare i task messi a disposizione dai plugin configurati nel progetto.
 
-Per visualizzare una lista di task disponibili in un progetto,  dalla cartella principale del progetto è necessario lanciare:
-
-```bash
-gradlew tasks
-```
-
-Gradle non esegue i task secondo l'ordine presente sulla linea di comando, ma crea un proprio piano di esecuzione dei task. Per visualizzarlo, è necessario aggiungere il flag ``--dry-run``  alla linea di comando.
+Gradle non esegue i task secondo l'ordine presente sulla linea di comando, ma crea un proprio piano di esecuzione dei task. Per visualizzarlo, è necessario aggiungere il flag ``--dry-run`` alla linea di comando.
 
 Ad esempio, per visualizzare il piano di esecuzione dei task per il comando ``build``:
 
@@ -367,7 +366,7 @@ Gradle fa spesso questa differenza, soprattutto nella gestione di progetti di li
 
 Il motivo per cui una dipendenza deve essere visibile al consumatore è che un'interfaccia o una classe del proprio progetto rendono visibile  al consumatore una classe, un'istanza o un oggetto definito all'interno della dipendenza stessa.
 
- Un esempio d'uso delle dipendenze quindi può essere il seguente:
+Un esempio d'uso delle dipendenze quindi può essere il seguente:
 
 ```groovy
 dependencies {
