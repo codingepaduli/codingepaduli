@@ -245,7 +245,6 @@ Il risultato è il seguente:
 
 ![Immagine del form](/static/coding/web/html/form02.png "Immagine del secondo form")
 
-
 Si nota come i campi di tipo ``submit`` e ``reset`` siano visualizzati come pulsanti indicanti rispettivamente "Invia richiesta" e "Cancella dati". Il primo pulsante permette l'invio dei dati al server ed il secondo riporta tutti i campi ai valori iniziali.
 
 #### Input testuale
