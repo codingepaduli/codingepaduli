@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v2
-    - name: Installing node_modules
-      run: npm install
+    - name: Installing yarn
+      run: yarn
     - name: Running ESLint
-      run: npm run lint
+      run: eslint . --ext .js,.jsx,.ts,.tsx
