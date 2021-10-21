@@ -1,0 +1,21 @@
+name: ESLint Checker
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+  # Run everyday at 6:00 AM
+  - cron: "0 6 * * *"
+
+jobs:
+  eslint-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v2
+    - name: Installing node_modules
+      run: npm install
+    - name: Running ESLint
+      run: npm run lint
