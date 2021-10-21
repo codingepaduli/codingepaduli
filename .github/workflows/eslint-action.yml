@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: 16
     - name: Running CI
-      run: npm ci # or yarn install
+      run: yarn # or yarn install
     - name: Running ESLint
       uses: sibiraj-s/action-eslint@v2
       with:
