@@ -10,8 +10,8 @@ extends: 'eslint:recommended'
 parserOptions:
   sourceType: module
 # TODO : End-of-Life for Built-in JSDoc Support in ESLint https://eslint.org/blog/2018/11/jsdoc-end-of-life. Use eslint-plugin-jsdoc plugin instead: https://github.com/gajus/eslint-plugin-jsdoc
-plugins:
-  - require-jsdoc
+#plugins:
+#  - require-jsdoc
 rules:
   indent:
     - off
@@ -30,9 +30,4 @@ rules:
   no-console:
     - warn
   no-unused-vars:
-    - warn
-  #regole del plugin jsdoc
-  require-jsdoc:
-    - warn
-  valid-jsdoc:
     - warn
