@@ -19,11 +19,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 16
-    - name: Running CI
-      run: yarn # or yarn install
+    - name: Install ESLint
+      run: sudo npm install -g eslint
     - name: Running ESLint
-      uses: sibiraj-s/action-eslint@v2
-      with:
-        eslint-args: ' '
-        extensions: 'js,jsx,ts,tsx'
-        annotations: true
+      run: eslint --config .github/.eslintrc.yml --ext .js
+      # --output-file style\wrongstyle.html --format html
