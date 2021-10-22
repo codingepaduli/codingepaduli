@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: 16
     - name: Install ESLint
-      run: sudo npm install -g eslint eslint-plugin-jsdoc # eslint-plugin-p5js eslint-config-p5js
+      run: sudo npm install -g eslint@7 eslint-plugin-jsdoc # eslint-plugin-p5js eslint-config-p5js
     - name: Running ESLint
       run: eslint . --config .github/.eslintrc.yml --ext .js
       # --output-file style\wrongstyle.html --format html
