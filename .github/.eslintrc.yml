@@ -1,5 +1,5 @@
 #
-# Questo file è usato solo dallo script di check-style 
+# Questo file è usato solo dallo script di check-style
 # non fa parte del framework aurelia.io
 #
 env:
@@ -9,7 +9,7 @@ env:
 extends: 'eslint:recommended'
 parserOptions:
   sourceType: module
-#lista di plugin necessari
+# TODO : End-of-Life for Built-in JSDoc Support in ESLint https://eslint.org/blog/2018/11/jsdoc-end-of-life. Use eslint-plugin-jsdoc plugin instead: https://github.com/gajus/eslint-plugin-jsdoc
 plugins:
   - require-jsdoc
 rules:
