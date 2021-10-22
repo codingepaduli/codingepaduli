@@ -6,14 +6,16 @@ env:
   browser: true
   commonjs: true
   es6: true
-  p5js/p5: true
+#  p5js/p5: true
 extends:
   - 'eslint:recommended'
+  - 'p5js'
+  - 'p5js/sound'
 parserOptions:
   sourceType: module
 # TODO : End-of-Life for Built-in JSDoc Support in ESLint https://eslint.org/blog/2018/11/jsdoc-end-of-life. Use eslint-plugin-jsdoc plugin instead: https://github.com/gajus/eslint-plugin-jsdoc
 plugins:
-  - p5js
+#  - p5js
 #  - require-jsdoc
 rules:
   indent:
