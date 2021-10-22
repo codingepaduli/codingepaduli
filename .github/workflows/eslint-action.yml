@@ -20,7 +20,7 @@ jobs:
       with:
         node-version: 16
     - name: Install ESLint
-      run: npm install --save-dev eslint eslint-plugin-jsdoc eslint-config-p5js
+      run: sudo npm install -g eslint
     - name: Initialization
       run: npm init
     - name: Running ESLint
