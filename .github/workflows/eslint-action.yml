@@ -26,5 +26,5 @@ jobs:
 #    - name: Install ESLint
 #      run: sudo npm install -g eslint
     - name: Running ESLint
-      run: npm run eslint . --config .github/.eslintrc.yml --ext .js
+      run: npx eslint . --config .github/.eslintrc.yml --ext .js
       # --output-file style\wrongstyle.html --format html
