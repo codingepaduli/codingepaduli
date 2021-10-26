@@ -1,0 +1,39 @@
+#
+# Questo file è usato solo dallo script di check-style
+# non fa parte del framework aurelia.io
+#
+env:
+  browser: true
+  commonjs: true
+  es6: true
+  es2021: true
+  p5js/p5: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:p5js/p5'
+parserOptions:
+  sourceType: module
+# TODO : End-of-Life for Built-in JSDoc Support in ESLint https://eslint.org/blog/2018/11/jsdoc-end-of-life. Use eslint-plugin-jsdoc plugin instead: https://github.com/gajus/eslint-plugin-jsdoc
+# plugins:
+#  - jsdoc
+#  - p5js
+#  - require-jsdoc
+rules:
+  indent:
+    - off
+    - tab
+  linebreak-style:
+    - off
+    - windows
+  quotes:
+    - off
+    - double
+  semi:
+    - error
+    - always
+  no-mixed-spaces-and-tabs:
+    - off
+  no-console:
+    - warn
+  no-unused-vars:
+    - warn
