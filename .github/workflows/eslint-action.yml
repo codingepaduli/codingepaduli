@@ -22,7 +22,7 @@ jobs:
     - name: Creating the NPM project
       run: npm init --yes # (info extracted from current dir)
     - name: Install ESLint (and plugins) as project dependency
-      run: npm install --save-dev eslint eslint-plugin-p5js
+      run: npm install --save-dev eslint eslint-config-p5js
 #    - name: Install ESLint
 #      run: sudo npm install -g eslint
     - name: Running ESLint

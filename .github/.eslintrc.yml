@@ -9,6 +9,8 @@ env:
 #  p5js/p5: true
 extends:
   - 'eslint:recommended'
+  - 'p5js'
+  - 'p5js/sound'
 #  - 'plugin:jsdoc/recommended'
 parserOptions:
   sourceType: module
