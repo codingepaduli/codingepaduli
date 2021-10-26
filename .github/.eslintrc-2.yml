@@ -2,6 +2,8 @@
 # Questo file è usato solo dallo script di check-style
 # non fa parte del framework aurelia.io
 #
+plugins:
+  - 'p5js'
 env:
   browser: true
   commonjs: true
