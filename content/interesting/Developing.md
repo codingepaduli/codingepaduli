@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-09-12
-publishdate: 2021-09-12
-lastmod: 2021-09-12
+date: 2021-10-27
+publishdate: 2021-10-27
+lastmod: 2021-10-27
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -48,6 +48,7 @@ summary: "Set di link relativi al coding"
 [paiza.IO](https://paiza.io/en/) - Online editors and compilers for PHP/Java/C++... \
 [What is Istio?](https://opensource.com/article/18/9/what-istio) - a service mesh can help to manage your microservice deployments - Opensource.com\
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
+[Waydroid](https://waydro.id/) - a full Android system in a container right to your GNU/Linux desktop\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
 
@@ -84,6 +85,11 @@ summary: "Set di link relativi al coding"
 [Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Transitioning from Docker to Podman - Red Hat Developer\
 [Jonathan Bergknoff](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - Run More Stuff in Docker\
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
+[You Don't Need to Rebuild Your Development Docker Image on Every Code Change · vsupalov.com](https://vsupalov.com/rebuilding-docker-image-development/) - \
+[File Permissions: the painful side of Docker – Coding Thoughts](https://blog.gougousis.net/file-permissions-the-painful-side-of-docker/) - \
+[Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
+[Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
+[Docker](https://dev.to/pssingh21/docker-97j) - DEV Community\
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -99,6 +105,7 @@ summary: "Set di link relativi al coding"
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
+[OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 
 #### Ansible
 
@@ -116,6 +123,7 @@ summary: "Set di link relativi al coding"
 [5 everyday sysadmin tasks to automate with Ansible | Opensource.com](https://opensource.com/article/21/3/ansible-sysadmin) - \
 [GitHub](https://github.com/mikecali/6_sysadmin_tasks) - mikecali/6_sysadmin_tasks\
 [5 ways to process JSON data in Ansible | Opensource.com](https://opensource.com/article/21/4/process-json-data-ansible) - \
+[Collect Failed Task Details in Ansible](https://dev.to/email2vimalraj/collect-failed-task-details-in-ansible-4hcf) - DEV Community\
 
 #### PowerShell
 
@@ -152,6 +160,7 @@ summary: "Set di link relativi al coding"
 [Automating my job by using GPT-3 to generate database-ready SQL to answer business questions](https://blog.seekwell.io/gpt3) - \
 [Predicting sex from retinal fundus photographs using automated deep learning | Scientific Reports](https://www.nature.com/articles/s41598-021-89743-x.epdf?sharing_token=Fe891D30KtzWj086Mix2BtRgN0jAjWel9jnR3ZoTv0MtpAfo4k5SUyr2ANoiCUj48aDnaVS1oiRvWR5Jq3W5vp2Xty3aFDSimt06-04o22tCkZ62X__WtnMTTtit3At8eCD1Y4VRife50LtwBhS8nU--GtD10XpQBfLSJk9Tc1tdTUwF5RuI--pQYDk9R8IJ) - \
 [The Fourier transform is a neural network | sidsite](https://sidsite.com/posts/fourier-nets/) - \
+[microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) - 12 weeks, 25 lessons, 50 quizzes, classic Machine Learning for all\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -169,6 +178,9 @@ summary: "Set di link relativi al coding"
 [Best practices for writing SQL queries](https://www.metabase.com/learn/building-analytics/sql-templates/sql-best-practices) - \
 [EXPLAIN ANALYZE](https://www.cybertec-postgresql.com/en/how-to-interpret-postgresql-explain-analyze-output/) - how to interpret it in PostgreSQL - Cybertec\
 [pg_stat_statements](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/) - Tracking down slow queries in PostgreSQL\
+[Joining CSV and JSON data with an in-memory SQLite database](https://simonwillison.net/2021/Jun/19/sqlite-utils-memory/) - \
+[What does First Normal Form actually mean?](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - \
+[Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - \
 
 ### Giochi
 
@@ -183,6 +195,8 @@ summary: "Set di link relativi al coding"
 [Introduction](https://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html) - Computer Graphics from scratch - Gabriel Gambetta\
 [Kaboom!!](https://replit.com/kaboom) - a fun JavaScript game programming library & environment\
 [Coding Challenges · The Coding Train](https://thecodingtrain.com/CodingChallenges/) - \
+[LDtk](https://deepnight.itch.io/ldtk) - Level designer Toolkit by Deepnight Games\
+[Code Zelda in JavaScript and Kaboom.js](https://dev.to/ania_kubow/code-zelda-in-javascript-and-kaboom-js-i3n) - DEV Community\
 
 ### GIT
 
@@ -196,6 +210,14 @@ summary: "Set di link relativi al coding"
 [Tweak your Git config for multiple user IDs | Opensource.com](https://opensource.com/article/20/10/git-config) - \
 [Experiment on your code freely with Git worktree | Opensource.com](https://opensource.com/article/21/4/git-worktree) - \
 [ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
+[Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
+[Generate semantic-release notes with GitHub Actions](https://dev.to/github/generate-semantic-release-with-github-actions-2lll) - DEV Community\
+[How to use GitHub Pages to host your website, even with multiple repos](https://dev.to/github/how-to-use-github-pages-to-host-your-website-even-with-multiple-repos-27k2) - DEV Community\
+[Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) - GitHub Docs\
+[Release Drafter · Actions · GitHub Marketplace · GitHub](https://github.com/marketplace/actions/release-drafter) - \
+[Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
+[Create or Update PR Action](https://dev.to/mheap/create-or-update-pr-action-2bd7) - DEV Community\
+[Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
 
 ### Java
 
@@ -218,8 +240,14 @@ summary: "Set di link relativi al coding"
 [JEP 392](https://openjdk.java.net/jeps/392) - Packaging Tool for packaging self-contained Java applications\
 [DynamicJasper library](http://dynamicjasper.com/features/) - \
 [How do I setup GitHub Actions for my Gradle or Android project?](https://dev.to/jmfayard/how-do-i-setup-github-actions-for-my-gradle-or-android-project-3eal) - DEV Community\
+[Set up CI/CD at Github for Gradle (Java)](https://dev.to/berviantoleo/set-up-ci-cd-at-github-for-gradle-java-3fb9) - DEV Community\
 [A real-world example of a Stream Collector](https://blog.frankel.ch/real-world-stream-collector/) - \
 [Teeing Stream Collector](https://blog.frankel.ch/teeing-java-api/) - a hidden gem in the Java API\
+[Use this open source tool for automated unit testing | Opensource.com](https://opensource.com/article/21/8/tackle-test) - \
+[Java 9 Module System | Mobile & Web Programming Tutorials](https://ozenero.com/java-9-module-system) - \
+[APIs and HTTP Client: Get Call With Headers | by Prem Singh Rathore | Aug, 2021 | Medium](https://medium.com/@prathore28647/apis-and-http-client-get-call-with-headers-c150982eaa8f) - \
+[Practice what's new in Java](https://dev.to/jmfayard/practice-what-s-new-in-java-1j09) - DEV Community\
+[Parse command options in Java with commons-cli | Opensource.com](https://opensource.com/article/21/8/java-commons-cli) - \
 
 #### JDBC e JPA
 
@@ -253,6 +281,9 @@ summary: "Set di link relativi al coding"
 [JUnit 5 tutorial, part 2](https://www.javaworld.com/article/3543268/junit-5-tutorial-part-2-unit-testing-spring-mvc-with-junit-5.html) - Unit testing Spring MVC with JUnit 5\
 [Spring Boot | GraphQLize](https://www.graphqlize.org/docs/getting_started/java/springboot) - \
 [Implementing HTTP byte-range requests in Spring 4 and other framework](https://gist.github.com/davinkevin/b97e39d7ce89198774b4) - \
+[Best Ways to Run Spring Boot app Via Console or Terminal](https://dev.to/frugalisminds/best-ways-to-run-spring-boot-app-via-console-or-terminal-360o) - DEV Community\
+[Spring Boot With GraphQL: What The Cool Kids Are Doing](https://dev.to/keyholesoftware/spring-boot-with-graphql-what-the-cool-kids-are-doing-1m2b) - DEV Community\
+[JWT authentication in Spring Security and Angular](https://dev.to/pavankjadda/jwt-authentication-in-spring-security-and-angular-2ehk) - DEV Community\
 
 #### Java to native or WebAssembly
 
@@ -295,6 +326,7 @@ summary: "Set di link relativi al coding"
 [viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL: Hashes, digital signatures, and more\
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL: Cryptography basics | Opensource.com\
+[SSH quoting | Colin Watson's blog](https://www.chiark.greenend.org.uk/~cjwatson/blog/ssh-quoting.html) - \
 [gocryptfs](https://opensource.com/article/19/8/how-encrypt-files-gocryptfs) - How to encrypt files with gocryptfs on Linux | Opensource.com\
 [Five Years of Btrfs](https://markmcb.com/2020/01/07/five-years-of-btrfs/) - use the Btrfs file system to store all my data\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
@@ -319,6 +351,9 @@ summary: "Set di link relativi al coding"
 [Log Management Tools](https://www.tecmint.com/open-source-centralized-linux-log-management-tools/) - The 5 Most Notable Open Source Centralized Log Management Tools\
 [Log Management Tools](https://www.tecmint.com/best-linux-log-monitoring-and-management-tools/) - 4 Good Open Source Log Monitoring and Management Tools for Linux\
 [ShellCheck – shell script analysis tool](https://www.shellcheck.net/) - \
+[voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
+[GitHub](https://github.com/orhun/gpg-tui) - orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐\
+[Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -338,6 +373,7 @@ summary: "Set di link relativi al coding"
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
 [Monitor your Raspberry Pi with Grafana Cloud | Opensource.com](https://opensource.com/article/21/3/raspberry-pi-grafana-cloud) - \
 [Crossbar.io](https://crossbar.io/) - distributed, multi-language applications where components communicate using Publish & Subscribe and routed Remote Procedure Calls\
+[Platypush](https://platypush.tech/) - an open-source modular platform for automation aimed to run on any device that can run a Python interpreter\
 
 ### Mozilla Firefox
 
@@ -373,6 +409,13 @@ summary: "Set di link relativi al coding"
 [Apache2 Config Generator](https://apacheconfig.live/) - Apache Configs the easy way\
 [fatal error](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/241817-fatal-error.html) - \
 [Chiarimenti su "Antifurto banda"](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/158679-chiarimenti-su-antifurto-banda.html) - \
+[Running Laravel on Docker is really easy with Kool](https://dev.to/kooldev/running-laravel-on-docker-is-really-easy-with-kool-400h) - DEV Community\
+
+### Python
+
+[chriskiehl/Gooey: Turn (almost) any Python command line program into a full GUI application with one line](https://github.com/chriskiehl/Gooey) - \
+[se2p/pynguin: The PYthoN General UnIt Test geNerator is a test-generation tool for Python](https://github.com/se2p/pynguin) - \
+[Learning Python- Intermediate course: Day 10, Complex numbers part 2](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - DEV Community\
 
 ### Privacy, Security and Hacking
 
@@ -492,6 +535,7 @@ summary: "Set di link relativi al coding"
 [jq](https://mosermichael.github.io/jq-illustrated/dir/content.html) - Illustrated jq tutorial\
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
+[How to Use jq for Creating and Updating JSON Data](https://spin.atomicobject.com/2021/06/08/jq-creating-updating-json/) - \
 
 ### UML, architetture ed ingegneria del software
 
@@ -514,11 +558,9 @@ summary: "Set di link relativi al coding"
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
 [jsonbox.io](https://jsonbox.io/) - HTTP based JSON storage\
-[Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
 [Egyptian Hieroglyphs](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - Test for Unicode support in Web browsers\
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
 [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
-[Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
 [PWA](https://chromeunboxed.com/google-play-store-microsoft-pwa-builder/) - Google and Microsoft collaborate to help deliver better PWAs to the Play Store\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
 [BrowserGap](https://github.com/dosyago/RemoteView/blob/master/README.md) - access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web\
@@ -529,8 +571,7 @@ summary: "Set di link relativi al coding"
 [Responsively App](https://responsively.app/) - A Web developer's browser to improve the developing of responsive design\
 [Nodesign.dev](https://nodesign.dev/) - A collection of tools for developers who have little to no artistic talent\
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
-[web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
-[Web Accessibility](https://bootcamp.uxdesign.cc/beginners-guide-to-web-accessibility-514644750b0f?gi=301fe74f3075) - A Beginner’s Guide To Web Accessibility | by Samantha Lurio | Bootcamp\
+[Robots Generator | Generate robots.txt Files Instantly](http://www.robotsgenerator.com/) - RobotsGenerator.com\
 
 #### HTML
 
@@ -552,8 +593,20 @@ summary: "Set di link relativi al coding"
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
 [details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
+[<datalist>: The HTML Data List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - HTML: HyperText Markup Language | MDN\
 [Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
+
+##### WAI and ARIA
+
+[WAI](https://www.w3.org/WAI/tutorials/) - Web Accessibility Initiative\
+[Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/) - \
+[A deep dive into ARIA](https://dev.to/elischei/a-deep-dive-into-aria-5071) - DEV Community\
+[5 tools for Designing, Developing, and Testing Accessibility](https://dev.to/stories_of_ren/5-tools-for-designing-developing-and-testing-accessibility-5a0d) - DEV Community\
+[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) - \
+[Non Visual Access](https://www.nvaccess.org/download/) - a screen reader for testing pages for every Blind + Vision Impaired person\
+[web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
+[Web Accessibility](https://bootcamp.uxdesign.cc/beginners-guide-to-web-accessibility-514644750b0f?gi=301fe74f3075) - A Beginner’s Guide To Web Accessibility | by Samantha Lurio | Bootcamp\
 
 #### CSS
 
@@ -586,21 +639,19 @@ summary: "Set di link relativi al coding"
 
 [Top 5 skills to learn as a junior JavaScript developer](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - \
 [PracticeJS](https://practicejs.com/) - \
+[Deep JavaScript: Theory and techniques](https://exploringjs.com/deep-js/index.html) - \
 [JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
 [utils](https://www.npmjs.com/package/utils) - npm\
 [ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
 [JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) - \
 [console.log() Methods](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada?gi=82a8656ab788) - \
+[Advanced console.log Tips & Tricks | by Liad Shiran | Nielsen-Tel-Aviv-tech-blog | Medium](https://medium.com/nmc-techblog/advanced-console-log-tips-tricks-fa3762930bca) - \
 [date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
-[Functional JavaScript](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/) - How to use array reduce for more than just numbers\
 [HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
 [8 DOM features you didn’t know existed](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - LogRocket Blog\
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
-[A brief look at async-await](https://javascript.christmas/2019/9) - \
 [JavaScript Christmas](https://javascript.christmas/2020) - \
-[Promises chaining](https://javascript.info/promise-chaining) - \
-[10 lesser-known Web APIs you may want to use](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - \
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
 [qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
@@ -608,10 +659,6 @@ summary: "Set di link relativi al coding"
 [sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
 [How does JavaScript affect SEO?](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
 [Parcel](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/) - Web bundlers like Browserify and Webpack manage the development workflow; Parcel is a bundler that doesn’t need any configuration; \
-[PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
-[PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
-[How to make a PWA](https://dev.to/theyoungestcoder/how-to-make-a-pwa-4m4n) - DEV Community\
-[From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 [SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
@@ -626,6 +673,47 @@ summary: "Set di link relativi al coding"
 [DroidScript – Rapid development of mobile Apps, using JavaScript](https://droidscript.org/#page-content) - \
 [How we use Web Components at GitHub | The GitHub Blog](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - \
 [github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
+[7 ES6 Features all JavaScript Programmers Should Learn to Use](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - DEV Community\
+[Video.js](https://videojs.com/) - Make your player yours | Video.js\
+[How to decode the GreenPass QR code](https://dev.to/lmillucci/javascript-how-to-decode-the-greenpass-qr-code-3dh0) - DEV Community\
+[Download Browser Page as PDF using JavaScript](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - DEV Community\
+[Micro](https://m3o.com/) - Public APIs for everyday use\
+[Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
+[Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
+
+##### JS Collection framework
+
+[Functional JavaScript](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/) - How to use array reduce for more than just numbers\
+[5 Useful Array Methods in Javascript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
+[Understanding the array methods Array.some() and Array.every() in JavaScript](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - DEV Community\
+[JavaScript Array Methods.](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
+
+##### JS Promise and Async Await
+
+[A brief look at async-await](https://javascript.christmas/2019/9) - \
+[Promises chaining](https://javascript.info/promise-chaining) - \
+[JavaScript Promise methods Explained!](https://dev.to/duhbhavesh/javascript-promise-methods-explained-1f0l) - DEV Community\
+
+##### JS Fetch API
+
+[Fetch](https://dev.to/nombrekeff/think-like-a-pro-grammer-10k1) - from simple to scalable implementation - DEV Community\
+[This Is Your Complete Guide For Sending Requests Using fetch in JS](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - DEV Community\
+[Migrating from promise chains to async-await and escaping the try catch hell](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - DEV Community\
+
+##### JS API
+
+[10 lesser-known Web APIs you may want to use](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - \
+[Permissions API](https://dev.to/sidmirza4/permissions-api-why-should-you-start-using-it-2k4d#introduction) - Why should you start using it? - DEV Community\
+[Web Storage API](https://dev.to/naveenchandar/web-storage-api-3d49) - DEV Community\
+[Using JS Speech Recognition to build a virtual assistant](https://dev.to/alvaromontoro/using-js-speech-recognition-to-build-a-virtual-assistant-1957) - DEV Community\
+
+##### PWA
+
+[PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
+[PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
+[How to make a PWA](https://dev.to/theyoungestcoder/how-to-make-a-pwa-4m4n) - DEV Community\
+[From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
+[PWABuilder](https://www.pwabuilder.com/) - \
 
 ##### Aurelia
 
@@ -649,3 +737,8 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
+
+##### HandsFree
+
+[Handsfree.js](https://handsfree.js.org/) - \
+[Pose | Handsfree.js](https://handsfree.js.org/ref/model/pose.html#with-config) - \

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-06-02
-publishdate: 2021-06-02
-lastmod: 2021-06-02
+date: 2021-10-27
+publishdate: 2021-10-27
+lastmod: 2021-10-27
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -33,6 +33,7 @@ summary: "Set di link interessanti"
 [Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
 [Twenty New Moons Found Orbiting Saturn](https://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn) - \
+[The most detailed 3D map of the Universe ever made](https://www.nature.com/articles/d41586-021-01466-1) - \
 [Renormalization group](https://www.quantamagazine.org/how-renormalization-saved-particle-physics-20200917/) - a “theory of theories” connecting the microscopic with the macroscopic - It helps identify which big-picture quantities are useful to measure and which convoluted microscopic details can be ignored\
 [Dark Energy](https://physics.aps.org/articles/v13/1) - new generation of experiments about the nature of dark energy\
 [Entropy in the Universe](https://johncarlosbaez.wordpress.com/2020/01/25/entropy-in-the-universe/) - entropy of interstellar and intergalactic gas and dust is about ten times more the entropy of all the stars in the observable Universe\
@@ -56,6 +57,7 @@ summary: "Set di link interessanti"
 [Quantum](https://www.sciencemag.org/news/2020/09/one-quantum-physics-greatest-paradoxes-may-have-lost-its-leading-explanation) - One of quantum physics’ greatest paradoxes may have lost its leading explanation\
 [When Hubble Stared at Nothing for 100 Hours](https://www.nationalgeographic.com/science/phenomena/2015/04/24/when-hubble-stared-at-nothing-for-100-hours/) - “nothing” was actually stuffed with of galaxies. More than 3,000 of them came spilling out, some roughly 12 billion years old. Spiral, elliptical, irregular...\
 [Physics](https://physics.aps.org/articles/v13/114) - A Lopsided Merger\
+[Electromagnetism is a property of spacetime itself, study finds](https://sciencex.com/news/2021-07-electromagnetism-property-spacetime.html) - \
 
 ### Math
 
@@ -71,6 +73,7 @@ summary: "Set di link interessanti"
 [Fourier Transform](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/) - An Interactive Guide – BetterExplained\
 [Fourier Transform](https://github.com/Jezzamonn/fourier) - An Interactive Introduction\
 [Graphtoy](https://graphtoy.com/) - create graph from math formulas\
+[Rotations with quaternions](https://imadr.me/rotations-with-quaternions/) - \
 
 ### Medicine
 
@@ -91,6 +94,7 @@ summary: "Set di link interessanti"
 [The poison found in everyone, even unborn babies](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - and who is responsible for it | Environment | The Guardian\
 [FuelCellsWorks](https://fuelcellsworks.com/news/photocatalyst-that-can-split-water-into-hydrogen-and-oxygen-at-a-quantum-efficiency-close-to-100/) - Photocatalyst that can Split Water into Hydrogen and oxygen at a Quantum Efficiency Close to 100%\
 [Reversing The Aging Clock With Epigenetic Reprogramming](https://www.bio-itworld.com/news/2021/01/13/reversing-the-aging-clock-with-epigenetic-reprogramming) - \
+[Humans Used to Sleep in Two Shifts, And Maybe We Should Do It Again](https://www.sciencealert.com/humans-used-to-sleep-in-two-shifts-maybe-we-should-again) - \
 
 ### Tech
 
@@ -107,6 +111,7 @@ summary: "Set di link interessanti"
 [NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
 [PhotoRec IT](https://www.cgsecurity.org/wiki/PhotoRec_IT) - Digital Picture and File Recovery\
 [leandromoreira/ffmpeg-libav-tutorial FFmpeg libav tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial) - learn how media works from basic to transmuxing, transcoding and more\
+[Color Theory for Web Developers](https://dev.to/codingsafari/color-theory-for-web-developers-2ilk) - DEV Community\
 
 ### History
 
