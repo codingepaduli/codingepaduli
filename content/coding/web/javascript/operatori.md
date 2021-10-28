@@ -7,7 +7,7 @@ publishdate: 2020-04-08
 lastmod: 2020-04-08
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
-draft: false
+draft: true
 toc: false
 summary: "Operazioni ed operatori per le stringhe"
 ---

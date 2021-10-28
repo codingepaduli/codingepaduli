@@ -517,3 +517,147 @@ let i = Math.cbrt(16);
 ```
 
 ### Funzioni per il calcolo di esponenziali e logaritmi
+
+Le funzioni per il calcolo di esponenziali e logaritmi generalmente lavorano in base ``2``, in base ``e`` (numero di Eulero) ed in base ``10``. Ricordiamo che è possibile calcolare il logaritmo di un numero a patto che questo sia maggiore di zero.
+
+La funzione progettata per calcolare l'esponenziale in base ``e`` di un numero è ``exp(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.exp(x)
+
+Parameters:
+    x    Number: the number
+
+Returns:
+    Number: e^x
+```
+
+Il parametro formale ``x`` rappresenta l'esponente. La base è il numero di Eulero ``e``.
+
+Il valore restituito è l'esponenziale ``e^x``. Può essere salvato in una variabile.
+
+Per calcolare l'esponenziale in base ``e`` elevato alla 20-esima potenza, sostituiamo al parametro formale ``x`` il valore ``20`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.exp(20);
+```
+
+La funzione progettata per calcolare il logaritmo in base ``2`` di un numero è ``log2(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.log2(x)
+
+Parameters:
+    x    Number: the number
+
+Returns:
+    Number: the base-2 logarithm of x.
+```
+
+Il parametro formale ``x`` rappresenta il numero. La base è ``2``.
+
+Il valore restituito è il logaritmo in base ``2`` di ``x``. Può essere salvato in una variabile.
+
+Per calcolare il logaritmo in base ``2`` di ``20``, sostituiamo al parametro formale ``x`` il valore ``20`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.log2(20);
+```
+
+La funzione progettata per calcolare il logaritmo in base ``e`` di un numero è ``log(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.log(x)
+
+Parameters:
+    x    Number: the number
+
+Returns:
+    Number: the natural logarithm (base-e logarithm) of x .
+```
+
+Il parametro formale ``x`` rappresenta il numero. La base è ``e``.
+
+Il valore restituito è il logaritmo naturale (in base ``2``) di ``x``. Può essere salvato in una variabile.
+
+Per calcolare il logaritmo naturale di ``20``, sostituiamo al parametro formale ``x`` il valore ``20`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.log(20);
+```
+
+La funzione progettata per calcolare il logaritmo in base ``10`` di un numero è ``log10(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.log10(x)
+
+Parameters:
+    x    Number: the number
+
+Returns:
+    Number: the base-2 logarithm of x.
+```
+
+Il parametro formale ``x`` rappresenta il numero. La base è ``10``.
+
+Il valore restituito è il logaritmo in base ``10`` di ``x``. Può essere salvato in una variabile.
+
+Per calcolare il logaritmo in base ``10`` di ``20``, sostituiamo al parametro formale ``x`` il valore ``20`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.log10(20);
+```
+
+### Funzioni trigonometriche
+
+Le funzioni trigonometriche sono tutte definite sulla circonferenza goniometrica, che è centrata nell'origine degli assi ed ha raggio pari ad 1.
+
+Le principali sono **seno** e **coseno**, che definiscono il rapporto fra la lunghezza dell'ipotenusa e la lunghezza dei lati del triangolo che si forma sulla circonferenza goniometrica, quando è definito l'angolo dell'ipotenusa.
+
+<!-- TODO disegnare il triangolo sulla circonferenza goniometrica -->
+
+Una cosa importante da ricordare è che nelle funzioni trigonometriche gli angoli devono essere espressi in **radianti**.
+
+La funzione progettata per calcolare il seno di un angolo ``x`` è ``sin(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.sin(x)
+
+Parameters:
+    x    Number: the angle
+
+Returns:
+    Number: the sin of x.
+```
+
+Il parametro formale ``x`` rappresenta l'angolo, espresso in radianti.
+
+Il valore restituito è il seno di ``x``, sempre ricordando che è calcolato sulla circonferenza unitaria, quindi con raggio ``uno``.
+
+Per calcolare il seno dell'angolo che misura ``3`` radianti, sostituiamo al parametro formale ``x`` il valore ``3`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.sin(3);
+```
+
+La funzione progettata per calcolare il coseno di un angolo ``x`` è ``cos(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.cos(x)
+
+Parameters:
+    x    Number: the angle
+
+Returns:
+    Number: the cos of x.
+```
+
+Il parametro formale ``x`` rappresenta l'angolo, espresso in radianti.
+
+Il valore restituito è il coseno di ``x``, sempre ricordando che è calcolato sulla circonferenza unitaria, quindi con raggio ``uno``.
+
+Per calcolare il coseno dell'angolo che misura ``3`` radianti, sostituiamo al parametro formale ``x`` il valore ``3`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.cos(3);
+```
