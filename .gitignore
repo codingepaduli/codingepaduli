@@ -3,3 +3,4 @@
 /resources/_gen/
 /watercss-public/**
 /static/static/cover.jpg
+.hugo_build.lock
