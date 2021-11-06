@@ -7,6 +7,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/codingepaduli/codingepaduli?style=flat-square)](https://github.com/codingepaduli/codingepaduli/graphs/contributors)
 <!-- markdown-link-check-disable-next-line -->
 [![GitHub Actions](https://github.com/codingepaduli/codingepaduli/workflows/Check%20Markdown/badge.svg)](https://github.com/codingepaduli/codingepaduli/actions/)
+[![ESLint Checker](https://github.com/codingepaduli/codingepaduli/actions/workflows/eslint-action.yml/badge.svg)](https://github.com/codingepaduli/codingepaduli/actions/workflows/eslint-action.yml)
 <!-- Too many links changes or died on internet. I'll try to update them as soon as possible, but link vanishing issue is not under my control, so I can't use the "Check Links" action to measure the health of my site. -->
 
 Ennesimo sito/blog di programmazione e paduli correlati.
