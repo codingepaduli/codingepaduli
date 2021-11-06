@@ -35,6 +35,6 @@ rules:
   no-mixed-spaces-and-tabs:
     - off
   no-console:
-    - warn
+    - off
   no-unused-vars:
     - warn
