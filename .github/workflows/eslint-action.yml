@@ -20,11 +20,9 @@ jobs:
       with:
         node-version: 16
     - name: Creating the NPM project
-      run: npm init --yes # (info extracted from current dir)
+      run: npm init --yes # (project.json created extracting info from current dir)
     - name: Install ESLint (and plugins) as project dependency
-      run: npm install --save-dev eslint eslint-config-p5js
-#    - name: Install ESLint
-#      run: sudo npm install -g eslint
+      run: npm install --save-dev eslint eslint-config-p5js eslint-plugin-jsdoc
     - name: Running ESLint
       run: npx eslint . --config .github/.eslintrc.yml --ext .js --ignore-pattern 'static/static/js'
       # --output-file style\wrongstyle.html --format html
