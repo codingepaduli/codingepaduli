@@ -125,7 +125,7 @@ ssh -i $HOME/chiavi_ssh/id_rsa SERVER
 Nel caso l'utente non sia autorizzato ad accedere attraverso la chiave pubblica, verificare che la cartella ``.ssh`` abbia i permessi ``700`` (``rwx`` solo per il proprietario), verificare che il file ``$HOME/.ssh/authorized_keys`` abbia i permessi ``600`` e verificare che nel file di configurazione del server ``/etc/ssh/sshd_config`` si stia leggendo il file ``authorized_keys`` corretto:
 
 ```bash
-AuthorizedKeysFile	.ssh/authorized_keys
+AuthorizedKeysFile  .ssh/authorized_keys
 ```
 
 ### Memorizzare la passphrase usando l'agente SSH
@@ -204,7 +204,6 @@ Ci sono diverse debolezze nell'interazione client server:
     RSA key fingerprint is SHA256:4fdsanfMfazsbfMadfas
     Are you sure you want to continue connecting (yes/no)?
     ```
+
 2. La chiave pubblica dell'utente deve essere inviata al server (per poter autenticare l'utente), che la memorizza nel file ``.ssh/authorized_keys``. E' problematico inviare la chiave pubblica al server senza connessione sicura, soprattutto se non si ha una password di accesso (il client non ha SSH, dato che ancora non è possibile stabilire una connessione col server). Inoltre le mille chiavi accumulate nel file ``.ssh/authorized_keys`` sono ingestibili.
 3. Le chiavi SSH non scadono mai.
-
-https://berndbausch.medium.com/ssh-certificates-a45bdcdfac39
