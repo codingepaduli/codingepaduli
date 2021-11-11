@@ -15,6 +15,14 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://berndbausch.medium.com/ssh-certificates-a45bdcdfac39"
         description: "How to use SSH with certificates"
+    -   title: "Mozilla SSH recommendations"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://infosec.mozilla.org/guidelines/openssh"
+        description: "How to configure SSH server"
+    -   title: "Algorithms by security levels"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://infosec.mozilla.org/guidelines/key_management.html"
+        description: "Mozilla recommendations about handling and management of cryptographic material"
 ---
 
 # SSH
@@ -53,6 +61,16 @@ Per riavviare il server SSH (al cambio di configurazione, ad esempio), è necess
 
 ```bash
 systemctl restart ssh
+```
+
+Per verificare gli algoritmi disponibili:
+
+```bash
+ssh -Q cipher
+ssh -Q cipher-auth
+ssh -Q mac
+ssh -Q kex
+ssh -Q key
 ```
 
 ## Autenticazione con user/password
@@ -104,6 +122,16 @@ Per cambiare la passphrase, si utilizza il comando seguente:
 
 ```bash
 ssh-keygen -f $HOME/chiavi_ssh/id_rsa -p
+```
+
+Per ottenere informazioni su una chiave, verificare l'output del comando:
+
+```bash
+ssh-keygen -l -f $HOME/chiavi_ssh/id_rsa
+
+2048 SHA256: abacadaeaf1234567890 Comment for key xyz (RSA)
+^^^^   ^^^^^^^^^^^^^^^^^^^^^^^^       ^^^^^^^^^^       ^^^
+ |__ Size   Fingerprint __|     Comment __|     Type __|
 ```
 
 ### Autorizzare l'accesso di un client
@@ -170,7 +198,7 @@ E' possibile inviare dei comandi al server specificandoli come parametro.
 ssh user@machine.local 'COMANDO'
 ```
 
-E' importante notare che il parametro è composto da una intera stringa, che poi viene eseguito sul server con il comando ``sh -c COMANDO``. Inoltre, la shell del client corrente (non ssh) risolve eventuali variabili ed espressioni prima di passare il comando al server.
+E' importante notare che il parametro è composto da una intera stringa, che poi viene eseguita sul server con il comando ``sh -c COMANDO``. Inoltre, la shell del client risolve eventuali variabili ed espressioni prima che SSH possa inviare il comando al server per l'esecuzione.
 
 Questi due passaggi non sono sempre ovvi e portano a degli errori che possono sembrare strani.
 
@@ -191,6 +219,32 @@ E' sempre consigliato quindi utilizzare i doppi apici, passando i comandi come d
 
 ```bash
 ssh user@machine.local 'bash -lc "cd /tmp;pwd"'
+```
+
+Per osservare il lavoro che la shell svolge nella risoluzione di variabili ed espressioni, supponiamo di voler stampare la home dell'utente.
+
+Se si vuole accedere sul server per poi scrivere a video la cartella home dell'utente, si usa il comando seguente:
+
+```bash
+ssh prof@localhost 'bash -lc "cd $HOME;pwd"'
+```
+
+L'output, come ci si aspetta, è la cartella dell'utente ``prof``, dato che la variabile ``$HOME`` non è risolta immediatamente, perché il comando è tra apici singoli, e solo quando il comando è inviato al server viene risolta, per cui l'output risultante è il seguente:
+
+```plaintext
+/home/prof
+```
+
+Se si vuole invece ricavare la cartella home dell'utente ``user`` per inviarla al server, si usa il comando seguente:
+
+```bash
+ssh prof@localhost "bash -lc \"cd $HOME;pwd\""
+```
+
+Dato che la variabile ``$HOME`` è risolta prima di inviare il comando al server, perché questa volta tra apici doppi, il comando inviato al server contiene il percorso della cartella dell'utente ``user``, quindi una volta eseguito genera l'output seguente:
+
+```plaintext
+/home/user
 ```
 
 ## Analisi della sicurezza
