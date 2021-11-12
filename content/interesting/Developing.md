@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-10-27
-publishdate: 2021-10-27
-lastmod: 2021-10-27
+date: 2021-11-11
+publishdate: 2021-11-11
+lastmod: 2021-11-11
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -86,7 +86,7 @@ summary: "Set di link relativi al coding"
 [Jonathan Bergknoff](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - Run More Stuff in Docker\
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 [You Don't Need to Rebuild Your Development Docker Image on Every Code Change · vsupalov.com](https://vsupalov.com/rebuilding-docker-image-development/) - \
-[File Permissions: the painful side of Docker – Coding Thoughts](https://blog.gougousis.net/file-permissions-the-painful-side-of-docker/) - \
+[File Permissions](https://blog.gougousis.net/file-permissions-the-painful-side-of-docker/) - the painful side of Docker – Coding Thoughts\
 [Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
 [Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 [Docker](https://dev.to/pssingh21/docker-97j) - DEV Community\
@@ -245,7 +245,7 @@ summary: "Set di link relativi al coding"
 [Teeing Stream Collector](https://blog.frankel.ch/teeing-java-api/) - a hidden gem in the Java API\
 [Use this open source tool for automated unit testing | Opensource.com](https://opensource.com/article/21/8/tackle-test) - \
 [Java 9 Module System | Mobile & Web Programming Tutorials](https://ozenero.com/java-9-module-system) - \
-[APIs and HTTP Client: Get Call With Headers | by Prem Singh Rathore | Aug, 2021 | Medium](https://medium.com/@prathore28647/apis-and-http-client-get-call-with-headers-c150982eaa8f) - \
+[APIs and HTTP Client](https://medium.com/@prathore28647/apis-and-http-client-get-call-with-headers-c150982eaa8f) - Get Call With Headers | by Prem Singh Rathore | Aug, 2021 | Medium\
 [Practice what's new in Java](https://dev.to/jmfayard/practice-what-s-new-in-java-1j09) - DEV Community\
 [Parse command options in Java with commons-cli | Opensource.com](https://opensource.com/article/21/8/java-commons-cli) - \
 
@@ -282,7 +282,7 @@ summary: "Set di link relativi al coding"
 [Spring Boot | GraphQLize](https://www.graphqlize.org/docs/getting_started/java/springboot) - \
 [Implementing HTTP byte-range requests in Spring 4 and other framework](https://gist.github.com/davinkevin/b97e39d7ce89198774b4) - \
 [Best Ways to Run Spring Boot app Via Console or Terminal](https://dev.to/frugalisminds/best-ways-to-run-spring-boot-app-via-console-or-terminal-360o) - DEV Community\
-[Spring Boot With GraphQL: What The Cool Kids Are Doing](https://dev.to/keyholesoftware/spring-boot-with-graphql-what-the-cool-kids-are-doing-1m2b) - DEV Community\
+[Spring Boot With GraphQL](https://dev.to/keyholesoftware/spring-boot-with-graphql-what-the-cool-kids-are-doing-1m2b) - What The Cool Kids Are Doing - DEV Community\
 [JWT authentication in Spring Security and Angular](https://dev.to/pavankjadda/jwt-authentication-in-spring-security-and-angular-2ehk) - DEV Community\
 
 #### Java to native or WebAssembly
@@ -315,7 +315,7 @@ summary: "Set di link relativi al coding"
 [ssh](https://gravitational.com/blog/how-to-ssh-properly/) - How to SSH Properly\
 [ssh](https://wiki.debian.org/SSH) - Debian Wiki\
 [ssh](https://opensource.com/article/20/2/ssh-tools) - Tools for SSH key management\
-[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit: local vs remote\
+[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
 [ssh](https://smallstep.com/blog/ssh-tricks-and-tips/) - Tips & Tricks\
 [The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
 [VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
@@ -324,9 +324,8 @@ summary: "Set di link relativi al coding"
 [The script command](https://www.ostechnix.com/record-everything-terminal/) - How To Record Everything You Do In Terminal\
 [critic.sh](https://github.com/Checksum/critic.sh) - Dead simple testing framework for Bash with coverage reporting\
 [viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
-[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL: Hashes, digital signatures, and more\
-[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL: Cryptography basics | Opensource.com\
-[SSH quoting | Colin Watson's blog](https://www.chiark.greenend.org.uk/~cjwatson/blog/ssh-quoting.html) - \
+[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL - Hashes, digital signatures, and more\
+[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL - Cryptography basics | Opensource.com\
 [gocryptfs](https://opensource.com/article/19/8/how-encrypt-files-gocryptfs) - How to encrypt files with gocryptfs on Linux | Opensource.com\
 [Five Years of Btrfs](https://markmcb.com/2020/01/07/five-years-of-btrfs/) - use the Btrfs file system to store all my data\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
@@ -334,7 +333,7 @@ summary: "Set di link relativi al coding"
 [tcpdump](https://opensource.com/article/18/10/introduction-tcpdump) - An introduction to using tcpdump at the Linux command line | Opensource.com\
 [awk](https://developer.ibm.com/tutorials/l-awk1/) - An intro to the great language with the strange name – IBM Developer\
 [mplayer](https://opensource.com/article/18/12/linux-toy-youtube-dl) - Watch YouTube videos at the Linux terminal | Opensource.com\
-[linrunner.de: TLP – Linux Advanced Power Management](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - \
+[linrunner.de TLP – Linux Advanced Power Management](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - \
 [An important safety note about chown and symlinks (also chmod and chgrp)](https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ChownSymlinkSafety) - \
 [Building binary deb packages](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - a practical guide - Internal Pointers\
 [5 modern alternatives to essential Linux command-line tools | Opensource.com](https://opensource.com/article/20/6/modern-linux-command-line-tools) - \
@@ -352,13 +351,13 @@ summary: "Set di link relativi al coding"
 [Log Management Tools](https://www.tecmint.com/best-linux-log-monitoring-and-management-tools/) - 4 Good Open Source Log Monitoring and Management Tools for Linux\
 [ShellCheck – shell script analysis tool](https://www.shellcheck.net/) - \
 [voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
-[GitHub](https://github.com/orhun/gpg-tui) - orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐\
+[GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
 [Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
 [Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
-[ESP8266](https://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/) - Quick Start to Nodemcu on Arduino IDE: 3 Steps (with Pictures)\
+[ESP8266](https://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/) - Quick Start to Nodemcu on Arduino IDE in 3 Steps (with Pictures)\
 [arduino/arduino-cli](https://hub.docker.com/r/arduino/arduino-cli) - Docker Hub\
 [MicroBlocks](https://microblocks.fun/) - Small, Fast, Human Friendly\
 [MicroBlocks](https://opensource.com/article/20/11/microblocks) - Program your microcontroller with MicroBlocks | Opensource.com\
@@ -396,7 +395,7 @@ summary: "Set di link relativi al coding"
 [Turn your Raspberry Pi homelab into a network filesystem | Opensource.com](https://opensource.com/article/20/5/nfs-raspberry-pi) - \
 [Tor proxy](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com\
 [VoIP](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - Setting up VoIP phone system for use with RepairShopr. - YouTube\
-[ProtonDrive](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - Centralized vs. P2P: Inside ProtonDrive’s security\
+[ProtonDrive](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - Centralized vs. P2P Inside ProtonDrive’s security\
 [Use open source tools to set up a private VPN | Opensource.com](https://opensource.com/article/21/5/open-source-private-vpn) - \
 
 ### PHP
@@ -413,9 +412,9 @@ summary: "Set di link relativi al coding"
 
 ### Python
 
-[chriskiehl/Gooey: Turn (almost) any Python command line program into a full GUI application with one line](https://github.com/chriskiehl/Gooey) - \
-[se2p/pynguin: The PYthoN General UnIt Test geNerator is a test-generation tool for Python](https://github.com/se2p/pynguin) - \
-[Learning Python- Intermediate course: Day 10, Complex numbers part 2](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - DEV Community\
+[chriskiehl/Gooey Turn (almost) any Python command line program into a full GUI application with one line](https://github.com/chriskiehl/Gooey) - \
+[se2p/pynguin The PYthoN General UnIt Test geNerator is a test-generation tool for Python](https://github.com/se2p/pynguin) - \
+[Learning Python](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - Intermediate course Day 10, Complex numbers part 2 - DEV Community\
 
 ### Privacy, Security and Hacking
 
@@ -492,7 +491,7 @@ summary: "Set di link relativi al coding"
 [scraggo/bookmarks-markdown-utils](https://github.com/scraggo/bookmarks-markdown-utils) - Collection of command-line tools for Chrome, OneTab, Evernote, and FireFox bookmark management. The tools are mostly to convert proprietary formats to markdown and organizing and add tags.\
 [Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
 [robinsloan/perfect-edition](https://github.com/robinsloan/perfect-edition) - A lightweight, responsive web e-book template\
-[Typesetting Markdown](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - Part 2: Tool Review (Dave Jarvis)\
+[Typesetting Markdown](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - Part 2 Tool Review (Dave Jarvis)\
 [Sigil-Ebook/Sigil](https://github.com/Sigil-Ebook/Sigil) - Sigil is a free, open source, multi-platform EPUB ebook editor that uses Qt\
 [Starboard](https://starboard.gg/) - in-browser notebook, no code is running on the backend\
 [charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
@@ -503,7 +502,7 @@ summary: "Set di link relativi al coding"
 
 #### Hugo static site generator
 
-[Chapter 2 Hugo | blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/hugo.html) - \
+[Chapter 2 Hugo](https://bookdown.org/yihui/blogdown/hugo.html) - blogdown Creating Websites with R Markdown\
 [Markdown to pdf using Hugo and beautiful styling](https://www.martinkaptein.com/blog/hugo-md-to-pdf/) - Martin Kaptein\
 [Hugo Themes](https://themes.gohugo.io/) - \
 [Hugo Page Resources, and how to use them... | Regis Philibert](https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/) - \
@@ -580,7 +579,7 @@ summary: "Set di link relativi al coding"
 [HTML images with srcset](https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/) - How to Build Responsive Images with srcset\
 [HTML images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
 [HTML image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
-[HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images: Use WebP\
+[HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images Use WebP\
 [HTML APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding HTML APIs\
 [Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
 [Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
@@ -593,7 +592,7 @@ summary: "Set di link relativi al coding"
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
 [details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
-[<datalist>: The HTML Data List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - HTML: HyperText Markup Language | MDN\
+[<datalist> The HTML Data List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - HTML MDN\
 [Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
 
@@ -628,10 +627,10 @@ summary: "Set di link relativi al coding"
 [new CSS](https://newcss.net/) - A CSS without classes\
 [bansal/filters](https://github.com/bansal/filters.css) - CSS only library to apply color filters.\
 [Nodesign.dev](https://nodesign.dev/) - Design less develop more. 178 tools added..more on the way.\
-[Favicon](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) - How to Favicon in 2021: Six files that fit most needs — Martian Chronicles, Evil Martians’ team blog\
+[Favicon](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) - How to Favicon in 2021 - Six files that fit most needs Martian Chronicles, Evil Martians’ team blog\
 [Bootstrap Shuffle](https://bootstrapshuffle.com/) - Create Bootstrap templates in minutes\
-[white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) - CSS: Cascading Style Sheets | MDN\
-[-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp) - CSS: Cascading Style Sheets | MDN\
+[white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) - CSS Cascading Style Sheets | MDN\
+[-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp) - CSS Cascading Style Sheets | MDN\
 [Iconduck](https://iconduck.com/licenses) - Open source icons\
 [iconify](https://www.iconify.pro/) - app icon generator\
 
@@ -639,7 +638,7 @@ summary: "Set di link relativi al coding"
 
 [Top 5 skills to learn as a junior JavaScript developer](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - \
 [PracticeJS](https://practicejs.com/) - \
-[Deep JavaScript: Theory and techniques](https://exploringjs.com/deep-js/index.html) - \
+[Deep JavaScript](https://exploringjs.com/deep-js/index.html) - Theory and techniques\
 [JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
 [utils](https://www.npmjs.com/package/utils) - npm\
 [ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
@@ -684,9 +683,9 @@ summary: "Set di link relativi al coding"
 ##### JS Collection framework
 
 [Functional JavaScript](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/) - How to use array reduce for more than just numbers\
-[5 Useful Array Methods in Javascript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
+[5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
 [Understanding the array methods Array.some() and Array.every() in JavaScript](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - DEV Community\
-[JavaScript Array Methods.](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
+[JavaScript Array Methods](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
 
 ##### JS Promise and Async Await
 
@@ -725,7 +724,7 @@ summary: "Set di link relativi al coding"
 [Form validation with Aurelia](https://www.jujens.eu/posts/en/2017/Jan/24/aurelia-validation/) - \
 [Aurelia Dialog](https://www.tutorialspoint.com/aurelia/aurelia_dialog.htm) - \
 [Aurelia Promise and Async Bindings](http://www.sobell.net/aurelia-async-bindings/) - \
-[asynchronous](https://stackoverflow.com/questions/42050823/aurelia-how-to-handle-a-async-request-in-a-view) - Aurelia: How to handle a async request in a view? - Stack Overflow\
+[asynchronous](https://stackoverflow.com/questions/42050823/aurelia-how-to-handle-a-async-request-in-a-view) - Aurelia How to handle a async request in a view? - Stack Overflow\
 [Jujens' blog](https://www.jujens.eu/) - Aurelia developer\
 [Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - bigopon/todomvc\
 [Aurelia 2](https://github.com/aurelia/aurelia) - aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
