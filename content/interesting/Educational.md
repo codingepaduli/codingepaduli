@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2021-10-27
-publishdate: 2021-10-27
-lastmod: 2021-10-27
+date: 2021-11-11
+publishdate: 2021-11-11
+lastmod: 2021-11-11
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -142,7 +142,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 #### Informatica 3 anno
 
-[Corso Javascript Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9FUx06-avV66mS8LXz7_Bb) - YouTube\
+[Corso JavaScript Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9FUx06-avV66mS8LXz7_Bb) - YouTube\
 
 #### Sistemi e reti 3 anno
 
