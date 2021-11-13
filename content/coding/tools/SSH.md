@@ -141,13 +141,13 @@ Il file ``$HOME/.ssh/authorized_keys`` contiene l'elenco di client a cui è perm
 Per aggiungere l'accesso di un client, è necessario copiare la chiave **pubblica** del client nel server, come di seguito:
 
 ```bash
-ssh-copy-id -i $HOME/chiavi_ssh/id_rsa.pub SERVER
+ssh-copy-id -i $HOME/chiavi_ssh/id_rsa.pub user@server
 ```
 
 A questo punto si può accedere al server specificando la chiave:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa SERVER
+ssh -i $HOME/chiavi_ssh/id_rsa user@server
 ```
 
 Nel caso l'utente non sia autorizzato ad accedere attraverso la chiave pubblica, verificare che la cartella ``.ssh`` abbia i permessi ``700`` (``rwx`` solo per il proprietario), verificare che il file ``$HOME/.ssh/authorized_keys`` abbia i permessi ``600`` e verificare che nel file di configurazione del server ``/etc/ssh/sshd_config`` si stia leggendo il file ``authorized_keys`` corretto:
@@ -181,7 +181,7 @@ ssh-add -d $HOME/chiavi_ssh/id_rsa
 Quando una chiave viene aggiunta, è possibile effettuare il login automatico ad una shell, senza che sia richiesta la passphrase.
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa SERVER
+ssh -i $HOME/chiavi_ssh/id_rsa user@server
 ```
 
 E' possibile affidare automaticamente la chiave all'agente, impostando la configurazione del client ``/etc/ssh/ssh_config`` con la voce seguente:
@@ -245,6 +245,41 @@ Dato che la variabile ``$HOME`` è risolta prima di inviare il comando al server
 
 ```plaintext
 /home/user
+```
+
+Un'altra attenzione da porre quando i comandi sono passati come argomento, è che non sono legati ad una sessione, quindi anche se si interrompe la comunicazione, i processi avviati rimangono attivi sulla macchina server. Per ovviare a questo problema, si può legare il comando ad un terminale, e quando si verifica un problema, la chiusura del terminale causa la terminazione del processo eseguito da remoto. La creazione del terminale avviene specificando l'opzione ``-t``.
+
+## Firmare e verificare file con SSH
+
+E' possibile firmare file, email e rami di git utilizzando SSH, e quindi anche verificare una firma.
+
+Lo strumento di firma di SSH utilizza tre namespace differenti, ``email`` è il namespace per la firma delle email, ``file`` è il namespace per la firma dei file e ``git`` è il namespace per la firma dei commit e dei tag di git.
+
+Il comando per la firma prevede quindi l'opzione ``-n`` per indicare il namespace e l'opzione ``-Y sign`` per indicare di firmare il file, l'opzione ``-f key`` indica la chiave da utilizzare per firmare ed infine ``file_to_sign`` indica il file da firmare, come nell'esempio seguente:
+
+```bash
+ssh-keygen -Y sign -n file -f $HOME/chiavi_ssh/id_rsa file_to_sign
+```
+
+La firma produce un file firmato di nome ``file_to_sign.sig``.
+
+Per verificare il file firmato, è necessario prima creare un elenco di chiavi di cui ci si fida, che sono legate all'identità (generalmente l'email). Questo file ha il seguente formato:
+
+```plaintext
+email valid-after=YYYYMMDD,valid-before=YYYYMMDD chiave
+```
+
+Un esempio di questo elenco è il seguente:
+
+```plaintext
+alice@example.com valid-after=20180101,valid-before=20250101 ssh-rsa ABCD..KEY
+bob@example.net   valid-after=20180101,valid-before=20250101 ssh-ed25519 KEY..DA
+```
+
+Creato questo file, è possibile verificare che il file sia stato firmato dall'utente identificato dalla email specificata, utilizzando le opzioni ``-Y verify`` per indicare di verificare il file, ``-f allowed_signers`` per indicare l'elenco di chiavi fidate, ``-I alice@example.com`` per indicare l'identità da verificare, ``-n`` per indicare il namespace, ``-s file_to_verify.sig`` per indicare la firma digitale del file ed infine ``file_to_verify`` per indicare il file (in questo caso viene inviato sullo standard input), come di seguito:
+
+```bash
+ssh-keygen -Y verify -f allowed_signers -I alice@example.com -n file -s file_to_verify.sig < file_to_verify
 ```
 
 ## Analisi della sicurezza
