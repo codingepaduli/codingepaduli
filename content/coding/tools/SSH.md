@@ -202,20 +202,20 @@ E' importante notare che il parametro è composto da una intera stringa, che poi
 
 Questi due passaggi non sono sempre ovvi e portano a degli errori che possono sembrare strani.
 
-Ad esempio il comando ``ssh user@machine.local bash -lc "cd /tmp;pwd"`` intuitivamente dovrebbe avere come output ``/tmp`` ma invece ha come output ``/home/user``. Il fatto si spiega analizzando il comando che viene eseguito sul server:
+Ad esempio il comando ``ssh user@machine.local bash -lc "cd /tmp;pwd"`` intuitivamente dovrebbe avere come output ``/tmp`` ma invece ha come output la cartella ``/home/user`` dell'utente ``user``. Il fatto si spiega analizzando il comando che viene eseguito sul server:
 
 ```bash
 sh -c bash -lc cd /tmp;pwd
 ```
 
-Come si può notare, esistono due shell, la prima è ``sh``, la seconda è ``bash``. I doppi apici sono stati persi perchè SSH prende i tre parametri ``bash`` ``-lc`` e ``"cd /tmp;pwd"`` e crea il COMANDO da passare al server ``bash -lc cd /tmp;pwd``.
+Come si può notare, in questo comando sono coinvolte due shell, la prima è ``sh``, la seconda è ``bash``. I doppi apici sono stati persi perché SSH prende i tre parametri ``bash`` ``-lc`` e ``"cd /tmp;pwd"`` e crea il comando da passare al server ``bash -lc cd /tmp;pwd``.
 
-Vengono quindi eseguiti i seguenti comandi:
+Sul server si fa quindi accesso come utente ``user`` e sono eseguiti i seguenti comandi:
 
-1. la prima shell (``sh``) esegue nella cartella corrente ``$HOME`` la seconda shell (``bash -lc cd /tmp``) che poi termina perdendo la posizione corrente (``/tmp``);
-2. successivamente la prima shell esegue sempre nella cartella corrente ``$HOME`` il secondo comando ``pwd``.
+1. la prima shell ``sh`` esegue nella cartella corrente ``$HOME`` dell'utente ``user`` la seconda shell ``bash``, che esegue il comando ``cd /tmp`` e poi termina. Quindi, anche la shell ``bash`` termina, e questo comporta la perdita della posizione corrente (``/tmp``);
+2. successivamente la prima shell esegue, sempre nella cartella corrente ``$HOME`` dell'utente ``user``, il secondo comando ``pwd`` che stampa a video ``/home/user``.
 
-E' sempre consigliato quindi utilizzare i doppi apici, passando i comandi come di seguito:
+E' sempre consigliato quindi utilizzare gli apici singoli o doppi per racchiudere il comando da inviare, come nell'esempio di seguito:
 
 ```bash
 ssh user@machine.local 'bash -lc "cd /tmp;pwd"'
@@ -241,7 +241,7 @@ Se si vuole invece ricavare la cartella home dell'utente ``user`` per inviarla a
 ssh prof@localhost "bash -lc \"cd $HOME;pwd\""
 ```
 
-Dato che la variabile ``$HOME`` è risolta prima di inviare il comando al server, perché questa volta tra apici doppi, il comando inviato al server contiene il percorso della cartella dell'utente ``user``, quindi una volta eseguito genera l'output seguente:
+Dato che la variabile ``$HOME`` è risolta prima di inviare il comando al server, perché questa volta tra apici doppi, la shell sostituisce a questa variabile il percorso della cartella dell'utente ``user`` che esegue il comando ssh. Successivamente il comando è inviato al server e, una volta eseguito, genera l'output seguente:
 
 ```plaintext
 /home/user
@@ -296,3 +296,9 @@ Ci sono diverse debolezze nell'interazione client server:
 
 2. La chiave pubblica dell'utente deve essere inviata al server (per poter autenticare l'utente), che la memorizza nel file ``.ssh/authorized_keys``. E' problematico inviare la chiave pubblica al server senza connessione sicura, soprattutto se non si ha una password di accesso (il client non ha SSH, dato che ancora non è possibile stabilire una connessione col server). Inoltre le mille chiavi accumulate nel file ``.ssh/authorized_keys`` sono ingestibili.
 3. Le chiavi SSH non scadono mai.
+
+Si può scegliere se fidarsi o meno di un partner esterno per la diffusione delle chiavi pubbliche. Ad esempio GitHub permette di accedere alla chiave pubblica di un utente ``USERNAME`` dal link:
+
+```plaintext
+https://github.com/USERNAME.keys
+```
