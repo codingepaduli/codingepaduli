@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-10-27
-publishdate: 2021-10-27
-lastmod: 2021-10-27
+date: 2021-11-26
+publishdate: 2021-11-26
+lastmod: 2021-11-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -44,6 +44,7 @@ summary: "Set di link interessanti"
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
 [Physicists Prove Anyons Exist](https://www.discovermagazine.com/the-sciences/physicists-prove-anyons-exist-a-third-type-of-particle-in-the-universe) - Anyons is a Third Type of Particle in the Universe (after fermions and bosons)\
 [Particle Physicists Continue To Make Empty Promises](https://backreaction.blogspot.com/2020/10/particle-physicists-continue-to-make.html) - \
+[Dark Matter Alternative Passes Big Test](https://physics.aps.org/articles/v14/143) - a MOND-inspired model that accounts for the cosmic microwave background while also being consistent with gravitational lensing observations and gravitational-wave speed measurements\
 [The Janus cosmological model](https://januscosmologicalmodel.com/) - a paradigm shift (Modello cosmologico del Giano Bifronte)\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
 [The engine of the universe- For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
@@ -74,6 +75,7 @@ summary: "Set di link interessanti"
 [Fourier Transform](https://github.com/Jezzamonn/fourier) - An Interactive Introduction\
 [Graphtoy](https://graphtoy.com/) - create graph from math formulas\
 [Rotations with quaternions](https://imadr.me/rotations-with-quaternions/) - \
+[The bivector algebra](https://mattferraro.dev/posts/geometric-algebra) - What is the Inverse of a Vector?\
 
 ### Medicine
 
@@ -112,6 +114,7 @@ summary: "Set di link interessanti"
 [PhotoRec IT](https://www.cgsecurity.org/wiki/PhotoRec_IT) - Digital Picture and File Recovery\
 [leandromoreira/ffmpeg-libav-tutorial FFmpeg libav tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial) - learn how media works from basic to transmuxing, transcoding and more\
 [Color Theory for Web Developers](https://dev.to/codingsafari/color-theory-for-web-developers-2ilk) - DEV Community\
+[How color theories are based ?](https://dev.to/feco2019/do-you-really-understand-how-color-theories-based-ryb-cmyk-and-rgb-models-1pjg) - RYB CMYK and RGB models - DEV Community\
 
 ### History
 

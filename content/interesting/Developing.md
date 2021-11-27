@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-11-11
-publishdate: 2021-11-11
-lastmod: 2021-11-11
+date: 2021-11-26
+publishdate: 2021-11-26
+lastmod: 2021-11-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -45,8 +45,6 @@ summary: "Set di link relativi al coding"
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
-[paiza.IO](https://paiza.io/en/) - Online editors and compilers for PHP/Java/C++... \
-[What is Istio?](https://opensource.com/article/18/9/what-istio) - a service mesh can help to manage your microservice deployments - Opensource.com\
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [Waydroid](https://waydro.id/) - a full Android system in a container right to your GNU/Linux desktop\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
@@ -56,7 +54,6 @@ summary: "Set di link relativi al coding"
 
 [localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack\
 [Google Cloud Run](https://alexolivier.me/posts/deploy-container-stateless-cheap-google-cloud-run-serverless) - Deploy your side-projects at scale for basically nothing\
-[titanoboa.io](https://www.titanoboa.io/index.html#features) - distributed workflow orchestration platform for Java and JVM\
 
 #### Vagrant and Virtual Machines
 
@@ -77,7 +74,6 @@ summary: "Set di link relativi al coding"
 [Install Docker Engine](https://docs.docker.com/install/) - Community | Docker Documentation\
 [Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
 [From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/) - \
-[How to SSH into a running container](https://opensource.com/article/19/6/how-ssh-running-container) - \
 [portainer/portainer](https://github.com/portainer/portainer) - Making Docker management easy.\
 [25 Basic Docker Commands for Beginners](https://codeopolis.com/posts/25-basic-docker-commands-for-beginners/) - \
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
@@ -94,9 +90,7 @@ summary: "Set di link relativi al coding"
 ### Ansible, Shell, CI, CD ed automazione
 
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[Automating with Jenkins and PowerShell on Windows Part 1](https://hodgkins.io/automating-with-jenkins-and-powershell-on-windows-part-1) - \
 [Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
-[Why GoCD over Jenkins | GoCD Blog](https://www.gocd.org/2017/04/25/gocd-over-jenkins/) - \
 [Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
 [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles) - A curated list of dotfiles resources.\
 [Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
@@ -105,7 +99,6 @@ summary: "Set di link relativi al coding"
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
-[OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 
 #### Ansible
 
@@ -132,6 +125,7 @@ summary: "Set di link relativi al coding"
 [Powershell Tutorial for Beginners](https://www.guru99.com/powershell-tutorial.html#4) - Learn in 1 Day\
 [about_Providers](https://docs.microsoft.com/it-it/powershell/module/microsoft.powershell.core/about/about_providers?view=powershell-7) - PowerShell\
 [PowerShell Commands Cheat Sheet](https://www.comparitech.com/net-admin/powershell-cheat-sheet/) - Basic Commands You'll Need +PDF\
+[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1) - PowerShell | Microsoft Docs\
 
 #### Package managers
 
@@ -181,6 +175,7 @@ summary: "Set di link relativi al coding"
 [Joining CSV and JSON data with an in-memory SQLite database](https://simonwillison.net/2021/Jun/19/sqlite-utils-memory/) - \
 [What does First Normal Form actually mean?](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - \
 [Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - \
+[SQLite tool](https://dev.to/danilsa0109/sqlite-a-tool-that-allows-creating-databases-from-the-terminal-78j) - create databases from the terminal - DEV Community\
 
 ### Giochi
 
@@ -197,17 +192,17 @@ summary: "Set di link relativi al coding"
 [Coding Challenges · The Coding Train](https://thecodingtrain.com/CodingChallenges/) - \
 [LDtk](https://deepnight.itch.io/ldtk) - Level designer Toolkit by Deepnight Games\
 [Code Zelda in JavaScript and Kaboom.js](https://dev.to/ania_kubow/code-zelda-in-javascript-and-kaboom-js-i3n) - DEV Community\
+[Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
+[Codeheir](https://codeheir.com/) - All the programming knowledge, in one bloody brilliant site.\
+[Phaser HTML5 Game Framework](https://phaserjs.com/) - \
 
 ### GIT
 
 [Oh, shit, git!](http://ohshitgit.com/) - \
 [The Smart Ways to Correct Mistakes in Git | CSS-Tricks](https://css-tricks.com/the-smart-ways-to-correct-mistakes-in-git/) - \
-[Setting Up Git Identities](https://www.micah.soy/posts/setting-up-git-identities/) - Micah Henning\
-[5 Git Commands to Know Just After You Get the Basics | Coders Bible](https://codersbible.com/5-git-commands-to-know-just-after-you-get-the-basics/) - \
 [Managing Git projects with submodules and subtrees | Opensource.com](https://opensource.com/article/20/5/git-submodules-subtrees) - \
 [Lazygit](https://opensource.com/article/20/3/lazygit) - Make advanced Git tasks simple  | Opensource.com\
 [hub](https://opensource.com/article/20/3/github-hub) - your Git command-line as fully featured as GitHub | Opensource.com\
-[Tweak your Git config for multiple user IDs | Opensource.com](https://opensource.com/article/20/10/git-config) - \
 [Experiment on your code freely with Git worktree | Opensource.com](https://opensource.com/article/21/4/git-worktree) - \
 [ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
@@ -218,6 +213,12 @@ summary: "Set di link relativi al coding"
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
 [Create or Update PR Action](https://dev.to/mheap/create-or-update-pr-action-2bd7) - DEV Community\
 [Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
+[Managing Git credentials the easy way](https://dev.to/arunanshub/managing-git-credentials-the-easy-way-5924) - DEV Community\
+["Support for password authentication was removed on August 13, 2021. Please use a personal access token instead."](https://dev.to/raystatic/support-for-password-authentication-was-removed-on-august-13-2021-please-use-a-personal-access-token-instead-2p99) - DEV Community\
+[How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
+[Gitpod](https://www.gitpod.io/) - Always ready to code\
+[New in Git](https://www.banterly.net/2021/07/31/new-in-git-switch-and-restore/) - switch and restore\
+[Using SVN+SSH Protocol | Assembla Help Center](https://articles.assembla.com/en/articles/1137042-using-svn-ssh-protocol) - \
 
 ### Java
 
@@ -248,6 +249,7 @@ summary: "Set di link relativi al coding"
 [APIs and HTTP Client](https://medium.com/@prathore28647/apis-and-http-client-get-call-with-headers-c150982eaa8f) - Get Call With Headers | by Prem Singh Rathore | Aug, 2021 | Medium\
 [Practice what's new in Java](https://dev.to/jmfayard/practice-what-s-new-in-java-1j09) - DEV Community\
 [Parse command options in Java with commons-cli | Opensource.com](https://opensource.com/article/21/8/java-commons-cli) - \
+[Parsing config files with Java | Opensource.com](https://opensource.com/article/21/7/parsing-config-files-java) - \
 
 #### JDBC e JPA
 
@@ -284,6 +286,8 @@ summary: "Set di link relativi al coding"
 [Best Ways to Run Spring Boot app Via Console or Terminal](https://dev.to/frugalisminds/best-ways-to-run-spring-boot-app-via-console-or-terminal-360o) - DEV Community\
 [Spring Boot With GraphQL](https://dev.to/keyholesoftware/spring-boot-with-graphql-what-the-cool-kids-are-doing-1m2b) - What The Cool Kids Are Doing - DEV Community\
 [JWT authentication in Spring Security and Angular](https://dev.to/pavankjadda/jwt-authentication-in-spring-security-and-angular-2ehk) - DEV Community\
+[ccoloradoc/OAuth2Sample](https://github.com/ccoloradoc/OAuth2Sample) - Simple demo of Spring Security + Facebook Login\
+[Spring Boot @ControllerAdvice & @ExceptionHandler example](https://www.bezkoder.com/spring-boot-controlleradvice-exceptionhandler/) - BezKoder\
 
 #### Java to native or WebAssembly
 
@@ -298,6 +302,7 @@ summary: "Set di link relativi al coding"
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
+[Why Windows uses \r\n newlines instead of \n](https://dev.to/pieter/why-windows-uses-rn-newlines-instead-of-n-126l) - DEV Community\
 [50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
 [DistroWatch.com](https://distrowatch.com/) - Put the fun back into computing. Use Linux, BSD.\
 [Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
@@ -312,11 +317,7 @@ summary: "Set di link relativi al coding"
 [Eyecandy for your XFCE-Desktop](https://www.xfce-look.org/) - xfce-look.org\
 [Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
 [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
-[ssh](https://gravitational.com/blog/how-to-ssh-properly/) - How to SSH Properly\
-[ssh](https://wiki.debian.org/SSH) - Debian Wiki\
-[ssh](https://opensource.com/article/20/2/ssh-tools) - Tools for SSH key management\
 [ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
-[ssh](https://smallstep.com/blog/ssh-tricks-and-tips/) - Tips & Tricks\
 [The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
 [VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
 [VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
@@ -373,6 +374,13 @@ summary: "Set di link relativi al coding"
 [Monitor your Raspberry Pi with Grafana Cloud | Opensource.com](https://opensource.com/article/21/3/raspberry-pi-grafana-cloud) - \
 [Crossbar.io](https://crossbar.io/) - distributed, multi-language applications where components communicate using Publish & Subscribe and routed Remote Procedure Calls\
 [Platypush](https://platypush.tech/) - an open-source modular platform for automation aimed to run on any device that can run a Python interpreter\
+[The Arduino Microcontroller](https://dev.to/admantium/the-arduino-microcontroller-hardware-and-gpio-functions-4e6o) - Hardware and GPIO Functions - DEV Community\
+[Let's program the Arduino with Javascript🤯](https://dev.to/patik123/lets-program-the-arduino-with-javascript-3doj) - DEV Community\
+[leopck/Yee-Light-Blue: Writing library for yee light blue using python for raspberry pi](https://github.com/leopck/Yee-Light-Blue) - \
+[Control a Bluetooth LE Light Bulb With Raspberry Pi](https://www.hackster.io/idreams/control-a-bluetooth-le-light-bulb-with-raspberry-pi-6d04cc) - Hackster.io\
+[Raspberry Pi: How to control lights at home? (Philips Hue) – RaspberryTips](https://raspberrytips.com/control-lights-raspberry-pi/) - \
+[Synpse platform : setup and control applications across hundreds or thousands of machines from a single place](https://synpse.net/) - \
+[OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 
 ### Mozilla Firefox
 
@@ -415,6 +423,7 @@ summary: "Set di link relativi al coding"
 [chriskiehl/Gooey Turn (almost) any Python command line program into a full GUI application with one line](https://github.com/chriskiehl/Gooey) - \
 [se2p/pynguin The PYthoN General UnIt Test geNerator is a test-generation tool for Python](https://github.com/se2p/pynguin) - \
 [Learning Python](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - Intermediate course Day 10, Complex numbers part 2 - DEV Community\
+[Pyjion](https://www.trypyjion.com/) - A Python JIT Compiler\
 
 ### Privacy, Security and Hacking
 
@@ -514,6 +523,7 @@ summary: "Set di link relativi al coding"
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
 [Remarkbox](https://www.remarkbox.com/) - Hosted Comments Service\
 [Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
+[site.Params.mainSections](https://gohugo.io/functions/where/#mainsections) - To list the most relevant pages on the front page | Hugo\
 
 #### Pandoc
 
@@ -560,7 +570,6 @@ summary: "Set di link relativi al coding"
 [Egyptian Hieroglyphs](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - Test for Unicode support in Web browsers\
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
 [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
-[PWA](https://chromeunboxed.com/google-play-store-microsoft-pwa-builder/) - Google and Microsoft collaborate to help deliver better PWAs to the Play Store\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
 [BrowserGap](https://github.com/dosyago/RemoteView/blob/master/README.md) - access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web\
 [Microbrowsers](https://24ways.org/2019/microbrowsers-are-everywhere/) - little thumbnail preview in a tweet or in WhatsApp chat are probably more important than google bot, can be the most influential part for attracting new audiences and increasing engagement - possibly more than SEO\
@@ -580,7 +589,8 @@ summary: "Set di link relativi al coding"
 [HTML images done right](https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques) - Web graphics, good to the last byte — Martian Chronicles, Evil Martians’ team blog\
 [HTML image lazy loading](https://www.smashingmagazine.com/2019/05/hybrid-lazy-loading-progressive-migration-native/) - Hybrid Lazy Loading is a Progressive Migration To Native Lazy Loading\
 [HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images Use WebP\
-[HTML APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding HTML APIs\
+[HTML link](https://dev.to/atulcodex/how-to-send-whatsapp-message-through-html-link-23f8) - How to send WhatsApp message - DEV Community\
+[HTML link](https://create.wa.link/) - Create WhatsApp links | Walink\
 [Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
 [Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
@@ -592,20 +602,27 @@ summary: "Set di link relativi al coding"
 [Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
 [details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
-[<datalist> The HTML Data List element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - HTML MDN\
+[<datalist>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - The HTML Data List element - HTML MDN\
 [Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
+[<dl>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) - The Description List element - HTML: HyperText Markup Language | MDN\
+[Apply instant loading with the PRPL pattern](https://web.dev/apply-instant-loading-with-prpl/) - \
+[htmlgapp](https://www.urlgapp.com/htmlgapp) - Convert HTML & CSS & JS Code to app - generate app\
 
 ##### WAI and ARIA
 
 [WAI](https://www.w3.org/WAI/tutorials/) - Web Accessibility Initiative\
 [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/) - \
+[Curricula on Web Accessibility](https://www.w3.org/WAI/curricula/) - A Framework to Build Your Own Courses | Web Accessibility Initiative (WAI) | W3C\
+[Resources for Developers](https://www.w3.org/WAI/roles/developers/) - Web Accessibility Initiative (WAI) | W3C\
 [A deep dive into ARIA](https://dev.to/elischei/a-deep-dive-into-aria-5071) - DEV Community\
 [5 tools for Designing, Developing, and Testing Accessibility](https://dev.to/stories_of_ren/5-tools-for-designing-developing-and-testing-accessibility-5a0d) - DEV Community\
 [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) - \
 [Non Visual Access](https://www.nvaccess.org/download/) - a screen reader for testing pages for every Blind + Vision Impaired person\
 [web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
 [Web Accessibility](https://bootcamp.uxdesign.cc/beginners-guide-to-web-accessibility-514644750b0f?gi=301fe74f3075) - A Beginner’s Guide To Web Accessibility | by Samantha Lurio | Bootcamp\
+[4 Ways To Improve Your Website's Accessibility Today](https://dev.to/natclark/4-ways-to-improve-your-website-s-accessibility-today-33ad) - DEV Community\
+[Screen readers](https://dev.to/livechat/screen-readers-hearing-the-unseen-55nb) - hearing the unseen - DEV Community\
 
 #### CSS
 
@@ -633,6 +650,9 @@ summary: "Set di link relativi al coding"
 [-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp) - CSS Cascading Style Sheets | MDN\
 [Iconduck](https://iconduck.com/licenses) - Open source icons\
 [iconify](https://www.iconify.pro/) - app icon generator\
+[Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag](https://web.dev/color-scheme/) - \
+[A simple CSS trick for dark mode | Opensource.com](https://opensource.com/article/21/10/dark-themes-websites) - \
+[How to toggle Dark/Light Mode using JavaScript](https://dev.to/snowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - DEV Community\
 
 #### JavaScript
 
@@ -645,6 +665,7 @@ summary: "Set di link relativi al coding"
 [JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) - \
 [console.log() Methods](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada?gi=82a8656ab788) - \
 [Advanced console.log Tips & Tricks | by Liad Shiran | Nielsen-Tel-Aviv-tech-blog | Medium](https://medium.com/nmc-techblog/advanced-console-log-tips-tricks-fa3762930bca) - \
+[Math Object in JavaScript](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - DEV Community\
 [date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
 [HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
 [8 DOM features you didn’t know existed](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - LogRocket Blog\
@@ -679,6 +700,9 @@ summary: "Set di link relativi al coding"
 [Micro](https://m3o.com/) - Public APIs for everyday use\
 [Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
 [Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
+[Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
+[JavaScript OOP is weird](https://dev.to/josephkabemba/javascript-oop-is-weird-4h9j) - DEV Community\
+[Use Python or JavaScript to Send Your Events and Logs to Telegram via their Chatbot API](https://dev.to/sh4yy/use-python-or-javascript-to-send-your-events-and-logs-to-telegram-via-their-chatbot-api-3243) - DEV Community\
 
 ##### JS Collection framework
 
@@ -686,6 +710,7 @@ summary: "Set di link relativi al coding"
 [5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
 [Understanding the array methods Array.some() and Array.every() in JavaScript](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - DEV Community\
 [JavaScript Array Methods](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
+[5 Useful Array Methods in Javascript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
 
 ##### JS Promise and Async Await
 
@@ -698,6 +723,7 @@ summary: "Set di link relativi al coding"
 [Fetch](https://dev.to/nombrekeff/think-like-a-pro-grammer-10k1) - from simple to scalable implementation - DEV Community\
 [This Is Your Complete Guide For Sending Requests Using fetch in JS](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - DEV Community\
 [Migrating from promise chains to async-await and escaping the try catch hell](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - DEV Community\
+[Pantry](https://documenter.getpostman.com/view/3281832/SzmZeMLC#98b35ee9-9d11-417e-8739-21a4ac9893ed) - \
 
 ##### JS API
 
@@ -705,6 +731,13 @@ summary: "Set di link relativi al coding"
 [Permissions API](https://dev.to/sidmirza4/permissions-api-why-should-you-start-using-it-2k4d#introduction) - Why should you start using it? - DEV Community\
 [Web Storage API](https://dev.to/naveenchandar/web-storage-api-3d49) - DEV Community\
 [Using JS Speech Recognition to build a virtual assistant](https://dev.to/alvaromontoro/using-js-speech-recognition-to-build-a-virtual-assistant-1957) - DEV Community\
+[Cool APIs you might not know about 😎](https://dev.to/carlosg33558699/cool-apis-you-might-not-know-about-2f3f) - DEV Community\
+[APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding web APIs\
+[Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
+
+##### JS Riot
+
+[Riot.js](https://riot.js.org/documentation/) - Documentation\
 
 ##### PWA
 
@@ -713,6 +746,12 @@ summary: "Set di link relativi al coding"
 [How to make a PWA](https://dev.to/theyoungestcoder/how-to-make-a-pwa-4m4n) - DEV Community\
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [PWABuilder](https://www.pwabuilder.com/) - \
+[nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
+[nativefier/nativefier: Make any web page a desktop application](https://github.com/nativefier/nativefier) - \
+
+##### p5JS
+
+[LTC4](https://dev.to/rpalo/ltc4---falling-in-love-with-vectors-182) - Falling in Love with Vectors - DEV Community\
 
 ##### Aurelia
 
@@ -736,8 +775,10 @@ summary: "Set di link relativi al coding"
 
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
+[Space globe](https://dev.to/jayantgoel001/space-globe-threejs-47ee) - Three.js - DEV Community\
 
 ##### HandsFree
 
 [Handsfree.js](https://handsfree.js.org/) - \
 [Pose | Handsfree.js](https://handsfree.js.org/ref/model/pose.html#with-config) - \
+[flap.js – flappy-pose](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - \
