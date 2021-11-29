@@ -282,6 +282,42 @@ Creato questo file, è possibile verificare che il file sia stato firmato dall'u
 ssh-keygen -Y verify -f allowed_signers -I alice@example.com -n file -s file_to_verify.sig < file_to_verify
 ```
 
+## Copia sicura dei file
+
+SSH permette la creazione di un canale sicuro di comunicazione tra client e server che può essere utilizzato per inviare e ricevere file.
+
+Il comando utilizzato è ``scp`` (dall'inglese "secure copy"), e prevede sia la copia di un file dal client al server che viceversa. La sintassi per specificare un file o una cartella sul server è la seguente:
+
+```plaintext
+user@host:[port][/path]
+```
+
+Come si può notare, ``user`` è l'utente che effettua l'accesso sul server, ``host`` indica il nome o l'indirizzo IP del server, ``port`` indica la porta sulla quale è in ascolto il processo e ``path`` indica il percorso del file da copiare o della cartella nella quale copiare il file.
+
+Il comando ``scp`` può quindi essere utilizzato per copiare un file presente su client nella cartella del server ``/home/user/cartella`` utilizzando la seguente sintassi:
+
+```bash
+ssh -i $HOME/chiavi_ssh/id_rsa file user@server:/home/user/cartella
+```
+
+Viceversa, un file presente sul server nella cartella ``/home/user/cartella/`` può essere copiato nella cartella ``cartella`` del client con la seguente sintassi:
+
+```bash
+ssh -i $HOME/chiavi_ssh/id_rsa user@server:/home/user/cartella/file cartella
+```
+
+Per copiare tutti i file presenti in una cartella si può utilizzare il carattere jolly ``*``, come nell'esempio seguente:
+
+```bash
+ssh -i $HOME/chiavi_ssh/id_rsa user@server:/home/user/cartella/* cartella
+```
+
+Per copiare ricorsivamente tutti i file e le cartelle presenti in una specifica cartella si può utilizzare l'opzione ``-r``, come nell'esempio seguente:
+
+```bash
+ssh -i $HOME/chiavi_ssh/id_rsa -r user@server:/home/user/cartella cartella
+```
+
 ## Analisi della sicurezza
 
 Ci sono diverse debolezze nell'interazione client server:
