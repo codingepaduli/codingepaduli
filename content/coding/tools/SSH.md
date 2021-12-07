@@ -1,7 +1,7 @@
 ---
 type: "tools"
 title: "SSH"
-description: "SSH, uno strumento per lo scambio sicuro di dati e informazioni tra client e server"
+description: "SSH, uno strumento per l'amministrazione di una macchina da remoto"
 date: 2021-11-03
 publishdate: 2021-11-03
 lastmod: 2021-11-03
@@ -9,7 +9,7 @@ categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
 toc: false
-summary: "SSH, uno strumento per lo scambio sicuro di dati e informazioni tra client e server"
+summary: "SSH, uno strumento per l'amministrazione di una macchina da remoto"
 references:
     -   title: "SSH certificates"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
@@ -27,17 +27,7 @@ references:
 
 # SSH
 
-SSH (Secure SHell) è uno strumento per lo scambio sicuro di dati e informazioni tra client e server.
-
-I metodi di autenticazione e crittografia permettono differenti opzioni:
-
-- autenticazione con user/pass;
-- autenticazione con chiave pubblica e privata;
-- autenticazione con certificati;
-- generazione di un'autorità di certificazione per la verifica dei certificati;
-- crittografia simmetrica e asimmetrica (ovvero con una e con due chiavi per cifrare e decifrare delle informazioni)
-- creazione di proxy e reverse-proxy che fanno da tunnel sicuri;
-- ...
+SSH (Secure SHell) è uno strumento per l'amministrazione di una macchina da remoto. Fornisce i meccanismi per autenticare l'utente sulla macchina remota e per creare un canale di comunicazione criptato sul quale far viaggiare input e output.
 
 Installazione su client:
 
@@ -63,15 +53,85 @@ Per riavviare il server SSH (al cambio di configurazione, ad esempio), è necess
 systemctl restart ssh
 ```
 
-Per verificare gli algoritmi disponibili:
+## Cenni di crittografia
+
+Lo scopo della crittografia è rendere incomprensibile un testo o un messaggio a persone terze, permettendo la comprensione dello stesso solo ai soggetti autorizzati.
+
+La storia della crittografia può essere divisa in due ere: l'era classica, in cui la comunicazione tra le parti era basata su un segreto condiviso (una chiave), e l'era moderna, in cui la comunicazione è basata su una chiave pubblica ed una chiave privata, entrambe utilizzabili per criptare e decriptare il messaggio (ovvero per rendere comprensibile o meno il messaggio).
+
+Nell'era classica la stessa chiave (segreta) era usata sia per cifrare che per decifrare il messaggio. L'algoritmo di cifratura dei dati era basato principalmente sui cifrari, che indicavano come sostituire le lettere o le parole di un messaggio. I cifrari potevano essere molto semplici, come il cifrario di Cesare, o molto complessi, come il cifrario utilizzato nella macchina Enigma per la trasmissione delle informazioni durante la seconda guerra mondiale.
+
+Ad esempio, il cifrario di Cesare prevede la sostituzione di ogni lettera del messaggio con la lettera che si trova un certo numero di posizioni successive nell'alfabeto. Il segreto consisteva quindi nel numero di posizioni da "scorrere". Ipotizzando 2 posizioni di "scorrimento", la lettera "A" era sostituita con la lettera "C", la lettera "B" era sostituita con la lettera "D" e così via, rendendo il testo incomprensibile. Per rendere il testo nuovamente comprensibile, si "scorreva" dello stesso numero di posizioni ma in senso inverso, quindi la lettera "D" era sostituita con la lettera "B", la lettera "C" era sostituita con la lettera "A" e così via. Se non si conosceva il numero segreto di posizioni, non si poteva rendere comprensibile il testo.
+
+Il punto debole di questi algoritmi "classici" consisteva proprio nella trasmissione della chiave segreta, poiché permetteva sia di decifrare il messaggio, sia di inviare messaggi cifrati sostituendosi all'autore originale. Si passava dal problema di trasmettere il messaggio al problema di trasmettere la chiave segreta per leggere il messaggio.
+
+Il passaggio all'era moderna è dovuto ai primi algoritmi basati sulla teoria dei numeri: l'algoritmo RSA e lo scambio di chiavi Diffie-Hellman, che si basavano sul problema matematico della fattorizzazione in numeri primi. L'algoritmo RSA usa una chiave privata ed una pubblica, una chiave serve a criptare i dati (e quindi renderli incomprensibili) e l'altra chiave è utilizzata per decriptarli (e renderli di nuovo comprensibili). L'algoritmo di scambio delle chiavi Diffie-Hellman consente a due entità di stabilire una chiave condivisa e segreta utilizzando un canale di comunicazione insicuro. Server e client arrivano a calcolare la stessa chiave indipendentemente uno dall'altro, condividendo solo alcuni dati e mantenendo segreti altri.
+
+Il vantaggio rivoluzionario di questi algoritmi è che qualsiasi utente può tranquillamente pubblicare la propria chiave pubblica, in modo tale da permettere a terzi di cifrare i dati da trasmettere all'utente, che poi utilizza la propria chiave privata per leggerli. Viceversa, l'utente può utilizzare la chiave privata per trasmettere i dati a terzi, che utilizzano la chiave pubblica per leggerli. L'algoritmo per cifrare e decifrare i messaggi non è segreto, ma pubblico.
+
+Rendere leggibile un messaggio criptato senza avere la chiave privata equivale a risolvere un problema matematico difficile da risolvere. Si ha quindi una prova matematica della impossibilità di lettura delle trasmissioni senza possedere la chiave privata, indipendentemente dal fatto che l'algoritmo di cifratura sia pubblico.
+
+Oggi non si utilizza più il problema matematico della fattorizzazione in numeri primi, bensì l'equazione delle curve ellittiche (dall'inglese Equation of Elliptic Curve), che resta sempre di difficile risoluzione.
+
+Sempre basati sulla coppia di chiavi pubbliche e private, ci sono le autorità di certificazione che svolgono il ruolo di garanti dell'identità di un utente e di smistamento delle chiavi tra gli utenti. Ad ogni utente viene rilasciato un certificato digitale che in pratica è una chiave pubblica. Utenti terzi che hanno necessità di verificare l'identità e stabilire un canale sicuro di trasmissione con l'utente contattano l'autorità di certificazione per verificare il certificato dell'utente e per ottenere la chiave pubblica dell'utente.
+
+Introduciamo infine le tecniche di firma del messaggio, che non mirano a rendere incomprensibile un testo o un messaggio, ma hanno lo scopo di generare un codice alfanumerico, detto "firma", a partire dal messaggio.
+
+Con le tecniche di firma, il messaggio viene trasmesso in chiaro, ed al messaggio viene aggiunta la "firma", che garantisce il fatto che il messaggio non è contraffatto.
+
+Le tecniche di firma utilizzano un algoritmo noto per generare, partendo dal messaggio, un codice alfanumerico univoco (dall'inglese hash) che poi viene firmato dalla chiave privata ed allegato al messaggio. Quando un utente vuole verificare che un messaggio non è contraffatto, decodifica la firma usando la chiave pubblica, poi verifica che il codice alfanumerico decrittato (hash) sia uguale al codice alfanumerico che si ottiene dal messaggio (poiché il messaggio è in chiaro). Se i due codici alfanumerici corrispondono, il messaggio è autentico.
+
+Una volta chiariti questi cenni di crittografia, si può descrivere il funzionamento basilare di SSH.
+
+## Funzionamento basilare di SSH
+
+SSH funziona su modello client-server. Il server è in attesa di connessioni da parte dei client.
+
+Quando un client si collega, client e server negoziano la versione di protocollo SSH da utilizzare per la comunicazione. La lista di versioni supportate può essere visualizzata attraverso il comando seguente:
+
+```bash
+ssh -Q protocol-version
+```
+
+Stabilita la versione di protocollo da utilizzare, client e server negoziano una chiave segreta per criptare il canale di comunicazione. La negoziazione avviene attraverso un algoritmo per lo scambio delle chiavi (dall'inglese Key EXchange), il più famoso è quello di scambio di chiavi Diffie-Hellman. Molti algoritmi aderiscono allo standard GSS-API (dall'inglese Generic Security Service Application Program Interface). La lista di algoritmi per lo scambio delle chiavi può essere visualizzata attraverso i comandi seguenti:
+
+```bash
+ssh -Q kex
+ssh -Q kex-gss
+```
+
+Effettuato lo scambio delle chiavi, client e server creano un canale criptato utilizzando un algoritmo di crittografia simmetrico basato sulla chiave segreta scambiata precedentemente. La lista di algoritmi simmetrici (cha si basano sui cifrari) può essere visualizzata attraverso i comandi seguenti:
 
 ```bash
 ssh -Q cipher
-ssh -Q cipher-auth
-ssh -Q mac
-ssh -Q kex
+```
+
+Una volta creato il canale criptato di comunicazione, è necessario autenticare l'utente all'accesso del sistema. Questo può essere fatto con la classica richiesta di una password o dalla più moderna autenticazione basata sul fatto che l'utente possiede la chiave privata che è associata alla chiave pubblica in possesso sul server. La lista di algoritmi asimmetrici (cha si basano sul possesso di chiave pubblica e privata) può essere visualizzata attraverso il comando seguente:
+
+```bash
 ssh -Q key
 ```
+
+Aggiungiamo ancora gli algoritmi per firmare un file, la cui lista può essere visualizzata attraverso il comando seguente:
+
+```bash
+ssh -Q sig
+```
+
+Infine, aggiungiamo la lista di algoritmi basati su certificato, visualizzabile attraverso il comando seguente:
+
+```bash
+ssh -Q key-cert
+```
+
+Le funzionalità dello strumento SSH sono quindi le seguenti:
+
+- autenticazione con user/pass (segreto condiviso tra client e server);
+- autenticazione con chiave pubblica e privata (il client possiede la chiave privata ed il server quella pubblica);
+- autenticazione con certificati (autorità di certificazione);
+- generazione di un'autorità di certificazione per la verifica dei certificati;
+- firma dei messaggi (autenticità dei messaggi);
+- creazione di proxy e reverse-proxy per la trasmissione di informazioni su canali sicuri;
 
 ## Autenticazione con user/password
 
@@ -85,9 +145,9 @@ E' possibile abilitarla o disabilitarla modificando il file di configurazione de
 PasswordAuthentication yes # yes or no
 ```
 
-## Autenticazione e cifratura con chiave privata/pubblica
+## Autenticazione con chiave privata/pubblica
 
-L'autenticazione e cifratura con chiave privata/pubblica è impostata nel file di configurazione del server SSH ``/etc/ssh/sshd_config`` dalla voce seguente:
+L'autenticazione con chiave privata/pubblica è impostata nel file di configurazione del server SSH ``/etc/ssh/sshd_config`` dalla voce seguente:
 
 ```bash
 PubkeyAuthentication yes # yes or no
@@ -124,7 +184,7 @@ Per cambiare la passphrase, si utilizza il comando seguente:
 ssh-keygen -f $HOME/chiavi_ssh/id_rsa -p
 ```
 
-Per ottenere informazioni su una chiave, verificare l'output del comando:
+Le informazioni su una chiave possono essere recuperate attraverso il comando seguente, che si riporta insieme all'output per semplicità descrittiva:
 
 ```bash
 ssh-keygen -l -f $HOME/chiavi_ssh/id_rsa
@@ -134,9 +194,9 @@ ssh-keygen -l -f $HOME/chiavi_ssh/id_rsa
  |__ Size   Fingerprint __|     Comment __|     Type __|
 ```
 
-### Autorizzare l'accesso di un client
+### Autorizzare l'accesso di un client al server
 
-Il file ``$HOME/.ssh/authorized_keys`` contiene l'elenco di client a cui è permesso l'accesso.
+Il file ``$HOME/.ssh/authorized_keys`` contiene l'elenco di client a cui è permesso l'accesso al server.
 
 Per aggiungere l'accesso di un client, è necessario copiare la chiave **pubblica** del client nel server, come di seguito:
 
