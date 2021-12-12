@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2021-11-26
-publishdate: 2021-11-26
-lastmod: 2021-11-26
+date: 2021-12-11
+publishdate: 2021-12-11
+lastmod: 2021-12-11
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -206,9 +206,12 @@ summary: "Set di link relativi all'istruzione di base"
 [Salone Internazionale del Libro di Torino](https://www.salonelibro.it/) - \
 [CyberHighSchools.IT](https://cyberhighschools.it/) - programma di formazione in cybersecurity\
 [Phaser Game Jam](https://phaser-gamejam.web.app/) - \
+[ANPAL Servizi LMS: Login al sito](https://consorzioclara.thesmartschool.it/login/index.php) - \
 
 #### Domotica
 
 [Iniziare con la Smarthome](https://www.youtube.com/watch?v=wU1j5Yxhz-Y) - partiamo dallo HUB - YouTube\
 [Frient Energy Monitor](https://www.youtube.com/watch?v=fW0nhnqq0u0) - Misurare i consumi di corrente e automatizzare la smarthome di conseguenza - YouTube\
 [SwitchBot](https://www.youtube.com/watch?v=ZsjfdHQeEjk) - Nuovo sensore di movimento provato i tutti i dettagli! - YouTube\
+[Hue Wall Switch | Philips Hue](https://www.philips-hue.com/it-it/p/hue-wall-switch-module-philips-hue-confezione-da-2/8719514318021) - \
+[Hue Sensore per esterni | Philips Hue](https://www.philips-hue.com/it-it/p/hue-sensore-per-esterni/8719514342262) - \

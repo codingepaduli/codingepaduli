@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-11-26
-publishdate: 2021-11-26
-lastmod: 2021-11-26
+date: 2021-12-11
+publishdate: 2021-12-11
+lastmod: 2021-12-11
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -375,7 +375,7 @@ summary: "Set di link relativi al coding"
 [Crossbar.io](https://crossbar.io/) - distributed, multi-language applications where components communicate using Publish & Subscribe and routed Remote Procedure Calls\
 [Platypush](https://platypush.tech/) - an open-source modular platform for automation aimed to run on any device that can run a Python interpreter\
 [The Arduino Microcontroller](https://dev.to/admantium/the-arduino-microcontroller-hardware-and-gpio-functions-4e6o) - Hardware and GPIO Functions - DEV Community\
-[Let's program the Arduino with Javascript🤯](https://dev.to/patik123/lets-program-the-arduino-with-javascript-3doj) - DEV Community\
+[Let's program the Arduino with JavaScript🤯](https://dev.to/patik123/lets-program-the-arduino-with-javascript-3doj) - DEV Community\
 [leopck/Yee-Light-Blue: Writing library for yee light blue using python for raspberry pi](https://github.com/leopck/Yee-Light-Blue) - \
 [Control a Bluetooth LE Light Bulb With Raspberry Pi](https://www.hackster.io/idreams/control-a-bluetooth-le-light-bulb-with-raspberry-pi-6d04cc) - Hackster.io\
 [Raspberry Pi: How to control lights at home? (Philips Hue) – RaspberryTips](https://raspberrytips.com/control-lights-raspberry-pi/) - \
@@ -710,7 +710,7 @@ summary: "Set di link relativi al coding"
 [5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
 [Understanding the array methods Array.some() and Array.every() in JavaScript](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - DEV Community\
 [JavaScript Array Methods](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
-[5 Useful Array Methods in Javascript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
+[5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
 
 ##### JS Promise and Async Await
 
