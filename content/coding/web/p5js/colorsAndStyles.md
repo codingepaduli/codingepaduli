@@ -11,6 +11,11 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Colori e stili"
+references:
+    -   title: "The color of infinite temperature"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://johncarlosbaez.wordpress.com/2022/01/16/the-color-of-infinite-temperature/"
+        description: "For an extremely hot blackbody, the spectrum of light is shown by a color called ‘Perano’, RGB(148, 177, 255)."
 ---
 
 # Colori e stili
@@ -25,10 +30,10 @@ Anche Newton nel 1704 pubblicò il suo trattato scientifico "Opticks", uno studi
 <!-- Fonte: Fottuti Geni - J. C. Maxwell -->
 Nel 1860 James Clerk Maxwell pubblico il suo lavoro sulla classificazione dei colori e sul principio della sintesi additiva dei colori, definendo i colori primari che compongono la luce: il rosso, il verde ed il blu. Nel 1861, come risultato di questo lavoro, proiettò nell'aula magna della Royal Institution di Londra la prima fotografia a colori della storia.
 
-Nel 1864 Maxwell pubblicò il suo trattato "A Dynamical Theory of the Electromagnetic Field", in cui unificava le leggi che regolano i fenomeni elettrici, magnetici, la luce ed il calore radiante, evidenziando come il campo elettrico ed il campo magnetico avessero la stessa natura della luce, evidenziando che il segnale elettromagnetico si propaga come un'onda proprio alla velocità della luce.
+Nel 1864 Maxwell pubblicò il suo trattato "A Dynamical Theory of the Electromagnetic Field", in cui unificava le leggi che regolano i fenomeni elettrici, magnetici, la luce ed il calore radiante, evidenziando come il campo elettrico ed il campo magnetico avessero la stessa natura della luce, come il segnale elettromagnetico si propaghi come un'onda proprio alla velocità della luce e come il calore sia irradiato sotto forma di onda elettromagnetica.
 
 <!-- Fonte: Fisicast - Il principio fotoelettrico-->
-Infine, Einstein pubblicò il suo studio sull'effetto fotoelettrico, teorizzando che la luce è formata da corpuscoli chiamati fotoni, ognuno contenente un'energia (detta quanto di energia) direttamente proporzionale alla frequenza. Più è alta la frequenza, più energia trasporta un fotone.
+Agli inizi del 1900, Einstein pubblicò il suo studio sull'effetto fotoelettrico, teorizzando che la luce è formata da corpuscoli chiamati fotoni. Nello stesso periodo, Plank spiegò come l'energia dei fotoni fosse direttamente proporzionale alla frequenza. Più è alta la frequenza, più energia trasporta un fotone.
 
 <!-- Fonte: Fisicast - il fotone Phòs -->
 Grazie al lavoro di tutti questi geniali scienziati, oggi sappiamo che la luce è irradiata dal Sole sotto forma di onda elettromagnetica e può essere chiamata radiazione elettromagnetica. Lo **spettro elettromagnetico** è l'insieme di tutte le frequenze dei fotoni che compongono il fascio di luce. Questo insieme può essere suddiviso in più categorie:
@@ -40,6 +45,19 @@ Grazie al lavoro di tutti questi geniali scienziati, oggi sappiamo che la luce �
 <!-- TODO Aggiungere spettro elettromagnetico e sezioni -->
 
 Aprendo una breve parentesi di approfondimento, sappiamo che i fotoni sono mediatori della forza elettromagnetica, responsabili dell'attrazione e della repulsione elettrica (come insegnano a scuola, le cariche opposte si attraggono, le cariche uguali si respingono scambiandosi fotoni).
+
+Oggi, sempre più spesso, il colore della luce è espresso come temperatura di colore correlata. Un corpo solido, man mano che viene portato all'incandescenza, inizia ad emettere una radiazione elettromagnetica che assume un:
+
+- colore non visibile (infrarosso) quando la temperatura è inferiore ai 600K (gradi Kelvin);
+- colore rosso quando la temperatura è intorno ai 600K (gradi Kelvin);
+- colore arancione quando la temperatura aumenta raggiungendo i 2000K;
+- colore giallo quando la temperatura aumenta raggiungendo i 3500K;
+- colore bianco freddo quando la temperatura aumenta raggiungendo i 4000K;
+- colore bianco (luce solare a mezzogiorno) quando la temperatura aumenta raggiungendo i 4900K;
+- colore bianco "puro" quando la temperatura aumenta raggiungendo i 5500K;
+- colore azzurro chiaro quando la temperatura aumenta raggiungendo i 8000K;
+- colore azzurro (cielo sereno) quando la temperatura aumenta raggiungendo i 12000K;
+- colore "Perano" (tra azzurro e violetto) quando la temperatura tende all'infinito;
 
 ## Modello di colori RGB
 
@@ -62,6 +80,8 @@ Come ci si può aspettare, in questo modello:
 - il colore bianco si esprime impostando al massimo tutte le quantità: (255, 255, 255), ovvero sommando tutti i colori (il modello è additivo);
 
 Il problema principale di questo modello consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste.
+
+Come nota di approfondimento, un corpo solido portato a temperatura quasi infinita emette una luce con colore denominato "Perano" che nel modello RGB è identificato con la combinazione (148, 177, 255);
 
 ## Modello di colori CMYK
 

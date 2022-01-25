@@ -12,7 +12,7 @@ toc: false
 summary: "Sviluppo di un videogioco in stile 'pong'"
 ---
 
-# 04.1 - Progetto Pong
+# Progetto Pong
 
 Si sviluppi un videogioco in stile "pong", utilizzando la libreria grafica p5.js per il disegno degli oggetti necessari. I requisiti funzionali del gioco sono i seguenti:
 
