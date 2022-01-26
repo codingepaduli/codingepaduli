@@ -12,7 +12,7 @@ toc: false
 summary: "Sviluppo di un videogioco in stile 'arknoid'"
 ---
 
-# 04.3 - Progetto Arknoid
+# Progetto Arknoid
 
 Si sviluppi un videogioco in stile "arknoid", utilizzando la libreria grafica p5.js per il disegno degli oggetti necessari. I requisiti funzionali del gioco sono i seguenti:
 

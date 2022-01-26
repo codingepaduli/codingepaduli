@@ -13,6 +13,6 @@ summary: "Implementazione del videogioco in stile 'pong'"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoPongSoluzione.js"]
 ---
 
-# 04.2 - Soluzione progetto Pong
+# Soluzione progetto Pong
 
 <div id="progettoPong"></div>

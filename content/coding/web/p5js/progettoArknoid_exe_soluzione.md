@@ -13,7 +13,7 @@ summary: "Implementazione del videogioco in stile 'arknoid'"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoArknoidSoluzione.js"]
 ---
 
-# 04.4 - Soluzione progetto Arknoid
+# Soluzione progetto Arknoid
 
 Di seguito, l'implementazione del videogioco in stile 'arknoid'.
 

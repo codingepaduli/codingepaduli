@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2021-12-11
-publishdate: 2021-12-11
-lastmod: 2021-12-11
+date: 2022-01-04
+publishdate: 2022-01-04
+lastmod: 2022-01-04
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -472,6 +472,8 @@ summary: "Set di link relativi al coding"
 [Invisible Web Tax](https://blog.mozilla.org/blog/2018/07/11/royalty-free-web-video-codecs/) - Modern codecs like AV1 can bring better quality video to the open web\
 [How to bypass CloudFlare bot protection ? | by jychp | Mar, 2021 | Medium](https://jychp.medium.com/how-to-bypass-cloudflare-bot-protection-1f2c6c0c36fb) - \
 [Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
+[Please add LibreSignal to f-droid · Issue #37 · LibreSignal/LibreSignal · GitHub](https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217231557) - \
+[Privacy Tools](https://www.privacytools.io/) - Encryption Against Mass Surveillance\
 
 #### Security vulnerability and privacy abuse
 
