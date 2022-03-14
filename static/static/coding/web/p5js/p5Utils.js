@@ -3,36 +3,52 @@ function arrow(x1, y1, x2, y2) {
     var b = x2 - x1;
     var h = y2 - y1;
     var d = Math.sqrt(b*b + h*h);
-    
+
     if (x2!=x1) {
         teta = Math.atan(h/b);
     } else {
         teta = (y2>y1) ? HALF_PI : HALF_PI + PI;
     }
-    
+
     if (x2 < x1) {
         teta = teta + PI;
     }
-    
+
     line(x1, y1, x1 + d * Math.cos(teta), y1 + d * Math.sin(teta));
-    
-    line(x2, y2, x2 - 10 * Math.cos(teta + 0.2), y2 - 10 * Math.sin(teta + 0.2));
-    
-    line(x2, y2, x2 - 10 * Math.cos(teta - 0.2), y2 - 10 * Math.sin(teta - 0.2));
+
+    line(x2, y2, x2 - 10 * Math.cos(teta + 0.3), y2 - 10 * Math.sin(teta + 0.3));
+
+    line(x2, y2, x2 - 10 * Math.cos(teta - 0.3), y2 - 10 * Math.sin(teta - 0.3));
 }
 
-function arrowArc(x, y, d, start, stop) {
+function arrowArc(x, y, d, start, stop, clockWise = true, arrowOnStart = false, arrowOnStop = true) {
     push(); // Start a new drawing state
 
     r=d/2;
 
     noFill();
-    arc(x, y, d, d, start, stop, OPEN);
-    
-    if (stop != start) {
-        arrow(x + r * cos(stop-2), y + r * sin(stop-2), x + r * cos(stop), y + r * sin(stop));
+
+    if (clockWise) {
+        arc(x, y, d, d, start, stop, OPEN);
+    } else {
+        arc(x, y, d, d, stop, start, OPEN);
     }
-    
+
+    if (stop != start) {
+        if (arrowOnStart && clockWise) {
+            arrow(x + r * cos(start), y + r * sin(start), x + r * cos(start-2), y + r * sin(start-2));
+        }
+        if (arrowOnStart && !clockWise) {
+            arrow(x + r * cos(start), y + r * sin(start), x + r * cos(start+2), y + r * sin(start+2));
+        }
+        if (arrowOnStop && clockWise) {
+            arrow(x + r * cos(stop-2), y + r * sin(stop-2), x + r * cos(stop), y + r * sin(stop));
+        }
+        if (arrowOnStop && !clockWise) {
+            arrow(x + r * cos(stop), y + r * sin(stop), x + r * cos(stop-2), y + r * sin(stop-2));
+        }
+    }
+
     pop();  // Restore original state
 }
 
@@ -48,7 +64,7 @@ function drawGridPoints(centerX, centerY, gridStep) {
         }
     }
 }
-    
+
 function drawAxes(centerX, centerY, gridStep) {
     arrow(0, centerY, width, centerY);
     arrow(centerX, 0, centerX, height);
@@ -66,4 +82,3 @@ function drawGrid(centerX, centerY, gridStep) {
         }
     }
 }
-
