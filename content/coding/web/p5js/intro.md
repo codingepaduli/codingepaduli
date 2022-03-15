@@ -50,11 +50,19 @@ Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di c
 
 <!-- TODO da sistemare documentazione sugli angoli -->
 
-Una caratteristica importante della libreria p5.js è che gli angoli sono misurati seguendo un **senso orario**. Il programmatore può esprimere le grandezze angolari in gradi d'arco o radianti, anche se in alcune casistiche è possibile utilizzare esclusivamente valori espressi in radianti.
+Una caratteristica importante da considerare nella misurazione degli angoli è che, nel sistema di coordinate utilizzato, l'asse Y è invertito e quindi gli angoli sono misurati seguendo un **senso orario**.
 
-Possiamo fare un'analogia con il quadrante di un orologio per misurare gli angoli. Ponendo la lancetta delle ore sempre sul numero tre (ore 3) ed utilizzando la lancetta dei minuti per definire l'ampiezza dell'angolo, il classico valore **novanta gradi** sull'orologio non corrisponde alle ore **3.00** come ci aspetterebbe, ma corrisponde alle ore **3.30**. Allo stesso modo, un angolo di **zero gradi** corrisponde alle ore **3.15**, un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45**.
+Per facilitare la comprensione, possiamo fare un'analogia con il quadrante di un orologio, sul quale utilizziamo la lancetta delle ore come riferimento e la lancetta dei minuti per misurare l'angolo.
 
-<!-- TODO aggiungere immagine degli orologi -->
+Ponendo inizialmente sul numero tre entrambe le lancette (quindi a 3 ore e 15 minuti) definiamo un primo angolo, di grandezza zero (sia in gradi che in radianti).
+
+Man mano che la lancetta dei minuti ruota in **senso orario**, la dimensione dell'angolo aumenta. Alle ore **3.30** corrisponde la misura di **novanta gradi** (e non alle ore **3.00** come ci aspetterebbe). Un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45** e così via.
+
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-clockwise.png "p5.js - Angoli rappresentati su orologio")
+
+Per completezza, riportiamo anche le immagini degli orologi con le misurazioni degli angoli prese utilizzando il senso **antiorario**, in modo da avere chiara la differenza.
+
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
 
 ## API
 
