@@ -1,5 +1,5 @@
 function setup() {
-    var canvas = createCanvas(1400, 800);
+    var canvas = createCanvas(800, 1500);
     canvas.parent('clock');
     angleMode(DEGREES);
 }
@@ -26,17 +26,12 @@ function drawClock(x, y, d, h, m, s, clockWise) {
     arrow(x, y, x + rh * cos(hoursToDegree), y + rh * sin(hoursToDegree));
     arrow(x, y, x + rm * cos(minutesToDegree), y + rm * sin(minutesToDegree));
 
-    if (s != null && s >= 0 && s < 60) {
+    if (s != null && s >= 0 && s <= 60) {
         var secondsToDegree = s * 6 - 90;
         arrow(x, y, x + rs * cos(secondsToDegree), y + rs * sin(secondsToDegree));
     }
 
-    if (clockWise) {
-      arrowArc(x, y, r, hoursToDegree, minutesToDegree, clockWise, false, true);
-    } else {
-      //arrowArc(x, y, r, minutesToDegree, hoursToDegree);
-      arrowArc(x, y, r, hoursToDegree, minutesToDegree, clockWise, false, true);
-    }
+    arrowArc(x, y, r, hoursToDegree, minutesToDegree, clockWise, false, true);
 
     pop();  // Restore original state
 }
@@ -47,54 +42,61 @@ function draw() {
 
     fill('black');
     textSize(36);
-    text("Angoli misurati in senso orario (clockwise)", 80, 50);
-    text("Angoli misurati in senso antiorario (counterclockwise)", 20, 300);
-    text("Orologio analogico funzionante", 20, 550);
+    text("Misure in senso orario", 10, 30);
+    text("(clockwise)", 30, 70);
+
+    text("Misure in senso antiorario", 20, 550);
+    text("(counterclockwise)", 20, 590);
+    text("Orologio analogico", 80, 1050);
 
     noFill();
     textSize(14);
 
     // clockwise arc
-    drawClock(80, 150, 120, 3, 15+7.5, null, true);
-    text("Angolo di 45 gradi",  20, 150+80);
+    var clockWise = true;
+    drawClock(80, 175, 120, 3, 15+7.5, null, clockWise);
+    text("Angolo di 45 gradi", 20, 175+80);
 
-    drawClock(240, 150, 120, 3, 15+15, null, true);
-    text("Angolo di 90 gradi",  180, 150+80);
+    drawClock(240, 175, 120, 3, 15+15, null, clockWise);
+    text("Angolo di 90 gradi", 180, 175+80);
 
-    drawClock(400, 150, 120, 3, 15+15+7.5, null, true);
-    text("Angolo di 135 gradi",  340, 150+80);
+    drawClock(400, 175, 120, 3, 15+15+7.5, null, clockWise);
+    text("Angolo di 135 gradi", 340, 175+80);
 
-    drawClock(560, 150, 120, 3, 15+30, null, true);
-    text("Angolo di 180 gradi",  500, 150+80);
+    drawClock(80, 350, 120, 3, 15+30, null, clockWise);
+    text("Angolo di 180 gradi", 20, 350+80);
 
-    drawClock(720, 150, 120, 3, 15+45, null, true);
-    text("Angolo di 270 gradi",  660, 150+80);
+    drawClock(240, 350, 120, 3, 15+45, null, clockWise);
+    text("Angolo di 270 gradi", 180, 350+80);
 
-    drawClock(880, 150, 120, 3, 15+60, null, true);
-    text("Angolo di 360 gradi",  820, 150+80);
+    drawClock(400, 350, 120, 3, 15+60, null, clockWise);
+    text("Angolo di 360 gradi", 340, 350+80);
 
     // counterclockwise arc
-    drawClock(80, 400, 120, 3, 15-7.5, null, false);
-    text("Angolo di 45 gradi",  20, 400+80);
+    counterclockwise = false;
+    drawClock(80, 700, 120, 3, 15-7.5, null, counterclockwise);
+    text("Angolo di 45 gradi", 20, 700+80);
 
-    drawClock(240, 400, 120, 3, 0, null, false);
-    text("Angolo di 90 gradi",  180, 400+80);
+    drawClock(240, 700, 120, 3, 0, null, counterclockwise);
+    text("Angolo di 90 gradi", 180, 700+80);
 
-    drawClock(400, 400, 120, 3, 60-7.5, null, false);
-    text("Angolo di 135 gradi",  340, 400+80);
+    drawClock(400, 700, 120, 3, 60-7.5, null, counterclockwise);
+    text("Angolo di 135 gradi", 340, 700+80);
 
-    drawClock(560, 400, 120, 3, 60-15, null, false);
-    text("Angolo di 180 gradi",  500, 400+80);
+    drawClock(80, 875, 120, 3, 60-15, null, counterclockwise);
+    text("Angolo di 180 gradi", 20, 875+80);
 
-    drawClock(720, 400, 120, 3, 60-30, null, false);
-    text("Angolo di 270 gradi",  660, 400+80);
+    drawClock(240, 875, 120, 3, 60-30, null, counterclockwise);
+    text("Angolo di 270 gradi", 180, 875+80);
 
-    drawClock(880, 400, 120, 3, 15+60, null, false);
-    text("Angolo di 360 gradi",  820, 400+80);
+    drawClock(400, 875, 120, 3, 15+60, null, counterclockwise);
+    text("Angolo di 360 gradi", 340, 875+80);
 
     var h = new Date().getHours();
     var m = new Date().getMinutes();
     var s = new Date().getSeconds();
 
-    drawClock(250, 650, 120, h, m, s, false);
+    drawClock(250, 1150, 120, h, m, s, clockWise);
+    text(`${h} : ${m} : ${s}`, 210, 1150+80);
+
 }
