@@ -58,11 +58,11 @@ Ponendo inizialmente sul numero tre entrambe le lancette (quindi a 3 ore e 15 mi
 
 Man mano che la lancetta dei minuti ruota in **senso orario**, la dimensione dell'angolo aumenta. Alle ore **3.30** corrisponde la misura di **novanta gradi** (e non alle ore **3.00** come ci aspetterebbe). Un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45** e così via.
 
-![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-clockwise.png "p5.js - Angoli rappresentati su orologio")
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-on-clock-clockwise.png "p5.js - Angoli rappresentati su orologio")
 
 Per completezza, riportiamo anche le immagini degli orologi con le misurazioni degli angoli prese utilizzando il senso **antiorario**, in modo da avere chiara la differenza.
 
-![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-on-clock-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
 
 ## API
 
