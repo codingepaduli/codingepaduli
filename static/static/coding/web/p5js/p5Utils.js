@@ -70,15 +70,20 @@ function drawAxes(centerX, centerY, gridStep) {
     arrow(centerX, 0, centerX, height);
 }
 
+function drawMathAxes(centerX, centerY, gridStep) {
+    arrow(0, centerY, width, centerY);
+    arrow(centerX, height, centerX, 0);
+}
+
 function drawGrid(centerX, centerY, gridStep) {
     if (gridStep > 0) {
         for (var r = 0; r < width; r = r + gridStep) {
-        line(centerX + r, 0, centerX + r, height);
-        line(centerX - r, 0, centerX - r, height);
+            line(centerX + r, 0, centerX + r, height);
+            line(centerX - r, 0, centerX - r, height);
         }
         for (var c = 0; c < height; c = c + gridStep) {
-        line(0, centerY + c, width, centerY + c);
-        line(0, centerY - c, width, centerY - c);
+            line(0, centerY + c, width, centerY + c);
+            line(0, centerY - c, width, centerY - c);
         }
     }
 }

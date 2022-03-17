@@ -38,7 +38,7 @@ La particolarità di questo sistema di coordinate è l'asse Y invertito, cioè i
 
 Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
 
-![p5.js - Sistema di coordinate](https://p5js.org/assets/learn/coordinate-system-and-shapes/images/drawing-03.svg "p5.js - Sistema di coordinate")
+![p5.js - Differenza tra i due sistemi di coordinate](/static/coding/web/p5js/basics_axes-in-math-and-p5js.png "p5.js - Differenza tra i due sistemi di coordinate")
 
 ### Misurazione angoli
 
@@ -47,8 +47,6 @@ In ambito matematico, gli angoli sono tipicamente espressi mediante due differen
 Un grado d'arco è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza che misura 1/360 della circonferenza di un cerchio.
 
 Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
-
-<!-- TODO da sistemare documentazione sugli angoli -->
 
 Una caratteristica importante da considerare nella misurazione degli angoli è che, nel sistema di coordinate utilizzato, l'asse Y è invertito e quindi gli angoli sono misurati seguendo un **senso orario**.
 
