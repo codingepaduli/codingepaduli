@@ -61,12 +61,152 @@ La funzione ``fill(30, 100, 255)`` indica il colore da utilizzare, espresso come
 
 ## Disegno di un robot a colori
 
-Creare una pagina web contenente un disegno a piacere di un robot con occhi, bocca, naso, antenne, corpo, braccia, ruote o gambe. Dimensioni e colori dei vari componenti sono a scelta dello studente. L'unico vincolo è che la parte destra e sinistra del robot siano simmetriche.
+Creare una pagina web contenente un disegno a piacere di un robot con occhi, bocca, naso, antenne, corpo, braccia, ruote o gambe. Dimensione massima del robot deve essere 300 per 300 punti, i colori dei vari componenti sono a scelta dell'autore. La parte destra e sinistra del robot devono essere simmetriche.
 
 ![p5.js - Disegno di un robot a colori](/static/coding/web/p5js/colors_and_styles_exe_robot.png "p5.js - Disegno di un robot a colori")
 
 ## Disegno di un'astronave a colori
 
-Creare una pagina web contenente un disegno a piacere di un'astronave con 4 ali armate di missili, 2 turbine, oblò del pilota. La dimensione massima dell'astronave deve essere 150 per 150 punti. L'astronave deve essere simmetrica rispetto all'asse Y, i colori dei vari componenti sono a scelta dello studente.
+Creare una pagina web contenente un disegno a piacere di un'astronave con 4 ali armate di missili, 2 turbine ed oblò del pilota. La dimensione massima dell'astronave deve essere 150 per 150 punti. L'astronave deve essere simmetrica rispetto al proprio asse verticale, i colori dei vari componenti sono a scelta dell'autore.
 
 ![p5.js - Disegno di un robot a colori](/static/coding/web/p5js/colors_and_styles_exe_astronavi.png "p5.js - Disegno di un'astronave a colori")
+
+## Disegno di una scena del gioco "Snake"
+
+Realizzare una scena del gioco Snake delle dimensioni indicate di seguito. La forma che il serpente "Snake" deve assumere è a scelta dell'autore, deve essere però composta da almeno 16 pedine che devono essere perfettamente tangenti (cioè non devono sovrapporsi e non devono essere separate da uno spazio vuoto).
+
+Dimensioni dell'area da disegno e del diametro di una pedina per ogni computer:
+
+- pc1: area da disegno 300 x 300, dimensione pedine 34;
+- pc2: area da disegno 330 x 330, dimensione pedine 38;
+- pc3: area da disegno 360 x 360, dimensione pedine 42;
+- pc4: area da disegno 390 x 390, dimensione pedine 46;
+- pc5: area da disegno 420 x 420, dimensione pedine 50;
+- pc6: area da disegno 450 x 450, dimensione pedine 54;
+- pc7: area da disegno 480 x 480, dimensione pedine 58;
+- pc8: area da disegno 510 x 510, dimensione pedine 61;
+- pc9: area da disegno 540 x 540, dimensione pedine 65;
+- pc10: area da disegno 570 x 570, dimensione pedine 70;
+- pc11: area da disegno 600 x 600, dimensione pedine 73;
+- pc12: area da disegno 630 x 630, dimensione pedine 75;
+- pc13: area da disegno 660 x 660, dimensione pedine 80;
+- pc14: area da disegno 690 x 690, dimensione pedine 85;
+- pc15: area da disegno 720 x 720, dimensione pedine 88;
+- pc16: area da disegno 750 x 750, dimensione pedine 92;
+- pc17: area da disegno 780 x 780, dimensione pedine 95;
+- pc18: area da disegno 810 x 810, dimensione pedine 97;
+- pc19: area da disegno 840 x 840, dimensione pedine 99;
+- pc20: area da disegno 870 x 870, dimensione pedine 106;
+- pc21: area da disegno 900 x 900, dimensione pedine 110;
+- pc22: area da disegno 930 x 930, dimensione pedine 114;
+- pc23: area da disegno 960 x 960, dimensione pedine 118;
+- pc24: area da disegno 990 x 990, dimensione pedine 121;
+- pc25: area da disegno 1110 x 1110, dimensione pedine 136;
+- pc26: area da disegno 1140 x 1140, dimensione pedine 140;
+
+![p5.js - Disegno di una scena del gioco "Snake"](/static/coding/web/p5js/colors_and_styles_exe_snake.png "p5.js - Disegno di una scena del gioco 'Snake'")
+
+## Disegno di una scena del gioco "Dama"
+
+Realizzare una scena del gioco "Dama" delle dimensioni indicate di seguito. I colori sono a scelta dell'autore. La scacchiera deve essere di 8 righe ed 8 colonne equamente distribuite e deve riempire completamente l'area da disegno. Il numero minimo di pedine da inserire deve essere 6. Le pedine devono essere centrate all'interno della rispettiva casella e devono avere la circonferenza tangente tutti e quattro i lati della casella.
+
+Dimensioni dell'area da disegno (e della scacchiera):
+
+- pc1: area da disegno 300 x 300;
+- pc2: area da disegno 330 x 330;
+- pc3: area da disegno 360 x 360;
+- pc4: area da disegno 390 x 390;
+- pc5: area da disegno 420 x 420;
+- pc6: area da disegno 450 x 450;
+- pc7: area da disegno 480 x 480;
+- pc8: area da disegno 510 x 510;
+- pc9: area da disegno 540 x 540;
+- pc10: area da disegno 570 x 570;
+- pc11: area da disegno 600 x 600;
+- pc12: area da disegno 630 x 630;
+- pc13: area da disegno 660 x 660;
+- pc14: area da disegno 690 x 690;
+- pc15: area da disegno 720 x 720;
+- pc16: area da disegno 750 x 750;
+- pc17: area da disegno 780 x 780;
+- pc18: area da disegno 810 x 810;
+- pc19: area da disegno 840 x 840;
+- pc20: area da disegno 870 x 870;
+- pc21: area da disegno 900 x 900;
+- pc22: area da disegno 930 x 930;
+- pc23: area da disegno 960 x 960;
+- pc24: area da disegno 990 x 990;
+- pc25: area da disegno 1110 x 1110;
+- pc26: area da disegno 1140 x 1140;
+
+![p5.js - Disegno di una scena del gioco "Dama"](/static/coding/web/p5js/colors_and_styles_exe_dama.png "p5.js - Disegno di una scena del gioco 'Dama'")
+
+## Disegno di una scena del gioco "Tris"
+
+Realizzare una scena del gioco Tris come nell'immagine riportata di seguito. La scacchiera deve essere di 3 righe e 3 colonne equamente distribuite e deve riempire completamente l'area da disegno, con i colori a scelta dell'autore. Tutte le caselle devono essere riempite dalle figure  "X" (due linee)  e "O" (un cerchio). La figura "X" si realizza con 2 linee incrociate che devono iniziare e terminare negli angoli della casella in cui è disegnata. La figura "O" si realizza con un cerchio posto al centro della rispettiva casella e con la circonferenza tangente tutti e quattro i lati della casella in cui è disegnato.
+
+Dimensioni dell'area da disegno (e della scacchiera):
+
+- pc1: area da disegno 300 x 300;
+- pc2: area da disegno 330 x 330;
+- pc3: area da disegno 360 x 360;
+- pc4: area da disegno 390 x 390;
+- pc5: area da disegno 420 x 420;
+- pc6: area da disegno 450 x 450;
+- pc7: area da disegno 480 x 480;
+- pc8: area da disegno 510 x 510;
+- pc9: area da disegno 540 x 540;
+- pc10: area da disegno 570 x 570;
+- pc11: area da disegno 600 x 600;
+- pc12: area da disegno 630 x 630;
+- pc13: area da disegno 660 x 660;
+- pc14: area da disegno 690 x 690;
+- pc15: area da disegno 720 x 720;
+- pc16: area da disegno 750 x 750;
+- pc17: area da disegno 780 x 780;
+- pc18: area da disegno 810 x 810;
+- pc19: area da disegno 840 x 840;
+- pc20: area da disegno 870 x 870;
+- pc21: area da disegno 900 x 900;
+- pc22: area da disegno 930 x 930;
+- pc23: area da disegno 960 x 960;
+- pc24: area da disegno 990 x 990;
+- pc25: area da disegno 1110 x 1110;
+- pc26: area da disegno 1140 x 1140;
+
+![p5.js - Disegno di una scena del gioco "Tris"](/static/coding/web/p5js/colors_and_styles_exe_tris_01.png "p5.js - Disegno di una scena del gioco 'Tris'")
+
+## Disegno di una scena del gioco "Forza 4"
+
+Realizzare una scena del gioco Forza 4 come nell'immagine riportata di seguito. La scacchiera deve essere di 6 righe e 7 colonne equamente distribuite e deve riempire completamente l'area da disegno, con i colori a scelta dell'autore. Il numero minimo di pedine da inserire deve essere 18. Le pedine devono essere centrate all'interno della rispettiva casella e devono avere la circonferenza tangente tutti e quattro i lati della casella.
+
+Dimensioni dell'area da disegno e del diametro di una pedina per ogni computer:
+
+- pc1: area da disegno 300 x 270, dimensione pedine 34;
+- pc2: area da disegno 330 x 295, dimensione pedine 38;
+- pc3: area da disegno 360 x 320, dimensione pedine 42;
+- pc4: area da disegno 390 x 345, dimensione pedine 46;
+- pc5: area da disegno 420 x 370, dimensione pedine 50;
+- pc6: area da disegno 450 x 395, dimensione pedine 54;
+- pc7: area da disegno 480 x 420, dimensione pedine 58;
+- pc8: area da disegno 510 x 445, dimensione pedine 61;
+- pc9: area da disegno 540 x 470, dimensione pedine 65;
+- pc10: area da disegno 570 x 495, dimensione pedine 70;
+- pc11: area da disegno 600 x 520, dimensione pedine 73;
+- pc12: area da disegno 630 x 545, dimensione pedine 75;
+- pc13: area da disegno 660 x 570, dimensione pedine 80;
+- pc14: area da disegno 690 x 595, dimensione pedine 85;
+- pc15: area da disegno 720 x 620, dimensione pedine 88;
+- pc16: area da disegno 750 x 645, dimensione pedine 92;
+- pc17: area da disegno 780 x 670, dimensione pedine 95;
+- pc18: area da disegno 810 x 695, dimensione pedine 97;
+- pc19: area da disegno 840 x 720, dimensione pedine 99;
+- pc20: area da disegno 870 x 745, dimensione pedine 106;
+- pc21: area da disegno 900 x 770, dimensione pedine 110;
+- pc22: area da disegno 930 x 795, dimensione pedine 114;
+- pc23: area da disegno 960 x 820, dimensione pedine 118;
+- pc24: area da disegno 990 x 845, dimensione pedine 121;
+- pc25: area da disegno 1110 x 870, dimensione pedine 136;
+- pc26: area da disegno 1140 x 895, dimensione pedine 140;
+
+![p5.js - Disegno di una scena del gioco "Forza 4"](/static/coding/web/p5js/colors_and_styles_exe_forza4.png "p5.js - Disegno di una scena del gioco 'Forza 4'")
