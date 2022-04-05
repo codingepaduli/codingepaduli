@@ -174,7 +174,7 @@ Dimensioni dell'area da disegno (e della scacchiera):
 - pc25: area da disegno 1110 x 1110;
 - pc26: area da disegno 1140 x 1140;
 
-![p5.js - Disegno di una scena del gioco "Tris"](/static/coding/web/p5js/colors_and_styles_exe_tris_01.png "p5.js - Disegno di una scena del gioco 'Tris'")
+![p5.js - Disegno di una scena del gioco "Tris"](/static/coding/web/p5js/colors_and_styles_exe_tris.png "p5.js - Disegno di una scena del gioco 'Tris'")
 
 ## Disegno di una scena del gioco "Forza 4"
 
