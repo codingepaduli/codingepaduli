@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2021-11-26
-publishdate: 2021-11-26
-lastmod: 2021-11-26
+date: 2022-04-16
+publishdate: 2022-04-16
+lastmod: 2022-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -59,6 +59,9 @@ summary: "Set di link interessanti"
 [When Hubble Stared at Nothing for 100 Hours](https://www.nationalgeographic.com/science/phenomena/2015/04/24/when-hubble-stared-at-nothing-for-100-hours/) - “nothing” was actually stuffed with of galaxies. More than 3,000 of them came spilling out, some roughly 12 billion years old. Spiral, elliptical, irregular...\
 [Physics](https://physics.aps.org/articles/v13/114) - A Lopsided Merger\
 [Electromagnetism is a property of spacetime itself, study finds](https://sciencex.com/news/2021-07-electromagnetism-property-spacetime.html) - \
+[Disambiguating the ‘Observable Universe’ – Sam Enright](https://samenright.com/2022/01/09/disambiguating-the-observable-universe/) - \
+[Thread by @MarkusDeserno on Thread Reader App – Thread Reader App](https://threadreaderapp.com/thread/1482811504424542211.html) - \
+[The Algebra of Grand Unified Theories](https://math.ucr.edu/~huerta/guts/guts.html) - \
 
 ### Math
 
@@ -73,9 +76,12 @@ summary: "Set di link interessanti"
 [Simple wave-optical superpositions as prime number sieves](https://arxiv.org/abs/1812.04203) - \
 [Fourier Transform](https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/) - An Interactive Guide – BetterExplained\
 [Fourier Transform](https://github.com/Jezzamonn/fourier) - An Interactive Introduction\
+[Fourier Cube](https://static.laszlokorte.de/fourier/) - The cuboid demonstrates the relationships between time and frequency domains\
 [Graphtoy](https://graphtoy.com/) - create graph from math formulas\
 [Rotations with quaternions](https://imadr.me/rotations-with-quaternions/) - \
 [The bivector algebra](https://mattferraro.dev/posts/geometric-algebra) - What is the Inverse of a Vector?\
+[Curves and Surfaces – Bartosz Ciechanowski](https://ciechanow.ski/curves-and-surfaces/) - \
+[An Ancient Geometry Problem Falls to New Mathematical Techniques | Quanta Magazine](https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/) - \
 
 ### Medicine
 
@@ -97,6 +103,7 @@ summary: "Set di link interessanti"
 [FuelCellsWorks](https://fuelcellsworks.com/news/photocatalyst-that-can-split-water-into-hydrogen-and-oxygen-at-a-quantum-efficiency-close-to-100/) - Photocatalyst that can Split Water into Hydrogen and oxygen at a Quantum Efficiency Close to 100%\
 [Reversing The Aging Clock With Epigenetic Reprogramming](https://www.bio-itworld.com/news/2021/01/13/reversing-the-aging-clock-with-epigenetic-reprogramming) - \
 [Humans Used to Sleep in Two Shifts, And Maybe We Should Do It Again](https://www.sciencealert.com/humans-used-to-sleep-in-two-shifts-maybe-we-should-again) - \
+[Cardiopatie](https://www.youtube.com/watch?app=desktop&v=GICkFZ68BUE) - Dottor Oppido - Unità operativa complessa di Cardiologia del Monaldi - YouTube\
 
 ### Tech
 
@@ -115,6 +122,7 @@ summary: "Set di link interessanti"
 [leandromoreira/ffmpeg-libav-tutorial FFmpeg libav tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial) - learn how media works from basic to transmuxing, transcoding and more\
 [Color Theory for Web Developers](https://dev.to/codingsafari/color-theory-for-web-developers-2ilk) - DEV Community\
 [How color theories are based ?](https://dev.to/feco2019/do-you-really-understand-how-color-theories-based-ryb-cmyk-and-rgb-models-1pjg) - RYB CMYK and RGB models - DEV Community\
+[Realtime earthquake warning](https://www.theguardian.com/us-news/2021/dec/21/california-earthquake-early-warning-system) - Seconds before a 6.2 earthquake rattled California, phones got a vital warning | California | The Guardian\
 
 ### History
 
@@ -135,3 +143,4 @@ summary: "Set di link interessanti"
 [Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
 [Anarch](https://drummyfish.gitlab.io/anarch/) - an experimental game from 1990. No build system, library, internet connection or package manager is inherently required for compilation as the whole game is written in pure C language\
 [Fire_and_Ice_1993](https://archive.org/details/msdos_Fire_and_Ice_1993) - DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE\
+[PrinceJS](https://princejs.com/) - Prince of Persia\

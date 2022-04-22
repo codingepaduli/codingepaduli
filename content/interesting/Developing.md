@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-01-04
-publishdate: 2022-01-04
-lastmod: 2022-01-04
+date: 2022-04-16
+publishdate: 2022-04-16
+lastmod: 2022-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -47,6 +47,7 @@ summary: "Set di link relativi al coding"
 
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [Waydroid](https://waydro.id/) - a full Android system in a container right to your GNU/Linux desktop\
+[remote-android/redroid-doc](https://github.com/remote-android/redroid-doc) - Android In Container solution about Remote anDroid projects\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
 
@@ -99,6 +100,7 @@ summary: "Set di link relativi al coding"
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
+[Creating Pipeline in Jenkins](https://dev.to/rshiva/creating-pipeline-in-jenkins-1bkd) - DEV Community\
 
 #### Ansible
 
@@ -155,6 +157,9 @@ summary: "Set di link relativi al coding"
 [Predicting sex from retinal fundus photographs using automated deep learning | Scientific Reports](https://www.nature.com/articles/s41598-021-89743-x.epdf?sharing_token=Fe891D30KtzWj086Mix2BtRgN0jAjWel9jnR3ZoTv0MtpAfo4k5SUyr2ANoiCUj48aDnaVS1oiRvWR5Jq3W5vp2Xty3aFDSimt06-04o22tCkZ62X__WtnMTTtit3At8eCD1Y4VRife50LtwBhS8nU--GtD10XpQBfLSJk9Tc1tdTUwF5RuI--pQYDk9R8IJ) - \
 [The Fourier transform is a neural network | sidsite](https://sidsite.com/posts/fourier-nets/) - \
 [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) - 12 weeks, 25 lessons, 50 quizzes, classic Machine Learning for all\
+[Use Mozilla DeepSpeech](https://opensource.com/article/22/1/voice-text-mozilla-deepspeech) - Enable speech to text in your application | Opensource.com\
+[Text To Speech Converter](https://dev.to/valeshgopal/text-to-speech-converter-4i2j) - DEV Community\
+[Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -195,6 +200,9 @@ summary: "Set di link relativi al coding"
 [Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
 [Codeheir](https://codeheir.com/) - All the programming knowledge, in one bloody brilliant site.\
 [Phaser HTML5 Game Framework](https://phaserjs.com/) - \
+[microStudio](https://microstudio.dev/it/) - Impara a programmare, crea giochi\
+[Complete Guide to Building Games in the Browser](https://dev.to/zippcodder/complete-guide-to-building-games-in-the-browser-kp6#chapter-23) - DEV Community\
+[matteobruni/tsparticles: tsParticles](https://github.com/matteobruni/tsparticles#Migrating-from-Particlesjs) - Easily create highly customizable particles animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.\
 
 ### GIT
 
@@ -218,6 +226,7 @@ summary: "Set di link relativi al coding"
 [How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
 [Gitpod](https://www.gitpod.io/) - Always ready to code\
 [New in Git](https://www.banterly.net/2021/07/31/new-in-git-switch-and-restore/) - switch and restore\
+[3 Ways to Backup Your Code](https://dev.to/github/3-ways-to-backup-your-code-even-if-you-dont-know-git-1o5l) - Even If You Don’t Know Git - DEV Community\
 [Using SVN+SSH Protocol | Assembla Help Center](https://articles.assembla.com/en/articles/1137042-using-svn-ssh-protocol) - \
 
 ### Java
@@ -250,6 +259,8 @@ summary: "Set di link relativi al coding"
 [Practice what's new in Java](https://dev.to/jmfayard/practice-what-s-new-in-java-1j09) - DEV Community\
 [Parse command options in Java with commons-cli | Opensource.com](https://opensource.com/article/21/8/java-commons-cli) - \
 [Parsing config files with Java | Opensource.com](https://opensource.com/article/21/7/parsing-config-files-java) - \
+[10 syntax in Java You should know](https://dev.to/luanvu/10-syntax-in-java-you-should-know-1e2h) - DEV Community\
+[Processing IDE and p5.js in Java](https://happycoding.io/tutorials/java/processing-in-java) - Happy Coding\
 
 #### JDBC e JPA
 
@@ -297,19 +308,15 @@ summary: "Set di link relativi al coding"
 
 ### Linux
 
-[The Debian Administrator's Handbook](https://debian-handbook.info/) - \
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [Why Windows uses \r\n newlines instead of \n](https://dev.to/pieter/why-windows-uses-rn-newlines-instead-of-n-126l) - DEV Community\
-[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
 [DistroWatch.com](https://distrowatch.com/) - Put the fun back into computing. Use Linux, BSD.\
 [Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
 [securing a Linux server](https://opensource.com/article/21/4/securing-linux-servers) - 6 open source tools and tips to securing a Linux server for beginners | Opensource.com\
 [KDE Store](https://store.kde.org/) - \
-[Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
-[Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
 [cron](https://opensource.com/article/20/7/systemd-timers) - use systemd timers instead of cronjob | Opensource.com\
@@ -317,11 +324,6 @@ summary: "Set di link relativi al coding"
 [Eyecandy for your XFCE-Desktop](https://www.xfce-look.org/) - xfce-look.org\
 [Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
 [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
-[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
-[The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
-[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
-[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
-[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
 [The script command](https://www.ostechnix.com/record-everything-terminal/) - How To Record Everything You Do In Terminal\
 [critic.sh](https://github.com/Checksum/critic.sh) - Dead simple testing framework for Bash with coverage reporting\
 [viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
@@ -354,6 +356,31 @@ summary: "Set di link relativi al coding"
 [voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
 [GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
 [Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
+[Send desktop notifications and reminders from Linux terminal | Opensource.com](https://opensource.com/article/22/1/linux-desktop-notifications) - \
+[linux commands🐧](https://dev.to/shubh/linux-commands-3pop) - DEV Community\
+[How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - \
+[Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
+[Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
+
+#### Administration
+
+[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
+[The Debian Administrator's Handbook](https://debian-handbook.info/) - \
+[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
+[Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
+[Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
+[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
+[The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
+[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
+[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
+[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
+[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
+[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
+[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
+[My First 5 Minutes On A Server](https://sollove.com/2013/03/03/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/) - Or, Essential Security for Linux Servers – Sol Love\
+[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
+[hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
+[cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -381,6 +408,8 @@ summary: "Set di link relativi al coding"
 [Raspberry Pi: How to control lights at home? (Philips Hue) – RaspberryTips](https://raspberrytips.com/control-lights-raspberry-pi/) - \
 [Synpse platform : setup and control applications across hundreds or thousands of machines from a single place](https://synpse.net/) - \
 [OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
+[PiBox](https://pibox.io/) - a NAS that lets you use a standard operating system\
+[Let's program the Arduino with Javascript🤯](https://dev.to/patik123/lets-program-the-arduino-with-javascript-3doj) - DEV Community\
 
 ### Mozilla Firefox
 
@@ -424,6 +453,9 @@ summary: "Set di link relativi al coding"
 [se2p/pynguin The PYthoN General UnIt Test geNerator is a test-generation tool for Python](https://github.com/se2p/pynguin) - \
 [Learning Python](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - Intermediate course Day 10, Complex numbers part 2 - DEV Community\
 [Pyjion](https://www.trypyjion.com/) - A Python JIT Compiler\
+[Automatically manage Python dependencies with requirements.txt](https://dev.to/voilalex/automatically-manage-python-dependencies-with-requirementstxt-5g11) - DEV Community\
+[py_regular_expressions/interactive_exercises](https://github.com/learnbyexample/py_regular_expressions/tree/master/interactive_exercises) - A GUI app written in tkinter to help you practice Python regular expressions · GitHub\
+[4 line code to download full youtube playlist videos](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - DEV Community\
 
 ### Privacy, Security and Hacking
 
@@ -462,6 +494,7 @@ summary: "Set di link relativi al coding"
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
 [De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
 [Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
+[Locke Email](https://locke.id/#/) - Hide your real email address generating alias of unlimited email addresses  \
 [Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
 [Firefox to add Tor Browser anti-fingerprinting technique called letterboxing](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - \
 [OnionShare](https://www.lffl.org/2019/02/file-sharing-tor-onionshare-2.html) - File Sharing sicuro e criptato con Tor e il Tool OnionShare 2\
@@ -489,17 +522,13 @@ summary: "Set di link relativi al coding"
 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
-[Getting started with Docbook | Opensource.com](https://opensource.com/article/17/9/docbook) - \
 [Writing Technical Papers with Markdown](https://blog.kdheepak.com/writing-papers-with-markdown.html) - \
 [PDF-Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/pandoc-pdf) - \
-[c4s4/sweetohm](https://github.com/c4s4/sweetohm) - Sources of my website\
 [Build and host a website with Git | Opensource.com](https://opensource.com/article/19/4/building-hosting-website-git) - \
 [honkit/honkit](https://github.com/honkit/honkit) - Fork of GitBook for building beautiful books using Markdown\
 [Making an ebook](https://medium.com/@davidgrophland/making-an-ebook-from-markdown-to-kindle-cf224326b1a2) - From Markdown to Kindle - David Grophland - Medium\
 [Reveal.js](https://opensource.com/article/20/4/create-web-tutorial-git) - Create web tutorials with Reveal.js and Git | Opensource.com\
 [PDF.to](https://pdf.to/) - converti pdf in documenti e viceversa\
-[trubitsyn/bookmarks2markdown](https://github.com/trubitsyn/bookmarks2markdown) - Convert bookmarks to Markdown\
-[scraggo/bookmarks-markdown-utils](https://github.com/scraggo/bookmarks-markdown-utils) - Collection of command-line tools for Chrome, OneTab, Evernote, and FireFox bookmark management. The tools are mostly to convert proprietary formats to markdown and organizing and add tags.\
 [Zettlr](https://zettlr.com/) - A Markdown Editor for the 21st Century\
 [robinsloan/perfect-edition](https://github.com/robinsloan/perfect-edition) - A lightweight, responsive web e-book template\
 [Typesetting Markdown](https://dave.autonoma.ca/blog/2019/05/29/typesetting-markdown-part-2/) - Part 2 Tool Review (Dave Jarvis)\
@@ -510,16 +539,15 @@ summary: "Set di link relativi al coding"
 [trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
 [Beautiful PDFs from HTML](https://pdf.math.dev/) - it allow you to create beautifully typeset digital content that can be viewed on any device\
 [https://hexo.press/](https://hexo.press/) - \
+[mermaid-js/mermaid-cli: Command line tool for the Mermaid library](https://github.com/mermaid-js/mermaid-cli) - \
+[Quarto](https://quarto.org/) - an open-source scientific and technical publishing system built on Pandoc\
 
 #### Hugo static site generator
 
 [Chapter 2 Hugo](https://bookdown.org/yihui/blogdown/hugo.html) - blogdown Creating Websites with R Markdown\
-[Markdown to pdf using Hugo and beautiful styling](https://www.martinkaptein.com/blog/hugo-md-to-pdf/) - Martin Kaptein\
 [Hugo Themes](https://themes.gohugo.io/) - \
-[Hugo Page Resources, and how to use them... | Regis Philibert](https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/) - \
 [Laura Kalbag](https://laurakalbag.com/processing-responsive-images-with-hugo/) - Processing Responsive Images with Hugo\
 [Deploy Hugo project to GitHub Pages with GitHub Actions](https://discourse.gohugo.io/t/deploy-hugo-project-to-github-pages-with-github-actions/20725) - tips & tricks - Hugo\
-[How are children menu entries detected?](https://discourse.gohugo.io/t/how-are-children-menu-entries-detected/21484) - support - Hugo\
 [Why my post is a directory and not a file?](https://discourse.gohugo.io/t/why-my-post-is-a-directory-and-not-a-file/21739) - support - Hugo\
 [Is it possible to insert HTML code in Markdown content?](https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/6) - support - HUGO\
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
@@ -547,6 +575,7 @@ summary: "Set di link relativi al coding"
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
 [How to Use jq for Creating and Updating JSON Data](https://spin.atomicobject.com/2021/06/08/jq-creating-updating-json/) - \
+[antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer 🔥\
 
 ### UML, architetture ed ingegneria del software
 
@@ -610,6 +639,7 @@ summary: "Set di link relativi al coding"
 [<dl>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) - The Description List element - HTML: HyperText Markup Language | MDN\
 [Apply instant loading with the PRPL pattern](https://web.dev/apply-instant-loading-with-prpl/) - \
 [htmlgapp](https://www.urlgapp.com/htmlgapp) - Convert HTML & CSS & JS Code to app - generate app\
+[urlgapp](https://www.urlgapp.com/) - Convert website to app - generate app\
 
 ##### WAI and ARIA
 
@@ -655,6 +685,11 @@ summary: "Set di link relativi al coding"
 [Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag](https://web.dev/color-scheme/) - \
 [A simple CSS trick for dark mode | Opensource.com](https://opensource.com/article/21/10/dark-themes-websites) - \
 [How to toggle Dark/Light Mode using JavaScript](https://dev.to/snowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - DEV Community\
+[background changing using CSS animation.](https://dev.to/abhishekrajputweb/background-changing-using-css-animation-51ia) - DEV Community\
+[Light-Dark Mode Toggle Using CSS](https://dev.to/hrushikesh41/light-dark-mode-toggle-using-css-4d06) - DEV Community\
+[CSS tips on Images you need to know](https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1) - DEV Community\
+[A simple CSS trick for dark mode | Opensource.com](https://opensource.com/article/21/10/dark-themes-websites) - \
+[How to toggle Dark/Light Mode using JavaScript](https://dev.to/codewithsnowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - DEV Community\
 
 #### JavaScript
 
@@ -666,7 +701,6 @@ summary: "Set di link relativi al coding"
 [ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
 [JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) - \
 [console.log() Methods](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada?gi=82a8656ab788) - \
-[Advanced console.log Tips & Tricks | by Liad Shiran | Nielsen-Tel-Aviv-tech-blog | Medium](https://medium.com/nmc-techblog/advanced-console-log-tips-tricks-fa3762930bca) - \
 [Math Object in JavaScript](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - DEV Community\
 [date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
 [HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
@@ -674,6 +708,8 @@ summary: "Set di link relativi al coding"
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
 [JavaScript Christmas](https://javascript.christmas/2020) - \
+[How to create a snowfall with Javascript](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - DEV Community\
+[Colorful Rain with JS](https://dev.to/j471n/colorful-rain-with-js-514j) - DEV Community\
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
 [qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
@@ -684,7 +720,6 @@ summary: "Set di link relativi al coding"
 [NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 [SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
-[BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR) - Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai\
 [OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
 [LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
@@ -703,8 +738,17 @@ summary: "Set di link relativi al coding"
 [Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
 [Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
 [Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
-[JavaScript OOP is weird](https://dev.to/josephkabemba/javascript-oop-is-weird-4h9j) - DEV Community\
+[Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [Use Python or JavaScript to Send Your Events and Logs to Telegram via their Chatbot API](https://dev.to/sh4yy/use-python-or-javascript-to-send-your-events-and-logs-to-telegram-via-their-chatbot-api-3243) - DEV Community\
+[jumpjack/greenpass](https://github.com/jumpjack/greenpass) - Pure javascript greenpass QR code decoder in browser\
+[Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
+[rslint/rslint](https://github.com/rslint/rslint) - A (WIP) Extremely fast JavaScript and TypeScript linter and Rust crate\
+[Rapid API Hub](https://rapidapi.com/hub/) - Free Public & Open Rest APIs | RapidAPI\
+
+##### JS Object Oriented
+
+[JavaScript OOP is weird](https://dev.to/josephkabemba/javascript-oop-is-weird-4h9j) - DEV Community\
+[OOPS in JavaScript with easy to understand examples 🔥🔥](https://dev.to/nehal_mahida/oops-in-javascript-with-easy-to-understand-examples-2ppn) - DEV Community\
 
 ##### JS Collection framework
 
@@ -713,6 +757,7 @@ summary: "Set di link relativi al coding"
 [Understanding the array methods Array.some() and Array.every() in JavaScript](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - DEV Community\
 [JavaScript Array Methods](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
 [5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
+[Useful JavaScript Array Methods](https://dev.to/mrdanishsaleem/useful-javascript-array-methods-4370) - DEV Community\
 
 ##### JS Promise and Async Await
 
@@ -736,6 +781,7 @@ summary: "Set di link relativi al coding"
 [Cool APIs you might not know about 😎](https://dev.to/carlosg33558699/cool-apis-you-might-not-know-about-2f3f) - DEV Community\
 [APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding web APIs\
 [Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
+[Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) - Web APIs | MDN\
 
 ##### JS Riot
 
@@ -754,6 +800,7 @@ summary: "Set di link relativi al coding"
 ##### p5JS
 
 [LTC4](https://dev.to/rpalo/ltc4---falling-in-love-with-vectors-182) - Falling in Love with Vectors - DEV Community\
+[ashwins-code/New-Years-Fireworks](https://github.com/ashwins-code/New-Years-Fireworks) - Interactive fireworks with New Year's countdown made with p5.js\
 
 ##### Aurelia
 
@@ -778,6 +825,7 @@ summary: "Set di link relativi al coding"
 [Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
 [Space globe](https://dev.to/jayantgoel001/space-globe-threejs-47ee) - Three.js - DEV Community\
+[schteppe/cannon.js](https://github.com/schteppe/cannon.js) - A lightweight 3D physics engine written in JavaScript you can use with three.js\
 
 ##### HandsFree
 

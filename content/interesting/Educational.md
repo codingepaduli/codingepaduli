@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2021-12-11
-publishdate: 2021-12-11
-lastmod: 2021-12-11
+date: 2022-04-16
+publishdate: 2022-04-16
+lastmod: 2022-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -72,9 +72,14 @@ summary: "Set di link relativi all'istruzione di base"
 
 #### Informatica 1anno
 
-[Tecnologie informatiche per le superiori 1](https://it.wikiversity.org/wiki/Materia:Tecnologie_informatiche_per_le_superiori_1) - Wikiversità\
-[LibrePCB](https://librepcb.org/) - develop your printed circuit board\
 [Come trascrivere le registrazioni in modo automatico e semplice](https://newsmondo.it/come-trascrivere-le-registrazioni-in-modo-automatico-e-semplice/tech/?refresh_ce) - \
+[LibrePCB](https://librepcb.org/) - develop your printed circuit board\
+[BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
+
+##### Hardware
+
+[Tecnologie informatiche per le superiori 1](https://it.wikiversity.org/wiki/Materia:Tecnologie_informatiche_per_le_superiori_1) - Wikiversità\
+[Procedure di assemblaggio delle varie componenti](https://www.youtube.com/watch?v=7QW479E4vxE) - \
 
 ##### Windows
 
@@ -84,6 +89,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Corso completo su Windows 10](https://www.youtube.com/watch?v=mwLXfS3WSAM) - Parte 4 - Come funziona Cortana - YouTube\
 [Corso completo su Windows 10](https://www.youtube.com/watch?v=2ZIDS41A9eA) - Parte 5 - Funzioni di Microsoft Edge - YouTube\
 [Lo Strumento Cattura](https://www.youtube.com/watch?v=MGZ54Kn2KFM&list=PLTZhWSINdiMwHu4z-SzGgsfwplQ3SubMc) - Come Salvare Quello che Vediamo sullo Schermo del PC\
+[Download a Windows 10 21H2 ISO from Microsoft](https://www.bleepingcomputer.com/news/microsoft/how-to-download-a-windows-10-21h2-iso-from-microsoft/) - \
 [This PC Can’t Run Windows 11: It Doesn’t Meet the Minimal System Requirements](https://dev.to/hetmansoftware/this-pc-can-t-run-windows-11-it-doesn-t-meet-the-minimal-system-requirements-4bjh) - DEV Community\
 
 ##### Office
@@ -137,10 +143,10 @@ summary: "Set di link relativi all'istruzione di base"
 
 ##### Professioni Informatiche
 
-[Cosa Fa l'Analista Programmatore? (Mansioni, Competenze, Carriera)](https://www.jobbydoo.it/descrizione-lavoro/analista-programmatore) - \
+[Cosa Fa l'Analista Programmatore](https://www.jobbydoo.it/descrizione-lavoro/analista-programmatore) - (Mansioni, Competenze, Carriera)\
 [Cosa fa l'ingegniere SRE](https://sre.google/) - Site Reliability Engineering - Google\
-[Software architect | Atlante Delle Professioni](https://www.atlantedelleprofessioni.it/professioni/software-architect) - \
-[What makes a great SRE? | Opensource.com](https://opensource.com/article/18/5/what-makes-great-sre) - \
+[Software architect](https://www.atlantedelleprofessioni.it/professioni/software-architect) - Atlante Delle Professioni\
+[What makes a great SRE](https://opensource.com/article/18/5/what-makes-great-sre) - Site Reliability Engineering | Opensource.com\
 
 #### Informatica 3 anno
 
@@ -154,9 +160,11 @@ summary: "Set di link relativi all'istruzione di base"
 [How many registers does an x86-64 CPU have?](https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have) - \
 [PCIe Gen 4 vs. Gen 3 Slots, Speeds](https://www.trentonsystems.com/blog/pcie-gen4-vs-gen3-slots-speeds) - \
 [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) - GitHub Docs\
-[PlayStation Architecture | A Practical Analysis](https://www.copetti.org/writings/consoles/playstation/) - \
+[PlayStation Architecture](https://www.copetti.org/writings/consoles/playstation/) - A Practical Analysis\
 [SSDs](https://databasearchitects.blogspot.com/2021/06/what-every-programmer-should-know-about.html?m=1) - What Every Programmer Should Know About - Database Architects\
 [Voltage, Amps, Resistance and LEDs (Ohm’s Law)](https://blog.demofox.org/2021/06/15/voltage-amps-resistance-and-leds-ohms-law/) - \
+[Upgrading a motherboard’s BIOS/UEFI (the hard way)](https://www.downtowndougbrown.com/2021/12/upgrading-a-motherboards-bios-uefi-the-hard-way/) - \
+[ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
 
 #### Sistemi e reti 4anno
 
@@ -171,11 +179,11 @@ summary: "Set di link relativi all'istruzione di base"
 [CISCO PACKET TRACER 9](https://www.youtube.com/watch?v=rhj-zlrtAdw) - NAT - YouTube\
 [CISCO PACKET TRACER 10](https://www.youtube.com/watch?v=ZaSJoiHppZg) - Protocolli e livelli di rete - YouTube\
 [Creare una rete domestica](https://www.youtube.com/watch?v=7Z0ku4ZUKRI) - Daniele Castelletti | Corso computer AssMaggiolina - YouTube\
-[Understanding Network things: part 1 – L4 / L7 layers](https://dev.to/aurelievache/understanding-network-things-part-1-l4-l7-layers-j47) - DEV Community\
-[Understanding Network things: part 2 – IP address & CIDR](https://dev.to/aurelievache/understanding-network-things-part-2-ip-address-cidr-3d49) - DEV Community\
-[Understanding Network things: part 3 – DNS](https://dev.to/aurelievache/understanding-network-things-part-3-dns-976) - DEV Community\
-[Understanding Network things: part 4 – Unicast, Broadcast, Multicast & Anycast](https://dev.to/aurelievache/understanding-network-things-part-4-unicast-broadcast-multicast-anycast-49li) - DEV Community\
-[Understanding Network things: part 5 – TLS & mTLS](https://dev.to/aurelievache/understanding-network-things-part-5-tls-mtls-554n) - DEV Community\
+[Understanding Network things: part 1](https://dev.to/aurelievache/understanding-network-things-part-1-l4-l7-layers-j47) - L4 / L7 layers - DEV Community\
+[Understanding Network things: part 2](https://dev.to/aurelievache/understanding-network-things-part-2-ip-address-cidr-3d49) - IP address & CIDR - DEV Community\
+[Understanding Network things: part 3](https://dev.to/aurelievache/understanding-network-things-part-3-dns-976) - DNS - DEV Community\
+[Understanding Network things: part 4](https://dev.to/aurelievache/understanding-network-things-part-4-unicast-broadcast-multicast-anycast-49li) - Unicast, Broadcast, Multicast & Anycast - DEV Community\
+[Understanding Network things: part 5](https://dev.to/aurelievache/understanding-network-things-part-5-tls-mtls-554n) - TLS & mTLS - DEV Community\
 [Let's learn about few networking side command in Linux/Unix](https://dev.to/payalsasmal/let-s-learn-about-few-networking-side-command-in-linux-unix-3b7d) - DEV Community\
 
 #### TPSIT 4 anno
@@ -206,12 +214,11 @@ summary: "Set di link relativi all'istruzione di base"
 [Salone Internazionale del Libro di Torino](https://www.salonelibro.it/) - \
 [CyberHighSchools.IT](https://cyberhighschools.it/) - programma di formazione in cybersecurity\
 [Phaser Game Jam](https://phaser-gamejam.web.app/) - \
-[ANPAL Servizi LMS: Login al sito](https://consorzioclara.thesmartschool.it/login/index.php) - \
+[ANPAL Servizi LMS](https://consorzioclara.thesmartschool.it/login/index.php) - Login al sito Phaser Game Jam\
 
 #### Domotica
 
 [Iniziare con la Smarthome](https://www.youtube.com/watch?v=wU1j5Yxhz-Y) - partiamo dallo HUB - YouTube\
 [Frient Energy Monitor](https://www.youtube.com/watch?v=fW0nhnqq0u0) - Misurare i consumi di corrente e automatizzare la smarthome di conseguenza - YouTube\
 [SwitchBot](https://www.youtube.com/watch?v=ZsjfdHQeEjk) - Nuovo sensore di movimento provato i tutti i dettagli! - YouTube\
-[Hue Wall Switch | Philips Hue](https://www.philips-hue.com/it-it/p/hue-wall-switch-module-philips-hue-confezione-da-2/8719514318021) - \
-[Hue Sensore per esterni | Philips Hue](https://www.philips-hue.com/it-it/p/hue-sensore-per-esterni/8719514342262) - \
+[Sonoff mini](https://www.youtube.com/watch?app=desktop&v=8aDaLjKmJ3U) - wall switch, finalmente zigbee - La prova con SmartThings - YouTube\
