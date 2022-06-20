@@ -102,3 +102,14 @@ Dato che la funzione ``arc`` disegna gli archi misurando gli angoli in senso ora
 Utilizzando le funzioni grafiche conosciute e, soprattutto, le variabili ``width`` ed ``height`` messe a disposizione dalla libreria p5.js, disegnare un campo di calcio grande quanto tutta l'area da disegno e con margine dai bordi di 20 punti;
 
 ![p5.js - Esercizio di disegno di un campo di calcio](/static/coding/web/p5js/basics_soccer.png "p5.js - Disegno di un campo di calcio ")
+
+## Disegno della rosa dei venti
+
+Utilizzando le funzioni grafiche conosciute e, le variabili ``width`` ed ``height`` messe a disposizione dalla libreria p5.js, disegnare la rosa dei venti, composta da:
+
+- Un quadrato con una distanza di 40 punti da tutti i bordi dell'area da disegno;
+- Un cerchio inscritto nel quadrato.
+- Le due diagonali del quadrato;
+- Il disegno del diametro del cerchio sia in orizzontale che in verticale.
+
+![p5.js - Esercizio di disegno della rosa dei venti](/static/coding/web/p5js/basics_rosa_venti.png "p5.js - Disegno della rosa dei venti")
