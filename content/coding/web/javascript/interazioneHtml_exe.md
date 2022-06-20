@@ -12,8 +12,12 @@ toc: false
 summary: "Esercizi sull'interazione tra script ed elementi HTML"
 ---
 
-# Esercizio
+# Complemento a uno
 
-Creare un form di inserimento dati contenente 4 campi a scelta multipla, rappresentanti 4 bit (quindi la scelta è tra il valore **0** ed il valore **1**), ed un pulsante per effettuare il calcolo;
+Creare una pagina web che permetta all'utente di effettuare il complemento a uno di un numero binario a quattro bit. La pagina web deve avere:
 
-Al click del pulsante, si deve effettuare il complemento ad 1 dei bit, ovvero tutti i bit si devono negare: i bit con valore **0** devono essere trasformati in bit con valore **1** e viceversa.
+- il titolo “Complemento ad 1 dei bit”;
+- un paragrafo in cui è presente la descrizione dell’operazione di complemento ad 1;
+- un modulo per l'inserimento dati con 4 etichette, 4 campi di input ed il pulsante di calcolo.
+
+Gli unici valori validi che l'utente può inserire sono ``0`` ed ``1``. Al click del pulsante, il programma deve effettuare il complemento ad 1 dei bit, ovvero deve sostituire ogni valore numerico ``1`` con il valore ``0`` e, viceversa, ogni valore numerico ``0`` con il valore ``1``.
