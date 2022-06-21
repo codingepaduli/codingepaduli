@@ -6,329 +6,440 @@ let snakeY = [];
 //il valore -1 indica che la testa non è presente
 let posTestaSnake = -1;
 
+let raggio = 50;
 
 function creaSnake(snakeX, snakeY) {
-
-    //primo step è quello di aggiungere palline allo snake
-    //aggiunta pallina 0 allo snake
+    //posizione prima pallina dello snake
     posTestaSnake = 0;
-    snakeX[0] = 50;
-    snakeY[0] = 400;
+    snakeX[0] = 100;
+    snakeY[0] = 700;
 
-    //aggiunta prima pallina allo snake
+    //posizione seconda pallina dello snake
     posTestaSnake = 1;
-    snakeX[1] = 50 + 50;
-    snakeY[1] = 400;
+    snakeX[1] = 100 + raggio;
+    snakeY[1] = 700;
 
-    //aggiunta seconda pallina allo snake
+    //posizione terza pallina dello snake
     posTestaSnake = 2;
-    snakeX[2] = 50 + 100;
-    snakeY[2] = 400;
+    snakeX[2] = 100 + raggio;
+    snakeY[2] = 700 - raggio;
 
-    //aggiunta terza pallina allo snake
+    //posizione quarta pallina dello snake
     posTestaSnake = 3;
-    snakeX[3] = 50 + 100;
-    snakeY[3] = 400 - 50;
+    snakeX[3] = 100 + raggio * 2;
+    snakeY[3] = 700 - raggio;
 
-    //aggiunta quarta pallina allo snake
+    //posizione quinta pallina dello snake
     posTestaSnake = 4;
-    snakeX[4] = 50 + 100;
-    snakeY[4] = 400 - 100;
+    snakeX[4] = 100 + raggio * 2;
+    snakeY[4] = 700 - raggio * 2;
 
-    //aggiunta quinta pallina allo snake
+    //posizione sesta pallina dello snake
     posTestaSnake = 5;
-    snakeX[5] = 50 + 100;
-    snakeY[5] = 400 - 150;
+    snakeX[5] = 100 + raggio * 2;
+    snakeY[5] = 700 - raggio * 3;
 
-    //aggiunta sesta pallina allo snake
+    //posizione settima pallina dello snake
     posTestaSnake = 6;
-    snakeX[6] = 50 + 50;
-    snakeY[6] = 400 - 150;
+    snakeX[6] = 100 + raggio * 2;
+    snakeY[6] = 700 - raggio * 4;
 
-    //aggiunta settima pallina allo snake
+    //posizione ottava pallina dello snake
     posTestaSnake = 7;
-    snakeX[7] = 50 + 50;
-    snakeY[7] = 400 - 200;
+    snakeX[7] = 100 + raggio * 2;
+    snakeY[7] = 700 - raggio * 5;
 
-    //aggiunta ottava pallina allo snake
+    //posizione nona pallina dello snake
     posTestaSnake = 8;
-    snakeX[8] = 50 + 50;
-    snakeY[8] = 400 - 200;
+    snakeX[8] = 100 + raggio * 3;
+    snakeY[8] = 700 - raggio * 5;
 
-    //aggiunta nona pallina allo snake
+    //posizione decima pallina dello snake
     posTestaSnake = 9;
-    snakeX[9] = 50 + 50;
-    snakeY[9] = 400 - 250;
+    snakeX[9] = 100 + raggio * 4;
+    snakeY[9] = 700 - raggio * 5;
 
-    //aggiunta decima pallina allo snake
+    //posizione undicesima pallina dello snake
     posTestaSnake = 10;
-    snakeX[10] = 50 + 100;
-    snakeY[10] = 400 - 250;
+    snakeX[10] = 100 + raggio * 4;
+    snakeY[10] = 700 - raggio * 6;
 
-    //aggiunta undicesima pallina allo snake
+    //posizione dodicesima pallina dello snake
     posTestaSnake = 11;
-    snakeX[11] = 50 + 150;
-    snakeY[11] = 400 - 250;
+    snakeX[11] = 100 + raggio * 5;
+    snakeY[11] = 700 - raggio * 6;
 
-    //aggiunta dodicesima pallina allo snake
+    //posizione tredicesima pallina dello snake
     posTestaSnake = 12;
-    snakeX[12] = 50 + 200;
-    snakeY[12] = 400 - 250;
+    snakeX[12] = 100 + raggio * 5;
+    snakeY[12] = 700 - raggio * 7;
 
-    //aggiunta tredicesima pallina allo snake
+    //posizione quattordicesima pallina dello snake
     posTestaSnake = 13;
-    snakeX[13] = 50 + 200;
-    snakeY[13] = 400 - 200;
+    snakeX[13] = 100 + raggio * 5;
+    snakeY[13] = 700 - raggio * 8;
 
-    //aggiunta quattordicesima pallina allo snake
+    //posizione quindicesima pallina dello snake
     posTestaSnake = 14;
-    snakeX[14] = 50 + 200;
-    snakeY[14] = 400 - 150;
+    snakeX[14] = 100 + raggio * 4;
+    snakeY[14] = 700 - raggio * 8;
 
-    //aggiunta quindicesima pallina allo snake
+    //posizione sedicesima pallina dello snake
     posTestaSnake = 15;
-    snakeX[15] = 50 + 250;
-    snakeY[15] = 400 - 150;
+    snakeX[15] = 100 + raggio * 3;
+    snakeY[15] = 700 - raggio * 8;
 
-    //aggiunta sedicesima pallina allo snake
+    //posizione diciassettesima pallina dello snake
     posTestaSnake = 16;
-    snakeX[16] = 50 + 300;
-    snakeY[16] = 400 - 150;
+    snakeX[16] = 100 + raggio * 2;
+    snakeY[16] = 700 - raggio * 8;
 
-    //aggiunta diciasettesima pallina allo snake
+    //posizione diciottesima pallina dello snake
     posTestaSnake = 17;
-    snakeX[17] = 50 + 300;
-    snakeY[17] = 400 - 200;
+    snakeX[17] = 100 + raggio * 2;
+    snakeY[17] = 700 - raggio * 9;
 
-    //aggiunta diciottesima pallina allo snake
+    //posizione diciannovesima pallina dello snake
     posTestaSnake = 18;
-    snakeX[18] = 50 + 300;
-    snakeY[18] = 400 - 250;
+    snakeX[18] = 100 + raggio * 2;
+    snakeY[18] = 700 - raggio * 10;
 
-    //aggiunta diciottesima pallina allo snake
+    //posizione ventesima pallina dello snake
     posTestaSnake = 19;
-    snakeX[19] = 50 + 300;
-    snakeY[19] = 400 - 300;
+    snakeX[19] = 100 + raggio * 2;
+    snakeY[19] = 700 - raggio * 11;
 
-    //aggiunta ventesima pallina allo snake
+    //posizione ventunesima pallina dello snake
     posTestaSnake = 20;
-    snakeX[20] = 50 + 350;
-    snakeY[20] = 400 - 300;
+    snakeX[20] = 100 + raggio * 2;
+    snakeY[20] = 700 - raggio * 12;
 
-    //aggiunta ventunesima pallina allo snake
+    //posizione ventiduesima pallina dello snake
     posTestaSnake = 21;
-    snakeX[21] = 50 + 400;
-    snakeY[21] = 400 - 300;
+    snakeX[21] = 100 + raggio * 2;
+    snakeY[21] = 700 - raggio * 13;
 
-    //aggiunta ventiduesima pallina allo snake
+    //posizione ventitreesima pallina dello snake
     posTestaSnake = 22;
-    snakeX[22] = 50 + 450;
-    snakeY[22] = 400 - 300;
+    snakeX[22] = 100 + raggio;
+    snakeY[22] = 700 - raggio * 13;
 
-    //aggiunta ventitreesima pallina allo snake
+    //posizione ventiquattresima pallina dello snake
     posTestaSnake = 23;
-    snakeX[23] = 50 + 500;
-    snakeY[23] = 400 - 300;
+    snakeX[23] = 100;
+    snakeY[23] = 700 - raggio * 13;
 
-    //aggiunta ventiquattresima pallina allo snake
+    //posizione venticinquesima pallina dello snake
     posTestaSnake = 24;
-    snakeX[24] = 50 + 500;
-    snakeY[24] = 400 - 250;
+    snakeX[24] = 100;
+    snakeY[24] = 700 - raggio * 12;
 
-    //aggiunta venticinquesima pallina allo snake
+    //posizione ventiseiesima pallina dello snake
     posTestaSnake = 25;
-    snakeX[25] = 50 + 500;
-    snakeY[25] = 400 - 200;
+    snakeX[25] = 100;
+    snakeY[25] = 700 - raggio * 11;
 
-    //aggiunta ventiseiesima pallina allo snake
+    //posizione ventisettesima pallina dello snake
     posTestaSnake = 26;
-    snakeX[26] = 50 + 500;
-    snakeY[26] = 400 - 150;
+    snakeX[26] = 100;
+    snakeY[26] = 700 - raggio * 10;
 
-    //aggiunta ventisettesima pallina allo snake
+    //posizione ventottesima pallina dello snake
     posTestaSnake = 27;
-    snakeX[27] = 50 + 500;
-    snakeY[27] = 400 - 100;
+    snakeX[27] = 100 - raggio;
+    snakeY[27] = 700 - raggio * 10;
 
-    //aggiunta ventottesima pallina allo snake
+    //posizione ventinovesima pallina dello snake
     posTestaSnake = 28;
-    snakeX[28] = 50 + 500;
-    snakeY[28] = 400 - 50;
+    snakeX[28] = 100 - raggio;
+    snakeY[28] = 700 - raggio * 9;
 
-    //aggiunta ventinovesima pallina allo snake
+    //posizione trentesima pallina dello snake
     posTestaSnake = 29;
-    snakeX[29] = 50 + 450;
-    snakeY[29] = 400 - 50;
+    snakeX[29] = 100 - raggio;
+    snakeY[29] = 700 - raggio * 8;
+
+    //posizione trentunesima pallina dello snake
+    posTestaSnake = 30;
+    snakeX[30] = 100 - raggio;
+    snakeY[30] = 700 - raggio * 7;
+
+    //posizione trentadueesima pallina dello snake
+    posTestaSnake = 31;
+    snakeX[31] = 100;
+    snakeY[31] = 700 - raggio * 7;
+
+    //posizione trentatreesima pallina dello snake
+    posTestaSnake = 32;
+    snakeX[32] = 100;
+    snakeY[32] = 700 - raggio * 6;
+
+    //posizione trentaquattresima pallina dello snake
+    posTestaSnake = 33;
+    snakeX[33] = 100;
+    snakeY[33] = 700 - raggio * 5;
+
+    //posizione trentacinquesima pallina dello snake
+    posTestaSnake = 34;
+    snakeX[34] = 100;
+    snakeY[34] = 700 - raggio * 4;
+
+    //posizione trentaseiesima pallina dello snake
+    posTestaSnake = 35;
+    snakeX[35] = 100;
+    snakeY[35] = 700 - raggio * 3;
+
+    //posizione trentasettesima pallina dello snake
+    posTestaSnake = 36;
+    snakeX[36] = 100 - raggio;
+    snakeY[36] = 700 - raggio * 3;
+
+    //posizione trentottesima pallina dello snake
+    posTestaSnake = 37;
+    snakeX[37] = 100 - raggio * 2;
+    snakeY[37] = 700 - raggio * 3;
+
+    //posizione trentanovesima pallina dello snake
+    posTestaSnake = 38;
+    snakeX[38] = 100 - raggio * 2;
+    snakeY[38] = 700 - raggio * 2;
+
+    //posizione quarantesima pallina dello snake
+    posTestaSnake = 39;
+    snakeX[39] = 100 - raggio * 2;
+    snakeY[39] = 700 - raggio;
+
+    //posizione quarantunesima pallina dello snake
+    posTestaSnake = 40;
+    snakeX[40] = 100 - raggio * 2;
+    snakeY[40] = 700;
+
+    //posizione quarantadueesima pallina dello snake
+    posTestaSnake = 41;
+    snakeX[41] = 100 - raggio * 2;
+    snakeY[41] = 700 + raggio;
+
+    //posizione quarantatreesima pallina dello snake
+    posTestaSnake = 42;
+    snakeX[42] = 100 - raggio * 2;
+    snakeY[42] = 700 + raggio * 2;
+
+    //posizione quarantaquattresima pallina dello snake
+    posTestaSnake = 43;
+    snakeX[43] = 100 - raggio;
+    snakeY[43] = 700 + raggio * 2;
+
+    //posizione quarantaquattresima pallina dello snake
+    posTestaSnake = 43;
+    snakeX[43] = 100 - raggio;
+    snakeY[43] = 700 + raggio * 2;
+
+    //posizione quarantacinquesima pallina dello snake
+    posTestaSnake = 44;
+    snakeX[44] = 100;
+    snakeY[44] = 700 + raggio * 2;
+
+    //posizione quarantaseiesima pallina dello snake
+    posTestaSnake = 45;
+    snakeX[45] = 100;
+    snakeY[45] = 700 + raggio * 3;
+
+    //posizione quarantasettesima pallina dello snake
+    posTestaSnake = 46;
+    snakeX[46] = 100 + raggio;
+    snakeY[46] = 700 + raggio * 3;
+
+    //posizione quarantottesima pallina dello snake
+    posTestaSnake = 47;
+    snakeX[47] = 100 + raggio * 2;
+    snakeY[47] = 700 + raggio * 3;
+
+    //posizione quarantanovesima pallina dello snake
+    posTestaSnake = 48;
+    snakeX[48] = 100 + raggio * 2;
+    snakeY[48] = 700 + raggio * 2;
+
+    //posizione cinquantesima pallina dello snake
+    posTestaSnake = 49;
+    snakeX[49] = 100 + raggio * 2;
+    snakeY[49] = 700 + raggio;
+
+    //posizione cinquantunesima pallina dello snake
+    posTestaSnake = 50;
+    snakeX[50] = 100 + raggio * 2;
+    snakeY[50] = 700;
 
     return posTestaSnake;
 }
 
 function disegnaSnake(snakeX, snakeY) {
 
-    //indice per il ciclo FOR
-    let i1 = 0;
+    //indice per il ciclo for
+    let indice1 = 0;
 
-    //indice per il ciclo WHILE
-    let i2 = 0;
+    //indice per il ciclo while
+    let indice2 = 0;
 
-    //indice per il ciclo DO-WHILE
-    let i3 = 0;
+    //indice per il ciclo do-while
+    let indice3 = 0;
+
+    // contorno cerchi
+    stroke('black');
+    strokeWeight(1);
 
 
-    //ciclo FOR per poter disegnare le prime 5 palline
-
-    //ISTRUZIONI
-    //condizione iniziale : i1=0
-    //condizione finale : i1<=4
-    //condizione di incremento : i1++
-
-    //SINTASSI
-    //utilizzeremo un ciclo FOR = (i1 = 0; i1 <=4; i1++)
-    //in caso questa condizione sia vera, disegneremo, con una funzione circle, un cerchio che avrà come coordinate:
-    //-> snakeX[i1] per le X
-    //-> snakeY[i1] per le Y
-    //-> e infine il diametro
-
-    //COLORE
-    //il colore utilizzato è il ROSSO
-    fill(180, 0, 0);
-
-    for (i1 = 0; i1 <= 4; i1++) {
-        circle(snakeX[i1], snakeY[i1], 50);
+    /********************************************************/
+    // Analisi ciclo for:
+    // condizione iniziale: indice1=0
+    // condizione finale: indice1<=4
+    // istruzione di incremento: indice1=indice1+1
+    // blocco istruzioni: circle(snakeX[indice1], snakeY[indice1], raggio);
+    /********************************************************/
+    // ciclo for
+    fill(255, 0, 0);
+    for (indice1 = 0; indice1 <= 4; indice1 = indice1 + 1) {
+        circle(snakeX[indice1], snakeY[indice1], raggio);
     }
 
 
-    //ciclo WHILE per poter disegnare le successive 5 palline
-
-    //ISTRUZIONI
-    //condizione iniziale : i2=5
-    //condizione finale : i2<=10
-    //condizione di incremento : i2+1
-
-    //SINTASSI
-    //inizialmente inseriremo la nostra condizione iniziale i2=5, per poi inserire
-    //all'interno del while la condizione i2 <= 10
-    //in caso questa condizione sia vera, disegneremo, con una funzione circle, un cerchio con coordinate:
-    //-> snakeX[i2] per le X
-    //-> snakeY[i2] per le Y
-    //-> il diametro
-    //e infine inseriremo l'incremento i2++
-
-    //COLORE
-    //il colore utilizzato è il VERDE
-    fill(0, 180, 0);
-
-    i2 = 5;
-    while (i2 <= 10) {
-        circle(snakeX[i2], snakeY[i2], 50);
-        i2++;
+    /********************************************************/
+    // Analisi ciclo while:
+    // condizione iniziale: indice2=5
+    // condizione finale: indice2<=9
+    // istruzione di incremento: indice2=indice2+1
+    // blocco istruzioni: circle(snakeX[indice2], snakeY[indice2], raggio);
+    /********************************************************/
+    // ciclo while
+    indice2 = 5;
+    fill(0, 255, 0);
+    while (indice2 <= 9) {
+        circle(snakeX[indice2], snakeY[indice2], raggio);
+        indice2 = indice2 + 1;
     }
 
 
-    //ciclo DO-WHILE per poter disegnare le successive 5 palline
-
-    //ISTRUZIONI
-    //condizione iniziale : i3=11
-    //condizione finale : i3<=15
-    //condizione di incremento : i3+1
-
-    //SINTASSI
-    //inizialmente inseriremo la condizione iniziale i3 = 11
-    //poi all'interno del DO inseriremo le istruzioni per disegnare le successive 5 palline
-    //all'interno della funzione circle inseriremo:
-    //-> snakeX[i3] per le X
-    //-> snakeY[i3] per le Y
-    //-> il diametro
-    //e infine inseriremo l'incremento i2++
-    //Nel while, inseriremo la condizione finale i3 <= 15
-
-    //COLORE
-    //il colore utilizzato è il BLUE
-    fill(0, 0, 180);
-
-    i3 = 11;
+    /********************************************************/
+    // Analisi ciclo do-while:
+    // condizione iniziale: indice3=10
+    // condizione finale: indice3<=14
+    // istruzione di incremento: indice3=indice3+1
+    // blocco istruzioni: circle(snakeX[indice3], snakeY[indice3], raggio);
+    /********************************************************/
+    // ciclo do-while
+    indice3 = 10;
+    fill(0, 0, 255);
     do {
-        circle(snakeX[i3], snakeY[i3], 50);
-        i3++;
-    } while (i3 <= 15);
+        circle(snakeX[indice3], snakeY[indice3], raggio);
+        indice3 = indice3 + 1;
+    } while (indice3 <= 14);
 
 
-    //ciclo FOR per poter disegnare le successiva 5 palline
-
-    //ISTRUZIONI
-    //condizione iniziale : i1=16
-    //condizione finale : i1<=20
-    //condizione di incremento : i1++
-
-    //SINTASSI
-    //utilizzeremo un ciclo FOR = (i1 = 16; i1 <=20; i1++)
-    //in caso questa condizione sia vera, disegneremo, con una funzione circle, un cerchio che avrà come coordinate:
-    //-> snakeX[i1] per le X
-    //-> snakeY[i1] per le Y
-    //-> e infine il diametro
-
-    //COLORE
-    //il colore utilizzato è il ROSSO
-    fill(180, 0, 0);
-
-    for (i1 = 16; i1 <= 20; i1++) {
-        circle(snakeX[i1], snakeY[i1], 50);
+    /********************************************************/
+    // Analisi ciclo for:
+    // condizione iniziale: indice1=15
+    // condizione finale: indice1<=19
+    // istruzione di incremento: indice1=indice1+1
+    // blocco istruzioni: circle(snakeX[indice1], snakeY[indice1], raggio);
+    /********************************************************/
+    // ciclo for
+    fill(255, 0, 0);
+    for (indice1 = 15; indice1 <= 19; indice1 = indice1 + 1) {
+        circle(snakeX[indice1], snakeY[indice1], raggio);
     }
 
 
-    //ciclo WHILE per poter disegnare le successive 5 palline
-
-    //ISTRUZIONI
-    //condizione iniziale : i2=21
-    //condizione finale : i2<=25
-    //condizione di incremento : i2+1
-
-    //SINTASSI
-    //inizialmente inseriremo la nostra condizione iniziale i2=21, per poi inserire
-    //all'interno del while la condizione i2 <= 25
-    //in caso questa condizione sia vera, disegneremo, con una funzione circle, un cerchio con coordinate:
-    //-> snakeX[i2] per le X
-    //-> snakeY[i2] per le Y
-    //-> il diametro
-    //e infine inseriremo l'incremento i2++
-
-    //COLORE
-    //il colore utilizzato è il VERDE
-    fill(0, 180, 0);
-
-    i2 = 21;
-    while (i2 <= 25) {
-        circle(snakeX[i2], snakeY[i2], 50);
-        i2++;
+    /********************************************************/
+    // Analisi ciclo while:
+    // condizione iniziale: indice2=20
+    // condizione finale: indice2<=24
+    // istruzione di incremento: indice2=indice2+1
+    // blocco istruzioni: circle(snakeX[indice2], snakeY[indice2], raggio);
+    /********************************************************/
+    // ciclo while
+    indice2 = 20;
+    fill(0, 255, 0);
+    while (indice2 <= 24) {
+        circle(snakeX[indice2], snakeY[indice2], raggio);
+        indice2 = indice2 + 1;
     }
 
 
-    //ciclo DO-WHILE per poter disegnare le successive 5 palline
-
-    //ISTRUZIONI
-    //condizione iniziale : i3=26
-    //condizione finale : i3<=30
-    //condizione di incremento : i3+1
-
-    //SINTASSI
-    //inizialmente inseriremo la condizione iniziale i3 = 26
-    //poi all'interno del DO inseriremo le istruzioni per disegnare le successive 5 palline
-    //all'interno della funzione circle inseriremo:
-    //-> snakeX[i3] per le X
-    //-> snakeY[i3] per le Y
-    //-> il diametro
-    //e infine inseriremo l'incremento i2++
-    //Nel while, inseriremo la condizione finale i3 <= 30
-
-    //COLORE
-    //il colore utilizzato è il BLUE
-    fill(0, 0, 180);
-
-    i3 = 26;
+    /********************************************************/
+    // Analisi ciclo do-while:
+    // condizione iniziale: indice3=25
+    // condizione finale: indice3<=29
+    // istruzione di incremento: indice3=indice3+1
+    // blocco istruzioni: circle(snakeX[indice3], snakeY[indice3], raggio);
+    /********************************************************/
+    // ciclo do-while
+    indice3 = 25;
+    fill(0, 0, 255);
     do {
-        circle(snakeX[i3], snakeY[i3], 50);
-        i3++;
-    } while (i3 <= snakeX.length);
+        circle(snakeX[indice3], snakeY[indice3], raggio);
+        indice3 = indice3 + 1;
+    } while (indice3 <= 29);
+
+
+    /********************************************************/
+    // Analisi ciclo for:
+    // condizione iniziale: indice1=30
+    // condizione finale: indice1<=34
+    // istruzione di incremento: indice1=indice1+1
+    // blocco istruzioni: circle(snakeX[indice1], snakeY[indice1], raggio);
+    /********************************************************/
+    // ciclo for
+    fill(255, 0, 0);
+    for (indice1 = 30; indice1 <= 34; indice1 = indice1 + 1) {
+        circle(snakeX[indice1], snakeY[indice1], raggio);
+    }
+
+
+    /********************************************************/
+    // Analisi ciclo while:
+    // condizione iniziale: indice2=35
+    // condizione finale: indice2<=39
+    // istruzione di incremento: indice2=indice2+1
+    // blocco istruzioni: circle(snakeX[indice2], snakeY[indice2], raggio);
+    /********************************************************/
+    // ciclo while
+    indice2 = 35;
+    fill(0, 255, 0);
+    while (indice2 <= 39) {
+        circle(snakeX[indice2], snakeY[indice2], raggio);
+        indice2 = indice2 + 1;
+    }
+
+
+    /********************************************************/
+    // Analisi ciclo do-while:
+    // condizione iniziale: indice3=40
+    // condizione finale: indice3<=44
+    // istruzione di incremento: indice3=indice3+1
+    // blocco istruzioni: circle(snakeX[indice3], snakeY[indice3], raggio);
+    /********************************************************/
+    // ciclo do-while
+    indice3 = 40;
+    fill(0, 0, 255);
+    do {
+        circle(snakeX[indice3], snakeY[indice3], raggio);
+        indice3 = indice3 + 1;
+    } while (indice3 <= 44);
+
+
+    /********************************************************/
+    // Analisi ciclo for:
+    // condizione iniziale: indice1=45
+    // condizione finale: indice1<=50
+    // istruzione di incremento: indice1=indice1+1
+    // blocco istruzioni: circle(snakeX[indice1], snakeY[indice1], raggio);
+    // la condizione finale è 50 e non 49 perché ho disegnato 6 palline e non 5
+    /********************************************************/
+    // ciclo for
+    fill(0, 255, 0);
+    for (indice1 = 45; indice1 < snakeX.length; indice1 = indice1 + 1) {
+        circle(snakeX[indice1], snakeY[indice1], raggio);
+    }
+    noStroke();
 }
 
 /**
@@ -365,24 +476,24 @@ function scegliTasto(snakeX, snakeY, tasto) {
         case "ArrowUp":
             //aggiunta testa dello snake
             snakeX[snakeX.length] = snakeX[snakeX.length - 1];
-            snakeY[snakeY.length] = snakeY[snakeY.length - 1] - 50;
+            snakeY[snakeY.length] = snakeY[snakeY.length - 1] - raggio;
             break;
 
         case "ArrowDown":
             //aggiunta testa dello snake
             snakeX[snakeX.length] = snakeX[snakeX.length - 1];
-            snakeY[snakeY.length] = snakeY[snakeY.length - 1] + 50;
+            snakeY[snakeY.length] = snakeY[snakeY.length - 1] + raggio;
             break;
 
         case "ArrowRight":
             //aggiunta testa dello snake
-            snakeX[snakeX.length] = snakeX[snakeX.length - 1] + 50;
+            snakeX[snakeX.length] = snakeX[snakeX.length - 1] + raggio;
             snakeY[snakeY.length] = snakeY[snakeY.length - 1];
             break;
 
         case "ArrowLeft":
             //aggiunta testa dello snake
-            snakeX[snakeX.length] = snakeX[snakeX.length - 1] - 50;
+            snakeX[snakeX.length] = snakeX[snakeX.length - 1] - raggio;
             snakeY[snakeY.length] = snakeY[snakeY.length - 1];
             break;
 
@@ -404,7 +515,7 @@ let tastoCorrente = '';
 let end = false;
 
 //posizione mela
-let melaX = 100;
+let melaX = 150;
 let melaY = 400;
 
 //max posizioni
