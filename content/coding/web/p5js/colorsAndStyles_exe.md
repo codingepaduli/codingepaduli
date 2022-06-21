@@ -71,6 +71,12 @@ Creare una pagina web contenente un disegno a piacere di un'astronave con 4 ali 
 
 ![p5.js - Disegno di un robot a colori](/static/coding/web/p5js/colors_and_styles_exe_astronavi.png "p5.js - Disegno di un'astronave a colori")
 
+## Disegno di un aereo a colori
+
+Creare una pagina web contenente un disegno a piacere di un aereo con 2 ali anteriori armate di missili, una coda con 2 ali posteriori, la testa con l'oblò del pilota ed un contorno di nuvole. La dimensione massima dell'aereo deve essere 150 per 150 punti. L'astronave deve essere simmetrica rispetto al proprio asse verticale o orizzontale, i colori dei vari componenti sono a scelta dell'autore.
+
+![p5.js - Disegno di un aereo a colori](/static/coding/web/p5js/colors_and_styles_exe_aerei.png "p5.js - Disegno di un aereo a colori")
+
 ## Disegno di una scena del gioco "Snake"
 
 Realizzare una scena del gioco Snake delle dimensioni indicate di seguito. La forma che il serpente "Snake" deve assumere è a scelta dell'autore, deve essere però composta da almeno 16 pedine che devono essere perfettamente tangenti (cioè non devono sovrapporsi e non devono essere separate da uno spazio vuoto).
