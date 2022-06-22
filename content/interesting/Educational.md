@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2022-04-16
-publishdate: 2022-04-16
-lastmod: 2022-04-16
+date: 2022-06-21
+publishdate: 2022-06-21
+lastmod: 2022-06-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -165,6 +165,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Voltage, Amps, Resistance and LEDs (Ohm’s Law)](https://blog.demofox.org/2021/06/15/voltage-amps-resistance-and-leds-ohms-law/) - \
 [Upgrading a motherboard’s BIOS/UEFI (the hard way)](https://www.downtowndougbrown.com/2021/12/upgrading-a-motherboards-bios-uefi-the-hard-way/) - \
 [ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
+[Come creare più partizioni in un hard disk](https://www.youtube.com/watch?v=t5Zr19mson0) - YouTube\
 
 #### Sistemi e reti 4anno
 

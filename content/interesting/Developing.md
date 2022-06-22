@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-04-16
-publishdate: 2022-04-16
-lastmod: 2022-04-16
+date: 2022-06-21
+publishdate: 2022-06-21
+lastmod: 2022-06-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -456,6 +456,7 @@ summary: "Set di link relativi al coding"
 [Automatically manage Python dependencies with requirements.txt](https://dev.to/voilalex/automatically-manage-python-dependencies-with-requirementstxt-5g11) - DEV Community\
 [py_regular_expressions/interactive_exercises](https://github.com/learnbyexample/py_regular_expressions/tree/master/interactive_exercises) - A GUI app written in tkinter to help you practice Python regular expressions · GitHub\
 [4 line code to download full youtube playlist videos](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - DEV Community\
+[annotated-types/annotated-types: Reusable constraint types to use with typing.Annotated](https://github.com/annotated-types/annotated-types) - \
 
 ### Privacy, Security and Hacking
 
