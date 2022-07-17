@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2022-06-21
-publishdate: 2022-06-21
-lastmod: 2022-06-21
+date: 2022-07-16
+publishdate: 2022-07-16
+lastmod: 2022-07-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -69,6 +69,8 @@ summary: "Set di link relativi all'istruzione di base"
 [Privacy e GDPR](https://www.youtube.com/watch?v=ZlcMTtwBeec) - Nuovo Regolamento Europeo sui dati personali - YouTube\
 [GDPR & PRIVACY NEL 2021](https://www.youtube.com/watch?v=PKgdhaWZ_80) - COSA DEVI SAPERE - YouTube\
 [Advanced Data Protection Control (ADPC)](https://www.dataprotectioncontrol.org/spec/) - \
+[La forma della voce](https://www.locchiodelcineasta.com/la-forma-della-voce-2016/#Trama_de_La_forma_della_voce) - recensione di un anime su bullismo, depressione, amicizia e perdono\
+[Colorful](https://www.mangaforever.net/7266256989/colorful-lanime-sul-suicidio-giovanile-in-home-video-con-anime-factory) - recensione di un anime su bullismo e suicidio giovanile premiato con medaglia d’onore dal governo giapponese\
 
 #### Informatica 1anno
 
