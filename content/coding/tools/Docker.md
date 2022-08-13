@@ -80,6 +80,18 @@ docker container unpause httpd-container
 docker container rm      httpd-container
 ```
 
+Per poter visualizzare i container creati e la relativa immagine, si usa il comando:
+
+```bash
+docker container ls -a
+```
+
+**TIPS**: Il comando per rimuovere tutti i container in stato "exit" (-q stampa solo un ID del container):
+
+```bash
+docker rm $(docker container ls --size -a --filter  "status=exited" -q)
+```
+
 Per poter ispezionare un container, guardando i processi in esecuzione, la configurazione e le statistiche in tempo reale, si usano i comandi:
 
 ```bash
@@ -88,7 +100,7 @@ docker container inspect httpd-container
 docker container stats   httpd-container
 ```
 
-Su un container in esecuzione, è possibile eseguire uno specifico comando nel container con il comando:
+Il comando ``docker container exec`` permette di eseguire uno specifico comando all'interno di un container gia esistente. Ad esempio per eseguire il comando ``pwd``:
 
 ```bash
 docker container exec httpd-container pwd
@@ -96,23 +108,19 @@ docker container exec httpd-container pwd
 
 Le opzioni più utilizzate del comando ``run`` sono le seguenti
 
-- ``--name "name"`` to set a name for the container
-- ``-t`` to allocate a pseudo-tty to the process (useful for colored output);
-- ``-i`` to read from STDIN or use pipe (useful for cli);
-- ``--rm`` to remove the container when it exits;
-- ``-d`` for running the container in detached mode (as a deamon);
-- ``-p "port:containerPort"`` to publish a port via docker;
-- ``-v "volume:containerPath"`` to mount config directory volume into the container path (deprecated, use -m);
-- ``--mount "type=bind,source=sourcePath,target=targetPath"`` to mount config directory volume into the container path (new, use --mount, NOT -v);
-- ``-u $(id -u):$(id -g)`` run the container with a non-root user
-- ``-e VARIABLE=VALUE`` to add an environment variable with a value
-- ``--restart "policy";`` to control whether your containers start automatically when they exit, or when Docker restarts. Allowed values for policy: ``no`` (never), ``on-failure`` (exit code > 0), ``unless-stopped`` (not manually stopped), ``always``;
-
-**TIPS**: Il comando per rimuovere tutti i container in stato "exit" (-q stampa solo un ID del container):
-
-```bash
-docker rm $(docker container ls --size -a --filter  "status=exited" -q)
-```
+- ``--name "name"`` imposta il nome del container;
+- ``-t`` alloca uno pseudo-terminale al processo (utile per l'output colorato);
+- ``-i`` per leggere dallo standard input o usare pipe;
+- ``--rm`` per cancellare il container al termine dell'esecuzione;
+- ``-d`` esegue il container in "detached mode" (come demone);
+- ``-p "port:containerPort"`` associa una porta locale ad una del container;
+- ``-v "volume:containerPath"`` monta una directory (chiamata volume) all'interno del container (deprecata, usa l'opzione ``-m``);
+- ``--mount "type=bind,source=sourcePath,target=targetPath"`` monta una directory (chiamata volume) all'interno del container (new, use ``--mount``, NOT ``-v``);
+- ``-w "workingDir"`` indica la directory di lavoro;
+- ``-u $(id -u):$(id -g)`` esegue il container come utente non-root, con i permessi dell'utente e del gruppo indicati;
+- ``-e VARIABLE=VALUE`` crea nel container una variabile d'ambiente con uno specifico valore;
+- ``--entrypoint path/to/run`` indica il comando da eseguire quando si avvia il container. Si può specificare un valore vuoto ``""`` per sovrascrivere il valore predefinito;
+- ``--restart "policy";`` controla se il container deve avviarsi automaticamente all'uscita (exit) o quando Docker viene restartato. Valori validi per la policy sono: ``no`` (never), ``on-failure`` (exit code > 0), ``unless-stopped`` (not manually stopped), ``always``;
 
 ## Docker volume CLI
 
