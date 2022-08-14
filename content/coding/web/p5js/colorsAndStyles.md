@@ -67,7 +67,7 @@ E' un modello additivo perché quando questi tre colori primari sono miscelati i
 
 Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
 
-![p5.js - Modello di colori RGB](https://p5js.org/assets/learn/color/rgb.jpg "p5.js - Modello di colori RGB")
+![p5.js - Modello di colori RGB](/static/coding/web/p5js/colors_and_styles_rgb.png "p5.js - Modello di colori RGB")
 
 Su questo modello di colori è basato un modello computerizzato, chiamato appunto modello RGB. In questo modello computerizzato, la quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
@@ -99,7 +99,7 @@ Il colore magenta è il colore complementare al verde, ovvero il colore che si o
 
 Il colore giallo è il colore complementare al viola, ovvero il colore che si ottiene sottraendo il colore viola dalla luce bianca.
 
-![p5.js - Modello di colori CMYK](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/CMYK_subtractive_color_mixing.svg/300px-CMYK_subtractive_color_mixing.svg.png "p5.js - Modello di colori CMYK")
+![p5.js - Modello di colori CMYK](/static/coding/web/p5js/colors_and_styles_cymk.png "p5.js - Modello di colori CMYK")
 
 Dato che miscelando ciano, magenta e giallo si ottiene un colore molto scuro (il modello è sottrattivo), ma non un vero e proprio nero, in questo modello si è aggiunto il colore nero per completare lo spettro di colori visibili.
 
