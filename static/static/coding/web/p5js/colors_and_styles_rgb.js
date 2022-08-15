@@ -19,7 +19,6 @@ function draw() {
   fill(0, 0, 255);
   circle(200, 200, 200);
 
-  // FIXME: can't save in PNG when blending mode is SCREEN 
   saveCanvas(canvas, 'colors_and_styles_rgb', 'png');
   noLoop();
 }
