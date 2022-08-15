@@ -111,7 +111,7 @@ In p5.js non esiste un modello computerizzato che ci permette di usare il modell
 
 Il modello Hue-Saturation-Brightness è un modello computerizzato, non basato su concetti fisici ma su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
 
-![p5.js - Modello di colori HSB](https://p5js.org/assets/learn/color/hsb.png "p5.js - Modello di colori HSB")
+![p5.js - Modello di colori HSB](/static/coding/web/p5js/colors_and_styles_hsb.png "p5.js - Modello di colori HSB")
 
 L'angolo definisce la tonalità del colore, detta anche tinta. Quindi troviamo la tonalità rossa a 0 gradi, la tonalità verde a 120 gradi e la tonalità blu a 240 gradi, e nel mezzo tutte le altre sfumature di tonalità di colori.
 
@@ -119,7 +119,7 @@ La saturazione indica quanto forte o, al contrario, pallida si vuole la tonalit�
 
 La brillantezza indica quanto luminosa si vuole la tonalità di colore.
 
-Ogni colore è, quindi, definito come una combinazione delle tre componenti elencate. Il valore applicabile per ogni componente va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**h**, **s**, **b**), in cui **h** è il valore che esprime la tonalità, **s** è il valore che indica la saturazione e **b** è il valore che definisce la brillantezza.
+Ogni colore è, quindi, definito come una combinazione delle tre componenti elencate. Il valore applicabile per la tonalità va da 0 (zero) a 360, mentre per saturazione e brillantezza vanno da da 0 (zero) a 100, quindi un colore lo si può esprimere come una terna di quantità (**h**, **s**, **b**), in cui **h** è il valore che esprime la tonalità, **s** è il valore che indica la saturazione e **b** è il valore che definisce la brillantezza.
 
 Come ci si può aspettare, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
 
