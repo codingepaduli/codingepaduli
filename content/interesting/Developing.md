@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-08-06
-publishdate: 2022-08-06
-lastmod: 2022-08-06
+date: 2022-08-15
+publishdate: 2022-08-15
+lastmod: 2022-08-15
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -409,7 +409,6 @@ summary: "Set di link relativi al coding"
 [Synpse platform : setup and control applications across hundreds or thousands of machines from a single place](https://synpse.net/) - \
 [OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 [PiBox](https://pibox.io/) - a NAS that lets you use a standard operating system\
-[Let's program the Arduino with Javascript🤯](https://dev.to/patik123/lets-program-the-arduino-with-javascript-3doj) - DEV Community\
 
 ### Mozilla Firefox
 
@@ -555,6 +554,7 @@ summary: "Set di link relativi al coding"
 [Remarkbox](https://www.remarkbox.com/) - Hosted Comments Service\
 [Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
 [site.Params.mainSections](https://gohugo.io/functions/where/#mainsections) - To list the most relevant pages on the front page | Hugo\
+[razonyang/hugo-theme-bootstrap: A fast, responsive, multipurpose and feature-rich Hugo theme.](https://github.com/razonyang/hugo-theme-bootstrap) - \
 
 #### Pandoc
 
@@ -709,7 +709,7 @@ summary: "Set di link relativi al coding"
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
 [JavaScript Christmas](https://javascript.christmas/2020) - \
-[How to create a snowfall with Javascript](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - DEV Community\
+[How to create a snowfall with JavaScript](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - DEV Community\
 [Colorful Rain with JS](https://dev.to/j471n/colorful-rain-with-js-514j) - DEV Community\
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
@@ -741,7 +741,7 @@ summary: "Set di link relativi al coding"
 [Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [Use Python or JavaScript to Send Your Events and Logs to Telegram via their Chatbot API](https://dev.to/sh4yy/use-python-or-javascript-to-send-your-events-and-logs-to-telegram-via-their-chatbot-api-3243) - DEV Community\
-[jumpjack/greenpass](https://github.com/jumpjack/greenpass) - Pure javascript greenpass QR code decoder in browser\
+[jumpjack/greenpass](https://github.com/jumpjack/greenpass) - Pure JavaScript greenpass QR code decoder in browser\
 [Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
 [rslint/rslint](https://github.com/rslint/rslint) - A (WIP) Extremely fast JavaScript and TypeScript linter and Rust crate\
 [Rapid API Hub](https://rapidapi.com/hub/) - Free Public & Open Rest APIs | RapidAPI\
