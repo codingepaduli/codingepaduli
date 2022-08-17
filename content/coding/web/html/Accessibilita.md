@@ -54,9 +54,9 @@ Numerose tecnologie assistive vanno a supporto dell'utente consentendogli di uti
 - i lettori dello schermo (screen-reader), che permettono ad un utente con disabilità visive di navigare tra i contenuti dell'applicazione e della pagina web, leggendoli ad alta voce. Tra gli screen reader ricordiamo [NonVisual Desktop Access (NVDA)](https://www.nvaccess.org/) e [Job Access With Speech (JAWS)](https://www.freedomscientific.com/products/software/jaws/) per Windows, [Orca](https://help.gnome.org/users/orca/stable/index.html.en#getting_started) per Linux, TalkBack per Android, VoiceOver per Mac e iOS;
 - lenti di ingrandimento: permettono di ingrandire di una determinata percentuale una porzione dello schermo, in modo da favorire la visione dei contenuti;
 - i sistemi di riconoscimento ottico dei caratteri (OCR): permettono la conversione in digitale o la lettura ad alta voce del testo scritto su un foglio di carta;
-- sistemi di dettatura, di trascrizione del parlato ed assistenti vocali: permettono la notifica degli eventi, l'ascolto o la dettatura del testo per mezzo della voce e la trascrizione di messaggi vocali in testo;
+- sistemi di dettatura (o trascrizione del parlato) ed assistenti vocali: permettono l'interazione attraverso la voce, in particolare per l'ascolto e la dettatura del testo (o per la trascrizione di messaggi vocali);
 - sistemi di amplificazione dei suoni (anche auricolari): permettono di amplificare i suoni per facilitare l'ascolto;
-- tastiere con caratteri ingranditi o tastiere tattili: hanno tasti con caratteri stampati ad una dimensione maggiore o con sporgenze che permettono di capire su quale tasto si è poggiati, inoltre hanno tasti aggiuntivi per aumentare il numero di funzionalità disponibili;
+- tastiere con caratteri ingranditi o tastiere tattili: hanno tasti con caratteri stampati ad una dimensione maggiore o con lettere in rilievo che permettono di capire su quale tasto si è poggiati, inoltre hanno tasti aggiuntivi per aumentare il numero di funzionalità disponibili;
 - sistemi di puntamento: sono un alternativa al mouse e permettono di utilizzare gli occhi, la testa o il corpo per muovere il puntatore del mouse;
 
 ## Accessibilità
@@ -93,7 +93,7 @@ Per ogni principio sono descritte delle linee guida che forniscono avvisi più s
 - "fornire una descrizione alternativa per ogni contenuto non testuale";
 - "permettere la presentazione di contenuti in diversi modi (ad esempio layout più semplice) senza perdere informazioni o struttura (consentendo qualsiasi orientamento o risoluzione del dispositivo);
 - "Rendi più facile per gli utenti vedere e ascoltare i contenuti, inclusa la distinzione del primo piano dallo sfondo. Evita l'uso di un solo colore o dei colori a basso contrasto per testo, informazioni ed elementi dell'interfaccia utente";
-- "rendere più facile per gli utenti utilizzare la funzionalità attraverso vari input oltre la tastiera (si pensi agli input vocali o tramite tastiere braille)";
+- "rendere più facile per gli utenti utilizzare la funzionalità attraverso vari dispositivi di input oltre la tastiera (si pensi agli input vocali o tramite tastiere braille)";
 
 <!--
 
@@ -203,9 +203,35 @@ Di seguito si riportano alcuni criteri di successo:
 - "L'elemento audio o video evita la riproduzione automatica dell'audio (video muto) (Level A)";
 - "L'elemento scorrevole è accessibile da tastiera (Level AAA)".
 
-<!-- TODO 
-
 ## WAI-ARIA
+
+La WAI fornisce le linee guida conosciute come "Accessible Rich Internet Applications" (ARIA), che definiscono le informazioni semantiche da inserire nelle etichette degli ipertesti, in particolare nelle pagine HTML e negli elementi SVG, al fine di poter essere accessibili attraverso tecnologie assistive.
+
+Per informazioni semantiche si intendono quelle che indicano il ruolo di una determinata etichetta, lo stato o le relazioni con le altre etichette. Ad esempio un menu di navigazione può essere strutturato come una lista a due o tre livelli, ed una determinata voce può essere visibile all'utente, mentre le altre no. Queste informazioni possono essere molto utili per indirizzare il "comportamento" delle tecnologie assistive, ma non è possibile fornirle utilizzando il solo codice HTML. Le linee guida vanno proprio a standardizzare queste informazioni e a definire in che modo devono essere inserite nel codice HTML.
+
+Tra i ruoli che possiamo indicare, troviamo "menubar" (barra dei menu), "menu", "menuitem" (voce del menù), "search" (una sezione per la ricerca, filtri compresi) , "tree" (struttura ad albero), "treeitem" (voce della struttura ad albero), "tab" (schede), "banner" e tanti altri. Quasi tutti questi ruoli si possono applicare alle sezioni della pagina web che non è possibile descrivere attraverso una etichetta del linguaggio HTML.
+
+Stati e proprieta definiscono invece gli attributi di un determinato ruolo. Ad esempio un menù può essere disabilitato, una sezione per la ricerca può essere nascosta, un banner pubblicitario può essere legato ad un popup (finestra a comparsa).
+
+Di seguito si riporta un esempio di codice HTML che rappresenta tre schede all'interno di una pagina web (come le schede di navigazione che si aprono nel browser):
+
+```html
+<ul role="tablist">
+  <li role="tab" aria-selected="true" aria-posinset="1" class="active" >Tab 1</li>
+  <li role="tab" aria-selected="false" aria-posinset="2">Tab 2</li>
+  <li role="tab" aria-selected="false" aria-posinset="3">Tab 3</li>
+</ul>
+<div class="panels">
+  <article role="tabpanel" aria-hidden="false" class="active-panel"> … </article>
+  <article role="tabpanel" aria-hidden="true"> … </article>
+  <article role="tabpanel" aria-hidden="true"> … </article>
+</div>
+```
+Come si può notare dall'esempio, le schede sono realizzate attraverso una lista di tre elementi e tre articoli. Il fatto è che le tecnologie assistive come i lettori dello schermo per poter interpretare correttamente la lista hanno necessità di maggiori informazioni, che sono descritte attraverso ruoli e attributi ARIA. 
+
+Nell'esempio riportato la lista è descritta con il ruolo ARIA "lista di schede" ed ogni elemento della lista è descritto con il ruolo ARIA "scheda". Ogni scheda ha gli attributi ARIA che indicano la posizione e se è selezionata o meno. Anche gli articoli sono descritti con il ruolo ARIA "pannello della scheda" e l'attributo ARIA che indica se nascosto o meno. Tutte queste informazioni aggiuntive permettono all'utente la gestione corretta, attraverso le tecnologie assistive, delle schede realizzate nella pagina web.
+
+<!-- TODO 
 
 
 
