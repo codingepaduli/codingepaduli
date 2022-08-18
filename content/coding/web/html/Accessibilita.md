@@ -29,21 +29,25 @@ Le disabilità possono essere di tipo:
 
 Bisogna ricordare che le disabilità possono essere anche temporanee, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
 
-## Leggi e normative
+## Leggi e normative per l'accessibilità digitale
 
-Molte leggi prevedono l'obbligo per le aziende di rendere i propri software e i propri siti web accessibili a questi utenti. Tra queste ricordiamo:
+La Costituzione Italiana afferma con l'art.3 tra i Principi Fondamentali che **tutti i cittadini hanno pari dignità sociale** e che **è compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini, impediscono il pieno sviluppo della persona umana e l'effettiva partecipazione di tutti i lavoratori all'organizzazione politica, economica e sociale del Paese**.
+
+Il diritto all'accessibilità si fonda quindi sulla Costituzione ed è associato alla possibilità anche per persone con ridotta o impedita capacità sensoriale, motoria o psichica, ossia affette da disabilità sia temporanea che stabile, di accedere e muoversi autonomamente in ambienti fisici (per cui si parla di accessibilità fisica), di fruire e accedere autonomamente a contenuti culturali (nel qual caso si parla di accessibilità culturale) o di fruire dei sistemi informatici e delle risorse a disposizione tipicamente attraverso l'uso di tecnologie assistive o tramite il rispetto di requisiti di accessibilità dei prodotti [citazione da wikipedia](https://it.wikipedia.org/wiki/Accessibilit%C3%A0_(design)).
+
+Il concetto di accessibilità, nel tempo, è stato esteso anche ai ai siti web ed ai servizi digitali.
+
+In particolare è la legge Stanca del 2004 che stabilisce l'accesso dei soggetti disabili agli strumenti informatici.
+
+Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della comunità europea atte a migliorare l'accessibilità di siti e app per smartphone per il settore pubblico di ogni membro dell'Unione Europea. 
+
+La novità di questa direttiva è che le amministrazioni hanno l'obbligo di pubblicare e aggiornano periodicamente la Dichiarazione di accessibilità, in cui si attesta lo stato di conformità di ciascun sito e applicazione mobile ai requisiti di accessibilità.
+
+In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se si considera che molti servizi (come Sky, Facebook, Twitter) sono forniti a livello mondiale, allora è necessario rispettare anche le leggi delle nazioni in cui si offre il servizio. Tra le tante citiamo:
 
 - Americans with Disabilities Act (U.S.A) e Section 508;
 - Equality Act (U.K.);
 - European Accessibility Act (2019) e Standard Europeo UNI EN-301549;
-- Legge Stanca 2004 (Italia);
-
-La legge italiana prevede i suddetti obblighi specificamente per le aziende pubbliche. Purtroppo non sono previste sanzioni economiche, un fatto che, unito alla lunga durata dei processi ed alla prescrizione, rende tale obbligo una sorta di azione facoltativa, nell'incuranza dei dirigenti delle aziende pubbliche che continuano a prendere stipendi milionari. 
-
-<!-- Il decreto legge 16/07/2020 aggiorna la legge Stanca estendendo l'obbligo anche a soggetti privati, ma solo se hanno determinati requisiti, come un fatturato annuo di 500 milioni di euro, che sono passibili di multe fino al 5% del fatturato. 
-
-Il difensore civico per il digitale è una figura prevista dal Codice dell'Amministrazione Digitale (AgID) che tutela i diritti digitali di cittadini ed imprese, raccoglie reclami e segnalazioni di presunte violazioni (anche relative all'accessibilità) e dispone eventuali misure correttive.
- -->
 
 ## Tecnologie assistive
 
