@@ -18,7 +18,7 @@ Nello sviluppo delle applicazioni software e dei siti web un'attenzione particol
 
 ## Disturbi e disabilità
 
-Oltre a ciò, abbiamo persone affette da:
+Gli utenti di un sito web possono essere personne affette da:
 
 - disturbi psichici e psichiatrici: disturbi d'ansia, disturbi del tono dell'umore e disturbi di personalità;
 - disabilità intellettiva (ex ritardo mentale) un alterato funzionamento del sistema nervoso centrale di grado lieve, moderato, grave o molto grave;
@@ -83,11 +83,13 @@ Tra gli standard e le linee guida relative l'accessibilità riportiamo:
 
 Le linee guida WCAG si riferiscono in generale a tutti i contenuti multimediali e sono d'utilità per qualsiasi lavoro digitale si possa realizzare.
 
-Nel principale documento delle WCAG troviamo tre livelli: 
+Nel principale documento delle WCAG, ora alla versione 2, troviamo tre livelli: 
 
 - il primo livello descrive i principi, che sono qualità base che rendono accessibile un sito web;
 - il secondo livello descrive le linee guida da seguire durante la pianificazione e la progettazione di un sito web, un'applicazione o un documento per far si che sia accessibile;
 - il terzo livello indica i criteri di successo per verificare che i principi e le linee guida siano stati seguiti.
+
+### Principi
 
 I principi sono:
 
@@ -96,103 +98,36 @@ I principi sono:
 - "Comprensibile": Le informazioni e il funzionamento dell'interfaccia utente devono essere comprensibili. Questo principio combina l'assicurarsi che il contenuto sia facile da capire e che si possa interagire con il prodotto digitale in modo comprensibile, ad esempio durante la compilazione di un modulo o durante la visione di un video;
 - "Robusto": Il contenuto deve essere sufficientemente robusto da poter essere interpretabile da uomini, software e macchine, comprese le tecnologie assistive. Questo principio, molto tecnico, sottolinea quanto sia importante un'attenta progettazione e realizzazione (da interpretarsi come un buon codice sorgente in ambito software) per realizzare un prodotto accessibile.
 
-Per ogni principio sono descritte delle linee guida che forniscono avvisi più specifici per le differenti situazioni. Di seguito se ne riportano alcuni, ma si consiglia di leggerli attentamente e comprenderli tutti.
+### Linee guida
 
-- "fornire una descrizione alternativa per ogni contenuto non testuale";
-- "permettere la presentazione di contenuti in diversi modi (ad esempio layout più semplice) senza perdere informazioni o struttura (consentendo qualsiasi orientamento o risoluzione del dispositivo);
-- "Rendi più facile per gli utenti vedere e ascoltare i contenuti, inclusa la distinzione del primo piano dallo sfondo. Evita l'uso di un solo colore o dei colori a basso contrasto per testo, informazioni ed elementi dell'interfaccia utente";
-- "rendere più facile per gli utenti utilizzare la funzionalità attraverso vari dispositivi di input oltre la tastiera (si pensi agli input vocali o tramite tastiere braille)";
+Per ogni principio sono descritte delle linee guida che forniscono avvisi più specifici per le differenti situazioni. Di seguito si riportano le linee guida di ogni principio.
 
-<!--
+Linee guida del primo principio:
 
-The Guidelines are situated underneath the principles and give more specific advice for
-different situations.
+1. "fornire una descrizione alternativa per ogni contenuto non testuale" <!-- braille, voce, simboli or linguaggio semplificato -->;
+2. "fornire una descrizione alternativa per i media audio e video" <!-- ad esempio i sottotitoli -->;
+3. "permettere la presentazione di contenuti in diversi modi (ad esempio layout più semplice) senza perdere informazioni o struttura <!-- ad esempio utilizzando la "modalità di lettura" o consentendo qualsiasi orientamento o risoluzione del dispositivo -->;
+4. "Rendi più facile per gli utenti vedere e ascoltare i contenuti, inclusa la distinzione del primo piano dallo sfondo. Evita l'uso di un solo colore o dei colori a basso contrasto per testo, informazioni ed elementi dell'interfaccia utente" <!-- ad esempio ingrandire il testo -->;
 
-Principle “1. Perceivable” has four guidelines:
-1.1 Text Alternatives 
-Provide text alternatives for any non-text
-content so that it can be changed into other forms people need, such as large print, braille,
-speech, symbols or simpler language.
-Whenever content is on the page that is useful or essential for the understanding of the
-whole page or view, an alternative in text form must be provided.
-That alternative can be used in different contexts.
+Linee guida del secondo principio:
 
-1.2 Time-based Media
-Provide alternatives for time-based media.
-Time-based media is WCAG language for (mostly) audios and videos.
-Similar to “text alternatives”, this ensures that people with different disabilities have
-access to the media content.
-For example, this guideline requires captions, to enable access for people who cannot hear
-narration, and audio descriptions, which enable access for people who are unable to see a video.
+1. "Make all functionality available from a keyboard";
+2. "Fornire agli utenti abbastanza tempo per leggere e/o interagire con i contenuti" <!-- Se basati sul tempo, fornire un modo per aumentare il limite di tempo -->;
+3. "Non mostrare i contenuti in una modalità che è noto possa causare reazioni fisiche o crisi <!-- come contenuti lampeggianti o animazioni -->;
+4. "Fornire un modo che possa aiutare gli utenti a navigare tra i contenuti, a trovarli e a determinare in quale punto è l'utente" <!-- Avere un titolo di pagina, il focus per la tastiera visibile, una suddivisione in capitoli e paragrafi realizzata correttamente -->;
+5. "Rendere facile per gli utenti utilizzare alcune funzionalità utilizzando altri dispositivi di input oltre alla tastiera" <!-- si pensi agli input vocali o tramite tastiere braille -->;
 
-1.3 Adaptable
-Generate [!sic] content that can be presented in different ways (for example simpler layout) without
-ùlosing information or structure.
-This guideline prepares content to be used out of the context or styled and viewed differently.
-Here’s where semantic markup comes into play.
-It also means allowing users to use their devices in any orientation.
+Linee guida del terzo principio:
 
-1.4 Distinguishable
-Make it easier for users to see and hear content including separating foreground from background.
-Avoid the use of color alone or low contrast colors for text, information, and UI elements.
-Allow resizing of text and changing the viewport, for example by implementing a responsive design.
+1. "Rendere i contenuti testuali leggibili e comprensibili" <!-- traduzione, spiegazione degli acronimi, corretta pronuncia, ... -->;
+2. "Far si che le pagine siano visualizte e che operino secondo una modalità che l'utente si possa aspettare" <!-- Un pulsante ed un campo di input devono sembrare tali, e non avere forme strane o poco intuitive -->;
+3. "Aiutare gli utenti ad evitare e correggere gli errori" <!-- i contenuti siano descritti in un modo utile, si possano evitare ed identificare errori (con formato dato, ora, controllo ortografico) e fornire suggerimenti -->;
 
-The second principle, Operable, has 5 guidelines:
+Linee guida del quarto principio:
 
-2.1 Keyboard Accessible
-Make all functionality available from a keyboard.
-This is important as many technologies disabled people use are using keyboard commands to
-navigate around, even as the users are using joysticks or other input methods.
+1. "Massimizzare la compatibilità con le tecnologie correnti, icluso le tecnologie assistive. Scrivere codice conforme (valido) assicurandosi che nomi, ruoli e proprietà degli elementi dell'interfaccia grafica siano chiari;
 
-2.2 Enough Time
-Provide users enough time to read and use content.
-Avoid introducing arbitrary time limits and let users take as much time as they need.
-If there’s a requirement to restrict the time for a certain task — for example for
-security reasons — the user must be informed and given a way to extend the timeout.
-
-2.3 Seizures and Physical Reactions
-Do not design content in a way that is known to cause seizures or physical reactions.
-This guideline targets flashing content and motion animation.
-Note that this guideline was extended to cover physical reactions with WCAG 2.1, you might
-find the old wording, which only talks about seizures, occasionally.
-
-2.4 Navigable
-Provide ways to help users navigate, find content, and determine where they are.
-Examples of requirements that come from this guideline are the ability to bypass blocks
-of content on the page, having proper page titles, and proper keyboard focus and a visible focus outline.
-
-2.5 Input Modalities
-Make it easier for users to operate functionality through various inputs beyond keyboard.
-New in WCAG 2.1, this guideline expands interaction with the page or application when the keyboard
-is not used.
-For example, websites and applications must provide an alternative to pinch and zoom gestures
-you would use two fingers or pointers for.
-
-Principle 3, Understandable has 3 guidelines:
-
-The first one: 3.1 Readable
-Make text content readable and understandable.
-This guideline covers languages and language transitions, the explanation of unknown words
-and abbreviations, reading level, and pronunciation.
-
-3.2 Predictable
-Make Web pages appear and operate in predictable ways.
-The guidance in this guideline makes sure that users are not surprised by the things
-that happen on the website and also that common elements look the same.
-
-3.3 Input Assistance
-Help users avoid and correct mistakes.
-This guideline advises to label your form fields in a useful way, identify errors and
-provide suggestions on how to prevent errors in the first place.
-
-The last principle, Robust, has only one guideline:
-
-4.1 Compatible
-Maximize compatibility with current and future user agents, including assistive technologies.
-Write conforming HTML code, make sure that the names, roles, and statuses of UI elements
-are clear.
-
--->
+### Conformità
 
 La conformità attesta che il sito web segue tutte le linee guida delle WCAG e che tutti i criteri di successo applicabili sono soddisfatti.
 
