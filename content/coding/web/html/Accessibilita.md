@@ -26,7 +26,7 @@ Gli utenti di un sito web possono essere personne affette da:
 - disturbi specifici del linguaggio, compormettono lo sviluppo del linguaggio in assenza di un problema neurologico, sensoriale, intellettivo o affettivo;
 - disturbi specifici dell'apprendimento: difficoltà specifiche nella lettura (dislessia), scrittura (disortografia) e calcolo (discalculia).
 - disturbi motori: incapacità o limitazione nell'uso di arti o del corpo.
-- disturbi visivi: perdita totale (cecità) o compromissione (ipovisione);
+- disturbi visivi: perdita totale (cecità) o compromissione parziale (ipovisione);
 - disturbi dell'udito: perdita totale (sordità) o compromissione leggera, moderata, severa o profonda dell'udito;
 
 Le persone affette da questi disturbi sviluppano disabilità, ovvero incapacita o limitazione nello svolgere attività essenziali per la vita quotidiana.
@@ -67,9 +67,7 @@ Numerose tecnologie assistive vanno a supporto dell'utente consentendogli di uti
 - tastiere con caratteri ingranditi o tastiere tattili: hanno tasti con caratteri stampati ad una dimensione maggiore o con lettere in rilievo che permettono di capire su quale tasto si è poggiati, inoltre hanno tasti aggiuntivi per aumentare il numero di funzionalità disponibili;
 - sistemi di puntamento: sono un alternativa al mouse e permettono di utilizzare gli occhi, la testa o il corpo per muovere il puntatore del mouse;
 
-## Accessibilità
-
-Il termine accessibilità è associato alla possibilità anche per persone con ridotta o impedita capacità sensoriale, motoria o psichica, ossia affette da disabilità sia temporanea che stabile, di accedere e muoversi autonomamente in ambienti fisici (per cui si parla di accessibilità fisica), di fruire e accedere autonomamente a contenuti culturali (nel qual caso si parla di accessibilità culturale) o di fruire dei sistemi informatici e delle risorse a disposizione tipicamente attraverso l'uso di tecnologie assistive o tramite il rispetto di requisiti di accessibilità dei prodotti [citazione da wikipedia](https://it.wikipedia.org/wiki/Accessibilit%C3%A0_(design)).
+## Standard e le linee guida per l'accessibilità
 
 Un software o un sito web non è di per se accessibile solo perchè l'utente usufruisce di tecnologie assistive, ma deve seguire gli standard e dalle linee guida indicate sia a livello internazionale, sia dalle associazioni in difesa di tali diritti. Queste linee guida permettono il poter acquisire in maniera corretta attraverso le tecnologie assistive le informazioni a cui fa accesso l'utente.
 
@@ -152,15 +150,48 @@ La WAI fornisce le linee guida conosciute come "Accessible Rich Internet Applica
 
 Per informazioni semantiche si intendono quelle che indicano il ruolo di una determinata etichetta, lo stato o le relazioni con le altre etichette. Ad esempio un menu di navigazione può essere strutturato come una lista a due o tre livelli, ed una determinata voce può essere visibile all'utente, mentre le altre no. Queste informazioni possono essere molto utili per indirizzare il "comportamento" delle tecnologie assistive, ma non è possibile fornirle utilizzando il solo codice HTML. Le linee guida vanno proprio a standardizzare queste informazioni e a definire in che modo devono essere inserite nel codice HTML.
 
-Tra i ruoli che possiamo indicare, troviamo "menubar" (barra dei menu), "menu", "menuitem" (voce del menù), "search" (una sezione per la ricerca, filtri compresi) , "tree" (struttura ad albero), "treeitem" (voce della struttura ad albero), "tab" (schede), "banner" e tanti altri. Quasi tutti questi ruoli si possono applicare alle sezioni della pagina web che non è possibile descrivere attraverso una etichetta del linguaggio HTML.
+Molte etichette del linguaggio HTML hanno già un informazione semantica, ad esempio l'etichetta del titolo ``h1`` indica l'inizio e la fine del titolo, l'etichetta dei collegamenti ``a`` indica l'inizio e la fine del collegamento, e come queste molte altre. Per inserire un titolo o un collegamento nella pagina non è necessario indicare che il ruolo dell'elemento è "titolo" o "collegamento", è la stessa etichetta a sottointendere questo ruolo.
 
-Stati e proprieta definiscono invece gli attributi di un determinato ruolo. Ad esempio un menù può essere disabilitato, una sezione per la ricerca può essere nascosta, un banner pubblicitario può essere legato ad un popup (finestra a comparsa).
+In molti altri casi, invece, si usano le etichette per creare elementi più complessi, come una sezione per la ricerca (filtri compresi) o una visualizzazione dei contenuti basata su schede (come le schede di navigazione di un browser). In questo caso, dobbiamo associare all'etichetta il ruolo, in modo da indicare alle tecnologie assistive il ruolo svolto dall'etichetta, quindi associamo il ruolo "sezione per la ricerca" o il ruolo "lista di schede";
 
-Di seguito si riporta un esempio di codice HTML che rappresenta tre schede all'interno di una pagina web (come le schede di navigazione che si aprono nel browser):
+Le linee guida riportano una lunga serie di ruoli che si possono associare alle etichette, tra le tante troviamo "menubar" (barra dei menu), "menu", "menuitem" (voce del menù), "search" (una sezione per la ricerca, filtri compresi) , "tree" (struttura ad albero), "treeitem" (voce della struttura ad albero), "tab" (schede), "banner" e tanti altri.
+
+Le linee guida inoltre indicano per ogni ruolo un elenco di attributi (o proprietà) che il ruolo possiede. Ad esempio un menù può essere disabilitato, una sezione per la ricerca può essere nascosta, un banner pubblicitario può essere legato ad un popup (finestra a comparsa).
+
+I ruoli vanno indicati con l'attributo HTML ``role`` la cui sintassi è la seguente:
+
+```html
+<etichetta role="nome_ruolo">
+```
+
+Gli attributi (o proprietà) che il ruolo possiede sono indicati con gli attributi HTML che iniziano per ``aria-PR`` dove ``PR`` è il nome della proprietà da indicare. La sintassi è la seguente:
+
+```html
+<etichetta aria-PR="valore">
+```
+
+### Esempio di applicazione delle linee guida ARIA
+
+Supponendo che lo sviluppatore crei un componente con tre schede (tab) in modo tale che quando si clicca su una viene visualizzato uno dei tre pannelli. Supponiamo che il codice HTML usato per sviluppare tale componente sia il seguente:
+
+```html
+<ul>
+  <li class="active">Tab 1</li>
+  <li>Tab 2</li>
+  <li>Tab 3</li>
+</ul>
+<div class="panels">
+  <article class="active-panel"> … </article>
+  <article> … </article>
+  <article> … </article>
+</div>
+```
+
+Le tecnologie assistive non hanno modo di interpretare il codice HTML e estrapolare che la lista indica delle schede e che i pannelli siano legati alle schede. Per fornire queste informazioni alle tecnologie assistive, è necessario che sia lo sviluppatore a fornirle indicandole opportunamente come di seguito:
 
 ```html
 <ul role="tablist">
-  <li role="tab" aria-selected="true" aria-posinset="1" class="active" >Tab 1</li>
+  <li role="tab" aria-selected="true" aria-posinset="1" class="active">Tab 1</li>
   <li role="tab" aria-selected="false" aria-posinset="2">Tab 2</li>
   <li role="tab" aria-selected="false" aria-posinset="3">Tab 3</li>
 </ul>
@@ -170,26 +201,34 @@ Di seguito si riporta un esempio di codice HTML che rappresenta tre schede all'i
   <article role="tabpanel" aria-hidden="true"> … </article>
 </div>
 ```
-Come si può notare dall'esempio, le schede sono realizzate attraverso una lista di tre elementi e tre articoli. Il fatto è che le tecnologie assistive come i lettori dello schermo per poter interpretare correttamente la lista hanno necessità di maggiori informazioni, che sono descritte attraverso ruoli e attributi ARIA. 
 
-Nell'esempio riportato la lista è descritta con il ruolo ARIA "lista di schede" ed ogni elemento della lista è descritto con il ruolo ARIA "scheda". Ogni scheda ha gli attributi ARIA che indicano la posizione e se è selezionata o meno. Anche gli articoli sono descritti con il ruolo ARIA "pannello della scheda" e l'attributo ARIA che indica se nascosto o meno. Tutte queste informazioni aggiuntive permettono all'utente la gestione corretta, attraverso le tecnologie assistive, delle schede realizzate nella pagina web.
+Come si può notare, la lista è descritta con il ruolo ARIA "lista di schede" ed ogni elemento della lista è descritto con il ruolo ARIA "scheda". Ogni scheda ha gli attributi ARIA che indicano la posizione e se è selezionata o meno. Anche gli articoli sono descritti con il ruolo ARIA "pannello della scheda" e l'attributo ARIA che indica se nascosto o meno. Tutte queste informazioni aggiuntive permettono all'utente che fa uso di tecnologie assistive la gestione corretta delle schede realizzate nella pagina web.
+
+Un altro comportamento su cui porre attenzione è la scelta del componente su cui interagire. In genere l'utente clicca su un componente e questo riceve il focus. Quando un componente riceve il focus, da la possibilità all'utente di interagirvi. Ad esempio quando si clicca su un campo di input, questo riceve il focus e quindi l'utente può inserire un valore. 
+
+Agli utenti che non utilizzano il mouse viene fornita in alternativa la possibilità di selezionare i componenti uno per volta utilizzando l'apposito pulsante della tastiera (in genere il tasto "TAB"). 
+
+Lo sviluppatore può indicare quali componenti vuole che ricevano il focus, aggiungendo nel codice HTML di questi componenti l'attributo HTML ``tabindex="0"``.
+
+Riprendendo l'esempio del componente per la visualizzare in schede, per applicare il focus alle tre schede si può integrare il codice HTML come di seguito:
+
+```html
+<ul role="tablist">
+  <li role="tab" aria-selected="true" aria-posinset="1" tabindex="0" class="active" >Tab 1</li>
+  <li role="tab" aria-selected="false" aria-posinset="2" tabindex="0">Tab 2</li>
+  <li role="tab" aria-selected="false" aria-posinset="3" tabindex="0">Tab 3</li>
+</ul>
+<div class="panels">
+  <article role="tabpanel" aria-hidden="false" class="active-panel"> … </article>
+  <article role="tabpanel" aria-hidden="true"> … </article>
+  <article role="tabpanel" aria-hidden="true"> … </article>
+</div>
+```
 
 <!-- TODO 
-
-
 
 , quindi l utente si deve avvalere della tastiera per navigare e di uno strumento di screen reader che possa leggere ad alta voce gli elementi sui quali naviga.
 
 la percezione di una pagina web per un utente non vedente è completamente diversa dalla percezione che abbiamo noi, dato che gli strumenti di sintesi vocale descrivono gli elementi uno per volta quindi, l utente non ha un quadro di insieme ma ho una lista di elementi sui quali può spostarsi.
 
-
-Le disabilità possono essere di tipo fisico e mentale, ad esempio una persona che non ha l'uso delle gambe usa la sedia a rotelle o un'altra seconda che ha un ritardo nell'apprendimento.
-
-
-cecità ed ipovisione
-
-cecità totale non vede nulla o distingue le luci dal buio o ha un campo visivo molto ristretto
-
-cecità parziale 
-disturbo nel vedere i colori troppo accesi o difficoltà nel vedere i colori
 -->
