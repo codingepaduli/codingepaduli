@@ -16,16 +16,20 @@ summary: "HTML Lez. 11 - Accessibilità"
 
 Nello sviluppo delle applicazioni software e dei siti web un'attenzione particolare va agli utenti con disabilità.
 
-## Categorie
+## Disturbi e disabilità
 
-Le disabilità possono essere di tipo:
+Oltre a ciò, abbiamo persone affette da:
 
-- visivo: cecità completa o parziale, impossibilità nel vedere i colori, ...
-- motorie: difficoltá nell'uso degli arti o di parti del corpo;
-- del linguaggio: mutismo o problemi alle corde vocali, mal di gola acuto;
-- dell'ascolto come la sordità;
-- cognitivo: autismo, difficoltà di apprendimento, sonnolenza;
-- psichiche: ansietà, depressione, sturbo da stress post traumatico (mobbing).
+- disturbi psichici e psichiatrici: disturbi d'ansia, disturbi del tono dell'umore e disturbi di personalità;
+- disabilità intellettiva (ex ritardo mentale) un alterato funzionamento del sistema nervoso centrale di grado lieve, moderato, grave o molto grave;
+- disturbi dello spettro autistico;
+- disturbi specifici del linguaggio, compormettono lo sviluppo del linguaggio in assenza di un problema neurologico, sensoriale, intellettivo o affettivo;
+- disturbi specifici dell'apprendimento: difficoltà specifiche nella lettura (dislessia), scrittura (disortografia) e calcolo (discalculia).
+- disturbi motori: incapacità o limitazione nell'uso di arti o del corpo.
+- disturbi visivi: perdita totale (cecità) o compromissione (ipovisione);
+- disturbi dell'udito: perdita totale (sordità) o compromissione leggera, moderata, severa o profonda dell'udito;
+
+Le persone affette da questi disturbi sviluppano disabilità, ovvero incapacita o limitazione nello svolgere attività essenziali per la vita quotidiana.
 
 Bisogna ricordare che le disabilità possono essere anche temporanee, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
 
@@ -43,7 +47,7 @@ Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della
 
 La novità di questa direttiva è che le amministrazioni hanno l'obbligo di pubblicare e aggiornano periodicamente la Dichiarazione di accessibilità, in cui si attesta lo stato di conformità di ciascun sito e applicazione mobile ai requisiti di accessibilità.
 
-In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se si considera che molti servizi (come Sky, Facebook, Twitter) sono forniti a livello mondiale, allora è necessario rispettare anche le leggi delle nazioni in cui si offre il servizio. Tra le tante citiamo:
+In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se si considera che molti servizi (come Sky, Facebook, Twitter) sono forniti a livello mondiale, allora è necessario rispettare anche le leggi delle nazioni in cui si offre il servizio. Tra le tante leggi citiamo:
 
 - Americans with Disabilities Act (U.S.A) e Section 508;
 - Equality Act (U.K.);
