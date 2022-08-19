@@ -2,9 +2,9 @@
 type: "html"
 title: "HTML Lez. 11 - Accessibilità"
 description: "HTML Lez. 11 - Accessibilità"
-date: 2021-08-17
-publishdate: 2021-08-17
-lastmod: 2021-08-17
+date: 2022-08-17
+publishdate: 2022-08-17
+lastmod: 2022-08-17
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: true
@@ -33,7 +33,7 @@ Le persone affette da questi disturbi sviluppano disabilità, ovvero incapacita 
 
 Bisogna ricordare che le disabilità possono essere anche temporanee, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
 
-## Leggi e normative per l'accessibilità digitale
+## Leggi, normative, standard e linee guida per l'accessibilità digitale
 
 La Costituzione Italiana afferma con l'art.3 tra i Principi Fondamentali che **tutti i cittadini hanno pari dignità sociale** e che **è compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini, impediscono il pieno sviluppo della persona umana e l'effettiva partecipazione di tutti i lavoratori all'organizzazione politica, economica e sociale del Paese**.
 
@@ -41,17 +41,27 @@ Il diritto all'accessibilità si fonda quindi sulla Costituzione ed è associato
 
 Il concetto di accessibilità, nel tempo, è stato esteso anche ai ai siti web ed ai servizi digitali.
 
-In particolare è la legge Stanca del 2004 che stabilisce l'accesso dei soggetti disabili agli strumenti informatici.
+Un software o un sito web non è di per se accessibile solo perchè l'utente usufruisce di tecnologie assistive, ma deve seguire gli standard e le linee guida indicate a livello internazionale. Queste linee guida permettono all'utente l'accesso alle informazioni e l'uso delle funzionalità fornite per mezzo delle tecnologie assistive di cui fa uso.
 
-Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della comunità europea atte a migliorare l'accessibilità di siti e app per smartphone per il settore pubblico di ogni membro dell'Unione Europea. 
+Tra gli standard e le linee guida relative l'accessibilità riportiamo:
+
+- [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/tutorials/): Uno standard internazionale per lo sviluppo di siti Web ed in generale di creazioni digitali che siano accessibili;
+- [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria-1.1/): Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive;
+- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/): Uno standard che indica come rendere i contenuti di un sito web più accessibili;
+
+In particolare è la legge Stanca del 2004 che stabilisce l'accessibilità degli strumenti informatici anche per i soggetti disabili, obbligando per legge i siti dell'amministrazione pubblica e dei fornitori di servizi pubblici a seguire le linee guida WCAG versione 1.0 del 1999.
+
+Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della comunità europea atte a migliorare l'accessibilità di siti e app per smartphone per il settore pubblico di ogni membro dell'Unione Europea ed aggiorna le linee guida di riferimento per l'accessibilità, indicando le WCAG versione 2.0 pubblicate nel 2008.
 
 La novità di questa direttiva è che le amministrazioni hanno l'obbligo di pubblicare e aggiornano periodicamente la Dichiarazione di accessibilità, in cui si attesta lo stato di conformità di ciascun sito e applicazione mobile ai requisiti di accessibilità.
 
-In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se si considera che molti servizi (come Sky, Facebook, Twitter) sono forniti a livello mondiale, allora è necessario rispettare anche le leggi delle nazioni in cui si offre il servizio. Tra le tante leggi citiamo:
+In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se si considera che molti servizi (come Sky, Facebook, Twitter) sono forniti a livello mondiale, allora per questi servizi è necessario rispettare anche le leggi delle nazioni in cui si offre il servizio. Tra le tante leggi citiamo:
 
 - Americans with Disabilities Act (U.S.A) e Section 508;
 - Equality Act (U.K.);
 - European Accessibility Act (2019) e Standard Europeo UNI EN-301549;
+
+Anche queste leggi nazionali prendono come riferimento gli standard e le linee guida relative l'accessibilità indicate precedentemente
 
 ## Tecnologie assistive
 
@@ -66,16 +76,6 @@ Numerose tecnologie assistive vanno a supporto dell'utente consentendogli di uti
 - sistemi di amplificazione dei suoni (anche auricolari): permettono di amplificare i suoni per facilitare l'ascolto;
 - tastiere con caratteri ingranditi o tastiere tattili: hanno tasti con caratteri stampati ad una dimensione maggiore o con lettere in rilievo che permettono di capire su quale tasto si è poggiati, inoltre hanno tasti aggiuntivi per aumentare il numero di funzionalità disponibili;
 - sistemi di puntamento: sono un alternativa al mouse e permettono di utilizzare gli occhi, la testa o il corpo per muovere il puntatore del mouse;
-
-## Standard e le linee guida per l'accessibilità
-
-Un software o un sito web non è di per se accessibile solo perchè l'utente usufruisce di tecnologie assistive, ma deve seguire gli standard e dalle linee guida indicate sia a livello internazionale, sia dalle associazioni in difesa di tali diritti. Queste linee guida permettono il poter acquisire in maniera corretta attraverso le tecnologie assistive le informazioni a cui fa accesso l'utente.
-
-Tra gli standard e le linee guida relative l'accessibilità riportiamo:
-
-- [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/tutorials/): Uno standard internazionale per lo sviluppo di siti Web ed in generale di creazioni digitali che siano accessibili;
-- [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria-1.1/): Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive;
-- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/): Uno standard che indica come rendere i contenuti di un sito web più accessibili;
 
 ## Linee guida WCAG
 
