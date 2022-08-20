@@ -46,12 +46,12 @@ Un software o un sito web non è di per se accessibile solo perchè l'utente usu
 Tra gli standard e le linee guida relative l'accessibilità riportiamo:
 
 - [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/tutorials/): Uno standard internazionale per lo sviluppo di siti Web ed in generale di creazioni digitali che siano accessibili;
-- [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria-1.1/): Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive;
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/): Uno standard che indica come rendere i contenuti di un sito web più accessibili;
+- [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria-1.1/): Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive;
 
 In particolare è la legge Stanca del 2004 che stabilisce l'accessibilità degli strumenti informatici anche per i soggetti disabili, obbligando per legge i siti dell'amministrazione pubblica e dei fornitori di servizi pubblici a seguire le linee guida WCAG versione 1.0 del 1999.
 
-Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della comunità europea atte a migliorare l'accessibilità di siti e app per smartphone per il settore pubblico di ogni membro dell'Unione Europea ed aggiorna le linee guida di riferimento per l'accessibilità, indicando le WCAG versione 2.0 pubblicate nel 2008.
+Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della Comunità Europea (atte a migliorare l'accessibilità di siti e app per smartphone per il settore pubblico di ogni paese membro dell'Unione Europea) ed aggiorna le linee guida di riferimento per l'accessibilità, indicando le WCAG versione 2.0 pubblicate nel 2008.
 
 La novità di questa direttiva è che le amministrazioni hanno l'obbligo di pubblicare e aggiornano periodicamente la Dichiarazione di accessibilità, in cui si attesta lo stato di conformità di ciascun sito e applicazione mobile ai requisiti di accessibilità.
 
@@ -61,7 +61,7 @@ In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se 
 - Equality Act (U.K.);
 - European Accessibility Act (2019) e Standard Europeo UNI EN-301549;
 
-Anche queste leggi nazionali prendono come riferimento gli standard e le linee guida relative l'accessibilità indicate precedentemente
+Anche le leggi nazionali di questi paesi prendono come riferimento gli standard e le linee guida internazionali relative l'accessibilità (WCAG, WAI-ARIA).
 
 ## Tecnologie assistive
 
@@ -231,4 +231,20 @@ Riprendendo l'esempio del componente per la visualizzare in schede, per applicar
 
 la percezione di una pagina web per un utente non vedente è completamente diversa dalla percezione che abbiamo noi, dato che gli strumenti di sintesi vocale descrivono gli elementi uno per volta quindi, l utente non ha un quadro di insieme ma ho una lista di elementi sui quali può spostarsi.
 
+-->
+
+### Framework CSS e per app
+
+I siti web e le app difficilmente utilizzano dei componenti dell'interfaccia costruiti da zero, piuttosto si basano sempre più su dei framework che forniscono linee guida, componenti precostruiti e strumenti che permettono il disegno di interfacce grafiche secondo le "best practice" internazionali.
+
+Il vantaggio nell'usare questi framework consiste appunto nel poter costruire un interfaccia grafica che supporti diversi temi di colore, che si adatti dinamicamente alle caratteristiche del dispositivo utilizzato, sia esso desktop, tablet o telefono cellulare, che fornisca allo sviluppatore una vasta gamma di componenti grafici precostruiti che seguono gli standard e linee guida per l'accessibilità, che tengono conto delle preferenze utente, come le indicazione di un maggiore contrasto dei colori o di una minimizzazione delle animazioni e degli effetti di movimento utilizzati dal sito web o dall'app o le indicazioni e tanti altri vantaggi ancora;
+
+Tra i framework più utilizzati riportiamo [Bootstrap](https://getbootstrap.com/), progettato inizialmente da Twitter nel 2011 per la costruzione di pagine web, [Material Design](https://material.io/) sviluppato da Google nel 2014 per la costruzione di app per android e per la costruzione di pagine web, [Human Interface](https://developer.apple.com/design/) per la costruzione di app per iOS, macOS e tutti gli altri dispositivi Apple.
+
+Adottare un framework che rispetti i requisiti di accessibilità è sicuramente un buon inizio per far si che il prodotto da realizzare sia accessibile, ma comunque le scelte di progettazione delle interfacce possono portare alla realizzazione di un prodotto non accessibile. 
+
+Dato che i componenti grafici forniti da questi framework sono generici e personalizzabili, è compito del grafico realizzare delle interfacce che rispettino i requisiti di accessibilità ed è compito dello sviluppatore implementare i requisiti di accessibilità per la specifica piattaforma di sviluppo (partendo dalle interfacce realizzate dal grafico).
+
+<!-- TODO 
+## Strumenti di validazione dell'accessibilità
 -->
