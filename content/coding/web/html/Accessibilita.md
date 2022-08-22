@@ -10,6 +10,20 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 11 - Accessibilità"
+
+references:
+    -   title: "Web Accessibility Initiative (WAI)"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.w3.org/WAI/tutorials/"
+        description: "Gruppi di lavoro del W3C che si occupano di stilare linee guida, relazioni tecniche e documentazione riguardante la realizzazione di creazioni digitali che siano accessibili"
+    -   title: "Web Content Accessibility Guidelines (WCAG)"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.w3.org/WAI/standards-guidelines/wcag/"
+        description: "Linee guida per la realizzazione di contenuti e siti web più accessibili"
+    -   title: "Accessible Rich Internet Applications (WAI-ARIA)"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.w3.org/TR/wai-aria-1.1/"
+        description: "Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive"
 ---
 
 # Accessibilità (a11y) 
@@ -45,8 +59,8 @@ Un software o un sito web non è di per se accessibile solo perchè l'utente usu
 
 Tra gli standard e le linee guida relative l'accessibilità riportiamo:
 
-- [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/tutorials/): Uno standard internazionale per lo sviluppo di siti Web ed in generale di creazioni digitali che siano accessibili;
-- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/): Uno standard che indica come rendere i contenuti di un sito web più accessibili;
+- [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/tutorials/): Gruppi di lavoro del W3C che si occupano di stilare linee guida, relazioni tecniche e documentazione riguardante la realizzazione di creazioni digitali che siano accessibili;
+- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/): Linee guida per la realizzazione di contenuti e siti web più accessibili;
 - [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria-1.1/): Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive;
 
 In particolare è la legge Stanca del 2004 che stabilisce l'accessibilità degli strumenti informatici anche per i soggetti disabili, obbligando per legge i siti dell'amministrazione pubblica e dei fornitori di servizi pubblici a seguire le linee guida WCAG versione 1.0 del 1999.
@@ -245,6 +259,13 @@ Adottare un framework che rispetti i requisiti di accessibilità è sicuramente 
 
 Dato che i componenti grafici forniti da questi framework sono generici e personalizzabili, è compito del grafico realizzare delle interfacce che rispettino i requisiti di accessibilità ed è compito dello sviluppatore implementare i requisiti di accessibilità per la specifica piattaforma di sviluppo (partendo dalle interfacce realizzate dal grafico).
 
-<!-- TODO 
 ## Strumenti di validazione dell'accessibilità
--->
+
+Una volta realizzato il sito web, è necessario effettuare dei test di accessibilità. Gli strumenti automatici possono verificare solo alcune caratteristiche del codice HTML, ma non sono in grado di valutare le scelte grafiche, per cui si consiglia sempre di integrare questi strumenti con dei test effettuati attraverso le tecnologie assistive, in particolare usando screen reader e tastiera.
+
+Tra gli strumenti più utilizzati, troviamo:
+
+- [Lighthouse](https://github.com/GoogleChrome/lighthouse)
+- [Axe (Deque Systems Inc.)](https://www.deque.com/axe/)
+
+Tutti questi strumenti sono capaci di rilevare una buona parte di attributi mancanti nel codice HTML.
