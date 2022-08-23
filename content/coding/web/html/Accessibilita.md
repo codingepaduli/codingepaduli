@@ -1,15 +1,15 @@
 ---
 type: "html"
-title: "HTML Lez. 11 - Accessibilità"
-description: "HTML Lez. 11 - Accessibilità"
+title: "HTML Lez. 8 - Accessibilità"
+description: "HTML Lez. 8 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
 date: 2022-08-17
 publishdate: 2022-08-17
 lastmod: 2022-08-17
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: true
+draft: false
 toc: false
-summary: "HTML Lez. 11 - Accessibilità"
+summary: "HTML Lez. 8 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
 
 references:
     -   title: "Web Accessibility Initiative (WAI)"
@@ -43,7 +43,7 @@ Gli utenti di un sito web possono essere personne affette da:
 - disturbi visivi: perdita totale (cecità) o compromissione parziale (ipovisione);
 - disturbi dell'udito: perdita totale (sordità) o compromissione leggera, moderata, severa o profonda dell'udito;
 
-Le persone affette da questi disturbi sviluppano disabilità, ovvero incapacita o limitazione nello svolgere attività essenziali per la vita quotidiana.
+Le persone affette da questi disturbi sviluppano disabilità, ovvero incapacità o limitazione nello svolgere attività essenziali per la vita quotidiana.
 
 Bisogna ricordare che le disabilità possono essere anche temporanee, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
 
