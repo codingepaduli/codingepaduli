@@ -267,5 +267,28 @@ Tra gli strumenti più utilizzati, troviamo:
 
 - [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 - [Axe (Deque Systems Inc.)](https://www.deque.com/axe/)
+- [Wave (Utah State University)](https://wave.webaim.org/) 
 
 Tutti questi strumenti sono capaci di rilevare una buona parte di attributi mancanti nel codice HTML.
+
+Wave dev tool è un estensione che si può installare nel browser e permette di visualizzare tutti i problemi di accessibilità della pagina web. Una volta installato ed eseguito, riporta un riepilogo di tutti i problemi riscontrati.
+
+Di seguito riportiamo un esempio reali di analisi dell'accessibilità della home page del sito "ilfattoquotidiano.it". Nella sezione di sinistra si può visualizzare il riepilogo degli errori riscontrati.
+
+![Wave - Riepilogo](/static/coding/web/html/accessibility-wave-summary.png "Il riepilogo riporta gli errori, gli elementi con un contrasto non sufficiente, la struttura della pagina vista attraverso le tecnologie assistive ed i problemi specifici rispetto a WAI-ARIA")
+
+Nella sezione di dettaglio si ha un elenco degli errori di accessibilità.
+
+![Wave - Sezione degli errori](/static/coding/web/html/accessibility-wave-error-details.png "Tra gli errori notiamo quelli di testo alternativo alle immagini mancante, quelli di collegamenti senza URL, errori di contrasto, ecc...").
+
+Nella sezione relativa alla struttura, si può visualizzare la struttura della pagina vista da uno screen reader, e cioè come una lista di elementi a cui accedere uno per volta.
+
+![Wave - Sezione struttura](/static/coding/web/html/accessibility-wave-structure.png "La struttura è fatta dalle varie sezioni del linguaggio HTML (etichette di navigazione, sezione, articoli) e ovviamente dai titoli dal primo all'ultimo livello").
+
+Nella sezione relativa al contrasto, troviamo gli elementi con contrasto non sufficiente.
+
+![Wave - Sezione contrasto](/static/coding/web/html/accessibility-wave-contrast.png "Gli elementi con un contrasto non sufficiente sono riportati indicando il colore di primo piano, il colore di sfondo e la proporzione di contrasto").
+
+Lighthouse non è uno strumento specifico per l'accessibilità, però fornisce anche questa funzionalità e permette di valutare gli errori più elementari.
+
+![Lighthouse - Report](/static/coding/web/html/accessibility-lighthouse-report.png "Lighthouse fornisce un indice di valutazione dell'accessibilità del sito, seguito da un riepilogo degli errori riscontrati").
