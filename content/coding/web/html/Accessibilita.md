@@ -43,9 +43,9 @@ Gli utenti di un sito web possono essere personne affette da:
 - disturbi visivi: perdita totale (cecità) o compromissione parziale (ipovisione);
 - disturbi dell'udito: perdita totale (sordità) o compromissione leggera, moderata, severa o profonda dell'udito;
 
-Le persone affette da questi disturbi sviluppano disabilità, ovvero incapacità o limitazione nello svolgere attività essenziali per la vita quotidiana.
+Le persone affette da questi disturbi presentano <!-- sviluppano disabilità, ovvero incapacità o limitazione --> limitazioni nello svolgere attività essenziali per la vita quotidiana.
 
-Bisogna ricordare che le disabilità possono essere anche temporanee, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
+Bisogna ricordare che alcuni disturbi possono essere anche temporanei, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
 
 ## Leggi, normative, standard e linee guida per l'accessibilità digitale
 
@@ -168,9 +168,20 @@ Molte etichette del linguaggio HTML hanno già un informazione semantica, ad ese
 
 In molti altri casi, invece, si usano le etichette per creare elementi più complessi, come una sezione per la ricerca (filtri compresi) o una visualizzazione dei contenuti basata su schede (come le schede di navigazione di un browser). In questo caso, dobbiamo associare all'etichetta il ruolo, in modo da indicare alle tecnologie assistive il ruolo svolto dall'etichetta, quindi associamo il ruolo "sezione per la ricerca" o il ruolo "lista di schede";
 
+Le linee guida inoltre indicano per ogni ruolo un elenco di attributi (o proprietà) che il ruolo possiede. Ad esempio un menù può essere disabilitato, una sezione per la ricerca può essere nascosta, un banner pubblicitario può essere legato ad un popup (finestra a comparsa).
+
+### Ruoli
+
 Le linee guida riportano una lunga serie di ruoli che si possono associare alle etichette, tra le tante troviamo "menubar" (barra dei menu), "menu", "menuitem" (voce del menù), "search" (una sezione per la ricerca, filtri compresi) , "tree" (struttura ad albero), "treeitem" (voce della struttura ad albero), "tab" (schede), "banner" e tanti altri.
 
-Le linee guida inoltre indicano per ogni ruolo un elenco di attributi (o proprietà) che il ruolo possiede. Ad esempio un menù può essere disabilitato, una sezione per la ricerca può essere nascosta, un banner pubblicitario può essere legato ad un popup (finestra a comparsa).
+Questi ruoli sono divisi in sei categorie di seguito elencate:
+
+- Widget: descrivono componenti interattivi, come i pulsanti o i componenti di input a scelta singola o multipla;
+- Composite: descrivono dei contenitori di widget, ad esempio "menubar" (barra dei menu) e "tablist" (lista di schede);
+- Document structure: descrivono la struttura della pagina, come il menu di navigazione;
+- Landmark: descrivono sempre la struttura della pagina, ma ad un livello più alto, ad esempio la colonna pubblicitaria o un
+- Live region: descrive un'area con contenuti "live", come gli avvisi a comparsa o con timer;
+- Window: descrive i componenti che mostrano all'utente una finestra a comparsa, come i messaggi di alert;
 
 I ruoli vanno indicati con l'attributo HTML ``role`` la cui sintassi è la seguente:
 
@@ -178,11 +189,29 @@ I ruoli vanno indicati con l'attributo HTML ``role`` la cui sintassi è la segue
 <etichetta role="nome_ruolo">
 ```
 
+### Attributi
+
 Gli attributi (o proprietà) che il ruolo possiede sono indicati con gli attributi HTML che iniziano per ``aria-PR`` dove ``PR`` è il nome della proprietà da indicare. La sintassi è la seguente:
 
 ```html
 <etichetta aria-PR="valore">
 ```
+
+Gli attributi sono divisi in quattro categorie elencate di seguito:
+
+- Widget: gestiscono gli input e le azioni utente;
+- live: notificano un nuovo contenuto disponibile o una modifica nella pagina web;
+- drag and drop: gestiscono il copia e incolla;
+- relationship: indicano relazioni tra ruoli;
+
+### Focus
+
+Un altro comportamento su cui porre attenzione è la scelta del componente su cui interagire. In genere l'utente clicca su un componente e questo riceve il focus. Quando un componente riceve il focus, da la possibilità all'utente di interagirvi. Ad esempio quando si clicca su un campo di input, questo riceve il focus e quindi l'utente può inserire un valore. 
+
+Agli utenti che non utilizzano il mouse viene fornita in alternativa la possibilità di selezionare i componenti uno per volta utilizzando l'apposito pulsante della tastiera (in genere il tasto "TAB"). 
+
+Lo sviluppatore può indicare quali componenti vuole che ricevano il focus, aggiungendo nel codice HTML di questi componenti l'attributo HTML ``tabindex="0"``.
+
 
 ### Esempio di applicazione delle linee guida ARIA
 
@@ -218,13 +247,7 @@ Le tecnologie assistive non hanno modo di interpretare il codice HTML e estrapol
 
 Come si può notare, la lista è descritta con il ruolo ARIA "lista di schede" ed ogni elemento della lista è descritto con il ruolo ARIA "scheda". Ogni scheda ha gli attributi ARIA che indicano la posizione e se è selezionata o meno. Anche gli articoli sono descritti con il ruolo ARIA "pannello della scheda" e l'attributo ARIA che indica se nascosto o meno. Tutte queste informazioni aggiuntive permettono all'utente che fa uso di tecnologie assistive la gestione corretta delle schede realizzate nella pagina web.
 
-Un altro comportamento su cui porre attenzione è la scelta del componente su cui interagire. In genere l'utente clicca su un componente e questo riceve il focus. Quando un componente riceve il focus, da la possibilità all'utente di interagirvi. Ad esempio quando si clicca su un campo di input, questo riceve il focus e quindi l'utente può inserire un valore. 
-
-Agli utenti che non utilizzano il mouse viene fornita in alternativa la possibilità di selezionare i componenti uno per volta utilizzando l'apposito pulsante della tastiera (in genere il tasto "TAB"). 
-
-Lo sviluppatore può indicare quali componenti vuole che ricevano il focus, aggiungendo nel codice HTML di questi componenti l'attributo HTML ``tabindex="0"``.
-
-Riprendendo l'esempio del componente per la visualizzare in schede, per applicare il focus alle tre schede si può integrare il codice HTML come di seguito:
+Per aggiungere anche la possibilità di applicare il focus alle tre schede, si può integrare il codice HTML come di seguito:
 
 ```html
 <ul role="tablist">
@@ -238,6 +261,8 @@ Riprendendo l'esempio del componente per la visualizzare in schede, per applicar
   <article role="tabpanel" aria-hidden="true"> … </article>
 </div>
 ```
+
+In questo modo, è possibile navigare sugli elementi della lista (ogni elemento rappresenta un pulsante per visualizzare la scheda corrispondente) attraverso la tastiera e selezionare una scheda da leggere. 
 
 <!-- TODO 
 
