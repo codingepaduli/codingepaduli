@@ -290,11 +290,14 @@ Una volta realizzato il sito web, è necessario effettuare dei test di accessibi
 
 Tra gli strumenti più utilizzati, troviamo:
 
-- [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 - [Axe (Deque Systems Inc.)](https://www.deque.com/axe/)
-- [Wave (Utah State University)](https://wave.webaim.org/) 
+- [Wave (Utah State University)](https://wave.webaim.org/)
+- [Tota11y](https://khan.github.io/tota11y/)
+- [Lighthouse](https://github.com/GoogleChrome/lighthouse)
 
 Tutti questi strumenti sono capaci di rilevare una buona parte di attributi mancanti nel codice HTML.
+
+### Wave
 
 Wave dev tool è un estensione che si può installare nel browser e permette di visualizzare tutti i problemi di accessibilità della pagina web. Una volta installato ed eseguito, riporta un riepilogo di tutti i problemi riscontrati.
 
@@ -313,6 +316,24 @@ Nella sezione relativa alla struttura, si può visualizzare la struttura della p
 Nella sezione relativa al contrasto, troviamo gli elementi con contrasto non sufficiente.
 
 ![Wave - Sezione contrasto](/static/coding/web/html/accessibility-wave-contrast.png "Gli elementi con un contrasto non sufficiente sono riportati indicando il colore di primo piano, il colore di sfondo e la proporzione di contrasto").
+
+### Tota11y
+
+Tota11y è una sorta di estensione per browser (si installa nei bookmarks, tecnicamente è una bookmarklet) che aiuta a visualizzare nella pagina i problemi di accessibilità. E' disponibile anche come libreria che si può installare in ambiente di sviluppo, aggiungendola nelle pagine HTML come di seguito.
+
+```javascript
+<script src="path/to/tota11y.js"></script>
+```
+
+Una volta attivata, presenta una sezione di riepilogo contenente le varie problematiche di accessibilità del sito analizzato.
+
+![Tota11y - Riepilogo](/static/coding/web/html/accessibility-tota11y-menu.png "Il riepilogo riporta i problemi relativi ai titoli, al contrasto, ai collegamenti, ai testi alternativi alle immagini, ecc...")
+
+Ogni volta che si seleziona una sezione del menù, si apre una scheda che mostra i vari errori riscontrati per quella sezione.
+
+![Tota11y - Sezioni](/static/coding/web/html/accessibility-tota11y-sections.png "Ogni sezione indica il numero di errori e mostra l'elenco degli errori")
+
+### Lighthouse
 
 Lighthouse non è uno strumento specifico per l'accessibilità, però fornisce anche questa funzionalità e permette di valutare gli errori più elementari.
 
