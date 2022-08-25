@@ -60,18 +60,16 @@ Esistono software che permettono, anche con poche conoscenze tecniche, di disegn
 
 E' possibile creare dei siti web "statici", cioè scritti con software che trasformano un insieme di articoli e contenuti in un sito web. Questi strumenti prendono il nome di "static site generator" (generatori di siti web statici).
 
-E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor
-open source consigliati spunta [Atom](https://atom.io/ "Link all'editor Atom"), estremamente configurabile, oppure [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), o ancora [VSCodium](https://vscodium.com/ "Link all'editor VSCodium"), un clone open source di Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
+E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor consigliati spuntano [Notepad++](https://notepad-plus-plus.org/ "Link all'editor Notepad++"), [VSCodium](https://vscodium.com/ "Link all'editor VSCodium") e Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
 
 Una volta costruito, il sito web deve essere **pubblicato** sul web, scegliendo le caratteristiche del servizio di hosting o di cloud, i certificati di sicurezza e gli strumenti adatti per il trasferimento e la sincronizzazione delle pagine sul dominio.
 
 ## Caratteristiche di un sito web
 
-Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisiti molto richiesti, seppur non obbligatori, che elenchiamo di seguito
+Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisiti molto richiesti, seppur non obbligatori, che elenchiamo di seguito:
 
-- **validità**: caratteristica che indica l'assenza di errori. L'attività di validazione è necessaria ad individuare e correggere gli errori prima che siano pubblicati sul sito web. Per svolgere questi compiti, troviamo strumenti per la correzione grammaticale, validatori delle pagine web, validatori dei link (per
-  evitare che possano riferirsi a risorse rimosse o spostate). Uno strumento di controllo dei link è il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link"). Per validare il codice HTML si può utilizzare il validatore [W3C Validator](https://validator.w3.org/ "Link al validatore HTML");
-- **accessibilità**: <!-- TODO add accessibility tools--> caratteristica che permette l'utilizzo del sito web anche a chi ha difficoltà visive o motorie. L'attività avviene attraverso strumenti specifici che consentono la visualizzazione del sito web con stili grafici ad alto contrasto oppure utilizzando il sito attraverso strumenti di sintesi vocale;
+- **validità**: caratteristica che indica l'assenza di errori. L'attività di validazione è necessaria ad individuare e correggere gli errori prima che siano pubblicati sul sito web. Per svolgere questi compiti, troviamo strumenti per la correzione grammaticale, validatori delle pagine web, validatori dei link (per evitare che possano riferirsi a risorse rimosse o spostate). Uno strumento di controllo dei link è il [W3C Link Checker](https://validator.w3.org/checklink "Link al validatore dei link"). Per validare il codice HTML si può utilizzare il validatore [W3C Validator](https://validator.w3.org/ "Link al validatore HTML");
+- **accessibilità**: caratteristica che permette l'utilizzo del sito web anche persone con ridotta o impedita capacità sensoriale, motoria o psichica;
 - **"responsività"**: caratteristica indicante che il sito web è fruibile su schermi con differenti risoluzioni e formati, sia quelli piccoli dei cellulari e palmari, sia quelli classici dei computer e tablet, sia quelli extra-large delle smart-TV. Uno strumento per verificare che un sito web sia "responsive" è [Responsively.App](https://responsively.app/ "App open source per simulare in un'unica schermata la visualizzazione del sito su più dispositivi");
 - **rapidità**: Indica i tempi di caricamento della pagina e i tempi di risposta alle azioni dell'utente. L'attività fa si che i gli utenti possano interagire rapidamente col sito web, anche su connessioni lente, usando strumenti quali
   [lighthouse](https://developers.google.com/web/tools/lighthouse/ "Link al sito web di lighthouse");
@@ -79,21 +77,16 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
   ([PWA](https://it.m.wikipedia.org/wiki/Progressive_Web_App "Link all'articolo su PWA su wikipedia.it"));
 - **ottimizzazione per i motori di ricerca ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Link all'articolo su SEO su wikipedia.it"))**: permette al sito web di posizionarsi piú in alto possibile in un motore di ricerca.
 
-   Opzionalmente si può adattare al semantic web.
-  [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Link all'articolo sul Web semantico su wikipedia.it");
+Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Link all'articolo sul Web semantico su wikipedia.it").
 
 ## Riferimenti alle risorse online
 
-Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio
-HTML, degni di nota sono:
+Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio HTML, degni di nota sono:
 [HTML.it](https://www.html.it/guide/guida-html/ "Link al sito web di html.it") (in italiano),
 [HTML.it (versione 5)](https://www.html.it/guide/guida-html5/ "Link al sito web di html.it") ( Guida HTML5 in italiano),
 [corsidia.com](https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html "Link al sito web di corsidia.com") (in italiano),
 [it.wikibooks.org](https://it.m.wikibooks.org/wiki/HTML "Link al sito web di wikibooks.org") (un buon manuale in italiano),
 [w3schools.com](https://www.w3schools.com/html/ "Link al sito web di w3schools.com") (in inglese),
 [internetingishard.com](https://internetingishard.com/html-and-css/ "Link al sito web di internetingishard.com") (in inglese, per principianti),
-[developer.mozilla.org](https://developer.mozilla.org/it/docs/Web/HTML "Link al sito web di developer.mozilla.org"), sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione), ed infine
-[freecodecamp.org](https://guide.freecodecamp.org/html/ "Link al sito web di freecodecamp.org"), organizzazione
-no-profit per aiutare le persone ad apprendere l'arte della
-programmazione, con corsi e certificazioni disponibili gratuitamente (in
-inglese).
+[developer.mozilla.org](https://developer.mozilla.org/it/docs/Web/HTML "Link al sito web di developer.mozilla.org"), sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione), ed infine 
+[freecodecamp.org](https://guide.freecodecamp.org/html/ "Link al sito web di freecodecamp.org"), organizzazione no-profit per aiutare le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese).
