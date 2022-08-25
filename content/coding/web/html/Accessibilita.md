@@ -28,24 +28,7 @@ references:
 
 # Accessibilità (a11y) 
 
-Nello sviluppo delle applicazioni software e dei siti web un'attenzione particolare va agli utenti con disabilità.
-
-## Disturbi e disabilità
-
-Gli utenti di un sito web possono essere personne affette da:
-
-- disturbi psichici e psichiatrici: disturbi d'ansia, disturbi del tono dell'umore e disturbi di personalità;
-- disabilità intellettiva (ex ritardo mentale) un alterato funzionamento del sistema nervoso centrale di grado lieve, moderato, grave o molto grave;
-- disturbi dello spettro autistico;
-- disturbi specifici del linguaggio, compormettono lo sviluppo del linguaggio in assenza di un problema neurologico, sensoriale, intellettivo o affettivo;
-- disturbi specifici dell'apprendimento: difficoltà specifiche nella lettura (dislessia), scrittura (disortografia) e calcolo (discalculia).
-- disturbi motori: incapacità o limitazione nell'uso di arti o del corpo.
-- disturbi visivi: perdita totale (cecità) o compromissione parziale (ipovisione);
-- disturbi dell'udito: perdita totale (sordità) o compromissione leggera, moderata, severa o profonda dell'udito;
-
-Le persone affette da questi disturbi presentano <!-- sviluppano disabilità, ovvero incapacità o limitazione --> limitazioni nello svolgere attività essenziali per la vita quotidiana.
-
-Bisogna ricordare che alcuni disturbi possono essere anche temporanei, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
+Nello sviluppo delle applicazioni software e dei siti web un'attenzione particolare va agli utenti che presentano difficoltà, disturbi o disabilità.
 
 ## Leggi, normative, standard e linee guida per l'accessibilità digitale
 
@@ -63,7 +46,7 @@ Tra gli standard e le linee guida relative l'accessibilità riportiamo:
 - [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/): Linee guida per la realizzazione di contenuti e siti web più accessibili;
 - [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria-1.1/): Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive;
 
-In particolare è la legge Stanca del 2004 che stabilisce l'accessibilità degli strumenti informatici anche per i soggetti disabili, obbligando per legge i siti dell'amministrazione pubblica e dei fornitori di servizi pubblici a seguire le linee guida WCAG versione 1.0 del 1999.
+In particolare è la legge Stanca del 2004 che stabilisce l'accessibilità degli strumenti informatici anche per i soggetti che presentano difficoltà, disturbi o disabilità, obbligando per legge i siti dell'amministrazione pubblica e dei fornitori di servizi pubblici a seguire le linee guida WCAG versione 1.0 del 1999.
 
 Nel 2018 con il Decreto Legislativo No.106 l'Italia recepisce le direttive della Comunità Europea (atte a migliorare l'accessibilità di siti e app per smartphone per il settore pubblico di ogni paese membro dell'Unione Europea) ed aggiorna le linee guida di riferimento per l'accessibilità, indicando le WCAG versione 2.0 pubblicate nel 2008.
 
@@ -77,19 +60,34 @@ In alcuni casi, però, le leggi italiane non sono le uniche a cui riferirsi. Se 
 
 Anche le leggi nazionali di questi paesi prendono come riferimento gli standard e le linee guida internazionali relative l'accessibilità (WCAG, WAI-ARIA).
 
-## Tecnologie assistive
+## Disturbi e disabilità
 
-In ambito informatico, le disabilitá comportano delle difficoltà parziali o una completa impossibilità ad usare mouse e/o tastiera e a visualizzare i contenuti su uno schermo, che sia quello dello smartphone o del computer o della smart-TV.
+Gli utenti di un sito web possono essere personne affette da:
+
+- disturbi psichici e psichiatrici: disturbi d'ansia, disturbi del tono dell'umore e disturbi di personalità;
+- disabilità intellettiva (ex ritardo mentale) un alterato funzionamento del sistema nervoso centrale di grado lieve, moderato, grave o molto grave;
+- disturbi dello spettro autistico;
+- disturbi specifici del linguaggio, compormettono lo sviluppo del linguaggio in assenza di un problema neurologico, sensoriale, intellettivo o affettivo;
+- disturbi specifici dell'apprendimento: difficoltà specifiche nella lettura (dislessia), scrittura (disortografia) e calcolo (discalculia).
+- disturbi motori: incapacità o limitazione nell'uso di arti o del corpo.
+- disturbi visivi: perdita totale (cecità) o compromissione parziale (ipovisione);
+- disturbi dell'udito: perdita totale (sordità) o compromissione leggera, moderata, severa o profonda dell'udito;
+
+Bisogna ricordare che alcuni disturbi possono essere anche temporanei, come può essere per una persona che è nel periodo di convalescenza dovuto ad un'operazione chirurgica o ad una malattia.
+
+Le persone affette da questi disturbi presentano <!-- sviluppano disabilità, ovvero incapacità o limitazione --> difficoltà o limitazioni nello svolgere attività essenziali per la vita quotidiana, un modo alternativo per svolgerle è attraverso l'uso di tecnologie assistive.
+
+## Tecnologie assistive
 
 Numerose tecnologie assistive vanno a supporto dell'utente consentendogli di utilizzare i dispositivi, le applicazioni ed i siti web. Tra le tecnologie assistive riportiamo:
 
-- i lettori dello schermo (screen-reader), che permettono ad un utente con disabilità visive di navigare tra i contenuti dell'applicazione e della pagina web, leggendoli ad alta voce. Tra gli screen reader ricordiamo [NonVisual Desktop Access (NVDA)](https://www.nvaccess.org/) e [Job Access With Speech (JAWS)](https://www.freedomscientific.com/products/software/jaws/) per Windows, [Orca](https://help.gnome.org/users/orca/stable/index.html.en#getting_started) per Linux, TalkBack per Android, VoiceOver per Mac e iOS;
+- i lettori dello schermo (screen-reader), che permettono ad un utente con disturbi visivi di navigare tra i contenuti dell'applicazione e della pagina web, leggendoli ad alta voce. Tra gli screen reader ricordiamo [NonVisual Desktop Access (NVDA)](https://www.nvaccess.org/) e [Job Access With Speech (JAWS)](https://www.freedomscientific.com/products/software/jaws/) per Windows, [Orca](https://help.gnome.org/users/orca/stable/index.html.en#getting_started) per Linux, TalkBack per Android, VoiceOver per Mac e iOS;
 - lenti di ingrandimento: permettono di ingrandire di una determinata percentuale una porzione dello schermo, in modo da favorire la visione dei contenuti;
 - i sistemi di riconoscimento ottico dei caratteri (OCR): permettono la conversione in digitale o la lettura ad alta voce del testo scritto su un foglio di carta;
 - sistemi di dettatura (o trascrizione del parlato) ed assistenti vocali: permettono l'interazione attraverso la voce, in particolare per l'ascolto e la dettatura del testo (o per la trascrizione di messaggi vocali);
 - sistemi di amplificazione dei suoni (anche auricolari): permettono di amplificare i suoni per facilitare l'ascolto;
 - tastiere con caratteri ingranditi o tastiere tattili: hanno tasti con caratteri stampati ad una dimensione maggiore o con lettere in rilievo che permettono di capire su quale tasto si è poggiati, inoltre hanno tasti aggiuntivi per aumentare il numero di funzionalità disponibili;
-- sistemi di puntamento: sono un alternativa al mouse e permettono di utilizzare gli occhi, la testa o il corpo per muovere il puntatore del mouse;
+- sistemi di puntamento: sono un alternativa al mouse e permettono di utilizzare gli occhi, la testa o il corpo per muovere il puntatore del mouse.
 
 ## Linee guida WCAG
 
@@ -105,7 +103,7 @@ Nel principale documento delle WCAG, ora alla versione 2, troviamo tre livelli:
 
 I principi sono:
 
-- "Percepibile": Gli utenti devono poter percepire informazioni e componenti (tabelle, liste, immagini, grafici, ...). Questo principio assicura che le persone disabili possano vedere il contenuto o avere alternative disponibili nel caso in cui ne abbiano bisogno, come un testo che descriva un'immagine o un sottotitolo ad un video;
+- "Percepibile": Gli utenti devono poter percepire informazioni e componenti (tabelle, liste, immagini, grafici, ...). Questo principio assicura che il contenuto sia visibile o che si possano avere alternative disponibili nel caso di bisogno, come un testo che descriva un'immagine o un sottotitolo ad un video;
 - "Operabile": I componenti dell'interfaccia utente e la navigazione devono essere utilizzabili. Questo principio consente agli utenti di utilizzare la loro tecnologia preferita per gestire il prodotto digitale, ad esempio navigare nelle slide di una presentazione o tra i capitoli di un documento (senza dover scorrere tutte le slide o pagine);
 - "Comprensibile": Le informazioni e il funzionamento dell'interfaccia utente devono essere comprensibili. Questo principio combina l'assicurarsi che il contenuto sia facile da capire e che si possa interagire con il prodotto digitale in modo comprensibile, ad esempio durante la compilazione di un modulo o durante la visione di un video;
 - "Robusto": Il contenuto deve essere sufficientemente robusto da poter essere interpretabile da uomini, software e macchine, comprese le tecnologie assistive. Questo principio, molto tecnico, sottolinea quanto sia importante un'attenta progettazione e realizzazione (da interpretarsi come un buon codice sorgente in ambito software) per realizzare un prodotto accessibile.
@@ -145,9 +143,9 @@ La conformità attesta che il sito web segue tutte le linee guida delle WCAG e c
 
 I criteri di successo delle WCAG possono avere uno dei tre livelli: **A**, **Doppia-A** e **Tripla-A**. 
 
-Il livello più basso, A, garantisce l'accessibilità di base. Se raggiungi questo livello, non stai escludendo attivamente la maggior parte delle persone disabili. 
+Il livello più basso, A, garantisce l'accessibilità di base. Se raggiungi questo livello, non stai escludendo attivamente la maggior parte delle persone con disturbi. 
 
-Il secondo livello, Double-A, garantisce l'accessibilità per la maggior parte delle persone con disabilità. Questo è il livello richiesto dalla maggior parte delle leggi e delle politiche. Per raggiungerlo, è necessario confermare tutti i criteri di successo che sono di livello A e Double-A.
+Il secondo livello, Double-A, garantisce l'accessibilità per la maggior parte delle persone con disturbi. Questo è il livello richiesto dalla maggior parte delle leggi e delle politiche. Per raggiungerlo, è necessario confermare tutti i criteri di successo che sono di livello A e Double-A.
 
 Il terzo livello, Triple-A, sono difficili da raggiungere, ma può avere senso offrire funzionalità che rientrano in questo livello di conformità.
 
