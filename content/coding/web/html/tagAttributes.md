@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 04 - Etichette che richiedono l'uso di attributi"
+weight: 9670
 ---
 
 # Etichette con attributi

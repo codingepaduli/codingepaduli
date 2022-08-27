@@ -1,7 +1,7 @@
 ---
 type: "html"
 title: "HTML Lez. 01 - Introduzione"
-description: "HTML Lez. 01 - Introduzione"
+description: "HTML Lez. 01 - Introduzione al linguaggio HTML"
 date: 2019-07-15
 publishdate: 2019-07-15
 lastmod: 2019-07-15
@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 01 - Introduzione al linguaggio HTML"
+weight: 10000
 ---
 
 # WWW ed HTML

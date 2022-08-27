@@ -10,6 +10,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 08 - Immagini, figure, caricamento asincrono, selezione dell'immagine adatta allo schermo e selezione delle aree dell'immagine"
+weight: 9430
 
 references:
     -   title: "WebP image compression"

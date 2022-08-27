@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 02.1 - Esercizi basilari su HTML"
+weight: 9820
 ---
 
 # Esercizi basilari su HTML

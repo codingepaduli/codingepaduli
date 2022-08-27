@@ -10,6 +10,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 03.1 - Esercizi sulla formattazione del testo"
+weight: 9730
 ---
 
 # Esercizi basilari sulla formattazione del testo

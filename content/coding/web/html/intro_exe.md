@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML - Esercizi sul WWW"
+weight: 9940
 ---
 
 # Esercizi

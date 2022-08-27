@@ -10,6 +10,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 06 - Validazione del codice HTML"
+weight: 9490
 
 references:
     -   title: "W3C Markup Validation Service"

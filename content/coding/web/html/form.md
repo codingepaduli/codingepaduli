@@ -10,6 +10,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 10 - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
+weight: 9310
 
 references:
     -   title: "W3C Markup Validation Service"

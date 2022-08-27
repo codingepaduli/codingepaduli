@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 07 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
+weight: 9370
 
 references:
     -   title: "EditorConfig"

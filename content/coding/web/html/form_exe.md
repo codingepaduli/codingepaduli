@@ -10,6 +10,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 10.1 - Esercizi e quiz di comprensione sui moduli di invio dati"
+weight: 9250
 ---
 
 # Esercizi e quiz sui moduli di invio dati

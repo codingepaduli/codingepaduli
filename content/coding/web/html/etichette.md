@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
+weight: 9880
 ---
 
 # Il linguaggio HTML

@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 05 - Metadati: Informazioni relative ad una pagina web"
+weight: 9550
 
 references:
     -   title: "Sito htmlhead.dev"

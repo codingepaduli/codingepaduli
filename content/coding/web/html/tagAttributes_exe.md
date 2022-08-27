@@ -10,6 +10,7 @@ keywords: ["coding", "web", "HTML"]
 draft: true
 toc: false
 summary: "HTML Lez. 04.1 - Esercizi su liste, tabelle e collegamenti"
+weight: 9610
 ---
 
 # Esercizi su liste, tabelle e collegamenti

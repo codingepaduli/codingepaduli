@@ -11,6 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 03 - Etichette per la formattazione del testo"
+weight: 9790
 ---
 
 # Etichette per la formattazione del testo
