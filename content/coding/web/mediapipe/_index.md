@@ -7,7 +7,7 @@ publishdate: 2022-08-30
 lastmod: 2022-08-30
 categories: ["coding", "web", "mediapipe"]
 keywords: ["coding", "web", "mediapipe"]
-draft: true
+draft: false
 toc: false
 summary: "Lezioni su mediapipe per il riconoscimento della posa e della mano"
 ---

@@ -7,7 +7,7 @@ publishdate: 2022-08-30
 lastmod: 2022-08-30
 categories: ["coding", "web", "mediapipe"]
 keywords: ["coding", "web", "mediapipe"]
-draft: false
+draft: true
 toc: false
 summary: "Esercizi di A2 - 01 Scheletrizzazione mano"
 customJS: ["/static/js/p5-1.2.0-min.js"]
