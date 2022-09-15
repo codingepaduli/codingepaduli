@@ -424,9 +424,9 @@ Il risultato è il seguente:
 
 ![Input di tipo radio](/static/coding/web/html/inputRadio.png "Input di tipo radio")
 
-### Campi di selezione singola da menú a tendina
+### Campi di selezione singola da menù a tendina
 
-I campi di selezione sono campi nei quali l'utente puó scegliere un valore tra quelli disponibili nel menú a tendina.
+I campi di selezione sono campi nei quali l'utente puó scegliere un valore tra quelli disponibili nel menù a tendina.
 
 Dato che anche i campi di selezione sono campi di input, devono essere inseriti all'interno di un form per poter inviare un valore al server,
 
@@ -434,7 +434,7 @@ Per poter creare un campo di selezione, si utilizza l'etichetta ``select``, che 
 
 Gli attributi ``name``, ``required``, ``readonly``, ``hidden`` e ``disabled`` ricoprono le stesse funzionalità  viste per i campi di input.
 
-Le voci da mostrare nel menú a tendina devono essere inserite nell'etichetta ``option``, che prevede l'attributo ``value``, il cui valore viene inviato al server.
+Le voci da mostrare nel menù a tendina devono essere inserite nell'etichetta ``option``, che prevede l'attributo ``value``, il cui valore viene inviato al server.
 
 Un esempio di campo di selezione è il seguente:
 

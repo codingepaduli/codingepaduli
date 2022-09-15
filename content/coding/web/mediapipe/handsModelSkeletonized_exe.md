@@ -34,13 +34,13 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 </div>
 
 <script>
-      
+
     let canvas = null;
     let videoElement;
     let camera;
     let hands;
     let results;
-    
+
     function onResults(risultati) {
         results = risultati;
         console.info("risultati letti");
@@ -53,7 +53,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
     function setup() {
         console.info("setup canvas");
-        
+
         let canvasNode = document.querySelector('#handsModel');
         let cw = canvasNode.parentNode.clientWidth;
         canvas = createCanvas(640, 480).parent('handsModel');
@@ -82,7 +82,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
             width: 1280,
             height: 720
         });
-        
+
         camera.start();
         console.info("end setup")
     }
@@ -105,12 +105,12 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
         } else {
             mano0 = results.multiHandLandmarks[0];
             background("green");
-            text("PIENO", 30, 30);           
+            text("PIENO", 30, 30);
         }
 
         if (mano0 !== undefined && mano0[0] !== undefined ) {
             console.info(mano0[0].x * 640 + " - " + mano0[0].y * 480, 60, 60);
-            
+
             strokeWeight(5);
             stroke("white");
             for (let i=0; i<mano0.length; i++) {

@@ -43,10 +43,10 @@ visualizzazione e tempi di caricamento.
 
 Smartphone e dispositivi IoT spesso sono dotati di connessioni lente e a
 pagamento, come il 3G, e di schermi piccoli con risoluzioni ridotte, per
-cui su questi dispositivi è consigliato mostrare immagini di qualitá
+cui su questi dispositivi è consigliato mostrare immagini di qualità
 ridotta, che siano adatte come dimensioni e che possano al contempo
 ridurre i tempi di caricamento dal server. In caso di schermi grandi ed
-HD, invece, è preferibile mostrare immagini ad alta qualitá, poichè
+HD, invece, è preferibile mostrare immagini ad alta qualità, poiché
 generalmente questi dispositivi sono collegati in wi-fi o a reti veloci.
 
 Sempre nell'ottica dell'ottimizzazione dei tempi, si possono utilizzare
@@ -74,7 +74,7 @@ Licenza
 [CC0 1.0](https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html "Logo licenza CC0")
 
 Ci possono essere casi in cui l'immagine non puó trovarsi su un file a
-parte e non puó essere scaricata da internet, perchè magari il
+parte e non puó essere scaricata da internet, perché magari il
 dispositivo IoT è collegato ad una rete locale senza accesso ad
 internet, quindi l'immagine puó essere contenuta direttamente nel tag, ma a
 patto che sia stata convertita in base 64 data-URI e che sia specificato
@@ -98,8 +98,8 @@ dispositivo, invece, è necessario conoscere alcuni concetti. Ogni
 dispositivo, a seconda della risoluzione dello schermo, ha una propria
 **pixel density**, ovvero un numero di pixel presenti su una linea di un
 pollice (PPI), descritta talvolta anche come punti presenti su una linea
-di un pollice (DPI). Piú la pixel density è alta, piú la qualitá dello
-schermo è alta. Il browser, peró, utilizza una propria misura, detta
+di un pollice (DPI). Piú la pixel density è alta, piú la qualità dello
+schermo è alta. Il browser, però, utilizza una propria misura, detta
 **pixel CSS**, calcolata a partire dalla pixel density.
 
 Il rapporto tra **pixel density** e **pixel CSS** è detto
@@ -109,7 +109,7 @@ larghezza dello schermo, per la selezione dell'immagine.
 Su uno schermo di 1200px, un'immagine di 1200px occupa:
 
 - l'intero schermo se la pixel ratio è 1x;
-- metá schermo se la pixel ratio è 2x;
+- metà schermo se la pixel ratio è 2x;
 - un terzo dello schermo se la pixel ratio è 3x;
 - e cosi via...
 
@@ -124,7 +124,7 @@ mostrarle su schermi con pixel ratio differenti), ad esempio
 pixel ratio di 1x, puó il browser selezionare l'immagine che piú si
 adatta ad occupare l'intera larghezza del dispositivo?
 
-Non puó, perchè non conosce la larghezza dell'immagine "immagine1.png".
+Non puó, perché non conosce la larghezza dell'immagine "immagine1.png".
 Per conoscere la risoluzione di ogni immagine, dovrebbe scaricarle tutte
 dal server. Per evitare questo spreco di tempo e risorse, è necessario
 che sia lo sviluppatore ad indicare, per ogni immagine, la rispettiva
@@ -144,7 +144,7 @@ Indicate le immagini e le rispettive larghezze, ad esempio img1 di
 200px, img2 di 600px e img3 di 1200px, dobbiamo associare queste
 immagini ai vari dispositivi. Si tenga presente che, su uno schermo di
 1200px di larghezza, non è detto si debba visualizzare un immagine di
-1200px, perchè magari si ha una pagina con 6 colonne e quindi la
+1200px, perché magari si ha una pagina con 6 colonne e quindi la
 larghezza adatta per ogni colonna è 1200px/6 = 200px. Caricando quindi
 un'immagine di 200px x 150px (invece che una da 1200px x 900px) si ha un
 risparmio di tempo (e dati trasmessi di rete) di 35 volte\! Considerando
@@ -152,7 +152,7 @@ che le colonne dell'esempio sono 6, il risparmio è considerevole.
 
 Inoltre c'è da considerare la pixel ratio, quindi come indicare
 l'associazione delle immagini al dispositivo? Per indicare il
-dispositivo, si usano le media query, che peró non saranno trattate in
+dispositivo, si usano le media query, che però non saranno trattate in
 dettaglio ora, si rimanda ad una lezione successiva. Per indicare invece
 la dimensione che deve occupare l'immagine, si usano i descrittori
 **vw**, che descrive la percentuale di larghezza da occupare sullo
@@ -169,7 +169,7 @@ Il codice indicato descrive 3 associazioni: la prima indica che a
 schermi con risoluzione massima di 500 pixel, l'immagine deve essere
 presentata a schermo intero; la seconda indica che a schermi con
 risoluzione massima di 1500 pixel, l'immagine deve essere presentata a
-metá schermo, nell'ultimo caso, con schermi piú grandi di 1500 (per
+metà schermo, nell'ultimo caso, con schermi piú grandi di 1500 (per
 esclusione), l'immagine deve essere presentata ad un quarto dello
 schermo.
 
@@ -239,8 +239,8 @@ al pianeta scelto.
 Le immagini possono essere caricate su richiesta utilizzando le tecniche
 di **lazy loading**, ovvero le immagini che si trovano in aree non
 visibili (l'utente deve scorrere la pagina o deve cliccare qualche area
-per renderle visibili sullo schermo) possono essere caricate in modalitá
-**eager**, cioè immediatamente, oppure in modalitá **lazy**, cioè solo
+per renderle visibili sullo schermo) possono essere caricate in modalità
+**eager**, cioè immediatamente, oppure in modalità **lazy**, cioè solo
 quando l'utente scorre la pagina o rende visibile l'area e quindi arriva
 a "vedere" l'immagine.
 
@@ -248,7 +248,7 @@ Utilizzare il caricamento lazy per le immagini che si trovano sulle aree
 non visibili permette di ridurre i tempi iniziali di caricamento della
 pagina, rimandando il caricamento di questi dati in un secondo momento.
 
-Per attivare il caricamento delle immagini in modalitá lazy (o eager),
+Per attivare il caricamento delle immagini in modalità lazy (o eager),
 si utilizza l'attributo `loading` del tag `img`, che puó assumere il
 valore "eager" o "lazy", come nell'esempio seguente:
 
@@ -265,7 +265,7 @@ Ricapitolando quindi gli attributi del tag img, abbiamo:
 
 - `src` per indicare l'URL dell'**unica** immagine da mostrare;
 - `width` per la larghezza dello spazio occupato in pagina;
-- `height` per l'altezza odello spazio occupato in pagina;
+- `height` per l'altezza dello spazio occupato in pagina;
 - `srcset` per la lista di immagini da scegliere con relative
   larghezze;
 - `sizes` per la lista di associazioni tra risoluzione dei dispositivi

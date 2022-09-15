@@ -29,15 +29,14 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
     <video class="input_video"></video>
 </div>
 
+<script>
 
-  <script>
-      
     let canvas = null;
     let videoElement;
     let camera;
     let pose;
     let results;
-    
+
     function onResults(risultati) {
         results = risultati;
         console.info("risultati letti");
@@ -45,7 +44,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
     function setup() {
         console.info("setup canvas");
-        
+
         let canvasNode = document.querySelector('#handsModel');
         let cw = canvasNode.parentNode.clientWidth;
         canvas = createCanvas(640, 480).parent('handsModel');
@@ -76,7 +75,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
             width: 1280,
             height: 720
         });
-        
+
         camera.start();
         console.info("end setup")
     }
@@ -88,11 +87,10 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
             //image(results.image, 0, 0);
         }
 
-        
         fill("white");
         strokeWeight(1);
         let poseData = [];
-        if (results === undefined || results.poseLandmarks === undefined || 
+        if (results === undefined || results.poseLandmarks === undefined ||
                 results.poseLandmarks.length === undefined || results.poseLandmarks.length == 0) {
             background("black");
             text("VUOTO", 30, 30);
@@ -102,16 +100,16 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
             background("green");
             text("PIENO", 30, 30);
         }
-        
+
         if (poseData !== undefined) {
             console.info(poseData[0].x * 640 + " - " + poseData[0].y * 480, 60, 60);
-            
+
             strokeWeight(5);
             stroke("white");
             for (let i=0; i<poseData.length; i++) {
                 point(poseData[i].x * 640, poseData[i].y * 480);
             }
         }
-        
+
     }
-  </script>
+</script>

@@ -27,7 +27,7 @@ references:
         description: "Uno standard che definisce le informazioni semantiche da inserire nelle etichette degli ipertesti al fine di poter essere accessibili attraverso tecnologie assistive"
 ---
 
-# Accessibilità (a11y) 
+# Accessibilità (a11y)
 
 Nello sviluppo delle applicazioni software e dei siti web un'attenzione particolare va agli utenti che presentano difficoltà, disturbi o disabilità.
 
@@ -35,11 +35,11 @@ Nello sviluppo delle applicazioni software e dei siti web un'attenzione particol
 
 La Costituzione Italiana afferma con l'art.3 tra i Principi Fondamentali che **tutti i cittadini hanno pari dignità sociale** e che **è compito della Repubblica rimuovere gli ostacoli di ordine economico e sociale, che, limitando di fatto la libertà e l'eguaglianza dei cittadini, impediscono il pieno sviluppo della persona umana e l'effettiva partecipazione di tutti i lavoratori all'organizzazione politica, economica e sociale del Paese**.
 
-Il diritto all'accessibilità si fonda quindi sulla Costituzione ed è associato alla possibilità anche per persone con ridotta o impedita capacità sensoriale, motoria o psichica, ossia affette da disabilità sia temporanea che stabile, di accedere e muoversi autonomamente in ambienti fisici (per cui si parla di accessibilità fisica), di fruire e accedere autonomamente a contenuti culturali (nel qual caso si parla di accessibilità culturale) o di fruire dei sistemi informatici e delle risorse a disposizione tipicamente attraverso l'uso di tecnologie assistive o tramite il rispetto di requisiti di accessibilità dei prodotti [citazione da wikipedia](https://it.wikipedia.org/wiki/Accessibilit%C3%A0_(design)).
+Il diritto all'accessibilità si fonda quindi sulla Costituzione ed è associato alla possibilità anche per persone con ridotta o impedita capacità sensoriale, motoria o psichica, ossia affette da disabilità sia temporanea che stabile, di accedere e muoversi autonomamente in ambienti fisici (per cui si parla di accessibilità fisica), di fruire e accedere autonomamente a contenuti culturali (nel qual caso si parla di accessibilità culturale) o di fruire dei sistemi informatici e delle risorse a disposizione tipicamente attraverso l'uso di tecnologie assistive o tramite il rispetto di requisiti di accessibilità dei prodotti [citazione da Wikipedia](https://it.wikipedia.org/wiki/Accessibilit%C3%A0_(design)).
 
 Il concetto di accessibilità, nel tempo, è stato esteso anche ai ai siti web ed ai servizi digitali.
 
-Un software o un sito web non è di per se accessibile solo perchè l'utente usufruisce di tecnologie assistive, ma deve seguire gli standard e le linee guida indicate a livello internazionale. Queste linee guida permettono all'utente l'accesso alle informazioni e l'uso delle funzionalità fornite per mezzo delle tecnologie assistive di cui fa uso.
+Un software o un sito web non è di per se accessibile solo perché l'utente usufruisce di tecnologie assistive, ma deve seguire gli standard e le linee guida indicate a livello internazionale. Queste linee guida permettono all'utente l'accesso alle informazioni e l'uso delle funzionalità fornite per mezzo delle tecnologie assistive di cui fa uso.
 
 Tra gli standard e le linee guida relative l'accessibilità riportiamo:
 
@@ -63,12 +63,12 @@ Anche le leggi nazionali di questi paesi prendono come riferimento gli standard 
 
 ## Disturbi e disabilità
 
-Gli utenti di un sito web possono essere personne affette da:
+Gli utenti di un sito web possono essere persone affette da:
 
 - disturbi psichici e psichiatrici: disturbi d'ansia, disturbi del tono dell'umore e disturbi di personalità;
 - disabilità intellettiva (ex ritardo mentale) un alterato funzionamento del sistema nervoso centrale di grado lieve, moderato, grave o molto grave;
 - disturbi dello spettro autistico;
-- disturbi specifici del linguaggio, compormettono lo sviluppo del linguaggio in assenza di un problema neurologico, sensoriale, intellettivo o affettivo;
+- disturbi specifici del linguaggio, compromettono lo sviluppo del linguaggio in assenza di un problema neurologico, sensoriale, intellettivo o affettivo;
 - disturbi specifici dell'apprendimento: difficoltà specifiche nella lettura (dislessia), scrittura (disortografia) e calcolo (discalculia).
 - disturbi motori: incapacità o limitazione nell'uso di arti o del corpo.
 - disturbi visivi: perdita totale (cecità) o compromissione parziale (ipovisione);
@@ -94,7 +94,7 @@ Numerose tecnologie assistive vanno a supporto dell'utente consentendogli di uti
 
 Le linee guida WCAG si riferiscono in generale a tutti i contenuti multimediali e sono d'utilità per qualsiasi lavoro digitale si possa realizzare.
 
-Nel principale documento delle WCAG, ora alla versione 2, troviamo tre livelli: 
+Nel principale documento delle WCAG, ora alla versione 2, troviamo tre livelli:
 
 - il primo livello descrive i principi, che sono qualità base che rendono accessibile un sito web;
 - il secondo livello descrive le linee guida da seguire durante la pianificazione e la progettazione di un sito web, un'applicazione o un documento per far si che sia accessibile;
@@ -131,20 +131,20 @@ Linee guida del secondo principio:
 Linee guida del terzo principio:
 
 1. "Rendere i contenuti testuali leggibili e comprensibili" <!-- traduzione, spiegazione degli acronimi, corretta pronuncia, ... -->;
-2. "Far si che le pagine siano visualizte e che operino secondo una modalità che l'utente si possa aspettare" <!-- Un pulsante ed un campo di input devono sembrare tali, e non avere forme strane o poco intuitive -->;
+2. "Far si che le pagine siano visualizzate e che operino secondo una modalità che l'utente si possa aspettare" <!-- Un pulsante ed un campo di input devono sembrare tali, e non avere forme strane o poco intuitive -->;
 3. "Aiutare gli utenti ad evitare e correggere gli errori" <!-- i contenuti siano descritti in un modo utile, si possano evitare ed identificare errori (con formato dato, ora, controllo ortografico) e fornire suggerimenti -->;
 
 Linee guida del quarto principio:
 
-1. "Massimizzare la compatibilità con le tecnologie correnti, icluso le tecnologie assistive. Scrivere codice conforme (valido) assicurandosi che nomi, ruoli e proprietà degli elementi dell'interfaccia grafica siano chiari;
+1. "Massimizzare la compatibilità con le tecnologie correnti, incluso le tecnologie assistive. Scrivere codice conforme (valido) assicurandosi che nomi, ruoli e proprietà degli elementi dell'interfaccia grafica siano chiari;
 
 ### Conformità
 
 La conformità attesta che il sito web segue tutte le linee guida delle WCAG e che tutti i criteri di successo applicabili sono soddisfatti.
 
-I criteri di successo delle WCAG possono avere uno dei tre livelli: **A**, **Doppia-A** e **Tripla-A**. 
+I criteri di successo delle WCAG possono avere uno dei tre livelli: **A**, **Doppia-A** e **Tripla-A**.
 
-Il livello più basso, A, garantisce l'accessibilità di base. Se raggiungi questo livello, non stai escludendo attivamente la maggior parte delle persone con disturbi. 
+Il livello più basso, A, garantisce l'accessibilità di base. Se raggiungi questo livello, non stai escludendo attivamente la maggior parte delle persone con disturbi.
 
 Il secondo livello, Double-A, garantisce l'accessibilità per la maggior parte delle persone con disturbi. Questo è il livello richiesto dalla maggior parte delle leggi e delle politiche. Per raggiungerlo, è necessario confermare tutti i criteri di successo che sono di livello A e Double-A.
 
@@ -163,7 +163,7 @@ La WAI fornisce le linee guida conosciute come "Accessible Rich Internet Applica
 
 Per informazioni semantiche si intendono quelle che indicano il ruolo di una determinata etichetta, lo stato o le relazioni con le altre etichette. Ad esempio un menu di navigazione può essere strutturato come una lista a due o tre livelli, ed una determinata voce può essere visibile all'utente, mentre le altre no. Queste informazioni possono essere molto utili per indirizzare il "comportamento" delle tecnologie assistive, ma non è possibile fornirle utilizzando il solo codice HTML. Le linee guida vanno proprio a standardizzare queste informazioni e a definire in che modo devono essere inserite nel codice HTML.
 
-Molte etichette del linguaggio HTML hanno già un informazione semantica, ad esempio l'etichetta del titolo ``h1`` indica l'inizio e la fine del titolo, l'etichetta dei collegamenti ``a`` indica l'inizio e la fine del collegamento, e come queste molte altre. Per inserire un titolo o un collegamento nella pagina non è necessario indicare che il ruolo dell'elemento è "titolo" o "collegamento", è la stessa etichetta a sottointendere questo ruolo.
+Molte etichette del linguaggio HTML hanno già un informazione semantica, ad esempio l'etichetta del titolo ``h1`` indica l'inizio e la fine del titolo, l'etichetta dei collegamenti ``a`` indica l'inizio e la fine del collegamento, e come queste molte altre. Per inserire un titolo o un collegamento nella pagina non è necessario indicare che il ruolo dell'elemento è "titolo" o "collegamento", è la stessa etichetta a sottintendere questo ruolo.
 
 In molti altri casi, invece, si usano le etichette per creare elementi più complessi, come una sezione per la ricerca (filtri compresi) o una visualizzazione dei contenuti basata su schede (come le schede di navigazione di un browser). In questo caso, dobbiamo associare all'etichetta il ruolo, in modo da indicare alle tecnologie assistive il ruolo svolto dall'etichetta, quindi associamo il ruolo "sezione per la ricerca" o il ruolo "lista di schede";
 
@@ -205,12 +205,11 @@ Gli attributi sono divisi in quattro categorie elencate di seguito:
 
 ### Focus
 
-Un altro comportamento su cui porre attenzione è la scelta del componente su cui interagire. In genere l'utente clicca su un componente e questo riceve il focus. Quando un componente riceve il focus, da la possibilità all'utente di interagirvi. Ad esempio quando si clicca su un campo di input, questo riceve il focus e quindi l'utente può inserire un valore. 
+Un altro comportamento su cui porre attenzione è la scelta del componente su cui interagire. In genere l'utente clicca su un componente e questo riceve il focus. Quando un componente riceve il focus, da la possibilità all'utente di interagirvi. Ad esempio quando si clicca su un campo di input, questo riceve il focus e quindi l'utente può inserire un valore.
 
-Agli utenti che non utilizzano il mouse viene fornita in alternativa la possibilità di selezionare i componenti uno per volta utilizzando l'apposito pulsante della tastiera (in genere il tasto "TAB"). 
+Agli utenti che non utilizzano il mouse viene fornita in alternativa la possibilità di selezionare i componenti uno per volta utilizzando l'apposito pulsante della tastiera (in genere il tasto "TAB").
 
 Lo sviluppatore può indicare quali componenti vuole che ricevano il focus, aggiungendo nel codice HTML di questi componenti l'attributo HTML ``tabindex="0"``.
-
 
 ### Esempio di applicazione delle linee guida ARIA
 
@@ -261,7 +260,7 @@ Per aggiungere anche la possibilità di applicare il focus alle tre schede, si p
 </div>
 ```
 
-In questo modo, è possibile navigare sugli elementi della lista (ogni elemento rappresenta un pulsante per visualizzare la scheda corrispondente) attraverso la tastiera e selezionare una scheda da leggere. 
+In questo modo, è possibile navigare sugli elementi della lista (ogni elemento rappresenta un pulsante per visualizzare la scheda corrispondente) attraverso la tastiera e selezionare una scheda da leggere.
 
 <!-- TODO 
 
@@ -279,7 +278,7 @@ Il vantaggio nell'usare questi framework consiste appunto nel poter costruire un
 
 Tra i framework più utilizzati riportiamo [Bootstrap](https://getbootstrap.com/), progettato inizialmente da Twitter nel 2011 per la costruzione di pagine web, [Material Design](https://material.io/) sviluppato da Google nel 2014 per la costruzione di app per android e per la costruzione di pagine web, [Human Interface](https://developer.apple.com/design/) per la costruzione di app per iOS, macOS e tutti gli altri dispositivi Apple.
 
-Adottare un framework che rispetti i requisiti di accessibilità è sicuramente un buon inizio per far si che il prodotto da realizzare sia accessibile, ma comunque le scelte di progettazione delle interfacce possono portare alla realizzazione di un prodotto non accessibile. 
+Adottare un framework che rispetti i requisiti di accessibilità è sicuramente un buon inizio per far si che il prodotto da realizzare sia accessibile, ma comunque le scelte di progettazione delle interfacce possono portare alla realizzazione di un prodotto non accessibile.
 
 Dato che i componenti grafici forniti da questi framework sono generici e personalizzabili, è compito del grafico realizzare delle interfacce che rispettino i requisiti di accessibilità ed è compito dello sviluppatore implementare i requisiti di accessibilità per la specifica piattaforma di sviluppo (partendo dalle interfacce realizzate dal grafico).
 
