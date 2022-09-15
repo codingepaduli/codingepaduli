@@ -21,6 +21,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 # Riconoscimento mano
 
 ## (doesn't work on Firefox, why?)
+
 <!-- L'errore su Firefox sembra simile a questo 
   <a href="https://github.com/google/mediapipe/issues/2704">https://github.com/google/mediapipe/issues/2704</a>  
   devo sperare in un aggiornamento delle librerie 
