@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-08-15
-publishdate: 2022-08-15
-lastmod: 2022-08-15
+date: 2022-09-14
+publishdate: 2022-09-14
+lastmod: 2022-09-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -160,6 +160,7 @@ summary: "Set di link relativi al coding"
 [Use Mozilla DeepSpeech](https://opensource.com/article/22/1/voice-text-mozilla-deepspeech) - Enable speech to text in your application | Opensource.com\
 [Text To Speech Converter](https://dev.to/valeshgopal/text-to-speech-converter-4i2j) - DEV Community\
 [Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
+[Stable Diffusion Image generation](https://huggingface.co/spaces/stabilityai/stable-diffusion) - a Hugging Face Space by stabilityai\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -646,8 +647,6 @@ summary: "Set di link relativi al coding"
 
 [WAI](https://www.w3.org/WAI/tutorials/) - Web Accessibility Initiative\
 [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/) - \
-[Curricula on Web Accessibility](https://www.w3.org/WAI/curricula/) - A Framework to Build Your Own Courses | Web Accessibility Initiative (WAI) | W3C\
-[Resources for Developers](https://www.w3.org/WAI/roles/developers/) - Web Accessibility Initiative (WAI) | W3C\
 [A deep dive into ARIA](https://dev.to/elischei/a-deep-dive-into-aria-5071) - DEV Community\
 [5 tools for Designing, Developing, and Testing Accessibility](https://dev.to/stories_of_ren/5-tools-for-designing-developing-and-testing-accessibility-5a0d) - DEV Community\
 [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) - \
