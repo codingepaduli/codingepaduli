@@ -27,7 +27,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
   devo sperare in un aggiornamento delle librerie 
 -->
 
-![Hands landmarks (punti di riferimento della mano)](https://google.github.io/mediapipe/images/mobile/hand_landmarks.png)
+![Hands landmarks (punti di riferimento della mano)](https://mediapipe.dev/images/mobile/hand_landmarks.png)
 
 <div class="container">
     <div id="handsModel"></div>

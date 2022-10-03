@@ -22,7 +22,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 ## (doesn't work on Firefox, why?)
 
-![Pose landmarks (punti di riferimento della posa)](https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png)
+![Pose landmarks (punti di riferimento della posa)](https://mediapipe.dev/images/mobile/pose_tracking_full_body_landmarks.png)
 
 <div class="container">
     <div id="handsModel"></div>

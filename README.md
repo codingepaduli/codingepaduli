@@ -52,6 +52,14 @@ You need to install the latest version of [Hugo](https://gohugo.io/).
   hugo server --environment mainroad
   ```
 
+- Alternatively, you can run hugo inside docker
+
+  ```git
+  docker container run --rm -it -u $(id -u ${USER}):$(id -g ${USER}) --name hugo 
+    -v "$PWD":/usr/src/myapp -w /usr/src/myapp -p 1313:1313 klakegg/hugo:ext-pandoc
+    server --environment mainroad
+  ```
+
 ## Contributing
 
 Contributions are what make this community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.

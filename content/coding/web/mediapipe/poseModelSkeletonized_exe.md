@@ -7,7 +7,7 @@ publishdate: 2022-08-30
 lastmod: 2022-08-30
 categories: ["coding", "web", "mediapipe"]
 keywords: ["coding", "web", "mediapipe"]
-draft: true
+draft: false
 toc: false
 summary: "Esercizi di AI - 04 Scheletrizzazione della posa"
 customJS: ["/static/js/p5-1.2.0-min.js"]
@@ -22,7 +22,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 ## (doesn't work on Firefox, why?)
 
-![Pose landmarks (punti di riferimento della posa)](https://google.github.io/mediapipe/images/mobile/pose_tracking_full_body_landmarks.png)
+![Pose landmarks (punti di riferimento della posa)](https://mediapipe.dev/images/mobile/pose_tracking_full_body_landmarks.png)
 
 <div class="container">
     <div id="handsModel"></div>

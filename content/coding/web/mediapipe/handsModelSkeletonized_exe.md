@@ -7,7 +7,7 @@ publishdate: 2022-08-30
 lastmod: 2022-08-30
 categories: ["coding", "web", "mediapipe"]
 keywords: ["coding", "web", "mediapipe"]
-draft: true
+draft: false
 toc: false
 summary: "Esercizi di A2 - 01 Scheletrizzazione mano"
 customJS: ["/static/js/p5-1.2.0-min.js"]
@@ -27,7 +27,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
   devo sperare in un aggiornamento delle librerie 
 -->
 
-![Hands landmarks (punti di riferimento della mano)](https://google.github.io/mediapipe/images/mobile/hand_landmarks.png)
+![Hands landmarks (punti di riferimento della mano)](https://mediapipe.dev/images/mobile/hand_landmarks.png)
 
 <div class="container">
     <div id="handsModel"></div>

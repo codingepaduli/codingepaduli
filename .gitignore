@@ -3,4 +3,6 @@
 /resources/_gen/
 /watercss-public/**
 /static/static/cover.jpg
+/static/static/cover.txt
+/static/static/coding/web/p5js/try.html
 .hugo_build.lock
