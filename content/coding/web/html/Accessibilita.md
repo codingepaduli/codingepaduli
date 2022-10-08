@@ -5,6 +5,7 @@ description: "HTML Lez. 8 - Accessibilità ovvero il diritto a fruire dei sistem
 date: 2022-08-17
 publishdate: 2022-08-17
 lastmod: 2022-08-17
+spellcheck: 2022-10-08
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -274,7 +275,7 @@ la percezione di una pagina web per un utente non vedente è completamente diver
 
 I siti web e le app difficilmente utilizzano dei componenti dell'interfaccia costruiti da zero, piuttosto si basano sempre più su dei framework che forniscono linee guida, componenti precostruiti e strumenti che permettono il disegno di interfacce grafiche secondo le "best practice" internazionali.
 
-Il vantaggio nell'usare questi framework consiste appunto nel poter costruire un interfaccia grafica che supporti diversi temi di colore, che si adatti dinamicamente alle caratteristiche del dispositivo utilizzato, sia esso desktop, tablet o telefono cellulare, che fornisca allo sviluppatore una vasta gamma di componenti grafici precostruiti che seguono gli standard e linee guida per l'accessibilità, che tengono conto delle preferenze utente, come le indicazione di un maggiore contrasto dei colori o di una minimizzazione delle animazioni e degli effetti di movimento utilizzati dal sito web o dall'app o le indicazioni e tanti altri vantaggi ancora;
+Il vantaggio nell'usare questi framework consiste appunto nel poter costruire un interfaccia grafica che supporti diversi temi di colore, che si adatti dinamicamente alle caratteristiche del dispositivo utilizzato, sia esso desktop, tablet o telefono cellulare, che fornisca allo sviluppatore una vasta gamma di componenti grafici precostruiti che seguono gli standard e linee guida per l'accessibilità, che tengono conto delle preferenze utente, come le indicazione di un maggiore contrasto dei colori o di una minimizzazione delle animazioni e degli effetti di movimento utilizzati dal sito web o dall'applicazione o le indicazioni e tanti altri vantaggi ancora;
 
 Tra i framework più utilizzati riportiamo [Bootstrap](https://getbootstrap.com/), progettato inizialmente da Twitter nel 2011 per la costruzione di pagine web, [Material Design](https://material.io/) sviluppato da Google nel 2014 per la costruzione di app per android e per la costruzione di pagine web, [Human Interface](https://developer.apple.com/design/) per la costruzione di app per iOS, macOS e tutti gli altri dispositivi Apple.
 

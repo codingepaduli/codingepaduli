@@ -24,7 +24,7 @@ Sono numerose le etichette HTML utili a descrivere i contenuti di una pagina web
 
 ## Etichetta per i contatti
 
-In molti casi è necessario visualizzare le informazioni di contatto di una persona o di un organizzazione, come un indirizzo (stradale), un numero di telefono, un sito web, una email, un nome su un social e cosí via.
+In molti casi è necessario visualizzare le informazioni di contatto di una persona o di un organizzazione, come un indirizzo (stradale), un numero di telefono, un sito web, una email, un nome su un social e così via.
 
 Tutte queste informazioni possono essere racchiuse nell'etichetta **address**, come nel seguente esempio:
 

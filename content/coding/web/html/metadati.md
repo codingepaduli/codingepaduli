@@ -5,7 +5,7 @@ description: "HTML Lez. 05 - Metadati"
 date: 2019-07-27
 publishdate: 2019-07-27
 lastmod: 2019-07-27
-spellcheck: 2020-12-11
+spellcheck: 2022-10-08
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -25,7 +25,7 @@ references:
     -   title: "My current HTML template"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.matuzo.at/blog/html-boilerplate/"
-        description: "Articolo (in inglese) sugli elementi basilari utilizzati per construire un template di una pagina HTML"
+        description: "Articolo (in inglese) sugli elementi basilari utilizzati per costruire un template di una pagina HTML"
 ---
 
 # Metadati

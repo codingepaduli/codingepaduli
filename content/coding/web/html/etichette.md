@@ -5,7 +5,7 @@ description: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web
 date: 2019-07-16
 publishdate: 2019-07-16
 lastmod: 2019-07-16
-spellcheck: 2020-12-11
+spellcheck: 2022-10-08
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
@@ -96,7 +96,7 @@ La radice dell'albero è l'etichetta ``html``, dato che al suo interno sono pres
 
 Dalla radice si estendono poi i nodi di "primo livello", ovvero tutte le etichette contenute nell'etichetta ``html``.
 
-Da questi nodi di primo livello si estendono i nodi di secondo livello, ovvero le etichette contenute nelle etichette di primo livello, e cosi via per i successivi livelli.
+Da questi nodi di primo livello si estendono i nodi di secondo livello, ovvero le etichette contenute nelle etichette di primo livello, e così via per i successivi livelli.
 
 Le foglie dell'albero sono le etichette che non posseggono contenuti.
 
@@ -109,21 +109,21 @@ html
     └── p
 ```
 
-Data la struttura gerarchica, è possibile stabilire delle relazioni tra gli elementi. Un elemento che contiene altri elementi è detto elemento padre, e di conseguenza gli elementi contenuti in quel nodo sono detti figli. Gli elementi che si trovano nello stesso livello si dicono fratelli, e cosí via con le altre relazioni.
+Data la struttura gerarchica, è possibile stabilire delle relazioni tra gli elementi. Un elemento che contiene altri elementi è detto elemento padre, e di conseguenza gli elementi contenuti in quel nodo sono detti figli. Gli elementi che si trovano nello stesso livello si dicono fratelli, e così via con le altre relazioni.
 
 ## Indentazione
 
 L'indentazione è una caratteristica che migliora la leggibilità del codice e permette di rilevare gli errori più rapidamente.
 
-Indentare il codice significa inserire un determinato nunero di spazi all'inizio di ogni riga, in maniera proporzionale al livello dell'etichetta presente sulla riga.
+Indentare il codice significa inserire un determinato numero di spazi all'inizio di ogni riga, in maniera proporzionale al livello dell'etichetta presente sulla riga.
 
 Ad esempio, per l'etichetta radice ``html`` non sono previsti spazi di indentazione, dato che è a livello zero.
 
 Per l'etichetta di primo livello ``body``, è necessario aggiungere quattro spazi prima dell'etichetta stessa.
 
-Per le etichette di secondo livello è necessario aggiungere otto spazi, per quelle di terzo livello sono necessari dodici, e cosí via..
+Per le etichette di secondo livello è necessario aggiungere otto spazi, per quelle di terzo livello sono necessari dodici, e così via..
 
-Se si riguarda il codice riportato nell'esempio prededente, si può vedere che è indentato. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
+Se si riguarda il codice riportato nell'esempio precedente, si può vedere che è indentato. Alcuni editor di testo permettono di indentare il documento in maniera automatica.
 
 ## Commenti
 
