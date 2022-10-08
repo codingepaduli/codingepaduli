@@ -21,7 +21,7 @@ I containers, a differenza delle macchine virtuali, non sono composti da un sist
 
 Grazie all'isolamento delle risorse (CPU, memoria, I/O a blocchi, rete), il sistema operativo sottostante crea una sorta di ambiente "virtuale" in cui il container viene eseguito e solo con questo ambiente "virtuale" il container può interagire.
 
-## Docker image CLI
+## Gestione delle immagini
 
 Le immagini rappresentano un ambiente isolato, con tutte le risorse necessarie all'esecuzione del container, come il filesystem, i dispositivi di rete, le configurazioni necessarie, ...
 
@@ -52,31 +52,22 @@ docker image ls -f dangling=true
 docker images purge        # notare "images" al plurale
 ```
 
-## Docker container CLI
+## Gestione container
 
 Utilizzando l'immagine ``httpd:alpine``, per creare un nuovo container assegnandogli un nome comprensibile, ad esempio ``httpd-container``, eseguiamo il comando:
 
 ```bash
-docker container run --name "httpd-container" httpd:alpine
+docker container create --name "httpd-container" httpd:alpine
 ```
 
-Come si può notare, il container rimane in esecuzione fino a quando l'utente preme ``CTRL-C``, cosa che causa lo stop del container.
-
-Se si esegue ancora il comando, comparirà l'errore che indica che il nome del container esiste gia, se ne può creare un altro scegliendo la stessa immagine ``httpd:alpine`` ed un nuovo nome ``httpd-container2``.
-
-Per poter avviare in background un container, in modo tale da non interrompere l'esecuzione con ``CTRL-C``, causando anche lo stop del container, si utilizza l'opzione ``-d``:
-
-```bash
-docker container run -d --name "httpd-container" httpd:alpine
-```
-
-Per avviare, stoppare, mettere in pausa (non consuma CPU, ma è in memoria), riprendere dalla pausa ed infine eliminare un container, si utilizzano i seguenti comandi:
+Per avviare, stoppare, mettere in pausa (non consuma CPU, ma è in memoria), riprendere dalla pausa, rinominare ed infine eliminare un container, si utilizzano i seguenti comandi:
 
 ```bash
 docker container start   httpd-container
 docker container stop    httpd-container
 docker container pause   httpd-container
 docker container unpause httpd-container
+docker container rename  httpd-container httpd-container2
 docker container rm      httpd-container
 ```
 
@@ -92,12 +83,49 @@ docker container ls -a
 docker rm $(docker container ls --size -a --filter  "status=exited" -q)
 ```
 
-Per poter ispezionare un container, guardando i processi in esecuzione, la configurazione e le statistiche in tempo reale, si usano i comandi:
+### Opzioni di creazione del container
+
+Nella creazione del container possono essere utilizzate le seguenti opzioni:
+
+- ``-t`` alloca uno pseudo-terminale al processo (utile per l'output colorato);
+- ``-i`` per leggere dallo standard input o usare pipe;
+- ``-w "workingDir"`` indica la directory di lavoro;
+- ``-e VARIABLE=VALUE`` crea nel container una variabile d'ambiente con uno specifico valore;
+- ``--entrypoint path/to/run`` indica il comando da eseguire quando si avvia il container. Si può specificare un valore vuoto ``""`` per sovrascrivere un eventuale valore predefinito;
+- ``-p "port:containerPort"`` associa una porta locale ad una del container;
+- ``--restart "policy";`` controla se il container deve avviarsi automaticamente all'uscita (exit) o quando Docker viene restartato. Valori validi per la policy sono: ``no`` (never), ``on-failure`` (exit code > 0), ``unless-stopped`` (not manually stopped), ``always``;
+- ``-v "volume:containerPath"`` monta una directory (chiamata volume) all'interno del container (deprecata, usa l'opzione ``-m``);
+- ``--mount "type=bind,source=sourcePath,target=targetPath"`` monta una directory (chiamata volume) all'interno del container (new, use ``--mount``, NOT ``-v``);
+- ``-u $(id -u):$(id -g)`` esegue il container come utente non-root, con i permessi dell'utente e del gruppo indicati;
+
+## I comandi di run ed exec
+
+E' possibile creare ed eseguire il container con un unico comando:
 
 ```bash
-docker container top     httpd-container
-docker container inspect httpd-container
-docker container stats   httpd-container
+docker container run --name "httpd-container" httpd:alpine
+```
+
+Come si può notare, il container rimane in esecuzione fino a quando l'utente preme ``CTRL-C``, cosa che causa lo stop del container.
+
+Se si esegue ancora il comando, comparirà l'errore che indica che il nome del container esiste gia, se ne può creare un altro scegliendo la stessa immagine ``httpd:alpine`` ed un nuovo nome ``httpd-container3``.
+
+Dato che il comando run crea e poi esegue il container, una volta stoppato il container si può scegliere di distruggerlo, co l'opzione ``--rm``:
+
+```bash
+docker container run --name "httpd-container" --rm httpd:alpine
+```
+
+Per poter avviare in background un container, in modo tale da non interrompere l'esecuzione con ``CTRL-C``, causando anche lo stop del container, si utilizza l'opzione ``-d``:
+
+```bash
+docker container run -d --name "httpd-container" httpd:alpine
+```
+
+Per riportare in primo piano il container, si prende nota dell'identificativo e lo si può di nuovo collegare con il comando:
+
+```bash
+docker container attach ab58fbb99911
 ```
 
 Il comando ``docker container exec`` permette di eseguire uno specifico comando all'interno di un container gia esistente. Ad esempio per eseguire il comando ``pwd``:
@@ -106,21 +134,23 @@ Il comando ``docker container exec`` permette di eseguire uno specifico comando 
 docker container exec httpd-container pwd
 ```
 
-Le opzioni più utilizzate del comando ``run`` sono le seguenti
+### Container inspection CLI
 
-- ``--name "name"`` imposta il nome del container;
-- ``-t`` alloca uno pseudo-terminale al processo (utile per l'output colorato);
-- ``-i`` per leggere dallo standard input o usare pipe;
-- ``--rm`` per cancellare il container al termine dell'esecuzione;
-- ``-d`` esegue il container in "detached mode" (come demone);
-- ``-p "port:containerPort"`` associa una porta locale ad una del container;
-- ``-v "volume:containerPath"`` monta una directory (chiamata volume) all'interno del container (deprecata, usa l'opzione ``-m``);
-- ``--mount "type=bind,source=sourcePath,target=targetPath"`` monta una directory (chiamata volume) all'interno del container (new, use ``--mount``, NOT ``-v``);
-- ``-w "workingDir"`` indica la directory di lavoro;
-- ``-u $(id -u):$(id -g)`` esegue il container come utente non-root, con i permessi dell'utente e del gruppo indicati;
-- ``-e VARIABLE=VALUE`` crea nel container una variabile d'ambiente con uno specifico valore;
-- ``--entrypoint path/to/run`` indica il comando da eseguire quando si avvia il container. Si può specificare un valore vuoto ``""`` per sovrascrivere il valore predefinito;
-- ``--restart "policy";`` controla se il container deve avviarsi automaticamente all'uscita (exit) o quando Docker viene restartato. Valori validi per la policy sono: ``no`` (never), ``on-failure`` (exit code > 0), ``unless-stopped`` (not manually stopped), ``always``;
+Per poter ispezionare un container, guardando i processi in esecuzione, la configurazione e le statistiche in tempo reale, si usano i comandi:
+
+```bash
+docker container top     httpd-container
+docker container inspect httpd-container
+docker container stats   httpd-container
+```
+
+## Docker logs
+
+E' possibile visualizzare i logs di un container che è in esecuzione in background utilizzando il comando:
+
+```bash
+docker logs httpd-container
+```
 
 ## Docker volume CLI
 
@@ -138,4 +168,48 @@ Per visualizzare e rimuovere tutti i volumi non più collegati ad alcun containe
 ```bash
 docker volume ls -f dangling=true
 docker volume prune
+```
+
+## Docker Network
+
+Docker permette di collegare i container in una o più reti.
+
+Per creare una rete si utilizza il comando:
+
+```bash
+docker network create rete_lan
+```
+
+Per gestire le reti si utilizzano i comandi:
+
+```bash
+docker network create [NETWORK_NAME]
+docker network ls
+docker network rm [NETWORK_NAME]
+docker network inspect [NETWORK_NAME]
+```
+
+Per collegare e scollegare i container dalla rete si usano i comandi:
+
+```bash
+docker network connect [NETWORK_NAME] [CONTAINER_NAME]
+docker network disconnect [NETWORK_NAME] [CONTAINER_NAME]
+```
+
+## Docker compose
+
+Il Dockerfile è pensato per creare un'immagine.
+
+Il comando docker-compose ed il file docker-compose.yaml descrivono invece come eseguire il container, quale nome assegnare, quale porte aprire, quali volumi montare, ecc...
+
+Per creare un container partendo dalle specifiche del file docker-compose.yaml, si utilizza il comando:
+
+```bash
+docker-compose -f my-docker-compose.yaml up
+```
+
+Per stoppare il container descritto nel file my-docker-compose.yaml, si utilizza il comando:
+
+```bash
+docker-compose -f my-docker-compose.yaml down
 ```
