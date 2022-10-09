@@ -9,7 +9,7 @@ weight: 1000
 categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: true
-toc: false
+toc: true
 summary: "Docker - Uno strumento per gestire i container"
 ---
 
@@ -65,6 +65,7 @@ Per avviare, stoppare, mettere in pausa (non consuma CPU, ma è in memoria), rip
 ```bash
 docker container start   httpd-container
 docker container stop    httpd-container
+docker container restart httpd-container
 docker container pause   httpd-container
 docker container unpause httpd-container
 docker container rename  httpd-container httpd-container2
@@ -87,8 +88,7 @@ docker rm $(docker container ls --size -a --filter  "status=exited" -q)
 
 Nella creazione del container possono essere utilizzate le seguenti opzioni:
 
-- ``-t`` alloca uno pseudo-terminale al processo (utile per l'output colorato);
-- ``-i`` per leggere dallo standard input o usare pipe;
+- ``-t`` (``--tty``) alloca uno pseudo-terminale al processo (utile per l'output colorato);
 - ``-w "workingDir"`` indica la directory di lavoro;
 - ``-e VARIABLE=VALUE`` crea nel container una variabile d'ambiente con uno specifico valore;
 - ``--entrypoint path/to/run`` indica il comando da eseguire quando si avvia il container. Si può specificare un valore vuoto ``""`` per sovrascrivere un eventuale valore predefinito;
@@ -98,43 +98,52 @@ Nella creazione del container possono essere utilizzate le seguenti opzioni:
 - ``--mount "type=bind,source=sourcePath,target=targetPath"`` monta una directory (chiamata volume) all'interno del container (new, use ``--mount``, NOT ``-v``);
 - ``-u $(id -u):$(id -g)`` esegue il container come utente non-root, con i permessi dell'utente e del gruppo indicati;
 
-## I comandi di run ed exec
+## Esecuzione in modalità "attached" e "detached"
 
-E' possibile creare ed eseguire il container con un unico comando:
+I comandi di ``start`` e ``run`` permettono l'esecuzione del container. La differenza è che il comando ``start`` avvia un container gia esistente, mentre il comando di ``run`` crea un container partendo da un'immagine e poi esegue il conntainer.
 
-```bash
-docker container run --name "httpd-container" httpd:alpine
-```
+Il comando di ``exec`` permette di eseguire un comando all'interno di un container gia esistente.
 
-Come si può notare, il container rimane in esecuzione fino a quando l'utente preme ``CTRL-C``, cosa che causa lo stop del container.
+I container ed i comandi da eseguire nei container possono essere lanciati sia in modalità "attached", sia "detached", ovvero collegando il proprio terminale collegato agli standard input, output ed errore del container. Le opzioni per lanciare in modalità "attached" o "detached" un comando sono le seguenti:
 
-Se si esegue ancora il comando, comparirà l'errore che indica che il nome del container esiste gia, se ne può creare un altro scegliendo la stessa immagine ``httpd:alpine`` ed un nuovo nome ``httpd-container3``.
+- ``-i`` (``--interactive``) tiene lo standard input del container aperto, anche se non in "attached";
+- ``-a`` (``--attach``) collega lo standard input, output ed errore del container al terminale;
+- ``-d`` (``--detach``) esegue il comando o il container in background;
 
-Dato che il comando run crea e poi esegue il container, una volta stoppato il container si può scegliere di distruggerlo, co l'opzione ``--rm``:
+Quando un container è eseguito im modalità "attached", premendo la combinazione di tasti ``CTRL-C`` non si effettua il "detach", ma a tutti gli effetti si stoppa il container. Per effettuare il "detach" si può indicare la combinazione di tasti con l'opzione ``--detach-keys="ctrl-a,a"``, purtroppo non sempre funziona. Al contrario, per riportare in primo piano un container in esecuzione in background, si usa il comando ``attach``.
 
-```bash
-docker container run --name "httpd-container" --rm httpd:alpine
-```
-
-Per poter avviare in background un container, in modo tale da non interrompere l'esecuzione con ``CTRL-C``, causando anche lo stop del container, si utilizza l'opzione ``-d``:
+Dato che queste opzioni non sono sempre disponibili in contemporanea, ma solo l'una o l'altra, di seguito riportiamo alcuni esempi:
 
 ```bash
-docker container run -d --name "httpd-container" httpd:alpine
+docker container start --attach --detach-keys="ctrl-a,a" "httpd-container5"
+docker container run  --detach -p "8006:80"  --name "httpd-container5" httpd:alpine
+docker container exec --detach "httpd-container5" ls
+docker container attach "httpd-container5"
 ```
 
-Per riportare in primo piano il container, si prende nota dell'identificativo e lo si può di nuovo collegare con il comando:
+Dato che il comando run crea, esegue il container ed al termine del compito lo stoppa, si può scegliere anche di distruggere il container con l'opzione ``--rm``:
 
 ```bash
-docker container attach ab58fbb99911
+docker container run  --rm --name "httpd-container" httpd:alpine
 ```
 
-Il comando ``docker container exec`` permette di eseguire uno specifico comando all'interno di un container gia esistente. Ad esempio per eseguire il comando ``pwd``:
+In alcuni casi, può essere utile creare uno pseudo-terminale sul container, per favorire la colorazione del testo, utilizzando l'opzione ``--tty``:
 
 ```bash
-docker container exec httpd-container pwd
+docker container exec --tty "httpd-container5" ls
 ```
 
-### Container inspection CLI
+### Entrypoint
+
+Quando si parla di esecuzione di un container, si sottintende l'esecuzione di un comando (che sia "hello-world" o un processo demone "https" in ascolto su una porta) che è specificato in fase di creazione dell'immagine. Questo comando può essere sovrascritto con l'opzione ``--entrypoint``.
+
+```bash
+docker container run --name npm  --entrypoint "/usr/local/bin/npm" node
+docker container run --name hugo --entrypoint "" node bash -l -c "/usr/bin/pandoc-default --version"
+docker container run --name hugo --entrypoint "" node bash
+```
+
+## Container inspection CLI
 
 Per poter ispezionare un container, guardando i processi in esecuzione, la configurazione e le statistiche in tempo reale, si usano i comandi:
 
@@ -196,20 +205,45 @@ docker network connect [NETWORK_NAME] [CONTAINER_NAME]
 docker network disconnect [NETWORK_NAME] [CONTAINER_NAME]
 ```
 
-## Docker compose
-
-Il Dockerfile è pensato per creare un'immagine.
-
-Il comando docker-compose ed il file docker-compose.yaml descrivono invece come eseguire il container, quale nome assegnare, quale porte aprire, quali volumi montare, ecc...
-
-Per creare un container partendo dalle specifiche del file docker-compose.yaml, si utilizza il comando:
+## Pulizia
 
 ```bash
-docker-compose -f my-docker-compose.yaml up
+docker system prune --volumes
 ```
 
-Per stoppare il container descritto nel file my-docker-compose.yaml, si utilizza il comando:
+## Docker compose
+
+Il Dockerfile è pensato per creare un'immagine, non un container, quindi non bisogna confonderlo con "docker-compose".
+
+Il comando docker-compose permette di gestire più containers con lo stesso comando, infatti si parla di applicazioni multi-containers. Il file compose.yaml descrive i vari containers ed indica per ogni container il nome da assegnare, le porte da aprire, i volumi da montare, il comando da eseguire, ecc...
+
+La gestione di più containers (specificati nel file compose.yaml) è simile alla gestione del singolo container, per cui di seguito si riportano i comandi:
 
 ```bash
-docker-compose -f my-docker-compose.yaml down
+docker-compose -f compose.yaml up
+docker-compose -f compose.yaml up -d
+docker-compose -f compose.yaml down
+docker-compose -f compose.yaml start   [service_name]
+docker-compose -f compose.yaml stop    [service_name]
+docker-compose -f compose.yaml pause   [service_name]
+docker-compose -f compose.yaml unpause [service_name]
+docker-compose -f compose.yaml restart [service_name]
+docker-compose -f compose.yaml exec    [service_name] [command]
+docker-compose -f compose.yaml logs    [service_name]
+docker-compose -f compose.yaml top     [service_name]
+
+```
+
+## Docker Swarm
+
+Verificare se swarm è attivo:
+
+```bash
+docker system info | grep -i "swarm"
+```
+
+Inizializzare swarm:
+
+```bash
+docker swarm init
 ```
