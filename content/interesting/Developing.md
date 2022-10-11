@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-09-14
-publishdate: 2022-09-14
-lastmod: 2022-09-14
+date: 2022-10-10
+publishdate: 2022-10-10
+lastmod: 2022-10-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,7 +14,7 @@ summary: "Set di link relativi al coding"
 
 <!-- markdownlint-disable MD012 -->
 
-# menu
+# Menu segnalibri
 
 
 ## Programmazione
@@ -74,11 +74,10 @@ summary: "Set di link relativi al coding"
 [Try Nomad](https://endler.dev/2019/maybe-you-dont-need-kubernetes/) - Maybe You Don't Need Kubernetes\
 [Install Docker Engine](https://docs.docker.com/install/) - Community | Docker Documentation\
 [Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
+[Docker](https://dev.to/pssingh21/docker-97j) - DEV Community 👩‍💻👨‍💻\
 [From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/) - \
 [portainer/portainer](https://github.com/portainer/portainer) - Making Docker management easy.\
-[25 Basic Docker Commands for Beginners](https://codeopolis.com/posts/25-basic-docker-commands-for-beginners/) - \
 [Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
-[Docker in 10 minutes](https://smalldata.tech/blog/2019/06/08/docker-in-10-minutes) - \
 [Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Transitioning from Docker to Podman - Red Hat Developer\
 [Jonathan Bergknoff](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - Run More Stuff in Docker\
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
@@ -87,6 +86,7 @@ summary: "Set di link relativi al coding"
 [Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
 [Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 [Docker](https://dev.to/pssingh21/docker-97j) - DEV Community\
+[Play with Docker](https://www.docker.com/play-with-docker/) - Docker\
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -101,6 +101,12 @@ summary: "Set di link relativi al coding"
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
 [Creating Pipeline in Jenkins](https://dev.to/rshiva/creating-pipeline-in-jenkins-1bkd) - DEV Community\
+[QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
+[QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
+[Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
+[QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
+[QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
+[QR-Code-generator/QrSegment.java at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
 
 #### Ansible
 
@@ -309,6 +315,30 @@ summary: "Set di link relativi al coding"
 
 ### Linux
 
+
+#### Administration
+
+[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
+[The Debian Administrator's Handbook](https://debian-handbook.info/) - \
+[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
+[Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
+[Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
+[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
+[The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
+[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
+[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
+[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
+[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
+[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
+[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
+[My First 5 Minutes On A Server](https://sollove.com/2013/03/03/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/) - Or, Essential Security for Linux Servers – Sol Love\
+[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
+[hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
+[cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
+
+#### Hardware
+
+[Minifree Laptops Ltd](https://minifree.org/) - \
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
@@ -362,26 +392,6 @@ summary: "Set di link relativi al coding"
 [How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - \
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
-
-#### Administration
-
-[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
-[The Debian Administrator's Handbook](https://debian-handbook.info/) - \
-[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
-[Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
-[Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
-[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
-[The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
-[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
-[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
-[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
-[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
-[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
-[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
-[My First 5 Minutes On A Server](https://sollove.com/2013/03/03/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/) - Or, Essential Security for Linux Servers – Sol Love\
-[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
-[hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
-[cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -480,6 +490,8 @@ summary: "Set di link relativi al coding"
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
 [Session](https://getsession.org/) - Private Messenger like Signal\
+[Digital Markets Act](https://www.consilium.europa.eu/en/press/press-releases/2022/07/18/dma-council-gives-final-approval-to-new-rules-for-fair-competition-online/) - Council gives final approval to new rules for fair competition online - Consilium\
+[Digital Services Package](https://www.macrumors.com/2022/07/05/eu-approves-landmark-legislation-to-regulate-apple/) - EU Approves Landmark Legislation to Regulate Apple and Other Big Tech Firms - MacRumors\
 
 #### Enhancing privacy
 
@@ -625,7 +637,6 @@ summary: "Set di link relativi al coding"
 [HTML link](https://dev.to/atulcodex/how-to-send-whatsapp-message-through-html-link-23f8) - How to send WhatsApp message - DEV Community\
 [HTML link](https://create.wa.link/) - Create WhatsApp links | Walink\
 [Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
-[Unicode In Five Minutes ⌚](https://richardjharris.github.io/unicode-in-five-minutes.html) - \
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](https://www.asciitable.it/mime-types) - \

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2022-04-16
-publishdate: 2022-04-16
-lastmod: 2022-04-16
+date: 2022-10-10
+publishdate: 2022-10-10
+lastmod: 2022-10-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -40,6 +40,8 @@ summary: "Set di link interessanti"
 [Maybe 'dark matter' doesn't exist after all](https://www.nbcnews.com/science/space/maybe-dark-matter-doesn-t-exist-after-all-new-research-n1252995) - new research suggests\
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Dark Matter](https://backreaction.blogspot.com/2021/05/dark-matter-situation-has-changed.html?m=1) - The Situation Has Changed\
+[Dark Matter Doesn't Exist](https://iai.tv/articles/dark-matter-doesnt-exist-auid-2180) - Pavel Kroupa » IAI TV\
+[axial Higgs boson](https://www.livescience.com/magnetic-higgs-relative-discovered) - Physicists discover never-before seen particle sitting on a tabletop | Live Science\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
 [Physicists Prove Anyons Exist](https://www.discovermagazine.com/the-sciences/physicists-prove-anyons-exist-a-third-type-of-particle-in-the-universe) - Anyons is a Third Type of Particle in the Universe (after fermions and bosons)\
@@ -56,12 +58,16 @@ summary: "Set di link interessanti"
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
 [Quantum](https://www.sciencemag.org/news/2020/09/one-quantum-physics-greatest-paradoxes-may-have-lost-its-leading-explanation) - One of quantum physics’ greatest paradoxes may have lost its leading explanation\
+[Incomplete Quantum Field Theory](https://www.quantamagazine.org/what-is-quantum-field-theory-and-why-is-it-incomplete-20220810/) - What Is Quantum Field Theory and Why Is It Incomplete? | Quanta Magazine\
+[The Real Problem with Quantum Mechanics](https://backreaction.blogspot.com/2022/05/chaos-real-problem-with-quantum.html?m=1) - \
+[Black hole information loss paradox](https://backreaction.blogspot.com/2022/04/i-stopped-working-on-black-hole.html?m=1) - I stopped working on black hole information loss. Here’s why.\
 [When Hubble Stared at Nothing for 100 Hours](https://www.nationalgeographic.com/science/phenomena/2015/04/24/when-hubble-stared-at-nothing-for-100-hours/) - “nothing” was actually stuffed with of galaxies. More than 3,000 of them came spilling out, some roughly 12 billion years old. Spiral, elliptical, irregular...\
 [Physics](https://physics.aps.org/articles/v13/114) - A Lopsided Merger\
 [Electromagnetism is a property of spacetime itself, study finds](https://sciencex.com/news/2021-07-electromagnetism-property-spacetime.html) - \
 [Disambiguating the ‘Observable Universe’ – Sam Enright](https://samenright.com/2022/01/09/disambiguating-the-observable-universe/) - \
 [Thread by @MarkusDeserno on Thread Reader App – Thread Reader App](https://threadreaderapp.com/thread/1482811504424542211.html) - \
 [The Algebra of Grand Unified Theories](https://math.ucr.edu/~huerta/guts/guts.html) - \
+[The Magnetar](https://arstechnica.com/science/2022/06/behold-the-magnetar-natures-ultimate-superweapon/) - a neutron star with the strongest magnetic fields in the Universe, nature’s ultimate superweapon | Ars Technica\
 
 ### Math
 
@@ -94,6 +100,7 @@ summary: "Set di link interessanti"
 [COVID-19](https://www.sciencemag.org/news/2020/04/how-does-coronavirus-kill-clinicians-trace-ferocious-rampage-through-body-brain-toes) - How does coronavirus kill? Covid-19 do a ferocious rampage through the body and it can extend to many organs including the heart and blood vessels, kidneys, gut, and brain\
 [Influenza spagnola](https://it.wikipedia.org/wiki/Influenza_spagnola) - Pandemia influenzale causata dal virus H1N1\
 [Artificial intelligence yields new antibiotic](https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220) - A deep-learning model identifies a powerful new drug that can kill many species of antibiotic-resistant bacteria\
+[Legalizzazione Cannabis e Big Pharma](https://www.ilfattoquotidiano.it/2022/09/09/cannabis-la-legalizzazione-delle-droghe-leggere-e-un-duro-colpo-per-big-pharma-uno-studio-spiega-perche/6793612/) - la legalizzazione delle droghe leggere è un duro colpo per Big Pharma. Uno studio spiega perché - Il Fatto Quotidiano\
 [Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
 [A whopping 91% of plastic isn't recycled](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - say national geographic\
 [Japan to release Fukushima's contaminated water into sea](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - reports | Reuters\
@@ -104,13 +111,15 @@ summary: "Set di link interessanti"
 [Reversing The Aging Clock With Epigenetic Reprogramming](https://www.bio-itworld.com/news/2021/01/13/reversing-the-aging-clock-with-epigenetic-reprogramming) - \
 [Humans Used to Sleep in Two Shifts, And Maybe We Should Do It Again](https://www.sciencealert.com/humans-used-to-sleep-in-two-shifts-maybe-we-should-again) - \
 [Cardiopatie](https://www.youtube.com/watch?app=desktop&v=GICkFZ68BUE) - Dottor Oppido - Unità operativa complessa di Cardiologia del Monaldi - YouTube\
+[vanadium battery technology](https://text.npr.org/1114964240) - The U.S. made a breakthrough battery discovery, then gave the technology to China\
+[sun exposure](https://www.outsideonline.com/health/wellness/sunscreen-sun-exposure-skin-cancer-science/) - exposing skin to sunlight lower blood pressure and activate nitric oxide production - Outside Online\
 
 ### Tech
 
 [OpenLitterMap](https://openlittermap.com/) - Share what you see about trash, litter, brands and plastic pollution\
 [Learning Music (Beta)](https://learningmusic.ableton.com/) - Learn making music\
-[Alcohol breath tests are often unreliable](https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html) - New York Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them\
-[Drinkable water extracted with solar-powered desalination system | E&T Magazine](https://eandt.theiet.org/content/articles/2021/04/drinkable-water-extracted-with-solar-powered-desalination-system/) - \
+[Alcohol breath tests unreliable](https://www.nytimes.com/2019/11/03/business/drunk-driving-breathalyzer.html) - New York Times investigation found Alcohol breath tests are often unreliable and can put you in jail. It suggest don't trust them\
+[desalination](https://eandt.theiet.org/content/articles/2021/04/drinkable-water-extracted-with-solar-powered-desalination-system/) - Drinkable water extracted with solar-powered desalination system | E&T Magazine\
 [DRM Broke Its Promise](https://locusmag.com/2019/09/cory-doctorow-drm-broke-its-promise/) - DRM like feudalism\
 [QiFi](https://qifi.org/) - WiFi QR Code Generator\
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
@@ -123,6 +132,10 @@ summary: "Set di link interessanti"
 [Color Theory for Web Developers](https://dev.to/codingsafari/color-theory-for-web-developers-2ilk) - DEV Community\
 [How color theories are based ?](https://dev.to/feco2019/do-you-really-understand-how-color-theories-based-ryb-cmyk-and-rgb-models-1pjg) - RYB CMYK and RGB models - DEV Community\
 [Realtime earthquake warning](https://www.theguardian.com/us-news/2021/dec/21/california-earthquake-early-warning-system) - Seconds before a 6.2 earthquake rattled California, phones got a vital warning | California | The Guardian\
+[Unaffordable expense](https://bigthink.com/hard-science/large-hadron-collider-economics/) - Don't build another Large Hadron Collider - Big Think\
+[Microsoft Pluton](https://gabrielsieben.tech/2022/07/25/the-power-of-microsoft-pluton-2/) - The dangers of (updated) – Gabriel Sieben\
+[polyaramide](https://scitechdaily.com/mit-engineers-create-the-impossible-new-material-that-is-stronger-than-steel-and-as-light-as-plastic/) - MIT Engineers Create the “Impossible” New Material That Is Stronger Than Steel and As Light as Plastic\
+[Costo teleriscaldamento](https://www.ilfattoquotidiano.it/2022/08/27/caro-energia-teleriscaldamento-bollette-triplicate-promessa-risparmio-trappola/6773180/) - Caro energia, per chi ha scelto il teleriscaldamento bollette triplicate. Così la promessa del risparmio (grazie a rifiuti e rinnovabili) si è trasformata in trappola - Il Fatto Quotidiano\
 
 ### History
 
@@ -133,6 +146,7 @@ summary: "Set di link interessanti"
 [La stella rossa](https://it.wikipedia.org/wiki/La_stella_rossa) - un romanzo di fantascienza dello scrittore russo Aleksandr Bogdanov, \
 [The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
 [The Little-Known Story of Violet Gibson](https://www.smithsonianmag.com/smart-news/1926-irish-woman-shot-benito-mussolini-and-almost-altered-history-forever-180977286/) - the Irish Woman Who Shot Mussolini | Smart News | Smithsonian Magazine\
+[The Fine Art of Italian Hand Gestures](https://www.themarginalian.org/2012/12/13/bruno-munari-speak-italian-gestures/) - A Vintage Visual Dictionary by Bruno Munari – The Marginalian\
 
 ### Games
 

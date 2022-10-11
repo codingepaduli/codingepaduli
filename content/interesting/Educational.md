@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2022-07-16
-publishdate: 2022-07-16
-lastmod: 2022-07-16
+date: 2022-10-10
+publishdate: 2022-10-10
+lastmod: 2022-10-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -52,6 +52,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Fake News](https://www.youtube.com/watch?v=5FROGYnhxGU) - cosa sono e come riconoscerle | StudenTALK 🎤 - YouTube\
 [Fake news](https://www.youtube.com/watch?v=DW0MAWPhapk) - Webinar per la didattica a distanza - Cittadinanza digitale e fake news - YouTube\
+[Fake News](https://www.ilfattoquotidiano.it/in-edicola/articoli/2022/09/28/quelli-che-conte-e-mor-to-e-pdcalenda-sfondano/6820049/) - esempi sulle elezioni politiche - Il Fatto Quotidiano\
 
 ##### Social network
 
@@ -168,6 +169,8 @@ summary: "Set di link relativi all'istruzione di base"
 [Upgrading a motherboard’s BIOS/UEFI (the hard way)](https://www.downtowndougbrown.com/2021/12/upgrading-a-motherboards-bios-uefi-the-hard-way/) - \
 [ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
 [Come creare più partizioni in un hard disk](https://www.youtube.com/watch?v=t5Zr19mson0) - YouTube\
+[ryunosinfx/reedsolomon.es](https://github.com/ryunosinfx/reedsolomon.es) - This is Reed-Solomon coding module which is porting from Zxing open source project written in Java.\
+[QR Code Tutorial](https://www.thonky.com/qr-code-tutorial/) - Thonky.com\
 
 #### Sistemi e reti 4anno
 
