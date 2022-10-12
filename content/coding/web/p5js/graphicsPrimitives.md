@@ -268,7 +268,7 @@ Entriamo nel dettaglio sull'uso del parametro opzionale ``mode``, che definisce 
 - ``CHORD``: indica di chiudere l'arco con una linea di contorno tracciata come corda di circonferenza;
 - ``PIE``: indica di chiudere l'arco realizzato con due raggi di contorno al fine di formare un settore circolare;
 
-![p5.js - Opzioni di disegno per gli archi di circonferenza](/static/coding/web/p5js/basics_arcs.png "p5.js - Opzioni di disegno per gli archi di circonferenza")
+![p5.js - Opzioni di disegno per gli archi di circonferenza](/static/coding/web/p5js/graphics-primitives-arcs.png "p5.js - Opzioni di disegno per gli archi di circonferenza")
 
 Un esempio di funzione invocata utilizzando anche il parametro ``mode`` è il seguente:
 
@@ -327,4 +327,4 @@ Creiamo un'area da disegno, delle dimensioni di 600 per 400, nella quale disegni
 
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
-![p5.js - Basi della grafica 2D](/static/coding/web/p5js/basics.png "p5.js - Basi della grafica 2D")
+![p5.js - Basi della grafica 2D](/static/coding/web/p5js/graphics-primitives-basics.png "p5.js - Basi della grafica 2D")

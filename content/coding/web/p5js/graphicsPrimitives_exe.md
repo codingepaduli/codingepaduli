@@ -56,13 +56,13 @@ La funzione ``triangle`` serve a disegnare un triangolo nell'area da disegno. Qu
 
 Dati i punti indicati nella figura in calce ed un'area da disegno delle dimensioni di 1000 punti per 1000 punti, calcolare le coordinate dei punti A, B, C, ..., P, Q ed R indicati nella figura. Indicare i punti di partenza e di arrivo delle linee indicate nella figura in calce.
 
-![p5.js - Calcolo delle coordinate del tris](/static/coding/web/p5js/graphicsPrimitives_exe_tris.png "p5.js - Calcolo delle coordinate del tris ")
+![p5.js - Calcolo delle coordinate del tris](/static/coding/web/p5js/graphics-primitives_exe_tris.png "p5.js - Calcolo delle coordinate del tris ")
 
 ## Disegno di un campo di calcio
 
 Utilizzando le funzioni grafiche conosciute, disegnare un campo di calcio grande quanto tutta l'area da disegno e con margine dai bordi di 20 punti;
 
-![p5.js - Esercizio di disegno di un campo di calcio](/static/coding/web/p5js/basics_soccer.png "p5.js - Disegno di un campo di calcio ")
+![p5.js - Esercizio di disegno di un campo di calcio](/static/coding/web/p5js/graphics-primitives_exe_soccer.png "p5.js - Disegno di un campo di calcio ")
 
 ## Disegno della rosa dei venti
 
@@ -73,11 +73,11 @@ Utilizzando le funzioni grafiche conosciute e, le variabili ``width`` ed ``heigh
 - Le due diagonali del quadrato;
 - Il disegno del diametro del cerchio sia in orizzontale che in verticale.
 
-![p5.js - Esercizio di disegno della rosa dei venti](/static/coding/web/p5js/basics_rosa_venti.png "p5.js - Disegno della rosa dei venti")
+![p5.js - Esercizio di disegno della rosa dei venti](/static/coding/web/p5js/graphics-primitives_exe_rosa_venti.png "p5.js - Disegno della rosa dei venti")
 
 ## Esercizi sugli angoli
 
 Data una circonferenza di diametro a scelta dello studente, utilizzando la funzione ``arc``, disegnare gli archi di circonferenza aventi le seguenti ampiezze: 30, 45, 60, 90, 180, 270 e 360 gradi. Sotto ogni arco, aggiungere un testo indicante l'ampiezza dell'arco.
 Dato che la funzione ``arc`` disegna gli archi misurando gli angoli in senso orario, disegnare gli archi di circonferenza della stessa ampiezza indicata in precedenza, simulando però che gli archi siano disegnati misurando gli angoli in senso antiorario. Anche per questo punto, sotto ogni arco deve essere aggiunto un testo indicante l'ampiezza dell'arco.
 
-![p5.js - Esercizio sugli angoli](/static/coding/web/p5js/basics_angoli.png "p5.js - Esercizio sugli angoli")
+![p5.js - Esercizio sugli angoli](/static/coding/web/p5js/graphics-primitives_exe_angoli.png "p5.js - Esercizio sugli angoli")

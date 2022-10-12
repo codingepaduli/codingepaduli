@@ -11,7 +11,6 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Introduzione alla libreria grafica p5.js"
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/Example02.js", "/static/coding/web/p5js/basics.js"]
 
 references:
     -   title: "Computer Graphics from scratch"
@@ -38,7 +37,7 @@ La particolarità di questo sistema di coordinate è l'asse Y invertito, cioè i
 
 Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
 
-![p5.js - Differenza tra i due sistemi di coordinate](/static/coding/web/p5js/basics_axes-in-math-and-p5js.png "p5.js - Differenza tra i due sistemi di coordinate")
+![p5.js - Differenza tra i due sistemi di coordinate](/static/coding/web/p5js/intro-axes-in-math-and-p5js.png "p5.js - Differenza tra i due sistemi di coordinate")
 
 ### Misurazione angoli
 
@@ -56,11 +55,11 @@ Ponendo inizialmente sul numero tre entrambe le lancette (quindi a 3 ore e 15 mi
 
 Man mano che la lancetta dei minuti ruota in **senso orario**, la dimensione dell'angolo aumenta. Alle ore **3.30** corrisponde la misura di **novanta gradi** (e non alle ore **3.00** come ci aspetterebbe). Un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45** e così via.
 
-![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-on-clock-clockwise.png "p5.js - Angoli rappresentati su orologio")
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-clockwise.png "p5.js - Angoli rappresentati su orologio")
 
 Per completezza, riportiamo anche le immagini degli orologi con le misurazioni degli angoli prese utilizzando il senso **antiorario**, in modo da avere chiara la differenza.
 
-![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/basics-angle-on-clock-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
 
 ## API
 
@@ -188,7 +187,7 @@ Si rimanda al capitolo sui colori per una spiegazione più dettagliata di questi
 
 Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità della libreria p5.js, è sicuramente l'editor presente sul sito web [https://editor.p5js.org](https://editor.p5js.org "Editor online di p5.js"), che si presenta con la seguente interfaccia grafica:
 
-![p5.js - Editor online](/static/coding/web/p5js/basics-p5-js-editor.png "p5.js - Editor online")
+![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor.png "p5.js - Editor online")
 
 L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
 
@@ -201,11 +200,11 @@ L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
 
 Effettuando il login, utilizzando un servizio esterno tra quelli proposti oppure procedendo alla registrazione, è possibile gestire i propri progetti, le proprie collezioni ed utilizzare altre funzionalità non consentite all'utente non registrato. La barra dei menù, in alto a destra, riporta il nome utente e le diverse aree a cui l'utente può accedere. Il menù File, appena si salva il progetto, si arricchisce di nuove voci che permettono di duplicare il progetto, condividerlo o aggiungerlo ad una collezione.
 
-![p5.js - Editor online](/static/coding/web/p5js/basics-p5-js-editor-logged-in.png "p5.js - Editor online con i menù visualizzati dopo il login")
+![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in.png "p5.js - Editor online con i menù visualizzati dopo il login")
 
 Cliccando sulla voce di menu "share" presente nel menù "File", si apre una finestra di dialogo contenente 4 opzioni, come da immagine seguente:
 
-![p5.js - Editor online](/static/coding/web/p5js/basics-p5-js-editor-logged-in-sharing.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
+![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in-sharing.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
 
 Le voci visualizzate nell'immagine sono:
 
@@ -216,7 +215,7 @@ Le voci visualizzate nell'immagine sono:
 
 Nell'area personale è possibile gestire i propri progetti e le proprie collezioni. Il menù contestuale ad ogni progetto permette di gestire le varie azioni sul progetto, come da immagine seguente:
 
-![p5.js - Editor online](/static/coding/web/p5js/basics-p5-js-editor-logged-in-projects.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
+![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in-projects.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
 
 ## Struttura del progetto
 
@@ -398,7 +397,7 @@ function draw() {
 
 Il risultato è il seguente:
 
-![p5.js - Primo esempio](/static/coding/web/p5js/basics01.png "p5.js - Primo esempio")
+![p5.js - Primo esempio](/static/coding/web/p5js/intro-first-exercise.png "p5.js - Primo esempio")
 
 Alcune operazioni, invece, devono essere effettuate una sola volta, come ad esempio la creazione dell'area da disegno, per cui è **errato** invocare la funzione ``createCanvas()`` all'interno del blocco ``draw()``.
 
