@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 02 - Etichette (tag)"
-description: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
+title: "HTML Lez. 02 - Il linguaggio HTML e le etichette (tag)"
+description: "HTML Lez. 02 - Il linguaggio HTML e le etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 date: 2019-07-16
 publishdate: 2019-07-16
 lastmod: 2019-07-16
@@ -10,25 +10,18 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 02 - Etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
+summary: "HTML Lez. 02 - Il linguaggio HTML e le etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 weight: 9880
 ---
 
-# Il linguaggio HTML
+# Il linguaggio HTML e le etichette
 
 Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText), ha lo scopo di strutturare i documenti da pubblicare sul web.
 
+Non è un linguaggio di programmazione, ma solo di definizione della **struttura** di un ipertesto, dato che usa dei segnaposto per indicare dove iniziano e finiscono gli elementi.
+
 Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
 l'inizio e la fine di un elemento della pagina web, ad esempio inizio e fine di un titolo, di un'immagine, di un video, di una tabella...
-
-Da sottolineare che il linguaggio HTML non è un linguaggio di programmazione, ma solo un linguaggio di "formattazione" delle pagine web, dato che usa le etichette per indicare dove iniziano e finiscono gli elementi. Il linguaggio HTML definisce solo la **struttura** di un ipertesto, non la grafica, né le azioni o le elaborazioni da eseguire.
-
-Gli stili grafici della pagina web sono scritti in linguaggio CSS, che indica stili e colori da utilizzare. Le azioni, le interazioni e l'elaborazione dei dati contenuti della pagina web sono scritti con linguaggi di programmazione come JavaScript.
-
-## Etichette (tag)
-
-Le **etichette** (in inglese Markup o TAG) sono dei segnaposto, indicano
-l'inizio e la fine di un elemento della pagina web.
 
 Ogni etichetta ha un nome, ad esempio
 ``h1`` è l'etichetta del titolo,

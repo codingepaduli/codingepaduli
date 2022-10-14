@@ -103,3 +103,13 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 - **ottimizzazione per i motori di ricerca ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Collegamento all'articolo su SEO su wikipedia.it"))**: permette al sito web di posizionarsi piú in alto possibile in un motore di ricerca.
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
+
+## I linguaggi degli ipertesti
+
+Sul web sono utilizzati molti linguaggi, ma i principali usati per la realizzazione dei siti web sono:
+
+- Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio che definisce la struttura delle pagine web, ma non indica la formattazione.
+- Il linguaggio <abbr title="Cascading Style Sheets">**CSS**</abbr> è usato per definire la formattazione dei documenti HTML, ovvero stili, colori, animazioni, ... 
+- Il linguaggio **JavaScript** è usato per poter elaborare le informazioni sul client e per poter interagire con l'utente (ad esempio nei videogiochi online).
+
+I tre linguaggi sono fortemente collegati, ma è utile sottolineare che ognuno ha uno scopo ben definito.
