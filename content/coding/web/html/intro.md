@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 01 - Introduzione"
-description: "HTML Lez. 01 - Introduzione al linguaggio HTML"
+title: "HTML Lez. 01 - Il World Wide Web"
+description: "HTML Lez. 01 - Il World Wide Web"
 date: 2019-07-15
 publishdate: 2019-07-15
 lastmod: 2019-07-15
@@ -10,16 +10,50 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 01 - Introduzione al linguaggio HTML"
+summary: "HTML Lez. 01 - Il World Wide Web"
 weight: 10000
 mainfont: "Noto Sans Regular"
 sansfont: "Noto Sans Regular"
 monofont: "Noto Sans Mono"
 mathfont: "Noto Sans Math"
 emojifont: "Noto Color Emoji"
+
+references:
+    -   title: "Guida HTML su html.it"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.html.it/guide/guida-html/"
+        description: "Corso HTML sul sito web di html.it (in italiano)"
+    -   title: "Guida HTML (versione 5) su html.it"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.html.it/guide/guida-html5/"
+        description: "Corso HTML versione 5 sul sito web di html.it (in italiano)"
+    -   title: "Guida HTML su corsidia.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html"
+        description: "Corso HTML sul sito web di corsidia.com (in italiano)"
+    -   title: "Manuale HTML su it.wikibooks.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://it.m.wikibooks.org/wiki/HTML"
+        description: "Un buon manuale HTML su it.wikibooks.org (in italiano)"
+    -   title: "Guida HTML su w3schools.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.w3schools.com/html/"
+        description: "Corso HTML sul sito web di www.w3schools.com (in inglese)"
+    -   title: "Corso HTML per principianti su internetingishard.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://internetingishard.com/html-and-css/"
+        description: "Corso HTML per principianti sul sito web di www.w3schools.com (in inglese)"
+    -   title: "Documentazione sulla tecnologia HTML su developer.mozilla.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://developer.mozilla.org/it/docs/Web/HTML"
+        description: "Sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione in italiano)"
+    -   title: "Corso e certificazione HTML su freecodecamp.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+        description: "Corso e certificazione della freecodecamp, organizzazione no-profit che aiuta le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese)"
 ---
 
-# WWW ed HTML
+# Il World Wide Web (WWW)
 
 Il **World Wide Web** (dall'inglese "Rete di Ampiezza Globale") è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
 
@@ -29,7 +63,7 @@ Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importa
 
 Il <abbr title="World Wide Web">WWW</abbr> diventa un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
 
-## Architettura client server
+## Architettura client server del WWW
 
 Il World Wide Web si basa su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client.
 
@@ -55,21 +89,6 @@ Purtroppo, quando si utilizza il protocollo HTTP, è possibile leggere i messagg
 
 Il protocollo **HTTPS** (HTTP Secure) è nato per aggiungere al protocollo HTTP uno strato ulteriore che consenta di evitare il problema descritto in precedenza e garantisca la comunicazione client-server in sicurezza.
 
-## Tecnologie e software per la creazione di siti web
-
-I siti web possono essere costruiti in mille modi.
-
-Esistono software che permettono, anche con poche conoscenze tecniche, di disegnare, configurare ed amministrare un sito web mediante interfacce grafiche che guidano l'utente nei vari passi. Questi software sono chiamati genericamente
-[CMS](https://it.wikipedia.org/wiki/Content_management_system "Collegamento all'articolo sui CMS su wikipedia.it"). Tra i CMS più noti troviamo
-[WordPress](https://wordpress.org/ "Collegamento al sito web di WordPress") e
-[Joomla](https://www.joomla.org/ "Collegamento al sito web di Joomla"), ma la scelta è ampia.
-
-E' possibile creare dei siti web "statici", cioè scritti con software che trasformano un insieme di articoli e contenuti in un sito web. Questi strumenti prendono il nome di "static site generator" (generatori di siti web statici).
-
-E' comunque possibile creare siti web partendo da un semplice editor di testi. Tra gli editor consigliati spuntano [Notepad++](https://notepad-plus-plus.org/ "Collegamento all'editor Notepad++"), [VSCodium](https://vscodium.com/ "Collegamento all'editor VSCodium") e Visual Studio Code. Tra gli editor non adatti si elencano l'editor Word di Office e "Blocco Note" (Notepad) di Windows.
-
-Una volta costruito, il sito web deve essere **pubblicato** sul web, scegliendo le caratteristiche del servizio di hosting o di cloud, i certificati di sicurezza e gli strumenti adatti per il trasferimento e la sincronizzazione delle pagine sul dominio.
-
 ## Caratteristiche di un sito web
 
 Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisiti molto richiesti, seppur non obbligatori, che elenchiamo di seguito:
@@ -84,15 +103,3 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 - **ottimizzazione per i motori di ricerca ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Collegamento all'articolo su SEO su wikipedia.it"))**: permette al sito web di posizionarsi piú in alto possibile in un motore di ricerca.
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
-
-## Riferimenti alle risorse online
-
-Su internet sono presenti moltissimi corsi e chiarimenti sul linguaggio HTML, degni di nota sono:
-[HTML.it](https://www.html.it/guide/guida-html/ "Collegamento al sito web di html.it") (in italiano),
-[HTML.it (versione 5)](https://www.html.it/guide/guida-html5/ "Collegamento al sito web di html.it") ( Guida HTML5 in italiano),
-[corsidia.com](https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html "Collegamento al sito web di corsidia.com") (in italiano),
-[it.wikibooks.org](https://it.m.wikibooks.org/wiki/HTML "Collegamento al sito web di wikibooks.org") (un buon manuale in italiano),
-[w3schools.com](https://www.w3schools.com/html/ "Collegamento al sito web di w3schools.com") (in inglese),
-[internetingishard.com](https://internetingishard.com/html-and-css/ "Collegamento al sito web di internetingishard.com") (in inglese, per principianti),
-[developer.mozilla.org](https://developer.mozilla.org/it/docs/Web/HTML "Collegamento al sito web di developer.mozilla.org"), sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione), ed infine
-[freecodecamp.org](https://guide.freecodecamp.org/html/ "Collegamento al sito web di freecodecamp.org"), organizzazione no-profit per aiutare le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese).
