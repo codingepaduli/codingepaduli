@@ -14,21 +14,7 @@ summary: "HTML Lez. 04 - Etichette che richiedono l'uso di attributi"
 weight: 9670
 ---
 
-# Etichette con attributi
-
-Le etichette possono avere una lista di **attributi** che forniscono informazioni aggiuntive all'etichetta.
-
-Gli attributi devono essere aggiunti esclusivamente nelle etichette di apertura, non nelle etichette di chiusura, e devono essere separati l'uno dall'altro da uno spazio.
-
-Ogni attributo è una coppia **nome='valore'**. La regola di scrittura indica il nome dell'attributo seguito da un carattere ``=`` e poi dal valore, che deve essere sempre racchiuso da apici singoli o doppi.
-
-Riepilogando, la sintassi delle etichette con attributi è la seguente:
-
-```html
-<etichetta nome1="valore1" nome2="valore2" ... >
-    contenuti etichetta
-</etichetta>
-```
+## Attributi comuni
 
 Alcuni attributi sono comuni a tutte le etichette:
 
@@ -49,36 +35,6 @@ Dall'esempio si nota che ogni paragrafo ha un suo identificativo e che i primi t
 ``insieme1``), dato che il valore dell'attributo ``class`` è presente in tutte e tre le etichette; Poi si nota che il terzo e il quarto paragrafo fanno parte di un secondo insieme (chiamato ``citazione``) e che solo la terza etichetta fa parte di entrambi gli insiemi. Per un approfondimento, si rimanda alle specifiche sui selettori CSS.
 
 Non tutti gli attributi sono comuni a tutte le etichette, vi sono attributi specifici per una singola etichetta, per cui è possibile associarli solo ed esclusivamente a questa etichetta.
-
-## Etichetta ``html`` e l'attributo ``lang``
-
-L'etichetta ``html`` prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
-
-Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in bielorusso con alfabeto cirillico, o ancora bielorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Bielorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
-
-1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a Wikipedia per lo standard ISO 639-1");
-2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a Wikipedia per lo standard ISO 15924");
-3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a Wikipedia per lo standard ISO 3166").
-
-L'indicazione della lingua corretta aiuta gli strumenti di traduzione e quelli di lettura ad alta voce del testo nella corretta interpretazione del testo.
-
-Le pagine web in italiano, non avendo particolari complicazioni di linguaggio, devono avere l'etichetta di apertura ``<html lang="it">``.
-
-Possono esservi casi in cui un particolare contenuto è scritto in un linguaggio differente rispetto al resto della pagina web. In questi casi, l'attributo ``lang`` può essere usato per indicare il linguaggio utilizzato per lo specifico contenuto.
-
-Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un paragrafo è in spagnolo:
-
-```html
-<html lang="it">
-    <head>…</head>
-    <body>
-        <p>Informazioni in italiano</p>
-        <p lang="es">Información para hispanohablantes</p>
-    </body>
-</html>
-```
-
-Nell'esempio appena visto, l'indicazione aggiuntiva del paragrafo con lingua differente aiuta enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce a leggere e tradurre correttamente il testo spagnolo.
 
 ## Etichetta di collegamento con attributi ``href`` e ``target``
 

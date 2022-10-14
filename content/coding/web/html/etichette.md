@@ -47,11 +47,25 @@ l'etichetta di inizio testo evidenziato è ``<mark>`` e l'etichetta di fine test
 
 **L'etichetta di chiusura non è sempre prevista, esistono delle eccezioni di cui tenere conto.**
 
+## Etichette con attributi
+
+Le etichette possono avere una lista di **attributi** che forniscono informazioni aggiuntive all'etichetta.
+
+Gli attributi devono essere aggiunti esclusivamente nelle etichette di apertura, non nelle etichette di chiusura, e devono essere separati l'uno dall'altro da uno spazio.
+
+Ogni attributo è una coppia **nome='valore'**. La regola di scrittura indica il nome dell'attributo seguito da un carattere ``=`` e poi dal valore, che deve essere sempre racchiuso da apici singoli o doppi.
+
+Riepilogando, la sintassi delle etichette con attributi è la seguente:
+
+```html
+<etichetta nome1="valore1" nome2="valore2" ... >
+    contenuti etichetta
+</etichetta>
+```
+
 ## Prima pagina web
 
 Un'indicazione fondamentale che deve essere inserita **nella prima riga** della pagina web (del file HTML) è la dichiarazione del "tipo di documento": si deve indicare che il documento è scritto in HTML, utilizzando il codice ``<!doctype html>`` ("doctype" è l'abbreviazione di "document type", che tradotto significa "tipo di documento", quindi si dichiara che il tipo di documento è "HTML").
-
-Si precisa che non si tratta di un'etichetta, è una dichiarazione, per cui **non necessita di un'etichetta di chiusura**;
 
 Dopo la dichiarazione del tipo di documento, deve iniziare il documento web vero e proprio. L'etichetta ``html`` delimita l'intera pagina web (l'etichetta di
 apertura ``<html>`` indica l'inizio del documento HTML e l'etichetta
@@ -65,7 +79,7 @@ La pagina HTML risultante  (ancora incompleta) è la seguente:
 
 ```html
 <!doctype html>
-<html>
+<html lang="it">
   <body>
     <!-- contenuti della pagina html -->
     <h1>Titolo pagina web</h1>
@@ -148,3 +162,33 @@ Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche
 ```
 
 Gli strumenti di validazione del codice HTML aiutano a rilevare, e quindi sostituire, le etichette obsolete.
+
+## L'attributo ``lang`` dell'etichetta ``html``
+
+L'etichetta ``html`` prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
+
+Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in bielorusso con alfabeto cirillico, o ancora bielorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Bielorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
+
+1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a Wikipedia per lo standard ISO 639-1");
+2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a Wikipedia per lo standard ISO 15924");
+3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a Wikipedia per lo standard ISO 3166").
+
+L'indicazione della lingua corretta aiuta gli strumenti di traduzione e quelli di lettura ad alta voce del testo nella corretta interpretazione del testo.
+
+Le pagine web in italiano, non avendo particolari complicazioni di linguaggio, devono avere l'etichetta di apertura ``<html lang="it">``.
+
+Possono esservi casi in cui un particolare contenuto è scritto in un linguaggio differente rispetto al resto della pagina web. In questi casi, l'attributo ``lang`` può essere usato per indicare il linguaggio utilizzato per lo specifico contenuto.
+
+Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un paragrafo è in spagnolo:
+
+```html
+<html lang="it">
+    <head>…</head>
+    <body>
+        <p>Informazioni in italiano</p>
+        <p lang="es">Información para hispanohablantes</p>
+    </body>
+</html>
+```
+
+Nell'esempio appena visto, l'indicazione aggiuntiva del paragrafo con lingua differente aiuta enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce a leggere e tradurre correttamente il testo spagnolo.
