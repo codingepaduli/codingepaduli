@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 8 - Accessibilità"
-description: "HTML Lez. 8 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
+title: "HTML Lez. 08 - Accessibilità"
+description: "HTML Lez. 08 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
 date: 2022-08-17
 publishdate: 2022-08-17
 lastmod: 2022-08-17
@@ -10,7 +10,7 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 8 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
+summary: "HTML Lez. 08 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
 weight: 9190
 
 references:
