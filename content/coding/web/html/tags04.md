@@ -66,14 +66,6 @@ Le variabili matematiche possono essere indicate dall'etichetta **var**, come di
 <var>i</var> * <var>i</var> = -1
 ```
 
-## Etichette per le definizioni
-
-Per indicare un termine del quale si vuole dare una definizione, si usa l'etichetta **dfn**, come nel seguente esempio:
-
-```html
-<dfn>WWW</dfn> sta per "World wide web.
-```
-
 ## Etichette per l'input e l'output di un programma
 
 Quando si vuole indicare l'input di un software, si usa l'etichetta **kbd** (dall'inglese "keyboard input").

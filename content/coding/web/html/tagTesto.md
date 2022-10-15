@@ -167,9 +167,15 @@ La lista viene visualizzata di seguito:
     <li>Edge (Microsoft)</li>
 </ul>
 
-## Liste di definizione
+## Etichette per le definizioni e liste di definizioni
 
-Per creare una lista di definizione si usano le etichette ``dl``, ``dt`` e ``dd``, come nel seguente esempio:
+Per indicare un termine del quale si vuole dare una definizione, si usa l'etichetta **dfn**, come nel seguente esempio:
+
+```html
+<dfn>WWW</dfn> sta per "World wide web.
+```
+
+Quando si vuole creare una lista di definizioni si usano le etichette ``dl``, ``dt`` e ``dd``, come nel seguente esempio:
 
 ```html
 <dl>
