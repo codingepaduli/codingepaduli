@@ -328,7 +328,7 @@ L'esempio completo è il seguente:
 
 che genera l'immagine:
 <!-- markdown-link-check-disable-next-line -->
-![esempio tag immagine](immagine.png "immagine generata dal codice HTML")
+![esempio tag immagine](/static/coding/web/html/program_CC0.png "immagine generata dal codice HTML")
 
 Le immagini possono essere arricchite di **mappe**, cioè di aree
 cliccabili sovrapposte all'immagine. Le mappe sono descritte dal tag
