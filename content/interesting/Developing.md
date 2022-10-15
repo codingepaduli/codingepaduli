@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-10-10
-publishdate: 2022-10-10
-lastmod: 2022-10-10
+date: 2022-10-14
+publishdate: 2022-10-14
+lastmod: 2022-10-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -106,7 +106,7 @@ summary: "Set di link relativi al coding"
 [Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
 [QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
 [QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
-[QR-Code-generator/QrSegment.java at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
+[QR-Code-generator/QrSegment at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
 
 #### Ansible
 
