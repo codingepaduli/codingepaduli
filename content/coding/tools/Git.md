@@ -39,7 +39,7 @@ Su package manager "apt" di Linux (Debian based):
 sudo apt install git-all
 ```
 
-Su package manager "apt" di Linux (RedHat based):
+Su package manager "dnf" di Linux (RedHat based):
 
 ```bash
 sudo dnf install git-all
@@ -123,11 +123,15 @@ Per rendere l'idea di cosa significhi "sistema per il controllo di versione" (da
 
 Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro, e può essere diviso in varie fasi, al termine delle quali si può avere, eventualmente, un confronto con gli insegnanti interessati.
 
-Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, sulla quale crea le varie bozze, effettua le varie prove ed un passo per volta svolge il compito giornaliero. Quando un lavoro è completo, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo ad una stanza o ad un'ala del palazzo, allora questo lavoro è spostato in un quaderno ad anelli.
+Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, sulla quale crea le varie bozze, effettua le varie prove ed un passo per volta svolge il compito giornaliero. Quando una piccola parte del lavoro è completa, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo ad una stanza o ad un'ala del palazzo, allora i fogli sono raccolti in un foglio plastificato e spostati in un quaderno ad anelli.
 
-E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente completa un lavoro, annota nome e data nella pagina di registro ed aggiunge l'operazione effettuata, l'aggiunta del nuovo capitolo, la cancellazione della pagina web o la modifica del disegno tecnico della stanza o dell'ala del palazzo.
+E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente completa un lavoro e lo sposta nel foglio plastificato, annota nome e data nella pagina di registro ed aggiunge l'operazione effettuata, l'aggiunta del nuovo capitolo, la cancellazione della pagina web o la modifica del disegno tecnico della stanza o dell'ala del palazzo.
 
-Le pagine cancellate non vengono effettivamente cestinate, ma vengono annotate con una "X" rossa in un angolo (in modo tale che siano ancora leggibili) e spostate in coda al quaderno ad anelli. Le pagine da modificare vengono prima corrette con la penna rossa, e poi, a modifica terminata, le pagine corrette con la penna rossa vengono posizionate in coda al quaderno ad anelli, infine viene effettuata una copia completa di queste pagine e questa copia viene posizionata nel punto in cui si trovavano le pagine prima della modifica.
+Le pagine cancellate non vengono effettivamente cestinate, ma vengono annotate con una "X" rossa in un angolo (in modo tale che siano ancora leggibili), raccolte in un foglio plastificato e spostate in coda al quaderno ad anelli.
+
+Le pagine da modificare vengono corrette con la matita, in modo da poter sempre cancellare tutto e tornare al lavoro originale. A modifica terminata, viene effettuata una copia completa (sempre raccolta in un foglio plastificato) in modo da poter sostituire quelle nel quaderno ad anelli. Le pagine corrette a matita non vengono cestinate, ma come per le pagine cancellate, vengono annotate con una "X" rossa e spostate in coda al quaderno ad anelli.
+
+Anche per le pagine cancellate o modificate viene aggiornata la pagina di registro.
 
 **Questa gestione dei lavori, tramite un quaderno ad anelli con la pagina di registro e le modifiche/cancellazioni allegate in coda, realizza un primo rudimentale sistema di controllo di versione.**
 
@@ -208,15 +212,19 @@ Un'altra situazione che si può verificare è che si voglia fondere due rami di 
 
 I concetti principali sui quali si basa Git sono:
 
-- L'**area di lavoro**, detta **staging area** o **caching area**: E' l'area nella quale l'utente lavora. Nell'analogia precedente è rappresentata dalla scrivania, sulla quale il singolo studente lavora alle varie bozze.
+- Gli **oggetti non tracciati**, sono tutti i fogli sparsi sulla scrivania di lavoro.
 
-- L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente i lavori presenti nell'area di lavoro. Può essere rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
+- Gli **oggetti tracciati** che sono tutti i fogli dei lavori che una volta completati sono raccolti in un foglio plastificato.
 
-- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente è rappresentato dal completamento di un lavoro, cioè allo spostamento del lavoro dall'area di lavoro (la scrivania) al proprio quaderno ad anelli, con annotazione del lavoro nella pagina di registro.
+- **staging area** o **caching area**: Rappresenta l'insieme dei lavori plastificati che devono essere aggiunti nel quaderno ad anelli.
+
+- L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente gli oggetti tracciati. Può essere rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
+
+- Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente è rappresentato dallo spostamento nel quaderno ad anelli dei lavori raccolti nei fogli plastificati, con annotazione del lavoro nella pagina di registro.
 
 - Le **versioni**: le operazioni di commit generano una nuova versione del lavoro svolto. Il lavoro precedente non viene cancellato, ma salvato, in modo da poter sempre tornare ad una versione precedente. L'ultima versione sul ramo di sviluppo sul quale lavora l'utente è detta **HEAD**.
 
-- Il **repository locale**: l'insieme di file versionati e tracciati su cui Git lavora in locale. E' ospitato sul proprio computer e non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
+- Il **repository locale**: l'insieme delle operazioni di commit su cui Git lavora in locale. Sono conservate sul proprio computer, non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
 
 - Il **repository remoto**: l'insieme di file versionati e tracciati su cui Git lavora in remoto. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro degli altri studenti e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
 
@@ -229,15 +237,9 @@ I concetti principali sui quali si basa Git sono:
 
 - La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che viene aggiunto al gruppo, e che quindi compra un nuovo quaderno ad anelli nel quale poi clona (copia) il contenuto del quaderno ad anelli del professore.
 
-## Gestione repository
+## Creazione repository remoto su GitHub
 
-I servizi online permettono la gestione di un repository Git tramite interfaccia web, che rende semplice l'interazione con l'utente.
-
-Per la creazione di un repository remoto. ci si può registrare su uno dei vari servizi online. Tra i più noti ci sono GitHub, GitLab, Gitea e BitBucket.
-
-Una volta registrati e creato il proprio repository, si può procedere alla configurazione di Git, alla clonazione del repository e quindi alla condivisione con altri utenti del proprio lavoro presente sul repository.
-
-### Creazione repository su GitHub
+GitHub è uno dei servizi online più famosi, permette la gestione di un repository Git tramite interfaccia web e semplifica l'interazione con l'utente.
 
 L'utente, che completa il processo di registrazione su GitHub, accede alla pagina principale, nella quale è presente l'elenco dei propri repository (nell'area sinistra) e (in alto a destra) l'icona del proprio account con relativo menù visualizzabile al click.
 
@@ -259,7 +261,26 @@ L'indirizzo completo del repository su GitHub è visibile cliccando sul pulsante
 
 ![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-URL2.png "GitHub - Pagina del Repository")
 
-### Creazione repository su GitLab
+### Configurazione chiave SSH di verifica
+
+Creata la chiave SSH e registrata su git, è possibile aggiungerla anche come chiave di verifica al repository locale utilizzando i comandi:
+
+```bash
+git config --local commit.gpgsign true
+git config --local gpg.format ssh
+git config --local user.signingkey "$HOME/.ssh/id_ed25519.pub"
+git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
+```
+
+con il file ``allowed_signers`` composto dalla stringa:
+
+```plaintext
+mail_utente@servizio algoritmo-ssh ssh-hash
+```
+
+## Creazione repository remoto su GitLab
+
+GitLab è un altro servizio online famosissimo, permette la gestione di un repository Git tramite interfaccia web e semplifica l'interazione con l'utente.
 
 GitLab permette la creazione di un repository remoto attraverso un'interfaccia grafica, in cui inserire il nome, la descrizione e la visibilità.
 
@@ -304,17 +325,17 @@ git config --global --list
 git config --local --list
 ```
 
-E' buona norma evitare di usare la configurazione di sistema, disabilitandola attraverso il comando:
+E' consigliabile utilizzare una configurazione per ogni repository, anche se si può scegliere una configurazione comune per l'utente e poi sovrascrivere le sole proprietà necessarie ai singoli repository. E' buona norma evitare di usare la configurazione di sistema, disabilitandola a livello globale attraverso il comando:
 
 ```bash
 git config --global user.useConfigOnly true
 ```
 
-Per configurare globalmente l'identità da utilizzare nei propri repository, si utilizzano i seguenti comandi:
+Per configurare le credenziali del singolo repository, si usano i comandi seguenti:
 
 ```bash
-git config --global user.name "User"
-git config --global user.email "user@user.com"
+git config --local user.name "User"
+git config --local user.email "user@user.com"
 ```
 
 Altra operazione generalmente consigliata è l'impostazione del carattere di fine riga, dato che su Linux e Mac il carattere di fine riga (INVIO) è LF (line feed) mentre su Windows il carattere di fine riga (INVIO) è CR + LF (carriage return + line feed).
@@ -324,32 +345,44 @@ Questa differenza di caratteri porta ad avere confusione quando un file è modif
 Una macchina windows deve quindi essere configurata per la conversione automatica da LF a CR + LF e viceversa:
 
 ```bash
-git config --global core.autocrlf true
+git config --local core.autocrlf true
 ```
 
 Una macchina Linux invece deve essere abilitata per la correzione automatica di tutti i file che arrivano dal repository trasformando i caratteri CR + LF con il carattere LF:
 
 ```bash
-git config --global core.autocrlf input
+git config --local core.autocrlf input
 ```
 
 Nella configurazione è utile anche impostare l'editor di riferimento:
 
 ```bash
-git config --global core.editor "atom --wait"
+git config --local core.editor "atom --wait"
 ```
 
-Infine, è consigliato non ignorare la differenza tra caratteri minuscoli e maiuscoli nei nomi dei file, con il comando
+Se necessario, si può scegliere di non ignorare la differenza tra caratteri minuscoli e maiuscoli nei nomi dei file, con il comando:
 
 ```bash
-git config --global core.ignorecase false
+git config --local core.ignorecase false
+```
+
+Se si vuole memorizzare le credenziali, può essere utile il comando:
+
+```bash
+git config --local credential.helper store
+```
+
+Infine, git chiede quale tecnica usare per sincronizzare il repository. Si consiglia la seguente:
+
+```bash
+git config --local pull.rebase false
 ```
 
 ### Staging area e commit
 
 Per creare una nuova versione del repository locale e poi sincronizzarla con il repository remoto, si può partire dalla creazione di tre file, ``file1.txt``, ``file2.txt`` e ``file3.txt``, in modo da seguire le varie operazioni.
 
-Creati i  tre file, si può aggiungere il primo file all'area di lavoro, chiamata **staging area** o **caching area**, utilizzando il comando:
+Creati i tre file, si può aggiungere il primo file alla **staging area** (detta anche "caching area"), utilizzando il comando:
 
 ```bash
 git add file1.txt
@@ -379,7 +412,7 @@ Untracked files:
   file3.txt
 ```
 
-Si nota che il file ``file1.txt`` risulta pronto per il commit ("to be committed"), mentre i file ``file2.txt`` e ``file3.txt`` risultano tra i file non tracciati ("untracked").
+Si nota che il file ``file1.txt`` risulta tracciato e pronto per il commit (come si nota dalla scritta "to be committed"), mentre i file ``file2.txt`` e ``file3.txt`` risultano non tracciati ("untracked").
 
 Effettuando ulteriori modifiche al file ``file1.txt``, questo risulta modificato, come si nota visualizzando lo stato dei file attraverso il comando:
 
@@ -409,11 +442,11 @@ Untracked files:
 I file possono avere 4 stati:
 
 - untracked: non tracciati da Git;
+- staged: tracciati e pronti ad essere inclusi in un commit (to be committed);
 - modified: modificati rispetto all'ultimo commit;
-- staged (to be committed): pronti ad essere inclusi in un commit;
 - unmodified: non modificati rispetto all'ultimo commit;
 
-Per committare il primo file ``file.txt``, questo deve essere innanzitutto aggiunto all'area di lavoro, poi si può indicare che si vuole effettuare un commit dell'area di lavoro (la staging area).
+Prima di poter committare il file ``file1.txt``, questo deve essere nuovamente aggiunto all'area di "staging". I comandi per l'aggiunta e per il commit sono i seguenti:
 
 ```bash
 git add file1.txt
@@ -436,6 +469,8 @@ Quando si scaricano le ultime versioni da repository remoto nel repository local
 
 Effettuati i vari commit sul repository locale, ci si trova nella situazione in cui il repository locale si trova in una versione più avanzata rispetto al repository remoto (che è stato clonato).
 
+Se si ha un repository locale ma il repository remoto non è stato creato, allora non si ha possibilità di sincronizzazione. Se ci si vuole registrare ad un servizio online e poi collegare il repository locale a quello remoto, allora si può consultare la sezione sulle origini remote per effettuare il collegamento.
+
 Per sincronizzare il lavoro (tutti i commit sul repository locale) con il repository remoto, si utilizza il comando:
 
 ```bash
@@ -444,30 +479,25 @@ git push origin main
 
 L'operazione di push invia tutti i commit (che sono stati eseguiti sul repository locale) al repository remoto.
 
-Per effettuare l'operazione inversa, cioè per ricevere nel repository locale tutti i commit dal repository remoto (eseguiti dallo stesso utente attraverso computer differenti o eseguiti da altri utenti),  si utilizza il comando:
+Per effettuare l'operazione inversa, cioè per ricevere nel repository locale tutti i commit dal repository remoto (eseguiti dallo stesso utente attraverso computer differenti o eseguiti da altri utenti), si utilizza il comando:
 
 ```bash
 git pull origin main
 ```
 
-### Pulizia della staging area
+### Gestione dei file nella staging area
 
 Può capitare di aggiungere per errore un file alla staging area, per cui lo si vuole togliere, senza però cancellarlo e perdere il contenuto, ma lasciandolo intatto nella cartella in cui si trova. Il comando da utilizzare è:
 
 ```bash
-git rm --cached file
+git restore --staged file
 ```
 
-Se invece si è modificato un file in staging area e si vuole cancellare le ultime modifiche effettuate, lasciando il file con le modifiche precedenti in staging area, si utilizza il comando:
+Se si vuole ripristinare il file allo stato dell'ultimo commit, allora bisogna prima toglierlo dalla staging area e poi cancellare le modifiche, utilizzando i comandi:
 
 ```bash
-git reset HEAD file
-```
-
-Se si vuole ripristinare lo stato dell'ultimo commit, allora bisogna cancellare la staging area, e quindi si utilizza il comando:
-
-```bash
-git checkout .
+git restore --staged file
+git restore file
 ```
 
 Se si vuole cancellare tutti i file e cartelle che non sono tracciati, si utilizza il comando:
