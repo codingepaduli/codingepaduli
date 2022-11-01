@@ -56,13 +56,19 @@ La funzione ``triangle`` serve a disegnare un triangolo nell'area da disegno. Qu
 
 Dati i punti indicati nella figura in calce ed un'area da disegno delle dimensioni di 1000 punti per 1000 punti, calcolare le coordinate dei punti A, B, C, ..., P, Q ed R indicati nella figura. Indicare i punti di partenza e di arrivo delle linee indicate nella figura in calce.
 
-![p5.js - Calcolo delle coordinate del tris](/static/coding/web/p5js/graphics-primitives_exe_tris.png "p5.js - Calcolo delle coordinate del tris ")
+![p5.js - Calcolo delle coordinate del tris](/static/coding/web/p5js/graphics-primitives_exe_tris.png "p5.js - Calcolo delle coordinate del tris")
+
+## Disegno di una stella a 6 punte
+
+Utilizzando le funzioni grafiche conosciute, disegnare una stella a sei punte utilizzando due triangoli iscritti nell'area da disegno (ovvero con i tre punti posizionati sui bordi dell'area da disegno). Calcolare le coordinate dei punti indicati in figura.
+
+![p5.js - Esercizio di disegno di una stella a sei punte](/static/coding/web/p5js/graphics-primitives_exe_star.png "p5.js - Disegno di una stella a sei punte")
 
 ## Disegno di un campo di calcio
 
 Utilizzando le funzioni grafiche conosciute, disegnare un campo di calcio grande quanto tutta l'area da disegno e con margine dai bordi di 20 punti;
 
-![p5.js - Esercizio di disegno di un campo di calcio](/static/coding/web/p5js/graphics-primitives_exe_soccer.png "p5.js - Disegno di un campo di calcio ")
+![p5.js - Esercizio di disegno di un campo di calcio](/static/coding/web/p5js/graphics-primitives_exe_soccer.png "p5.js - Disegno di un campo di calcio")
 
 ## Disegno della rosa dei venti
 
