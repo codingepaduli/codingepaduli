@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.3 - Progetto Arknoid"
+title: "p5.js Lez. 07.5 - Progetto Arknoid"
 description: "Sviluppo di un videogioco in stile 'arknoid'"
 date: 2020-09-24
 publishdate: 2020-09-24
@@ -10,6 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Sviluppo di un videogioco in stile 'arknoid'"
+weight: 8512
 ---
 
 # Progetto Arknoid

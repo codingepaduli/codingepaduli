@@ -12,6 +12,7 @@ draft: false
 toc: false
 summary: "Le primitive grafiche, ovvero le funzioni che realizzano le figure geometriche più elementari"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/Example02.js", "/static/coding/web/p5js/basics.js"]
+weight: 8920
 
 references:
     -   title: "Primitiva (geometria)"

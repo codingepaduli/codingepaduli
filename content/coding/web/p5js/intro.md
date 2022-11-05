@@ -11,6 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Introduzione alla libreria grafica p5.js"
+weight: 9040
 
 references:
     -   title: "Computer Graphics from scratch"

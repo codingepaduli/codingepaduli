@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.7 - Progetto Acchiappapalline"
+title: "p5.js Lez. 07.1 - Progetto Acchiappapalline"
 description: "Sviluppo di un videogioco in stile 'acchiappapalline'"
 date: 2022-05-22
 publishdate: 2022-05-22
@@ -10,6 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Sviluppo di un videogioco in stile 'acchiappapalline'"
+weight: 8520
 ---
 
 # Progetto Acchiappapalline

@@ -10,6 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Esercizi iniziali"
+weight: 8980
 ---
 
 # Esercizi iniziali

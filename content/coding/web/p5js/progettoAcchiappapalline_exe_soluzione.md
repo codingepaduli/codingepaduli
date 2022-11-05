@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.8 - Soluzione progetto Acchiappapalline"
+title: "p5.js Lez. 07.2 - Soluzione progetto Acchiappapalline"
 description: "Implementazione di un videogioco in stile 'acchiappapalline'"
 date: 2022-05-23
 publishdate: 2022-05-23
@@ -11,6 +11,7 @@ draft: false
 toc: false
 summary: "Implementazione di un videogioco in stile 'acchiappapalline'"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoAcchiappapallineSoluzione.js"]
+weight: 8518
 ---
 
 # Soluzione progetto Acchiappapalline

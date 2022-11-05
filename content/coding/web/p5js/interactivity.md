@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04 - Interattività ed animazioni"
+title: "p5.js Lez. 05 - Interattività ed animazioni"
 description: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
 date: 2020-09-17
 publishdate: 2020-09-17
@@ -12,6 +12,7 @@ draft: false
 toc: false
 summary: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/interactivity02.js"]
+weight: 8620
 ---
 
 # Interattività ed animazioni

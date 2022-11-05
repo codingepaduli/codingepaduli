@@ -1,16 +1,17 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 05 - Accesso ai pixel di un'immagine"
+title: "p5.js Lez. 06 - Accesso ai pixel di un'immagine"
 description: "Accesso ai pixel di un'immagine con la libreria grafica p5.js"
 date: 2020-09-26
 publishdate: 2020-09-26
 lastmod: 2020-09-26
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: false
+draft: true
 toc: false
 summary: "Accesso ai pixel di un'immagine con la libreria grafica p5.js"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/pixelAccess.js"]
+weight: 8560
 ---
 
 # Accesso ai pixel di un'immagine

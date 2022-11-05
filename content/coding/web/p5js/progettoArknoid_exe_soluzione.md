@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.4 - Soluzione progetto Arknoid"
+title: "p5.js Lez. 07.6 - Soluzione progetto Arknoid"
 description: "Implementazione del videogioco in stile 'arknoid'"
 date: 2020-09-25
 publishdate: 2020-09-25
@@ -11,6 +11,7 @@ draft: false
 toc: false
 summary: "Implementazione del videogioco in stile 'arknoid'"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoArknoidSoluzione.js"]
+weight: 8510
 ---
 
 # Soluzione progetto Arknoid

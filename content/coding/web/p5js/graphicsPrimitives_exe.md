@@ -11,6 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Esercizi di grafica 2D"
+weight: 8860
 ---
 
 # Esercizi di grafica 2D

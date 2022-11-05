@@ -1,16 +1,17 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 02 - Suoni ed immagini"
+title: "p5.js Lez. 04 - Suoni ed immagini"
 description: "Suoni ed immagini"
 date: 2020-09-11
 publishdate: 2020-09-11
 lastmod: 2020-09-11
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: true
+draft: false
 toc: false
 summary: "Suoni ed immagini"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js"]
+weight: 8680
 ---
 
 # Suoni ed immagini

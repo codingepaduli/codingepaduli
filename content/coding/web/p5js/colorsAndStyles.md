@@ -11,6 +11,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Colori e stili"
+weight: 8800
 references:
     -   title: "The color of infinite temperature"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->

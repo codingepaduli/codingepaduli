@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.1 - Progetto Pong"
+title: "p5.js Lez. 07.3 - Progetto Pong"
 description: "Sviluppo di un videogioco in stile 'pong'"
 date: 2020-09-22
 publishdate: 2020-09-22
@@ -10,6 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Sviluppo di un videogioco in stile 'pong'"
+weight: 8516
 ---
 
 # Progetto Pong

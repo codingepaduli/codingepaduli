@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.5 - Progetto Snake"
+title: "p5.js Lez. 07.7 - Progetto Snake"
 description: "Sviluppo di un videogioco in stile 'snake'"
 date: 2022-05-20
 publishdate: 2022-05-20
@@ -10,6 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Sviluppo di un videogioco in stile 'snake'"
+weight: 8509
 ---
 
 # Progetto Snake
