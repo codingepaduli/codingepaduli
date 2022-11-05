@@ -64,6 +64,37 @@ Utilizzando le funzioni grafiche conosciute, disegnare una stella a sei punte ut
 
 ![p5.js - Esercizio di disegno di una stella a sei punte](/static/coding/web/p5js/graphics-primitives_exe_star.png "p5.js - Disegno di una stella a sei punte")
 
+## Descrizione primitive grafiche
+
+Per le funzioni di seguito indicate, descrivere la firma ed il compito della funzione. Per ogni  parametro formale appartenente alla firma, indicare per cosa viene utilizzato il parametro, il tipo e l' obbligatorietà. Fare infine un esempio d'uso della funzione ed indicare i parametri attuali. Esempio:
+
+**Funzione point** - firma point(x, y) - parametri formali:
+
+- x: la coordinata X del punto, di tipo numerica ed obbligatoria;
+- y: la coordinata X del punto, di tipo numerica ed obbligatoria;
+
+Esempio d'uso: point(50, 150), parametri attuali x=50, y=150;
+
+**Funzione createCanvas** - firma createCanvas(sizeX, sizeY) - parametri formali:
+
+- sizeX: larghezza dell'area da disegno, di tipo numerica ed obbligatoria;
+- sizeY: altezza dell'area da disegno, di tipo numerica ed obbligatoria;
+
+Esempio d'uso: createCanvas(150, 150), parametri attuali sizeX=150, sizeY=150.
+
+Elenco funzioni da descrivere:
+
+- createCanvas;
+- point;
+- line;
+- square;
+- rect;
+- circle;
+- triangle;
+- quad;
+- ellipse;
+- arc.
+
 ## Disegno di un campo di calcio
 
 Utilizzando le funzioni grafiche conosciute, disegnare un campo di calcio grande quanto tutta l'area da disegno e con margine dai bordi di 20 punti;
