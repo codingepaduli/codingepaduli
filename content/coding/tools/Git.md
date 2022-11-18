@@ -123,11 +123,11 @@ Per rendere l'idea di cosa significhi "sistema per il controllo di versione" (da
 
 Il progetto può essere la scrittura di un libro, la realizzazione di disegni tecnici, lo sviluppo di un sito web e tanto altro, e può essere diviso in varie fasi, al termine delle quali si può avere, eventualmente, un confronto con gli insegnanti interessati.
 
-Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, sulla quale crea le varie bozze, effettua le varie prove ed un passo per volta svolge il compito giornaliero. Quando una piccola parte del lavoro è completa, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo ad una stanza o ad un'ala del palazzo, allora i fogli sono raccolti in un foglio plastificato e spostati in un quaderno ad anelli.
+Ogni studente ha una propria area di lavoro, la scrivania di casa o la postazione nel laboratorio di informatica, sulla quale crea le varie bozze, effettua le varie prove ed un passo per volta svolge il compito giornaliero. Quando una piccola parte del lavoro è completa, ad esempio la scrittura di un capitolo del libro, la realizzazione di una pagina del sito web oppure il disegno tecnico relativo ad una stanza o ad un'ala del palazzo, allora ogni pagina è raccolta in un foglio plastificato. Le pagine nei fogli plastificati sono poi raccolte nel proprio quaderno ad anelli.
 
-E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente completa un lavoro e lo sposta nel foglio plastificato, annota nome e data nella pagina di registro ed aggiunge l'operazione effettuata, l'aggiunta del nuovo capitolo, la cancellazione della pagina web o la modifica del disegno tecnico della stanza o dell'ala del palazzo.
+E' importante tenere presente che il quaderno ad anelli ha una pagina di registro, in cui vengono annotate le operazioni effettuate, l'autore e la data. Quando lo studente sposta un lavoro nel proprio quaderno ad anelli, annota nome e data nella pagina di registro ed aggiunge l'operazione effettuata, l'aggiunta del nuovo capitolo, la cancellazione della pagina web o la modifica del disegno tecnico della stanza o dell'ala del palazzo.
 
-Le pagine cancellate non vengono effettivamente cestinate, ma vengono annotate con una "X" rossa in un angolo (in modo tale che siano ancora leggibili), raccolte in un foglio plastificato e spostate in coda al quaderno ad anelli.
+Le pagine cancellate non vengono effettivamente cestinate, ma vengono annotate con una "X" rossa in un angolo (in modo tale che siano ancora leggibili) e spostate in coda al quaderno ad anelli (sempre raccolte nei loro foglio plastificati).
 
 Le pagine da modificare vengono corrette con la matita, in modo da poter sempre cancellare tutto e tornare al lavoro originale. A modifica terminata, viene effettuata una copia completa (sempre raccolta in un foglio plastificato) in modo da poter sostituire quelle nel quaderno ad anelli. Le pagine corrette a matita non vengono cestinate, ma come per le pagine cancellate, vengono annotate con una "X" rossa e spostate in coda al quaderno ad anelli.
 
@@ -147,17 +147,15 @@ I singoli studenti, quando completano un lavoro, aggiungendo, modificando o canc
 
 Avere un quaderno ad anelli in comune permette agli studenti di lavorare in squadra, ma presenta alcuni svantaggi tipici di un sistema centralizzato:
 
-- Non è possibile consegnare un lavoro se il quaderno ad anelli non è "raggiungibile", ad esempio perché il laboratorio o lo studio dell'insegnante è chiuso per ferie o malattia;
+- Se il quaderno ad anelli non è "raggiungibile", ad esempio perché il laboratorio o lo studio dell'insegnante è chiuso per ferie o malattia, allora non è possibile consegnare un lavoro nè è possibile recuperare il lavoro di un altro studente;
 - Se il quaderno ad anelli viene smarrito o distrutto, si perde tutto il lavoro;
 - Se uno studente porta via per un certo periodo un capitolo o un progetto dal quaderno ad anelli, gli altri studenti non possono più accedervi, rimanendo di fatto bloccati.
 
 ### Controllo di versione distribuito
 
-Il quaderno ad anelli può essere **personale**, ogni studente che partecipa al progetto ha il suo.
+Il quaderno ad anelli può essere **personale**, ogni studente che partecipa al progetto ha il suo, e quindi si può condividere un ulteriore quaderno ad anelli da conservare nello studio del professore universitario.
 
-Nello studio del professore universitario si trova un ulteriore quaderno ad anelli.
-
-Il fatto che ogni studente ha il proprio quaderno ad anelli **personale** e che ne hanno uno in comune realizza un sistema di controllo di versione **distribuito**.
+Il fatto che ogni studente ha il proprio quaderno ad anelli **personale** e che ce ne sia uno in comune realizza un sistema di controllo di versione **distribuito**.
 
 Quando lo studente completa un lavoro, utilizza il proprio quaderno ad anelli **personale** sul quale annota nome e data nella pagina di registro ed aggiunge l'elenco di operazioni, indicando che ha inserito un nuovo capitolo, che ha cancellato una pagina web e che ne ha modificato un disegno tecnico.
 
@@ -210,15 +208,15 @@ Un'altra situazione che si può verificare è che si voglia fondere due rami di 
 
 ## Concetti principali di Git
 
-I concetti principali sui quali si basa Git sono:
+Partendo dall'analogia descritta in precedenza, possiamo descrivere i concetti principali sui quali si basa Git:
 
-- Gli **oggetti non tracciati**, sono tutti i fogli sparsi sulla scrivania di lavoro.
+- Gli **oggetti non tracciati**: sono tutti i fogli sui quali si lavora e che sono sparsi sulla scrivania di lavoro.
 
-- Gli **oggetti tracciati** che sono tutti i fogli dei lavori che una volta completati sono raccolti in un foglio plastificato.
+- Gli **oggetti tracciati**: sono tutti i fogli dei lavori completati che sono raccolti nei loro fogli plastificati.
 
-- **staging area** o **caching area**: Rappresenta l'insieme dei lavori plastificati che devono essere aggiunti nel quaderno ad anelli.
+- **staging area** o **caching area**: Rappresenta l'insieme dei lavori completati che sono raccolti nei loro fogli plastificati e che devono essere aggiunti nel quaderno ad anelli.
 
-- L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente gli oggetti tracciati. Può essere rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte delle bozze di un lavoro, le ripone in un cassetto, per poi gestire il nuovo lavoro. Quando intende ritornare al precedente lavoro, recupera le bozze dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
+- L'**area di scorta**, detta **stashing area**: E' l'area nella quale vengono accantonati temporaneamente gli oggetti tracciati e non tracciati. Può essere rappresentata dai cassetti della scrivania. Quando il singolo studente deve mettere da parte i propri lavori o le proprie bozze di lavoro, le ripone in un cassetto, in modo da poter gestire un nuovo lavoro. Quando intende ritornare al precedente lavoro, lo recupera dal cassetto. Ci possono essere più cassetti per poter accantonare temporaneamente più lavori.
 
 - Il **commit**: E' l'operazione effettuata dall'utente che permette di memorizzare nel sistema di controllo di versione le modifiche effettuate dall'utente. Ad ogni commit viene salvata una nuova versione del repository. Nell'analogia precedente è rappresentato dallo spostamento nel quaderno ad anelli dei lavori raccolti nei fogli plastificati, con annotazione del lavoro nella pagina di registro.
 
@@ -226,22 +224,22 @@ I concetti principali sui quali si basa Git sono:
 
 - Il **repository locale**: l'insieme delle operazioni di commit su cui Git lavora in locale. Sono conservate sul proprio computer, non è necessario collegarsi alla rete internet per lavorare. Nell'analogia precedente, ogni quaderno ad anelli di uno studente rappresenta un repository locale.
 
-- Il **repository remoto**: l'insieme di file versionati e tracciati su cui Git lavora in remoto. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro degli altri studenti e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
+- Il **repository remoto**: l'insieme di file versionati e tracciati su cui Git lavora in remoto. E' ospitato sul server e quindi c'è bisogno del collegamento ad internet per ricevere il lavoro dei propri colleghi e per inviare il proprio lavoro. Nell'analogia precedente, è rappresentato dal quaderno ad anelli presente nello studio del professore.
 
 - La **sincronizzazione**: l'operazione di allineamento di due repository. In Git è divisa in due operazioni distinte:
 
-    1. l'operazione di **push** consiste nell'inviare tutte le operazioni svolte nel repository locale in quello remoto. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno comune tutte le modifiche che sono state effettuate sul proprio quaderno**;
-    2. l'operazione di **pull** consiste nel recuperare tutte le operazioni svolte sul repository remoto per copiarle in quello locale. Nell'analogia precedente, è rappresentata dalle azioni di **effettuare sul quaderno proprio tutte le modifiche che sono state effettuate sul quaderno comune** dai vari studenti.
+    1. l'operazione di **push** consiste nell'inviare tutte le operazioni svolte nel repository locale in quello remoto. Nell'analogia precedente, è rappresentata dall'**effettuare sul quaderno comune tutte le modifiche che sono state effettuate sul proprio quaderno**;
+    2. l'operazione di **pull** consiste nel recuperare tutte le operazioni svolte sul repository remoto per copiarle in quello locale. Nell'analogia precedente, è rappresentata dall'**effettuare sul quaderno proprio tutte le modifiche che sono state effettuate sul quaderno comune** dai vari studenti.
 
 - I **rami di sviluppo**, detti **branches**: E' possibile seguire più rami di sviluppo dell'opera. Il ramo di sviluppo principale può essere chiamato **trunk** (come nel software SVN), **master** (come su GitLab) o **main** (come su GitHub). Gli altri rami di sviluppo sono detti **branches**. L'operazione che permette di unire due rami di sviluppo è la fusione, detta **merge**. Si rimanda al capitolo sui branches per una chiara spiegazione dei concetti relativi allo sviluppo su più rami.
 
-- La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che viene aggiunto al gruppo, e che quindi compra un nuovo quaderno ad anelli nel quale poi clona (copia) il contenuto del quaderno ad anelli del professore.
+- La **clonazione**: l'operazione di creazione di un repository locale a partire da un repository remoto. Nell'analogia precedente, è rappresentata dal nuovo studente che si aggiunge al gruppo e che compra un nuovo quaderno ad anelli nel quale poi clona (copia) il contenuto del quaderno ad anelli del professore.
 
 ## Creazione repository remoto su GitHub
 
 GitHub è uno dei servizi online più famosi, permette la gestione di un repository Git tramite interfaccia web e semplifica l'interazione con l'utente.
 
-L'utente, che completa il processo di registrazione su GitHub, accede alla pagina principale, nella quale è presente l'elenco dei propri repository (nell'area sinistra) e (in alto a destra) l'icona del proprio account con relativo menù visualizzabile al click.
+L'utente, che completa il processo di registrazione su GitHub, accede alla pagina principale nella quale è presente l'elenco dei propri repository (nell'area sinistra) e (in alto a destra) l'icona del proprio account con relativo menù visualizzabile al click.
 
 ![GitHub - Profilo](/static/coding/tools/GitHub-Profile-Home.png "GitHub - Nuovo Repository")
 
@@ -261,9 +259,41 @@ L'indirizzo completo del repository su GitHub è visibile cliccando sul pulsante
 
 ![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-URL2.png "GitHub - Pagina del Repository")
 
-### Configurazione chiave SSH di verifica
+### Creazione della chiave SSH
 
-Creata la chiave SSH e registrata su git, è possibile aggiungerla anche come chiave di verifica al repository locale utilizzando i comandi:
+L'accesso al repository su GitHub è soggetto alla creazione di una coppia di chiavi pubblica/privata e relativa configurazione. E' possibile creare la coppia di chiavi pubblica/privata SSH con il comando:
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C "mail@mail.com"
+```
+
+Questo comando crea quindi il file con la chiave pubblica ``id_ed25519.pub`` ed il file con la chiave privata ``id_ed25519``. Il file con la chiave pubblica contiene anche un hash della chiave, che di seguito sarà individuato dalla stringa ``key-hash``.
+
+### Registrazione della chiave SSH su GitHub
+
+L'utente può registrare la chiave di firma dei commit e di verifica accedendo alla sezione delle impostazioni nel menù utente:
+
+![GitHub - Configure a SSH key](/static/coding/tools/GitHub-ssh-key-config-step1.png "GitHub - Configure a SSH key")
+
+A questo punto, nel menu laterale si clicca sulla voce "Chiavi SSH e GPG":
+
+![GitHub - Configure a SSH key](/static/coding/tools/GitHub-ssh-key-config-step2.png "GitHub - Configure a SSH key")
+
+Si può scegliere di aggiungere una chiave SSH cliccando sull'apposita voce:
+
+![GitHub - Configure a SSH key](/static/coding/tools/GitHub-ssh-key-config-step3.png "GitHub - Configure a SSH key")
+
+Il nome da associare alla chiave è a scelta dell'utente, poi si deve scegliere se creare una chiave per firmare i commit oppure per verificarli. E nell'ultimo campo, si deve copiare la chiave pubblica, che è contenuta nel file ``id_ed25519.pub``.
+
+![GitHub - Configure a SSH key](/static/coding/tools/GitHub-ssh-key-config-step4.png "GitHub - Configure a SSH key")
+
+Si può ripetere lo stesso procedimento per aggiungere la stessa chiave per verificare i commit. Aggiunte le chiavi, il risultato lo si può visualizzare di seguito:
+
+![GitHub - Configure a SSH key](/static/coding/tools/GitHub-ssh-key-config-step5.png "GitHub - Configure a SSH key")
+
+### Configurazione chiave SSH per firma e verifica
+
+Creata la chiave SSH e registrata su GitHub, è possibile utilizzare queste chiavi anche per firmare e verificare i commit, configurando il client locale con i seguenti comandi:
 
 ```bash
 git config --local commit.gpgsign true
@@ -275,7 +305,13 @@ git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
 con il file ``allowed_signers`` composto dalla stringa:
 
 ```plaintext
-mail_utente@servizio algoritmo-ssh ssh-hash
+mail algoritmo-ssh #key-hash
+```
+
+Ad esempio, la chiave SSH appena creata con l'algoritmo ssh-ed25519 corrisponde alla stringa:
+
+```plaintext
+mail@mail.com ssh-ed25519 #key-hash
 ```
 
 ## Creazione repository remoto su GitLab
@@ -461,7 +497,7 @@ git log --pretty=format:"%h %s" --graph
 
 Questo comando permetta anche di avere una vista grafica delle varie versioni del repository locale.
 
-E' utile sottolineare che **HEAD** è solo un riferimento al commit (e quindi alla versione) su cui ci si trova, ovviamente riferito al ramo di sviluppo su cui si lavora.
+E' utile sottolineare che **HEAD** è solo un riferimento al commit (e quindi alla versione) del ramo di sviluppo su cui si lavora.
 
 Quando si scaricano le ultime versioni da repository remoto nel repository locale, il riferimento **HEAD** viene aggiornato all'ultimo commit scaricato da remoto, sempre per il ramo di sviluppo su cui si sta lavorando. Quando invece si effettua un commit in locale, il riferimento **HEAD** viene aggiornato a questo commit.
 
