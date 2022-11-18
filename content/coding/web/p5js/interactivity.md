@@ -109,6 +109,7 @@ In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
 <div id="interactivity01"></div>
 
+
 ## Interazione con il mouse
 
 L'input del mouse è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato dalle coordinate X ed Y del cursore e dall'ultimo pulsante del mouse cliccato, è memorizzato nelle variabili ``mouseX``, ``mouseY`` e ``mouseButton``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e sono continuamente aggiornate ad ogni ridisegno dell'area.
@@ -238,3 +239,31 @@ L'input della tastiera è gestito in maniera completamente trasparente per il pr
 La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma comprende tutti i tasti, ad esempio il tasto "invio", il tasto di cancellazione, i tasti corrispondenti alle frecce, e tutti gli altri.
 
 Sempre in maniera trasparente al programmatore, nella variabile ``keyIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) tasto sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
+
+Si può richiedere un input all'utente e memorizzarlo in una variabile attraverso la funzione ``prompt(msg)``.
+
+Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici. 
+
+Il valore inserito dall'utente può essere assegnato ad una variabile.
+
+Un esempio d'uso della funzione è il seguente:
+
+```javascript
+let x = prompt("inserisci un valore");
+```
+
+Tipicamente in processing le variabili vengono inserite nelle prime righe mentre la richiesta di input all'utente avviene durante la fase di configurazione, come nel seguente esempio:
+
+```javascript
+let lato = 0;
+
+function setup() {
+  createCanvas(400, 400);
+  lato = prompt("inserisci il lato del quadrato");
+}
+
+function draw() {
+  background(220);
+  square(30, 30, lato);
+}
+```
