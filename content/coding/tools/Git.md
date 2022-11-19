@@ -443,21 +443,21 @@ L'output è il seguente:
 
 ```plaintext
 Sul branch main
-Your branch is up to date with 'origin/main'.
+Il tuo branch è aggiornato rispetto a 'origin/main'.
 
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
+Modifiche di cui verrà eseguito il commit:
+  (usa "git restore --staged <file>..." per rimuovere gli elementi dall'area di staging)
 
-  new file:   file1.txt
+  nuovo file:   file1.txt
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
+File non tracciati:
+  (usa "git add <file>..." per includere l'elemento fra quelli di cui verrà eseguito il commit)
 
   file2.txt
   file3.txt
 ```
 
-Si nota che il file ``file1.txt`` risulta tracciato e pronto per il commit (come si nota dalla scritta "to be committed"), mentre i file ``file2.txt`` e ``file3.txt`` risultano non tracciati ("untracked").
+Si nota che il file ``file1.txt`` risulta tracciato e pronto per il commit, mentre i file ``file2.txt`` e ``file3.txt`` risultano non tracciati ("untracked").
 
 Effettuando ulteriori modifiche al file ``file1.txt``, questo risulta modificato, come si nota visualizzando lo stato dei file attraverso il comando:
 
@@ -469,25 +469,27 @@ L'output è il seguente:
 
 ```plaintext
 Sul branch main
-Your branch is up to date with 'origin/main'.
+Il tuo branch è aggiornato rispetto a 'origin/main'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+Modifiche di cui verrà eseguito il commit:
+  (usa "git restore --staged <file>..." per rimuovere gli elementi dall'area di staging)
+    nuovo file:             file1.txt
 
-  modified:   file1.txt
+Modifiche non nell'area di staging per il commit:
+  (usa "git add <file>..." per aggiornare gli elementi di cui sarà eseguito il commit)
+  (usa "git restore <file>..." per scartare le modifiche nella directory di lavoro)
+    modificato:             file1.txt
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-  file2.txt
-  file3.txt
+File non tracciati:
+  (usa "git add <file>..." per includere l'elemento fra quelli di cui verrà eseguito il commit)
+    file2.txt
+    file3.txt
 ```
 
 I file possono avere 4 stati:
 
 - untracked: non tracciati da Git;
-- staged: tracciati e pronti ad essere inclusi in un commit (to be committed);
+- staged: tracciati e pronti ad essere inclusi in un commit ("to be committed");
 - modified: modificati rispetto all'ultimo commit;
 - unmodified: non modificati rispetto all'ultimo commit;
 
@@ -645,24 +647,30 @@ Volendo fare un'analogia, si può immaginare la scrittura di una trilogia di lib
 
 Volendo fare una seconda analogia, si può immaginare che in uno dei libri della trilogia i personaggi principali si separino, vivendo storie indipendenti, e quindi nel ramo di sviluppo del singolo libro si creano diversi rami in cui si scrivono le storie dei diversi personaggi. Una volta che la storia di un personaggio è completa, il ramo di sviluppo del singolo personaggio viene fuso con il ramo di sviluppo del libro della trilogia.
 
-### Creazione e gestione dei branches
+### Creazione e gestione dei rami
 
-Per creare un nuovo branch con nome **git-merge** si utilizza il comando:
+Per creare un nuovo ramo con nome **git-merge** si utilizza il comando:
 
 ```bash
 git branch git-merge
 ```
 
-Per visualizzare l'elenco di branches con l'ultimo commit presente si utilizza il comando:
+Per visualizzare l'elenco dei rami disponibili si utilizza il comando:
 
 ```bash
-git branch -vv
+git branch --list
 ```
 
 Per spostarsi sul ramo "git-merge" appena creato, si utilizza il comando:
 
 ```bash
-git checkout git-merge
+git switch git-merge
+```
+
+Esiste anche l'opzione per creare e spostarsi sul nuovo ramo, utilizzando il comando:
+
+```bash
+git switch -c git-merge
 ```
 
 Git aggiunge i file alla staging area ed effettua il commit sul branch correntemente selezionato, i comandi di aggiunta e commit sono quelli già visti in precedenza, che per comodità si riportano nuovamente di seguito:
@@ -702,10 +710,10 @@ git fetch --prune
 
 ### Merge dei rami in modalità a linea di comando
 
-Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "master", da linea di comando bisogna spostarsi sul ramo di sviluppo principale **master**.
+Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "main", da linea di comando bisogna spostarsi sul ramo di sviluppo principale **main**.
 
 ```bash
-git checkout master
+git swich main
 ```
 
 Effettuato ciò, si può effettuare la fusione del ramo "git-merge", eseguendo il comando:
@@ -784,7 +792,7 @@ Per questioni di sicurezza, però, non è possibile inviare lavoro su un reposit
 
 Per contribuire al repository dell'altro sviluppatore si effettuata la fork e la clonazione del repository, sul quale si apporteranno le modifiche, e quindi si crea una pull request tra il proprio repository ed il repository dell'altro sviluppatore.
 
-L'altro sviluppatore può quindi accettare (ed effettuare l'operazione di merge) della pull request effettuata oppure può scegliere di rifiutare di includere le modifiche inviate.
+L'altro sviluppatore può quindi accettare (ed effettuare l'operazione di merge della pull request ricevuta) oppure può scegliere di rifiutare di includere le modifiche ricevute.
 
 ## Approfondimenti
 
