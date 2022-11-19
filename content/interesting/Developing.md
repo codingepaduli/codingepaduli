@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-10-14
-publishdate: 2022-10-14
-lastmod: 2022-10-14
+date: 2022-11-18
+publishdate: 2022-11-18
+lastmod: 2022-11-18
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -93,7 +93,6 @@ summary: "Set di link relativi al coding"
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
 [Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
 [Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
-[webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles) - A curated list of dotfiles resources.\
 [Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
 [Integration Test con Maven e Docker](https://codingjam.it/integration-test-con-maven-e-docker/) - \
 [Puppeteer](https://codingjam.it/puppeteer-usare-chrome-come-un-api/) - usare Chrome come un API\
@@ -255,7 +254,6 @@ summary: "Set di link relativi al coding"
 [An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 [JEP 392](https://openjdk.java.net/jeps/392) - Packaging Tool for packaging self-contained Java applications\
-[DynamicJasper library](http://dynamicjasper.com/features/) - \
 [How do I setup GitHub Actions for my Gradle or Android project?](https://dev.to/jmfayard/how-do-i-setup-github-actions-for-my-gradle-or-android-project-3eal) - DEV Community\
 [Set up CI/CD at Github for Gradle (Java)](https://dev.to/berviantoleo/set-up-ci-cd-at-github-for-gradle-java-3fb9) - DEV Community\
 [A real-world example of a Stream Collector](https://blog.frankel.ch/real-world-stream-collector/) - \

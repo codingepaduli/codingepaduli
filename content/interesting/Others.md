@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2022-10-10
-publishdate: 2022-10-10
-lastmod: 2022-10-10
+date: 2022-11-18
+publishdate: 2022-11-18
+lastmod: 2022-11-18
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -88,6 +88,7 @@ summary: "Set di link interessanti"
 [The bivector algebra](https://mattferraro.dev/posts/geometric-algebra) - What is the Inverse of a Vector?\
 [Curves and Surfaces – Bartosz Ciechanowski](https://ciechanow.ski/curves-and-surfaces/) - \
 [An Ancient Geometry Problem Falls to New Mathematical Techniques | Quanta Magazine](https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/) - \
+[Sound – Bartosz Ciechanowski](https://ciechanow.ski/sound/) - \
 
 ### Medicine
 

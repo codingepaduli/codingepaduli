@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2022-10-10
-publishdate: 2022-10-10
-lastmod: 2022-10-10
+date: 2022-11-18
+publishdate: 2022-11-18
+lastmod: 2022-11-18
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -221,6 +221,8 @@ summary: "Set di link relativi all'istruzione di base"
 [CyberHighSchools.IT](https://cyberhighschools.it/) - programma di formazione in cybersecurity\
 [Phaser Game Jam](https://phaser-gamejam.web.app/) - \
 [ANPAL Servizi LMS](https://consorzioclara.thesmartschool.it/login/index.php) - Login al sito Phaser Game Jam\
+[Le Giornate FAI d'Autunno 2022 tornano il 15 e 16 ottobre](https://fondoambiente.it/il-fai/grandi-campagne/giornate-fai-autunno/) - \
+[Le Giornate FAI di Primavera: 700 aperture in 400 città](https://fondoambiente.it/il-fai/grandi-campagne/giornate-fai-di-primavera/) - \
 
 #### Domotica
 
