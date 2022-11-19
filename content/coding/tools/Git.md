@@ -249,15 +249,13 @@ Se si vuole creare il repository relativo alla propria GitHub Page, allora il no
 
 ![GitHub - Nuovo Repository](/static/coding/tools/GitHub-Repository-New2.png "GitHub - Nuovo Repository")
 
-La pagina web mostra il repository appena creato, contenente il file ``README.md``. In particolare, si nota il nome del ramo di sviluppo principale **main** e l'indicazione **1 branch** che indica un solo ramo di sviluppo presente (il branch "main"):
+La pagina web mostra il repository appena creato, contenente il file ``README.md``.
 
-![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-Page.png "GitHub - Pagina del Repository")
+![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-New3.png "GitHub - Pagina del Repository")
 
-L'indirizzo completo del repository su GitHub è visibile cliccando sul pulsante verde "code" ed è il seguente:
-<!-- markdown-link-check-disable-next-line -->
-[https://github.com/progetto-git/progetto-git.github.io.git](https://github.com/progetto-git/progetto-git.github.io.git "GitHub - URL completo del Repository")
+L'indirizzo completo del repository su GitHub è visibile cliccando sul pulsante verde "code":
 
-![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-URL2.png "GitHub - Pagina del Repository")
+![GitHub - URL del Repository](/static/coding/tools/GitHub-Repository-New4.png "GitHub - Pagina del Repository")f
 
 ### Creazione della chiave SSH
 
@@ -291,30 +289,17 @@ Si può ripetere lo stesso procedimento per aggiungere la stessa chiave per veri
 
 ![GitHub - Configure a SSH key](/static/coding/tools/GitHub-ssh-key-config-step5.png "GitHub - Configure a SSH key")
 
-### Configurazione chiave SSH per firma e verifica
-
-Creata la chiave SSH e registrata su GitHub, è possibile utilizzare queste chiavi anche per firmare e verificare i commit, configurando il client locale con i seguenti comandi:
-
-```bash
-git config --local commit.gpgsign true
-git config --local gpg.format ssh
-git config --local user.signingkey "$HOME/.ssh/id_ed25519.pub"
-git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
-```
-
-con il file ``allowed_signers`` composto dalla stringa:
+Per verificare che la connessione avvenga correttamente, ricordando che la chiave si trova nel file ``~/.ssh/id_ed25519``, si può utilizzare il comando seguente:
 
 ```plaintext
-mail algoritmo-ssh #key-hash
-```
+ssh -i "~/.ssh/id_ed25519" git@github.com
 
-Ad esempio, la chiave SSH appena creata con l'algoritmo ssh-ed25519 corrisponde alla stringa:
-
-```plaintext
-mail@mail.com ssh-ed25519 #key-hash
+Hi progetto-git! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 ## Creazione repository remoto su GitLab
+
+<!-- TODO fix all images -->
 
 GitLab è un altro servizio online famosissimo, permette la gestione di un repository Git tramite interfaccia web e semplifica l'interazione con l'utente.
 
@@ -333,10 +318,10 @@ L'indirizzo completo del repository su GitLab, non completamente riportato nell'
 
 ### Clonazione repository
 
-Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione, attraverso il seguente comando:
+Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione. E' importante indicare anche la chiave SSH da utilizzare, che tipicamente si trova nella cartella `~/.ssh/id_ed25519`. Il comado di clonazione è il seguente comando:
 
 ```bash
-git clone https://github.com/progetto-git/progetto-git.github.io.git
+git clone git@github.com:progetto-git/progetto-git.github.io.git --config core.sshCommand="ssh -i ~/.ssh/id_ed25519"
 ```
 
 Si può verificare che il repository locale ha un riferimento al repository remoto, accedendo alla cartella creata ed utilizzando, al suo interno, il comando:
@@ -412,6 +397,30 @@ Infine, git chiede quale tecnica usare per sincronizzare il repository. Si consi
 
 ```bash
 git config --local pull.rebase false
+```
+
+### Configurazione chiave SSH per firma e verifica
+
+Creata la coppia di chiavi pubblica/privata e registrata su GitHub, è possibile utilizzare queste chiavi anche per firmare e verificare i commit, configurando il client locale con i seguenti comandi:
+
+```bash
+git config --local commit.gpgsign true
+git config --local gpg.format ssh
+git config --local user.signingkey "$HOME/.ssh/id_ed25519.pub"
+git config --local gpg.ssh.allowedSignersFile "$HOME/.ssh/allowed_signers"
+git config --local core.sshCommand "/usr/bin/ssh -i $HOME/.ssh/id_ed25519"
+```
+
+con il file ``allowed_signers`` composto dalla stringa:
+
+```plaintext
+mail algoritmo-ssh #key-hash
+```
+
+Ad esempio, la chiave SSH creata in precedenza con l'algoritmo ssh-ed25519 corrisponde alla stringa:
+
+```plaintext
+mail@mail.com ssh-ed25519 #key-hash
 ```
 
 ### Staging area e commit
@@ -603,8 +612,8 @@ L'output mostrato è il seguente:
 ```plaintext
 gitlab https://gitlab.com/progetto-git/progetto-git.git (fetch)
 gitlab https://gitlab.com/progetto-git/progetto-git.git (push)
-origin https://github.com/progetto-git/progetto-git.github.io.git (fetch)
-origin https://github.com/progetto-git/progetto-git.github.io.git (push)
+origin git@github.com:progetto-git/progetto-git.github.io.git (fetch)
+origin git@github.com:progetto-git/progetto-git.github.io.git (push)
 ```
 
 Come si nota, i riferimenti remoti per le operazioni di invio e ricezione dati ("push" e "fetch") possono essere differenti.
