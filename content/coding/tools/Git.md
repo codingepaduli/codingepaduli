@@ -318,7 +318,7 @@ L'indirizzo completo del repository su GitLab, non completamente riportato nell'
 
 ### Clonazione repository
 
-Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione. E' importante indicare anche la chiave SSH da utilizzare, che tipicamente si trova nella cartella `~/.ssh/id_ed25519`. Il comado di clonazione è il seguente comando:
+Una volta creato il repository remoto, bisogna prendere nota dell'indirizzo web dello stesso per poi procedere alla clonazione. E' importante indicare anche la chiave SSH da utilizzare, che tipicamente si trova nella cartella `~/.ssh/id_ed25519`. Il comando di clonazione è il seguente comando:
 
 ```bash
 git clone git@github.com:progetto-git/progetto-git.github.io.git --config core.sshCommand="ssh -i ~/.ssh/id_ed25519"
@@ -329,6 +329,8 @@ Si può verificare che il repository locale ha un riferimento al repository remo
 ```bash
 git remote -v
 ```
+
+## Gestione del repository
 
 ### Prima configurazione del repository
 
@@ -493,7 +495,7 @@ I file possono avere 4 stati:
 - modified: modificati rispetto all'ultimo commit;
 - unmodified: non modificati rispetto all'ultimo commit;
 
-Prima di poter committare il file ``file1.txt``, questo deve essere nuovamente aggiunto all'area di "staging". I comandi per l'aggiunta e per il commit sono i seguenti:
+Prima di poter effettuare il commit del file ``file1.txt``, questo deve essere nuovamente aggiunto all'area di "staging". I comandi per l'aggiunta e per il commit sono i seguenti:
 
 ```bash
 git add file1.txt
@@ -629,9 +631,9 @@ git pull gitlab main
 
 Si nota che in questo caso viene sincronizzato il ramo di sviluppo principale **main**.
 
-## Branches
+## Gestione di più rami di sviluppo
 
-### Modalità di lavoro con i Branches
+### Modalità di lavoro con più rami
 
 Il repository principale ha un ramo di sviluppo principale chiamato **main** o **master**, ma sul repository possono essere creati anche altri rami di sviluppo chiamati **branches**, che costituiscono la modalità comune di lavoro con Git.
 
@@ -673,7 +675,11 @@ Esiste anche l'opzione per creare e spostarsi sul nuovo ramo, utilizzando il com
 git switch -c git-merge
 ```
 
-Git aggiunge i file alla staging area ed effettua il commit sul branch correntemente selezionato, i comandi di aggiunta e commit sono quelli già visti in precedenza, che per comodità si riportano nuovamente di seguito:
+Quando si effettua il passaggio da un ramo all'altro, lo sviluppatore dovrebbe accertarsi di lasciare il ramo pulito.
+
+Se nella cartella di lavoro ci sono file tracciati dei quali non è stato effettuato il commit oppure file non tracciati, quando si effettua lo switch, questi file vengono comunque lasciati nella cartella di lavoro, creando un'incongruenza, dato che non appartengono al ramo selezionato.
+
+I comandi di aggiunta e commit sono quelli già visti in precedenza, solo che questa volta il commit viene legato al nuovo ramo. Ad esempio:
 
 ```bash
 git add file.txt
@@ -686,7 +692,7 @@ Per visualizzare la lista di commit nei vari branches del repository, si è gia 
 git log --pretty=format:"%h %s" --graph
 ```
 
-### Sincronizzazione dei branches tra locale e remoto
+### Sincronizzazione dei rami tra locale e remoto
 
 Quando si crea un branch in locale, si deve ricordare che il repository remoto non ne possiede una copia, e quindi un'azione di sincronizzazione genera errore. Per indicare di creare un branch anche in remoto ed al contempo sincronizzare il branch, si utilizza il comando:
 
@@ -713,7 +719,7 @@ git fetch --prune
 Quando si vuole effettuare la fusione del ramo "git-merge" con il ramo "main", da linea di comando bisogna spostarsi sul ramo di sviluppo principale **main**.
 
 ```bash
-git swich main
+git switch main
 ```
 
 Effettuato ciò, si può effettuare la fusione del ramo "git-merge", eseguendo il comando:
@@ -783,6 +789,63 @@ All'utente è richiesto l'inserimento di un commento opzionale e di completare l
 Completata l'operazione, la pull request risulta correttamente fusa nel ramo di sviluppo indicato.
 
 ![GitHub - Merge della Pull Request - passo 4](/static/coding/tools/GitHub-MergePullRequest-step4.png "GitHub - Merge della Pull Request - passo 4")
+
+## Aree di lavoro (worktree)
+
+E' già stato menzionato in precedenza che quando si effettua il passaggio da un ramo all'altro, lo sviluppatore dovrebbe accertarsi di lasciare il ramo pulito, al fine di evitare incongruenze dovute a file che non appartengono al ramo su cui si passa.
+
+Ci sono situazioni in cui sopravviene l'urgenza di modificare un ramo mentre si sta lavorando su un altro ramo alla modifica di molti file. In questa situazione, effettuare un operazione di commit di un lavoro incompleto (e magari non funzionante) è fuori questione. Il passaggio al ramo che necessita la correzione non è assolutamente consigliato, perchè tutti i file modificati verrebbero spostati nel ramo nel quale ci si sposta, creando incongruenza. Si potrebbe pensare di conservare i file modificati nella stashing area, ma esiste un alternativa.
+
+Esiste la possibilità di creare una copia del ramo desiderato in una cartella differente e lavorare in quella cartella, lasciando la cartella attuale inalterata. Il comando ``git worktree`` si occupa di creare le varie copie, permettendo di avere più cartelle in contemporanea, ognuna su un ramo differente o con uno stato differente.
+
+E' da tenere a mente che queste copie possono essere cancellate automaticamente dopo un certo tempo, quindi si consiglia di leggere la documentazione per trattare copie che si vuol conservare per lunghi periodi.
+
+Ad esempio, per creare nella cartella "..progetto-git-worktree" uno spazio di lavoro "progetto-worktree" partendo dal ramo "main", si utilizza il comando seguente:
+
+```bash
+git worktree add -b progetto-worktree ../progetto-git-worktree main
+```
+
+A questo punto, si possono visualizzare gli spazi di lavoro con il seguente comando:
+
+```plaintext
+git worktree list
+
+/SVN/progetto-git.github.io  d8c1b27 [main]
+/SVN/progetto-git-worktree   1c0b453 [progetto-worktree]
+```
+
+Si sottolinea che "progetto-worktree" è il nome dello spazio di lavoro ma è anche il ramo "progetto-worktree", come si può vedere dal comando seguente:
+
+```plaintext
+git branch --list
+
+  git-merge
+* main
++ progetto-worktree
+```
+
+La situazione consigliata è quella di avere una sola copia per ramo, anche se è possibile forzare questo meccanismo. Se si prova ad effettuare lo switch dal ramo "main" verso il ramo "progetto-worktree" si ottiene il seguente messaggio di errore:
+
+```plaintext
+git switch progetto-worktree
+
+fatal: Il checkout di 'progetto-worktree' è già stato eseguito in '/SVN/progetto-git-worktree'
+```
+
+Una volta che il lavoro è stato svolto sul ramo "progetto-worktree", si consiglia di rimuoverlo e di pulire i riferimenti con i comandi
+
+```bash
+git worktree remove progetto-worktree
+git worktree prune
+```
+
+Nota: in caso di errori, si può provare ad indicare il percorso completo della cartella:
+
+```bash
+git worktree remove /SVN/progetto-git-worktree
+git worktree prune
+```
 
 ## Contribuire ad altri progetti
 
