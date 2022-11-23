@@ -424,6 +424,37 @@ Il risultato è il seguente:
 
 ![Input di tipo radio](/static/coding/web/html/inputRadio.png "Input di tipo radio")
 
+### Input testuale con lista di suggerimenti
+
+Un campo di testo può prevedere una lista di suggerimenti per l'utente.
+
+Quando un utente inizia a scrivere nel campo di testo, viene mostrato un suggerimento contenuto nella lista se i primi caratteri corrispondono, se invece i caratteri non corrispondono l'utente continua a scrivere liberamente senza nessun suggerimento.
+
+La lista di suggerimenti non è limitata ai suggerimenti testuali ma può prevedere anche suggerimenti numerici, temporali (data e ora) o codici di colori, per cui può essere associata anche ai campi di input numerici, di input di una data, input di un'ora e così via.
+
+La lista di suggerimenti è un elemento HTML separato rispetto al campo di input. L'etichetta utilizzata per creare una lista di suggerimenti è ``datalist`` e deve avere l'attributo ``id`` necessario ad identificarla.
+
+Il campo di input e poi legato alla lista di suggerimenti attraverso l'attributo ``list``, che deve avere lo stesso valore inserito nell'attributo ``id`` della lista.
+
+Ad esempio, nell'esempio seguente si realizza una lista di suggerimenti per la scelta del gusto di un gelato. La lista di suggerimenti ha l'identificativo ``gelati-suggeriti``. Il campo di input è legato a questi suggerimenti attraverso l'attributo ``list`` che ha per valore ``gelati-suggeriti`` (l'identificativo della lista di suggerimenti).
+
+```html
+<label for="scelta-gelati">Scegli un gusto:</label>
+<input list="gelati-suggeriti" id="scelta-gelati" name="gusto-scelto">
+
+<datalist id="gelati-suggeriti">
+    <option value="Cioccolato">
+    <option value="Cocco">
+    <option value="Menta">
+    <option value="Fragola">
+    <option value="Vaniglia">
+</datalist>
+```
+
+Il risultato è il seguente:
+
+![Input con lista di suggerimenti](/static/coding/web/html/inputWithDatalist.png "Input con lista di suggerimenti")
+
 ### Campi di selezione singola da menù a tendina
 
 I campi di selezione sono campi nei quali l'utente puó scegliere un valore tra quelli disponibili nel menù a tendina.
