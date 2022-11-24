@@ -109,7 +109,7 @@ Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikip
 Sul web sono utilizzati molti linguaggi, ma i principali usati per la realizzazione dei siti web sono:
 
 - Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio che definisce la struttura delle pagine web, ma non indica la formattazione.
-- Il linguaggio <abbr title="Cascading Style Sheets">**CSS**</abbr> è usato per definire la formattazione dei documenti HTML, ovvero stili, colori, animazioni, ... 
+- Il linguaggio <abbr title="Cascading Style Sheets">**CSS**</abbr> è usato per definire la formattazione dei documenti HTML, ovvero stili, colori, animazioni, ...
 - Il linguaggio **JavaScript** è usato per poter elaborare le informazioni sul client e per poter interagire con l'utente (ad esempio nei videogiochi online).
 
 I tre linguaggi sono fortemente collegati, ma è utile sottolineare che ognuno ha uno scopo ben definito.

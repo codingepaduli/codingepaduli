@@ -13,7 +13,7 @@ summary: "HTML Lez. 03.1 - Esercizi su formattazione carattere, liste e tabelle"
 weight: 9730
 ---
 
-# Esercizi su formattazione carattere, liste e tabelle 
+# Esercizi su formattazione carattere, liste e tabelle
 
 ## Esercizio 01 - Rosa di una squadra di calcio
 

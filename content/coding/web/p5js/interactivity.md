@@ -109,7 +109,6 @@ In ambiente web è visualizzabile quest'ultimo esempio di animazione.
 
 <div id="interactivity01"></div>
 
-
 ## Interazione con il mouse
 
 L'input del mouse è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato dalle coordinate X ed Y del cursore e dall'ultimo pulsante del mouse cliccato, è memorizzato nelle variabili ``mouseX``, ``mouseY`` e ``mouseButton``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e sono continuamente aggiornate ad ogni ridisegno dell'area.
@@ -242,7 +241,7 @@ Sempre in maniera trasparente al programmatore, nella variabile ``keyIsPressed``
 
 Si può richiedere un input all'utente e memorizzarlo in una variabile attraverso la funzione ``prompt(msg)``.
 
-Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici. 
+Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici.
 
 Il valore inserito dall'utente può essere assegnato ad una variabile.
 
