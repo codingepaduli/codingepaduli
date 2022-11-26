@@ -88,8 +88,7 @@ La pagina HTML risultante  (ancora incompleta) è la seguente:
 </html>
 ```
 
-Si fa notare nuovamente che tutte le etichette nell'esempio riportato sono prima aperte e
-poi chiuse.
+Si fa notare nuovamente che tutte le etichette nell'esempio riportato sono prima aperte e poi chiuse.
 
 Sempre dall'esempio precedente, si nota che le etichette possono essere inserite (innestate) l'una dentro l'altra, come avviene per i contenuti della pagina web presentata (il titolo ed il paragrafo) che si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
 
@@ -163,27 +162,26 @@ Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche
 
 Gli strumenti di validazione del codice HTML aiutano a rilevare, e quindi sostituire, le etichette obsolete.
 
-## L'attributo ``lang`` dell'etichetta ``html``
+## L'attributo ``lang`` per indicare la lingua
 
-L'etichetta ``html`` prevede l'attributo ``lang``, che serve ad indicare il "Codice di lingua IETF" della pagina web.
+E' praticamente obbligatorio indicare nella pagina web la lingua utilizzata, così da aiutare gli strumenti di traduzione e quelli di lettura ad alta voce del testo nella corretta interpretazione e pronuncia delle frasi.
 
-Il "Codice di lingua IETF" identifica come viene scritta e parlata la lingua in una determinata regione di uno stato. Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in bielorusso con alfabeto cirillico, o ancora bielorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Bielorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
+La lingua deve essere indicata utilizzando il "Codice di lingua IETF", che identifica come viene scritta e parlata la lingua in una determinata regione di una nazione.
+
+Ad esempio, la pagina web può essere scritta in "francese-belga", una varietà del francese parlato dai francofoni del Belgio, con differenze fonetiche. Oppure, può essere scritta in bielorusso con alfabeto cirillico, o ancora bielorusso con alfabeto latino. O anche, russo, scritto in alfabeto cirillico e parlato in Bielorussia. Il codice IETF è composto principalmente da tre parti, la prima obbligatoria, le rimanenti facoltative:
 
 1. il codice del linguaggio, espresso secondo lo standard [ISO 639-1](https://it.wikipedia.org/wiki/ISO_639-1 "Link a Wikipedia per lo standard ISO 639-1");
 2. il codice del nome della scrittura, espresso secondo lo standard [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924 "Link a Wikipedia per lo standard ISO 15924");
 3. il codice del paese, espresso secondo lo standard [ISO 3166](https://it.wikipedia.org/wiki/ISO_3166 "Link a Wikipedia per lo standard ISO 3166").
 
-L'indicazione della lingua corretta aiuta gli strumenti di traduzione e quelli di lettura ad alta voce del testo nella corretta interpretazione del testo.
+Una volta identificato il codice di lingua IETF più appropriato, questo deve essere inserito nell'attributo ``lang`` dell'etichetta ``html``. Per le pagine web in italiano, il codice è ``it``, quindi l'etichetta di apertura della pagina web è ``<html lang="it">``.
 
-Le pagine web in italiano, non avendo particolari complicazioni di linguaggio, devono avere l'etichetta di apertura ``<html lang="it">``.
+Possono esservi casi in cui un qualsiasi elemento è scritto in un linguaggio differente rispetto alla pagina web. Anche in questi casi è consigliato indicare per ogni elemento la lingua utilizzata, inserendola nell'attributo ``lang`` dell'etichetta relativa all'elemento.
 
-Possono esservi casi in cui un particolare contenuto è scritto in un linguaggio differente rispetto al resto della pagina web. In questi casi, l'attributo ``lang`` può essere usato per indicare il linguaggio utilizzato per lo specifico contenuto.
-
-Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un paragrafo è in spagnolo:
+Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un paragrafo è in spagnolo, l'attributo ``lang`` è associato sia alla pagina web per indicare che è in italiano, sia al paragrafo per indicare che è in spagnolo:
 
 ```html
 <html lang="it">
-    <head>…</head>
     <body>
         <p>Informazioni in italiano</p>
         <p lang="es">Información para hispanohablantes</p>
@@ -191,4 +189,4 @@ Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un p
 </html>
 ```
 
-Nell'esempio appena visto, l'indicazione aggiuntiva del paragrafo con lingua differente aiuta enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce a leggere e tradurre correttamente il testo spagnolo.
+L'indicazione della lingua italiana per la pagina web e l'indicazione aggiuntiva del paragrafo in lingua spagnola aiuta enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce a leggere correttamente il testo, sia e tradurlo correttamente in un altra lingua.
