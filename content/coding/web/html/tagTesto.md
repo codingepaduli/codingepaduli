@@ -18,14 +18,9 @@ weight: 9790
 
 ## Titoli
 
-Il titolo, come visto nell'esempio precedente, è generato dall'etichetta ``h1``,
-che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
+Esistono 7 livelli di titolo, che servono a dividere il documento in più capitoli e sotto-capitoli, in modo da poter dare una struttura "alberata" al documento. Questi livelli sono espressi dalle etichette ``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` ed ``h7``, anche se si consiglia l'uso fino al terzo livello.
 
-Esistono 7 livelli di titolo, che servono a dividere il
-documento in più capitoli e sotto-capitoli, in modo da poter dare una
-struttura "alberata" al documento. Questi livelli sono espressi dalle etichette
-``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` ed ``h7``, anche se si consiglia
-l'uso fino al terzo livello.
+Il titolo di primo livello è generato dall'etichetta ``h1``, che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
 
 Di seguito si riporta un esempio di codice per generare i titoli dei primi tre livelli:
 
@@ -82,6 +77,10 @@ L'etichetta ``abbr`` è usato per visualizzarne il significato di un acronimo
 quando il mouse si ferma sopra questo, come ad esempio questo acronimo
 <abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
 ``<abbr title="HyperText Markup Language">HTML</abbr>``;
+
+L'etichetta ``hr`` genera una semplice linea orizzontale, come la seguente, generata dal codice ``<hr>``.
+
+<hr>
 
 ## Combinazioni innestate per la formattazione
 
