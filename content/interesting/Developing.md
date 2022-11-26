@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-11-18
-publishdate: 2022-11-18
-lastmod: 2022-11-18
+date: 2022-11-25
+publishdate: 2022-11-25
+lastmod: 2022-11-25
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -217,7 +217,6 @@ summary: "Set di link relativi al coding"
 [Managing Git projects with submodules and subtrees | Opensource.com](https://opensource.com/article/20/5/git-submodules-subtrees) - \
 [Lazygit](https://opensource.com/article/20/3/lazygit) - Make advanced Git tasks simple  | Opensource.com\
 [hub](https://opensource.com/article/20/3/github-hub) - your Git command-line as fully featured as GitHub | Opensource.com\
-[Experiment on your code freely with Git worktree | Opensource.com](https://opensource.com/article/21/4/git-worktree) - \
 [ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
 [Generate semantic-release notes with GitHub Actions](https://dev.to/github/generate-semantic-release-with-github-actions-2lll) - DEV Community\
@@ -227,11 +226,9 @@ summary: "Set di link relativi al coding"
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
 [Create or Update PR Action](https://dev.to/mheap/create-or-update-pr-action-2bd7) - DEV Community\
 [Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
-[Managing Git credentials the easy way](https://dev.to/arunanshub/managing-git-credentials-the-easy-way-5924) - DEV Community\
 ["Support for password authentication was removed on August 13, 2021. Please use a personal access token instead."](https://dev.to/raystatic/support-for-password-authentication-was-removed-on-august-13-2021-please-use-a-personal-access-token-instead-2p99) - DEV Community\
 [How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
 [Gitpod](https://www.gitpod.io/) - Always ready to code\
-[New in Git](https://www.banterly.net/2021/07/31/new-in-git-switch-and-restore/) - switch and restore\
 [3 Ways to Backup Your Code](https://dev.to/github/3-ways-to-backup-your-code-even-if-you-dont-know-git-1o5l) - Even If You Don’t Know Git - DEV Community\
 [Using SVN+SSH Protocol | Assembla Help Center](https://articles.assembla.com/en/articles/1137042-using-svn-ssh-protocol) - \
 
@@ -647,10 +644,8 @@ summary: "Set di link relativi al coding"
 [&lt;datalist&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - The HTML Data List element - HTML MDN\
 [Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
-[&lt;dl&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl) - The Description List element - HTML: HyperText Markup Language | MDN\
 [Apply instant loading with the PRPL pattern](https://web.dev/apply-instant-loading-with-prpl/) - \
-[htmlgapp](https://www.urlgapp.com/htmlgapp) - Convert HTML & CSS & JS Code to app - generate app\
-[urlgapp](https://www.urlgapp.com/) - Convert website to app - generate app\
+[UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) - Wikipedia\
 
 ##### WAI and ARIA
 
