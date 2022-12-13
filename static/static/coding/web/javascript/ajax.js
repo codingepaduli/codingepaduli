@@ -5,6 +5,7 @@ const options = {
   cache: 'no-cache'
 };
 
+/* eslint-disable-next-line no-unused-vars */
 function callGetJSON() {
     let source = document.querySelector('#loadImage');
 
