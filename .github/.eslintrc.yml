@@ -39,3 +39,14 @@ rules:
     - warn
 ignorePatterns:
   - "/static/service-worker.js"
+globals:
+  preload: true
+  setup: true
+  draw: true
+  arrow: true
+  arrowArc: true
+  drawGridPoints: true
+  drawAxes: true
+  drawMathAxes: true
+  drawGrid: true
+  
