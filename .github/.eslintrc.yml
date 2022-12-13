@@ -1,6 +1,5 @@
 #
-# Questo file è usato solo dallo script di check-style
-# non fa parte del framework aurelia.io
+# Questo file è usato solo dallo script di check-style "eslint"
 #
 env:
   browser: true
@@ -16,8 +15,10 @@ parserOptions:
   sourceType: module
 # TODO : End-of-Life for Built-in JSDoc Support in ESLint https://eslint.org/blog/2018/11/jsdoc-end-of-life. Use eslint-plugin-jsdoc plugin instead: https://github.com/gajus/eslint-plugin-jsdoc
 plugins:
-  - jsdoc
+  - 'jsdoc'
 rules:
+# Turning off eslint rule for a specific file:
+# https://stackoverflow.com/questions/34764287/turning-off-eslint-rule-for-a-specific-file
   indent:
     - off
     - tab
@@ -36,3 +37,5 @@ rules:
     - off
   no-unused-vars:
     - warn
+ignorePatterns:
+  - "/static/service-worker.js"
