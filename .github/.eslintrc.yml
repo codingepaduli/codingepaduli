@@ -46,5 +46,6 @@ globals:
   drawGridPoints: true
   drawAxes: true
   drawMathAxes: true
-  drawGrid:
+  drawGrid: true
+  square: true
   
