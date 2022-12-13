@@ -5,17 +5,18 @@ env:
   browser: true
   commonjs: true
   es2020: true
+  p5js/p5: true
 extends:
   - 'eslint:recommended'
-  - 'p5js'
-  - 'p5js/sound'
   - 'plugin:jsdoc/recommended'
+  - 'plugin:p5js/p5'
 parserOptions:
   ecmaVersion: 11
   sourceType: module
 # TODO : End-of-Life for Built-in JSDoc Support in ESLint https://eslint.org/blog/2018/11/jsdoc-end-of-life. Use eslint-plugin-jsdoc plugin instead: https://github.com/gajus/eslint-plugin-jsdoc
 plugins:
   - 'jsdoc'
+  - 'p5js'
 rules:
 # Turning off eslint rule for a specific file:
 # https://stackoverflow.com/questions/34764287/turning-off-eslint-rule-for-a-specific-file
