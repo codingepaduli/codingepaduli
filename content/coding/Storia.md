@@ -43,4 +43,3 @@ Nel 1925 **Baird** trovò un modo per trasmettere immagini in movimento con una 
 Internet nasce agli anni sessanta con Arpanet, che collegava l'Università della California di Los Angeles, l'SRI di Stanford, l'Università della California di Santa Barbara, e l'Università dello Utah. Nel 1970 nasce il servizio di posta elettronica.
 
 Il World Wide Web nasce nel 1991 presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
-
