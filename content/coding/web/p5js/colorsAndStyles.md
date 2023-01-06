@@ -28,6 +28,9 @@ Uno dei primi trattati scientifici sul funzionamento della luce e dei colori è 
 
 Anche Newton nel 1704 pubblicò il suo trattato scientifico "Opticks", uno studio nel quale concluse che la luce è composta da particelle colorate, che si combinano apparendo bianche. Introdusse il termine **spettro dei colori** e decise di suddividerlo in sette colori: rosso, arancione, giallo, verde, blu, indaco e violetto. Il suo esperimento del fascio di luce che attraversava due prismi di vetro, il primo che suddivideva il fascio di luce nei suoi colori primari, ed il secondo che ricomponeva questi colori in un unico fascio di luce bianca, è molto famoso.
 
+<!-- Fonte: Fisicast - Una chiacchierata sul Sole -->
+Nel 1800 il fisico William Herschel utilizzò un termometro a mercurio per misurare il calore delle differenti bande di luce colorate risultanti dal passaggio della luce attraverso il prisma di vetro. Scoprì che il termometro misurava una temperatura maggiore di quella ambientale anche dopo la banda rossa, dove non c'era più luce visibile, e quindi concluse che doveva esserci una luce invisibile, che chiamò “raggi calorifici”, oggi conosciuti come raggi infrarossi.
+
 <!-- Fonte: Fottuti Geni - J. C. Maxwell -->
 Nel 1860 James Clerk Maxwell pubblico il suo lavoro sulla classificazione dei colori e sul principio della sintesi additiva dei colori, definendo i colori primari che compongono la luce: il rosso, il verde ed il blu. Nel 1861, come risultato di questo lavoro, proiettò nell'aula magna della Royal Institution di Londra la prima fotografia a colori della storia.
 
@@ -43,8 +46,6 @@ Grazie al lavoro di tutti questi geniali scienziati, oggi sappiamo che la luce �
 - **raggi visibili**, percepiti dall'uomo come **colore**. In base alla frequenza di questi raggi visibili, percepiamo i colori che vanno dal rosso al violetto, passando per arancione, giallo, verde e blu;
 - **onde radio**, **microonde** ed **infrarossi** hanno bassa frequenza e bassa energia, raramente risultano dannosi per gli organismi viventi.
 
-<!-- TODO Aggiungere spettro elettromagnetico e sezioni -->
-
 Aprendo una breve parentesi di approfondimento, sappiamo che i fotoni sono mediatori della forza elettromagnetica, responsabili dell'attrazione e della repulsione elettrica (come insegnano a scuola, le cariche opposte si attraggono, le cariche uguali si respingono scambiandosi fotoni).
 
 Oggi, sempre più spesso, il colore della luce è espresso come temperatura di colore correlata. Un corpo solido, man mano che viene portato all'incandescenza, inizia ad emettere una radiazione elettromagnetica che assume un:
@@ -59,6 +60,9 @@ Oggi, sempre più spesso, il colore della luce è espresso come temperatura di c
 - colore azzurro chiaro quando la temperatura aumenta raggiungendo i 8000K;
 - colore azzurro (cielo sereno) quando la temperatura aumenta raggiungendo i 12000K;
 - colore "Perano" (tra azzurro e violetto) quando la temperatura tende all'infinito;
+
+<-- TODO da sistemare
+In chimica si utilizza una tecnica di analisi detta test della fiamma (o saggio alla fiamma) per verificare la presenza di determinati elementi chimici in base al colore della fiamma. Sullo stesso principio si basano i fuochi d'artificio. La spettroscopia è lo studio di uno spettro elettromagnetico al fine di identificare la natura chimica di una sostanza -->
 
 ## Modello di colori RGB
 
