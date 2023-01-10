@@ -8,7 +8,7 @@ lastmod: 2021-11-03
 categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: false
-toc: false
+toc: true
 summary: "SSH, uno strumento per l'amministrazione di una macchina da remoto"
 references:
     -   title: "SSH certificates"
@@ -37,12 +37,12 @@ Installazione su server:
 
 - ``apt install openssh-server``
 
-File di configurazione su client:
+File di configurazione dei client per collegarsi ai server SSH:
 
 - ``/etc/ssh/ssh_config``
 - files in ``/etc/ssh/ssh_config.d/*.conf``
 
-File di configurazione su server:
+File di configurazione del demone SSH:
 
 - ``/etc/ssh/sshd_config``
 - files in ``/etc/ssh/sshd_config.d/*.conf``
@@ -133,16 +133,67 @@ Le funzionalità dello strumento SSH sono quindi le seguenti:
 - firma dei messaggi (autenticità dei messaggi);
 - creazione di proxy e reverse-proxy per la trasmissione di informazioni su canali sicuri;
 
-## Autenticazione con user/password
+## Autenticazione con credenziali
 
-L'autenticazione con utente e password è demandata al sistema operativo.
+SSH utilizza il sistema **PAM** come sistema principale di autenticazione degli utenti attraverso le credenziali. Il sistema PAM ha vari moduli che definiscono le strategie di autenticazione e può essere configurato attraverso i file ``/etc/pam.conf`` e ``/etc/pam.d/sshd``.
 
-L'utente fornisce un nome utente ed una password, il server SSH confronta tali dati con il database degli utenti del sistema operativo ed in caso di corrispondenza permette l'accesso all'utente.
+Sono due le principali strategie di autenticazione degli utenti che accedono ad un server SSH.
 
-E' possibile abilitarla o disabilitarla modificando il file di configurazione del server SSH ``/etc/ssh/sshd_config``, alla voce:
+La prima richiede che l'utente inserisca il nome utente e la password per l'accesso al sistema.
+
+E' possibile abilitare o disabilitare questa strategia di autenticazione modificando il file di configurazione del server SSH ``/etc/ssh/sshd_config``, alla voce:
 
 ```bash
 PasswordAuthentication yes # yes or no
+```
+
+La seconda richiede che l'utente risponda ad una serie di domande e solo nel caso in cui tutte le risposte siano corrette l'utente è autenticato. Questo meccanismo permette di applicare strategie di autenticazione come quelle basate ad esempio sulla verifica in due passaggi, in cui oltre ad utente e password viene richiesto un codice di verifica inviato su smartphone o su email o generato con applicazioni OTP.
+
+E' possibile abilitare o disabilitare questo sistema di autenticazione modificando il file di configurazione del server SSH ``/etc/ssh/sshd_config``, alla voce:
+
+```bash
+KbdInteractiveAuthentication yes # yes or no
+```
+
+Nelle vecchie versioni di SSH, questo valore era chiamato ``ChallengeResponseAuthentication`` e se si trova ancora presente nei file di configurazione è solo per compatibilità a ritroso.
+
+### Configurazione ed autorizzazione con credenziali
+
+Si può scegliere se permettere l'autenticazione degli utenti senza password, impostando nella configurazione l'opzione:
+
+```bash
+PermitEmptyPasswords no # yes or no
+```
+
+Per questioni di sicurezza l'accesso ai server dovrebbe avvenire utilizzando un utente senza permessi amministrativi, per poi utilizzare i metodi del sistema stesso per diventare amministratore. E' l'amministratore di sistema a scegliere il metodo di accesso consentito, assegnando alla proprietà ``PermitRootLogin`` uno dei seguenti valori:
+
+- ``prohibit-password`` permette l'accesso come amministratore solo attraverso una chiave pubblica o un certificato, ma non con una password perché con un attacco brute-force si potrebbe riuscire ad accedere al sistema;
+- ``no`` permette l'accesso solo agli utenti non amministratori;
+- ``yes`` permette l'accesso anche come amministratore;
+- ``forced-commands-only`` permette di lanciare i comandi come amministratore, ma non di effettuare l'accesso. I comandi eseguibili devono essere configurati in SSH.
+
+L'impostazione consigliata è la seguente:
+
+```bash
+PermitRootLogin no
+```
+
+Si può indicare gli utenti ai quali permettere l'accesso al server attraverso l'opzione:
+
+```bash
+AllowUser username1 username2
+```
+
+In ambienti in cui spesso si modificano gli utenti che hanno i permessi di accesso ai server, piuttosto che effettuare continue modifiche ai file di configurazione, può essere utile garantire l'accesso ad un intero gruppo e quindi aggiungere o rimuovere gli utenti dal gruppo. L'opzione per tale scelta è:
+
+```bash
+AllowGroup group1 group2
+```
+
+Al salvataggio della configurazione deve essere poi riavviato il sistema o il servizio SSH, con il comando:
+
+```bash
+systemctl reload ssh
 ```
 
 ## Autenticazione con chiave privata/pubblica
@@ -194,7 +245,7 @@ ssh-keygen -l -f $HOME/chiavi_ssh/id_rsa
  |__ Size   Fingerprint __|     Comment __|     Type __|
 ```
 
-### Autorizzare l'accesso di un client al server
+### Configurazione ed autorizzazione con chiave privata/pubblica
 
 Il file ``$HOME/.ssh/authorized_keys`` contiene l'elenco di client a cui è permesso l'accesso al server.
 
@@ -384,7 +435,7 @@ Ci sono diverse debolezze nell'interazione client server:
 
 1. Quando il client si collega per la priva volta al server, il server invia al client la propria impronta digitale, quindi l'utente deve verificarla ed accettarla per proseguire la connessione. Questa impronta digitale viene salvata nel file ``./ssh/known_hosts``. L'utente, per pigrizia, non verifica mai l'impronta digitale e sceglie di fidarsi sempre;
 
-    ```bash
+    ```plaintext
     The authenticity of host xxx can''t be established.
     RSA key fingerprint is SHA256:4fdsanfMfazsbfMadfas
     Are you sure you want to continue connecting (yes/no)?
