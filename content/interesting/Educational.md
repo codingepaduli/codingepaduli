@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2022-11-18
-publishdate: 2022-11-18
-lastmod: 2022-11-18
+date: 2023-01-10
+publishdate: 2023-01-10
+lastmod: 2023-01-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -24,8 +24,10 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Scientificando](https://www.tutto-scienze.org/) - curiosità dalla scienza\
 [La mia scuola differente](https://www.lamiascuoladifferente.it/) - materiali e strumenti che supportino la didattica a distanza\
+[Indire](https://www.indire.it/gli-enti-pubblici-di-ricerca-a-supporto-degli-studenti/) - Webinar multidisciplinari condotti dai ricercatori degli enti di ricerca\
 [The Essence of Mathematics Through Elementary Problems](https://www.openbookpublishers.com/product/979) - Open Book Publishers\
 [Matematicapovolta](https://www.matematicapovolta.it/index.html) - Didattica a distanza Matematica Scuole Medie e Superiori (flipped classroom liceo scientifico)\
+[LearningApps.org](https://learningapps.org/) - Moduli e-learning per il tuo sito internet\
 [OER Commons](https://www.oercommons.org/) - a public digital library of open educational resources. Explore, create, and collaborate with educators around the world to improve curriculum. \
 
 #### Google suite
@@ -51,8 +53,10 @@ summary: "Set di link relativi all'istruzione di base"
 ##### Fake news
 
 [Fake News](https://www.youtube.com/watch?v=5FROGYnhxGU) - cosa sono e come riconoscerle | StudenTALK 🎤 - YouTube\
+[Riconoscere le Fake News](https://www.youtube.com/watch?v=CZU6SUW5viQ) - YouTube\
 [Fake news](https://www.youtube.com/watch?v=DW0MAWPhapk) - Webinar per la didattica a distanza - Cittadinanza digitale e fake news - YouTube\
 [Fake News](https://www.ilfattoquotidiano.it/in-edicola/articoli/2022/09/28/quelli-che-conte-e-mor-to-e-pdcalenda-sfondano/6820049/) - esempi sulle elezioni politiche - Il Fatto Quotidiano\
+[Fake news](https://www.youtube.com/watch?v=8ynVw23dezc) - Camera Cafè 2017 - YouTube\
 
 ##### Social network
 
@@ -63,6 +67,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 ##### GDPR e privacy
 
+[Difesa dei dati](https://www.youtube.com/watch?v=40-I64zxN4U) - YouTube\
 [La privacy #1](https://www.youtube.com/watch?v=jDLkHurCpKQ) - Come e quando nasce il diritto alla privacy - YouTube\
 [La privacy #2](https://www.youtube.com/watch?v=WUyBmkeLWxM) - Il GDPR e il trattamento dei dati personali - YouTube\
 [La privacy #3](https://www.youtube.com/watch?v=LmCLjyEc4-g) - Le regole del GDPR - YouTube\
