@@ -37,42 +37,15 @@ La storia della crittografia può essere divisa in due ere: l'era classica, in c
 
 Le funzionalità dello strumento SSH sono quindi le seguenti:
 
-- autenticazione con user/pass (segreto condiviso tra client e server);
-- autenticazione con chiave pubblica e privata (il client possiede la chiave privata ed il server quella pubblica);
-- autenticazione con certificati (autorità di certificazione);
+- accesso al server remoto utilizzando:
+
+    1. autenticazione con user/pass (segreto condiviso tra client e server);
+    2. autenticazione con chiave pubblica e privata (il client possiede la chiave privata ed il server quella pubblica);
+    3. autenticazione con certificati (autorità di certificazione);
+
 - generazione di un'autorità di certificazione per la verifica dei certificati;
 - firma dei messaggi (autenticità dei messaggi);
 - creazione di proxy e reverse-proxy per la trasmissione di informazioni su canali sicuri;
-
-## Installazione
-
-Installazione su client:
-
-```bash
-apt install openssh-client
-```
-
-Installazione su server:
-
-```bash
-apt install openssh-server
-```
-
-File di configurazione dei client per collegarsi ai server SSH:
-
-- ``/etc/ssh/ssh_config``
-- files in ``/etc/ssh/ssh_config.d/*.conf``
-
-File di configurazione del demone SSH:
-
-- ``/etc/ssh/sshd_config``
-- files in ``/etc/ssh/sshd_config.d/*.conf``
-
-Per riavviare il server SSH (al cambio di configurazione, ad esempio), è necessario il comando:
-
-```bash
-systemctl restart sshd
-```
 
 ## Algoritmi di Crittografia classica
 
@@ -86,7 +59,13 @@ Il punto debole di questi algoritmi "classici" consisteva proprio nella trasmiss
 
 Il passaggio all'era moderna è dovuto ai primi algoritmi basati sulla teoria dei numeri: l'algoritmo RSA e lo scambio di chiavi Diffie-Hellman, che si basavano sul problema matematico della fattorizzazione in numeri primi. L'algoritmo RSA usa una chiave privata ed una pubblica, una chiave serve a criptare i dati (e quindi renderli incomprensibili) e l'altra chiave è utilizzata per decriptarli (e renderli di nuovo comprensibili). L'algoritmo di scambio delle chiavi Diffie-Hellman consente a due entità di stabilire una chiave condivisa e segreta utilizzando un canale di comunicazione insicuro. Server e client arrivano a calcolare la stessa chiave indipendentemente uno dall'altro, condividendo solo alcuni dati e mantenendo segreti altri.
 
-Il vantaggio rivoluzionario di questi algoritmi è che qualsiasi utente può tranquillamente pubblicare la propria chiave pubblica, in modo tale da permettere a terzi di cifrare i dati da trasmettere all'utente, che poi utilizza la propria chiave privata per leggerli. Viceversa, l'utente può utilizzare la chiave privata per trasmettere i dati a terzi, che utilizzano la chiave pubblica per leggerli. L'algoritmo per cifrare e decifrare i messaggi non è segreto, ma pubblico.
+Il vantaggio rivoluzionario di questi algoritmi è che qualsiasi utente può tranquillamente pubblicare la propria chiave pubblica, in modo tale da permettere a chiunque di utilizzarla per cifrare i dati da trasmettere al destinatario, il quale poi utilizza la propria chiave privata per leggerli. Viceversa, l'utente può utilizzare la chiave privata per trasmettere i dati a terzi, che utilizzano la chiave pubblica per leggerli. L'algoritmo per cifrare e decifrare i messaggi non è segreto, ma pubblico.
+
+Si può scegliere se fidarsi o meno di un partner esterno per la diffusione delle chiavi pubbliche. Ad esempio GitHub permette di accedere alla chiave pubblica di un utente ``USERNAME`` dal link:
+
+```plaintext
+https://github.com/USERNAME.keys
+```
 
 Rendere leggibile un messaggio criptato senza avere la chiave privata equivale a risolvere un problema matematico difficile da risolvere. Si ha quindi una prova matematica della impossibilità di lettura delle trasmissioni senza possedere la chiave privata, indipendentemente dal fatto che l'algoritmo di cifratura sia pubblico.
 
@@ -150,7 +129,45 @@ ssh -Q key-cert
 
 -->
 
-## Strategie di autenticazione dell'utente
+## Analisi della sicurezza
+
+Ci sono diverse debolezze nell'interazione client server con SSH:
+
+1. Quando il client si collega per la priva volta al server, il server invia al client la propria impronta digitale, quindi l'utente deve verificarla ed accettarla per proseguire la connessione. Questa impronta digitale viene salvata nel file ``./ssh/known_hosts``. L'utente, per pigrizia, non verifica mai l'impronta digitale e sceglie di fidarsi sempre;
+
+    ```plaintext
+    The authenticity of host xxx can''t be established.
+    RSA key fingerprint is SHA256:4fdsanfMfazsbfMadfas
+    Are you sure you want to continue connecting (yes/no)?
+    ```
+
+2. L'accesso al server con utente e password è insicuro perché la password può essere indovinata con algoritmi di brute-force o basati su dizionario.
+3. L'accesso al server con chiave pubblica/privata è ritenuto sicuro, ma prevede che la chiave pubblica dell'utente sia memorizzata sul server (per poter autenticare l'utente) nel file ``.ssh/authorized_keys``. Come può accedere al server l'utente per poter copiare la propria chiave pubblica? Utilizzare un accesso con utente e password è insicuro.
+4. Il server SSH accumula nel file ``.ssh/authorized_keys`` le chiavi pubbliche di migliaia di utenti che hanno accesso al server. Il numero elevato di queste chiavi pubbliche le rende ingestibili e la pulizia di queste chiavi può causare un accesso negato a persone o sistemi critici.
+5. Le chiavi SSH non scadono mai, quindi in caso di furto di una chiave, si ha un accesso furtivo al server difficilmente rilevabile.
+
+## Installare il server SSH
+
+Il server SSH permette di accettare connessioni dai client su una porta di sistema, tipicamente la 22, ed autenticare gli utenti utilizzando la strategia più opportuna.
+
+L'installazione del server SSH avviene con il seguente comando:
+
+```bash
+apt install openssh-server
+```
+
+I file di configurazione utilizzati dal demone SSH si trovano nelle seguenti posizioni:
+
+- ``/etc/ssh/sshd_config``
+- files in ``/etc/ssh/sshd_config.d/*.conf``
+
+Ad ogni cambio di configurazione è necessario riavviare il server SSH con il comando seguente:
+
+```bash
+systemctl restart sshd
+```
+
+## Autenticare l'utente sul server SSH
 
 Le strategie di autenticazione dell'utente vanno indicate nei file di configurazione del server. Le principali sono le seguenti:
 
@@ -197,54 +214,56 @@ Nelle vecchie versioni di SSH, questo valore era chiamato ``ChallengeResponseAut
 
 ### Autenticazione con chiave privata/pubblica
 
-L'autenticazione con chiave privata/pubblica è impostata nel file di configurazione del server SSH ``/etc/ssh/sshd_config`` dalla voce seguente:
+Questa strategia di autenticazione richiede che l'utente utilizzi la propria chiave privata per autenticarsi sul server (sul quale ha pubblicati la propria chiave pubblica).
+
+E' possibile abilitare o disabilitare questa strategia di autenticazione indicandola nel file di configurazione del server SSH alla voce ``AuthenticationMethods`` e poi abilitando la voce:
 
 ```bash
 PubkeyAuthentication yes # yes or no
 ```
 
-Generalmente l'utente ha una coppia di chiavi, una privata (id_rsa) ed una pubblica (id_rsa.pub), tipicamente memorizzate nei file:
+Generalmente l'utente ha una coppia di chiavi, una privata ed una pubblica, rispettivamente memorizzate nei file:
 
-- ``~/.ssh/id_rsa``
-- ``~/.ssh/id_rsa.pub``
+- ``~/.ssh/id_ed25519``
+- ``~/.ssh/id_ed25519.pub``
 
-La chiave pubblica deve essere copiata sul server remoto, e quando si utilizza SSH, automaticamente si utilizza la chiave privata per criptare la comunicazione con il server, che a sua volta utilizza la chiave pubblica copiata. Se le chiavi sono compatibili, viene stabilita una comunicazione.
+La chiave pubblica deve essere copiata sul server remoto per autorizzare l'accesso all'utente.
 
-Per generare la coppia di chiavi pubblica/privata, che vengono salvate nei file ``id_rsa`` e ``id_rsa.pub`` nella cartella ``chiavi_ssh``, si utilizza il comando seguente (nota che l'estensione ``.pub`` viene aggiunta automaticamente al nome del file che contiene la chiave pubblica):
+Per generare la coppia di chiavi pubblica/privata, che vengono salvate nei file ``id_ed25519`` e ``id_ed25519.pub`` nella cartella ``chiavi_ssh``, si utilizza il comando seguente (nota che l'estensione ``.pub`` viene aggiunta automaticamente al nome del file che contiene la chiave pubblica):
 
 ```bash
-ssh-keygen -t rsa -f $HOME/chiavi_ssh/id_rsa -C "chiave per server A"
+ssh-keygen -t ed25519 -f $HOME/chiavi_ssh/id_ed25519 -C "chiave per server A"
 ```
 
 Il commento, specificato nel comando precedente attraverso l'opzione ``-C`` (maiuscola) può essere utile ad indicare lo scopo d'uso o il server a cui è destinata una chiave. Si può cambiare utilizzando l'opzione ``-c -C commento`` (minuscola e maiuscola)
 
 ```bash
-ssh-keygen -f $HOME/chiavi_ssh/id_rsa -c -C "chiave per server B"
+ssh-keygen -f $HOME/chiavi_ssh/id_ed25519 -c -C "chiave per server B"
 ```
 
 La passphrase (frase di sblocco) viene richiesta, ma può essere omessa con le opzioni ``-q -N ""`` che indicano di non utilizzare una passphrase e di non richiederla quando si usa la chiave.
 
 ```bash
-ssh-keygen -t rsa -f $HOME/chiavi_ssh/id_rsa -q -N ""
+ssh-keygen -t ed25519 -f $HOME/chiavi_ssh/id_ed25519 -q -N ""
 ```
 
 Per cambiare la passphrase, si utilizza il comando seguente:
 
 ```bash
-ssh-keygen -f $HOME/chiavi_ssh/id_rsa -p
+ssh-keygen -f $HOME/chiavi_ssh/id_ed25519 -p
 ```
 
 Le informazioni su una chiave possono essere recuperate attraverso il comando seguente, che si riporta insieme all'output per semplicità descrittiva:
 
 ```bash
-ssh-keygen -l -f $HOME/chiavi_ssh/id_rsa
+ssh-keygen -l -f $HOME/chiavi_ssh/id_ed25519
 
-2048 SHA256: abacadaeaf1234567890 Comment for key xyz (RSA)
+2048 SHA256: abacadaeaf1234567890 Comment for key xyz (ed25519)
 ^^^^   ^^^^^^^^^^^^^^^^^^^^^^^^       ^^^^^^^^^^       ^^^
  |__ Size   Fingerprint __|     Comment __|     Type __|
 ```
 
-#### Configurazioni opzionali dell'autorizzazione con credenziali
+### Configurazioni opzionali dell'autorizzazione con credenziali
 
 Si può scegliere se permettere l'autenticazione degli utenti senza password, impostando nella configurazione l'opzione:
 
@@ -280,23 +299,23 @@ AllowGroup group1 group2
 Al salvataggio della configurazione deve essere poi riavviato il sistema o il servizio SSH, con il comando:
 
 ```bash
-systemctl reload ssh
+systemctl reload sshd
 ```
 
-#### Configurazioni opzionali dell'autorizzazione con chiave privata/pubblica
+### Configurazioni opzionali dell'autorizzazione con chiave privata/pubblica
 
 Il file ``$HOME/.ssh/authorized_keys`` contiene l'elenco di client a cui è permesso l'accesso al server.
 
 Per aggiungere l'accesso di un client, è necessario copiare la chiave **pubblica** del client nel server, come di seguito:
 
 ```bash
-ssh-copy-id -i $HOME/chiavi_ssh/id_rsa.pub user@server
+ssh-copy-id -i $HOME/chiavi_ssh/id_ed25519.pub user@server
 ```
 
 A questo punto si può accedere al server specificando la chiave:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa user@server
+ssh -i $HOME/chiavi_ssh/id_ed25519 user@server
 ```
 
 Nel caso l'utente non sia autorizzato ad accedere attraverso la chiave pubblica, verificare che la cartella ``.ssh`` abbia i permessi ``700`` (``rwx`` solo per il proprietario), verificare che il file ``$HOME/.ssh/authorized_keys`` abbia i permessi ``600`` e verificare che nel file di configurazione del server ``/etc/ssh/sshd_config`` si stia leggendo il file ``authorized_keys`` corretto:
@@ -305,7 +324,67 @@ Nel caso l'utente non sia autorizzato ad accedere attraverso la chiave pubblica,
 AuthorizedKeysFile  .ssh/authorized_keys
 ```
 
-## Memorizzare la passphrase usando l'agente SSH
+Al salvataggio della configurazione deve essere poi riavviato il sistema o il servizio SSH, con il comando:
+
+```bash
+systemctl reload sshd
+```
+
+## Installazione, configurazione ed uso del client SSH
+
+Il client SSH permette di collegarsi al server, autenticarsi ed utilizzare la shell di sistema.
+
+L'installazione del client SSH avviene con il seguente comando:
+
+```bash
+apt install openssh-client
+```
+
+I file di configurazione utilizzati dal client si trovano nelle seguenti posizioni:
+
+- ``/etc/ssh/ssh_config``
+- files in ``/etc/ssh/ssh_config.d/*.conf``
+
+Il comando per l'accesso è il seguente:
+
+```bash
+ssh user@192.168.1.50
+```
+
+E' possibile effettuare il debug utilizzando le opzioni seguenti:
+
+```bash
+ssh -vvv user@192.168.1.50
+```
+
+Dall'output di debug si possono notare le seguenti informazioni relative all'autenticazione:
+
+```plaintext
+debug1: Connecting to 192.168.1.50 [192.168.1.50] port 22.
+debug1: identity file        .ssh/id_ecdsa     type -1
+debug1: identity file        .ssh/id_ed25519   type 3
+debug1: Authenticating to 192.168.1.50:22 as 'user'
+debug1: Found key in         .ssh/known_hosts:4
+debug1: Authentications that can continue:     publickey
+debug1: Trying private key:  .ssh/id_ecdsa
+debug1: Offering public key: .ssh/id_ed25519 ED25519 SHA256:123456
+debug1: Server accepts key:  .ssh/id_ed25519 ED25519 SHA256:123456
+debug1: Authentication succeeded (publickey).
+```
+
+E' possibile specificare la porta alla quale connettersi e la chiave privata da utilizzare per l'autenticazione al server con le opzioni seguenti:
+
+```bash
+ssh -i $HOME/chiavi_ssh/id_ed25519 -p 22 user@server
+```
+
+Dato che l'uso di una chiave privata prevede l'inserimento di una passphrase, per evitare che sia chiesta più e più volte all'utente si può utilizzare l'opzione seguente:
+
+```bash
+ssh -o "AddKeysToAgent=yes" io@192.168.1.50
+```
+
+### Memorizzare la passphrase usando l'agente SSH
 
 L'agente SSH si occupa di memorizzare la passphrase per tutta la durata della sessione SSH.
 
@@ -318,19 +397,19 @@ ssh-add -l
 Per affidargli una chiave, è necessario il comando:
 
 ```bash
-ssh-add $HOME/chiavi_ssh/id_rsa
+ssh-add $HOME/chiavi_ssh/id_ed25519
 ```
 
 Per rimuovere una chiave , è necessario il comando:
 
 ```bash
-ssh-add -d $HOME/chiavi_ssh/id_rsa
+ssh-add -d $HOME/chiavi_ssh/id_ed25519
 ```
 
 Quando una chiave viene aggiunta, è possibile effettuare il login automatico ad una shell, senza che sia richiesta la passphrase.
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa user@server
+ssh -i $HOME/chiavi_ssh/id_ed25519 user@server
 ```
 
 E' possibile affidare automaticamente la chiave all'agente, impostando la configurazione del client ``/etc/ssh/ssh_config`` con la voce seguente:
@@ -339,7 +418,7 @@ E' possibile affidare automaticamente la chiave all'agente, impostando la config
 AddKeysToAgent yes
 ```
 
-## Eseguire comandi tramite SSH
+### Eseguire comandi tramite SSH
 
 E' possibile inviare dei comandi al server specificandoli come parametro.
 
@@ -398,7 +477,7 @@ Dato che la variabile ``$HOME`` è risolta prima di inviare il comando al server
 
 Un'altra attenzione da porre quando i comandi sono passati come argomento, è che non sono legati ad una sessione, quindi anche se si interrompe la comunicazione, i processi avviati rimangono attivi sulla macchina server. Per ovviare a questo problema, si può legare il comando ad un terminale, e quando si verifica un problema, la chiusura del terminale causa la terminazione del processo eseguito da remoto. La creazione del terminale avviene specificando l'opzione ``-t``.
 
-## Firmare e verificare file con SSH
+### Firmare e verificare file con SSH
 
 E' possibile firmare file, email e rami di git utilizzando SSH, e quindi anche verificare una firma.
 
@@ -407,7 +486,7 @@ Lo strumento di firma di SSH utilizza tre namespace differenti, ``email`` è il 
 Il comando per la firma prevede quindi l'opzione ``-n`` per indicare il namespace e l'opzione ``-Y sign`` per indicare di firmare il file, l'opzione ``-f key`` indica la chiave da utilizzare per firmare ed infine ``file_to_sign`` indica il file da firmare, come nell'esempio seguente:
 
 ```bash
-ssh-keygen -Y sign -n file -f $HOME/chiavi_ssh/id_rsa file_to_sign
+ssh-keygen -Y sign -n file -f $HOME/chiavi_ssh/id_ed25519 file_to_sign
 ```
 
 La firma produce un file firmato di nome ``file_to_sign.sig``.
@@ -446,44 +525,23 @@ Come si può notare, ``user`` è l'utente che effettua l'accesso sul server, ``h
 Il comando ``scp`` può quindi essere utilizzato per copiare un file presente su client nella cartella del server ``/home/user/cartella`` utilizzando la seguente sintassi:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa file user@server:/home/user/cartella
+ssh -i $HOME/chiavi_ssh/id_ed25519 file user@server:/home/user/cartella
 ```
 
 Viceversa, un file presente sul server nella cartella ``/home/user/cartella/`` può essere copiato nella cartella ``cartella`` del client con la seguente sintassi:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa user@server:/home/user/cartella/file cartella
+ssh -i $HOME/chiavi_ssh/id_ed25519 user@server:/home/user/cartella/file cartella
 ```
 
 Per copiare tutti i file presenti in una cartella si può utilizzare il carattere jolly ``*``, come nell'esempio seguente:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa user@server:/home/user/cartella/* cartella
+ssh -i $HOME/chiavi_ssh/id_ed25519 user@server:/home/user/cartella/* cartella
 ```
 
 Per copiare ricorsivamente tutti i file e le cartelle presenti in una specifica cartella si può utilizzare l'opzione ``-r``, come nell'esempio seguente:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_rsa -r user@server:/home/user/cartella cartella
-```
-
-## Analisi della sicurezza
-
-Ci sono diverse debolezze nell'interazione client server:
-
-1. Quando il client si collega per la priva volta al server, il server invia al client la propria impronta digitale, quindi l'utente deve verificarla ed accettarla per proseguire la connessione. Questa impronta digitale viene salvata nel file ``./ssh/known_hosts``. L'utente, per pigrizia, non verifica mai l'impronta digitale e sceglie di fidarsi sempre;
-
-    ```plaintext
-    The authenticity of host xxx can''t be established.
-    RSA key fingerprint is SHA256:4fdsanfMfazsbfMadfas
-    Are you sure you want to continue connecting (yes/no)?
-    ```
-
-2. La chiave pubblica dell'utente deve essere inviata al server (per poter autenticare l'utente), che la memorizza nel file ``.ssh/authorized_keys``. E' problematico inviare la chiave pubblica al server senza connessione sicura, soprattutto se non si ha una password di accesso (il client non ha SSH, dato che ancora non è possibile stabilire una connessione col server). Inoltre le mille chiavi accumulate nel file ``.ssh/authorized_keys`` sono ingestibili.
-3. Le chiavi SSH non scadono mai.
-
-Si può scegliere se fidarsi o meno di un partner esterno per la diffusione delle chiavi pubbliche. Ad esempio GitHub permette di accedere alla chiave pubblica di un utente ``USERNAME`` dal link:
-
-```plaintext
-https://github.com/USERNAME.keys
+ssh -i $HOME/chiavi_ssh/id_ed25519 -r user@server:/home/user/cartella cartella
 ```
