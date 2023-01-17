@@ -559,3 +559,31 @@ Per copiare ricorsivamente tutti i file e le cartelle presenti in una specifica 
 ```bash
 ssh -i $HOME/chiavi_ssh/id_ed25519 -r user@server:/home/user/cartella cartella
 ```
+
+## SSH filesystem
+
+Con SSH si può installare un driver che permette di montare una cartella remota come se fosse un disco locale.
+
+L'installazione del filesystem SSH avviene con il seguente comando:
+
+```bash
+apt-get install sshfs
+```
+
+Creare una cartella ``/mnt/root`` con il comando:
+
+```bash
+sudo mkdir /mnt/Remote
+```
+
+Montare la cartella con il seguente comando:
+
+```bash
+sudo sshfs -o allow_other,IdentityFile=/home/user/.ssh/id_ed25519 user@192.168.1.50:/home/user/Sync /mnt/Remote
+```
+
+Per smontare la cartella, utilizzare il seguente comando:
+
+```bash
+sudo umount /mnt/Remote
+```
