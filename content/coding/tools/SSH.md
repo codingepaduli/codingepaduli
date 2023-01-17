@@ -61,11 +61,7 @@ Il passaggio all'era moderna è dovuto ai primi algoritmi basati sulla teoria de
 
 Il vantaggio rivoluzionario di questi algoritmi è che qualsiasi utente può tranquillamente pubblicare la propria chiave pubblica, in modo tale da permettere a chiunque di utilizzarla per cifrare i dati da trasmettere al destinatario, il quale poi utilizza la propria chiave privata per leggerli. Viceversa, l'utente può utilizzare la chiave privata per trasmettere i dati a terzi, che utilizzano la chiave pubblica per leggerli. L'algoritmo per cifrare e decifrare i messaggi non è segreto, ma pubblico.
 
-Si può scegliere se fidarsi o meno di un partner esterno per la diffusione delle chiavi pubbliche. Ad esempio GitHub permette di accedere alla chiave pubblica di un utente ``USERNAME`` dal link:
-
-```plaintext
-https://github.com/USERNAME.keys
-```
+Si può scegliere se fidarsi o meno di un partner esterno per la diffusione delle chiavi pubbliche. Ad esempio GitHub permette di accedere alla chiave pubblica di un utente ``USERNAME`` dal link ``https://github.com/USERNAME.keys``.
 
 Rendere leggibile un messaggio criptato senza avere la chiave privata equivale a risolvere un problema matematico difficile da risolvere. Si ha quindi una prova matematica della impossibilità di lettura delle trasmissioni senza possedere la chiave privata, indipendentemente dal fatto che l'algoritmo di cifratura sia pubblico.
 
@@ -81,7 +77,7 @@ Quando si invia un messaggio, si invia pure l'hash (può essere inviato sia in c
 
 Questa strategia è spesso applicata sui siti web che permettono di scaricare un file. Sul sito web oltre al file si può trovare (pubblicata sulla pagina web o in un file a parte da scaricare) l'hash del file da scaricare. L'utente scarica il file, ne calcola l'hash, poi lo confronta con quello presente sul sito web, se corrispondono significa che il file scaricato non è stato sostituito da un hacker e non è affetto da un virus.
 
-Le tecniche di firma oltre a garantire che il messaggio non sia contraffatto, garantiscono anche l'identità del mittente. Utilizzano un algoritmo di hash per generare un hash del messaggio, poi l'hash viene firmato con la chiave privata ed allegato al messaggio. Quando un utente vuole verificare che un messaggio non è contraffatto, decodifica la firma usando la chiave pubblica, poi verifica che il codice alfanumerico decrittato (hash) sia uguale al codice alfanumerico che si ottiene dal messaggio (poiché il messaggio è in chiaro). Se i due codici alfanumerici corrispondono, il messaggio non è contraffatto ed è stato inviato dall'utente che possiede la chiave privata.
+Le tecniche di firma oltre a garantire che il messaggio non sia contraffatto, garantiscono anche l'identità del mittente. Utilizzano un algoritmo di hash per generare un hash del messaggio, poi l'hash viene firmato con la chiave privata ed allegato al messaggio. L'hash firmato è detto **firma**. Quando un utente vuole verificare che un messaggio non è contraffatto, decodifica la firma usando la chiave pubblica, poi verifica che il codice alfanumerico decrittato (hash) sia uguale al codice alfanumerico che si ottiene dal messaggio (poiché il messaggio è in chiaro). Se i due codici alfanumerici corrispondono, il messaggio non è contraffatto ed è stato inviato dall'utente che possiede la chiave privata.
 
 ## Funzionamento basilare di SSH
 
@@ -106,13 +102,24 @@ Effettuato lo scambio delle chiavi, client e server creano un canale criptato ut
 ssh -Q cipher
 ```
 
-Una volta creato il canale criptato di comunicazione, è necessario autenticare l'utente all'accesso del sistema. Esistono molte strategie di autenticazione che possono essere configurati, dalla classica richiesta di credenziali (username e password) alla più moderna autenticazione basata su chiave pubblica/privata a quella basata su certificati.
+Una volta creato il canale criptato di comunicazione, è necessario autenticare l'utente all'accesso del sistema. Esistono molte strategie di autenticazione che possono essere configurate, dalla classica richiesta di credenziali (username e password) alla più moderna autenticazione basata su chiave pubblica/privata a quella basata su certificati.
 
-<!--
-La lista di algoritmi asimmetrici (cha si basano sul possesso di chiave pubblica e privata) può essere visualizzata attraverso il comando seguente:
+La lista degli algoritmi simmetrici (cha si basano su username e password) utilizzati per autenticare un utente può essere visualizzata attraverso il comando seguente:
+
+```bash
+ssh -Q cipher-auth
+```
+
+La lista degli algoritmi asimmetrici (cha si basano sul possesso di chiave pubblica e privata) utilizzati per autenticare un utente può essere visualizzata attraverso il comando seguente:
 
 ```bash
 ssh -Q key
+```
+
+La lista degli algoritmi basati su certificato utilizzati per autenticare un utente può essere visualizzata attraverso il comando seguente:
+
+```bash
+ssh -Q key-cert
 ```
 
 Aggiungiamo ancora gli algoritmi per firmare un file, la cui lista può essere visualizzata attraverso il comando seguente:
@@ -120,14 +127,6 @@ Aggiungiamo ancora gli algoritmi per firmare un file, la cui lista può essere v
 ```bash
 ssh -Q sig
 ```
-
-Infine, aggiungiamo la lista di algoritmi basati su certificato, visualizzabile attraverso il comando seguente:
-
-```bash
-ssh -Q key-cert
-```
-
--->
 
 ## Analisi della sicurezza
 
@@ -167,7 +166,7 @@ Ad ogni cambio di configurazione è necessario riavviare il server SSH con il co
 systemctl restart sshd
 ```
 
-## Autenticare l'utente sul server SSH
+### Configurare l'autenticazione utente
 
 Le strategie di autenticazione dell'utente vanno indicate nei file di configurazione del server. Le principali sono le seguenti:
 
@@ -181,7 +180,7 @@ Si può scegliere anche di applicare più di una strategia di autenticazione. Sc
 AuthenticationMethods "publickey,password,keyboard-interactive" # una o più
 ```
 
-### Autenticazione con password
+#### Autenticazione con password
 
 Questa strategia di autenticazione richiede che l'utente inserisca il nome utente e la password per l'accesso al sistema.
 
@@ -191,7 +190,7 @@ E' possibile abilitare o disabilitare questa strategia di autenticazione indican
 PasswordAuthentication yes # yes or no
 ```
 
-### Autenticazione interattiva
+#### Autenticazione interattiva
 
 Questa strategia di autenticazione richiede che l'utente risponda ad una serie di domande e solo nel caso in cui tutte le risposte siano corrette l'utente è autenticato. Questo meccanismo permette di applicare strategie di autenticazione come quelle basate ad esempio sulla verifica in due passaggi, in cui oltre ad utente e password viene richiesto un codice di verifica inviato su smartphone o su email o generato con applicazioni OTP.
 
@@ -212,9 +211,9 @@ KbdInteractiveAuthentication yes # yes or no
 
 Nelle vecchie versioni di SSH, questo valore era chiamato ``ChallengeResponseAuthentication`` e se si trova ancora presente nei file di configurazione è solo per compatibilità a ritroso.
 
-### Autenticazione con chiave privata/pubblica
+#### Autenticazione con chiave privata/pubblica
 
-Questa strategia di autenticazione richiede che l'utente utilizzi la propria chiave privata per autenticarsi sul server (sul quale ha pubblicati la propria chiave pubblica).
+Questa strategia di autenticazione richiede che l'utente utilizzi la propria chiave privata per autenticarsi sul server (sul quale ha pubblicato la propria chiave pubblica).
 
 E' possibile abilitare o disabilitare questa strategia di autenticazione indicandola nel file di configurazione del server SSH alla voce ``AuthenticationMethods`` e poi abilitando la voce:
 
@@ -227,41 +226,11 @@ Generalmente l'utente ha una coppia di chiavi, una privata ed una pubblica, risp
 - ``~/.ssh/id_ed25519``
 - ``~/.ssh/id_ed25519.pub``
 
-La chiave pubblica deve essere copiata sul server remoto per autorizzare l'accesso all'utente.
+La chiave pubblica deve essere inserita nel file ``$HOME/.ssh/authorized_keys`` del server remoto al fine di autorizzare l'accesso all'utente. Questo file contiene l'elenco di tutte le chiavi pubbliche che (accoppiate con le chiavi private) garantiscono l'accesso al server da parte degli utenti.
 
-Per generare la coppia di chiavi pubblica/privata, che vengono salvate nei file ``id_ed25519`` e ``id_ed25519.pub`` nella cartella ``chiavi_ssh``, si utilizza il comando seguente (nota che l'estensione ``.pub`` viene aggiunta automaticamente al nome del file che contiene la chiave pubblica):
+Per aggiungere l'accesso di un nuovo utente, è necessario copiare la chiave **pubblica** dell'utente nel server, aggiungendola in coda al file.
 
-```bash
-ssh-keygen -t ed25519 -f $HOME/chiavi_ssh/id_ed25519 -C "chiave per server A"
-```
-
-Il commento, specificato nel comando precedente attraverso l'opzione ``-C`` (maiuscola) può essere utile ad indicare lo scopo d'uso o il server a cui è destinata una chiave. Si può cambiare utilizzando l'opzione ``-c -C commento`` (minuscola e maiuscola)
-
-```bash
-ssh-keygen -f $HOME/chiavi_ssh/id_ed25519 -c -C "chiave per server B"
-```
-
-La passphrase (frase di sblocco) viene richiesta, ma può essere omessa con le opzioni ``-q -N ""`` che indicano di non utilizzare una passphrase e di non richiederla quando si usa la chiave.
-
-```bash
-ssh-keygen -t ed25519 -f $HOME/chiavi_ssh/id_ed25519 -q -N ""
-```
-
-Per cambiare la passphrase, si utilizza il comando seguente:
-
-```bash
-ssh-keygen -f $HOME/chiavi_ssh/id_ed25519 -p
-```
-
-Le informazioni su una chiave possono essere recuperate attraverso il comando seguente, che si riporta insieme all'output per semplicità descrittiva:
-
-```bash
-ssh-keygen -l -f $HOME/chiavi_ssh/id_ed25519
-
-2048 SHA256: abacadaeaf1234567890 Comment for key xyz (ed25519)
-^^^^   ^^^^^^^^^^^^^^^^^^^^^^^^       ^^^^^^^^^^       ^^^
- |__ Size   Fingerprint __|     Comment __|     Type __|
-```
+Per generare la chiave pubblica e privata, vedere il capitolo dedicato.
 
 ### Configurazioni opzionali dell'autorizzazione con credenziali
 
@@ -304,9 +273,10 @@ systemctl reload sshd
 
 ### Configurazioni opzionali dell'autorizzazione con chiave privata/pubblica
 
-Il file ``$HOME/.ssh/authorized_keys`` contiene l'elenco di client a cui è permesso l'accesso al server.
+Il file ``$HOME/.ssh/authorized_keys``, memorizzato sul server, contiene l'elenco di tutte le chiavi pubbliche che (accoppiate con le chiavi private) garantiscono l'accesso al server da parte degli utenti.
 
-Per aggiungere l'accesso di un client, è necessario copiare la chiave **pubblica** del client nel server, come di seguito:
+<!--
+Si può utilizzare il comando apposta, come di seguito:
 
 ```bash
 ssh-copy-id -i $HOME/chiavi_ssh/id_ed25519.pub user@server
@@ -317,6 +287,8 @@ A questo punto si può accedere al server specificando la chiave:
 ```bash
 ssh -i $HOME/chiavi_ssh/id_ed25519 user@server
 ```
+
+-->
 
 Nel caso l'utente non sia autorizzato ad accedere attraverso la chiave pubblica, verificare che la cartella ``.ssh`` abbia i permessi ``700`` (``rwx`` solo per il proprietario), verificare che il file ``$HOME/.ssh/authorized_keys`` abbia i permessi ``600`` e verificare che nel file di configurazione del server ``/etc/ssh/sshd_config`` si stia leggendo il file ``authorized_keys`` corretto:
 
@@ -378,45 +350,15 @@ E' possibile specificare la porta alla quale connettersi e la chiave privata da 
 ssh -i $HOME/chiavi_ssh/id_ed25519 -p 22 user@server
 ```
 
-Dato che l'uso di una chiave privata prevede l'inserimento di una passphrase, per evitare che sia chiesta più e più volte all'utente si può utilizzare l'opzione seguente:
+Dato che l'uso di una chiave privata prevede l'inserimento di una passphrase, per evitare che questa sia chiesta più e più volte all'utente si può utilizzare l'opzione seguente:
 
 ```bash
 ssh -o "AddKeysToAgent=yes" io@192.168.1.50
 ```
 
-### Memorizzare la passphrase usando l'agente SSH
+Questa opzione memorizza la password in sessione la prima volta che viene chiesta, quindi evita le successive richieste di inserimento fino al termine della sessione o fino al riavvio.
 
-L'agente SSH si occupa di memorizzare la passphrase per tutta la durata della sessione SSH.
-
-Per verificare se l'agente SSH gestisce già delle chiavi, eseguire il comando:
-
-```bash
-ssh-add -l
-```
-
-Per affidargli una chiave, è necessario il comando:
-
-```bash
-ssh-add $HOME/chiavi_ssh/id_ed25519
-```
-
-Per rimuovere una chiave , è necessario il comando:
-
-```bash
-ssh-add -d $HOME/chiavi_ssh/id_ed25519
-```
-
-Quando una chiave viene aggiunta, è possibile effettuare il login automatico ad una shell, senza che sia richiesta la passphrase.
-
-```bash
-ssh -i $HOME/chiavi_ssh/id_ed25519 user@server
-```
-
-E' possibile affidare automaticamente la chiave all'agente, impostando la configurazione del client ``/etc/ssh/ssh_config`` con la voce seguente:
-
-```bash
-AddKeysToAgent yes
-```
+Esistono alcuni servizi che permettono di caricare in sessione la chiave privata al login e non richiederla all'utente.
 
 ### Eseguire comandi tramite SSH
 
@@ -477,7 +419,79 @@ Dato che la variabile ``$HOME`` è risolta prima di inviare il comando al server
 
 Un'altra attenzione da porre quando i comandi sono passati come argomento, è che non sono legati ad una sessione, quindi anche se si interrompe la comunicazione, i processi avviati rimangono attivi sulla macchina server. Per ovviare a questo problema, si può legare il comando ad un terminale, e quando si verifica un problema, la chiusura del terminale causa la terminazione del processo eseguito da remoto. La creazione del terminale avviene specificando l'opzione ``-t``.
 
-### Firmare e verificare file con SSH
+## Generare la coppia di chiavi pubblica/privata
+
+Per generare la coppia di chiavi pubblica/privata, che vengono salvate nei file ``id_ed25519.pub`` e ``id_ed25519`` nella cartella ``chiavi_ssh``, si utilizza il comando seguente (nota che l'estensione ``.pub`` viene aggiunta automaticamente al nome del file che contiene la chiave pubblica):
+
+```bash
+ssh-keygen -t ed25519 -f $HOME/chiavi_ssh/id_ed25519 -C "chiave per server A"
+```
+
+Il commento, specificato nel comando precedente attraverso l'opzione ``-C`` (maiuscola) può essere utile ad indicare lo scopo d'uso o il server a cui è destinata una chiave. Si può cambiare utilizzando l'opzione ``-c -C commento`` (minuscola e maiuscola)
+
+```bash
+ssh-keygen -f $HOME/chiavi_ssh/id_ed25519 -c -C "chiave per server B"
+```
+
+La passphrase (frase di sblocco) viene richiesta, ma può essere omessa con le opzioni ``-q -N ""`` che indicano di non utilizzare una passphrase e di non richiederla quando si usa la chiave.
+
+```bash
+ssh-keygen -t ed25519 -f $HOME/chiavi_ssh/id_ed25519 -q -N ""
+```
+
+Per cambiare la passphrase, si utilizza il comando seguente:
+
+```bash
+ssh-keygen -f $HOME/chiavi_ssh/id_ed25519 -p
+```
+
+Le informazioni su una chiave possono essere recuperate attraverso il comando seguente, che si riporta insieme all'output per semplicità descrittiva:
+
+```bash
+ssh-keygen -l -f $HOME/chiavi_ssh/id_ed25519
+
+2048 SHA256: abacadaeaf1234567890 Comment for key xyz (ed25519)
+^^^^   ^^^^^^^^^^^^^^^^^^^^^^^^       ^^^^^^^^^^       ^^^
+ |__ Size   Fingerprint __|     Comment __|     Type __|
+```
+
+Si ricorda che la chiave pubblica serve ad autorizzare l'accesso all'utente e deve essere copiata sul server.
+
+## Memorizzare la passphrase usando l'agente SSH
+
+L'agente SSH si occupa di memorizzare la passphrase per tutta la durata della sessione SSH.
+
+Per verificare se l'agente SSH gestisce già delle chiavi, eseguire il comando:
+
+```bash
+ssh-add -l
+```
+
+Per affidargli una chiave, è necessario il comando:
+
+```bash
+ssh-add $HOME/chiavi_ssh/id_ed25519
+```
+
+Per rimuovere una chiave è necessario il comando:
+
+```bash
+ssh-add -d $HOME/chiavi_ssh/id_ed25519
+```
+
+Quando una chiave viene aggiunta, è possibile effettuare il login automatico ad una shell, senza che sia richiesta la passphrase.
+
+```bash
+ssh -i $HOME/chiavi_ssh/id_ed25519 user@server
+```
+
+E' possibile affidare automaticamente la chiave all'agente, impostando la configurazione del client ``/etc/ssh/ssh_config`` con la voce seguente:
+
+```bash
+AddKeysToAgent yes
+```
+
+## Firmare e verificare file con SSH
 
 E' possibile firmare file, email e rami di git utilizzando SSH, e quindi anche verificare una firma.
 
