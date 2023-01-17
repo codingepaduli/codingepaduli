@@ -1,0 +1,3 @@
+{{ define "main" }}
+  {{ .Page.Plain | jsonify (dict "prefix"  " "  "indent"  "    ") }}
+{{ end }}

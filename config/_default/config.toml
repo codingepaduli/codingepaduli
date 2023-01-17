@@ -5,7 +5,6 @@ paginate = "20"
 
 theme = "mainroad" # hugo-academic mainroad watercss
 
-
 [params]
   author = "codingepaduli"
   subtitle = "Ennesimo sito/blog di programmazione ed informatica in generale"
@@ -23,6 +22,11 @@ theme = "mainroad" # hugo-academic mainroad watercss
 [mediaTypes]
   [mediaTypes."text/html"]
     suffixes = ["htm", "html", "HTM", "HTML"]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputs]
+  page = ["HTML"] # ADD "JSON" type to generate json files
 
 [markup]
   [markup.tableOfContents]
@@ -38,3 +42,4 @@ theme = "mainroad" # hugo-academic mainroad watercss
       codeFences = true
       guessSyntax = false
       tabWidth = 4
+
