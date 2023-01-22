@@ -528,10 +528,11 @@ ssh-keygen -Y verify -f allowed_signers -I alice@example.com -n file -s file_to_
 
 SSH permette la creazione di un canale sicuro di comunicazione tra client e server che può essere utilizzato per inviare e ricevere file.
 
-Il comando utilizzato è ``scp`` (dall'inglese "secure copy"), e prevede sia la copia di un file dal client al server che viceversa. La sintassi per specificare un file o una cartella sul server è la seguente:
+Il comando utilizzato è ``scp`` (dall'inglese "secure copy") e prevede sia la copia di un file dal client al server che viceversa. La sintassi per specificare un file o una cartella sul server è una delle seguenti:
 
 ```plaintext
-user@host:[port][/path]
+user@host:/path
+scp://user@host:port/path
 ```
 
 Come si può notare, ``user`` è l'utente che effettua l'accesso sul server, ``host`` indica il nome o l'indirizzo IP del server, ``port`` indica la porta sulla quale è in ascolto il processo e ``path`` indica il percorso del file da copiare o della cartella nella quale copiare il file.
@@ -539,25 +540,25 @@ Come si può notare, ``user`` è l'utente che effettua l'accesso sul server, ``h
 Il comando ``scp`` può quindi essere utilizzato per copiare un file presente su client nella cartella del server ``/home/user/cartella`` utilizzando la seguente sintassi:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_ed25519 file user@server:/home/user/cartella
+scp -i $HOME/chiavi_ssh/id_ed25519 -P 22 file user@server:/home/user/cartella
 ```
 
 Viceversa, un file presente sul server nella cartella ``/home/user/cartella/`` può essere copiato nella cartella ``cartella`` del client con la seguente sintassi:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_ed25519 user@server:/home/user/cartella/file cartella
+scp -i $HOME/chiavi_ssh/id_ed25519 -P 22 user@server:/home/user/cartella/file cartella
 ```
 
 Per copiare tutti i file presenti in una cartella si può utilizzare il carattere jolly ``*``, come nell'esempio seguente:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_ed25519 user@server:/home/user/cartella/* cartella
+scp -i $HOME/chiavi_ssh/id_ed25519 -P 22 user@server:/home/user/cartella/* cartella
 ```
 
 Per copiare ricorsivamente tutti i file e le cartelle presenti in una specifica cartella si può utilizzare l'opzione ``-r``, come nell'esempio seguente:
 
 ```bash
-ssh -i $HOME/chiavi_ssh/id_ed25519 -r user@server:/home/user/cartella cartella
+scp -i $HOME/chiavi_ssh/id_ed25519 -P 22 -r user@server:/home/user/cartella cartella
 ```
 
 ## SSH filesystem
