@@ -588,3 +588,29 @@ Per smontare la cartella, utilizzare il seguente comando:
 ```bash
 sudo umount /mnt/Remote
 ```
+
+## SSH Tunneling (Port forwarding)
+
+Con SSH si può permettere ai client di collegarsi su una porta di comunicazione di un primo server che, tramite un tunnel creato attraverso un canale SSH criptato, trasferisce i dati ad un secondo server.
+
+Questa tecnica permette ad un servizio che è in ascolto sull'interfaccia locale o sull'interfaccia di rete, e che quindi non è disponibile ai client che si collegano da remoto, di essere disponibile ai client remoti su un'altra porta.
+
+I tunnel possono essere di due tipi: locali o remoti.
+
+Il **local port forwarding** permette di avere una porta remota disponibile localmente, quindi i client si collegano in locale per comunicare i dati con server remoto.
+
+```plaintext
+ssh -L [<LocalAddress>]:<LocalPort>:<RemoteHost>:<RemotePort> sshUser@remoteServer
+```
+
+Il **remote port forwarding** permette di avere una porta locale disponibile su un server remoto, quindi i client si collegano al server remoto per comunicare i dati alla macchina locale.
+
+```plaintext
+ssh -R [<RemoteAddress>]:<RemotePort>:<LocalHost>:<LocalPort> sshUser@remoteServer
+```
+
+Nel caso il RemoteAddress non sia l'interfaccia ``localhost``, allora la selezione dell'indirizzo remoto deve essere abilitata nel file di configurazione del server alla voce ``GatewayPorts`` e prevede tre opzioni:
+
+- ``yes`` nel caso la porta remota sia resa disponibile sia in localhost che in rete locale che su internet;
+- ``no`` nel caso la porta remota sia resa disponibile solo su localhost;
+- ``clientspecified`` nel caso la porta remota sia resa disponibile sull'indirizzo specificato dal client.
