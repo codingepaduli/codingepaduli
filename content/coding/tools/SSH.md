@@ -302,7 +302,7 @@ Al salvataggio della configurazione deve essere poi riavviato il sistema o il se
 systemctl reload sshd
 ```
 
-## Installazione, configurazione ed uso del client SSH
+## Installazione ed uso del client SSH
 
 Il client SSH permette di collegarsi al server, autenticarsi ed utilizzare la shell di sistema.
 
@@ -312,12 +312,7 @@ L'installazione del client SSH avviene con il seguente comando:
 apt install openssh-client
 ```
 
-I file di configurazione utilizzati dal client si trovano nelle seguenti posizioni:
-
-- ``/etc/ssh/ssh_config``
-- files in ``/etc/ssh/ssh_config.d/*.conf``
-
-Il comando per l'accesso è il seguente:
+Il comando per l'accesso ad un server è il seguente:
 
 ```bash
 ssh user@192.168.1.50
@@ -358,7 +353,89 @@ ssh -o "AddKeysToAgent=yes" io@192.168.1.50
 
 Questa opzione memorizza la password in sessione la prima volta che viene chiesta, quindi evita le successive richieste di inserimento fino al termine della sessione o fino al riavvio.
 
-Esistono alcuni servizi che permettono di caricare in sessione la chiave privata al login e non richiederla all'utente.
+### Configurazione del client SSH
+
+I file di configurazione utilizzati dal client si trovano nelle seguenti posizioni:
+
+- ``/etc/ssh/ssh_config``
+- files in ``/etc/ssh/ssh_config.d/*.conf``
+
+Gli utenti possono creare il proprio file di configurazione ``$HOME/.ssh/config``. Questi file di configurazione sono utilizzati anche per gli altri programmi come ``scp`` , ``sftp`` e ``rsync``.
+
+Lo script per la creazione del file e dei permessi adatti è il seguente:
+
+```bash
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+touch ~/.ssh/config
+chmod 600 ~/.ssh/config
+```
+
+Il file di configurazione client ha è organizzato in sezioni, ogni sezione è relativa alla configurazione di un singolo host, infine c'è la sezione comune a tutti gli host. La sintassi è la seguente:
+
+```plaintext
+Host hostname1
+    SSH_OPTION value
+    SSH_OPTION value
+
+Host hostname2
+    SSH_OPTION value
+
+Host *
+    SSH_OPTION value
+```
+
+Un esempio di configurazione della connessione ad un host, indicando il nome utente, la porta ed il nome dominio è la seguente:
+
+```plaintext
+Host github
+    HostName github.com
+    User john
+    Port 1234
+```
+
+Con questa configurazione, si può utilizzare il seguente comando per collegarsi:
+
+```bash
+ssh github
+```
+
+Un esempio di configurazione della connessione ad un host, indicando la chiave privata, la porta, l'utente, il nome dominio, l'opzione per memorizzare la passphrase ed il livello di log desiderato è la seguente:
+
+```plaintext
+Host server
+    HostName 192.168.1.10
+    User server
+    Port 7654
+    IdentityFile ~/.ssh/server.key
+    AddKeysToAgent yes
+    LogLevel INFO
+```
+
+Un esempio di configurazione della connessione a differenti host con una sezione comune tra gli host è la seguente:
+
+```plaintext
+Host server
+    HostName 192.168.1.10
+    User admin
+    IdentityFile ~/.ssh/server.key
+    IdentitiesOnly yes
+
+Host github
+    HostName github.com
+    User john
+    Port 1234
+
+Host *
+    AddKeysToAgent yes
+    LogLevel INFO
+```
+
+Le opzioni inserite nel file di configurazione possono essere anche passate a linea di comando con l'opzione ``-o`` in forma ``chiave=valore``. In caso siano già presenti in un file di configurazione, le opzioni passate a linea di comando hanno priorità e quindi sovrascrivono quelle contenute nei file. Un esempio è il seguente:
+
+```bash
+ssh -o "AddKeysToAgent=yes" github
+```
 
 ### Eseguire comandi tramite SSH
 
