@@ -13,6 +13,12 @@ toc: false
 summary: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/interactivity02.js"]
 weight: 8620
+
+references:
+    -   title: "Animations with Processing"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://bleuje.com/tutorials/"
+        description: "Create animation based on loop from periodic function and offset, noise propagation and replacement technique with Processing"
 ---
 
 # Interattività ed animazioni
