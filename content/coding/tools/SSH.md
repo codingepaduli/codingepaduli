@@ -23,6 +23,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://infosec.mozilla.org/guidelines/key_management.html"
         description: "Mozilla recommendations about handling and management of cryptographic material"
+    -   title: "A visual guide to SSH tunnels"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://robotmoon.com/ssh-tunnels/"
+        description: "An extended guide on tunnels"
 ---
 
 # SSH
