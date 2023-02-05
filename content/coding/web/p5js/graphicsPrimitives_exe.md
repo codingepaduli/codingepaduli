@@ -104,14 +104,13 @@ Utilizzando le funzioni grafiche conosciute, disegnare un campo di calcio grande
 
 ## Disegno della rosa dei venti
 
-Utilizzando le funzioni grafiche conosciute e, le variabili ``width`` ed ``height`` messe a disposizione dalla libreria p5.js, disegnare la rosa dei venti, composta da:
+Realizzare una rosa dei venti come da figura allegata, composta da un quadrato esterno con inscritto un cerchio ed un quadrato interno.
 
-- Un quadrato con una distanza di 40 punti da tutti i bordi dell'area da disegno;
-- Un cerchio inscritto nel quadrato.
-- Le due diagonali del quadrato;
-- Il disegno del diametro del cerchio sia in orizzontale che in verticale.
+Il quadrato esterno ha un lato di dimensioni a piacere, mentre il lato del quadrato interno è un sesto (rispetto al lato del quadrato esterno).
 
-![p5.js - Esercizio di disegno della rosa dei venti](/static/coding/web/p5js/graphics-primitives_exe_rosa_venti.png "p5.js - Disegno della rosa dei venti")
+Le "ali" verticali ed orizzontali della rosa sono composte da triangoli che hanno come base un lato del quadrato interno. Le "ali" diagonali sono composte da triangoli che hanno come base una diagonale del quadrato interno. I vertici di tutte le ali terminano sul bordo del quadrato esterno.
+
+![p5.js - Esercizio di disegno della rosa dei venti](/static/coding/web/p5js/graphics-primitives_exe_rosa_dei_venti.png "p5.js - Disegno della rosa dei venti")
 
 ## Esercizi sugli angoli
 
