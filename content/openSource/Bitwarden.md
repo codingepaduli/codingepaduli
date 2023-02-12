@@ -38,7 +38,7 @@ Una volta scannerizzato il codice QR (o inserito a mano), l'app di autenticazion
 
 ![Bitwarden - Attivazione Two step login - verifica abilitata](/static/openSource/Bitwarden-TwoStepLogin3.png "Bitwarden - Attivazione Two step login - verifica abilitata")
 
-Si ricoda ancoda di prendere nota della “fingerprint phrase”, da utilizzarsi nel caso si cancelli per sbaglio i propri dati di accesso dall'applicazione di autenticazione OTP.
+Si ricorda ancora di prendere nota della “fingerprint phrase”, da utilizzarsi nel caso si cancelli per sbaglio i propri dati di accesso dall'applicazione di autenticazione OTP.
 
 A questo punto, installare l'estensione per il browser, ad esempio per Mozilla Firefox:
 
@@ -47,5 +47,17 @@ A questo punto, installare l'estensione per il browser, ad esempio per Mozilla F
 Durante la navigazione, quando si effettua il login ad un sito tramite utente e password, Bitwarden chiederà di memorizzare le credenziali.
 
 La seconda volta che l'utente ha necessità di effettuare il login sul sito, sarà possibile cliccare sull'icona dell'estensione di Bitwarden per far si che Bitwarden inserisca le credenziali di login (precedentemente memorizzate) al posto dell'utente.
+
+Tra le cose interessanti della cassaforte di Bitwarden troviamo i resoconti delle password e delle violazioni.
+
+![Bitwarden - Resoconti](/static/openSource/Bitwarden-Resoconti.png "Bitwarden - Resoconti")
+
+Un esempio di resoconto è quello delle violazioni dei dati, che indica che un determinato account può essere stato violato, come di seguito:
+
+![Bitwarden - Resoconto violazione dati account](/static/openSource/Bitwarden-Resoconti-violazione.png "Bitwarden - Resoconto violazione dati account")
+
+O si spera che non siano presenti violazioni.
+
+![Bitwarden - Resoconto nessuna violazione](/static/openSource/Bitwarden-Resoconti-no-violazione.png "Bitwarden - Resoconto nessuna violazione")
 
 Installa l'app da [F-Droid](/opensource/fdroid/ "F-Droid").
