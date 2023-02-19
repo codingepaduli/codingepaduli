@@ -33,9 +33,17 @@ L'unione delle caratteristiche precedentemente elencate permette al programmator
 
 Di seguito vengono descritte le principali funzionalità di base che permettono di gestire lo stato e interagire con i principali dispositivi, rimandando alla documentazione ufficiale gli approfondimenti dei concetti avanzati.
 
-## Aggiornamento area da disegno
+## Dimensioni area da disegno e finestra
 
-Quando il programmatore definisce le dimensioni dell'area da disegno, utilizzando la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate automaticamente nelle rispettive variabili ``width`` ed ``height``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e sono continuamente aggiornate ad ogni cambiamento delle dimensioni dell'area.
+Quando il programmatore definisce le dimensioni dell'area da disegno, utilizzando la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate automaticamente nelle rispettive variabili ``width`` ed ``height``.
+
+Le dimensioni della larghezza e dell'altezza della finestra corrente sono invece memorizzate nelle variabili ``windowWidth`` e ``windowHeight``.
+
+Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e possono essere utilizzate per adattare i contenuti alla grandezza dello schermo, che può variare da dispositivo a dispositivo.
+
+Dato che l'utente può ruotare lo schermo con tablet e smartphone, la variabile ``deviceOrientation`` indica se lo schermo è orientato in orizzontale o verticale;
+
+## Aggiornamento area da disegno
 
 L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi per secondo (in inglese frame per second), il cui acronimo è noto ai video-giocatori con la sigla "fps"); Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto, ma richiede una maggiore potenza di elaborazione.
 
