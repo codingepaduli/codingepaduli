@@ -18,6 +18,76 @@ summary: "Gradle è un sistema open source per automatizzare le fasi di compilaz
 
 Nel corso di questo articolo si descriveranno i concetti fondamentali (validi per qualsiasi tipo di progetto) e si utilizzerà Gradle per la gestione di un progetto Java.
 
+## Installazione di Gradle su Windows
+
+Gradle è un software Java.
+
+L'ambiente di esecuzione di Java è la Java Virtual Machine, di solito è installata su buona parte dei computer. Per verificare che sia già installata è possibile lanciare il comando ``java --version``. Se viene indicata la versione, allora la JVM è correttamente installato.
+
+```bash
+java --version
+java version "17.0.6+10"
+```
+
+L'ambiente di sviluppo di Java è il Java Development Kit, per verificare che la Java Development Kit sia installata correttamente, da linea di comando è possibile lanciare il comando ``javac -version``. Se viene indicata la versione, allora il Java Development Kit è correttamente installato.
+
+```bash
+javac -version
+javac 17.0.6
+```
+
+Se il Java Development Kit non è installato, lo si può scaricare ed installare dal sito [https://adoptium.net/](https://adoptium.net/)
+
+Una volta installato il Java Development Kit, si può proseguire nell'installazione di Gradle.
+
+Per installare Gradle dal gestore pacchetti Choco, si può eseguire il comando da powershell:
+
+```bash
+choco install gradle
+```
+
+<!--
+
+winget-cli non è supportato ancora
+
+Per installare Gradle dal gestore pacchetti winget-cli, si può eseguire il comando da powershell:
+
+```bash
+winget-cli install gradle
+```
+
+-->
+
+Se non si ha un gestore pacchetti, si può scaricare Gradle dal sito ufficiale. Non è previsto un pacchetto di installazione, per cui è necessario scaricare il pacchetto compresso ``gradle-8.0-bin.zip`` ed estrarlo in una cartella a piacere, come ``c:\gradle``;
+
+A questo punto, è necessario configurare il percorso nelle variabili d'ambiente del sistema operativo. Cliccare con il secondo tasto sull'icona del sistema e scegliere la voce di menu "Proprietà di sistema".
+
+![Windows - Configurare variabili ambiente](/static/coding/tools/Gradle-windows-config-00-variabili-ambiente.png)
+
+Cliccare sulla voce di menu "Impostazioni di sistema avanzate".
+
+![Windows - Configurare variabili ambiente](/static/coding/tools/Gradle-windows-config-01-variabili-ambiente.png)
+
+Cliccare sul pulsante "Variabili d'ambiente".
+
+![Windows - Configurare variabili ambiente](/static/coding/tools/Gradle-windows-config-02-variabili-ambiente.png)
+
+Nel caso non sia presente la variabile d'ambiente ``JAVA_HOME``, crearne una che punti alla cartella dove è installato Java:
+
+- il nome della variabile deve essere ``JAVA_HOME``;
+- il valore della variabile deve puntare alla cartella di installazione del JDK.
+
+![Windows - Variabile d'ambiente JAVA_HOME](/static/coding/tools/Gradle-windows-config-03-java-home.png)
+
+Allo stesso modo, è necessario creare una variabile d'ambiente che punti all'eseguibile Gradle. L'installazione con gestore pacchetti crea automaticamente la variabile, mentre l'installazione manuale prevede che sia l'utente a crearla:
+
+- il nome della variabile deve essere ``GRADLE_HOME``;
+- il valore della variabile deve puntare alla cartella di installazione di Gradle.
+
+![Windows - Variabile d'ambiente GRADLE_HOME](/static/coding/tools/Gradle-windows-config-04-gradle-home.png)
+
+<!-- TODO aggiungere gradle alla variabile PATH ?? -->
+
 ## Gestione progetto con Gradle
 
 ### Creazione progetto Java
@@ -45,6 +115,11 @@ Select implementation language:
   4: Kotlin
   5: Swift
 Enter selection (default: Java) [1..5] 3
+
+Split functionality across multiple project?
+  1: no - only one application project
+  2: yes - application and library project
+Enter selection (default: no) [1..2] 1
 
 Select build script DSL:
   1: Groovy
