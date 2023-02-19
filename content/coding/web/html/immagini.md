@@ -188,7 +188,7 @@ HD, invece, è preferibile mostrare immagini ad alta qualità, poiché
 generalmente questi dispositivi sono collegati in wi-fi o a reti veloci.
 
 Sempre nell'ottica dell'ottimizzazione dei tempi, si possono utilizzare
-tecniche di **lazy laoding**, ovvero di caricamento delle immagini solo
+tecniche di **lazy loading**, ovvero di caricamento delle immagini solo
 su richiesta.
 
 Partendo dal caso piú semplice, ovvero per mostrare un'unica immagine
@@ -352,7 +352,7 @@ Un esempio di mappa è la seguente:
 ```html
 <map name="planetmap">
     <area shape="rect" coords="0,0,82,126" alt="Terra" title="Terra" href="https://it.wikipedia.org/wiki/Terra" />
-<map/>
+</map>
 ```
 
 La mappa poi viene associata all'immagine indicando l'id della mappa
