@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-01-10
-publishdate: 2023-01-10
-lastmod: 2023-01-10
+date: 2023-02-14
+publishdate: 2023-02-14
+lastmod: 2023-02-14
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -46,6 +46,8 @@ summary: "Set di link relativi all'istruzione di base"
 
 #### Educazione civica
 
+[Colorful](https://www.mangaforever.net/7266256989/colorful-lanime-sul-suicidio-giovanile-in-home-video-con-anime-factory) - recensione di un anime su bullismo e suicidio giovanile premiato con medaglia d’onore dal governo giapponese\
+[La forma della voce](https://www.locchiodelcineasta.com/la-forma-della-voce-2016/#Trama_de_La_forma_della_voce) - recensione di un anime su bullismo, depressione, amicizia e perdono\
 [FIRMA DIGITALE](https://www.youtube.com/watch?v=NXF-deDg_C8) - INTRODUZIONE ALLA NORMATIVA - CORSO UDEMY DI FIRMA DIGITALE E STRUMENTI COLLEGATI - #02.1 - YouTube\
 [FIRMA DIGITALE](https://www.youtube.com/watch?v=1PWGHjTKnuA) - SCHEMA FUNZIONAMENTO DELLA PEC - CORSO UDEMY DI FIRMA DIGITALE E STRUMENTI COLLEGATI - #05.5 - YouTube\
 [Soft skills](https://www.tuttoscuola.com/soft-skills-cosa-inserirle-nella-tua-programmazione-didattica/) - cosa sono e come inserirle nella tua programmazione didattica - Tuttoscuola\
@@ -75,8 +77,6 @@ summary: "Set di link relativi all'istruzione di base"
 [Privacy e GDPR](https://www.youtube.com/watch?v=ZlcMTtwBeec) - Nuovo Regolamento Europeo sui dati personali - YouTube\
 [GDPR & PRIVACY NEL 2021](https://www.youtube.com/watch?v=PKgdhaWZ_80) - COSA DEVI SAPERE - YouTube\
 [Advanced Data Protection Control (ADPC)](https://www.dataprotectioncontrol.org/spec/) - \
-[La forma della voce](https://www.locchiodelcineasta.com/la-forma-della-voce-2016/#Trama_de_La_forma_della_voce) - recensione di un anime su bullismo, depressione, amicizia e perdono\
-[Colorful](https://www.mangaforever.net/7266256989/colorful-lanime-sul-suicidio-giovanile-in-home-video-con-anime-factory) - recensione di un anime su bullismo e suicidio giovanile premiato con medaglia d’onore dal governo giapponese\
 
 #### Informatica 1anno
 
@@ -122,6 +122,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Corso Power Point 2013](https://www.youtube.com/watch?v=oxCCWRhYRRo) - guida 01 / prima presentazione - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=NDC8firp0k4) - guida 02 / le note e il menu visualizza - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=8cX05x08Fi0) - guida 03 / collegamenti tra diapositive - YouTube\
+[La Stampa unione con Libreoffice](https://www.youtube.com/watch?v=tuSzepeVL58) - YouTube\
 
 ##### Libreoffice
 
@@ -161,6 +162,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Corso JavaScript Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9FUx06-avV66mS8LXz7_Bb) - YouTube\
 [Codeheir](https://codeheir.com/) - All the programming knowledge, in one bloody brilliant site.\
 [paiza.IO](https://paiza.io/en/) - Online editors and compilers for PHP/Java/C++... \
+[GitHub](https://github.com/emanuele/flowgorithm_linux) - emanuele/flowgorithm_linux: Installation instruction to use FlowGoRithm on Linux / Ubuntu 20.04\
 
 #### Sistemi e reti 3 anno
 
