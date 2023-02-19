@@ -32,13 +32,7 @@ Di seguito si riporta un esempio di codice per generare i titoli dei primi tre l
 
 che vengono poi trasformati dal browser come si vede di seguito:
 
-<!-- TODO replace with an image of titles ?? -->
-
-### Esempio di titolo di primo livello
-
-#### Esempio di titolo di secondo livello
-
-##### Esempio di titolo di terzo livello
+![Esempio di titoli](/static/coding/web/html/tagTesto-title-examples.png)
 
 ## Formattazione carattere
 
