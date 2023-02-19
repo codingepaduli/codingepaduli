@@ -58,7 +58,51 @@ Di seguito le schermate ed i passi del processo di installazione.
 
 ![username](/static/openSource/Debian/debian-installer-23-user.png)
 
-## Gestione partizioni
+## Gestione dischi e partizioni
+
+Il Sistema Operativo gestisce i dispositivi di memorizzazione di massa del computer. La gestione può essere un'operazione molto complessa, perché i dischi possono essere criptati, possono essere associati per formare un RAID (dall'inglese "Redundant Array of Independent Disks" ovvero "insieme ridondante di dischi indipendenti"), possono essere situati in sistemi "remoti" e quindi accessibili solo tramite rete.
+
+Per questo motivo, il kernel non si occupa di rendere disponibili i dischi, ma carica in memoria un disco chiamato ``initramfs`` (initial ram file system) che contiene i driver necessari alla gestione dei dischi. Saranno poi gli altri programmi, esterni al kernel, che si occuperanno di renderli disponibili durante l'avvio del sistema.
+
+Ogni disco può essere suddiviso in **partizioni**, ovvero unità logiche ed indipendenti di memorizzazione dati, gestite separatamente dal Sistema Operativo. Un disco contiene sempre almeno una partizione.
+
+L'elenco delle partizioni di un disco è contenuto nella tabella delle partizioni, che si trova sempre nella parte iniziale del disco.
+
+In passato la tabella delle partizioni era contenuta nel **MBR** (dall'inglese Master Boot Record), uno standard che limitava la dimensione dei dischi ad un massimo di due terabyte (TB).
+
+I dispositivi moderni invece memorizzano questa tabella nello standard **GPT** (dall'inglese GUID Partition Table) e non hanno il limite di dimensione del disco a due terabyte.
+
+Ogni sistema operativo ha le sue "regole" per identificare un disco o una partizione.
+
+Windows identifica ogni partizione con una lettera dell'unità. Quindi abbiamo le partizioni:
+
+- ``c:``
+- ``d:``
+- ``e:``
+- ...
+
+Linux identifica ogni disco con un file. Abbiamo quindi i dischi:
+
+- ``/dev/sda``
+- ``/dev/sdb``
+- ``/dev/sdc``
+- ...
+
+In ogni disco abbiamo poi le differenti partizioni, identificate a loro volta con un file. Abbiamo quindi:
+
+- Le partizioni del disco ``/dev/sda``:
+
+  - ``/dev/sda1``
+  - ``/dev/sda2``
+  - ``/dev/sda3``
+  - ...
+
+- Le partizioni del disco ``/dev/sdb``:
+
+  - ``/dev/sdb1``
+  - ``/dev/sdb2``
+  - ``/dev/sdb3``
+  - ...
 
 ![Metodo di partizionamento](/static/openSource/Debian/debian-installer-30-partitioning.png)
 
