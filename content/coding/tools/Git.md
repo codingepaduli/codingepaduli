@@ -874,5 +874,7 @@ La serie di articoli su Mokabyte:
 9. [http://www.mokabyte.it/2017/12/git-9/](http://www.mokabyte.it/2017/12/git-9/ "Mokabyte - Articolo 9 su Git");
 10. [http://www.mokabyte.it/2018/01/git-10/](http://www.mokabyte.it/2018/01/git-10/ "Mokabyte - Articolo 10 su Git");
 
+<!-- Vedi anche le funzionalità sparse checkout e partial clone -->
+
 Il libro su git:
 [https://www.git-scm.com/book/en/v2](https://www.git-scm.com/book/en/v2 "Libro Git SCM").
