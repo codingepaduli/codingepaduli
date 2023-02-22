@@ -231,8 +231,11 @@ docker-compose -f compose.yaml restart [service_name]
 docker-compose -f compose.yaml exec    [service_name] [command]
 docker-compose -f compose.yaml logs    [service_name]
 docker-compose -f compose.yaml top     [service_name]
-
 ```
+
+Alcuni modelli per installare le configurazioni più utilizzate sono i seguenti:
+
+- LAMP (Linux, Apache, MariaDB e PHP) + PhpMyAdmin : [composer.yml](/static/coding/tools/dockerfiles/lamp-docker-compose.yml)  
 
 ## Docker Swarm
 
