@@ -92,6 +92,6 @@ function draw() {
   
   */
   
-  //saveCanvas(canvas, 'loops_exe_01', 'png');
+  saveCanvas(canvas, 'loops_different_shapes_exe_01', 'png');
   noLoop();
 }
