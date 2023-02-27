@@ -10,7 +10,8 @@ keywords: ["open source", "software"]
 draft: false
 toc: false
 summary: "Software open source"
- # menu identifier and text to show
-menu: "main"
-linktitle: "Open Source"
+# show the page in the main menu
+menu:
+  main:
+    weight: 30
 ---

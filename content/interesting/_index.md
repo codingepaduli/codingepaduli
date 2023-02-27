@@ -1,6 +1,6 @@
 ---
 type: "interesting"
-title: "Interessanti"
+title: "Link interessanti"
 description: "Set di link interessanti di cui tener traccia"
 date: 2019-10-20
 publishdate: 2019-10-20
@@ -10,7 +10,8 @@ keywords: ["interesting"]
 draft: false
 toc: false
 summary: "Set di link interessanti di cui tener traccia"
-# menu identifier and text to show
-menu: "main"
-linktitle: "Interessanti"
+# show the page in the main menu
+menu:
+  main:
+    weight: 50
 ---

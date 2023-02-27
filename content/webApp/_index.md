@@ -1,6 +1,6 @@
 ---
 type: "webApp"
-title: "WebApp"
+title: "Web-App"
 description: "Applicazioni web eseguite direttamente nel browser"
 date: 2019-12-27
 publishdate: 2019-12-27
@@ -10,7 +10,8 @@ keywords: ["webApp"]
 draft: false
 toc: false
 summary: "Applicazioni web eseguite direttamente nel browser"
-# menu identifier and text to show
-menu: "main"
-linktitle: "WebApp"
+# show the page in the main menu
+menu:
+  main:
+    weight: 40
 ---

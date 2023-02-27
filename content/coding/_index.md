@@ -1,6 +1,6 @@
 ---
 type: "coding"
-title: "Coding e tools"
+title: "Coding"
 description: "Programmazione e strumenti connessi"
 date: 2019-07-19
 publishdate: 2019-07-19
@@ -11,7 +11,8 @@ draft: false
 toc: false
 notesforauthors: "Programmazione e strumenti connessi"
 summary: "Programmazione e strumenti connessi"
-# menu identifier and text to show
-menu: "main"
-linktitle: "Coding e tools"
+# show the page in the main menu
+menu:
+  main:
+    weight: 10
 ---
