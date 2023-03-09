@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-02-14
-publishdate: 2023-02-14
-lastmod: 2023-02-14
+date: 2023-03-08
+publishdate: 2023-03-08
+lastmod: 2023-03-08
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -188,6 +188,7 @@ summary: "Set di link relativi all'istruzione di base"
 [CISCO PACKET TRACER 5](https://www.youtube.com/watch?v=5N82rMZa3Vo) - Il protocollo DHCP - YouTube\
 [CISCO PACKET TRACER 6](https://www.youtube.com/watch?v=RiI91YP80lI) - PROTOCOLLO ARP - YouTube\
 [CISCO PACKET TRACER 7](https://www.youtube.com/watch?v=4-4yK3VNJBQ) - routing table - YouTube\
+[Packet Tracer](https://www.youtube.com/watch?v=lk3yXYFkqQM) - Routing Statico - YouTube\
 [CISCO PACKET TRACER 8](https://www.youtube.com/watch?v=HF5Ds7Fzpjo) - http e DNS server - YouTube\
 [CISCO PACKET TRACER 9](https://www.youtube.com/watch?v=rhj-zlrtAdw) - NAT - YouTube\
 [CISCO PACKET TRACER 10](https://www.youtube.com/watch?v=ZaSJoiHppZg) - Protocolli e livelli di rete - YouTube\

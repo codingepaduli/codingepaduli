@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2022-11-25
-publishdate: 2022-11-25
-lastmod: 2022-11-25
+date: 2023-03-08
+publishdate: 2023-03-08
+lastmod: 2023-03-08
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -166,6 +166,7 @@ summary: "Set di link relativi al coding"
 [Text To Speech Converter](https://dev.to/valeshgopal/text-to-speech-converter-4i2j) - DEV Community\
 [Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
 [Stable Diffusion Image generation](https://huggingface.co/spaces/stabilityai/stable-diffusion) - a Hugging Face Space by stabilityai\
+[Scribble Diffusion](https://scribblediffusion.com/) - \
 
 ### Database SQL e NoSql - GraphQL
 
