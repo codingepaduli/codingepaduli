@@ -21,13 +21,44 @@ Usa la libreria **p5.js** per il rendering delle scene grafiche e **plank** come
 
 Questo progetto, supportato dalla Processing Foundation, introduce gli utenti alla programmazione di videogiochi ed al paradigma ad oggetti.
 
-La struttura basilare del programma rimane quasi la stessa, con l'unica differenza di utilizzare un oggetto Canvas per indicare l'area del disegno.
+La struttura basilare del programma rimane quasi la stessa, con l'unica differenza di utilizzare un oggetto Canvas per creare l'area del disegno.
 
-# TODO
+```javascript
+function setup() {
+    new Canvas(250, 100);
+}
+
+function draw() {
+    background('blue');
+}
+```
 
 L'inclusione di un progetto p5.play in una pagina web richiede l'inclusione nel header della pagina delle seguenti librerie:
 
-# TODO
+```javascript
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>p5play Example</title>
+    </head>
+    <body>
+
+        <script src="p5.min.js"></script>
+        <script src="p5.sound.min.js"></script>
+        <script src="planck.min.js"></script>
+        <script src="p5play.js"></script>
+        <script>
+            function setup() {
+                new Canvas(250, 100);
+                new Sprite();
+            }
+
+            function draw() {
+                background('blue');
+            }
+        </script>
+    </body>
+</html>
 
 ## Oggetti principali
 
@@ -38,4 +69,3 @@ Nei videogiochi come Mario Bros, Sonic, Arknoid i vari livelli sono composti dai
 La parola **world**, dall'inglese "mondo" rappresenta tutti gli oggetti sui quali il motore fisico calcola gli spostamenti, le collisioni e sui quali applica la forza di gravità per ogni frame da disegnare. Questo calcolo avviene anche per gli oggetti fuori dallo schermo, a patto che la loro posizione nel piano non superi un certo limite. Quando un qualsiasi oggetto supera questo limite, avviene l'operazione di **cull**, dall'inglese "abbattimento selettivo", con la quale si mette l'oggetto in uno stato di riposo e considerato "fuori" dal mondo escluso dai calcoli del motore fisico.
 
 <!-- Todo Concetti di programmazione a oggetti ? -->
-
