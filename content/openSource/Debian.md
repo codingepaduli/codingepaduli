@@ -14,9 +14,9 @@ summary: "Debian GNU/Linux, il sistema operativo universale e completamente Libe
 
 # Debian GNU/Linux
 
-[https://www.debian.org/](Debian GNU/Linux), il sistema operativo universale e completamente Libero.
+[Debian GNU/Linux](https://www.debian.org/), il sistema operativo universale e completamente Libero.
 
-Come per l'installazione degli altri sistemi operativi, si consiglia di preparare una penna USB con [https://www.ventoy.net/en/index.html](Ventoy), un tool open source per creare una penna USB avviabile (bootable, ovvero capace di avviare il sistema).
+Come per l'installazione degli altri sistemi operativi, si consiglia di preparare una penna USB con [Ventoy](https://www.ventoy.net/en/index.html), un tool open source per creare una penna USB avviabile (bootable, ovvero capace di avviare il sistema).
 
 Effettuato ciò, scarichiamo il file ISO di Debian, lo copiamo sulla pennetta USB e quindi avviamo il computer dalla pennetta.
 
