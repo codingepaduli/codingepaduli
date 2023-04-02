@@ -1,25 +1,43 @@
 ---
 type: "tools"
-title: "Docker"
-description: "Docker - Uno strumento per gestire i container"
+title: "Docker Engine e Podman"
+description: "Docker Engine e Podman - Strumenti per gestire i container"
 date: 2022-06-13
 publishdate: 2022-06-13
-lastmod: 2022-06-13
+lastmod: 2023-04-02
 weight: 1000
 categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
 draft: true
 toc: true
-summary: "Docker - Uno strumento per gestire i container"
+summary: "Docker Engine e Podman - Strumenti per gestire i container"
 ---
 
-# Docker CLI
+# Docker Engine e Podman
 
-[Docker]("https://www.docker.com/") è uno strumento che permette la gestione dei containers.
+[Docker Engine]("https://www.docker.com/") e [Podman]("https://podman.io/") sono strumenti a linea di comando per la gestione dei container. Podman e Docker Engine sono compatibili, anche se differiscono in alcuni concetti.
 
-I containers, a differenza delle macchine virtuali, non sono composti da un sistema operativo separato, per cui richiedono meno memoria e meno consumo della CPU per essere eseguiti.
+[lazydocker](https://github.com/jesseduffield/lazydocker) è un'interfaccia per terminale che permette di gestire i container.
+
+[Portainer](https://www.portainer.io/) è un'interfaccia web che permette di gestire l'intero cloud, sia esso Kubernetes, Docker, Swarm and Nomad.
+
+Docker Engine è una tecnologia client/server, quindi un demone in background con i permessi di amministratore gestisce tutti i container, mentre la linea di comando interagisce con il server (demone).
+
+Docker Desktop realizza una virtual machine (necessaria su Windows e su Mac, ma creata anche su Linux per far si che gli utenti abbiano la stessa esperienza d'uso) nella quale è in esecuzione Docker Engine. Inoltre fornisce l'interfaccia grafica per gestire Docker Engine
+
+Podman è definito rootless perché gestisce i container come processi dell'utente, quindi non ha un server e non necessita dei permessi di amministrazione. Podman permette la gestione dei pod.
+
+I **container**, a differenza delle macchine virtuali, non sono composti da un sistema operativo separato, per cui richiedono meno memoria e meno consumo della CPU per essere eseguiti.
 
 Grazie all'isolamento delle risorse (CPU, memoria, I/O a blocchi, rete), il sistema operativo sottostante crea una sorta di ambiente "virtuale" in cui il container viene eseguito e solo con questo ambiente "virtuale" il container può interagire.
+
+Un **pod** è un gruppo di uno o più container che condividono le risorse di rete (come le porte esposte) ed i volumi di archiviazione. Tutti i container di un pod sono schedulati insieme per l'esecuzione o l'attesa. Tipicamente, un pod ha un container vuoto che non fa altro che prendere possesso del namespaces associato e permettere la connessione agli altri container del pod. Avviare o fermare un pod consiste nell'avviare o fermare tutti i container contenuti nel pod.
+
+Gli **orchestratori** sono software che permettono di effettuare il deploy e di gestire migliaia di container. Tra gli orchestratori più famosi troviamo Kubernetes, OpenShift, Nomad e LXD.
+
+I **service registry** ed i **service discovery service** sono software che permettono la comunicazione tra migliaia di container, in particolare permettono ad un container di conoscere il servizio (eseguito in un container) al quale inviare la richiesta.
+
+I servizi di **monitoring** permettono di monitorare la rete, i log files, le web requests ed i database utilizzati dai container, possono prevedere dei report ed inviare notifiche di alert. Tra questi software troviamo Grafana, Graphite, InfluxDB, Prometheus.
 
 ## Gestione delle immagini
 
@@ -93,14 +111,14 @@ Nella creazione del container possono essere utilizzate le seguenti opzioni:
 - ``-e VARIABLE=VALUE`` crea nel container una variabile d'ambiente con uno specifico valore;
 - ``--entrypoint path/to/run`` indica il comando da eseguire quando si avvia il container. Si può specificare un valore vuoto ``""`` per sovrascrivere un eventuale valore predefinito;
 - ``-p "port:containerPort"`` associa una porta locale ad una del container;
-- ``--restart "policy";`` controla se il container deve avviarsi automaticamente all'uscita (exit) o quando Docker viene restartato. Valori validi per la policy sono: ``no`` (never), ``on-failure`` (exit code > 0), ``unless-stopped`` (not manually stopped), ``always``;
+- ``--restart "policy";`` controlla se il container deve avviarsi automaticamente all'uscita (exit) o quando si effettua il restart di Docker. Valori validi per la policy sono: ``no`` (never), ``on-failure`` (exit code > 0), ``unless-stopped`` (not manually stopped), ``always``;
 - ``-v "volume:containerPath"`` monta una directory (chiamata volume) all'interno del container (deprecata, usa l'opzione ``-m``);
 - ``--mount "type=bind,source=sourcePath,target=targetPath"`` monta una directory (chiamata volume) all'interno del container (new, use ``--mount``, NOT ``-v``);
 - ``-u $(id -u):$(id -g)`` esegue il container come utente non-root, con i permessi dell'utente e del gruppo indicati;
 
-## Esecuzione in modalità "attached" e "detached"
+### Esecuzione in modalità "attached" e "detached"
 
-I comandi di ``start`` e ``run`` permettono l'esecuzione del container. La differenza è che il comando ``start`` avvia un container gia esistente, mentre il comando di ``run`` crea un container partendo da un'immagine e poi esegue il conntainer.
+I comandi di ``start`` e ``run`` permettono l'esecuzione del container. La differenza è che il comando ``start`` avvia un container gia esistente, mentre il comando di ``run`` crea un container partendo da un'immagine e poi esegue il container.
 
 Il comando di ``exec`` permette di eseguire un comando all'interno di un container gia esistente.
 
@@ -215,9 +233,9 @@ docker system prune --volumes
 
 Il Dockerfile è pensato per creare un'immagine, non un container, quindi non bisogna confonderlo con "docker-compose".
 
-Il comando docker-compose permette di gestire più containers con lo stesso comando, infatti si parla di applicazioni multi-containers. Il file compose.yaml descrive i vari containers ed indica per ogni container il nome da assegnare, le porte da aprire, i volumi da montare, il comando da eseguire, ecc...
+Il comando docker-compose permette di gestire più container con lo stesso comando, infatti si parla di applicazioni multi-container. Il file compose.yaml descrive i vari container ed indica per ogni container il nome da assegnare, le porte da aprire, i volumi da montare, il comando da eseguire, ecc...
 
-La gestione di più containers (specificati nel file compose.yaml) è simile alla gestione del singolo container, per cui di seguito si riportano i comandi:
+La gestione di più container (specificati nel file compose.yaml) è simile alla gestione del singolo container, per cui di seguito si riportano i comandi:
 
 ```bash
 docker-compose -f compose.yaml up
@@ -250,3 +268,32 @@ Inizializzare swarm:
 ```bash
 docker swarm init
 ```
+
+<!--
+
+## Dockerfile
+
+Un dockerfile è un documento che descrive come costruire un immagine.
+
+```bash
+FROM node
+
+ENV MONGO_INITDB_ROOT_USERNAME=admin \
+    MONGO_INITDB_ROOT_PASSWORD=password
+
+RUN mkdir -p /home/app
+
+COPY . /home/app
+
+WORKDIR /home/app
+
+CMD ["node","server.js"]
+```
+
+Per costruire un immagine a partire dal Dockerfile:
+
+```bash
+docker build -t my-app:1.0 .
+```
+
+-->
