@@ -15,6 +15,18 @@ summary: "Docker Engine e Podman - Strumenti per gestire i container"
 
 # Docker Engine e Podman
 
+I **container** sono degli ambienti isolati in cui le applicazioni vengono eseguite. A differenza delle macchine virtuali, non sono composti da un sistema operativo separato, per cui richiedono meno memoria e meno consumo della CPU per essere eseguiti.
+
+Grazie all'isolamento delle risorse (CPU, memoria, I/O a blocchi, rete), il sistema operativo sottostante crea una sorta di ambiente "virtuale" isolato in cui il container viene eseguito e solo con questo ambiente "virtuale" isolato il container può interagire.
+
+Un **pod** rappresenta un'istanza eseguibile di un'applicazione e permette la distribuzione e gestione delle applicazioni in un ambiente cloud. Può essere composto da uno o più container che condividono le risorse di memoria, di rete (come le porte esposte) e di archiviazione (come i volumi) e che sono schedulati insieme per l'esecuzione o l'attesa. Avviare o fermare un pod consiste nell'avviare o fermare tutti i container contenuti nel pod. Un pod ha un container vuoto che non fa altro che prendere possesso del namespaces associato e permettere la connessione agli altri container del pod.
+
+Gli **orchestratori** sono software che permettono di effettuare la distribuzione (il deploy) e la gestione di migliaia di container. Tra gli orchestratori più famosi troviamo Kubernetes, OpenShift, Nomad e LXD.
+
+I **service registry** ed i **service discovery service** sono software che permettono la comunicazione tra migliaia di container, in particolare permettono ad un container di conoscere il servizio (eseguito in un container) al quale inviare la richiesta.
+
+I servizi di **monitoring** permettono di monitorare la rete, i log files, le web requests ed i database utilizzati dai container, possono prevedere dei report ed inviare notifiche di alert. Tra questi software troviamo Grafana, Graphite, InfluxDB, Prometheus.
+
 [Docker Engine]("https://www.docker.com/") e [Podman]("https://podman.io/") sono strumenti a linea di comando per la gestione dei container. Podman e Docker Engine sono compatibili, anche se differiscono in alcuni concetti.
 
 [lazydocker](https://github.com/jesseduffield/lazydocker) è un'interfaccia per terminale che permette di gestire i container.
@@ -25,21 +37,9 @@ Docker Engine è una tecnologia client/server, quindi un demone in background co
 
 Docker Desktop realizza una virtual machine (necessaria su Windows e su Mac, ma creata anche su Linux per far si che gli utenti abbiano la stessa esperienza d'uso) nella quale è in esecuzione Docker Engine. Inoltre fornisce l'interfaccia grafica per gestire Docker Engine.
 
-Podman è definito rootless perché gestisce i container come processi dell'utente, quindi non ha un server e non necessita dei permessi di amministrazione. Podman permette la gestione dei pod.
+Podman è definito rootless perché gestisce i container come processi dell'utente, quindi non necessita dei permessi di amministrazione. Non richiede la presenza di un server ed inoltre permette la gestione dei pod.
 
 Podman Desktop è l'interfaccia grafica di Podman.
-
-I **container**, a differenza delle macchine virtuali, non sono composti da un sistema operativo separato, per cui richiedono meno memoria e meno consumo della CPU per essere eseguiti.
-
-Grazie all'isolamento delle risorse (CPU, memoria, I/O a blocchi, rete), il sistema operativo sottostante crea una sorta di ambiente "virtuale" in cui il container viene eseguito e solo con questo ambiente "virtuale" il container può interagire.
-
-Un **pod** è un gruppo di uno o più container che condividono le risorse di rete (come le porte esposte) ed i volumi di archiviazione. Tutti i container di un pod sono schedulati insieme per l'esecuzione o l'attesa. Tipicamente, un pod ha un container vuoto che non fa altro che prendere possesso del namespaces associato e permettere la connessione agli altri container del pod. Avviare o fermare un pod consiste nell'avviare o fermare tutti i container contenuti nel pod.
-
-Gli **orchestratori** sono software che permettono di effettuare il deploy e di gestire migliaia di container. Tra gli orchestratori più famosi troviamo Kubernetes, OpenShift, Nomad e LXD.
-
-I **service registry** ed i **service discovery service** sono software che permettono la comunicazione tra migliaia di container, in particolare permettono ad un container di conoscere il servizio (eseguito in un container) al quale inviare la richiesta.
-
-I servizi di **monitoring** permettono di monitorare la rete, i log files, le web requests ed i database utilizzati dai container, possono prevedere dei report ed inviare notifiche di alert. Tra questi software troviamo Grafana, Graphite, InfluxDB, Prometheus.
 
 ## Gestione delle immagini
 
@@ -173,7 +173,7 @@ docker container inspect httpd-container
 docker container stats   httpd-container
 ```
 
-## Docker logs
+## Logs
 
 E' possibile visualizzare i logs di un container che è in esecuzione in background utilizzando il comando:
 
@@ -181,7 +181,7 @@ E' possibile visualizzare i logs di un container che è in esecuzione in backgro
 docker logs httpd-container
 ```
 
-## Docker volume
+## Volumi
 
 I volumi sono semplicemente cartelle locali montate nel container (comando mount).
 
@@ -219,7 +219,7 @@ Le soluzioni ai punti indicati in precedenza sono:
 3. Se sulla macchina ospitante un file appartiene all'utente **x** e gruppo **y** e questo file è condiviso con un container che ha bisogno di accedervi con l'utente **w** e gruppo **z**, si consiglia di aggiungere anche sul container il gruppo **y** e di aggiungere l'utente **w** al gruppo **y**, in modo da rendere accessibile il file all'utente **w**;
 4. Nel Dockerfile è sempre utile specificare l'utente col quale eseguire il container e dare a questo utente il permesso di accesso ai file copiati durante la creazione dell'immagine, utilizzando i classici comandi Linux ``chown`` e ``chmod``.
 
-## Docker Network
+## Network
 
 Docker permette di collegare i container in una o più reti.
 
@@ -251,11 +251,54 @@ docker network disconnect [NETWORK_NAME] [CONTAINER_NAME]
 docker system prune --volumes
 ```
 
+## Pods
+
+Per creare, avviare, stoppare, mettere in pausa (non consuma CPU, ma è in memoria), riprendere dalla pausa, riavviare, visualizzare lo stato, visualizzare i log ed infine eliminare un pod, si utilizzano i seguenti comandi:
+
+```bash
+podman pod create --name nome_pod
+podman pod  start        nome_pod
+podman pod  stop         nome_pod
+podman pod  pause        nome_pod
+podman pod  unpause      nome_pod
+podman pod  restart      nome_pod
+podman pod  ps           nome_pod
+podman pod  logs         nome_pod
+podman pod  rm           nome_pod
+```
+
+Per aggiungere o rimuovere un container in un pod si utilizzano i seguenti comandi:
+
+```bash
+podman pod add  nome_pod  nome_container
+podman pod rm   nome_pod  nome_container
+```
+
+E' possibile visualizzare i pod creati con il comando seguente:
+
+```bash
+podman pod ls
+```
+
+E' possibile creare un file YAML di definizione con la sintassi richiesta da Kubernetes a partire dal pod creato, usando il seguente comando:
+
+```bash
+podman generate kube my-pod >> my-pod.yaml
+```
+
+Questo comando è ancora in fase beta, per cui può generare numerose variabili d'ambiente che necessitano di pulizia.
+
+Una volta che si ha il file YAML di definizione (con la sintassi richiesta da Kubernetes), si può creare il pod con il seguente comando:
+
+```bash
+podman play kube ./my-pod.yaml
+```
+
 ## Docker compose
 
 Il Dockerfile è pensato per creare un'immagine, non un container, quindi non bisogna confonderlo con "docker-compose".
 
-Il comando docker-compose permette di gestire più container con lo stesso comando, infatti si parla di applicazioni multi-container. Il file compose.yaml descrive i vari container ed indica per ogni container il nome da assegnare, le porte da aprire, i volumi da montare, il comando da eseguire, ecc...
+Il comando docker-compose permette di gestire più container con lo stesso comando, infatti si parla di applicazioni multi-container. Il file ``compose.yaml`` descrive i vari container ed indica per ogni container il nome da assegnare, le porte da aprire, i volumi da montare, il comando da eseguire, ecc...
 
 La gestione di più container (specificati nel file compose.yaml) è simile alla gestione del singolo container, per cui di seguito si riportano i comandi:
 
@@ -293,23 +336,47 @@ docker swarm init
 
 <!--
 
-## Dockerfile
+## Creazione di immagini
+
+Esistono 2 formati di immagine: quelle di Docker e quelle OCI.
+
+Le immagini Docker sono basate su un formato proprietario e sono eseguite principalmente in un ambiente Docker come Docker Swarn. Sono create a partire da un file ``Dockerfile`` che descrive il processo di creazione dell'immagine.
+
+Le immagini OCI (Open Container Initiative) sono basate su uno standard aperto e pubblico e sono progettate per essere utilizzate in qualsiasi runtime di container che supporti lo standard OCI.
+
+Nonostante la differenza, gli orchestratori come Kubernetes e Nomad sono in grado di eseguire immagini Docker.
 
 Un dockerfile è un documento che descrive come costruire un immagine.
 
 ```bash
-FROM node
+FROM python:3.9-slim
 
-ENV MONGO_INITDB_ROOT_USERNAME=admin \
-    MONGO_INITDB_ROOT_PASSWORD=password
+# ARG consente di definire parametri che possono essere
+# passati al Dockerfile durante la creazione dell'immagine
+ARG MY_ENV=production
+ENV MY_ENV $MY_ENV
 
-RUN mkdir -p /home/app
+# Creo un gruppo 'app' ed un utente appartenente al gruppo 'app'
+RUN addgroup -S app && adduser -S app -G app --home /home/app
 
-COPY . /home/app
+# Creo una directory e imposto i permessi per l'utente app
+RUN mkdir -p /app
+RUN chown -R myuser:myuser /app
 
-WORKDIR /home/app
+# Uso l'utente per eseguire i processi
+USER app
 
-CMD ["node","server.js"]
+# Imposto la directory di lavoro
+WORKDIR /app
+
+# Copio tutti i file da . in /app
+COPY --chown=app:app  . /app
+
+# Installo le dipendenze
+RUN pip3 install -r requirements.txt
+
+# Eseguo il comando
+CMD [ "python3", "app.py" ]
 ```
 
 Per costruire un immagine a partire dal Dockerfile:
