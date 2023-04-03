@@ -23,9 +23,11 @@ summary: "Docker Engine e Podman - Strumenti per gestire i container"
 
 Docker Engine è una tecnologia client/server, quindi un demone in background con i permessi di amministratore gestisce tutti i container, mentre la linea di comando interagisce con il server (demone).
 
-Docker Desktop realizza una virtual machine (necessaria su Windows e su Mac, ma creata anche su Linux per far si che gli utenti abbiano la stessa esperienza d'uso) nella quale è in esecuzione Docker Engine. Inoltre fornisce l'interfaccia grafica per gestire Docker Engine
+Docker Desktop realizza una virtual machine (necessaria su Windows e su Mac, ma creata anche su Linux per far si che gli utenti abbiano la stessa esperienza d'uso) nella quale è in esecuzione Docker Engine. Inoltre fornisce l'interfaccia grafica per gestire Docker Engine.
 
 Podman è definito rootless perché gestisce i container come processi dell'utente, quindi non ha un server e non necessita dei permessi di amministrazione. Podman permette la gestione dei pod.
+
+Podman Desktop è l'interfaccia grafica di Podman.
 
 I **container**, a differenza delle macchine virtuali, non sono composti da un sistema operativo separato, per cui richiedono meno memoria e meno consumo della CPU per essere eseguiti.
 
@@ -161,7 +163,7 @@ docker container run --name hugo --entrypoint "" node bash -l -c "/usr/bin/pando
 docker container run --name hugo --entrypoint "" node bash
 ```
 
-## Container inspection CLI
+## Container inspection
 
 Per poter ispezionare un container, guardando i processi in esecuzione, la configurazione e le statistiche in tempo reale, si usano i comandi:
 
@@ -179,7 +181,7 @@ E' possibile visualizzare i logs di un container che è in esecuzione in backgro
 docker logs httpd-container
 ```
 
-## Docker volume CLI
+## Docker volume
 
 I volumi sono semplicemente cartelle locali montate nel container (comando mount).
 
@@ -196,6 +198,26 @@ Per visualizzare e rimuovere tutti i volumi non più collegati ad alcun containe
 docker volume ls -f dangling=true
 docker volume prune
 ```
+
+### Il problema dei permessi nei volumi
+
+I container non hanno un sistema operativo, e quindi non hanno un kernel, ma sono dei semplici processi che girano sul kernel della macchina ospitante in un ambiente isolato.
+
+Quando la macchina ospitante ed i container condividono delle cartelle (bind mounts), i file creati all'interno del container sono visibili alla macchina ospitante e viceversa. Questa condivisione porta ad un punto dolente: l'appartenenza dei file ad un utente o un gruppo ed i relativi permessi di accesso.
+
+Facciamo alcuni esempi:
+
+1. Quando un container viene eseguito come utente **root**, tutti i file creati appartengono all'utente root. Se questi file vengono creati in una cartella condivisa con la macchina ospitante, l'utente della macchina ospitante non può accedere a questi file;
+2. Quando un file viene creato da un processo che gira come utente **x** (ad esempio da Apache che gira come utente www-data), i file creati da quel processo appartengono all'utente **x** (nell'esempio di Apache questi file appartengono all'utente www-data). Se questi file vengono creati in una cartella condivisa con la macchina ospitante, l'utente della macchina ospitante non può accedere a questi file;
+3. Quando creo un file in una cartella condivisa col container, il file avrà i permessi dell'utente presente sulla macchina ospitante. Potenzialmente, un processo in esecuzione come utente x non può accedere a questi file che appartengono all'utente presente sulla macchina ospitante;
+4. Quando creo un'immagine per un container (a partire da un Dockerfile), i file che copio nel container possono non essere accessibili all'utente del container che li deve utilizzare.
+
+Le soluzioni ai punti indicati in precedenza sono:
+
+1. eseguire sempre il container come utente non root, impostando a linea di comando l'opzione ``-u USERID:GROUPID``;
+2. Se sul container un processo è in esecuzione come utente **x** e gruppo **y** si consiglia di aggiungere anche sulla macchina ospitante l'utente che esegue il container al gruppo **y**, in modo da rendere accessibile il file all'utente che esegue il container;
+3. Se sulla macchina ospitante un file appartiene all'utente **x** e gruppo **y** e questo file è condiviso con un container che ha bisogno di accedervi con l'utente **w** e gruppo **z**, si consiglia di aggiungere anche sul container il gruppo **y** e di aggiungere l'utente **w** al gruppo **y**, in modo da rendere accessibile il file all'utente **w**;
+4. Nel Dockerfile è sempre utile specificare l'utente col quale eseguire il container e dare a questo utente il permesso di accesso ai file copiati durante la creazione dell'immagine, utilizzando i classici comandi Linux ``chown`` e ``chmod``.
 
 ## Docker Network
 
