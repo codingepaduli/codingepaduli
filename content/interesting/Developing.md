@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2023-03-08
-publishdate: 2023-03-08
-lastmod: 2023-03-08
+date: 2023-04-02
+publishdate: 2023-04-02
+lastmod: 2023-04-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -66,64 +66,16 @@ summary: "Set di link relativi al coding"
 #### Containers
 
 [Get Started with containers](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/) - Mircosoft explains what Containers, Docker and Kubernetes are\
-[microservices build with containers](https://opensource.com/article/19/11/microservices-cheat-sheet) - key terminologies in the microservices ecosystem and some of the open source software available to build out a microservices architecture; \
-[podman.io](https://podman.io/) - Manage pods, containers, and container images; \
-[Lazydocker](https://github.com/jesseduffield/lazydocker) - The lazier way to manage everything docker\
 [docker-slim](https://github.com/docker-slim/docker-slim) - Minify and Secure your Docker\
-[Docker Hub](https://www.docker.com/products/docker-hub) - Container Image Library | Docker\
-[Try Nomad](https://endler.dev/2019/maybe-you-dont-need-kubernetes/) - Maybe You Don't Need Kubernetes\
-[Install Docker Engine](https://docs.docker.com/install/) - Community | Docker Documentation\
 [Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
-[Docker](https://dev.to/pssingh21/docker-97j) - DEV Community 👩‍💻👨‍💻\
 [From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/) - \
-[portainer/portainer](https://github.com/portainer/portainer) - Making Docker management easy.\
-[Behind the scenes with Linux containers | Opensource.com](https://opensource.com/article/18/11/behind-scenes-linux-containers) - \
-[Podman](https://developers.redhat.com/blog/2020/11/19/transitioning-from-docker-to-podman/) - Transitioning from Docker to Podman - Red Hat Developer\
-[Jonathan Bergknoff](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/) - Run More Stuff in Docker\
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
-[You Don't Need to Rebuild Your Development Docker Image on Every Code Change · vsupalov.com](https://vsupalov.com/rebuilding-docker-image-development/) - \
-[File Permissions](https://blog.gougousis.net/file-permissions-the-painful-side-of-docker/) - the painful side of Docker – Coding Thoughts\
 [Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
 [Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
-[Docker](https://dev.to/pssingh21/docker-97j) - DEV Community\
-[Play with Docker](https://www.docker.com/play-with-docker/) - Docker\
+[Moving from docker-compose to Podman pods | Enable Sysadmin](https://www.redhat.com/sysadmin/compose-podman-pods) - \
 
 ### Ansible, Shell, CI, CD ed automazione
 
-[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
-[Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
-[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
-[Integration Test con Maven e Docker](https://codingjam.it/integration-test-con-maven-e-docker/) - \
-[Puppeteer](https://codingjam.it/puppeteer-usare-chrome-come-un-api/) - usare Chrome come un API\
-[Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
-[mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
-[xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
-[Creating Pipeline in Jenkins](https://dev.to/rshiva/creating-pipeline-in-jenkins-1bkd) - DEV Community\
-[QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
-[QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
-[Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
-[QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
-[QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
-[QR-Code-generator/QrSegment at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
-
-#### Ansible
-
-[Ansible Tutorial](https://www.softwaretestinghelp.com/ansible-tutorial-1/) - Installation, Configuration and Usage with Modules\
-[Create your Playbook](https://symfonycasts.com/screencast/ansible/playbook#play) - Ansible for Automation\
-[Using Testinfra with Ansible to verify server state](https://opensource.com/article/19/5/using-testinfra-ansible-verify-server-state) - \
-[10 Ansible modules you need to know](https://opensource.com/article/19/9/must-know-ansible-modules) - \
-[How Ansible brought peace to my home](https://opensource.com/article/19/9/ansible-documentation-kids-laptops) - \
-[Building container images with the ansible-bender tool](https://opensource.com/article/19/10/building-container-images-ansible) - Learn how to use Ansible to execute commands in a container.\
-[How to install software with Ansible | Opensource.com](https://opensource.com/article/20/9/install-packages-ansible) - \
-[10 Ansible modules for Linux system automation | Opensource.com](https://opensource.com/article/20/10/ansible-modules-linux) - \
-[My first day using Ansible | Opensource.com](https://opensource.com/article/20/10/first-day-ansible) - \
-[Getting started with Ansible | XLAB Steampunk blog](https://steampunk.si/blog/getting-started-with-ansible/) - \
-[4 lines of code to improve your Ansible play | Opensource.com](https://opensource.com/article/21/1/improve-ansible-play) - \
-[5 everyday sysadmin tasks to automate with Ansible | Opensource.com](https://opensource.com/article/21/3/ansible-sysadmin) - \
-[GitHub](https://github.com/mikecali/6_sysadmin_tasks) - mikecali/6_sysadmin_tasks\
-[5 ways to process JSON data in Ansible | Opensource.com](https://opensource.com/article/21/4/process-json-data-ansible) - \
-[Collect Failed Task Details in Ansible](https://dev.to/email2vimalraj/collect-failed-task-details-in-ansible-4hcf) - DEV Community\
 
 #### PowerShell
 
@@ -141,6 +93,22 @@ summary: "Set di link relativi al coding"
 [Cargo](https://opensource.com/article/20/3/rust-cargo) - the Rust package manager\
 [Appimage, Snapcraft e Flatpak](https://www.lffl.org/2020/04/appimage-snapcraft-e-flatpak-i-formati-di-distribuzione-per-linux-a-confronto.html) - i formati di distribuzione per Linux a confronto\
 [Windows Package Manager](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - Preview\
+[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
+[Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
+[Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
+[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
+[Integration Test con Maven e Docker](https://codingjam.it/integration-test-con-maven-e-docker/) - \
+[Puppeteer](https://codingjam.it/puppeteer-usare-chrome-come-un-api/) - usare Chrome come un API\
+[Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
+[mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
+[xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
+[Creating Pipeline in Jenkins](https://dev.to/rshiva/creating-pipeline-in-jenkins-1bkd) - DEV Community\
+[QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
+[QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
+[Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
+[QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
+[QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
+[QR-Code-generator/QrSegment at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
 
 ### AI
 
@@ -388,6 +356,7 @@ summary: "Set di link relativi al coding"
 [How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - \
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
+[mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -564,6 +533,7 @@ summary: "Set di link relativi al coding"
 [Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
 [site.Params.mainSections](https://gohugo.io/functions/where/#mainsections) - To list the most relevant pages on the front page | Hugo\
 [razonyang/hugo-theme-bootstrap: A fast, responsive, multipurpose and feature-rich Hugo theme.](https://github.com/razonyang/hugo-theme-bootstrap) - \
+[Universal | Hugo Themes](https://themes.gohugo.io/themes/hugo-universal-theme/) - \
 
 #### Pandoc
 
@@ -837,3 +807,4 @@ summary: "Set di link relativi al coding"
 [Handsfree.js](https://handsfree.js.org/) - \
 [Pose | Handsfree.js](https://handsfree.js.org/ref/model/pose.html#with-config) - \
 [flap.js – flappy-pose](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - \
+

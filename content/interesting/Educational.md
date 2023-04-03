@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-03-08
-publishdate: 2023-03-08
-lastmod: 2023-03-08
+date: 2023-04-02
+publishdate: 2023-04-02
+lastmod: 2023-04-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -178,6 +178,12 @@ summary: "Set di link relativi all'istruzione di base"
 [Come creare più partizioni in un hard disk](https://www.youtube.com/watch?v=t5Zr19mson0) - YouTube\
 [ryunosinfx/reedsolomon.es](https://github.com/ryunosinfx/reedsolomon.es) - This is Reed-Solomon coding module which is porting from Zxing open source project written in Java.\
 [QR Code Tutorial](https://www.thonky.com/qr-code-tutorial/) - Thonky.com\
+[Computer Networking Introduction](https://iximiuz.com/en/posts/computer-networking-101/) - Ethernet and IP (Heavily Illustrated)\
+[Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) - Wikipedia\
+[Networking cables](https://en.wikipedia.org/wiki/Networking_cables) - Wikipedia\
+[AI robot wrestling with open source | Opensource.com](https://opensource.com/article/23/2/ai-robot-wrestling-open-source) - \
+[webots.cloud](https://webots.cloud/proto) - proto\
+[Modulazione di larghezza d'impulso](https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso) - Wikipedia\
 
 #### Sistemi e reti 4anno
 
