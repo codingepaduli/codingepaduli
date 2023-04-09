@@ -4,7 +4,7 @@ title: "p5play Lez. 01 - Introduzione al motore di gioco p5play"
 description: "Introduzione al motore di gioco p5play"
 date: 2023-03-21
 publishdate: 2023-03-21
-lastmod: 2023-03-21
+lastmod: 2023-04-10
 categories: ["coding", "web", "p5play"]
 keywords: ["coding", "web", "p5play"]
 draft: true
@@ -92,7 +92,6 @@ sprite.radius = 60;         // alias di sprite.r
 sprite.diameter = 60;       // alias di sprite.d
 
 sprite.rotation = 45;       // rotazione rispetto all'asse X
-sprite.rotationSpeed = 45;  // rotazione continua rispetto all'asse X
 
 sprite.direction = 'up';    // direzione di movimento
 
@@ -154,14 +153,15 @@ circle.collider = 'dynamic';
 
 Le proprietà fisiche di uno Sprite sono le seguenti:
 
-Uno Sprite può avere una **velocità** di movimento lungo l'asse X e Y. Questa velocità può essere modificata dalla forza di gravità che il motore fisico applica.
+Uno Sprite può avere una **velocità** di movimento lungo gli assi X e Y, misurate in pixel al secondo, ed una velocità di rotazione rispetto all'asse X, misurata in gradi al secondo. Queste velocità possono essere modificate dalla forza di gravità e dalle collisioni che il motore fisico applica.
 
-Si può assegnare ad uno Sprite una certa velocità di movimento, misurata in pixel al secondo, come nel seguente esempio:
+Per ad uno Sprite le velocità di movimento e di rotazione si può far riferimento al seguente esempio:
 
 ```javascript
-let circle = new Sprite(40, 155, 80);
-circle.vel.x = 2;
-circle.vel.y = 2;
+let rectangle = new Sprite(40, 30, 50, 80);
+rectangle.vel.x = 2;
+rectangle.vel.y = 2;
+rectangle.rotationSpeed = 45;  // rotazione continua rispetto all'asse X
 ```
 
 Uno Sprite può avere una **massa** che determina la sua resistenza ai movimenti e alle collisioni con altri oggetti. Maggiore è la massa, maggiore sarà l'effetto di una forza applicata.
@@ -204,25 +204,130 @@ circle.rotationLock = true;
 
 ## Costruttori
 
-Uno Sprite si crea attraverso i costruttori seguenti:
+Nella programmazione ad oggetti, un oggetto può essere costruito attraverso i costruttori, che si occupano di allocare in memoria l'oggetto e di inizializzare le sue proprietà. La classe Sprite definisce molti costruttori, ognuno adatto ad un particolare scopo.
 
-```javascript
-let rectangle = new Sprite(x, y, width, height, colliderType);
-let circle = new Sprite(x, y, diameter, colliderType);
-let line = new Sprite(x, y, [length, angle], colliderType);
-let regularPolygon = new Sprite(x, y, sideLength, polygonName, colliderType);
-let polygon = new Sprite(x, y, [length, angle, repeat], colliderType);
+### Costruttore per oggetti di forma rettangolare
+
+Il costruttore per oggetti di forma rettangolare ha la firma seguente:
+
+```plaintext
+Syntax: new Sprite(x, y, width, height, colliderType)
+
+Parameters:
+  x             Number: the x-coordinate
+  y             Number: the y-coordinate
+  width         Number: width of the Sprite
+  height        Number: height of the Sprite
+  colliderType  String: the collider type
 ```
 
-Il primo costruttore crea un rettangolo di larghezza e lunghezza indicati;
-Il secondo costruttore crea un cerchio di diametro indicato;
-Il terzo crea una linea partendo dal vettore che indica lunghezza e angolo;
-Il quarto crea un poligono regolare di lato indicato, con la forma che va dal triangolo al dodecagono.
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, i parametri formali ``width`` ed ``height`` rappresentano la larghezza e l'altezza dello Sprite. Il parametro formale ``colliderType`` indica il tipo di collisore.
+
+Per creare uno Sprite con collisore dinamico a coordinate x=20 ed y=30, con larghezza 15 ed altezza 35 punti, sostituiamo al parametro formale ``x`` il valore ``20``, al parametro formale ``y`` il valore ``30``, al parametro formale ``width`` il valore ``15``, al parametro formale ``height`` il valore ``35`` ed infine al parametro formale ``colliderType`` il valore ``dynamic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
 
 ```javascript
-let rectangle = new Sprite(40, 30, 50, 80, 'static');
-let circle = new Sprite(40, 155, 80, 'dynamic');
-let line = new Sprite(40, 30, [150, 90], 'kinematic');
-let regularPolygon = new Sprite(250, 100, 80, 'pentagon', 'none');
-let polygon = new Sprite(250, 100, [30, 360/16, 16], 'none');
+let sprite = new Sprite(20, 30, 15, 35, 'dynamic');
 ```
+
+### Costruttore per oggetti di forma rotonda
+
+Il costruttore per oggetti di forma rotonda ha la firma seguente:
+
+```plaintext
+Syntax: new Sprite(x, y, diameter, colliderType)
+
+Parameters:
+  x             Number: the x-coordinate
+  y             Number: the y-coordinate
+  diameter      Number: diameter of the Sprite
+  colliderType  String: the collider type
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, il parametro formale ``diameter`` rappresenta il diametro del cerchio. Il parametro formale ``colliderType`` indica il tipo di collisore.
+
+Per creare uno Sprite con collisore statico a coordinate x=50 ed y=30, con diametro 35, sostituiamo al parametro formale ``x`` il valore ``50``, al parametro formale ``y`` il valore ``30``, al parametro formale ``diameter`` il valore ``35`` ed infine al parametro formale ``colliderType`` il valore ``static`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
+
+```javascript
+let sprite = new Sprite(50, 30, 35, 'static');
+```
+
+### Costruttore per oggetti linea
+
+Il costruttore degli oggetti di tipo linea ha la firma seguente:
+
+```plaintext
+Syntax: new Sprite(x, y, vector[], colliderType)
+
+Parameters:
+  x             Number: the x-coordinate
+  y             Number: the y-coordinate
+  vector        Array:  the length and the angle of the Sprite
+  colliderType  String: the collider type
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, i parametro formale ``vector`` è un array che contiene lunghezza ed angolo della linea, il parametro formale ``colliderType`` indica il tipo di collisore.
+
+Per creare uno Sprite senza collisore a coordinate x=80 ed y=30, con lunghezza 35 ed angolo 45 gradi, sostituiamo al parametro formale ``x`` il valore ``80``, al parametro formale ``y`` il valore ``30``, al parametro formale ``vector`` un array contenente due valori, la lunghezza ``35`` e l'angolo ``45``. L'ultimo parametro formale ``colliderType`` assegniamo il valore ``none`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
+
+```javascript
+let sprite = new Sprite(80, 30, [35, 45], 'static');
+```
+
+### Costruttore di poligoni regolari per nome
+
+Costruttore di poligoni regolari permette la costruzione di poligoni a partire dal nome del poligono. Ha la seguente firma:
+
+```plaintext
+Syntax: new Sprite(x, y, length, polygonName, colliderType)
+
+Parameters:
+  x             Number: the x-coordinate
+  y             Number: the y-coordinate
+  sideLength    Number: the length of the polygon side
+  polygonName   String: the polygon name
+  colliderType  String: the collider type
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, il parametro formale ``length`` rappresenta la lunghezza del lato del poligono, il parametro formale ``polygonName`` rappresenta il nome (in inglese) del poligono ed infine il parametro formale ``colliderType`` indica il tipo di collisore.
+
+Il parametro formale polygonName può assumere solo uno dei seguenti valori: ``triangle`` (triangolo), ``square`` (quadrato), ``pentagon`` (pentagono), ``hexagon`` (esagono), ``septagon`` (ettagono), ``octagon`` (ottagono), ``enneagon`` (ennagono), ``decagon`` (decagono), ``endecagono`` (endecagono) ed infine ``dodecagon`` (dodecagono).
+
+Per creare uno Sprite con collisore cinematico a coordinate x=120 ed y=30 di forma esagonale con lato 40, sostituiamo al parametro formale ``x`` il valore ``80``, al parametro formale ``y`` il valore ``30``, al parametro formale ``length`` il valore 40, al parametro formale ``polygonName`` il valore ``hexagon`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi). L'ultimo parametro formale ``colliderType`` assegniamo il valore ``kinematic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
+
+```javascript
+let sprite = new Sprite(20, 30, 'hexagon', 'kinematic');
+```
+
+### Costruttore per ripetizione
+
+Il costruttore per ripetizione permette di costruire uno Sprite ripetendo due semplici passi:
+
+1. costruisce un lato di lunghezza indicata;
+2. applica un certo angolo a partire dal quale costruire il lato successivo;
+3. se il numero di ripetizioni indicato non è stato raggiunto, esegue un'altra esecuzione dei punti 1. 2. e 3.
+
+Questo costruttore permette di disegnare tutti gli altri poligoni regolari, quali il tridecagono, tetradecagono, pentadecagono, esadecagono, ettadecagono, ottadecagono, ennadecagono, icosagono, e qualsiasi altro poligono (n-agono).
+
+Per disegnare un poligono regolare di n lati, basta applicare un angolo pari a 360/n ed il numero di ripetizioni pari a n. Ad esempio, per disegnare l'esadecagono, basta applicare un angolo pari a 360/16 ed il numero di ripetizioni pari a 16.
+
+La firma di questo costruttore è la seguente:
+
+```plaintext
+Syntax: new Sprite(x, y, vector[], colliderType)
+
+Parameters:
+  x             Number: the x-coordinate
+  y             Number: the y-coordinate
+  vector        Array:  sideLength, angle and number of repetition
+  colliderType  String: the collider type
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, il parametro formale ``vector`` è un array contenente tre valori, la lunghezza del lato, l'angolo da utilizzare per disegnare il lato successivo ed il numero di ripetizioni da raggiungere. Infine il parametro formale ``colliderType`` indica il tipo di collisore.
+
+Per creare uno Sprite dell'esadecagono con collisore cinematico a coordinate x=170 ed y=30 con lato 25, sostituiamo al parametro formale ``x`` il valore ``170``, al parametro formale ``y`` il valore ``30``, al parametro formale ``vector`` un array contenente tre valori, la lunghezza del lato``25``, l'angolo ``360/16`` (possiamo lasciare l'espressione matematica) ed il numero di ripetizioni ``16``. L'ultimo parametro formale ``colliderType`` assegniamo il valore ``kinematic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi). Invochiamo il costruttore nel seguente modo:
+
+```javascript
+let sprite = new Sprite(20, 30, [25, 360/16, 16], 'kinematic');
+```
+
+## Metodi per movimento e collisioni
