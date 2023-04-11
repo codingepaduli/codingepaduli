@@ -547,3 +547,56 @@ Per impostare il punto di rotazione di uno Sprite a coordinate x=30 e y=50, sost
 ```javascript
 sprite.offsetCenter(30, 50);
 ```
+
+## Metodi per movimenti in serie
+
+E' possibile definire una sequenza di movimenti ed invocarla una volta o ripetutamente. Per creare una sequenza di movimenti, semplicemente si dichiara una funzione ed in questa funzione si inseriscono tutte le istruzioni di movimento desiderate.
+
+Sono però necessarie due accortezze:
+
+1. La prima è che questa funzione deve essere dichiarata con la parola ``async`` che in JavaScript sta ad indicare che l'esecuzione avviene in parallelo (in contemporanea) rispetto al flusso di esecuzione principale.
+
+2. La seconda è che tutte le funzioni di movimento invocate all'interno devono essere precedute dalla parola chiave ``await``, che in JavaScript sta ad indicare che si deve attendere il completamento di un'istruzione prima di passare alla successiva.
+
+Ad esempio, per muovere uno Sprite di 100 punti in una direzione, poi ruotare di 90 gradi e muovere di altri 100 punti, possiamo realizzare la seguente funzione:
+
+```javascript
+async function movimentoConAngolo() {
+    await sprite.move(100);
+    await sprite.rotate(90);
+    await sprite.move(100);
+}
+```
+
+La funzione creata deve poi essere invocata nella funzione ``setup``, come nel seguente esempio:
+
+```javascript
+let sprite;
+
+function setup() {
+    new Canvas(160, 160);
+    sprite = new Sprite(30, 50, 30);
+
+    movimentoConAngolo();
+}
+```
+
+E' possibile creare un ciclo continuo di movimenti in serie, semplicemente  invocando la funzione creata al termine dei movimenti, e quindi eseguire i movimenti nella funzione ``setup``, come nel seguente esempio:
+
+```javascript
+let sprite;
+
+function setup() {
+    new Canvas(160, 160);
+    sprite = new Sprite(30, 50, 30);
+
+    movimentoConAngolo();
+}
+
+async function movimentoConAngolo() {
+    await sprite.move(100);
+    await sprite.rotate(90);
+    await sprite.move(100);
+    movimentoConAngolo();    // ciclo continuo
+}
+```
