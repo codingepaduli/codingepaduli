@@ -156,7 +156,7 @@ Il termine significa anche "logorato", e lo si utilizza soprattutto quando si pa
 Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche pagina web non aggiornata:
 
 ```html
-<acronym title="as soon as possible">ASAP</acronym> -->
+<acronym title="as soon as possible">ASAP</acronym>
 <big>This text is big</big>
 ```
 

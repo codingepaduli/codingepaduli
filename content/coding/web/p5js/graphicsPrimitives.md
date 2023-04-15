@@ -287,7 +287,7 @@ Anche il disegno di un testo nell'area da disegno è considerato una primitiva g
 Syntax: text(str, x, y, [x2], [y2])
 
 Parameters
-    str     String: the alphanumeric symbols to be displayed
+    str  String:    the alphanumeric symbols to be displayed
     x    Number:    x-coordinate of text
     y    Number:    y-coordinate of text
     x2   Number:    by default, the width of the text box (Optional)
