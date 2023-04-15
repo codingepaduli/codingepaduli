@@ -8,16 +8,37 @@ lastmod: 2023-04-02
 weight: 1000
 categories: ["coding", "tools"]
 keywords: ["coding", "tools"]
-draft: true
-toc: true
+draft: false
+toc: false
 summary: "Docker Engine e Podman - Strumenti per gestire i container"
 ---
 
 # Docker Engine e Podman
 
-I **container** sono degli ambienti isolati in cui le applicazioni vengono eseguite. A differenza delle macchine virtuali, non sono composti da un sistema operativo separato, per cui richiedono meno memoria e meno consumo della CPU per essere eseguiti.
+Il principio di utilizzo dei container è molto semplice:
+
+- Si scarica l'immagine del container;
+- Si crea un container (o anche più di uno) a partire dall'immagine;
+- Si esegue un processo all'interno del container creato (comunemente si dice che si esegue il container).
+
+Questi tre passi si eseguono con i seguenti comandi:
+
+```bash
+docker pull hello-world  # Scarica l'immagine hello-world
+docker run hello-world   # Esegue il container 
+```
+
+Il primo comando scarica l'immagine ``hello-world``.
+
+Il secondo comando crea il container a partire dall'immagine ``hello-world`` ed esegue il processo nel container.
+
+## Definizioni
+
+I **container** sono degli ambienti isolati in cui le applicazioni vengono eseguite.
 
 Grazie all'isolamento delle risorse (CPU, memoria, I/O a blocchi, rete), il sistema operativo sottostante crea una sorta di ambiente "virtuale" isolato in cui il container viene eseguito e solo con questo ambiente "virtuale" isolato il container può interagire.
+
+La differenza rispetto ad una macchina virtuale è notevole, perché i container non sono composti da un sistema operativo separato. Questo implica minor memoria e minor consumo della CPU per eseguire un processo su un container rispetto ad una macchina virtuale. Inoltre sul container non sono necessari antivirus o operazioni di aggiornamento del sistema operativo come per una macchina virtuale.
 
 Un **pod** rappresenta un'istanza eseguibile di un'applicazione e permette la distribuzione e gestione delle applicazioni in un ambiente cloud. Può essere composto da uno o più container che condividono le risorse di memoria, di rete (come le porte esposte) e di archiviazione (come i volumi) e che sono schedulati insieme per l'esecuzione o l'attesa. Avviare o fermare un pod consiste nell'avviare o fermare tutti i container contenuti nel pod. Un pod ha un container vuoto che non fa altro che prendere possesso del namespaces associato e permettere la connessione agli altri container del pod.
 
@@ -26,6 +47,8 @@ Gli **orchestratori** sono software che permettono di effettuare la distribuzion
 I **service registry** ed i **service discovery service** sono software che permettono la comunicazione tra migliaia di container, in particolare permettono ad un container di conoscere il servizio (eseguito in un container) al quale inviare la richiesta.
 
 I servizi di **monitoring** permettono di monitorare la rete, i log files, le web requests ed i database utilizzati dai container, possono prevedere dei report ed inviare notifiche di alert. Tra questi software troviamo Grafana, Graphite, InfluxDB, Prometheus.
+
+## Programmi di gestione dei container
 
 [Docker Engine]("https://www.docker.com/") e [Podman]("https://podman.io/") sono strumenti a linea di comando per la gestione dei container. Podman e Docker Engine sono compatibili, anche se differiscono in alcuni concetti.
 
