@@ -25,7 +25,7 @@ Questi tre passi si eseguono con i seguenti comandi:
 
 ```bash
 docker pull hello-world  # Scarica l'immagine hello-world
-docker run hello-world   # Esegue il container 
+docker run hello-world   # Esegue il container
 ```
 
 Il primo comando scarica l'immagine ``hello-world``.
