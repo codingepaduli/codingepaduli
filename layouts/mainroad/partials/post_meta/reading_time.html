@@ -1,0 +1,7 @@
+<div class="meta__item-reading meta__item">
+    {{ $word := cond (gt .ReadingTime 1) "minuti" "minuto" }}
+	<span class="meta__text">
+        Tempo di lettura {{ .ReadingTime }} {{ $word }} 
+        ( {{ .WordCount }} parole)
+    </span>
+</div>
