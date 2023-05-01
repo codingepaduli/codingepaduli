@@ -189,4 +189,4 @@ Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un p
 </html>
 ```
 
-L'indicazione della lingua italiana per la pagina web e l'indicazione aggiuntiva del paragrafo in lingua spagnola aiuta enormemente sia gli strumenti di traduzione, sia gli strumenti di lettura ad alta voce a leggere correttamente il testo, sia e tradurlo correttamente in un altra lingua.
+L'indicazione della lingua italiana per la pagina web e l'indicazione aggiuntiva del paragrafo in lingua spagnola aiuta enormemente sia gli strumenti di lettura ad alta voce a leggere correttamente il testo, sia gli strumenti di traduzione a tradurre correttamente il testo dalla lingua indicata verso una seconda lingua.
