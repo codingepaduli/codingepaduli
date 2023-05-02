@@ -1,0 +1,309 @@
+---
+type: "p5js"
+title: "p5.js Lez. 04 - Variabili"
+description: "Usare le variabili per creare animazioni e memorizzare lo stato"
+date: 2023-05-02
+publishdate: 2023-05-02
+lastmod: 2023-05-02
+spellcheck: 2023-05-02
+categories: ["coding", "web", "p5.js"]
+keywords: ["coding", "web", "p5.js"]
+draft: true
+toc: false
+summary: "Usare le variabili per creare animazioni e memorizzare lo stato"
+weight: 8680
+---
+
+# Variabili
+
+Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato.
+
+In processing sono tipicamente utilizzate per memorizzare immagini, suoni, frasi o valori numerici, come le coordinate ed il diametro di un cerchio o il colore di un rettangolo.
+
+L'istruzione che il programmatore utilizza in un programma per creare una variabile è l'istruzione di **dichiarazione di variabile**, che assegna un nome ed un tipo di dato alla variabile e la **alloca** in memoria.
+
+La dichiarazione avviene con la parola chiave ``let`` seguita dai nomi delle variabili separate da virgola. Un esempio è il seguente:
+
+```javascript
+let x, y, d;
+```
+
+E' possibile assegnare un valore iniziale alle variabili utilizzando l’operatore di assegnazione ``=`` seguito dal valore.
+
+```javascript
+let x = 20;
+let y = 100;
+let d = 50;
+```
+
+Quando in una variabile si vuole memorizzare una frase, è necessario che questa sia racchiusa tra doppi apici.
+
+```javascript
+let frase = "Hello";
+let nome = "John";
+```
+
+In processing le variabili sono dichiarate ad inizio del programma. Di seguito un esempio completo:
+
+```javascript
+let x = 100;
+let y = 150;
+let d = 50;
+let frase = "Hello world!";
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  circle(x, y, d);
+  text(frase, 10, 10);
+}
+```
+
+## Istruzione di input ``prompt``
+
+In programmazione le funzioni di input sono quelle funzioni che permettono ad un programma di ricevere dati dall'esterno. Le funzioni di input permettono all'utente di inserire in input i dati che il programma utilizza per effettuare calcoli.
+
+La funzione progettata allo scopo è ``prompt``, la cui firma è la seguente:
+
+```plaintext
+Syntax: prompt(msg)
+
+Parameters:
+    msg    String: message to show
+
+Return:
+    the input value
+```
+
+Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici.
+
+Il valore inserito dall'utente è memorizzato all'interno di una variabile.
+
+Un esempio d'uso della funzione è il seguente:
+
+```javascript
+let x; 
+
+x = prompt("inserisci un valore");
+```
+
+Dato che questa funzione blocca il programma in attesa di un input dell'utente, deve essere utilizzata nella funzione ``setup``, come nel seguente esempio:
+
+```javascript
+let x = 100;
+let y = 150;
+let d;
+let frase;
+
+function setup() {
+  createCanvas(400, 400);
+  d = prompt("inserisci il diametro");
+  frase = prompt("inserisci una frase");
+}
+
+function draw() {
+  background(220);
+  circle(x, y, d);
+  text(frase, 100, 30);
+}
+```
+
+## Istruzione di output ``text``
+
+In programmazione le funzioni di output sono quelle funzioni che producono un risultato visibile all'utente o al sistema in cui viene eseguito il programma. Le funzioni di output determinano cosa viene stampato a schermo, mostrato su un'interfaccia utente o salvato in un file.
+
+La funzione ``text`` è un esempio di funzione di output, infatti è utilizzata per visualizzare testo o variabili in output nell'area da disegno, inserendo come primo parametro della funzione la variabile da mostrare e specificando come successivi parametri le coordinate in cui si desidera visualizzare il testo.
+
+Ad esempio, se si vuole visualizzare il valore della variabile ``j`` nell'area da disegno, si può utilizzare la seguente sintassi:
+
+```javascript
+text(j, 10, 50);
+```
+
+In questo caso, il primo parametro attuale è la variabile ``j``, i successivi parametri attuali sono le coordinate ``10`` e ``50``.
+
+## Assegnazione di un valore casuale
+
+E' possibile assegnare ad una variabile un numero pseudo-casuale compreso in un certo range numerico. Per generare numeri casuali all'interno di un range specifico, bisogna utilizzare la funzione ``random()``, che ha la seguente sintassi:
+
+```plaintext
+Syntax: random([min], [max])
+
+Parameters:
+  min    Number: the lower bound (inclusive) (Optional)
+  max    Number: the upper bound (exclusive) (Optional)
+
+Return:
+  Number: the random number
+```
+
+Il parametro ``min`` rappresenta il valore minimo da generare (incluso), il parametro ``max`` rappresenta il valore massimo da generare (escluso).
+
+Il valore generato dalla funzione è memorizzato all'interno della variabile.
+
+Un esempio d'uso della funzione è il seguente:
+
+```javascript
+let x; 
+
+x = random(10, 20);
+```
+
+In questo caso, alla variabile ``x`` viene assegnato un numero casuale compreso tra ``10,0000`` (incluso) e ``19,9999`` (il valore ``20`` è escluso).
+
+## Calcolo della distanza tra due punti
+
+Il calcolo della distanza tra due punti del piano è un'operazione fondamentale per verificare se due figure collidono.
+
+Il teorema di Pitagora permette una visualizzazione grafica molto intuitiva della formula utilizzata per calcolare la distanza tra due punti (x1, y1) ed (x2, y2). Sul famoso triangolo rettangolo, la base è calcolata dalla differenza tra le ascisse dei due punti, quindi (x2-x1), mentre l'altezza è calcolata come differenza tra le ordinate dei due punti, quindi (y2-y1). L'ipotenusa è quindi calcolata con la nota formula: "radice quadrata della somma tra il quadrato della base e il quadrato dell'altezza".
+
+![p5.js - Distanza tra due punti](/static/coding/web/p5js/distanzaPunti.png "p5.js - Distanza tra due punti")
+
+La funzione ``dist`` calcola la distanza tra due punti, ha la seguente sintassi:
+
+```plaintext
+Syntax: dist(x1, y1, x2, y2)
+
+Parameters:
+  x1    Number: x-coordinate of the first point
+  y1    Number: y-coordinate of the first point
+  x2    Number: x-coordinate of the second point
+  y2    Number: y-coordinate of the second point
+
+Return:
+  Number: the distance
+```
+
+I parametri ``x1`` e ``y1`` rappresentano le coordinate x ed y del primo punto, i parametri ``x1`` e ``y1`` rappresentano le coordinate x ed y del secondo punto.
+
+La distanza calcolata dalla funzione è memorizzato all'interno della variabile.
+
+Un esempio d'uso della funzione è il seguente:
+
+```javascript
+let distance; 
+
+distance = dist(100, 300, 500, 100);
+```
+
+## Variabili dello stato del mouse
+
+L'input del mouse è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato dalle coordinate X ed Y del cursore e dall'ultimo pulsante del mouse cliccato, è memorizzato nelle variabili ``mouseX``, ``mouseY`` e ``mouseButton``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e sono continuamente aggiornate ad ogni ridisegno dell'area.
+
+Allo stesso modo, nella variabile ``mouseIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) pulsante del mouse sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che al click assume valore ``true``, ma appena il click termina, assume immediatamente valore ``false``.
+
+Per quanto riguarda la variabile ``mouseButton``, l'ultimo pulsante cliccato può essere identificato da una delle seguenti costanti:
+
+- ``LEFT``: indica che l'ultimo pulsante cliccato è il pulsante sinistro del mouse;
+- ``RIGHT``: indica che l'ultimo pulsante cliccato è il pulsante destro del mouse;
+- ``CENTER``: indica che l'ultimo pulsante cliccato è il pulsante centrale del mouse.
+
+## Variabili dello stato della tastiera
+
+L'input della tastiera è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato dal tasto premuto e dal codice ASCII del tasto premuto, è memorizzato nelle variabili ``key`` e ``keyCode``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, ed il relativo valore resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
+
+La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma comprende tutti i tasti, ad esempio il tasto "invio", il tasto di cancellazione, i tasti corrispondenti alle frecce, e tutti gli altri.
+
+Sempre in maniera trasparente al programmatore, nella variabile ``keyIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) tasto sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
+
+## Animazioni
+
+Le animazioni sono basate principalmente sul cambiamento dello stato di uno o più oggetti grafici. Il continuo ridisegnare l'area da disegno, gestito dalla libreria grafica, unito alla possibilità di modificare lo stato dei vari oggetti grafici, come la posizione ed il colore, permette lo sviluppo di animazioni con una semplicità notevole.
+
+Per realizzare il movimento di una figura basta spostare, nel corso del tempo, la posizione della figura e la si vedrà muovere. Per realizzare un passaggio dal giorno alla notte basta cambiare, nel corso del tempo, il colore del cielo da azzurro a blu notte e si vedrà calare la notte.
+
+Per poter effettuare un cambiamento di stato di un oggetto, è necessario memorizzare lo stato dell'oggetto in una variabile. Se un oggetto deve muoversi solo sull'asse X, è necessario memorizzare in una variabile la posizione X dell'oggetto stesso. Se, invece, l'oggetto deve muoversi su entrambi gli assi X ed Y, è necessario memorizzare in una variabile la posizione X, in una seconda variabile la posizione Y. Se è il colore che deve cambiare, le componenti del colore devono essere memorizzate ognuna in una variabile (nel modello RGB la quantità di rosso deve essere memorizzata in una variabile, la quantità di verde in una seconda variabile ed, infine, la quantità di blu in una terza variabile).
+
+Una volta memorizzato lo stato dell'oggetto in una o più variabili, si può realizzare il movimento cambiando il valore di queste variabili.
+
+### Esempio di movimento di un cerchio
+
+Partiamo dal disegno di un cerchio, realizzato attraverso il codice seguente:
+
+```javascript
+circle(100, 150, 50);
+```
+
+Per far muovere il cerchio verso destra (quindi lungo l'asse X), è necessario memorizzare in una variabile, che chiameremo ``x``, la posizione iniziale della coordinata X del cerchio.
+
+La dichiarazione della variabile può avvenire prima delle due funzioni ``setup`` e ``draw``, mediante la classica dichiarazione:
+
+```javascript
+let x = 100;
+```
+
+Per realizzare il movimento del cerchio verso destra, è necessario incrementare il valore della variabile ``x`` ad ogni operazione di ridisegno dell'area di lavoro. Ricordando che l'aggiornamento dell'area di lavoro avviene nella funzione ``draw``, allora si intuisce facilmente che sia il disegno del cerchio, sia l'operazione di incremento della variabile ``x`` devono essere inserite all'interno di questa funzione.
+
+```javascript
+circle(x, 150, 50);
+x = x+1;
+```
+
+L'esempio completo è di seguito riportato:
+
+```javascript
+let x = 100;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  circle(x, 150, 50);
+  x = x + 1;
+}
+```
+
+E' interessante notare che se l'istruzione di incremento ``x = x + 1`` la si pone nella funzione ``setup`` invece che nella funzione ``draw``, questo incremento viene eseguito una sola volta, quindi il cerchio resta immobile.
+
+Altra cosa interessante da notare, è che se si cancella l'istruzione per disegnare lo sfondo (``background``), allora la vecchia posizione del cerchio non sarà "pulita" e nell'area da disegno rimarrà una "scia" dovuta a tutte le precedenti posizioni occupate dal cerchio, come nella seguente immagine;
+
+![p5.js - Esempio dell'animazione senza il disegno dello sfondo](/static/coding/web/p5js/interactivity01.png "p5.js - Esempio dell'animazione senza il disegno dello sfondo")
+
+### Esempio di movimento del cerchio con il mouse
+
+Partiamo dal disegno di un cerchio, realizzato attraverso il codice seguente:
+
+```javascript
+circle(100, 150, 50);
+```
+
+Per poter muovere il cerchio attraverso il mouse (quindi lungo l'asse X ed Y), è necessario memorizzare in una variabile, che chiameremo ``x``, la posizione della coordinata X del cerchio ed in una seconda variabile, che chiameremo ``y``, la posizione della coordinata Y del cerchio. Dato che non sappiamo ancora la posizione del mouse, possiamo inizializzare le due variabili con il valore zero, mediante la classica dichiarazione:
+
+```javascript
+let x = 0;
+let y = 0;
+```
+
+Per poter muovere il cerchio attraverso il mouse, è necessario assegnare alla variabile ``x`` la posizione X del mouse, che è memorizzata a sua volta nella variabile mouseX; Allo stesso modo, è necessario assegnare alla variabile ``y`` la posizione Y del mouse, che è memorizzata nella variabile mouseY;
+
+```javascript
+x = mouseX;
+y = mouseY;
+circle(x, y, 50);
+```
+
+L'esempio completo è di seguito riportato:
+
+```javascript
+let x = 0;
+let y = 0;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+    x = mouseX;
+    y = mouseY;
+    circle(x, y, 50);
+}
+```
+
+L'utente può quindi spostare il cerchio utilizzando il mouse, come nella seguente immagine:
+
+![p5.js - Esempio di spostamento del cerchio utilizzando il mouse](/static/coding/web/p5js/interactivity02.png "p5.js - Esempio di spostamento del cerchio utilizzando il mouse")
