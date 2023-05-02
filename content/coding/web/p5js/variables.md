@@ -201,6 +201,39 @@ Per quanto riguarda la variabile ``mouseButton``, l'ultimo pulsante cliccato pu�
 - ``RIGHT``: indica che l'ultimo pulsante cliccato è il pulsante destro del mouse;
 - ``CENTER``: indica che l'ultimo pulsante cliccato è il pulsante centrale del mouse.
 
+## Gestire il click del mouse
+
+Il click del mouse è un evento tipicamente utilizzato per interagire con l'utente. Si può utilizzare per selezionare un'opzione da un menu, per rendere un gioco interattivo o creare un'esperienza interattiva.
+
+In Processing quando viene rilevato il click, viene invocata la funzione ``mousePressed`` (e quindi viene eseguito il codice presente all'interno), sempre che questa funzione sia stata definita dall'utente.
+
+Un utilizzo classico della funzione è memorizzare le coordinate X ed Y a cui è avvenuto il click del mouse. Per memorizzare queste due coordinate è necessario dichiarare due variabili che chiameremo ``clickX`` e ``clickY`` e che inizializzeremo per comodità al valore ``0``.
+
+Inoltre è necessario ricordare che le coordinate del mouse sono continuamente memorizzate nelle variabili ``mouseX`` e ``mouseY`` e che non è necessario dichiararle.
+
+Al click del mouse quindi andremo a salvare nelle variabili ``clickX`` e ``clickY`` i valori delle variabili ``mouseX`` e ``mouseY``.
+
+Di seguito un esempio completo in cui vengono visualizzate le coordinate dell'ultimo click del mouse.
+
+```javascript
+let clickX = 0;
+let clickY = 0;
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  text("click a coordinate " + clickX + " " + clickY, 100, 30);
+}
+
+function mousePressed() {
+  clickX = mouseX;
+  clickY = mouseY;
+}
+```
+
 ## Variabili dello stato della tastiera
 
 L'input della tastiera è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato dal tasto premuto e dal codice ASCII del tasto premuto, è memorizzato nelle variabili ``key`` e ``keyCode``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, ed il relativo valore resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
@@ -208,6 +241,16 @@ L'input della tastiera è gestito in maniera completamente trasparente per il pr
 La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma comprende tutti i tasti, ad esempio il tasto "invio", il tasto di cancellazione, i tasti corrispondenti alle frecce, e tutti gli altri.
 
 Sempre in maniera trasparente al programmatore, nella variabile ``keyIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) tasto sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
+
+## Variabili dello stato dello schermo
+
+Quando il programmatore definisce le dimensioni dell'area da disegno, utilizzando la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate automaticamente nelle rispettive variabili ``width`` ed ``height``.
+
+Le dimensioni della larghezza e dell'altezza della finestra corrente sono invece memorizzate nelle variabili ``windowWidth`` e ``windowHeight``.
+
+Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e possono essere utilizzate per adattare i contenuti alla grandezza dello schermo, che può variare da dispositivo a dispositivo.
+
+Dato che l'utente può ruotare lo schermo con tablet e smartphone, la variabile ``deviceOrientation`` indica se lo schermo è orientato in orizzontale o verticale.
 
 ## Animazioni
 
