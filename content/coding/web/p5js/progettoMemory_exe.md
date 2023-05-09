@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.2 - Gioco Memory"
+title: "p5.js Lez. 05.2 - Gioco Memory"
 description: "Sviluppo del gioco Memory"
 date: 2023-04-20
 publishdate: 2023-04-20

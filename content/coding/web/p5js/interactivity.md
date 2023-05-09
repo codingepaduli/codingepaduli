@@ -8,11 +8,11 @@ lastmod: 2020-09-17
 spellcheck: 2020-12-11
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: false
+draft: true
 toc: false
 summary: "Interazione con l'utente attraverso le periferiche di input ed output ed animazioni realizzate usando le variabili"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/interactivity02.js"]
-weight: 8620
+weight: 8600
 
 references:
     -   title: "Animations with Processing"

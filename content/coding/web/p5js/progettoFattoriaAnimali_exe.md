@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 04.1 - Progetto Fattoria Animali"
+title: "p5.js Lez. 05.1 - Progetto Fattoria Animali"
 description: "Sviluppo del progetto fattoria degli animali"
 date: 2023-04-20
 publishdate: 2023-04-20
