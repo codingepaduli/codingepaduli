@@ -8,7 +8,7 @@ lastmod: 2023-05-02
 spellcheck: 2023-05-02
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: true
+draft: false
 toc: false
 summary: "Usare le variabili per creare animazioni e memorizzare lo stato"
 weight: 8680
@@ -80,13 +80,11 @@ Return:
 
 Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici.
 
-Il valore inserito dall'utente è memorizzato all'interno di una variabile.
+Il valore inserito dall'utente può essere memorizzato all'interno di una variabile.
 
-Un esempio d'uso della funzione è il seguente:
+Un esempio d'uso della funzione, che in questo caso memorizza l'input dell'utente nella variabile ``x`` (da dichiarare), è il seguente:
 
 ```javascript
-let x; 
-
 x = prompt("inserisci un valore");
 ```
 
@@ -111,13 +109,63 @@ function draw() {
 }
 ```
 
+### Input di un numero intero
+
+L'input dell'utente può essere una qualsiasi sequenza di caratteri alfanumerici. Quando si necessita di un input numerico intero allora lo si deve convertire al formato intero con la funzione ``parseInt``, che ha la seguente sintassi:
+
+```plaintext
+Syntax: parseInt(str)
+
+Parameters:
+  str    String: the string to convert to integer type
+
+Return:
+  Number: the converted number
+```
+
+Il parametro ``str`` rappresenta la stringa da convertire in numero.
+
+Il valore convertito può essere memorizzato all'interno di una variabile.
+
+Un esempio di input numerico intero, che viene memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
+
+```javascript
+x = prompt("inserisci un numero");
+x = parseInt(x);
+```
+
+### Input di un numero decimale
+
+Quando si necessita di un input numerico decimale allora si deve convertire l'input dell'utente al formato decimale con la funzione ``parseFloat``, che ha la seguente sintassi:
+
+```plaintext
+Syntax: parseFloat(str)
+
+Parameters:
+  str    String: the string to convert to float type
+
+Return:
+  Number: the converted number
+```
+
+Il parametro ``str`` rappresenta la stringa da convertire in numero.
+
+Il valore convertito può essere memorizzato all'interno di una variabile.
+
+Un esempio di input numerico decimale, che viene memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
+
+```javascript
+x = prompt("inserisci un numero");
+x = parseFloat(x);
+```
+
 ## Istruzione di output ``text``
 
 In programmazione le funzioni di output sono quelle funzioni che producono un risultato visibile all'utente o al sistema in cui viene eseguito il programma. Le funzioni di output determinano cosa viene stampato a schermo, mostrato su un'interfaccia utente o salvato in un file.
 
 La funzione ``text`` è un esempio di funzione di output, infatti è utilizzata per visualizzare testo o variabili in output nell'area da disegno, inserendo come primo parametro della funzione la variabile da mostrare e specificando come successivi parametri le coordinate in cui si desidera visualizzare il testo.
 
-Ad esempio, se si vuole visualizzare il valore della variabile ``j`` nell'area da disegno, si può utilizzare la seguente sintassi:
+Ad esempio, se si vuole visualizzare il valore della variabile ``j`` nell'area da disegno, si può utilizzare la seguente istruzione:
 
 ```javascript
 text(j, 10, 50);
@@ -142,13 +190,11 @@ Return:
 
 Il parametro ``min`` rappresenta il valore minimo da generare (incluso), il parametro ``max`` rappresenta il valore massimo da generare (escluso).
 
-Il valore generato dalla funzione è memorizzato all'interno della variabile.
+Il valore generato dalla funzione può essere memorizzato all'interno di una variabile.
 
-Un esempio d'uso della funzione è il seguente:
+Un esempio d'uso della funzione che genera un valore casuale, memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
 
 ```javascript
-let x; 
-
 x = random(10, 20);
 ```
 
@@ -179,13 +225,11 @@ Return:
 
 I parametri ``x1`` e ``y1`` rappresentano le coordinate x ed y del primo punto, i parametri ``x1`` e ``y1`` rappresentano le coordinate x ed y del secondo punto.
 
-La distanza calcolata dalla funzione è memorizzato all'interno della variabile.
+La distanza calcolata dalla funzione può essere memorizzata all'interno di una variabile.
 
-Un esempio d'uso della funzione è il seguente:
+Un esempio d'uso della funzione che calcola la distanza, memorizzata nella variabile ``distance`` (da dichiarare), è il seguente:
 
 ```javascript
-let distance; 
-
 distance = dist(100, 300, 500, 100);
 ```
 
@@ -225,7 +269,8 @@ function setup() {
 
 function draw() {
   background(220);
-  text("click a coordinate " + clickX + " " + clickY, 100, 30);
+  text(clickX, 100, 30);
+  text(clickY, 100, 50);
 }
 
 function mousePressed() {
@@ -350,3 +395,234 @@ function draw() {
 L'utente può quindi spostare il cerchio utilizzando il mouse, come nella seguente immagine:
 
 ![p5.js - Esempio di spostamento del cerchio utilizzando il mouse](/static/coding/web/p5js/interactivity02.png "p5.js - Esempio di spostamento del cerchio utilizzando il mouse")
+
+## Tecnica della variabile contatore
+
+La **tecnica della variabile contatore** è un modello molto utilizzato nella scrittura degli algoritmi e consiste nell'utilizzare una variabile per contare il numero di volte in cui è eseguita una determinata azione o avviene un determinato evento.
+
+Per implementare questa tecnica è necessario:
+
+1. dichiarare una variabile numerica contatore;
+2. inizializzarla al valore numerico da cui far partire il contatore (generalmente zero o uno);
+3. Ogni volta che viene eseguita l'azione o si verifica l'evento, la variabile contatore deve essere incrementata di uno.
+
+Di questa tecnica esiste la variante dell'incremento anticipato, in cui il contatore viene incrementato di 1 **prima** che venga eseguita l'azione o che si verifichi l'evento.
+
+### Esempio di conteggio delle figure
+
+Di seguito, un esempio completo d'applicazione della variabile contatore per numerare i cerchi disegnati.
+
+```javascript
+// dichiaro la variabile contatore
+let contatore;
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+
+    // inizializzo la variabile contatore
+    contatore = 0;
+
+    // ogni volta che disegno un cerchio
+    // incremento la variabile contatore
+    circle(100, 150, 50);
+    text(contatore, 100, 150)
+    contatore = contatore + 1;
+
+    circle(150, 150, 50);
+    text(contatore, 150, 150)
+    contatore = contatore + 1;
+
+    circle(200, 150, 50);
+    text(contatore, 200, 150)
+    contatore = contatore + 1;
+
+    circle(250, 150, 50);
+    text(contatore, 250, 150)
+    contatore = contatore + 1;
+}
+```
+
+![p5.js - Esempio di applicazione della variabile contatore](/static/coding/web/p5js/variables_counter_post.png "p5.js - Esempio di applicazione della variabile contatore")
+
+### Esempio di conteggio pre-incrementato delle figure
+
+Di seguito, un esempio completo d'applicazione della variabile contatore con incremento anticipato per numerare i cerchi disegnati.
+
+```javascript
+// dichiaro la variabile contatore
+let contatore;
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+
+    // inizializzo la variabile contatore
+    contatore = 0;
+
+    // incremento la variabile contatore
+    // prima di disegnare i cerchi
+    contatore = contatore + 1;
+    circle(100, 150, 50);
+    text(contatore, 100, 150);
+
+    contatore = contatore + 1;
+    circle(150, 150, 50);
+    text(contatore, 150, 150);
+
+    contatore = contatore + 1;
+    circle(200, 150, 50);
+    text(contatore, 200, 150);
+
+    contatore = contatore + 1;
+    circle(250, 150, 50);
+    text(contatore, 250, 150);
+}
+```
+
+![p5.js - Esempio di applicazione della variabile contatore](/static/coding/web/p5js/variables_counter_pre.png "p5.js - Esempio di applicazione della variabile contatore")
+
+### Esempio del conteggio dei click del mouse
+
+Di seguito, un esempio completo d'applicazione della variabile contatore  per contare il numero di click del mouse.
+
+```javascript
+let clickX, clickY;
+
+// Dichiaro ed inizializzo 
+// la variabile contatore
+let contatore = 0;
+
+function setup() {
+    createCanvas(400, 400);
+}
+
+function draw() {
+    background(220);
+
+    textSize(20);
+    text(clickX, 100, 30);
+    text(clickY, 100, 50);
+    text(contatore, 100, 70);
+}
+
+// gestisco il click del mouse
+function mousePressed() {
+    clickX = mouseX;
+    clickY = mouseY;
+
+    // ad ogni click, incremento il contatore
+    contatore = contatore + 1;
+}
+```
+
+In questo esempio si rileva il click del mouse e ad ogni click si incrementa il conteggio. Si ricorda che, come spiegato nei paragrafi precedenti, al click del mouse vengono eseguite le istruzioni presenti all'interno della funzione ``mousePressed``.
+
+Per poter contare il numero di click è quindi necessario che l'incremento del contatore sia inserito all'interno di questa funzione.
+
+![p5.js - Esempio di applicazione della variabile contatore](/static/coding/web/p5js/variables_counter_click.png "p5.js - Esempio di applicazione della variabile contatore")
+
+## Tecnica della variabile accumulatore
+
+La **tecnica della variabile accumulatore** consiste nell'utilizzare una variabile nella quale accumulare il valore di una serie di dati, man mano che questi si presentano, in modo da poter utilizzare il valore totale alla fine.
+
+Per implementare questa tecnica è necessario:
+
+1. dichiarare una variabile numerica accumulatore;
+2. inizializzarla al valore numerico opportuno (generalmente zero o uno);
+3. Ogni volta che si presenta un dato, lo si somma o sottrae al valore presente nell'accumulatore.
+
+### Esempio di somma di 4 numeri casuali
+
+Di seguito, un esempio completo d'applicazione della variabile accumulatore per sommare i numeri generati casualmente dal computer.
+
+```javascript
+// dichiaro la variabile accumulatore
+let accumulatore;
+let num1, num2, num3, num4;
+
+function setup() {
+    createCanvas(400, 400);
+
+    // inizializzo la variabile accumulatore
+    accumulatore = 0;
+
+    // ogni volta che viene generato un numero casuale
+    // lo accumulo nella variabile accumulatore
+    num1 = random(10, 20);
+    accumulatore = accumulatore + num1;
+    
+    num2 = random(10, 20);
+    accumulatore = accumulatore + num2;
+    
+    num3 = random(10, 20);
+    accumulatore = accumulatore + num3;
+    
+    num4 = random(10, 20);
+    accumulatore = accumulatore + num4;
+}
+
+function draw() {
+    background(220);
+
+    textSize(32);
+    text(accumulatore, 10, 100);
+}
+```
+
+In questo esempio, le istruzioni per la generazione dei numeri casuali sono inserite nella funzione ``setup`` in modo tale da essere eseguite una volta sola. Ogni volta che un numero casuale viene generato, viene sommato nella variabile accumulatore.
+
+![p5.js - Esempio di applicazione della variabile accumulatore](/static/coding/web/p5js/variables_accumulator_random.png "p5.js - Esempio di applicazione della variabile accumulatore")
+
+### Esempio di somma di 4 numeri in input
+
+Di seguito, un esempio completo d'applicazione della variabile accumulatore per sommare i numeri inseriti dall'utente.
+
+```javascript
+// dichiaro la variabile accumulatore
+let accumulatore;
+let num1, num2, num3, num4;
+
+function setup() {
+    createCanvas(400, 400);
+
+    // inizializzo la variabile accumulatore
+    accumulatore = 0;
+
+    // ogni volta che l'utente inserisce un input
+    // lo si converte in numerico decimale
+    // e accumulato nella variabile accumulatore
+    num1 = prompt("Inserisci un valore:");
+    num1 = parseFloat(num1);
+    accumulatore = accumulatore + num1;
+    
+    num2 = prompt("Inserisci un valore:");
+    num2 = parseFloat(num2);
+    accumulatore = accumulatore + num2;
+    
+    num3 = prompt("Inserisci un valore:");
+    num3 = parseFloat(num3);
+    accumulatore = accumulatore + num3;
+    
+    num4 = prompt("Inserisci un valore:");
+    num4 = parseFloat(num4);
+    accumulatore = accumulatore + num4;
+}
+
+function draw() {
+    background(220);
+
+    textSize(32);
+    text(accumulatore, 10, 100);
+}
+```
+
+In questo esempio, le istruzioni per l'input dell'utente (dato che sono bloccanti) sono inserite nella funzione ``setup`` in modo tale da essere eseguite una volta sola. Ogni volta che l'utente inserisce un valore, viene sommato nella variabile accumulatore.
+
+![p5.js - Esempio di applicazione della variabile accumulatore](/static/coding/web/p5js/variables_accumulator_prompt.png "p5.js - Esempio di applicazione della variabile accumulatore")
