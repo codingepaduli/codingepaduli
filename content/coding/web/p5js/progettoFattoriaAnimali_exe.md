@@ -25,7 +25,7 @@ Si sviluppi il progetto "fattoria degli animali" utilizzando la libreria grafica
 
 Di seguito, un'immagine del gioco da realizzare.
 
-![p5.js - progetto fattoria degli animali](/static/coding/web/p5js/sounds_and_images_exe_farm.png "p5.js - progetto fattoria degli animali")
+![p5.js - progetto fattoria degli animali](/static/coding/web/p5js/progettoFattoriaAnimali.png "p5.js - progetto fattoria degli animali")
 
 <!-- markdownlint-disable MD009 MD036 -->
 
