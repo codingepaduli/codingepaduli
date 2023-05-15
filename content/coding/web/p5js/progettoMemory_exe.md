@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 05.2 - Gioco Memory"
+title: "p5.js Lez. 05.3 - Gioco Memory"
 description: "Sviluppo del gioco Memory"
 date: 2023-04-20
 publishdate: 2023-04-20
@@ -10,7 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Sviluppo del gioco Memory"
-weight: 8640
+weight: 8630
 ---
 
 # Gioco Memory
@@ -26,7 +26,7 @@ Si sviluppi il gioco "Memory" utilizzando la libreria grafica ``p5.js`` e la lib
 
 Di seguito, un'immagine del gioco da realizzare.
 
-![p5.js - gioco memory](/static/coding/web/p5js/sounds_and_images_exe_memory.png "p5.js - gioco memory")
+![p5.js - gioco memory](/static/coding/web/p5js/progettoMemory.png "p5.js - gioco memory")
 
 <!-- markdownlint-disable MD009 MD036 -->
 

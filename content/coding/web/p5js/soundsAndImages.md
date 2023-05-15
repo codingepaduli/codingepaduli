@@ -11,7 +11,7 @@ draft: false
 toc: false
 summary: "Suoni ed immagini"
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js"]
-weight: 8620
+weight: 8660
 ---
 
 # Suoni ed immagini
