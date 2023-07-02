@@ -40,6 +40,16 @@ Nel 1895 **Marconi** inventa la presa di terra e le antenne radio e nel 1896 in 
 
 Nel 1925 **Baird** trovò un modo per trasmettere immagini in movimento con una vasta gamma di grigi e nel 1926 effettuò con successo quella che viene ritenuta la prima vera dimostrazione pubblica di trasmissione televisiva senza fili.
 
-Internet nasce agli anni sessanta con Arpanet, che collegava l'Università della California di Los Angeles, l'SRI di Stanford, l'Università della California di Santa Barbara, e l'Università dello Utah. Nel 1970 nasce il servizio di posta elettronica.
+Nel 1949 il matematico ungherese **von Neumann John** progettò e realizzò il computer EDVAC (elettronic discrete variable automatic calculator) composto da migliaia di valvole termoioniche e dalle dimensioni di una stanza. Il modello successivo UNIVAC fu prodotto per 50 unità vendute ciascuna a un milione di dollari. Iniziò quindi l'era dei "mainframe", elaboratori centrali grandi come un armadio che, per trasferire dati e programmi, utilizzavano un lettore di cassette magnetiche, poi sostituito da telescriventi e ancora da terminali con schermo e tastiera. Questi elaboratori garantivano un tempo medio fra i guasti (in inglese mean time between failures) misurabile in uno o due decenni, consentivano attività di riparazione e manutenzione (di CPU, dischi e RAM) mentre erano in funzione e quindi erano in grado di funzionare ininterrottamente per anni.
+
+Dai mainframe poi si passò ai minicomputer e poi, con l'introduzione dei microprocessori, nacquero i personal computer.
+
+Internet nasce agli anni sessanta con Arpanet, che collegava l'Università della California di Los Angeles, l'SRI di Stanford, l'Università della California di Santa Barbara, e l'Università dello Utah. Nel tempo sempre più enti universitari e governativi collegarono le loro reti locali, rendendo internet la rete delle reti.
+
+Nel 1970 nascono il servizio di posta elettronica ed il servizio di trasferimento file, che consentivano di inviare messaggi personali attraverso la rete e di trasferire file.
+
+Nel 1980 nasce il sistema dei nomi di dominio (DNS), un servizio che permette di assegnare un nome ad un computer in rete. Nascono quindi i domini di primo livello ".com", ".org", ".it", quelli di secondo livello "ibm.com", "google.it", ...
+
+A fine anni 80 nasce il primo virus, che colpisce migliaia di computer in rete.
 
 Il World Wide Web nasce nel 1991 presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
