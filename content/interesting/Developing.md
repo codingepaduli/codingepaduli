@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2023-04-02
-publishdate: 2023-04-02
-lastmod: 2023-04-02
+date: 2023-07-02
+publishdate: 2023-07-02
+lastmod: 2023-07-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -72,7 +72,6 @@ summary: "Set di link relativi al coding"
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 [Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
 [Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
-[Moving from docker-compose to Podman pods | Enable Sysadmin](https://www.redhat.com/sysadmin/compose-podman-pods) - \
 
 ### Ansible, Shell, CI, CD ed automazione
 
@@ -112,7 +111,9 @@ summary: "Set di link relativi al coding"
 
 ### AI
 
+[Amazon CodeWhisperer](https://aws.amazon.com/it/codewhisperer/) - AI Code Generator\
 [fast.ai](http://www.fast.ai/) - Making neural nets uncool again\
+[PizzaGPT](https://www.pizzagpt.it/) - ChatGPT per l'Italia\
 [Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn) - Red Hat\
 [Dataset list](https://www.datasetlist.com/) - A list of the biggest datasets for machine learning\
 [Playing Mortal Kombat with TensorFlow.js.](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/) - Transfer learning and data augmentation\
@@ -249,7 +250,6 @@ summary: "Set di link relativi al coding"
 #### Containers
 
 [Quarkus](https://quarkus.io/) - Supersonic Subatomic Java\
-[Jib](https://codingjam.it/docker-e-microservizi-java-con-jib/) - Docker e microservizi Java\
 [Using Docker from Maven and Maven from Docker](https://codefresh.io/howtos/using-docker-maven-maven-docker/) - \
 
 #### IO NIO NIO2 XML e serializzazione
@@ -357,6 +357,11 @@ summary: "Set di link relativi al coding"
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
 [mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
+
+#### Old computer
+
+[old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
+[antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -807,4 +812,8 @@ summary: "Set di link relativi al coding"
 [Handsfree.js](https://handsfree.js.org/) - \
 [Pose | Handsfree.js](https://handsfree.js.org/ref/model/pose.html#with-config) - \
 [flap.js – flappy-pose](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - \
+
+##### p5Play
+
+[quinton-ashley/p5play](https://github.com/quinton-ashley/p5play/) - p5play is a JavaScript game engine that uses p5.js for rendering and Box2D for simulating physics.\
 

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-04-02
-publishdate: 2023-04-02
-lastmod: 2023-04-02
+date: 2023-07-02
+publishdate: 2023-07-02
+lastmod: 2023-07-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -24,6 +24,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Scientificando](https://www.tutto-scienze.org/) - curiosità dalla scienza\
 [La mia scuola differente](https://www.lamiascuoladifferente.it/) - materiali e strumenti che supportino la didattica a distanza\
+[edutecnica.it](https://www.edutecnica.it/#gsc.tab=0) - annotazioni e appunti sparsi di Matematica, Fisica, Chimica, Elettrologia e Termologia\
 [Indire](https://www.indire.it/gli-enti-pubblici-di-ricerca-a-supporto-degli-studenti/) - Webinar multidisciplinari condotti dai ricercatori degli enti di ricerca\
 [The Essence of Mathematics Through Elementary Problems](https://www.openbookpublishers.com/product/979) - Open Book Publishers\
 [Matematicapovolta](https://www.matematicapovolta.it/index.html) - Didattica a distanza Matematica Scuole Medie e Superiori (flipped classroom liceo scientifico)\
@@ -48,6 +49,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Colorful](https://www.mangaforever.net/7266256989/colorful-lanime-sul-suicidio-giovanile-in-home-video-con-anime-factory) - recensione di un anime su bullismo e suicidio giovanile premiato con medaglia d’onore dal governo giapponese\
 [La forma della voce](https://www.locchiodelcineasta.com/la-forma-della-voce-2016/#Trama_de_La_forma_della_voce) - recensione di un anime su bullismo, depressione, amicizia e perdono\
+[Il testamento biologico](https://www.youtube.com/watch?v=ePyxL_7xRaY&t=6s) - Associazione Luca Coscioni\
 [FIRMA DIGITALE](https://www.youtube.com/watch?v=NXF-deDg_C8) - INTRODUZIONE ALLA NORMATIVA - CORSO UDEMY DI FIRMA DIGITALE E STRUMENTI COLLEGATI - #02.1 - YouTube\
 [FIRMA DIGITALE](https://www.youtube.com/watch?v=1PWGHjTKnuA) - SCHEMA FUNZIONAMENTO DELLA PEC - CORSO UDEMY DI FIRMA DIGITALE E STRUMENTI COLLEGATI - #05.5 - YouTube\
 [Soft skills](https://www.tuttoscuola.com/soft-skills-cosa-inserirle-nella-tua-programmazione-didattica/) - cosa sono e come inserirle nella tua programmazione didattica - Tuttoscuola\
@@ -184,6 +186,7 @@ summary: "Set di link relativi all'istruzione di base"
 [AI robot wrestling with open source | Opensource.com](https://opensource.com/article/23/2/ai-robot-wrestling-open-source) - \
 [webots.cloud](https://webots.cloud/proto) - proto\
 [Modulazione di larghezza d'impulso](https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso) - Wikipedia\
+[Progetti Arduino](https://www.progettiarduino.com/) - Raccolta di Progetti e Tutorial per sperimentare con Arduino\
 
 #### Sistemi e reti 4anno
 
@@ -225,6 +228,12 @@ summary: "Set di link relativi all'istruzione di base"
 [MYSQL CORSO BASE (con PhpMyAdmin)](https://www.youtube.com/playlist?list=PLaguh5H6_Ux1e7JS7Ly3SCTuKWL-0CLDV) - YouTube\
 [Corso Wordpress Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-uRmdwRr05WOq_ZEdbbhEF) - YouTube\
 [Top 9 Lessons learned in 12 years as a software developer.](https://dev.to/tyaga001/top-9-lessons-learned-in-12-years-as-a-software-developer-4o9h) - DEV Community\
+[Corso PHP/MYSQL Tutorial Italiano 03](https://www.youtube.com/watch?v=2BMEAsJwBxI) - Connessione al Database\
+[Corso PHP/MYSQL Tutorial Italiano 08](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Selezionare dati con SELECT - YouTube\
+[PhpMyAdmin GUI](https://www.youtube.com/watch?v=x1Hwm9cwihs&t=692s) - 8 Relazione Tra Tabelle\
+[PhpMyAdmin GUI](https://www.youtube.com/watch?v=fxEHOl5Nbco&t=34s) - 3 Operazioni sui dati\
+[PhpMyAdmin GUI](https://www.youtube.com/watch?v=evokXvZFWgo) - 2 Prima tabella\
+[PhpMyAdmin GUI](https://www.youtube.com/watch?v=z0_tr8r61eE&t=35s) - 1 XAMPP\
 
 #### Eventi
 
