@@ -73,3 +73,28 @@ sudo dpkg-reconfigure locales
 ```
 
 Nel caso un localizzazione non sia disponibile, può essere invocato il comando di generazione della nuova localizzazione ``locale-gen en_US.UTF8``.
+
+## Gestione utenti
+
+Per aggiungere un nuovo gruppo ``casa`` ed creare un nuovo utente ``io`` appartenenti al gruppo appena creato, si utilizzano i comandi seguenti:
+
+```bash
+sudo /usr/sbin/groupadd -g 2000 casa
+sudo /usr/sbin/adduser --ingroup casa --uid 1001 io
+```
+<!--
+sudo /usr/sbin/adduser --ingroup casa --uid 1002 mamma
+sudo /usr/sbin/adduser --ingroup casa --uid 1003 roberto
+sudo /usr/sbin/adduser --ingroup casa --uid 1004 dario
+-->
+
+Per essere sicuri che un gruppo esista (se non esiste lo si crea) e per aggiungere un utente esistente ``io`` al gruppo esistente ``vboxusers``:
+
+```bash
+sudo /usr/sbin/groupadd -f vboxusers
+sudo /usr/sbin/usermod -a -G vboxusers io
+```
+
+Per visualizzare i gruppi presenti a sistema ``getent group | sort``.
+
+Per rimuovere un utente ``io`` e tutti i files ``sudo /usr/sbin/deluser --remove-all-files io``
