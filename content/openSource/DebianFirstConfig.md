@@ -14,7 +14,7 @@ summary: "Prima configurazione del sistema Debian GNU/Linux"
 
 # Prima configurazione del sistema Debian GNU/Linux
 
-[Debian GNU/Linux](https://www.debian.org/), il sistema operativo universale e completamente Libero.
+La prima configurazione di un sistema desktop [Debian GNU/Linux](https://www.debian.org/), il sistema operativo universale e completamente libero, può essere ostica, per cui di seguito sono riportate una serie di indicazioni (a linea di comando) per configurare un sistema Debian con ambiente XFCE.
 
 ## Localizzazione
 
@@ -98,3 +98,90 @@ sudo /usr/sbin/usermod -a -G vboxusers io
 Per visualizzare i gruppi presenti a sistema ``getent group | sort``.
 
 Per rimuovere un utente ``io`` e tutti i files ``sudo /usr/sbin/deluser --remove-all-files io``
+
+## Installare software
+
+Alla prima configurazione si può scegliere il software da installare o da rimuovere. Esistono molti strumenti per la gestione del software. Ogni strumento richiede una configurazione specifica.
+
+### Configurazione apt
+
+Il file che contiene i repository ``/etc/apt/sources.list`` dovrebbe avere le seguenti righe:
+
+```plaintext
+deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian/ bookworm-backports main contrib non-free
+```
+
+Per potere aggiungere le sezioni ``contrib``, ``non-free`` e ``non-free-firmware`` si possono utilizzare i seguenti comandi:
+
+```bash
+# Provides the scripts apt-add-repository used in the next line
+apt-get install -y software-properties-common
+
+# Adds the section contrib, non-free and non-free-firmware
+apt-add-repository -y contrib
+apt-add-repository -Y non-free
+apt-add-repository -Y non-free-firmware
+
+apt-get update
+```
+
+La connessione sicura ai repository e l'aggiunta di repository esterni richiede che siano installati i seguenti pacchetti:
+
+```bash
+apt-get install -y apt-transport-https gnupg apt-show-versions apt-utils
+```
+
+L'installazione dei codec non liberi deve essere effettuata con il seguente comando:
+
+```bash
+apt-get install -y libdvdcss2
+```
+
+Possono essere numerosi i pacchetti da installare, tra quelli di uso comune e quelli per scelta personale, di seguito uno script che configura i repository e installa numerosi software.
+
+[script](/static/openSource/DebianFirstConfig/apt-installedApp.sh)
+
+### Gestione pacchetti con flatpak
+
+Flatpak può essere un ottimo strumento per installare software aggiornato.
+
+L'installazione richiede i seguenti comandi:
+
+```bash
+apt-get install -y flatpak xdg-utils xdg-desktop-portal xdg-desktop-portal-kde xdg-desktop-portal-gtk # gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+A questo punto si può visionare il software da [FlatHub](https://flathub.org/it) e scegliere cosa installare.
+
+Di seguito lo [script](/static/openSource/DebianFirstConfig/flatpak-installAllScript.sh) per configurare flatpak e un [elenco](/static/openSource/DebianFirstConfig/flatpakInstalledApp.txt) di pacchetti software da installare.
+
+### Gestione containers con docker o podman
+
+Sia docker che podman permettono di installare software. Si può navigare su [DockerHub](https://hub.docker.com/) e scegliere cosa installare.
+
+Di seguito uno [script](/static/openSource/DebianFirstConfig/docker-installedApp.sh) che configura docker e scarica di pacchetti software da installare.
+
+### Gestione pacchetti con npm
+
+[Node.js](https://nodejs.org/en) è sempre più utilizzato per installare applicazioni legate allo sviluppo software:
+
+Si può visionare il software da [npm](https://www.npmjs.com/) e scegliere cosa installare.
+
+Di seguito uno [script](/static/openSource/DebianFirstConfig/npm-installedApp.sh) che installa i pacchetti software con npm.
+
+## Configura azioni personalizzate su Thunar
+
+In Thunar (XFCE file manager) è possibile aggiungere delle azioni personalizzate al menu a comparsa:
+
+- Aprire "Thunar file manager";
+- Click "Modifica";
+- Click "Configurare Azioni personalizzate";
+- Aggiungere una nuova azione o modificare una esistente;
+- Inserire nome, descrizione, icona, comando e condizioni di visibilità;
+- Comando di esempio: ``/usr/bin/wipe -fqsF %f``.
+
+**BUG**: La modifica al nome di un file (da shell o da altri processi) mentre Thunar visualizza il file causa il blocco di Thunar. Ad esempio il comando wipe senza l'opzione -F (non rinominare il file) blocca completamente Thunar.
