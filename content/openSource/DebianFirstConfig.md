@@ -122,8 +122,8 @@ apt-get install -y software-properties-common
 
 # Adds the section contrib, non-free and non-free-firmware
 apt-add-repository -y contrib
-apt-add-repository -Y non-free
-apt-add-repository -Y non-free-firmware
+apt-add-repository -y non-free
+apt-add-repository -y non-free-firmware
 
 apt-get update
 ```
@@ -140,9 +140,9 @@ L'installazione dei codec non liberi deve essere effettuata con il seguente coma
 apt-get install -y libdvdcss2
 ```
 
-Possono essere numerosi i pacchetti da installare, tra quelli di uso comune e quelli per scelta personale, di seguito uno script che configura i repository e installa numerosi software.
+Possono essere numerosi i pacchetti da installare, tra quelli di uso comune e quelli per scelta personale,  può risultare automatizzare la configurazione dei repository e l'installazione del software desiderato attraverso uno [script](/static/openSource/DebianFirstConfig/apt-install-app.sh).
 
-[script](/static/openSource/DebianFirstConfig/apt-installedApp.sh)
+Possono anche esserci numerosi pacchetti installati di default e che si vuole rimuovere, per sostituirli con altri. In questo caso, può risultare comodo rimuoverli (configurazione compresa) attraverso uno [script](/static/openSource/DebianFirstConfig/apt-remove-app.sh).
 
 ### Gestione pacchetti con flatpak
 
