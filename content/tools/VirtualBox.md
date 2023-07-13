@@ -20,6 +20,10 @@ All'avvio si presenta con un'interfaccia molto semplice, che permette di gestire
 
 ![VirtualBox - Welcome Page](/static/coding/tools/VirtualBox-Welcome.png "VirtualBox - Welcome Page")
 
+La prima cosa da fare all'avvio consiste nel configurare il tasto "HOST", utilizzato durante l'esecuzione dalle macchine virtuali per l'acquisizione ed il rilascio di tastiera e mouse. Nel menù "File", cliccando la voce "Preferenze" e poi scegliendo la sezione "Immissione" si può selezionare la combinazione di tasti per simulare la pressione del tasto "HOST".
+
+![VirtualBox - Configurazione tasto Host](/static/coding/tools/VirtualBox-Config-Host-key.png "VirtualBox - Configurazione tasto Host")
+
 Il processo di creazione di una macchina virtuale è molto semplice, è necessario inserire un nome per la macchina virtuale, indicare in quale cartella salvarla, selezionare il tipo di macchina virtuale ed il sistema operativo che deve ospitare:
 
 ![VirtualBox - Creazione Virtual Machine - passo 1](/static/coding/tools/VirtualBox-NewVM-Step1.png "VirtualBox - Creazione Virtual Machine - passo 1")
@@ -68,7 +72,7 @@ Configurato correttamente il sistema operativo, la macchina virtuale si avvia, i
 
 ![VirtualBox - Avvio Virtual Machine](/static/coding/tools/VirtualBox-VM-Start.png "VirtualBox - Avvio Virtual Machine")
 
-Cliccando sulla macchina virtuale, viene fornita l'indicazione che il puntatore del mouse non sarà più disponibile nella macchina ospitante perchè sarà catturato dalla macchina virtuale. Per riaverlo disponibile, è necessario premere la combinazione di tasti indicata dal messaggio:
+Cliccando sulla macchina virtuale, viene fornita l'indicazione che il puntatore del mouse non sarà più disponibile nella macchina ospitante perché sarà catturato dalla macchina virtuale. Per riaverlo disponibile, è necessario premere la combinazione di tasti indicata dal messaggio:
 
 ![VirtualBox - Cattura del puntatore del mouse](/static/coding/tools/VirtualBox-VM-StartCatchPointer.png "VirtualBox - Cattura del puntatore del mouse")
 
