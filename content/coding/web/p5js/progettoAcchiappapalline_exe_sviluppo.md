@@ -17,7 +17,11 @@ weight: 8520
 
 Si sviluppi un videogioco in stile "acchiappapalline", utilizzando la libreria grafica p5.js per il disegno degli oggetti necessari. Le fasi da seguire sono le seguenti:
 
-Fase 1: dichiara le variabili ``x1``, ``y1`` e ``d1`` che rappresentano le coordinate della pallina ed il diametro, quindi disegna una pallina.
+Fase 1: dichiara le variabili ``x1``, ``y1`` e ``d1`` che rappresentano le coordinate della pallina ed il diametro, quindi disegna una pallina, come nel seguente esempio:
+
+```javascript
+circle(x1, y1, d1);
+```
 
 Fase 2: se la coordinata ``y1`` della pallina è maggiore di ``400``, allora imposta la coordinata ``y1`` al valore ``0`` altrimenti incrementala di ``10``. Verificare che la pallina si muova verso il basso e poi raggiunto il fondo ricompaia in alto.
 
