@@ -1,7 +1,7 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 05.1 - Progetto Fattoria Animali"
-description: "Sviluppo del progetto fattoria degli animali"
+title: 'p5.js Lez. 05.1 - Progetto "parco zoologico"'
+description: 'Sviluppo del progetto "parco zoologico"'
 date: 2023-04-20
 publishdate: 2023-04-20
 lastmod: 2023-04-20
@@ -9,13 +9,13 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: "Sviluppo del progetto fattoria degli animali"
+summary: 'Sviluppo del progetto "parco zoologico"'
 weight: 8660
 ---
 
-# Progetto fattoria degli animali
+# Progetto parco zoologico
 
-Si sviluppi il progetto "fattoria degli animali" utilizzando la libreria grafica ``p5.js`` e la libreria dei suoni ``p5.sound.js`` per il disegno e la riproduzione degli oggetti necessari. I requisiti funzionali del progetto sono i seguenti:
+Si sviluppi il progetto "parco zoologico" utilizzando la libreria grafica ``p5.js`` e la libreria dei suoni ``p5.sound.js`` per il disegno e la riproduzione degli oggetti necessari. I requisiti funzionali del progetto sono i seguenti:
 
 1. L'area da disegno deve avere una dimensione impostata a proprio piacimento, ma comunque adatta alla pagina web;
 2. Prima dell'avvio, nella funzione ``preload()`` devono essere caricati in memoria i suoni e le immagini da utilizzare;
@@ -25,15 +25,15 @@ Si sviluppi il progetto "fattoria degli animali" utilizzando la libreria grafica
 
 Di seguito, un'immagine del gioco da realizzare.
 
-![p5.js - progetto fattoria degli animali](/static/coding/web/p5js/progettoFattoriaAnimali.png "p5.js - progetto fattoria degli animali")
+![p5.js - progetto parco zoologico](/static/coding/web/p5js/progettoParcoZoologico.png "p5.js - progetto parco zoologico")
 
 <!-- markdownlint-disable MD009 MD036 -->
 
- |              |     |     |     |     |     | 
----       | --- | --- | --- | --- | --- | --- | ---
-Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
-Max punti |  2  |  1  |  2  |  1  |  2  |  2  | 
-Punti     |     |     |     |     |     |     | 
+ |              |     |     |     |     | 
+---       | --- | --- | --- | --- | --- | ---
+Esercizio |  1  |  2  |  3  |  4  |  5  | Totale Punti
+Max punti |  2  |  2  |  2  |  2  |  2  | 
+Punti     |     |     |     |     |     | 
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
