@@ -2,7 +2,7 @@ let img1, img2, img3;
 let img4, img5, img6;
 let img7, img8, img9;
 
-let nomeAnimale = "";
+let nomeAnimale = "Scegli l'animale";
 
 // TODO aggiungere i suoni
 
@@ -47,78 +47,75 @@ function draw() {
     fill('red');
     textSize(36);
     textStyle(BOLD);
-    text("Scegli l'animale", 70, 500);
+    textAlign(CENTER, BASELINE); // Align the x center to 70
+    text(nomeAnimale, 225, 520);
 
-    if (nomeAnimale != "") {
-        text(nomeAnimale, 50, 570);
-    }
-
-    // text("click a coordinate: " + clickX + " " + clickY, 30, 150);
+    //text("click " + clickX + " " + clickY, 225, 550);
 }
 
 function mousePressed() {
     clickX = mouseX;
     clickY = mouseY;
     
-    if(clickX>0 && clickX<150 && clickY>0 && clickY<150) {
+    if (clickX>0 && clickX<150 && clickY>0 && clickY<150) {
         //SuonoIena.play();
         nomeAnimale = "Gatto";
     }
-    if(clickX>0 && clickX<150 && clickY>150 && clickY<300) {
+    if (clickX>0 && clickX<150 && clickY>150 && clickY<300) {
         //SuonoCavallo.play();
         nomeAnimale = "Mucca";
     }
-    if(clickX>0 && clickX<150 && clickY>300 && clickY<450) {
+    if (clickX>0 && clickX<150 && clickY>300 && clickY<450) {
         //SuonoUccello.play();
         nomeAnimale = "Cavallo";
     }
-    if(clickX>0 && clickX<150 && clickY>450 && clickY<600) {
+    if (clickX>0 && clickX<150 && clickY>450 && clickY<600) {
         // SuonoOrso.play();
     }
     
-    if(clickX>150 && clickX<300 && clickY>0 && clickY<150) {
+    if (clickX>150 && clickX<300 && clickY>0 && clickY<150) {
         // SuonoElefante.play();
         nomeAnimale = "Gallina";
     }
-    if(clickX>150 && clickX<300 && clickY>150 && clickY<300) {
+    if (clickX>150 && clickX<300 && clickY>150 && clickY<300) {
         // SuonoLeone.play();
         nomeAnimale = "Cane";
     }
-    if(clickX>150 && clickX<300 && clickY>300 && clickY<450) {
+    if (clickX>150 && clickX<300 && clickY>300 && clickY<450) {
         // SuonoMucca.play();
         nomeAnimale = "Leone";
     }
-    if(clickX>150 && clickX<300 && clickY>450 && clickY<600) {
+    if (clickX>150 && clickX<300 && clickY>450 && clickY<600) {
         // SuonoAquila.play();
         nomeAnimale = "Iena";
     }
 
-    if(clickX>300 && clickX<450 && clickY>0 && clickY<150) {
+    if (clickX>300 && clickX<450 && clickY>0 && clickY<150) {
         // SuonoCane.play();
         nomeAnimale = "Gallo";
     }
-    if(clickX>300 && clickX<450 && clickY>150 && clickY<300) {
+    if (clickX>300 && clickX<450 && clickY>150 && clickY<300) {
         // SuonoTigre.play();
         nomeAnimale = "Asino";
     }
-    if(clickX>300 && clickX<450 && clickY>300 && clickY<450) {
+    if (clickX>300 && clickX<450 && clickY>300 && clickY<450) {
         // SuonoScimmia.play();
         nomeAnimale = "Coniglio";
     }
-    if(clickX>300 && clickX<450 && clickY>450 && clickY<600) {
-        SuonoBalena.play();
+    if (clickX>300 && clickX<450 && clickY>450 && clickY<600) {
+        //SuonoBalena.play();
     }
 
-    if(clickX>450 && clickX<600 && clickY>0 && clickY<150) {
-        SuonoGatto.play();
+    if (clickX>450 && clickX<600 && clickY>0 && clickY<150) {
+        //SuonoGatto.play();
     }
-    if(clickX>450 && clickX<600 && clickY>150 && clickY<300) {
-        SuonoCapra.play();
+    if (clickX>450 && clickX<600 && clickY>150 && clickY<300) {
+        //SuonoCapra.play();
     }
-    if(clickX>450 && clickX<600 && clickY>300 && clickY<450) {
-        SuonoLupo.play();
+    if (clickX>450 && clickX<600 && clickY>300 && clickY<450) {
+        //SuonoLupo.play();
     }
-    if(clickX>450 && clickX<600 && clickY>450 && clickY<600) {
-        SuonoSerpente.play();
+    if (clickX>450 && clickX<600 && clickY>450 && clickY<600) {
+        //SuonoSerpente.play();
     }
 }
