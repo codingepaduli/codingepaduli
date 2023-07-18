@@ -2,20 +2,22 @@ let img1, img2, img3;
 let img4, img5, img6;
 let img7, img8, img9;
 
+let nomeAnimale = "";
+
 // TODO aggiungere i suoni
 
 let clickX, clickY;
 
 function preload() {
-    img1 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_cat.jpg');
-    img2 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_chicken.jpg');
-    img3 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_cock.jpg');
-    img4 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_cow.jpg');
-    img5 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_dog.jpg');
-    img6 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_donkey.jpg');
-    img7 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_horse.jpg');
-    img8 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_lion.jpg');
-    img9 = loadImage('/static/coding/web/p5js/progettoFattoriaAnimali_rabbit.jpg');
+    img1 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_cat.jpg');
+    img2 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_chicken.jpg');
+    img3 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_cock.jpg');
+    img4 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_cow.jpg');
+    img5 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_dog.jpg');
+    img6 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_donkey.jpg');
+    img7 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_horse.jpg');
+    img8 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_lion.jpg');
+    img9 = loadImage('/static/coding/web/p5js/progettoParcoZoologico_rabbit.jpg');
 
     soundFormats('mp3', 'wav');
     /*
@@ -47,8 +49,9 @@ function draw() {
     textStyle(BOLD);
     text("Scegli l'animale", 70, 500);
 
-    textSize(47);
-    text("Ascolta il verso!!", 0, 570);
+    if (nomeAnimale != "") {
+        text(nomeAnimale, 50, 570);
+    }
 
     // text("click a coordinate: " + clickX + " " + clickY, 30, 150);
 }
@@ -58,39 +61,49 @@ function mousePressed() {
     clickY = mouseY;
     
     if(clickX>0 && clickX<150 && clickY>0 && clickY<150) {
-        SuonoIena.play();
+        //SuonoIena.play();
+        nomeAnimale = "Gatto";
     }
     if(clickX>0 && clickX<150 && clickY>150 && clickY<300) {
-        SuonoCavallo.play();
+        //SuonoCavallo.play();
+        nomeAnimale = "Mucca";
     }
     if(clickX>0 && clickX<150 && clickY>300 && clickY<450) {
-        SuonoUccello.play();
+        //SuonoUccello.play();
+        nomeAnimale = "Cavallo";
     }
     if(clickX>0 && clickX<150 && clickY>450 && clickY<600) {
-        SuonoOrso.play();
+        // SuonoOrso.play();
     }
-
+    
     if(clickX>150 && clickX<300 && clickY>0 && clickY<150) {
-        SuonoElefante.play();
+        // SuonoElefante.play();
+        nomeAnimale = "Gallina";
     }
     if(clickX>150 && clickX<300 && clickY>150 && clickY<300) {
-        SuonoLeone.play();
+        // SuonoLeone.play();
+        nomeAnimale = "Cane";
     }
     if(clickX>150 && clickX<300 && clickY>300 && clickY<450) {
-        SuonoMucca.play();
+        // SuonoMucca.play();
+        nomeAnimale = "Leone";
     }
     if(clickX>150 && clickX<300 && clickY>450 && clickY<600) {
-        SuonoAquila.play();
+        // SuonoAquila.play();
+        nomeAnimale = "Iena";
     }
 
     if(clickX>300 && clickX<450 && clickY>0 && clickY<150) {
-        SuonoCane.play();
+        // SuonoCane.play();
+        nomeAnimale = "Gallo";
     }
     if(clickX>300 && clickX<450 && clickY>150 && clickY<300) {
-        SuonoTigre.play();
+        // SuonoTigre.play();
+        nomeAnimale = "Asino";
     }
     if(clickX>300 && clickX<450 && clickY>300 && clickY<450) {
-        SuonoScimmia.play();
+        // SuonoScimmia.play();
+        nomeAnimale = "Coniglio";
     }
     if(clickX>300 && clickX<450 && clickY>450 && clickY<600) {
         SuonoBalena.play();
