@@ -12,9 +12,12 @@ MD024:        # no-duplicate-heading
 MD025:        # single-title/single-h1
   front_matter_title: ""
 MD026: true   # no-trailing-punctuation
-MD033: false  # no-inline-html
+MD033:
+  allowed_elements:
+    - div
 MD036: false  # no-emphasis-as-heading
 MD044:        # proper-names
+  code_blocks: false
   names:
     - JavaScript
     - ECMAScript
@@ -37,7 +40,6 @@ MD044:        # proper-names
     - UTF-8
     - OOP
     - CMS
-  code_blocks: false
 MD046:        # code-block-style
   style: fenced
 MD048:        # code-fence-style
