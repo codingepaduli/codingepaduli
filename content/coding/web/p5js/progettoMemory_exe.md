@@ -7,7 +7,7 @@ publishdate: 2023-04-20
 lastmod: 2023-04-20
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: false
+draft: true
 toc: false
 summary: "Sviluppo del gioco Memory"
 weight: 8630

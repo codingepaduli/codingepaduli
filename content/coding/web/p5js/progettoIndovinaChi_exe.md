@@ -10,7 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: "Sviluppo del gioco Indovina Chi"
-weight: 8640
+weight: 8622
 ---
 
 # Gioco Indovina Chi
