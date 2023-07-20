@@ -10,11 +10,11 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: 'Soluzione del progetto "morra cinese"  (sasso carta forbici)'
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoMorraCineseSoluzione.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoMorraCinese.js"]
 weight: 8648
 ---
 
-# Soluzione del progetto morra cinese
+# Soluzione del progetto "morra cinese"
 
 Di seguito, l'implementazione del progetto "morra cinese".
 

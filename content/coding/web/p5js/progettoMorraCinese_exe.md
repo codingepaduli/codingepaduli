@@ -1,7 +1,7 @@
 ---
 type: "p5js"
 title: 'p5.js Lez. 05.4 - Progetto "morra cinese"'
-description: 'Sviluppo del progetto "morra cinese" (sasso carta forbici)'
+description: 'Requisiti del progetto "morra cinese" (sasso carta forbici)'
 date: 2023-07-17
 publishdate: 2023-07-17
 lastmod: 2023-07-17
@@ -9,11 +9,11 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: 'Sviluppo del progetto "morra cinese" (sasso carta forbici)'
+summary: 'Requisiti del progetto "morra cinese" (sasso carta forbici)'
 weight: 8652
 ---
 
-# Progetto morra cinese
+# Progetto "morra cinese"
 
 Si sviluppi il progetto "morra cinese" (sasso carta forbici) utilizzando la libreria grafica ``p5.js`` e la libreria dei suoni ``p5.sound.js`` per il disegno e la riproduzione degli oggetti necessari. I requisiti funzionali del progetto sono i seguenti:
 
