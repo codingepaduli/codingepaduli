@@ -1,7 +1,7 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 07.2 - Soluzione progetto Acchiappapalline"
-description: "Implementazione di un videogioco in stile 'acchiappapalline'"
+title: 'p5.js Lez. 05.9 - Soluzione del progetto "acchiappapalline"'
+description: 'Soluzione del progetto "acchiappapalline"'
 date: 2022-05-23
 publishdate: 2022-05-23
 lastmod: 2022-05-23
@@ -9,11 +9,13 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: "Implementazione di un videogioco in stile 'acchiappapalline'"
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoAcchiappapallineSoluzione.js"]
-weight: 8518
+summary: 'Soluzione del progetto "acchiappapalline"'
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoAcchiappapalline.js"]
+weight: 8642
 ---
 
-# Soluzione progetto Acchiappapalline
+# Soluzione progetto "acchiappapalline"
+
+Di seguito, l'implementazione del progetto "acchiappapalline".
 
 <div id="acchiappapalline"></div>

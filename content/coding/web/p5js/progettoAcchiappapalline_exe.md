@@ -1,7 +1,7 @@
 ---
 type: "p5js"
-title: "p5.js Lez. 07.1 - Progetto Acchiappapalline"
-description: "Sviluppo di un videogioco in stile 'acchiappapalline'"
+title: 'p5.js Lez. 05.7 - Progetto "acchiappapalline"'
+description: 'Requisiti del progetto "acchiappapalline"'
 date: 2022-05-22
 publishdate: 2022-05-22
 lastmod: 2022-05-22
@@ -9,13 +9,13 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: "Sviluppo di un videogioco in stile 'acchiappapalline'"
-weight: 8520
+summary: 'Requisiti del progetto "acchiappapalline"'
+weight: 8646
 ---
 
-# Progetto Acchiappapalline
+# Progetto "acchiappapalline"
 
-Si sviluppi un videogioco in stile "acchiappapalline", utilizzando la libreria grafica p5.js per il disegno degli oggetti necessari. I requisiti funzionali del gioco sono i seguenti:
+Si sviluppi il progetto "acchiappapalline", utilizzando la libreria grafica ``p5.js`` e la libreria dei suoni ``p5.sound.js`` per il disegno e la riproduzione degli oggetti necessari. I requisiti funzionali del progetto sono i seguenti:
 
 1. Il rettangolo di gioco deve avere una dimensione adatta alla pagina web, deve contenere le palline che cadono e la racchetta per prenderle; I colori della racchetta, delle palline e dello sfondo sono a scelta dello studente. Una serie di 20 palline devono essere posizionate casualmente nell'area superiore del rettangolo di gioco (o anche più in alto, in modo che non siano visibili all'avvio del gioco). La racchetta deve essere posizionata poco distante dal bordo inferiore dell'area da disegno.
 2. All'avvio del gioco, le palline iniziano a muoversi verticalmente verso il basso.
