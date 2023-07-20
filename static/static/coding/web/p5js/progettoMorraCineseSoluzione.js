@@ -2,79 +2,109 @@ let SASSO = 1;
 let CARTA = 2;
 let FORBICI = 3;
 
-let img;
-let sceltaComputer;
-let numeriDaScegliere=[1, 2, 3];
+let numeriDaScegliere=[SASSO, CARTA, FORBICI];
+
 let sceltaUtente = 0;
+let imgSceltaUtente;
+let sceltaComputer = 0;
+let imgSceltaComputer;
 
 let cX, cY;
 
+let imgRock, imgPaper, imgScissors;
+
 function preload() {
-  img = loadImage('https://play-lh.googleusercontent.com/m_CFCedgx9NDksGgn3yiNWkdRhEYECd3wQ5OUQEXoHcUIaJmY4DjOZ7OaogemgyOc6Y=w240-h480-rw');
-  
+    imgRock = loadImage('/static/coding/web/p5js/progettoMorraCinese_rock.jpeg');
+    imgPaper = loadImage('/static/coding/web/p5js/progettoMorraCinese_paper.jpeg');
+    imgScissors = loadImage('/static/coding/web/p5js/progettoMorraCinese_scissors.jpeg');
+    
+    soundFormats('mp3', 'wav');
 }
 
 function setup() {
-  createCanvas(200, 250);
-  sceltaComputer =  random(numeriDaScegliere);
+  createCanvas(600, 450);
 }
 
 function draw() {
-  background(255,255,0);
-  text("punteggio",120,10);
+  background(255, 255, 0);
 
-  text("scegli cosa tirare",15,80);
-  image(img, 30, 85,120,120);
+  // Immagini da scegliere (pannello laterale)
+  image(imgRock, 25, 75, 100, 100);
+  image(imgPaper, 25, 200, 100, 100);
+  image(imgScissors, 25, 325, 100, 100);
+
+  // scritta "scegli" (pannello laterale)
+  fill('red');
+  textSize(24);
+  textStyle(BOLD);
+  textAlign(CENTER, BASELINE); // Align the x center to 70
+  text("scegli", 75, 50);
   
-  text("scelta dell'utente",15,220);
-  text(sceltaUtente,110,220);
-  
-  // aspetto che l'utente sceglie (1 o 2 o 3)
+  // aspetto che l'utente sceglie (SASSO, CARTA, FORBICI)
   if (sceltaUtente != 0) {
     
-    text("scelta del computer",15,50);
-    text(sceltaComputer,25,60)
-
+    text("tu: " + sceltaUtente, 225, 50);
+    image(imgSceltaUtente, 150, 75, 200, 200);
     
-    if(sceltaComputer == sceltaUtente){
-        text("PAREGGIO",15,240);
-    }
+    text("computer: " + sceltaComputer, 450, 100);
+    image(imgSceltaComputer, 350, 125, 200, 200);
 
-    if(sceltaComputer==SASSO && sceltaUtente==CARTA){
-        text("ha vinto l'utente",15,240);
+    // Messaggio di vittoria, pareggio o sconfitta
+    if (sceltaComputer == sceltaUtente) {
+        text("PAREGGIO", 350, 400);
     }
-    if(sceltaComputer==SASSO && sceltaUtente==FORBICI){
-        text("ha vinto il computer",15,240);
+    if (sceltaComputer==SASSO && sceltaUtente==CARTA) {
+        text("ha vinto l'utente", 350, 400);
     }
-    if(sceltaComputer==CARTA && sceltaUtente==SASSO){
-        text("ha vinto il computer",15,240);
+    if (sceltaComputer==SASSO && sceltaUtente==FORBICI) {
+        text("ha vinto il computer", 350, 400);
     }
-    if(sceltaComputer==CARTA && sceltaUtente==FORBICI){
-        text("ha vinto l'utente",15,240);
+    if (sceltaComputer==CARTA && sceltaUtente==SASSO) {
+        text("ha vinto il computer", 350, 400);
     }
-    if(sceltaComputer==FORBICI && sceltaUtente==SASSO){
-        text("ha vinto l'utente",15,240);
+    if (sceltaComputer==CARTA && sceltaUtente==FORBICI) {
+        text("ha vinto l'utente", 350, 400);
     }
-    if(sceltaComputer==FORBICI && sceltaUtente==CARTA){
-        text("ha vinto il computer",15,240);
+    if (sceltaComputer==FORBICI && sceltaUtente==SASSO) {
+        text("ha vinto l'utente", 350, 400);
+    }
+    if (sceltaComputer==FORBICI && sceltaUtente==CARTA) {
+        text("ha vinto il computer", 350, 400);
     }
   }
-   text("c:" + cX + " " + cY, 150, 240);
+  // text("c:" + cX + " " + cY, 150, 240);
 }
 
 function mousePressed() {
   cX = mouseX;
   cY = mouseY;
-  if(cX>=53 && cX<=95 && cY>=63 && cY<=131){
-    sceltaUtente =SASSO;
+
+  // Gestisco la scelta utente (quando fa click)
+  if (cX>=25 && cX<=125 && cY>=75 && cY<=175) {
+    sceltaUtente = SASSO;
+    imgSceltaUtente = imgRock;
   }
-  if(cX>=53 && cX<=96 && cY>=140 && cY<=178){
-    sceltaUtente =FORBICI;
+  if (cX>=25 && cX<=125 && cY>=200 && cY<=300) {
+    sceltaUtente = CARTA;
+    imgSceltaUtente = imgPaper;
   }
-  if(cX>=100 && cX<=140 && cY>=140 && cY<=178){
-    sceltaUtente =CARTA;
+  if (cX>=25 && cX<=125 && cY>=325 && cY<=425) {
+    sceltaUtente = FORBICI;
+    imgSceltaUtente = imgScissors;
   }
 
+  // Genero la risposta del computer
+  sceltaComputer =  random(numeriDaScegliere);
+
+  if (sceltaComputer == SASSO) {
+    imgSceltaComputer = imgRock;
+  }
+  if (sceltaComputer == CARTA) {
+    imgSceltaComputer = imgPaper;
+  }
+  if (sceltaComputer == FORBICI) {
+    imgSceltaComputer = imgScissors;
+  }
 }
 
 
