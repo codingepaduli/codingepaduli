@@ -7,7 +7,7 @@ publishdate: 2023-05-15
 lastmod: 2023-05-15
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: false
+draft: true
 toc: false
 summary: "Sviluppo del gioco Indovina Chi"
 weight: 8622
