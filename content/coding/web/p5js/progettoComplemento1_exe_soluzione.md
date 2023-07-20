@@ -11,7 +11,7 @@ draft: false
 toc: false
 summary: 'Soluzione del progetto "complemento a 1"'
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoComplemento1.js"]
-weight: 8638
+weight: 8636
 ---
 
 # Soluzione progetto "complemento a 1"
