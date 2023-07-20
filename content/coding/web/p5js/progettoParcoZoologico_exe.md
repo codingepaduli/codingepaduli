@@ -1,7 +1,7 @@
 ---
 type: "p5js"
 title: 'p5.js Lez. 05.1 - Progetto "parco zoologico"'
-description: 'Sviluppo del progetto "parco zoologico"'
+description: 'Requisiti del progetto "parco zoologico"'
 date: 2023-04-20
 publishdate: 2023-04-20
 lastmod: 2023-04-20
@@ -9,11 +9,11 @@ categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
-summary: 'Sviluppo del progetto "parco zoologico"'
+summary: 'Requisiti del progetto "parco zoologico"'
 weight: 8658
 ---
 
-# Progetto parco zoologico
+# Progetto "parco zoologico"
 
 Si sviluppi il progetto "parco zoologico" utilizzando la libreria grafica ``p5.js`` e la libreria dei suoni ``p5.sound.js`` per il disegno e la riproduzione degli oggetti necessari. I requisiti funzionali del progetto sono i seguenti:
 

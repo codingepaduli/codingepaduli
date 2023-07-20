@@ -10,7 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: 'Soluzione del progetto "parco zoologico"'
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/coding/web/p5js/progettoParcoZoologico.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoParcoZoologico.js"]
 weight: 8654
 ---
 
