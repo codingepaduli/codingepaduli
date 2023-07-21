@@ -297,6 +297,16 @@ ssh -i "~/.ssh/id_ed25519" git@github.com
 Hi progetto-git! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+Per verificare che la chiave di cui si è proprietari sia la stessa presente su GitHub, si può calcolare il codice hash "SHA256" della chiave che si possiede e confrontarlo con quello visualizzato su GitHub. Per recuperare le informazioni dalla chiave si utilizza il comando:
+
+```bash
+ssh-keygen -l -f ~/.ssh/id_ed25519
+
+2048 SHA256: abacadaeaf1234567890 Comment for key xyz (ed25519)
+^^^^   ^^^^^^^^^^^^^^^^^^^^^^^^       ^^^^^^^^^^       ^^^
+ |__ Size   Fingerprint __|     Comment __|     Type __|
+```
+
 ## Creazione repository remoto su GitLab
 
 <!-- TODO fix all images -->
@@ -594,6 +604,19 @@ git stash drop stash@{0}
 ```
 
 dove il numero zero è l'indice dell'area temporanea da cancellare.
+
+### Reset delle operazioni
+
+In alcuni casi può essere necessario ripristinare il repository locale allo stato del repository remoto. Questo può essere necessario in alcuni casi:
+
+- In caso venga svolta l'operazione di ``git pull`` ma sono presenti dei cambiamenti in locale, ci si può trovare il mio stato “divergente”, come indicato dal messaggio "your branch and ‘origin/master’ have diverged and have 1 and 83 different commits each, respectively";
+- In caso venga svolta l'operazione di ``git checkout`` ci si può trovare in uno stato di "detached head", come indicato dal messaggio "You are in ‘detached HEAD’ state"
+
+Sia per invertire la "divergenza", <!-- in inglese ‘undiverge’ ?? --> sia per tornare indietro dello stato di "detached HEAD", accettando in entrambi i casi di perdere tutti i cambiamenti fatti sul repository locale, si può utilizzare il comando:
+
+```bash
+git reset –hard origin/master
+```
 
 ### Lavorare con più origini remote
 
