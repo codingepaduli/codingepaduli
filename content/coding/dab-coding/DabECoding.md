@@ -63,7 +63,7 @@ Sia nel caso del delta maggiore di zero, sia nel caso di delta uguale a zero, ca
 - ``x1 = (-b -Sqrt(delta))/(2*a)``;
 - ``x2 = (-b +Sqrt(delta))/(2*a)``;
 
-File da consegnare
+File da consegnare:
 
 - [Cognome-2023-07-23 DAB equazioni2Grado.fprg](/static/coding/dab-coding/equazioni2Grado.fprg);
 - [Cognome-2023-07-23 Immagine DAB equazioni2Grado.svg](/static/coding/dab-coding/equazioni2Grado.svg);
@@ -78,7 +78,12 @@ A partire da 2 numeri e dal tipo operazione ``T``, se ``T = 1`` determinare la s
 
 ## Distanza tra due punti
 
-Calcolare la distanza tra un punto A di coordinate (x1, y1) ed un punto B di coordinate (x2, y2).
+Calcolare la distanza tra due punti A di coordinate (x1, y1) e B di
+ coordinate (x2, y2), utilizzando il teorema di Pitagora.
+
+File da consegnare:
+
+- [Cognome-2023-07-23 sorgenti distanza2punti.cpp](/static/coding/dab-coding/distanza2punti.cpp);
 
 ## Maggiore del limite
 
