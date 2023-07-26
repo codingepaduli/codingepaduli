@@ -15,18 +15,20 @@ weight: 12020
 
 # DAB e coding
 
-## Traccia
+## Regole generali
 
 Analizzare il problema descritto in calce e quindi realizzare e consegnare:
 
-1. il diagramma a blocchi (file di flowgorithm con estensione ".fprg");
-2. l'immagine vettoriale del diagramma a blocchi (file con estensione ".svg");;
-3. l'immagine in formato PNG del diagramma a blocchi;
-4. l'immagine della finestra delle variabili;
-5. l'immagine della finestra di esecuzione;
-6. la codifica nel linguaggio di programmazione (file con estensione ".c").
+1. il diagramma a blocchi (file di flowgorithm con estensione "``.fprg``");
+2. l'immagine vettoriale del diagramma a blocchi (file con estensione "``.svg``");;
+3. l'immagine del diagramma a blocchi in formato bitmap (file con estensione "``.bmp``");
+4. l'immagine della finestra delle variabili (file con estensione "``.png``);
+5. l'immagine della finestra di esecuzione  (file con estensione "``.png``);
+6. la codifica nel linguaggio di programmazione (file con estensione "``.c``" o "``.cpp``").
 
-L'esercitazione deve terminare 15 minuti prima del termine delle ore a disposizione; Ogni file consegnato deve iniziare con il proprio cognome (non il nome) seguito dalla data in formato ``aaaa-mm-gg`` (usando il carattere "trattino" e non la barra) e poi dalla descrizione del file e relativa estensione, ad esempio "2022-03-01-Rossi-finestra variabili.png".
+Ogni nome di file deve iniziare con il proprio ``cognome`` (non il nome) seguito dalla data (in formato ``aaaa-mm-gg``, usando il carattere "trattino" ``-``, e non la barra, per separare i campi), dalla descrizione del file e dalla relativa estensione, ad esempio "``Rossi 2022-03-01 finestra variabili.png``".
+
+Se espressamente indicato, la consegna deve avvenire in un unico pacchetto compresso (file in formato "``.zip``"), con nome del file che rispetta sempre la regola indicata in precedenza (``cognome`` seguito dalla data in formato ``aaaa-mm-gg``, dalla descrizione e dall'estensione "``.zip``").
 
 Al termine dell'esercitazione, indicare in un commento ogni punto che è stato rispettato, come nel seguente esempio:
 
@@ -39,7 +41,7 @@ punto 5 - rispettato;
 punto 6 - rispettato;
 ```
 
-Prima di iniziare il lavoro, smartphone e smartwatch devono essere lasciati sulla cattedra o nello zaino nella zona comune.
+L'esercitazione deve terminare 15 minuti prima del termine delle ore a disposizione; Prima di iniziare il lavoro, smartphone e smartwatch devono essere lasciati sulla cattedra o nello zaino nella zona comune.
 
 L'esercitazione sarà annullata per:
 
@@ -106,4 +108,12 @@ Se la media del primo quadrimestre è inferiore a quella del secondo quadrimestr
 
 Progettare un programma che permetta all'utente di inserire tre numeri per giorno, mese ed anno e di verificare se essi corrispondono effettivamente ad una data valida. L'output deve essere un messaggio indicante "la data è valida" oppure "la data è invalida".
 
-Verificare le date per il mese di Febbraio (giorni 30 e 31 non sono validi), verificare che il giorno 31 per i mesi pari non sia valido.
+Traccia extra: Verificare le date per il mese di Febbraio (giorni 30 e 31 non sono validi), verificare che il giorno 31 per i mesi pari non sia valido.
+
+Traccia extra - extra: Verificare che la data sia valida in caso di anno bisestile;
+
+File da consegnare:
+
+- [Cognome-2023-07-23 sorgenti dataValida.cpp](/static/coding/dab-coding/dataValida.cpp);
+
+- [Cognome-2023-07-23 sorgenti dataValida extra.cpp](/static/coding/dab-coding/dataValidaExtra.cpp);
