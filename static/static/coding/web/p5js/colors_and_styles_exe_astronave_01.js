@@ -1,10 +1,12 @@
+let canvas;
 function setup() {
-  createCanvas(200, 200);
+  canvas = createCanvas(200, 200);
+  canvas.parent('astronave');
 }
 
 function draw() {
-  background(220);
-  
+  background(255, 255, 255);
+
   fill(0, 255, 0);
   
   // coda
@@ -65,4 +67,6 @@ function draw() {
   // linea di simmetria
   line(0, 100, 200, 100);
 
+  saveCanvas(canvas, 'colors_and_styles_exe_astronave_05', 'png');
+  noLoop();
 }
