@@ -74,9 +74,15 @@ Creare una pagina web contenente un disegno a piacere di un'astronave con 4 ali 
 
 ## Disegno di un aereo a colori
 
-Creare una pagina web contenente un disegno a piacere di un aereo con 2 ali anteriori armate di missili, una coda con 2 ali posteriori, la testa con l'oblò del pilota ed un contorno di nuvole. La dimensione massima dell'aereo deve essere 150 per 150 punti. L'astronave deve essere simmetrica rispetto al proprio asse verticale o orizzontale, i colori dei vari componenti sono a scelta dell'autore.
+Creare una pagina web contenente un disegno a piacere di un aereo con 2 ali anteriori armate di missili, una coda con 2 ali posteriori, la testa con l'oblò del pilota ed un contorno di nuvole. La dimensione massima dell'aereo deve essere 150 per 150 punti. L'aereo deve essere simmetrico rispetto al proprio asse verticale o orizzontale, i colori dei vari componenti sono a scelta dell'autore.
 
 ![p5.js - Disegno di un aereo a colori](/static/coding/web/p5js/colors_and_styles_exe_aerei.png "p5.js - Disegno di un aereo a colori")
+
+## Disegno di un carro armato a colori
+
+Creare una pagina web contenente un disegno a piacere di un carro armato con ruote cingolate, 3 cannoni, oblò in vetro per il pilota, 6 mitragliatrici, proiettili esplosi per ogni arma. La dimensione massima del carro armato deve essere 200 per 200 punti. Il carro armato deve essere simmetrico rispetto al proprio asse verticale o orizzontale, i colori dei vari componenti sono a scelta dell'autore.
+
+![p5.js - Disegno di un carro armato a colori](/static/coding/web/p5js/colors_and_styles_exe_carro.png "p5.js - Disegno di un carro armato a colori")
 
 ## Disegno di una scena del gioco "Snake"
 
