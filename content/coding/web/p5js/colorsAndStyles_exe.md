@@ -82,7 +82,7 @@ Creare una pagina web contenente un disegno a piacere di un aereo con 2 ali ante
 
 Creare una pagina web contenente un disegno a piacere di un carro armato con ruote cingolate, 3 cannoni, oblò in vetro per il pilota, 6 mitragliatrici, proiettili esplosi per ogni arma. La dimensione massima del carro armato deve essere 200 per 200 punti. Il carro armato deve essere simmetrico rispetto al proprio asse verticale o orizzontale, i colori dei vari componenti sono a scelta dell'autore.
 
-![p5.js - Disegno di un carro armato a colori](/static/coding/web/p5js/colors_and_styles_exe_carro.png "p5.js - Disegno di un carro armato a colori")
+![p5.js - Disegno di un carro armato a colori](/static/coding/web/p5js/colors_and_styles_exe_carri.png "p5.js - Disegno di un carro armato a colori")
 
 ## Disegno di una scena del gioco "Snake"
 
