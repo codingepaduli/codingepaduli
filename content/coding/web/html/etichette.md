@@ -16,7 +16,11 @@ weight: 9880
 
 # Il linguaggio HTML e le etichette
 
+<!-- markdownlint-disable MD033 -->
+
 Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio di etichettatura (in inglese Markup) degli ipertesti (in inglese HyperText), ha lo scopo di strutturare i documenti da pubblicare sul web.
+
+<!-- markdownlint-enable MD033 -->
 
 Non è un linguaggio di programmazione, ma solo di definizione della **struttura** di un ipertesto, dato che usa dei segnaposto per indicare dove iniziano e finiscono gli elementi.
 

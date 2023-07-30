@@ -97,6 +97,8 @@ I codici QR si sono evoluti nel tempo con i seguenti formati:
 
 ### QR Code Generator
 
+<!-- markdownlint-disable MD033 -->
+
 <form>
     <fieldset>
         <label for="dati">Dati da codificare nel QR Code</label>
@@ -181,3 +183,5 @@ I codici QR si sono evoluti nel tempo con i seguenti formati:
 </style>
 
 -->
+
+<!-- markdownlint-enable MD033 -->

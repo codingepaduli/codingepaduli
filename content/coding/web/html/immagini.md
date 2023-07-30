@@ -366,6 +366,8 @@ nell'attributo `usemap` del tag `img`, come nel seguente esempio:
 Cliccare su uno dei pianeti per collegarsi sulla pagina corrispondente
 al pianeta scelto.
 
+<!-- markdownlint-disable MD033 -->
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" usemap="#planetmap" />
 
 <map name="planetmap">
@@ -373,6 +375,8 @@ al pianeta scelto.
     <area shape="circle" coords="90,58,3" alt="Mercury" title="Mercury" href="https://it.wikipedia.org/wiki/Mercurio_(astronomia)" />
     <area shape="circle" coords="124,58,8" alt="Venus" title="Venus" href="https://it.m.wikipedia.org/wiki/Venere_(astronomia)" />
 </map>
+
+<!-- markdownlint-enable MD033 -->
 
 Le immagini possono essere caricate su richiesta utilizzando le tecniche
 di **lazy loading**, ovvero le immagini che si trovano in aree non
@@ -397,7 +401,11 @@ valore "eager" o "lazy", come nell'esempio seguente:
 
 che da il seguente risultato (in ambiente web si nota il caricamento "su richiesta"):
 
+<!-- markdownlint-disable MD033 -->
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" loading="lazy">
+
+<!-- markdownlint-enable MD033 -->
 
 Ricapitolando quindi gli attributi del tag img, abbiamo:
 
@@ -451,8 +459,12 @@ Il browser adatta lo stile grafico del componente basandosi sul valore ``value``
 
 Se il valore da mostrare ``value`` si trova nello stesso intervallo del valore gradito ``optimum``, allora il componente viene visualizzato in verde. Se invece i due valori si trovano in due intervalli adiacenti, il componente viene visualizzato in giallo, altrimenti in rosso.
 
+<!-- markdownlint-disable MD033 -->
+
 <meter min="12" low="18" high="30" max="35" value="32" optimum="16"> Esame superato.</meter>
 
 <meter min="12" low="18" high="30" max="35" value="32" optimum="24"> Esame superato.</meter>
 
 <meter min="12" low="18" high="30" max="35" value="32" optimum="34"> Esame superato.</meter>
+
+<!-- markdownlint-enable MD033 -->

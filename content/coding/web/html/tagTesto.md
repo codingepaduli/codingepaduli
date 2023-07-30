@@ -39,6 +39,8 @@ che vengono poi trasformati dal browser come si vede di seguito:
 Il paragrafo è generato dall'etichetta ``p`` che ha il simbolo di apertura ``<p>``
 ed il simbolo di chiusura ``</p>``;
 
+<!-- markdownlint-disable MD033 -->
+
 L'etichetta ``del`` genera un testo cancellato come ad esempio questo testo
 <del>cancellato</del> generato dal seguente codice:
 ``<del>cancellato</del>``;
@@ -59,8 +61,7 @@ L'etichetta ``strong`` genera un testo in grassetto, come ad esempio questo
 testo **in grassetto** generato dal seguente codice:
 ``<strong>in grassetto</strong>``;
 
-L'etichetta ``em`` genera un testo in corsivo, come ad esempio questo testo *in
-corsivo* generato dal seguente codice:
+L'etichetta ``em`` genera un testo in corsivo, come ad esempio questo testo *in corsivo* generato dal seguente codice:
 ``<em>in corsivo</em>``;
 
 L'etichetta ``mark`` genera un testo evidenziato, come ad esempio questo testo
@@ -272,3 +273,5 @@ La tabella viene visualizzata di seguito:
         <!-- Cella mancante perché occupata dalla cella che si è espansa -->
     </tr>
 </table>
+
+<!-- markdownlint-enable MD033 -->

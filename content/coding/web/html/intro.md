@@ -59,9 +59,13 @@ Il **World Wide Web** (dall'inglese "Rete di Ampiezza Globale") è il servizio d
 
 Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi vedere un video su una piattaforma web americana ed ancora visualizzare un prodotto in vendita su un e-commerce australiano, e così via.
 
+<!-- markdownlint-disable MD033 -->
+
 Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
 
 Il <abbr title="World Wide Web">WWW</abbr> diventa un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
+
+<!-- markdownlint-enable MD033 -->
 
 ## Architettura client server del WWW
 
@@ -108,8 +112,12 @@ Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikip
 
 Sul web sono utilizzati molti linguaggi, ma i principali usati per la realizzazione dei siti web sono:
 
+<!-- markdownlint-disable MD033 -->
+
 - Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio che definisce la struttura delle pagine web, ma non indica la formattazione.
 - Il linguaggio <abbr title="Cascading Style Sheets">**CSS**</abbr> è usato per definire la formattazione dei documenti HTML, ovvero stili, colori, animazioni, ...
 - Il linguaggio **JavaScript** è usato per poter elaborare le informazioni sul client e per poter interagire con l'utente (ad esempio nei videogiochi online).
+
+<!-- markdownlint-enable MD033 -->
 
 I tre linguaggi sono fortemente collegati, ma è utile sottolineare che ognuno ha uno scopo ben definito.

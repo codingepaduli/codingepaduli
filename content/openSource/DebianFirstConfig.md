@@ -82,6 +82,7 @@ Per aggiungere un nuovo gruppo ``casa`` ed creare un nuovo utente ``io`` apparte
 sudo /usr/sbin/groupadd -g 2000 casa
 sudo /usr/sbin/adduser --ingroup casa --uid 1001 io
 ```
+
 <!--
 sudo /usr/sbin/adduser --ingroup casa --uid 1002 mamma
 sudo /usr/sbin/adduser --ingroup casa --uid 1003 roberto

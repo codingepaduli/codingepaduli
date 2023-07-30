@@ -98,4 +98,3 @@ summary: "Set di link relativi alle app su F-Droid"
 - [WhatsApp](https://f-droid.org/it/packages/com.whatsapp/)
 - [Wifi Remote Play](https://f-droid.org/it/packages/net.sourceforge.wifiremoteplay/)
 - [World Weather](https://f-droid.org/it/packages/com.haringeymobile.ukweather/)
-

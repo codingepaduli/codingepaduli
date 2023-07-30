@@ -22,8 +22,8 @@ weight: 8620
 ```javascript
 sceltaSuoni = [SuonoGue, SuonoLazza, SuonoEmis,
     SuonoNoyz, SuonoSalmo, SuonoLilTjay,
-    SuonoLilBaby, SuonoMarracash, SuonoFuture, 
-    SuonoErnia, SuonoKidYugi, SuonoCapo, 
+    SuonoLilBaby, SuonoMarracash, SuonoFuture,
+    SuonoErnia, SuonoKidYugi, SuonoCapo,
     SuonoShiva, SuonoDrake, SuonoDonToliver];
 ```
 

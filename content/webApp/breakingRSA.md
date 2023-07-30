@@ -12,6 +12,8 @@ toc: false
 summary: "Rompere la codifica RSA con il metodo di Fermat."
 ---
 
+<!-- markdownlint-disable MD033 -->
+
 <script type="text/javascript" src="/static/webApp/breakingRSA.js"></script>
 
 # Rompere la codifica RSA
@@ -81,3 +83,5 @@ Per rompere RSA quando **p** e **q** sono vicini, posso scrivere l'equazione di 
         display:inline-block;
     }
 </style>
+
+<!-- markdownlint-enable MD033 -->

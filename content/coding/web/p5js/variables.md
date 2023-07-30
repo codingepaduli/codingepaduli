@@ -495,7 +495,7 @@ Di seguito, un esempio completo d'applicazione della variabile contatore  per co
 ```javascript
 let clickX, clickY;
 
-// Dichiaro ed inizializzo 
+// Dichiaro ed inizializzo
 // la variabile contatore
 let contatore = 0;
 
@@ -557,13 +557,13 @@ function setup() {
     // lo accumulo nella variabile accumulatore
     num1 = random(10, 20);
     accumulatore = accumulatore + num1;
-    
+
     num2 = random(10, 20);
     accumulatore = accumulatore + num2;
-    
+
     num3 = random(10, 20);
     accumulatore = accumulatore + num3;
-    
+
     num4 = random(10, 20);
     accumulatore = accumulatore + num4;
 }
@@ -601,15 +601,15 @@ function setup() {
     num1 = prompt("Inserisci un valore:");
     num1 = parseFloat(num1);
     accumulatore = accumulatore + num1;
-    
+
     num2 = prompt("Inserisci un valore:");
     num2 = parseFloat(num2);
     accumulatore = accumulatore + num2;
-    
+
     num3 = prompt("Inserisci un valore:");
     num3 = parseFloat(num3);
     accumulatore = accumulatore + num3;
-    
+
     num4 = prompt("Inserisci un valore:");
     num4 = parseFloat(num4);
     accumulatore = accumulatore + num4;

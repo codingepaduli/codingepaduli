@@ -48,9 +48,13 @@ Tra i diversi messaggi, di avviso o di errore, abbiamo:
 </head>
 ```
 
+<!-- markdownlint-disable MD033 -->
+
 **The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment** Indica che non si possono mettere due trattini consecutivi all'interno di un commento, quindi i due trattini vanno rimossi. Spesso si sbaglia a scrivere il commento, aggiungendo uno spazio di troppo, che deve essere rimosso, come nel seguente esempio, nel quale sono evidenziati gli spazi da rimuovere: ``<!``<mark> </mark>``−− commento −−``<mark> </mark>``>``.
 
 **No <mark>p</mark> element in scope but a <mark>p end tag</mark> seen** indica che l'etichetta evidenziata è stata aperta (ad esempio ``<p>``) e non è stata chiusa correttamente (con ``</p>``).
+
+<!-- markdownlint-enable MD033 -->
 
 **The center element is obsolete. Use CSS instead.** indica che gli ultimi standard sconsigliano l'uso dell'etichetta evidenziata (in questo caso, l'etichetta ``<center>``). In questo caso si consiglia di sostituirla facendo uso dei CSS.
 
