@@ -20,6 +20,8 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 # Flappy Bird
 
+<!-- markdownlint-disable MD033 -->
+
 <div class="container">
     <div id="flappyBird"></div>
     <video class="input_video"></video>
@@ -153,3 +155,5 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
     }
 </script>
+
+<!-- markdownlint-enable MD033 -->

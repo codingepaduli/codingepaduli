@@ -33,6 +33,8 @@ Selettore | Descrizione
 
 ### Esempio d'uso del selettore universale
 
+<!-- markdownlint-disable MD033 -->
+
 Supponendo che la pagina HTML contenga solo gli elementi:
 <div id="univ">
   <p>paragrafo1</p>
@@ -402,3 +404,5 @@ Tag['attr'].class:first-child :empty
 
 Le combinazioni permettono di creare delle selezioni effettivamente molto potenti,
 anche se la sintassi di selezione risultante non è delle più semplici.
+
+<!-- markdownlint-enable MD033 -->

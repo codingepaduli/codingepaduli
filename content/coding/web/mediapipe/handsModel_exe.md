@@ -29,6 +29,8 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 ![Hands landmarks (punti di riferimento della mano)](https://mediapipe.dev/images/mobile/hand_landmarks.png)
 
+<!-- markdownlint-disable MD033 -->
+
 <div class="container">
     <div id="handsModel"></div>
     <video class="input_video"></video>
@@ -114,3 +116,5 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
         }
     }
 </script>
+
+<!-- markdownlint-enable MD033 -->

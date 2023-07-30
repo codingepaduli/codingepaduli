@@ -211,6 +211,8 @@ function callGetJSON() {
 
 Il risultato è il seguente:
 
+<!-- markdownlint-disable MD033 -->
+
 <div id="loadImage"></div>
 <input type="button" onclick="callGetJSON()" value="seleziona">
 
@@ -220,3 +222,5 @@ encodeURI(uri)
 headers: { 'Content-Type': 'application/json' }, JSON.stringify(record) }
 
 // [https://i.imgur.com/X4vco9k.jpg](https://i.imgur.com/X4vco9k.jpg)
+
+<!-- markdownlint-enable MD033 -->

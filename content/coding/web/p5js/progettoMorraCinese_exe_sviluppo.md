@@ -30,8 +30,8 @@ Fase 2: caricare immagini e suoni in memoria e visualizzare le immagini nell'are
 Fase 3: Dichiarare le tre costanti ed un array che le contenga tutte, come di seguito indicato:
 
 ```javascript
-let SASSO = 1; 
-let CARTA = 2; 
+let SASSO = 1;
+let CARTA = 2;
 let FORBICI = 3;
 
 let scelta = [SASSO, CARTA, FORBICI];
