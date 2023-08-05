@@ -36,7 +36,15 @@ m = minute();
 s = second();
 ```
 
-Fase 4: dichiarare tre variabili ``hGradi``, ``mGradi`` e ``sGradi`` che rappresentino la corrispondenza in gradi sessagesimali di un'ora, di un minuto e di un secondo. Per effettuare ciò è necessario ricordare che le lancette partono dalle ore ``12`` mentre i gradi si misurano dall'angolo ``0°`` che si trova quando la lancetta si posa sul numero ``3`` del quadrante. Per creare la corrispondenza tra le due misure è necessario sottrarre a tutte e tre le variabili il valore di ``90°``.
+Fase 4: E' necessario calcolare di quanti gradi deve essere spostata la lancetta delle ore quando si passa da un'ora alla successiva, tenendo presente che la circonferenza è di 360 gradi e sul quadrante dell'orologio sono presenti 12 ore. Il calcolo può essere salvato in una nuova variabile ``gradiDeltaOre`` da dichiarare. Un calcolo simile deve essere fatto per i minuti ed i secondi, per cui saranno necessarie anche le variabili ``gradiDeltaMinuti`` e ``gradiDeltaSecondi``;
+
+![p5.js - rapporto ore - proporzione](/static/coding/web/p5js/progettoOrologio-proporzione.png "p5.js - rapporto ore - proporzione")
+
+Calcolato lo spostamento in gradi per ogni ora, è necessario calcolare lo spostamento per il numero di ore indicato dal sistema (e già memorizzato nella variabile ``h``). A ``3`` ore corrisponde uno spostamento di tre volte il valore di ``gradiDeltaOre``, a 5 ore corrisponde uno spostamento di cinque volte il valore di ``gradiDeltaOre`` e cosi via. Un calcolo simile deve essere fatto per i minuti ed i secondi. Sarà quindi necessario dichiarare le variabili ``hGradi``, ``mGradi`` e ``sGradi`` per memorizzare questo calcolo.
+
+![p5.js - rapporto ore - spostamento](/static/coding/web/p5js/progettoOrologio-spostamento.png "p5.js - rapporto ore - spostamento")
+
+E' necessario infine ricordare che le lancette partono dalle ore ``12`` e procedono in senso orario, mentre gli angoli in ``p5.js`` si misurano prendendo come riferimento l'angolo ``0°`` (che si trova quando la lancetta si posa sul numero ``3`` del quadrante) ed effettuando una rotazione in senso orario. Per creare la corrispondenza tra le ore e gli angoli, è necessario effettuare una correzione di un angolo retto, sottraendo alle variabili ``hGradi``, ``mGradi`` e ``sGradi`` il valore di ``90°`` (come a dire la lancetta delle ``3`` si riporta indietro di ``90°`` e quindi si trova sulle ore ``12`` e da questa lancetta si inizia a misurare l'angolo).
 
 Fase 5: dichiarare tre variabili ``rh``, ``rm`` e ``rs``, che rappresentano la lunghezza della lancetta delle ore, dei minuti e dei secondi. Per ognuna scegliere un valore tale che ``rh < rm < rs``.
 
