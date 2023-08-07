@@ -9,7 +9,7 @@ spellcheck: 2021-01-14
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
-toc: false
+toc: true
 summary: "Introduzione alla libreria grafica p5.js"
 weight: 9040
 
@@ -184,7 +184,7 @@ Il parametro formale ``a`` è un numero e rappresenta la quantità di trasparenz
 
 Si rimanda al capitolo sui colori per una spiegazione più dettagliata di questi parametri. In questo paragrafo, l'attenzione è focalizzata sulla documentazione dei parametri.
 
-## Editor online per p5.js
+## Ambiente di sviluppo p5js.org
 
 Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità della libreria p5.js, è sicuramente l'editor presente sul sito web [https://editor.p5js.org](https://editor.p5js.org "Editor online di p5.js"), che si presenta con la seguente interfaccia grafica:
 
@@ -217,6 +217,43 @@ Le voci visualizzate nell'immagine sono:
 Nell'area personale è possibile gestire i propri progetti e le proprie collezioni. Il menù contestuale ad ogni progetto permette di gestire le varie azioni sul progetto, come da immagine seguente:
 
 ![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in-projects.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
+
+## Ambiente di sviluppo openprocessing.org
+
+L'ambiente di sviluppo di openprocessing si presenta con la seguente interfaccia grafica:
+
+![openprocessing.org - Home page](/static/coding/web/p5js/intro-openprocessing.png "openprocessing.org - Home page")
+
+Cliccando sulla voce "Crea Sketch" nel menu proposto si passa all'editor online che si presenta con la seguente interfaccia grafica:
+
+![openprocessing.org - Editor online](/static/coding/web/p5js/intro-openprocessing-editor.png "openprocessing.org - Editor online")
+
+L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
+
+- la barra dei pulsanti, contenente i pulsanti per visualizzare l'area di esecuzione del proprio lavoro e per visualizzare l'area del codice, più il pulsante per salvare il proprio lavoro;
+- la barra con le schede dei file, contenente i file che compongono il progetto, il pulsante per impostare la modalità di visualizzazione dell'area di esecuzione e dell'area del codice ed il pulsante per le impostazioni di configurazione del progetto;
+- l'area del codice, per la modifica del codice relativo al file selezionato nella barra delle schede dei file;
+- l'area di esecuzione del lavoro realizzato, che è visualizzabile quando si clicca il pulsante di "play" presente nella barra dei pulsanti;
+- la console per visualizzare i messaggi di informazione, di avviso e di errore.
+
+Il pulsante per le impostazioni di configurazione del progetto permette di visualizzare l'area di configurazione':
+
+![openprocessing.org - Configurazione editor](/static/coding/web/p5js/intro-openprocessing-editor-config.png "openprocessing.org - Configurazione editor")
+
+L'area di configurazione presenta:
+
+- La versione di processing da utilizzare, al momento la 1.7;
+- Il tipo di progetto (se uno sketch di '`p5.js`', un progetto web con i file HTML, CSS e JavaScript, oppure se utilizzare i vecchi progetti di processing che sono oramai in disuso);
+- La protezione dai cicli infiniti (per evitare che l'ambiente si blocchi in caso di ciclo infinito);
+- La configurazione delle caratteristiche dell'editor, come la dimensione del carattere, la modalità di visualizzazione dell'area di esecuzione e dell'area del codice e così via.
+
+Una volta effettuata la registrazione ed effettuato l'accesso al sito, dall'editor è possibile salvare i propri lavori cliccando sull'apposito pulsante. I dati da inserire sono di chiara interpretazione, dal nome alla descrizione all'immagine di anteprima da mostrare (per sceglierne una è necessario cliccare sull'immagine). La schermata di salvataggio è la seguente:
+
+![openprocessing.org - Utente loggato - salvataggio sketch](/static/coding/web/p5js/intro-openprocessing-logged-save.png "openprocessing.org - Utente loggato - salvataggio sketch")
+
+I progetti salvati possono essere visualizzati nella pagina dell'utente, come nella schermata di seguito:
+
+![openprocessing.org - Utente loggato - lista sketch](/static/coding/web/p5js/intro-openprocessing-logged-list.png "openprocessing.org - Utente loggato - lista sketch")
 
 ## Struttura del progetto
 
