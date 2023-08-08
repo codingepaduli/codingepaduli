@@ -24,11 +24,17 @@ references:
         description: "In global mode you declaring everything in the global context, in instance mode you declaring everything as an object instance."
 ---
 
-# Introduzione alla libreria grafica p5.js
+# Processing e p5.js
 
-[p5.js](https://p5js.org "Sito web di p5.js") è una libreria grafica open-source, focalizzata al coding in JavaScript in un contesto creativo e multimediale. Questa libreria è, di fatto, anche un "porting" della piattaforma [Processing](https://processing.org/ "Sito web di processing") in ambiente web, per cui, sia Processing, sia questa libreria, sono supportati dalla [Processing Foundation](https://processingfoundation.org "Sito web della Processing Foundation"), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
+[Processing](https://processing.org/ "Sito web di processing") non è un linguaggio o un ambiente di sviluppo software, ma è un approccio orientato alle arti per apprendere, insegnare e realizzare lavori con il coding, in un contesto creativo e multimediale. I progetti sono supportati dalla [Processing Foundation](https://processingfoundation.org "Sito web della Processing Foundation"), una comunità interessata alla creazione artistica di contenuti mediante tecnologie web.
 
-Esistono inoltre numerose estensioni che aggiungono strumenti per la gestione audio, per la gestione grafica in 3 dimensioni, per la gestione della geo-localizzazione, delle mappe, della webcam, per l'applicazione di algoritmi di intelligenza artificiale e per la comunicazione con diversi dispositivi basati su micro-controllore, come Arduino.
+Questi progetti comprendono numerose estensioni e strumenti per la gestione audio, per la gestione grafica in 3 dimensioni, per la gestione della geo-localizzazione, delle mappe, della webcam, per l'applicazione di algoritmi di intelligenza artificiale e per la comunicazione con diversi dispositivi, come Arduino (e quindi basati su micro-controllore) o RaspBerry. Attualmente i progetti principali sono:
+
+- [p5.js](https://p5js.org "Sito web di p5.js") è un progetto open-source focalizzato al coding in JavaScript in ambiente web.
+- [OpenProcessing](https://openprocessing.org/ "Sito web di OpenProcessing") è un progetto open-source focalizzato al coding in JavaScript in ambiente web.
+- [Processing IDE](https://processing.org/ "Sito web di processing") l'ambiente di sviluppo per realizzare progetti in Java, Python, Android, Wiring (per Arduino e migliaia di altri micro-controllori) e p5.js.
+
+Questo manuale si focalizza sullo sviluppo di progetti in JavaScript, utilizzando uno dei tre ambienti sopra indicati;
 
 ## Sistema di coordinate
 
@@ -238,7 +244,7 @@ L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
 
 Il pulsante per le impostazioni di configurazione del progetto permette di visualizzare l'area di configurazione':
 
-![openprocessing.org - Configurazione editor](/static/coding/web/p5js/intro-openprocessing-editor-config.png "openprocessing.org - Configurazione editor")
+![openprocessing.org - Configurazione editor](/static/coding/web/p5js/intro-openprocessing-config-editor.png "openprocessing.org - Configurazione editor")
 
 L'area di configurazione presenta:
 
@@ -249,11 +255,50 @@ L'area di configurazione presenta:
 
 Una volta effettuata la registrazione ed effettuato l'accesso al sito, dall'editor è possibile salvare i propri lavori cliccando sull'apposito pulsante. I dati da inserire sono di chiara interpretazione, dal nome alla descrizione all'immagine di anteprima da mostrare (per sceglierne una è necessario cliccare sull'immagine). La schermata di salvataggio è la seguente:
 
-![openprocessing.org - Utente loggato - salvataggio sketch](/static/coding/web/p5js/intro-openprocessing-logged-save.png "openprocessing.org - Utente loggato - salvataggio sketch")
+![openprocessing.org - Utente loggato - salvataggio sketch](/static/coding/web/p5js/intro-openprocessing-save.png "openprocessing.org - Utente loggato - salvataggio sketch")
 
 I progetti salvati possono essere visualizzati nella pagina dell'utente, come nella schermata di seguito:
 
 ![openprocessing.org - Utente loggato - lista sketch](/static/coding/web/p5js/intro-openprocessing-logged-list.png "openprocessing.org - Utente loggato - lista sketch")
+
+## Ambiente di sviluppo Processing IDE
+
+L'ambiente di sviluppo Processing IDE deve essere scaricato ed installato nel sistema. All'avvio è mostrata la seguente schermata:
+
+![Processing IDE](/static/coding/web/p5js/intro-processing.png "Processing IDE")
+
+L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
+
+- la barra dei menù, con i vari menù contestuali;
+- la barra dei pulsanti, contenente i pulsanti per eseguire e stoppare il proprio lavoro, il pulsante di debug ed il pulsante per scegliere il linguaggio di programmazione da utilizzare. Come si nota, il linguaggio Java è la scelta predefinita;
+- la barra con le schede dei file, contenente i file che compongono il progetto;
+- l'area del codice, per la modifica del codice relativo al file selezionato nella barra delle schede dei file;
+- l'area di esecuzione del lavoro realizzato, che è visualizzabile quando si clicca il pulsante di "play" presente nella barra dei pulsanti;
+- la console per visualizzare i messaggi di informazione, di avviso e di errore.
+
+Per abilitare lo sviluppo di progetti con ``p5.js`` è necessario cliccare sul pulsante per scegliere il linguaggio di programmazione e poi scegliere la voce per la gestione dei linguaggi.
+
+![Processing IDE - Menù linguaggi](/static/coding/web/p5js/intro-processing-modes-menu.png "Processing IDE - Menù linguaggi")
+
+Viene visualizzato l'elenco di linguaggi che si possono aggiungere, cliccando sul tasto di installazione.
+
+![Processing IDE - Elenco linguaggi](/static/coding/web/p5js/intro-processing-modes-list.png "Processing IDE - Elenco linguaggi")
+
+Una volta installato un linguaggio, questo compare nel menù dei linguaggi.
+
+### Funzionalità audio in Processing IDE
+
+Un progetto web con p5.js nell'ambiente Processing IDE non include tutte le funzionalità che quindi devono essere aggiunte manualmente. Le funzionalità audio sono una di queste, l'utente deve aggiungerle navigando nel menù "Sketch", passando per il sotto-menù "Importa librerie" e quindi cliccando sulla voce "p5 sound" come indicato nell'immagine seguente:
+
+![Processing IDE - Includere la libreria dei suoni](/static/coding/web/p5js/intro-processing-sound-import-library.png "Processing IDE - Includere la libreria dei suoni")
+
+A questo punto è necessario aggiornare la pagina web navigando nel menù "p5.js" e quindi cliccando sulla voce "Recreate index", come nell'immagine seguente:
+
+![Processing IDE - Ricrea la pagina web](/static/coding/web/p5js/intro-processing-sound-recreate-index.png "Processing IDE - Ricrea la pagina web")
+
+A questo punto è necessario verificare che la libreria sia stata effettivamente importata, verificando che nella pagina web sia presente la libreria ``p5.sound.js``, come nell'immagine seguente:
+
+![Processing IDE - Libreria importata](/static/coding/web/p5js/intro-processing-sound-imported.png "Processing IDE - Libreria importata")
 
 ## Struttura del progetto
 
