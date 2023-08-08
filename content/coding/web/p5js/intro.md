@@ -36,38 +36,6 @@ Questi progetti comprendono numerose estensioni e strumenti per la gestione audi
 
 Questo manuale si focalizza sullo sviluppo di progetti in JavaScript, utilizzando uno dei tre ambienti sopra indicati;
 
-## Sistema di coordinate
-
-Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X ed Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).
-
-La particolarità di questo sistema di coordinate è l'asse Y invertito, cioè i valori positivi sono in basso ed i negativi in alto. Solo i punti che hanno entrambe le coordinate (x, y) con valore positivo saranno disegnati nell'area da disegno.
-
-Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
-
-![p5.js - Differenza tra i due sistemi di coordinate](/static/coding/web/p5js/intro-axes-in-math-and-p5js.png "p5.js - Differenza tra i due sistemi di coordinate")
-
-### Misurazione angoli
-
-In ambito matematico, gli angoli sono tipicamente espressi mediante due differenti unità di misura: il **grado d'arco** (detto anche grado sessagesimale) ed il **radiante**, che fa parte del **sistema internazionale di unità di misura**.
-
-Un grado d'arco è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza che misura 1/360 della circonferenza di un cerchio.
-
-Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
-
-Una caratteristica importante da considerare nella misurazione degli angoli è che, nel sistema di coordinate utilizzato, l'asse Y è invertito e quindi gli angoli sono misurati seguendo un **senso orario**.
-
-Per facilitare la comprensione, possiamo fare un'analogia con il quadrante di un orologio, sul quale utilizziamo la lancetta delle ore come riferimento e la lancetta dei minuti per misurare l'angolo.
-
-Ponendo inizialmente sul numero tre entrambe le lancette (quindi a 3 ore e 15 minuti) definiamo un primo angolo, di grandezza zero (sia in gradi che in radianti).
-
-Man mano che la lancetta dei minuti ruota in **senso orario**, la dimensione dell'angolo aumenta. Alle ore **3.30** corrisponde la misura di **novanta gradi** (e non alle ore **3.00** come ci aspetterebbe). Un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45** e così via.
-
-![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-clockwise.png "p5.js - Angoli rappresentati su orologio")
-
-Per completezza, riportiamo anche le immagini degli orologi con le misurazioni degli angoli prese utilizzando il senso **antiorario**, in modo da avere chiara la differenza.
-
-![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
-
 ## API
 
 Per poter utilizzare correttamente la libreria p5.js, è necessario conoscere l'interfaccia esposta dalla libreria stessa.
@@ -507,6 +475,39 @@ function draw() {
     createCanvas(400, 400);
 }
 ```
+
+
+## Sistema di coordinate
+
+Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X ed Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).
+
+La particolarità di questo sistema di coordinate è l'asse Y invertito, cioè i valori positivi sono in basso ed i negativi in alto. Solo i punti che hanno entrambe le coordinate (x, y) con valore positivo saranno disegnati nell'area da disegno.
+
+Di seguito si mostrano le differenze tra il classico sistema cartesiano e la variante utilizzata in p5.js:
+
+![p5.js - Differenza tra i due sistemi di coordinate](/static/coding/web/p5js/intro-axes-in-math-and-p5js.png "p5.js - Differenza tra i due sistemi di coordinate")
+
+### Misurazione angoli
+
+In ambito matematico, gli angoli sono tipicamente espressi mediante due differenti unità di misura: il **grado d'arco** (detto anche grado sessagesimale) ed il **radiante**, che fa parte del **sistema internazionale di unità di misura**.
+
+Un grado d'arco è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza che misura 1/360 della circonferenza di un cerchio.
+
+Un radiante è la misura dell'angolo che si ha in corrispondenza di un arco di circonferenza di lunghezza pari al raggio.
+
+Una caratteristica importante da considerare nella misurazione degli angoli è che, nel sistema di coordinate utilizzato, l'asse Y è invertito e quindi gli angoli sono misurati seguendo un **senso orario**.
+
+Per facilitare la comprensione, possiamo fare un'analogia con il quadrante di un orologio, sul quale utilizziamo la lancetta delle ore come riferimento e la lancetta dei minuti per misurare l'angolo.
+
+Ponendo inizialmente sul numero tre entrambe le lancette (quindi a 3 ore e 15 minuti) definiamo un primo angolo, di grandezza zero (sia in gradi che in radianti).
+
+Man mano che la lancetta dei minuti ruota in **senso orario**, la dimensione dell'angolo aumenta. Alle ore **3.30** corrisponde la misura di **novanta gradi** (e non alle ore **3.00** come ci aspetterebbe). Un angolo di **quarantacinque gradi** corrisponde alle ore **3.22** circa, un angolo di **centottanta gradi d'arco** corrisponde alle ore **3.45** e così via.
+
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-clockwise.png "p5.js - Angoli rappresentati su orologio")
+
+Per completezza, riportiamo anche le immagini degli orologi con le misurazioni degli angoli prese utilizzando il senso **antiorario**, in modo da avere chiara la differenza.
+
+![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
 
 ## Posizionamento dell'area da disegno
 
