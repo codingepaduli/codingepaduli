@@ -400,11 +400,12 @@ Per completezza, riportiamo anche le immagini degli orologi con le misurazioni d
 
 ## Invocare le funzioni
 
-In precedenza abbiamo detto che una funzione identifica un frammento di codice che svolge uno specifico compito, ha una firma formata dal nome e, tra parentesi tonde, dai parametri formali.
+In precedenza abbiamo detto che una funzione identifica un frammento di codice che svolge uno specifico compito, generalmente descritto nella documentazione. Una funzione ha una firma formata dal nome e, tra parentesi tonde, dai parametri formali.
 
-Quando il programmatore realizza che deve svolgere un compito già svolto da una funzione conosciuta, può delegare tale compito a questa funzione. Tecnicamente si dice che si **invoca** una funzione quando si vuole indicare che viene utilizzata una funzione. Per poterla invocare, il programmatore verifica sulla documentazione la firma della funzione, in particolare prendendo nota del nome e dei parametri formali.
+Tecnicamente si dice che si **invoca** una funzione quando il programmatore la utilizza per svolgere un determinato compito (o una sua parte).
+Piuttosto che scrivere un nuovo frammento di codice per eseguire il compito, invoca la funzione delegando a questa il compito da svolgere.
 
-Se nella firma della funzione non sono presenti parametri formali, la funzione viene invocata semplicemente utilizzando la firma (il nome seguito da parentesi tonde):
+Per invocare una funzione esistente, il programmatore verifica sulla documentazione la firma della funzione. Se nella firma non sono presenti parametri formali, la funzione può essere invocata semplicemente utilizzando la firma (il nome seguito da parentesi tonde):
 
 ```javascript
 funzione()
