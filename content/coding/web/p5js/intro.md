@@ -209,17 +209,6 @@ Effettuando il login, utilizzando un servizio esterno tra quelli proposti oppure
 
 ![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in.png "p5.js - Editor online con i menù visualizzati dopo il login")
 
-Cliccando sulla voce di menu "share" presente nel menù "File", si apre una finestra di dialogo contenente 4 opzioni, come da immagine seguente:
-
-![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in-sharing.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
-
-Le voci visualizzate nell'immagine sono:
-
-- "Embed": contiene il codice HTML per includere il lavoro in una pagina esterna;
-- "Present": contiene un collegamento ad un'immagine di presentazione del progetto, visualizzabile cliccando sul pulsante associato;
-- "Fullscreen": contiene un collegamento che permette di aprire in modalità "schermo intero" l'area di anteprima;
-- "Edit": contiene un collegamento che permette di aprire il progetto per modificarlo.
-
 Nell'area personale è possibile gestire i propri progetti e le proprie collezioni. Il menù contestuale ad ogni progetto permette di gestire le varie azioni sul progetto, come da immagine seguente:
 
 ![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in-projects.png "p5.js - Editor online - finestra di dialogo per la condivisione progetto")
@@ -300,68 +289,63 @@ A questo punto è necessario verificare che la libreria sia stata effettivamente
 
 ![Processing IDE - Libreria importata](/static/coding/web/p5js/intro-processing-sound-imported.png "Processing IDE - Libreria importata")
 
-## Struttura del progetto
+## Struttura di un progetto web con p5.js
 
-L'editor online è di grande utilità per iniziare, tuttavia si può voler lavorare in modalità "off-line" (senza internet, quindi senza utilizzare l'editor online) oppure si può voler realizzare una pagina web che contenga il lavoro realizzato, in modo tale da poterla inglobare in un proprio sito web. Per le casistiche elencate e per altre eventuali casistiche, è necessario conoscere la composizione del progetto realizzato o da realizzare.
+Un progetto web con p5.js è composto dai seguenti files:
 
-Dato che un progetto può essere scaricato dall'editor online, partiamo proprio dalla descrizione del file scaricato. Si tratta di un archivio compresso, come si può notare dall'estensione ".zip". Estraendo questo archivio in una cartella vuota, notiamo che vengono generati alcuni file:
+- Il file ``index.html`` è la pagina web (scritta in linguaggio HTML);
+- Il file ``p5.js`` è la libreria che permette l'esecuzione dei progetti;
+- Il file ``p5.sound.js`` è la libreria che permette la riproduzione e la gestione dei suoni;
+- Il file ``style.css`` è il file che contiene gli stili della pagina web, come i colori, la dimensione degli oggetti, ecc..
+- Il file ``sketch.js`` che rappresenta il progetto realizzato dall'utente.
 
-Il file ``index.html`` è semplicemente una pagina HTML vuota nella quale sono presenti:
+Dato che il progetto viene mostrato in una pagina web, è la pagina web ``index.html`` a dover contenere i riferimenti a tutti gli altri file. Questi riferimenti possono essere di tre tipi:
 
-- un riferimento alla libreria ``p5.js``, definito tramite l'etichetta ``script``, come nel seguente esempio:
+- **Riferimenti assoluti**: E' l'approccio è utilizzato negli ambienti web di openprocessing e di p5.js. I file ``p5.js``, ``p5.sound.js`` sono presenti su un sito internet, quindi la pagina web ``index.html`` li individua attraverso un indirizzo completo, come nel seguente esempio:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
+```
+
+- **Riferimenti relativi**: E' l'approccio utilizzato sia da Processing IDE, sia quando si lavora sul proprio computer senza accesso ad internet. I file ``p5.js``, ``p5.sound.js`` devono essere salvati nella cartella del proprio progetto (o in una sotto-cartella), quindi la pagina web ``index.html`` li individua attraverso un indirizzo relativo. I file ``sketch.js`` e ``style.css`` sono sempre individuati con indirizzo relativo, come nel seguente esempio:
 
 ```html
 <script src="p5.js"></script>
-```
-
-- un riferimento alla libreria ``p5.sound.min.js``, definito tramite l'etichetta ``script``, come nel seguente esempio:
-
-```html
-<script src="p5.sound.min.js"></script>
-```
-
-- un riferimento al codice JavaScript realizzato, definito tramite l'etichetta ``script``, come nel seguente esempio:
-
-```html
+<script src="p5.sound.js"></script>
 <script src="sketch.js"></script>
-```
 
-- un riferimento allo stile della pagina, definito tramite l'etichetta ``link``, come nel seguente esempio:
-
-```html
 <link rel="stylesheet" type="text/css" href="style.css">
 ```
 
-In questo contesto, non entreremo nei dettagli del linguaggio HTML che è alla base di una pagina web, e nemmeno nei dettagli del linguaggio CSS necessario a definire gli stili, ma focalizzeremo l'attenzione sulla struttura del progetto.
-
-Come si nota, i riferimenti non indicano un percorso assoluto, per cui i quattro file devono essere presenti nella stessa cartella della pagina web ``index.html``, in caso contrario possono essere generati degli errori ed il lavoro realizzato non verrà mostrato.
-
-Il vantaggio di usare questa struttura basata su una cartella permette allo sviluppatore di lavorare senza bisogno di un collegamento ad internet. Inoltre, più lavori possono condividere le stesse librerie e gli stessi stili.
-
-### Progetto in un singolo file
-
-Nel caso sia necessario, è possibile racchiudere tutto il lavoro in un singolo file. Invece di utilizzare dei riferimenti ad altri file, si può scegliere di caricare le librerie necessarie da una risorsa presente su web, utilizzando un indirizzo assoluto, come nel seguente esempio:
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/addons/p5.sound.js"></script>
-```
-
-In questo modo, le librerie saranno scaricate da internet all'apertura della pagina web.
-
-Lo stile, invece, può essere incluso direttamente nella pagina web, all'interno delle etichette di stile:
+- **Codice in pagina**: Gli stili grafici (contenuti nel file ``style.css``) ed il file di progetto (contenuti nel file ``sketch.js``) possono essere inclusi direttamente nella pagina, quindi questi file non sono presenti nella cartella di progetto perché sono scritti direttamente nella pagina web, come nel seguente esempio:
 
 ```html
 <style>
     html, body { margin: 0; padding: 0; }
     canvas { display: block; }
 </style>
+
+<script>
+    function setup() {
+        createCanvas(400, 400);
+    }
+
+    function draw() {
+        background(220);
+        circle(100, 150, 50);
+    }
+</script>
 ```
 
-Allo stesso modo, il programma realizzato, magari tramite l'editor online, deve essere incluso nelle etichette ``script``, come nel seguente esempio:
+### Progetto in una cartella in ambiente locale
 
-```html
-<script>
+Nel caso sia necessario, è possibile creare un progetto web in una nuova cartella (da creare sul proprio computer) e lavorare senza nessun ambiente di sviluppo. Per far ciò è necessario;
+
+1. scaricare le librerie ``p5.js`` e ``p5.sound.js`` e gli stili grafici ``style.css`` da salvare nella cartella;
+2. creare il file di progetto ``sketch.js`` con il codice da scrivere;
+
+    ```javascript
     function setup() {
         createCanvas(400, 400);
     }
@@ -370,24 +354,55 @@ Allo stesso modo, il programma realizzato, magari tramite l'editor online, deve 
         background(220);
         circle(100, 150, 50);
     }
-</script>
-```
+    ```
 
-L'esempio completo della pagina web è il seguente:
+3. creare una nuova pagina web ``index.html`` con il contenuto seguente:
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="it">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sketch</title>
+
+            <!-- Riferimenti -->
+            <script src="p5.js"></script>
+            <script src="p5.sound.js"></script>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+        <body>
+            <script src="sketch.js"></script>
+        </body>
+    </html>
+    ```
+
+Il contenuto della cartella è il seguente:
+
+![Progetto in una cartella](/static/coding/web/p5js/intro-project-folder.png "Progetto in una cartella")
+
+### Progetto in un unico file HTML
+
+E' possibile creare un unico file HTML (da creare sul proprio computer) e lavorare senza nessun ambiente di sviluppo, indicando un riferimento assoluto alle librerie ``p5.js`` e ``p5.sound.js`` ed inglobando gli stili grafici ed il codice di progetto come codice in pagina, come nella pagina web seguente:
 
 ```html
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/p5.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.3.1/lib/addons/p5.sound.js"></script>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sketch</title>
+
+        <!-- Riferimenti -->
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
         <style>
             html, body { margin: 0; padding: 0; }
             canvas { display: block; }
         </style>
     </head>
     <body>
+        <!-- Progetto p5.js -->
         <script>
             function setup() {
                 createCanvas(400, 400);
@@ -395,7 +410,7 @@ L'esempio completo della pagina web è il seguente:
 
             function draw() {
                 background(220);
-                circle(100, 150, 50);
+                circle(100, 150, 50);
             }
         </script>
     </body>
@@ -406,13 +421,15 @@ L'esempio completo della pagina web è il seguente:
 
 Sia che si lavori con una singola pagina web, sia che si utilizzi l'editor online, sia che si organizzi il progetto in più file separati, nel codice devono sempre essere dichiarati i due blocchi principali ``setup`` e ``draw``.
 
-Le istruzioni contenute nel blocco ``setup`` sono eseguite una sola volta e servono ad impostare gli strumenti e le condizioni iniziali. In particolare, è in questo blocco che si invoca la funzione ``createCanvas`` necessaria alla creazione dell'area da disegno, poiché l'area da disegno deve essere creata una volta sola.
+Le istruzioni contenute nel blocco ``setup()`` sono eseguite una sola volta e servono ad impostare gli strumenti e le condizioni iniziali.
 
-Le istruzioni contenute nel blocco ``draw`` sono eseguite ciclicamente e servono a ridisegnare continuamente l'area di lavoro.
+Le istruzioni contenute nel blocco ``draw()`` sono eseguite ciclicamente e servono a ridisegnare continuamente l'area di lavoro.
 
-Come si può notare dagli esempi precedenti, le istruzioni di entrambi i blocchi sono racchiuse tra le parentesi graffe ``{`` e ``}``, che indicano l'inizio e la fine del blocco.
+Come si può notare dagli esempi precedenti, sia il blocco ``setup()`` sia il blocco ``draw()`` sono delimitati dalle parentesi graffe ``{`` e ``}``, che indicano l'inizio e la fine del blocco.
 
-### Invocare le funzioni
+All'interno del blocco vanno le istruzioni per disegnare. In particolare, è nel blocco ``setup()`` che si invoca la funzione ``createCanvas()`` necessaria alla creazione dell'area da disegno, poiché l'area da disegno deve essere creata una volta sola.
+
+## Invocare le funzioni
 
 In precedenza abbiamo detto che una funzione identifica un frammento di codice che svolge uno specifico compito, ha una firma formata dal nome e, tra parentesi tonde, dai parametri formali.
 
