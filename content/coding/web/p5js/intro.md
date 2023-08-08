@@ -36,128 +36,6 @@ Questi progetti comprendono numerose estensioni e strumenti per la gestione audi
 
 Questo manuale si focalizza sullo sviluppo di progetti in JavaScript, utilizzando uno dei tre ambienti sopra indicati;
 
-## API
-
-Per poter utilizzare correttamente la libreria p5.js, è necessario conoscere l'interfaccia esposta dalla libreria stessa.
-
-Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia") esposta da un sistema, al fine di potervi interagire. Un esempio sono le interfacce grafiche di Microsoft Windows, che permettono di interagire con i calcolatori, oppure le interfacce vocali di iPhone ed Android, con "Siri" ed il famoso "OK Google", che permettono di interagire con gli smartphone.
-
-Nello sviluppo di applicazioni, le interfacce esposte da librerie e linguaggi di programmazione, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
-
-Le API espongono strutture, funzioni, costanti e tanti altri elementi che il programmatore può usare per realizzare la propria applicazione.
-
-Le API sono sempre accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione.
-
-Le **costanti**, nell'ambito informatico come nell'ambito matematico, sono dei valori che non variano nel tempo, ed ai quali è associato un nome, come ad esempio la costante fisica **c** che definisce la velocità della luce nel vuoto pari a 299792458 m/s. Per conoscere il nome, il compito e la descrizione di una costante è necessario consultare la documentazione.
-
-Le **funzioni** in ambito informatico sono delle istruzioni particolari che identificano un frammento di codice che svolge uno specifico compito, come il disegno di un cerchio o la creazione dell'area da disegno. Una caratteristica peculiare delle funzioni è che permettono allo sviluppatore di riutilizzare frammenti di codice scritti da altri programmatori.
-
-Una funzione è definita da un **nome**, come ad esempio la funzione logaritmo, che nelle formule matematiche viene definita dal simbolo ``log``, oppure la funzione coseno, che nelle formule matematiche viene definita dal simbolo ``cos``.
-
-Le funzioni possono prevedere dei **parametri** necessari alla realizzazione del compito. Ad esempio, per creare l'area da disegno abbiamo bisogno di due parametri, la larghezza e l'altezza dell'area da creare. Per disegnare un cerchio abbiamo bisogno di tre parametri, le coordinate x ed y del centro ed il raggio del cerchio.
-
-Alcuni parametri possono essere obbligatori, altri facoltativi, e tipicamente sono elencati prima quelli obbligatori e poi, tra parentesi quadre, quelli facoltativi.
-
-Per conoscere il nome, il compito ed i parametri obbligatori o facoltativi di una funzione, è necessario consultare la documentazione.
-
-I parametri indicati nella documentazione sono detti **parametri formali** e, come si vedrà nel capitolo relativo alla creazione di funzioni, sono definiti dallo sviluppatore autore della funzione.
-
-Il nome della funzione insieme alla lista dei parametri formali riportata tra parentesi tonde formano la **firma della funzione**.
-
-### Documentazione delle API
-
-La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
-
-La documentazione è organizzata per aree di interesse, tra le varie categorie troviamo:
-
-Area | Descrizione
---- | ---
-Color           | Gestione colori di contorno, di riempimento, di sfondo
-Constants       | Costanti disponibili
-DOM             | Interazione con gli elementi della pagina web
-Data            | Gestione dei dati
-Environment     | Informazioni sull'ambiente di esecuzione
-Events          | Gestione eventi della tastiera, del mouse e del touch-screen
-Foundation      | Basi di JavaScript
-IO              | Gestione Input / Output
-Image           | Gestione immagini
-Lights, Camera  | Gestione luci, camera, materiali, ombre
-Math            | Funzioni matematiche
-Rendering       | Informazioni sul processo di disegno (rendering)
-Shape           | Funzioni per il disegno di forme 2D, 3D e curve
-Structure       | Informazioni sul ciclo di esecuzione
-Transform       | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
-Typography      | Caratteri, stili e formattazione testo
-
-Ogni categoria mostra le costanti e le funzioni disponibili, con un link alla documentazione specifica.
-
-Ogni costante è documentata indicando uno o più esempi d'uso, il nome, la descrizione ed il valore.
-
-La documentazione di ogni funzione riporta:
-
-- uno o più esempi d'uso;
-- la descrizione del compito svolto;
-- la sintassi d'uso, ovvero la firma della funzione. Ogni parametro formale, obbligatorio o facoltativo, è ulteriormente chiarito con l'indicazione del tipo e della descrizione.
-
-#### Esempio di documentazione delle costanti
-
-Un esempio di documentazione delle costanti è quello della documentazione della costante ``PI``. Nella descrizione si legge che questa costante rappresenta la costante matematica **pi greco**, che definisce il rapporto tra la lunghezza della circonferenza e quella del suo diametro. Il nome di questa costante è ``PI`` ed il valore associato è 3.14159265358979323846...
-
-Nella documentazione sono definite anche le seguenti costanti:
-
-- ``TWO_PI``, che rappresenta il doppio del valore della costante ``PI``, con valore associato 6.28318530717958647693...
-- ``HALF_PI``, che rappresenta la metà del valore della costante ``PI``, con valore associato 1.57079632679489661923...
-- ``QUARTER_PI``, che rappresenta un quarto del valore della costante ``PI``, con valore associato 0.7853982...
-
-#### Esempio di documentazione delle funzioni
-
-Un esempio di documentazione di una funzione è quello della documentazione della funzione ``createCanvas``. Nella documentazione è descritto che questa funzione ha il compito di creare l'area da disegno nella quale poi disegnare. La sintassi, ovvero la firma, è la seguente:
-
-```plaintext
-Syntax: createCanvas(w, h)
-```
-
-I parametri formali sono ``w`` ed ``h`` e sono entrambi obbligatori, dato che non sono riportati tra parentesi quadre. La documentazione dei parametri riporta:
-
-```plaintext
-Parameters:
-    w    Number: width of the canvas
-    h    Number: height of the canvas
-```
-
-Quindi il parametro formale ``w`` è un numero e rappresenta la larghezza dell'area da disegno. Il parametro formale ``h`` è un numero e rappresenta l'altezza dell'area da disegno.
-
-Un secondo esempio di documentazione di una funzione è quello della documentazione della funzione ``background``. Nella documentazione è descritto che questa funzione ha il compito di disegnare uno sfondo colorato nell'area da disegno. La sintassi, ovvero la firma, è la seguente:
-
-```plaintext
-Syntax:
-    background(gray, [a])
-    background(v1, v2, v3, [a])
-```
-
-Come si nota, si può creare lo sfondo usando una delle due firme. La prima firma crea uno sfondo grigio, la seconda crea uno sfondo colorato.
-
-I parametri formali per la prima firma sono ``gray`` ed ``a``, il primo obbligatorio, il secondo facoltativo, dato che è riportato tra parentesi quadre.
-
-I parametri formali per la seconda firma sono ``v1``, ``v2``, ``v3`` ed ``a``, i primi tre obbligatori, il quarto facoltativo, dato che è riportato tra parentesi quadre.
-
-La documentazione dei parametri riporta:
-
-```plaintext
-Parameters:
-    gray   Number: specifies a value between white and black
-    v1     Number: red or hue value (depending on the current color mode)
-    v2     Number: green or saturation value (depending on the current color mode)
-    v3     Number: blue or brightness value (depending on the current color mode)
-    a      Number: opacity of the background relative to current color range (default is 0-255) (Optional)
-```
-
-Quindi il parametro formale ``gray`` è un numero e rappresenta la quantità di grigio per colorare l'area da disegno.
-I parametri formali ``v1``, ``v2``, ``v3`` sono numerici e rappresentano la quantità di colore da applicare.
-Il parametro formale ``a`` è un numero e rappresenta la quantità di trasparenza del colore.
-
-Si rimanda al capitolo sui colori per una spiegazione più dettagliata di questi parametri. In questo paragrafo, l'attenzione è focalizzata sulla documentazione dei parametri.
-
 ## Ambiente di sviluppo p5js.org
 
 Il punto di partenza, per iniziare velocemente ad esplorare le potenzialità della libreria p5.js, è sicuramente l'editor presente sul sito web [https://editor.p5js.org](https://editor.p5js.org "Editor online di p5.js"), che si presenta con la seguente interfaccia grafica:
@@ -476,7 +354,6 @@ function draw() {
 }
 ```
 
-
 ## Sistema di coordinate
 
 Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X ed Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).
@@ -508,6 +385,128 @@ Man mano che la lancetta dei minuti ruota in **senso orario**, la dimensione del
 Per completezza, riportiamo anche le immagini degli orologi con le misurazioni degli angoli prese utilizzando il senso **antiorario**, in modo da avere chiara la differenza.
 
 ![p5.js - Angoli rappresentati su orologio](/static/coding/web/p5js/intro-angle-on-clock-counterclockwise.png "p5.js - Angoli rappresentati su orologio")
+
+## API
+
+Per poter utilizzare correttamente la libreria p5.js, è necessario conoscere l'interfaccia esposta dalla libreria stessa.
+
+Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia") esposta da un sistema, al fine di potervi interagire. Un esempio sono le interfacce grafiche di Microsoft Windows, che permettono di interagire con i calcolatori, oppure le interfacce vocali di iPhone ed Android, con "Siri" ed il famoso "OK Google", che permettono di interagire con gli smartphone.
+
+Nello sviluppo di applicazioni, le interfacce esposte da librerie e linguaggi di programmazione, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
+
+Le API espongono strutture, funzioni, costanti e tanti altri elementi che il programmatore può usare per realizzare la propria applicazione.
+
+Le API sono sempre accompagnate dalla documentazione, che descrive cosa rappresenta una determinata costante oppure come utilizzare una determinata funzione.
+
+Le **costanti**, nell'ambito informatico come nell'ambito matematico, sono dei valori che non variano nel tempo, ed ai quali è associato un nome, come ad esempio la costante fisica **c** che definisce la velocità della luce nel vuoto pari a 299792458 m/s. Per conoscere il nome, il compito e la descrizione di una costante è necessario consultare la documentazione.
+
+Le **funzioni** in ambito informatico sono delle istruzioni particolari che identificano un frammento di codice che svolge uno specifico compito, come il disegno di un cerchio o la creazione dell'area da disegno. Una caratteristica peculiare delle funzioni è che permettono allo sviluppatore di riutilizzare frammenti di codice scritti da altri programmatori.
+
+Una funzione è definita da un **nome**, come ad esempio la funzione logaritmo, che nelle formule matematiche viene definita dal simbolo ``log``, oppure la funzione coseno, che nelle formule matematiche viene definita dal simbolo ``cos``.
+
+Le funzioni possono prevedere dei **parametri** necessari alla realizzazione del compito. Ad esempio, per creare l'area da disegno abbiamo bisogno di due parametri, la larghezza e l'altezza dell'area da creare. Per disegnare un cerchio abbiamo bisogno di tre parametri, le coordinate x ed y del centro ed il raggio del cerchio.
+
+Alcuni parametri possono essere obbligatori, altri facoltativi, e tipicamente sono elencati prima quelli obbligatori e poi, tra parentesi quadre, quelli facoltativi.
+
+Per conoscere il nome, il compito ed i parametri obbligatori o facoltativi di una funzione, è necessario consultare la documentazione.
+
+I parametri indicati nella documentazione sono detti **parametri formali** e, come si vedrà nel capitolo relativo alla creazione di funzioni, sono definiti dallo sviluppatore autore della funzione.
+
+Il nome della funzione insieme alla lista dei parametri formali riportata tra parentesi tonde formano la **firma della funzione**.
+
+### Documentazione delle API
+
+La documentazione delle API della libreria p5.js si può consultare sul sito web della libreria stessa, all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
+
+La documentazione è organizzata per aree di interesse, tra le varie categorie troviamo:
+
+Area | Descrizione
+--- | ---
+Color           | Gestione colori di contorno, di riempimento, di sfondo
+Constants       | Costanti disponibili
+DOM             | Interazione con gli elementi della pagina web
+Data            | Gestione dei dati
+Environment     | Informazioni sull'ambiente di esecuzione
+Events          | Gestione eventi della tastiera, del mouse e del touch-screen
+Foundation      | Basi di JavaScript
+IO              | Gestione Input / Output
+Image           | Gestione immagini
+Lights, Camera  | Gestione luci, camera, materiali, ombre
+Math            | Funzioni matematiche
+Rendering       | Informazioni sul processo di disegno (rendering)
+Shape           | Funzioni per il disegno di forme 2D, 3D e curve
+Structure       | Informazioni sul ciclo di esecuzione
+Transform       | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
+Typography      | Caratteri, stili e formattazione testo
+
+Ogni categoria mostra le costanti e le funzioni disponibili, con un link alla documentazione specifica.
+
+Ogni costante è documentata indicando uno o più esempi d'uso, il nome, la descrizione ed il valore.
+
+La documentazione di ogni funzione riporta:
+
+- uno o più esempi d'uso;
+- la descrizione del compito svolto;
+- la sintassi d'uso, ovvero la firma della funzione. Ogni parametro formale, obbligatorio o facoltativo, è ulteriormente chiarito con l'indicazione del tipo e della descrizione.
+
+#### Esempio di documentazione delle costanti
+
+Un esempio di documentazione delle costanti è quello della documentazione della costante ``PI``. Nella descrizione si legge che questa costante rappresenta la costante matematica **pi greco**, che definisce il rapporto tra la lunghezza della circonferenza e quella del suo diametro. Il nome di questa costante è ``PI`` ed il valore associato è 3.14159265358979323846...
+
+Nella documentazione sono definite anche le seguenti costanti:
+
+- ``TWO_PI``, che rappresenta il doppio del valore della costante ``PI``, con valore associato 6.28318530717958647693...
+- ``HALF_PI``, che rappresenta la metà del valore della costante ``PI``, con valore associato 1.57079632679489661923...
+- ``QUARTER_PI``, che rappresenta un quarto del valore della costante ``PI``, con valore associato 0.7853982...
+
+#### Esempio di documentazione delle funzioni
+
+Un esempio di documentazione di una funzione è quello della documentazione della funzione ``createCanvas``. Nella documentazione è descritto che questa funzione ha il compito di creare l'area da disegno nella quale poi disegnare. La sintassi, ovvero la firma, è la seguente:
+
+```plaintext
+Syntax: createCanvas(w, h)
+```
+
+I parametri formali sono ``w`` ed ``h`` e sono entrambi obbligatori, dato che non sono riportati tra parentesi quadre. La documentazione dei parametri riporta:
+
+```plaintext
+Parameters:
+    w    Number: width of the canvas
+    h    Number: height of the canvas
+```
+
+Quindi il parametro formale ``w`` è un numero e rappresenta la larghezza dell'area da disegno. Il parametro formale ``h`` è un numero e rappresenta l'altezza dell'area da disegno.
+
+Un secondo esempio di documentazione di una funzione è quello della documentazione della funzione ``background``. Nella documentazione è descritto che questa funzione ha il compito di disegnare uno sfondo colorato nell'area da disegno. La sintassi, ovvero la firma, è la seguente:
+
+```plaintext
+Syntax:
+    background(gray, [a])
+    background(v1, v2, v3, [a])
+```
+
+Come si nota, si può creare lo sfondo usando una delle due firme. La prima firma crea uno sfondo grigio, la seconda crea uno sfondo colorato.
+
+I parametri formali per la prima firma sono ``gray`` ed ``a``, il primo obbligatorio, il secondo facoltativo, dato che è riportato tra parentesi quadre.
+
+I parametri formali per la seconda firma sono ``v1``, ``v2``, ``v3`` ed ``a``, i primi tre obbligatori, il quarto facoltativo, dato che è riportato tra parentesi quadre.
+
+La documentazione dei parametri riporta:
+
+```plaintext
+Parameters:
+    gray   Number: specifies a value between white and black
+    v1     Number: red or hue value (depending on the current color mode)
+    v2     Number: green or saturation value (depending on the current color mode)
+    v3     Number: blue or brightness value (depending on the current color mode)
+    a      Number: opacity of the background relative to current color range (default is 0-255) (Optional)
+```
+
+Quindi il parametro formale ``gray`` è un numero e rappresenta la quantità di grigio per colorare l'area da disegno.
+I parametri formali ``v1``, ``v2``, ``v3`` sono numerici e rappresentano la quantità di colore da applicare.
+Il parametro formale ``a`` è un numero e rappresenta la quantità di trasparenza del colore.
+
+Si rimanda al capitolo sui colori per una spiegazione più dettagliata di questi parametri. In questo paragrafo, l'attenzione è focalizzata sulla documentazione dei parametri.
 
 ## Posizionamento dell'area da disegno
 
