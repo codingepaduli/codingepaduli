@@ -275,85 +275,6 @@ Come si può notare dagli esempi precedenti, sia il blocco ``setup()`` sia il bl
 
 All'interno del blocco vanno le istruzioni per disegnare. In particolare, è nel blocco ``setup()`` che si invoca la funzione ``createCanvas()`` necessaria alla creazione dell'area da disegno, poiché l'area da disegno deve essere creata una volta sola.
 
-## Invocare le funzioni
-
-In precedenza abbiamo detto che una funzione identifica un frammento di codice che svolge uno specifico compito, ha una firma formata dal nome e, tra parentesi tonde, dai parametri formali.
-
-Quando il programmatore realizza che deve svolgere un compito già svolto da una funzione conosciuta, può delegare tale compito a questa funzione. Tecnicamente si dice che si **invoca** una funzione quando si vuole indicare che viene utilizzata una funzione. Per poterla invocare, il programmatore verifica sulla documentazione la firma della funzione, in particolare prendendo nota del nome e dei parametri formali.
-
-Se nella firma della funzione non sono presenti parametri formali, la funzione viene invocata semplicemente utilizzando la firma (il nome seguito da parentesi tonde):
-
-```javascript
-funzione()
-```
-
-Se invece nella firma della funzione sono presenti parametri formali, allora ad ogni parametro formale si deve sostituire un valore. I valori assegnati prendono il nome di **parametri attuali**.
-
-In questo caso, per invocare una funzione, bisogna semplicemente scrivere il nome seguito da parentesi tonda aperta, la lista di parametri attuali, e la parentesi chiusa.
-
-```javascript
-funzione(p1, p2, ...)
-```
-
-Ad esempio, volendo creare un'area da disegno di larghezza 600 ed altezza 400, il primo passo consiste nel verificare sulla documentazione la firma della funzione:
-
-```plaintext
-Syntax: createCanvas(w, h)
-
-Parameters:
-    w    Number: width of the canvas
-    h    Number: height of the canvas
-```
-
-A questo punto, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
-
-```javascript
-createCanvas(600, 400);
-```
-
-Nello stesso esempio, per creare un cerchio con centro alle coordinate (100, 150) e con diametro 50, verifichiamo sulla documentazione la firma della funzione:
-
-```plaintext
-Syntax: circle(x, y, diameter)
-
-Parameters:
-    x           Number: x-coordinate of the centre of the circle.
-    y           Number: y-coordinate of the centre of the circle.
-    diameter    Number: diameter of the circle.
-```
-
-Sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``, al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``150`` ed al parametro formale ``diameter`` il valore ``50``, quindi invochiamo la funzione nel seguente modo:
-
-```javascript
-circle(100, 150, 50);
-```
-
-Queste istruzioni devono essere inserite o nel blocco ``setup`` oppure nel blocco ``draw``. Ad esempio:
-
-```javascript
-function setup() {
-    createCanvas(400, 400);
-    circle(100,150, 50);
-}
-
-function draw() {
-
-}
-```
-
-Il risultato è il seguente:
-
-![p5.js - Primo esempio](/static/coding/web/p5js/intro-first-exercise.png "p5.js - Primo esempio")
-
-Alcune operazioni, invece, devono essere effettuate una sola volta, come ad esempio la creazione dell'area da disegno, per cui è **errato** invocare la funzione ``createCanvas()`` all'interno del blocco ``draw()``.
-
-```javascript
-function draw() {
-    // ERRORE
-    createCanvas(400, 400);
-}
-```
-
 ## Sistema di coordinate
 
 Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X ed Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).
@@ -507,6 +428,85 @@ I parametri formali ``v1``, ``v2``, ``v3`` sono numerici e rappresentano la quan
 Il parametro formale ``a`` è un numero e rappresenta la quantità di trasparenza del colore.
 
 Si rimanda al capitolo sui colori per una spiegazione più dettagliata di questi parametri. In questo paragrafo, l'attenzione è focalizzata sulla documentazione dei parametri.
+
+## Invocare le funzioni
+
+In precedenza abbiamo detto che una funzione identifica un frammento di codice che svolge uno specifico compito, ha una firma formata dal nome e, tra parentesi tonde, dai parametri formali.
+
+Quando il programmatore realizza che deve svolgere un compito già svolto da una funzione conosciuta, può delegare tale compito a questa funzione. Tecnicamente si dice che si **invoca** una funzione quando si vuole indicare che viene utilizzata una funzione. Per poterla invocare, il programmatore verifica sulla documentazione la firma della funzione, in particolare prendendo nota del nome e dei parametri formali.
+
+Se nella firma della funzione non sono presenti parametri formali, la funzione viene invocata semplicemente utilizzando la firma (il nome seguito da parentesi tonde):
+
+```javascript
+funzione()
+```
+
+Se invece nella firma della funzione sono presenti parametri formali, allora ad ogni parametro formale si deve sostituire un valore. I valori assegnati prendono il nome di **parametri attuali**.
+
+In questo caso, per invocare una funzione, bisogna semplicemente scrivere il nome seguito da parentesi tonda aperta, la lista di parametri attuali, e la parentesi chiusa.
+
+```javascript
+funzione(p1, p2, ...)
+```
+
+Ad esempio, volendo creare un'area da disegno di larghezza 600 ed altezza 400, il primo passo consiste nel verificare sulla documentazione la firma della funzione:
+
+```plaintext
+Syntax: createCanvas(w, h)
+
+Parameters:
+    w    Number: width of the canvas
+    h    Number: height of the canvas
+```
+
+A questo punto, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
+
+```javascript
+createCanvas(600, 400);
+```
+
+Nello stesso esempio, per creare un cerchio con centro alle coordinate (100, 150) e con diametro 50, verifichiamo sulla documentazione la firma della funzione:
+
+```plaintext
+Syntax: circle(x, y, diameter)
+
+Parameters:
+    x           Number: x-coordinate of the centre of the circle.
+    y           Number: y-coordinate of the centre of the circle.
+    diameter    Number: diameter of the circle.
+```
+
+Sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``, al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``150`` ed al parametro formale ``diameter`` il valore ``50``, quindi invochiamo la funzione nel seguente modo:
+
+```javascript
+circle(100, 150, 50);
+```
+
+Queste istruzioni devono essere inserite o nel blocco ``setup`` oppure nel blocco ``draw``. Ad esempio:
+
+```javascript
+function setup() {
+    createCanvas(400, 400);
+    circle(100,150, 50);
+}
+
+function draw() {
+
+}
+```
+
+Il risultato è il seguente:
+
+![p5.js - Primo esempio](/static/coding/web/p5js/intro-first-exercise.png "p5.js - Primo esempio")
+
+Alcune operazioni, invece, devono essere effettuate una sola volta, come ad esempio la creazione dell'area da disegno, per cui è **errato** invocare la funzione ``createCanvas()`` all'interno del blocco ``draw()``.
+
+```javascript
+function draw() {
+    // ERRORE
+    createCanvas(400, 400);
+}
+```
 
 ## Posizionamento dell'area da disegno
 
