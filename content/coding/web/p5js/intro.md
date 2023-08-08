@@ -366,37 +366,6 @@ Parameters:
 
 Quindi il parametro formale ``w`` è un numero e rappresenta la larghezza dell'area da disegno. Il parametro formale ``h`` è un numero e rappresenta l'altezza dell'area da disegno.
 
-Un secondo esempio di documentazione di una funzione è quello della documentazione della funzione ``background``. Nella documentazione è descritto che questa funzione ha il compito di disegnare uno sfondo colorato nell'area da disegno. La sintassi, ovvero la firma, è la seguente:
-
-```plaintext
-Syntax:
-    background(gray, [a])
-    background(v1, v2, v3, [a])
-```
-
-Come si nota, si può creare lo sfondo usando una delle due firme. La prima firma crea uno sfondo grigio, la seconda crea uno sfondo colorato.
-
-I parametri formali per la prima firma sono ``gray`` ed ``a``, il primo obbligatorio, il secondo facoltativo, dato che è riportato tra parentesi quadre.
-
-I parametri formali per la seconda firma sono ``v1``, ``v2``, ``v3`` ed ``a``, i primi tre obbligatori, il quarto facoltativo, dato che è riportato tra parentesi quadre.
-
-La documentazione dei parametri riporta:
-
-```plaintext
-Parameters:
-    gray   Number: specifies a value between white and black
-    v1     Number: red or hue value (depending on the current color mode)
-    v2     Number: green or saturation value (depending on the current color mode)
-    v3     Number: blue or brightness value (depending on the current color mode)
-    a      Number: opacity of the background relative to current color range (default is 0-255) (Optional)
-```
-
-Quindi il parametro formale ``gray`` è un numero e rappresenta la quantità di grigio per colorare l'area da disegno.
-I parametri formali ``v1``, ``v2``, ``v3`` sono numerici e rappresentano la quantità di colore da applicare.
-Il parametro formale ``a`` è un numero e rappresenta la quantità di trasparenza del colore.
-
-Si rimanda al capitolo sui colori per una spiegazione più dettagliata di questi parametri. In questo paragrafo, l'attenzione è focalizzata sulla documentazione dei parametri.
-
 ## Sistema di coordinate
 
 Il sistema di coordinate **cartesiane**, tipicamente usato da librerie di grafica computerizzata 2D, è caratterizzato dagli assi X ed Y che si intersecano nell'angolo in alto a sinistra dell'area da disegno. In tale estremità si trova, quindi, l'origine degli assi, rappresentata dal punto di coordinate (0,0).
