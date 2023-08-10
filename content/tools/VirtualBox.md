@@ -109,6 +109,20 @@ Le Guest Additions di VirtualBox sono un insieme di strumenti software che vengo
 - supporto per il puntatore del mouse integrato, senza dover ricorrere al tasto HOST;
 - login automatici degli utenti presenti sul sistema ospitante.
 
+Le Guest Additions di VirtualBox sono distribuite come file ISO (disco virtuale), per installarle è necessario montare il disco nel lettore cd-rom, cliccando sulla voce "Archiviazione" della macchina virtuale:
+
+![VirtualBox - Selezione Sistema Operativo](/static/coding/tools/VirtualBox7-SelectSO.png "VirtualBox - Selezione Sistema Operativo")
+
+Una volta montato il disco, si deve avviare la macchina virtuale e aprire il disco delle Guest Additions:
+
+![VirtualBox - Cartella delle Guest Additions](/static/coding/tools/VirtualBox7-guestAdditions-folder.png "VirtualBox - Cartella delle Guest Additions")
+
+Si apre la cartella nel terminale e si lancia il comando di installazione delle Guest Additions:
+
+![VirtualBox - Installa le Guest Additions](/static/coding/tools/VirtualBox7-guestAdditions-install.png "VirtualBox - Installa le Guest Additions")
+
+## Condivisione cartelle
+
 Per condividere una cartella tra il sistema ospitante e la macchina virtuale, si deve cliccare sulla voce "Cartelle condivise" della macchina virtuale. Nella finestra delle cartelle condivise, si clicca sul pulsante di "Aggiungi" e nella finestra di dialogo si indica la cartella da condividere ed il punto di mount.
 
 ![VirtualBox - Condivisione cartella](/static/coding/tools/VirtualBox7-share-folder.png "VirtualBox - Condivisione cartella")
