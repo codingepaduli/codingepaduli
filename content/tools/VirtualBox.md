@@ -78,7 +78,7 @@ Creata la macchina virtuale, è necessario indicare il software, in particolare 
 
 E' necessario prestare particolare attenzione in questa fase: nel caso si avvi la macchina virtuale senza scegliere il sistema operativo, allora si otterrà l'errore: "No Bootable medium found" che tradotto indica "nessun dispositivo avviabile", cioè manca il sistema operativo.
 
-![VirtualBox - Avvio Virtual Machine errato](/static/coding/tools/VirtualBox-VM-StartError.png "VirtualBox - Avvio Virtual Machine errato")
+![VirtualBox - Avvio macchina virtuale errato](/static/coding/tools/VirtualBox-VM-StartError.png "VirtualBox - Avvio macchina virtuale errato")
 
 E' necessario configurare la macchina virtuale per avviare il Sistema Operativo, navigando nella sezione "Archiviazione" e cliccando sul controller IDE / ATA. Si può scegliere di utilizzare il lettore ottico della macchina ospitante (host), si può utilizzare un'immagine ISO o utilizzare un disco virtuale esistente.
 
@@ -86,7 +86,7 @@ E' necessario configurare la macchina virtuale per avviare il Sistema Operativo,
 
 Configurato correttamente il sistema operativo, la macchina virtuale si avvia, il sistema operativo viene eseguito e quindi l'utente può interagirvi:
 
-![VirtualBox - Avvio Virtual Machine](/static/coding/tools/VirtualBox7-VM-start.png "VirtualBox - Avvio Virtual Machine")
+![VirtualBox - Avvio macchina virtuale](/static/coding/tools/VirtualBox7-VM-start.png "VirtualBox - Avvio macchina virtuale")
 
 Cliccando sulla macchina virtuale, viene fornita l'indicazione che il puntatore del mouse non sarà più disponibile nella macchina ospitante perché sarà catturato dalla macchina virtuale. Per riaverlo disponibile, è necessario premere il tasto HOST, ovvero la combinazione di tasti indicata dal messaggio:
 
@@ -97,4 +97,18 @@ Alla chiusura della macchina virtuale viene chiesto se:
 - spegnere la macchina, quindi il sistema operativo termina l'esecuzione.
 - salvare lo stato della macchina virtuale, quindi il sistema operativo resta in esecuzione e, all'apertura della macchina virtuale, il sistema operativo riprendera l'esecuzione dal punto salvato.
 
-![VirtualBox - Shutdown Virtual Machine](/static/coding/tools/VirtualBox-VM-Shutdown.png "VirtualBox - Shutdown Virtual Machine")
+![VirtualBox - Spegnimento macchina virtuale](/static/coding/tools/VirtualBox-VM-Shutdown.png "VirtualBox - Spegnimento macchina virtuale")
+
+## Guest Additions
+
+Le Guest Additions di VirtualBox sono un insieme di strumenti software che vengono installati all'interno del sistema operativo guest e consentono di migliorare l'esperienza di utilizzo di una macchina virtuale all'interno di VirtualBox, offrendo le seguenti funzionalità aggiuntive:
+
+- condivisione file e cartelle;
+- migliore accelerazione video e il supporto per risoluzioni video più alte;
+- condivisione degli appunti;
+- supporto per il puntatore del mouse integrato, senza dover ricorrere al tasto HOST;
+- login automatici degli utenti presenti sul sistema ospitante.
+
+Per condividere una cartella tra il sistema ospitante e la macchina virtuale, si deve cliccare sulla voce "Cartelle condivise" della macchina virtuale. Nella finestra delle cartelle condivise, si clicca sul pulsante di "Aggiungi" e nella finestra di dialogo si indica la cartella da condividere ed il punto di mount.
+
+![VirtualBox - Condivisione cartella](/static/coding/tools/VirtualBox7-share-folder.png "VirtualBox - Condivisione cartella")
