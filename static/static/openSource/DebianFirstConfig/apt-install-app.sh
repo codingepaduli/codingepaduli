@@ -16,7 +16,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Adds the section contrib, non-free and non-free-firmware
-apt-add-repository -y contrib && apt-add-repository -Y non-free && apt-add-repository -Y non-free-firmware
+apt-add-repository -y contrib && apt-add-repository -y non-free && apt-add-repository -y non-free-firmware
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -45,7 +45,7 @@ fi
 ##############################################
 
 # Codecs for reading DVDs - EXIF information in JPEG - webp files - mp3 file - iphone HEIC / HEIF (High Efficiency Image)
-apt-get install -y libdvdcss2 exif webp lame heif-thumbnailer
+apt-get install -y exif webp lame heif-thumbnailer
 
 if [ $? -ne 0 ]; then
     exit 1
