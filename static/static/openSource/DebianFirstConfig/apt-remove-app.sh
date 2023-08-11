@@ -61,5 +61,10 @@ apt-get remove -y --purge libreoffice-base-core libreoffice-calc \
     mythes-de mythes-de-ch mythes-en-us mythes-fr mythes-it mythes-ne \
     mythes-pl mythes-ru mythes-sk python3-uno
 
+# Remove unused apps
+apt-get remove -y --purge xterm mlterm mlterm-common mlterm-tiny xiterm+thai
+
+apt-get remove -y --purge quodlibet parole
+
 apt-get autoremove -y --purge
 
