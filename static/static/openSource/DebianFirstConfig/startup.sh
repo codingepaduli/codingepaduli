@@ -15,6 +15,7 @@
 
 # Install all the apps
 # . apt-install-app.sh
+# . apt-install-non-free-app.sh
 # . docker-installedApp.sh
 # . flatpak-installAllScript.sh
 # . npm-installedApp.sh
@@ -25,9 +26,12 @@
 # Create users and groups
 . create-users.sh
 
-# Create SSH keys
+# Copy the file in the user home
 mkdir -p "/home/io/startup"
-chown io:casa "/home/io/startup"
-cp "./user/create_ssh_keys.sh" "/home/io/startup/create_ssh_keys.sh"
+cp -r "./user/." "/home/io/startup/"
 chown -R io:casa "/home/io/startup/"
+
+# Execute the script as user, not as root
+mkdir -p "/home/io/Sviluppo/SVN"
+su -c '/home/io/startup/checkout_repositories.sh' io
 su -c '/home/io/startup/create_ssh_keys.sh' io

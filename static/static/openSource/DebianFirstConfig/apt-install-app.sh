@@ -8,20 +8,6 @@
 #    deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
 #    deb http://deb.debian.org/debian/ bookworm-backports main contrib non-free
 
-# Provides the scripts apt-add-repository used to add section contrib, non-free and non-free-firmware
-apt-get install -y software-properties-common
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-# Adds the section contrib, non-free and non-free-firmware
-apt-add-repository -y contrib && apt-add-repository -y non-free && apt-add-repository -y non-free-firmware
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
 apt-get update
 
 if [ $? -ne 0 ]; then
