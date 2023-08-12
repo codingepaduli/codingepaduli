@@ -37,13 +37,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Win64 codecs for multimedia
-# apt-get install -y w64codecs
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
 # applications
 apt-get install -y simple-scan simplescreenrecorder kchmviewer imagination amide
 
@@ -61,7 +54,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Multiple Arcade Machine Emulator (MAME)
-# apt-get install -y mame mame-data mame-extra mame-tools gnome-video-arcade
+# apt-get install -y mame mame-data mame-tools gnome-video-arcade
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -151,7 +144,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # compression and file type utilities
-apt-get install -y xarchiver p7zip-full psutils arj bzip2 gzip pigz unrar unzip zip lzma python3-lz4
+apt-get install -y xarchiver p7zip-full psutils arj bzip2 gzip pigz unzip zip lzma python3-lz4
 
 if [ $? -ne 0 ]; then
     exit 1

@@ -36,13 +36,30 @@ fi
 # Multimedia codecs
 apt-get install -y libdvdcss2
 
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
 # non-free compression file format
 apt-get install -y unrar
+
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+# gaming
+apt-get install -y mame-extra
+
+if [ $? -ne 0 ]; then
+    exit 1
+fi
 
 # non-free firmware
 #   for module r8169 -> firmware-realtek
 #   for module i915 -> firmware-realtek
-apt-get install -y firmware-realtek
+#   for Intel Wireless cards -> firmware-iwlwifi
+apt-get install -y firmware-realtek firmware-iwlwifi
 
-# non-free firmware: Intel Wireless cards
-apt-get install -y firmware-iwlwifi
+if [ $? -ne 0 ]; then
+    exit 1
+fi
