@@ -141,7 +141,7 @@ Ci sono diverse debolezze nell'interazione client server con SSH:
     ```plaintext
     The authenticity of host xxx can''t be established.
     RSA key fingerprint is SHA256:4fdsanfMfazsbfMadfas
-    Are you sure you want to continue connecting (yes/no)?
+    Are you sure you want to continue connecting (yes/no/[fingerprint])?
     ```
 
 2. L'accesso al server con utente e password è insicuro perché la password può essere indovinata con algoritmi di brute-force o basati su dizionario.
@@ -538,6 +538,41 @@ ssh-keygen -l -f $HOME/chiavi_ssh/id_ed25519
 
 Si ricorda che la chiave pubblica serve ad autorizzare l'accesso all'utente e deve essere copiata sul server.
 
+## Ricavare la fingerprint di una chiave
+
+Per recuperare la fingerprint di una chiave, si può passare la chiave al comando ``ssh-keygen``, indicando l'opzione ``-l`` per creare la fingerprint e l'opzione ``-f file`` per indicare il file, come nel seguente esempio:
+
+```bash
+ssh-keygen -l -f ".ssh/id_ed25519"
+```
+
+Dall'output seguente si può visualizzare l'hash (detto anche fingerprint) della chiave, preceduto dalla dimensione ``256`` e dall'algoritmo di hash ``SHA256`` e seguito dal nome del server e dal tipo di chiave ``ECDSA``:
+
+```plaintext
+256 SHA256:HbW3g8zUjNSksFbq...xU Comment (ECDSA)
+```
+
+Aggiungendo l'opzione ``-v`` al comando, è possibile generare anche l'artwork della chiave:
+
+```bash
+ssh-keygen -l -v -f ".ssh/id_ed25519"
+```
+
+```plaintext
+256 SHA256:HbW3g8zUjNSksFbq...xU Comment (ECDSA)
++---[ECDSA 256]---+
+|        .ooo=*BE+|
+|        . XOoBB+o|
+|         BB=*++o |
+|        .= B=oo. |
+|        S +.+oo  |
+|         o     . |
+|          .      |
+|                 |
+|                 |
++----[SHA256]-----+
+```
+
 ## Memorizzare la passphrase usando l'agente SSH
 
 L'agente SSH si occupa di memorizzare la passphrase per tutta la durata della sessione SSH.
@@ -668,6 +703,118 @@ Per smontare la cartella, utilizzare il seguente comando:
 
 ```bash
 sudo umount /mnt/Remote
+```
+
+## Server trust e file .known_hosts
+
+Quando il client SSH si collega ad un server SSH, verifica se è un server fidato, controllando se è presente una voce relativa al server nel file ``.ssh/.known_hosts``. Se non è presente, chiede all'utente se fidarsi del server o meno, visualizzando il messaggio:
+
+```plaintext
+The authenticity of host xxx can''t be established.
+RSA key fingerprint is SHA256:4fdsanfMfazsbfMadfas
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Le chiavi per confermare l'identità del server sono nella cartella ``/etc/ssh/``, nella quale troviamo i seguenti file:
+
+- ``ssh_host_ecdsa_key``e ``ssh_host_ecdsa_key.pub``
+- ``ssh_host_ed25519_key`` e ``ssh_host_ed25519_key.pub``
+- ``ssh_host_rsa_key`` e ``ssh_host_rsa_key.pub``
+
+Per verificare le chiavi pubbliche di un server, ad esempio ``gitlab.com``, si può utilizzare il comando seguente:
+
+```bash
+ssh-keyscan -t ecdsa,ed25519,dsa gitlab.com
+```
+
+Dall'output seguente si possono vedere le chiavi precedute dal nome del server ``gitlab.com`` e dal tipo di chiave ``ecdsa-sha2-nistp256``, ``ssh-ed25519`` e ``ssh-dss``:
+
+```plaintext
+# gitlab.com:22 SSH-2.0-GitLab-SSHD
+
+gitlab.com ecdsa-sha2-nistp256 AAAAE2VjZHNhL...Y=
+gitlab.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAA...f
+gitlab.com ssh-dss AAAAB3NzaC1kc3MAAACBAMPK...6A==
+```
+
+Facendo la stessa verifica su ``github.com``, dall'output si nota che non è presente una chiave per l'algoritmo``dsa``:
+
+```plaintext
+# github.com:22 SSH-2.0-babeld-d815c248
+
+github.com ecdsa-sha2-nistp256 AAAAE2VjZHNhL...g=
+github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AA...l
+```
+
+Per recuperare la fingerprint della chiave, si può utilizzare il comando ``ssh-keygen`` e, ricordando che il Linux lo standard input è indicato dal simbolo ``-``, utilizzando lo standard input come file contenente la chiave:
+
+```bash
+ssh-keyscan -t ecdsa gitlab.com | ssh-keygen -l -f -
+```
+
+Per aggiungere la chiave al file ``.ssh/.known_hosts`` si può utilizzare il redirezionamento dell'output, come nel seguente comando:
+
+ssh-keyscan -t ecdsa gitlab.com >> "~/.ssh/.known_hosts"
+
+Per verificare che una chiave sia presente nel file ``.ssh/.known_hosts``, si può utilizzare il comando seguente:
+
+```bash
+ssh-keygen -F github.com
+```
+
+Per rimuovere una chiave presente nel file ``.ssh/.known_hosts``, si può utilizzare il comando seguente:
+
+```bash
+ssh-keygen -R github.com
+```
+
+Per verificare a debug che la chiave sia letta dal file, si può utilizzare il comando seguente:
+
+```bash
+ssh -v -T git@gitlab.com
+```
+
+L'output mostra le seguenti righe:
+
+```plaintext
+debug1: Authenticating to gitlab.com:22 as 'git'
+debug1: load_hostkeys: fopen ~/.ssh/known_hosts2: No such file
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:eUXGGm1YGsMAS7vkcx6JOJdOGHPem5gQp4taiCfCLB8
+ ...
+The authenticity of host 'gitlab.com (172.65.251.78)' can't be established.
+ED25519 key fingerprint is SHA256:eUXGGm1YGsMAS7vkcx6JOJdOGHPem5gQp4taiCfCLB8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Quando la chiave viene trovata, l'output è il seguente:
+
+```plaintext
+debug1: Authenticating to gitlab.com:22 as 'git'
+debug1: load_hostkeys: fopen ~/.ssh/known_hosts2: No such file
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw
+debug1: Host 'gitlab.com' is known and matches the ECDSA host key.
+debug1: Found key in ~/.ssh/known_hosts:2
 ```
 
 ## SSH Tunneling (Port forwarding)
