@@ -11,20 +11,20 @@
 #### cd codingepaduli/static/static/openSource/DebianFirstConfig/
 
 # Avvia lo script e salva l'output di messaggi ed errori nei file di log
-#     ./startup.sh > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
+#    ./startup.sh > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
 
 # Install all the apps
-# . apt-install-app.sh
-# . apt-install-non-free-app.sh
-# . docker-installedApp.sh
-# . flatpak-installAllScript.sh
-# . npm-installedApp.sh
+. ./root/apt-install-app.sh
+. ./root/apt-install-non-free-app.sh
+. ./root/docker-installedApp.sh
+. ./root/flatpak-installAllScript.sh
+. ./root/npm-installedApp.sh
 # 
 # # Remove unwanted apps
-# . apt-remove-app.sh
+. ./root/apt-remove-app.sh
 
 # Create users and groups
-. create-users.sh
+. ./root/create-users.sh
 
 # Copy the file in the user home
 mkdir -p "/home/io/startup"
