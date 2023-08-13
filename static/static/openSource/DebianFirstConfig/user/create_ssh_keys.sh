@@ -19,5 +19,11 @@ cat ~/.ssh/id_ed25519.pub | sed 's/\(.*\) \(.*\) \(.*\)/\3 ssh-ed25519 \2/g' > ~
 
 echo "Please update the signing key to the git hosting service"
 
+# Trust github and gitlab, avoiding the message:
+#### The authenticity of host can't be established.
+#### Key fingerprint: SHA256:6l...2k. Continue (yes/no)? 
+ssh-keyscan -t ed25519,ecdsa gitlab.com >> ~/.ssh/known_hosts
+ssh-keyscan -t ed25519,ecdsa github.com >> ~/.ssh/known_hosts
+
 # Remember to add a password
 # ssh-keygen -p -f ~/.ssh/id_ed25519
