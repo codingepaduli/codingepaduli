@@ -14,9 +14,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# FIX : missing package in debian bullseye
-# textlive-extra-utils
-
 # Enable secure connections (https) to the remote repositories 
 # and install gnupg in order to import apt keys
 
@@ -38,7 +35,12 @@ if [ $? -ne 0 ]; then
 fi
 
 # applications
-apt-get install -y simple-scan simplescreenrecorder kchmviewer imagination amide
+## simplescreenrecorder: un registratore di schermo
+## kchmviewer: visualizzatore di file CHM (il formato dei file d'aiuto Microsoft)
+## imagination: crea presentazioni per DVD
+## ginkgocadx: software per immagini medicali e visualizzatore di DICOM completo
+## amide: software per immagini medicali
+apt-get install -y simplescreenrecorder kchmviewer imagination ginkgocadx amide
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -60,7 +62,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# games (MAME)
+# Games
 # apt-get install -y pokerth
 
 if [ $? -ne 0 ]; then
@@ -103,8 +105,17 @@ fi
 # Install hardware management software
 ##############################################
 
-# hardware management (alsa audio, bluez bluetooth, cups printer, ofono mobile telephony devices stack)
-apt-get install -y alsa-utils bluetooth bluez bluez-tools blueman cups cups-client ofono
+# Printer and scanners
+## cups: gestore stampa e IPP (Internet Printing Protocol)
+## simple-scan: gestione scanner, frontend SANE (Scanner Access Now Easy)
+apt-get install -y cups cups-client simple-scan
+
+if [ $? -ne 0 ]; then
+    exit 1
+fi
+
+# hardware management (alsa audio, bluez bluetooth, ofono mobile telephony devices stack)
+apt-get install -y alsa-utils bluetooth bluez bluez-tools blueman ofono
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -125,7 +136,7 @@ fi
 ## ifuse: Filesystem USErmode for iphone 
 ## jmtpfs: Filesystem USErmode for MTP devices
 ## wipe: secure deletion of files (overwriting it more times)
-## rmlint-gui : GUI for finding duplicate files & directories
+## rmlint-gui: GUI for finding duplicate files & directories
 apt-get install -y gparted testdisk ntfs-3g gnome-disk-utility gvfs gvfs-backends ifuse jmtpfs wipe rmlint-gui
 
 if [ $? -ne 0 ]; then
@@ -286,7 +297,10 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-#apt-get install -y pandoc pandoc-citeproc texlive texlive-xetex texlive-luatex librsvg2-bin #pandoc-crossref
+# pandoc-crossref can be installed from here
+# https://github.com/lierdakil/pandoc-crossref#readme
+#
+# apt-get install -y pandoc pandoc-citeproc texlive texlive-xetex texlive-luatex texlive-extra-utils librsvg2-bin
 
 if [ $? -ne 0 ]; then
     exit 1
