@@ -35,6 +35,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
+# See https://wiki.debian.org/MultimediaCodecs
 # Win64 codecs for multimedia
 # apt-get install $APT_OPTS w64codecs
 
