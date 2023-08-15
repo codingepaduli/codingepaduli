@@ -12,9 +12,10 @@
 #
 ## -y: answer "y"
 ## --dry-run: only simulate the changes
-APT_OPTS=" --dry-run -y --quiet --quiet "
+APT_OPTS=" -y --quiet --quiet " # --dry-run
+APT_UPDATE_OPTS=" -y --quiet --quiet" # unsupported --dry-run
 
-apt-get update
+apt-get update $APT_UPDATE_OPTS
 
 if [ $? -ne 0 ]; then
     exit 1

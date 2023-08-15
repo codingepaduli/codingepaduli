@@ -4,7 +4,7 @@
 #
 ## -y: answer "y"
 ## --dry-run: only simulate the changes
-APT_OPTS=" --dry-run -y --purge --quiet --quiet "
+APT_OPTS=" -y --purge --quiet --quiet "
 
 ## Remove unused Firefox localizations
 apt-get remove $APT_OPTS  firefox-esr-l10n-ar firefox-esr-l10n-ast \
@@ -68,8 +68,8 @@ apt-get remove $APT_OPTS  libreoffice-base-core libreoffice-calc \
     mythes-pl mythes-ru mythes-sk python3-uno
 
 # Remove unused apps
-apt-get remove $APT_OPTS  xterm mlterm mlterm-common mlterm-tiny xiterm+thai
+apt-get remove $APT_OPTS xterm mlterm mlterm-common mlterm-tiny xiterm+thai
 
-apt-get remove $APT_OPTS  quodlibet parole
+apt-get remove $APT_OPTS exim4-base exim4-config quodlibet parole
 
 apt-get autoremove $APT_OPTS
