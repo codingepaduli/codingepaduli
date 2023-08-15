@@ -221,44 +221,8 @@ if [ $? -ne 0 ]; then
 fi
 
 ##############################################
-# Install developers tools 
+# Utility 
 ##############################################
-
-# apt-get install $APT_OPTS mariadb-client mariadb-server mycli
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-# apt-get install $APT_OPTS apache2 php
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-# apt-get install $APT_OPTS maven openjdk-17-jre-headless openjdk-17-jre-headless
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-apt-get install $APT_OPTS python3 python3-venv
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-apt-get install $APT_OPTS git git-extras gitk # subversion
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-# apt-get install $APT_OPTS ansible
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
 
 # apt-get install $APT_OPTS qemu-system-gui qemu-system qemu-utils aqemu
 
@@ -278,21 +242,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# password cracking tool
-apt-get install $APT_OPTS john
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
-
-# Initializa tldr
-# git clone https://github.com/tldr-pages/tldr.git SVN/folder
-# tldr init
-# insert SVN/folder
-# tldr reindex
-# search any command with "tldr find command"
-# update and reindex with "tldr update && tldr reindex"
-
 ##############################################
 # Install text packages 
 ##############################################
@@ -304,14 +253,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# pandoc-crossref can be installed from here
-# https://github.com/lierdakil/pandoc-crossref#readme
-#
-# apt-get install $APT_OPTS pandoc texlive texlive-xetex texlive-luatex texlive-extra-utils librsvg2-bin
-
-if [ $? -ne 0 ]; then
-    exit 1
-fi
 
 # Installa i dizionari hunspell e aspell per il controllo ortografico (in Atom)
 apt-get install $APT_OPTS hunspell-it hunspell-en-gb hunspell-en-us aspell aspell-en aspell-it
