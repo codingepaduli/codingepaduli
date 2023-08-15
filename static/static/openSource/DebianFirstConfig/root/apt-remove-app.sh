@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# APT options
+#
+## -y: answer "y"
+## --dry-run: only simulate the changes
+APT_OPTS=" --dry-run -y --purge "
+
 ## Remove unused Firefox localizations
-apt-get remove -y --purge firefox-esr-l10n-ar firefox-esr-l10n-ast \
+apt-get remove "$APT_OPTS"  firefox-esr-l10n-ar firefox-esr-l10n-ast \
     firefox-esr-l10n-be firefox-esr-l10n-bg firefox-esr-l10n-bn \
     firefox-esr-l10n-bs firefox-esr-l10n-ca firefox-esr-l10n-cs \
     firefox-esr-l10n-cy firefox-esr-l10n-da firefox-esr-l10n-de \
@@ -20,7 +26,7 @@ apt-get remove -y --purge firefox-esr-l10n-ar firefox-esr-l10n-ast \
     hunspell-gl-es hunspell-sv-se
 
 ## Remove LibreOffice
-apt-get remove -y --purge libreoffice-base-core libreoffice-calc \
+apt-get remove "$APT_OPTS"  libreoffice-base-core libreoffice-calc \
     libreoffice-common libreoffice-core libreoffice-draw \
     libreoffice-gtk3 libreoffice-help-ca libreoffice-help-common \
     libreoffice-help-cs libreoffice-help-da libreoffice-help-de \
@@ -62,9 +68,8 @@ apt-get remove -y --purge libreoffice-base-core libreoffice-calc \
     mythes-pl mythes-ru mythes-sk python3-uno
 
 # Remove unused apps
-apt-get remove -y --purge xterm mlterm mlterm-common mlterm-tiny xiterm+thai
+apt-get remove "$APT_OPTS"  xterm mlterm mlterm-common mlterm-tiny xiterm+thai
 
-apt-get remove -y --purge quodlibet parole
+apt-get remove "$APT_OPTS"  quodlibet parole
 
-apt-get autoremove -y --purge
-
+apt-get autoremove "$APT_OPTS"
