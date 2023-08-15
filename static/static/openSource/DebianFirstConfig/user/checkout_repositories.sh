@@ -76,16 +76,15 @@ do
         git config --local core.ignorecase false
         git config --local credential.helper store
         git config --local pull.rebase false
-        #git config --local diff.external git-diff-meld
 
         ## ssh signign key config
         git config --local commit.gpgsign true
         git config --local gpg.format ssh
-        git config --local user.signingkey "`cat $SSH_PUB_KEY`"
+        git config --local user.signingkey "$(cat $SSH_PUB_KEY)"
         git config --local gpg.ssh.allowedSignersFile "$SSH_ALLOWED_SIGNERS"
         git config --local core.sshCommand "/usr/bin/ssh -i $SSH_KEY"
 
-	echo "Repository configured: $repo"
+	    echo "Repository configured: $repo"
         cd ..
     else
     	echo "Fails - Please upload your key in case of Permission denied (publickey) - $repo"
