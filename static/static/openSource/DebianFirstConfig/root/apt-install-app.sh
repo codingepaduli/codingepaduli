@@ -12,7 +12,7 @@
 #
 ## -y: answer "y"
 ## --dry-run: only simulate the changes
-APT_OPTS=" --dry-run -y --quiet "
+APT_OPTS=" --dry-run -y --quiet --quiet "
 
 apt-get update
 
@@ -46,7 +46,7 @@ fi
 ## imagination: crea presentazioni per DVD
 ## ginkgocadx: software per immagini medicali e visualizzatore di DICOM completo
 ## amide: software per immagini medicali
-apt-get install $APT_OPTS simplescreenrecorder kchmviewer imagination ginkgocadx amide
+apt-get install $APT_OPTS simplescreenrecorder kchmviewer imagination  amide #ginkgocadx
 
 if [ $? -ne 0 ]; then
     exit 1

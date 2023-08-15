@@ -4,7 +4,7 @@
 #
 ## -y: answer "y"
 ## --dry-run: only simulate the changes
-APT_OPTS=" --dry-run -y --purge "
+APT_OPTS=" --dry-run -y --purge --quiet --quiet "
 
 ## Remove unused Firefox localizations
 apt-get remove $APT_OPTS  firefox-esr-l10n-ar firefox-esr-l10n-ast \
