@@ -236,7 +236,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# apt-get install $APT_OPTS maven openjdk-11-jdk openjdk-11-jre
+# apt-get install $APT_OPTS maven openjdk-17-jre-headless openjdk-17-jre-headless
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -260,7 +260,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# apt-get install $APT_OPTS qemu qemu-kvm qemu-utils
+# apt-get install $APT_OPTS qemu-system-gui qemu-system qemu-utils aqemu
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -307,7 +307,7 @@ fi
 # pandoc-crossref can be installed from here
 # https://github.com/lierdakil/pandoc-crossref#readme
 #
-# apt-get install $APT_OPTS pandoc pandoc-citeproc texlive texlive-xetex texlive-luatex texlive-extra-utils librsvg2-bin
+# apt-get install $APT_OPTS pandoc texlive texlive-xetex texlive-luatex texlive-extra-utils librsvg2-bin
 
 if [ $? -ne 0 ]; then
     exit 1
