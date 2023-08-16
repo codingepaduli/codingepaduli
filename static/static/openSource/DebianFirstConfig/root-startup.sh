@@ -34,11 +34,6 @@ mkdir -p "/home/io/startup"
 cp -r "./user/." "/home/io/startup/"
 chown -R io:casa "/home/io/startup/"
 
-## Prerequisite for script /home/io/startup/checkout_repositories.sh
-mkdir -p "/home/io/Sviluppo/SVN"
-chown -R io:casa "/home/io/Sviluppo/SVN"
-
 # Execute the script as user, not as root
-# su -c '/home/io/startup/user-startup.sh' io
-# su -c '/home/io/startup/checkout_repositories.sh' io
-# su -c '/home/io/startup/create_ssh_keys.sh' io
+#### PAY ATTENTION to upload the SSH key to git host
+# su -c '/home/io/startup/startup-user.sh' io

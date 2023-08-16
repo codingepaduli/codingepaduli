@@ -1,0 +1,389 @@
+# From the bash manual page: For almost every purpose
+# aliases are superseded by shell functions.
+
+## See the Bash-Builtins like "alias" and "declare" at:
+## https://www.gnu.org/software/bash/manual/bash.html#Bash-Builtins
+
+# In order to avoid an alias calls another alias,
+# you can specify to execute the original command,
+# for example, with an alias "cls", you can invoke
+# the original "cls" command using:
+#   command cls;
+
+ll() {
+  ls -l --time-style long-iso "$@"
+}
+export -f ll
+
+#alias la='ls -A' # show hidden files BUT NOT "." and ".."
+#alias lc='ls -C' # show quoted file name (between aphostrophe)
+#alias lh='ls --human' # bytes measured as human readable
+#alias lt='ls -t' # sort by last modification
+#alias lx='ls -X' # sort by extension
+#alias lx='ls -R' # list recursively
+
+# Use stat file for file information (instead of ls file)
+# Options:
+#   %a access right (octal) | %A access right (human readable)
+#   %s total size (in bytes)
+#   %F file type
+#   %n file name        | %N quoted file name with dereference if symbolic link
+#   %u user ID          | %U user name
+#   %g group ID         | %G group name
+stat() {
+  stat --printf="%U %G %s %n \n" "$@"
+}
+export -f stat
+
+# clear screen
+cls() {
+  clear;
+}
+export -f cls
+
+clear() {
+  timeout 2 cmatrix -u 2;
+  command cls;
+}
+export -f clear
+
+# extract tar files (tar -C ./myfolder -xvf file.tar)
+untar() {
+  untar -xvf "$@"
+}
+export -f untar
+
+# extract compressed zip files (tar -C ./myfolder -zxvf file.tar.gz)
+untarz() {
+  untarz -zxvf "$@"
+}
+export -f untarz
+
+# test the checksum for sha and md5 files
+# BUG md5sum's option --quiet and --warn are incompatible
+# https://lists.gnu.org/r/bug-coreutils/2010-10/msg00104.html
+shacheck() {
+  shasum --quiet -a 512 --check "$@"
+}
+export -f shacheck
+
+md5check() {
+  md5sum --quiet --check "$@"
+}
+export -f md5check
+
+# elimina con wipe (sovrascrive N volte, f=force no confirmation, r=recoursive, i=verbose mode, q=quick wipe)
+wipe() {
+  wipe -friq "$@"
+}
+export -f wipe
+
+# TLDR
+tldr() {
+  tldr-py find "$@"
+}
+export -f tldr
+
+# cancella e salva (clear and write) la history dei comandi del terminale
+clearhistory() {
+  history -c -w "$@"
+}
+export -f clearhistory
+
+# show all the services (use restart to restart all)
+services() {
+  systemctl status "$@"
+}
+export -f services
+
+# show the distro's info, the cpu, the mounted devices and the memory status
+computer() {
+  lsb_release -a
+  lscpu
+  df -h
+  free -h
+}
+export -f computer
+
+# show the computer space 
+# -h human readable
+# -d nested directories to show
+# -t treshold in byte (smaller files will be excluded)
+homespace() {
+  du -h -d 2 -t 9999 | sort -h
+}
+export -f homespace
+
+# User defined functions
+userDefined() {
+  declare -F
+}
+export -f userDefined
+
+helpPandocHtmlToCommonmark() {
+  echo "pandoc --standalone --from html --to commonmark file.html --output file.md"
+}
+export -f helpPandocHtmlToCommonmark
+
+helpPandocMdAndYmlToPdf() {
+  echo "pandoc --standalone --from=markdown+yaml_metadata_block --to=latex --pdf-engine=xelatex file.md --output file.pdf -V geometry:margin=1cm --highlight-style=tango" # check pandoc --to html5+smart
+}
+export -f helpPandocMdAndYmlToPdf
+
+########################
+#         ufw          #
+########################
+
+alias ufw-denied-connections-log='cat /var/log/ufw.log | grep --invert-match "UFW ALLOW"'
+alias ufw-denied-connections-log-wc='cat /var/log/ufw.log | grep --invert-match "UFW ALLOW" | petit --wordcount --nofilter'
+
+########################
+#      network         #
+########################
+
+# resume a download if something go wrong
+alias wget='wget -c '
+
+# ping only 5 times
+alias ping='ping -c 5'
+
+alias tracepath='tracepath -b' # tracepath -b twitter.com
+
+# display the ports # (TU=TPC/UDP, L=show LISTEN state, PN=Process id/process Name)
+alias ports='netstat -tulpn'
+
+# show all sockets (A=all; L=listening; T=TCP; P=related process)
+alias socket-status='ss -plat'
+
+# display the interfaces, the status and the ip
+alias interface-list='ip -br -c address'
+
+alias set-connection-gui="nmtui"
+
+# Set the hostname: hostnamectl set-hostname host.domain.org
+alias set-hostname-control='hostnamectl set-hostname'
+
+alias interface-wifi-up='ip link set wlan0 up'
+alias interface-wifi-down='ip link set wlan0 down'
+alias interface-eth-up='ip link set eth0 up'
+alias interface-eth-down='ip link set eth0 down'
+
+alias interface-lo-add-address='ip address add 127.0.0.2 dev lo'
+alias interface-lo-remove-address='ip address delete 127.0.0.2 dev lo'
+
+alias interface-eth-arp-on='ip link set dev eth0 arp on'
+alias interface-eth-arp-off='ip link set dev eth0 arp off'
+
+alias ip-routing-table='ip route'
+
+# scan ports 22,80,443 on network from 192.168.1.0 to 192.168.1.255
+# Options:
+#   -L      List all targets in the network
+#   -O      Operation System Detection
+#   -p      list of ports to test
+#   -sV	    detect software version for each port
+alias scan-network='nmap -p 22,80,443  192.168.1.0-255' 
+
+########################
+#          Git         #
+########################
+
+# See the log format: https://devhints.io/git-log-format
+# https://github.com/git/git/blob/56d268bafff7538f82c01d3c9c07bdc54b2993b1/Documentation/pretty-formats.txt
+
+alias git-log='git log --pretty="format:%h %G? %cn %ce %s" --graph --decorate --abbrev-commit --all'
+
+alias git-log-files='git log --pretty=oneline --decorate --abbrev-commit --name-only'
+
+# search a string in the repository
+# -n show line number
+# -i search ignorecase
+# --untracked search in tracked (committed) and untracked files
+alias git-grep='git grep --untracked -n -i'
+
+### Split the checkout command in the restore and switch commands
+#
+# alias git-restore='git restore --source=HEAD --staged'
+# alias git-restore='git checkout -- ' #file
+#
+# alias git-switch='git switch ' #branch
+# alias git-switch-new-branch='git switch -c ' #branch
+
+alias convertFromWindowsNewLineToLinux='sed -i "s/`printf '\r'`\$//"'
+alias convertFromLinuxNewLineToWindows='sed -i "s/`printf '\r'`\$/`printf '\n\r'`/"'
+
+########################
+#         SVN          #
+########################
+
+# Revert recursively tracked files from current directory
+alias svn-revert-directory='svn revert -R ./* '
+
+# Remove recursively untracked files from current directory
+alias svn-remove-untracked-files='svn status | grep ^\? | cut -c9- | xargs -d \\n rm -r '
+
+########################
+# crontab - anacrontab #
+########################
+
+# Edit the task
+alias crontab-e='crontab -e'
+alias anacrontab-e='micro /home/io/.anacron/anacrontab'
+alias goto-anacrontab-folder='cd /home/io/.anacron'
+
+# Check the schedule configured
+alias crontab-configured-schedule-cron='cat /etc/crontab'
+alias crontab-configured-schedule-anacron='cat /etc/anacrontab'
+
+# Check the service status
+alias crontab-check-service-status-cron='systemctl status cron.service | head -n 12'
+alias crontab-check-service-status-anacron='systemctl status anacron.service | head -n 10'
+
+# Show the scheduled task that will be executed
+alias crontab-scheduled-task-hourly='run-parts -v --test /etc/cron.hourly/'
+alias crontab-scheduled-task-daily='run-parts -v --test /etc/cron.daily/'
+alias crontab-scheduled-task-weekly='run-parts -v --test /etc/cron.weekly/'
+alias crontab-scheduled-task-monthly='run-parts -v --test /etc/cron.monthly/'
+
+# Show the reference site for cron syntax
+alias help-crontab-syntax-site='echo "syntax available to https://crontab.guru/"'
+
+# Show log for cron tasks
+alias crontab-log='cat /var/log/syslog /var/log/messages | grep "cron"'
+
+########################
+#       gocryptfs      #
+########################
+
+alias montaDocumenti='/usr/bin/gocryptfs -reverse -passfile .gocryptfs_password  $HOME/goCryptFS-InChiaro $HOME/Nextcloud/Documenti'
+
+alias montaDocumentiInCondivisione='/usr/bin/gocryptfs -reverse -sharedstorage -passfile .gocryptfs_password  $HOME/goCryptFS-InChiaro $HOME/Nextcloud/Documenti'
+
+alias smontaDocumenti='fusermount -u $HOME/Nextcloud/Documenti'
+
+alias infoDocumenti='gocryptfs -info $HOME/Nextcloud/Documenti'
+
+alias montaDocumentiCriptati='gocryptfs -sharedstorage -passfile gocryptfs_password $HOME/Nextcloud/Documenti $HOME/goCryptFS-InChiaro'
+
+# Per condividere la stessa directory su due macchine:
+# Use -sharedstorage for sharing between real and remote machine
+# See https://github.com/rfjakob/gocryptfs/issues/525
+
+# Per condividere la stessa directory su macchina virtuale e far
+# si che l'utente vi possa accedere:
+# https://askubuntu.com/questions/481559/how-to-automatically-mount-a-folder-and-change-ownership-from-root-in-virtualbox
+# 1a. Avvia la macchina virtuale ed esegui il comando:
+#     sudo mount -t vboxsf -o uid=1000,gid=1000 /vbox/folder /home/user/dir
+# 1b. Aggiungi la cartella condivisa alla macchina virtuale con l'opzione automount.
+# 2b. Avvia la macchina virtuale ed esegui il comando: 
+#       cat /etc/mtab | grep /home/user/dir
+#     che restituisce una linea simile:
+#       /home/user/dir /media/userdir vboxsf rw,nodev,relatime 0 0
+# 3b. Aggiungi la linea restituita dal comando nel file /etc/fstab avendo cura di aggiungere le seguenti opzioni: uid=<UID>,gid=<GID>,dmode=0770,fmode=0770 come nel seguente esempio:
+#       /home/user/dir /media/userdir vboxsf rw,nodev,relatime,uid=<UID>,gid=<GID>,dmode=0770,fmode=0770 0 0
+# 4b Spegnere la VM e togliere l'automount
+
+########################
+# Flatpak command line #
+########################
+
+# Solves the bug https://github.com/flathub/org.gnome.Evince/issues/33
+alias flatpak-clear-cache-for-org.gnome.Evince="flatpak run --command=fc-cache org.gnome.Evince -f -v"
+
+# Display all the apps and the bounded runtime on the remote repository, To use with grep.
+alias flatpak-show-remote-app-and-runtime='flatpak remote-ls flathub --system --app --columns=application,runtime'
+alias flatpak-show-installed-app-with-remote-runtime=' for i in `flatpak list --columns=application --app`; do printf "%-50s" "$i" && flatpak remote-info flathub $i --show-runtime --app; done;'
+alias flatpak-show-installed-app-with-remote-runtime-kde=' echo "$(flatpak-show-installed-app-with-remote-runtime)" | grep "kde" '
+alias flatpak-show-installed-app-with-remote-runtime-gnome=' echo "$(flatpak-show-installed-app-with-remote-runtime)" | grep "gnome"'
+alias flatpak-show-installed-app-with-remote-runtime-freedesktop=' echo "$(flatpak-show-installed-app-with-remote-runtime)" | grep "freedesktop"'
+
+# Display all the installed apps 
+alias flatpak-show-installed-app='flatpak list --app --columns=ref,version,branch,installation,size'
+
+# Display all the installed runtime 
+alias flatpak-show-installed-runtime='flatpak list --runtime --columns=ref,version,branch,installation,size | grep --invert-match "Locale"'
+
+# Display all the apps which depends on an installed runtime
+alias flatpak-show-installed-app-depends-on-runtime-gnome='flatpak list --app  --app-runtime=org.gnome.Platform/x86_64/43 --columns=ref,version,branch,installation,size'
+alias flatpak-show-installed-app-depends-on-runtime-kde='flatpak list --app  --app-runtime=org.kde.Platform/x86_64/5.15-21.08 --columns=ref,version,branch,installation,size'
+alias flatpak-show-installed-app-depends-on-runtime-freedesktop='flatpak list --app  --app-runtime=org.freedesktop.Platform/x86_64/22.08 --columns=ref,version,branch,installation,size'
+
+# Update all the apps which depends on the currently installed runtime
+alias flatpak-update-freedesktop-app-based-on-current-runtime='flatpak update `flatpak-show-installed-app-with-remote-runtime-freedesktop | grep "22.08" | cut -d \  -f1`'
+alias flatpak-update-gnome-app-based-on-current-runtime='flatpak update `flatpak-show-installed-app-with-remote-runtime-gnome | grep "43" | cut -d \  -f1`'
+alias flatpak-update-kde-app-based-on-current-runtime='flatpak update `flatpak-show-installed-app-with-remote-runtime-kde | grep "5.15-21.08" | cut -d \  -f1`'
+
+############################
+# VNC server on SSH tunnel #
+############################
+
+# Xvnc is both a vnc and X server. Each time you start a server, it will create 
+#    a new "display" and starts listening on the following ports:
+#    VNC server "display 0" will listen on TCP ports 5800, 5900 and 6000
+#    VNC server "display 1" will listen on TCP ports 5801, 5901 and 6001
+# The ports are for:
+#    5800+N - Java-based vncviewer (VNC client connection over HTTP protocol);
+#    5900+N - VNC Client Port (VNC client connection over RemoteFrameBuffer RFB protocol);
+#    6000+N - X Server port (port 6001 is to allows X applications to connect to the VNC server).
+# check open ports with 'netstat -nalp | grep vnc'
+
+# Options:
+#   -rfbport:      The port to listen for VNC Client connections;
+#   -httpport      The port for HTTP connections (needed with rfbport)
+#   -localhost:    Only allow loopback connections from localhost;
+#   -nolisten tcp: Disable X Server connections on TCP port;
+
+# see 'man Xvnc' and 'man Xserver' for more info. 
+
+alias vncserver-start='vncserver -geometry 1360x730 -rfbport 10901 -httpport 10901 -nolisten tcp -localhost'
+alias vncserver-stop='vncserver  -kill :1'
+alias vnctunnel='ssh -L 5901:127.0.0.1:5901 -C -N -l io 172.20.10.3'
+
+############################
+#          FFmpeg          #
+############################
+
+# Options:
+#  -vn   disable video conversion 
+alias help-convert-audio="echo 'ffmpeg -i inputFile -vn outputFile' "
+
+# Mp4 format contains H.264 video codec and AAC audio codec
+# WebM format contains VP9 video codec and Opus audio codec
+# Mkv format can contain any combination of video and audio coded
+alias help-convert-video="echo 'ffmpeg -i inputFile outputFile' "
+
+# Convert from audo m4a to mp3
+# The quality argument "-q:a Value" has a range 0-9 (lower value is higher quality).
+#   - 0-3 will normally produce transparent results
+#   - 4 (default) should be close to perceptual transparency
+#   - 6 usually produces an "acceptable" quality.
+alias help-convert-m4a-to-mp3="echo 'ffmpeg -i input.m4a -c:v copy -c:a libmp3lame -q:a 4 output.mp3'"
+
+############################
+# FileSystem Usermode FUSE #
+############################
+
+alias mount-phone='jmtpfs $HOME/Documenti/Phone'
+alias monta-phone='mount-phone'
+alias umount-phone='fusermount -u $HOME/Documenti/Phone'
+alias smonta-phone='umount-phone'
+
+########################
+# Beautiful interfaces #
+########################
+
+# apt-get install boxes, see '/etc/boxes/boxes-config' file or run 'boxes -l' for a list of shapes
+# 	make (or remove with -r option) a boxes with alignment (-a) centered and with shape (-d) dog.
+alias boxes='boxes -d dog -a c'
+
+# apt-get install cowsay, see '/usr/share/cowsay directory' for a list of shapes
+# 	make a cowsay shape with shape (-f) ghostbusters.
+alias cowsay='cowsay -f ghostbusters'
+
+# apt-get install lolcat
+# 	draw an input text with colors
+alias lolcat='lolcat'
+
+# apt-get install cmatrix
+# 	draw a matrix (the film) screensaver)
+alias cmatrix='cmatrix'
