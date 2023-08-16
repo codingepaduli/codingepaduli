@@ -13,16 +13,18 @@
 # Avvia lo script e salva l'output di messaggi ed errori nei file di log
 #    ./root-startup.sh > >(tee -a stdout.log) 2> >(tee -a stderr.log >&2)
 
+DISTRO="debian12"
+
 # Install all the apps
-. ./root/apt-install-app.sh
-. ./root/apt-install-non-free-app.sh
-. ./root/apt-install-dev.sh
+. ./root/$DISTRO-apt-install-app.sh
+. ./root/$DISTRO-apt-install-non-free-app.sh
+. ./root/$DISTRO-apt-install-dev.sh
 # . ./root/docker-installedApp.sh
 # . ./root/flatpak-installAllScript.sh
 # . ./root/npm-installedApp.sh
 
 # Remove unwanted apps
-. ./root/apt-remove-app.sh
+. ./root/$DISTRO-apt-remove-app.sh
 
 # Create users and groups
 . ./root/create-users.sh
