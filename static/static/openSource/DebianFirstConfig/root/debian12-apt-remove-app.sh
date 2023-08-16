@@ -70,6 +70,6 @@ apt-get remove $APT_OPTS  libreoffice-base-core libreoffice-calc \
 # Remove unused apps
 apt-get remove $APT_OPTS xterm mlterm mlterm-common mlterm-tiny xiterm+thai
 
-apt-get remove $APT_OPTS exim4-base exim4-config quodlibet parole
+apt-get remove $APT_OPTS exim4-base exim4-config quodlibet parole geoclue-2.0
 
 apt-get autoremove $APT_OPTS
