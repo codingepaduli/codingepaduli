@@ -205,6 +205,12 @@ interfaceList() {
 }
 export -f interfaceList
 
+# display the interfaces, the status and the ip
+interfaceList2() {
+    nmcli device status
+}
+export -f interfaceList2
+
 # Show the network manager
 showNetworkManager() {
     nmtui
