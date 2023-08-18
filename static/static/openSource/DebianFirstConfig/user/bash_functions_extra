@@ -1,0 +1,136 @@
+# shellcheck shell=bash
+#
+# From the bash manual page: For almost every purpose
+# aliases are superseded by shell functions.
+
+## See the Bash-Builtins like "alias" and "declare" at:
+## https://www.gnu.org/software/bash/manual/bash.html#Bash-Builtins
+
+# In order to avoid a function calls itself, you can specify
+# to execute the original command. Example: to call the 'clear'
+# command insede a function "clear", you need to use:
+#   command clear;
+
+: '
+helpPandocHtmlToCommonmark() {
+  echo "pandoc --standalone --from html --to commonmark file.html --output file.md"
+}
+export -f helpPandocHtmlToCommonmark
+
+helpPandocMdAndYmlToPdf() {
+  echo "pandoc --standalone --from=markdown+yaml_metadata_block --to=latex --pdf-engine=xelatex file.md --output file.pdf -V geometry:margin=1cm --highlight-style=tango" # check pandoc --to html5+smart
+}
+export -f helpPandocMdAndYmlToPdf
+
+'
+
+########################
+# crontab - anacrontab #
+########################
+
+# Edit the task
+alias crontab-e='crontab -e'
+alias anacrontab-e='micro /home/io/.anacron/anacrontab'
+alias goto-anacrontab-folder='cd /home/io/.anacron'
+
+# Check the schedule configured
+alias crontab-configured-schedule-cron='cat /etc/crontab'
+alias crontab-configured-schedule-anacron='cat /etc/anacrontab'
+
+# Check the service status
+alias crontab-check-service-status-cron='systemctl status cron.service | head -n 12'
+alias crontab-check-service-status-anacron='systemctl status anacron.service | head -n 10'
+
+# Show the scheduled task that will be executed
+alias crontab-scheduled-task-hourly='run-parts -v --test /etc/cron.hourly/'
+alias crontab-scheduled-task-daily='run-parts -v --test /etc/cron.daily/'
+alias crontab-scheduled-task-weekly='run-parts -v --test /etc/cron.weekly/'
+alias crontab-scheduled-task-monthly='run-parts -v --test /etc/cron.monthly/'
+
+# Show the reference site for cron syntax
+alias help-crontab-syntax-site='echo "syntax available to https://crontab.guru/"'
+
+# Show log for cron tasks
+alias crontab-log='cat /var/log/syslog /var/log/messages | grep "cron"'
+
+########################
+#       gocryptfs      #
+########################
+
+alias montaDocumenti='/usr/bin/gocryptfs -reverse -passfile .gocryptfs_password  $HOME/goCryptFS-InChiaro $HOME/Nextcloud/Documenti'
+
+alias montaDocumentiInCondivisione='/usr/bin/gocryptfs -reverse -sharedstorage -passfile .gocryptfs_password  $HOME/goCryptFS-InChiaro $HOME/Nextcloud/Documenti'
+
+alias smontaDocumenti='fusermount -u $HOME/Nextcloud/Documenti'
+
+alias infoDocumenti='gocryptfs -info $HOME/Nextcloud/Documenti'
+
+alias montaDocumentiCriptati='gocryptfs -sharedstorage -passfile gocryptfs_password $HOME/Nextcloud/Documenti $HOME/goCryptFS-InChiaro'
+
+# Per condividere la stessa directory su due macchine:
+# Use -sharedstorage for sharing between real and remote machine
+# See https://github.com/rfjakob/gocryptfs/issues/525
+
+# Per condividere la stessa directory su macchina virtuale e far
+# si che l'utente vi possa accedere:
+# https://askubuntu.com/questions/481559/how-to-automatically-mount-a-folder-and-change-ownership-from-root-in-virtualbox
+# 1a. Avvia la macchina virtuale ed esegui il comando:
+#     sudo mount -t vboxsf -o uid=1000,gid=1000 /vbox/folder /home/user/dir
+# 1b. Aggiungi la cartella condivisa alla macchina virtuale con l'opzione automount.
+# 2b. Avvia la macchina virtuale ed esegui il comando: 
+#       cat /etc/mtab | grep /home/user/dir
+#     che restituisce una linea simile:
+#       /home/user/dir /media/userdir vboxsf rw,nodev,relatime 0 0
+# 3b. Aggiungi la linea restituita dal comando nel file /etc/fstab avendo cura di aggiungere le seguenti opzioni: uid=<UID>,gid=<GID>,dmode=0770,fmode=0770 come nel seguente esempio:
+#       /home/user/dir /media/userdir vboxsf rw,nodev,relatime,uid=<UID>,gid=<GID>,dmode=0770,fmode=0770 0 0
+# 4b Spegnere la VM e togliere l'automount
+
+########################
+# Flatpak command line #
+########################
+
+# Solves the bug https://github.com/flathub/org.gnome.Evince/issues/33
+alias flatpak-clear-cache-for-org.gnome.Evince="flatpak run --command=fc-cache org.gnome.Evince -f -v"
+
+# Display all the apps and the bounded runtime on the remote repository, To use with grep.
+alias flatpak-show-remote-app-and-runtime='flatpak remote-ls flathub --system --app --columns=application,runtime'
+alias flatpak-show-installed-app-with-remote-runtime=' for i in `flatpak list --columns=application --app`; do printf "%-50s" "$i" && flatpak remote-info flathub $i --show-runtime --app; done;'
+alias flatpak-show-installed-app-with-remote-runtime-kde=' echo "$(flatpak-show-installed-app-with-remote-runtime)" | grep "kde" '
+alias flatpak-show-installed-app-with-remote-runtime-gnome=' echo "$(flatpak-show-installed-app-with-remote-runtime)" | grep "gnome"'
+alias flatpak-show-installed-app-with-remote-runtime-freedesktop=' echo "$(flatpak-show-installed-app-with-remote-runtime)" | grep "freedesktop"'
+
+# Display all the installed apps 
+alias flatpak-show-installed-app='flatpak list --app --columns=ref,version,branch,installation,size'
+
+# Display all the installed runtime 
+alias flatpak-show-installed-runtime='flatpak list --runtime --columns=ref,version,branch,installation,size | grep --invert-match "Locale"'
+
+# Display all the apps which depends on an installed runtime
+alias flatpak-show-installed-app-depends-on-runtime-gnome='flatpak list --app  --app-runtime=org.gnome.Platform/x86_64/43 --columns=ref,version,branch,installation,size'
+alias flatpak-show-installed-app-depends-on-runtime-kde='flatpak list --app  --app-runtime=org.kde.Platform/x86_64/5.15-21.08 --columns=ref,version,branch,installation,size'
+alias flatpak-show-installed-app-depends-on-runtime-freedesktop='flatpak list --app  --app-runtime=org.freedesktop.Platform/x86_64/22.08 --columns=ref,version,branch,installation,size'
+
+# Update all the apps which depends on the currently installed runtime
+alias flatpak-update-freedesktop-app-based-on-current-runtime='flatpak update `flatpak-show-installed-app-with-remote-runtime-freedesktop | grep "22.08" | cut -d \  -f1`'
+alias flatpak-update-gnome-app-based-on-current-runtime='flatpak update `flatpak-show-installed-app-with-remote-runtime-gnome | grep "43" | cut -d \  -f1`'
+alias flatpak-update-kde-app-based-on-current-runtime='flatpak update `flatpak-show-installed-app-with-remote-runtime-kde | grep "5.15-21.08" | cut -d \  -f1`'
+
+############################
+#          FFmpeg          #
+############################
+
+# Options:
+#  -vn   disable video conversion 
+alias help-convert-audio="echo 'ffmpeg -i inputFile -vn outputFile' "
+
+# Mp4 format contains H.264 video codec and AAC audio codec
+# WebM format contains VP9 video codec and Opus audio codec
+# Mkv format can contain any combination of video and audio coded
+alias help-convert-video="echo 'ffmpeg -i inputFile outputFile' "
+
+# Convert from audo m4a to mp3
+# The quality argument "-q:a Value" has a range 0-9 (lower value is higher quality).
+#   - 0-3 will normally produce transparent results
+#   - 4 (default) should be close to perceptual transparency
+#   - 6 usually produces an "acceptable" quality.
+alias help-convert-m4a-to-mp3="echo 'ffmpeg -i input.m4a -c:v copy -c:a libmp3lame -q:a 4 output.mp3'"
