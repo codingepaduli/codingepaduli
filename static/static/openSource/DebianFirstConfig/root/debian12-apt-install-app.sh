@@ -34,14 +34,14 @@ fi
 # Install multimedia software
 ##############################################
 
-# Codecs for reading DVDs - EXIF information in JPEG - webp files - mp3 file - iphone HEIC / HEIF (High Efficiency Image)
+# EXIF information - webp and mp3 files - iphone HEIC / HEIF (High Efficiency Image)
 apt-get install $APT_OPTS exif webp lame heif-thumbnailer
 
 if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# applications
+# multimedia applications
 ## simplescreenrecorder: un registratore di schermo
 ## kchmviewer: visualizzatore di file CHM (il formato dei file d'aiuto Microsoft)
 ## imagination: crea presentazioni per DVD
@@ -54,8 +54,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # Festival Text to Speech and Italian Festival Voice 
-# Example1: echo "Ciao" | festival --tts
-# Example2: echo "Ciao" | festival --tts --language italian
+## Example1: echo "Ciao" | festival --tts
+## Example2: echo "Ciao" | festival --tts --language italian
 # apt-get install $APT_OPTS festival festlex-ifd
 
 if [ $? -ne 0 ]; then
@@ -94,8 +94,13 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# UFW and Colorful IP LAN Monitor
-apt-get install $APT_OPTS ufw gufw iptraf nmap
+# Network tools
+## ufw: the firewall
+## iptraf-ng: statistical tool
+## nmap: esplora reti
+## net-tools: controllo del sottosistema di rete
+## traceroute: traccia la rotta dei pacchetti
+apt-get install $APT_OPTS ufw gufw iptraf-ng nmap net-tools traceroute
 
 if [ $? -ne 0 ]; then
     exit 1
