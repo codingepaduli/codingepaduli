@@ -1,15 +1,18 @@
+# shellcheck shell=bash
+#
 # From the bash manual page: For almost every purpose
 # aliases are superseded by shell functions.
 
 ## See the Bash-Builtins like "alias" and "declare" at:
 ## https://www.gnu.org/software/bash/manual/bash.html#Bash-Builtins
 
-# In order to avoid an alias calls another alias,
-# you can specify to execute the original command,
-# for example, with an alias "cls", you can invoke
-# the original "cls" command using:
-#   command cls;
+# In order to avoid a function calls itself, you can specify
+# to execute the original command. Example: to call the 'clear'
+# command insede a function "clear", you need to use:
+#   command clear;
 
+# Show the rows -rw------- 1 io casa 15491 2023-08-17 14:35 file
+# Usage: ll
 ll() {
   ls -l --time-style long-iso "$@"
 }
@@ -24,79 +27,92 @@ export -f ll
 
 # Use stat file for file information (instead of ls file)
 # Options:
-#   %a access right (octal) | %A access right (human readable)
-#   %s total size (in bytes)
-#   %F file type
-#   %n file name        | %N quoted file name with dereference if symbolic link
-#   %u user ID          | %U user name
-#   %g group ID         | %G group name
+##  %a access right (octal) | %A access right (human readable)
+##  %s total size (in bytes)
+##  %F file type
+##  %n file name      | %N quoted file name with dereference if symbolic link
+##  %u user ID        | %U user name
+##  %g group ID       | %G group name
+# Usage: stat file.txt
 stat() {
-  stat --printf="%U %G %s %n \n" "$@"
+  command stat --printf="%U %G %s %n \n" "$@"
 }
 export -f stat
 
 # clear screen
+# Usage: cls
 cls() {
   clear;
 }
 export -f cls
 
+# clear screen
+# Usage: clear
 clear() {
   timeout 2 cmatrix -u 2;
-  command cls;
+  command clear;
 }
 export -f clear
 
 # extract tar files (tar -C ./myfolder -xvf file.tar)
+# Usage: untar file.txt.tar
 untar() {
-  untar -xvf "$@"
+  tar -xvf "$@"
 }
 export -f untar
 
 # extract compressed zip files (tar -C ./myfolder -zxvf file.tar.gz)
+# Usage: untar file.txt.zip
 untarz() {
-  untarz -zxvf "$@"
+  tar -zxvf "$@"
 }
 export -f untarz
 
 # test the checksum for sha and md5 files
 # BUG md5sum's option --quiet and --warn are incompatible
 # https://lists.gnu.org/r/bug-coreutils/2010-10/msg00104.html
+# Usage: shacheck file.txt.sha
 shacheck() {
   shasum --quiet -a 512 --check "$@"
 }
 export -f shacheck
 
+# Usage: md5check file.txt.md5
 md5check() {
   md5sum --quiet --check "$@"
 }
 export -f md5check
 
 # elimina con wipe (sovrascrive N volte, f=force no confirmation, r=recoursive, i=verbose mode, q=quick wipe)
+# Usage: wipe file.txt
 wipe() {
-  wipe -friq "$@"
+  command wipe -friq "$@"
 }
 export -f wipe
 
 # TLDR
+# Usage: tldr ls
 tldr() {
   tldr-py find "$@"
 }
 export -f tldr
 
 # cancella e salva (clear and write) la history dei comandi del terminale
+# Usage: clearhistory
 clearhistory() {
   history -c -w "$@"
 }
 export -f clearhistory
 
 # show all the services (use restart to restart all)
+# Usage: services
 services() {
   systemctl status "$@"
 }
 export -f services
 
 # show the distro's info, the cpu, the mounted devices and the memory status
+# Usage: computer
 computer() {
   lsb_release -a
   lscpu
@@ -106,20 +122,23 @@ computer() {
 export -f computer
 
 # show the computer space 
-# -h human readable
-# -d nested directories to show
-# -t treshold in byte (smaller files will be excluded)
+## -h human readable
+## -d nested directories to show
+## -t treshold in byte (smaller files will be excluded)
+# Usage: homespace
 homespace() {
   du -h -d 2 -t 9999 | sort -h
 }
 export -f homespace
 
-# User defined functions
+# Show user defined functions
+# Usage: userDefined
 userDefined() {
   declare -F
 }
 export -f userDefined
 
+: '
 helpPandocHtmlToCommonmark() {
   echo "pandoc --standalone --from html --to commonmark file.html --output file.md"
 }
@@ -130,51 +149,118 @@ helpPandocMdAndYmlToPdf() {
 }
 export -f helpPandocMdAndYmlToPdf
 
+'
+
 ########################
 #         ufw          #
 ########################
 
-alias ufw-denied-connections-log='cat /var/log/ufw.log | grep --invert-match "UFW ALLOW"'
-alias ufw-denied-connections-log-wc='cat /var/log/ufw.log | grep --invert-match "UFW ALLOW" | petit --wordcount --nofilter'
+# Show denied connections
+# Usage: ufwDeniedConnectionsLog
+ufwDeniedConnectionsLog() {
+  grep --invert-match "UFW ALLOW" "/var/log/ufw.log"
+}
+export -f ufwDeniedConnectionsLog
 
 ########################
 #      network         #
 ########################
 
 # resume a download if something go wrong
-alias wget='wget -c '
+# Usage: wget https://google.it
+wget() {
+  command wget -c "$@"
+}
+export -f wget
 
 # ping only 5 times
-alias ping='ping -c 5'
+# Usage: ping https://google.it
+ping() {
+    command ping -c 5 "$@"
+}
+export -f ping
 
-alias tracepath='tracepath -b' # tracepath -b twitter.com
+# On windows: tracepath -b twitter.com
+# Usage: traceroute https://google.it
+traceroute() {
+    command traceroute "$@"
+}
+export -f traceroute
 
 # display the ports # (TU=TPC/UDP, L=show LISTEN state, PN=Process id/process Name)
-alias ports='netstat -tulpn'
+ports() {
+    netstat -tulpn
+}
+export -f ports
 
 # show all sockets (A=all; L=listening; T=TCP; P=related process)
-alias socket-status='ss -plat'
+socketStatus() {
+    ss -plat
+}
+export -f socketStatus
 
 # display the interfaces, the status and the ip
-alias interface-list='ip -br -c address'
+interfaceList() {
+    ip -br -c address
+}
+export -f interfaceList
 
-alias set-connection-gui="nmtui"
+# Show the network manager
+showNetworkManager() {
+    nmtui
+}
+export -f showNetworkManager
 
 # Set the hostname: hostnamectl set-hostname host.domain.org
-alias set-hostname-control='hostnamectl set-hostname'
+setHostnameControl() {
+    hostnamectl 'set-hostname'
+}
+export -f setHostnameControl
 
-alias interface-wifi-up='ip link set wlan0 up'
-alias interface-wifi-down='ip link set wlan0 down'
-alias interface-eth-up='ip link set eth0 up'
-alias interface-eth-down='ip link set eth0 down'
+interfaceWifiUp() {
+    ip link set wlan0 up
+}
+export -f interfaceWifiUp
 
-alias interface-lo-add-address='ip address add 127.0.0.2 dev lo'
-alias interface-lo-remove-address='ip address delete 127.0.0.2 dev lo'
+interfaceWifiDown() {
+    ip link set wlan0 down
+}
+export -f interfaceWifiDown
 
-alias interface-eth-arp-on='ip link set dev eth0 arp on'
-alias interface-eth-arp-off='ip link set dev eth0 arp off'
+interfaceEthUp() {
+    ip link set eth0 up
+}
+export -f interfaceEthUp
 
-alias ip-routing-table='ip route'
+interfaceEthDown() {
+    ip link set eth0 down
+}
+export -f interfaceEthDown
+
+interfaceLoAddAddress() {
+    ip address add 127.0.0.2/16 dev lo
+}
+export -f interfaceLoAddAddress
+
+interfaceLoRemoveAddress() {
+    ip address delete 127.0.0.2/16 dev lo
+}
+export -f interfaceLoRemoveAddress
+
+interfaceEthArpOn() {
+    ip link set dev eth0 arp on
+}
+export -f interfaceEthArpOn
+
+interfaceEthArpOff() {
+    ip link set dev eth0 arp off
+}
+export -f interfaceEthArpOff
+
+ipRoutingTable() {
+    ip route
+}
+export -f ipRoutingTable
 
 # scan ports 22,80,443 on network from 192.168.1.0 to 192.168.1.255
 # Options:
@@ -182,7 +268,10 @@ alias ip-routing-table='ip route'
 #   -O      Operation System Detection
 #   -p      list of ports to test
 #   -sV	    detect software version for each port
-alias scan-network='nmap -p 22,80,443  192.168.1.0-255' 
+scanNetwork() {
+    nmap -p 22,80,443  192.168.1.0-255
+}
+export -f scanNetwork
 
 ########################
 #          Git         #
@@ -191,36 +280,50 @@ alias scan-network='nmap -p 22,80,443  192.168.1.0-255'
 # See the log format: https://devhints.io/git-log-format
 # https://github.com/git/git/blob/56d268bafff7538f82c01d3c9c07bdc54b2993b1/Documentation/pretty-formats.txt
 
-alias git-log='git log --pretty="format:%h %G? %cn %ce %s" --graph --decorate --abbrev-commit --all'
+gitLog() {
+    git log --pretty="format:%h %G? %cn %ce %s" --graph --decorate --abbrev-commit --all  "$@"
+}
+export -f gitLog
 
-alias git-log-files='git log --pretty=oneline --decorate --abbrev-commit --name-only'
+gitLogFiles() {
+    git log --pretty=oneline --decorate --abbrev-commit --name-only "$@"
+}
+export -f gitLogFiles
 
 # search a string in the repository
 # -n show line number
 # -i search ignorecase
 # --untracked search in tracked (committed) and untracked files
-alias git-grep='git grep --untracked -n -i'
+gitGrep() {
+    git grep --untracked -n -i "$@"
+}
+export -f gitGrep
 
-### Split the checkout command in the restore and switch commands
-#
-# alias git-restore='git restore --source=HEAD --staged'
-# alias git-restore='git checkout -- ' #file
-#
-# alias git-switch='git switch ' #branch
-# alias git-switch-new-branch='git switch -c ' #branch
+convertFromWindowsNewLineToLinux() {
+    sed -i "s/$(printf '\r')\$//" "$@"
+}
+export -f convertFromWindowsNewLineToLinux
 
-alias convertFromWindowsNewLineToLinux='sed -i "s/`printf '\r'`\$//"'
-alias convertFromLinuxNewLineToWindows='sed -i "s/`printf '\r'`\$/`printf '\n\r'`/"'
+convertFromLinuxNewLineToWindows() {
+    sed -i "s/$(printf '\r')\$/$(printf '\n\r')/" "$@"
+}
+export -f convertFromLinuxNewLineToWindows
 
 ########################
 #         SVN          #
 ########################
 
 # Revert recursively tracked files from current directory
-alias svn-revert-directory='svn revert -R ./* '
+svnRevertDirectory() {
+    svn revert -R ./*
+}
+export -f svnRevertDirectory
 
 # Remove recursively untracked files from current directory
-alias svn-remove-untracked-files='svn status | grep ^\? | cut -c9- | xargs -d \\n rm -r '
+svnRemoveUntrackedFiles() {
+    svn status | grep ^\? | cut -c9- | xargs -d \\n rm -r
+}
+export -f svnRemoveUntrackedFiles
 
 ########################
 # crontab - anacrontab #
@@ -335,9 +438,20 @@ alias flatpak-update-kde-app-based-on-current-runtime='flatpak update `flatpak-s
 
 # see 'man Xvnc' and 'man Xserver' for more info. 
 
-alias vncserver-start='vncserver -geometry 1360x730 -rfbport 10901 -httpport 10901 -nolisten tcp -localhost'
-alias vncserver-stop='vncserver  -kill :1'
-alias vnctunnel='ssh -L 5901:127.0.0.1:5901 -C -N -l io 172.20.10.3'
+vncserverStart () {
+    vncserver -geometry 1360x730 -rfbport 10901 -httpport 10901 -nolisten tcp -localhost
+}
+export -f vncserverStart
+
+vncserverStop () {
+    vncserver  -kill :1
+}
+export -f vncserverStop
+
+vncTunnel () {
+    ssh -L 5901:127.0.0.1:5901 -C -N -l io 172.20.10.3
+}
+export -f vncTunnel
 
 ############################
 #          FFmpeg          #
@@ -363,27 +477,53 @@ alias help-convert-m4a-to-mp3="echo 'ffmpeg -i input.m4a -c:v copy -c:a libmp3la
 # FileSystem Usermode FUSE #
 ############################
 
-alias mount-phone='jmtpfs $HOME/Documenti/Phone'
-alias monta-phone='mount-phone'
-alias umount-phone='fusermount -u $HOME/Documenti/Phone'
-alias smonta-phone='umount-phone'
+mountPhone() {
+    jmtpfs "$HOME/Documenti/Phone"
+}
+export -f mountPhone
+
+montaPhone() {
+    mountPhone
+}
+export -f montaPhone
+
+umountPhone() {
+    fusermount -u "$HOME/Documenti/Phone"
+}
+export -f umountPhone
+
+smontaPhone() {
+    umountPhone
+}
+export -f smontaPhone
 
 ########################
 # Beautiful interfaces #
 ########################
 
-# apt-get install boxes, see '/etc/boxes/boxes-config' file or run 'boxes -l' for a list of shapes
-# 	make (or remove with -r option) a boxes with alignment (-a) centered and with shape (-d) dog.
-alias boxes='boxes -d dog -a c'
 
-# apt-get install cowsay, see '/usr/share/cowsay directory' for a list of shapes
-# 	make a cowsay shape with shape (-f) ghostbusters.
-alias cowsay='cowsay -f ghostbusters'
+# see '/etc/boxes/boxes-config' file or run 'boxes -l' for a list of shapes
+# make (or remove with -r option) a boxes with alignment (-a) centered and with shape (-d) dog.
+boxes() {
+    command boxes -d dog -a c "$@"
+}
+export -f boxes
 
-# apt-get install lolcat
+# see '/usr/share/cowsay directory' for a list of shapes
+# make a cowsay shape with shape (-f) ghostbusters.
+cowsay() {
+    command cowsay -f ghostbusters "$@"
+}
+export -f cowsay
+
 # 	draw an input text with colors
-alias lolcat='lolcat'
+lolcat() {
+    command lolcat "$@"
+}
+export -f lolcat
 
-# apt-get install cmatrix
 # 	draw a matrix (the film) screensaver)
-alias cmatrix='cmatrix'
+cmatrix() {
+    cls
+}
+export -f cmatrix
