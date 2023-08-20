@@ -8,6 +8,9 @@ SVN_PATH="/home/io/startup/"
 ln -sfn "$SVN_PATH/bash_functions" "$HOME/.bash_functions"
 chmod 600 "$HOME/.bash_functions"
 
+ln -sfn "$SVN_PATH/bash_functions_extra" "$HOME/.bash_functions_extra"
+chmod 600 "$HOME/.bash_functions_extra"
+
 #ln -sfn "$SVN_PATH/bash_functions_docker" "$HOME/.bash_functions_docker"
 #chmod 600 "$HOME/.bash_functions_docker"
 
