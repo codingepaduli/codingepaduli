@@ -113,16 +113,24 @@ Le Guest Additions di VirtualBox sono distribuite come file ISO (disco virtuale)
 
 ![VirtualBox - Selezione Sistema Operativo](/static/coding/tools/VirtualBox7-SelectSO.png "VirtualBox - Selezione Sistema Operativo")
 
-Una volta montato il disco, si deve avviare la macchina virtuale e aprire il disco delle Guest Additions:
+Una volta montato il disco, si può avviare la macchina virtuale.
+
+![VirtualBox - Disco Guest Additions montato](/static/coding/tools/VirtualBox7-guestAdditions-mount.png "VirtualBox - Disco Guest Additions montato")
+
+Il disco delle Guest Additions contiene il file di installazione su macchine Linux ``VBoxLinuxAdditions.run`` ed il file di installazione su macchine Windows ``VBoxWindowsAdditions.sh``.
 
 ![VirtualBox - Cartella delle Guest Additions](/static/coding/tools/VirtualBox7-guestAdditions-folder.png "VirtualBox - Cartella delle Guest Additions")
 
-Si apre la cartella nel terminale e si lancia il comando di installazione delle Guest Additions:
+Si apre la cartella nel terminale e si lancia il comando di installazione delle Guest Additions ``sh ./VBoxLinuxAdditions.run``:
 
-![VirtualBox - Installa le Guest Additions](/static/coding/tools/VirtualBox7-guestAdditions-install.png "VirtualBox - Installa le Guest Additions")
+![VirtualBox - Installa le Guest Additions](/static/coding/tools/VirtualBox7-guestAdditions-installer.png "VirtualBox - Installa le Guest Additions")
 
 ## Condivisione cartelle
 
 Per condividere una cartella tra il sistema ospitante e la macchina virtuale, si deve cliccare sulla voce "Cartelle condivise" della macchina virtuale. Nella finestra delle cartelle condivise, si clicca sul pulsante di "Aggiungi" e nella finestra di dialogo si indica la cartella da condividere ed il punto di mount.
 
 ![VirtualBox - Condivisione cartella](/static/coding/tools/VirtualBox7-share-folder.png "VirtualBox - Condivisione cartella")
+
+Aggiunta la cartella, questa è visualizzata tra le cartelle della macchina:
+
+![VirtualBox - Condivisione cartella](/static/coding/tools/VirtualBox7-share-folder2.png "VirtualBox - Condivisione cartella")
