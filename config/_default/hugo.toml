@@ -25,17 +25,18 @@ theme = "mainroad" # hugo-academic mainroad watercss
 
 [markup]
   [markup.tableOfContents]
-    endLevel = 4            # The heading level to end render the table of contents
     ordered = false         # ordered or unordered list
     startLevel = 2          # The heading level to start render the table of contents
+    endLevel = 4            # The heading level to end render the table of contents
+  [markup.highlight]
+    codeFences = true     # enable code fences ```
+    guessSyntax = false   # guess language syntax
+    tabWidth = 2          # tab width
+    lineNos = false       # line number
+    style = 'igor'        # highlight style
   [markup.goldmark]
     [markup.goldmark.renderer]
       hardWraps = false     # render \n as <br> elements
       unsafe = true         # render HTML code
       xHTML = false         # render as XHTML
-    [markup.highlight]
-      codeFences = true     # enable code fences ```
-      guessSyntax = false   # guess language syntax
-      tabWidth = 2          # tab width
-      lineNos = false       # line number
-      style = 'igor'        # highlight style
+    
