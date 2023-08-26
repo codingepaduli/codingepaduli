@@ -1,6 +1,6 @@
 ---
 type: "html"
-title: "HTML Lez. 10 - Collegamenti e moduli di invio dati per la trasmissione dati al server"
+title: "HTML Lez. 10 - Richiesta e trasmissione dati al server"
 description: "HTML Lez. 10 - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
 date: 2019-09-28
 publishdate: 2019-09-28
@@ -64,6 +64,11 @@ Ci sono solo due elementi HTML che, inseriti in una pagina web, consentono di ri
 
 ## Collegamenti per richieste al server
 
+Un collegamento è un testo sul quale l'utente può cliccare per ricevere dal server la pagina web contenente i dati richiesti.
+
+Un esempio di collegamento è il seguente: <!-- markdownlint-disable-next-line MD033 -->
+<a href="www.google.com/search?q=HTML">ricerca il termine HTML su Google</a>
+
 Quando l'utente clicca su un collegamento, il browser effettua una richiesta al server e gli invia i dati necessari, se presenti nel collegamento.
 
 Per poter aggiungere ad un collegamento i dati necessari da inviare al server, è sufficiente accodarli all'URL della risorsa richiesta, rispettando le seguenti regole:
@@ -72,25 +77,25 @@ Per poter aggiungere ad un collegamento i dati necessari da inviare al server, �
 - Ogni dato da inviare è separato dal successivo con il carattere ``&``;
 - di ogni dato da inviare, si specifica il nome, seguito dal carattere ``=`` e poi dal valore associato;
 
-Considerando la richiesta di login vista nell'esempio precedente, la si può scrivere nella seguente forma:
+Considerando la richiesta di login dell'utente "Mario" vista nell'esempio precedente, la si può scrivere nella seguente forma:
 
 ```plaintext
 www.server.com/login?username=Mario&password=A1b2C3d4
 ```
 
-Il collegamento HTML risultante è il seguente:
+Il codice HTML risultante è il seguente:
 
 ```html
 <a href="www.server.com/login?username=Mario&password=A1b2C3d4">richiesta login</a>
 ```
 
-Allo stesso modo, la richiesta di registrazione utente vista in precedenza la si può scrivere nella seguente forma:
+Allo stesso modo, la richiesta di registrazione dell'utente "Mario" vista in precedenza la si può scrivere nella seguente forma:
 
 ```plaintext
 www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05
 ```
 
-Il collegamento HTML risultante è il seguente:
+Il codice HTML risultante è il seguente:
 
 ```html
 <a href="www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05">registra</a>
@@ -102,12 +107,12 @@ La richiesta di logout vista in precedenza non prevede dati da inviare, ma solo 
 <a href="www.server.com/logout">logout</a>
 ```
 
-Un esempio reale può essere la richiesta a Google della ricerca del termine ``html``, sfruttando l'omonimo servizio di ricerca presente all'indirizzo web ``www.google.com/search``. In questo caso, la richiesta deve essere corredata dal dato da ricercare, che deve essere trasmesso con il nome ``q`` e con valore ``html``.
+Un esempio reale può essere la richiesta a Google della ricerca del termine ``HTML``, sfruttando l'omonimo servizio di ricerca presente all'indirizzo web ``www.google.com/search``. In questo caso, la richiesta deve essere corredata dal dato da ricercare, che deve essere trasmesso con il nome ``q`` e con valore ``HTML``.
 
 Il collegamento da creare è realizzato con il seguente codice:
 
 ```html
-<a href="www.google.com/search?q=html">ricerca il termine html</a>
+<a href="www.google.com/search?q=HTML">ricerca il termine HTML</a>
 ```
 
 Cliccando sul collegamento, il servizio di ricerca risponde restituendo la pagina web che fa riferimento al termine ricercato.
@@ -118,15 +123,17 @@ I moduli per l'invio dei dati permettono la creazione di campi di inserimento da
 
 A differenza dei collegamenti, che non sono modificabili dall'utente, i moduli di invio dati hanno il vantaggio di permettere all'utente di inserire i dati da inviare al server.
 
-I moduli devono indicare l'URL dell'indirizzo a cui inviare i dati.
+Un esempio di modulo di invio dati è il seguente:
 
-Ogni campo da inviare al server deve avere un nome, un valore ed una descrizione allegata. Il valore sarà inserito dall'utente ed, associato al nome del campo, sarà inviato al server.
+![Esempio di modulo di invio dati](/static/coding/web/html/form02.png "Esempio di modulo di invio dati")
 
-La descrizione è semplicemente una indicazione per l'utente.
+Come si può notare dall'esempio, il modulo è composto dai campi da inviare e dai pulsanti di azione.
 
-L'etichetta ``form`` permette la creazione di un modulo di invio dati.
+Ogni campo da inviare al server deve avere un nome, un valore ed una descrizione allegata. Il valore sarà inserito dall'utente ed, associato al nome del campo, sarà inviato al server. La descrizione è semplicemente una indicazione per l'utente.
 
-Gli attributi principali previsti per questa etichetta sono:
+I pulsanti permettono all'utente di inviare i dati al server, una volta compilato il modulo.
+
+L'etichetta ``form`` permette la creazione di un modulo di invio dati. Gli attributi principali previsti per questa etichetta sono:
 
 - ``action``: indica il servizio del server a cui inviare i dati;
 - ``method``: indica quale metodo utilizzare per l'invio dei dati.
@@ -140,6 +147,40 @@ Un esempio di modulo (vuoto) è il seguente:
 ```
 
 Il modulo realizzato nell'esempio è un modulo vuoto, dato che non sono presenti campi di input, e non permette all'utente nemmeno l'invio dei dati perché manca del pulsante di invio.
+
+### Pulsanti
+
+I pulsanti sono realizzati utilizzando l'etichetta ``button`` che contiene il testo da mostrare all'utente.
+
+Un esempio di codice HTML che genera un pulsante è il seguente:
+
+```html
+<button>Cliccami</button>
+```
+
+Gli attributi principali previsti per questa etichetta sono:
+
+- ``type``: il tipo di pulsante, che può essere
+
+  - ``submit`` cioè di invio dati al server;
+  - ``reset`` cioè cancella i dati del form e non invia dati al server;
+  - ``button`` cioè non effettua azioni.
+
+- ``formaction``: si usa solo quando è presente l'attributo ``type=submit``, ed indica a quale servizio inviare i dati;
+
+Ad esempio, se vogliamo realizzare un modulo di invio dati che invii i dati ad uno dei motori di ricerca conosciuti, allora possiamo creare più pulsanti, ognuno con l'azione di invi dati verso uno specifico motore di ricerca, come nel seguente esempio:
+
+```html
+<form>
+    <button type="submit" formaction="www.google.com/search?q=HTML">Invia a Google</button>
+    <button type="submit" formaction="www.duckduckgo.com/search?q=HTML">Invia a DuckDuckGo</button>
+    <button type="submit" formaction="www.bing.com/search?q=HTML">Invia a Bing</button>
+</form>
+```
+
+Il risultato è il seguente:
+
+![Pulsanti del form](/static/coding/web/html/form-buttons.png "Pulsanti del form")
 
 ### Descrizione dei campi
 
@@ -213,40 +254,37 @@ Come si può notare nell'esempio, l'identificativo utente è nascosto, per cui n
 Una volta realizzati i campi per l'inserimento dei dati, è necessario realizzare un pulsante che permetta all'utente di inviare i dati al server. Per far ciò, è necessario impostare il valore ``submit`` nell'attributo ``type``, come nell'esempio seguente:
 
 ```html
-<input type="submit" value="Invia richiesta">
+<button type="submit">Invia richiesta</button>
 ```
 
 Se si vuole offrire all'utente la possibilità di cancellare tutti i dati inseriti nel modulo, riportandoli tutti ai valori iniziali, allora è necessario creare un campo di input di ripristino, impostando il valore ``reset`` nell'attributo ``type``, come nell'esempio seguente:
 
 ```html
-<input type="reset" value="Ripristina valori iniziali">
+<button type="reset">Ripristina valori iniziali</button>
 ```
 
-#### Esempio di modulo di invio dati
+### Esempio completo di modulo di invio dati
 
 Per realizzare un modulo di invio dati che permetta il login dell'utente, sono necessarie solo due informazioni da inserire: il nome utente e la password.
 
 Di seguito il codice HTML che permette di inserire i dati per effettuare il login:
 
 ```html
-<form action="www.server.com/login">
-
+<form>
     <label>username</label>
     <input placeholder="inserisci il tuo username" name="username">
 
     <label>password</label>
     <input placeholder="inserisci la password" name="password">
 
-    <input type="submit" value="Invia richiesta">
-    <input type="reset" value="Cancella dati">
+    <button type="submit" formaction="www.server.com/login" >Invia richiesta</button>
+    <button type="reset">Ripristina valori iniziali</button>
 </form>
 ```
 
 Il risultato è il seguente:
 
 ![Immagine del form](/static/coding/web/html/form02.png "Immagine del secondo form")
-
-Si nota come i campi di tipo ``submit`` e ``reset`` siano visualizzati come pulsanti indicanti rispettivamente "Invia richiesta" e "Cancella dati". Il primo pulsante permette l'invio dei dati al server ed il secondo riporta tutti i campi ai valori iniziali.
 
 #### Input testuale
 
