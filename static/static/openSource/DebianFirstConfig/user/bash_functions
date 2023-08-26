@@ -349,6 +349,12 @@ export -f vncTunnel
 # FileSystem Usermode FUSE #
 ############################
 
+# Show the real devices mounted
+# Usage: mountedDevices
+mountedDevices() {
+    findmnt --df --options rw --real --type ext2,ext3,ext4,ntfs # --noheadings
+}
+
 mountPhone() {
     jmtpfs "$HOME/Documenti/Phone"
 }
