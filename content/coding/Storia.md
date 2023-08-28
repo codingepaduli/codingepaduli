@@ -16,11 +16,11 @@ weight: 1
 
 # La nascita del computer e delle telecomunicazioni
 
+## Storia dei calcolatori
+
 La storia del calcolo automatico nasce con **Pascal** che nel 1645 inventa la **pascalina**, la prima calcolatrice, basata su ingranaggi simili a quelli di un orologio, capace di svolgere somme e sottrazioni.
 
 Nel 1673 **Leibniz** migliora il progetto di Pascal è crea la sua calcolatrice, capace di effettuare le quattro operazioni con numeri di 16 cifre. Nel 1700 ideò l'algebra binaria, proponendo la conversione dei numeri decimali in numeri binari, e nel tentativo di unificare le sue idee con Dio realizzò un logo composto dalla sovrapposizione di un **1**  ed uno **0**, ad indicare che uno ed uno solo creò tutto dal nulla.
-
-Alla fine del 1700 **Volta** scopre il metano, porta la patata dalla Francia in Lombardia, inventa la Lucerna che apre la strada dell'illuminazione a gas. Ad inizio 800 inventa l'elettroforo, il condensatore e la pila che nel 1801 presenta all'imperatore Napoleone. Nei suoi appunti, Volta si chiede se è possibile attraverso un fil di ferro collegare Milano e Como e comunicare, ma purtroppo le conoscenze dell'epoca erano troppo acerbe per attuare tali progetti.
 
 Nel 1822 **Babbage** progetta la sua macchina delle differenze (o macchina differenziale), una macchina composta da 25000 ingranaggi capace di calcolare logaritmi e funzioni trigonometriche. Alcuni limiti tecnologici e la personalità scostante di Babbage non ne permisero la realizzazione, ma nel 1850 due scienziati svedesi  rivisitarono e semplificarono questo progetto e realizzarono la macchina differenziale.
 
@@ -28,21 +28,27 @@ Nel 1833 **Ada Lovelace** conosce Babbage e con lui inizia dapprima a discutere 
 
 Nel 1837 Babbage e Ada pubblicano le loro idee sulla macchina analitica, un vero è proprio  computer, basato su ingranaggi, che poteva elaborare i dati a partire da un programma scritto su una scheda perforata, schede che all'epoca si usavano per i telai meccanici.
 
+Nel 1949 il matematico ungherese **von Neumann John** progettò e realizzò il computer EDVAC (elettronic discrete variable automatic calculator) composto da migliaia di valvole termoioniche e dalle dimensioni di una stanza. Il modello successivo UNIVAC fu prodotto per 50 unità vendute ciascuna a un milione di dollari. Iniziò quindi l'era dei "mainframe", elaboratori centrali grandi come un armadio che, per trasferire dati e programmi, utilizzavano un lettore di cassette magnetiche, poi sostituito da telescriventi e ancora da terminali con schermo e tastiera. Questi elaboratori garantivano un tempo medio fra i guasti (in inglese mean time between failures) misurabile in uno o due decenni, consentivano attività di riparazione e manutenzione (di CPU, dischi e RAM) mentre erano in funzione e quindi erano in grado di funzionare ininterrottamente per anni.
+
+Dai mainframe poi si passò ai minicomputer e poi, con l'introduzione dei microprocessori, nacquero i personal computer.
+
+## Storia delle telecomunicazioni
+
+Alla fine del 1700 **Volta** scopre il metano, porta la patata dalla Francia in Lombardia, inventa la Lucerna che apre la strada dell'illuminazione a gas. Ad inizio 800 inventa l'elettroforo, il condensatore e la pila che nel 1801 presenta all'imperatore Napoleone. Nei suoi appunti, Volta si chiede se è possibile attraverso un fil di ferro collegare Milano e Como e comunicare, ma purtroppo le conoscenze dell'epoca erano troppo acerbe per attuare tali progetti.
+
 Nel 1844 **Morse**, professore di disegno all'Università di New York, progetto e realizzò la sua prima linea telegrafica tra Washington e Baltimora.
 
 Nel 1854 **Field** progettò un collegamento telegrafico transatlantico tra New York e l'Irlanda. Dopo quattro fallimenti, di cui è storico il terzo che collegò le due nazioni solo per poche settimane e che permise il primo messaggio telegrafico transoceanico tra il presidente degli Stati Uniti e la Regina d'Inghilterra, al quinto tentativo nel 1866 il collegamento fu definitivamente funzionante, realizzato con un cavo lungo 4100km e dal peso di circa 4000 tonnellate.
 
 Nel 1864 **Maxwell** pubblicò il suo trattato "A Dynamical Theory of the Electromagnetic Field", in cui unificava le leggi che regolano i fenomeni elettrici, magnetici, la luce ed il calore radiante, evidenziando come il campo elettrico ed il campo magnetico avessero la stessa natura della luce, come il segnale elettromagnetico si propaghi come un'onda proprio alla velocità della luce e come il calore sia irradiato sotto forma di onda elettromagnetica.
 
-Nel 1871 **Meucci** registra a Washington il brevetto provvisorio per il telefono, da lui chiamato telegrafo parlante, chiedendo poi alla compagnia "American District Telegraph" di sperimentarlo. Non riesce a rinnovare il brevetto provvisorio a causa di problemi finanziari e di salute. Storicamente a brevettare ed inventare il telefono fu Bell, che guardacaso lavorava nella compagnia americana a cui si era rivolto Meucci e che presentò un apparecchio molto simile. Solo negli anni 2000 fu riconosciuta la paternità dell'invenzione a Meucci.
+Nel 1871 **Meucci** registra a Washington il brevetto provvisorio per il telefono, da lui chiamato telegrafo parlante, chiedendo poi alla compagnia "American District Telegraph" di sperimentarlo. Non riesce a rinnovare il brevetto provvisorio a causa di problemi finanziari e di salute. Storicamente a brevettare ed inventare il telefono fu Bell, che guarda caso lavorava nella compagnia americana a cui si era rivolto Meucci e che presentò un apparecchio molto simile. Solo negli anni 2000 fu riconosciuta la paternità dell'invenzione a Meucci.
 
 Nel 1895 **Marconi** inventa la presa di terra e le antenne radio e nel 1896 in una dimostrazione pubblica a Londra invia a 400 metri di distanza il primo messaggio in codice morse trasmesso via onde radio. Brevetta quindi le sue invenzioni nei maggiori paesi del mondo, fonda la "Marconi's wireless telegraph company" ed effettua numerose prove di trasmissione radio: nel 1897 attraverso il canale di Bristol a 14 km di distanza, nel 1899 attraverso il canale della Manica a 50 km di distanza, nel 1901 tra l'Inghilterra e gli Stati Uniti a 3000 km di distanza.
 
 Nel 1925 **Baird** trovò un modo per trasmettere immagini in movimento con una vasta gamma di grigi e nel 1926 effettuò con successo quella che viene ritenuta la prima vera dimostrazione pubblica di trasmissione televisiva senza fili.
 
-Nel 1949 il matematico ungherese **von Neumann John** progettò e realizzò il computer EDVAC (elettronic discrete variable automatic calculator) composto da migliaia di valvole termoioniche e dalle dimensioni di una stanza. Il modello successivo UNIVAC fu prodotto per 50 unità vendute ciascuna a un milione di dollari. Iniziò quindi l'era dei "mainframe", elaboratori centrali grandi come un armadio che, per trasferire dati e programmi, utilizzavano un lettore di cassette magnetiche, poi sostituito da telescriventi e ancora da terminali con schermo e tastiera. Questi elaboratori garantivano un tempo medio fra i guasti (in inglese mean time between failures) misurabile in uno o due decenni, consentivano attività di riparazione e manutenzione (di CPU, dischi e RAM) mentre erano in funzione e quindi erano in grado di funzionare ininterrottamente per anni.
-
-Dai mainframe poi si passò ai minicomputer e poi, con l'introduzione dei microprocessori, nacquero i personal computer.
+## Storia di internet
 
 Internet nasce agli anni sessanta con Arpanet, che collegava l'Università della California di Los Angeles, l'SRI di Stanford, l'Università della California di Santa Barbara, e l'Università dello Utah. Nel tempo sempre più enti universitari e governativi collegarono le loro reti locali, rendendo internet la rete delle reti.
 
@@ -52,4 +58,20 @@ Nel 1980 nasce il sistema dei nomi di dominio (DNS), un servizio che permette di
 
 A fine anni 80 nasce il primo virus, che colpisce migliaia di computer in rete.
 
-Il World Wide Web nasce nel 1991 presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
+## Storia del World Wide Web
+
+Il **World Wide Web** (dall'inglese "Rete di Ampiezza Globale") è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
+
+Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi vedere un video su una piattaforma web americana ed ancora visualizzare un prodotto in vendita su un e-commerce australiano, e così via.
+
+Il World Wide Web nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
+
+L'idea fu proposta nel Marzo 1989 da **Tim Berners-Lee**, al quale si affiancò **Berners-Lee** nella progettazione e nello sviluppo. I due crearono il primo browser chiamato "WorldWideWeb" (antenato di Netscape, Chrome e FireFox) ed il primo server "CERN HTTPd". Nel 1991 pubblicarono il primo sito web al mondo.
+
+La diffusione del web lo rende un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
+
+Le pagine web originariamente erano scritte nel solo linguaggio HTML (versione 1), ma con l'attuale evoluzione i linguaggi sono diventati tre, ognuno con un compito specifico:
+
+- Il linguaggio **HTML** (HyperText Markup Language), attualmente in versione 5, definisce la struttura delle pagine web, come titoli, liste e tabelle, ma non indica la formattazione, cioè non indica gli stili del testo, i colori e gli effetti grafici.
+- Il linguaggio **CSS** (Cascading Style Sheets) definisce la formattazione dei documenti HTML, ovvero stili, colori, animazioni di ogni elemento del documento HTML.
+- Il linguaggio **JavaScript** è usato per poter elaborare le informazioni sul client e per poter interagire con l'utente (ad esempio nei videogiochi online). E' un linguaggio di programmazione, a differenza di linguaggi HTML e CSS.
