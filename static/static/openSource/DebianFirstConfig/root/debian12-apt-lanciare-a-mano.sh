@@ -26,3 +26,6 @@ passwd -e dario
 passwd -e roberto
 passwd -e mamma
 
+# Forzo il cambio password delle chiavi SSH
+ssh-keygen -p -f ~/.ssh/id_ed25519
+
