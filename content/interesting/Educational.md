@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-07-02
-publishdate: 2023-07-02
-lastmod: 2023-07-02
+date: 2023-08-28
+publishdate: 2023-08-28
+lastmod: 2023-08-28
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -19,6 +19,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 ## Scuola
 
+[Competenze e Contenuti – Scuoladigitale](https://scuoladigitale.istruzione.it/pnsd/ambiti/competenze-e-contenuti/) - \
 
 ### Lezioni
 
@@ -28,8 +29,10 @@ summary: "Set di link relativi all'istruzione di base"
 [Indire](https://www.indire.it/gli-enti-pubblici-di-ricerca-a-supporto-degli-studenti/) - Webinar multidisciplinari condotti dai ricercatori degli enti di ricerca\
 [The Essence of Mathematics Through Elementary Problems](https://www.openbookpublishers.com/product/979) - Open Book Publishers\
 [Matematicapovolta](https://www.matematicapovolta.it/index.html) - Didattica a distanza Matematica Scuole Medie e Superiori (flipped classroom liceo scientifico)\
+[GeoSTAC](https://stac.astrogeology.usgs.gov/geostac/) - a map for finding planetary data\
 [LearningApps.org](https://learningapps.org/) - Moduli e-learning per il tuo sito internet\
 [OER Commons](https://www.oercommons.org/) - a public digital library of open educational resources. Explore, create, and collaborate with educators around the world to improve curriculum. \
+[il Curriculum dello Studente](https://curriculumstudente.istruzione.it/) - \
 
 #### Google suite
 
@@ -165,6 +168,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Codeheir](https://codeheir.com/) - All the programming knowledge, in one bloody brilliant site.\
 [paiza.IO](https://paiza.io/en/) - Online editors and compilers for PHP/Java/C++... \
 [GitHub](https://github.com/emanuele/flowgorithm_linux) - emanuele/flowgorithm_linux: Installation instruction to use FlowGoRithm on Linux / Ubuntu 20.04\
+[GitHub](https://github.com/SamueleLonghin/FlowgorithmJS) - SamueleLonghin/FlowgorithmJS: *.fprg file viewer for the Web\
 
 #### Sistemi e reti 3 anno
 
@@ -213,6 +217,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 [01](https://www.youtube.com/watch?v=ExWnJftRdWY) - Maven: introduzione, plugins, goals e lifecycle - [Tutorial su Maven in italiano] - YouTube\
 [Corso Java Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9wbmTi6c4-tmqzyOtLglGP) - YouTube\
+[Politecnico Torino](https://softeng.polito.it/courses/09CBIPC/screencast/) - Screencast delle lezioni\
 
 #### TPSIT 5 anno
 

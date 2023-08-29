@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2023-07-02
-publishdate: 2023-07-02
-lastmod: 2023-07-02
+date: 2023-08-28
+publishdate: 2023-08-28
+lastmod: 2023-08-28
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -437,6 +437,7 @@ summary: "Set di link relativi al coding"
 [py_regular_expressions/interactive_exercises](https://github.com/learnbyexample/py_regular_expressions/tree/master/interactive_exercises) - A GUI app written in tkinter to help you practice Python regular expressions · GitHub\
 [4 line code to download full youtube playlist videos](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - DEV Community\
 [annotated-types/annotated-types: Reusable constraint types to use with typing.Annotated](https://github.com/annotated-types/annotated-types) - \
+[Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
 
 ### Privacy, Security and Hacking
 
@@ -465,6 +466,7 @@ summary: "Set di link relativi al coding"
 
 #### Enhancing privacy
 
+[0x192/universal-android-debloater](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.\
 [DuckDuckGo HTML version](https://html.duckduckgo.com/html) - a search engine without JavaScript\
 [7 WhatsApp alternatives that won’t share your data with Facebook](https://protonmail.com/blog/whatsapp-alternatives/) - \
 [How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
@@ -816,4 +818,3 @@ summary: "Set di link relativi al coding"
 ##### p5Play
 
 [quinton-ashley/p5play](https://github.com/quinton-ashley/p5play/) - p5play is a JavaScript game engine that uses p5.js for rendering and Box2D for simulating physics.\
-
