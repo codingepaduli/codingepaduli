@@ -8,7 +8,7 @@ lastmod: 2019-07-15
 spellcheck: 2022-10-08
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: false
+draft: true
 toc: false
 summary: "HTML Lez. 01 - Il World Wide Web"
 weight: 10000
