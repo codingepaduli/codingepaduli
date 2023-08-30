@@ -101,6 +101,23 @@ Riepilogando, la sintassi delle etichette con attributi è la seguente:
 </etichetta>
 ```
 
+## Etichette obsolete
+
+Le etichette **obsolete** sono etichette "cancellate" dalle specifiche HTML e quindi non devono più essere utilizzate. Queste etichette obsolete sono state rimpiazzate da nuove etichette che svolgono in maniera più efficiente il compito originario.
+
+Il termine **obsoleto**, nel linguaggio tecnico, è utilizzato per indicare tecnologie antiquate e quindi in disuso, magari perché non più competitive rispetto ad altre basate su idee più avanzate.
+
+Il termine significa anche "logorato", e lo si utilizza soprattutto quando si parla di **obsolescenza programmata**, ovvero quella odiosa strategia commerciale utilizzata per rendere logoro, e quindi inutilizzabile, un prodotto dopo un certo tempo di utilizzo.
+
+Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche pagina web non aggiornata:
+
+```html
+<acronym title="as soon as possible">ASAP</acronym>
+<big>This text is big</big>
+```
+
+Gli strumenti di validazione del codice HTML aiutano a rilevare, e quindi sostituire, le etichette obsolete.
+
 ## Prima pagina web
 
 Un'indicazione fondamentale che deve essere inserita **nella prima riga** della pagina web (del file HTML) è la dichiarazione del "tipo di documento": si deve indicare che il documento è scritto in HTML, utilizzando il codice ``<!doctype html>`` ("doctype" è l'abbreviazione di "document type", che tradotto significa "tipo di documento", quindi si dichiara che il tipo di documento è "HTML").
@@ -113,7 +130,7 @@ L'etichetta ``body`` delimita i contenuti (l'etichetta di
 apertura ``<body>`` indica l'inizio dei contenuti e l'etichetta
 di chiusura ``</body>`` indica la fine dei contenuti). Questa etichetta deve essere inserita nell'etichetta ``html``.
 
-La pagina HTML risultante  (ancora incompleta) è la seguente:
+La pagina HTML risultante (ancora incompleta) è la seguente:
 
 ```html
 <!doctype html>
@@ -128,7 +145,7 @@ La pagina HTML risultante  (ancora incompleta) è la seguente:
 
 Si fa notare nuovamente che tutte le etichette nell'esempio riportato sono prima aperte e poi chiuse.
 
-Sempre dall'esempio precedente, si nota che le etichette possono essere inserite (innestate) l'una dentro l'altra, come avviene per i contenuti della pagina web presentata (il titolo ed il paragrafo) che si trovano nell'etichetta ``body`` , che a sua volta è posizionata nell'etichetta ``html``.
+Sempre dall'esempio precedente, si nota che le etichette sono inserite (innestate) l'una dentro l'altra: i contenuti della pagina web presentata (il titolo ed il paragrafo) si trovano nell'etichetta ``body``, che a sua volta è posizionata nell'etichetta ``html``.
 
 ## DOM
 
@@ -182,23 +199,6 @@ Di seguito, un esempio di commento multilinea:
      contenuti della
      pagina html -->
 ```
-
-## Etichette obsolete
-
-Alcune etichette sono state "cancellate" dalle specifiche HTML e non devono più essere utilizzate. Queste etichette sono dette **obsolete**.
-
-Il termine **obsoleto**, nel linguaggio tecnico, è utilizzato per indicare tecnologie antiquate e quindi in disuso, magari perché non più competitive rispetto ad altre basate su idee più avanzate.
-
-Il termine significa anche "logorato", e lo si utilizza soprattutto quando si parla di **obsolescenza programmata**, ovvero quella odiosa strategia commerciale utilizzata per rendere logoro, e quindi inutilizzabile, un prodotto dopo un certo tempo di utilizzo.
-
-Di seguito, un esempio di etichette obsolete che è possibile trovare in qualche pagina web non aggiornata:
-
-```html
-<acronym title="as soon as possible">ASAP</acronym>
-<big>This text is big</big>
-```
-
-Gli strumenti di validazione del codice HTML aiutano a rilevare, e quindi sostituire, le etichette obsolete.
 
 ## L'attributo ``lang`` per indicare la lingua
 
