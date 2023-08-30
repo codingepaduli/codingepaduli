@@ -14,7 +14,3 @@ weight: 9310
 ---
 
 # Struttura di una pagina web
-
-Le etichette per creare la struttura di una pagina web.
-
-![Esempio di struttura di una pagina web](/static/coding/web/html/webPageStructure.png "Esempio di struttura di una pagina web")

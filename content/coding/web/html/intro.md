@@ -78,7 +78,7 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
 
-# Struttura di una pagina web
+## Struttura di una pagina web
 
 Le etichette per creare la struttura di una pagina web.
 
