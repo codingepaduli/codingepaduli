@@ -161,7 +161,7 @@ La lista viene visualizzata di seguito:
     <li>Edge (Microsoft)</li>
 </ul>
 
-## Etichette per le definizioni e liste di definizioni
+## Definizioni e liste di definizioni
 
 Per indicare un termine del quale si vuole dare una definizione, si usa l'etichetta **dfn**, come nel seguente esempio:
 
