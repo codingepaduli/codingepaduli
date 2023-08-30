@@ -18,39 +18,6 @@ monofont: "Noto Sans Mono"
 mathfont: "Noto Sans Math"
 emojifont: "Noto Color Emoji"
 
-references:
-    -   title: "Guida HTML su html.it"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://www.html.it/guide/guida-html/"
-        description: "Corso HTML sul sito web di html.it (in italiano)"
-    -   title: "Guida HTML (versione 5) su html.it"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://www.html.it/guide/guida-html5/"
-        description: "Corso HTML versione 5 sul sito web di html.it (in italiano)"
-    -   title: "Guida HTML su corsidia.com"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html"
-        description: "Corso HTML sul sito web di corsidia.com (in italiano)"
-    -   title: "Manuale HTML su it.wikibooks.org"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://it.m.wikibooks.org/wiki/HTML"
-        description: "Un buon manuale HTML su it.wikibooks.org (in italiano)"
-    -   title: "Guida HTML su w3schools.com"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://www.w3schools.com/html/"
-        description: "Corso HTML sul sito web di www.w3schools.com (in inglese)"
-    -   title: "Corso HTML per principianti su internetingishard.com"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://internetingishard.com/html-and-css/"
-        description: "Corso HTML per principianti sul sito web di www.w3schools.com (in inglese)"
-    -   title: "Documentazione sulla tecnologia HTML su developer.mozilla.org"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://developer.mozilla.org/it/docs/Web/HTML"
-        description: "Sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione in italiano)"
-    -   title: "Corso e certificazione HTML su freecodecamp.org"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/"
-        description: "Corso e certificazione della freecodecamp, organizzazione no-profit che aiuta le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese)"
 ---
 
 # Il World Wide Web (WWW)
@@ -110,3 +77,4 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 - **ottimizzazione per i motori di ricerca ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Collegamento all'articolo su SEO su wikipedia.it"))**: permette al sito web di posizionarsi piú in alto possibile in un motore di ricerca.
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
+

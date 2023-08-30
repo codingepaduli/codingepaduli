@@ -12,6 +12,40 @@ draft: false
 toc: false
 summary: "HTML Lez. 02 - Il linguaggio HTML e le etichette (tag) - Creazione di una prima pagina web e spiegazione dei primi tag"
 weight: 9880
+
+references:
+    -   title: "Guida HTML su html.it"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.html.it/guide/guida-html/"
+        description: "Corso HTML sul sito web di html.it (in italiano)"
+    -   title: "Guida HTML (versione 5) su html.it"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.html.it/guide/guida-html5/"
+        description: "Corso HTML versione 5 sul sito web di html.it (in italiano)"
+    -   title: "Guida HTML su corsidia.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://corsidia.com/materia/web-design/webmaster-tutorial/guida-html"
+        description: "Corso HTML sul sito web di corsidia.com (in italiano)"
+    -   title: "Manuale HTML su it.wikibooks.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://it.m.wikibooks.org/wiki/HTML"
+        description: "Un buon manuale HTML su it.wikibooks.org (in italiano)"
+    -   title: "Guida HTML su w3schools.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.w3schools.com/html/"
+        description: "Corso HTML sul sito web di www.w3schools.com (in inglese)"
+    -   title: "Corso HTML per principianti su internetingishard.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://internetingishard.com/html-and-css/"
+        description: "Corso HTML per principianti sul sito web di www.w3schools.com (in inglese)"
+    -   title: "Documentazione sulla tecnologia HTML su developer.mozilla.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://developer.mozilla.org/it/docs/Web/HTML"
+        description: "Sito della Mozilla Foundation dedicato agli sviluppatori (in corso di traduzione in italiano)"
+    -   title: "Corso e certificazione HTML su freecodecamp.org"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+        description: "Corso e certificazione della freecodecamp, organizzazione no-profit che aiuta le persone ad apprendere l'arte della programmazione, con corsi e certificazioni disponibili gratuitamente (in inglese)"
 ---
 
 # Il linguaggio HTML e le etichette
