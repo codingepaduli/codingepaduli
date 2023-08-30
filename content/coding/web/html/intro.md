@@ -78,6 +78,12 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
 
+# Struttura di una pagina web
+
+Le etichette per creare la struttura di una pagina web.
+
+![Esempio di struttura di una pagina web](/static/coding/web/html/webPageStructure.png "Esempio di struttura di una pagina web")
+
 ## Esercizi sui siti web
 
 1. Il World Wide Web è:
