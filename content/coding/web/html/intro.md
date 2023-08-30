@@ -55,18 +55,6 @@ references:
 
 # Il World Wide Web (WWW)
 
-Il **World Wide Web** (dall'inglese "Rete di Ampiezza Globale") è il servizio di internet che permette di navigare tra i siti web utilizzando i collegamenti tra un sito e l'altro. Sono questi collegamenti tra i vari siti web a creare una rete di estensione mondiale.
-
-Ad esempio, un utente, seguendo i collegamenti di volta in volta presenti, può iniziare la navigazione sul sito web di un quotidiano italiano, poi vedere un video su una piattaforma web americana ed ancora visualizzare un prodotto in vendita su un e-commerce australiano, e così via.
-
-<!-- markdownlint-disable MD033 -->
-
-Il <abbr title="World Wide Web">WWW</abbr> nasce presso il CERN, il più importante laboratorio di fisica europeo, con lo scopo di condividere documenti scientifici in un formato elettronico che sia indipendente dalla piattaforma utilizzata.
-
-Il <abbr title="World Wide Web">WWW</abbr> diventa un unico grande **ipertesto** (hypertext in inglese), cioè un enorme insieme di documenti messi in relazione tra loro attraverso dei collegamenti ipertestuali (hyperlink in inglese).
-
-<!-- markdownlint-enable MD033 -->
-
 ## Architettura client server del WWW
 
 Il World Wide Web si basa su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client.
@@ -122,17 +110,3 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 - **ottimizzazione per i motori di ricerca ([SEO](https://it.m.wikipedia.org/wiki/Ottimizzazione_\(motori_di_ricerca\) "Collegamento all'articolo su SEO su wikipedia.it"))**: permette al sito web di posizionarsi piú in alto possibile in un motore di ricerca.
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
-
-## I linguaggi degli ipertesti
-
-Sul web sono utilizzati molti linguaggi, ma i principali usati per la realizzazione dei siti web sono:
-
-<!-- markdownlint-disable MD033 -->
-
-- Il linguaggio <abbr title="HyperText Markup Language">**HTML**</abbr> e' un linguaggio che definisce la struttura delle pagine web, ma non indica la formattazione.
-- Il linguaggio <abbr title="Cascading Style Sheets">**CSS**</abbr> è usato per definire la formattazione dei documenti HTML, ovvero stili, colori, animazioni, ...
-- Il linguaggio **JavaScript** è usato per poter elaborare le informazioni sul client e per poter interagire con l'utente (ad esempio nei videogiochi online).
-
-<!-- markdownlint-enable MD033 -->
-
-I tre linguaggi sono fortemente collegati, ma è utile sottolineare che ognuno ha uno scopo ben definito.
