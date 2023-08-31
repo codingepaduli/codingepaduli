@@ -1,26 +1,32 @@
 ---
 type: "html"
-title: "HTML Lez. 03 - Formattazione carattere, liste e tabelle"
-description: "HTML Lez. 03 - Formattazione carattere, liste e tabelle"
+title: "HTML Lez. 03 - Etichette principali"
+description: "HTML Lez. 03 - Etichette principali per titoli, formattazione carattere, liste, tabelle, collegamenti, immagini"
 date: 2019-07-18
 publishdate: 2019-07-18
-lastmod: 2019-07-18
+lastmod: 2023-08-31
 spellcheck: 2020-12-11
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 03 - Etichette per la formattazione carattere, per la creazione di liste e di tabelle"
+summary: "HTML Lez. 03 - Etichette principali per titoli, formattazione carattere, liste, tabelle, collegamenti, immagini"
 weight: 9790
 ---
 
 # Formattazione carattere, liste e tabelle
 
+Tra le numerose etichette del linguaggio HTML, le più comuni sono quelle che descrivono titoli, formattazione carattere, liste, tabelle, collegamenti ed immagini.
+
 ## Titoli
 
-Esistono 7 livelli di titolo, che servono a dividere il documento in più capitoli e sotto-capitoli, in modo da poter dare una struttura "alberata" al documento. Questi livelli sono espressi dalle etichette ``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` ed ``h7``, anche se si consiglia l'uso fino al terzo livello.
+Esistono 7 livelli di titoli, che servono a dividere il documento in più capitoli e sotto-capitoli. Per un uso efficace dei titoli si consiglia una suddivisione del documento fino al terzo o quarto livello. La creazione di titoli dal primo al settimo livello avviene con le  rispettive etichette ``h1``, ``h2``, ``h3``, ``h4``, ``h5``, ``h6`` ed ``h7``,
 
-Il titolo di primo livello è generato dall'etichetta ``h1``, che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
+Un titolo di primo livello è generato dall'etichetta ``h1``, che ha il simbolo di apertura ``<h1>`` ed il simbolo di chiusura ``</h1>``.
+
+Un titolo di secondo livello è generato dall'etichetta ``h2``, che ha il simbolo di apertura ``<h2>`` ed il simbolo di chiusura ``</h2>``.
+
+In maniera similare, un titolo di terzo livello è generato dall'etichetta ``h3``, che ha il simbolo di apertura ``<h3>`` ed il simbolo di chiusura ``</h3>``, e così via per gli altri livelli.
 
 Di seguito si riporta un esempio di codice per generare i titoli dei primi tre livelli:
 
@@ -30,7 +36,7 @@ Di seguito si riporta un esempio di codice per generare i titoli dei primi tre l
 <h3> Esempio di titolo di terzo livello </h3>
 ```
 
-che vengono poi trasformati dal browser come si vede di seguito:
+Questi titoli vengono poi visualizzati come di seguito:
 
 ![Esempio di titoli](/static/coding/web/html/tagTesto-title-examples.png)
 
@@ -68,14 +74,28 @@ L'etichetta ``mark`` genera un testo evidenziato, come ad esempio questo testo
 <mark>evidenziato</mark> generato dal seguente codice:
 ``<mark>evidenziato</mark>``;
 
-L'etichetta ``abbr`` è usato per visualizzarne il significato di un acronimo
-quando il mouse si ferma sopra questo, come ad esempio questo acronimo
-<abbr title="HyperText Markup Language">HTML</abbr> generato dal seguente codice:
-``<abbr title="HyperText Markup Language">HTML</abbr>``;
+L'etichetta ``abbr`` è usata per visualizzarne il significato di un acronimo
+quando il mouse ci si ferma sopra. Questa etichetta ha l'attributo:
 
-L'etichetta ``hr`` genera una semplice linea orizzontale, come la seguente, generata dal codice ``<hr>``.
+- ``title`` che indicare il testo da visualizzare quando il mouse si ferma sull'acronimo;
+
+Un esempio di acronimo, generato dal codice ``<abbr title="HyperText Markup Language">HTML</abbr>``, è il seguente: <abbr title="HyperText Markup Language">HTML</abbr>.
+
+L'etichetta ``hr`` genera una semplice linea orizzontale. Ad eccezione della regola generale, non prevede un etichetta di chiusura. E' sufficiente utilizzare ``<hr>``per generare una linea orizzontale come la seguente:
 
 <hr>
+
+Alcune etichette obsolete di formattazione del testo sono ancora utilizzate, andrebbero sostituite o da nuove etichette o dalle proprietà CSS:
+
+- ``acronym``: obsoleta, visualizzava gli acronimi, è stata sostituita dall'etichetta ``abbr``;
+- ``strike``: obsoleta, visualizzava un testo cancellato, è stata sostituita dall'etichetta ``del``;
+- ``<center>`` obsoleta, visualizzava un testo centrato, è stata sostituita dalle proprietà CSS ``text-align: center;``;
+- ``u``: obsoleta, visualizzava un testo sottolineato, è stata sostituita  dalla proprietà CSS ``text-decoration: underline;``;
+- ``b`` obsoleta, visualizzava il carattere grassetto, è stata sostituita dalla proprietà CSS ``font-weight: bold;``;
+- ``i`` obsoleta, visualizzava il carattere corsivo, è stata sostituita dalla proprietà CSS ``font-style: italic;``;
+- ``big`` obsoleta, visualizzava il carattere con dimensione maggiore, è stata sostituita dalla proprietà CSS ``font-size: larger;``;
+- ``small`` obsoleta, visualizzava il carattere con dimensione minore, è stata sostituita dalla proprietà CSS ``font-style: smaller;``;
+- ``<font face="Arial" size="2" color="red">`` obsoleta, visualizzava carattere, dimensione e colore, è stata sostituita dalle proprietà CSS ``font-family: Arial;``, ``font-size: small;``, ``color: red;``;
 
 ## Combinazioni innestate per la formattazione
 
@@ -191,28 +211,23 @@ L'etichetta ``table`` indica l'inizio e la fine di una tabella.
 
 Una tabella può contenere le righe, racchiuse dall'etichetta ``tr`` (in inglese "table row"), ed, opzionalmente, una descrizione del contenuto, indicato nell'etichetta ``caption``.
 
-Tutte le righe contengono delle celle. Le celle delle prime righe e/o colonne di una tabella possono essere di intestazione (in inglese "table header"), e quindi devono essere racchiuse dalle etichette ``th``, mentre le celle successive contengono i dati, e quindi devono essere racchiusi dalle etichette ``td`` (in inglese "table data").
-
-Le etichette delle celle ``th`` e ``td`` hanno gli attributi:
-
-- ``colspan`` permette ad una cella di espandersi su più colonne;
-- ``rowspan`` permette ad una cella di espandersi su più righe.
+Tutte le righe contengono delle celle. Se queste celle sono di intestazione (in inglese "table header") devono essere racchiuse dalle etichette ``th``, se invece contengono i dati devono essere racchiuse dalle etichette ``td`` (in inglese "table data").
 
 Ad esempio, una tabella di 3 righe e 2 colonne viene generata dal seguente codice:
 
 ```html
-<table style="border: 5px solid green;">
-    <caption>Tabella con stile</caption>
+<table>
+    <caption>Tabella prodotti</caption>
     <tr>
-        <th>header1</th>
-        <th>header2</th>
+        <th>Prodotto</th>
+        <th>Costo</th>
     </tr>
     <tr>
-        <td>data1</td>
+        <td>Smartphone</td>
         <td>$100</td>
     </tr>
     <tr>
-        <td>data2</td>
+        <td>Auricolari</td>
         <td>$50</td>
     </tr>
 </table>
@@ -220,36 +235,83 @@ Ad esempio, una tabella di 3 righe e 2 colonne viene generata dal seguente codic
 
 La tabella viene visualizzata di seguito:
 
-<table style="border: 5px solid green;">
-    <caption>Tabella con stile</caption>
+<table>
+    <caption>Tabella prodotti</caption>
     <tr>
-        <th>header1</th>
-        <th>header2</th>
+        <th>Prodotto</th>
+        <th>Costo</th>
     </tr>
     <tr>
-        <td>data1</td>
+        <td>Smartphone</td>
         <td>$100</td>
     </tr>
     <tr>
-        <td>data2</td>
+        <td>Auricolari</td>
         <td>$50</td>
     </tr>
 </table>
 
+Come si può notare, le celle di intestazione ("prodotto" e "costo") sono i grassetto e centrate, a differenza delle celle che contengono i dati. Inoltre manca uno stile grafico, in particolare i bordi che delimitano le celle.
+
+I bordi si possono applicare alla tabella inserendoli sulle etichette delle righe e delle colonne, inserendo in ciascuna etichette l'attributo ``style="border: 5px solid green;"``.
+
+Un esempio di tabella con i bordi è il seguente:
+
+```html
+<table>
+    <caption>Tabella prodotti</caption>
+    <tr style="border: 5px solid green;">
+        <th style="border: 5px solid green;">Prodotto</th>
+        <th>Costo</th>
+    </tr>
+    <tr style="border: 5px solid green;">
+        <td style="border: 5px solid green;">Smartphone</td>
+        <td>$100</td>
+    </tr>
+    <tr style="border: 5px solid green;">
+        <td style="border: 5px solid green;">Auricolari</td>
+        <td>$50</td>
+    </tr>
+</table>
+```
+
+I bordi della tabella sono visualizzati di seguito:
+
+<table>
+    <caption>Tabella prodotti</caption>
+    <tr style="border: 5px solid green;">
+        <th style="border: 5px solid green;">Prodotto</th>
+        <th>Costo</th>
+    </tr>
+    <tr style="border: 5px solid green;">
+        <td style="border: 5px solid green;">Smartphone</td>
+        <td>$100</td>
+    </tr>
+    <tr style="border: 5px solid green;">
+        <td style="border: 5px solid green;">Auricolari</td>
+        <td>$50</td>
+    </tr>
+</table>
+
+Una tabella può avere dati che si espandono su più righe o colonne. Per realizzare ciò, le etichette delle celle ``th`` e ``td`` hanno gli attributi:
+
+- ``colspan`` permette ad una cella di espandersi su più colonne;
+- ``rowspan`` permette ad una cella di espandersi su più righe.
+
 Volendo riportare un esempio di codice che preveda l'espansione delle celle su più righe o colonne, possiamo creare una tabella di 3 righe e 2 colonne, in cui l'ultima riga si espande su entrambe le colonne, mentre la prima cella in alto a sinistra occupa due righe:
 
 ```html
-<table style="border: 5px solid green;">
+<table>
     <caption>Tabella con stile</caption>
-    <tr>
+    <tr style="border: 5px solid green;">
         <th rowspan="2">Cella espansa su 2 righe grazie all'attributo rowspan="2" </th>
         <td>34£</td>
     </tr>
-    <tr>
+    <tr style="border: 5px solid green;">
         <!−− Cella mancante perché occupata dalla cella che si è espansa −−>
         <td>$100</td>
     </tr>
-    <tr>
+    <tr style="border: 5px solid green;">
         <th colspan="2">Cella espansa su 2 colonne, grazie all'attributo colspan="2"</th>
         <!−− Cella mancante perché occupata dalla cella che si è espansa −−>
     </tr>
@@ -258,17 +320,19 @@ Volendo riportare un esempio di codice che preveda l'espansione delle celle su p
 
 La tabella viene visualizzata di seguito:
 
-<table style="border: 5px solid green;">
+<table>
     <caption>Tabella con stile</caption>
-    <tr>
-        <th rowspan="2">Cella espansa su 2 righe grazie all'attributo <code>rowspan="2"</code></th>
+    <tr style="border: 5px solid green;">
+        <th rowspan="2" style="border: 5px solid green;">
+            Cella espansa su 2 righe grazie all'attributo <code>rowspan="2"</code>
+        </th>
         <td>34£</td>
     </tr>
-    <tr>
+    <tr style="border: 5px solid green;">
         <!-- Cella mancante perché occupata dalla cella che si è espansa -->
         <td>$100</td>
     </tr>
-    <tr>
+    <tr style="border: 5px solid green;">
         <th colspan="2">Cella espansa su 2 colonne, grazie all'attributo <code>colspan="2"</code> </th>
         <!-- Cella mancante perché occupata dalla cella che si è espansa -->
     </tr>
