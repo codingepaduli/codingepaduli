@@ -125,6 +125,43 @@ Se si vuole che tutto il testo sia grassetto ed evidenziato, ma solo una parte d
 </strong>
 ```
 
+## Etichetta per data e ora
+
+La rappresentazione di date e orari su internet deve seguire le regole dello standard internazionale
+[ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601). Questo standard nasce per risolvere problemi di comprensione dei formati di date e ore utilizzati nei vari paesi, ad esempio la data rappresentata con 04-09-03 può indicare il:
+
+- 4 settembre 2003 (o addirittura 1903) in Europa e altri Paesi,
+- 9 aprile 2003 negli Stati Uniti d'America,
+- 3 settembre 2004 secondo lo standard ISO 8601.
+
+Il formato in cui scrivere date e ore deve essere ``YYYY``-``MM``-``DD``T``hh``:``mm``:``ss``.``KKK``, con il seguente significato:
+
+- ``YYYY``: Anno;
+- ``MM``: Mese;
+- ``GG``: Giorno;
+- T: è un carattere di separazione, deve essere inserito per separare la data dall'ora;
+- ``hh``: Ora;
+- ``mm``: Minuti;
+- ``ss``: Secondi;
+- ``kkk``: Millisecondi.
+
+Alcuni campi possono essere omessi, per maggiori informazioni si rimanda alle specifiche del W3C.
+
+Per indicare una data e/o un'ora è possibile utilizzare l'etichetta ``time`` che prevede un unico attributo:
+
+- ``datetime`` indica della data in formato ISO 8601.
+
+Un'esempio di codice HTML per indicare le date è il seguente:
+
+```html
+<time datetime="2021-01-25">
+    25 Gennaio 2021
+</time>
+<time datetime="2001-05-15T19:00">
+    15 Maggio 2001 - ore 19.00
+</time>
+```
+
 ## Liste puntate o numerate
 
 L'etichetta ``ol`` genera una lista numerata di elementi, analogamente l'etichetta ``ul`` genera una lista di elementi non ordinata. Gli elementi della lista devono essere contenuti nell'etichetta ``li``.
@@ -408,9 +445,27 @@ Di seguito si riporta un esempio d'uso dei collegamenti verso queste tipologie d
 <a href="sms:+390001234567">Invia un SMS</a>
 ```
 
+## Etichetta per i contatti
+
+In molti casi è necessario visualizzare le informazioni di contatto di una persona o di un organizzazione, come un indirizzo (stradale), un numero di telefono, un sito web, una email, un nome su un social e così via.
+
+Tutte queste informazioni possono essere racchiuse nell'etichetta **address**, come nel seguente esempio:
+
+```html
+<address>
+    <p>Pubblicato da: <a href="https://me/">Me</a></p>
+
+    <p>Email: <a href="mailto:me@mail.me"> me@mail.me</a></p>
+
+    <p>Tel: <a href="tel:+39123456">+39123456</a></p>
+</address>
+```
+
 ## Immagini (gestione basilare)
 
-Per mostrare un'immagine nella pagina web si utilizza l'etichetta ``img`` che prevede i seguenti attributi:
+L'etichetta ``img`` visualizza un immagine. Ad eccezione della regola generale, non prevede un etichetta di chiusura.
+
+L'etichetta prevede i seguenti attributi:
 
 - ``src`` indica l'URL dell'immagine;
 - ``width`` indica la larghezza dell'immagine;
