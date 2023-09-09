@@ -78,13 +78,6 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
 
-## Struttura di una pagina web
-
-Le etichette per creare la struttura di una pagina web.
-
-![Esempio di struttura di una pagina web](/static/coding/web/html/webPageStructure.png "Esempio di struttura di una pagina web")
-
-
 ## Altre etichette
 
 Sono numerose le etichette HTML utili a descrivere i contenuti di una pagina web. Di seguito elenchiamo le etichette  che non sono state descritte nei capitoli precedenti, ma che possono risultare utili in più di una situazione e che possono aggiungere preziose informazioni per i motori di ricerca e per i lettori audio.

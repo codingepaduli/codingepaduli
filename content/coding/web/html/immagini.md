@@ -17,18 +17,6 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://opensource.com/article/20/4/webp-image-compression"
         description: "HTML images - Drop PNG and JPG for your online images: Use WebP"
-    -   title: "HTML images done right - Web graphics, good to the last byte"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques"
-        description: "HTML images done right - Web graphics, good to the last byte"
-    -   title: "HTML images with srcset"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/"
-        description: "How to Build Responsive Images with srcset"
-    -   title: "HTML images srcset and sizes"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://ericportis.com/posts/2014/srcset-sizes/"
-        description: "media queries aren’t the right tool for responsive images, srcset and sizes are"
     -   title: "HTML Images to base64 data-URI converter"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://websemantics.uk/tools/image-to-data-uri-converter/"
@@ -111,14 +99,6 @@ L'aggiunta di immagini ad una pagina web è semplice, ma si deve
 garantire un'esperienza utente soddisfacente in termini di
 visualizzazione e tempi di caricamento.
 
-Smartphone e dispositivi IoT spesso sono dotati di connessioni lente e a
-pagamento, come il 3G, e di schermi piccoli con risoluzioni ridotte, per
-cui su questi dispositivi è consigliato mostrare immagini di qualità
-ridotta, che siano adatte come dimensioni e che possano al contempo
-ridurre i tempi di caricamento dal server. In caso di schermi grandi ed
-HD, invece, è preferibile mostrare immagini ad alta qualità, poiché
-generalmente questi dispositivi sono collegati in wi-fi o a reti veloci.
-
 Sempre nell'ottica dell'ottimizzazione dei tempi, si possono utilizzare
 tecniche di **lazy loading**, ovvero di caricamento delle immagini solo
 su richiesta.
@@ -163,104 +143,10 @@ Per la conversione dell'immagine in base64 data-URI si puó usare uno dei numero
 servizi on-line, come il seguente:
 [https://websemantics.uk/tools/image-to-data-uri-converter](https://websemantics.uk/tools/image-to-data-uri-converter "servizio di conversione immagine in base64")
 
-Per permettere la selezione dell'immagine adatta allo schermo del
-dispositivo, invece, è necessario conoscere alcuni concetti. Ogni
-dispositivo, a seconda della risoluzione dello schermo, ha una propria
-**pixel density**, ovvero un numero di pixel presenti su una linea di un
-pollice (PPI), descritta talvolta anche come punti presenti su una linea
-di un pollice (DPI). Piú la pixel density è alta, piú la qualità dello
-schermo è alta. Il browser, però, utilizza una propria misura, detta
-**pixel CSS**, calcolata a partire dalla pixel density.
-
-Il rapporto tra **pixel density** e **pixel CSS** è detto
-**pixel-ratio**, ed è un secondo valore da considerare, oltre alla
-larghezza dello schermo, per la selezione dell'immagine.
-
-Su uno schermo di 1200px, un'immagine di 1200px occupa:
-
-- l'intero schermo se la pixel ratio è 1x;
-- metà schermo se la pixel ratio è 2x;
-- un terzo dello schermo se la pixel ratio è 3x;
-- e cosi via...
-
 Si tenga presente che ogni browser puó leggere a proprio modo larghezza
 e pixel ratio. Per valutare quelle del proprio schermo, si puó navigare
 con browser diversi questo sito:
 [www.mydevice.io](https://www.mydevice.io/ "sito web per ottenere informazioni sul dispositivo").
-
-Quindi, data la stessa immagine salvata in risoluzioni diverse (per
-mostrarle su schermi con pixel ratio differenti), ad esempio
-"immagine1.png, immagine2.png ed immagine3.png", e dato uno schermo con
-pixel ratio di 1x, puó il browser selezionare l'immagine che piú si
-adatta ad occupare l'intera larghezza del dispositivo?
-
-Non puó, perché non conosce la larghezza dell'immagine "immagine1.png".
-Per conoscere la risoluzione di ogni immagine, dovrebbe scaricarle tutte
-dal server. Per evitare questo spreco di tempo e risorse, è necessario
-che sia lo sviluppatore ad indicare, per ogni immagine, la rispettiva
-risoluzione.
-
-Per ora, l'unico parametro che viene considerato della risoluzione è la
-larghezza (in futuro forse anche l'altezza??), che viene indicata
-esplicitamente aggiungendo al valore la lettera **w** (che sta per
-"weight" ovvero "larghezza"). Quindi, per permettere al browser di
-scegliere l'immagine con la larghezza adatta allo spazio da riempire
-sullo schermo, il programmatore deve indicare la lista di immagini, con
-rispettive larghezze, nell'attributo `srcset`, come da seguente esempio:
-
-`srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w"`
-
-Indicate le immagini e le rispettive larghezze, ad esempio img1 di
-200px, img2 di 600px e img3 di 1200px, dobbiamo associare queste
-immagini ai vari dispositivi. Si tenga presente che, su uno schermo di
-1200px di larghezza, non è detto si debba visualizzare un immagine di
-1200px, perché magari si ha una pagina con 6 colonne e quindi la
-larghezza adatta per ogni colonna è 1200px/6 = 200px. Caricando quindi
-un'immagine di 200px x 150px (invece che una da 1200px x 900px) si ha un
-risparmio di tempo (e dati trasmessi di rete) di 35 volte\! Considerando
-che le colonne dell'esempio sono 6, il risparmio è considerevole.
-
-Inoltre c'è da considerare la pixel ratio, quindi come indicare
-l'associazione delle immagini al dispositivo? Per indicare il
-dispositivo, si usano le media query, che però non saranno trattate in
-dettaglio ora, si rimanda ad una lezione successiva. Per indicare invece
-la dimensione che deve occupare l'immagine, si usano i descrittori
-**vw**, che descrive la percentuale di larghezza da occupare sullo
-schermo (in termini di pixel CSS), e **vh**, che descrive la percentuale
-di altezza da occupare sullo schermo (in termini di pixel CSS).
-
-L'attributo `sizes` serve appunto a descrivere le associazioni tra
-schermo e larghezza desiderata per l'immagine, di seguito se ne fa un
-esempio d'uso:
-
-`sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm"`
-
-Il codice indicato descrive 3 associazioni: la prima indica che a
-schermi con risoluzione massima di 500 pixel, l'immagine deve essere
-presentata a schermo intero; la seconda indica che a schermi con
-risoluzione massima di 1500 pixel, l'immagine deve essere presentata a
-metà schermo, nell'ultimo caso, con schermi piú grandi di 1500 (per
-esclusione), l'immagine deve essere presentata ad un quarto dello
-schermo.
-
-Il browser, quindi, conoscendo la grandezza del display e la
-pixel-ratio, conoscendo le dimensioni che deve occupare l'immagine per
-lo schermo utilizzato, descritte nel tag `sizes`, puó scegliere
-l'immagine appropriata tra le immagini (e le relative dimensioni)
-indicate nel tag `sources`. Se nessuna delle immagini viene selezionata,
-il browser di default visualizza l'immagine descritta dal tag `src`.
-
-L'esempio completo è il seguente:
-
-```html
-<img srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w"
-  sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm"
-  src="immagine.png" alt="esempio tag immagine" />
-```
-
-che genera l'immagine:
-<!-- markdown-link-check-disable-next-line -->
-![esempio tag immagine](/static/coding/web/html/program_CC0.png "immagine generata dal codice HTML")
 
 Le immagini possono essere arricchite di **mappe**, cioè di aree
 cliccabili sovrapposte all'immagine. Le mappe sono descritte dal tag
