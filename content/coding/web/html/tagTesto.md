@@ -14,9 +14,9 @@ summary: "HTML Lez. 03 - Etichette principali per titoli, formattazione caratter
 weight: 9790
 ---
 
-# Formattazione carattere, liste e tabelle
+# Etichette principali
 
-Tra le numerose etichette del linguaggio HTML, le più comuni sono quelle che descrivono titoli, formattazione carattere, liste, tabelle, collegamenti ed immagini.
+Gli elementi delle pagine web con cui l'utente ha più familiarità sono titoli, paragrafi, liste, tabelle, collegamenti ed immagini, cioè gli elementi che rappresentano i contenuti. Ognuno di questi contenuti è descritto da un'etichetta HTML che ne indica l'inizio e la fine all'interno del documento.
 
 ## Titoli
 
