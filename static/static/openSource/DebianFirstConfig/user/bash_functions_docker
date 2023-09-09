@@ -6,7 +6,7 @@
 
 # A basic docker function
 dockerContainer() {
-  docker container run --rm -it -u $UID:$(id -g ${USER}) -v "$PWD":"$PWD" -w "$PWD" "$@"
+  docker container run --rm -it -u $UID:$(id -g $USER) -v "$PWD":"$PWD" -w "$PWD" "$@"
 }
 export -f dockerContainer
 
@@ -58,7 +58,15 @@ export -f denoRun
 # TEST: deno-compile main.ts
 # RUN:  deno-compile main.ts
 
-alias docker-python3='  dockerContainer --name python3          python:3.11.4-bookworm python ' 
+# Python
+# TEST: dockerPython3 --version
+# RUN:  dockerPython3 your-daemon-or-script.py
+dockerPython3() {
+  dockerContainer  --name python3  python:3.11.4-bookworm python "$@"
+}
+export -f dockerPython3
+
+# alias docker-python3='  dockerContainer --name python3          python:3.11.4-bookworm python ' 
 # TEST: docker-python3 --version
 # RUN:  docker-python3 your-daemon-or-script.py
 
@@ -69,7 +77,6 @@ alias powershell='      dockerContainer --name powershell       --net=host mcr.m
 # alias node='            dockerContainer --name node             node:20.3.1-bookworm '
 # TEST: node --version
 # alias npm='             dockerContainer --name npm              --entrypoint "/usr/local/bin/npm" node:20.3.1-bookworm '
-
 
 # Run the hugo docker image
 # Test: hugoRun  " -p 1414:1414 " " -p 1515:1515 " "version"
@@ -118,9 +125,11 @@ export -f hugoProd
 # "$PWD/.."" mount the parent directory, and after select the folder with --source ./codingepaduli
 #alias hugo-prod='       dockerContainer --name hugo-prod        -v "$PWD/..":/usr/src/SVN2           klakegg/hugo:0.111.3-debian         --debug --environment mainroad --verbose --gc --source /usr/src/SVN2/codingepaduli --destination /usr/src/SVN2/codingepaduli.github.io'
 
+# pandoc
+# TEST: pandoc --version
 pandoc() {
-  echo "running docker in folder $PWD"
-  dockerContainer --name pandoc           -v "$PWD":"$PWD"  -v "/home/io/Sviluppo/SVN2/from-hugo-to-book":/usr/src/luaFilters  dalibo/pandocker:latest-buster-full "$@" # --fail-if-warnings
+  echo "running pandoc in folder $PWD"
+  dockerContainer --name pandoc          -v "$PWD":"$PWD" -v "$HOME/Sviluppo/SVN2/codingepaduli:/usr/src/myapp/"  -v "$HOME/Sviluppo/SVN2/from-hugo-to-book":/usr/src/luaFilters  dalibo/pandocker:latest-buster-full "$@" # --fail-if-warnings
 }
 export -f pandoc
 
@@ -131,8 +140,9 @@ pandocGenerate() {
 }
 export -f pandocGenerate
 
+# pandoc Md to pdf
+# TEST: pandocMdToPdf intro.md
 pandocMdToPdf() {
-  # "$PWD/.."" mount the parent directory, and after run the script /from-hugo-to-book/generate.sh 
   pandoc --lua-filter=/usr/src/luaFilters/replace_image_source.lua --resource-path=/usr/src/myapp/static --filter pandoc-crossref --from=markdown+yaml_metadata_block --to=latex  --pdf-engine=xelatex  --output file.pdf -V geometry:margin=2cm  --highlight-style=tango "$@"
 }
 export -f pandocMdToPdf
