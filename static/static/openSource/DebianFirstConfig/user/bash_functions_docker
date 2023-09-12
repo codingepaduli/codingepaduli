@@ -141,25 +141,37 @@ pandocGenerate() {
 export -f pandocGenerate
 
 # pandoc Md to pdf
-# TEST: pandocMdToPdf intro.md
+# Test: pandocMdToPdf intro.md
 pandocMdToPdf() {
   pandoc --lua-filter=/usr/src/luaFilters/replace_image_source.lua --resource-path=/usr/src/myapp/static --filter pandoc-crossref --from=markdown+yaml_metadata_block --to=latex  --pdf-engine=xelatex  --output file.pdf -V geometry:margin=2cm  --highlight-style=tango "$@"
 }
 export -f pandocMdToPdf
 
-alias yt-dl='           dockerContainer --name youtube-dl        -e PGID=$(id -g) -e PUID=$(id -u) -v "$(pwd)":/workdir:rw  mikenye/youtube-dl:latest_linux_amd64 '
+# yt-dl
+# Test: youTubeDownload URL
+youTubeDownload() {
+  dockerContainer --name youtube-dl  -e PUID="$UID" -e PGID="$(id -g)" -v "$PWD":"$PWD"   mikenye/youtube-dl:2023.02.17_linux_amd64  "$@"
+}
 
-###########################################
-# ImageMagick - convert from pdf to image #
-###########################################
-# 
+# alias yt-dl='           dockerContainer --name youtube-dl        -e PGID=$(id -g) -e PUID=$(id -u) -v "$(pwd)":/workdir:rw  mikenye/youtube-dl:latest_linux_amd64 '
+
+# ImageMagick - convert from pdf to image
+#
 # On error "operation not allowed by the security policy PDF":
 #   Open the file /etc/ImageMagick-6/policy.xml 
 #   Replace <policy domain="coder" rights="none" pattern="PDF" />
 #   with <policy domain="coder" rights="read|write" pattern="PDF" />
-alias convert='         dockerContainer --name imagemagick                 dpokidov/imagemagick:7.1.1-10-bullseye ' 
-# TEST: convert -version
+#
+# Test: convert -version
 # RUN: convert file.pdf file.jpg
+convert() {
+  dockerContainer --name imagemagick     dpokidov/imagemagick:7.1.1-10-bullseye "$@"
+}
+
+
+
+
+#alias convert='         dockerContainer --name imagemagick                 dpokidov/imagemagick:7.1.1-10-bullseye ' 
 
 export convertPdfOptionPageA4White=' -background white -page a4 '
 export convertPdfOptionDensity300=' -density 300 -alpha background -alpha off '
