@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2023-08-28
-publishdate: 2023-08-28
-lastmod: 2023-08-28
+date: 2023-09-11
+publishdate: 2023-09-11
+lastmod: 2023-09-11
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,7 +14,7 @@ summary: "Set di link relativi al coding"
 
 <!-- markdownlint-disable MD012 -->
 
-# Menu segnalibri
+# menu
 
 
 ## Programmazione
@@ -68,7 +68,6 @@ summary: "Set di link relativi al coding"
 [Get Started with containers](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/) - Mircosoft explains what Containers, Docker and Kubernetes are\
 [docker-slim](https://github.com/docker-slim/docker-slim) - Minify and Secure your Docker\
 [Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
-[From Docker Container to Bootable Linux Disk Image](https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/) - \
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 [Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
 [Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
@@ -94,14 +93,10 @@ summary: "Set di link relativi al coding"
 [Windows Package Manager](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - Preview\
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
 [Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
-[Move your dotfiles to version control](https://opensource.com/article/19/3/move-your-dotfiles-version-control) - \
 [Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
-[Integration Test con Maven e Docker](https://codingjam.it/integration-test-con-maven-e-docker/) - \
-[Puppeteer](https://codingjam.it/puppeteer-usare-chrome-come-un-api/) - usare Chrome come un API\
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
-[Creating Pipeline in Jenkins](https://dev.to/rshiva/creating-pipeline-in-jenkins-1bkd) - DEV Community\
 [QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
 [QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
 [Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
@@ -279,30 +274,6 @@ summary: "Set di link relativi al coding"
 
 ### Linux
 
-
-#### Administration
-
-[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
-[The Debian Administrator's Handbook](https://debian-handbook.info/) - \
-[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
-[Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
-[Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
-[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
-[The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
-[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
-[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
-[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
-[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
-[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
-[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
-[My First 5 Minutes On A Server](https://sollove.com/2013/03/03/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/) - Or, Essential Security for Linux Servers – Sol Love\
-[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
-[hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
-[cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
-
-#### Hardware
-
-[Minifree Laptops Ltd](https://minifree.org/) - \
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
@@ -358,6 +329,30 @@ summary: "Set di link relativi al coding"
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
 [mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
 
+#### Administration
+
+[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
+[The Debian Administrator's Handbook](https://debian-handbook.info/) - \
+[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
+[Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
+[Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
+[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
+[The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
+[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
+[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
+[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
+[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
+[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
+[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
+[My First 5 Minutes On A Server](https://sollove.com/2013/03/03/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/) - Or, Essential Security for Linux Servers – Sol Love\
+[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
+[hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
+[cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
+
+#### Hardware
+
+[Minifree Laptops Ltd](https://minifree.org/) - \
+
 #### Old computer
 
 [old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
@@ -367,10 +362,8 @@ summary: "Set di link relativi al coding"
 
 [Espruino](https://www.espruino.com/) - JavaScript for Microcontrollers\
 [ESP8266](https://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/) - Quick Start to Nodemcu on Arduino IDE in 3 Steps (with Pictures)\
-[arduino/arduino-cli](https://hub.docker.com/r/arduino/arduino-cli) - Docker Hub\
 [MicroBlocks](https://microblocks.fun/) - Small, Fast, Human Friendly\
 [MicroBlocks](https://opensource.com/article/20/11/microblocks) - Program your microcontroller with MicroBlocks | Opensource.com\
-[Moddable](https://www.moddable.com/) - Tools to create open IoT products using standard JavaScript on low cost microcontrollers\
 [Raspberry Pi Alternatives in 2021](https://blog.jmdawson.co.uk/9-raspberry-pi-alternatives-in-2021-hackboard-zimaboard-rockpi-odroid-and-more/) - James Dawson\
 [TerraPi](https://www.cnx-software.com/2020/12/19/terrapi-modular-case-for-raspberry-pi-supports-multiple-ssds-din-rail-horizontal-vertical-mounts/) - modular case system for Raspberry Pi supports multiple SSD's, DIN rail, horizontal & vertical mounts\
 [geerlingguy/pi-webcam](https://github.com/geerlingguy/pi-webcam) - Automation to configure a Raspberry Pi as a USB OTG webcam\
@@ -379,15 +372,11 @@ summary: "Set di link relativi al coding"
 [RetroPie](https://opensource.com/article/19/1/retropie) - Build a retro gaming console with RetroPie | Opensource.com\
 [Setting up a raspberry pi 4 home server](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) - \
 [Automating backups on a Raspberry Pi NAS | Opensource.com](https://opensource.com/article/18/8/automate-backups-raspberry-pi) - \
-[Monitor your Raspberry Pi with Grafana Cloud | Opensource.com](https://opensource.com/article/21/3/raspberry-pi-grafana-cloud) - \
-[Crossbar.io](https://crossbar.io/) - distributed, multi-language applications where components communicate using Publish & Subscribe and routed Remote Procedure Calls\
 [Platypush](https://platypush.tech/) - an open-source modular platform for automation aimed to run on any device that can run a Python interpreter\
 [The Arduino Microcontroller](https://dev.to/admantium/the-arduino-microcontroller-hardware-and-gpio-functions-4e6o) - Hardware and GPIO Functions - DEV Community\
 [Let's program the Arduino with JavaScript🤯](https://dev.to/patik123/lets-program-the-arduino-with-javascript-3doj) - DEV Community\
-[leopck/Yee-Light-Blue: Writing library for yee light blue using python for raspberry pi](https://github.com/leopck/Yee-Light-Blue) - \
 [Control a Bluetooth LE Light Bulb With Raspberry Pi](https://www.hackster.io/idreams/control-a-bluetooth-le-light-bulb-with-raspberry-pi-6d04cc) - Hackster.io\
-[Raspberry Pi: How to control lights at home? (Philips Hue) – RaspberryTips](https://raspberrytips.com/control-lights-raspberry-pi/) - \
-[Synpse platform : setup and control applications across hundreds or thousands of machines from a single place](https://synpse.net/) - \
+[Synpse platform](https://synpse.net/) - setup and control applications across hundreds or thousands of machines from a single place\
 [OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 [PiBox](https://pibox.io/) - a NAS that lets you use a standard operating system\
 
@@ -411,13 +400,11 @@ summary: "Set di link relativi al coding"
 [6 open source tools for making your own VPN | Opensource.com](https://opensource.com/article/18/8/open-source-tools-vpn) - \
 [Turn your Raspberry Pi homelab into a network filesystem | Opensource.com](https://opensource.com/article/20/5/nfs-raspberry-pi) - \
 [Tor proxy](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com\
-[VoIP](https://www.youtube.com/playlist?list=PLkVbIsAWN2luXh1H9ug50IocztUTTlZ6p) - Setting up VoIP phone system for use with RepairShopr. - YouTube\
 [ProtonDrive](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - Centralized vs. P2P Inside ProtonDrive’s security\
 [Use open source tools to set up a private VPN | Opensource.com](https://opensource.com/article/21/5/open-source-private-vpn) - \
 
 ### PHP
 
-[Guida PHP di base | PHP.HTML.it](http://php.html.it/guide/leggi/99/guida-php-di-base/) - \
 [REST API Authentication](http://community.sitepoint.com/t/rest-api-authentication/6200) - The SitePoint Forums\
 [PHP](http://it.phptherightway.com/) - La Retta Via\
 [mod_rewrite](https://www.cheatography.com/davechild/cheat-sheets/mod-rewrite/) - Cheat Sheets For Every Occasion\
@@ -457,7 +444,6 @@ summary: "Set di link relativi al coding"
 [Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
 [ZeroSSL](https://scotthelme.co.uk/introducing-another-free-ca-as-an-alternative-to-lets-encrypt/) - another free CA as an alternative to Let's Encrypt\
 [devol/Servizi-Decentralizzati](https://gitea.it/devol/Servizi-Decentralizzati) - Elenco dei collettivi che ospitano volontariamente strumenti utilizzabili dal pubblico (o dagli attivisti) - Servizi-Decentralizzati - Gitea\
-[Beaker Browser](https://beakerbrowser.com/) - An experimental peer-to-peer Web browser\
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
 [Session](https://getsession.org/) - Private Messenger like Signal\
@@ -507,7 +493,6 @@ summary: "Set di link relativi al coding"
 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
-[Writing Technical Papers with Markdown](https://blog.kdheepak.com/writing-papers-with-markdown.html) - \
 [PDF-Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/pandoc-pdf) - \
 [Build and host a website with Git | Opensource.com](https://opensource.com/article/19/4/building-hosting-website-git) - \
 [honkit/honkit](https://github.com/honkit/honkit) - Fork of GitBook for building beautiful books using Markdown\
@@ -523,9 +508,9 @@ summary: "Set di link relativi al coding"
 [curlpipe/ox](https://github.com/curlpipe/ox) - An independent Rust text editor that runs in your terminal!\
 [trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
 [Beautiful PDFs from HTML](https://pdf.math.dev/) - it allow you to create beautifully typeset digital content that can be viewed on any device\
-[https://hexo.press/](https://hexo.press/) - \
-[mermaid-js/mermaid-cli: Command line tool for the Mermaid library](https://github.com/mermaid-js/mermaid-cli) - \
+[mermaid-js/mermaid-cli](https://github.com/mermaid-js/mermaid-cli) - Command line tool for the Mermaid library\
 [Quarto](https://quarto.org/) - an open-source scientific and technical publishing system built on Pandoc\
+[Sublist Issue #2575](https://github.com/jgm/pandoc/issues/2575) - Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc\
 
 #### Hugo static site generator
 
@@ -542,26 +527,13 @@ summary: "Set di link relativi al coding"
 [razonyang/hugo-theme-bootstrap: A fast, responsive, multipurpose and feature-rich Hugo theme.](https://github.com/razonyang/hugo-theme-bootstrap) - \
 [Universal | Hugo Themes](https://themes.gohugo.io/themes/hugo-universal-theme/) - \
 
-#### Pandoc
-
-[Convert files at the command line with Pandoc](https://opensource.com/article/18/9/intro-pandoc) - \
-[htdebeer/pandocomatic](https://github.com/htdebeer/pandocomatic) - Automate the use of pandoc\
-[pandoc-discuss](https://groups.google.com/g/pandoc-discuss) - Google Gruppi\
-[manuelp/pandoc-stylesheet · Publication CSS](https://github.com/manuelp/pandoc-stylesheet/blob/master/pub.css) - \
-[Converting Markdown to Beautiful PDF with Pandoc](https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/) - jdhao's blog\
-[pandoc-img-glob · PyPI](https://pypi.org/project/pandoc-img-glob/) - \
-[Writing a Book with Pandoc, Make, and Vim — Vladimir Keleshev](https://keleshev.com/my-book-writing-setup/) - \
-[Sublist Issue #2575](https://github.com/jgm/pandoc/issues/2575) - Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc\
-
 #### YAML - JSON - TOML - CSV - altri
 
 [tomnomnom/gron](https://github.com/tomnomnom/gron) - Make JSON greppable!\
-[How to convert Excel files to HTML or JSON | Opensource.com](https://opensource.com/article/19/5/convert-excel-files-html-json) - \
 [text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
 [jq](https://mosermichael.github.io/jq-illustrated/dir/content.html) - Illustrated jq tutorial\
 [Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
-[How to Use jq for Creating and Updating JSON Data](https://spin.atomicobject.com/2021/06/08/jq-creating-updating-json/) - \
 [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer 🔥\
 
 ### UML, architetture ed ingegneria del software
@@ -585,7 +557,6 @@ summary: "Set di link relativi al coding"
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
 [jsonbox.io](https://jsonbox.io/) - HTTP based JSON storage\
-[Egyptian Hieroglyphs](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - Test for Unicode support in Web browsers\
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
 [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
@@ -597,7 +568,7 @@ summary: "Set di link relativi al coding"
 [Responsively App](https://responsively.app/) - A Web developer's browser to improve the developing of responsive design\
 [Nodesign.dev](https://nodesign.dev/) - A collection of tools for developers who have little to no artistic talent\
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
-[Robots Generator | Generate robots.txt Files Instantly](http://www.robotsgenerator.com/) - RobotsGenerator.com\
+[robots.txt Generator](http://www.robotsgenerator.com/) - Generate robots.txt Files Instantly - RobotsGenerator.com\
 
 #### HTML
 
@@ -679,10 +650,7 @@ summary: "Set di link relativi al coding"
 [PracticeJS](https://practicejs.com/) - \
 [Deep JavaScript](https://exploringjs.com/deep-js/index.html) - Theory and techniques\
 [JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
-[utils](https://www.npmjs.com/package/utils) - npm\
 [ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
-[JavaScript Visualizer](https://tylermcginnis.com/javascript-visualizer/) - \
-[console.log() Methods](https://levelup.gitconnected.com/moving-beyond-console-log-8-console-methods-you-should-use-when-debugging-javascript-and-node-25f6ac840ada?gi=82a8656ab788) - \
 [Math Object in JavaScript](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - DEV Community\
 [date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
 [HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
@@ -698,15 +666,10 @@ summary: "Set di link relativi al coding"
 [cozmo/jsQR](https://github.com/cozmo/jsQR) - A pure JavaScript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within.\
 [sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
 [How does JavaScript affect SEO?](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
-[Parcel](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/) - Web bundlers like Browserify and Webpack manage the development workflow; Parcel is a bundler that doesn’t need any configuration; \
-[NW.js Documentation](http://docs.nwjs.io/en/latest/) - \
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 [SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
-[JaidedAI/EasyOCR](https://github.com/JaidedAI/EasyOCR) - Ready-to-use OCR with 40+ languages supported including Chinese, Japanese, Korean and Thai\
 [OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
 [LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
-[AssemblyScript](https://www.assemblyscript.org/) - compiles a subset of TypeScript to WebAssembly\
-[WebAssembly/binaryen](https://github.com/WebAssembly/binaryen) - Compiler infrastructure and toolchain library for WebAssembly\
 [MapLibre GL JS](https://maplibre.org/maplibre-gl-js-docs/api/) - A JavaScript library that uses WebGL to render interactive maps\
 [Protomaps](https://protomaps.com/blog/new-way-to-make-maps/) - A new way to make maps with OpenStreetMap\
 [DroidScript – Rapid development of mobile Apps, using JavaScript](https://droidscript.org/#page-content) - \
@@ -765,10 +728,6 @@ summary: "Set di link relativi al coding"
 [Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
 [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) - Web APIs | MDN\
 
-##### JS Riot
-
-[Riot.js](https://riot.js.org/documentation/) - Documentation\
-
 ##### PWA
 
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
@@ -777,30 +736,12 @@ summary: "Set di link relativi al coding"
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [PWABuilder](https://www.pwabuilder.com/) - \
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
-[nativefier/nativefier: Make any web page a desktop application](https://github.com/nativefier/nativefier) - \
+[nativefier/nativefier](https://github.com/nativefier/nativefier) - Make any web page a desktop application\
 
 ##### p5JS
 
 [LTC4](https://dev.to/rpalo/ltc4---falling-in-love-with-vectors-182) - Falling in Love with Vectors - DEV Community\
 [ashwins-code/New-Years-Fireworks](https://github.com/ashwins-code/New-Years-Fireworks) - Interactive fireworks with New Year's countdown made with p5.js\
-
-##### Aurelia
-
-[Aurelia JS](http://aurelia.io/) - \
-[Guide To Bundling & Exporting In Aurelia](https://ilikekillnerds.com/2016/02/the-definitive-guide-to-bundling-exporting-in-aurelia/) - \
-[ES6 Modules import and export](https://hacks.mozilla.org/2015/08/es6-in-depth-modules/) - \
-[Angular2 and Aurelia Comparison](https://opensourcedotnetter.blogspot.it/2016/11/creating-todomvc-application-using_69.html) - Todo web app\
-[Aurelia Table](https://tochoromero.github.io/aurelia-table/) - \
-[Form validation with Aurelia](https://www.jujens.eu/posts/en/2017/Jan/24/aurelia-validation/) - \
-[Aurelia Dialog](https://www.tutorialspoint.com/aurelia/aurelia_dialog.htm) - \
-[Aurelia Promise and Async Bindings](http://www.sobell.net/aurelia-async-bindings/) - \
-[asynchronous](https://stackoverflow.com/questions/42050823/aurelia-how-to-handle-a-async-request-in-a-view) - Aurelia How to handle a async request in a view? - Stack Overflow\
-[Jujens' blog](https://www.jujens.eu/) - Aurelia developer\
-[Aurelia vNext](https://github.com/bigopon/todomvc/blob/d954e7e5a313a91dc5bfbf648e95481764db5628/examples/aurelia/index.html) - bigopon/todomvc\
-[Aurelia 2](https://github.com/aurelia/aurelia) - aurelia/aurelia - core and plugin packages, examples, benchmarks, and documentation for the upcoming major version of Aurelia\
-[aurelia-authentication](https://github.com/SpoonX/aurelia-authentication) - Authentication plugin for aurelia.\
-[The Aurelia 2 Book](https://ilikekillnerds.com/2020/05/announcing-the-aurelia-2-book/) - \
-[Aurelia Weekly](https://www.aureliaweekly.com/#/home) - \
 
 ##### Three JS 3D
 
