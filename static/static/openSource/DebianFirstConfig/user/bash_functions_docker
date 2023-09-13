@@ -70,10 +70,11 @@ export -f dockerPython3
 # TEST: docker-python3 --version
 # RUN:  docker-python3 your-daemon-or-script.py
 
-# PowerShell
-# TEST: powershell /usr/bin/pwsh -Command "Write-Output 'Hello world'"
+# PowerShell (default --entrypoint /bin/bash, you need to invoke '/usr/bin/pwsh')
+# TEST: powershell -Command "Write-Output 'Hello world'"
+# RUN:  powershell /path/to/script.ps1
 powershell()  {
-  dockerContainer --name powershell  --net=host mcr.microsoft.com/powershell:7.3-debian-bullseye-slim 
+  dockerContainer --name powershell  --net=host  mcr.microsoft.com/powershell:7.3-debian-bullseye-slim pwsh "$@" 
 }
 export -f powershell
 
