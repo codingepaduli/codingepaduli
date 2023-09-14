@@ -101,9 +101,11 @@ flatpakListAllRemoteApp() {
 }
 export -f flatpakListAllRemoteApp
 
-# Display all the installed apps by fields and runtime
-# Usage: flatpakListAllInstalledAppByFieldsAndRuntime fieldsToShow runtime
-flatpakListAllInstalledAppByFieldsAndRuntime() {
+# Display all the installed apps
+# Usage: flatpakListAllInstalledApp
+# Usage: flatpakListAllInstalledApp "application,runtime,..."
+# Usage: flatpakListAllInstalledApp "application,runtime,..." "org.gnome.Platform/x86_64/44"
+flatpakListAllInstalledApp() {
     defaultFields="application,version,size,runtime"
 
     # $1 if not empty, defualt value if $1 is empty or unset
@@ -119,46 +121,18 @@ flatpakListAllInstalledAppByFieldsAndRuntime() {
 # Display all the installed apps ID
 # Usage: flatpakListAllInstalledAppId
 flatpakListAllInstalledAppId() {
-    flatpakListAllInstalledAppByFieldsAndRuntime "application"
+    flatpakListAllInstalledApp "application"
 }
 export -f flatpakListAllInstalledAppId
 
-# Display all the installed apps
-# Usage: flatpakListAllInstalledApp
-flatpakListAllInstalledApp() {
-    flatpakListAllInstalledAppByFieldsAndRuntime
-}
-export -f flatpakListAllInstalledApp
-
-# Display only the apps based on the runtime Gnome
-# Usage: flatpakFilterInstalledAppDependsOnRuntimeGnome
-flatpakFilterInstalledAppDependsOnRuntimeGnome() {
-    flatpakListAllInstalledAppByFieldsAndRuntime "" "org.gnome.Platform/x86_64/44"
-}
-export -f flatpakFilterInstalledAppDependsOnRuntimeGnome
-
-# Display only the apps based on the runtime Kde
-# Usage: flatpakFilterInstalledAppDependsOnRuntimeKde
-flatpakFilterInstalledAppDependsOnRuntimeKde() {
-    flatpakListAllInstalledAppByFieldsAndRuntime "" "org.kde.Platform/x86_64/5.15-22.08"
-}
-export -f flatpakFilterInstalledAppDependsOnRuntimeKde
-
-# Display only the apps based on the runtime Freedesktop
-# Usage: flatpakFilterInstalledAppDependsOnRuntimeFreedesktop
-flatpakFilterInstalledAppDependsOnRuntimeFreedesktop() {
-    flatpakListAllInstalledAppByFieldsAndRuntime "" "org.freedesktop.Platform/x86_64/22.08"
-}
-export -f flatpakFilterInstalledAppDependsOnRuntimeFreedesktop
-
 # Display all the installed runtimes
-# Usage: flatpakListAllRuntimes [remoteRegex]
-flatpakListAllRuntimes() {
+# Usage: flatpakListAllInstalledRuntimes [remoteRegex]
+flatpakListAllInstalledRuntimes() {
     while read -r ref branch installation size version; do
         printf "%-55s %-12s %-12s %-10s %-12s \n" "$ref" "$branch" "$installation" "$size" "$version"
     done < <(flatpak list --runtime --all --columns=ref,branch,installation,size,version | grep --invert-match ".Locale" | grep "$*")
 }
-export -f flatpakListAllRuntimes
+export -f flatpakListAllInstalledRuntimes
 
 # Display only the specified apps and the bounded runtime
 # Usage: flatpakFilterRemoteRuntimeOfInstalledApps
@@ -174,7 +148,7 @@ flatpakFilterRemoteRuntimeOfInstalledApps() {
     declare -A installedAppArray
     while read -r appId runtime; do
         declare -A installedAppArray+="([$appId]=$runtime)"
-    done < <(flatpakListAllInstalledAppByFieldsAndRuntime "application,runtime" "$1" )
+    done < <(flatpakListAllInstalledApp "application,runtime" "$1" )
 
     # Stampo le informazioni "appId runtimeLocale runtimeRemoto"
     for appId in "${!installedAppArray[@]}"; do
