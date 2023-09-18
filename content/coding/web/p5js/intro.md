@@ -36,12 +36,12 @@ L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
 
 - la barra dei menù, con a sinistra i classici menu per salvare il progetto, accedere alla guida, mentre a destra troviamo i pulsanti per effettuare il login o la registrazione;
 - la barra dei pulsanti, contenente i pulsanti per avviare e fermare il proprio lavoro, la casella di scelta per aggiornare automaticamente l'area di lavoro mentre si scrive il codice, la casella di testo nella quale inserire il nome del progetto ed, infine, il pulsante delle impostazioni;
-- l'area di progetto, contenente i file che compongono il progetto;
-- l'area del codice, per la modifica del codice relativo al file selezionato nell'area di progetto;
+- l'area di progetto, contenente i <span lang="en">file</span> che compongono il progetto;
+- l'area del codice, per la modifica del codice relativo al <span lang="en">file</span> selezionato nell'area di progetto;
 - l'area di anteprima, per visualizzare il lavoro realizzato;
 - la console per visualizzare i messaggi di informazione, di avviso e di errore.
 
-Effettuando il login, utilizzando un servizio esterno tra quelli proposti oppure procedendo alla registrazione, è possibile gestire i propri progetti, le proprie collezioni ed utilizzare altre funzionalità non consentite all'utente non registrato. La barra dei menù, in alto a destra, riporta il nome utente e le diverse aree a cui l'utente può accedere. Il menù File, appena si salva il progetto, si arricchisce di nuove voci che permettono di duplicare il progetto, condividerlo o aggiungerlo ad una collezione.
+Effettuando il login, utilizzando un servizio esterno tra quelli proposti oppure procedendo alla registrazione, è possibile gestire i propri progetti, le proprie collezioni ed utilizzare altre funzionalità non consentite all'utente non registrato. La barra dei menù, in alto a destra, riporta il nome utente e le diverse aree a cui l'utente può accedere. Il menù <span lang="en">File</span>, appena si salva il progetto, si arricchisce di nuove voci che permettono di duplicare il progetto, condividerlo o aggiungerlo ad una collezione.
 
 ![p5.js - Editor online](/static/coding/web/p5js/intro-p5-js-editor-logged-in.png "p5.js - Editor online con i menù visualizzati dopo il login")
 
@@ -62,8 +62,8 @@ Cliccando sulla voce "Crea Sketch" nel menu proposto si passa all'editor online 
 L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
 
 - la barra dei pulsanti, contenente i pulsanti per visualizzare l'area di esecuzione del proprio lavoro e per visualizzare l'area del codice, più il pulsante per salvare il proprio lavoro;
-- la barra con le schede dei file, contenente i file che compongono il progetto, il pulsante per impostare la modalità di visualizzazione dell'area di esecuzione e dell'area del codice ed il pulsante per le impostazioni di configurazione del progetto;
-- l'area del codice, per la modifica del codice relativo al file selezionato nella barra delle schede dei file;
+- la barra con le schede dei <span lang="en">file</span>, contenente i <span lang="en">file</span> che compongono il progetto, il pulsante per impostare la modalità di visualizzazione dell'area di esecuzione e dell'area del codice ed il pulsante per le impostazioni di configurazione del progetto;
+- l'area del codice, per la modifica del codice relativo al <span lang="en">file</span> selezionato nella barra delle schede dei <span lang="en">file</span>;
 - l'area di esecuzione del lavoro realizzato, che è visualizzabile quando si clicca il pulsante di "play" presente nella barra dei pulsanti;
 - la console per visualizzare i messaggi di informazione, di avviso e di errore.
 
@@ -74,7 +74,7 @@ Il pulsante per le impostazioni di configurazione del progetto permette di visua
 L'area di configurazione presenta:
 
 - La versione di processing da utilizzare, al momento la 1.7;
-- Il tipo di progetto (se uno sketch di '`p5.js`', un progetto web con i file HTML, CSS e JavaScript, oppure se utilizzare i vecchi progetti di processing che sono oramai in disuso);
+- Il tipo di progetto (se uno sketch di '`p5.js`', un progetto web con i <span lang="en">file</span> HTML, CSS e JavaScript, oppure se utilizzare i vecchi progetti di processing che sono oramai in disuso);
 - La protezione dai cicli infiniti (per evitare che l'ambiente si blocchi in caso di ciclo infinito);
 - La configurazione delle caratteristiche dell'editor, come la dimensione del carattere, la modalità di visualizzazione dell'area di esecuzione e dell'area del codice e così via.
 
@@ -96,8 +96,8 @@ L'interfaccia grafica presenta i tipici componenti di un ambiente di sviluppo:
 
 - la barra dei menù, con i vari menù contestuali;
 - la barra dei pulsanti, contenente i pulsanti per eseguire e stoppare il proprio lavoro, il pulsante di debug ed il pulsante per scegliere il linguaggio di programmazione da utilizzare. Come si nota, il linguaggio Java è la scelta predefinita;
-- la barra con le schede dei file, contenente i file che compongono il progetto;
-- l'area del codice, per la modifica del codice relativo al file selezionato nella barra delle schede dei file;
+- la barra con le schede dei <span lang="en">file</span>, contenente i <span lang="en">file</span> che compongono il progetto;
+- l'area del codice, per la modifica del codice relativo al <span lang="en">file</span> selezionato nella barra delle schede dei <span lang="en">file</span>;
 - l'area di esecuzione del lavoro realizzato, che è visualizzabile quando si clicca il pulsante di "play" presente nella barra dei pulsanti;
 - la console per visualizzare i messaggi di informazione, di avviso e di errore.
 
@@ -127,24 +127,24 @@ A questo punto è necessario verificare che la libreria sia stata effettivamente
 
 ## Struttura di un progetto web con p5.js
 
-Un progetto web con p5.js è composto dai seguenti files:
+Un progetto web con p5.js è composto dai seguenti <span lang="en">file</span>:
 
-- Il file ``index.html`` è la pagina web (scritta in linguaggio HTML);
-- Il file ``p5.js`` è la libreria che permette l'esecuzione dei progetti;
-- Il file ``p5.sound.js`` è la libreria che permette la riproduzione e la gestione dei suoni;
-- Il file ``style.css`` è il file che contiene gli stili della pagina web, come i colori, la dimensione degli oggetti, ecc..
-- Il file ``sketch.js`` che rappresenta il progetto realizzato dall'utente.
+- Il <span lang="en">file</span> ``index.html`` è la pagina web (scritta in linguaggio HTML);
+- Il <span lang="en">file</span> ``p5.js`` è la libreria che permette l'esecuzione dei progetti;
+- Il <span lang="en">file</span> ``p5.sound.js`` è la libreria che permette la riproduzione e la gestione dei suoni;
+- Il <span lang="en">file</span> ``style.css`` contiene gli stili della pagina web, come i colori, la dimensione degli oggetti, ecc..
+- Il <span lang="en">file</span> ``sketch.js`` che rappresenta il progetto realizzato dall'utente.
 
-Dato che il progetto viene mostrato in una pagina web, è la pagina web ``index.html`` a dover contenere i riferimenti a tutti gli altri file. Questi riferimenti possono essere di tre tipi:
+Dato che il progetto viene mostrato in una pagina web, è la pagina web ``index.html`` a dover contenere i riferimenti a tutti gli altri <span lang="en">file</span>. Questi riferimenti possono essere di tre tipi:
 
-- **Riferimenti assoluti**: E' l'approccio è utilizzato negli ambienti web di openprocessing e di p5.js. I file ``p5.js``, ``p5.sound.js`` sono presenti su un sito internet, quindi la pagina web ``index.html`` li individua attraverso un indirizzo completo, come nel seguente esempio:
+- **Riferimenti assoluti**: E' l'approccio è utilizzato negli ambienti web di openprocessing e di p5.js. I <span lang="en">file</span> ``p5.js``, ``p5.sound.js`` sono presenti su un sito internet, quindi la pagina web ``index.html`` li individua attraverso un indirizzo completo, come nel seguente esempio:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
 ```
 
-- **Riferimenti relativi**: E' l'approccio utilizzato sia da Processing IDE, sia quando si lavora sul proprio computer senza accesso ad internet. I file ``p5.js``, ``p5.sound.js`` devono essere salvati nella cartella del proprio progetto (o in una sotto-cartella), quindi la pagina web ``index.html`` li individua attraverso un indirizzo relativo. I file ``sketch.js`` e ``style.css`` sono sempre individuati con indirizzo relativo, come nel seguente esempio:
+- **Riferimenti relativi**: E' l'approccio utilizzato sia da Processing IDE, sia quando si lavora sul proprio computer senza accesso ad internet. I <span lang="en">file</span> ``p5.js``, ``p5.sound.js`` devono essere salvati nella cartella del proprio progetto (o in una sotto-cartella), quindi la pagina web ``index.html`` li individua attraverso un indirizzo relativo. I <span lang="en">file</span> ``sketch.js`` e ``style.css`` sono sempre individuati con indirizzo relativo, come nel seguente esempio:
 
 ```html
 <script src="p5.js"></script>
@@ -154,23 +154,23 @@ Dato che il progetto viene mostrato in una pagina web, è la pagina web ``index.
 <link rel="stylesheet" type="text/css" href="style.css">
 ```
 
-- **Codice in pagina**: Gli stili grafici (contenuti nel file ``style.css``) ed il file di progetto (contenuti nel file ``sketch.js``) possono essere inclusi direttamente nella pagina, quindi questi file non sono presenti nella cartella di progetto perché sono scritti direttamente nella pagina web, come nel seguente esempio:
+- **Codice in pagina**: Gli stili grafici (contenuti nel <span lang="en">file</span> ``style.css``) ed il <span lang="en">file</span> di progetto (contenuti nel <span lang="en">file</span> ``sketch.js``) possono essere inclusi direttamente nella pagina, quindi questi <span lang="en">file</span> non sono presenti nella cartella di progetto perché sono scritti direttamente nella pagina web, come nel seguente esempio:
 
 ```html
 <style>
-    html, body { margin: 0; padding: 0; }
-    canvas { display: block; }
+  html, body { margin: 0; padding: 0; }
+  canvas { display: block; }
 </style>
 
 <script>
-    function setup() {
-        createCanvas(400, 400);
-    }
+  function setup() {
+    createCanvas(400, 400);
+  }
 
-    function draw() {
-        background(220);
-        circle(100, 150, 50);
-    }
+  function draw() {
+    background(220);
+    circle(100, 150, 50);
+  }
 </script>
 ```
 
@@ -179,83 +179,83 @@ Dato che il progetto viene mostrato in una pagina web, è la pagina web ``index.
 Nel caso sia necessario, è possibile creare un progetto web in una nuova cartella (da creare sul proprio computer) e lavorare senza nessun ambiente di sviluppo. Per far ciò è necessario;
 
 1. scaricare le librerie ``p5.js`` e ``p5.sound.js`` e gli stili grafici ``style.css`` da salvare nella cartella;
-2. creare il file di progetto ``sketch.js`` con il codice da scrivere;
+2. creare il <span lang="en">file</span> di progetto ``sketch.js`` con il codice da scrivere;
 
     ```javascript
     function setup() {
-        createCanvas(400, 400);
+      createCanvas(400, 400);
     }
 
     function draw() {
-        background(220);
+      background(220);
         circle(100, 150, 50);
     }
     ```
 
 3. creare una nuova pagina web ``index.html`` con il contenuto seguente:
 
-    ```html
-    <!DOCTYPE html>
-    <html lang="it">
-        <head>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Sketch</title>
+  ```html
+  <!DOCTYPE html>
+  <html lang="it">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sketch</title>
 
-            <!-- Riferimenti -->
-            <script src="p5.js"></script>
-            <script src="p5.sound.js"></script>
-            <link rel="stylesheet" type="text/css" href="style.css">
-        </head>
-        <body>
-            <script src="sketch.js"></script>
-        </body>
-    </html>
-    ```
+      <!-- Riferimenti -->
+      <script src="p5.js"></script>
+      <script src="p5.sound.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+      <script src="sketch.js"></script>
+    </body>
+  </html>
+  ```
 
 Il contenuto della cartella è il seguente:
 
 ![Progetto in una cartella](/static/coding/web/p5js/intro-project-folder.png "Progetto in una cartella")
 
-### Progetto in un unico file HTML
+### Progetto in un unico <span lang="en">file</span> HTML
 
-E' possibile creare un unico file HTML (da creare sul proprio computer) e lavorare senza nessun ambiente di sviluppo, indicando un riferimento assoluto alle librerie ``p5.js`` e ``p5.sound.js`` ed inglobando gli stili grafici ed il codice di progetto come codice in pagina, come nella pagina web seguente:
+E' possibile creare un unico <span lang="en">file</span> HTML (da creare sul proprio computer) e lavorare senza nessun ambiente di sviluppo, indicando un riferimento assoluto alle librerie ``p5.js`` e ``p5.sound.js`` ed inglobando gli stili grafici ed il codice di progetto come codice in pagina, come nella pagina web seguente:
 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sketch</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch</title>
 
-        <!-- Riferimenti -->
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
-        <style>
-            html, body { margin: 0; padding: 0; }
-            canvas { display: block; }
-        </style>
-    </head>
-    <body>
-        <!-- Progetto p5.js -->
-        <script>
-            function setup() {
-                createCanvas(400, 400);
-            }
+    <!-- Riferimenti -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/addons/p5.sound.js"></script>
+    <style>
+      html, body { margin: 0; padding: 0; }
+      canvas { display: block; }
+    </style>
+  </head>
+  <body>
+    <!-- Progetto p5.js -->
+    <script>
+      function setup() {
+        createCanvas(400, 400);
+      }
 
-            function draw() {
-                background(220);
-                circle(100, 150, 50);
-            }
-        </script>
-    </body>
+      function draw() {
+        background(220);
+        circle(100, 150, 50);
+      }
+    </script>
+  </body>
 </html>
 ```
 
 ### Struttura del programma
 
-Sia che si lavori con una singola pagina web, sia che si utilizzi l'editor online, sia che si organizzi il progetto in più file separati, nel codice devono sempre essere dichiarati i due blocchi principali ``setup`` e ``draw``.
+Sia che si lavori con una singola pagina web, sia che si utilizzi l'editor online, sia che si organizzi il progetto in più <span lang="en">file</span> separati, nel codice devono sempre essere dichiarati i due blocchi principali ``setup`` e ``draw``.
 
 Le istruzioni contenute nel blocco ``setup()`` sono eseguite una sola volta e servono ad impostare gli strumenti e le condizioni iniziali.
 
@@ -285,22 +285,22 @@ Nella tabella seguente è riportata la descrizione delle varie categorie:
 
 Area | Descrizione
 --- | ---
-Color           | Gestione colori di contorno, di riempimento, di sfondo
-Constants       | Costanti disponibili
-DOM             | Interazione con gli elementi della pagina web
-Data            | Gestione dei dati
-Environment     | Informazioni sull'ambiente di esecuzione
-Events          | Gestione eventi della tastiera, del mouse e del touch-screen
-Foundation      | Basi di JavaScript
-IO              | Gestione Input / Output
-Image           | Gestione immagini
+Color       | Gestione colori di contorno, di riempimento, di sfondo
+Constants     | Costanti disponibili
+DOM       | Interazione con gli elementi della pagina web
+Data      | Gestione dei dati
+Environment   | Informazioni sull'ambiente di esecuzione
+Events      | Gestione eventi della tastiera, del mouse e del touch-screen
+Foundation    | Basi di JavaScript
+IO        | Gestione Input / Output
+Image       | Gestione immagini
 Lights, Camera  | Gestione luci, camera, materiali, ombre
-Math            | Funzioni matematiche
-Rendering       | Informazioni sul processo di disegno (rendering)
-Shape           | Funzioni per il disegno di forme 2D, 3D e curve
-Structure       | Informazioni sul ciclo di esecuzione
-Transform       | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
-Typography      | Caratteri, stili e formattazione testo
+Math      | Funzioni matematiche
+Rendering     | Informazioni sul processo di disegno (rendering)
+Shape       | Funzioni per il disegno di forme 2D, 3D e curve
+Structure     | Informazioni sul ciclo di esecuzione
+Transform     | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
+Typography    | Caratteri, stili e formattazione testo
 
 Ogni categoria mostra le costanti e le funzioni disponibili, con un link alla documentazione specifica.
 
@@ -350,8 +350,8 @@ I parametri formali sono ``w`` ed ``h`` e sono entrambi obbligatori, dato che no
 
 ```plaintext
 Parameters:
-    w    Number: width of the canvas
-    h    Number: height of the canvas
+  w  Number: width of the canvas
+  h  Number: height of the canvas
 ```
 
 Quindi il parametro formale ``w`` è un numero e rappresenta la larghezza dell'area da disegno. Il parametro formale ``h`` è un numero e rappresenta l'altezza dell'area da disegno.
@@ -415,8 +415,8 @@ Ad esempio, volendo creare un'area da disegno di larghezza 600 ed altezza 400, i
 Syntax: createCanvas(w, h)
 
 Parameters:
-    w    Number: width of the canvas
-    h    Number: height of the canvas
+  w  Number: width of the canvas
+  h  Number: height of the canvas
 ```
 
 A questo punto, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
@@ -431,9 +431,9 @@ Nello stesso esempio, per creare un cerchio con centro alle coordinate (100, 150
 Syntax: circle(x, y, diameter)
 
 Parameters:
-    x           Number: x-coordinate of the centre of the circle.
-    y           Number: y-coordinate of the centre of the circle.
-    diameter    Number: diameter of the circle.
+  x       Number: x-coordinate of the centre of the circle.
+  y       Number: y-coordinate of the centre of the circle.
+  diameter  Number: diameter of the circle.
 ```
 
 Sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``, al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``150`` ed al parametro formale ``diameter`` il valore ``50``, quindi invochiamo la funzione nel seguente modo:
@@ -446,7 +446,7 @@ Queste istruzioni devono essere inserite o nel blocco ``setup`` oppure nel blocc
 
 ```javascript
 function setup() {
-    createCanvas(400, 400);
+  createCanvas(400, 400);
     circle(100,150, 50);
 }
 
@@ -463,7 +463,7 @@ Alcune operazioni, invece, devono essere effettuate una sola volta, come ad esem
 
 ```javascript
 function draw() {
-    // ERRORE
-    createCanvas(400, 400);
+  // ERRORE
+  createCanvas(400, 400);
 }
 ```
