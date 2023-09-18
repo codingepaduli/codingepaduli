@@ -15,6 +15,7 @@ MD026: true   # no-trailing-punctuation
 MD033:
   allowed_elements:
     - div
+    - span  # used for setting the language for screen readers
     - a     # used in Link-subject.md file in each section
 MD036: false  # no-emphasis-as-heading
 MD044:        # proper-names
