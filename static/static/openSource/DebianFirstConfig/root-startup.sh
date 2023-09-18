@@ -16,15 +16,17 @@
 DISTRO="debian12"
 
 # Install all the apps
-. ./root/$DISTRO-apt-install-app.sh
-. ./root/$DISTRO-apt-install-non-free-app.sh
-. ./root/$DISTRO-apt-install-dev.sh
+## use "" to apply the changes
+## use "--dry-run" to simulate the changes
+. ./root/$DISTRO-apt-install-app.sh           "--dry-run"
+. ./root/$DISTRO-apt-install-non-free-app.sh  "--dry-run"
+. ./root/$DISTRO-apt-install-dev.sh           "--dry-run"
 # . ./root/docker-installedApp.sh
 # . ./root/flatpak-installAllScript.sh
 # . ./root/npm-installedApp.sh
 
 # Remove unwanted apps
-. ./root/$DISTRO-apt-remove-app.sh
+. ./root/$DISTRO-apt-remove-app.sh            "--dry-run"
 
 # Create users and groups
 . ./root/create-users.sh
