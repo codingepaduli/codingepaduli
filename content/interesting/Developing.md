@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2023-09-11
-publishdate: 2023-09-11
-lastmod: 2023-09-11
+date: 2023-09-19
+publishdate: 2023-09-19
+lastmod: 2023-09-19
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,7 +14,7 @@ summary: "Set di link relativi al coding"
 
 <!-- markdownlint-disable MD012 -->
 
-# menu
+# Menu segnalibri
 
 
 ## Programmazione
@@ -296,24 +296,18 @@ summary: "Set di link relativi al coding"
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL - Hashes, digital signatures, and more\
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL - Cryptography basics | Opensource.com\
 [gocryptfs](https://opensource.com/article/19/8/how-encrypt-files-gocryptfs) - How to encrypt files with gocryptfs on Linux | Opensource.com\
-[Five Years of Btrfs](https://markmcb.com/2020/01/07/five-years-of-btrfs/) - use the Btrfs file system to store all my data\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
-[Linux firewalls](https://opensource.com/article/18/9/linux-iptables-firewalld) - What you need to know about iptables and firewalld | Opensource.com\
 [tcpdump](https://opensource.com/article/18/10/introduction-tcpdump) - An introduction to using tcpdump at the Linux command line | Opensource.com\
 [awk](https://developer.ibm.com/tutorials/l-awk1/) - An intro to the great language with the strange name – IBM Developer\
 [mplayer](https://opensource.com/article/18/12/linux-toy-youtube-dl) - Watch YouTube videos at the Linux terminal | Opensource.com\
 [linrunner.de TLP – Linux Advanced Power Management](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - \
 [An important safety note about chown and symlinks (also chmod and chgrp)](https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ChownSymlinkSafety) - \
 [Building binary deb packages](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - a practical guide - Internal Pointers\
-[5 modern alternatives to essential Linux command-line tools | Opensource.com](https://opensource.com/article/20/6/modern-linux-command-line-tools) - \
 [Access control lists and external drives on Linux](https://opensource.com/article/20/3/external-drives-linux) - What you need to know | Opensource.com\
 [WhyTheName](https://wiki.debian.org/WhyTheName) - It explains the strange name of linux packages\
 [WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
-[source command](https://opensource.com/article/20/6/bash-source-command) - Import functions and variables into Bash | Opensource.com\
-[How to configure "flatpak run org.gnome.meld" as git diff.tool and merge.tool](https://askubuntu.com/questions/1140455/how-to-configure-flatpak-run-org-gnome-meld-as-git-diff-tool-and-merge-tool) - Ask Ubuntu\
 [ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
 [Hosted Weblate](https://hosted.weblate.org/) - \
-[Lei Mao's Log Book](https://leimao.github.io/blog/bashrc-VS-profile-VS-bash_profile/) - ~/.bashrc VS ~/.profile VS ~/.bash_profile\
 [ip](https://opensource.com/article/21/4/network-management) - A beginner's guide to network management | Opensource.com\
 [UFW](https://www.html.it/articoli/ufw-configurare-il-firewall-su-linux/) - configurare i limiti di connessione sul firewall\
 [Log Management Tools](https://www.tecmint.com/open-source-centralized-linux-log-management-tools/) - The 5 Most Notable Open Source Centralized Log Management Tools\
@@ -323,7 +317,6 @@ summary: "Set di link relativi al coding"
 [GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
 [Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
 [Send desktop notifications and reminders from Linux terminal | Opensource.com](https://opensource.com/article/22/1/linux-desktop-notifications) - \
-[linux commands🐧](https://dev.to/shubh/linux-commands-3pop) - DEV Community\
 [How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - \
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
@@ -429,10 +422,10 @@ summary: "Set di link relativi al coding"
 ### Privacy, Security and Hacking
 
 [PEN-200 and the OSCP Certification](https://www.offensive-security.com/pwk-oscp/) - Offensive Security\
+[0x192/universal-android-debloater](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.\
 [/e/](https://e.foundation/) - un fork Android completamente de-Google-izzato\
 [redecentralize/alternative-internet](https://github.com/redecentralize/alternative-internet) - A collection of interesting new networks and tech aiming at decentralisation (in some form)\
 [Aircrack-ng](https://www.aircrack-ng.org/) - \
-[www.sikurezza.org](http://www.sikurezza.org/) - \
 [Smallstep](https://smallstep.com/blog/step-v0-8-6-valid-https-certificates-for-dev-pre-prod/) - Bring Development Closer To Production w/ Valid HTTPS Certificates\
 [localdots](https://github.com/luisfarzati/localdots) - HTTPS domains for localhost\
 [John the Ripper](https://www.openwall.com/john/) - a password cracker\
@@ -447,12 +440,10 @@ summary: "Set di link relativi al coding"
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
 [Session](https://getsession.org/) - Private Messenger like Signal\
-[Digital Markets Act](https://www.consilium.europa.eu/en/press/press-releases/2022/07/18/dma-council-gives-final-approval-to-new-rules-for-fair-competition-online/) - Council gives final approval to new rules for fair competition online - Consilium\
-[Digital Services Package](https://www.macrumors.com/2022/07/05/eu-approves-landmark-legislation-to-regulate-apple/) - EU Approves Landmark Legislation to Regulate Apple and Other Big Tech Firms - MacRumors\
+[Privacy Tools](https://www.privacytools.io/) - Encryption Against Mass Surveillance\
 
 #### Enhancing privacy
 
-[0x192/universal-android-debloater](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.\
 [DuckDuckGo HTML version](https://html.duckduckgo.com/html) - a search engine without JavaScript\
 [7 WhatsApp alternatives that won’t share your data with Facebook](https://protonmail.com/blog/whatsapp-alternatives/) - \
 [How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
@@ -465,19 +456,12 @@ summary: "Set di link relativi al coding"
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
 [De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
 [Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
-[Locke Email](https://locke.id/#/) - Hide your real email address generating alias of unlimited email addresses  \
 [Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
 [Firefox to add Tor Browser anti-fingerprinting technique called letterboxing](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - \
 [OnionShare](https://www.lffl.org/2019/02/file-sharing-tor-onionshare-2.html) - File Sharing sicuro e criptato con Tor e il Tool OnionShare 2\
-[How to replace CalDAV with a secure calendar protocol](https://opensource.com/article/20/3/caldav-security) - \
-[IpLeak](https://ipleak.net/) - Detect what informations you send to websites\
 [The Encrypted Email Problem](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) - Avoid encrypted emai\
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
-[Invisible Web Tax](https://blog.mozilla.org/blog/2018/07/11/royalty-free-web-video-codecs/) - Modern codecs like AV1 can bring better quality video to the open web\
-[How to bypass CloudFlare bot protection ? | by jychp | Mar, 2021 | Medium](https://jychp.medium.com/how-to-bypass-cloudflare-bot-protection-1f2c6c0c36fb) - \
 [Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
-[Please add LibreSignal to f-droid · Issue #37 · LibreSignal/LibreSignal · GitHub](https://github.com/LibreSignal/LibreSignal/issues/37#issuecomment-217231557) - \
-[Privacy Tools](https://www.privacytools.io/) - Encryption Against Mass Surveillance\
 
 #### Security vulnerability and privacy abuse
 

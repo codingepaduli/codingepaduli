@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-08-28
-publishdate: 2023-08-28
-lastmod: 2023-08-28
+date: 2023-09-19
+publishdate: 2023-09-19
+lastmod: 2023-09-19
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -190,6 +190,8 @@ summary: "Set di link relativi all'istruzione di base"
 [AI robot wrestling with open source | Opensource.com](https://opensource.com/article/23/2/ai-robot-wrestling-open-source) - \
 [webots.cloud](https://webots.cloud/proto) - proto\
 [Modulazione di larghezza d'impulso](https://it.wikipedia.org/wiki/Modulazione_di_larghezza_d%27impulso) - Wikipedia\
+[mBlock](https://mblock.makeblock.com/en/) - One-Stop Coding Platform for Teaching and Learning\
+[mBlock](https://ide.makeblock.com/) - mLink and makeBlock IDE\
 [Progetti Arduino](https://www.progettiarduino.com/) - Raccolta di Progetti e Tutorial per sperimentare con Arduino\
 
 #### Sistemi e reti 4anno
