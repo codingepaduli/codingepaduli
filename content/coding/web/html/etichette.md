@@ -97,7 +97,7 @@ Riepilogando, la sintassi delle etichette con attributi è la seguente:
 
 ```html
 <etichetta nome1="valore1" nome2="valore2" ... >
-    contenuti etichetta
+  contenuti etichetta
 </etichetta>
 ```
 
@@ -220,10 +220,10 @@ Di seguito visualizziamo un esempio in cui la pagina web è in italiano, ma un p
 
 ```html
 <html lang="it">
-    <body>
-        <p>Informazioni in italiano</p>
-        <p lang="es">Información para hispanohablantes</p>
-    </body>
+  <body>
+    <p>Informazioni in italiano</p>
+    <p lang="es">Información para hispanohablantes</p>
+  </body>
 </html>
 ```
 
