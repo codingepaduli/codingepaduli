@@ -14,13 +14,94 @@ summary: "Il linguaggio CSS, l'evoluzione e le caratteristiche"
 
 # Il linguaggio CSS
 
-Il linguaggio CSS (Cascading Style Sheets) è un linguaggio di fogli di stile utilizzato per descrivere l'aspetto di un documento HTML o XML. È uno dei principali linguaggi del World Wide Web ed è standardizzato dal W3C.
+Il linguaggio CSS (Cascading Style Sheets) è nato nel 1994 con lo scopo di descrivere lo stile da applicare alla pagina web attraverso dei fogli di stile che fossero separati rispetto al documento HTML. I fogli di stile indicano come gli elementi di un documento HTML devono essere disposti e visualizzati sullo schermo di un dispositivo o su un foglio di carta da stampare.
 
-Il linguaggio CSS è nato nel 1994 con lo scopo di separare il contenuto (in HTML) dallo stile da applicare e con il tempo si è evoluto in tre revisioni (CSS1, CSS2 e CSS3) che hanno aggiunto sempre più funzionalità.
+Il linguaggio CSS non è un linguaggio di programmazione, ma un linguaggio che definisce le proprietà di ogni elemento del documento HTML, come il colore di un titolo o la dimensione di un paragrafo o la trasparenza di un'immagine.
 
-Nonostante la sua relativa facilità d'uso, CSS richiede tempo per essere appreso correttamente, soprattutto per quanto riguarda le sue funzionalità più avanzate.
+Prima dell'avvento del linguaggio CSS, un sito web veniva realizzato come un'insieme di documenti HTML che ripetevano in ogni documento gli stili grafici degli elementi presenti nel documento stesso. Modificare lo stile grafico di un elemento comune richiedeva la modifica di ogni documento HTML.
 
-## Fogli di stile per principianti
+Con l'avvento del linguaggio CSS, un sito web viene realizzato come un'insieme di documenti HTML che condividono gli stessi fogli di stile CSS. Una singola modifica ai fogli di stile si ripercuote su tutte le pagine del sito web.
+
+Nel tempo questo linguaggio è diventando uno dei principali linguaggi del World Wide Web ed è stato standardizzato dal W3C. Attualmente sono state pubblicate tre versioni (CSS1, CSS2 e CSS3) che hanno aggiunto sempre più funzionalità, permettendo la personalizzazione di più di 3000 proprietà di un documento web.
+
+## Proprietà grafiche
+
+Una proprietà grafica è una coppia nome-valore. Le proprietà sono numerosissime, ognuna ha il suo nome ed un valore che può essere numerico (intero, decimale o in percentuale) oppure scelto da una lista di elementi.
+
+La sintassi di una proprietà è molto semplice: il nome ed il valore sono separati da un "due punti" ``:`` e la regola termina con un punto e virgola ``;``, come di seguito indicato:
+
+```css
+nome: valore;
+```
+
+Ad esempio, lo sfondo di un elemento è identificato dalla proprietà che ha nome ``background`` e che può assumere come valore un elemento scelto dalla lista dei colori: ``red``, ``yellow``, ``green``, ``blue``, per citarne alcuni. Allo stesso modo, il colore di un elemento è identificato dalla proprietà che ha nome ``color`` e che può assumere come valore un elemento della lista colori appena indicata.
+
+L'allineamento del testo è identificato dalla proprietà che ha nome ``text-align`` e che può assumere come valore un elemento della lista di allineamenti: ``center`` per l'allineamento centrato, ``justify`` per l'allineamento giustificato, ``left`` per l'allineamento a sinistra e ``right`` per quello a destra.
+
+Le proprietà sopra indicate possono quindi essere valorizzate come nell'esempio seguente, in cui si applica un testo allineato al centro, di colore rosso sopra uno sfondo blu:
+
+```css
+background: blue;
+color: red;
+text-align: center;
+```
+
+## Selettori CSS
+
+I **selettori CSS** identificano l'elemento o gli elementi di un documento HTML a cui applicare una lista di proprietà grafiche.
+
+La sintassi prevede che il selettore sia seguito dalla lista di proprietà racchiusa tra parentesi graffe ``{`` e ``}``, come di seguito indicato:
+
+```css
+selettoreCSS1 {
+  nomeProprietà1: valore;
+  nomeProprietà2: valore;
+  nomeProprietà3: valore;
+  ...
+}
+```
+
+Il caso più semplice dei selettori CSS sono i nomi delle etichette del linguaggio HTML. Ad esempio il selettore ``p`` identifica tutti i paragrafi. Il selettore ``a`` identifica tutti i collegamenti. Il selettore ``h1`` identifica tutti i titoli.
+
+Per applicare il colore rosso allo sfondo del titolo di primo livello si usa l'omonimo selettore CSS ``h1``, al quale si associa la lista di proprietà grafiche, come nell'esempio seguente:
+
+```css
+h1 {
+  background: red;
+}
+```
+
+Per applicare il colore blu e l'allineamento centrato ad ogni paragrafo si usa l'omonimo selettore CSS ``p`` al quale si associa la lista di proprietà grafiche, come nell'esempio seguente:
+
+```css
+p {
+  color: blue;
+  text-align: center;
+}
+```
+
+## Fogli di stile
+
+Un foglio di stile è composto dall'insieme di selettori CSS con corrispondenti liste di proprietà grafiche da applicare. Un esempio è il seguente:
+
+```css
+/* Stile per i titoli. */
+h1 {
+  background: red
+}
+/* Stile per i paragrafi. */
+p {
+  color: blue;
+  text-align: center;
+}
+/* Stile per i collegamenti. */
+a {
+  background-color: yellow;
+  color: green;
+}
+```
+
+## Inserire lo stile nei documenti HTML
 
 Esistono numerosi stili CSS già pronti per l'utilizzo, è necessario solamente indicarli nella pagina HTML. Si può scegliere ad esempio uno dei seguenti:
 
@@ -46,22 +127,4 @@ Si può anche scegliere uno stile da un menu a tendina, inserendo in pagina il c
 
 ```html
 <script src="https://dohliam.github.io/dropin-minimal-css/switcher.js" type="text/javascript"></script>
-```
-
-Esempio di CSS
-
-```css
-/* Un esempio di codice CSS */
-body {
-  background-color: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
-h1 {
-  color: #333;
-}
-
-p {
-  color: #666;
-}
 ```
