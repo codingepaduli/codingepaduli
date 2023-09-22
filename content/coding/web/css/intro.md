@@ -101,7 +101,61 @@ a {
 }
 ```
 
-## Inserire lo stile nei documenti HTML
+Si può legare lo stile grafico da applicare ad un documento HTML attraverso tre modalità:
+
+1. inserendo lo stile nel documento HTML;
+2. inserendo nel documento HTML un collegamento relativo al foglio di stile;
+3. inserendo nel documento HTML un collegamento assoluto al foglio di stile;
+
+Il primo metodo consiste nell'indicare lo stile CSS nell'etichetta ``style`` che tipicamente è inserita a sua volta nell'etichetta ``head``, come nel seguente esempio:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* stile CSS */
+      body {
+        background-color: lightblue;
+      }
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Titolo</h1>
+    <p>paragrafo</p>
+    ...
+  </body>
+</html>
+```
+
+Questo metodo non è efficiente, dato che pagine web distinte che utilizzano lo stesso stile devono replicare lo stesso blocco di codice in ogni pagina.
+
+Il secondo ed il terzo metodo consistono nell'indicare lo stile CSS nell'etichetta ``link``, sempre inserita a sua volta nell'etichetta ``head``, come nel seguente esempio:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://sitoweb.it/css/style.css">
+  </head>
+  <body>
+    <h1>Titolo</h1>
+    <p>paragrafo</p>
+    ...
+  </body>
+</html>
+```
+
+Come si può notare, l'etichetta ``link`` ha due attributi:
+
+- l'attributo ``rel`` ha valore ``stylesheet``, ad indicare che si tratta di un foglio di stile;
+- l'attributo ``href`` indica l'indirizzo relativo o assoluto del foglio di stile; nell'esempio appena riportato, l'indirizzo relativo ``css/style.css`` è relativo al proprio sito web, mentre quello assoluto ``https://sitoweb.it/css/style.css`` non ha questo limite dato che viene indicato anche il nome del sito web;
+
+## Fogli di stile già pronti
 
 Esistono numerosi stili CSS già pronti per l'utilizzo, è necessario solamente indicarli nella pagina HTML. Si può scegliere ad esempio uno dei seguenti:
 
@@ -123,7 +177,7 @@ MVP CSS
 <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
 ```
 
-Si può anche scegliere uno stile da un menu a tendina, inserendo in pagina il codice seguente:
+Per iniziare a sperimentare, può utilizzare un menu a tendina dal quale scegliere lo stile, inserendo in pagina il codice seguente:
 
 ```html
 <script src="https://dohliam.github.io/dropin-minimal-css/switcher.js" type="text/javascript"></script>
