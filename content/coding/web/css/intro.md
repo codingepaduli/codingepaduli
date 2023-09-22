@@ -7,7 +7,7 @@ publishdate: 2023-09-19
 lastmod: 2023-09-19
 categories: ["coding", "web", "CSS"]
 keywords: ["coding", "web", "CSS"]
-draft: true
+draft: false
 toc: false
 summary: "Il linguaggio CSS, l'evoluzione e le caratteristiche"
 ---
@@ -23,6 +23,21 @@ Prima dell'avvento del linguaggio CSS, un sito web veniva realizzato come un'ins
 Con l'avvento del linguaggio CSS, un sito web viene realizzato come un'insieme di documenti HTML che condividono gli stessi fogli di stile CSS. Una singola modifica ai fogli di stile si ripercuote su tutte le pagine del sito web.
 
 Nel tempo questo linguaggio è diventando uno dei principali linguaggi del World Wide Web ed è stato standardizzato dal W3C. Attualmente sono state pubblicate tre versioni (CSS1, CSS2 e CSS3) che hanno aggiunto sempre più funzionalità, permettendo la personalizzazione di più di 3000 proprietà di un documento web.
+
+## Unità di misura CSS
+
+Le proprieta grafiche possono assumere un valore espresso in differenti unità di misura. Le principali sono:
+
+- **px**: Indica una dimensione espressa in numero di **pixels** sullo schermo;
+- **%**: Indica una dimensione espressa in **percentuale** rispetto all'elemento padre;
+- **vw**: Indica la larghezza espressa come **percentuale della larghezza della ``viewport``**, ovvero dell'area del browser visibile all'utente. Ad esempio, ``1vw`` rappresenta una larghezza pari a ``1%`` rispetto alla larghezza dell'area del browser visibile all'utente;
+- **vh**: Indica l'altezza espressa come **percentuale dell'altezza della ``viewport``**, ovvero dell'area del browser visibile all'utente. Ad esempio, ``1vh`` rappresenta un'altezza pari a ``1%`` rispetto all'altezza dell'area del browser visibile all'utente;
+- **em**: Indica la dimensione del testo rispetto all'elemento padre.
+- **rem** Indica la dimensione del testo rispetto all'elemento radice, tipicamente l'etichetta ``html``;
+- **deg**: Indica la dimensione di un angolo espressa in gradi sessagesimali;
+- **rad**: Indica la dimensione di un angolo espressa in radianti;
+- **deg**: Indica la dimensione di un angolo espressa in gradi sessagesimali;
+<!-- vmin, vmax viewport's smaller dimension and larger dimension -->
 
 ## Proprietà grafiche
 
