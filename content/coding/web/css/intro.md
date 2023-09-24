@@ -170,6 +170,123 @@ Come si può notare, l'etichetta ``link`` ha due attributi:
 - l'attributo ``rel`` ha valore ``stylesheet``, ad indicare che si tratta di un foglio di stile;
 - l'attributo ``href`` indica l'indirizzo relativo o assoluto del foglio di stile; nell'esempio appena riportato, l'indirizzo relativo ``css/style.css`` è relativo al proprio sito web, mentre quello assoluto ``https://sitoweb.it/css/style.css`` non ha questo limite dato che viene indicato anche il nome del sito web;
 
+## Proprietà per il testo
+
+Per rendere il testo grassetto si utilizza la proprietà ``font-weight`` con valore ``bold``, come nel seguente esempio:
+
+```css
+p {
+  font-weight: bold;
+}
+```
+
+Per rendere il testo corsivo si utilizza la proprietà ``font-style`` con valore ``italic``, come nel seguente esempio:
+
+```css
+p {
+  font-style: italic;
+}
+```
+
+L'allineamento del testo è controllato dalla proprietà ``text-align`` che può assumere uno dei seguenti valori:
+
+- ``left`` allineamento a sinistra;
+- ``right`` allineamento a destra;
+- ``center`` allineamento al centro;
+- ``justify`` allineamento giustificato;
+
+Ad esempio, per centrare un paragrafo si utilizza il seguente codice:
+
+```css
+p {
+  text-align: center;
+}
+```
+
+Si possono aggiungere decorazioni al testo utilizzando la proprietà ``text-decoration-line`` che può assumere una combinazione dei seguenti valori: ``line-through`` (testo barrato), ``underline`` (testo sottolineato), ``overline`` (testo sopra-lineato) o anche combinazioni delle precedenti, ad esempio ``underline line-through`` (testo sottolineato e barrato).
+
+Ad esempio, per scrivere i paragrafi con testo sottolineato e barrato:
+
+```css
+p {
+  text-decoration-line: underline line-through;
+}
+```
+
+Le decorazioni al testo possono assumere lo stile indicato attraverso la proprietà ``text-decoration-style`` che può assumere uno dei seguenti valori: ``solid`` (linea intera), ``double`` (linea intera doppia), ``dotted`` (linea punteggiata), ``dashed`` (linea tratteggiata), ``wavy`` (linea ondulata).
+
+Ad esempio, per scrivere i paragrafi con testo sottolineato con linea ondulata:
+
+```css
+p {
+  text-decoration-line: underline line-through;
+  text-decoration-style: wavy;
+}
+```
+
+## Proprietà per i colori
+
+Il colore del testo in CSS è controllato dalla proprietà ``color``, il colore di sfondo del testo dalla proprietà ``background-color``. Entrambe possono accettare vari formati di colore, tra cui i nomi (in inglese) dei colori o i valori in un formato riconosciuto, ad esempio RGB o HSL. Una lista completa di colori la si trova sulla pagina web di [Wikipedia - List of colors](https://en.wikipedia.org/wiki/List_of_colors_(alphabetical)) o sulle specifiche del W3C. Tra i nomi più noti troviamo: ``red``, ``green``, ``blue``, ``yellow``, ``aqua``, ``beige``, ``black``, ``brown``, ``coral``, ``cyan``, ``darkblue``, ``darkred``, ``gold``, ``gray``, ``lightblue``, ``lightgreen``, ``magenta``, ``maroon``, ``navy``, ``olive``, ``orange``, ``pink``, ``purple``, ``silver``, ``teal``, ``white`` e moltissimi altri.
+
+Ecco un esempio di come cambiare il colore del testo in rosso ed il colore di sfondo del testo in nero per tutti i paragrafi:
+
+```css
+p {
+  color: red;
+  background-color: black;
+}
+```
+
+Per utilizzare i codici esadecimali dei colori è necessario specificarli nel formato ``#RRGGBB``, dove RR (rosso), GG (verde) e BB (blu) sono numeri esadecimali che specificano le componenti del colore. Ecco alcuni esempi di codici esadecimali di colori:
+
+- ``#FF0000`` rappresenta il colore rosso
+- ``#00FF00`` rappresenta il colore verde
+- ``#0000FF`` rappresenta il colore blu
+- ``#FFFFFF`` rappresenta il colore bianco
+- ``#000000`` rappresenta il colore nero
+
+Ecco un esempio di come cambiare il colore del testo in rosso ed il colore di sfondo del testo in nero per tutti i paragrafi:
+
+```css
+p {
+  background-color: #000000;
+  color: #FF0000;
+}
+```
+
+Anche le decorazioni del testo possono assumere un colore, indicato attraverso la proprietà ``text-decoration-color``. Il colore è espresso secondo le regole appena trattate.
+
+Ad esempio, per scrivere i paragrafi con testo sottolineato con linea ondulata rossa:
+
+```css
+p {
+  text-decoration-line: underline line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+```
+
+## Proprietà per le immagini
+
+Per inserire un'immagine di sfondo si utilizza la proprietà `background-image` che ha come valore l'URL dell'immagine. Ad esempio, per impostare l'immagine di sfondo ``sfondo.jpg`` dell'intera pagina web, la si applica all'elemento ``body``, come nel seguente esempio:
+
+```css
+body {
+  background-image: url("sfondo.jpg");
+}
+```
+
+Se l'immagine di sfondo è più piccola dell'elemento si può indicare che l'immagine venga ripetuta sia orizzontalmente che verticalmente, che si ripeta solo orizzontalmente o solo verticalmente oppure che non si ripeta affatto, impostando la proprietà ``background-repeat`` rispettivamente al valore ``repeat``, ``repeat-x``, ``repeat-y`` o ``no-repeat``.
+
+Ad esempio, per non ripetere nè orizzontalmente nè verticalmente l'immagine si utilizza il seguente codice:
+
+```css
+body {
+  background-image: url("images/sfondo.jpg");
+  background-repeat: no-repeat;
+}
+```
+
 ## Fogli di stile già pronti
 
 Esistono numerosi stili CSS già pronti per l'utilizzo, è necessario solamente indicarli nella pagina HTML. Si può scegliere ad esempio uno dei seguenti:
