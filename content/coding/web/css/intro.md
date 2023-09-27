@@ -24,24 +24,9 @@ Con l'avvento del linguaggio CSS, un sito web viene realizzato come un'insieme d
 
 Nel tempo questo linguaggio è diventando uno dei principali linguaggi del World Wide Web ed è stato standardizzato dal W3C. Attualmente sono state pubblicate tre versioni (CSS1, CSS2 e CSS3) che hanno aggiunto sempre più funzionalità, permettendo la personalizzazione di più di 3000 proprietà di un documento web.
 
-## Unità di misura CSS
-
-Le proprieta grafiche possono assumere un valore espresso in differenti unità di misura. Le principali sono:
-
-- **px**: Indica una dimensione espressa in numero di **pixels** sullo schermo;
-- **%**: Indica una dimensione espressa in **percentuale** rispetto all'elemento padre;
-- **vw**: Indica la larghezza espressa come **percentuale della larghezza della ``viewport``**, ovvero dell'area del browser visibile all'utente. Ad esempio, ``1vw`` rappresenta una larghezza pari a ``1%`` rispetto alla larghezza dell'area del browser visibile all'utente;
-- **vh**: Indica l'altezza espressa come **percentuale dell'altezza della ``viewport``**, ovvero dell'area del browser visibile all'utente. Ad esempio, ``1vh`` rappresenta un'altezza pari a ``1%`` rispetto all'altezza dell'area del browser visibile all'utente;
-- **em**: Indica la dimensione del testo rispetto all'elemento padre.
-- **rem** Indica la dimensione del testo rispetto all'elemento radice, tipicamente l'etichetta ``html``;
-- **deg**: Indica la dimensione di un angolo espressa in gradi sessagesimali;
-- **rad**: Indica la dimensione di un angolo espressa in radianti;
-- **deg**: Indica la dimensione di un angolo espressa in gradi sessagesimali;
-<!-- vmin, vmax viewport's smaller dimension and larger dimension -->
-
 ## Proprietà grafiche
 
-Una proprietà grafica è una coppia nome-valore. Le proprietà sono numerosissime, ognuna ha il suo nome ed un valore che può essere numerico (intero, decimale o in percentuale) oppure scelto da una lista di elementi.
+Una proprietà grafica è una coppia nome-valore. Le proprietà sono numerosissime, ognuna ha il suo nome ed un valore che può essere numerico oppure scelto da una lista di elementi.
 
 La sintassi di una proprietà è molto semplice: il nome ed il valore sono separati da un "due punti" ``:`` e la regola termina con un punto e virgola ``;``, come di seguito indicato:
 
@@ -60,6 +45,35 @@ background: blue;
 color: red;
 text-align: center;
 ```
+
+### Unità di misura CSS
+
+Possiamo esprimere i valori numerici in differenti unità di misura. Le principali sono:
+
+- **px**: Indica una dimensione espressa in numero di **pixels** sullo schermo;
+- **%**: Indica una dimensione espressa in **percentuale** rispetto all'elemento padre;
+- **vw**: Indica la larghezza espressa come **percentuale della larghezza della ``viewport``**, ovvero dell'area del browser visibile all'utente. Ad esempio, ``1vw`` rappresenta una larghezza pari a ``1%`` rispetto alla larghezza dell'area del browser visibile all'utente;
+- **vh**: Indica l'altezza espressa come **percentuale dell'altezza della ``viewport``**, ovvero dell'area del browser visibile all'utente. Ad esempio, ``1vh`` rappresenta un'altezza pari a ``1%`` rispetto all'altezza dell'area del browser visibile all'utente;
+- **em**: Indica la dimensione del testo rispetto all'elemento padre.
+- **rem** Indica la dimensione del testo rispetto all'elemento radice, tipicamente l'etichetta ``html``;
+- **deg**: Indica la dimensione di un angolo espressa in gradi sessagesimali;
+- **rad**: Indica la dimensione di un angolo espressa in radianti;
+- **deg**: Indica la dimensione di un angolo espressa in gradi sessagesimali;
+<!-- vmin, vmax viewport's smaller dimension and larger dimension -->
+
+### Valori per i colori
+
+I colori in CSS possono essere espressi utilizzando il nome inglese. Una lista completa di colori la si trova sulla pagina web di [Wikipedia - List of colors](https://en.wikipedia.org/wiki/List_of_colors_(alphabetical)) o sulle specifiche del W3C. Tra i nomi più noti troviamo: ``red``, ``green``, ``blue``, ``yellow``, ``aqua``, ``beige``, ``black``, ``brown``, ``coral``, ``cyan``, ``darkblue``, ``darkred``, ``gold``, ``gray``, ``lightblue``, ``lightgreen``, ``magenta``, ``maroon``, ``navy``, ``olive``, ``orange``, ``pink``, ``purple``, ``silver``, ``teal``, ``white`` e moltissimi altri.
+
+E' possibile esprimere i colori anche attraverso il modello RGB, indicando un valore esadecimale compreso tra ``00`` (valore zero in esadecimale) e ``FF`` (valore 255 in esadecimale) per le tre componenti R (rosso), G (verde) e B (blu) che compongono il colore.
+
+La regola CSS vuole che un colore espresso nel formato RGB sia anticipato dal carattere ``#`` e che ogni valore esadecimale sia espresso da due cifre, seguendo lo schema ``#RRGGBB``, dove ``RR`` sono le due cifre del valore esadecimale per la componente rossa, ``GG`` sono le due cifre del valore esadecimale per la componente verde e ``BB`` sono le due cifre del valore esadecimale per la componente blu. Ecco alcuni esempi di codici esadecimali di colori:
+
+- ``#FF0000`` rappresenta il colore rosso
+- ``#00FF00`` rappresenta il colore verde
+- ``#0000FF`` rappresenta il colore blu
+- ``#FFFFFF`` rappresenta il colore bianco
+- ``#000000`` rappresenta il colore nero
 
 ## Selettori CSS
 
@@ -224,37 +238,18 @@ p {
 }
 ```
 
-## Proprietà per i colori
-
-Il colore del testo in CSS è controllato dalla proprietà ``color``, il colore di sfondo del testo dalla proprietà ``background-color``. Entrambe possono accettare vari formati di colore, tra cui i nomi (in inglese) dei colori o i valori in un formato riconosciuto, ad esempio RGB o HSL. Una lista completa di colori la si trova sulla pagina web di [Wikipedia - List of colors](https://en.wikipedia.org/wiki/List_of_colors_(alphabetical)) o sulle specifiche del W3C. Tra i nomi più noti troviamo: ``red``, ``green``, ``blue``, ``yellow``, ``aqua``, ``beige``, ``black``, ``brown``, ``coral``, ``cyan``, ``darkblue``, ``darkred``, ``gold``, ``gray``, ``lightblue``, ``lightgreen``, ``magenta``, ``maroon``, ``navy``, ``olive``, ``orange``, ``pink``, ``purple``, ``silver``, ``teal``, ``white`` e moltissimi altri.
+Il colore del testo in CSS è controllato dalla proprietà ``color``, il colore di sfondo del testo dalla proprietà ``background-color``. Entrambe possono accettare tutti i formati di colore descritti in precedenza, dai nomi dei colori ai formati RGB o HSL.
 
 Ecco un esempio di come cambiare il colore del testo in rosso ed il colore di sfondo del testo in nero per tutti i paragrafi:
 
 ```css
 p {
-  color: red;
+  color: #FF0000; /* rosso */
   background-color: black;
 }
 ```
 
-Per utilizzare i codici esadecimali dei colori è necessario specificarli nel formato ``#RRGGBB``, dove RR (rosso), GG (verde) e BB (blu) sono numeri esadecimali che specificano le componenti del colore. Ecco alcuni esempi di codici esadecimali di colori:
-
-- ``#FF0000`` rappresenta il colore rosso
-- ``#00FF00`` rappresenta il colore verde
-- ``#0000FF`` rappresenta il colore blu
-- ``#FFFFFF`` rappresenta il colore bianco
-- ``#000000`` rappresenta il colore nero
-
-Ecco un esempio di come cambiare il colore del testo in rosso ed il colore di sfondo del testo in nero per tutti i paragrafi:
-
-```css
-p {
-  background-color: #000000;
-  color: #FF0000;
-}
-```
-
-Anche le decorazioni del testo possono assumere un colore, indicato attraverso la proprietà ``text-decoration-color``. Il colore è espresso secondo le regole appena trattate.
+Le decorazioni del testo possono assumere un colore, indicato attraverso la proprietà ``text-decoration-color``. Il colore è espresso in uno dei formati di colore descritti in precedenza.
 
 Ad esempio, per scrivere i paragrafi con testo sottolineato con linea ondulata rossa:
 
@@ -265,8 +260,6 @@ p {
   text-decoration-color: red;
 }
 ```
-
-## Proprietà per le immagini
 
 Per inserire un'immagine di sfondo si utilizza la proprietà `background-image` che ha come valore l'URL dell'immagine. Ad esempio, per impostare l'immagine di sfondo ``sfondo.jpg`` dell'intera pagina web, la si applica all'elemento ``body``, come nel seguente esempio:
 
