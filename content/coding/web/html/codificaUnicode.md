@@ -67,6 +67,8 @@ I concetti principali della codifica Unicode sono i seguenti:
 - Un **punto di codice** è l'unità atomica di informazione, identificata da un numero.
 - Un **grafema** è una sequenza di uno o più punti di codice che vengono visualizzati insieme come una singola unità grafica.
 
+<!-- Grapheme clusters: Quando un grafema è composto da una sequenza di più punti di codice, spesso ci si riferisce con il termine "cluster di grafemi". -->
+
 Ad esempio:
 
 - Il grafema "è" può essere composto dal punto di codice "U+0065" (che rappresenta il grafema ``"``&#x0065;``"``) seguito dal punto di codice "U+0301" (che rappresenta un "accento acuto" ``"``&#x0301;``"``) e che insieme permettono di rappresentare il grafema ``"``&#x0065;&#x0301;``"``;
@@ -89,7 +91,7 @@ Ad esempio:
 
 Un grafema può essere composto da un numero illimitato di punti di codice e quindi, per memorizzarlo, possono essere necessari un numero imprecisato di byte.
 
-Le regole Unicode consentono ad un grafema composto da più punti di codice di essere interpretato come un grafema che ha già il proprio singolo punto di codice. Un esempio appena visto è il grafema "U+00E8" "è" che può essere composto anche dalla sequenza dei punti di codice "U+0065" e "U+0301".
+Le regole Unicode consentono ad un grafema composto da più punti di codice di essere interpretato come un grafema che ha già il proprio singolo punto di codice. Un esempio appena visto è il grafema che rappresenta la "lettera e accentata" che puo essere composto sia da una sequenza di un solo punto di codice "U+00E8", sia dalla sequenza di due punti di codice "U+0065" e "U+0301".
 
 Dato che in Unicode esiste più di un modo per rappresentare un grafema, esiste anche la "forma normalizzata" che consente di capire se due grafemi sono equivalenti e di conseguenza se due frasi lo sono.
 
@@ -106,11 +108,13 @@ Per ovviare a questa problematica, sono nati due sistemi che prevedono la codifi
 
 Dato che la maggior parte dei caratteri utilizzatati si trova nel piano multilinguistico base (BMP), codificando ogni carattere non con 32 bit, ma con 16 bit, si ottiene un risparmio considerevole. Nel caso nel messaggio siano presenti caratteri non appartenenti al BMP, allora questi saranno codificati con una lunghezza maggiore. Nel caso di caratteri latini, questi avranno una lunghezza media di 8 bit, con un notevole risparmio.
 
-É importante che il documento HTML sia salvato con codifica UTF-8 in modo tale da poter inserire nel documento qualsiasi grafema, dall'alfabeto cinese a quello arabo, dalle lingue morte come latino e greco ai simboli matematici, alle figure geometriche, fino agli emoticons ed emoji.
+É importante che il documento sia salvato con codifica UTF-8 in modo tale da poter inserire nel documento qualsiasi grafema, dall'alfabeto cinese a quello arabo, dalle lingue morte come latino e greco ai simboli matematici, alle figure geometriche, fino agli emoticons ed emoji.
 
-**Senza la codifica giusta, molti caratteri potrebbero non essere visualizzati nella pagina web**.
+**Senza la codifica giusta, molti caratteri potrebbero non essere visualizzati nel documento**.
 
-Una volta che le pagine web sono state salvate con la codifica giusta, è necessario indicarla nelle informazioni della pagina, all'interno dell'etichetta ``head``:
+## HTML ed Unicode
+
+I documenti HTML devono essere salvati con la codifica corretta e devono indicarla nelle informazioni della pagina, all'interno dell'etichetta ``head``:
 
 ```html
 <head>
@@ -118,13 +122,11 @@ Una volta che le pagine web sono state salvate con la codifica giusta, è necess
 </head>
 ```
 
-## HTML entities ed emoji
+Nei documenti HTML i grafemi possono essere codificati in differenti modalità.
 
-Talvolta può capitare che i documenti debbano essere memorizzati in una codifica non Unicode oppure che l'uso di alcuni grafemi possa essere non consentito, quindi ci si deve affidare a rappresentazioni alternative per poterli includere.
+La rappresentazione dei grafemi detta "HTML entities" è entrata in vigore prima dello standard Unicode e permette di codificare un grafema associandogli un codice mnemonico. La specifica delle HTML entities si trova al link [https://html.spec.whatwg.org/multipage/entities.json](https://html.spec.whatwg.org/multipage/entities.json "Link alla lista di HTML entities").
 
-Per quanto riguarda le pagine web, è stata progettata una rappresentazione alternativa, detta "HTML entities", dei grafemi più comuni che è al tempo stesso anche più intuitiva.
-
-Le HTML entities codificano un grafema associandogli un codice mnemonico. La specifica delle HTML entities si trova al link [https://html.spec.whatwg.org/multipage/entities.json](https://html.spec.whatwg.org/multipage/entities.json "Link alla lista di HTML entities"). Tra le varie HTML entities elencate, troviamo ad esempio:
+Tra i codici mnemonici delle "HTML entities" troviamo ad esempio:
 
 - gt = greater than, ovvero il simbolo di maggiore (&gt;);
 - lt = lower than, ovvero il simbolo di minore (&lt;);
@@ -136,11 +138,10 @@ Le HTML entities codificano un grafema associandogli un codice mnemonico. La spe
 
 Questi codici mnemonici devono essere sempre inseriti tra il simbolo ``&`` ed il simbolo ``;``, come negli esempi ``&minus;`` (con risultato &minus; <!-- − -->) ed ``&amp;`` (con risultato &amp; <!-- & -->).
 
-Questa rappresentazione è stata poi estesa per permettere anche l'inserimento di un qualsiasi grafema Unicode, utilizzando la sequenza dei punti di codice espressi sia in decimale che in esadecimale.
+Con la nascita dello standard Unicode, la rappresentazione di un grafema avviene attraverso i punti di codice. Ogni punto di codice può essere inserito nel documento HTML utilizzando il corrispondente valore numerico espresso in formato decimale o esadecimale. La regola prevede che:
 
-La rappresentazione di un grafema Unicode attraverso questo metodo prevede che il codice numerico espresso in decimale di ogni punto di codice sia inserito tra il simbolo ``&#`` ed il simbolo ``;``.
-
-Se invece si vuole utilizzare il codice numerico esadecimale dei punti di codice che compongono il grafema, allora ogni codice numerico esadecimale deve essere inserito tra il simbolo ``&#x`` ed il simbolo ``;``.
+- se si utilizza il valore numerico espresso in formato decimale, allora è necessario inserirlo tra il simbolo ``&#`` ed il simbolo ``;``;
+-se si utilizza il valore numerico espresso in formato esadecimale, allora è necessario inserirlo tra il simbolo ``&#x`` ed il simbolo ``;``.
 
 Ad esempio, il grafema "lettera greca delta" &Delta; <!-- Δ --> può essere rappresentato con il codice numerico decimale 916 e con codice numerico esadecimale 394, quindi possiamo scrivere questo grafema sia con la notazione decimale ``&#916;`` (con risultato &#916;) sia con quella esadecimale ``&#x394;`` (con risultato &#x394;).
 
@@ -148,7 +149,7 @@ Altro esempio, il grafema "simbolo dell'euro" &euro; <!-- € --> può essere ra
 
 Anche gli emoticons e gli
 [emoji](https://www.unicode.org/emoji/charts/full-emoji-list.html "Link alle specifiche degli emoji")
-fanno parte della specifica Unicode, per cui se la codifica del documento lo permette li si scrive direttamente, altrimenti li si include attraverso "HTML entities" (se presenti) o attraverso rappresentazione con codice decimale/esadecimale.
+fanno parte della specifica Unicode, per cui possono essere rappresentati attraverso "HTML entities" o attraverso i punti di codice.
 
 ![Specifiche Unicode per gli emoji](/static/coding/web/html/unicode-emoji.png "Le Specifiche Unicode associano ad ogni emoji un codice univoco, un nome (con annesso significato) e visualizzano le possibili varianti")
 
@@ -156,14 +157,40 @@ Ad esempio, l'emoji "smiling face with halo" (faccia sorridente con aureola) è 
 
 Allo stesso modo, l'emoji "rolling on the floor laughing" (rotolando sul pavimento a ridere) è associata al codice numerico esadecimale 1F923, quindi possiamo scrivere questo emoji sia con la notazione decimale ``&#129315;`` (con risultato &#129315;) sia con la notazione esadecimale ``&#x1F923;`` (con risultato &#x1F923; <!-- 🤣 -->).
 
+## Metodi di combinazione
+
+Un primo metodo di combinazione dei grafemi è l'uso dei punti di codice detti **selezione di una variante**, che vanno da U+FE00 a U+FE0F. In particolare, i punti di codice U+FE0E ed U+FE0F sono specificamente utilizzati per selezionare le varianti di emoji.
+
+Ad esempio, il grafema "forbici" &#x2702; è visualizzato dal punto di codice U+2702 e la sua variante &#x2702;&#xFE0F; è visualizzata usando la sequenza U+2702 + U+FE0F.
+
+Un secondo metodo di combinazione dei grafemi è l'uso dei punti di codice detti **selezione del colore della pelle**, che vanno da U+1F3FB a U+1F3FF.
+
+Ad esempio, il grafema "ballerina" &#x1F483; è visualizzato dal punto di codice U+1F483 e le varianti di colore della pelle sono U+1F483 + U+1F3FB &#x1F483;&#x1F3FB;, U+1F483 + U+1F3FC &#x1F483;&#x1F3FC;, U+1F483 + U+1F3FD &#x1F483;&#x1F3FD;, U+1F483 + U+1F3FE &#x1F483;&#x1F3FE; e U+1F483 + U+1F3FF &#x1F483;&#x1F3FF;.
+
+Un terzo metodo di combinazione dei grafemi è l'uso del punto di codice U+200D detto **combinazione** o anche **Unione a larghezza zero**. Questo punto di codice deve essere inserito tra due emoji.
+
+Ad esempio, il grafema "agricoltrice" &#x1F469;&#x200D;&#x1F33E; è visualizzato dalla sequenza di punti di codice U+1F469 (donna), U+200D (combinazione) e U+1F33E (riso).
+
+Un quarto metodo di combinazione dei grafemi è l'uso dei punti di codice delle **lettere di indicazione regionale** che vanno da U+1F1E6 a U+1F1FF. Unendo due di questi punti di codice si ottiene una bandiera.
+
+Ad esempio, il grafema "bandiera italiana" &#x1F1EE;&#x1F1F9; è visualizzato dalla sequenza di punti di codice U+1F1EE (lettera di indicazione regionale "i" rappresentata dal grafema &#x1F1EE;) e U+1F1F9 (lettera di indicazione regionale "t" rappresentata dal grafema &#x1F1F9;).
+
+Un quinto metodo di combinazione dei grafemi è l'uso dei punti di codice del **tastierino numerico** U+FE0F + U+20E3. Unendo un numero (da zero a nove) con i due punti di codice U+FE0F + U+20E3 si ottiene numero racchiuso in un quadrato con lo stile del tastierino numerico; Vale anche per i caratteri "*" e "#".
+
+Ad esempio, il grafema "cancelletto del tastierino numerico" #&#xFE0F;&#x20E3; è visualizzato dalla sequenza di punti di codice # + U+FE0F + U+20E3.
+
 ## Errori di progettazione ?
 
 Unicode era nato per assegnare ad ogni singolo "carattere" un singolo valore numerico, ma non ha mantenuto questo obiettivo, dato che i singoli caratteri che l'utente visualizza, ovvero i grafemi, possono essere espressi come combinazioni di punti di codice.
 
+Le regole che indicano le combinazioni di punti di codice non sono coerenti. Perché a volte si usa il punto di codice **combinazione** o **unione a larghezza zero** mentre altre volte si usa la **selezione del colore della pelle** ed altre ancora la **selezione di una variante**? Perché le combinazioni non sono tutte espresse con il punto di codice **combinazione**?
+
 Le regole che indicano le combinazioni di punti di codice sono revisionate ad ogni nuova versione dello standard Unicode. Il continuo cambiamento comporta numerosi problemi di visualizzazione del testo, dato che lo stesso messaggio può essere visualizzato differentemente passando da una versione dello standard alla successiva.
 
-Non tutti gli strumenti di scrittura e visualizzazione del testo gestiscono correttamente i grafemi, che spesso non vengono trattati come entità inscindibili, portando a problemi di visualizzazione quando si tenta di separare i singoli punti di codice.
+Non tutti gli strumenti di scrittura e visualizzazione del testo gestiscono correttamente i grafemi, che dovrebbero essere trattati come entità inscindibili, ma numerosi strumenti per errore tentano di separare i singoli punti di codice portando a problemi di visualizzazione del messaggio.
 
-Dato che due grafemi distinti possono visualizzare lo stesso "carattere", la ricerca di parole nel testo spesso non funziona. Non tutti gli strumenti di scrittura e visualizzazione del testo passano alla "forma normalizzata" descritta dallo standard Unicode.
+Dato che due grafemi distinti possono visualizzare lo stesso "carattere", la ricerca di parole nel testo spesso non funziona. Non tutti gli strumenti di scrittura e visualizzazione del testo passano alla "forma normalizzata" descritta dallo standard Unicode prima di effettuare una ricerca.
 
 Unicode è ancora legato alla localizzazione di chi scrive, lo stesso grafema può essere visualizzato in maniera molto differente a seconda che sia visualizzato su un computer con localizzazione Cinese, Giapponese o Koreana. E la localizzazione non può essere salvata in un messaggio Unicode.
+
+Purtroppo alcune scelte risultano incomprensibili, ma lo standard Unicode è diffusissimo ed utilizzato ovunque, quindi bisogna conviverci e imparare a gestire queste situazioni utilizzando gli strumenti opportuni.
