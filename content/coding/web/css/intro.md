@@ -202,6 +202,14 @@ p {
 }
 ```
 
+Per indicare la dimensione del testo si utilizza la proprietà ``font-size`` indicando un valore numerico maggiore di zero ed un'unità di misura tra quelle descritte in precedenza, come nel seguente esempio:
+
+```css
+p {
+  font-size: 14px;
+}
+```
+
 L'allineamento del testo è controllato dalla proprietà ``text-align`` che può assumere uno dei seguenti valori:
 
 - ``left`` allineamento a sinistra;
@@ -214,6 +222,29 @@ Ad esempio, per centrare un paragrafo si utilizza il seguente codice:
 ```css
 p {
   text-align: center;
+}
+```
+
+E' possibile indicare le trasformazioni del testo attraversola proprietà ``text-transform`` che può assumere uno dei seguenti valori:
+
+- ``uppercase`` tutto in maiuscolo;
+- ``lowercase`` tutto in minuscolo;
+- ``capitalize`` la prima lettera di ogni parola in maiuscolo;
+- ``none`` nessuna trasformazione;
+
+Ad esempio, per trasformare in maiuscolo un paragrafo si utilizza il seguente codice:
+
+```css
+p {
+  text-transform: uppercase;
+}
+```
+
+Per indicare l'altezza di una linea di testo si utilizza la proprietà ``line-height`` indicando un valore numerico maggiore di zero ed un'unità di misura tra quelle descritte in precedenza, come nel seguente esempio:
+
+```css
+p {
+  line-height: 16px;
 }
 ```
 
