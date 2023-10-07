@@ -15,32 +15,79 @@ summary: "Dichiarazione di costanti e variabili per i vari tipi di dato"
 
 # Costanti e variabili
 
-Le variabili sono spazi di memoria in cui vengono memorizzate delle informazioni. Hanno un nome ed un tipo associato, ad esempio tipo numerico, tipo booleano (vero o falso) o tipo "stringa" (sequenza di caratteri).
+Le costanti e le variabili sono aree di memoria in cui vengono memorizzate le informazioni di un programma in esecuzione, come immagini, suoni, frasi o valori numerici.
 
-Dalla versione di ECMAScript 6 le variabili si dichiarano utilizzando la parola chiave ``let``, anche se la parola chiave ``var`` usata in ECMAScript 5 è ancora valida.
+Come si può intuire dal nome, le variabili contengo informazioni che possono essere modificate durante l'esecuzione del programma, mentre le costanti contengono informazioni non modificabili.
 
-Anche le costanti sono spazi di memoria con un nome ed un tipo associato, ma non è possibile modificare il valore assegnato. Si dichiarano con la parola chiave ``const``;
+Le costanti e le variabili hanno le seguenti caratteristiche:
 
-Di seguito, un esempio di dichiarazione di una variabile con nome "valoreX" e valore ``10`` ed una dichiarazione di una costante con nome "VALORE_Y" e valore ``20``:
+- sono identificate da un nome;
+- sono associate ad un certo tipo di dato, come ad esempio dati numerici interi o decimali, dati booleani (vero o falso), dati alfanumerici (frasi);
+- possono avere assegnato un valore iniziale;
+
+La creazione di una costante o di una variabile di un programma avviene utilizzando un'istruzione di **dichiarazione**, che **alloca** in memoria la costante o la variabile e le associa un nome ed un tipo di dato.
+
+Per assegnare un valore iniziale ad una variabile o ad una costante si utilizza l'operazione di **inizializzazione**.
+
+## Sintassi
+
+La **dichiarazione delle variabili** avviene utilizzando la parola chiave ``let`` seguita dai nomi delle variabili separati da virgola. L'istruzione di dichiarazione termina con il carattere "punto e virgola" ``;``. Un esempio di dichiarazione è il seguente:
 
 ```javascript
-let valoreX = 10;
+let x, y, diametro;
+```
+
+L'inizializzazione delle variabili avviene utilizzando l'operatore di assegnazione ``=`` seguito dal valore iniziale, come nel seguente esempio:
+
+```javascript
+let x = 20;
+let y = 100;
+let diametro = 50;
+```
+
+La **dichiarazione delle costanti** avviene utilizzando la parola chiave  ``const`` seguita dal nome della costante, dall'operatore di assegnazione ``=`` e dal valore iniziale. L'istruzione di dichiarazione termina con il carattere "punto e virgola" ``;``. Un esempio di dichiarazione di costanti è la seguente:
+
+```javascript
+const X = 10;
 const VALORE_Y = 20;
 ```
 
-Il nome di una variabile o di una costante è scelto dal programmatore, non può contenere caratteri particolari, non può iniziare con un carattere numerico e non può essere una parola utilizzata dal linguaggio JavaScript, altrimenti sarà generato un errore.
+### Sintassi dei nomi
+
+I nomi che possono identificare una variabile o una costante devono rispettare le seguenti regole:
+
+- il nome non può iniziare con un carattere numerico;
+- il nome non può contenere spazi;
+- il nome può essere composto solo da caratteri alfanumerici e qualche carattere di punteggiatura come il trattino basso, non altri caratteri;
+- ogni nome identifica una sola area di memoria, quindi non può essere utilizzato per una seconda variabile o costante;
+- il nome non può essere uguale alle parole utilizzate dal linguaggio di programmazione;
+
+Un esempio di nomi di variabili che rispettano le regole indicate sono ``a``, ``b``, ``valore1``, ``valore2`` e ``coloreDelQuadrato``.
+
+Ecco invece alcuni nomi che non rispettano le regole indicate:
+
+- ``1a`` e ``2valore`` non validi perché iniziano con un numero;
+- ``a 1`` e ``secondo valore`` non validi perché contengono spazi;
+- ``variabile-1`` e ``variabile%5`` non validi perché contengono caratteri non ammessi, come il trattino ``-`` e la percentuale ``%``;
+- ``const`` perché è una parola chiave del linguaggio di programmazione (serve a dichiarare le costanti).
+
+### Regole stilistiche dei nomi
 
 Per i nomi delle variabili esiste una regola stilistica che consiglia di utilizzare solo caratteri alfanumerici e di scriverli con **carattere a cammello** (in inglese "camelCase"), ovvero tutte le parole che compongono il nome vengono unite (togliendo gli spazi), trasformando tutte le loro iniziali, tranne la prima, in maiuscolo. Ad esempio, per il calcolo della "media punti delle partite effettuate" si può dichiarare una variabile con nome ``mediaPuntiDellePartiteEffettuate``.
 
 Anche per i nomi delle costanti esiste una regola stilistica che consiglia di scriverle trasformando tutti i **caratteri in maiuscolo** e trasformando gli spazi in "trattino basso" (in inglese "underscore"). Ad esempio, per il valore "pi greco mezzi" si può dichiarare una costante con nome ``PI_GRECO_MEZZI``.
 
-Quando ad una variabile viene assegnato un valore, allora alla variabile viene associato un tipo di dato, ad esempio il tipo numerico, il tipo booleano o tipo "stringa".
+## Tipi di dato e sintassi
 
-Se si assegna un valore differente, anche il tipo di dato cambia di conseguenza. Questo è permesso poiché JavaScript ha una tipizzazione **debole**, a differenza di linguaggi con tipizzazione **forte**, in cui, una volta associato il tipo di dato ad una variabile, questo non può più cambiare.
+Costanti e variabili sono associate ad un tipo di dato che può essere **primitivo** o **complesso**.
 
-I tipi di dato possono essere **primitivi** o **complessi**. Ai tipi primitivi è associato un solo valore, mentre sono considerati tipi complessi le liste di valori, gli oggetti con una o più proprietà, le strutture di dati, ecc... .
+A variabili e costanti associate ad un tipo primitivo è possibile associare un solo valore, mentre a quelle associate ad un tipo complesso è possibile associare liste di valori, oggetti e altre entità più complesse.
 
-## Tipi primitivi
+La gestione del tipo di dato fa una forte differenza nei linguaggi di programmazione.
+
+Il linguaggio di programmazione si dice tipizzato **dinamicamente** se ad una variabile è possibile assegnare un valore di un certo tipo di dato e, successivamente, un valore di un tipo di dato differente.
+
+Il linguaggio di programmazione si dice tipizzato **staticamente** se ad una variabile è possibile assegnare valori esclusivamente di un certo tipo di dato. Se si tenta di assegnare successivamente un valore di un tipo di dato differente, viene generato un errore.
 
 ### Tipo booleano
 
@@ -102,7 +149,7 @@ let negativeInfinity = -Infinity;
 
 ### Tipo stringa
 
-Le variabili possono avere assegnata una sequenza di caratteri e quindi il tipo associato sarà stringa. La sequenza di caratteri deve essere racchiusa tra singoli apici ``'`` o doppi apici ``"``.
+Le variabili possono avere assegnata una sequenza di caratteri e quindi il tipo associato sarà "stringa". La sequenza di caratteri deve essere racchiusa tra singoli apici ``'`` o doppi apici ``"``.
 
 Un esempio di dichiarazione di variabile a cui viene associato un tipo stringa è il seguente:
 
