@@ -7,7 +7,7 @@ publishdate: 2020-09-08
 lastmod: 2020-09-08
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: false
+draft: true
 toc: false
 summary: "Esercizi iniziali"
 weight: 8980

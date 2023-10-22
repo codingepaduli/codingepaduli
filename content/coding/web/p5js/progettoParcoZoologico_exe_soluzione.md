@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: 'p5.js Lez. 05.3 - Soluzione del progetto "parco zoologico"'
+title: 'p5.js Lez. 05.5 - Soluzione del progetto "parco zoologico"'
 description: 'Soluzione del progetto "parco zoologico"'
 date: 2023-07-18
 publishdate: 2023-07-18
@@ -11,7 +11,7 @@ draft: false
 toc: false
 summary: 'Soluzione del progetto "parco zoologico"'
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoParcoZoologico.js"]
-weight: 8654
+weight: 8650
 ---
 
 # Soluzione del progetto parco zoologico

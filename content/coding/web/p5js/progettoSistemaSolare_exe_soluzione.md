@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: 'p5.js Lez. 04.6 - Soluzione del progetto "Sistema Solare"'
+title: 'p5.js Lez. 04.4 - Soluzione del progetto "Sistema Solare"'
 description: 'Soluzione del progetto "Sistema Solare"'
 date: 2023-08-02
 publishdate: 2023-08-02
@@ -11,7 +11,7 @@ draft: false
 toc: false
 summary: 'Soluzione del progetto "Sistema Solare"'
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/p5Utils.js", "/static/coding/web/p5js/progettoSistemaSolare.js"]
-weight: 8661
+weight: 8662
 ---
 
 # Soluzione del progetto Sistema Solare

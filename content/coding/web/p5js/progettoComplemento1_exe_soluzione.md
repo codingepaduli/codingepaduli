@@ -1,6 +1,6 @@
 ---
 type: "p5js"
-title: 'p5.js Lez. 05.12 - Soluzione del progetto "complemento a 1"'
+title: 'p5.js Lez. 05.8 - Soluzione del progetto "complemento a 1"'
 description: 'Soluzione del progetto "complemento a 1"'
 date: 2022-05-23
 publishdate: 2022-05-23
@@ -11,7 +11,7 @@ draft: false
 toc: false
 summary: 'Soluzione del progetto "complemento a 1"'
 customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/progettoComplemento1.js"]
-weight: 8636
+weight: 8642
 ---
 
 # Soluzione progetto "complemento a 1"
