@@ -87,15 +87,15 @@ L'etichetta ``hr`` genera una semplice linea orizzontale. Ad eccezione della reg
 
 Alcune etichette obsolete di formattazione del testo sono ancora utilizzate, andrebbero sostituite o da nuove etichette o dalle proprietà CSS:
 
-- ``acronym``: obsoleta, visualizzava gli acronimi, è stata sostituita dall'etichetta ``abbr``;
-- ``strike``: obsoleta, visualizzava un testo cancellato, è stata sostituita dall'etichetta ``del``;
-- ``<center>`` obsoleta, visualizzava un testo centrato, è stata sostituita dalle proprietà CSS ``text-align: center;``;
-- ``u``: obsoleta, visualizzava un testo sottolineato, è stata sostituita  dalla proprietà CSS ``text-decoration: underline;``;
-- ``b`` obsoleta, visualizzava il carattere grassetto, è stata sostituita dalla proprietà CSS ``font-weight: bold;``;
-- ``i`` obsoleta, visualizzava il carattere corsivo, è stata sostituita dalla proprietà CSS ``font-style: italic;``;
-- ``big`` obsoleta, visualizzava il carattere con dimensione maggiore, è stata sostituita dalla proprietà CSS ``font-size: larger;``;
-- ``small`` obsoleta, visualizzava il carattere con dimensione minore, è stata sostituita dalla proprietà CSS ``font-style: smaller;``;
-- ``<font face="Arial" size="2" color="red">`` obsoleta, visualizzava carattere, dimensione e colore, è stata sostituita dalle proprietà CSS ``font-family: Arial;``, ``font-size: small;``, ``color: red;``;
+- ``acronym``: è obsoleta, visualizzava gli acronimi, è stata sostituita dall'etichetta ``abbr``;
+- ``strike``: è obsoleta, visualizzava un testo cancellato, è stata sostituita dall'etichetta ``del``;
+- ``center``: è obsoleta, visualizzava un testo centrato, è stata sostituita dalle proprietà CSS ``text-align: center;``;
+- ``u``: è obsoleta, visualizzava un testo sottolineato, è stata sostituita  dalla proprietà CSS ``text-decoration: underline;``;
+- ``b``: è obsoleta, visualizzava il carattere grassetto, è stata sostituita dalla proprietà CSS ``font-weight: bold;``;
+- ``i``: è obsoleta, visualizzava il carattere corsivo, è stata sostituita dalla proprietà CSS ``font-style: italic;``;
+- ``big``: è obsoleta, visualizzava il carattere con dimensione maggiore, è stata sostituita dalla proprietà CSS ``font-size: larger;``;
+- ``small``: è obsoleta, visualizzava il carattere con dimensione minore, è stata sostituita dalla proprietà CSS ``font-style: smaller;``;
+- ``font`` (tipicamente utilizzata con gli attributi come nell'esempio ``<face="Arial" size="2" color="red">``): è obsoleta, visualizzava carattere, dimensione e colore, è stata sostituita dalle proprietà CSS ``font-family: Arial;``, ``font-size: small;``, ``color: red;``.
 
 ## Combinazioni innestate per la formattazione
 
