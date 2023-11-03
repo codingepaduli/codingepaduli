@@ -1,16 +1,16 @@
 ---
 type: "html"
-title: "HTML Lez. 07 - Codifica UTF-8, HTML entities ed emoji"
-description: "HTML Lez. 07 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
+title: "HTML Lez. 07 - Codifica Unicode, HTML entities, emoji"
+description: "HTML Lez. 07 - La codifica Unicode, le HTML entities e le emoji nelle pagine web"
 date: 2019-08-05
 publishdate: 2019-08-05
-lastmod: 2019-08-05
+lastmod: 2023-11-03
 spellcheck: 2020-12-11
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 07 - Codifica UTF-8 delle pagine web, HTML entities ed emoji"
+summary: "HTML Lez. 07 - La codifica Unicode, le HTML entities e le emoji nelle pagine web"
 weight: 9370
 
 references:
