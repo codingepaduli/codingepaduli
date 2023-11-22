@@ -419,6 +419,143 @@ Realizzazione di una lista contenente:
 - Я (Ya) - U+042F &#x042F;
 - Ґ (G) - U+0490 &#x0490;
 
+## Sistemi numerici
+
+<!-- Richiesta Chat-GPT: Scrivi una lista dei codici del sistema 
+numerico Maya dello standard Unicode -->
+
+Lo standard Unicode include diversi sistemi di numerazione. Alcuni dei più comuni sono:
+
+1. Arabic-Indic numbers: sono i numeri arabi, ampiamente utilizzati a livello globale, come 0, 1, 2, 3, ecc.
+2. Latin numbers: rappresentano i numeri romani, ad esempio "I" per 1, "V" per 5 e "X" per 10.
+3. Bengali numbers: rappresentano i numeri usati nella lingua bengali, come ০ per 0, ১ per 1, ২ per 2, ecc.
+4. Devanagari numbers: sono i numeri utilizzati nella lingua hindi e in altre lingue dell'India, come ० per 0, १ per 1, २ per 2, ecc.
+5. Thai numbers: rappresentano i numeri utilizzati nella lingua thailandese, come ๐ per 0, ๑ per 1, ๒ per 2, ecc.
+6. Tibetan numbers: sono i numeri utilizzati nella lingua tibetana, come ༠ per 0, ༡ per 1, ༢ per 2, ecc.
+7. Myanmar numbers: rappresentano i numeri utilizzati nella lingua birmana, come ၀ per 0, ၁ per 1, ၂ per 2, ecc.
+8. CJK Unified Ideographs: sono caratteri ideografici utilizzati in lingue come il cinese, il giapponese e il coreano, che possono anche rappresentare numeri.
+9. Altri sistemi di numerazione specifici sono presenti nello standard Unicode, come i numeri babilonesi, i numeri maya, ecc.
+
+### Latin numbers
+
+I codici del sistema numerico romano nel sistema di codifica Unicode sono i seguenti:
+
+- codice Unicode: U+004D, rappresentazione: &#x004D;, valore: 1000;
+- codice Unicode: U+0044, rappresentazione: &#x0044;, valore: 500;
+- codice Unicode: U+0043, rappresentazione: &#x0043;, valore: 100;
+- codice Unicode: U+006C, rappresentazione: &#x004C;, valore: 50;
+- codice Unicode: U+0058, rappresentazione: &#x0058;, valore: 10;
+- codice Unicode: U+0056, rappresentazione: &#x0056;, valore: 5;
+- codice Unicode: U+0049, rappresentazione: &#x0049;, valore: 1;
+
+### Bengali digits
+
+I codici del sistema numerico Bengali nel sistema di codifica Unicode sono i seguenti:
+
+- ০: U+09E6; rappresentazione: &#x09E6;, Valore: zero;
+- ১: U+09E7; rappresentazione: &#x09E7;, Valore: uno;
+- ২: U+09E8; rappresentazione: &#x09E8;, Valore: due;
+- ৩: U+09E9; rappresentazione: &#x09E9;, Valore: tre;
+- ৪: U+09EA; rappresentazione: &#x09EA;, Valore: quattro;
+- ৫: U+09EB; rappresentazione: &#x09EB;, Valore: cinque;
+- ৬: U+09EC; rappresentazione: &#x09EC;, Valore: sei;
+- ৭: U+09ED; rappresentazione: &#x09ED;, Valore: sette;
+- ৮: U+09EE; rappresentazione: &#x09EE;, Valore: otto;
+- ৯: U+09EF; rappresentazione: &#x09EF;, Valore: nove;
+
+### Sistema numerico Devanagari
+
+La lista dei codici Unicode del sistema numerico Devanagari è la seguente:
+
+- ०: U+0966; rappresentazione: &#x0966;, Valore: zero;
+- १: U+0967; rappresentazione: &#x0967;, Valore: uno;
+- २: U+0968; rappresentazione: &#x0968;, Valore: due;
+- ३: U+0969; rappresentazione: &#x0969;, Valore: tre;
+- ४: U+096A; rappresentazione: &#x096A;, Valore: quattro;
+- ५: U+096B; rappresentazione: &#x096B;, Valore: cinque;
+- ६: U+096C; rappresentazione: &#x096C;, Valore: sei;
+- ७: U+096D; rappresentazione: &#x096D;, Valore: sette;
+- ८: U+096E; rappresentazione: &#x096E;, Valore: otto;
+- ९: U+096F; rappresentazione: &#x096F;, Valore: nove;
+
+### Thai numbers
+
+La lista dei codici Unicode del sistema numerico Thai numbers:
+
+- ๐: U+0E50; rappresentazione: &#x0E50;, Valore: zero;
+- ๑: U+0E51; rappresentazione: &#x0E51;, Valore: uno;
+- ๒: U+0E52; rappresentazione: &#x0E52;, Valore: due;
+- ๓: U+0E53; rappresentazione: &#x0E53;, Valore: tre;
+- ๔: U+0E54; rappresentazione: &#x0E54;, Valore: quattro;
+- ๕: U+0E55; rappresentazione: &#x0E55;, Valore: cinque;
+- ๖: U+0E56; rappresentazione: &#x0E56;, Valore: sei;
+- ๗: U+0E57; rappresentazione: &#x0E57;, Valore: sette;
+- ๘: U+0E58; rappresentazione: &#x0E58;, Valore: otto;
+- ๙: U+0E59; rappresentazione: &#x0E59;, Valore: nove;
+
+### Tibetan numbers
+
+I codici del sistema numerico Tibetano nella tabella Unicode sono:
+
+- ༠: U+0F20; rappresentazione: &#x0F20;, Valore: zero;
+- ༡: U+0F21; rappresentazione: &#x0F21;, Valore: uno;
+- ༢: U+0F22; rappresentazione: &#x0F22;, Valore: due;
+- ༣: U+0F23; rappresentazione: &#x0F23;, Valore: tre;
+- ༤: U+0F24; rappresentazione: &#x0F24;, Valore: quattro;
+- ༥: U+0F25; rappresentazione: &#x0F25;, Valore: cinque;
+- ༦: U+0F26; rappresentazione: &#x0F26;, Valore: sei;
+- ༧: U+0F27; rappresentazione: &#x0F27;, Valore: sette;
+- ༨: U+0F28; rappresentazione: &#x0F28;, Valore: otto;
+- ༩: U+0F29; rappresentazione: &#x0F29;, Valore: nove;
+- ༪: U+0F2A; rappresentazione: &#x0F2A;, Valore: Half One;
+- ༫: U+0F2B; rappresentazione: &#x0F2B;, Valore: Half Two;
+- ༬: U+0F2C; rappresentazione: &#x0F2C;, Valore: Half Three;
+- ༭: U+0F2D; rappresentazione: &#x0F2D;, Valore: Half Four;
+- ༮: U+0F2E; rappresentazione: &#x0F2E;, Valore: Half Five;
+- ༯: U+0F2F; rappresentazione: &#x0F2F;, Valore: Half Six;
+- ༰: U+0F30; rappresentazione: &#x0F30;, Valore: Half Seven;
+- ༱: U+0F31; rappresentazione: &#x0F31;, Valore: Half Eight;
+- ༲: U+0F32; rappresentazione: &#x0F32;, Valore: Half Nine;
+- ༳: U+0F33; rappresentazione: &#x0F33;, Valore: Half Zero One;
+
+### Myanmar numbers
+
+I codici del sistema numerico Myanmar numbers dello standard Unicode sono:
+
+- ၀: U+1040; rappresentazione: &#x1040;, Valore: zero;
+- ၁: U+1041; rappresentazione: &#x1041;, Valore: uno;
+- ၂: U+1042; rappresentazione: &#x1042;, Valore: due;
+- ၃: U+1043; rappresentazione: &#x1043;, Valore: tre;
+- ၄: U+1044; rappresentazione: &#x1044;, Valore: quattro;
+- ၅: U+1045; rappresentazione: &#x1045;, Valore: cinque;
+- ၆: U+1046; rappresentazione: &#x1046;, Valore: sei;
+- ၇: U+1047; rappresentazione: &#x1047;, Valore: sette;
+- ၈: U+1048; rappresentazione: &#x1048;, Valore: otto;
+- ၉: U+1049; rappresentazione: &#x1049;, Valore: nove;
+
+### Numeri Maya
+
+- 𐇐: U+101D0; rappresentazione: &#x101D0;, Valore: zero;
+- 𐇑: U+101D1; rappresentazione: &#x101D1;, Valore: uno;
+- 𐇒: U+101D2; rappresentazione: &#x101D2;, Valore: due;
+- 𐇓: U+101D3; rappresentazione: &#x101D3;, Valore: tre;
+- 𐇔: U+101D4; rappresentazione: &#x101D4;, Valore: quattro;
+- 𐇕: U+101D5; rappresentazione: &#x101D5;, Valore: cinque;
+- 𐇖: U+101D6; rappresentazione: &#x101D6;, Valore: sei;
+- 𐇗: U+101D7; rappresentazione: &#x101D7;, Valore: sette;
+- 𐇘: U+101D8; rappresentazione: &#x101D8;, Valore: otto;
+- 𐇙: U+101D9; rappresentazione: &#x101D9;, Valore: nove;
+- 𐇚: U+101DA; rappresentazione: &#x101DA;, Valore: ten;
+- 𐇛: U+101DB; rappresentazione: &#x101DB;, Valore: eleven;
+- 𐇜: U+101DC; rappresentazione: &#x101DC;, Valore: twelve;
+- 𐇝: U+101DD; rappresentazione: &#x101DD;, Valore: thirteen;
+- 𐇞: U+101DE; rappresentazione: &#x101DE;, Valore: fourteen;
+- 𐇟: U+101DF; rappresentazione: &#x101DF;, Valore: fifteen;
+- 𐇠: U+101E0; rappresentazione: &#x101E0;, Valore: sixteen;
+- 𐇡: U+101E1; rappresentazione: &#x101E1;, Valore: seventeen;
+- 𐇢: U+101E2; rappresentazione: &#x101E2;, Valore: eighteen;
+- 𐇣: U+101E3; rappresentazione: &#x101E3;, Valore: nineteen;
+
 ## Codici Unicode casuali
 
 <!-- 
@@ -699,3 +836,196 @@ Realizzare una pagina web contenente i caratteri delle lettere assegnate:
 - U+2620, SKULL AND CROSSBONES, &#x2620;
 - U+1F4F5, CALENDAR, &#x1F4F5;
 - U+1F684, HIGH-SPEED TRAIN, &#x1F684;
+
+
+<!-- 
+- 0F34: ༴ - Tibetan Mark Initial Yig Mgo Truncated A
+- 0F35: ༵ - Tibetan Mark Initial Yig Mgo -Um Rnam Bcad Ma
+- 0F36: ༶ - Tibetan Mark Closign Birga
+- 0F37: ༷ - Tibetan Mark Closign Double Birga
+- 0F38: ༸ - Tibetan Mark Closign Trailing Birga
+- 0F39: ༹ - Tibetan Mark Closign Spaced Birga
+- 0F3A: ༺ - Tibetan Mark Closign Sandy Birga
+- 0F3B: ༻ - Tibetan Mark Closign Mtha' Yig Mgo Sgab Ma
+- 0F3C: ༼ - Tibetan Mark Closign Gdan Rtags Gzhi Mtho
+- 0F3D: ༽ - Tibetan Mark Closign Dbyangs Gzhi Mtho
+- 0F3E: ༾ - Tibetan Mark Check Mark Glang Gnyis
+- 0F3F: ༿ - Tibetan Mark Closing Glang Tshel
+- 0F40: ཀ - Tibetan Letter Ka
+- 0F41: ཁ - Tibetan Letter Kha
+- 0F42: ག - Tibetan Letter Ga
+- 0F43: གྷ - Tibetan Letter Gha
+- 0F44: ང - Tibetan Letter Nga
+- 0F45: ཅ - Tibetan Letter Ca
+- 0F46: ཆ - Tibetan Letter Cha
+- 0F47: ཇ - Tibetan Letter Ja
+- 0F49: ཉ - Tibetan Letter Nya
+- 0F4A: ཊ - Tibetan Letter Tta
+- 0F4B: ཋ - Tibetan Letter Ttha
+- 0F4C: ཌ - Tibetan Letter Dda
+- 0F4D: ཌྷ - Tibetan Letter Ddha
+- 0F4E: ཎ - Tibetan Letter Nna
+- 0F4F: ཏ - Tibetan Letter Ta
+- 0F50: ཐ - Tibetan Letter Tha
+- 0F51: ད - Tibetan Letter Da
+- 0F52: དྷ - Tibetan Letter Dha
+- 0F53: ན - Tibetan Letter Na
+- 0F54: པ - Tibetan Letter Pa
+- 0F55: ཕ - Tibetan Letter Pha
+- 0F56: བ - Tibetan Letter Ba
+- 0F57: བྷ - Tibetan Letter Bha
+- 0F58: མ - Tibetan Letter Ma
+- 0F59: ཙ - Tibetan Letter Tsa
+- 0F5A: ཚ - Tibetan Letter Tsha
+- 0F5B: ཛ - Tibetan Letter Dza
+- 0F5C: ཛྷ - Tibetan Letter Dzha
+- 0F5D: ཝ - Tibetan Letter Wa
+- 0F5E: ཞ - Tibetan Letter Zha
+- 0F5F: ཟ - Tibetan Letter Za
+- 0F60: འ - Tibetan Letter -A
+- 0F61: ཡ - Tibetan Letter Ya
+- 0F62: ར - Tibetan Letter Ra
+- 0F63: ལ - Tibetan Letter La
+- 0F64: ཤ - Tibetan Letter Sha
+- 0F65: ཥ - Tibetan Letter Ssa
+- 0F66: ས - Tibetan Letter Sa
+- 0F67: ཧ - Tibetan Letter Ha
+- 0F68: ཨ - Tibetan Letter A
+- 0F69: ཀྵ - Tibetan Letter Kssa
+- 0F6A: ཪ - Tibetan Letter Fixed-Form Ra
+- 0F6B: ཫ - Tibetan Letter Kka
+- 0F6C: ཬ - Tibetan Letter Rra
+- 0F71: ཱ - Tibetan Vowel Sign Aa
+- 0F72: ི - Tibetan Vowel Sign I
+- 0F73: ཱི - Tibetan Vowel Sign Ii
+- 0F74: ུ - Tibetan Vowel Sign U
+- 0F75: ཱུ - Tibetan Vowel Sign Uu
+- 0F76: ྲྀ - Tibetan Vowel Sign Vocalic R
+- 0F77: ཷ - Tibetan Vowel Sign Vocalic L
+- 0F78: ླྀ - Tibetan Vowel Sign Vocalic S
+- 0F79: ཹ - Tibetan Vowel Sign Vocalic H
+- 0F7A: ེ - Tibetan Vowel Sign Vocalic Rr
+- 0F7B: ཻ - Tibetan Vowel Sign Vocalic Ll
+- 0F7C: ོ - Tibetan Vowel Sign E
+- 0F7D: ཽ - Tibetan Vowel Sign Ee
+- 0F7E: ཾ - Tibetan Vowel Sign O
+- 0F7F: ཿ - Tibetan Vowel Sign Oo
+- 0F80: ྀ - Tibetan Sign Auspicious Mjal Ba
+- 0F81: ཱྀ - Tibetan Sign Auspicious Tsheg Bstar
+- 0F82: ྂ - Tibetan Sign Auspicious Grags Bcan
+- 0F83: ྃ - Tibetan Sign Auspicious Rtogs Bcas
+- 0F84: ྄ - Tibetan Sign Auspicious Bskal bzang
+- 0F85: ྅ - Tibetan Sign Auspicious Bde Legs
+- 0F86: ྆ - Tibetan Sign Great Auspicious Mjal Dga'
+- 0F87: ྇ - Tibetan Sign Great Auspicious Rta Mchog
+- 0F88: ྈ - Tibetan Sign Great Auspicious Shes Dkar Ma
+- 0F89: ྉ - Tibetan Sign Great Auspicious Grags Pa Skar Ma
+- 0F8A: ྊ - Tibetan Sign Great Auspicious Sgra Gcan Char 'Be
+- 0F8B: ྋ - Tibetan Sign Great Auspicious Mthing 'Gro
+- 0F90: ྐ - Tibetan Subjoined Letter Ka
+- 0F91: ྑ - Tibetan Subjoined Letter Kha
+- 0F92: ྒ - Tibetan Subjoined Letter Ga
+- 0F93: ྒྷ - Tibetan Subjoined Letter Gha
+- 0F94: ྔ - Tibetan Subjoined Letter Nga
+- 0F95: ྕ - Tibetan Subjoined Letter Ca
+- 0F96: ྖ - Tibetan Subjoined Letter Cha
+- 0F97: ྗ - Tibetan Subjoined Letter Ja
+- 0F99: ྙ - Tibetan Subjoined Letter Nya
+- 0F9A: ྚ - Tibetan Subjoined Letter Tta
+- 0F9B: ྛ - Tibetan Subjoined Letter Ttha
+- 0F9C: ྜ - Tibetan Subjoined Letter Dda
+- 0F9D: ྜྷ - Tibetan Subjoined Letter Ddha
+- 0F9E: ྞ - Tibetan Subjoined Letter Nna
+- 0F9F: ྟ - Tibetan Subjoined Letter Ta
+- 0FA0: ྠ - Tibetan Subjoined Letter Tha
+- 0FA1: ྡ - Tibetan Subjoined Letter Da
+- 0FA2: ྡྷ - Tibetan Subjoined Letter Dha
+- 0FA3: ྣ - Tibetan Subjoined Letter Na
+- 0FA4: ྤ - Tibetan Subjoined Letter Pa
+- 0FA5: ྥ - Tibetan Subjoined Letter Pha
+- 0FA6: ྦ - Tibetan Subjoined Letter Ba
+- 0FA7: ྦྷ - Tibetan Subjoined Letter Bha
+- 0FA8: ྨ - Tibetan Subjoined Letter Ma
+- 0FA9: ྩ - Tibetan Subjoined Letter Tsa
+- 0FAA: ྪ - Tibetan Subjoined Letter Tsha
+- 0FAB: ྫ - Tibetan Subjoined Letter Dza
+- 0FAC: ྫྷ - Tibetan Subjoined Letter Dzha
+- 0FAD: ྭ - Tibetan Subjoined Letter Wa
+- 0FAE: ྮ - Tibetan Subjoined Letter Zha
+- 0FAF: ྯ - Tibetan Subjoined Letter Za
+- 0FB0: ྰ - Tibetan Subjoined Letter -A
+- 0FB1: ྱ - Tibetan Subjoined Letter Ya
+- 0FB2: ྲ - Tibetan Subjoined Letter Ra
+- 0FB3: ླ - Tibetan Subjoined Letter La
+- 0FB4: ྴ - Tibetan Subjoined Letter Sha
+- 0FB5: ྵ - Tibetan Subjoined Letter Ssa
+- 0FB6: ྶ - Tibetan Subjoined Letter Sa
+- 0FB7: ྷ - Tibetan Subjoined Letter Ha
+- 0FB8: ྸ - Tibetan Subjoined Letter -Aa
+- 0FB9: ྐྵ - Tibetan Subjoined Letter Kssa
+- 0FBA: ྺ - Tibetan Subjoined Letter Fixed-Form Wa
+- 0FBB: ྻ - Tibetan Subjoined Letter Fixed-Form Ya
+- 0FBC: ྼ - Tibetan Subjoined Letter Fixed-Form Ra
+- 0FBE: ྾ - Tibetan Kunkhyab Symbol
+- 0FBF: ྿ - Tibetan Astrological Sign -Ca
+- 0FC0: ࿀ - Tibetan Astrological Sign -Da
+- 0FC1: ࿁ - Tibetan Astrological Sign -Na
+- 0FC2: ࿂ - Tibetan Astrological Sign -Pa
+- 0FC3: ࿃ - Tibetan Astrological Sign -Pha
+- 0FC4: ࿄ - Tibetan Astrological Sign -Ba
+- 0FC5: ࿅ - Tibetan Astrological Sign -Da
+- 0FC6: ࿆ - Tibetan Astrological Sign -Pha
+- 0FC7: ࿇ - Tibetan Astrological Sign -Ba
+- 0FC8: ࿈ - Tibetan Astrological Sign -Dzu Na Ran
+- 0FC9: ࿉ - Tibetan Astrological Sign -Khyud Pa
+- 0FCA: ࿊ - Tibetan Astrological Sign -Pha Tshogs
+- 0FCB: ࿋ - Tibetan Astrological Sign -Sdong Tshogs
+- 0FCC: ࿌ - Tibetan Astrological Sign -Pha Rub
+- 0FCE: ࿎ - Tibetan Sign Rdel Nag Rdel Dkar
+- 0FCF: ࿏ - Tibetan Sign Rdel Nag Gsum
+- 0FD0: ࿐ - Tibetan Mark Bska- Shog Gi Mgo Rgyan
+- 0FD1: ࿑ - Tibetan Mark Mnyam Yig Gi Mgo Rngan
+- 0FD2: ࿒ - Tibetan Mark Nyis Tshogs
+- 0FD3: ࿓ - Tibetan Mark Initial Brda Rnying Yig Mgo Mdun Ma
+- 0FD4: ࿔ - Tibetan Mark Closing Brda Rnying Yig Mgo Sgab Ma
+- 0FD5: ࿕ - Right-Facing Svasti Sign
+- 0FD6: ࿖ - Left-Facing Svasti Sign
+- 0FD7: ࿗ - Right-Facing Svasti Sign with Dots
+- 0FD8: ࿘ - Left-Facing Svasti Sign with Dots
+- 0FD9: ࿙ - Right-Facing Svasti Sign with Dots and Diagonal Stems
+- 0FDA: ࿚ - Left-Facing Svasti Sign with Dots and Diagonal Stems
+
+
+
+
+
+21. U+101E4 - UNICODE MAYAN NUMERAL TWENTY
+22. U+101E5 - UNICODE MAYAN NUMERAL THIRTY
+23. U+101E6 - UNICODE MAYAN NUMERAL FORTY
+24. U+101E7 - UNICODE MAYAN NUMERAL FIFTY
+25. U+101E8 - UNICODE MAYAN NUMERAL SIXTY
+26. U+101E9 - UNICODE MAYAN NUMERAL SEVENTY
+27. U+101EA - UNICODE MAYAN NUMERAL EIGHTY
+28. U+101EB - UNICODE MAYAN NUMERAL NINETY
+29. U+101EC - UNICODE MAYAN NUMERAL ONE HUNDRED
+30. U+101ED - UNICODE MAYAN NUMERAL TWO HUNDRED
+31. U+101EE - UNICODE MAYAN NUMERAL THREE HUNDRED
+32. U+101EF - UNICODE MAYAN NUMERAL FOUR HUNDRED
+33. U+101F0 - UNICODE MAYAN NUMERAL FIVE HUNDRED
+34. U+101F1 - UNICODE MAYAN NUMERAL SIX HUNDRED
+35. U+101F2 - UNICODE MAYAN NUMERAL SEVEN HUNDRED
+36. U+101F3 - UNICODE MAYAN NUMERAL EIGHT HUNDRED
+37. U+101F4 - UNICODE MAYAN NUMERAL NINE HUNDRED
+38. U+101F5 - UNICODE MAYAN NUMERAL ONE THOUSAND
+39. U+101F6 - UNICODE MAYAN NUMERAL TWO THOUSAND
+40. U+101F7 - UNICODE MAYAN NUMERAL THREE THOUSAND
+41. U+101F8 - UNICODE MAYAN NUMERAL FOUR THOUSAND
+42. U+101F9 - UNICODE MAYAN NUMERAL FIVE THOUSAND
+43. U+101FA - UNICODE MAYAN NUMERAL SIX THOUSAND
+44. U+101FB - UNICODE MAYAN NUMERAL SEVEN THOUSAND
+45. U+101FC - UNICODE MAYAN NUMERAL EIGHT THOUSAND
+46. U+101FD - UNICODE MAYAN NUMERAL NINE THOUSAND
+47. U+101FE - UNICODE MAYAN NUMERAL TEN THOUSAND
+48. U+101FF - UNICODE MAYAN NUMERAL ELEVEN THOUSAND
+
+-->
