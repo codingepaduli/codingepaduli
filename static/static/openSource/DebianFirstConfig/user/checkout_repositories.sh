@@ -28,6 +28,7 @@ myRepositories=(
     "firefox-bookmarks-to-markdown"
     "java-hello-world-with-gradle"
     "j2ee-website-with-gradle"
+    "fet-timetabling-compute"
 )
 
 if [ ! -d "$WORKING_DIR" ]; then
