@@ -212,6 +212,8 @@ Per poter creare un campo di input, si utilizza l'etichetta ``input``, i cui att
 - ``placeholder``: il suggerimento da mostrare all'utente;
 - ``name``: il nome del dato da inviare al server;
 - ``type``: il tipo di dato richiesto;
+- ``inputmode``: indica la tastiera virtuale da utilizzare sui dispositivi mobile per l'inserimento dei valori;
+- ``autocomplete``: indica in che modo aiutare l'utente nell'inserimento del valore.
 - ``required``: indica all'utente che il campo è obbligatorio;
 - ``readonly``: indica che il campo è di sola lettura;
 - ``hidden``: indica che il campo non è visibile e sarà comunque inviato al server;
@@ -226,7 +228,7 @@ Un campo di input nel quale l'utente deve inserire il proprio nome, preceduto da
 
 Alcuni attributi descrivono le caratteristiche del campo e non prevedono un valore. Tra questi, la presenza dell'attributo ``required`` implica l'obbligatorietà del campo. Se l'utente non inserisce questo dato, non è possibile inviare la richiesta al server attraverso la pagina web.
 
-Allo stesso modo, la sola presenza degli attributi ``readonly`` e ``hidden`` implica, rispettivamente, che il campo sia di sola lettura oppure nascosto, ma saranno inviati al server.
+Allo stesso modo, la sola presenza degli attributi ``readonly`` e ``hidden`` implica, rispettivamente, che il campo sia di sola lettura oppure nascosto, i dati saranno comunque inviati al server.
 
 La presenza dell'attributo ``disabled`` indica che il campo è disabilitato, non sarà inviato al server e non sarà possibile all'utente modificarlo o cliccarci sopra.
 
@@ -295,10 +297,21 @@ Un campo di testo può avere dei vincoli di lunghezza minima e/o massima di cara
 - ``minlenght``: indica il numero minimo di caratteri (compreso);
 - ``maxlenght``: indica il numero massimo di caratteri (compreso);
 
-Un esempio di campo di testo con entrambi i vincoli descritti è il seguente:
+Si consiglia inoltre di fornire assistenza all'utente nell'inserimento del campo utilizzando l'attributo:
+
+- ``autocomplete="on"`` per suggerimenti su testo libero;
+- ``autocomplete="name"`` per suggerirgli nome e cognome preceduti dall'eventuale prefisso (Mr., Mrs., Miss, Sig. Sig.ra, Dr, ..);
+- ``autocomplete="given-name"`` per suggerirgli il proprio nome;
+- ``autocomplete="family-name"`` per suggerirgli il proprio cognome;
+- ``autocomplete="username"`` per suggerirgli il nome utente;
+- ``autocomplete="street-address"`` per suggerirgli l'indirizzo;
+- ``autocomplete="country-name"`` per suggerirgli lo stato ("Italia");
+- ``autocomplete="cc-name"`` per suggerirgli il nome dell'intestatario del conto corrente.
+
+Un esempio di campo di testo con i vincoli descritti è il seguente:
 
 ```html
-<input type="text" name="descrizione" minlenght="10" maxlenght="150">
+<input type="text" name="descrizione" minlenght="10" maxlenght="150" autocomplete="on">
 ```
 
 Il risultato è il seguente:
@@ -309,10 +322,16 @@ Il risultato è il seguente:
 
 Una password è tipicamente nascosta allo sguardo di chi è davanti allo schermo. Per creare un campo di input che contenga una password (nascosta) è necessario indicare l'attributo ``type="password"``.
 
+Si consiglia inoltre di fornire assistenza all'utente nell'inserimento del campo utilizzando l'attributo:
+
+- ``autocomplete="current-password"`` per suggerirgli la password corrente;
+- ``autocomplete="new-password"`` per suggerirgli una nuova password;
+- ``autocomplete="one-time-code"`` per suggerirgli un codice OTP (One Time Password).
+
 Un esempio di campo di inserimento password è il seguente:
 
 ```html
-<input type="password" name="password">
+<input type="password" name="password" autocomplete="current-password">
 ```
 
 Il risultato è il seguente:
@@ -321,27 +340,37 @@ Il risultato è il seguente:
 
 #### Input di una email
 
-Per creare un campo di input che contenga una email è necessario indicare l'attributo ``type="email"``. In questo modo, sui dispositivi mobile si permette la scelta della tastiera appropriata.
+Per creare un campo di input che contenga una email è necessario indicare l'attributo ``type="email"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="email"`` per indicare la scelta della tastiera virtuale appropriata per l'inserimento dei dati sui dispositivi mobile e l'attributo ``autocomplete="email"`` per suggerimenti all'utente nell'inserimento della email.
 
 Un esempio di campo di inserimento per una email è il seguente:
 
 ```html
-<input type="email" name="email">
+<input type="email" name="email" inputmode="email" autocomplete="email">
+```
+
+#### Input di un indirizzo web
+
+Per creare un campo di input che contenga un indirizzo web è necessario indicare l'attributo ``type="url"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="url"`` per indicare la scelta della tastiera virtuale appropriata (con i caratteri "://" e ".") per l'inserimento dei dati sui dispositivi mobile e per suggerimenti all'utente nell'inserimento dell'indirizzo web utilizzando l'attributo ``autocomplete="url"``.
+
+Un esempio di campo di inserimento per un indirizzo web è il seguente:
+
+```html
+<input type="url" name="url" inputmode="url" autocomplete="url">
 ```
 
 #### Input di un numero di telefono
 
-Per creare un campo di input che contenga un numero di telefono è necessario indicare l'attributo ``type="tel"``. In questo modo, sui dispositivi mobile si permette la scelta del tastierino numerico per la composizione del numero.
+Per creare un campo di input che contenga un numero di telefono è necessario indicare l'attributo ``type="tel"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="tel"`` per indicare la scelta del tastierino numerico virtuale appropriato (con i caratteri "#", "*" e ".") per l'inserimento dei dati sui dispositivi mobile e l'attributo ``autocomplete="tel"`` per suggerimenti all'utente nell'inserimento del numero di telefono.
 
 Un esempio di campo di inserimento per un numero di telefono è il seguente:
 
 ```html
-<input type="tel" name="telephone">
+<input type="tel" name="telephone" inputmode="tel" autocomplete="tel">
 ```
 
 #### Input numerico
 
-Per creare un campo di input che contenga un numero è necessario indicare l'attributo ``type="number"``. In questo modo, sui dispositivi mobile si permette la scelta del tastierino numerico per la composizione del numero.
+Per creare un campo di input che contenga un numero è necessario indicare l'attributo ``type="number"``.  Si consiglia inoltre di utilizzare l'attributo ``inputmode="numeric"`` o ``inputmode="decimal"`` per indicare la scelta del tastierino numerico virtuale appropriato (con o senza il carattere di separazione dei decimali) per l'inserimento dei dati sui dispositivi mobile.
 
 Un campo di input numerico può avere dei vincoli legati al numero minimo o massimo da inserire. Questi vincoli si specificano attraverso gli attributi:
 
@@ -352,10 +381,15 @@ Inoltre, questo campo viene visualizzato con due pulsanti laterali che permetton
 
 - ``step``: quantità da incrementare o decrementare;
 
+Si consiglia inoltre di fornire assistenza all'utente nell'inserimento del campo utilizzando l'attributo:
+
+- ``autocomplete="postal-code"`` per suggerirgli il codice postale.
+- ``autocomplete="cc-exp"`` per suggerirgli la scadenza della carta del conto corrente.
+
 Un esempio di campo di inserimento numerico è il seguente:
 
 ```html
-<input type="number" name="valore" min="20" max="50" step="0.2">
+<input type="number" name="valore" min="20" max="50" step="0.2" inputmode="decimal">
 ```
 
 Il risultato è il seguente:
@@ -374,6 +408,14 @@ Un campo di input di una data può avere dei vincoli legati alla data minima o m
 Inoltre, questo campo viene visualizzato con due pulsanti laterali che permettono di incrementare o decrementare il valore corrente di una certa quantità detta "step". L'attributo ``step`` indica appunto la quantità da incrementare o decrementare attraverso questi due pulsanti laterali.
 
 - ``step``: quantità da incrementare o decrementare;
+
+<!-- TODO verifica se funziona:
+
+Si consiglia inoltre di fornire assistenza all'utente nell'inserimento del campo utilizzando l'attributo:
+
+- ``autocomplete="bday"`` per suggerirgli la data di nascita.
+- ``autocomplete="cc-exp"`` per suggerirgli la data di scadenza del conto corrente.
+-->
 
 Un esempio di campo di inserimento numerico è il seguente:
 
