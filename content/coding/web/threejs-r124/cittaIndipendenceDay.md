@@ -1,6 +1,6 @@
 ---
 type: "threejsR124"
-title: "three.js Lez. 02 - Indipendence day"
+title: "three.js Lez. 04 - Indipendence day"
 description: "Esercizi iniziali"
 date: 2023-12-16
 publishdate: 2023-12-16

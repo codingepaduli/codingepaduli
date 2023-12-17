@@ -1,7 +1,7 @@
 ---
 type: "threejsR124"
-title: "three.js Lez. 03 - Tour volante della città"
-description: "Tour volante della città"
+title: "three.js Lez. 05 - Guidando l'auto in città"
+description: "Guidando l'auto in città"
 date: 2023-12-16
 publishdate: 2023-12-16
 lastmod: 2023-12-16
@@ -9,12 +9,12 @@ categories: ["coding", "web", "three.js"]
 keywords: ["coding", "web", "three.js"]
 draft: true
 toc: false
-summary: "Tour volante della città"
-customJS: ["/static/coding/web/threejs-r124/lib/three.js", "/static/coding/web/threejs-r124/lib/GLTFLoader.js", "/static/coding/web/threejs-r124/tourVolanteCitta.js"]
+summary: "Guidando l'auto in città"
+customJS: ["/static/coding/web/threejs-r124/lib/three.js", "/static/coding/web/threejs-r124/lib/GLTFLoader.js", "/static/coding/web/threejs-r124/drivingInTheCity.js"]
 weight: 8980
 ---
 
-# Tour volante della città
+# Guidando l'auto in città
 
 Naviga con i tasti freccia e ruota con i tasti "a" ed "s".
 

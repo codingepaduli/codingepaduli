@@ -1,6 +1,6 @@
 ---
 type: "threejsR124"
-title: "three.js Esercitazioni con la libreria grafica three.js"
+title: "Esercitazioni con la libreria grafica three.js"
 description: "Esercitazioni di programmazione con la libreria grafica three.js r124 (ormai deprecata e trasformata in ES6)"
 date: 2023-12-16
 publishdate: 2023-12-16
