@@ -110,9 +110,26 @@ function makeTreeAt(x, z) {
 }
 
 document.addEventListener('keydown', function(event) {
-    var code = event.keyCode;
-    if (code == 37) pet.position.x += -5; // left
-    if (code == 38) pet.position.z += -5; // down
-    if (code == 39) pet.position.x += +5; // right
-    if (code == 40) pet.position.z += +5; // up
+  console.log(event.code);
+  switch (event.code) {
+    case "ArrowDown":
+      pet.position.z += +5; // up
+      break;
+    case "ArrowUp":
+      pet.position.z += -5; // down
+      break;
+    case "ArrowLeft":
+      pet.position.x += -5; // left
+      break;
+    case "ArrowRight":
+      pet.position.x += +5; // right
+      break;
+  }
+});
+
+const fullscreenBtn = document.querySelector("#fullscreen");
+const canvas = document.querySelector('#canvas');
+
+fullscreenBtn.addEventListener('click', function(event) {
+  canvas.classList.toggle('absolute');
 });

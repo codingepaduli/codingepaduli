@@ -85,15 +85,26 @@ function animate() {
 animate();
 
 document.addEventListener('keydown', function(event) {
-    var code = event.keyCode;
-    console.log(code);
-
-    if (code == 37) pet.position.x += -15; // left
-    if (code == 38) pet.position.z += -15; // up
-    if (code == 39) pet.position.x += +15; // right
-    if (code == 40) pet.position.z += +15; // down
-
-    if (code == 65) pet.rotation.y += +0.05; // s
-    if (code == 83) pet.rotation.y += -0.05; // d
+  console.log(event.code);
+  switch (event.code) {
+    case "ArrowDown":
+      pet.position.z += +5; // up
+      break;
+    case "ArrowUp":
+      pet.position.z += -5; // down
+      break;
+    case "ArrowLeft":
+      pet.position.x += -5; // left
+      break;
+    case "ArrowRight":
+      pet.position.x += +5; // right
+      break;
+  }
 });
 
+const fullscreenBtn = document.querySelector("#fullscreen");
+const canvas = document.querySelector('#canvas');
+
+fullscreenBtn.addEventListener('click', function(event) {
+  canvas.classList.toggle('absolute');
+});

@@ -16,8 +16,17 @@ weight: 8980
 
 # Tour volante della città
 
+<style>
+  .absolute {
+    position: absolute;
+    top: 20px;
+  }
+</style>
+
 Naviga con i tasti freccia e ruota con i tasti "a" ed "s".
 
 <canvas id="canvas" style="width: 100%; height: 100%;"></canvas>
+
+<button id="fullscreen">Fullscreen</button>
 
 Nota: La [citta](https://sketchfab.com/3d-models/cartoon-lowpoly-small-city-free-pack-edd1c604e1e045a0a2a552ddd9a293e6) è distribuita con licenza **CC Attribution**.

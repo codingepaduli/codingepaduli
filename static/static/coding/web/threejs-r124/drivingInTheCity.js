@@ -80,37 +80,41 @@ function animate() {
 animate();
 
 document.addEventListener('keydown', function(event) {
-    var code = event.keyCode;
-    console.log(code);
-
+    console.log(event.code);
+    
     if (myCar != null) {
-        // if (code == 37) myCar.position.z += -15; // left
-        // if (code == 38) myCar.position.x += -15; // up
-        // if (code == 39) myCar.position.z += +15; // right
-        // if (code == 40) myCar.position.x += +15; // down
-
-        if (code == 65) myCar.rotation.y += +0.05; // s
-        if (code == 83) myCar.rotation.y += -0.05; // a
-
-        if (code == 38) {
-            myCar.position.x += 10 *  Math.sin(myCar.rotation.y + 3.14);
-            myCar.position.z += 10 *  Math.cos(myCar.rotation.y + 3.14);
-        }
-
-        if (code == 40) {
-            myCar.position.x -= 10 *  Math.sin(myCar.rotation.y + 3.14);
-            myCar.position.z -= 10 *  Math.cos(myCar.rotation.y + 3.14);
-        }
-
-        if (code == 37) {
-            myCar.rotation.y += +0.05;
-            myCar.position.x += 10 *  Math.sin(myCar.rotation.y + 3.14);
-            myCar.position.z += 10 *  Math.cos(myCar.rotation.y + 3.14);
-        }
-        if (code == 39) {
-            myCar.rotation.y += -0.05;
-            myCar.position.x += 10 *  Math.sin(myCar.rotation.y + 3.14);
-            myCar.position.z += 10 *  Math.cos(myCar.rotation.y + 3.14);
-        }
+      switch (event.code) {
+        case "KeyS":
+          myCar.rotation.y += 0.05;
+          break;
+        case "KeyD":
+          myCar.rotation.y += -0.05;
+          break;
+        case "ArrowDown":
+          myCar.position.x -= 10 *  Math.sin(myCar.rotation.y + 3.14);
+          myCar.position.z -= 10 *  Math.cos(myCar.rotation.y + 3.14);
+          break;
+        case "ArrowUp":
+          myCar.position.x += 10 *  Math.sin(myCar.rotation.y + 3.14);
+          myCar.position.z += 10 *  Math.cos(myCar.rotation.y + 3.14);
+          break;
+        case "ArrowLeft":
+          myCar.rotation.y += +0.05;
+          myCar.position.x += 10 * Math.sin(myCar.rotation.y + 3.14);
+          myCar.position.z += 10 * Math.cos(myCar.rotation.y + 3.14);
+          break;
+        case "ArrowRight":
+          myCar.rotation.y += -0.05;
+          myCar.position.x += 10 *  Math.sin(myCar.rotation.y + 3.14);
+          myCar.position.z += 10 *  Math.cos(myCar.rotation.y + 3.14);
+          break;
+      }
     }
+});
+
+const fullscreenBtn = document.querySelector("#fullscreen");
+const canvas = document.querySelector('#canvas');
+
+fullscreenBtn.addEventListener('click', function(event) {
+  canvas.classList.toggle('absolute');
 });

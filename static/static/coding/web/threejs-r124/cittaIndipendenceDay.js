@@ -91,15 +91,21 @@ function animate() {
 animate();
 
 document.addEventListener('keydown', function(event) {
-    var code = event.keyCode;
+    var code = event.key;
     console.log(code);
 
-    if (code == 37) pet.position.x += -15; // left
-    if (code == 38) pet.position.z += -15; // up
-    if (code == 39) pet.position.x += +15; // right
-    if (code == 40) pet.position.z += +15; // down
+    if (code == "ArrowLeft") pet.position.x += -15; // left
+    if (code == "ArrowUp") pet.position.z += -15; // up
+    if (code == "ArrowRight") pet.position.x += +15; // right
+    if (code == "ArrowDown") pet.position.z += +15; // down
 
-    if (code == 65) pet.rotation.y += +0.05; // s
-    if (code == 83) pet.rotation.y += -0.05; // d
+    if (code == "s") pet.rotation.y += +0.05; // s
+    if (code == "d") pet.rotation.y += -0.05; // d
 });
 
+const fullscreenBtn = document.querySelector("#fullscreen");
+const canvas = document.querySelector('#canvas');
+
+fullscreenBtn.addEventListener('click', function(event) {
+  canvas.classList.toggle('absolute');
+});
