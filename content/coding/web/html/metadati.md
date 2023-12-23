@@ -38,9 +38,21 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://ericportis.com/posts/2014/srcset-sizes/"
         description: "media queries aren’t the right tool for responsive images, srcset and sizes are"
+    -   title: "Facebook Sharing Debugger"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://developers.facebook.com/tools/debug"
+        description: "Il debugger di condivisione di facebook consente di visualizzare l'anteprima del contenuto che sarà pubblicato su Facebook"
+    -   title: "Social Media Preview"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://socialsharepreview.com/"
+        description: "Social Media Preview consente di visualizzare l'anteprima del contenuto che sarà pubblicato sui social"
+    -   title: "Meta Tags Toolkit"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://metatags.io/"
+        description: "Meta Tags Toolkit consente di visualizzare l'anteprima del contenuto che sarà pubblicato sui social"
 ---
 
-# Struttura e layout
+# Struttura, layout ed elementi multimediali
 
 Un documento HTML generalmente contiene informazioni relative alla pagina web, come l'autore della pagina, la descrizione dei contenuti o un'immagine di anteprima ed ha un proprio layout, ovvero una propria impaginazione e struttura grafica che serve ad indicare la posizione e la dimensione degli elementi sugli schermi di computer, smartphone e tablet.
 
@@ -48,7 +60,7 @@ Le informazioni aggiuntive sono dette **metadati** e, sebbene quasi tutte facolt
 
 Il layout grafico è gestito attraverso i **CSS**, ovvero i fogli di stile grafico che definiscono colore, dimensione e posizione degli elementi della pagina web. Il layout si poggia su una struttura basilare che indica ad esempio l'area in cui è situato il menu laterale, l'area destinata al piè di pagina e l'area dei contenuti pubblicitari. Ognuno di questi elementi della struttura basilare è descritto attraverso un'apposita etichetta del linguaggio HTML.
 
-A seconda del layout scelto e della risoluzione dello schermo del dispositivo, un'immagine si può adattare meglio di un'altra, ad esempio un'immagine verticale in risoluzione sufficiente si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. A seconda del layout è necessario scegliere appropriatamente le immagini che meglio si adattano e con la risoluzione necessaria.
+A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile scegliere l'immagine o il video che meglio si adatta, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
 
 ## Metadati
 
@@ -59,6 +71,12 @@ Ad esempio, quando si condivide agli amici un articolo sui social, questi visual
 Per un riferimento completo ai metadati si rimanda al link [https://htmlhead.dev/](https://htmlhead.dev/ "Link al sito di riferimento per i metadati") ed alle specifiche del linguaggio HTML.
 
 Tutti i metadati devono essere contenuti nell'etichetta ``head`` della pagina web, ad eccezione dell'icona principale del sito web: non è descritta da nessun etichetta, deve essere semplicemente salvata nel file ``favicon.ico`` nella cartella principale del sito per poter essere recuperata.
+
+Una volta inseriti tutti i metadata nelle pagine web, è possibile visualizzare le anteprime di condivisione sui social utilizzando gli strumenti indicati di seguito:
+
+- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug);
+- [Social Media Preview](https://socialsharepreview.com/);
+- [Meta Tags Toolkit](https://metatags.io/).
 
 ### Metadati obbligatori
 
@@ -270,7 +288,13 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
 
 Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto.
 
-## Immagini
+## Multimedialità e interattività
+
+La multimedialità è una forma di comunicazione caratterizzata dalla compresenza e interazione di più linguaggi (testi scritti, immagini, suoni, animazioni) in uno stesso supporto o contesto informativo.
+
+Il termine multimedialità si sta progressivamente sovrapponendo a quello di interattività, dato che i contenuti multimediali, che una volta erano fruibili su TV, radio o telefono oggi sono fruibili su dispositivi sempre più interattivi, dal computer al palmare, al telefono, alla LIM (lavagna interattiva multimediale).
+
+### Immagini
 
 Smartphone e dispositivi IoT spesso sono dotati di connessioni lente e a
 pagamento, come il 3G, e di schermi piccoli con risoluzioni ridotte, per
@@ -372,13 +396,66 @@ che genera l'immagine:
 <!-- markdown-link-check-disable-next-line -->
 ![esempio etichetta immagine](/static/coding/web/html/program_CC0.png "immagine generata dal codice HTML")
 
+### Picture e source
+
+Quando si devono visualizzare versioni alternative di una stessa immagine per dispositivi o schermi differenti, si utilizza l'etichetta ``picture`` che sceglie tra differenti elementi ``source``, se nessuno è adeguato la scelta di default (di fallback) ricade sull'elemento ``img``.
+
+Ad esempio, se i tipi di immagine "AVIF" e "WEBP" non sono supportate dai browser, si ricade su quella di default "JPG":
+
+```html
+<picture>
+  <source srcset="photo.avif" type="image/avif" />
+  <source srcset="photo.webp" type="image/webp" />
+  <img src="photo.jpg" alt="photo" />
+</picture>
+```
+
+Un secondo esempio è la scelta dell'immagine effettuata con delle media query, utilizzando l'attributo  ``media``. Ad esempio, se l'orientamento dello schermo è "orizzontale" si usa un immagine, in alternativa si ricade su quella di default "JPG":
+
+```html
+<picture>
+  <source srcset="photo-240-200.jpg" media="(orientation: portrait)" />
+  <img src="photo-200-240.jpg" alt="photo" />
+</picture>
+```
+
+Se la scelta dell'immagine deve essere effettuata in base alla densità del display si utilizza l'attributo ``srcset``:
+
+```html
+<picture>
+  <source srcset="photo.avif 1x, photo2x.avif 2x, photo3x.avif 3x" type="image/avif" />
+  <source srcset="photo.webp 1x, photo2x.webp 2x, photo3x.webp 3x" type="image/webp" />
+  <img src="photo.jpg" alt="photo" height="320" width="320"  />
+</picture>
+```
+
+Se la scelta dell'immagine deve essere effettuata in base alla dimensione dell'immagine che si adatta meglio alla densità del display, si utilizza l'attributo ``sizes``:
+
+```html
+<picture>
+  <source sizes="photo.avif 50vw, photo2x.avif 70vw, photo3x.avif 100vw" type="image/avif" />
+  <source srcset="photo.webp 50vw, photo2x.webp 70vw, photo3x.webp 100vw" type="image/webp" />
+  <img src="photo.jpg" alt="photo" height="320" width="320"  />
+</picture>
+```
+
+Si possono anche combinare le scelte, ad esempio:
+
+```html
+<picture>
+  <source media="(min-width: 1920px)" srcset="image-big.png" type="image/avif" />
+  <source media="(min-width: 1200px)" srcset="image-medium.png" type="image/avif" />
+  <source media="(min-width: 700px)" srcset="image-small.png" type="image/avif" />
+  <source media="(min-width: 1920px)" srcset="image-big.png" type="image/webp" />
+  <source media="(min-width: 1200px)" srcset="image-medium.png" type="image/webp" />
+  <source media="(min-width: 700px)" srcset="image-small.png" type="image/webp" />
+  <img src="photo.jpg" alt="photo" height="320" width="320"  />
+</picture>
+```
+
 ### Figure
 
-Quando le immagini da mostrare sono le stesse in risoluzione differente, si utilizza l'etichetta ``img`` indicando i file contenenti l'immagine alle differenti risoluzioni.
-
-Quando a seconda del dispositivo si vuole scegliere un immagine sostanzialmente differente rispetto ad un'altra, si utilizza l'etichetta ``figure``.
-
-Questa etichetta prevede al suo interno siano presenti più etichette ``img``, ognuna per un'immagine da scegliere su una categoria di dispositivi, sia l'etichetta ``figcaption`` che consente di aggiungere una didascalia o una descrizione testuale all'immagine. Questo la rende più adatta a legare l'immagine con la sua descrizione associata.
+Questa etichetta prevede che al suo interno siano presenti uno o più elementi multimediali (``img``, ``picture``, ``video``, ...) e l'etichetta ``figcaption`` che consente di aggiungere una didascalia o una descrizione testuale all'elemento. Questo la rende più adatta a legare l'elemento multimediale con la sua descrizione associata.
 
 Un'esempio d'uso dell'etichetta è il seguente:
 
@@ -389,3 +466,77 @@ Un'esempio d'uso dell'etichetta è il seguente:
   <figcaption>Frutta tipica</figcaption>
 </figure>
 ```
+
+E' preferibile utilizzarla con gli elementi ``picture``, ad esempio: 
+
+```html
+<figure>
+  <picture>
+    <source srcset="photo.avif" type="image/avif" />
+    <source srcset="photo.webp" type="image/webp" />
+    <img src="photo.jpg" alt="photo" />
+  </picture>
+
+   <figcaption>Didascalia della foto</figcaption>
+</figure>
+```
+
+### Etichette audio e video
+
+È consigliabile, per questioni di performance, proporre i contenuti audio e video attraverso servizi **streaming**, in modo che la risoluzione dei contenuti si adatti alla velocità di trasmissione dati della linea dell'utente.
+
+Volendo, però, evitare lo streaming ed inserire direttamente un file audio nella pagina web, si utilizza il seguente codice:
+
+```html
+<audio controls autoplay>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    <source src="horse.wav" type="audio/wav">
+</audio>
+```
+
+Allo stesso modo, per inserire direttamente un file video, si utilizza il seguente codice:
+
+```html
+<video controls autoplay width="800px" height="600px" poster="poster.png">
+    <source src="horse.mp4" type="video/mp4">
+    <source src="horse.ogg" type="video/ogg">
+    <source src="horse.webm" type="video/webm">
+    <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
+</video>
+```
+
+Come si vede, entrambe le etichette ``audio`` e ``video`` hanno gli attributi:
+
+- ``mute``, per silenziare il video;
+- ``loop``, per riavviare l'audio o il video una volta terminato;
+- ``autoplay``, per avviare automaticamente l'audio o il video; Le specifiche indicano che deve essere usato insieme all'attributo
+  ``mute`` per poter effettuare l'autoplay sui dispositivi mobile;
+- ``controls``, per visualizzare i pulsanti di controllo "play", "pause", "stop", ....
+- ``controlsList``, una lista di tre possibili valori:
+    1. ``nodownload`` non permette all'utente di scaricare il file;
+    2. ``nofullscreen`` non permette all'utente di vedere il video a tutto schermo;
+    3. ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto.
+
+Essendo una lista, l'attributo ``controlsList`` può avere uno o più valori, come nel seguente esempio: ``controlsList="nodownload nofullscreen noremoteplayback"``.
+
+Ovviamente, solo l'etichetta video ha gli attributi:
+
+- ``poster``, l'immagine di anteprima da mostrare;
+- ``width``, la larghezza del video (in pixel);
+- ``height``, l'altezza del video (in pixel).
+
+Entrambe le etichette ``audio`` e ``video`` fanno uso dell'etichetta ``source``, per indicare i video o gli audio da riprodurre. Di questi, solo uno viene effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il primo file che riesce a riprodurre (in base ai formati supportati).
+
+L'etichetta ``source`` prevede diversi attributi, ma alcuni sono ad uso esclusivo per le immagini, per cui quelli maggiormente utilizzabili per **audio e video** sono:
+
+- ``src``, per indicare il percorso del file da riprodurre;
+- ``type``, per indicare il mime-type del file da riprodurre. Tra i possibili mime-type **audio** abbiamo ``audio/mpeg`` (per i file mp3), ``audio/wav`` e ``audio/ogg`` per i file audio wav/ogg. Tra i possibili mime-type **video** abbiamo ``video/mp4``, ``video/webm`` e ``video/ogg`` per i rispettivi file.
+
+L'etichetta ``video`` permette anche di specificare dei possibili sottotitoli da mostrare sopra il video. I sottotitoli sono indicati nelle etichette ``track``, che prevede i seguenti attributi:
+
+- ``label``, una descrizione, generalmente la lingua del sottotitolo;
+- ``kind``, il tipo di traccia (per ora subtitles);
+- ``srclang`` il codice del linguaggio;
+- ``src`` il percorso del file di sottotitoli; Il formato del file è VTT;
+- ``default`` il sottotitolo da mostrare di default.
