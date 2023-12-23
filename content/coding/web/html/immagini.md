@@ -7,7 +7,7 @@ publishdate: 2019-08-26
 lastmod: 2022-10-15
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: false
+draft: true
 toc: false
 summary: "HTML Lez. 04 - Etichette per audio, video, immagini e collegamenti a risorse esterne"
 weight: 9670
