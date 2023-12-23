@@ -54,13 +54,86 @@ references:
 
 # Struttura, layout ed elementi multimediali
 
-Un documento HTML generalmente contiene informazioni relative alla pagina web, come l'autore della pagina, la descrizione dei contenuti o un'immagine di anteprima ed ha un proprio layout, ovvero una propria impaginazione e struttura grafica che serve ad indicare la posizione e la dimensione degli elementi sugli schermi di computer, smartphone e tablet.
+Un documento HTML generalmente contiene **informazioni** relative alla pagina web, come l'autore della pagina, la descrizione dei contenuti o un'immagine di anteprima ed ha un proprio **layout**, ovvero una propria impaginazione e struttura grafica che serve ad indicare la posizione e la dimensione degli elementi sugli schermi di computer, smartphone e tablet.
 
-Le informazioni aggiuntive sono dette **metadati** e, sebbene quasi tutte facoltative, sono utilizzatissime da social network e motori di ricerca per catalogare la pagina e mostrarne un'anteprima.
+Le informazioni aggiuntive sono dette "metadati" e, sebbene quasi tutte facoltative, sono utilizzatissime da social network e motori di ricerca per catalogare la pagina e mostrarne un'anteprima.
 
-Il layout grafico è gestito attraverso i **CSS**, ovvero i fogli di stile grafico che definiscono colore, dimensione e posizione degli elementi della pagina web. Il layout si poggia su una struttura basilare che indica ad esempio l'area in cui è situato il menu laterale, l'area destinata al piè di pagina e l'area dei contenuti pubblicitari. Ognuno di questi elementi della struttura basilare è descritto attraverso un'apposita etichetta del linguaggio HTML.
+Il layout grafico è gestito attraverso i "CSS", ovvero i fogli di stile grafico che definiscono colore, dimensione e posizione degli elementi della pagina web. Il layout si poggia su una struttura basilare che indica ad esempio l'area in cui è situato il menu laterale, l'area destinata al piè di pagina e l'area dei contenuti pubblicitari. Ognuno di questi elementi della struttura basilare è descritto attraverso un'apposita etichetta del linguaggio HTML.
 
-A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile scegliere l'immagine o il video che meglio si adatta, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
+A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile selezionare gli **elementi multimediali** (immagini o video) che meglio si adattano, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
+
+## Struttura basilare
+
+La struttura basilare di una pagina web è definita dalle seguenti etichette HTML:
+
+- L'etichetta ``header`` rappresenta un contenuto introduttivo o un gruppo di contenuti introduttivi in un documento o in una sezione. Solitamente contiene elementi come il logo del sito, il titolo della pagina o la navigazione principale;
+- L'etichetta ``nav`` definisce una sezione di navigazione all'interno di un documento HTML. Solitamente contiene link a diverse pagine o sezioni del sito web.
+- L'etichetta ``main`` rappresenta il contenuto principale di un documento HTML. È unico all'interno del documento e dovrebbe contenere solo il contenuto direttamente correlato a quella pagina specifica.
+- L'etichetta ``article`` rappresenta un contenuto autonomo e indipendente all'interno di un documento HTML. Può essere utilizzato per articoli di notizie, post di blog, commenti o altre sezioni di contenuto simili.
+- L'etichetta ``section`` definisce una sezione generica di contenuto in un documento HTML. È utilizzata per raggruppare insieme contenuti correlati. Può essere utilizzata per creare una struttura gerarchica nel documento.
+- L'etichetta ``aside`` rappresenta un contenuto non strettamente attinente, separato dal contenuto principale del documento. Solitamente contiene informazioni correlate, come barre laterali, note o contenuti pubblicitari.
+- L'etichetta ``footer`` rappresenta una sezione di contenuto di un documento HTML che contiene informazioni di chiusura, come i dettagli di contatto, i link ai social media o le informazioni di copyright. È spesso posizionata alla fine della pagina web.
+
+Un esempio di struttura di una pagina web che utilizza queste etichette è la seguente:
+
+![Esempio di struttura di una pagina web](/static/coding/web/html/webPageStructure.png "Esempio di struttura di una pagina web")
+
+La struttura mostrata nell'esempio precedente viene realizzata attraverso il codice HTML seguente:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- metadati obbligatori, vanno nelle prime posizioni -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Esempio di struttura</title>
+  </head>
+  <body>
+    <!-- contenuto introduttivo -->
+    <header>
+      <h1>Nome del sito web</h1>
+    </header>
+
+    <!-- sezione di navigazione -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articoli</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+    </nav>
+  
+    <!-- contenuto principale -->
+    <main>
+    
+      <!-- sezione -->
+      <section>
+        <h2>Sezione 1</h2>
+        <p>Contenuto della sezione 1...</p>
+      </section>
+
+      <!-- articolo -->
+      <article>
+        <h2>Titolo dell'articolo</h2>
+        <p>Contenuto dell'articolo...</p>
+      </article>
+    </main>
+  
+    <!-- informazioni separate -->
+    <aside>
+      <h3>Informazioni correlate</h3>
+      <p>contenuto non strettamente attinente</p>
+    </aside>
+
+    <footer>
+      <p>informazioni di chiusura</p>
+    </footer>
+  </body>
+</html>
+```
+
+Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto.
 
 ## Metadati
 
@@ -215,80 +288,7 @@ Il file ``manifest.webmanifest`` descrive le icone da utilizzare attraverso le s
 }
 ```
 
-## Struttura basilare
-
-La struttura basilare di una pagina web è definita dalle seguenti etichette HTML:
-
-- L'etichetta ``header`` rappresenta un contenuto introduttivo o un gruppo di contenuti introduttivi in un documento o in una sezione. Solitamente contiene elementi come il logo del sito, il titolo della pagina o la navigazione principale;
-- L'etichetta ``nav`` definisce una sezione di navigazione all'interno di un documento HTML. Solitamente contiene link a diverse pagine o sezioni del sito web.
-- L'etichetta ``main`` rappresenta il contenuto principale di un documento HTML. È unico all'interno del documento e dovrebbe contenere solo il contenuto direttamente correlato a quella pagina specifica.
-- L'etichetta ``article`` rappresenta un contenuto autonomo e indipendente all'interno di un documento HTML. Può essere utilizzato per articoli di notizie, post di blog, commenti o altre sezioni di contenuto simili.
-- L'etichetta ``section`` definisce una sezione generica di contenuto in un documento HTML. È utilizzata per raggruppare insieme contenuti correlati. Può essere utilizzata per creare una struttura gerarchica nel documento.
-- L'etichetta ``aside`` rappresenta un contenuto non strettamente attinente, separato dal contenuto principale del documento. Solitamente contiene informazioni correlate, come barre laterali, note o contenuti pubblicitari.
-- L'etichetta ``footer`` rappresenta una sezione di contenuto di un documento HTML che contiene informazioni di chiusura, come i dettagli di contatto, i link ai social media o le informazioni di copyright. È spesso posizionata alla fine della pagina web.
-
-Un esempio di struttura di una pagina web che utilizza queste etichette è la seguente:
-
-![Esempio di struttura di una pagina web](/static/coding/web/html/webPageStructure.png "Esempio di struttura di una pagina web")
-
-La struttura mostrata nell'esempio precedente viene realizzata attraverso il codice HTML seguente:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- metadati obbligatori, vanno nelle prime posizioni -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Esempio di struttura</title>
-  </head>
-  <body>
-    <!-- contenuto introduttivo -->
-    <header>
-      <h1>Nome del sito web</h1>
-    </header>
-
-    <!-- sezione di navigazione -->
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Articoli</a></li>
-        <li><a href="#">Contatti</a></li>
-      </ul>
-    </nav>
-  
-    <!-- contenuto principale -->
-    <main>
-    
-      <!-- sezione -->
-      <section>
-        <h2>Sezione 1</h2>
-        <p>Contenuto della sezione 1...</p>
-      </section>
-
-      <!-- articolo -->
-      <article>
-        <h2>Titolo dell'articolo</h2>
-        <p>Contenuto dell'articolo...</p>
-      </article>
-    </main>
-  
-    <!-- informazioni separate -->
-    <aside>
-      <h3>Informazioni correlate</h3>
-      <p>contenuto non strettamente attinente</p>
-    </aside>
-
-    <footer>
-      <p>informazioni di chiusura</p>
-    </footer>
-  </body>
-</html>
-```
-
-Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto.
-
-## Multimedialità e interattività
+## Elementi multimediali
 
 La multimedialità è una forma di comunicazione caratterizzata dalla compresenza e interazione di più linguaggi (testi scritti, immagini, suoni, animazioni) in uno stesso supporto o contesto informativo.
 
