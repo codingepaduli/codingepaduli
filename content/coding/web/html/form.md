@@ -1,15 +1,15 @@
 ---
 type: "html"
-title: "HTML Lez. 10 - Richiesta e trasmissione dati al server"
-description: "HTML Lez. 10 - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
+title: "HTML Lez. 09 - Moduli di invio dati e trasmissione dati al server"
+description: "HTML - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
 date: 2019-09-28
 publishdate: 2019-09-28
 lastmod: 2019-09-28
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: true
+draft: false
 toc: false
-summary: "HTML Lez. 10 - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
+summary: "HTML - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
 weight: 9310
 
 references:
@@ -19,7 +19,7 @@ references:
         description: "A W3C Markup Validation Service for your web pages"
 ---
 
-# Collegamenti e moduli di invio dati per la trasmissione dati al server
+# Moduli di invio dati e trasmissione dati al server
 
 Il server web espone le proprie risorse ed i propri servizi su un indirizzo web, detto URL, che identifica univocamente una risorsa.
 

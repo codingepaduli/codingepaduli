@@ -11,7 +11,7 @@ keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
 summary: "HTML Lez. 08 - Accessibilità ovvero il diritto a fruire dei sistemi informatici e delle risorse a disposizione attraverso l'uso di tecnologie assistive"
-weight: 9190
+weight: 9320
 
 references:
     -   title: "Web Accessibility Initiative (WAI)"

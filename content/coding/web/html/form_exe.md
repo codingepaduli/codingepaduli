@@ -1,19 +1,63 @@
 ---
 type: "html"
-title: "HTML Lez. 10.1 - Esercizi sui moduli di invio dati"
-description: "HTML Lez. 10.1 - Esercizi sui moduli di invio dati"
+title: "HTML Lez. 09.1 - Esercizi sui moduli di invio dati"
+description: "HTML - Esercizi sui moduli di invio dati"
 date: 2019-10-28
 publishdate: 2019-10-28
 lastmod: 2019-10-28
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: true
+draft: false
 toc: false
-summary: "HTML Lez. 10.1 - Esercizi e quiz di comprensione sui moduli di invio dati"
-weight: 9250
+summary: "HTML - Esercizi e quiz di comprensione sui moduli di invio dati"
+weight: 9308
 ---
 
 # Esercizi e quiz sui moduli di invio dati
+
+## Creazione di un modulo di invio dati di registrazione utente
+
+Realizzare un modulo di registrazione contenente i seguenti campi con i relativi vincoli:
+
+- nome (obbligatorio)
+- cognome (obbligatorio)
+- eta ( numerico >18)
+- data di nascita (obbligatorio data, < data odierna)
+- codice fiscale (lunghezza = 16 caratteri)
+- sesso (obbligatorio radio, scelta singola)
+- pulsante di invio  (con azione "formaction" per invio **dati personali**)
+- provincia (obbligatorio, con lista suggerimenti)
+- comune (obbligatorio, con lista suggerimenti)
+- via
+- numero civico (numerico, >1 && < 1000)
+- pulsante di invio  (con azione "formaction" per invio dati **residenza**)
+- email (obbligatorio, tipo email)
+- password (obbligatorio, tipo password)
+- ora di invio (tipo orario)
+- pulsante di invio  (con azione "formaction" per invio **account**)
+- interessi (checkbox, scelta multipla)
+- segni particolari
+- statura
+- colore occhi
+- colore capelli
+- stato civile
+- professione
+- cittadinanza
+- pulsante di invio e di reset
+
+Scrivi un commento copiando i punti richiesti nella traccia e scrivendo per ognuno se l'hai fatto completamente (esempio: ora di invio con tipo orario: FATTO con requisiti).
+
+<!-- markdownlint-disable MD036 -->
+
+|         |                       |        |
+---       | ---                   | ---    | ---  | ---
+Esercizio | Struttura pagina web  |  Form  |  Commenti, indentazione e validazione | Totale Punti
+Max punti |       2               |  6  |  2  |  2
+Punti     |                       |     |     |
+
+**Cognome ______________ Nome ______________ Classe __________ Data __________**
+
+<!-- markdownlint-enable MD036 -->
 
 ## Creazione di un form di invio dati
 
