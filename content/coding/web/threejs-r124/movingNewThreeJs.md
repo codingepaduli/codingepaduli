@@ -7,7 +7,7 @@ publishdate: 2023-12-16
 lastmod: 2023-12-16
 categories: ["coding", "web", "three.js"]
 keywords: ["coding", "web", "three.js"]
-draft: true
+draft: false
 toc: false
 summary: "Transizione al nuovo Three.js ES6"
 weight: 8980

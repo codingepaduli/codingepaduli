@@ -7,7 +7,7 @@ publishdate: 2023-12-16
 lastmod: 2023-12-16
 categories: ["coding", "web", "three.js"]
 keywords: ["coding", "web", "three.js"]
-draft: true
+draft: false
 toc: false
 summary: "Tour volante della città"
 customJS: ["/static/coding/web/threejs-r124/lib/three.js", "/static/coding/web/threejs-r124/lib/GLTFLoader.js", "/static/coding/web/threejs-r124/tourVolanteCitta.js"]
