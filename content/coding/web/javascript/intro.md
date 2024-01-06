@@ -161,7 +161,7 @@ Per inserire uno script **inline**, lo si può allegare nelle etichette HTML, ov
 Si supponga, ad esempio, di voler associare al ``click`` su un pulsante, realizzato tramite l'etichetta ``button``, uno script (composto da una sola istruzione) ``alert('Script contenuto inline');``. Il codice risultante sarà il seguente:
 
 ```html
-<input type="button" onclick="alert('Script contenuto inline');">
+<button onclick="alert('Script contenuto inline');">Clicca</button>
 ```
 
 Si nota che nella stessa riga di codice è presente sia il codice HTML sia il codice JavaScript (inline).
@@ -196,4 +196,34 @@ I file esterni ovviamente conterranno gli script, come nel seguente esempio:
 "use strict";
 
 alert("script contenuto in un file esterno");
+```
+
+## Compilazione Script con Deno
+
+[Deno](https://deno.com/) è un ambiente di esecuzione JavaScript che permette di creare programmi eseguibili a partire dai file sorgenti.
+
+Una volta salvato lo script in un file ``script.js`` (attenzione all'estensione ``.js``), è possibile procedere alla compilazione eseguendo il comando:
+
+```javascript
+deno compile script.js
+```
+
+Tra le opzioni disponibili, abbiamo:
+
+- ``--allow-read`` permette la lettura del file-system;
+- ``--allow-write`` permette la scrittura sul file-system;
+- ``--allow-net`` permette l'accesso alla rete;
+- ``--allow-env`` permette l'accesso alle informazioni d'ambiente;
+- ``--allow-sys`` permette l'accesso alle informazioni del sistema operativo;
+
+Per compilare con la lista di permessi indicata, il comando è il seguente:
+
+```javascript
+deno compile --allow-read --allow-write --allow-net --allow-sys script.js
+```
+
+L'output del programma è il seguente:
+
+```plaintext
+Compile file:///home/user/script.js to myapp.exe
 ```
