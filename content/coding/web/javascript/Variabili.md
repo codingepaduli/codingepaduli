@@ -9,7 +9,7 @@ spellcheck: 2020-12-11
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
-toc: false
+toc: true
 summary: "Dichiarazione di costanti e variabili per i vari tipi di dato"
 ---
 
@@ -233,6 +233,238 @@ Un esempio di dichiarazione di variabile con valore ancora non definito è il se
 ```javascript
 let variabileIndefinita;
 let variabileIndefinita2 = undefined;
+```
+
+## Operatori basilari
+
+Una volta dichiarata una variabile, è possibile inizializzarne il valore iniziale e, successivamente, modificarne il valore utilizzando l'operatore di assegnazione ``=``. Ad esempio:
+
+```javascript
+let x = 3;
+x = 5;
+x = 7;
+```
+
+L'operatore di somma ``+`` permette di sommare i valori numerici e/o i valori delle variabili. Ad esempio:
+
+```javascript
+alert(5 + 7);
+let x = 3;
+x = 5 + 7;
+x = x + 2;
+```
+
+L'operatore di sottrazione ``-`` permette di sottrarre i valori numerici e/o i valori delle variabili. Ad esempio:
+
+```javascript
+alert(7 - 5);
+let x = 3;
+let y = 7 - x - 2;
+y = y - 1;
+```
+
+L'operatore di moltiplicazione ``*`` permette di moltiplicare i valori numerici e/o i valori delle variabili. Ad esempio:
+
+```javascript
+alert(7 * 5);
+let x = 3;
+x = 7 * 2;
+x = x * x * 2;
+```
+
+L'operatore di divisione ``/`` permette di dividere i valori numerici e/o i valori delle variabili. Ad esempio:
+
+```javascript
+alert(8 / 4);
+let x = 4;
+x = 8 / 2;
+x = x / 2;
+```
+
+## Istruzioni di input
+
+In programmazione, le funzioni di input sono quelle funzioni che permettono ad un programma di ricevere dati dall'esterno. Le funzioni di input permettono all'utente di inserire in input i dati che il programma utilizza per effettuare calcoli.
+
+### Istruzione di input ``prompt``
+
+La funzione JavaScript progettata per inserire in input un valore è ``prompt``, la cui firma è la seguente:
+
+```plaintext
+Syntax: prompt(msg)
+
+Parameters:
+    msg    String: message to show
+
+Return:
+    the input value
+```
+
+Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici.
+
+Il valore inserito dall'utente può essere memorizzato all'interno di una variabile.
+
+Un esempio d'uso della funzione, che in questo caso memorizza l'input dell'utente nella variabile ``x`` (da dichiarare), è il seguente:
+
+```javascript
+let x = prompt("inserisci un valore");
+```
+
+### Input di un numero intero
+
+L'input dell'utente può essere una qualsiasi sequenza di caratteri alfanumerici. Quando si necessita di un input numerico intero allora lo si deve **convertire** al formato intero con la funzione ``parseInt``, che ha la seguente sintassi:
+
+```plaintext
+Syntax: parseInt(str)
+
+Parameters:
+  str    String: the string to convert to integer type
+
+Return:
+  Number: the converted number
+```
+
+Il parametro ``str`` rappresenta la stringa da convertire in numero.
+
+Il valore convertito può essere memorizzato all'interno di una variabile.
+
+Un esempio di input numerico intero, che viene memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
+
+```javascript
+let x = prompt("inserisci un numero");
+x = parseInt(x);
+```
+
+### Input di un numero decimale
+
+Quando si necessita di un input numerico decimale allora si deve convertire l'input dell'utente al formato decimale con la funzione ``parseFloat``, che ha la seguente sintassi:
+
+```plaintext
+Syntax: parseFloat(str)
+
+Parameters:
+  str    String: the string to convert to float type
+
+Return:
+  Number: the converted number
+```
+
+Il parametro ``str`` rappresenta la stringa da convertire in numero.
+
+Il valore convertito può essere memorizzato all'interno di una variabile.
+
+Un esempio di input numerico decimale, che viene memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
+
+```javascript
+let x = prompt("inserisci un numero");
+x = parseFloat(x);
+```
+
+## Tecnica della variabile contatore
+
+La **tecnica della variabile contatore** è un modello molto utilizzato nella scrittura degli algoritmi e consiste nell'utilizzare una variabile per contare il numero di volte in cui è eseguita una determinata azione o avviene un determinato evento.
+
+Per implementare questa tecnica è necessario:
+
+1. dichiarare una variabile numerica contatore;
+2. inizializzarla al valore numerico da cui far partire il contatore (generalmente zero o uno);
+3. Ogni volta che viene eseguita l'azione o si verifica l'evento, la variabile contatore deve essere incrementata di uno.
+
+Di questa tecnica esiste la variante dell'incremento anticipato, in cui il contatore viene incrementato di 1 **prima** che venga eseguita l'azione o che si verifichi l'evento.
+
+### Esempio di conteggio del numero di valori inseriti
+
+Di seguito, un esempio completo d'applicazione della variabile contatore per contare il numero di valori inseriti dall'utente.
+
+```javascript
+// dichiaro la variabile contatore
+let contatore;
+
+// inizializzo la variabile contatore
+contatore = 0;
+
+// ogni volta che l'utente inserisce un numero,
+// incremento la variabile contatore
+let x1 = prompt("Inserisci il primo numero");
+contatore = contatore + 1;
+
+let x2 = prompt("Inserisci il secondo numero");
+contatore = contatore + 1;
+
+let x3 = prompt("Inserisci il terzo numero");
+contatore = contatore + 1;
+
+let x4 = prompt("Inserisci il quarto numero");
+contatore = contatore + 1;
+```
+
+### Esempio di conteggio pre-incrementato del numero di valori inseriti
+
+Di seguito, un esempio completo d'applicazione della variabile contatore con incremento anticipato per numerare i valori inseriti.
+
+```javascript
+// dichiaro la variabile contatore
+let contatore;
+
+// inizializzo la variabile contatore
+contatore = 0;
+
+// incremento la variabile contatore
+// prima che l'utente inserisca il numero,
+contatore = contatore + 1;
+let x1 = prompt("Inserisci il primo numero");
+
+contatore = contatore + 1;
+let x2 = prompt("Inserisci il secondo numero");
+
+contatore = contatore + 1;
+let x3 = prompt("Inserisci il terzo numero");
+
+contatore = contatore + 1;
+let x4 = prompt("Inserisci il quarto numero");
+```
+
+## Tecnica della variabile accumulatore
+
+La **tecnica della variabile accumulatore** consiste nell'utilizzare una variabile nella quale accumulare il valore di una serie di dati, man mano che questi si presentano, in modo da poter utilizzare il valore totale alla fine.
+
+Per implementare questa tecnica è necessario:
+
+1. dichiarare una variabile numerica accumulatore;
+2. inizializzarla al valore numerico opportuno (generalmente zero o uno);
+3. Ogni volta che si presenta un dato, lo si somma o sottrae al valore presente nell'accumulatore.
+
+### Esempio di somma di 4 numeri
+
+Di seguito, un esempio completo d'applicazione della variabile accumulatore per sommare i numeri inseriti dall'utente.
+
+```javascript
+// dichiaro la variabile accumulatore
+let accumulatore;
+let num1, num2, num3, num4;
+
+// inizializzo la variabile accumulatore
+accumulatore = 0;
+
+// ogni volta che viene generato un numero casuale
+// lo accumulo nella variabile accumulatore
+num1 = prompt("Inserisci il primo numero");
+num1 = parseInt(num1);
+accumulatore = accumulatore + num1;
+
+num2 = prompt("Inserisci il secondo numero");
+num2 = parseInt(num2);
+accumulatore = accumulatore + num2;
+
+num3 = prompt("Inserisci il terzo numero");
+num3 = parseInt(num3);
+accumulatore = accumulatore + num3;
+
+num4 = prompt("Inserisci il quarto numero");
+num4 = parseInt(num4);
+accumulatore = accumulatore + num4;
+
+alert("Il valore totale è ");
+alert(accumulatore);
 ```
 
 ## Uso della console JavaScript
