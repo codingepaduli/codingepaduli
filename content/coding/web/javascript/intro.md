@@ -150,8 +150,8 @@ alert("Hello World!!");
 
 JavaScript è un linguaggio nato per rendere dinamiche le pagine web. Questo significa che gli script sono legati alla pagina web. Esistono tre differenti tipi di legami che permettono ad uno script di interagire con la pagina web:
 
-- uno script può essere **inline**, ovvero legato in una delle etichette HTML che lo permettono;
-- uno script può essere direttamente contenuto nella pagina HTML, definito nell'etichetta ``script``;
+- uno script può essere **inline**, ovvero inserito in una delle etichette HTML che lo permettono;
+- uno script può essere contenuto nella pagina HTML, definito nell'etichetta ``script``;
 - uno script può essere collegato come file JavaScript esterno, indicando il collegamento nell'etichetta ``script``;
 
 ### Script inline
@@ -181,13 +181,20 @@ Può essere difficoltoso e inopportuno, per questioni di leggibilità del codice
 
 ### Script in file esterno
 
-Generalmente è consigliato separare il codice HTML dal codice JavaScript, per cui, rispetto alla pagina web, il codice JavaScript è contenuto in un file esterno, tipicamente con estensione ``.js``.  Per includere nella pagina web uno script contenuto in un file esterno, si utilizza l'etichetta ``script``, specificando nell'attributo ``src`` il percorso o l'indirizzo del file esterno.
+Generalmente è consigliato separare il codice HTML dal codice JavaScript, per cui, rispetto alla pagina web, il codice JavaScript è contenuto in un file esterno, tipicamente con estensione ``.js``.  Per includere nella pagina web uno script contenuto in un file esterno, si utilizza l'etichetta ``script``, specificando nell'attributo ``src`` il percorso o l'indirizzo del file esterno. E' possibile indicare due tipi di riferimenti:
 
-Di seguito un esempio di un primo file specificato mediante un percorso relativo ed un secondo file specificato mediante un percorso assoluto (un indirizzo web):
+- **Riferimenti assoluti**: La pagina web individua i file JavaScript utilizzando un percorso completo, indicando il sito web, il percorso ed il file. Un esempio è il seguente:
 
-```javascript
-<script src="file.js"></script>
-<script src="www.google.com/javascript/file.js"></script>
+```html
+<script src="https://sitoweb.com/libs/script.js"></script>
+<script src="https://sitoweb.com/libs/altroScript.js"></script>
+```
+
+- **Riferimenti relativi**: La pagina web individua i file JavaScript utilizzando un percorso relativo alla posizione della pagina stessa. Un esempio è il seguente:
+
+```html
+<script src="script.js"></script>
+<script src="./libs/altroScript.js"></script>
 ```
 
 I file esterni ovviamente conterranno gli script, come nel seguente esempio:
@@ -196,6 +203,32 @@ I file esterni ovviamente conterranno gli script, come nel seguente esempio:
 "use strict";
 
 alert("script contenuto in un file esterno");
+```
+
+### Progetto in una cartella locale
+
+E' possibile creare un semplice progetto locale in una cartella.
+
+![JavaScript - Progetto locale](/static/coding/web/javascript/javascript-progetto.png "JavaScript - Progetto locale")
+
+La pagina web contiene i riferimenti agli script:
+
+```html
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+
+    <!-- Riferimenti agli script -->
+    <script src="script.js"></script>
+    <script src="altroScript.js"></script>
+  </head>
+  <body>
+    <h1>Progetto JavaScript</h1>
+  </body>
+</html>
 ```
 
 ## Compilazione Script con Deno
