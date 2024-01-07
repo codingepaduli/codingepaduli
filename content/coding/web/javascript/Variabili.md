@@ -9,7 +9,7 @@ spellcheck: 2020-12-11
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
-toc: true
+toc: false
 summary: "Dichiarazione di costanti e variabili per i vari tipi di dato"
 ---
 
