@@ -14,234 +14,16 @@ summary: "Usare le variabili per creare animazioni e memorizzare lo stato"
 weight: 8680
 ---
 
-# Costanti e variabili
+# Variabili in processing e p5.js
 
-Le costanti e le variabili sono aree di memoria in cui vengono memorizzate le informazioni di un programma in esecuzione, come immagini, suoni, frasi o valori numerici.
+I programmi di processing e di p5.js sono realizzati in JavaScript, quindi le costanti e le variabili si dichiarano secondo le regole del linguaggio JavaScript. Le regole di JavaScript valgono anche per le operazioni di inizializzazione, di assegnazione, per le operazioni matematiche e per qualsiasi altra regola.
 
-Come si può intuire dal nome, le variabili contengo informazioni che possono essere modificate durante l'esecuzione del programma, mentre le costanti contengono informazioni non modificabili.
-
-Le costanti e le variabili hanno le seguenti caratteristiche:
-
-- sono identificate da un nome;
-- sono associate ad un certo tipo di dato, come ad esempio dati numerici interi o decimali, dati booleani (vero o falso), dati alfanumerici (frasi);
-- possono avere assegnato un valore iniziale;
-
-La creazione di una costante o di una variabile di un programma avviene utilizzando un'istruzione di **dichiarazione**, che **alloca** in memoria la costante o la variabile e le associa un nome ed un tipo di dato.
-
-Per assegnare un valore iniziale ad una variabile o ad una costante si utilizza l'operazione di **inizializzazione**.
-
-## Sintassi
-
-La **dichiarazione delle variabili** avviene utilizzando la parola chiave ``let`` seguita dai nomi delle variabili separati da virgola. L'istruzione di dichiarazione termina con il carattere "punto e virgola" ``;``. Un esempio di dichiarazione è il seguente:
-
-```javascript
-let x, y, diametro;
-```
-
-L'inizializzazione delle variabili avviene utilizzando l'operatore di assegnazione ``=`` seguito dal valore iniziale, come nel seguente esempio:
-
-```javascript
-let x = 20;
-let y = 100;
-let diametro = 50;
-```
-
-La **dichiarazione delle costanti** avviene utilizzando la parola chiave  ``const`` seguita dal nome della costante, dall'operatore di assegnazione ``=`` e dal valore iniziale. L'istruzione di dichiarazione termina con il carattere "punto e virgola" ``;``. Un esempio di dichiarazione di costanti è la seguente:
-
-```javascript
-const X = 10;
-const VALORE_Y = 20;
-```
-
-### Sintassi dei nomi
-
-I nomi che possono identificare una variabile o una costante devono rispettare le seguenti regole:
-
-- il nome non può iniziare con un carattere numerico;
-- il nome non può contenere spazi;
-- il nome può essere composto solo da caratteri alfanumerici e qualche carattere di punteggiatura come il trattino basso, non altri caratteri;
-- ogni nome identifica una sola area di memoria, quindi non può essere utilizzato per una seconda variabile o costante;
-- il nome non può essere uguale alle parole utilizzate dal linguaggio di programmazione;
-
-Un esempio di nomi di variabili che rispettano le regole indicate sono ``a``, ``b``, ``valore1``, ``valore2`` e ``coloreDelQuadrato``.
-
-Ecco invece alcuni nomi che non rispettano le regole indicate:
-
-- ``1a`` e ``2valore`` non validi perché iniziano con un numero;
-- ``a 1`` e ``secondo valore`` non validi perché contengono spazi;
-- ``variabile-1`` e ``variabile%5`` non validi perché contengono caratteri non ammessi, come il trattino ``-`` e la percentuale ``%``;
-- ``const`` perché è una parola chiave del linguaggio di programmazione (serve a dichiarare le costanti).
-
-### Regole stilistiche dei nomi
-
-Per i nomi delle variabili esiste una regola stilistica che consiglia di utilizzare solo caratteri alfanumerici e di scriverli con **carattere a cammello** (in inglese "camelCase"), ovvero tutte le parole che compongono il nome vengono unite (togliendo gli spazi), trasformando tutte le loro iniziali, tranne la prima, in maiuscolo. Ad esempio, per il calcolo della "media punti delle partite effettuate" si può dichiarare una variabile con nome ``mediaPuntiDellePartiteEffettuate``.
-
-Anche per i nomi delle costanti esiste una regola stilistica che consiglia di scriverle trasformando tutti i **caratteri in maiuscolo** e trasformando gli spazi in "trattino basso" (in inglese "underscore"). Ad esempio, per il valore "pi greco mezzi" si può dichiarare una costante con nome ``PI_GRECO_MEZZI``.
-
-## Tipi di dato e sintassi
-
-Costanti e variabili sono associate ad un tipo di dato che può essere **primitivo** o **complesso**.
-
-A variabili e costanti associate ad un tipo primitivo è possibile associare un solo valore, mentre a quelle associate ad un tipo complesso è possibile associare liste di valori, oggetti e altre entità più complesse.
-
-La gestione del tipo di dato fa una forte differenza nei linguaggi di programmazione.
-
-Il linguaggio di programmazione si dice tipizzato **dinamicamente** se ad una variabile è possibile assegnare un valore di un certo tipo di dato e, successivamente, un valore di un tipo di dato differente.
-
-Il linguaggio di programmazione si dice tipizzato **staticamente** se ad una variabile è possibile assegnare valori esclusivamente di un certo tipo di dato. Se si tenta di assegnare successivamente un valore di un tipo di dato differente, viene generato un errore.
-
-### Tipo booleano
-
-Le variabili possono avere assegnato un valore logico, detto Booleano, che può essere ``true`` oppure ``false``.
-
-Il termine Booleano deriva dal matematico George Boole, che descrisse in forma algebrica la logica delle proposizioni.
-
-Un esempio di dichiarazione di variabili a cui viene associato un tipo booleano è il seguente:
-
-```javascript
-let trueVariable = true;
-let falseVariable = false;
-```
-
-### Tipo numerico
-
-Le variabili possono avere assegnato un valore numerico, e quindi il tipo associato sarà numerico. Queste variabili possono avere un valore intero o decimale. Un esempio di dichiarazione di variabili a cui viene associato un tipo numerico è il seguente:
-
-```javascript
-let naturalNumber = 10;
-let realNumber = 10.5;
-```
-
-Il valore intero può essere rappresentato in decimale, esadecimale e binario.
-
-La rappresentazione decimale del valore da assegnare avviene nella forma classica, come nel seguente esempio:
-
-```javascript
-let naturalNumber = 10;
-```
-
-La rappresentazione esadecimale si esprime anteponendo al valore da assegnare alla variabile il simbolo ``0x``, come nel seguente esempio:
-
-```javascript
-let naturalNumberHexadecimal = 0xFF;
-```
-
-La rappresentazione binaria si esprime anteponendo al valore da assegnare alla variabile il simbolo ``0b``, come nel seguente esempio:
-
-```javascript
-let naturalNumberBinary = 0b010111;
-```
-
-Il valore intero o decimale può essere espresso in [notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica "Link a Wikipedia sulla notazione scientifica"), nella classica forma **mantissa**, simbolo ``e`` (indicante l'esponenziale) ed **esponente**, come nel seguente esempio:
-
-```javascript
-let realNumberExponentiation = 0.1E100;
-```
-
-Tra i valori numerici esistono dei casi particolari:
-
-- `Nan` valore utilizzato per indicare un risultato che [Non è un Numero](https://it.wikipedia.org/wiki/NaN "Link a Wikipedia su Not A Number") (dall'inglese Not a Number). Questo valore è assegnato quando si tentano operazioni del tipo "radice quadrata di meno uno", che non ha risultato nell'insieme dei numeri reali;
-- ``Infinity`` utilizzato per indicare un valore infinito. Può essere specificato l'infinito positivo ``+Infinity`` o anche negativo ``-Infinity``.
-
-```javascript
-let positiveInfinity = +Infinity;
-let negativeInfinity = -Infinity;
-```
-
-### Tipo stringa
-
-Le variabili possono avere assegnata una sequenza di caratteri e quindi il tipo associato sarà "stringa". La sequenza di caratteri deve essere racchiusa tra singoli apici ``'`` o doppi apici ``"``.
-
-Un esempio di dichiarazione di variabile a cui viene associato un tipo stringa è il seguente:
-
-```javascript
-let stringVariable = 'Una stringa';
-let stringVariable2 = 'Seconda stringa';
-```
-
-Per definire una sequenza di caratteri che occupi più righe, si può racchiudere tra apici inversi `` ` ``, come nel seguente esempio:
-
-```javascript
-let stringVariable = `Una
-stringa`;
-```
-
-Questo tipo di definizione è utilizzato anche per concatenare variabili o il risultato di un'espressione all'interno della stringa. Le variabili e le espressioni devono essere racchiuse tra simboli ``${`` e ``}``, come nel seguente esempio:
-
-```javascript
-let num1 = 9;
-let num2 = 18;
-let messaggio = `La somma dei
-numeri ${num1} e ${num2}
-vale ${num1 + num2}.`;
-```
-
-L'esempio precedente produce il seguente output (su più righe):
-
-```output
-La somma dei
-numeri 9 e 18
-vale 27.
-```
-
-### Tipo oggetto
-
-Un oggetto in ambito informatico è un dato complesso che risiede in memoria ed ha più proprietà ed anche dei metodi. Tipicamente la creazione di un oggetto è effettuata attraverso la parola chiave ``new``.
-
-L'operazione di inserimento di un oggetto in memoria è detta **allocazione**, quindi tecnicamente un oggetto è **allocato** in memoria.
-
-Un esempio di oggetto può essere una persona, che contiene proprietà quali nome, cognome, data di nascita, ecc..
-
-```javascript
-let persona = {
-    firstname: "John",
-    lastname: "Doe",
-    id: 5566
-};
-```
-
-### Tipi oggetto wrapper
-
-E' possibile creare una versione ad oggetti (detta "wrapper") dei tipi primitivi di dato, siano essi numerici, stringhe o booleani:
-
-```javascript
-var naturalNumberObj = new Number(10);
-let realNumberObj = new Number(10.5);
-let toBeOrNotToBeObj = new Boolean(true);
-var vectorObj = new String("one");
-```
-
-Come si nota, la parola chiave ``new`` viene utilizzata per creare degli oggetti.
-
-### Tipo null
-
-Il valore ``null`` è un valore speciale che si utilizza per indicare un oggetto non ancora allocato in memoria.
-
-Un esempio di dichiarazione di variabile di tipo oggetto non ancora allocato in memoria è il seguente:
-
-```javascript
-let persona = null;
-```
-
-### Tipo undefined
-
-Il valore ``undefined`` è un valore speciale che si utilizza per indicare una variabile il cui valore non è ancora definito.
-
-Un esempio di dichiarazione di variabile con valore ancora non definito è il seguente:
-
-```javascript
-let variabileIndefinita;
-let variabileIndefinita2 = undefined;
-```
-
-## Variabili in processing
-
-In processing le variabili sono dichiarate ad inizio del programma. Di seguito un esempio completo:
+Tipicamente in processing e p5.js le costanti e le variabili sono dichiarate ad inizio del programma, ad esempio:
 
 ```javascript
 let x = 100;
 let y = 150;
-let d = 50;
+const d = 50;
 let frase = "Hello world!";
 
 function setup() {
@@ -255,38 +37,14 @@ function draw() {
 }
 ```
 
-## Istruzione di input ``prompt``
-
-In programmazione le funzioni di input sono quelle funzioni che permettono ad un programma di ricevere dati dall'esterno. Le funzioni di input permettono all'utente di inserire in input i dati che il programma utilizza per effettuare calcoli.
-
-La funzione progettata allo scopo è ``prompt``, la cui firma è la seguente:
-
-```plaintext
-Syntax: prompt(msg)
-
-Parameters:
-    msg    String: message to show
-
-Return:
-    the input value
-```
-
-Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici.
-
-Il valore inserito dall'utente può essere memorizzato all'interno di una variabile.
-
-Un esempio d'uso della funzione, che in questo caso memorizza l'input dell'utente nella variabile ``x`` (da dichiarare), è il seguente:
-
-```javascript
-x = prompt("inserisci un valore");
-```
+La funzione JavaScript ``prompt``, che visualizza un messaggio alfanumerico all'utente e permette di memorizzare all'interno di una variabile il valore inserito in input dall'utente, si utilizza con un'accortezza:
 
 Dato che questa funzione blocca il programma in attesa di un input dell'utente, deve essere utilizzata nella funzione ``setup``, come nel seguente esempio:
 
 ```javascript
 let x = 100;
 let y = 150;
-let d;
+let d = 50;
 let frase;
 
 function setup() {
@@ -302,61 +60,20 @@ function draw() {
 }
 ```
 
-### Input di un numero intero
-
-L'input dell'utente può essere una qualsiasi sequenza di caratteri alfanumerici. Quando si necessita di un input numerico intero allora lo si deve convertire al formato intero con la funzione ``parseInt``, che ha la seguente sintassi:
-
-```plaintext
-Syntax: parseInt(str)
-
-Parameters:
-  str    String: the string to convert to integer type
-
-Return:
-  Number: the converted number
-```
-
-Il parametro ``str`` rappresenta la stringa da convertire in numero.
-
-Il valore convertito può essere memorizzato all'interno di una variabile.
-
-Un esempio di input numerico intero, che viene memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
-
-```javascript
-x = prompt("inserisci un numero");
-x = parseInt(x);
-```
-
-### Input di un numero decimale
-
-Quando si necessita di un input numerico decimale allora si deve convertire l'input dell'utente al formato decimale con la funzione ``parseFloat``, che ha la seguente sintassi:
-
-```plaintext
-Syntax: parseFloat(str)
-
-Parameters:
-  str    String: the string to convert to float type
-
-Return:
-  Number: the converted number
-```
-
-Il parametro ``str`` rappresenta la stringa da convertire in numero.
-
-Il valore convertito può essere memorizzato all'interno di una variabile.
-
-Un esempio di input numerico decimale, che viene memorizzato nella variabile ``x`` (da dichiarare), è il seguente:
-
-```javascript
-x = prompt("inserisci un numero");
-x = parseFloat(x);
-```
-
 ## Istruzione di output ``text``
 
 In programmazione le funzioni di output sono quelle funzioni che producono un risultato visibile all'utente o al sistema in cui viene eseguito il programma. Le funzioni di output determinano cosa viene stampato a schermo, mostrato su un'interfaccia utente o salvato in un file.
 
-La funzione ``text`` è un esempio di funzione di output, infatti è utilizzata per visualizzare testo o variabili in output nell'area da disegno, inserendo come primo parametro della funzione la variabile da mostrare e specificando come successivi parametri le coordinate in cui si desidera visualizzare il testo.
+Le funzioni per l'output nella console possono essere utilizzate come di consueto, ma in processing e in p5.js si preferisce utilizzare la funzione di output ``text`` che permette di visualizzare testo e/o variabili nell'area da disegno. Questa funzione ha la seguente sintassi:
+
+```plaintext
+Syntax: text(value, x, y)
+
+Parameters:
+  value    String: text to be displayed.
+  x        Number: x-coordinate of the text
+  y        Number: y-coordinate of the text
+```
 
 Ad esempio, se si vuole visualizzare il valore della variabile ``j`` nell'area da disegno, si può utilizzare la seguente istruzione:
 
@@ -365,6 +82,26 @@ text(j, 10, 50);
 ```
 
 In questo caso, il primo parametro attuale è la variabile ``j``, i successivi parametri attuali sono le coordinate ``10`` e ``50``.
+
+Anche con la funzione ``text`` possiamo sfruttare l'operatore di concatenazione ``+`` per formare messaggi complessi. Ad esempio, alle coordinate (100, 30) possiamo visualizzare il messaggio composto dalle variabili inserite dall'utente / calcolate dal programma:
+
+```javascript
+let base;
+let altezza;
+
+function setup() {
+  createCanvas(400, 400);
+  base = prompt("inserisci la base del rettangolo");
+  altezza = prompt("inserisci l'altezza del rettangolo");
+  perimetro = base * altezza;
+}
+
+function draw() {
+  background(220);
+  circle(x, y, d);
+  text("perimetro = base * altezza = " + base + " * " + altezza + " = " + perimetro, 100, 30);
+}
+```
 
 ## Assegnazione di un valore casuale
 
