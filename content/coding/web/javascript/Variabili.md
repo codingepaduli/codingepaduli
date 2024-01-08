@@ -139,7 +139,7 @@ let realNumberExponentiation = 0.1E100;
 
 Tra i valori numerici esistono dei casi particolari:
 
-- `Nan` valore utilizzato per indicare un risultato che [Non è un Numero](https://it.wikipedia.org/wiki/NaN "Link a Wikipedia su Not A Number") (dall'inglese Not a Number). Questo valore è assegnato quando si tentano operazioni del tipo "radice quadrata di meno uno", che non ha risultato nell'insieme dei numeri reali;
+- `NaN` valore utilizzato per indicare un risultato che [Non è un Numero](https://it.wikipedia.org/wiki/NaN "Link a Wikipedia su Not A Number") (dall'inglese Not a Number). Questo valore è assegnato quando si tentano operazioni del tipo "radice quadrata di meno uno", che non ha risultato nell'insieme dei numeri reali;
 - ``Infinity`` utilizzato per indicare un valore infinito. Può essere specificato l'infinito positivo ``+Infinity`` o anche negativo ``-Infinity``.
 
 ```javascript
@@ -334,6 +334,22 @@ let x = prompt("inserisci un numero");
 x = parseInt(x);
 ```
 
+L'istruzione effettua la conversione delle cifre fino al primo carattere non numerico. Nel caso non esista nessun valore numerico, restituisce il valore ``NaN`` (Non è un Numero).
+
+```javascript
+parseInt("123.45");   // restituisce 123
+parseInt("123.45KG"); // restituisce 123
+parseInt("aaaa");     // restituisce NaN
+parseInt("0.1e6");    // restituisce 0, il punto non è numerico
+```
+
+L'istruzione presenta due caratteristiche importanti, permette le rappresentazioni in ottale, ovvero quelle che iniziano con ``0x``, e permette di convertire in una base differente da quella decimale, se specificata. Ad esempio:
+
+```javascript
+parseInt("0x77");     // restituisce 119 (= 7*16 + 7)
+parseInt("ZR", 36);   // restituisce 1289 (= 35*36 + 29)
+```
+
 ### Input di un numero decimale
 
 Quando si necessita di un input numerico decimale allora si deve convertire l'input dell'utente al formato decimale con la funzione ``parseFloat``, che ha la seguente sintassi:
@@ -357,6 +373,14 @@ Un esempio di input numerico decimale, che viene memorizzato nella variabile ``x
 ```javascript
 let x = prompt("inserisci un numero");
 x = parseFloat(x);
+```
+
+L'istruzione effettua la conversione tenendo sia conto del carattere di separazione dei decimali (il punto o la virgola), sia il formato esponenziale. Nel caso il valore da convertire non è un valore numerico, restituisce il valore ``NaN`` (Non è un Numero). Ad esempio:
+
+```javascript
+parseFloat(".3");    // restituisce 0.3
+parseFloat("0.1e6"); // restituisce 100000
+parseFloat("eee");   // restituisce NaN
 ```
 
 ## Tecnica della variabile contatore
