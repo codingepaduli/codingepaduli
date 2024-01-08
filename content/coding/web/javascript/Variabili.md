@@ -281,6 +281,21 @@ x = 8 / 2;
 x = x / 2;
 ```
 
+L'operatore di concatenazione ``+`` permette di concatenare due stringhe. E' molto utilizzato per creare messaggi, unendo frasi e variabili. Ad esempio, per realizzare un messaggio che mostra il calcolo del perimetro del quadrato si utilizza il seguente codice:
+
+```javascript
+let base = 2;
+let altezza = 4;
+let perimetro = base * altezza;
+alert("perimetro = base * altezza = " + base + " * " + altezza + " = " + perimetro);
+```
+
+In questo caso il messaggio è unito alle variabili ``base`` ed ``altezza`` ed infine alla variabile ``perimetro``, formando la stringa risultate:
+
+```plaintext
+perimetro = base * altezza = 2 * 4 = 8
+```
+
 ## Istruzioni di input
 
 In programmazione, le funzioni di input sono quelle funzioni che permettono ad un programma di ricevere dati dall'esterno. Le funzioni di input permettono all'utente di inserire in input i dati che il programma utilizza per effettuare calcoli.
