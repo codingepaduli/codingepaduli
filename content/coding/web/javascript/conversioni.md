@@ -55,35 +55,6 @@ Come si può notare, sia la variabile oggetto, sia le variabili con valore ``nul
 
 Una precisazione però è da fare sulla variabile inizializzata a ``null``: la specifica di ECMAScript prevede che, nonostante la variabile sia da considerare come tipo "null", l'operazione ``typeof null`` restituisca ``object``.
 
-## Conversioni tra tipi
-
-### Conversioni da stringa a numero
-
-Per convertire dati dal formato stringa al formato intero, si usa l'istruzione ``parseInt()``, come nell'esempio seguente:
-
-```javascript
-parseInt("123.45")   // restituisce 123
-parseInt("123.45KG") // restituisce 123
-parseInt("aaaa")     // restituisce NaN
-parseInt("0.1e6")    // restituisce 0 perchè legge solo il numero intero 0
-parseInt("0x77")     // restituisce 119 (= 7*16 + 7)
-```
-
-E' possibile convertire la stringa in un numero con una base specifica, come nell'esempio seguente:
-
-```javascript
-parseInt("ZR", 36) // restituisce 1289 (= 35*36 + 29)
-```
-
-Per convertire dati dal formato stringa al formato float, si usa l'istruzione ``parseFloat()``, come nell'esempio seguente:
-
-```javascript
-parseFloat(".3")    // restituisce 0.3
-parseFloat("0.1e6") // restituisce 100000
-```
-
-Per i numeri decimali, non è prevista la conversione del numero in una base specifica.
-
 ## Conversione da numero a stringa
 
 Per quanto concerne la conversione di un numero in formato stringa, è possibile utilizzare il metodo ``toString()`` dei tipi numerici, come nel seguente esempio:
