@@ -33,19 +33,9 @@ L'unione delle caratteristiche precedentemente elencate permette al programmator
 
 Di seguito vengono descritte le principali funzionalità di base che permettono di gestire lo stato e interagire con i principali dispositivi, rimandando alla documentazione ufficiale gli approfondimenti dei concetti avanzati.
 
-## Dimensioni area da disegno e finestra
-
-Quando il programmatore definisce le dimensioni dell'area da disegno, utilizzando la funzione ``createCanvas``, la larghezza e l'altezza dell'area da disegno vengono memorizzate automaticamente nelle rispettive variabili ``width`` ed ``height``.
-
-Le dimensioni della larghezza e dell'altezza della finestra corrente sono invece memorizzate nelle variabili ``windowWidth`` e ``windowHeight``.
-
-Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, e possono essere utilizzate per adattare i contenuti alla grandezza dello schermo, che può variare da dispositivo a dispositivo.
-
-Dato che l'utente può ruotare lo schermo con tablet e smartphone, la variabile ``deviceOrientation`` indica se lo schermo è orientato in orizzontale o verticale;
-
 ## Aggiornamento area da disegno
 
-L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi per secondo (in inglese frame per second), il cui acronimo è noto ai video-giocatori con la sigla "fps"); Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto, ma richiede una maggiore potenza di elaborazione.
+L'area da disegno viene ridisegnata con una frequenza misurata in fotogrammi per secondo (in inglese frame per second), il cui acronimo è noto ai video-giocatori con la sigla "fps"; Una frequenza elevata permette una visione più fluida dell'animazione generata o del filmato riprodotto, ma richiede una maggiore potenza di elaborazione.
 
 Il primo fotogramma dell'area da disegno è disegnato eseguendo le istruzioni contenute nella funzione ``setup``, che è eseguita una sola volta. Le istruzioni contenute nella funzione ``draw`` sono eseguite ciclicamente per generare i fotogrammi successivi, in modo da ridisegnare continuamente l'area di lavoro. Per ottenere la frequenza di ridisegno, si può utilizzare la funzione ``frameRate()``, come nel seguente esempio:
 
@@ -222,29 +212,6 @@ circle(mouseX - 100, mouseY + 0, 100);
 circle(mouseX + 0, mouseY + 0, 100);
 ```
 
-## Calcolo della distanza tra due punti
-
-Il calcolo della distanza tra due punti del piano è un'operazione fondamentale per verificare se due figure collidono.
-
-Il teorema di Pitagora permette una visualizzazione grafica molto intuitiva della formula utilizzata per calcolare la distanza tra due punti (x1, y1) ed (x2, y2). Sul famoso triangolo rettangolo, la base è calcolata dalla differenza tra le ascisse dei due punti, quindi (x2-x1), mentre l'altezza è calcolata come differenza tra le ordinate dei due punti, quindi (y2-y1). L'ipotenusa è quindi calcolata con la nota formula: "radice quadrata della somma tra il quadrato della base e il quadrato dell'altezza".
-
-![p5.js - Distanza tra due punti](/static/coding/web/p5js/distanzaPunti.png "p5.js - Distanza tra due punti")
-
-I tre passi per implementare la formula sono quindi i seguenti:
-
-```javascript
-let differenzaAscisse = x2 - x1;
-let differenzaOrdinate = y2 - y1;
-let distanza = Math.sqrt( differenzaAscisse^2 + differenzaOrdinate^2);
-```
-
-Un'osservazione importante è che se due punti si trovano sulla stessa ascissa, allora la differenza tra le ascisse è pari a zero e il calcolo della distanza si riduce alla radice quadrata del quadrato della differenza delle ordinate. Ma le operazioni di calcolo del quadrato e della radice quadrata sono l'una l'inverso dell'altra, per cui si annullano a vicenda e, quindi, la distanza sarà semplicemente la differenza tra le ordinate espressa in valore assoluto:
-
-```javascript
-let differenzaOrdinate = y2 - y1;
-let distanza = Math.sqrt(differenzaOrdinate^2);
-```
-
 ## Interazione con la tastiera
 
 L'input della tastiera è gestito in maniera completamente trasparente per il programmatore. Lo stato del dispositivo, rappresentato tasto premuto e dal codice ASCII del tasto premuto, è memorizzato nelle variabili ``key`` e ``keyCode``. Queste variabili sono dichiarate automaticamente, quindi non necessitano di una dichiarazione da parte del programmatore, ed il relativo valore resta disponibile in memoria fino a quando un nuovo pulsante viene cliccato.
@@ -252,31 +219,3 @@ L'input della tastiera è gestito in maniera completamente trasparente per il pr
 La differenza tra le due variabili è che la prima si usa per ottenere solo caratteri alfanumerici e di punteggiatura, la seconda variabile si usa per ottenere il codice del tasto, e non si limita ai caratteri alfanumerici e di punteggiatura, ma comprende tutti i tasti, ad esempio il tasto "invio", il tasto di cancellazione, i tasti corrispondenti alle frecce, e tutti gli altri.
 
 Sempre in maniera trasparente al programmatore, nella variabile ``keyIsPressed`` è automaticamente memorizzato il fatto che un (qualsiasi) tasto sia stato cliccato o meno, per cui questa variabile può assumere valore ``true`` o ``false``. Si deve prestare particolare attenzione a questa variabile, dato che alla pressione di un tasto, assume valore ``true`` ma, appena il tasto premuto viene lasciato, assume immediatamente valore ``false``.
-
-Si può richiedere un input all'utente e memorizzarlo in una variabile attraverso la funzione ``prompt(msg)``.
-
-Il parametro ``msg`` è un messaggio alfanumerico da visualizzare all'utente, per cui deve essere inserito tra doppi apici.
-
-Il valore inserito dall'utente può essere assegnato ad una variabile.
-
-Un esempio d'uso della funzione è il seguente:
-
-```javascript
-let x = prompt("inserisci un valore");
-```
-
-Tipicamente in processing le variabili vengono inserite nelle prime righe mentre la richiesta di input all'utente avviene durante la fase di configurazione, come nel seguente esempio:
-
-```javascript
-let lato = 0;
-
-function setup() {
-  createCanvas(400, 400);
-  lato = prompt("inserisci il lato del quadrato");
-}
-
-function draw() {
-  background(220);
-  square(30, 30, lato);
-}
-```
