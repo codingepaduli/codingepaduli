@@ -20,14 +20,13 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 # Scheletrizzazione della posa
 
-## (doesn't work on Firefox, why?)
+<!-- markdownlint-disable MD033 -->
 
 ![Pose landmarks (punti di riferimento della posa)](https://mediapipe.dev/images/mobile/pose_tracking_full_body_landmarks.png)
 
-<!-- markdownlint-disable MD033 -->
-
 <div class="container">
     <div id="handsModel"></div>
+    <button id="fullscreen">Fullscreen</button>
     <video class="input_video"></video>
 </div>
 
@@ -154,6 +153,18 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
         }
 
     }
+
+    const fullscreenBtn = document.querySelector("#fullscreen");
+
+    fullscreenBtn.addEventListener('click', function(event) {
+      if (!document.fullscreenElement) {
+        let canvasNode = document.querySelector('#defaultCanvas0');
+        canvasNode.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    });
+
 </script>
 
 <!-- markdownlint-enable MD033 -->

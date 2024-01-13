@@ -20,7 +20,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 # Scheletrizzazione mano
 
-## (doesn't work on Firefox, why?)
+<!-- markdownlint-disable MD033 -->
 
 <!-- L'errore su Firefox sembra simile a questo 
   <a href="https://github.com/google/mediapipe/issues/2704">https://github.com/google/mediapipe/issues/2704</a>  
@@ -29,10 +29,9 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 ![Hands landmarks (punti di riferimento della mano)](https://mediapipe.dev/images/mobile/hand_landmarks.png)
 
-<!-- markdownlint-disable MD033 -->
-
 <div class="container">
     <div id="handsModel"></div>
+    <button id="fullscreen">Fullscreen</button>
     <video class="input_video"></video>
 </div>
 
@@ -128,6 +127,18 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
             image(imgHand, handTopLeftX, handTopLeftY, handWidth, handHeight);
         }
     }
+
+    const fullscreenBtn = document.querySelector("#fullscreen");
+
+    fullscreenBtn.addEventListener('click', function(event) {
+      if (!document.fullscreenElement) {
+        let canvasNode = document.querySelector('#defaultCanvas0');
+        canvasNode.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    });
+
 </script>
 
 <!-- markdownlint-enable MD033 -->

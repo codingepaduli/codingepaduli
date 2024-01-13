@@ -24,6 +24,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 <div class="container">
     <div id="flappyBird"></div>
+    <button id="fullscreen">Fullscreen</button>
     <video class="input_video"></video>
 </div>
 
@@ -154,6 +155,18 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
         }
 
     }
+
+    const fullscreenBtn = document.querySelector("#fullscreen");
+
+    fullscreenBtn.addEventListener('click', function(event) {
+      if (!document.fullscreenElement) {
+        let canvasNode = document.querySelector('#defaultCanvas0');
+        canvasNode.requestFullscreen();
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    });
+
 </script>
 
 <!-- markdownlint-enable MD033 -->
