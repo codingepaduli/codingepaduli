@@ -16,15 +16,12 @@ weight: 8980
 
 # Tour paesaggio 3D
 
-<style>
-  .absolute {
-    position: absolute;
-    top: 20px;
-  }
-</style>
-
 Naviga con i tasti freccia.
+
+<!-- markdownlint-disable MD033 -->
 
 <canvas id="canvas" style="width: 100%; height: 100%;"></canvas>
 
 <button id="fullscreen">Fullscreen</button>
+
+<!-- markdownlint-enable MD033 -->
