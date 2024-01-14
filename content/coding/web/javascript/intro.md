@@ -55,7 +55,7 @@ references:
 
 ## Introduzione al linguaggio
 
-JavaScript e' un linguaggio di programmazione sviluppato inizialmente nel 1995 dalla Netscape Communications allo scopo di rendere dinamiche le pagine web visualizzabili attraverso il proprio browser Netscape. Il nome iniziale era LiveScript, proprio ad indicare che rendeva le pagine web "vive", poi il successo di un altro linguaggio di programmazione, Java, portò a cambiare il nome in JavaScript, poiché si voleva cavalcare a livello commerciale il successo di Java. A parte l'assonanza nel nome, i due linguaggi non condividono nessuna relazione, solo qualche similitudine nella sintassi che era ereditata dal linguaggio **C**.
+JavaScript è un linguaggio di programmazione sviluppato inizialmente nel 1995 dalla Netscape Communications allo scopo di rendere dinamiche le pagine web visualizzabili attraverso il proprio browser Netscape. Il nome iniziale era LiveScript, proprio ad indicare che rendeva le pagine web "vive", poi il successo di un altro linguaggio di programmazione, Java, portò a cambiare il nome in JavaScript, poiché si voleva cavalcare a livello commerciale il successo di Java. A parte l'assonanza nel nome, i due linguaggi non condividono nessuna relazione, solo qualche similitudine nella sintassi che era ereditata dal linguaggio **C**.
 
 I programmi scritti in JavaScript furono chiamati semplicemente **script** ed erano contenuti direttamente nella pagina web.
 
@@ -86,7 +86,7 @@ Essendo JavaScript un linguaggio interpretato, gli script non sono sottoposti al
 
 Come per gli altri linguaggi di programmazione, il codice sorgente è fatto di **istruzioni**. Per istruzioni si intendono **comandi** impartiti ad un **esecutore**. Nel caso di JavaScript, l'esecutore dei comandi è il browser, e, nello specifico, **l'interprete** (un componente software interno al browser).
 
-Le istruzioni di un programma JavaScript sono eseguite dall'**interprete** man mano che la pagina web viene "letta" dal browser, quindi l'ordine in cui il codice JavaScript è scritto nella pagina web è di primaria importanza. Nel caso sia presente un errore nel codice, in fase di esecuzione l'errore viene ignorato, quando possibile, oppure, in caso contrario, l'esecuzione termina appena si tenta di eseguire l'istruzione' errata (le istruzioni successive non sono eseguite, bloccando l'elaborazione in corso).
+Le istruzioni di un programma JavaScript sono eseguite dall'**interprete** man mano che la pagina web viene "letta" dal browser, quindi l'ordine in cui il codice JavaScript è scritto nella pagina web è di primaria importanza. Nel caso sia presente un errore nel codice, in fase di esecuzione l'errore viene ignorato, quando possibile, oppure, in caso contrario, l'esecuzione termina appena si tenta di eseguire l'istruzione errata (le istruzioni successive non sono eseguite, bloccando l'elaborazione in corso).
 
 In JavaScript sono presenti due modalità di esecuzione degli script:
 
@@ -129,7 +129,10 @@ Nell'esempio precedente si nota che il carattere di fine istruzione è presente 
 
 I commenti sono delle note, delle spiegazioni che il programmatore inserisce per descrivere e documentare parti di codice. In fase di esecuzione, i commenti sono completamente ignorati.
 
-JavaScript permette di commentare il codice su una sola riga utilizzando il simbolo ``//`` seguito dal commento, mentre i commenti su più righe includono i commenti tra i caratteri ``/*`` e ``*/``.
+In JavaScript, come nella maggioranza dei linguaggi di programmazione, è possibile inserire due tipi di commenti:
+
+- i commenti che occupano una sola riga, si inseriscono dopo la sequenza di caratteri ``//``. È importante porre attenzione a non inserire spazi tra i due caratteri ``/``. Una volta inserita questa sequenza, fino alla fine della riga i caratteri presenti nella riga saranno parte del commento.
+- i commenti che occupano più righe, si inseriscono tra le sequenze di caratteri ``/*`` e ``*/``. È importante porre attenzione a non inserire spazi tra le sequenze di caratteri indicati. Una volta inserita la sequenza di inizio commento ``/*``, tutti i caratteri seguenti, anche sulle righe successive, saranno parte del commento, per cui è obbligatorio chiudere il commento inserendo la sequenza di fine commento ``*/``.
 
 Un esempio di script che fa uso di commenti è il seguente:
 
@@ -181,7 +184,7 @@ Può essere difficoltoso e inopportuno, per questioni di leggibilità del codice
 
 ### Script in file esterno
 
-Generalmente è consigliato separare il codice HTML dal codice JavaScript, per cui, rispetto alla pagina web, il codice JavaScript è contenuto in un file esterno, tipicamente con estensione ``.js``.  Per includere nella pagina web uno script contenuto in un file esterno, si utilizza l'etichetta ``script``, specificando nell'attributo ``src`` il percorso o l'indirizzo del file esterno. E' possibile indicare due tipi di riferimenti:
+Generalmente è consigliato separare il codice HTML dal codice JavaScript, per cui, rispetto alla pagina web, il codice JavaScript è contenuto in un file esterno, tipicamente con estensione ``.js``.  Per includere nella pagina web uno script contenuto in un file esterno, si utilizza l'etichetta ``script``, specificando nell'attributo ``src`` il percorso o l'indirizzo del file esterno. È possibile indicare due tipi di riferimenti:
 
 - **Riferimenti assoluti**: La pagina web individua i file JavaScript utilizzando un percorso completo, indicando il sito web, il percorso ed il file. Un esempio è il seguente:
 
@@ -207,7 +210,7 @@ alert("script contenuto in un file esterno");
 
 ### Progetto in una cartella locale
 
-E' possibile creare un semplice progetto locale in una cartella.
+È possibile creare un semplice progetto locale in una cartella.
 
 ![JavaScript - Progetto locale](/static/coding/web/javascript/javascript-progetto.png "JavaScript - Progetto locale")
 

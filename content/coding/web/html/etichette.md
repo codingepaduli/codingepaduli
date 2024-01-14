@@ -188,9 +188,9 @@ Se si riguarda il codice riportato nell'esempio precedente, si può vedere che �
 
 ## Commenti
 
-La presenza di **commenti** è praticamente d'obbligo, poiché questi rappresentano informazioni aggiuntive e promemoria che chiariscono le intenzioni del programmatore.
+I **commenti** sono delle note, delle spiegazioni che il programmatore inserisce per descrivere e documentare parti di codice e che chiariscono le intenzioni del programmatore. Nella visualizzazione della pagina web i commenti sono completamente ignorati.
 
-I commenti si scrivono tra i caratteri ``<!--`` e ``-->``, l'unica attenzione da porre è che non devono essere presenti spazi tra i caratteri indicati. Un commento può occupare più righe.
+I commenti si scrivono tra le sequenze di caratteri ``<!--`` e ``-->``. E' importante porre attenzione a non inserire spazi tra le sequenze di caratteri indicati. Un commento può occupare più righe.
 
 Di seguito, un esempio di commento multilinea:
 
