@@ -600,6 +600,16 @@ let vettore = ['uno', 'due', 'tre'];
 console.table(vettore);
 ```
 
+È possibile selezionare le proprietà da visualizzare, filtrandole:
+
+```javascript
+let p1 = { nome: "Tyrone", cognome: "Jones"}
+let p2 = { nome: "Janet", cognome: "Smith"}
+let p3 = { nome: "Maria", cognome: "Cruz"}
+let vettore = [p1, p2, p3];
+console.table(vettore, ["nome"]);
+```
+
 ### Tempo di esecuzione
 
 Utilissima pure la scrittura in console del tempo di esecuzione intercorso tra due punti dello script, indicati dalle istruzioni ``console.time()`` e ``console.timeEnd()``:
@@ -627,3 +637,30 @@ console.dir(obj);
 Un esempio completo della console contenente l'output di tutte le istruzioni viste è il seguente:
 
 ![Console - output di tutte le istruzioni](/static/coding/web/javascript/javascript-console-primi-script.png "Console - output di tutte le istruzioni")
+
+### Alias e selezione oggetti
+
+Nella console è possibile utilizzare due alias per velocizzare la selezione degli elementi:
+
+- ``$('selettoreCSS')`` sta ad indicare ``document.querySelector('selettoreCSS')``;
+- ``$$('selettoreCSS')`` sta ad indicare ``document.querySelectorAll('selettoreCSS')``;
+
+Il testo ``'selettoreCSS'`` sta ad indicare un selettore CSS, per maggiori informazioni si rimanda alla lezione sull'argomento.
+
+I metodi della console permettono di selezionare uno specifico elemento oppure tutti gli elementi che hanno determinate caratteristiche e di mostrarle in un elenco. Ad esempio, per visualizzare tutti i collegamenti:
+
+```javascript
+console.table($$('a'), ['href']);
+```
+
+Come secondo esempio visualizziamo tutte le immagini presenti nella pagina ed il corrispondente testo alternativo:
+
+```javascript
+console.table($$('img'), ['src', 'alt']);
+```
+
+Se si vuole visualizzare una specifica immagine con identificativo ``img1`` ed il corrispondente testo alternativo:
+
+```javascript
+console.table($('#img1'), ['src', 'alt']);
+```
