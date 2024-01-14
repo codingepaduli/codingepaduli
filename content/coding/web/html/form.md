@@ -238,7 +238,7 @@ Un esempio dei vari attributi è il seguente:
 <label for="nome">nome utente:</label>
 <input id="nome" name="nomeUtente" required placeholder="Inserisci il nome qui (obbligatorio)">
 
-<input name="identificativo" hidden>
+<input name="identificativo" hidden >
 
 <label for="company">società:</label>
 <input id="company" name="company" readonly>
@@ -279,7 +279,7 @@ Di seguito il codice HTML che permette di inserire i dati per effettuare il logi
     <label>password</label>
     <input placeholder="inserisci la password" name="password">
 
-    <button type="submit" formaction="www.server.com/login" >Invia richiesta</button>
+    <button type="submit" formaction="www.server.com/login">Invia richiesta</button>
     <button type="reset">Ripristina valori iniziali</button>
 </form>
 ```
@@ -290,7 +290,7 @@ Il risultato è il seguente:
 
 #### Input testuale
 
-Il campo di input, se non diversamente specificato, permette l'inserimento di testo. E' comunque buona norma specificare il tipo testuale, indicando l'attributo ``type="text"``.
+Il campo di input, se non diversamente specificato, permette l'inserimento di testo. È comunque buona norma specificare il tipo testuale, indicando l'attributo ``type="text"``.
 
 Un campo di testo può avere dei vincoli di lunghezza minima e/o massima di caratteri. Questi vincoli si specificano attraverso gli attributi:
 
@@ -308,10 +308,12 @@ Si consiglia inoltre di fornire assistenza all'utente nell'inserimento del campo
 - ``autocomplete="country-name"`` per suggerirgli lo stato ("Italia");
 - ``autocomplete="cc-name"`` per suggerirgli il nome dell'intestatario del conto corrente.
 
-Un esempio di campo di testo con i vincoli descritti è il seguente:
+È consigliato inserire anche la direzione del testo, soprattutto se vi è la possibilità che un utente inserisca i dati in una lingua che prevede la direzione del testo da sinistra a destra, come l'arabo o l'ebraico. L'attributo ``dir="auto"`` permette al browser di scegliere la direzione del testo per il campo.
+
+Un esempio di campo di testo con i vincoli e gli attributi descritti è il seguente:
 
 ```html
-<input type="text" name="descrizione" minlenght="10" maxlenght="150" autocomplete="on">
+<input type="text" name="descrizione" minlenght="10" maxlenght="150" autocomplete="on" dir="auto">
 ```
 
 Il risultato è il seguente:
