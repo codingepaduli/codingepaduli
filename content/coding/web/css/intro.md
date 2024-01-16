@@ -327,7 +327,7 @@ body {
 }
 ```
 
-## Proprietà CSS di delimitazione
+## Proprietà di delimitazione elementi
 
 Le proprieta CSS di delimitazione degli elementi permettono di definire lo spazio interno e lo spazio esterno di un elemento e lo spazio di confine tra gli elementi.
 
@@ -527,6 +527,37 @@ p {
   border: 5px dotted #FF00FF;
 }
 ```
+
+La proprietà ``outline`` indica un margine stilizzato, ma la dimensione da indicare è ingannevole, perché non crea distanza tra il bordo del componente ed i componenti circostanti. Se si vuole creare la distanza, la proprietà  ``outline`` deve essere associata alla proprietà ``margin``, che indica la distanza.
+
+```css
+p {
+  border: 15px solid #FF00FF;
+  margin: 15px;
+  outline: 15px solid yellow;
+}
+```
+
+Tutte queste proprietà creano un modello "scatola" dei componenti, in cui lo spazio interno, il bordo e lo spazio esterno sono indicate dalle proprietà appena viste. Un esempio di questo modello è il seguente:
+
+```css
+h1, p {
+  /* Spazio interno e colore 
+     dello spazio interno. */
+  padding: 15px;
+  background:  cyan;
+
+  border: 15px solid #FF00FF;
+  
+  /* Margine e stile margine (outline) */
+  margin: 15px;
+  outline: 15px dashed yellow;
+}
+```
+
+Il codice appena presentato genera un margine tratteggiato di colore giallo, un bordo di colore rosa e uno spazio interno di colore azzurro, come visibile nella seguente figura:
+
+![Modello "box"](/static/coding/web/css/intro-modelloBoxCss.png "Modello box")
 
 ## Fogli di stile già pronti
 
