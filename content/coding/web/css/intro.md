@@ -24,6 +24,20 @@ Con l'avvento del linguaggio CSS, un sito web viene realizzato come un'insieme d
 
 Nel tempo questo linguaggio è diventando uno dei principali linguaggi del World Wide Web ed è stato standardizzato dal W3C. Attualmente sono state pubblicate tre versioni (CSS1, CSS2 e CSS3) che hanno aggiunto sempre più funzionalità, permettendo la personalizzazione di più di 3000 proprietà di un documento web.
 
+## Commenti
+
+I **commenti** sono delle note, delle spiegazioni che il programmatore inserisce per descrivere e documentare parti di codice e che chiariscono le intenzioni del programmatore. I commenti sono completamente ignorati nella fase in cui i fogli di stile sono applicati alla pagina web.
+
+I commenti si scrivono tra le sequenze di caratteri ``/*`` e ``*/``. È importante porre attenzione a non inserire spazi tra le sequenze di caratteri indicati. Un commento può occupare più righe.
+
+Di seguito, un esempio di commento multilinea:
+
+```html
+/* commento relativo i
+     contenuti dei
+     fogli di stile CSS */
+```
+
 ## Proprietà grafiche
 
 Una proprietà grafica è una coppia nome-valore. Le proprietà sono numerosissime, ognuna ha il suo nome ed un valore che può essere numerico oppure scelto da una lista di elementi.
@@ -184,7 +198,9 @@ Come si può notare, l'etichetta ``link`` ha due attributi:
 - l'attributo ``rel`` ha valore ``stylesheet``, ad indicare che si tratta di un foglio di stile;
 - l'attributo ``href`` indica l'indirizzo relativo o assoluto del foglio di stile; nell'esempio appena riportato, l'indirizzo relativo ``css/style.css`` è relativo al proprio sito web, mentre quello assoluto ``https://sitoweb.it/css/style.css`` non ha questo limite dato che viene indicato anche il nome del sito web;
 
-## Proprietà per il testo
+## Proprietà di formattazione testo
+
+Le proprietà di formattazione testo permettono di applicare al testo le formattazioni "grassetto", "corsivo", "sottolineato", permettono di indicare il colore del testo, il colore di sfondo e tutte le altre proprietà applicabili. Di seguito si elencano le principali:
 
 Per rendere il testo grassetto si utilizza la proprietà ``font-weight`` con valore ``bold``, come nel seguente esempio:
 
@@ -311,6 +327,207 @@ body {
 }
 ```
 
+## Proprietà CSS di delimitazione
+
+Le proprieta CSS di delimitazione degli elementi permettono di definire lo spazio interno e lo spazio esterno di un elemento e lo spazio di confine tra gli elementi.
+
+Lo spazio interno, detto anche riempimento interno (dall'inglese "padding") è lo spazio che si applica intorno ad un elemento, internamente al bordo, ovvero interno al confine tra l'elemento e gli altri elementi. È definito da quattro proprietà:
+
+Lo spazio interno superiore di un elemento è controllato dalla proprietà ``padding-top`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  padding-top: 1%;
+}
+```
+
+Lo spazio interno a destra di un elemento è controllato dalla proprietà ``padding-right`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  padding-right: 1rem;
+}
+```
+
+Lo spazio interno inferiore di un elemento è controllato dalla proprietà ``padding-bottom`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  padding-bottom: 2vh;
+}
+```
+
+Lo spazio interno a sinistra di un elemento è controllato dalla proprietà ``padding-left`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  padding-left: 3em;
+}
+```
+
+Complessivamente è possibile indicare la spaziatura interna con la proprietà ``padding`` ed indicare le dimensioni. Si deve indicare **rigorosamente** in ordine la dimensione dello spazio superiore, poi la dimensione dello spazio a destra, poi la dimensione dello spazio inferiore ed infine la dimensione dello spazio a sinistra. Un esempio è il seguente:
+
+```css
+p {
+  /* Spazio interno superiore, a destra, 
+     inferiore ed a sinistra. */
+  padding: 3em 1% 4px 4px;
+}
+```
+
+Lo spazio esterno, detto anche riempimento esterno (dall'inglese "margin") è lo spazio che si applica intorno ad un elemento, esternamente al bordo, ovvero esterno al confine tra l'elemento e gli altri elementi. È definito da quattro proprietà:
+
+Lo spazio esterno superiore di un elemento è controllato dalla proprietà ``margin-top`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  margin-top: 1%;
+}
+```
+
+Lo spazio esterno a destra di un elemento è controllato dalla proprietà ``margin-right`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  margin-right: 1rem;
+}
+```
+
+Lo spazio esterno inferiore di un elemento è controllato dalla proprietà ``margin-bottom`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  margin-bottom: 2vh;
+}
+```
+
+Lo spazio esterno a sinistra di un elemento è controllato dalla proprietà ``margin-left`` che indica la dimensione in una delle unità di misura CSS sopra definite, come nel seguente esempio:
+
+```css
+p {
+  margin-left: 3em;
+}
+```
+
+Complessivamente è possibile indicare la spaziatura esterna con la proprietà ``margin`` ed indicare le dimensioni. Si deve indicare **rigorosamente** in ordine la dimensione dello spazio superiore, poi la dimensione dello spazio a destra, poi la dimensione dello spazio inferiore ed infine la dimensione dello spazio a sinistra. Un esempio è il seguente:
+
+```css
+p {
+  /* Spazio interno superiore, a destra, 
+     inferiore ed a sinistra. */
+  margin: 3em 1% 4px 4px;
+}
+```
+
+Il bordo di un elemento è caratterizzato dallo spessore della linea, dallo stile e dal colore della linea.
+
+È possibile indicare lo spessore della linea del bordo attraverso le quattro proprietà:
+
+- ``border-top-width``: spessore del bordo superiore;
+- ``border-right-width``: spessore del bordo destro;
+- ``border-bottom-width``: spessore del bordo inferiore;
+- ``border-left-width``: spessore del bordo sinistro;
+
+Un esempio che indichi i valori della dimensione del bordo in una delle unità di misura CSS sopra definite è il seguente:
+
+```css
+border-top-width: 12px;
+border-right-width: 3%;
+border-bottom-width: 4rem;
+border-left-width: 2em;
+```
+
+In alternativa allo spessore, è possibile indica lo spessore con uno dei seguenti valori:
+
+- ``thin``: spessore della linea sottile;
+- ``medium``: spessore medio della linea;
+- ``thick``: spessore della linea consistente;
+
+Complessivamente è possibile indicare lo spessore del bordo con la proprietà ``border-width`` seguito dallo spessore. Si deve indicare **rigorosamente** in ordine lo spessore superiore, poi lo spessore a destra, poi lo spessore inferiore ed infine lo spessore a sinistra. Un esempio è il seguente:
+
+```css
+p {
+  /* Spessore bordo superiore, destro, 
+     inferiore e sinistro. */
+  border-width: thin 1% thick 4px;
+}
+```
+
+È possibile indicare lo stile della linea del bordo attraverso le quattro proprietà:
+
+- ``border-top-style``: style del bordo superiore;
+- ``border-right-style``: style del bordo destro;
+- ``border-bottom-style``: style del bordo inferiore;
+- ``border-left-style``: style del bordo sinistro;
+
+Il valore assegnabile è uno dei seguenti:
+
+- ``dotted``: Definisce uno stile punteggiato;
+- ``dashed``: Definisce uno stile tratteggiato;
+- ``solid``: Definisce uno stile lineare;
+- ``double``: Definisce uno stile a doppia linea;
+- ``groove``: Definisce uno stile 3D scanalato;
+- ``ridge``: Definisce uno stile 3D increspato;
+- ``inset``: Definisce uno stile 3D incastonato;
+- ``outset``: Definisce uno stile 3D in rilievo;
+- ``none``: Stile non applicato;
+- ``hidden``: Definisce uno stile non visibile;
+
+Un esempio che indichi i valori dello stile della linea del bordo è il seguente:
+
+```css
+border-top-style: dotted;
+border-right-style: dashed;
+border-bottom-style: solid;
+border-left-style: double;
+```
+
+Complessivamente è possibile indicare lo stile della linea del bordo con la proprietà ``border-style`` seguito dagli stili. Si deve indicare **rigorosamente** in ordine lo stile della linea del bordo superiore, poi lo stile della linea del bordo a destra, poi lo stile della linea del bordo inferiore ed infine lo stile della linea del bordo a sinistra. Un esempio è il seguente:
+
+```css
+p {
+  /* stile della linea bordo superiore, 
+     destro, inferiore e sinistro. */
+  border-style: red blue #00FF00 #FFFFFF;
+}
+```
+
+È possibile indicare il colore della linea del bordo attraverso le quattro proprietà:
+
+- ``border-top-color``: colore del bordo superiore;
+- ``border-right-color``: colore del bordo destro;
+- ``border-bottom-color``: colore del bordo inferiore;
+- ``border-left-color``: colore del bordo sinistro;
+
+Un esempio che indichi i valori del colore del bordo è il seguente:
+
+```css
+border-top-color: red;
+border-right-color: #00FF00;
+border-bottom-color: blue;
+border-left-color: #00FFFF;
+```
+
+Complessivamente è possibile indicare il colore del bordo con la proprietà ``border-color`` seguito dai colori. Si deve indicare **rigorosamente** in ordine il colore del bordo superiore, poi il colore del bordo a destra, poi il colore del bordo inferiore ed infine il colore del bordo a sinistra. Un esempio è il seguente:
+
+```css
+p {
+  /* Colore bordo superiore, destro, 
+     inferiore e sinistro. */
+  border-color: red blue #00FF00 #FFFFFF;
+}
+```
+
+È possibile specificare inoltre tutte le proprietà dei bordi attraverso un'unica proprietà ``border`` che specifica i valori di spessore della linea (proprietà ``border-width``), stile della linea (proprietà ``border-style``)e colore della linea del bordo (proprietà ``border-color``), rigorosamente nell'ordine appena indicato.  Un esempio è il seguente:
+
+```css
+p {
+  /* Spessore linea, stile linea e 
+     colore linea del bordo. */
+  border: 5px dotted #FF00FF;
+}
+```
+
 ## Fogli di stile già pronti
 
 Esistono numerosi stili CSS già pronti per l'utilizzo, è necessario solamente indicarli nella pagina HTML. Si può scegliere ad esempio uno dei seguenti:
@@ -333,7 +550,7 @@ MVP CSS
 <link rel="stylesheet" href="https://unpkg.com/mvp.css"> 
 ```
 
-Per iniziare a sperimentare, può utilizzare un menu a tendina dal quale scegliere lo stile, inserendo in pagina il codice seguente:
+Per iniziare a sperimentare, si può utilizzare un menu a tendina dal quale scegliere lo stile, inserendo in pagina il codice seguente:
 
 ```html
 <script src="https://dohliam.github.io/dropin-minimal-css/switcher.js" type="text/javascript"></script>
