@@ -9,7 +9,7 @@ categories: ["coding", "web", "CSS"]
 keywords: ["coding", "web", "CSS"]
 draft: false
 toc: false
-summary: "Il linguaggio CSS, l'evoluzione e le caratteristiche"
+summary: "Il linguaggio CSS, introduzione e proprietà principali"
 ---
 
 # Il linguaggio CSS
