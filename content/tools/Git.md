@@ -1,6 +1,6 @@
 ---
 type: "tools"
-title: "Introduzione a Git"
+title: "Git"
 description: "Git - Un sistema per il controllo di versione distribuito"
 date: 2020-07-01
 publishdate: 2020-07-01
@@ -10,6 +10,15 @@ keywords: ["coding", "tools"]
 draft: false
 toc: false
 summary: "Git - Un sistema per il controllo di versione distribuito"
+references:
+    -   title: "How to correct mistakes in Git"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://ohshitgit.com/"
+        description: "How to correct mistakes in Git"
+    -   title: "GitHub’s free, web-based editor"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.dev"
+        description: "GitHub’s free, web-based editor that runs entirely in your browser"
 
 comments:
     host: "mastodon.uno"
@@ -17,7 +26,7 @@ comments:
     id: 105468922720281480
 ---
 
-# Introduzione a Git ed ai sistemi per il controllo di versione
+# Git ed i sistemi per il controllo di versione
 
 Git è un sistema per il controllo di versione distribuito. Inizialmente sviluppato da Linus Torvalds per gestire lo sviluppo del kernel Linux, oggi è utilizzato dalle aziende informatiche di tutto il mondo.
 
@@ -812,6 +821,44 @@ All'utente è richiesto l'inserimento di un commento opzionale e di completare l
 Completata l'operazione, la pull request risulta correttamente fusa nel ramo di sviluppo indicato.
 
 ![GitHub - Merge della Pull Request - passo 4](/static/coding/tools/GitHub-MergePullRequest-step4.png "GitHub - Merge della Pull Request - passo 4")
+
+## Sottomoduli
+
+Il progetto che si sta sviluppando può dipendere da altri progetti. Queste dipendenze nella terminologia di Git sono dette **sottomoduli**.
+
+Dato che non è pratico copiare ed incollare questi sottomoduli nelle cartelle di progetto e poi aggiornarli o tenere traccia delle modifiche apportate, Git si occupa di gestire il tutto, memorizzando per ogni dipendenza l'URL del corrispondente repository GIT.
+
+Per aggiungere una dipendenza al progetto, si utilizza il comando:
+
+```bash
+git submodule add "Git repository URL"
+```
+
+Per cancellare una dipendenza al progetto, si utilizza il comando:
+
+```bash
+$ git rm -f childmodule
+```
+
+I comandi precedenti creano o modificano il file ``.gitmodules`` locato nella cartella di progetto.
+
+Per scaricare il progetto con tutte le sue dipendenze, si utilizza il comando:
+
+```bash
+git clone --recursive "Git repository URL"
+```
+
+Se si ha gia il progetto, ma si devono scaricare le dipendenze necessarie, si utilizza il comando:
+
+```bash
+git submodule update --init --recursive
+```
+
+Per aggiornare tutte le dipendenze si utilizza il comando:
+
+```bash
+git submodule update --remote
+```
 
 ## Aree di lavoro (worktree)
 
