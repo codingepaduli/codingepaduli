@@ -42,7 +42,7 @@ Quando si invoca un servizio, la richiesta può essere soddisfatta o meno, e ci�
 
 In alcuni casi, vengono effettuate 2 chiamate al server, la prima è necessaria per verificare che il server sia abilitato a ricevere la richiesta e la seconda effettua la richiesta a tutti gli effetti.
 
-### Metodi del protocollo HTTP per la gastione delle risorse
+### Metodi del protocollo HTTP per la gestione delle risorse
 
 I metodi previsti dal protocollo, che corrispondono alle operazioni da effettuare, sono i seguenti:
 
@@ -79,7 +79,7 @@ Ci sono utilizzi non sempre concordi sull'uso del metodo POST, ma le specifiche 
 I dati da inviare al servizio possono essere in formati diversi. Di seguito una spiegazione per ognuno di essi:
 
 - Formato "testo in chiaro" ``text/plain``: i dati sono inviati senza nessun tipo di codifica. Questo tipo di trasmissione non è pensata per l'invio dei dati verso un altro sistema informatico ma solo per l'analisi da parte di un tecnico, quindi per la lettura e la stampa dei dati;
-- Formato "URL-Encoded" ``application/x-www-form-urlencoded``: i dati vengono inviati come fossero parte di un'unica striga formata da coppie "chiave=valore". Le coppie sono separate tra loro dal carattere ``&`` ("e" commerciale) e sono codificate in codice **ASCII**. I caratteri non rappresentabili da un codice ASCII sono sostituiti da un carattere ``%`` ("percentuale") seguito da due cifre esadecimali. I caratteri di "nuova linea" vengono normalizzati, e gli spazi sono sostituiti con il carattere ``+`` o con il codice ``%20``;
+- Formato "URL-Encoded" ``application/x-www-form-urlencoded``: i dati vengono inviati come fossero parte di un'unica stringa formata da coppie "chiave=valore". Le coppie sono separate tra loro dal carattere ``&`` ("e" commerciale) e sono codificate in codice **ASCII**. I caratteri non rappresentabili da un codice ASCII sono sostituiti da un carattere ``%`` ("percentuale") seguito da due cifre esadecimali. I caratteri di "nuova linea" vengono normalizzati, e gli spazi sono sostituiti con il carattere ``+`` o con il codice ``%20``;
 - Formato "multipart" ``multipart/form-data``: E' il formato utilizzato per l'invio di file o per grandi quantità di dati. Ogni dato viene inviato in una propria parte del messaggio, contenente sia le informazioni relative al dato inviato, come ad esempio che si tratti di un campo di un form o che si tratti di un file, sia il valore del campo o il contenuto del file);
 - Formato "JSON" ``application/json``: E' il formato utilizzato per l'invio dei dati in formato JSON utilizzando la codifica "UTF-8".
 
@@ -136,7 +136,7 @@ Come si può notare dal codice, la funzione principale è ``fetch``, che indica 
 
 ### Effettuare la richiesta al server con le API Fetch
 
-La funzione ``fetch`` permette di specificare l' URL della richiesta da effettuare ed un secondo oggetto opzionale che speficica tutti dettagli relativi la richiesta da effettuare.
+La funzione ``fetch`` permette di specificare l' URL della richiesta da effettuare ed un secondo oggetto opzionale che specifica tutti dettagli relativi la richiesta da effettuare.
 Questo secondo oggetto opzionale contiene le seguenti proprietà:
 
 - ``method``: indica il tipo di richiesta HTTP;
@@ -194,18 +194,17 @@ const options = {
 };
 
 function callGetJSON() {
-    let source = document.querySelector('#loadImage');
+  let source = document.querySelector('#loadImage');
 
-    fetch('https://my-json-server.typicode.com/typicode/demo/posts/1', options)
-        .then( (response) => response.ok ? response.json() :
-                throw Error(`Request rejected with status ${response.status}`);
-            )
-        .then(
-            (post) => source.appendChild(document.createTextNode(`${post.id} ${post.title}`))
-        )
-        .catch( (error) => {
-            source.appendChild(document.createTextNode(`${error.name} ${error.message}`));
-        });
+  fetch('https://my-json-server.typicode.com/typicode/demo/posts/1', options)
+  .then( (response) => response.ok ? response.json() :
+      throw Error(`Request rejected with status ${response.status}`);
+  )
+  .then( (post) => source.appendChild(document.createTextNode(`${post.id} ${post.title}`))
+  )
+  .catch( (error) => {
+      source.appendChild(document.createTextNode(`${error.name} ${error.message}`));
+  });
 }
 ```
 
@@ -224,3 +223,76 @@ headers: { 'Content-Type': 'application/json' }, JSON.stringify(record) }
 // [https://i.imgur.com/X4vco9k.jpg](https://i.imgur.com/X4vco9k.jpg)
 
 <!-- markdownlint-enable MD033 -->
+
+## Chiamate AJAX con jQuery
+
+jQuery è uno strumento molto diffuso prima che esistessero le Fetch API ed ancora oggi utilizzatissimo. Permetteva di fare chiamate AJAX semplicemente, ad esempio:
+
+```javascript
+$("#idAjax1").load('index.html');
+```
+
+I dati da inviare si potevano ottenere dalla funzione ``serialize`` che trasformava un form in una **query string** da inviare:
+
+```javascript
+// query string: ?a=1&val2=vallll
+let dataToSend = $('#formId').serialize();
+```
+
+In alternativa si potevano ottenere serializzando un array e ricavando la **query string**:
+
+```javascript
+let elem1 = {name: "a", value: "1"};
+let elem2 = {name2: "val2", value: "vallll"}];
+
+// query string: ?a=1&val2=vallll
+let dataToSend = $.param( [elem1, elem2]);
+```
+
+Una chiamata AJAX in cui specificare indirizzo, protocollo, dati e la gestione del caso di successo o di errore poteva essere realizzata con il seguente codice:
+
+```javascript
+function ajaxCall(dataToSend, idTarget) {
+  $.ajax({
+    url:  "index.html",
+    type: "GET",
+    data: dataToSend,
+    success: function(result) {
+      $('' +idTarget).html(result);
+    },
+    error: function(xhr, textStatus, errorThrown) {
+      alert("Errore: textStatus: " + textStatus + " errorThrown " + errorThrown);
+
+      alert(formatErrorMessage(xhr, errorThrown));
+    }
+  });
+};
+```
+
+Una funzione di utilità che permetteva di indicare l'errore era la seguente:
+
+```javascript
+function formatErrorMessage(jqXHR, errorThrown) {
+  if (jqXHR.status === 0) {
+      return ('Not connected.\nPlease verify your network connection.');
+  } else if (jqXHR.status == 404) {
+      return ('The requested page not found. [404]');
+  } else if (jqXHR.status == 500) {
+      return ('Internal Server Error [500].');
+  } else if (errorThrown === 'parsererror') {
+      return ('Requested JSON parse failed.');
+  } else if (errorThrown === 'timeout') {
+      return ('Time out error.');
+  } else if (errorThrown === 'abort') {
+      return ('Ajax request aborted.');
+  } else {
+      return ('Uncaught Error.\n' + jqXHR.responseText);
+  }
+}
+```
+
+Una volta ottenuta la risposta, e' comodo effettuare ricerche nei dati ricevuti, con
+
+```javascript
+let datiFiltrati = $("selettore", data);
+```
