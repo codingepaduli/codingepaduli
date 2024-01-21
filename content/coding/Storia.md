@@ -20,7 +20,7 @@ weight: 1
 
 La storia del calcolo automatico nasce con **Pascal** che nel 1645 inventa la **pascalina**, la prima calcolatrice, basata su ingranaggi simili a quelli di un orologio, capace di svolgere somme e sottrazioni.
 
-Nel 1673 **Leibniz** migliora il progetto di Pascal è crea la sua calcolatrice, capace di effettuare le quattro operazioni con numeri di 16 cifre. Nel 1700 ideò l'algebra binaria, proponendo la conversione dei numeri decimali in numeri binari, e nel tentativo di unificare le sue idee con Dio realizzò un logo composto dalla sovrapposizione di un **1**  ed uno **0**, ad indicare che uno ed uno solo creò tutto dal nulla.
+Nel 1673 **Leibniz** migliora il progetto di Pascal è crea la sua calcolatrice, capace di effettuare le quattro operazioni con numeri di 16 cifre. Definì il sistema numerico binario, proponendo la conversione dei numeri decimali in numeri binari, ed articolò le operazioni di congiunzione, disgiunzione e negazione. Nel tentativo di unificare le sue idee con Dio realizzò un logo composto dalla sovrapposizione di un **1**  ed uno **0**, ad indicare che uno ed uno solo creò tutto dal nulla e, nello stesso tentativo, interpretò il diagramma del concetto cinese di "yin e yang" in una corrispondenza a **0** e **1**.
 
 Nel 1822 **Babbage** progetta la sua macchina delle differenze (o macchina differenziale), una macchina composta da 25000 ingranaggi capace di calcolare logaritmi e funzioni trigonometriche. Alcuni limiti tecnologici e la personalità scostante di Babbage non ne permisero la realizzazione, ma nel 1850 due scienziati svedesi  rivisitarono e semplificarono questo progetto e realizzarono la macchina differenziale.
 
