@@ -12,11 +12,11 @@ toc: false
 summary: "Esercizio sui tipi di dato e sulla console"
 ---
 
-# Esercizio sui tipi di dato e sulla console
+# Esercizi
 
-Dichiarare una variabile ed una costante per ogni tipo di dato primitivo ed, allo stesso modo, una variabile ed una costante per ogni tipo di dato "wrapper". Si utilizzino le regole stilistiche indicate per la composizione dei nomi. Dichiarate le variabili e le costanti, scrivere nella console il valore assegnato ad ognuna di esse.
+## Esercitazione d'uso della console
 
-## Esempio
+Dichiarare una variabile ed una costante per ogni tipo di dato primitivo ed, allo stesso modo, una variabile ed una costante per ogni tipo di dato "wrapper". Si utilizzino le regole stilistiche indicate per la composizione dei nomi. Dichiarate le variabili e le costanti, scrivere nella console il valore assegnato ad ognuna di esse. Ad esempio:
 
 ```javascript
 // variabile e costante numerica intera
@@ -69,3 +69,13 @@ console.log("" + naturalNumberObj + "->" + typeof naturalNumberObj);
 console.log("" + realNumberObj + "->" + typeof realNumberObj);
 console.log("" + toBeOrNotToBeObj + "->" + typeof toBeOrNotToBeObj);
 ```
+
+## Complemento a uno
+
+Creare una pagina web che permetta all'utente di effettuare il complemento a uno di un numero binario a quattro bit. La pagina web deve avere:
+
+- il titolo “Complemento ad 1 dei bit”;
+- un paragrafo in cui è presente la descrizione dell’operazione di complemento ad 1;
+- la lettura di 4 valori binari in input ed il risultato in output.
+
+Gli unici valori validi che l'utente può inserire sono ``0`` ed ``1``.Il programma deve effettuare il complemento ad 1 dei bit, ovvero deve sostituire ogni valore numerico ``1`` con il valore ``0`` e, viceversa, ogni valore numerico ``0`` con il valore ``1``.
