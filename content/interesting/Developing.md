@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2023-09-19
-publishdate: 2023-09-19
-lastmod: 2023-09-19
+date: 2024-01-20
+publishdate: 2024-01-20
+lastmod: 2024-01-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -58,22 +58,25 @@ summary: "Set di link relativi al coding"
 
 #### Vagrant and Virtual Machines
 
-[Vagrant](https://buildvirtual.net/using-vagrant-to-deploy-multiple-vms-on-vsphere/) - Deploy Multiple VMs on vSphere\
 [KVM/qemu](https://stackoverflow.com/questions/42155213/using-vagrant-to-set-up-a-vm-with-kvm-qemu-without-virtualbox) - Using Vagrant to set up a VM with KVM/qemu without VirtualBox\
 [vagrant-libvirt/vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support) - Vagrant provider for libvirt.\
-[Convert your Windows install into a VM on Linux | Opensource.com](https://opensource.com/article/21/1/virtualbox-windows-linux) - \
 
 #### Containers
 
-[Get Started with containers](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/) - Mircosoft explains what Containers, Docker and Kubernetes are\
-[docker-slim](https://github.com/docker-slim/docker-slim) - Minify and Secure your Docker\
+[Containers](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/) - Mircosoft explains what Containers, Docker and Kubernetes are\
 [Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
-[Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - \
-[Understanding Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
+[Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
+[Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 
 ### Ansible, Shell, CI, CD ed automazione
 
+[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
+[Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
+[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
+[Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
+[mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
+[xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
 
 #### PowerShell
 
@@ -91,18 +94,6 @@ summary: "Set di link relativi al coding"
 [Cargo](https://opensource.com/article/20/3/rust-cargo) - the Rust package manager\
 [Appimage, Snapcraft e Flatpak](https://www.lffl.org/2020/04/appimage-snapcraft-e-flatpak-i-formati-di-distribuzione-per-linux-a-confronto.html) - i formati di distribuzione per Linux a confronto\
 [Windows Package Manager](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - Preview\
-[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
-[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
-[Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
-[mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
-[xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
-[QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
-[QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
-[Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
-[QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
-[QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
-[QR-Code-generator/QrSegment at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
 
 ### AI
 
@@ -131,6 +122,7 @@ summary: "Set di link relativi al coding"
 [Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
 [Stable Diffusion Image generation](https://huggingface.co/spaces/stabilityai/stable-diffusion) - a Hugging Face Space by stabilityai\
 [Scribble Diffusion](https://scribblediffusion.com/) - \
+[Audiobox](https://audiobox.metademolab.com/) - Meta’s new foundation research model for audio generation. It can generate voices and sound effects using a combination of voice inputs and natural language text prompts\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -178,10 +170,6 @@ summary: "Set di link relativi al coding"
 ### GIT
 
 [Oh, shit, git!](http://ohshitgit.com/) - \
-[The Smart Ways to Correct Mistakes in Git | CSS-Tricks](https://css-tricks.com/the-smart-ways-to-correct-mistakes-in-git/) - \
-[Managing Git projects with submodules and subtrees | Opensource.com](https://opensource.com/article/20/5/git-submodules-subtrees) - \
-[Lazygit](https://opensource.com/article/20/3/lazygit) - Make advanced Git tasks simple  | Opensource.com\
-[hub](https://opensource.com/article/20/3/github-hub) - your Git command-line as fully featured as GitHub | Opensource.com\
 [ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
 [Generate semantic-release notes with GitHub Actions](https://dev.to/github/generate-semantic-release-with-github-actions-2lll) - DEV Community\
@@ -191,11 +179,7 @@ summary: "Set di link relativi al coding"
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
 [Create or Update PR Action](https://dev.to/mheap/create-or-update-pr-action-2bd7) - DEV Community\
 [Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
-["Support for password authentication was removed on August 13, 2021. Please use a personal access token instead."](https://dev.to/raystatic/support-for-password-authentication-was-removed-on-august-13-2021-please-use-a-personal-access-token-instead-2p99) - DEV Community\
 [How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
-[Gitpod](https://www.gitpod.io/) - Always ready to code\
-[3 Ways to Backup Your Code](https://dev.to/github/3-ways-to-backup-your-code-even-if-you-dont-know-git-1o5l) - Even If You Don’t Know Git - DEV Community\
-[Using SVN+SSH Protocol | Assembla Help Center](https://articles.assembla.com/en/articles/1137042-using-svn-ssh-protocol) - \
 
 ### Java
 
@@ -203,7 +187,6 @@ summary: "Set di link relativi al coding"
 [AdoptOpenJDK](https://adoptopenjdk.net/) - Open source, prebuilt OpenJDK binaries\
 [Wikibooks, manuali e libri di testo liberi](https://it.wikibooks.org/wiki/Java) - \
 [MokaByte 111](http://www.mokabyte.it/2006/09/javawebapp-1/) - Le applicazioni web e Java\
-[Sistemi Distribuiti LS](http://lia.deis.unibo.it/Courses/sd0809-info/) - slides\
 [HttpClient](http://hc.apache.org/httpclient-3.x/methods/multipartpost.html) - Multipart Post Method\
 [How to Import Maven Remote Archetype Catalogs in Eclipse](https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/) - \
 [SpotBugs](https://github.com/spotbugs/spotbugs) - spotbugs/spotbugs is FindBugs' successor. A tool for static analysis to look for bugs in Java code.\
@@ -228,6 +211,7 @@ summary: "Set di link relativi al coding"
 [Parsing config files with Java | Opensource.com](https://opensource.com/article/21/7/parsing-config-files-java) - \
 [10 syntax in Java You should know](https://dev.to/luanvu/10-syntax-in-java-you-should-know-1e2h) - DEV Community\
 [Processing IDE and p5.js in Java](https://happycoding.io/tutorials/java/processing-in-java) - Happy Coding\
+[Graphics for JVM @ tonsky.me](https://tonsky.me/blog/skija/) - \
 
 #### JDBC e JPA
 
@@ -235,12 +219,6 @@ summary: "Set di link relativi al coding"
 [Java Persistence API (JPA) Tutorials](http://www.objectdb.com/tutorial) - \
 [Standardized schema generation and data loading with JPA 2.1](https://www.thoughts-on-java.org/standardized-schema-generation-data-loading-jpa-2-1/) - \
 [Understanding JDBC Connection Pooling](http://www.developer.com/java/data/understanding-jdbc-connection-pooling.html) - \
-
-#### Apache OpenEJB
-
-[Apache OpenEJB Documentation](https://tomee.apache.org/documentation.html) - \
-[Apache OpenEJB examples](https://openejb.apache.org/examples/index.html) - \
-[EJB3 Tutorial](http://tomee.apache.org/ejb3-tutorial.html) - \
 
 #### Containers
 
@@ -404,19 +382,18 @@ summary: "Set di link relativi al coding"
 [Configurazione virtual host su web server Apache](http://www.compago.it/manuali/35-utilita/190-configurazione-web-server-apache-virtual-host.html) - \
 [Apache2 Config Generator](https://apacheconfig.live/) - Apache Configs the easy way\
 [fatal error](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/241817-fatal-error.html) - \
-[Chiarimenti su "Antifurto banda"](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/158679-chiarimenti-su-antifurto-banda.html) - \
 [Running Laravel on Docker is really easy with Kool](https://dev.to/kooldev/running-laravel-on-docker-is-really-easy-with-kool-400h) - DEV Community\
 
 ### Python
 
-[chriskiehl/Gooey Turn (almost) any Python command line program into a full GUI application with one line](https://github.com/chriskiehl/Gooey) - \
-[se2p/pynguin The PYthoN General UnIt Test geNerator is a test-generation tool for Python](https://github.com/se2p/pynguin) - \
+[chriskiehl/Gooey](https://github.com/chriskiehl/Gooey) - Turn (almost) any Python command line program into a full GUI application with one line\
+[se2p/pynguin](https://github.com/se2p/pynguin) - The PYthoN General UnIt Test geNerator is a test-generation tool for Python\
 [Learning Python](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - Intermediate course Day 10, Complex numbers part 2 - DEV Community\
 [Pyjion](https://www.trypyjion.com/) - A Python JIT Compiler\
-[Automatically manage Python dependencies with requirements.txt](https://dev.to/voilalex/automatically-manage-python-dependencies-with-requirementstxt-5g11) - DEV Community\
+[requirements.txt](https://dev.to/voilalex/automatically-manage-python-dependencies-with-requirementstxt-5g11) - Automatically manage Python dependencies with requirements.txt - DEV Community\
 [py_regular_expressions/interactive_exercises](https://github.com/learnbyexample/py_regular_expressions/tree/master/interactive_exercises) - A GUI app written in tkinter to help you practice Python regular expressions · GitHub\
-[4 line code to download full youtube playlist videos](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - DEV Community\
-[annotated-types/annotated-types: Reusable constraint types to use with typing.Annotated](https://github.com/annotated-types/annotated-types) - \
+[youtube playlist download](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - 4 line code to download full youtube playlist videos - DEV Community\
+[annotated-types/annotated-types](https://github.com/annotated-types/annotated-types) - Reusable constraint types to use with typing.Annotated\
 [Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
 
 ### Privacy, Security and Hacking
@@ -434,7 +411,7 @@ summary: "Set di link relativi al coding"
 [Panopticlick](https://panopticlick.eff.org/) - test how well you are protect against online tracking techniques\
 [LaZagne](https://github.com/AlessandroZ/LaZagne) - an open source application used to retrieve lots of passwords stored on a local computer by Firefox, Google Chrome, Skype, Pidgin, Outlook, Thunderbird, Keepass, Tortoise, Docker, FileZilla, GNOME Keyring, Kwallet, OpenSSH, OpenVPN and more\
 [Mimikatz](https://www.varonis.com/blog/what-is-mimikatz/) - a tool to steal credentials and escalate privileges;\
-[Python Malware On The Rise | Cyborg Security](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - \
+[Python Malware](https://www.cyborgsecurity.com/python-malware-on-the-rise/) - On The Rise | Cyborg Security\
 [ZeroSSL](https://scotthelme.co.uk/introducing-another-free-ca-as-an-alternative-to-lets-encrypt/) - another free CA as an alternative to Let's Encrypt\
 [devol/Servizi-Decentralizzati](https://gitea.it/devol/Servizi-Decentralizzati) - Elenco dei collettivi che ospitano volontariamente strumenti utilizzabili dal pubblico (o dagli attivisti) - Servizi-Decentralizzati - Gitea\
 [Motion](https://motion-project.github.io/index.html) - a program for video surveillance known as Closed-circuit television (CCTV), it monitors the video signal from cameras and detect motion ad changes.\
@@ -445,19 +422,19 @@ summary: "Set di link relativi al coding"
 #### Enhancing privacy
 
 [DuckDuckGo HTML version](https://html.duckduckgo.com/html) - a search engine without JavaScript\
-[7 WhatsApp alternatives that won’t share your data with Facebook](https://protonmail.com/blog/whatsapp-alternatives/) - \
-[How to blur your house on Google Street View (and why you should)](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - \
+[7 WhatsApp alternatives](https://protonmail.com/blog/whatsapp-alternatives/) - that won’t share your data with Facebook\
+[Google Street View](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - How to blur your house on Google Street View (and why you should)\
 [Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
 [LibreDNS](https://libredns.gr/) - a public encrypted DNS service that people can use to maintain the secrecy of their DNS traffic, but also circumvent censorship.\
-[DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - \
-[DNS Privacy with Oblivious DoH in 1.1.1.1](https://blog.cloudflare.com/oblivious-dns/) - \
+[DoH](https://www.cloudflare.com/it-it/learning/dns/dns-over-tls/) - DNS over TLS vs. DNS over HTTPS | Secure DNS | Cloudflare\
+[DoH](https://blog.cloudflare.com/oblivious-dns/) - DNS Privacy with Oblivious DoH in 1.1.1.1\
 [How tracking pixels work](https://jvns.ca/blog/how-tracking-pixels-work/) - \
-[What Is the Business Model for DuckDuckGo?](https://spreadprivacy.com/duckduckgo-revenue-model/) - \
+[DuckDuckGo](https://spreadprivacy.com/duckduckgo-revenue-model/) - What Is the Business Model for DuckDuckGo?\
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
 [De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
 [Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
 [Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
-[Firefox to add Tor Browser anti-fingerprinting technique called letterboxing](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - \
+[anti-fingerprinting](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - Firefox to add Tor Browser anti-fingerprinting technique called letterboxing\
 [OnionShare](https://www.lffl.org/2019/02/file-sharing-tor-onionshare-2.html) - File Sharing sicuro e criptato con Tor e il Tool OnionShare 2\
 [The Encrypted Email Problem](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) - Avoid encrypted emai\
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
@@ -471,14 +448,13 @@ summary: "Set di link relativi al coding"
 [Flatpak](https://flatkill.org/2020/) - a security nightmare\
 [Brave browser](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - it is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain\
 [Brave browser](https://github.com/brave/brave-browser/issues/9929) - it doesn't remove "Top Sites" in the homepage when clearing "History" . · Issue #9929 · brave/brave-browser\
-[ClearURLs Addon Unavailable on Google Chrome · Issue #102](https://github.com/ClearURLs/Addon/issues/102) - \
+[ClearURLs Addon](https://github.com/ClearURLs/Addon/issues/102) - Unavailable on Google Chrome · Issue #102\
 
 ### Scrivere documenti e conversione tra formati
 
 [Markdown syntax](https://en.support.wordpress.com/markdown-quick-reference/) - quick reference\
 [Markdown Syntax](https://www.markdownguide.org/basic-syntax/) - \
 [PDF-Markdown Preview Enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/pandoc-pdf) - \
-[Build and host a website with Git | Opensource.com](https://opensource.com/article/19/4/building-hosting-website-git) - \
 [honkit/honkit](https://github.com/honkit/honkit) - Fork of GitBook for building beautiful books using Markdown\
 [Making an ebook](https://medium.com/@davidgrophland/making-an-ebook-from-markdown-to-kindle-cf224326b1a2) - From Markdown to Kindle - David Grophland - Medium\
 [Reveal.js](https://opensource.com/article/20/4/create-web-tutorial-git) - Create web tutorials with Reveal.js and Git | Opensource.com\
@@ -501,14 +477,14 @@ summary: "Set di link relativi al coding"
 [Chapter 2 Hugo](https://bookdown.org/yihui/blogdown/hugo.html) - blogdown Creating Websites with R Markdown\
 [Hugo Themes](https://themes.gohugo.io/) - \
 [Laura Kalbag](https://laurakalbag.com/processing-responsive-images-with-hugo/) - Processing Responsive Images with Hugo\
-[Deploy Hugo project to GitHub Pages with GitHub Actions](https://discourse.gohugo.io/t/deploy-hugo-project-to-github-pages-with-github-actions/20725) - tips & tricks - Hugo\
-[Why my post is a directory and not a file?](https://discourse.gohugo.io/t/why-my-post-is-a-directory-and-not-a-file/21739) - support - Hugo\
-[Is it possible to insert HTML code in Markdown content?](https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/6) - support - HUGO\
+[GitHub Actions](https://discourse.gohugo.io/t/deploy-hugo-project-to-github-pages-with-github-actions/20725) - Deploy Hugo project to GitHub Pages with GitHub Actions - tips & tricks - Hugo\
+[GitHub Actions](https://opensource.com/article/19/4/building-hosting-website-git) - Build and host a website with Git | Opensource.com\
+[HTML in Markdown](https://discourse.gohugo.io/t/is-it-possible-to-insert-html-code-in-markdown-content/4867/6) - Is it possible to insert HTML code in Markdown content? - support - HUGO\
 [utterances](https://utteranc.es/) - A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!\
 [Remarkbox](https://www.remarkbox.com/) - Hosted Comments Service\
-[Adding comments to your static blog with Mastodon](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - \
+[Hugo comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - Adding comments to your static blog with Mastodon\
 [site.Params.mainSections](https://gohugo.io/functions/where/#mainsections) - To list the most relevant pages on the front page | Hugo\
-[razonyang/hugo-theme-bootstrap: A fast, responsive, multipurpose and feature-rich Hugo theme.](https://github.com/razonyang/hugo-theme-bootstrap) - \
+[razonyang/hugo-theme-bootstrap](https://github.com/razonyang/hugo-theme-bootstrap) - A fast, responsive, multipurpose and feature-rich Hugo theme.\
 [Universal | Hugo Themes](https://themes.gohugo.io/themes/hugo-universal-theme/) - \
 
 #### YAML - JSON - TOML - CSV - altri
@@ -516,7 +492,7 @@ summary: "Set di link relativi al coding"
 [tomnomnom/gron](https://github.com/tomnomnom/gron) - Make JSON greppable!\
 [text processing](https://stackoverflow.com/questions/28221779/how-to-remove-yaml-frontmatter-from-markdown-files) - How to remove YAML frontmatter from markdown files? - Stack Overflow\
 [jq](https://mosermichael.github.io/jq-illustrated/dir/content.html) - Illustrated jq tutorial\
-[Doing a SQL join with CSV files with xsv](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - \
+[CSV](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - Doing a SQL join with CSV files with xsv\
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
 [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer 🔥\
 
@@ -535,14 +511,14 @@ summary: "Set di link relativi al coding"
 [Pantry Cloud](https://getpantry.cloud/) - free service data storage for small projects\
 [freeCodeCamp](https://www.freecodecamp.org/) - Learn to Code and Help Nonprofits\
 [W3Schools Online Web Tutorials](http://www.w3schools.com/) - \
-[Caching Tutorial for Web Authors and Webmasters](http://www.mnot.net/cache_docs/#BROWSER) - \
+[Caching](http://www.mnot.net/cache_docs/#BROWSER) - Caching Tutorial for Web Authors and Webmasters\
 [HttpURLConnection](http://www.nicolacolonna.it/?p=668) - upload di un file\
-[Google Structured Data Testing Tool (see schema.org)](http://www.google.com/webmasters/tools/richsnippets) - \
+[schema.org](http://www.google.com/webmasters/tools/richsnippets) - Google Structured Data Testing Tool (see schema.org)\
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
 [jsonbox.io](https://jsonbox.io/) - HTTP based JSON storage\
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
-[Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
+[RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - Best Practices for Designing a Pragmatic RESTful API. A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
 [BrowserGap](https://github.com/dosyago/RemoteView/blob/master/README.md) - access the public internet through a browser that runs in the cloud, rather than through a browser that runs on your device. This helps protect you from attacks on the web\
 [Microbrowsers](https://24ways.org/2019/microbrowsers-are-everywhere/) - little thumbnail preview in a tweet or in WhatsApp chat are probably more important than google bot, can be the most influential part for attracting new audiences and increasing engagement - possibly more than SEO\
@@ -564,33 +540,33 @@ summary: "Set di link relativi al coding"
 [HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images Use WebP\
 [HTML link](https://dev.to/atulcodex/how-to-send-whatsapp-message-through-html-link-23f8) - How to send WhatsApp message - DEV Community\
 [HTML link](https://create.wa.link/) - Create WhatsApp links | Walink\
-[Image to base64 data-URI converter](https://websemantics.uk/tools/image-to-data-uri-converter/) - \
+[base64 data-URI](https://websemantics.uk/tools/image-to-data-uri-converter/) - Image to base64 data-URI converter\
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](https://www.asciitable.it/mime-types) - \
-[Emoji List, latest added and proposal emoji](https://unicode.org/emoji/charts/index.html) - \
+[Unincode Emoji](https://unicode.org/emoji/charts/index.html) - Emoji List, latest added and proposal emoji\
 [Ready to validate](https://html5.validator.nu/) - Nu Markup Validation Service\
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
-[Free Broken Link Checking Tool](https://www.deadlinkchecker.com/) - Dead Link Checker\
+[Broken Link](https://www.deadlinkchecker.com/) - Free Broken Link Checking Tool - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
 [details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
 [&lt;datalist&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - The HTML Data List element - HTML MDN\
-[Specification for Spoken Presentation in HTML](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - \
+[Spoken](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - Specification for Spoken Presentation in HTML\
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
-[Apply instant loading with the PRPL pattern](https://web.dev/apply-instant-loading-with-prpl/) - \
+[preloading](https://web.dev/apply-instant-loading-with-prpl/) - Apply instant loading with the PRPL pattern\
 [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) - Wikipedia\
 
 ##### WAI and ARIA
 
 [WAI](https://www.w3.org/WAI/tutorials/) - Web Accessibility Initiative\
-[Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/) - \
-[A deep dive into ARIA](https://dev.to/elischei/a-deep-dive-into-aria-5071) - DEV Community\
-[5 tools for Designing, Developing, and Testing Accessibility](https://dev.to/stories_of_ren/5-tools-for-designing-developing-and-testing-accessibility-5a0d) - DEV Community\
-[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) - \
+[WAI-ARIA](https://www.w3.org/TR/wai-aria-1.1/) - Accessible Rich Internet Applications (WAI-ARIA) 1.1\
+[WAI-ARIA](https://dev.to/elischei/a-deep-dive-into-aria-5071) - A deep dive into ARIA - DEV Community\
+[WAI-ARIA Tools](https://dev.to/stories_of_ren/5-tools-for-designing-developing-and-testing-accessibility-5a0d) - 5 tools for Designing, Developing, and Testing Accessibility - DEV Community\
+[WAVE](https://wave.webaim.org/) - Web Accessibility Evaluation Tool\
 [Non Visual Access](https://www.nvaccess.org/download/) - a screen reader for testing pages for every Blind + Vision Impaired person\
 [web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
 [Web Accessibility](https://bootcamp.uxdesign.cc/beginners-guide-to-web-accessibility-514644750b0f?gi=301fe74f3075) - A Beginner’s Guide To Web Accessibility | by Samantha Lurio | Bootcamp\
-[4 Ways To Improve Your Website's Accessibility Today](https://dev.to/natclark/4-ways-to-improve-your-website-s-accessibility-today-33ad) - DEV Community\
+[WAI](https://dev.to/natclark/4-ways-to-improve-your-website-s-accessibility-today-33ad) - 4 Ways To Improve Your Website's Accessibility Today - DEV Community\
 [Screen readers](https://dev.to/livechat/screen-readers-hearing-the-unseen-55nb) - hearing the unseen - DEV Community\
 
 #### CSS
@@ -599,14 +575,14 @@ summary: "Set di link relativi al coding"
 [Floating and inline-block](http://www.w3schools.com/css/css_inline-block.asp) - \
 [Visual formatting model](http://www.w3.org/TR/CSS2/visuren.html#q24) - \
 [kognise/waterCSS](https://github.com/kognise/water.css/blob/master/README.md) - A CSS without classes\
-[Flexible data tables with CSS Grid](https://adamlynch.com/flexible-data-tables-with-css-grid/?1) - \
 [CSS Grid Generator](https://cssgrid-generator.netlify.com/) - \
-[CSS rules that will make your life easier](https://www.freecodecamp.org/news/css-rules-to-live-by-962a051e1eb2/) - \
+[CSS rules](https://www.freecodecamp.org/news/css-rules-to-live-by-962a051e1eb2/) - CSS rules that will make your life easier\
 [CSS Grid Level 2](https://hacks.mozilla.org/2019/06/css-grid-level-2-subgrid-is-coming-to-firefox/) - subgrid is coming to Firefox\
-[The CSS Mindset | Max Böck](https://mxb.dev/blog/the-css-mindset/) - Frontend Web Developer\
+[The CSS Mindset](https://mxb.dev/blog/the-css-mindset/) - Max Böck - Frontend Web Developer\
 [Relearn CSS layout](https://every-layout.dev/) - Every Layout\
 [CSS Custom Properties](https://codyhouse.co/blog/post/css-custom-properties-vs-sass-variables) - Why we prefer CSS Custom Properties to SASS variables | CodyHouse\
-[Making Tables Responsive With Minimal CSS · Bradley Taunt](https://uglyduck.ca/responsive-tables/) - \
+[HTML Tables](https://uglyduck.ca/responsive-tables/) - Making Tables Responsive With Minimal CSS · Bradley Taunt\
+[HTML Tables](https://adamlynch.com/flexible-data-tables-with-css-grid/?1) - Flexible data tables with CSS Grid\
 [therebelrobot/awesome-bootstrap](https://github.com/therebelrobot/awesome-bootstrap) - ✨ Awesome - A curated list of amazing Bootstrap tools and themes.\
 [andybrewer/mvp](https://github.com/andybrewer/mvp) - MVP CSS — Minimalist stylesheet for HTML elements\
 [Drop-in Minimal CSS](https://dohliam.github.io/dropin-minimal-css/) - \
@@ -619,97 +595,93 @@ summary: "Set di link relativi al coding"
 [-webkit-line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp) - CSS Cascading Style Sheets | MDN\
 [Iconduck](https://iconduck.com/licenses) - Open source icons\
 [iconify](https://www.iconify.pro/) - app icon generator\
-[Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag](https://web.dev/color-scheme/) - \
-[A simple CSS trick for dark mode | Opensource.com](https://opensource.com/article/21/10/dark-themes-websites) - \
-[How to toggle Dark/Light Mode using JavaScript](https://dev.to/snowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - DEV Community\
-[background changing using CSS animation.](https://dev.to/abhishekrajputweb/background-changing-using-css-animation-51ia) - DEV Community\
-[Light-Dark Mode Toggle Using CSS](https://dev.to/hrushikesh41/light-dark-mode-toggle-using-css-4d06) - DEV Community\
-[CSS tips on Images you need to know](https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1) - DEV Community\
-[A simple CSS trick for dark mode | Opensource.com](https://opensource.com/article/21/10/dark-themes-websites) - \
-[How to toggle Dark/Light Mode using JavaScript](https://dev.to/codewithsnowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - DEV Community\
+[Dark/Light Mode](https://web.dev/color-scheme/) - Improved dark mode default styling with the color-scheme CSS property and the corresponding meta tag\
+[Dark/Light Mode](https://dev.to/snowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - How to toggle Dark/Light Mode using JavaScript - DEV Community\
+[JS background](https://dev.to/abhishekrajputweb/background-changing-using-css-animation-51ia) - background changing using CSS animation. - DEV Community\
+[Dark/Light Mode](https://dev.to/hrushikesh41/light-dark-mode-toggle-using-css-4d06) - Light-Dark Mode Toggle Using CSS - DEV Community\
+[CSS Images](https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1) - CSS tips on Images you need to know - DEV Community\
+[Dark/Light Mode](https://opensource.com/article/21/10/dark-themes-websites) - A simple CSS trick for dark mode | Opensource.com\
+[Dark/Light Mode](https://dev.to/codewithsnowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - How to toggle Dark/Light Mode using JavaScript - DEV Community\
 
 #### JavaScript
 
-[Top 5 skills to learn as a junior JavaScript developer](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - \
-[PracticeJS](https://practicejs.com/) - \
+[JavaScript skills](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - Top 5 skills to learn as a junior JavaScript developer\
+[PracticeJS](https://practicejs.com/) - mini JavaScript coding exercises that can be done on a phone\
 [Deep JavaScript](https://exploringjs.com/deep-js/index.html) - Theory and techniques\
 [JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
 [ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
-[Math Object in JavaScript](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - DEV Community\
+[JS Math](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - Math Object in JavaScript - DEV Community\
 [date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
 [HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
-[8 DOM features you didn’t know existed](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - LogRocket Blog\
+[HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
-[JavaScript Christmas](https://javascript.christmas/2020) - \
-[How to create a snowfall with JavaScript](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - DEV Community\
-[Colorful Rain with JS](https://dev.to/j471n/colorful-rain-with-js-514j) - DEV Community\
+[JavaScript Christmas](https://javascript.christmas/2020) - JS advent calendars\
+[JS app](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - How to create a snowfall with JavaScript - DEV Community\
+[JS app](https://dev.to/j471n/colorful-rain-with-js-514j) - Colorful Rain with JS - DEV Community\
+[JS and SEO](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
+[DroidScript](https://droidscript.org/#page-content) - Rapid development of mobile Apps, using JavaScript\
+[JS Web Components](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - How we use Web Components at GitHub | The GitHub Blog\
+[github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
+[JS ES6](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - 7 ES6 Features all JavaScript Programmers Should Learn to Use - DEV Community\
+[JS PDF](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - Download Browser Page as PDF using JavaScript - DEV Community\
+[JS Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
+[JS Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
+[rslint/rslint](https://github.com/rslint/rslint) - A (WIP) Extremely fast JavaScript and TypeScript linter and Rust crate\
+
+##### Cloud and libraries
+
+[Pantry](https://getpantry.cloud/) - Free Cloud JSON Storage API\
+[Pantry](https://documenter.getpostman.com/view/3281832/SzmZeMLC#98b35ee9-9d11-417e-8739-21a4ac9893ed) - Use pantry with postman\
+[Rapid API Hub](https://rapidapi.com/hub/) - Free Public & Open Rest APIs | RapidAPI\
+[jumpjack/greenpass](https://github.com/jumpjack/greenpass) - Pure JavaScript greenpass QR code decoder in browser\
+[JS Telegram](https://dev.to/sh4yy/use-python-or-javascript-to-send-your-events-and-logs-to-telegram-via-their-chatbot-api-3243) - Use Python or JavaScript to Send Your Events and Logs to Telegram via their Chatbot API - DEV Community\
+[Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
+[JS GreenPass QR code](https://dev.to/lmillucci/javascript-how-to-decode-the-greenpass-qr-code-3dh0) - How to decode the GreenPass QR code - DEV Community\
 [Pika Registry](https://www.pika.dev/registry) - The JavaScript package registry for the modern web.\
+[OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
+[Protomaps](https://protomaps.com/blog/new-way-to-make-maps/) - A new way to make maps with OpenStreetMap\
+[Video.js](https://videojs.com/) - Make your player yours | Video.js\
 [Chart.js](https://www.chartjs.org/) - Open source HTML5 Charts for your website\
 [qrcode.js](https://davidshimjs.github.io/qrcodejs/) - \
 [cozmo/jsQR](https://github.com/cozmo/jsQR) - A pure JavaScript QR code reading library. This library takes in raw images and will locate, extract and parse any QR code found within.\
 [sachinchoolur/lightGallery](https://github.com/sachinchoolur/lightGallery) - A customizable, modular, responsive, lightbox gallery plugin.\
-[How does JavaScript affect SEO?](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
-[tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
-[SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
-[OpenWeatherMap](https://devnews.it/posts/58179ecf58afcb547a829bb0/api-gratis-per-dati-previsioni-meteo) - API JSON gratuita per previsioni meteo\
-[LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
 [MapLibre GL JS](https://maplibre.org/maplibre-gl-js-docs/api/) - A JavaScript library that uses WebGL to render interactive maps\
-[Protomaps](https://protomaps.com/blog/new-way-to-make-maps/) - A new way to make maps with OpenStreetMap\
-[DroidScript – Rapid development of mobile Apps, using JavaScript](https://droidscript.org/#page-content) - \
-[How we use Web Components at GitHub | The GitHub Blog](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - \
-[github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
-[7 ES6 Features all JavaScript Programmers Should Learn to Use](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - DEV Community\
-[Video.js](https://videojs.com/) - Make your player yours | Video.js\
-[How to decode the GreenPass QR code](https://dev.to/lmillucci/javascript-how-to-decode-the-greenpass-qr-code-3dh0) - DEV Community\
-[Download Browser Page as PDF using JavaScript](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - DEV Community\
-[Micro](https://m3o.com/) - Public APIs for everyday use\
-[Poker API](https://www.pokerapi.dev/) - Simple JSON poker API to calculate winning hand\
-[Public APIs](https://public-apis.io/) - A list of Free APIs for software developers | Public APIs\
-[Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
-[Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
-[Use Python or JavaScript to Send Your Events and Logs to Telegram via their Chatbot API](https://dev.to/sh4yy/use-python-or-javascript-to-send-your-events-and-logs-to-telegram-via-their-chatbot-api-3243) - DEV Community\
-[jumpjack/greenpass](https://github.com/jumpjack/greenpass) - Pure JavaScript greenpass QR code decoder in browser\
-[Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
-[rslint/rslint](https://github.com/rslint/rslint) - A (WIP) Extremely fast JavaScript and TypeScript linter and Rust crate\
-[Rapid API Hub](https://rapidapi.com/hub/) - Free Public & Open Rest APIs | RapidAPI\
+[LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
+[SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
+[tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 
 ##### JS Object Oriented
 
 [JavaScript OOP is weird](https://dev.to/josephkabemba/javascript-oop-is-weird-4h9j) - DEV Community\
-[OOPS in JavaScript with easy to understand examples 🔥🔥](https://dev.to/nehal_mahida/oops-in-javascript-with-easy-to-understand-examples-2ppn) - DEV Community\
+[JS OOP](https://dev.to/nehal_mahida/oops-in-javascript-with-easy-to-understand-examples-2ppn) - OOPS in JavaScript with easy to understand examples 🔥🔥 - DEV Community\
 
 ##### JS Collection framework
 
 [Functional JavaScript](https://jrsinclair.com/articles/2019/functional-js-do-more-with-reduce/) - How to use array reduce for more than just numbers\
-[5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
-[Understanding the array methods Array.some() and Array.every() in JavaScript](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - DEV Community\
-[JavaScript Array Methods](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - DEV Community\
-[5 Useful Array Methods in JavaScript](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - DEV Community\
-[Useful JavaScript Array Methods](https://dev.to/mrdanishsaleem/useful-javascript-array-methods-4370) - DEV Community\
+[JS Array](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - Understanding the array methods Array.some() and Array.every() in JavaScript - DEV Community\
+[JS Array](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - JavaScript Array Methods - DEV Community\
+[JS Array](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - 5 Useful Array Methods in JavaScript - DEV Community\
+[JS Array](https://dev.to/mrdanishsaleem/useful-javascript-array-methods-4370) - Useful JavaScript Array Methods - DEV Community\
 
-##### JS Promise and Async Await
+##### JS Fetch Promise and Async Await
 
-[A brief look at async-await](https://javascript.christmas/2019/9) - \
-[Promises chaining](https://javascript.info/promise-chaining) - \
-[JavaScript Promise methods Explained!](https://dev.to/duhbhavesh/javascript-promise-methods-explained-1f0l) - DEV Community\
-
-##### JS Fetch API
-
+[JS async-await](https://javascript.christmas/2019/9) - A brief look at async-await\
+[JS Promises chaining](https://javascript.info/promise-chaining) - \
+[JS Promises](https://dev.to/duhbhavesh/javascript-promise-methods-explained-1f0l) - JavaScript Promise methods Explained! - DEV Community\
+[JS async-await](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - Migrating from promise chains to async-await and escaping the try catch hell - DEV Community\
 [Fetch](https://dev.to/nombrekeff/think-like-a-pro-grammer-10k1) - from simple to scalable implementation - DEV Community\
-[This Is Your Complete Guide For Sending Requests Using fetch in JS](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - DEV Community\
-[Migrating from promise chains to async-await and escaping the try catch hell](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - DEV Community\
-[Pantry](https://documenter.getpostman.com/view/3281832/SzmZeMLC#98b35ee9-9d11-417e-8739-21a4ac9893ed) - \
+[Fetch](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - This Is Your Complete Guide For Sending Requests Using fetch in JS - DEV Community\
 
 ##### JS API
 
-[10 lesser-known Web APIs you may want to use](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - \
+[JS APIs](https://blog.greenroots.info/10-lesser-known-web-apis-you-may-want-to-use-ckejv75cr012y70s158n85yhn) - 10 lesser-known Web APIs you may want to use\
 [Permissions API](https://dev.to/sidmirza4/permissions-api-why-should-you-start-using-it-2k4d#introduction) - Why should you start using it? - DEV Community\
 [Web Storage API](https://dev.to/naveenchandar/web-storage-api-3d49) - DEV Community\
-[Using JS Speech Recognition to build a virtual assistant](https://dev.to/alvaromontoro/using-js-speech-recognition-to-build-a-virtual-assistant-1957) - DEV Community\
-[Cool APIs you might not know about 😎](https://dev.to/carlosg33558699/cool-apis-you-might-not-know-about-2f3f) - DEV Community\
+[JS Speech Recognition](https://dev.to/alvaromontoro/using-js-speech-recognition-to-build-a-virtual-assistant-1957) - Using JS Speech Recognition to build a virtual assistant - DEV Community\
+[JS APIs](https://dev.to/carlosg33558699/cool-apis-you-might-not-know-about-2f3f) - Cool APIs you might not know about 😎 - DEV Community\
 [APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding web APIs\
-[Working with modules in JavaScript.](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - DEV Community\
+[JS modules](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - Working with modules in JavaScript. - DEV Community\
 [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) - Web APIs | MDN\
 
 ##### PWA
@@ -729,10 +701,10 @@ summary: "Set di link relativi al coding"
 
 ##### Three JS 3D
 
-[Three.js Fundamentals](https://threejsfundamentals.org/threejs/lessons/threejs-fundamentals.html) - \
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
 [Space globe](https://dev.to/jayantgoel001/space-globe-threejs-47ee) - Three.js - DEV Community\
 [schteppe/cannon.js](https://github.com/schteppe/cannon.js) - A lightweight 3D physics engine written in JavaScript you can use with three.js\
+[Google Earth as glTF](https://omarshehata.github.io/google-earth-as-gltf/) - \
 
 ##### HandsFree
 

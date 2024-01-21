@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2022-11-18
-publishdate: 2022-11-18
-lastmod: 2022-11-18
+date: 2024-01-20
+publishdate: 2024-01-20
+lastmod: 2024-01-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false

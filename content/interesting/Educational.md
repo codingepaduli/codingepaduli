@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2023-09-19
-publishdate: 2023-09-19
-lastmod: 2023-09-19
+date: 2024-01-20
+publishdate: 2024-01-20
+lastmod: 2024-01-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -180,7 +180,6 @@ summary: "Set di link relativi all'istruzione di base"
 [SSDs](https://databasearchitects.blogspot.com/2021/06/what-every-programmer-should-know-about.html?m=1) - What Every Programmer Should Know About - Database Architects\
 [Voltage, Amps, Resistance and LEDs (Ohm’s Law)](https://blog.demofox.org/2021/06/15/voltage-amps-resistance-and-leds-ohms-law/) - \
 [Upgrading a motherboard’s BIOS/UEFI (the hard way)](https://www.downtowndougbrown.com/2021/12/upgrading-a-motherboards-bios-uefi-the-hard-way/) - \
-[ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
 [Come creare più partizioni in un hard disk](https://www.youtube.com/watch?v=t5Zr19mson0) - YouTube\
 [ryunosinfx/reedsolomon.es](https://github.com/ryunosinfx/reedsolomon.es) - This is Reed-Solomon coding module which is porting from Zxing open source project written in Java.\
 [QR Code Tutorial](https://www.thonky.com/qr-code-tutorial/) - Thonky.com\
@@ -193,6 +192,14 @@ summary: "Set di link relativi all'istruzione di base"
 [mBlock](https://mblock.makeblock.com/en/) - One-Stop Coding Platform for Teaching and Learning\
 [mBlock](https://ide.makeblock.com/) - mLink and makeBlock IDE\
 [Progetti Arduino](https://www.progettiarduino.com/) - Raccolta di Progetti e Tutorial per sperimentare con Arduino\
+[What Every Developer Should Know About GPU Computing](https://codeconfessions.substack.com/p/gpu-computing) - \
+[https://www.youtube.com/watch?v=PdMWJ4FbWZU](https://www.youtube.com/watch?v=PdMWJ4FbWZU) - \
+[QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
+[QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
+[Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
+[QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
+[QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
+[QR-Code-generator/QrSegment at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
 
 #### Sistemi e reti 4anno
 
