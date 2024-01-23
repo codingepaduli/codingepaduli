@@ -38,7 +38,7 @@ if [ -f "$MY_DOT_FILES_FOLDER/bash_functions_docker" ] && [ -r "$MY_DOT_FILES_FO
 fi
 
 # Aggiungo JAVA_HOME
-if [ -n "$JAVA_HOME" ]; then
+if [ -z "$JAVA_HOME" ]; then
     echo ""
 else
     # Search the path with the command:
