@@ -122,6 +122,24 @@ services() {
 }
 export -f services
 
+# Linux distribution name
+distroName() {
+  lsb_release -si # short format distribution name (debian)
+}
+export -f distroName
+
+# Linux distribution name
+distroReleaseName() {
+  lsb_release -sc # short format distribution release name (bullseye - bookworm)
+}
+export -f distroReleaseName
+
+# Linux distribution release number
+distroReleaseNumber() {
+  lsb_release -sr # short format distribution release number (11 - 12)
+}
+export -f distroReleaseNumber
+
 # show the distro's info, the cpu, the mounted devices and the memory status
 # Usage: computer
 computer() {
