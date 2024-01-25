@@ -232,7 +232,7 @@ Allo stesso modo, la sola presenza degli attributi ``readonly`` e ``hidden`` imp
 
 La presenza dell'attributo ``disabled`` indica che il campo è disabilitato, non sarà inviato al server e non sarà possibile all'utente modificarlo o cliccarci sopra.
 
-Un esempio dei vari attributi è il seguente:
+Un esempio dei vari campi di input con descrizione ed attributi è il seguente:
 
 ```html
 <label for="nome">nome utente:</label>
@@ -253,31 +253,48 @@ Il risultato è il seguente:
 
 Come si può notare nell'esempio, l'identificativo utente è nascosto, per cui non è presente la descrizione collegata. Il gruppo societario è disabilitato, per cui non sarà inviato al server. La società è in sola lettura, perciò non sarà modificabile dall'utente. Il nome utente è obbligatorio, per cui l'utente deve inserirlo per poter inviare il modulo al server.
 
-Una volta realizzati i campi per l'inserimento dei dati, è necessario realizzare un pulsante che permetta all'utente di inviare i dati al server. Per far ciò, è necessario impostare il valore ``submit`` nell'attributo ``type``, come nell'esempio seguente:
-
-```html
-<button type="submit">Invia richiesta</button>
-```
-
-Se si vuole offrire all'utente la possibilità di cancellare tutti i dati inseriti nel modulo, riportandoli tutti ai valori iniziali, allora è necessario creare un campo di input di ripristino, impostando il valore ``reset`` nell'attributo ``type``, come nell'esempio seguente:
-
-```html
-<button type="reset">Ripristina valori iniziali</button>
-```
-
 ### Esempio completo di modulo di invio dati
 
-Per realizzare un modulo di invio dati che permetta il login dell'utente, sono necessarie solo due informazioni da inserire: il nome utente e la password.
+Realizziamo un modulo di invio dati che permetta il login dell'utente.
 
-Di seguito il codice HTML che permette di inserire i dati per effettuare il login:
+In questo modulo sono necessarie due informazioni che l'utente dovrà inserire: il nome utente e la password. Si devono quindi prevedere:
+
+- due descrizioni dei campi di input;
+- due campi di input;
+- un pulsante che permetta all'utente di inviare i dati;
+- un pulsante che permetta all'utente di cancellare tutti i dati inseriti nel modulo, ripristinando i valori iniziali.
+
+Realizziamo quindi un modulo con le due descrizioni:
 
 ```html
 <form>
     <label>username</label>
-    <input placeholder="inserisci il tuo username" name="username">
 
     <label>password</label>
-    <input placeholder="inserisci la password" name="password">
+</form>
+```
+
+Aggiungiamo i campi di testo e leghiamo la descrizione ai campi (il valore dell'attributo ``for`` nella descrizione del campo deve essere uguale al valore dell'attributo ``id`` presente nel campo):
+
+```html
+<form>
+    <label for="nome">username</label>
+    <input placeholder="inserisci il tuo username" name="username" id="nome">
+
+    <label for="pwd">password</label>
+    <input placeholder="inserisci la password" name="password" id="pwd">
+</form>
+```
+
+Aggiungiamo il pulsante di invio (l'attributo ``type`` ha valore ``submit``) ed il pulsante di cancellazione dati (l'attributo ``type`` ha valore ``reset``)
+
+```html
+<form>
+    <label for="nome">username</label>
+    <input placeholder="inserisci il tuo username" name="username" id="nome">
+
+    <label for="pwd">password</label>
+    <input placeholder="inserisci la password" name="password" id="pwd">
 
     <button type="submit" formaction="www.server.com/login">Invia richiesta</button>
     <button type="reset">Ripristina valori iniziali</button>
@@ -288,7 +305,7 @@ Il risultato è il seguente:
 
 ![Immagine del form](/static/coding/web/html/form02.png "Immagine del secondo form")
 
-#### Input testuale
+### Input testuale
 
 Il campo di input, se non diversamente specificato, permette l'inserimento di testo. È comunque buona norma specificare il tipo testuale, indicando l'attributo ``type="text"``.
 
@@ -320,7 +337,7 @@ Il risultato è il seguente:
 
 ![Input di testo](/static/coding/web/html/inputTesto.png "Input di testo")
 
-#### Input di una password
+### Input di una password
 
 Una password è tipicamente nascosta allo sguardo di chi è davanti allo schermo. Per creare un campo di input che contenga una password (nascosta) è necessario indicare l'attributo ``type="password"``.
 
@@ -340,7 +357,7 @@ Il risultato è il seguente:
 
 ![Input di tipo password](/static/coding/web/html/inputPassword.png "Input di tipo password")
 
-#### Input di una email
+### Input di una email
 
 Per creare un campo di input che contenga una email è necessario indicare l'attributo ``type="email"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="email"`` per indicare la scelta della tastiera virtuale appropriata per l'inserimento dei dati sui dispositivi mobile e l'attributo ``autocomplete="email"`` per suggerimenti all'utente nell'inserimento della email.
 
@@ -350,7 +367,7 @@ Un esempio di campo di inserimento per una email è il seguente:
 <input type="email" name="email" inputmode="email" autocomplete="email">
 ```
 
-#### Input di un indirizzo web
+### Input di un indirizzo web
 
 Per creare un campo di input che contenga un indirizzo web è necessario indicare l'attributo ``type="url"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="url"`` per indicare la scelta della tastiera virtuale appropriata (con i caratteri "://" e ".") per l'inserimento dei dati sui dispositivi mobile e per suggerimenti all'utente nell'inserimento dell'indirizzo web utilizzando l'attributo ``autocomplete="url"``.
 
@@ -360,7 +377,7 @@ Un esempio di campo di inserimento per un indirizzo web è il seguente:
 <input type="url" name="url" inputmode="url" autocomplete="url">
 ```
 
-#### Input di un numero di telefono
+### Input di un numero di telefono
 
 Per creare un campo di input che contenga un numero di telefono è necessario indicare l'attributo ``type="tel"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="tel"`` per indicare la scelta del tastierino numerico virtuale appropriato (con i caratteri "#", "*" e ".") per l'inserimento dei dati sui dispositivi mobile e l'attributo ``autocomplete="tel"`` per suggerimenti all'utente nell'inserimento del numero di telefono.
 
@@ -370,7 +387,7 @@ Un esempio di campo di inserimento per un numero di telefono è il seguente:
 <input type="tel" name="telephone" inputmode="tel" autocomplete="tel">
 ```
 
-#### Input numerico
+### Input numerico
 
 Per creare un campo di input che contenga un numero è necessario indicare l'attributo ``type="number"``.  Si consiglia inoltre di utilizzare l'attributo ``inputmode="numeric"`` o ``inputmode="decimal"`` per indicare la scelta del tastierino numerico virtuale appropriato (con o senza il carattere di separazione dei decimali) per l'inserimento dei dati sui dispositivi mobile.
 
@@ -398,7 +415,7 @@ Il risultato è il seguente:
 
 ![Input di tipo numerico](/static/coding/web/html/inputNumerico.png "Input di tipo numerico")
 
-#### Input di una data
+### Input di una data
 
 Per creare un campo di input che contenga una data (senza l'ora), è necessario indicare l'attributo ``type="date"``. In questo modo, sui dispositivi mobile si permette la scelta della data attraverso il calendario.
 
@@ -429,7 +446,7 @@ Il risultato è il seguente:
 
 ![Input di tipo data](/static/coding/web/html/inputData.png "Input di tipo data")
 
-#### Input di un orario
+### Input di un orario
 
 Per creare un campo di input che contenga un orario, è necessario indicare l'attributo ``type="time"``. In questo modo, sui dispositivi mobile si permette la scelta dell'orario attraverso l'orologio.
 
@@ -451,7 +468,7 @@ Il risultato è il seguente:
 
 ![Input di tipo orario](/static/coding/web/html/inputOrario.png "Input di tipo orario")
 
-#### Input di selezione multipla "checkbox"
+### Input di selezione multipla "checkbox"
 
 Per creare un campo di selezione multipla, contenente più voci selezionabili, è necessario creare più campi di input, tutti con l'attributo ``type="checkbox"``.
 
@@ -481,7 +498,7 @@ Il risultato è il seguente:
 
 ![Input di tipo checkbox](/static/coding/web/html/inputCheckbox.png "Input di tipo checkbox")
 
-#### Input di selezione singola "radio"
+### Input di selezione singola "radio"
 
 Per creare una selezione singola, è necessario creare più campi di input, tutti con lo stesso nome, utilizzando l'attributo ``type="radio"``.
 
