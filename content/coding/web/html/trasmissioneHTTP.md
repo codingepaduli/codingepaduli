@@ -1,27 +1,136 @@
 ---
 type: "html"
-title: "HTML Lez. 09 - Moduli di invio dati e trasmissione dati al server"
-description: "HTML - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
-date: 2019-09-28
-publishdate: 2019-09-28
-lastmod: 2019-09-28
+title: "HTML Lez. 10 - Trasmissione dati su protocollo HTTP"
+date: 2024-01-26
+publishdate: 2024-01-26
+lastmod: 2024-01-26
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: false
+draft: true
 toc: false
-summary: "HTML - La richiesta di risorse al server può essere corredata di ulteriori dati da trasmettere, che possono essere inseriti dall'utente negli appositi moduli di invio dati presenti nella pagina web o che possono essere preimpostati staticamente in un collegamento."
-weight: 9310
-
-references:
-    -   title: "W3C Markup Validation Service"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "http://validator.w3.org/nu/"
-        description: "A W3C Markup Validation Service for your web pages"
+summary: "Trasmissione dati su protocollo HTTP"
+weight: 9300
 ---
 
-# Moduli di invio dati
+# Trasmissione dati su protocollo HTTP
 
-I moduli per l'invio dei dati permettono la creazione di campi di inserimento dati nella pagina web, che poi saranno compilati dall'utente ed inviati al server. Un esempio è il seguente:
+Il server web espone le proprie risorse ed i propri servizi su un indirizzo web, detto URL, che identifica univocamente una risorsa.
+
+I client possono richiedere le risorse specificando nella richiesta l'indirizzo web (URL) della risorsa.
+
+Oltre ad un URL, nella richiesta al server il client può inviare i dati da elaborare, indicando per ogni dato il nome ed il valore.
+
+Ad esempio, un ipotetico server ``www.server.com`` potrebbe offrire i servizi di registrazione, di login e di logout rispettivamente agli indirizzi:
+
+```plaintext
+www.server.com/registrazione
+www.server.com/login
+www.server.com/logout
+```
+
+Per la registrazione di un nuovo utente, il client invia al server la richiesta, nella quale specifica come URL il servizio di registrazione utenti ed i dati dell'utente, come nel seguente esempio:
+
+```plaintext
+www.server.com/registrazione
+nome=Mario
+cognome=Rossi
+dataDiNascita=2021-09-05
+```
+
+Allo stesso modo, invia la richiesta di login nella quale specifica l'URL del servizio ed i dati di identificazione dell'utente, tipicamente il nome utente e la password, come nel seguente esempio:
+
+```plaintext
+www.server.com/login
+username=Mario
+password=A1b2C3d4
+```
+
+La richiesta di logout tipicamente non prevede dati da inviare al server, per cui è sufficiente specificare l'URL del servizio di logout, come nel seguente esempio:
+
+ ```plaintext
+www.server.com/logout
+```
+
+Quando il server riceve la richiesta da un client, la elabora, verificando che l'URL richiesto esista e sia disponibile e che i dati inviati siano validi. In caso positivo conferma la richiesta del server e genera una risposta da inviare al client. In caso negativo restituisce al client un messaggio d'errore.
+
+Ci sono solo due elementi HTML che, inseriti in una pagina web, consentono di richiedere una risorsa ad un server specificando eventuali dati aggiuntivi: i collegamenti ed i moduli di invio dati.
+
+<!--
+Ad esempio, la ricerca su google avviene su URL https://www.google.com/search?q=valore
+
+Di questo URL si notano:
+
+- ``https://``: il protocollo utilizzato per l'invio dei dati;
+- ``www.google.com``: il nome del server
+- ``:80``: la porta sulla quale avviene la comunicazione. In questo caso, dato che si tratta della porta predefinita, è omessa;
+- ``search``: il servizio richiesto al server;
+- ``?``: il carattere di separazione che indica i successivi dati inviati;
+- ``q``: il nome del primo dato inviato;
+- ``valore``: il dato inserito dall'utente;
+
+I dati da inviare possono essere di diversa natura, per cui sono previsti
+-->
+
+## Collegamenti per richieste al server
+
+Un collegamento è un testo sul quale l'utente può cliccare per ricevere dal server la pagina web contenente i dati richiesti.
+
+Un esempio di collegamento è il seguente: <!-- markdownlint-disable-next-line MD033 -->
+<a href="www.google.com/search?q=HTML">ricerca il termine HTML su Google</a>
+
+Quando l'utente clicca su un collegamento, il browser effettua una richiesta al server e gli invia i dati necessari, se presenti nel collegamento.
+
+Per poter aggiungere ad un collegamento i dati necessari da inviare al server, è sufficiente accodarli all'URL della risorsa richiesta, rispettando le seguenti regole:
+
+- L'URL è separato dai dati mediante il carattere ``?``;
+- Ogni dato da inviare è separato dal successivo con il carattere ``&``;
+- di ogni dato da inviare, si specifica il nome, seguito dal carattere ``=`` e poi dal valore associato;
+
+Considerando la richiesta di login dell'utente "Mario" vista nell'esempio precedente, la si può scrivere nella seguente forma:
+
+```plaintext
+www.server.com/login?username=Mario&password=A1b2C3d4
+```
+
+Il codice HTML risultante è il seguente:
+
+```html
+<a href="www.server.com/login?username=Mario&password=A1b2C3d4">richiesta login</a>
+```
+
+Allo stesso modo, la richiesta di registrazione dell'utente "Mario" vista in precedenza la si può scrivere nella seguente forma:
+
+```plaintext
+www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05
+```
+
+Il codice HTML risultante è il seguente:
+
+```html
+<a href="www.server.com/registrazione?nome=Mario&cognome=Rossi&dataDiNascita=2021-09-05">registra</a>
+```
+
+La richiesta di logout vista in precedenza non prevede dati da inviare, ma solo l'URL, quindi il collegamento HTML risultante è il seguente:
+
+```html
+<a href="www.server.com/logout">logout</a>
+```
+
+Un esempio reale può essere la richiesta a Google della ricerca del termine ``HTML``, sfruttando l'omonimo servizio di ricerca presente all'indirizzo web ``www.google.com/search``. In questo caso, la richiesta deve essere corredata dal dato da ricercare, che deve essere trasmesso con il nome ``q`` e con valore ``HTML``.
+
+Il collegamento da creare è realizzato con il seguente codice:
+
+```html
+<a href="www.google.com/search?q=HTML">ricerca il termine HTML</a>
+```
+
+Cliccando sul collegamento, il servizio di ricerca risponde restituendo la pagina web che fa riferimento al termine ricercato.
+
+## I moduli di invio dati per richieste al server
+
+I moduli per l'invio dei dati permettono la creazione di campi di inserimento dati nella pagina web, che poi saranno compilati dall'utente ed inviati al server.
+
+Un esempio di modulo di invio dati è il seguente:
 
 ![Esempio di modulo di invio dati](/static/coding/web/html/form02.png "Esempio di modulo di invio dati")
 
@@ -31,49 +140,54 @@ Ogni campo da inviare al server deve avere un nome, un valore ed una descrizione
 
 I pulsanti permettono all'utente di inviare i dati al server, una volta compilato il modulo.
 
-L'etichetta ``form`` permette la creazione di un modulo di invio dati. Gli attributi principali previsti per questa etichetta sono:
+La risorsa o il servizio da richiedere al server può essere specificato nell'etichetta ``form`` con gli attributi:
 
 - ``action``: indica il servizio del server a cui inviare i dati;
 - ``method``: indica quale metodo utilizzare per l'invio dei dati.
 
-Un esempio di modulo (vuoto) è il seguente:
+Consideriamo ad esempio il seguente form:
 
 ```html
-<form action="www.server.com/login">
+<form action="www.server.com/login" method="get">
+  <label for="nome">username</label>
+    <input placeholder="username" name="username" id="nome">
 
+    <label for="pwd">password</label>
+    <input placeholder="password" name="password" id="pwd">
+
+    <button>Invia richiesta</button>
 </form>
+```
+
+I dati inviati al server saranno i seguenti:
+
+```plaintext
+www.server.com/login?nome=Mario&password=123456
 ```
 
 Il modulo realizzato nell'esempio è un modulo vuoto, dato che non sono presenti campi di input, e non permette all'utente l'invio dei dati perché manca del pulsante di invio.
 
-## Pulsanti
+### Pulsanti
 
-I pulsanti sono realizzati utilizzando l'etichetta ``button`` che contiene il testo da mostrare all'utente.
+Nel modulo è genericamente specificata la richiesta da effettuare. Un modulo però può prevedere più pulsanti, ognuno con la propria richiesta da effettuare.
 
-Un esempio di codice HTML che genera un pulsante è il seguente:
-
-```html
-<button>Cliccami</button>
-```
-
-Gli attributi principali previsti per questa etichetta sono:
-
-- ``type`` indica il tipo di pulsante, che può essere
-
-  - ``submit`` cioè di invio dati al server;
-  - ``reset`` cioè cancella i dati del form, non invia dati al server;
-  - ``button`` cioè non effettua azioni.
+In questo caso, piuttosto che specificare la richiesta nel form, la si specifica direttamente nei pulsanti, utilizzando i seguenti attributi:
 
 - ``formaction``: si usa solo quando è presente l'attributo ``type=submit``, indica a quale servizio inviare i dati;
 - ``formmethod``: si usa solo quando è presente l'attributo ``type=submit``, indica quale metodo utilizzare per inviare i dati;
+
+Questi due attributi vanno a sovrascrivere la richiesta da effettuare presente nell'etichetta ``form`` (se presente).
 
 Ad esempio, se vogliamo realizzare un modulo che invii i dati ad uno dei motori di ricerca conosciuti, allora possiamo creare più pulsanti, ognuno con l'azione di invi dati verso uno specifico motore di ricerca, come nel seguente esempio:
 
 ```html
 <form>
-    <button type="submit" formaction="www.google.com/search?q=HTML">Invia a Google</button>
-    <button type="submit" formaction="www.duckduckgo.com/search?q=HTML">Invia a DuckDuckGo</button>
-    <button type="submit" formaction="www.bing.com/search?q=HTML">Invia a Bing</button>
+    <label>inserisci cosa cercare</label>
+    <input placeholder="cerca" name="q">
+
+    <button type="submit" formaction="www.google.com/search">Invia a Google</button>
+    <button type="submit" formaction="www.duckduckgo.com/search">Invia a DuckDuckGo</button>
+    <button type="submit" formaction="www.bing.com/search">Invia a Bing</button>
 </form>
 ```
 
@@ -81,7 +195,7 @@ Il risultato è il seguente:
 
 ![Pulsanti del form](/static/coding/web/html/form-buttons.png "Pulsanti del form")
 
-## Descrizione dei campi
+### Descrizione dei campi
 
 Ogni campo in cui l'utente inserisce i dati deve essere corredato da una descrizione, realizzata attraverso l'etichetta ``label``.
 
@@ -97,7 +211,7 @@ Ad esempio, supponendo che l'identificativo del campo sia ``nome``, allora l'eti
 <label for="nome">Inserisci il nome utente:</label>
 ```
 
-## Campi di input
+### Campi di input
 
 I campi di input permettono all'utente di inserire i dati e di interagire con il modulo di invio.
 
@@ -152,7 +266,7 @@ Il risultato è il seguente:
 
 Come si può notare nell'esempio, l'identificativo utente è nascosto, per cui non è presente la descrizione collegata. Il gruppo societario è disabilitato, per cui non sarà inviato al server. La società è in sola lettura, perciò non sarà modificabile dall'utente. Il nome utente è obbligatorio, per cui l'utente deve inserirlo per poter inviare il modulo al server.
 
-## Esempio completo di modulo di invio dati
+### Esempio completo di modulo di invio dati
 
 Realizziamo un modulo di invio dati che permetta il login dell'utente.
 
@@ -204,7 +318,7 @@ Il risultato è il seguente:
 
 ![Immagine del form](/static/coding/web/html/form02.png "Immagine del secondo form")
 
-## Input testuale
+### Input testuale
 
 Il campo di input, se non diversamente specificato, permette l'inserimento di testo. È comunque buona norma specificare il tipo testuale, indicando l'attributo ``type="text"``.
 
@@ -236,7 +350,7 @@ Il risultato è il seguente:
 
 ![Input di testo](/static/coding/web/html/inputTesto.png "Input di testo")
 
-## Input di una password
+### Input di una password
 
 Una password è tipicamente nascosta allo sguardo di chi è davanti allo schermo. Per creare un campo di input che contenga una password (nascosta) è necessario indicare l'attributo ``type="password"``.
 
@@ -256,7 +370,7 @@ Il risultato è il seguente:
 
 ![Input di tipo password](/static/coding/web/html/inputPassword.png "Input di tipo password")
 
-## Input di una email
+### Input di una email
 
 Per creare un campo di input che contenga una email è necessario indicare l'attributo ``type="email"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="email"`` per indicare la scelta della tastiera virtuale appropriata per l'inserimento dei dati sui dispositivi mobile e l'attributo ``autocomplete="email"`` per suggerimenti all'utente nell'inserimento della email.
 
@@ -266,7 +380,7 @@ Un esempio di campo di inserimento per una email è il seguente:
 <input type="email" name="email" inputmode="email" autocomplete="email">
 ```
 
-## Input di un indirizzo web
+### Input di un indirizzo web
 
 Per creare un campo di input che contenga un indirizzo web è necessario indicare l'attributo ``type="url"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="url"`` per indicare la scelta della tastiera virtuale appropriata (con i caratteri "://" e ".") per l'inserimento dei dati sui dispositivi mobile e per suggerimenti all'utente nell'inserimento dell'indirizzo web utilizzando l'attributo ``autocomplete="url"``.
 
@@ -276,7 +390,7 @@ Un esempio di campo di inserimento per un indirizzo web è il seguente:
 <input type="url" name="url" inputmode="url" autocomplete="url">
 ```
 
-## Input di un numero di telefono
+### Input di un numero di telefono
 
 Per creare un campo di input che contenga un numero di telefono è necessario indicare l'attributo ``type="tel"``. Si consiglia inoltre di utilizzare l'attributo ``inputmode="tel"`` per indicare la scelta del tastierino numerico virtuale appropriato (con i caratteri "#", "*" e ".") per l'inserimento dei dati sui dispositivi mobile e l'attributo ``autocomplete="tel"`` per suggerimenti all'utente nell'inserimento del numero di telefono.
 
@@ -286,7 +400,7 @@ Un esempio di campo di inserimento per un numero di telefono è il seguente:
 <input type="tel" name="telephone" inputmode="tel" autocomplete="tel">
 ```
 
-## Input numerico
+### Input numerico
 
 Per creare un campo di input che contenga un numero è necessario indicare l'attributo ``type="number"``.  Si consiglia inoltre di utilizzare l'attributo ``inputmode="numeric"`` o ``inputmode="decimal"`` per indicare la scelta del tastierino numerico virtuale appropriato (con o senza il carattere di separazione dei decimali) per l'inserimento dei dati sui dispositivi mobile.
 
@@ -314,7 +428,7 @@ Il risultato è il seguente:
 
 ![Input di tipo numerico](/static/coding/web/html/inputNumerico.png "Input di tipo numerico")
 
-## Input di una data
+### Input di una data
 
 Per creare un campo di input che contenga una data (senza l'ora), è necessario indicare l'attributo ``type="date"``. In questo modo, sui dispositivi mobile si permette la scelta della data attraverso il calendario.
 
@@ -345,7 +459,7 @@ Il risultato è il seguente:
 
 ![Input di tipo data](/static/coding/web/html/inputData.png "Input di tipo data")
 
-## Input di un orario
+### Input di un orario
 
 Per creare un campo di input che contenga un orario, è necessario indicare l'attributo ``type="time"``. In questo modo, sui dispositivi mobile si permette la scelta dell'orario attraverso l'orologio.
 
@@ -367,20 +481,7 @@ Il risultato è il seguente:
 
 ![Input di tipo orario](/static/coding/web/html/inputOrario.png "Input di tipo orario")
 
-## Input di selezione multipla "checkbox"
-
-Per creare un campo di selezione multipla, contenente più voci selezionabili, è necessario creare più campi di input, tutti con l'attributo ``type="checkbox"``.
-
-L'attributo ``checked`` indica che la voce è pre-selezionata. L'attributo ``value`` indica il valore da trasmettere se il campo è selezionato.
-
-Un esempio di campo di voce da selezionare è la seguente:
-
-```html
-<input type="checkbox" id="coding" name="interest" value="coding">
-<label for="coding">Coding</label>
-```
-
-Come si può notare, la descrizione è inserita successivamente alla voce selezionabile, in modo che possa comparire a sinistra del campo;
+### Trasmissione dati con input di selezione multipla "checkbox"
 
 Per i campi di selezione multipla, tipicamente si sceglie che tutti i campi di input dello stesso gruppo abbiano lo stesso nome. Ad esempio, per la scelta degli interessi si ha:
 
@@ -391,118 +492,29 @@ Per i campi di selezione multipla, tipicamente si sceglie che tutti i campi di i
 <label for="soccer">Calcio</label>
 ```
 
-Il risultato è il seguente:
+Al momento dell'invio dei dati, il browser invierà i dati nel seguente formato ``interest=programmazione``**&**``interest=soccer``.
 
-![Input di tipo checkbox](/static/coding/web/html/inputCheckbox.png "Input di tipo checkbox")
+### Input di selezione singola "radio"
 
-## Input di selezione singola "radio"
+Tutti i campi di input di selezione singola "radio" appartenenti allo stesso gruppo hanno lo stesso nome, ma solo una voce sarà selezionabile, quindi sarà inviato il campo nella forma standard ``nome=valore``.
 
-Per creare una selezione singola, è necessario creare più campi di input, tutti con lo stesso nome, utilizzando l'attributo ``type="radio"``.
+<!--
+Ad esempio, la ricerca su google avviene su URL https://www.google.com/search?q=valore
 
-Avendo tutti lo stesso nome ed essendo tutti del tipo "radio", solo una voce sarà selezionabile.
+Di questo URL si notano:
 
-L'attributo ``checked`` indica che la voce è pre-selezionata. L'attributo ``value`` indica il valore da trasmettere per la voce scelta.
+- ``https://``: il protocollo utilizzato per l'invio dei dati;
+- ``www.google.com``: il nome del server
+- ``:80``: la porta sulla quale avviene la comunicazione. In questo caso, dato che si tratta della porta predefinita, è omessa;
+- ``search``: il servizio richiesto al server;
+- ``?``: il carattere di separazione che indica i successivi dati inviati;
+- ``q``: il nome del primo dato inviato;
+- ``valore``: il dato inserito dall'utente;
 
-```html
-<input type="radio" id="voce1" name="contatto" value="email">
-<label for="voce1">email</label>
+I dati da inviare possono essere di diversa natura, per cui sono previsti
+-->
 
-<input type="radio" id="voce2" name="contatto" value="telefono">
-<label for="voce2">telefono</label>
-
-<input type="radio" id="voce3" name="contatto" value="pec">
-<label for="pec">PEC</label>
-```
-
-Come si può notare, la descrizione è inserita successivamente alla voce selezionabile ed è legata a quest'ultima tramite l'attributo ``for`` che ha come valore l'identificativo della relativa voce;
-
-Il risultato è il seguente:
-
-![Input di tipo radio](/static/coding/web/html/inputRadio.png "Input di tipo radio")
-
-## Input testuale con lista di suggerimenti
-
-Un campo di testo può prevedere una lista di suggerimenti per l'utente.
-
-Quando un utente inizia a scrivere nel campo di testo, viene mostrato un suggerimento contenuto nella lista se i primi caratteri corrispondono, se invece i caratteri non corrispondono l'utente continua a scrivere liberamente senza nessun suggerimento.
-
-La lista di suggerimenti non è limitata ai suggerimenti testuali ma può prevedere anche suggerimenti numerici, temporali (data e ora) o codici di colori, per cui può essere associata anche ai campi di input numerici, di input di una data, input di un'ora e così via.
-
-La lista di suggerimenti è un elemento HTML separato rispetto al campo di input. L'etichetta utilizzata per creare una lista di suggerimenti è ``datalist`` e deve avere l'attributo ``id`` necessario ad identificarla.
-
-Il campo di input e poi legato alla lista di suggerimenti attraverso l'attributo ``list``, che deve avere lo stesso valore inserito nell'attributo ``id`` della lista.
-
-Ad esempio, nell'esempio seguente si realizza una lista di suggerimenti per la scelta del gusto di un gelato. La lista di suggerimenti ha l'identificativo ``gelati-suggeriti``. Il campo di input è legato a questi suggerimenti attraverso l'attributo ``list`` che ha per valore ``gelati-suggeriti`` (l'identificativo della lista di suggerimenti).
-
-```html
-<label for="scelta-gelati">Scegli un gusto:</label>
-<input list="gelati-suggeriti" id="scelta-gelati" name="gusto-scelto">
-
-<datalist id="gelati-suggeriti">
-    <option value="Cioccolato">
-    <option value="Cocco">
-    <option value="Menta">
-    <option value="Fragola">
-    <option value="Vaniglia">
-</datalist>
-```
-
-Il risultato è il seguente:
-
-![Input con lista di suggerimenti](/static/coding/web/html/inputWithDatalist.png "Input con lista di suggerimenti")
-
-## Campi di selezione singola da menù a tendina
-
-I campi di selezione sono campi nei quali l'utente puó scegliere un valore tra quelli disponibili nel menù a tendina.
-
-Dato che anche i campi di selezione sono campi di input, devono essere inseriti all'interno di un form per poter inviare un valore al server,
-
-Per poter creare un campo di selezione, si utilizza l'etichetta ``select``, che condivide molti attributi di un campo di input:
-
-Gli attributi ``name``, ``required``, ``readonly``, ``hidden`` e ``disabled`` ricoprono le stesse funzionalità  viste per i campi di input.
-
-Le voci da mostrare nel menù a tendina devono essere inserite nell'etichetta ``option``, che prevede l'attributo ``value``, il cui valore viene inviato al server.
-
-Un esempio di campo di selezione è il seguente:
-
-```html
-<label for="auto">auto</label>
-<select name="car" id="auto">
-      <option value="volvo">Volvo</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-</select>
-```
-
-Il risultato è il seguente:
-
-![Input di tipo selezione singola](/static/coding/web/html/inputSelect.png "Input di tipo selezione singola")
-
-Le varie opzioni possono essere raggruppate per categoria, dimensione o altro criterio, inserendo le varie voci nell'etichetta ``optgroup``:
-
-```html
-<label for="auto">auto</label>
-<select name="car" id="auto">
-    <optgroup label="auto svedesi">
-      <option value="volvo">
-      Volvo</option>
-      <option value="saab">
-      Saab</option>
-    </optgroup>
-    <optgroup label="auto tedesche">
-      <option value="mercedes">
-      Mercedes</option>
-      <option value="audi">
-      Audi</option>
-    </optgroup>
-</select>
-```
-
-Il risultato è il seguente:
-
-![Input di tipo selezione singola](/static/coding/web/html/inputSelectGroup.png "Input di tipo selezione singola")
-
-<!-- TODO verifica perchè non funziona
+<!--
 
 ### Finestre di dialogo
 
