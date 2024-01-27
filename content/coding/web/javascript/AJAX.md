@@ -36,62 +36,11 @@ Le comunicazioni AJAX avvengono comunque su protocollo HTTP/HTTPS, per cui c'è 
 - i dati necessari per effettuare l'operazione;
 - i dati tecnici per effettuare la chiamata AJAX, quali credenziali di autenticazione, codifica del testo, formato di output richiesto, ecc..
 
-Alcuni dati vengono trasmessi nell'intestazione (tradotto **header**) del protocollo HTTP, come le informazioni relative alle credenziali, all'origine della chiamata o anche al tipo di dati che si invia al server;
+Alcuni dati vengono trasmessi nell'intestazione (tradotto **header**) della richiesta (come specificato dal protocollo HTTP). Qui vanno indicate le informazioni relative alle credenziali, all'origine della chiamata o anche al tipo di dati che si invia al server;
 
 Quando si invoca un servizio, la richiesta può essere soddisfatta o meno, e ciò avviene attraverso un codice di risposta, sempre specificato dal protocollo HTTP, che il fornitore del servizio invia a chi lo invoca.
 
 In alcuni casi, vengono effettuate 2 chiamate al server, la prima è necessaria per verificare che il server sia abilitato a ricevere la richiesta e la seconda effettua la richiesta a tutti gli effetti.
-
-### Metodi del protocollo HTTP per la gestione delle risorse
-
-I metodi previsti dal protocollo, che corrispondono alle operazioni da effettuare, sono i seguenti:
-
-- GET : richiesta della risorsa identificata dall'URL;
-- PUT : imposta una nuova risorsa sull'URL indicato. Se sull'URL indicato esiste gia una risorsa, questa sarà sostituita;
-- PATCH : modifica della risorsa identificata dall'URL;
-- POST : aggiunge contenuti (figli) di una risorsa;
-- DELETE : cancellazione della risorsa identificata dall'URL;
-
-L'URL in questi casi identifica univocamente la risorsa sulla quale si vuole agire.
-
-Un esempio con relativa spiegazione delle varie chiamate AJAX è il seguente:
-
-```output
-GET  /blogs                 # Richiede la lista di tutti i blog
-GET  /blogs/12              # Richiede i dati relativi al blog 12
-GET  /blogs/12/articles     # Richiede la lista di tutti gli articoli del blog 12
-GET  /blogs/12/articles/5   # Richiede l'articolo 5 del blog 12
-POST /blogs/12/articles     # Aggiunge un nuovo articolo al blog 12
-PUT  /blogs/12/articles/5   # Inserisce o sostituisce l'articolo 5 del blog 12
-PATCH /blogs/12/articles/5  # Modifica l'articolo 5 del blog 12 (ad esempio il titolo)
-DELETE /blogs/12/articles/5 # Cancella l'articolo 5 del blog 12
-```
-
-Ci sono utilizzi non sempre concordi sull'uso del metodo POST, ma le specifiche d'uso dei due metodi sono principalmente le seguenti:
-
-- Usando il metodo PUT, si aggiunge o sostituisce la risorsa specificata dall'URL indicato, mentre usando il metodo POST, si aggiunge un figlio alla risorsa specificata dall'URL;
-- Usando il metodo PUT, è il client ad indicare l'URL della risorsa, mentre usando il metodo POST, è il server a decidere;
-- Inviando più volte la stessa richiesta col metodo PUT, la risorsa interessata dalla modifica sarà sempre la stessa e sarà modificata sempre allo stesso modo, come se la richiesta fosse stata una sola. Inviando più volte la stessa richiesta col metodo POST, si otterranno risultati diversi;
-- Il metodo POST ha un uso più astratto rispetto al metodo PUT.
-
-### Codifica e formato dei dati inviati e ricevuti
-
-I dati da inviare al servizio possono essere in formati diversi. Di seguito una spiegazione per ognuno di essi:
-
-- Formato "testo in chiaro" ``text/plain``: i dati sono inviati senza nessun tipo di codifica. Questo tipo di trasmissione non è pensata per l'invio dei dati verso un altro sistema informatico ma solo per l'analisi da parte di un tecnico, quindi per la lettura e la stampa dei dati;
-- Formato "URL-Encoded" ``application/x-www-form-urlencoded``: i dati vengono inviati come fossero parte di un'unica stringa formata da coppie "chiave=valore". Le coppie sono separate tra loro dal carattere ``&`` ("e" commerciale) e sono codificate in codice **ASCII**. I caratteri non rappresentabili da un codice ASCII sono sostituiti da un carattere ``%`` ("percentuale") seguito da due cifre esadecimali. I caratteri di "nuova linea" vengono normalizzati, e gli spazi sono sostituiti con il carattere ``+`` o con il codice ``%20``;
-- Formato "multipart" ``multipart/form-data``: E' il formato utilizzato per l'invio di file o per grandi quantità di dati. Ogni dato viene inviato in una propria parte del messaggio, contenente sia le informazioni relative al dato inviato, come ad esempio che si tratti di un campo di un form o che si tratti di un file, sia il valore del campo o il contenuto del file);
-- Formato "JSON" ``application/json``: E' il formato utilizzato per l'invio dei dati in formato JSON utilizzando la codifica "UTF-8".
-
-### Risposta del server o del servizio
-
-Il server risponde ad una chiamata AJAX attraverso un codice di stato che indica se la chiamata è andata a buon fine o meno. Tipicamente i codici di stato sono quelli impliciti del protocollo HTTP, che sono raggruppati per classi, di seguito descritte:
-
-- codici di informazione da ``100`` a ``199`` indicano che la richiesta del client è stata ricevuta e si può continuare l'elaborazione. Tra questi codici troviamo informazioni come "continua la trasmissione del messaggio" (codice ``100``) oppure "cambio di protocollo in corso" (codice ``101``);
-- codici di elaborazione avvenuta da ``200`` a ``299`` indicano che il server ha elaborato la richiesta. Tra questi codici troviamo "dati inviati correttamente dal server" (codice ``200``), "richiesta elaborata e nessun dato inviato dal server" (codice ``204``), "risorsa creata ed inviata dal server" (codice ``201``);
-- codici di redirezione da ``300`` a ``399`` indicano che il server non elaborerà la richiesta, ma che la può elaborare se si seguono le indicazioni del server. Tra questi codici troviamo "risorsa spostata ad altro URL" (codice ``301``), "risorsa disponibile tramite proxy" (codice ``305``);
-- codici di errore del client da ``400`` a ``499`` indicano che la richiesta effettuata è errata o non ha le condizioni per poter essere elaborata. Tra questi codici troviamo "richiesta errata" (codice ``400``), "richiesta senza autenticazione" (codice 401), "pagamento richiesto" (codice ``402``), "risorsa richiesta non trovata" (codice ``404``);
-- codici di errore del server da ``500`` a ``599`` indicano che la richiesta non sarà elaborata per problemi interni del server. Tra questi codici troviamo "errore del server" (codice ``500``), "operazione non disponibile" (codice ``501``), ""servizio non disponibile" (codice ``509``).
 
 ### Esempio di configurazione server abilitato a CORS
 
