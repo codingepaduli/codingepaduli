@@ -34,15 +34,15 @@ Purtroppo, quando si utilizza il protocollo HTTP, è possibile leggere i messagg
 
 Il protocollo **HTTPS** (HTTP Secure) è nato per aggiungere al protocollo HTTP uno strato ulteriore che consenta di evitare il problema descritto in precedenza e garantisca la comunicazione client-server in sicurezza.
 
-Il web server **ospita** (in inglese hosting) uno i piú siti web ed espone ogni singolo file, risorsa o servizio del sito web su un indirizzo web detto URL.
+Il web server **ospita** (in inglese hosting) uno i piú siti web. Il sito web viene quindi ospitato sul server e viene configurato il **nome di dominio**, ovvero il nome associato al sito web, ad esempio "google.it" o "www.microsoft.com". Questo nome di dominio viene quindi pubblicato sui DNS, che associano al nome di dominio un indirizzo IP.
 
-Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer.
+Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer. Il web server si occupa di esporre ogni singolo file, risorsa o servizio del sito web su un indirizzo web detto URL.
 
 Ogni pagina web, immagine, file di testo e qualsiasi altra risorsa ha associato un proprio URL per poter essere raggiungibile sul **WWW**. Man mano che gli utenti navigano sul web, il browser richiedere le risorse (delle pagine web, delle immagini, dei file) al server, specificando per ogni richiesta l'indirizzo web (URL) della risorsa.
 
 Un URL del sevizio di navigazione è composto da:
 
-``protocollo``://``nomeServer``:``porta``/``servizio``?``queryString``
+``protocollo``://``nomeDominio``:``porta``/``servizio``?``queryString``
 
 La query string presente in un URL è composta dal seguente formato:
 
@@ -53,13 +53,13 @@ Ad esempio, l'indirizzo della pagina di ricerca di google è:
 ``https://www.google.it:443/search?q=ricerca``
 
 - ``https``: il protocollo di comunicazione;
-- ``www.google.it``: il sito web;
+- ``www.google.it``: il nome di dominio (del sito web);
 - ``443``: la porta sulla quale avviene la comunicazione. Quando si tratta della porta predefinita, può essere omessa;
 - ``/search``: il servizio richiesto al server, ovvero il servizio di ricerca;
 - ``q=ricerca``: la query string;
 - ``://``, ``:`` e ``?`` sono caratteri di separazione;
 
-La query string è formata da:
+Nello stesso esempio, la query string è formata da:
 
 - ``q``: il nome del primo dato inviato;
 - ``ricerca``: il valore del primo dato inviato;
