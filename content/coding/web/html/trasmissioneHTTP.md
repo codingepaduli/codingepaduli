@@ -161,7 +161,7 @@ I collegamenti HTML consentono di richiedere una risorsa ad un server specifican
 Un collegamento è un testo sul quale l'utente può cliccare per ricevere dal server la pagina web contenente i dati richiesti.
 
 Un esempio di collegamento è il seguente: <!-- markdownlint-disable-next-line MD033 -->
-<a href="www.google.com/search?q=HTML">ricerca il termine HTML su Google</a>
+<a href="https://www.google.com/search?q=HTML">ricerca il termine HTML su Google</a>
 
 Quando l'utente clicca su un collegamento, il browser effettua una richiesta al server e gli invia i dati necessari, se presenti nel collegamento.
 
