@@ -14,11 +14,59 @@ weight: 9300
 
 # Trasmissione dati su protocollo HTTP
 
-Il server web espone le proprie risorse ed i propri servizi su un indirizzo web, detto URL, che identifica univocamente una risorsa.
+## Architettura client server del WWW
 
-I client possono richiedere le risorse specificando nella richiesta l'indirizzo web (URL) della risorsa.
+Il World Wide Web si basa su un'architettura client-server, in cui il client invia le richieste al server, il server le elabora e fornisce una risposta al client.
 
-Oltre ad un URL, nella richiesta al server il client può inviare i dati da elaborare, indicando per ogni dato il nome ed il valore.
+Il **server** è generalmente un computer con una grande capacità di elaborazione, che gli permette di gestire allo stesso tempo le richieste di milioni di client.
+
+I **client** sono dispositivi con una capacità di elaborazione non elevata, inviano le richieste di elaborazione al server e attendono la risposta.
+
+Il **protocollo** di comunicazione definisce un insieme di regole che client e server seguono per poter comunicare.
+
+I client, per poter navigare, devono utilizzare un software, chiamato **browser**.
+
+Per permettere ai client la navigazione delle risorse, sul server deve essere installato il **web server**, ovvero il software che offre il servizio di navigazione.
+
+Il protocollo **HTTP** (HyperText Transfer Protocol) regola la navigazione, intesa come scambio di ipertesti, tra client e server.
+
+Purtroppo, quando si utilizza il protocollo HTTP, è possibile leggere i messaggi che client e server si scambiano, installando un software adatto su un qualsiasi dispositivo posto tra client e server (ad esempio sul router di casa o su un ripetitore wireless).
+
+Il protocollo **HTTPS** (HTTP Secure) è nato per aggiungere al protocollo HTTP uno strato ulteriore che consenta di evitare il problema descritto in precedenza e garantisca la comunicazione client-server in sicurezza.
+
+Il web server **ospita** (in inglese hosting) uno i piú siti web ed espone ogni singolo file, risorsa o servizio del sito web su un indirizzo web detto URL.
+
+Un **URL** (acronimo di Uniform Resource Locator) è un indirizzo che identifica univocamente una risorsa su una rete di computer.
+
+Ogni pagina web, immagine, file di testo e qualsiasi altra risorsa ha associato un proprio URL per poter essere raggiungibile sul **WWW**. Man mano che gli utenti navigano sul web, il browser richiedere le risorse (delle pagine web, delle immagini, dei file) al server, specificando per ogni richiesta l'indirizzo web (URL) della risorsa.
+
+Un URL del sevizio di navigazione è composto da:
+
+``protocollo``://``nomeServer``:``porta``/``servizio``?``queryString``
+
+La query string presente in un URL è composta dal seguente formato:
+
+``?``nomeParam1``=``valoreParam1``&``nomeParam2``=``valoreParam2
+
+Ad esempio, l'indirizzo della pagina di ricerca di google è:
+
+``https://www.google.it:443/search?q=ricerca``
+
+- ``https``: il protocollo di comunicazione;
+- ``www.google.it``: il sito web;
+- ``443``: la porta sulla quale avviene la comunicazione. Quando si tratta della porta predefinita, può essere omessa;
+- ``/search``: il servizio richiesto al server, ovvero il servizio di ricerca;
+- ``q=ricerca``: la query string;
+- ``://``, ``:`` e ``?`` sono caratteri di separazione;
+
+La query string è formata da:
+
+- ``q``: il nome del primo dato inviato;
+- ``ricerca``: il valore del primo dato inviato;
+- ``?``: il carattere di separazione che indica l'inizio dei dati inviati;
+- ``&``: il carattere di separazione tra un dato e l'altro;
+
+## Esempio di trasmissione dati
 
 Ad esempio, un ipotetico server ``www.server.com`` potrebbe offrire i servizi di registrazione, di login e di logout rispettivamente agli indirizzi:
 
@@ -54,22 +102,6 @@ www.server.com/logout
 Quando il server riceve la richiesta da un client, la elabora, verificando che l'URL richiesto esista e sia disponibile e che i dati inviati siano validi. In caso positivo conferma la richiesta del server e genera una risposta da inviare al client. In caso negativo restituisce al client un messaggio d'errore.
 
 Ci sono solo due elementi HTML che, inseriti in una pagina web, consentono di richiedere una risorsa ad un server specificando eventuali dati aggiuntivi: i collegamenti ed i moduli di invio dati.
-
-<!--
-Ad esempio, la ricerca su google avviene su URL https://www.google.com/search?q=valore
-
-Di questo URL si notano:
-
-- ``https://``: il protocollo utilizzato per l'invio dei dati;
-- ``www.google.com``: il nome del server
-- ``:80``: la porta sulla quale avviene la comunicazione. In questo caso, dato che si tratta della porta predefinita, è omessa;
-- ``search``: il servizio richiesto al server;
-- ``?``: il carattere di separazione che indica i successivi dati inviati;
-- ``q``: il nome del primo dato inviato;
-- ``valore``: il dato inserito dall'utente;
-
-I dati da inviare possono essere di diversa natura, per cui sono previsti
--->
 
 ## Collegamenti per richieste al server
 
