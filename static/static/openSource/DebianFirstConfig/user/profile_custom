@@ -32,6 +32,7 @@ fi
 
 # BLADE3 hashing - Set the number of threads
 RAYON_NUM_THREADS=4
+export RAYON_NUM_THREADS
 
 # Aggiungo JAVA_HOME
 if [ -z "$JAVA_HOME" ]; then
