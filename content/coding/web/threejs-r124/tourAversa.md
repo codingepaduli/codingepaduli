@@ -7,7 +7,7 @@ publishdate: 2024-02-01
 lastmod: 2024-02-01
 categories: ["coding", "web", "three.js"]
 keywords: ["coding", "web", "three.js"]
-draft: false
+draft: true
 toc: false
 summary: "Tour ad Aversa"
 customJS: ["/static/coding/web/threejs-r124/lib/three.js", "/static/coding/web/threejs-r124/lib/GLTFLoader.js", "/static/coding/web/threejs-r124/tourAversa.js"]
