@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-01-20
-publishdate: 2024-01-20
-lastmod: 2024-01-20
+date: 2024-02-12
+publishdate: 2024-02-12
+lastmod: 2024-02-12
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -19,9 +19,9 @@ summary: "Set di link relativi al coding"
 
 ## Programmazione
 
-[Roadmaps to becoming a modern developer](https://roadmap.sh/) - \
+[Roadmaps](https://roadmap.sh/) - becoming a modern developer\
 [IBM developerWorks](https://developer.ibm.com/tutorials/) - Tutorials and projects\
-[Oracle Database Library](http://www.oracle.com/pls/db102/portal.all_books) - \
+[Oracle Library](http://www.oracle.com/pls/db102/portal.all_books) - tool and programming books\
 [EbookFoundation](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - free programming books at EbookFoundation/free-programming-books\
 [freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
 [Education Ecosystem](https://www.education-ecosystem.com/) - The project-based learning for building real products\
@@ -37,7 +37,7 @@ summary: "Set di link relativi al coding"
 [Deskreen](https://deskreen.com/lang-en) - Turn any device into a secondary screen\
 [index | TIOBE](https://www.tiobe.com/tiobe-index/) - The Software Quality Company\
 [FlutterFlow](https://flutterflow.io/) - Build Flutter Apps Visually\
-[Programming language popularity](https://www.zdnet.com/article/programming-language-popularity-javascript-leads-5-million-new-developers-since-2017/) - JavaScript leads – 5 million new developers since 2017 | ZDNet\
+[Popularity](https://www.zdnet.com/article/programming-language-popularity-javascript-leads-5-million-new-developers-since-2017/) - Programming language with JavaScript, 5 million new developers since 2017 | ZDNet\
 
 ### C/C++
 
@@ -45,16 +45,19 @@ summary: "Set di link relativi al coding"
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
+
+#### Android
+
 [Anbox](https://www.2daygeek.com/anbox-best-android-emulator-for-linux/) - Easy Way To Run Android Apps On Linux | 2daygeek.com\
 [Waydroid](https://waydro.id/) - a full Android system in a container right to your GNU/Linux desktop\
 [remote-android/redroid-doc](https://github.com/remote-android/redroid-doc) - Android In Container solution about Remote anDroid projects\
-[infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
 
 #### Cloud
 
 [localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack\
 [Google Cloud Run](https://alexolivier.me/posts/deploy-container-stateless-cheap-google-cloud-run-serverless) - Deploy your side-projects at scale for basically nothing\
+[infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
 
 #### Vagrant and Virtual Machines
 
@@ -69,12 +72,8 @@ summary: "Set di link relativi al coding"
 [Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
 [Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 
-### Ansible, Shell, CI, CD ed automazione
+### Shell, CI, CD ed automazione
 
-[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[Manually Trigger A GitHub Actions Workflow](https://goobar.io/manually-trigger-a-github-actions-workflow/) - goobar\
-[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
-[Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
 
@@ -184,7 +183,7 @@ summary: "Set di link relativi al coding"
 ### Java
 
 [Free web hosting for Java+MySQL websites?](https://www.quora.com/Free-web-hosting-for-Java+MySQL-websites) - Quora\
-[AdoptOpenJDK](https://adoptopenjdk.net/) - Open source, prebuilt OpenJDK binaries\
+[AdoptOpenJDK](https://adoptium.net/) - Open source, prebuilt OpenJDK binaries\
 [Wikibooks, manuali e libri di testo liberi](https://it.wikibooks.org/wiki/Java) - \
 [MokaByte 111](http://www.mokabyte.it/2006/09/javawebapp-1/) - Le applicazioni web e Java\
 [HttpClient](http://hc.apache.org/httpclient-3.x/methods/multipartpost.html) - Multipart Post Method\
@@ -294,7 +293,6 @@ summary: "Set di link relativi al coding"
 [voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
 [GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
 [Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
-[Send desktop notifications and reminders from Linux terminal | Opensource.com](https://opensource.com/article/22/1/linux-desktop-notifications) - \
 [How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - \
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
@@ -328,6 +326,8 @@ summary: "Set di link relativi al coding"
 
 [old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
 [antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
+[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
+[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -382,7 +382,6 @@ summary: "Set di link relativi al coding"
 [Configurazione virtual host su web server Apache](http://www.compago.it/manuali/35-utilita/190-configurazione-web-server-apache-virtual-host.html) - \
 [Apache2 Config Generator](https://apacheconfig.live/) - Apache Configs the easy way\
 [fatal error](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/241817-fatal-error.html) - \
-[Running Laravel on Docker is really easy with Kool](https://dev.to/kooldev/running-laravel-on-docker-is-really-easy-with-kool-400h) - DEV Community\
 
 ### Python
 
@@ -395,6 +394,7 @@ summary: "Set di link relativi al coding"
 [youtube playlist download](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - 4 line code to download full youtube playlist videos - DEV Community\
 [annotated-types/annotated-types](https://github.com/annotated-types/annotated-types) - Reusable constraint types to use with typing.Annotated\
 [Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
+[Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 
 ### Privacy, Security and Hacking
 
@@ -422,7 +422,6 @@ summary: "Set di link relativi al coding"
 #### Enhancing privacy
 
 [DuckDuckGo HTML version](https://html.duckduckgo.com/html) - a search engine without JavaScript\
-[7 WhatsApp alternatives](https://protonmail.com/blog/whatsapp-alternatives/) - that won’t share your data with Facebook\
 [Google Street View](https://mashable.com/article/how-to-blur-your-house-on-google-street-view/?europe=true) - How to blur your house on Google Street View (and why you should)\
 [Double Blind Passwords (aka Horcruxing)](https://kaizoku.dev/double-blind-passwords-aka-horcruxing) - \
 [LibreDNS](https://libredns.gr/) - a public encrypted DNS service that people can use to maintain the secrecy of their DNS traffic, but also circumvent censorship.\
@@ -431,7 +430,6 @@ summary: "Set di link relativi al coding"
 [How tracking pixels work](https://jvns.ca/blog/how-tracking-pixels-work/) - \
 [DuckDuckGo](https://spreadprivacy.com/duckduckgo-revenue-model/) - What Is the Business Model for DuckDuckGo?\
 [degoogle](https://github.com/tycrek/degoogle) - A huge list of alternatives to Google products. Privacy tips, tricks, and links\
-[De-Googling My Life](https://nrempel.com/de-googling-my-life/) - \
 [Firefox Relay](https://relay.firefox.com/) - Hide your real email address generating a new, random address that ends in @relay.firefox.com. Relay will forward messages to the primary email address\
 [Firefox Privacy](https://restoreprivacy.com/firefox-privacy/) - The Complete How-To Guide | Restore Privacy\
 [anti-fingerprinting](https://www.zdnet.com/article/firefox-to-add-tor-browser-anti-fingerprinting-technique-called-letterboxing/) - Firefox to add Tor Browser anti-fingerprinting technique called letterboxing\
@@ -703,7 +701,7 @@ summary: "Set di link relativi al coding"
 
 [chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
 [Space globe](https://dev.to/jayantgoel001/space-globe-threejs-47ee) - Three.js - DEV Community\
-[schteppe/cannon.js](https://github.com/schteppe/cannon.js) - A lightweight 3D physics engine written in JavaScript you can use with three.js\
+[Physics engine](https://discourse.threejs.org/t/preferred-physics-engine-cannon-js-ammo-js-diy/1565/9) - cannon.js, ammo.js, DIY..., in three.js forum\
 [Google Earth as glTF](https://omarshehata.github.io/google-earth-as-gltf/) - \
 
 ##### HandsFree
