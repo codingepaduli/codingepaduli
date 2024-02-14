@@ -98,7 +98,7 @@ In JavaScript sono presenti due modalità di esecuzione degli script:
 ```
 
 Come per la scrittura di pagine web, anche per la stesura di programmi JavaScript si consiglia di configurare correttamente il proprio editor di testo o il proprio strumento di sviluppo, oppure, di utilizzare soluzioni a più ampio raggio come
-[EditorConfig](/coding/tools/editorconfig/ "Link ad EditorConfig su Wikipedia") <!-- TODO: impostare il link a Wikipedia -->,
+[EditorConfig](/tools/editorconfig/ "Link ad EditorConfig su Wikipedia") <!-- TODO: impostare il link a Wikipedia -->,
 in modo da poter condividere le impostazioni di codifica (e di scrittura dei documenti di testo) con l'intero gruppo di lavoro o nell'intera azienda.
 
 Ancor di più, si consiglia l'uso di strumenti per la verifica del codice sorgente, in modo da individuare e correggere eventuali errori non rilevati dal programmatore.

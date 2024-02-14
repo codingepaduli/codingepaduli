@@ -483,8 +483,7 @@ Il risultato è il seguente:
 ![Immagine](/static/coding/web/html/program_CC0.png "immagine")
 
 [Immagine](https://svgsilh.com/3f51b5/image/1970468.html "logo") rilasciata con
-Licenza
-[CC0 1.0](https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html "Logo licenza CC0")
+[Licenza CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/legalcode.it "Licenza CC0 1.0")
 
 Il caricamento di un'immagine dal server e la visualizzazione nella pagina web è un'operazione molto onerosa, dato che un'immagine, soprattutto se di grandi dimensioni ed in alta risoluzione, può avere una dimensione di centinaia di kilobytes, se non addirittura migliaia.
 
