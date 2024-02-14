@@ -50,7 +50,7 @@ I servizi di **monitoring** permettono di monitorare la rete, i log files, le we
 
 ## Programmi di gestione dei container
 
-[Docker Engine]("https://www.docker.com/") e [Podman]("https://podman.io/") sono strumenti a linea di comando per la gestione dei container. Podman e Docker Engine sono compatibili, anche se differiscono in alcuni concetti.
+[Docker Engine](https://www.docker.com/) e [Podman](https://podman.io/) sono strumenti a linea di comando per la gestione dei container. Podman e Docker Engine sono compatibili, anche se differiscono in alcuni concetti.
 
 [lazydocker](https://github.com/jesseduffield/lazydocker) è un'interfaccia per terminale che permette di gestire i container.
 

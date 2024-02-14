@@ -130,7 +130,7 @@ Per scrivere un messaggio di debug sul terminale, si usa quindi:
 Write-Debug "Hello"
 ```
 
-Il comando non presenta nessun output, perchè le impostazioni predefinite non visualizzano sul terminale lo stream di output. Nel caso fosse attivato, l'output sarebbe il seguente:
+Il comando non presenta nessun output, perché le impostazioni predefinite non visualizzano sul terminale lo stream di output. Nel caso fosse attivato, l'output sarebbe il seguente:
 
 ```powershell
 DEBUG: Hello
@@ -178,7 +178,7 @@ Per scrivere un messaggio di verbose sul terminale, si usa quindi:
 Write-Verbose "Hello"
 ```
 
-Il comando non presenta nessun output, perchè le impostazioni predefinite non visualizzano sul terminale lo stream di output. Questo stream si attiva passando il parametro ``-Verbose``, comune a tutti i CommandLet.
+Il comando non presenta nessun output, perché le impostazioni predefinite non visualizzano sul terminale lo stream di output. Questo stream si attiva passando il parametro ``-Verbose``, comune a tutti i CommandLet.
 
 Per visualizzare il messaggio di verbose sul terminale, si usa quindi:
 
@@ -289,7 +289,7 @@ Remove-Alias -Name "wo"
 
 Uno script è un elenco di istruzioni inserite in un file. Eseguire uno script consiste nell'esecuzione di tutte le istruzioni inserite nel file. L'estensione del file per gli script PowerShell è ``ps1``.
 
-Prima di creare uno script è consigliato impostare le opzioni di salvataggio (quali codifica dei caratteri UTF-8 ed il carattere di terminazione riga) attraverso gli strumenti appositi quali [EditorConfig](/coding/tools/editorconfig/).
+Prima di creare uno script è consigliato impostare le opzioni di salvataggio (quali codifica dei caratteri UTF-8 ed il carattere di terminazione riga) attraverso gli strumenti appositi quali [EditorConfig](/tools/editorconfig/).
 
 E' possibile creare il primo script salvando le seguenti istruzioni in un file ``esempio.ps1``:
 

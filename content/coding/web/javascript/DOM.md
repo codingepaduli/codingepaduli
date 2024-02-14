@@ -10,7 +10,6 @@ keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "09 - Manipolazione del DOM"
-customJS: ["/static/coding/web/javascript/dom.js"]
 ---
 
 # 09 - Manipolazione del DOM ed eventi
@@ -104,7 +103,7 @@ Un esempio completo che mostra come alla notifica dell'azione del click si può 
 
 Nell'esempio precedente, l'attributo ``onclick`` permette di ricevere la notifica dell'evento di "click" sull'elemento ``input``, l'azione da eseguire è quella di ``alert('cliccato')``.
 
-Ovviamente le azioni da eseguire possono essere definine in funzioni JavaScript, come nel seguente esempio:
+Ovviamente le azioni da eseguire possono essere definire in funzioni JavaScript, come nel seguente esempio:
 
 ```html
 <script>

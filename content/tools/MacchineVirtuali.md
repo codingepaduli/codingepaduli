@@ -30,7 +30,7 @@ La virtualizzazione realizzata attraverso macchina virtuale è una virtualizzazi
 
 A partire dagli anni 2000 sono nate tecnologie hardware quali Intel® Virtualization Technology e AMD-V™ Technology for Client Virtualization che servono a rendere le CPU più efficienti nell'eseguire il processo di virtualizzazione.
 
-Sul sito del produttore della CPU si può verificare se il supporto hardware alla virtualizzazione è presente. Prendendo ad esempio un processore Intel Core i-9, sul sito dell'azienda e verificando le speficiche della CPU troviamo:
+Sul sito del produttore della CPU si può verificare se il supporto hardware alla virtualizzazione è presente. Prendendo ad esempio un processore Intel Core i-9, sul sito dell'azienda e verificando le specifiche della CPU troviamo:
 
 ![VirtualBox - Specifiche hardware Intel Technology](/static/coding/tools/MacchineVirtuali-Virtualization-Tech-Intel-Specification.png "VirtualBox - Specifiche hardware Intel Technology")
 
@@ -50,15 +50,15 @@ E' importante controllare che questa tecnologia sia abilitata nelle impostazioni
 
 ## Svantaggi
 
-La nota negativa nell'uso di una macchina virtuale è che bisogna simulare l'intero hardware e software, sistema operativo compreso. Avere più macchine virtuali in esecuzione sulla stessa macchina ospite è molto dispendioso in termini di risorse necessarie per la macchina ospite. Se un sistema operativo richiede 8 GB di RAM e 16 GB di spazio su disco, con 5 macchine virtuali avremo necessari 40 GB di RAM e 80 GB di spazio su disco. Le risorse della macchina ospitante terminano falcilmente. Per questo le aziende hanno iniziato a lavorare, quando possibile, con tecnologie meno "pesanti" in termini di risorse richieste.
+La nota negativa nell'uso di una macchina virtuale è che bisogna simulare l'intero hardware e software, sistema operativo compreso. Avere più macchine virtuali in esecuzione sulla stessa macchina ospite è molto dispendioso in termini di risorse necessarie per la macchina ospite. Se un sistema operativo richiede 8 GB di RAM e 16 GB di spazio su disco, con 5 macchine virtuali avremo necessari 40 GB di RAM e 80 GB di spazio su disco. Le risorse della macchina ospitante terminano facilmente. Per questo le aziende hanno iniziato a lavorare, quando possibile, con tecnologie meno "pesanti" in termini di risorse richieste.
 
 Altra nota negativa è che per ogni macchina virtuale bisogna gestire il sistema operativo: bisogna gestire l'accesso di tutti gli utenti, i ruoli, i servizi da configurare o da eseguire all'avvio, gli aggiornamenti del sistema operativo, ecc.. Per quanto la gestione possa essere in parte o completamente automatizzata, comunque si tratta di una duplicazione di un compito che già viene svolto sul sistema operativo della macchina ospitante.
 
 ## Software di virtualizzazione
 
-Esistomo molti software per la gestione di macchine virtuali, ognuno che sfrutta il proprio hypervisor per l'accesso all'hardware della macchina ospite.
+Esistono molti software per la gestione di macchine virtuali, ognuno che sfrutta il proprio hypervisor per l'accesso all'hardware della macchina ospite.
 
 Degno di nota l'hypervisor integrato nel kernel Linux, chiamato KVM.
 L'hypervisor Kernel-based Virtual Machine (KVM) è una tecnologia open source che permette di utilizzare proprio il kernel Linux come hypervisor, permettendo a qualsiasi macchina Linux (host) di "ospitare" più macchine virtuali ospiti (guests). Ogni macchina virtuale è eseguita come un qualsiasi altro processo eseguito da Linux (si ricorda che un processo è un programma in esecuzione).
 
-Tra i vari software disponibili all'utente medio si consigliano [VirtualBox](/coding/tools/virtualbox/ "Link a VirtualBox"), con il proprio hypervisor, e Qemu, con l'hypervisor KVM e con la sua interfaccia grafica [AQemu](/coding/tools/aqemu "Link a AQemu").
+Tra i vari software disponibili all'utente medio si consigliano [VirtualBox](/tools/virtualbox/ "Link a VirtualBox"), con il proprio hypervisor, e Qemu, con l'hypervisor KVM e con la sua interfaccia grafica [AQemu](/tools/aqemu "Link a AQemu").
