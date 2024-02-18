@@ -396,10 +396,14 @@ Una macchina Linux invece deve essere abilitata per la correzione automatica di 
 git config --local core.autocrlf input
 ```
 
-Nella configurazione è utile anche impostare l'editor di riferimento:
+#### Altre opzioni di configurazione utili
+
+Per rilevare in tempo la corruzione del repository:
 
 ```bash
-git config --local core.editor "atom --wait"
+git config --local transfer.fsckobjects true
+git config --local fetch.fsckobjects true
+git config --local receive.fsckObjects true
 ```
 
 Se necessario, si può scegliere di non ignorare la differenza tra caratteri minuscoli e maiuscoli nei nomi dei file, con il comando:
@@ -414,11 +418,24 @@ Se si vuole memorizzare le credenziali, può essere utile il comando:
 git config --local credential.helper store
 ```
 
-Infine, git chiede quale tecnica usare per sincronizzare il repository. Si consiglia la seguente:
+Quando git chiede quale tecnica usare per sincronizzare il repository. Si consiglia la seguente:
 
 ```bash
 git config --local pull.rebase false
 ```
+
+Per configurare l'editor e gli strumenti per visualizzare le differenze si possono usare i seguenti comandi:
+
+```bash
+git config --local core.editor "micro"
+git config --local diff.algorithm histogram
+git config --local diff.tool "meld"
+git config --local difftool.prompt false
+git config --local merge.tool "meld"
+git config --local mergetool.prompt false
+```
+
+
 
 ### Configurazione chiave SSH per firma e verifica
 
