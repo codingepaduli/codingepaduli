@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-01-20
-publishdate: 2024-01-20
-lastmod: 2024-01-20
+date: 2024-02-20
+publishdate: 2024-02-20
+lastmod: 2024-02-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -153,7 +153,6 @@ summary: "Set di link relativi all'istruzione di base"
 [Tutorial LibreOffice Base](https://www.youtube.com/watch?v=O5ZxTxmD60Y) - Parte 5 - Ricerca con uso di JOIN - YouTube\
 [Tutorial LibreOffice Base](https://www.youtube.com/watch?v=WELJ7n7y1hc) - Parte 6 - Ordinare, Contare, Raggruppare - YouTube\
 [OpenOffice](http://www.informarmy.com/2009/10/indice-su-openoffice-writer-con-titoli.html) - Indice con capitoli e paragrafi numerati e linkabili\
-[OpenOffice](http://www.louisedoc.com/lou-it-openoffice-Writer-0181.htm) - Inserire indice bibliografico\
 
 ##### Professioni Informatiche
 
@@ -237,7 +236,6 @@ summary: "Set di link relativi all'istruzione di base"
 
 [XAMPP](https://www.youtube.com/watch?v=AiZFtd8mLBE) - web server Apache / MySQL / PHP con XAMPP su Windows - YouTube\
 [PHP](https://www.html.it/guide/guida-php-di-base/) - guida al linguaggio lato server | HTML.it\
-[Apache2 Config Generator](https://apacheconfig.live/) - Apache Configs the easy way\
 [Corso Php MySQL Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - YouTube\
 [MYSQL CORSO BASE (con PhpMyAdmin)](https://www.youtube.com/playlist?list=PLaguh5H6_Ux1e7JS7Ly3SCTuKWL-0CLDV) - YouTube\
 [Corso Wordpress Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-uRmdwRr05WOq_ZEdbbhEF) - YouTube\

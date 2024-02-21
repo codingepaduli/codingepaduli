@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-02-12
-publishdate: 2024-02-12
-lastmod: 2024-02-12
+date: 2024-02-20
+publishdate: 2024-02-20
+lastmod: 2024-02-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -21,7 +21,6 @@ summary: "Set di link relativi al coding"
 
 [Roadmaps](https://roadmap.sh/) - becoming a modern developer\
 [IBM developerWorks](https://developer.ibm.com/tutorials/) - Tutorials and projects\
-[Oracle Library](http://www.oracle.com/pls/db102/portal.all_books) - tool and programming books\
 [EbookFoundation](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books-it.md) - free programming books at EbookFoundation/free-programming-books\
 [freetechbooks](https://www.freetechbooks.com/) - Free / Open Access Online Computer Science and Programming Books, Textbooks, and Lecture Notes\
 [Education Ecosystem](https://www.education-ecosystem.com/) - The project-based learning for building real products\
@@ -112,7 +111,6 @@ summary: "Set di link relativi al coding"
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 [Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
 [This Anime Does Not Exist](https://thisanimedoesnotexist.ai/) - \
-[Automating my job by using GPT-3 to generate database-ready SQL to answer business questions](https://blog.seekwell.io/gpt3) - \
 [Predicting sex from retinal fundus photographs using automated deep learning | Scientific Reports](https://www.nature.com/articles/s41598-021-89743-x.epdf?sharing_token=Fe891D30KtzWj086Mix2BtRgN0jAjWel9jnR3ZoTv0MtpAfo4k5SUyr2ANoiCUj48aDnaVS1oiRvWR5Jq3W5vp2Xty3aFDSimt06-04o22tCkZ62X__WtnMTTtit3At8eCD1Y4VRife50LtwBhS8nU--GtD10XpQBfLSJk9Tc1tdTUwF5RuI--pQYDk9R8IJ) - \
 [The Fourier transform is a neural network | sidsite](https://sidsite.com/posts/fourier-nets/) - \
 [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) - 12 weeks, 25 lessons, 50 quizzes, classic Machine Learning for all\
@@ -190,11 +188,9 @@ summary: "Set di link relativi al coding"
 [How to Import Maven Remote Archetype Catalogs in Eclipse](https://howtodoinjava.com/eclipse/how-to-import-maven-remote-archetype-catalogs-in-eclipse/) - \
 [SpotBugs](https://github.com/spotbugs/spotbugs) - spotbugs/spotbugs is FindBugs' successor. A tool for static analysis to look for bugs in Java code.\
 [Load environment-specific properties for use with PropertyPlaceholderConfigurer?](https://stackoverflow.com/questions/2204917/load-environment-specific-properties-for-use-with-propertyplaceholderconfigurer) - \
-[Guida JSP](http://java.html.it/guide/leggi/23/guida-jsp/) - \
 [REST](http://www.infoq.com/articles/webber-rest-workflow) - How to GET a Cup of Coffee\
 [How to Start Embedded HTTP Jersey server during Java Application Startup](http://crunchify.com/how-to-start-embedded-http-jersey-server-during-java-application-startup/) - \
 [Oracle Java tutorial](https://docs.oracle.com/javase/tutorial/essential/io/misc.html) - \
-[Novita su Java7](http://blog.html.it/tag/java7/) - \
 [An example of very lightweight RESTful web services in Java | Opensource.com](https://opensource.com/article/20/7/restful-services-java) - \
 [Modern Best Practices for Testing in Java](https://phauer.com/2019/modern-best-practices-testing-java/) - \
 [JEP 392](https://openjdk.java.net/jeps/392) - Packaging Tool for packaging self-contained Java applications\
@@ -335,7 +331,6 @@ summary: "Set di link relativi al coding"
 [ESP8266](https://www.instructables.com/id/Quick-Start-to-Nodemcu-ESP8266-on-Arduino-IDE/) - Quick Start to Nodemcu on Arduino IDE in 3 Steps (with Pictures)\
 [MicroBlocks](https://microblocks.fun/) - Small, Fast, Human Friendly\
 [MicroBlocks](https://opensource.com/article/20/11/microblocks) - Program your microcontroller with MicroBlocks | Opensource.com\
-[Raspberry Pi Alternatives in 2021](https://blog.jmdawson.co.uk/9-raspberry-pi-alternatives-in-2021-hackboard-zimaboard-rockpi-odroid-and-more/) - James Dawson\
 [TerraPi](https://www.cnx-software.com/2020/12/19/terrapi-modular-case-for-raspberry-pi-supports-multiple-ssds-din-rail-horizontal-vertical-mounts/) - modular case system for Raspberry Pi supports multiple SSD's, DIN rail, horizontal & vertical mounts\
 [geerlingguy/pi-webcam](https://github.com/geerlingguy/pi-webcam) - Automation to configure a Raspberry Pi as a USB OTG webcam\
 [Build a motion detection system with a Raspberry Pi | Opensource.com](https://opensource.com/article/20/11/motion-detection-raspberry-pi) - \
@@ -379,8 +374,6 @@ summary: "Set di link relativi al coding"
 [REST API Authentication](http://community.sitepoint.com/t/rest-api-authentication/6200) - The SitePoint Forums\
 [PHP](http://it.phptherightway.com/) - La Retta Via\
 [mod_rewrite](https://www.cheatography.com/davechild/cheat-sheets/mod-rewrite/) - Cheat Sheets For Every Occasion\
-[Configurazione virtual host su web server Apache](http://www.compago.it/manuali/35-utilita/190-configurazione-web-server-apache-virtual-host.html) - \
-[Apache2 Config Generator](https://apacheconfig.live/) - Apache Configs the easy way\
 [fatal error](http://forum.it.altervista.org/php-mysql-e-apache-htaccess/241817-fatal-error.html) - \
 
 ### Python
@@ -510,7 +503,6 @@ summary: "Set di link relativi al coding"
 [freeCodeCamp](https://www.freecodecamp.org/) - Learn to Code and Help Nonprofits\
 [W3Schools Online Web Tutorials](http://www.w3schools.com/) - \
 [Caching](http://www.mnot.net/cache_docs/#BROWSER) - Caching Tutorial for Web Authors and Webmasters\
-[HttpURLConnection](http://www.nicolacolonna.it/?p=668) - upload di un file\
 [schema.org](http://www.google.com/webmasters/tools/richsnippets) - Google Structured Data Testing Tool (see schema.org)\
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
@@ -526,7 +518,6 @@ summary: "Set di link relativi al coding"
 [Responsively App](https://responsively.app/) - A Web developer's browser to improve the developing of responsive design\
 [Nodesign.dev](https://nodesign.dev/) - A collection of tools for developers who have little to no artistic talent\
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
-[robots.txt Generator](http://www.robotsgenerator.com/) - Generate robots.txt Files Instantly - RobotsGenerator.com\
 
 #### HTML
 
@@ -660,7 +651,6 @@ summary: "Set di link relativi al coding"
 [JS Array](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - Understanding the array methods Array.some() and Array.every() in JavaScript - DEV Community\
 [JS Array](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - JavaScript Array Methods - DEV Community\
 [JS Array](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - 5 Useful Array Methods in JavaScript - DEV Community\
-[JS Array](https://dev.to/mrdanishsaleem/useful-javascript-array-methods-4370) - Useful JavaScript Array Methods - DEV Community\
 
 ##### JS Fetch Promise and Async Await
 
