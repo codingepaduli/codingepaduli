@@ -16,7 +16,7 @@ weight: 9370
 references:
     -   title: "EditorConfig"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "/coding/tools/editorconfig/"
+        link: "/tools/editorconfig/"
         description: "Articolo per la configurazione di Editorconfig"
     -   title: "Unicode Converter - Unicodes and text converter"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
