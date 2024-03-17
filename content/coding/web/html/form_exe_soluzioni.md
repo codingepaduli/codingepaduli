@@ -21,7 +21,7 @@ weight: 9306
 
 <form action="www.server.com/login">
   
-  <!-- Dati personali -->
+  <h3>Dati anagrafici</h3>
 
   <!-- Nome (obbligatorio) -->
   <label for="nome">Nome:</label>
@@ -58,10 +58,13 @@ weight: 9306
 
   <!-- Informazioni residenza -->
 
+  <h3>Indirizzo</h3>
+
+  <!--Provincia (obbligatorio, con lista suggerimenti) -->
   <label for="provincia">Provincia:</label>
   <input list="province" id="provincia" name="provincia" required placeholder="Inserisci la tua provincia">
   
-  <!-- suggerimenti province -->
+  <!-- lista suggerimenti per le province -->
   <datalist id="province">
     <option value="Napoli">
     <option value="Salerno">
@@ -74,13 +77,15 @@ weight: 9306
     <option value="Bologna">
     <option value="Firenze">
     <option value="Palermo">
+    <!-- ... -->
   </datalist>
-  
+
+  <!-- Comuni (obbligatorio, con lista suggerimenti) -->
   <label for="comune">Comune:</label>
   <input list="comuni" id="comune" name="comune" required placeholder="Inserisci comune qui">
 
-  <!-- suggerimenti comuni -->
   <datalist id="comuni">
+    <!-- lista comuni che verranno suggeriti all'utente nell'inserimeto -->
     <option value="Cesa">
     <option value="Sant'Antimo">
     <option value="Sant'Arpino">
@@ -91,17 +96,22 @@ weight: 9306
     <option value="Teverola">
     <option value="Gricignano d'Aversa">
     <option value="Succivo">
+    <!-- ... -->
   </datalist>
-  
+
+  <!-- Via -->
   <label for="via">Via:</label>
   <input id="via" name="via" placeholder="Inserisci la tua via qui">
 
+  <!-- Numero Civico -->
   <label for="civicNumber">Numero Civico:</label>
   <input id="civicNumber" type="number" name="numeroCivico" min="1" max="1000" placeholder="Inserisci il numero civico" inputmode="numeric">
 
-  <button type="submit" formaction="www.server.com/address">Invio dati indirizzo</button>
+  <!-- pulsante di invio  (con azione "formaction" per invio dati indirizzo)-->
+  <button type="submit" formaction="www.server.com/address_information">Invio dati indirizzo</button>
 
   <!-- Informazioni account -->
+  <h3>Informazioni account</h3>
 
   <label for="email">Email:</label>
   <input id="email" type="email" name="email" autocomplete="email" required placeholder="Inserisci la tua email">
