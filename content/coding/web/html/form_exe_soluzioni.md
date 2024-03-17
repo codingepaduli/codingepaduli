@@ -23,29 +23,39 @@ weight: 9306
   
   <!-- Dati personali -->
 
+  <!-- Nome (obbligatorio) -->
   <label for="nome">Nome:</label>
-  <input id="nome" name="nome" required autocomplete="given-name" placeholder="Inserisci il nome">  
+  <input id="nome" name="nome" required autocomplete="given-name" placeholder="Inserisci il nome">
 
+  <!-- Cognome (obbligatorio) -->
   <label for="cognome">Cognome:</label>
   <input id="cognome" name="cognome" required autocomplete="family-name" placeholder="Inserisci il cognome">
 
+  <!-- Età (tra 18 e 200)-->
   <label for="eta">Età:</label>
   <input id="eta" type="number" name="age" min="18" max="120" step="1" inputmode="numeric">
 
+  <!-- Data di nascita (obbligatorio, dal 1960-01-01 e 2030-12-31)-->
   <label for="datanascita">Data di nascita:</label>
-  <input id="datanascita" type="date" name="birthdate" required min="1960-01-01" max="2028-11-30" step="1" autocomplete="bday">
+  <input id="datanascita" type="date" name="birthdate" required min="1960-01-01" max="2030-12-31" step="1" autocomplete="bday">
 
+  <!-- Codice fiscale (obbligatorio, 16 lettere) -->
   <label for="codicefiscale">Codice Fiscale:</label>
-  <input id="codicefiscale" name="fiscalcode" placeholder="Inserisci il codice fiscale" required minlength="16" maxlength="16">
+  <input id="codicefiscale" name="fiscalcode" required placeholder="Inserisci il codice fiscale" minlength="16" maxlength="16">
 
-  <label>Sesso</label>
+  <!-- Nel caso del tipo radio l'attributo required può essere aggiunto a uno qualsiasi delle scelte, perché tutte le scelte radio hanno lo stesso nome e sono considerati come un gruppo. Viene quindi impostata l'obbligatorietà per tutti.-->
+
+  <!-- Sesso (obbligatorio, scelta singola) -->
+  <label>Sesso: </label>
+
   <input type="radio" id="maschio" name="sesso" value="maschio" required>
   <label for="maschio">maschio</label>
   <input type="radio" id="femmina" name="sesso" value="femmina" required>
   <label for="femmina">femmina</label>
 
+  <!--Pulsante di invio  (con azione "formaction" per invio dati personali) -->
   <button type="submit" formaction="www.server.com/personal_data">Invio dati personali</button>
-  
+
   <!-- Informazioni residenza -->
 
   <label for="provincia">Provincia:</label>
