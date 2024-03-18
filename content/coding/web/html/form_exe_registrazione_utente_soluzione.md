@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 09.2 - Soluzioni esercizi sui moduli di invio dati"
-description: "HTML - Soluzioni esercizi e quiz di comprensione sui moduli di invio dati"
+title: "HTML Lez. 09.4 - Soluzione modulo di registrazione utente"
+description: "HTML - Soluzione modulo di registrazione utente"
 date: 2023-12-21
 publishdate: 2023-12-21
 lastmod: 2023-12-21
@@ -9,13 +9,11 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML - Soluzioni esercizi e quiz di comprensione sui moduli di invio dati"
-weight: 9306
+summary: "HTML - Soluzione modulo di registrazione utente"
+weight: 9302
 ---
 
-# Soluzioni esercizi e quiz sui moduli di invio dati
-
-## Soluzione modulo di invio dati di registrazione utente
+# Soluzione modulo di registrazione utente
 
 <!-- markdownlint-disable MD036 MD033 -->
 
@@ -32,14 +30,14 @@ weight: 9306
   <input id="cognome" name="cognome" required autocomplete="family-name" placeholder="Inserisci il cognome">
 
   <!-- Età (tra 18 e 200)-->
-  <label for="eta">Età:</label>
-  <input id="eta" type="number" name="age" min="18" max="120" step="1" inputmode="numeric">
+  <label for="eta">Età (tra 18 e 200):</label>
+  <input id="eta" type="number" name="age" min="18" max="200" step="1" inputmode="numeric">
 
   <!-- Data di nascita (obbligatorio, dal 1960-01-01 e 2030-12-31)-->
   <label for="datanascita">Data di nascita:</label>
   <input id="datanascita" type="date" name="birthdate" required min="1960-01-01" max="2030-12-31" step="1" autocomplete="bday">
 
-  <!-- Codice fiscale (obbligatorio, 16 lettere) -->
+  <!-- Codice fiscale (obbligatorio, 16 caratteri) -->
   <label for="codicefiscale">Codice Fiscale:</label>
   <input id="codicefiscale" name="fiscalcode" required placeholder="Inserisci il codice fiscale" minlength="16" maxlength="16">
 
@@ -85,7 +83,7 @@ weight: 9306
   <input list="comuni" id="comune" name="comune" required placeholder="Inserisci comune qui">
 
   <datalist id="comuni">
-    <!-- lista comuni che verranno suggeriti all'utente nell'inserimeto -->
+    <!-- lista comuni che verranno suggeriti all'utente durante l'inserimento -->
     <option value="Cesa">
     <option value="Sant'Antimo">
     <option value="Sant'Arpino">
@@ -105,7 +103,7 @@ weight: 9306
 
   <!-- Numero Civico -->
   <label for="civicNumber">Numero Civico:</label>
-  <input id="civicNumber" type="number" name="numeroCivico" min="1" max="1000" placeholder="Inserisci il numero civico" inputmode="numeric">
+  <input id="civicNumber" type="number" name="numeroCivico" required min="1" max="1000" placeholder="Inserisci il numero civico" inputmode="numeric">
 
   <!-- pulsante di invio  (con azione "formaction" per invio dati indirizzo)-->
   <button type="submit" formaction="www.server.com/address_information">Invio dati indirizzo</button>
@@ -119,12 +117,12 @@ weight: 9306
   <label for="password">Password:</label>
   <input id="password" type="password" name="password" required autocomplete="current-password" placeholder="Inserisci la tua password">
 
-  <label for="oraInvio">Orario invio:</label>
-  <input id="oraInvio" type="time" name="oraInvio" min="00:00:00" max="23:59:59"  step="1">
+  <label for="oraInvio">Orario invio (dalle 07:00 alle 20:59):</label>
+  <input id="oraInvio" type="time" name="oraInvio" min="07:00:00" max="20:59:59"  step="1">
 
   <!-- Interessi personali -->
 
-  <h3>Altre caratteristiche</h3>
+  <h3>Informazioni generali</h3>
 
   <label>Selezione i tuoi interessi:</label>
 
@@ -150,13 +148,13 @@ weight: 9306
   <input id="segno" name="segno" placeholder="Inserisci segni particolari">
 
   <label for="statura">Statura:</label>
-  <input id="statura" type="number" name="statura" min="1.00" max="2.50" step="0.1" value="1.00" placeholder="Inserisci la tua statura" inputmode="decimal"> <label for="statura">m:</label>
+  <input id="statura" type="number" name="statura" min="1.00" max="2.50" step="0.1" value="1.00" placeholder="Inserisci la tua statura" inputmode="decimal"> <label for="statura">m</label>
 
   <label for="occhi">Colore degli occhi:</label>
   <input id="occhi" name="occhi" placeholder="Inserisci colore occhi">
 
   <label for="capelli">Colore dei capelli:</label>
-  <input id="capelli" name="capelli" placeholder="Inserisci il colore dei tuoi capelli qui">
+  <input id="capelli" name="capelli" placeholder="Inserisci il colore dei tuoi capelli">
   
   <label for="stato_civile">Stato civile:</label>
   <select id="stato_civile" name="stato_civile">
@@ -167,7 +165,7 @@ weight: 9306
   </select>
 
   <label for="professione">Professione:</label>
-  <input id="professione" name="professione" placeholder="Inserisci la tua professione qui">
+  <input id="professione" name="professione" placeholder="Inserisci la tua professione">
 
   <!-- principali cittadinanze-->
   <label for="cittadinanza">Cittadinanza:</label>
