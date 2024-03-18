@@ -124,18 +124,25 @@ weight: 9306
 
   <!-- Interessi personali -->
 
+  <h3>Altre caratteristiche</h3>
+
   <label>Selezione i tuoi interessi:</label>
 
   <input type="checkbox" id="coding" name="interest" value="programmazione">
   <label for="coding">Programmazione</label>
+
   <input type="checkbox" id="sport" name="interest" value="sport">
   <label for="sport">Sport</label>
+
   <input type="checkbox" id="musica" name="interest" value="musica">
   <label for="musica">Musica</label>
+
   <input type="checkbox" id="arte" name="interest" value="arte">
   <label for="arte">Arte</label>
+
   <input type="checkbox" id="cucina" name="interest" value="cucina">
   <label for="cucina">Cucina</label>
+
   <input type="checkbox" id="fitness" name="interest" value="fitness">
   <label for="fitness">Fitness</label>
   
@@ -143,14 +150,14 @@ weight: 9306
   <input id="segno" name="segno" placeholder="Inserisci segni particolari">
 
   <label for="statura">Statura:</label>
-  <input id="statura" type="number" name="statura" min="1.00" max="2.50" step="0.1" value="1.00" placeholder="Inserisci la tua statura in cm qui" inputmode="decimal"> <label for="statura">m:</label>
+  <input id="statura" type="number" name="statura" min="1.00" max="2.50" step="0.1" value="1.00" placeholder="Inserisci la tua statura" inputmode="decimal"> <label for="statura">m:</label>
 
   <label for="occhi">Colore degli occhi:</label>
   <input id="occhi" name="occhi" placeholder="Inserisci colore occhi">
 
   <label for="capelli">Colore dei capelli:</label>
   <input id="capelli" name="capelli" placeholder="Inserisci il colore dei tuoi capelli qui">
-
+  
   <label for="stato_civile">Stato civile:</label>
   <select id="stato_civile" name="stato_civile">
     <option value="single">Single</option>
@@ -158,10 +165,11 @@ weight: 9306
     <option value="divorziato">Divorziato/a</option>
     <option value="vedovo">Vedovo/a</option>
   </select>
-  
+
   <label for="professione">Professione:</label>
   <input id="professione" name="professione" placeholder="Inserisci la tua professione qui">
 
+  <!-- principali cittadinanze-->
   <label for="cittadinanza">Cittadinanza:</label>
   <select id="cittadinanza" name="cittadinanza">
     <option value="italiana">Italiana</option>
