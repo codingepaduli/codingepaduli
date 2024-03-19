@@ -34,7 +34,7 @@ references:
 
 # Codifica Unicode
 
-Nelle prime fasi dello sviluppo di internet le comunicazioni, all'incirca del 1963, le comunicazioni si avvalevano del codice ASCII a 7 bit che si basa su 95 caratteri stampabili, come i numeri, lettere ed i simboli di punteggiatura, e dai restanti caratteri di controllo, come l'invio a capo, che servivano a controllare le telescriventi dell'epoca.
+Nelle prime fasi dello sviluppo di internet, all'incirca del 1963, le comunicazioni si avvalevano del codice ASCII a 7 bit che si basa su 95 caratteri stampabili, come i numeri, lettere ed i simboli di punteggiatura, e dai restanti caratteri di controllo, come l'invio a capo, che servivano a controllare le telescriventi dell'epoca.
 
 Il codice ASCII non era un vero e proprio standard in quanto con l'estendersi della rete internet molte nazioni iniziarono ad adattarlo per includere quei caratteri che non facevano parte dell'alfabeto USA, ad esempio il Canada sostituì alcuni caratteri con quelli francesi, la Gran Bretagna aggiunse il simbolo della sterlina. Nel mondo iniziarono ad adottare delle codifiche simili all'ASCII, ad esempio in India si utilizzo la codifica ISCII mentre in Vietnam la codifica VISCII.
 
@@ -44,15 +44,24 @@ Nel tentativo di realizzare un sistema che potesse codificare qualsiasi caratter
 
 Nacque quindi nel 1991 la prima versione del sistema Unicode, un sistema di codifica dei caratteri progettato per supportare a livello internazionale lo scambio, l'elaborazione e la visualizzazione dei testi scritti in linguaggi diversi, compresi i linguaggi tecnici delle varie discipline e le lingue morte. La parte visuale come ad esempio la dimensione del carattere, la forma, lo stile, eccetera, non fanno parte delle specifiche Unicode.
 
-Il sistema Unicode assegna ad ogni carattere, numero, segno di punteggiatura o segno diacritico **un numero univoco in formato esadecimale**, che può essere utilizzato sia per identificare il carattere, sia per la trasmissione o l'elaborazione. Per distinguere il fatto che si fa riferimento ad un codice Unicode, questo numero identificativo viene indicato nella forma **U+numero**, ad esempio **U+01A2**.
+Il sistema Unicode assegna ad ogni carattere, numero, segno di punteggiatura o segno diacritico **un numero univoco in formato esadecimale**, detto **punto di codice** che è utilizzato per identificare il carattere. I caratteri, intesi come numeri, lettere, segni di punteggiatura, segni diacritici, emoji, sono detti **grafemi**.
 
-Attualmente il codice Unicode prevede 17 piani di codifica, ma solo 3 sono utilizzati e sono i seguenti:
+Nella specifica Unicode, il **punto di codice** è l'unità atomica di informazione ed è identificata da **un numero univoco in formato esadecimale** indicato nella forma **U+numero**, ad esempio **U+01A2**.
+Il **grafema** è una sequenza di uno o più punti di codice che compongono una singola unità grafica.
 
-1. piano multilinguistico base (BMP) con caratteri identificati nell'intervallo da U+00000 ad U+0​FFFF;
-2. piano multilinguistico supplementare (SMP) con caratteri identificati nell'intervallo da U+10000 ad U+1FFFF;
-3. piano del codici ideografici supplementari (SIP) con caratteri identificati nell'intervallo da U+20000 ad U+2FFFF.
+Ad esempio il punto di codice "U+0079" è utilizzato per identificare il grafema "lettera &#x0079;" ed il punto di codice "U+0039" è utilizzato per identificare il grafema "numero &#x0039;".
 
-Il BMP contiene quasi tutti i sistemi di scrittura utilizzati, come l'arabo, il cirillico, l'esperanto, il greco, il latino, il mongolo, il thailandese, il persiano, il fenicio, il runico, la scrittura cuneiforme e tanti altri sistemi di scrittura. Per ogni sistema di scrittura sono presenti i nomi (con annesso significato) di ogni carattere, il corrispondente codice numerico assegnato e le possibili varianti del carattere.
+## Piani di codifica
+
+Attualmente il codice Unicode prevede 17 piani di codifica, ma solo 3 sono utilizzati, 11 sono inutilizzati e 3 sono riservati ad uso privato. I piani di codifica sono:
+
+1. piano multilinguistico base (BMP) con caratteri identificati nell'intervallo da U+000000 ad U+00​FFFF;
+2. piano multilinguistico supplementare (SMP) con caratteri identificati nell'intervallo da U+010000 ad U+01FFFF;
+3. piano del codici ideografici supplementari (SIP) con caratteri identificati nell'intervallo da U+020000 ad U+02FFFF;
+4. piani di codifica non utilizzati, da U+030000 a U+0EFFFF;
+5. piani di codifica supplementari ad uso privato, da U+0F0000 ad U+10FFFF;
+
+Il BMP contiene quasi tutti i sistemi di scrittura utilizzati, come l'arabo, il cirillico, l'esperanto, il greco, il latino, il mongolo, il thailandese, il persiano, il fenicio, il runico, la scrittura cuneiforme e tanti altri. Per ogni sistema di scrittura sono presenti i nomi (con annesso significato) di ogni carattere, il corrispondente codice numerico assegnato e le possibili varianti del carattere.
 
 Ad esempio per il sistema di scrittura latino, si ha:
 
@@ -62,14 +71,40 @@ Nel dettaglio sono riportati i nomi (con annesso significato) di ogni carattere 
 
 ![Specifiche Unicode del sistema latino in dettaglio](/static/coding/web/html/unicode-basic-latin-details.png "Le Specifiche Unicode indicano il nome di ogni carattere e le possibili varianti")
 
-I concetti principali della codifica Unicode sono i seguenti:
+Nel piano multilinguistico base (BMP) si trova, per questioni di compatibilità, il Basic Latin Unicode block, una volta chiamato ASCII block, che contiene i 128 caratteri del codice ASCII a 7 bit e che sono rappresentati da U+0000 ad U+007F. Il Basic Latin Unicode block è così composto:
 
-- Un **punto di codice** è l'unità atomica di informazione, identificata da un numero.
-- Un **grafema** è una sequenza di uno o più punti di codice che vengono visualizzati insieme come una singola unità grafica.
+|    | U+000x  | U+001x  | U+002x  | U+003x  | U+004x  | U+005x  | U+006x  | U+007x  |
+|----|---------|---------|---------|---------|---------|---------|---------|---------|
+| 0  | NUL     | DLE     |  SP     | 0       | @       | P       | `       | p       |
+| 1  | SOH     | DC1     | !       | 1       | A       | Q       | a       | q       |
+| 2  | STX     | DC2     | "       | 2       | B       | R       | b       | r       |
+| 3  | ETX     | DC3     | #       | 3       | C       | S       | c       | s       |
+| 4  | EOT     | DC4     | $       | 4       | D       | T       | d       | t       |
+| 5  | ENQ     | NAK     | %       | 5       | E       | U       | e       | u       |
+| 6  | ACK     | SYN     | &       | 6       | F       | V       | f       | v       |
+| 7  | BEL     | ETB     | '       | 7       | G       | W       | g       | w       |
+| 8  |  BS     | CAN     | (       | 8       | H       | X       | h       | x       |
+| 9  |  HT     |  EM     | )       | 9       | I       | Y       | i       | y       |
+| A  |  LF     | SUB     | *       | :       | J       | Z       | j       | z       |
+| B  |  VT     | ESC     | +       | ;       | K       | [       | k       | {       |
+| C  |  FF     |  FS     | ,       | <       | L       | \       | l       | \|      |
+| D  |  CR     |  GS     | -       | =       | M       | ]       | m       | }       |
+| E  |  SO     |  RS     | .       | >       | N       | ^       | n       | ~       |
+| F  |  SI     |  US     | /       | ?       | O       | _       | o       | DEL     |
+
+Nel Basic Latin Unicode block si possono notare:
+
+- i codici di controllo, rappresentati da U+0000 to U+001F e dal singolo U+007F;
+- i numeri da 0 a 9, rappresentati da U+0030 to U+0039;
+- le lettere maiuscole, rappresentate da U+0041 to U+005A;
+- le lettere minuscole, rappresentate da U+0061 to U+007A;
+- simboli e punteggiatura, rappresentati dagli altri codici numerici.
+
+## Grafemi come sequenza di punti di codice
+
+Un **grafema** è una sequenza di uno o più punti di codice che vengono visualizzati insieme come una singola unità grafica. Di seguito vediamo come un grafema può essere realizzato una sequenza di punti di codice:
 
 <!-- Grapheme clusters: Quando un grafema è composto da una sequenza di più punti di codice, spesso ci si riferisce con il termine "cluster di grafemi". -->
-
-Ad esempio:
 
 - Il grafema "è" può essere composto dal punto di codice "U+0065" (che rappresenta il grafema ``"``&#x0065;``"``) seguito dal punto di codice "U+0301" (che rappresenta un "accento acuto" ``"``&#x0301;``"``) e che insieme permettono di rappresentare il grafema ``"``&#x0065;&#x0301;``"``;
 - Il grafema ``"``&#x1F468;&#x200D;&#x1F3ED;``"`` può essere composto dal punto di codice "U+1F468" (che rappresenta il grafema "uomo" ``"``&#x1F468;``"``) seguito dal punto di codice "U+200D" (che rappresenta una indicazione di combinazione ``"``&#x200D;``"``) seguito dal punto di codice "U+1F3ED" (che rappresenta il grafema "fabbrica" ``"``&#x1F3ED;``"``);
@@ -99,7 +134,7 @@ Dato che in Unicode esiste più di un modo per rappresentare un grafema, esiste 
 
 Il sistema Unicode utilizza 32 bit per codificare un punto di codice ed è tipicamente indicato con il nome **UTF-32** (Unicode Transformation Format, 32 bit). La lunghezza in bit di ogni punto di codice è fissa ed è di 4 byte.
 
-Lo svantaggio nell'utilizzare la codifica UTF-32 è che un messaggio trasmesso con questa codifica è 4 volte più grande dello stesso messaggio trasmesso con codifica ASCII. Lo stesso discorso vale per la memorizzazione, che richiede il quadruplo della dimensione necessaria.
+Lo svantaggio nell'utilizzare la codifica UTF-32 è che un messaggio trasmesso con questa codifica è 4 volte più grande dello stesso messaggio trasmesso con codifica ASCII ad 8 bit. Lo stesso discorso vale per la memorizzazione, che richiede il quadruplo della dimensione necessaria.
 
 Per ovviare a questa problematica, sono nati due sistemi che prevedono la codifica dei caratteri Unicode in sequenze di bit di lunghezza variabile:
 
@@ -194,3 +229,26 @@ Dato che due grafemi distinti possono visualizzare lo stesso "carattere", la ric
 Unicode è ancora legato alla localizzazione di chi scrive, lo stesso grafema può essere visualizzato in maniera molto differente a seconda che sia visualizzato su un computer con localizzazione Cinese, Giapponese o Koreana. E la localizzazione non può essere salvata in un messaggio Unicode.
 
 Purtroppo alcune scelte risultano incomprensibili, ma lo standard Unicode è diffusissimo ed utilizzato ovunque, quindi bisogna conviverci e imparare a gestire queste situazioni utilizzando gli strumenti opportuni.
+
+## Unicode e byte-order mark (BOM)
+
+I sistemi di memorizzazione dati, di trasmissione, di codifica e decodifica utilizzano modalità differenti per immagazzinare in memoria dati testuali e per trasmetterli. In particolare i caratteri rappresentati con una dimensione maggiore di un byte (stringhe multi-byte di caratteri) sono soggetti alla codifica "Big Endian" o "Little Endian":
+
+- nella codifica **little-endian** la memorizzazione/trasmissione inizia dal byte più meno (estremità più piccola) per finire col meno significativo. L'ordine di memorizzazione/invio dei dati è detto ordine little-endian.
+- nella codifica **big-endian** la memorizzazione/trasmissione inizia dal byte più significativo (estremità più grande) per finire col meno significativo. L'ordine di memorizzazione/invio dei dati è detto ordine big-endian. Dato che la codifica **big-endian** è stato scelta come standard in molti protocolli utilizzati in Internet, l'ordine big-endian è anche detto **network byte order**;
+
+Prendiamo ad esempio il valore esadecimale ``0x01234567``:
+
+- nella codifica **big-endian** sarà memorizzato/trasmesso come ``0x01``|``0x23``|``0x45``|``0x67``;
+- nella codifica **little-endian** sarà memorizzato/trasmesso come ``0x67``|``0x45``|``0x23``|``0x01``.
+
+Per distinguere le due codifiche, il primi byte memorizzati o trasmessi sono quelli del carattere Unicode ``U+FEFF`` detto **Byte Order Mark** (BOM). Prendiamo nuovamente ad esempio il valore esadecimale ``0x01234567``:
+
+- nella codifica **big-endian** sarà memorizzato/trasmesso come ``0xFE``|``0xFF``|``0x01``|``0x23``|``0x45``|``0x67``;
+- nella codifica **little-endian** sarà memorizzato/trasmesso come ``0xFF``|``0xFE``|``0x67``|``0x45``|``0x23``|``0x01``.
+
+L'uso del BOM è opzionale, ma molti editor di testi lo aggiungono automaticamente all'inizio di un file, come ad esempio fa Notepad su Windows; altri editor permettono di scegliere se aggiungere il BOM o meno.
+
+<!-- TODO to add
+I termini big-endian e little-endian derivano dai nomi di due popolazioni che abitavano nelle favolose isole di Lilliput e Blefuscu nel romanzo I viaggi di Gulliver di Jonathan Swift. Queste erano entrate in rivalità per il modo in cui aprivano le uova - rompendo la punta o il fondo: a Lilliput, per editto dell'imperatore il cui figlio una volta si tagliò aprendo un uovo dall'estremità più grande, fu ordinato di aprire le uova dall'estremità più piccola (little endians); a Blefuscu si rifugiarono gli oppositori che volevano conservare la tradizione di rompere le uova dall'estremità più grande (big endians). A causa di questa differenza e della sua legittimazione imperiale era scoppiata tra le due isole una guerra sanguinosa. 
+-->
