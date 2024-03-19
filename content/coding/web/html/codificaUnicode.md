@@ -40,16 +40,16 @@ Il codice ASCII non era un vero e proprio standard in quanto con l'estendersi de
 
 Nel tentativo di utilizzare una codifica dei caratteri che comprendesse più caratteri possibili, si crearono diversi standard, come la codifica ASCII a 8 bit e successive codifiche ISO prima a 12 bit, poi a 16 e così via. Vi furono notevoli problemi di incompatibilità a causa dei vari adattamenti dei codici delle varie nazioni.
 
-Nel tentativo di realizzare un sistema che potesse codificare qualsiasi carattere esistente, di qualsiasi alfabeto, nacque il consorzio Unicode, un'organizzazione che aveva lo scopo di coordinare questi lavori.
+Nel tentativo di realizzare un sistema che potesse codificare qualsiasi carattere esistente di qualsiasi alfabeto, nacque il consorzio Unicode, un'organizzazione che aveva lo scopo di coordinare questi lavori.
 
 Nacque quindi nel 1991 la prima versione del sistema Unicode, un sistema di codifica dei caratteri progettato per supportare a livello internazionale lo scambio, l'elaborazione e la visualizzazione dei testi scritti in linguaggi diversi, compresi i linguaggi tecnici delle varie discipline e le lingue morte. La parte visuale come ad esempio la dimensione del carattere, la forma, lo stile, eccetera, non fanno parte delle specifiche Unicode.
 
 Il sistema Unicode assegna ad ogni carattere, numero, segno di punteggiatura o segno diacritico **un numero univoco in formato esadecimale**, detto **punto di codice** che è utilizzato per identificare il carattere. I caratteri, intesi come numeri, lettere, segni di punteggiatura, segni diacritici, emoji, sono detti **grafemi**.
 
-Nella specifica Unicode, il **punto di codice** è l'unità atomica di informazione ed è identificata da **un numero univoco in formato esadecimale** indicato nella forma **U+numero**, ad esempio **U+01A2**.
+Nella specifica Unicode, il **punto di codice** è l'unità atomica di informazione ed è identificata da **un numero univoco in formato esadecimale** indicato nella forma **U+numeroEsadecimale**.
 Il **grafema** è una sequenza di uno o più punti di codice che compongono una singola unità grafica.
 
-Ad esempio il punto di codice "U+0079" è utilizzato per identificare il grafema "lettera &#x0079;" ed il punto di codice "U+0039" è utilizzato per identificare il grafema "numero &#x0039;".
+Ad esempio il punto di codice "U+0079" è utilizzato per identificare il grafema "lettera &#x0079;" <!-- lettera y --> ed il punto di codice "U+0039" è utilizzato per identificare il grafema "numero &#x0039;" <!-- numero 9 -->.
 
 ## Piani di codifica
 
@@ -73,24 +73,24 @@ Nel dettaglio sono riportati i nomi (con annesso significato) di ogni carattere 
 
 Nel piano multilinguistico base (BMP) si trova, per questioni di compatibilità, il Basic Latin Unicode block, una volta chiamato ASCII block, che contiene i 128 caratteri del codice ASCII a 7 bit e che sono rappresentati da U+0000 ad U+007F. Il Basic Latin Unicode block è così composto:
 
-|    | U+000x  | U+001x  | U+002x  | U+003x  | U+004x  | U+005x  | U+006x  | U+007x  |
-|----|---------|---------|---------|---------|---------|---------|---------|---------|
-| 0  | NUL     | DLE     |  SP     | 0       | @       | P       | `       | p       |
-| 1  | SOH     | DC1     | !       | 1       | A       | Q       | a       | q       |
-| 2  | STX     | DC2     | "       | 2       | B       | R       | b       | r       |
-| 3  | ETX     | DC3     | #       | 3       | C       | S       | c       | s       |
-| 4  | EOT     | DC4     | $       | 4       | D       | T       | d       | t       |
-| 5  | ENQ     | NAK     | %       | 5       | E       | U       | e       | u       |
-| 6  | ACK     | SYN     | &       | 6       | F       | V       | f       | v       |
-| 7  | BEL     | ETB     | '       | 7       | G       | W       | g       | w       |
-| 8  |  BS     | CAN     | (       | 8       | H       | X       | h       | x       |
-| 9  |  HT     |  EM     | )       | 9       | I       | Y       | i       | y       |
-| A  |  LF     | SUB     | *       | :       | J       | Z       | j       | z       |
-| B  |  VT     | ESC     | +       | ;       | K       | [       | k       | {       |
-| C  |  FF     |  FS     | ,       | <       | L       | \       | l       | \|      |
-| D  |  CR     |  GS     | -       | =       | M       | ]       | m       | }       |
-| E  |  SO     |  RS     | .       | >       | N       | ^       | n       | ~       |
-| F  |  SI     |  US     | /       | ?       | O       | _       | o       | DEL     |
+|    | U+000x | U+001x | U+002x | U+003x | U+004x | U+005x | U+006x | U+007x |
+|----|--------|--------|--------|--------|--------|--------|--------|--------|
+| 0  | NUL    | DLE    |  SP    | 0      | @      | P      | `      | p      |
+| 1  | SOH    | DC1    | !      | 1      | A      | Q      | a      | q      |
+| 2  | STX    | DC2    | "      | 2      | B      | R      | b      | r      |
+| 3  | ETX    | DC3    | #      | 3      | C      | S      | c      | s      |
+| 4  | EOT    | DC4    | $      | 4      | D      | T      | d      | t      |
+| 5  | ENQ    | NAK    | %      | 5      | E      | U      | e      | u      |
+| 6  | ACK    | SYN    | &      | 6      | F      | V      | f      | v      |
+| 7  | BEL    | ETB    | '      | 7      | G      | W      | g      | w      |
+| 8  |  BS    | CAN    | (      | 8      | H      | X      | h      | x      |
+| 9  |  HT    |  EM    | )      | 9      | I      | Y      | i      | y      |
+| A  |  LF    | SUB    | *      | :      | J      | Z      | j      | z      |
+| B  |  VT    | ESC    | +      | ;      | K      | [      | k      | {      |
+| C  |  FF    |  FS    | ,      | <      | L      | \      | l      | \|     |
+| D  |  CR    |  GS    | -      | =      | M      | ]      | m      | }      |
+| E  |  SO    |  RS    | .      | >      | N      | ^      | n      | ~      |
+| F  |  SI    |  US    | /      | ?      | O      | _      | o      | DEL    |
 
 Nel Basic Latin Unicode block si possono notare:
 
@@ -247,7 +247,9 @@ Per distinguere le due codifiche, il primi byte memorizzati o trasmessi sono que
 - nella codifica **big-endian** sarà memorizzato/trasmesso come ``0xFE``|``0xFF``|``0x01``|``0x23``|``0x45``|``0x67``;
 - nella codifica **little-endian** sarà memorizzato/trasmesso come ``0xFF``|``0xFE``|``0x67``|``0x45``|``0x23``|``0x01``.
 
-L'uso del BOM è opzionale, ma molti editor di testi lo aggiungono automaticamente all'inizio di un file, come ad esempio fa Notepad su Windows; altri editor permettono di scegliere se aggiungere il BOM o meno.
+L'uso del BOM non è consigliato, ma molti editor di testi lo aggiungono automaticamente all'inizio di un file, come ad esempio fa Notepad su Windows; altri editor permettono di scegliere se aggiungere il BOM o meno, ad esempio Visual Studio Code:
+
+![Codifica UTF-8 con BOM](/static/coding/web/html/codificaUnicode_UTF8_with_BOM.png "Codifica UTF-8 con BOM")
 
 <!-- TODO to add
 I termini big-endian e little-endian derivano dai nomi di due popolazioni che abitavano nelle favolose isole di Lilliput e Blefuscu nel romanzo I viaggi di Gulliver di Jonathan Swift. Queste erano entrate in rivalità per il modo in cui aprivano le uova - rompendo la punta o il fondo: a Lilliput, per editto dell'imperatore il cui figlio una volta si tagliò aprendo un uovo dall'estremità più grande, fu ordinato di aprire le uova dall'estremità più piccola (little endians); a Blefuscu si rifugiarono gli oppositori che volevano conservare la tradizione di rompere le uova dall'estremità più grande (big endians). A causa di questa differenza e della sua legittimazione imperiale era scoppiata tra le due isole una guerra sanguinosa. 
