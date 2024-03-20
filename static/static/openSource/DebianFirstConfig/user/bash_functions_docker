@@ -30,7 +30,7 @@ export -f dockerGpp
 # TEST: deno --help
 # RUN:  denoCompile main.ts
 denoCompile() {
-  dockerContainer --name deno-compile -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.34.3 compile --unstable --allow-read --allow-env --allow-net --output=myapp.exe "$@"
+  dockerContainer --name deno-compile -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.39.4 compile --unstable --allow-read --allow-env --allow-net "$@"
 }
 export -f denoCompile
 
@@ -38,9 +38,33 @@ export -f denoCompile
 # TEST: deno --help
 # RUN:  denoRun main.ts
 denoRun() {
-  dockerContainer --name deno         -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.34.3 run --allow-net "$@"
+  dockerContainer --name deno         -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.39.4 run --allow-net "$@"
 }
 export -f denoRun
+
+# The deno JS formatter
+# TEST: deno --help
+# RUN:  denoFmt main.ts
+denoFmt() {
+  dockerContainer --name deno-fmt -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.39.4 fmt "$@"
+}
+export -f denoFmt
+
+# The deno JS linter
+# TEST: deno --help
+# RUN:  denoLinter main.ts
+denoLinter() {
+  dockerContainer --name deno-lint -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.39.4 lint "$@"
+}
+export -f denoLinter
+
+# The deno JS documentation generator
+# TEST: deno --help
+# RUN:  denoFmt main.ts
+denoDoc() {
+  dockerContainer --name deno-doc -p 1993:1993 -e DENO_DIR="/tmp" denoland/deno:debian-1.39.4 doc --private "$@"
+}
+export -f denoDoc
 
 # Python
 # TEST: dockerPython3 --version
