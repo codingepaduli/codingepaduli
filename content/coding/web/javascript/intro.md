@@ -86,7 +86,7 @@ Essendo JavaScript un linguaggio interpretato, gli script non sono sottoposti al
 
 Come per gli altri linguaggi di programmazione, il codice sorgente è fatto di **istruzioni**. Per istruzioni si intendono **comandi** impartiti ad un **esecutore**. Nel caso di JavaScript, l'esecutore dei comandi è il browser, e, nello specifico, **l'interprete** (un componente software interno al browser).
 
-Le istruzioni di un programma JavaScript sono eseguite dall'**interprete** man mano che la pagina web viene "letta" dal browser, quindi l'ordine in cui il codice JavaScript è scritto nella pagina web è di primaria importanza. Nel caso sia presente un errore nel codice, in fase di esecuzione l'errore viene ignorato, quando possibile, oppure, in caso contrario, l'esecuzione termina appena si tenta di eseguire l'istruzione errata (le istruzioni successive non sono eseguite, bloccando l'elaborazione in corso).
+Le istruzioni di un programma JavaScript sono eseguite da un programma chiamato **interprete** man mano che la pagina web viene "letta" dal browser, quindi l'ordine in cui il codice JavaScript è scritto nella pagina web è di primaria importanza. Nel caso sia presente un errore nel codice, in fase di esecuzione l'errore viene ignorato, quando possibile, oppure, in caso contrario, l'esecuzione termina appena si tenta di eseguire l'istruzione errata (le istruzioni successive non sono eseguite, bloccando l'elaborazione in corso).
 
 In JavaScript sono presenti due modalità di esecuzione degli script:
 
@@ -234,17 +234,23 @@ La pagina web contiene i riferimenti agli script:
 </html>
 ```
 
-## Compilazione Script con Deno
+## Deno - uno strumento per lo sviluppo
 
-[Deno](https://deno.com/) è un ambiente di esecuzione JavaScript che permette di creare programmi eseguibili a partire dai file sorgenti.
+[Deno](https://deno.com/) è un ambiente di esecuzione per JavaScript, TypeScript, and WebAssembly che permette la compilazione, ovvero la creazione di programmi eseguibili a partire dai file sorgenti. Oltre alla compilazione, permette il controllo della qualità del codice, segnalando pratiche scorrette o potenziali errori, permette la generazione della documentazione a partire dai file sorgenti, permette la formattazione del codice secondo le linee guida consigliate ed adottate dalla comunità di sviluppo.
 
-Una volta salvato lo script in un file ``script.js`` (attenzione all'estensione ``.js``), è possibile procedere alla compilazione eseguendo il comando:
+La compilazione di uno script ``script.js`` (attenzione all'estensione ``.js``) in un programma eseguibile chiamato ``programma.exe`` avviene eseguendo il comando:
 
-```javascript
-deno compile script.js
+```bash
+deno compile --output programma.exe script.js
 ```
 
-Tra le opzioni disponibili, abbiamo:
+L'output del programma è il seguente:
+
+```plaintext
+Compile file:///home/user/script.js to programma.exe
+```
+
+Per utilizzare alcune funzionalità è necessario specificare in fase di compilazione i permessi da richiedere, in particolare:
 
 - ``--allow-read`` permette la lettura del file-system;
 - ``--allow-write`` permette la scrittura sul file-system;
@@ -252,14 +258,38 @@ Tra le opzioni disponibili, abbiamo:
 - ``--allow-env`` permette l'accesso alle informazioni d'ambiente;
 - ``--allow-sys`` permette l'accesso alle informazioni del sistema operativo;
 
-Per compilare con la lista di permessi indicata, il comando è il seguente:
+Il comando per compilare uno script specificando la lista di permessi sopra indicata diventa quindi il seguente:
 
-```javascript
-deno compile --allow-read --allow-write --allow-net --allow-sys script.js
+```bash
+deno compile --allow-read --allow-write --allow-net --allow-sys --allow-env --output programma.exe script.js
 ```
 
-L'output del programma è il seguente:
+La formattazione di uno script ``script.js`` (attenzione all'estensione ``.js``) secondo le linee guida consigliate ed adottate dalla comunità di sviluppo avviene eseguendo il comando:
+
+```bash
+deno fmt script.js
+```
+
+Il controllo della qualità del codice e la segnalazione di pratiche scorrette e potenziali errori presenti di uno script ``script.js`` (attenzione all'estensione ``.js``) avviene eseguendo il comando:
+
+```bash
+deno lint script.js
+```
+
+Questo strumento segnala eventuali errori e pratiche scorrette, specificando cosa deve essere corretto, il file in cui deve avvenire la correzione ed indicativamente (cioè non precisamente) la riga e la colonna del file. Ad esempio, i seguenti messaggi segnalano un primo errore alla riga 1, colonna 4 ed un secondo errore alla riga 5, colonna 6:
 
 ```plaintext
-Compile file:///home/user/script.js to myapp.exe
+`var` keyword is not allowed
+at file:///home/user/hello.js:1:4
+
+`a` is never used
+at file:///home/user/hello.js:5:6
 ```
+
+La generazione della documentazione in formato HTML a partire da uno script ``script.js`` (attenzione all'estensione ``.js``) avviene eseguendo il comando:
+
+```bash
+deno doc --html --name="Il mio programma" script.js
+```
+
+Questo comando genera una cartella ``docs`` contenente il file HTML ``index.html`` che è l'indice della documentazione generata.
