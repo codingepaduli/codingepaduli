@@ -31,7 +31,7 @@ fi
 #     of debian bullseye (installed on my machine)
 docker pull gcc:12-bookworm
 
-docker pull denoland/deno:debian-1.34.3
+docker pull denoland/deno:debian-1.39.4
 
 docker pull python:3.11.4-bookworm
 
