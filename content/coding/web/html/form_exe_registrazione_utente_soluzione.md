@@ -17,9 +17,23 @@ weight: 9302
 
 <!-- markdownlint-disable MD036 MD033 -->
 
+<style>
+form fieldset {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 10px;
+}
+  
+form button {
+  grid-column: 1 / 3;
+}
+</style>
+
 <form action="www.server.com/login">
   
   <h3>Dati anagrafici</h3>
+
+  <fieldset>
 
   <!-- Nome (obbligatorio) -->
   <label for="nome">Nome:</label>
@@ -43,8 +57,11 @@ weight: 9302
 
   <!-- Nel caso del tipo radio l'attributo required può essere aggiunto a uno qualsiasi delle scelte, perché tutte le scelte radio hanno lo stesso nome e sono considerati come un gruppo. Viene quindi impostata l'obbligatorietà per tutti.-->
 
+  <div></div>
+
   <!-- Sesso (obbligatorio, scelta singola) -->
   <label>Sesso: </label>
+  <div></div>
 
   <input type="radio" id="maschio" name="sesso" value="maschio" required>
   <label for="maschio">maschio</label>
@@ -53,10 +70,14 @@ weight: 9302
 
   <!--Pulsante di invio  (con azione "formaction" per invio dati personali) -->
   <button type="submit" formaction="www.server.com/personal_data">Invio dati personali</button>
-
+  
+  </fieldset>
+  
   <!-- Informazioni residenza -->
 
   <h3>Indirizzo</h3>
+
+  <fieldset>
 
   <!--Provincia (obbligatorio, con lista suggerimenti) -->
   <label for="provincia">Provincia:</label>
@@ -108,8 +129,12 @@ weight: 9302
   <!-- pulsante di invio  (con azione "formaction" per invio dati indirizzo)-->
   <button type="submit" formaction="www.server.com/address_information">Invio dati indirizzo</button>
 
+  </fieldset>
+
   <!-- Informazioni account -->
   <h3>Informazioni account</h3>
+
+  <fieldset>
 
   <label for="email">Email:</label>
   <input id="email" type="email" name="email" autocomplete="email" required placeholder="Inserisci la tua email">
@@ -117,14 +142,19 @@ weight: 9302
   <label for="password">Password:</label>
   <input id="password" type="password" name="password" required autocomplete="current-password" placeholder="Inserisci la tua password">
 
-  <label for="oraInvio">Orario invio (dalle 07:00 alle 20:59):</label>
-  <input id="oraInvio" type="time" name="oraInvio" min="07:00:00" max="20:59:59"  step="1">
+  <label for="oraInvio">Orario invio (07:00 - 20:59):</label>
+  <input id="oraInvio" type="time" name="oraInvio" min="07:00:00" max="20:59:59" step="1">
 
-  <!-- Interessi personali -->
-
+  </fieldset>
+  
+  <!-- Informazioni generali -->
   <h3>Informazioni generali</h3>
 
+  <fieldset>
+  
   <label>Selezione i tuoi interessi:</label>
+
+  <div></div>
 
   <input type="checkbox" id="coding" name="interest" value="programmazione">
   <label for="coding">Programmazione</label>
@@ -178,8 +208,12 @@ weight: 9302
     <option value="americana">Americana</option>
   </select>
 
-  <button type="submit" formaction="www.server.com/all">Invia tutte le informazioni</button>
-  <button type="reset">Reset</button>
+  </fieldset>
+  
+  <fieldset>
+    <button type="submit" formaction="www.server.com/all">Invia tutte le informazioni</button>
+    <button type="reset">Reset</button>
+   </fieldset>
 </form>
 
 <!-- markdownlint-enable MD036 -->

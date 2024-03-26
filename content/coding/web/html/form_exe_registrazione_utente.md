@@ -92,7 +92,9 @@ Le fasi di realizzazione da seguire per sviluppare il progetto sono le seguenti:
 </html>
 ```
 
-**Fase 3:** Aggiungi uno stile facoltativo per far si che il modulo sia diviso per righe. Lo stile deve essere aggiunto nell'etichetta ``head``, dopo i metadati obbligatori.
+**Fase 3:** Aggiungi uno dei due stili facoltativi per far si che il modulo sia diviso per righe. Lo stile deve essere aggiunto nell'etichetta ``head``, dopo i metadati obbligatori.
+
+Stile con riga a capo:
 
 ```html
 <style>
@@ -109,6 +111,22 @@ Le fasi di realizzazione da seguire per sviluppare il progetto sono le seguenti:
     background: #21209c;
     border: 4px solid #21209c;
   }
+</style>
+```
+
+Stile con layout a griglia:
+
+```html
+<style>
+ form fieldset {
+      display: grid;
+      grid-template-columns: 30% 30%;
+      gap: 10px;
+    }
+    
+    form button {
+      grid-column: 1 / 3;
+    }
 </style>
 ```
 
