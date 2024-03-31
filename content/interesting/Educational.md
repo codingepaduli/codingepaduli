@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-02-20
-publishdate: 2024-02-20
-lastmod: 2024-02-20
+date: 2024-03-30
+publishdate: 2024-03-30
+lastmod: 2024-03-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -56,6 +56,8 @@ summary: "Set di link relativi all'istruzione di base"
 [FIRMA DIGITALE](https://www.youtube.com/watch?v=NXF-deDg_C8) - INTRODUZIONE ALLA NORMATIVA - CORSO UDEMY DI FIRMA DIGITALE E STRUMENTI COLLEGATI - #02.1 - YouTube\
 [FIRMA DIGITALE](https://www.youtube.com/watch?v=1PWGHjTKnuA) - SCHEMA FUNZIONAMENTO DELLA PEC - CORSO UDEMY DI FIRMA DIGITALE E STRUMENTI COLLEGATI - #05.5 - YouTube\
 [Soft skills](https://www.tuttoscuola.com/soft-skills-cosa-inserirle-nella-tua-programmazione-didattica/) - cosa sono e come inserirle nella tua programmazione didattica - Tuttoscuola\
+[Cyberbullismo](https://www.youtube.com/watch?v=_pgwLhSYA7o) - Cosa puoi fare per evitare il cyberbullismo? - YouTube\
+[Intelligenza Artificiale: come funziona e perché è già nelle nostre vite](https://www.youtube.com/watch?v=HdMhPu1BH5U) - What a Digital World EP 4 - YouTube\
 
 ##### Fake news
 
@@ -64,6 +66,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Fake news](https://www.youtube.com/watch?v=DW0MAWPhapk) - Webinar per la didattica a distanza - Cittadinanza digitale e fake news - YouTube\
 [Fake News](https://www.ilfattoquotidiano.it/in-edicola/articoli/2022/09/28/quelli-che-conte-e-mor-to-e-pdcalenda-sfondano/6820049/) - esempi sulle elezioni politiche - Il Fatto Quotidiano\
 [Fake news](https://www.youtube.com/watch?v=8ynVw23dezc) - Camera Cafè 2017 - YouTube\
+[Quando il video è Fake](https://www.youtube.com/watch?v=ESj9p2Pj_Xg&t=1s) - YouTube\
 
 ##### Social network
 
@@ -74,7 +77,6 @@ summary: "Set di link relativi all'istruzione di base"
 
 ##### GDPR e privacy
 
-[Difesa dei dati](https://www.youtube.com/watch?v=40-I64zxN4U) - YouTube\
 [La privacy #1](https://www.youtube.com/watch?v=jDLkHurCpKQ) - Come e quando nasce il diritto alla privacy - YouTube\
 [La privacy #2](https://www.youtube.com/watch?v=WUyBmkeLWxM) - Il GDPR e il trattamento dei dati personali - YouTube\
 [La privacy #3](https://www.youtube.com/watch?v=LmCLjyEc4-g) - Le regole del GDPR - YouTube\

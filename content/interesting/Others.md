@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2024-01-20
-publishdate: 2024-01-20
-lastmod: 2024-01-20
+date: 2024-03-30
+publishdate: 2024-03-30
+lastmod: 2024-03-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -126,11 +126,9 @@ summary: "Set di link interessanti"
 [OpenSpace](https://www.openspaceproject.com/) - an open source visualization tool to visualize the environment of other planets, such as Mars and Jupiter, galaxies, and more\
 [Felicette](https://github.com/plant99/felicette) - Generate satellite earth imagery(in JPEG) from coordinates/location name with publicly available satellite data\
 [100,000 Stars](https://stars.chromeexperiments.com/) - A tour from our Sun to the far away stars of our Milky Way Galaxy\
-[Digressions](https://reisub0.github.io/fractal-learning.html#fractal-learning) - Fractal Learning\
 [NASA World Wind](https://worldwind.earth/) - a geospatial web application for visualizing Earth\
 [PhotoRec IT](https://www.cgsecurity.org/wiki/PhotoRec_IT) - Digital Picture and File Recovery\
 [leandromoreira/ffmpeg-libav-tutorial FFmpeg libav tutorial](https://github.com/leandromoreira/ffmpeg-libav-tutorial) - learn how media works from basic to transmuxing, transcoding and more\
-[Color Theory for Web Developers](https://dev.to/codingsafari/color-theory-for-web-developers-2ilk) - DEV Community\
 [How color theories are based ?](https://dev.to/feco2019/do-you-really-understand-how-color-theories-based-ryb-cmyk-and-rgb-models-1pjg) - RYB CMYK and RGB models - DEV Community\
 [Realtime earthquake warning](https://www.theguardian.com/us-news/2021/dec/21/california-earthquake-early-warning-system) - Seconds before a 6.2 earthquake rattled California, phones got a vital warning | California | The Guardian\
 [Unaffordable expense](https://bigthink.com/hard-science/large-hadron-collider-economics/) - Don't build another Large Hadron Collider - Big Think\
@@ -142,7 +140,6 @@ summary: "Set di link interessanti"
 
 [Secessio plebis](https://it.wikipedia.org/wiki/Secessio_plebis) - Per ottenere una parificazione di diritti con i patrizi, la plebe effettuava una secessione, ovvero abbandonava in massa la città e rendeva impossibile convocare le leve militari tra i plebei.\
 [Nsibidi](https://en.wikipedia.org/wiki/Nsibidi) - a 4,000 years old system of symbols indigenous to what is now southeastern Nigeria that are apparently pictograms, though there\
-[Pharaoh Ramesses VI Tomb](https://my.matterport.com/show/?m=NeiMEZa9d93&mls=1/) - a virtual tour\
 [Remote learning via Radio instruction](https://theconversation.com/remote-learning-isnt-new-radio-instruction-in-the-1937-polio-epidemic-143797) - in the 1937 polio epidemic\
 [La stella rossa](https://it.wikipedia.org/wiki/La_stella_rossa) - un romanzo di fantascienza dello scrittore russo Aleksandr Bogdanov, \
 [The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
@@ -153,8 +150,6 @@ summary: "Set di link interessanti"
 
 [shapez.io](https://shapez.io/) - Build automated factories to build, combine and color shapes!\
 [HaxBall](https://www.haxball.com/) - physics-based multiplayer soccer game where teamwork is key\
-[MultiSweeper](https://www.multisweeper.com/) - Hex Tile Minesweeper Clone with multiplayer\
-[eXoDOS V4.0](https://exodos.the-eye.us/) - an attempt to catalog, obtain, and make playable every game developed for the DOS and PC Booter platform\
 [Gran Sasso videogame](https://www.gransassovideogame.it/) - Un videogioco ambientato 400m sotto le roccie nei Laboratori Nazionali del Gran Sasso dell'Istituto di Fisica Nucleare per avvicinare gli studenti delle superiori alle frontiere della fisica.\
 [Anarch](https://drummyfish.gitlab.io/anarch/) - an experimental game from 1990. No build system, library, internet connection or package manager is inherently required for compilation as the whole game is written in pure C language\
 [Fire_and_Ice_1993](https://archive.org/details/msdos_Fire_and_Ice_1993) - DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE\

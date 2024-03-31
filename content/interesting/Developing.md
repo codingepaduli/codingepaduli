@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-02-20
-publishdate: 2024-02-20
-lastmod: 2024-02-20
+date: 2024-03-30
+publishdate: 2024-03-30
+lastmod: 2024-03-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -303,13 +303,11 @@ summary: "Set di link relativi al coding"
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
 [The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
-[VNC over reverse SSH](https://www.rohanjain.in/vnc/) - \
 [VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
 [VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
 [Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
 [OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
 [How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
-[My First 5 Minutes On A Server](https://sollove.com/2013/03/03/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers/) - Or, Essential Security for Linux Servers – Sol Love\
 [PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
 [hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
 [cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
@@ -384,7 +382,6 @@ summary: "Set di link relativi al coding"
 [Pyjion](https://www.trypyjion.com/) - A Python JIT Compiler\
 [requirements.txt](https://dev.to/voilalex/automatically-manage-python-dependencies-with-requirementstxt-5g11) - Automatically manage Python dependencies with requirements.txt - DEV Community\
 [py_regular_expressions/interactive_exercises](https://github.com/learnbyexample/py_regular_expressions/tree/master/interactive_exercises) - A GUI app written in tkinter to help you practice Python regular expressions · GitHub\
-[youtube playlist download](https://dev.to/harendra21/4-line-code-to-download-full-youtube-playlist-videos-5hie) - 4 line code to download full youtube playlist videos - DEV Community\
 [annotated-types/annotated-types](https://github.com/annotated-types/annotated-types) - Reusable constraint types to use with typing.Annotated\
 [Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
@@ -458,7 +455,6 @@ summary: "Set di link relativi al coding"
 [charmbracelet/glow](https://github.com/charmbracelet/glow) - Render markdown on the CLI, with pizzazz! 💅🏻\
 [curlpipe/ox](https://github.com/curlpipe/ox) - An independent Rust text editor that runs in your terminal!\
 [trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
-[Beautiful PDFs from HTML](https://pdf.math.dev/) - it allow you to create beautifully typeset digital content that can be viewed on any device\
 [mermaid-js/mermaid-cli](https://github.com/mermaid-js/mermaid-cli) - Command line tool for the Mermaid library\
 [Quarto](https://quarto.org/) - an open-source scientific and technical publishing system built on Pandoc\
 [Sublist Issue #2575](https://github.com/jgm/pandoc/issues/2575) - Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc\
@@ -514,7 +510,6 @@ summary: "Set di link relativi al coding"
 [Microbrowsers](https://24ways.org/2019/microbrowsers-are-everywhere/) - little thumbnail preview in a tweet or in WhatsApp chat are probably more important than google bot, can be the most influential part for attracting new audiences and increasing engagement - possibly more than SEO\
 [Semantic Web technologies](https://www.lespetitescases.net/why-I-dont-use-semantic-web-technologies-anymore-even-if-they-still-influence-me) - issue e limitations\
 [GoatCounter web analytics](https://www.goatcounter.com/) - Simple web statistics. No tracking of personal data\
-[Browsershots](https://browsershots.org/) - makes screenshots of your web design in different operating systems and browsers. It is a convenient way to test website's browser compatibility in one place; \
 [Responsively App](https://responsively.app/) - A Web developer's browser to improve the developing of responsive design\
 [Nodesign.dev](https://nodesign.dev/) - A collection of tools for developers who have little to no artistic talent\
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
@@ -534,11 +529,9 @@ summary: "Set di link relativi al coding"
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [MIME Types](https://www.asciitable.it/mime-types) - \
 [Unincode Emoji](https://unicode.org/emoji/charts/index.html) - Emoji List, latest added and proposal emoji\
-[Ready to validate](https://html5.validator.nu/) - Nu Markup Validation Service\
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\
 [Broken Link](https://www.deadlinkchecker.com/) - Free Broken Link Checking Tool - Dead Link Checker\
 [W3C Link Checker](https://validator.w3.org/checklink) - \
-[details tag](https://docs.google.com/presentation/d/1hvnPpsJo44BTPfJx28CV95vqk_dt6na1awUbk0kmZYM/mobilepresent#slide=id.g3e31444916_0_48) - The best element in HTML5\
 [&lt;datalist&gt;](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist) - The HTML Data List element - HTML MDN\
 [Spoken](https://www.w3.org/TR/spoken-html/#multi-attribute-approach-for-including-ssml-in-html) - Specification for Spoken Presentation in HTML\
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
@@ -601,11 +594,9 @@ summary: "Set di link relativi al coding"
 [ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
 [JS Math](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - Math Object in JavaScript - DEV Community\
 [date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
-[HTML DOM](https://htmldom.dev/) - Common tasks of managing HTML DOM with vanilla JavaScript\
 [HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
-[JavaScript Christmas](https://javascript.christmas/2020) - JS advent calendars\
 [JS app](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - How to create a snowfall with JavaScript - DEV Community\
 [JS app](https://dev.to/j471n/colorful-rain-with-js-514j) - Colorful Rain with JS - DEV Community\
 [JS and SEO](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
@@ -654,7 +645,6 @@ summary: "Set di link relativi al coding"
 
 ##### JS Fetch Promise and Async Await
 
-[JS async-await](https://javascript.christmas/2019/9) - A brief look at async-await\
 [JS Promises chaining](https://javascript.info/promise-chaining) - \
 [JS Promises](https://dev.to/duhbhavesh/javascript-promise-methods-explained-1f0l) - JavaScript Promise methods Explained! - DEV Community\
 [JS async-await](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - Migrating from promise chains to async-await and escaping the try catch hell - DEV Community\
@@ -676,7 +666,6 @@ summary: "Set di link relativi al coding"
 
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
 [PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
-[How to make a PWA](https://dev.to/theyoungestcoder/how-to-make-a-pwa-4m4n) - DEV Community\
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [PWABuilder](https://www.pwabuilder.com/) - \
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
@@ -697,7 +686,6 @@ summary: "Set di link relativi al coding"
 ##### HandsFree
 
 [Handsfree.js](https://handsfree.js.org/) - \
-[Pose | Handsfree.js](https://handsfree.js.org/ref/model/pose.html#with-config) - \
 [flap.js – flappy-pose](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - \
 
 ##### p5Play
