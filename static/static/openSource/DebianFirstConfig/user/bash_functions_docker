@@ -189,8 +189,24 @@ convert() {
 }
 export -f convert
 
+# Test: 
+# Run: convertAllImages $convertOption40x100
+convertAllImages() {
+
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.jpg, *.JPG, *.Jpg, *.jpeg, *.jPeG, etc
+  shopt -s nullglob nocaseglob
+
+  for file in *.jpg *.jpeg *.jfif *.exif *.tif *.tiff *.gif *.bmp *.png *.svg
+  do
+      convert "$@" "$file" "new-$file"
+  done
+}
+export -f convertAllImages
+
 export convertPdfOptionPageA4White=' -background white -page a4 '
 export convertPdfOptionDensity300=' -density 300 -alpha background -alpha off '
+export convertOption40x100=' -resize 40% '
 export convertOptionGreyscale40x100=' -set colorspace Gray -separate -average -resize 40% '
 export convertOptionIncreaseBrightness=' -alpha discrete -channel rgb -evaluate add 5% +channel '
 export convertOptionIncreaseContrast=' -contrast '
