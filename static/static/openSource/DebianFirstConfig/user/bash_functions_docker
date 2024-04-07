@@ -218,3 +218,12 @@ xsv() {
 }
 export -f xsv
 
+# lampp
+## Apache HTTP: http://localhost:41062/www 
+## MariaDB: http://localhost:41062/phpmyadmin/
+## SSH: ssh root@localhost -p 41061
+## Test: lampp --version
+xampp() { 
+  dockerContainer --name myXampp -u root:root -p 41061:22 -p 41062:80 -v $HOME/lamp/apache/conf.d:/opt/lampp/conf.d -v $HOME/lamp/apache/htdocs:/opt/lampp/htdocs tomsik68/xampp:8.2.4 "$@"
+}
+export -f xampp

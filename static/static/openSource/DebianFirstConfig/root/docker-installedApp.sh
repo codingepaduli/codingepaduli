@@ -57,3 +57,5 @@ docker pull linuxserver/ffmpeg:6.0-cli-ls91
 docker pull mikenye/youtube-dl:2023.02.17_linux_amd64
 
 docker pull cincan/xsv
+
+docker pull tomsik68/xampp:8.2.4
