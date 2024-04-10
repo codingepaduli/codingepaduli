@@ -50,3 +50,4 @@ org.mozilla.firefox
 org.processing.processingide
 # org.remmina.Remmina
 org.videolan.VLC
+tv.kodi.Kodi
