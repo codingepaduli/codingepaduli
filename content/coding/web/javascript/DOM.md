@@ -255,3 +255,29 @@ Per effettuare il "toggle" di una classe di un elemento, si utilizza la funzione
 ```javascript
 ele.classList.toggle('class-name');
 ```
+
+Si può condizionare la presenza di una classe ad una specifica condizione:
+
+```javascript
+ele.classList.toggle('class-name', i<10);
+```
+
+Per sostituire una classe di un elemento con un'altra, si utilizza la funzione:
+
+```javascript
+ele.classList.replace('class1', 'class2');
+```
+
+Per verificare se una classe è presente per un elemento, si utilizza la funzione:
+
+```javascript
+ele.classList.contains('class1');
+```
+
+La "spread syntax" permette di aggiungere o togliere liste di classi:
+
+```javascript
+let class = ['class1', 'class2'];
+ele.classList.add(...class);
+ele.classList.remove(...class);
+```
