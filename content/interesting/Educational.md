@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-03-30
-publishdate: 2024-03-30
-lastmod: 2024-03-30
+date: 2024-04-26
+publishdate: 2024-04-26
+lastmod: 2024-04-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -20,6 +20,7 @@ summary: "Set di link relativi all'istruzione di base"
 ## Scuola
 
 [Competenze e Contenuti – Scuoladigitale](https://scuoladigitale.istruzione.it/pnsd/ambiti/competenze-e-contenuti/) - \
+[Scheda progettazione PCTO.pdf](https://www.istitutomajoranagela.edu.it/attachments/article/1952/Strumenti-Scheda-progettazione-PCTO.pdf) - \
 
 ### Lezioni
 
@@ -170,6 +171,7 @@ summary: "Set di link relativi all'istruzione di base"
 [paiza.IO](https://paiza.io/en/) - Online editors and compilers for PHP/Java/C++... \
 [GitHub](https://github.com/emanuele/flowgorithm_linux) - emanuele/flowgorithm_linux: Installation instruction to use FlowGoRithm on Linux / Ubuntu 20.04\
 [GitHub](https://github.com/SamueleLonghin/FlowgorithmJS) - SamueleLonghin/FlowgorithmJS: *.fprg file viewer for the Web\
+[Pantone](https://it.wikipedia.org/wiki/Pantone) - Wikipedia\
 
 #### Sistemi e reti 3 anno
 
@@ -201,6 +203,9 @@ summary: "Set di link relativi all'istruzione di base"
 [QRcode.com｜DENSO WAVE](https://www.qrcode.com/en/) - \
 [QR Code specification](https://www.iso.org/obp/ui/#iso:std:iso-iec:18004:ed-3:v1:en) - ISO/IEC 18004:2015(en), Information technology — Automatic identification and data capture techniques — QR Code bar code symbology specification\
 [QR-Code-generator/QrSegment at master · nayuki/QR-Code-generator · GitHub](https://github.com/nayuki/QR-Code-generator/blob/master/java/src/main/java/io/nayuki/qrcodegen/QrSegment.java) - \
+[8x8x8 LED CUBE WITH ARDUINO UNO](https://www.youtube.com/watch?v=T5Aq7cRc-mU) - YouTube\
+[How to make a 16x16x16 LED CUBE at home with Arduino platform](https://www.youtube.com/watch?v=ciaFar8nfHc) - YouTube\
+[LED COLORATI costruiamo un cubo NEOPIXEL con ESP32-WROOM EDITION](https://www.youtube.com/watch?v=euQQkNXCGPU) - YouTube\
 
 #### Sistemi e reti 4anno
 

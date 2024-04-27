@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-03-30
-publishdate: 2024-03-30
-lastmod: 2024-03-30
+date: 2024-04-26
+publishdate: 2024-04-26
+lastmod: 2024-04-26
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -120,6 +120,7 @@ summary: "Set di link relativi al coding"
 [Stable Diffusion Image generation](https://huggingface.co/spaces/stabilityai/stable-diffusion) - a Hugging Face Space by stabilityai\
 [Scribble Diffusion](https://scribblediffusion.com/) - \
 [Audiobox](https://audiobox.metademolab.com/) - Meta’s new foundation research model for audio generation. It can generate voices and sound effects using a combination of voice inputs and natural language text prompts\
+[Suno AI](https://www.suno.ai/) - A ChatGPT for Music\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -591,11 +592,6 @@ summary: "Set di link relativi al coding"
 [PracticeJS](https://practicejs.com/) - mini JavaScript coding exercises that can be done on a phone\
 [Deep JavaScript](https://exploringjs.com/deep-js/index.html) - Theory and techniques\
 [JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
-[ESLint](https://eslint.org/docs/user-guide/command-line-interface) - Pluggable JavaScript linter\
-[JS Math](https://dev.to/ayabouchiha/your-complete-guide-to-math-object-in-javascript-4o5d) - Math Object in JavaScript - DEV Community\
-[date and i18n](https://time2hack.com/you-dont-need-libraries-for-internationalisation-i18n-of-dates/) - You don't need Libraries for internationalization (i18n) of Dates - T2H\
-[HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
-[Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
 [JS app](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - How to create a snowfall with JavaScript - DEV Community\
 [JS app](https://dev.to/j471n/colorful-rain-with-js-514j) - Colorful Rain with JS - DEV Community\
@@ -607,7 +603,6 @@ summary: "Set di link relativi al coding"
 [JS PDF](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - Download Browser Page as PDF using JavaScript - DEV Community\
 [JS Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [JS Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
-[rslint/rslint](https://github.com/rslint/rslint) - A (WIP) Extremely fast JavaScript and TypeScript linter and Rust crate\
 
 ##### Cloud and libraries
 
@@ -642,6 +637,11 @@ summary: "Set di link relativi al coding"
 [JS Array](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - Understanding the array methods Array.some() and Array.every() in JavaScript - DEV Community\
 [JS Array](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - JavaScript Array Methods - DEV Community\
 [JS Array](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - 5 Useful Array Methods in JavaScript - DEV Community\
+
+##### JS DOM
+
+[HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
+[Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
 
 ##### JS Fetch Promise and Async Await
 
