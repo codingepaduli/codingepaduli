@@ -82,9 +82,68 @@ Nel secondo caso il selettore CSS ``.paragrafo`` seleziona due elementi, il prim
 
 ## Proprietà ed attributi
 
-Esiste una sottile differenza tra proprietà ed attributi nel modello DOM:
+Esiste una notevole differenza tra i concetti di proprietà ed attributi, quando si parla di sviluppo di pagine web:
 
-- gli attributi si riferiscono alle etichette HTML, come ad esempio ``width`` nell'etichetta ``<img width="5px" height="5px">``, mentre le proprietà si riferiscono agli oggetti JavaScript, in particolare ai nodi che vengono selezionati attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
+- si parla di attributi quando si riferisce agli attributi delle etichette HTML, come ad esempio l'attributo ``width`` nell'etichetta ``<img width="5px" height="5px">``;
+- si parla di proprietà quando si riferisce ad una proprietà di un oggetto JavaScript, in particolare ad una proprietà di un nodo selezionato attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
+
+Sia gli attributi che le proprietà sono coppie chiave-valore (nome-valore), il nome è alfanumerico, ma:
+
+- gli attributi hanno sempre il nome con tutte le lettere minuscole;
+- le proprietà possono avere un nome con lettere maiuscole o minuscole.
+
+Si accede ad una proprietà di un nodo con la sintassi ``nodo.nomeProprieta`` e la si utilizza allo stesso modo di una variabile, come nel seguente esempio:
+
+```javascript
+let element = document.querySelector('#paragrafo1');
+element.nomeProprieta1 = "p1";
+element.boh = "valoreProprieta2";
+console.log(element.boh);
+```
+
+Se la proprietà a cui si accede esiste, viene modificata, se non esiste viene creata.
+
+### Proprietà mascherate
+
+Le proprietà possono mascherare un attributo, ma solo nei casi in cui è previsto e documentato (cioè se l'interfaccia dello specifico elemento DOM prevede la proprietà e la trasforma automaticamente in un attributo);
+
+Ad esempio è sempre possibile accedere all'attributo ``id`` utilizzando la sintassi ``elemento.id``, come nel seguente esempio:
+
+```javascript
+let element = document.querySelector('#paragrafo1');
+element.id ="p1"
+```
+
+Questo esempio mostra la selezione di un nodo del documento, su questo nodo selezionato si modificando la proprietà ``id`` che viene poi trasformata automaticamente nell'attributo ``id`` del paragrafo HTML.
+
+```html
+<p id="p1">paragrafo 1</p>
+```
+
+Un esempio simile non funziona con la proprietà ``boh``:
+
+```javascript
+let element = document.querySelector('#paragrafo1');
+element.boh ="p1"
+```
+
+Questo esempio mostra la selezione di un nodo del documento, su questo nodo selezionato si accede alla proprietà ``boh`` che non esiste e viene creta, ma non viene trasformata in un attributo del paragrafo HTML. Il paragrafo HTML rimane quindi il seguente:
+
+```html
+<p id="paragrafo1">paragrafo 1</p>
+```
+
+<script>
+  const text = document.createTextNode('Hello World!');
+  let div = document.createElement('div');
+  div.appendChild(text);
+  document.body.appendChild(div);
+
+  div.setAttribute('fO2o', 'bar');
+  div.fo2o="hey";
+</script>
+
+### Proprieta principali
 
 Le principali proprietà di un elemento a cui è possibile accedere nelle funzioni JavaScript sono le seguenti:
 
