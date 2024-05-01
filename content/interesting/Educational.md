@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-04-26
-publishdate: 2024-04-26
-lastmod: 2024-04-26
+date: 2024-04-30
+publishdate: 2024-04-30
+lastmod: 2024-04-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -172,20 +172,24 @@ summary: "Set di link relativi all'istruzione di base"
 [GitHub](https://github.com/emanuele/flowgorithm_linux) - emanuele/flowgorithm_linux: Installation instruction to use FlowGoRithm on Linux / Ubuntu 20.04\
 [GitHub](https://github.com/SamueleLonghin/FlowgorithmJS) - SamueleLonghin/FlowgorithmJS: *.fprg file viewer for the Web\
 [Pantone](https://it.wikipedia.org/wiki/Pantone) - Wikipedia\
+[miciwan/PaintMixing](https://github.com/miciwan/PaintMixing) - On Light, Colors, Mixing Paints, and Numerical Optimization.\
 
 #### Sistemi e reti 3 anno
 
+[Telegraph](https://flathub.org/apps/io.github.fkinoshita.Telegraph) - a Morse translator from typing to Morse code and vice versa\
 [IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - IEEE Standard for Binary Floating-Point Arithmetic\
 [How many registers does an x86-64 CPU have?](https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have) - \
 [PCIe Gen 4 vs. Gen 3 Slots, Speeds](https://www.trentonsystems.com/blog/pcie-gen4-vs-gen3-slots-speeds) - \
+[What Every Developer Should Know About GPU Computing](https://codeconfessions.substack.com/p/gpu-computing) - \
 [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) - GitHub Docs\
 [PlayStation Architecture](https://www.copetti.org/writings/consoles/playstation/) - A Practical Analysis\
 [SSDs](https://databasearchitects.blogspot.com/2021/06/what-every-programmer-should-know-about.html?m=1) - What Every Programmer Should Know About - Database Architects\
 [Voltage, Amps, Resistance and LEDs (Ohm’s Law)](https://blog.demofox.org/2021/06/15/voltage-amps-resistance-and-leds-ohms-law/) - \
 [Upgrading a motherboard’s BIOS/UEFI (the hard way)](https://www.downtowndougbrown.com/2021/12/upgrading-a-motherboards-bios-uefi-the-hard-way/) - \
+[HW](https://www.youtube.com/watch?v=PdMWJ4FbWZU) - Come funziona una scheda grafica\
 [Come creare più partizioni in un hard disk](https://www.youtube.com/watch?v=t5Zr19mson0) - YouTube\
 [ryunosinfx/reedsolomon.es](https://github.com/ryunosinfx/reedsolomon.es) - This is Reed-Solomon coding module which is porting from Zxing open source project written in Java.\
-[QR Code Tutorial](https://www.thonky.com/qr-code-tutorial/) - Thonky.com\
+[ESP8266](https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html) - A Beginner's Guide\
 [Computer Networking Introduction](https://iximiuz.com/en/posts/computer-networking-101/) - Ethernet and IP (Heavily Illustrated)\
 [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) - Wikipedia\
 [Networking cables](https://en.wikipedia.org/wiki/Networking_cables) - Wikipedia\
@@ -195,8 +199,8 @@ summary: "Set di link relativi all'istruzione di base"
 [mBlock](https://mblock.makeblock.com/en/) - One-Stop Coding Platform for Teaching and Learning\
 [mBlock](https://ide.makeblock.com/) - mLink and makeBlock IDE\
 [Progetti Arduino](https://www.progettiarduino.com/) - Raccolta di Progetti e Tutorial per sperimentare con Arduino\
-[What Every Developer Should Know About GPU Computing](https://codeconfessions.substack.com/p/gpu-computing) - \
-[https://www.youtube.com/watch?v=PdMWJ4FbWZU](https://www.youtube.com/watch?v=PdMWJ4FbWZU) - \
+[Wokwi](https://wokwi.com/) - Online ESP32, STM32, Arduino and IoT Simulator\
+[QR Code Tutorial](https://www.thonky.com/qr-code-tutorial/) - Thonky.com\
 [QR codes](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - how a QR code works\
 [QR Code Solutions](https://www.denso-wave.com/en/system/qr/) - DENSO WAVE\
 [Codice QR](https://it.wikipedia.org/wiki/Codice_QR) - Wikipedia\
@@ -206,6 +210,8 @@ summary: "Set di link relativi all'istruzione di base"
 [8x8x8 LED CUBE WITH ARDUINO UNO](https://www.youtube.com/watch?v=T5Aq7cRc-mU) - YouTube\
 [How to make a 16x16x16 LED CUBE at home with Arduino platform](https://www.youtube.com/watch?v=ciaFar8nfHc) - YouTube\
 [LED COLORATI costruiamo un cubo NEOPIXEL con ESP32-WROOM EDITION](https://www.youtube.com/watch?v=euQQkNXCGPU) - YouTube\
+[decode QR](https://qr.blinry.org/) - Reading QR codes without a computer!\
+[LED cube](https://willempennings.nl/miniature-3456-led-cube/) - Miniature 3456 LED cube – Willem Pennings\
 
 #### Sistemi e reti 4anno
 
@@ -227,6 +233,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Understanding Network things: part 4](https://dev.to/aurelievache/understanding-network-things-part-4-unicast-broadcast-multicast-anycast-49li) - Unicast, Broadcast, Multicast & Anycast - DEV Community\
 [Understanding Network things: part 5](https://dev.to/aurelievache/understanding-network-things-part-5-tls-mtls-554n) - TLS & mTLS - DEV Community\
 [Let's learn about few networking side command in Linux/Unix](https://dev.to/payalsasmal/let-s-learn-about-few-networking-side-command-in-linux-unix-3b7d) - DEV Community\
+[Voip solution](http://www.vors.stargrave.org/) - Create a Voip server and clients\
 
 #### TPSIT 4 anno
 

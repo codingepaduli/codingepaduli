@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-04-26
-publishdate: 2024-04-26
-lastmod: 2024-04-26
+date: 2024-04-30
+publishdate: 2024-04-30
+lastmod: 2024-04-30
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -51,6 +51,7 @@ summary: "Set di link relativi al coding"
 [Waydroid](https://waydro.id/) - a full Android system in a container right to your GNU/Linux desktop\
 [remote-android/redroid-doc](https://github.com/remote-android/redroid-doc) - Android In Container solution about Remote anDroid projects\
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
+[Sxmo](https://sxmo.org/) - Simple X Mobile\
 
 #### Cloud
 
@@ -70,6 +71,7 @@ summary: "Set di link relativi al coding"
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 [Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
 [Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
+[dockur/windows](https://github.com/dockur/windows) - Windows in a Docker container.\
 
 ### Shell, CI, CD ed automazione
 
@@ -121,6 +123,10 @@ summary: "Set di link relativi al coding"
 [Scribble Diffusion](https://scribblediffusion.com/) - \
 [Audiobox](https://audiobox.metademolab.com/) - Meta’s new foundation research model for audio generation. It can generate voices and sound effects using a combination of voice inputs and natural language text prompts\
 [Suno AI](https://www.suno.ai/) - A ChatGPT for Music\
+[Hyper SDXL](https://fastsdxl.ai/) - Stable Diffusion Image generation\
+[AI](https://dev.to/mankavelda/10-machine-learning-algorithms-to-know-in-2024-1p8j) - 10 Machine Learning Algorithms to Know in 2024 - DEV Community\
+[collabora/WhisperSpeech](https://github.com/collabora/WhisperSpeech) - An Open Source text-to-speech system built by inverting Whisper.\
+[andrewnguonly/Lumos](https://github.com/andrewnguonly/Lumos) - A RAG LLM co-pilot for browsing the web, powered by local LLMs\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -130,11 +136,7 @@ summary: "Set di link relativi al coding"
 [Beekeeper Studio](https://www.beekeeperstudio.io/) - Free & Open Source SQL editor and database manager for MySQL, Postgres, SQLite, SQL Server, and more. Available for Windows, Mac, and Linux.\
 [PostgREST](https://postgrest.org/en/v7.0.0/) - a standalone web server that turns your PostgreSQL database directly into a RESTful API; \
 [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns) - This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes\
-[FastoNoSQL](https://fastonosql.com/) - cross-platform GUI Manager for NoSQL databases.\
-[SWAPI GraphQL API](https://graphql.org/swapi-graphql) - A graphical interactive in-browser GraphQL IDE\
-[Combine GraphQL with Java](https://opensource.com/article/20/8/graphql-quarkus) - to build a flexible and modern API | Opensource.com\
 [We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql) - Critique of SQL\
-[Dolt](https://github.com/dolthub/dolt#dolt) - a SQL database that you can fork, clone, branch, merge, push and pull just like a git repository\
 [Best practices for writing SQL queries](https://www.metabase.com/learn/building-analytics/sql-templates/sql-best-practices) - \
 [EXPLAIN ANALYZE](https://www.cybertec-postgresql.com/en/how-to-interpret-postgresql-explain-analyze-output/) - how to interpret it in PostgreSQL - Cybertec\
 [pg_stat_statements](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/) - Tracking down slow queries in PostgreSQL\
@@ -142,6 +144,8 @@ summary: "Set di link relativi al coding"
 [What does First Normal Form actually mean?](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - \
 [Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - \
 [SQLite tool](https://dev.to/danilsa0109/sqlite-a-tool-that-allows-creating-databases-from-the-terminal-78j) - create databases from the terminal - DEV Community\
+[incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
+[Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
 
 ### Giochi
 
@@ -208,6 +212,7 @@ summary: "Set di link relativi al coding"
 [10 syntax in Java You should know](https://dev.to/luanvu/10-syntax-in-java-you-should-know-1e2h) - DEV Community\
 [Processing IDE and p5.js in Java](https://happycoding.io/tutorials/java/processing-in-java) - Happy Coding\
 [Graphics for JVM @ tonsky.me](https://tonsky.me/blog/skija/) - \
+[GitHub](https://github.com/binkley/modern-java-practices#leverage-unit-testing-and-coverage) - binkley/modern-java-practices: Modern Java/JVM Build Practices\
 
 #### JDBC e JPA
 
@@ -294,6 +299,8 @@ summary: "Set di link relativi al coding"
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
 [mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
+[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
+[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
 
 #### Administration
 
@@ -312,17 +319,25 @@ summary: "Set di link relativi al coding"
 [PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
 [hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
 [cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
+[systemd by example](https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization/) - Part 1: Minimization - Sebastian Jambor's blog\
+[malicious_ip_analysis](https://romeov.github.io/malicious_ip_addresses/malicious_ip_analysis.html) - Visualizing malicious IP addresses\
+[Sandboxing](https://www.ralfj.de/blog/2024/04/14/bubblebox.html) - Sandboxing All The Things with Flatpak and BubbleBox\
+[BubbleBox](https://www.ralfj.de/projects/bubblebox/) - Simple Application Sandboxing\
+[igo95862/bubblejail](https://github.com/igo95862/bubblejail) - Bubblewrap based sandboxing for desktop applications\
 
 #### Hardware
 
 [Minifree Laptops Ltd](https://minifree.org/) - \
+[Lenovo's Latest ThinkPad L Series and X Series Laptops](https://news.lenovo.com/pressroom/press-releases/unleashing-innovation-and-better-sustainability-of-lenovos-latest-thinkpad-l-series-and-x-series-laptops/) - Lenovo StoryHub\
+[Framework Laptop 16 Delivers Great Linux Support & Performance, Excellent Customizability Review](https://www.phoronix.com/review/framework-laptop-16) - Phoronix\
+[HDMI Driver Rejected](https://www.phoronix.com/news/HDMI-2.1-OSS-Rejected) - HDMI Forum Rejects Open-Source HDMI 2.1 Driver Support Sought By AMD - Phoronix\
 
 #### Old computer
 
 [old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
 [antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
-[5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
+[Super LTS Kernel](https://www.prnewswire.com/news-releases/civil-infrastructure-platform-expands-super-long-term-stable-kernel-program-with-a-6-1-based-series-301955086.html) - Civil Infrastructure Platform Expands Super-Long-Term Stable Kernel Program with a 6.1-Based Series\
+[Tunnelmole, an ngrok alternative (open source)](https://softwareengineeringstandard.com/2024/03/19/ngrok-alternative-open-source/) - SES\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -386,6 +401,7 @@ summary: "Set di link relativi al coding"
 [annotated-types/annotated-types](https://github.com/annotated-types/annotated-types) - Reusable constraint types to use with typing.Annotated\
 [Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
+[Python 3.12 Preview](https://realpython.com/python312-typing/) - Static Typing Improvements – Real Python\
 
 ### Privacy, Security and Hacking
 
@@ -428,6 +444,7 @@ summary: "Set di link relativi al coding"
 [The Encrypted Email Problem](https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html) - Avoid encrypted emai\
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
 [Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
+[Nabu Casa](https://www.nabucasa.com/) -  Control your Home Assistant from anywhere\
 
 #### Security vulnerability and privacy abuse
 
@@ -483,6 +500,7 @@ summary: "Set di link relativi al coding"
 [CSV](https://www.johndcook.com/blog/2019/12/31/sql-join-csv-files/) - Doing a SQL join with CSV files with xsv\
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
 [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer 🔥\
+[MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown\
 
 ### UML, architetture ed ingegneria del software
 
@@ -525,6 +543,7 @@ summary: "Set di link relativi al coding"
 [HTML images](https://opensource.com/article/20/4/webp-image-compression) - Drop PNG and JPG for your online images Use WebP\
 [HTML link](https://dev.to/atulcodex/how-to-send-whatsapp-message-through-html-link-23f8) - How to send WhatsApp message - DEV Community\
 [HTML link](https://create.wa.link/) - Create WhatsApp links | Walink\
+[HTML link](https://bernard.app/) - Bernard No more broken links\
 [base64 data-URI](https://websemantics.uk/tools/image-to-data-uri-converter/) - Image to base64 data-URI converter\
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
@@ -597,12 +616,11 @@ summary: "Set di link relativi al coding"
 [JS app](https://dev.to/j471n/colorful-rain-with-js-514j) - Colorful Rain with JS - DEV Community\
 [JS and SEO](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
 [DroidScript](https://droidscript.org/#page-content) - Rapid development of mobile Apps, using JavaScript\
-[JS Web Components](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - How we use Web Components at GitHub | The GitHub Blog\
-[github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
 [JS ES6](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - 7 ES6 Features all JavaScript Programmers Should Learn to Use - DEV Community\
 [JS PDF](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - Download Browser Page as PDF using JavaScript - DEV Community\
 [JS Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [JS Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
+[JS ES6 Features](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - ES6 Features all JavaScript Programmers Should Learn to Use - DEV Community\
 
 ##### Cloud and libraries
 
@@ -641,7 +659,8 @@ summary: "Set di link relativi al coding"
 ##### JS DOM
 
 [HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
-[Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) - Web APIs | MDN\
+[HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/) - JakeArchibald.com\
+[DOM Traversal](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - Deep in Javascript DOM Traversal 2 - DEV Community\
 
 ##### JS Fetch Promise and Async Await
 
@@ -662,6 +681,13 @@ summary: "Set di link relativi al coding"
 [JS modules](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - Working with modules in JavaScript. - DEV Community\
 [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) - Web APIs | MDN\
 
+##### JS web components
+
+[JS Web Components](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - How we use Web Components at GitHub | The GitHub Blog\
+[github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
+[Shoelace](https://shoelace.style/) - A forward-thinking library of web components.\
+[Web Components](https://binaryigor.com/htmx-and-web-components-a-perfect-match.html) - HTMX and Web Components: a Perfect Match\
+
 ##### PWA
 
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
@@ -670,6 +696,7 @@ summary: "Set di link relativi al coding"
 [PWABuilder](https://www.pwabuilder.com/) - \
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
 [nativefier/nativefier](https://github.com/nativefier/nativefier) - Make any web page a desktop application\
+[What PWA Can Do Today](https://whatpwacando.today/info/) - \
 
 ##### p5JS
 
