@@ -12,17 +12,79 @@ toc: false
 summary: "09 - Manipolazione del DOM"
 ---
 
-# 09 - Manipolazione del DOM ed eventi
+# 09 - Document Object Model (DOM)
 
-Il Document Object Model (DOM) è un'interfaccia che permette di rappresentare la struttura di un documento HTML come un albero e che fornisce le funzionalità per selezionare gli elementi sui quali effettuare le classiche operazioni di creazione, lettura, modifica e cancellazione di un nodo dell'albero (CRUD è un'abbreviazione che indica le operazioni indicate, ovvero Create, Read, Update e Delete).
+<!-- testo copiato e risistemato dalle lezioni introduttive di HTML - Il DOM -->
 
-Permette di selezionare gli elementi, accedere alle proprietà di un elemento e di ricevere notifiche di eventi che avvengono nella pagina o su uno specifico elemento.
+Il DOM (dall'inglese Document Object Model) è un modello che descrive la struttura della pagina web come una struttura gerarchica.
 
-## Selezione e proprietà degli elementi
+In questo modello gerarchico, ogni etichetta della pagina web (il documento ipertestuale) è detta **nodo** ed ha una posizione ben definita all'interno di un albero (tipica struttura gerarchica).
 
-Le operazioni di selezione di un elemento del documento avvengono attraverso i selettori CSS. I selettori che restituiscono un solo elemento possono essere gestiti attraverso la funzione ``document.querySelector``, mentre quelli che restituiscono più di un elemento possono essere gestiti attraverso la funzione``document.querySelectorAll``. Quando si hanno più elementi, può essere necessario un ciclo iterativo per scorrerli ed elaborarli uno ad uno.
+La radice dell'albero è l'etichetta ``html``, dato che al suo interno sono presenti tutti gli elementi della pagina web.
 
-Entrambe le funzioni di selezione indicate prendono come argomento una stringa che rappresenta un **selettore CSS**. Per un dettaglio completo sui **selettori CSS** si rimanda al relativo capitolo ed alle specifiche di ECMAScript.
+Dalla radice si estendono poi i nodi di "primo livello", ovvero tutte le etichette contenute nell'etichetta ``html``.
+
+Da questi nodi di primo livello si estendono i nodi di secondo livello, ovvero le etichette contenute nelle etichette di primo livello, e così via per i successivi livelli.
+
+Le foglie dell'albero sono le etichette che non posseggono contenuti.
+
+Data la struttura gerarchica, è possibile stabilire delle relazioni tra gli elementi. Un elemento che contiene altri elementi è detto elemento padre, e di conseguenza gli elementi contenuti in quel nodo sono detti figli. Gli elementi che si trovano nello stesso livello si dicono fratelli, e così via con le altre relazioni.
+
+Un esempio di rappresentazione della pagina web come struttura ad albero, secondo il modello DOM, è il seguente:
+
+```html
+html
+└── body
+    ├── h1
+    |   └── testo titolo
+    └── p
+        └── testo del paragrafo
+```
+
+<!-- Fine testo copiato -->
+
+Il programmatore può manipolare questo modello Document Object Model (DOM) attraverso un'interfaccia che permette di:
+
+- selezionare i nodi dell'albero attraverso i selettori CSS;
+- effettuare le classiche operazioni di creazione, lettura, modifica e cancellazione di un nodo dell'albero (le operazioni sono dette CRUD, dall'inglese Create, Read, Update e Delete);
+- effettuare le modifiche degli attributi di un nodo;
+- ricevere notifiche di eventi che avvengono sui nodi, come il click del mouse su un elemento o l'aggiunta di un nuovo elemento.
+
+Le interfacce JavaScript che permettono di interagire con il DOM sono le seguenti:
+
+``document``: Rappresenta l'intero documento HTML come albero DOM e fornisce metodi per manipolarlo;
+``Element`` e ``Node``: Rappresentano un nodo dell'albero DOM (che corrisponde ad un elemento del documento HTML) e forniscono metodi per manipolare i gli attributi ed il contenuto del nodo;
+
+## Selezione degli elementi
+
+Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile attraverso l'oggetto ``document``. Questo oggetto permette di selezionare gli elementi che si intende manipolare indicandoli con un selettore CSS. In particolare si ha:
+
+- la funzione ``document.querySelector`` prende come parametro un selettore CSS che seleziona **un singolo elemento** e quindi questa funzione restituisce il solo elemento selezionato;
+- la funzione ``document.querySelectorAll`` prende come parametro un selettore CSS che seleziona **più di un elemento** e quindi questa funzione restituisce la lista di elementi selezionati. In questo caso può essere necessario un ciclo iterativo per scorrere gli elementi ed elaborarli uno ad uno.
+
+Per un dettaglio completo sui **selettori CSS** si rimanda al relativo capitolo ed alle specifiche di ECMAScript.
+
+Di seguito un esempio di selezione di un singolo nodo e di una lista di nodi, utilizzando le funzioni appena indicate su una porzione del documento HTML:
+
+```html
+<p class="paragrafo" id="paragrafo1">paragrafo 1</p>
+<p class="paragrafo">paragrafo 2</p>
+```
+
+```javascript
+let element = document.querySelector('#paragrafo1');
+let elementList = document.querySelectorAll('.paragrafo');
+```
+
+Nel primo caso il selettore CSS ``#paragrafo1`` seleziona un solo elemento, il primo paragrafo, attraverso l'identificatore, quindi la variabile ``element`` contiene un singolo nodo;
+
+Nel secondo caso il selettore CSS ``.paragrafo`` seleziona due elementi, il primo ed il secondo paragrafo, quindi la variabile ``elementList`` contiene una lista di nodi;
+
+## Proprietà ed attributi
+
+Esiste una sottile differenza tra proprietà ed attributi nel modello DOM:
+
+- gli attributi si riferiscono alle etichette HTML, come ad esempio ``width`` nell'etichetta ``<img width="5px" height="5px">``, mentre le proprietà si riferiscono agli oggetti JavaScript, in particolare ai nodi che vengono selezionati attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
 
 Le principali proprietà di un elemento a cui è possibile accedere nelle funzioni JavaScript sono le seguenti:
 
