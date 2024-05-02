@@ -67,62 +67,102 @@ Sia gli attributi che le proprietà sono coppie chiave-valore (nome-valore), il 
 - gli attributi hanno sempre il nome con tutte le lettere minuscole;
 - le proprietà possono avere un nome con lettere maiuscole o minuscole.
 
-Nei prossimi capitoli saranno trattate in dettaglio.
+Nei prossimi capitoli saranno trattati in dettaglio.
 
 ## Selezione degli elementi del DOM
 
 Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile attraverso l'oggetto ``document``. Questo oggetto permette di selezionare gli elementi che si intende manipolare indicandoli con un selettore CSS. In particolare si ha:
 
 - la funzione ``document.querySelector`` prende come parametro un selettore CSS che seleziona **un singolo elemento** e quindi questa funzione restituisce il solo elemento selezionato;
-- la funzione ``document.querySelectorAll`` prende come parametro un selettore CSS che seleziona **più di un elemento** e quindi questa funzione restituisce la lista di elementi selezionati. In questo caso può essere necessario un ciclo iterativo per scorrere gli elementi ed elaborarli uno ad uno.
+- la funzione ``document.querySelectorAll`` prende come parametro un selettore CSS che seleziona **uno o più elementi** e quindi questa funzione restituisce la lista di elementi selezionati. In questo caso può essere necessario un ciclo iterativo per scorrere gli elementi ed elaborarli uno ad uno.
 
 Per un dettaglio completo sui **selettori CSS** si rimanda al relativo capitolo ed alle specifiche di ECMAScript.
 
-Di seguito un esempio di selezione di un singolo nodo e di una lista di nodi, utilizzando le funzioni appena indicate su una porzione del documento HTML:
+Supponiamo di avere la seguente porzione di documento HTML:
 
 ```html
 <p class="paragrafo" id="paragrafo1">paragrafo 1</p>
 <p class="paragrafo">paragrafo 2</p>
 ```
 
+Il selettore CSS ``#paragrafo1`` seleziona un solo elemento, il primo paragrafo. Invocando la funzione ``document.querySelector`` con parametro il selettore CSS ``#paragrafo1`` ci permette di selezionare il singolo nodo del DOM che rappresenta il paragrafo, come nell'esempio seguente:
+
 ```javascript
 let element = document.querySelector('#paragrafo1');
-let elementList = document.querySelectorAll('.paragrafo');
 ```
 
-Nel primo caso il selettore CSS ``#paragrafo1`` seleziona un solo elemento, il primo paragrafo, attraverso l'identificatore, quindi la variabile ``element`` contiene un singolo nodo;
+Il selettore CSS ``.paragrafo`` seleziona entrambi i paragrafi. Invocando la funzione ``document.querySelectorAll`` con parametro il selettore CSS ``.paragrafo`` ci permette di selezionare la lista di nodi del DOM che rappresentano i due paragrafo, come nell'esempio seguente:
 
-Nel secondo caso il selettore CSS ``.paragrafo`` seleziona due elementi, il primo ed il secondo paragrafo, quindi la variabile ``elementList`` contiene una lista di nodi;
+```javascript
+let elementList = document.querySelectorAll('.paragrafo');
+```
 
 ## Proprietà dei nodi del DOM
 
 Le proprietà di un nodo sono coppie chiave-valore (nome-valore). La sintassi ``nodo.nomeProprieta`` è utilizzata per accedere ad una proprietà di un nodo (in maniera molto simile all'uso delle variabili). Se la proprietà a cui si accede esiste, viene modificata, se non esiste viene creata.
 
-Come per le variabili, il valore associato ad una proprietà può essere di qualsiasi tipo, un numero, un oggetto o qualsiasi altro consentito.
+Come per le variabili, il valore associato ad una proprietà può essere di qualsiasi tipo, un numero, un oggetto o qualsiasi altro tipo consentito.
 
 Come per le variabili, le proprietà possono avere il nome composto con caratteri alfanumerici (maiuscoli o minuscoli).
 
-Nel seguente esempio si seleziona un nodo e quindi si accede alle proprietà del nodo.
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
+```
+
+Nel seguente esempio si seleziona il nodo e quindi si accede alle proprietà del nodo.
 
 ```javascript
 let elemento = document.querySelector('#paragrafo1');
-elemento.proprietaEsistente = "p1";
+elemento.proprietaEsistente = "p2";
 elemento.proprietaNuova = "valoreProprieta2";
 elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
-console.log(elemento.proprietaEsistente);
-console.log(elemento.proprietaNuova);
-console.dir(elemento.proprietaOggetto);
 ```
 
-La creazione o la modifica di queste proprietà non comporta la creazione o la modifica degli attributi HTML del nodo selezionato. Solo in casi specifici queste proprietà saranno trasformate in attributi, come spiegato nei capitoli successivi.
+La creazione o la modifica di queste proprietà non comporta la creazione o la modifica degli attributi HTML del nodo selezionato. Il paragrafo non viene alterato, resta identico:
 
-### Gestione degli attributi HTML utilizzando il DOM
+```html
+<p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
+```
+
+### Gestione degli attributi HTML
 
 Gli attributi sono coppie chiave-valore (nome-valore) appartenenti agli elementi HTML, quindi indicati nelle etichette. Il nome di un attributo HTML è alfanumerico, ma con tutte le lettere minuscole, non sono ammesse lettere maiuscole.
 
-### Proprietà mascherate
+Le funzioni per la gestione degli attributi sono le seguenti:
 
-Le proprietà possono mascherare un attributo, ma solo nei casi in cui è previsto e documentato (cioè se l'interfaccia dello specifico elemento DOM prevede la proprietà e la trasforma automaticamente in un attributo);
+- ``node.hasAttributes()`` indica se un nodo ha attributi o meno;
+- ``node.getAttributeNames()`` restituisce la lista di attributi del nodo;
+- ``node.hasAttribute(name)`` indica se un nodo ha l'attributo identificato dal nome;
+- ``node.removeAttribute(name)`` rimuove dal nodo l'attributo identificato dal nome;
+- ``node.getAttribute(name)`` restituisce il valore dell'attributo identificato dal nome;
+- ``node.setAttribute(name, value)`` imposta il valore dell'attributo identificato dal nome;
+- ``node.toggleAttribute(name)`` crea l'attributo se non è presente, altrimenti lo rimuove dal nodo;
+
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<p id="paragrafo1" proprieta-esistente="p1">paragrafo 1</p>
+```
+
+Nel seguente esempio si seleziona il nodo e quindi si modificano gli attributi del nodo.
+
+```javascript
+let elemento = document.querySelector('#paragrafo1');
+elemento.removeAttribute("proprieta-esistente");
+elemento.setAttribute("proprieta-nuova", "valoreProprieta2");
+```
+
+Il paragrafo selezionato sarà quindi modificato nel seguente modo:
+
+```html
+<div id="paragrafo1" proprieta-nuova="valoreProprieta2">Hello World!</div>
+```
+
+### Proprietà che si riflettono sugli attributi
+
+Le proprietà possono riflettersi su un attributo, ma solo nei casi in cui è previsto e documentato (cioè se l'interfaccia dello specifico elemento DOM prevede la proprietà e la trasforma automaticamente in un attributo);
 
 Ad esempio è sempre possibile accedere all'attributo ``id`` utilizzando la sintassi ``elemento.id``, come nel seguente esempio:
 
@@ -131,7 +171,7 @@ let element = document.querySelector('#paragrafo1');
 element.id ="p1"
 ```
 
-Questo esempio mostra la selezione di un nodo del documento, su questo nodo selezionato si modificando la proprietà ``id`` che viene poi trasformata automaticamente nell'attributo ``id`` del paragrafo HTML.
+Questo esempio mostra la selezione di un nodo del documento, su questo nodo selezionato si modifica la proprietà ``id``, questa modifica si riflette poi automaticamente sull'attributo ``id`` del paragrafo HTML.
 
 ```html
 <p id="p1">paragrafo 1</p>
@@ -144,21 +184,34 @@ let element = document.querySelector('#paragrafo1');
 element.boh ="p1"
 ```
 
-Questo esempio mostra la selezione di un nodo del documento, su questo nodo selezionato si accede alla proprietà ``boh`` che non esiste e viene creta, ma non viene trasformata in un attributo del paragrafo HTML. Il paragrafo HTML rimane quindi il seguente:
+Questo esempio mostra la selezione di un nodo del documento, su questo nodo selezionato si accede alla proprietà ``boh`` che non esiste e viene creta, ma questa modifica non si riflette in un attributo del paragrafo HTML. Il paragrafo HTML rimane quindi il seguente:
 
 ```html
 <p id="paragrafo1">paragrafo 1</p>
 ```
 
+Alcune volte la riflessione avviene attraverso una proprietà che ha un nome differente, ad esempio:
+
+- su un qualsiasi nodo è possibile modificare la proprietà ``ariaLabel``, questa modifica si riflette sull'attributo ``aria-label`` della corrispondente etichetta;
+- su un qualsiasi nodo è possibile modificare la proprietà ``className``, questa modifica si riflette sull'attributo ``class`` della corrispondente etichetta;
+
+Altre volte, l'accesso alla proprietà restituisce un valore di default se il valore dell'attributo non è valido oppure modifica l'attributo inserendo un valore di default.
+
+Ancora, l'accesso alla proprietà restituisce il valore dell'attributo finché non viene modificata una seconda proprietà.
+
+Questo ultimo caso è il caso di tutti i campi di input, i quali sono dotati sia della proprietà ``value`` che della proprietà ``defaultValue``. Quando si accede alla proprietà ``value`` si ottiene il valore della proprietà ``defaultValue`` fino a quando non viene indicato un valore per la proprietà ``value``. Dal momento in cui viene indicato un valore, l'accesso alla proprietà ``value`` inizia a restituire il proprio valore.
+
+Insomma, le modifiche delle proprietà non seguono una logica lineare e non esiste una regola comune per indicare come queste modifiche si riflettano sugli attributi. Ogni volta è necessario controllare la documentazione della specifica proprietà.
+
 <script>
   const text = document.createTextNode('Hello World!');
   let elemento = document.createElement('div');
   elemento.appendChild(text);
-  document.body.appendChild(elemento);
+  // document.body.appendChild(elemento);
 
   // imposto l'attributo
-  elemento.setAttribute('fO2o', 'bar');
-  elemento.fo2o="hey";
+  elemento.setAttribute('proprieta-esistente', 'p1');
+  elemento.proprietaEsistente="p2";
   
   // imposto le proprietà
   elemento.proprietaEsistente = "p1";
@@ -167,9 +220,20 @@ Questo esempio mostra la selezione di un nodo del documento, su questo nodo sele
   console.log(elemento.proprietaEsistente);
   console.log(elemento.proprietaNuova);
   console.dir(elemento.proprietaOggetto);
+
+  console.log(elemento.hasAttributes());
+  console.table(elemento.getAttributeNames());
+  console.log(elemento.hasAttribute("proprieta-esistente"));
+  elemento.removeAttribute("proprieta-esistente");
+
+  elemento.setAttribute("proprieta-nuova", "valoreProprieta2");
+  console.log(elemento.getAttribute("proprieta-nuova"));
+
+  elemento.toggleAttribute("proprieta-esistente");
+  elemento.id = { id : "v1" };
 </script>
 
-### Proprieta principali
+## Proprieta principali
 
 Le principali proprietà di un elemento a cui è possibile accedere nelle funzioni JavaScript sono le seguenti:
 
