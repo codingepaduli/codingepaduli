@@ -55,7 +55,21 @@ Le interfacce JavaScript che permettono di interagire con il DOM sono le seguent
 ``document``: Rappresenta l'intero documento HTML come albero DOM e fornisce metodi per manipolarlo;
 ``Element`` e ``Node``: Rappresentano un nodo dell'albero DOM (che corrisponde ad un elemento del documento HTML) e forniscono metodi per manipolare i gli attributi ed il contenuto del nodo;
 
-## Selezione degli elementi
+## Proprietà del DOM e attributi HTML
+
+Esiste una notevole differenza tra i concetti di proprietà ed attributi, quando si parla di sviluppo di pagine web:
+
+- si parla di attributi quando si riferisce agli attributi delle etichette HTML, come ad esempio l'attributo ``width`` nell'etichetta ``<img width="5px" height="5px">``;
+- si parla di proprietà quando si riferisce ad una proprietà di un oggetto JavaScript, in particolare ad una proprietà di un nodo selezionato attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
+
+Sia gli attributi che le proprietà sono coppie chiave-valore (nome-valore), il nome è alfanumerico, ma:
+
+- gli attributi hanno sempre il nome con tutte le lettere minuscole;
+- le proprietà possono avere un nome con lettere maiuscole o minuscole.
+
+Nei prossimi capitoli saranno trattate in dettaglio.
+
+## Selezione degli elementi del DOM
 
 Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile attraverso l'oggetto ``document``. Questo oggetto permette di selezionare gli elementi che si intende manipolare indicandoli con un selettore CSS. In particolare si ha:
 
@@ -80,28 +94,31 @@ Nel primo caso il selettore CSS ``#paragrafo1`` seleziona un solo elemento, il p
 
 Nel secondo caso il selettore CSS ``.paragrafo`` seleziona due elementi, il primo ed il secondo paragrafo, quindi la variabile ``elementList`` contiene una lista di nodi;
 
-## Proprietà ed attributi
+## Proprietà dei nodi del DOM
 
-Esiste una notevole differenza tra i concetti di proprietà ed attributi, quando si parla di sviluppo di pagine web:
+Le proprietà di un nodo sono coppie chiave-valore (nome-valore). La sintassi ``nodo.nomeProprieta`` è utilizzata per accedere ad una proprietà di un nodo (in maniera molto simile all'uso delle variabili). Se la proprietà a cui si accede esiste, viene modificata, se non esiste viene creata.
 
-- si parla di attributi quando si riferisce agli attributi delle etichette HTML, come ad esempio l'attributo ``width`` nell'etichetta ``<img width="5px" height="5px">``;
-- si parla di proprietà quando si riferisce ad una proprietà di un oggetto JavaScript, in particolare ad una proprietà di un nodo selezionato attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
+Come per le variabili, il valore associato ad una proprietà può essere di qualsiasi tipo, un numero, un oggetto o qualsiasi altro consentito.
 
-Sia gli attributi che le proprietà sono coppie chiave-valore (nome-valore), il nome è alfanumerico, ma:
+Come per le variabili, le proprietà possono avere il nome composto con caratteri alfanumerici (maiuscoli o minuscoli).
 
-- gli attributi hanno sempre il nome con tutte le lettere minuscole;
-- le proprietà possono avere un nome con lettere maiuscole o minuscole.
-
-Si accede ad una proprietà di un nodo con la sintassi ``nodo.nomeProprieta`` e la si utilizza allo stesso modo di una variabile, come nel seguente esempio:
+Nel seguente esempio si seleziona un nodo e quindi si accede alle proprietà del nodo.
 
 ```javascript
-let element = document.querySelector('#paragrafo1');
-element.nomeProprieta1 = "p1";
-element.boh = "valoreProprieta2";
-console.log(element.boh);
+let elemento = document.querySelector('#paragrafo1');
+elemento.proprietaEsistente = "p1";
+elemento.proprietaNuova = "valoreProprieta2";
+elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
+console.log(elemento.proprietaEsistente);
+console.log(elemento.proprietaNuova);
+console.dir(elemento.proprietaOggetto);
 ```
 
-Se la proprietà a cui si accede esiste, viene modificata, se non esiste viene creata.
+La creazione o la modifica di queste proprietà non comporta la creazione o la modifica degli attributi HTML del nodo selezionato. Solo in casi specifici queste proprietà saranno trasformate in attributi, come spiegato nei capitoli successivi.
+
+### Gestione degli attributi HTML utilizzando il DOM
+
+Gli attributi sono coppie chiave-valore (nome-valore) appartenenti agli elementi HTML, quindi indicati nelle etichette. Il nome di un attributo HTML è alfanumerico, ma con tutte le lettere minuscole, non sono ammesse lettere maiuscole.
 
 ### Proprietà mascherate
 
@@ -135,12 +152,21 @@ Questo esempio mostra la selezione di un nodo del documento, su questo nodo sele
 
 <script>
   const text = document.createTextNode('Hello World!');
-  let div = document.createElement('div');
-  div.appendChild(text);
-  document.body.appendChild(div);
+  let elemento = document.createElement('div');
+  elemento.appendChild(text);
+  document.body.appendChild(elemento);
 
-  div.setAttribute('fO2o', 'bar');
-  div.fo2o="hey";
+  // imposto l'attributo
+  elemento.setAttribute('fO2o', 'bar');
+  elemento.fo2o="hey";
+  
+  // imposto le proprietà
+  elemento.proprietaEsistente = "p1";
+  elemento.proprietaNuova = "valoreProprieta2";
+  elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
+  console.log(elemento.proprietaEsistente);
+  console.log(elemento.proprietaNuova);
+  console.dir(elemento.proprietaOggetto);
 </script>
 
 ### Proprieta principali
