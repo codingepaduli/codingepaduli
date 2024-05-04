@@ -34,11 +34,11 @@ Un esempio di rappresentazione della pagina web come struttura ad albero, second
 
 ```html
 html
-└── body
-    ├── h1
-    |   └── testo titolo
-    └── p
-        └── testo del paragrafo
+└ body
+ ├ h1
+ | └ testo titolo
+ └ p
+   └ testo del paragrafo
 ```
 
 <!-- Fine testo copiato -->
@@ -76,7 +76,15 @@ Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile at
 - la funzione ``document.querySelector`` prende come parametro un selettore CSS che seleziona **un singolo elemento** e quindi questa funzione restituisce il solo elemento selezionato;
 - la funzione ``document.querySelectorAll`` prende come parametro un selettore CSS che seleziona **uno o più elementi** e quindi questa funzione restituisce la lista di elementi selezionati. In questo caso può essere necessario un ciclo iterativo per scorrere gli elementi ed elaborarli uno ad uno.
 
-Per un dettaglio completo sui **selettori CSS** si rimanda al relativo capitolo ed alle specifiche di ECMAScript.
+Per un dettaglio completo sui **selettori CSS** si rimanda al relativo capitolo ed alle specifiche di ECMAScript. Di seguito i selettori CSS principali.
+
+### Selezione per identificativo
+
+<!-- testo copiato e risistemato dalle lezioni introduttive di CSS - I selettori CSS -->
+
+Il **selettore per identificativo** permette di selezionare la singola etichetta individuata da un certo identificativo. La sintassi di questo selettore prevede il carattere "cancelletto" ``#`` seguito dall'identificativo.
+
+<!-- fine testo copiato -->
 
 Supponiamo di avere la seguente porzione di documento HTML:
 
@@ -85,13 +93,36 @@ Supponiamo di avere la seguente porzione di documento HTML:
 <p class="paragrafo">paragrafo 2</p>
 ```
 
-Il selettore CSS ``#paragrafo1`` seleziona un solo elemento, il primo paragrafo. Invocando la funzione ``document.querySelector`` con parametro il selettore CSS ``#paragrafo1`` ci permette di selezionare il singolo nodo del DOM che rappresenta il paragrafo, come nell'esempio seguente:
+Il primo paragrafo ha identificativo ``paragrafo1``, quindi il selettore CSS per identificativo si costruisce col carattere "cancelletto" ``#`` seguito dall'identificativo ``paragrafo1``.
+
+Questo selettore CSS seleziona un solo elemento ed è quindi utilizzabile con la funzione ``document.querySelector``.
+
+Invocando la funzione ``document.querySelector`` con parametro il selettore CSS ``#paragrafo1`` ci permette di selezionare il singolo nodo del DOM che rappresenta il paragrafo, come nell'esempio seguente:
 
 ```javascript
 let element = document.querySelector('#paragrafo1');
 ```
 
-Il selettore CSS ``.paragrafo`` seleziona entrambi i paragrafi. Invocando la funzione ``document.querySelectorAll`` con parametro il selettore CSS ``.paragrafo`` ci permette di selezionare la lista di nodi del DOM che rappresentano i due paragrafo, come nell'esempio seguente:
+### Selezione per classe
+
+<!-- testo copiato e risistemato dalle lezioni introduttive di CSS - I selettori CSS -->
+
+Il **selettore per classe** permette di selezionare tutte le etichette che hanno la stessa classe. La sintassi di questo selettore prevede il carattere "punto" ``.`` seguito dal nome della classe.
+
+<!-- fine testo copiato -->
+
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<p class="paragrafo" id="paragrafo1">paragrafo 1</p>
+<p class="paragrafo">paragrafo 2</p>
+```
+
+I due paragrafi hanno la classe ``paragrafo``, quindi il selettore CSS per classe si costruisce col carattere "punto" ``.`` seguito dall'identificativo ``paragrafo``.
+
+Questo selettore CSS seleziona più elementi ed è quindi utilizzabile con la funzione ``document.querySelectorAll``.
+
+Invocando la funzione ``document.querySelectorAll`` con parametro il selettore CSS ``.paragrafo`` ci permette di selezionare la lista di nodi del DOM che rappresentano i due paragrafi, come nell'esempio seguente:
 
 ```javascript
 let elementList = document.querySelectorAll('.paragrafo');
