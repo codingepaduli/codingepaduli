@@ -7,7 +7,7 @@ publishdate: 2020-05-04
 lastmod: 2020-05-04
 categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
-draft: false
+draft: true
 toc: false
 summary: "08 - DOM e selettori CSS"
 customJS: ["/static/coding/web/javascript/selettoriCSS.js"]
