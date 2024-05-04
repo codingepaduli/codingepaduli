@@ -47,31 +47,31 @@ Il programmatore può manipolare questo modello Document Object Model (DOM) attr
 
 - selezionare i nodi dell'albero attraverso i selettori CSS;
 - effettuare le classiche operazioni di creazione, lettura, modifica e cancellazione di un nodo dell'albero (le operazioni sono dette CRUD, dall'inglese Create, Read, Update e Delete);
-- effettuare le modifiche degli attributi di un nodo;
-- ricevere notifiche di eventi che avvengono sui nodi, come il click del mouse su un elemento o l'aggiunta di un nuovo elemento.
-
-Le interfacce JavaScript che permettono di interagire con il DOM sono le seguenti:
-
-``document``: Rappresenta l'intero documento HTML come albero DOM e fornisce metodi per manipolarlo;
-``Element`` e ``Node``: Rappresentano un nodo dell'albero DOM (che corrisponde ad un elemento del documento HTML) e forniscono metodi per manipolare i gli attributi ed il contenuto del nodo;
-
-## Proprietà del DOM e attributi HTML
+- effettuare le modifiche degli **attributi** di un nodo;
+- effettuare le modifiche dalle **proprietà** di un nodo;
+- ricevere notifiche di eventi che avvengono su un nodo del documento, come il click del mouse su un elemento o l'aggiunta di un nuovo elemento.
 
 Esiste una notevole differenza tra i concetti di proprietà ed attributi, quando si parla di sviluppo di pagine web:
 
 - si parla di attributi quando si riferisce agli attributi delle etichette HTML, come ad esempio l'attributo ``width`` nell'etichetta ``<img width="5px" height="5px">``;
 - si parla di proprietà quando si riferisce ad una proprietà di un oggetto JavaScript, in particolare ad una proprietà di un nodo selezionato attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
 
-Sia gli attributi che le proprietà sono coppie chiave-valore (nome-valore), il nome è alfanumerico, ma:
+Sia gli attributi, sia le proprietà, sia gli eventi possono essere gestite utilizzando il modello ad albero DOM.
 
-- gli attributi hanno sempre il nome con tutte le lettere minuscole;
-- le proprietà possono avere un nome con lettere maiuscole o minuscole.
+Nel modello DOM ogni nodo è interpretato come una tipologia di oggetto JavaScript ``Node``, ``Element`` ed ``HTMLElement`` che rappresentano genericamente un elemento del documento HTML e che forniscono i metodi per manipolare gli attributi ed il contenuto del nodo; Ogni nodo poi si specializza in una tipologia di oggetto particolare, ad esempio:
 
-Nei prossimi capitoli saranno trattati in dettaglio.
+- ``HTMLParagraphElement``: è un nodo interpretato come una tipologia di oggetto JavaScript che rappresenta un paragrafo del documento HTML;
+- ``HTMLHeadingElement``: è un nodo interpretato come una tipologia di oggetto JavaScript che rappresenta un titolo (dal primo al sesto) del documento HTML;
+- ``HTMLLinkElement``: è un nodo interpretato come una tipologia di oggetto JavaScript che rappresenta un collegamento del documento HTML;
+- ``HTMLInputElement``: è un nodo interpretato come una tipologia di oggetto JavaScript che rappresenta un campo di input del documento HTML.
 
-## Selezione degli elementi del DOM
+Ognuno di questi oggetti mette a disposizione proprietà, attributi ed eventi specifici per la specifica etichetta HTML che il nodo rappresenta.
 
-Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile attraverso l'oggetto ``document``. Questo oggetto permette di selezionare gli elementi che si intende manipolare indicandoli con un selettore CSS. In particolare si ha:
+## Selezione dei nodi
+
+Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile attraverso l'oggetto ``document``.
+
+L'oggetto ``document`` permette di selezionare gli elementi che si intende manipolare indicandoli con un selettore CSS. In particolare si ha:
 
 - la funzione ``document.querySelector`` prende come parametro un selettore CSS che seleziona **un singolo elemento** e quindi questa funzione restituisce il solo elemento selezionato;
 - la funzione ``document.querySelectorAll`` prende come parametro un selettore CSS che seleziona **uno o più elementi** e quindi questa funzione restituisce la lista di elementi selezionati. In questo caso può essere necessario un ciclo iterativo per scorrere gli elementi ed elaborarli uno ad uno.
@@ -157,19 +157,25 @@ La creazione o la modifica di queste proprietà non comporta la creazione o la m
 <p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
 ```
 
-### Gestione degli attributi HTML
+## Attributi HTML
 
 Gli attributi sono coppie chiave-valore (nome-valore) appartenenti agli elementi HTML, quindi indicati nelle etichette. Il nome di un attributo HTML è alfanumerico, ma con tutte le lettere minuscole, non sono ammesse lettere maiuscole.
 
-Le funzioni per la gestione degli attributi sono le seguenti:
+Per gestire gli attributi è necessario selezionare un nodo, ad esempio:
 
-- ``node.hasAttributes()`` indica se un nodo ha attributi o meno;
-- ``node.getAttributeNames()`` restituisce la lista di attributi del nodo;
-- ``node.hasAttribute(name)`` indica se un nodo ha l'attributo identificato dal nome;
-- ``node.removeAttribute(name)`` rimuove dal nodo l'attributo identificato dal nome;
-- ``node.getAttribute(name)`` restituisce il valore dell'attributo identificato dal nome;
-- ``node.setAttribute(name, value)`` imposta il valore dell'attributo identificato dal nome;
-- ``node.toggleAttribute(name)`` crea l'attributo se non è presente, altrimenti lo rimuove dal nodo;
+```javascript
+let node = document.querySelector('#paragrafo1');
+```
+
+Le funzioni per la gestione degli attributi devono quindi essere invocate sull'oggetto ``node`` selezionato e sono le seguenti:
+
+- ``hasAttributes()`` indica se un nodo ha attributi o meno;
+- ``getAttributeNames()`` restituisce la lista di attributi del nodo;
+- ``hasAttribute(name)`` indica se un nodo ha l'attributo identificato dal nome;
+- ``removeAttribute(name)`` rimuove dal nodo l'attributo identificato dal nome;
+- ``getAttribute(name)`` restituisce il valore dell'attributo identificato dal nome;
+- ``setAttribute(name, value)`` imposta il valore dell'attributo identificato dal nome;
+- ``toggleAttribute(name)`` crea l'attributo se non è presente, altrimenti lo rimuove dal nodo;
 
 Supponiamo di avere la seguente porzione di documento HTML:
 
@@ -191,7 +197,7 @@ Il paragrafo selezionato sarà quindi modificato nel seguente modo:
 <div id="paragrafo1" proprieta-nuova="valoreProprieta2">Hello World!</div>
 ```
 
-### Proprietà che si riflettono sugli attributi
+## Proprietà che si riflettono sugli attributi
 
 Le proprietà possono riflettersi su un attributo, ma solo nei casi in cui è previsto e documentato (cioè se l'interfaccia dello specifico elemento DOM prevede la proprietà e la trasforma automaticamente in un attributo);
 
@@ -230,9 +236,11 @@ Altre volte, l'accesso alla proprietà restituisce un valore di default se il va
 
 Ancora, l'accesso alla proprietà restituisce il valore dell'attributo finché non viene modificata una seconda proprietà.
 
-Questo ultimo caso è il caso di tutti i campi di input, i quali sono dotati sia della proprietà ``value`` che della proprietà ``defaultValue``. Quando si accede alla proprietà ``value`` si ottiene il valore della proprietà ``defaultValue`` fino a quando non viene indicato un valore per la proprietà ``value``. Dal momento in cui viene indicato un valore, l'accesso alla proprietà ``value`` inizia a restituire il proprio valore.
-
 Insomma, le modifiche delle proprietà non seguono una logica lineare e non esiste una regola comune per indicare come queste modifiche si riflettano sugli attributi. Ogni volta è necessario controllare la documentazione della specifica proprietà.
+
+## Proprietà principali
+
+Questo ultimo caso è il caso di tutti i campi di input, i quali sono dotati sia della proprietà ``value`` che della proprietà ``defaultValue``. Quando si accede alla proprietà ``value`` si ottiene il valore della proprietà ``defaultValue`` fino a quando non viene indicato un valore per la proprietà ``value``. Dal momento in cui viene indicato un valore, l'accesso alla proprietà ``value`` inizia a restituire il proprio valore.
 
 <script>
   const text = document.createTextNode('Hello World!');
@@ -436,26 +444,6 @@ Per aggiungere codice HTML dopo un secondo elemento, si utilizza la seguente fun
 
 ```javascript
 refEle.insertAdjacentHTML('afterend', html);
-```
-
-## Gestione di attributi di un elemento
-
-Per aggiungere un attributo ad un elemento, si utilizza la seguente funzione:
-
-```javascript
-ele.setAttribute('width', '100px');
-```
-
-Per accedere ad un attributo di un elemento, si utilizza la seguente funzione:
-
-```javascript
-const attr = ele.getAttribute('attr');
-```
-
-Per rimuovere un attributo da un elemento, si utilizza la seguente funzione:
-
-```javascript
-ele.removeAttribute('attr');
 ```
 
 ## Gestione dello stile di un elemento
