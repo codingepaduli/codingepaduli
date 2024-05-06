@@ -128,37 +128,6 @@ Invocando la funzione ``document.querySelectorAll`` con parametro il selettore C
 let elementList = document.querySelectorAll('.paragrafo');
 ```
 
-## Proprietà dei nodi del DOM
-
-Le proprietà di un nodo sono coppie chiave-valore (nome-valore). La sintassi ``nodo.nomeProprieta`` è utilizzata per accedere ad una proprietà di un nodo (in maniera molto simile all'uso delle variabili). Se la proprietà a cui si accede esiste, viene modificata, se non esiste viene creata.
-
-Come per le variabili, il valore associato ad una proprietà può essere di qualsiasi tipo, un numero, un oggetto o qualsiasi altro tipo consentito.
-
-Come per le variabili, le proprietà possono avere il nome composto con caratteri alfanumerici (maiuscoli o minuscoli).
-
-Supponiamo di avere la seguente porzione di documento HTML:
-
-```html
-<p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
-```
-
-Nel seguente esempio si seleziona il nodo e quindi si accede alle proprietà del nodo.
-
-```javascript
-let elemento = document.querySelector('#paragrafo1');
-elemento.proprietaEsistente = "p2";
-elemento.proprietaNuova = "valoreProprieta2";
-elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
-```
-
-La creazione o la modifica di queste proprietà non comporta la creazione o la modifica degli attributi HTML del nodo selezionato. Il paragrafo non viene alterato, resta identico:
-
-```html
-<p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
-```
-
-Esiste una sintassi alternativa per accedere ad una proprietà di un nodo, consiste nell'indicare la proprietà tra parentesi quadre: ``nodo[nomeProprieta]``, è utilizzata quando il nome della proprietà non rispetta le convenzioni suggerite per il nome della proprietà.
-
 ## Gestione attributi HTML
 
 Gli attributi sono coppie chiave-valore (nome-valore) appartenenti agli elementi HTML, quindi indicati nelle etichette. Il nome di un attributo HTML è alfanumerico, ma con tutte le lettere minuscole, non sono ammesse lettere maiuscole.
@@ -198,6 +167,37 @@ Il paragrafo selezionato sarà quindi modificato nel seguente modo:
 ```html
 <div id="paragrafo1" proprieta-nuova="valoreProprieta2">Hello World!</div>
 ```
+
+## Proprietà dei nodi del DOM
+
+Le proprietà di un nodo sono coppie chiave-valore (nome-valore). La sintassi ``nodo.nomeProprieta`` è utilizzata per accedere ad una proprietà di un nodo (in maniera molto simile all'uso delle variabili). Se la proprietà a cui si accede esiste, viene modificata, se non esiste viene creata.
+
+Come per le variabili, il valore associato ad una proprietà può essere di qualsiasi tipo, un numero, un oggetto o qualsiasi altro tipo consentito.
+
+Come per le variabili, le proprietà possono avere il nome composto con caratteri alfanumerici (maiuscoli o minuscoli).
+
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
+```
+
+Nel seguente esempio si seleziona il nodo e quindi si accede alle proprietà del nodo.
+
+```javascript
+let elemento = document.querySelector('#paragrafo1');
+elemento.proprietaEsistente = "p2";
+elemento.proprietaNuova = "valoreProprieta2";
+elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
+```
+
+La creazione o la modifica di queste proprietà non comporta la creazione o la modifica degli attributi HTML del nodo selezionato. Il paragrafo non viene alterato, resta identico:
+
+```html
+<p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
+```
+
+Esiste una sintassi alternativa per accedere ad una proprietà di un nodo, consiste nell'indicare la proprietà tra parentesi quadre: ``nodo[nomeProprieta]``, è utilizzata quando il nome della proprietà non rispetta le convenzioni suggerite per il nome della proprietà.
 
 ## Proprietà che si riflettono sugli attributi
 
@@ -239,12 +239,15 @@ Ancora, l'accesso alla proprietà restituisce il valore dell'attributo finché n
 
 Insomma, le modifiche delle proprietà non seguono una logica lineare e non esiste una regola comune per indicare come queste modifiche si riflettano sugli attributi. Ogni volta è necessario controllare la documentazione della specifica proprietà.
 
-### Proprietà ``innerHTML`` e ``outerHTML``
+### Proprietà testuali
 
-Le proprietà che permettono di avere una rappresentazione sotto forma di testo dell'elemento e del contenuto dell'elemento sono le seguenti:
+Le proprietà che permettono di avere una rappresentazione testuale dell'elemento e del contenuto sono le seguenti:
 
-- ``innerHTML``: il contenuto dell'elemento selezionato (senza l'elemento);
-- ``outerHTML``: l'elemento selezionato ed il suo contenuto;
+- ``innerHTML``: il contenuto dell'elemento selezionato (senza l'etichetta HTML);
+- ``outerHTML``: l'elemento selezionato ed il suo contenuto (compresa l'etichetta HTML);
+- ``textContent``: il testo inserito all'interno di un elemento.
+
+Alcuni caratteri possono essere convertiti in "HTML entities" per essere correttamente rappresentati.
 
 Supponiamo di avere la seguente porzione di documento HTML:
 
@@ -257,6 +260,7 @@ Nel seguente esempio si seleziona il nodo e quindi si modifica il contenuto del 
 ```javascript
 let elemento = document.querySelector('#paragrafo1');
 elemento.innerHTML = "nuovo paragrafo";
+console.log(ele.textContent);
 console.log(elemento.outerHTML);
 ```
 
@@ -265,6 +269,8 @@ Il paragrafo selezionato sarà quindi modificato nel seguente modo:
 ```html
 <p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>
 ```
+
+La proprietà ``ele.textContent`` visualizzerà il testo "nuovo paragrafo", mentre la proprietà ``elemento.outerHTML`` visualizzerà il testo "<p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>"
 
 ### Proprietà ``value``
 
@@ -402,12 +408,6 @@ Per rimuovere un elemento dalla pagina, si utilizza la seguente funzione:
 ele.remove();
 ```
 
-Per ottenere solo ed esclusivamente il testo inserito all'interno di un elemento dalla pagina, si utilizza la seguente funzione:
-
-```javascript
-const text = ele.textContent;
-```
-
 Per aggiungere un elemento prima di un secondo elemento, si utilizza la seguente funzione:
 
 ```javascript
@@ -421,12 +421,6 @@ refEle.insertAdjacentElement('afterend', ele);
 ```
 
 ## Gestione di codice HTML degli elementi
-
-Per ottenere il codice HTML (alcuni caratteri sono convertiti in "HTML entities") contenuto all'interno di un elemento dalla pagina, si utilizza la seguente funzione:
-
-```javascript
-const text = ele.innerHTML;
-```
 
 Per aggiungere codice HTML prima di un secondo elemento, si utilizza la seguente funzione:
 
