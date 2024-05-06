@@ -51,14 +51,9 @@ Il programmatore può manipolare questo modello Document Object Model (DOM) attr
 - effettuare le modifiche dalle **proprietà** di un nodo;
 - ricevere notifiche di eventi che avvengono su un nodo del documento, come il click del mouse su un elemento o l'aggiunta di un nuovo elemento.
 
-Esiste una notevole differenza tra i concetti di proprietà ed attributi, quando si parla di sviluppo di pagine web:
+Questa modello è un concetto generico ed è utilizzabile in qualsiasi linguaggio di programmazione.
 
-- si parla di attributi quando si riferisce agli attributi delle etichette HTML, come ad esempio l'attributo ``width`` nell'etichetta ``<img width="5px" height="5px">``;
-- si parla di proprietà quando si riferisce ad una proprietà di un oggetto JavaScript, in particolare ad una proprietà di un nodo selezionato attraverso le funzioni ``document.querySelector`` e ``document.querySelectorAll``.
-
-Sia gli attributi, sia le proprietà, sia gli eventi possono essere gestite utilizzando il modello ad albero DOM.
-
-Nel modello DOM ogni nodo è interpretato come una tipologia di oggetto JavaScript ``Node``, ``Element`` ed ``HTMLElement`` che rappresentano genericamente un elemento del documento HTML e che forniscono i metodi per manipolare gli attributi ed il contenuto del nodo; Ogni nodo poi si specializza in una tipologia di oggetto particolare, ad esempio:
+In JavaScript è l'oggetto ``document`` che permette di vedere il documento HTML come albero DOM e permette di manipolarlo attraverso le operazioni riportate in precedenza. Ogni nodo dell'albero DOM è interpretato come una tipologia di oggetto JavaScript ``Node``, ``Element`` ed ``HTMLElement`` che rappresentano genericamente un elemento del documento HTML e che forniscono i metodi per manipolare gli attributi ed il contenuto del nodo; Ogni nodo poi si specializza in una tipologia di oggetto particolare, ad esempio:
 
 - ``HTMLParagraphElement``: è un nodo interpretato come una tipologia di oggetto JavaScript che rappresenta un paragrafo del documento HTML;
 - ``HTMLHeadingElement``: è un nodo interpretato come una tipologia di oggetto JavaScript che rappresenta un titolo (dal primo al sesto) del documento HTML;
@@ -67,9 +62,14 @@ Nel modello DOM ogni nodo è interpretato come una tipologia di oggetto JavaScri
 
 Ognuno di questi oggetti mette a disposizione proprietà, attributi ed eventi specifici per la specifica etichetta HTML che il nodo rappresenta.
 
-## Selezione dei nodi
+Sia gli attributi, sia le proprietà, sia gli eventi possono essere gestite utilizzando il modello ad albero DOM.
 
-Il documento HTML in JavaScript è visto come un albero DOM ed è accessibile attraverso l'oggetto ``document``.
+In JavaScript esiste una notevole differenza tra i concetti di proprietà ed attributi, quando si parla di modello DOM nello sviluppo di pagine web:
+
+- si parla di attributi quando si riferisce agli attributi delle etichette HTML, come ad esempio l'attributo ``width`` nell'etichetta ``<img width="5px" height="5px">``;
+- si parla di proprietà quando si riferisce ad una proprietà di un nodo dell'albero, in particolare ad una proprietà di un oggetto JavaScript il cui tipo è ``Node``, ``Element`` o ``HTMLElement``.
+
+## Selezione dei nodi
 
 L'oggetto ``document`` permette di selezionare gli elementi che si intende manipolare indicandoli con un selettore CSS. In particolare si ha:
 
@@ -157,7 +157,9 @@ La creazione o la modifica di queste proprietà non comporta la creazione o la m
 <p id="paragrafo1" proprietaEsistente="p1">paragrafo 1</p>
 ```
 
-## Attributi HTML
+Esiste una sintassi alternativa per accedere ad una proprietà di un nodo, consiste nell'indicare la proprietà tra parentesi quadre: ``nodo[nomeProprieta]``, è utilizzata quando il nome della proprietà non rispetta le convenzioni suggerite per il nome della proprietà.
+
+## Gestione attributi HTML
 
 Gli attributi sono coppie chiave-valore (nome-valore) appartenenti agli elementi HTML, quindi indicati nelle etichette. Il nome di un attributo HTML è alfanumerico, ma con tutte le lettere minuscole, non sono ammesse lettere maiuscole.
 
@@ -230,7 +232,6 @@ Questo esempio mostra la selezione di un nodo del documento, su questo nodo sele
 Alcune volte la riflessione avviene attraverso una proprietà che ha un nome differente, ad esempio:
 
 - su un qualsiasi nodo è possibile modificare la proprietà ``ariaLabel``, questa modifica si riflette sull'attributo ``aria-label`` della corrispondente etichetta;
-- su un qualsiasi nodo è possibile modificare la proprietà ``className``, questa modifica si riflette sull'attributo ``class`` della corrispondente etichetta;
 
 Altre volte, l'accesso alla proprietà restituisce un valore di default se il valore dell'attributo non è valido oppure modifica l'attributo inserendo un valore di default.
 
@@ -238,47 +239,40 @@ Ancora, l'accesso alla proprietà restituisce il valore dell'attributo finché n
 
 Insomma, le modifiche delle proprietà non seguono una logica lineare e non esiste una regola comune per indicare come queste modifiche si riflettano sugli attributi. Ogni volta è necessario controllare la documentazione della specifica proprietà.
 
-## Proprietà principali
+### Proprietà ``innerHTML`` e ``outerHTML``
 
-Questo ultimo caso è il caso di tutti i campi di input, i quali sono dotati sia della proprietà ``value`` che della proprietà ``defaultValue``. Quando si accede alla proprietà ``value`` si ottiene il valore della proprietà ``defaultValue`` fino a quando non viene indicato un valore per la proprietà ``value``. Dal momento in cui viene indicato un valore, l'accesso alla proprietà ``value`` inizia a restituire il proprio valore.
-
-<script>
-  const text = document.createTextNode('Hello World!');
-  let elemento = document.createElement('div');
-  elemento.appendChild(text);
-  // document.body.appendChild(elemento);
-
-  // imposto l'attributo
-  elemento.setAttribute('proprieta-esistente', 'p1');
-  elemento.proprietaEsistente="p2";
-  
-  // imposto le proprietà
-  elemento.proprietaEsistente = "p1";
-  elemento.proprietaNuova = "valoreProprieta2";
-  elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
-  console.log(elemento.proprietaEsistente);
-  console.log(elemento.proprietaNuova);
-  console.dir(elemento.proprietaOggetto);
-
-  console.log(elemento.hasAttributes());
-  console.table(elemento.getAttributeNames());
-  console.log(elemento.hasAttribute("proprieta-esistente"));
-  elemento.removeAttribute("proprieta-esistente");
-
-  elemento.setAttribute("proprieta-nuova", "valoreProprieta2");
-  console.log(elemento.getAttribute("proprieta-nuova"));
-
-  elemento.toggleAttribute("proprieta-esistente");
-  elemento.id = { id : "v1" };
-</script>
-
-## Proprieta principali
-
-Le principali proprietà di un elemento a cui è possibile accedere nelle funzioni JavaScript sono le seguenti:
+Le proprietà che permettono di avere una rappresentazione sotto forma di testo dell'elemento e del contenuto dell'elemento sono le seguenti:
 
 - ``innerHTML``: il contenuto dell'elemento selezionato (senza l'elemento);
 - ``outerHTML``: l'elemento selezionato ed il suo contenuto;
-- ``value``: proprietà accessibile solo per i campi di input, restituisce il valore in formato stringa.
+
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<p id="paragrafo1" proprieta-esistente="p1">paragrafo 1</p>
+```
+
+Nel seguente esempio si seleziona il nodo e quindi si modifica il contenuto del nodo e poi si scrive l'intera etichetta nella console.
+
+```javascript
+let elemento = document.querySelector('#paragrafo1');
+elemento.innerHTML = "nuovo paragrafo";
+console.log(elemento.outerHTML);
+```
+
+Il paragrafo selezionato sarà quindi modificato nel seguente modo:
+
+```html
+<p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>
+```
+
+### Proprietà ``value``
+
+La proprietà ``value`` è disponibile solo per i campi di input, restituisce il valore del campo di input inserito dall'utente. Dato che il linguaggio HTML è un linguaggio testuale, il valore è sempre una stringa.
+
+Questo ultimo caso è il caso di tutti i campi di input, i quali sono dotati sia della proprietà ``value`` che della proprietà ``defaultValue``. Quando si accede alla proprietà ``value`` si ottiene il valore della proprietà ``defaultValue`` fino a quando non viene indicato un valore per la proprietà ``value``. Dal momento in cui viene indicato un valore, l'accesso alla proprietà ``value`` inizia a restituire il proprio valore.
+
+## Esercizio
 
 Ad esempio, utilizzando il **selettore CSS per identificatore**, è possibile selezionare un elemento di input ed accedere al valore:
 
