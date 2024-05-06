@@ -229,9 +229,7 @@ Questo esempio mostra la selezione di un nodo del documento, su questo nodo sele
 <p id="paragrafo1">paragrafo 1</p>
 ```
 
-Alcune volte la riflessione avviene attraverso una proprietà che ha un nome differente, ad esempio:
-
-- su un qualsiasi nodo è possibile modificare la proprietà ``ariaLabel``, questa modifica si riflette sull'attributo ``aria-label`` della corrispondente etichetta;
+Alcune volte la riflessione avviene attraverso una proprietà che ha un nome differente, ad esempio per la proprietà ``ariaLabel`` che si riflette sull'attributo ``aria-label`` (e non sull'attributo ``ariaLabel``) della corrispondente etichetta;
 
 Altre volte, l'accesso alla proprietà restituisce un valore di default se il valore dell'attributo non è valido oppure modifica l'attributo inserendo un valore di default.
 
@@ -239,7 +237,7 @@ Ancora, l'accesso alla proprietà restituisce il valore dell'attributo finché n
 
 Insomma, le modifiche delle proprietà non seguono una logica lineare e non esiste una regola comune per indicare come queste modifiche si riflettano sugli attributi. Ogni volta è necessario controllare la documentazione della specifica proprietà.
 
-### Proprietà testuali
+### Proprietà di contenuto testuale
 
 Le proprietà che permettono di avere una rappresentazione testuale dell'elemento e del contenuto sono le seguenti:
 
@@ -270,13 +268,65 @@ Il paragrafo selezionato sarà quindi modificato nel seguente modo:
 <p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>
 ```
 
-La proprietà ``ele.textContent`` visualizzerà il testo "nuovo paragrafo", mentre la proprietà ``elemento.outerHTML`` visualizzerà il testo "<p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>"
+La proprietà ``ele.textContent`` visualizzerà il testo ``nuovo paragrafo``, mentre la proprietà ``elemento.outerHTML`` visualizzerà il testo ``<p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>``
+
+### Proprietà ``defaultValue``
+
+Tutti i campi di input sono dotati della proprietà ``defaultValue``che restituisce sempre il valore dell'attributo HTML ``value`` del campo di input. Dato che il linguaggio HTML è un linguaggio testuale, il valore è sempre una stringa.
+
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<input id="input" type="text" value="default">
+```
+
+Nel seguente esempio si seleziona il nodo e quindi si accede alle proprietà del nodo.
+
+```javascript
+let elemento = document.querySelector('#input');
+console.log(input.defaultValue); // 'default'
+input.defaultValue = "new default"
+console.log(input.defaultValue); // 'new default'
+```
+
+La modifica di questa proprietà comporta di riflesso la modifica dell'attributo HTML ``value`` del nodo selezionato. Il campo di input viene alterato come di seguito:
+
+```html
+<input id="input" type="text" value="new default">
+```
 
 ### Proprietà ``value``
 
-La proprietà ``value`` è disponibile solo per i campi di input, restituisce il valore del campo di input inserito dall'utente. Dato che il linguaggio HTML è un linguaggio testuale, il valore è sempre una stringa.
+Tutti i campi di input sono dotati della proprietà ``value``, che non deve essere confusa ne con la proprietà ``defaultValue`` ne con il valore dell'attributo HTML ``value`` dei campi di input. Dato che il linguaggio HTML è un linguaggio testuale, il valore è sempre una stringa.
 
-Questo ultimo caso è il caso di tutti i campi di input, i quali sono dotati sia della proprietà ``value`` che della proprietà ``defaultValue``. Quando si accede alla proprietà ``value`` si ottiene il valore della proprietà ``defaultValue`` fino a quando non viene indicato un valore per la proprietà ``value``. Dal momento in cui viene indicato un valore, l'accesso alla proprietà ``value`` inizia a restituire il proprio valore.
+La proprietà ``value`` si comporta in modo particolare:
+
+- se nel nodo selezionato questa proprietà non è definita, allora viene restituito il valore presente nella proprietà ``defaultValue`` del campo di input;
+- se nel nodo selezionato questa proprietà è stata definita (ad esempio attraverso l'istruzione ``nodo.value = 3``), allora viene restituito il valore di questa proprietà.
+
+La modifica di questa proprietà non si riflette in una modifica all'attributo HTML del campo di input.
+
+Supponiamo di avere la seguente porzione di documento HTML:
+
+```html
+<input id="input" type="text" value="default">
+```
+
+Nel seguente esempio si seleziona il nodo e quindi si accede alle proprietà del nodo.
+
+```javascript
+let elemento = document.querySelector('#input');
+console.log(input.value); // 'default'
+input.value = "new default"
+console.log(input.value); // 'new default'
+console.log(input.defaultValue); // 'default'
+```
+
+La modifica della proprietà ``value`` non comporta di riflesso la modifica dell'attributo HTML ``value`` del nodo selezionato. Il campo di input rimane inalterato come di seguito:
+
+```html
+<input id="input" type="text" value="default">
+```
 
 ## Esercizio
 
@@ -420,20 +470,6 @@ Per aggiungere un elemento dopo un secondo elemento, si utilizza la seguente fun
 refEle.insertAdjacentElement('afterend', ele);
 ```
 
-## Gestione di codice HTML degli elementi
-
-Per aggiungere codice HTML prima di un secondo elemento, si utilizza la seguente funzione:
-
-```javascript
-refEle.insertAdjacentHTML('beforebegin', html);
-```
-
-Per aggiungere codice HTML dopo un secondo elemento, si utilizza la seguente funzione:
-
-```javascript
-refEle.insertAdjacentHTML('afterend', html);
-```
-
 ## Gestione dello stile di un elemento
 
 Per aggiungere una proprietà di stile ad un elemento, si utilizza la funzione:
@@ -499,3 +535,34 @@ let class = ['class1', 'class2'];
 ele.classList.add(...class);
 ele.classList.remove(...class);
 ```
+
+<script>
+  const text = document.createTextNode('Hello World!');
+  let elemento = document.createElement('div');
+  elemento.appendChild(text);
+  document.body.appendChild(elemento);
+
+  // imposto l'attributo
+  elemento.setAttribute('proprieta-esistente', 'p1');
+  elemento.proprietaEsistente="p2";
+  
+  // imposto le proprietà
+  elemento.proprietaEsistente = "p1";
+  elemento.proprietaNuova = "valoreProprieta2";
+  elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
+  console.log(elemento.proprietaEsistente);
+  console.log(elemento.proprietaNuova);
+  console.dir(elemento.proprietaOggetto);
+
+  console.log(elemento.hasAttributes());
+  console.table(elemento.getAttributeNames());
+  console.log(elemento.hasAttribute("proprieta-esistente"));
+  elemento.removeAttribute("proprieta-esistente");
+
+  elemento.setAttribute("proprieta-nuova", "valoreProprieta2");
+  console.log(elemento.getAttribute("proprieta-nuova"));
+
+  elemento.toggleAttribute("proprieta-esistente");
+  elemento.id = { id : "v1" };
+
+</script>
