@@ -393,7 +393,7 @@ Di seguito un elenco di attributi con il rispettivo evento che viene notificato:
 - ``onsubmit``: il form è stato inviato;
 - ``onload``: la pagina web è stato caricata;
 
-Come valore di questi attributi si deve specificare una funzione da eseguire, ad esempio la funzione JavaScript ``alert`` che mostra un messaggio all'utente.
+La presenza di uno di questi attributi indica che si ha interesse a ricevere notifiche dell'evento associato, e che una volta notificato l'evento si deve eseguire una funzione indicata come valore dell'attributo, ad esempio la funzione JavaScript ``alert`` che mostra un messaggio all'utente.
 
 Un esempio completo che mostra come alla notifica dell'azione del click si può eseguire l'azione di mostrare un messaggio all'utente è il seguente:
 
@@ -401,7 +401,7 @@ Un esempio completo che mostra come alla notifica dell'azione del click si può 
 <input type="button" value="clicca" onclick="alert('cliccato')">
 ```
 
-Nell'esempio precedente, l'attributo ``onclick`` permette di ricevere la notifica dell'evento di "click" sull'elemento ``input``, l'azione da eseguire è quella di ``alert('cliccato')``.
+Nell'esempio appena visto, l'attributo ``onclick`` permette di ricevere la notifica dell'evento di "click" sull'elemento ``input``, l'azione da eseguire è la funzione ``alert('cliccato')`` che mostra un messaggio all'utente.
 
 Ovviamente le azioni da eseguire possono essere definire in funzioni JavaScript, come nel seguente esempio:
 
