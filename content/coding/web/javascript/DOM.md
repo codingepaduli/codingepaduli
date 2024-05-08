@@ -328,48 +328,6 @@ La modifica della proprietà ``value`` non comporta di riflesso la modifica dell
 <input id="input" type="text" value="default">
 ```
 
-## Esercizio
-
-Ad esempio, utilizzando il **selettore CSS per identificatore**, è possibile selezionare un elemento di input ed accedere al valore:
-
-```html
-<input type="text" id="nome" value="John">
-
-<script>
-let valoreInput = document.querySelector("#nome").value;
-console.info(valoreInput);
-</script>
-```
-
-L'output scritto in console è il seguente:
-
-```plaintext
-John
-```
-
-Sempre utilizzando il **selettore CSS per identificatore**, per selezionare un elemento paragrafo ed accedere al testo presente nel paragrafo, si può utilizzare la proprietà ``innerHTML``, come nel seguente esempio:
-
-```html
-<p id="paragrafo">Questo è un paragrafo</p>
-
-<script>
-let paragrafo = document.querySelector("#paragrafo").innerHTML;
-console.info(paragrafo);
-</script>
-```
-
-L'output scritto in console è il seguente:
-
-```plaintext
-Questo è un paragrafo
-```
-
-Se invece si fa uso della proprietà ``outerHTML``, in console viene riportato anche il codice HTML dell'elemento:
-
-```plaintext
-<p id="paragrafo">Questo è un paragrafo</p>
-```
-
 ## Eventi DOM ed HTML
 
 Il DOM permette di notificare gli **eventi**, detti tecnicamente **eventi DOM**, che avvengono in una pagina HTML, come il completamento della lettura della pagina web o il click da parte dell'utente su un pulsante.
@@ -423,6 +381,79 @@ In alternativa agli attributi, si può legare un elemento ad un azione con il se
 <script>
 let button = document.getElementById("#myButton");
 button.addEventListener("click", definitaDaUtente()); 
+</script>
+```
+
+## Esercizio: Calcolatrice web interattiva
+
+Utilizzando eventi, proprietà ed attributi si può realizzare una pagina web interattiva che elabori l'input dell'utente e mostri un output, tutto in locale nel browser.
+
+Supponiamo di voler creare una semplice calcolatrice per la somma di due numeri, composta da due campi di input ed un campo di output. La calcolatrice al momento effettua solo la somma.
+
+I campi di input devono avere gli identificativi necessari, dato che saranno utilizzati nei **selettori CSS per identificatore** per selezionare l'elemento di input ed accedere al valore inserito dall'utente. Stessa cosa per i campi di output, dato che il valore deve essere modificato. Quindi:
+
+- al primo campo di input assegniamo un identificativo ``num1``;
+- al secondo campo di input assegniamo un identificativo ``num2``;
+- al campo di output assegniamo un identificativo ``ris``.
+
+Dobbiamo inoltre legare l'evento di click sul pulsante ad una funzione di somma, utilizzando l'attributo HTML ``onclick`` del pulsante e definendo una nuova funzione ``somma``.
+
+La porzione di codice HTML necessaria è la seguente:
+
+```html
+<!-- Primo numero (input)-->
+<label for="num1">Num1:</label>
+<input id="num1" type="number">
+
+<!-- Secondo numero (input)-->
+<label for="num2">Num2:</label>
+<input id="num2" type="number">
+
+<!-- Pulsante (click)-->
+<button type="button" onclick="somma()">Calcola</button>
+
+<!-- Risultato (output)-->
+<label for="ris">Risultato:</label>
+<input id="ris" type="number">
+
+<script>
+  function somma() {
+    alert('calcolo somma');
+  }
+</script>
+```
+
+L'utente inserisce i primi due numeri e quindi clicca sul pulsante per effettuare la somma. L'evento del click viene notificato e quindi viene eseguita la funzione somma, che in questo caso mostra un messaggio all'utente (non è stata ancora completata).
+
+Per accedere ai valori che l'utente inserisce nei campi di input e per modificare i valori dei campi di output è necessario utilizzare i **selettori CSS per identificatore**. Quindi:
+
+- il selettori CSS del primo campo di input è ``#num1``;
+- il selettori CSS del secondo campo di input è ``#num2``;
+- il selettori CSS del campo di output è ``#ris``.
+
+La proprietà che dobbiamo utilizzare per accedere e modificare il valore di un campo di input è ``value`` ed è un valore testuale. Dato che bisogna fare la somma tra numeri, dobbiamo convertire il valore in numerico utilizzando la funzione ``parseInt()``.
+
+
+```html
+<script>
+  function somma() {
+    // seleziono i nodi di input
+    let input1 = document.querySelector("#num1");
+    let input2 = document.querySelector("#num2");
+
+    // seleziono il nodo di output 
+    let output = document.querySelector("#ris");
+
+    // accedo al valore di input e lo converto in numero
+    let num1 = parseInt(input1.value);
+    let num2 = parseInt(input2.value);
+
+    // faccio la somma dei numeri
+    s = num1 + num2;
+
+    // scrivo il risultato
+    output.value = s;
+  }
 </script>
 ```
 
