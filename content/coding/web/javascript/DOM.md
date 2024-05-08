@@ -1,7 +1,7 @@
 ---
 type: "javascript"
-title: "JavaScript Lez. 09 - Manipolazione del DOM"
-description: "09 - Manipolazione del DOM"
+title: "JavaScript Lez. 09 - Document Object Model"
+description: "09 - Document Object Model"
 date: 2020-08-01
 publishdate: 2020-08-01
 lastmod: 2020-08-01
@@ -9,7 +9,7 @@ categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
-summary: "09 - Manipolazione del DOM"
+summary: "09 - Document Object Model"
 ---
 
 # 09 - Document Object Model (DOM)
