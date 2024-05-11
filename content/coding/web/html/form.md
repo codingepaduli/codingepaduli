@@ -502,31 +502,40 @@ Il risultato è il seguente:
 
 ![Input di tipo selezione singola](/static/coding/web/html/inputSelectGroup.png "Input di tipo selezione singola")
 
-<!-- TODO verifica perchè non funziona
+<!-- TODO verifica perchè non funziona -->
 
 ### Finestre di dialogo
 
-``onclick="window.dialog.showModal();"`` permette di aprire la finestra di dialogo
-``formmethod="dialog"`` permette di chiudere la finestra di dialogo
+Popovers created using the Popover API are always non-modal. If you want to create a modal popover, a ``<dialog>`` element is the right way to go. There is significant overlap between the two — you might for example want to create a popover that persists, but control it using declarative HTML. You can turn a ``<dialog>`` element into a popover (``<dialog popover>`` is perfectly valid) if you want to combine popover control with dialog semantics.
 
-<button onclick="window.dialog.showModal();">open dialog 1</button>
+<style>
+  div::backdrop {
+    background-color: salmon;
+  }
+</style>
 
-<button onclick="window.dialogWindow.showModal();">open dialog 2</button>
+<button popovertarget="mypopover" popovertargetaction="show">Apri la finestra popover</button>
+<button popovertarget="mypopover" popovertargetaction="hide">Chiudi la finestra popover</button>
+<button popovertarget="mypopover">Cambia stato alla finestra popover</button>
 
-<div>
-  <dialog id="dialogWindow">
-    <p>Miseriaccia  la vendetta 2</p>
-    <form>
-      <button formmethod="dialog">Close</button>
-    </form>
-  </dialog>
-
-  <dialog id="dialog">
-    <p>Miseriaccia</p>
-    <form>
-      <button formmethod="dialog">Close</button>
-    </form>
-  </dialog>
+<div id="mypopover" popover>
+  <p>Finestra di dialogo</p>
+  <form>
+    <button type="button" popovertarget="mypopover">Chiudi</button>
+  </form>
 </div>
+
+<!-- perchè non funziona ?
+
+<button popovertarget="mypopover2" popovertargetaction="show">Apri la finestra popover</button>
+<button popovertarget="mypopover2" popovertargetaction="hide">Chiudi la finestra popover</button>
+<button popovertarget="mypopover2">Cambia stato alla finestra popover</button>
+
+<dialog id="mypopover2" popover>
+  <p>Altra finestra modale</p>
+  <form>
+    <button type="button" popovertarget="mypopover2">Chiudi</button>
+  </form>
+</dialog>
 
 -->
