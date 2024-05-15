@@ -260,13 +260,18 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-
 # Installa i dizionari hunspell e aspell per il controllo ortografico (in Atom)
 apt-get install $APT_OPTS hunspell-it hunspell-en-gb hunspell-en-us aspell aspell-en aspell-it
 
 if [ $? -ne 0 ]; then
     exit 1
 fi
+
+# Installa il dizionario ispell con le parole (witalian) e le associazioni (iitalian)
+apt-get install $APT_OPTS ispell ienglish-common ibritish wbritish iitalian witalian ibritish-insane wbritish-insane 
+
+# select-default-ispell --show-choices
+# select-default-ispell --set-default="italian"
 
 # Installa il tool per lavorare con i formati testuali (json, toml, xml)
 ## crudini: bash utility for reading ini file (used in Mozilla Bookmarks for loading profile.ini)
