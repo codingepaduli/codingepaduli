@@ -101,7 +101,8 @@ fi
 ## nmap: esplora reti
 ## net-tools: controllo del sottosistema di rete
 ## traceroute: traccia la rotta dei pacchetti
-apt-get install $APT_OPTS ufw gufw iptraf-ng nmap net-tools traceroute
+## fail2ban python3-systemd: nega l'accesso agli host che causano molteplici errori di autenticazione, controllando i log di systemd
+apt-get install $APT_OPTS ufw gufw iptraf-ng nmap net-tools traceroute fail2ban python3-systemd
 
 if [ $? -ne 0 ]; then
     exit 1
