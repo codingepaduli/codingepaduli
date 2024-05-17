@@ -206,8 +206,10 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# cryptography utils
-apt-get install $APT_OPTS python3-bcrypt python3-cryptography
+# hash and cryptographic utils
+## rhash: calcola gli hash dei file
+## digup: aggiorna e verifica i file hash a partire dal contenuto di una cartella
+apt-get install $APT_OPTS rhash digup python3-bcrypt python3-cryptography
 
 if [ $? -ne 0 ]; then
     exit 1
