@@ -24,36 +24,17 @@ references:
 
 Nella geometria, una primitiva è la più semplice delle figure geometriche. Tutte le figure più complesse si costruiscono combinando più primitive.
 
-Nella moderna computer grafica, le primitive grafiche sono le funzioni che realizzano le figure geometriche più elementari, come punti, linee e triangoli. Alcuni poligoni e curve sono considerati primitive, anche se possono essere realizzati combinando altre primitive. Oggetti e scene più complesse sono realizzati combinando l'uso di più primitive.
-
-Ogni primitiva è una funzione, e quindi ha una firma composta dal nome e dalla lista di parametri formali, che possono essere obbligatori o facoltativi, riportati tra parentesi tonde.
-
-Prima di entrare nel dettaglio delle primitive grafiche principali, è necessario riportare alla mente alcuni concetti di geometria piana, necessari a chiarire il funzionamento delle primitive grafiche.
-
-## Concetti di geometria piana
+Nella moderna computer grafica, le primitive grafiche sono le funzioni che realizzano le figure geometriche più elementari, come punti, linee, poligoni. Alcuni poligoni ed alcune curve sono considerati primitive, anche se possono essere realizzati combinando altre primitive.
 
 Un **poligono** è una figura geometrica piana delimitata da una linea spezzata chiusa. I segmenti che compongono la spezzata chiusa si chiamano **lati** del poligono. Il **vertice** è il punto di incontro di due lati del poligono.
 
 Due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune si dicono **adiacenti**. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche in uno spazio a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
 <!-- vedi https://it.wikipedia.org/wiki/Tassellazione_dello_spazio -->
 
-Un **cerchio** è una parte di piano delimitata da una circonferenza. Una **circonferenza** è il luogo geometrico di punti del piano equidistanti da un punto fisso detto centro. La distanza di qualsiasi punto della circonferenza dal centro si definisce raggio.
+Ogni primitiva è una funzione, e quindi ha una firma composta dal nome e dalla lista di parametri formali, che possono essere obbligatori o facoltativi, riportati tra parentesi tonde.
 
-Due cerchi che hanno un solo punto in comune si dicono **tangenti**.
-
-Un **arco di circonferenza** è il tratto di linea curva che ha le due estremità definite da due raggi della circonferenza stessa.
-
-Un **settore circolare** è l'area compresa tra l'arco di circonferenza ed i raggi che delimitano le estremità dell'arco.
-
-Una **corda di circonferenza** è un segmento che ha le due estremità definite da due punti della circonferenza stessa.
-
-Un **ellisse** è il luogo geometrico dei punti del piano per i quali la somma delle distanze da due punti fissi detti "fuochi" rimane costante.
-
-Un **arco d'ellisse** è simile ad un arco di circonferenza, con la differenza che il tratto di linea curva è parte dell'ellisse.
 
 <!-- TODO aggiungere le immagini delle figure indicate -->
-
-Chiariti questi concetti, possiamo proseguire elencando le primitive principali, con i relativi parametri necessari ad invocarle. Per ulteriori dettagli sulle primitive grafiche, si rimanda alla documentazione ufficiale.
 
 ## Creazione dell'area da disegno
 
@@ -77,7 +58,13 @@ createCanvas(600, 400);
 
 ## Disegno di un punto
 
-Il punto è l'entità più semplice da realizzare. La funzione progettata allo scopo è ``point``, la cui firma è la seguente:
+Il punto è un'entità geometrica senza dimensioni, ovvero non ha estensione, cioè non ha larghezza, altezza o profondità, ma ha una posizione (nel piano, nello spazio, dipende dal sistema di coordinate). Tipicamente al punto viene associato un nome letterale (ad esempio P, Q, R).
+
+Nella computer grafica un punto deve poter essere disegnato sullo schermo, quinti ha una dimensione che è di un pixel dello schermo, ed ha un colore.
+
+La posizione di un punto è indicata da due coordinate del piano, l'ascissa e l'ordinata (o tre coordinate nel caso di uno spazio a tre dimensioni).
+
+La primitiva grafica che permette di disegnare un punto in una certa posizione dell'area da disegno è ``point``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: point(x, y, [z])
@@ -98,7 +85,15 @@ point(20, 20);
 
 ## Disegno di una linea
 
-La linea è un segmento che unisce due punti ed è realizzata dalla funzione ``line`` la cui firma è la seguente:
+Geometricamente una linea è un insieme illimitato di punti che si estendono in una direzione. Non ha larghezza o spessore. Può essere retta, curva, inclinata o ondulata, a seconda delle sue proprietà specifiche. Dal punto di vista matematico, una linea è descritta da un'equazione, ad esempio un'equazione lineare genera una retta, un'equazione quadratica produce una curva.
+
+Nella computer grafica per linea si intende un segmento, ovvero una porzione di retta che unisce due estremi, indicati da un punto iniziale ed un punto finale.
+
+Due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune si dicono **adiacenti**.
+
+Due segmenti si dicono **perpendicolari** se si incontrano formando un angolo retto (90 gradi) tra di loro. Si dicono **paralleli** se mantengono sempre la stessa distanza tra di loro lungo tutta la loro lunghezza.
+
+La primitiva grafica che permette di disegnare una linea (segmento delimitato da due punti) è ``line`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: line(x1, y1, x2, y2)
@@ -120,7 +115,9 @@ line(80, 20, 120, 40);
 
 ## Disegno di un triangolo
 
-La figura del triangolo è caratterizzata da tre punti in cui originano e terminano i lati che la vanno a formare e la si può realizzare attraverso la funzione ``triangle`` la cui firma è la seguente:
+Un triangolo è un poligono che ha tre lati e tre angoli. Può essere descritto da tre punti in cui originano e terminano i tre lati che lo vanno a formare.
+
+La primitiva grafica che permette di disegnare un triangolo è ``triangle`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: triangle(x1, y1, x2, y2, x3, y3)
@@ -144,7 +141,17 @@ triangle(20, 60, 20, 100, 60, 100);
 
 ## Disegno di un cerchio
 
-Il cerchio è caratterizzata da un punto centrale ed un diametro e la si può realizzare attraverso la funzione ``circle`` la cui firma è la seguente:
+Un **cerchio** è una parte di piano delimitata da una circonferenza.
+
+Una **circonferenza** è il luogo geometrico di punti del piano equidistanti da un punto fisso detto centro. La circonferenza è quindi una linea curva chiusa.
+
+La distanza di qualsiasi punto della circonferenza dal centro si definisce **raggio**. Il **diametro** è il segmento che passa per il centro del cerchio e ha come estremità due punti sulla circonferenza.
+
+Due cerchi che hanno un solo punto in comune si dicono **tangenti**.
+
+L'area del piano delimitata da due circonferenze che hanno lo stesso centro è detta **corona**.
+
+La primitiva grafica che permette di disegnare un cerchio è ``circle`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: circle(x, y, diameter)
@@ -165,7 +172,9 @@ circle(100, 80, 40);
 
 ## Disegno di un quadrato
 
-Il quadrato è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensione del lato. Si può disegnare attraverso la funzione ``square`` la cui firma è la seguente:
+Un quadrato è un poligono regolare che ha quattro lati uguali e quattro angoli retti.
+
+La primitiva grafica che permette di disegnare un quadrato è ``square`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: square(x, y, side)
@@ -186,7 +195,9 @@ square(20, 140, 40);
 
 ## Disegno di un rettangolo
 
-Il rettangolo è caratterizzata da un punto da cui iniziare a disegnare e dalla dimensioni della base e dell'altezza. Lo si può realizzare attraverso la funzione ``rect`` la cui firma è la seguente:
+Il rettangolo è un poligono che ha quattro lati e quattro angoli retti. I lati opposti del rettangolo sono uguali e paralleli.
+
+La primitiva grafica che permette di disegnare un quadrato è ``rect`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: rect(x, y, w, h)
@@ -208,9 +219,11 @@ rect(80, 140, 80, 20);
 
 ## Disegno di un ellisse
 
-Un ellisse è una sorta di circonferenza "schiacciata", la si può interpretare come una sorta di circonferenza con larghezza ed altezza differenti. Nel caso in cui la larghezza è uguale all'altezza, la figura risultante è una circonferenza. Matematicamente parlando, l'ellisse ha due punti focali invece di uno (a differenza della circonferenza che ha come unico fuoco il centro).
+Un ellisse è una sorta di "circonferenza schiacciata", la si può interpretare come una sorta di "circonferenza" con larghezza ed altezza differenti. Nel caso in cui la larghezza è uguale all'altezza, la figura risultante è una vera e propria circonferenza.
 
-La funzione per realizzare un ellisse è ``ellipse``, la cui firma è la seguente:
+Matematicamente un **ellisse** è il luogo geometrico dei punti del piano per i quali la somma delle distanze da due punti fissi detti "fuochi" rimane costante (a differenza la circonferenza che ha come unico fuoco il centro) .
+
+La primitiva grafica che permette di disegnare un ellisse è ``ellipse``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: ellipse(x, y, w, h)
@@ -234,7 +247,7 @@ Un **arco di circonferenza** è il tratto di linea curva che ha le due estremit�
 
 L'arco di circonferenza lo si realizza impostando la stessa dimensione per larghezza ed altezza della figura. L'arco d'ellisse si realizza specificando valori differenti per larghezza ed altezza della figura;
 
-La funzione per realizzare un arco di circonferenza o d'ellisse è ``arc`` la cui firma è la seguente:
+La primitiva grafica che permette di disegnare un arco di circonferenza o d'ellisse è ``arc`` la cui firma è la seguente:
 
 ```plaintext
 Syntax: arc(x, y, w, h, start, stop, [mode])
@@ -267,6 +280,12 @@ Entriamo nel dettaglio sull'uso del parametro opzionale ``mode``, che definisce 
 - ``OPEN``: indica di realizzare l'arco come figura aperta, quindi senza linee di contorno per unire gli estremi. Questa è l'impostazione predefinita;
 - ``CHORD``: indica di chiudere l'arco con una linea di contorno tracciata come corda di circonferenza;
 - ``PIE``: indica di chiudere l'arco realizzato con due raggi di contorno al fine di formare un settore circolare;
+
+Un **settore circolare** è l'area compresa tra l'arco di circonferenza ed i raggi che delimitano le estremità dell'arco.
+
+Una **corda di circonferenza** è un segmento che ha le due estremità definite da due punti della circonferenza stessa.
+
+Le opzioni disponibili per il parametro opzionale ``mode`` permettono di non chiudere l'arco di circonferenza, di chiuderlo con una corda di circonferenza (o di ellisse) o di chiuderlo realizzando un settore circolare, come visualizzato di seguito.
 
 ![p5.js - Opzioni di disegno per gli archi di circonferenza](/static/coding/web/p5js/graphics-primitives-arcs.png "p5.js - Opzioni di disegno per gli archi di circonferenza")
 
