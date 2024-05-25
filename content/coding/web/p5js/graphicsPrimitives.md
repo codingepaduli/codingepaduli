@@ -24,17 +24,22 @@ references:
 
 Nella geometria, una primitiva è la più semplice delle figure geometriche. Tutte le figure più complesse si costruiscono combinando più primitive.
 
-Nella moderna computer grafica, le primitive grafiche sono le funzioni che realizzano le figure geometriche più elementari, come punti, linee, poligoni. Alcuni poligoni ed alcune curve sono considerati primitive, anche se possono essere realizzati combinando altre primitive.
+Nella moderna computer grafica, le primitive grafiche sono le funzioni che realizzano le figure geometriche più elementari, come punti, segmenti, archi e poligoni, e saranno spiegate in questo capitolo, mentre le primitive che realizzano figure più complesse, come le curve **spline** e le curve di **Bézier** si rimanda alle specifiche tecniche e agli esempi ufficiali.
+
+Alcuni poligoni ed alcune curve sono considerati primitive, anche se possono essere realizzati combinando altre primitive, ad esempio i segmenti possono essere realizzati con più punti ed i poligoni con più segmenti, ma le primitive grafiche facilitano il lavoro del programmatore nella creazione di queste figure.
+
+Ricordiamo giusto due concetti geometrici che valgono per le primitive grafiche:
 
 Un **poligono** è una figura geometrica piana delimitata da una linea spezzata chiusa. I segmenti che compongono la spezzata chiusa si chiamano **lati** del poligono. Il **vertice** è il punto di incontro di due lati del poligono.
 
-Due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune si dicono **adiacenti**. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche in uno spazio a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
+Si dicono **adiacenti** due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche in uno spazio a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
 <!-- vedi https://it.wikipedia.org/wiki/Tassellazione_dello_spazio -->
 
-Ogni primitiva è una funzione, e quindi ha una firma composta dal nome e dalla lista di parametri formali, che possono essere obbligatori o facoltativi, riportati tra parentesi tonde.
-
+Si dicono **tangenti** due oggetti geometrici che si toccano ma non si intersecano. Il punto di contatto tra curve e/o linee e/o facce della figura che si toccano senza attraversarsi è detto punto di tangenza. Ad esempio due circonferenze oppure un'ellisse ed un rettangolo che si toccano senza attraversarsi sono tangenti.
 
 <!-- TODO aggiungere le immagini delle figure indicate -->
+
+Dal precedente capitolo abbiamo imparato che ogni funzione (e le primitive sono funzioni) ha una firma composta dal nome e dalla lista di parametri formali. La lista di parametri formali è riportata tra parentesi tonde, ogni parametro può essere obbligatorio o facoltativo. Di seguito le varie primitive saranno descritte indicando la firma.
 
 ## Creazione dell'area da disegno
 
@@ -48,9 +53,14 @@ Parameters:
     h    Number: height of the canvas
 ```
 
-I parametri formali sono ``w`` ed ``h``, che rappresentano la larghezza e l'altezza dell'area da disegno.
+I parametri formali sono ``w`` ed ``h`` e rappresentano la larghezza e l'altezza dell'area da disegno.
 
-Per creare un'area da disegno di larghezza 600 ed altezza 400 punti, sostituiamo al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600`` ed al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``, invocando la funzione nel seguente modo:
+Per creare un'area da disegno di larghezza 600 ed altezza 400 punti, sostituiamo:
+
+- al parametro formale ``w`` (che indica la larghezza dell'area da disegno) il valore ``600``;
+- al parametro formale ``h`` (che indica l'altezza dell'area da disegno) il valore ``400``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 createCanvas(600, 400);
@@ -75,9 +85,14 @@ Parameters:
     z   Number: the z-coordinate (for WebGL mode) (Optional)
 ```
 
-I parametri formali sono ``x``, ``y`` e ``z``, che rappresentano le coordinate del **punto**.  I primi due parametri sono obbligatori e rappresentano le coordinate in un piano, il terzo parametro è tra parentesi quadre, quindi è opzionale, e lo si utilizza per indicare una terza coordinata in un sistema a tre dimensioni (non più un piano, ma uno spazio). Questo terzo parametro si usa solo quando si attiva la modalità WebGL, che non sarà trattata in questo capitolo.
+I parametri formali sono ``x``, ``y`` e ``z`` e rappresentano le coordinate del **punto**.  I primi due parametri sono obbligatori e rappresentano le coordinate in un piano, il terzo parametro è tra parentesi quadre, quindi è opzionale, e lo si utilizza per indicare una terza coordinata in un sistema a tre dimensioni (non più un piano, ma uno spazio). Questo terzo parametro si usa solo quando si attiva la modalità WebGL, che non sarà trattata in questo capitolo.
 
-Per creare un punto alle coordinate (20, 20), sostituiamo al parametro formale ``x`` (che indica la coordinata X) il valore ``20`` ed al parametro formale ``y`` (che indica la coordinata Y) il valore ``20``, invocando la funzione nel seguente modo:
+Per creare un punto alle coordinate (20, 20), sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata X) il valore ``20``;
+- al parametro formale ``y`` (che indica la coordinata Y) il valore ``20``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 point(20, 20);
@@ -107,7 +122,14 @@ Parameters:
 
 I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del punto da cui parte la linea ed i parametri formali ``x2`` ed ``y2`` rappresentano le coordinate del punto in cui la linea termina.
 
-Per creare una linea che parte dal punto alle coordinate (80, 20) e termina al punto alle coordinate (120, 40), sostituiamo al parametro formale ``x1`` (che indica la coordinata X del punto di partenza) il valore ``80``, al parametro formale ``y1`` (che indica la coordinata Y del punto di partenza) il valore ``20``, al parametro formale ``x2`` (che indica la coordinata X del punto di arrivo) il valore ``120`` ed al parametro formale ``y2`` (che indica la coordinata Y del punto di arrivo) il valore ``40``, invocando la funzione nel seguente modo:
+Per creare una linea che parte dal punto alle coordinate (80, 20) e termina al punto alle coordinate (120, 40), sostituiamo:
+
+- al parametro formale ``x1`` (che indica la coordinata X del punto di partenza) il valore ``80``;
+- al parametro formale ``y1`` (che indica la coordinata Y del punto di partenza) il valore ``20``;
+- al parametro formale ``x2`` (che indica la coordinata X del punto di arrivo) il valore ``120``;
+- al parametro formale ``y2`` (che indica la coordinata Y del punto di arrivo) il valore ``40``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 line(80, 20, 120, 40);
@@ -133,7 +155,16 @@ Parameters
 
 I parametri formali ``x1`` ed ``y1`` rappresentano le coordinate del primo vertice,  ``x2`` ed ``y2`` rappresentano le coordinate del secondo vertice, ``x3`` ed ``y3`` le coordinate del terzo vertice.
 
-Per creare una triangolo i cui vertici si trovano alle coordinate (20, 60), (20, 100) e (60, 100), sostituiamo al parametro formale ``x1`` (che indica la coordinata X del primo vertice) il valore ``20``, al parametro formale ``y1`` (che indica la coordinata Y del primo vertice) il valore ``60``, al parametro formale ``x2`` (che indica la coordinata X del secondo vertice) il valore ``20``, al parametro formale ``y2`` (che indica la coordinata Y del secondo vertice) il valore ``100``, al parametro formale ``x3`` (che indica la coordinata X del terzo vertice) il valore ``60``, al parametro formale ``y2`` (che indica la coordinata Y del secondo vertice) il valore ``100``, invocando la funzione nel seguente modo:
+Per creare una triangolo i cui vertici si trovano alle coordinate (20, 60), (20, 100) e (60, 100), sostituiamo:
+
+- al parametro formale ``x1`` (che indica la coordinata X del primo vertice) il valore ``20``;
+- al parametro formale ``y1`` (che indica la coordinata Y del primo vertice) il valore ``60``;
+- al parametro formale ``x2`` (che indica la coordinata X del secondo vertice) il valore ``20``;
+- al parametro formale ``y2`` (che indica la coordinata Y del secondo vertice) il valore ``100``;
+- al parametro formale ``x3`` (che indica la coordinata X del terzo vertice) il valore ``60``;
+- al parametro formale ``y2`` (che indica la coordinata Y del secondo vertice) il valore ``100``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 triangle(20, 60, 20, 100, 60, 100);
@@ -164,7 +195,13 @@ Parameters:
 
 I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``diameter`` è la dimensione del diametro.
 
-Per creare un cerchio con centro nel punto (100, 80) e diametro 40, sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``, al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``80`` ed al parametro formale ``diameter`` (che indica il diametro) il valore ``40``, quindi invochiamo la funzione nel seguente modo:
+Per creare un cerchio con centro nel punto (100, 80) e diametro 40, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``;
+- al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``80``;
+- al parametro formale ``diameter`` (che indica il diametro) il valore ``40``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 circle(100, 80, 40);
@@ -187,7 +224,13 @@ Parameters:
 
 I parametri formali ``x`` ed ``y`` sono le coordinate del punto da cui iniziare a disegnare, ``side`` è la dimensione del lato.
 
-Per creare un quadrato con vertice in alto a sinistra nel punto (20, 140) e lato 40, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``140`` ed al parametro formale ``side`` (che indica il lato) il valore ``40``, quindi invochiamo la funzione nel seguente modo:
+Per creare un quadrato con vertice in alto a sinistra nel punto (20, 140) e lato 40, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``;
+- al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``140``;
+- al parametro formale ``side`` (che indica il lato) il valore ``40``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 square(20, 140, 40);
@@ -211,7 +254,14 @@ Parameters:
 
 I parametri formali ``x`` ed ``y`` sono le coordinate del vertice in alto a sinistra da cui iniziare a disegnare, ``w`` ed ``h`` sono le dimensioni della base e dell'altezza del rettangolo.
 
-Per creare un rettangolo con vertice in alto a sinistra nel punto (80, 140), base 80 ed altezza 20, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``80``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``140``, al parametro formale ``w`` (che indica la base) il valore ``80`` ed al parametro formale ``h`` (che indica l'altezza) il valore ``20``, quindi invochiamo la funzione nel seguente modo:
+Per creare un rettangolo con vertice in alto a sinistra nel punto (80, 140), base 80 ed altezza 20, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``80``;
+- al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``140``;
+- al parametro formale ``w`` (che indica la base) il valore ``80``;
+- al parametro formale ``h`` (che indica l'altezza) il valore ``20``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 rect(80, 140, 80, 20);
@@ -235,7 +285,14 @@ Parameters:
     h     Number: height of the ellipse
 ```
 
-Per creare un ellisse con vertice in alto a sinistra nel punto (60, 220), larghezza 80 ed altezza 40, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``60``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``220``, al parametro formale ``w`` (che indica la larghezza) il valore ``80`` ed al parametro formale ``h`` (che indica l'altezza) il valore ``40``, quindi invochiamo la funzione nel seguente modo:
+Per creare un ellisse con vertice in alto a sinistra nel punto (60, 220), larghezza 80 ed altezza 40, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``60``;
+- al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``220``;
+- al parametro formale ``w`` (che indica la larghezza) il valore ``80``;
+- al parametro formale ``h`` (che indica l'altezza) il valore ``40``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 ellipse(60, 220, 80, 40);
@@ -263,13 +320,31 @@ mode    Constant: optional parameter to determine the way of drawing the arc. ei
 
 I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``w`` ed ``h`` sono le dimensioni della larghezza e dell'altezza della figura. Il parametro ``start`` indica l'angolo del primo raggio che fa da prima estremità all'arco, il parametro``stop`` indica l'angolo del secondo raggio che fa da seconda estremità all'arco. Il parametro ``mode`` è tra parentesi quadre, quindi è opzionale, ed indica come disegnare l'arco, in particolare come collegare i due estremi d'arco.
 
-Per creare un arco di circonferenza con centro nel punto (40, 300), con diametro 40, angolo iniziale impostato a pi greco ed angolo finale impostato a due pi greco, sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro) il valore ``40``, al parametro formale ``y`` (che indica la coordinata y del centro) il valore ``300``, al parametro formale ``w`` (che indica il diametro) il valore ``40``, al parametro formale ``h`` (che indica il diametro) nuovamente il valore ``40``, al parametro formale ``start`` (che indica l'angolo del primo raggio che fa da prima estremità all'arco) la costante ``PI`` (pi greco espresso in radianti), al parametro formale ``stop`` (indica l'angolo del secondo raggio che fa da seconda estremità all'arco) la costante ``TWO_PI`` (due pi greco espresso in radianti), quindi invochiamo la funzione nel seguente modo:
+Per creare un arco di circonferenza con centro nel punto (40, 300), con diametro 40, angolo iniziale impostato a pi greco ed angolo finale impostato a due pi greco, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del centro) il valore ``40``;
+- al parametro formale ``y`` (che indica la coordinata y del centro) il valore ``300``;
+- al parametro formale ``w`` (che indica il diametro) il valore ``40``;
+- al parametro formale ``h`` (che indica il diametro) nuovamente il valore ``40``;
+- al parametro formale ``start`` (che indica l'angolo del primo raggio che fa da prima estremità all'arco) la costante ``PI`` (pi greco espresso in radianti);
+- al parametro formale ``stop`` (indica l'angolo del secondo raggio che fa da seconda estremità all'arco) la costante ``TWO_PI`` (due pi greco espresso in radianti).
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 arc(40, 300, 40, 40, PI, TWO_PI);
 ```
 
-Per creare un arco di ellisse con centro nel punto (100, 300), con larghezza 40, altezza 80, angolo iniziale impostato a pi greco ed angolo finale impostato a due pi greco, sostituiamo al parametro formale ``x`` (che indica la coordinata x del centro) il valore ``100``, al parametro formale ``y`` (che indica la coordinata y del centro) il valore ``300``, al parametro formale ``w`` (che indica la larghezza dell'ellisse) il valore ``40``, al parametro formale ``h`` (che indica l'altezza dell'ellisse) il valore ``80``, al parametro formale ``start`` (che indica l'angolo del primo raggio che fa da prima estremità all'arco) la costante ``PI`` (pi greco espresso in radianti), al parametro formale ``stop`` (indica l'angolo del secondo raggio che fa da seconda estremità all'arco) la costante ``TWO_PI`` (due pi greco espresso in radianti), quindi invochiamo la funzione nel seguente modo:
+Per creare un arco di ellisse con centro nel punto (100, 300), con larghezza 40, altezza 80, angolo iniziale impostato a pi greco ed angolo finale impostato a due pi greco, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del centro) il valore ``100``;
+- al parametro formale ``y`` (che indica la coordinata y del centro) il valore ``300``;
+- al parametro formale ``w`` (che indica la larghezza dell'ellisse) il valore ``40``;
+- al parametro formale ``h`` (che indica l'altezza dell'ellisse) il valore ``80``;
+- al parametro formale ``start`` (che indica l'angolo del primo raggio che fa da prima estremità all'arco) la costante ``PI`` (pi greco espresso in radianti);
+- al parametro formale ``stop`` (indica l'angolo del secondo raggio che fa da seconda estremità all'arco) la costante ``TWO_PI`` (due pi greco espresso in radianti).
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 arc(100, 300, 40, 80, PI, TWO_PI);
@@ -295,8 +370,6 @@ Un esempio di funzione invocata utilizzando anche il parametro ``mode`` è il se
 arc(100, 300, 40, 80, PI, TWO_PI, CHORD);
 ```
 
-Gli archi non sono gli unici tipi di curve supportate. Esistono diverse primitive grafiche che permettono di disegnare curve complesse, come le curve **spline** e le curve di **Bézier**, ma per queste realizzazioni si rimanda alle specifiche e agli esempi ufficiali.
-
 ## Disegno di un testo
 
 Anche il disegno di un testo nell'area da disegno è considerato una primitiva grafica ed è realizzato dalla funzione ``text``, che prevede la seguente firma:
@@ -314,13 +387,24 @@ Parameters
 
 Il parametro formale ``str`` indica il testo da disegnare, i parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare il testo. I parametri formali ``x2`` ed ``y2`` sono tra parentesi quadre, quindi sono opzionali, e si utilizzano per indicare base ed altezza del rettangolo nel quale racchiudere il testo.
 
-Per disegnare la frase ``questo è un testo`` partendo dal vertice in alto a sinistra nel punto (20, 340), sostituiamo al parametro formale ``str`` (che indica il testo) il valore ``questo è un testo``, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``340``, quindi invochiamo la funzione nel seguente modo:
+Per disegnare la frase ``questo è un testo`` partendo dal vertice in alto a sinistra nel punto (20, 340), sostituiamo:
+
+- al parametro formale ``str`` (che indica il testo) il valore ``questo è un testo``;
+- al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``;
+- al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``340``, quindi invochiamo la funzione nel seguente modo:
 
 ```javascript
 text("questo è un testo", 20, 340);
 ```
 
-Per disegnare la frase ``questo è un testo`` partendo dal vertice in alto a sinistra nel punto (20, 360) e terminando nel vertice in basso a destra nel punto (160, 20), sostituiamo al parametro formale ``str`` (che indica il testo) il valore ``questo è un testo``, sostituiamo al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``, al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``360``, al parametro formale ``x2`` (che indica la base) il valore ``160`` ed al parametro formale ``y2`` (che indica l'altezza) il valore ``20``, quindi invochiamo la funzione nel seguente modo:
+Per disegnare la frase ``questo è un testo`` partendo dal vertice in alto a sinistra nel punto (20, 360) e terminando nel vertice in basso a destra nel punto (160, 20), sostituiamo:
+
+- al parametro formale ``str`` (che indica il testo) il valore ``questo è un testo``;
+- al parametro formale ``x`` (che indica la coordinata x del vertice in alto a sinistra) il valore ``20``;
+- al parametro formale ``y`` (che indica la coordinata y del vertice in alto a sinistra) il valore ``360``;
+- al parametro formale ``x2`` (che indica la base) il valore ``160`` ed al parametro formale ``y2`` (che indica l'altezza) il valore ``20``.
+
+La funzione viene quindi invocata nel seguente modo:
 
 ```javascript
 text("questo è un testo troppo lungo", 20, 360, 160, 20);
@@ -343,6 +427,8 @@ Creiamo un'area da disegno, delle dimensioni di 600 per 400, nella quale disegni
 - un ellisse con centro alle coordinate (60, 220), con larghezza 80 ed altezza 40;
 - un arco di circonferenza
 -->
+
+<!-- TODO aggiungere le immagini delle figure indicate -->
 
 Di seguito, si visualizza un esempio completo delle figure realizzate mediante il codice riportato nei vari esempi mostrati:
 
