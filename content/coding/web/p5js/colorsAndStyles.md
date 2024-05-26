@@ -19,9 +19,7 @@ references:
         description: "For an extremely hot blackbody, the spectrum of light is shown by a color called ‘Perano’, RGB(148, 177, 255)."
 ---
 
-# Colori e stili
-
-<!-- TODO Cambiare titolo in "La luce ed i colori" ?? -->
+# La luce ed i colori
 
 <!-- Fonte: Fisicast - La luce -->
 Uno dei primi trattati scientifici sul funzionamento della luce e dei colori è il "Kitab al-Manazir" (Manuale di Ottica) pubblicato nel 1015 da Ibn Al-Haytham, uno scienziato vissuto in una zona corrispondente all'attuale Iraq. Questo trattato spiegava già alcuni fenomeni, come il funzionamento della vista o la creazione di un arcobaleno.
@@ -46,11 +44,13 @@ Grazie al lavoro di tutti questi geniali scienziati, oggi sappiamo che la luce �
 - **raggi visibili**, percepiti dall'uomo come **colore**. In base alla frequenza di questi raggi visibili, percepiamo i colori che vanno dal rosso al violetto, passando per arancione, giallo, verde e blu;
 - **onde radio**, **microonde** ed **infrarossi** hanno bassa frequenza e bassa energia, raramente risultano dannosi per gli organismi viventi.
 
+<!-- TODO aggiungere le immagini delle figure indicate -->
+
 Aprendo una breve parentesi di approfondimento, sappiamo che i fotoni sono mediatori della forza elettromagnetica, responsabili dell'attrazione e della repulsione elettrica (come insegnano a scuola, le cariche opposte si attraggono, le cariche uguali si respingono scambiandosi fotoni).
 
-Oggi, sempre più spesso, il colore della luce è espresso come temperatura di colore correlata. Un corpo solido, man mano che viene portato all'incandescenza, inizia ad emettere una radiazione elettromagnetica che assume un:
+Oggi, sempre più spesso, il colore della luce è espresso come temperatura di colore correlata ed è misurato in gradi Kelvin. Il simbolo di questa unità di misura è la lettera "K" maiuscola.Un corpo solido, man mano che viene portato all'incandescenza, inizia ad emettere una radiazione elettromagnetica che assume un:
 
-- colore non visibile (infrarosso) quando la temperatura è inferiore ai 600K (gradi Kelvin);
+- colore non visibile (infrarosso) quando la temperatura è inferiore ai 600K (considerando che la temperatura ambientale a 30 gradi centigradi è 303K, cioè molto inferiore ai 600K, questo spiega perché non è visibile il calore irradiato sotto forma di onda elettromagnetica da un oggetto);
 - colore rosso quando la temperatura è intorno ai 600K (gradi Kelvin);
 - colore arancione quando la temperatura aumenta raggiungendo i 2000K;
 - colore giallo quando la temperatura aumenta raggiungendo i 3500K;
@@ -61,7 +61,9 @@ Oggi, sempre più spesso, il colore della luce è espresso come temperatura di c
 - colore azzurro (cielo sereno) quando la temperatura aumenta raggiungendo i 12000K;
 - colore "Perano" (tra azzurro e violetto) quando la temperatura tende all'infinito;
 
-<-- TODO da sistemare
+<!-- TODO aggiungere le immagini delle figure indicate -->
+
+<!-- TODO da sistemare
 In chimica si utilizza una tecnica di analisi detta test della fiamma (o saggio alla fiamma) per verificare la presenza di determinati elementi chimici in base al colore della fiamma. Sullo stesso principio si basano i fuochi d'artificio. La spettroscopia è lo studio di uno spettro elettromagnetico al fine di identificare la natura chimica di una sostanza -->
 
 ## Modello di colori RGB
