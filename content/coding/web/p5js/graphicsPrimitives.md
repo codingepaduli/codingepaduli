@@ -28,17 +28,6 @@ Nella moderna computer grafica, le primitive grafiche sono le funzioni che reali
 
 Alcuni poligoni ed alcune curve sono considerati primitive, anche se possono essere realizzati combinando altre primitive, ad esempio i segmenti possono essere realizzati con più punti ed i poligoni con più segmenti, ma le primitive grafiche facilitano il lavoro del programmatore nella creazione di queste figure.
 
-Ricordiamo giusto due concetti geometrici che valgono per le primitive grafiche:
-
-Un **poligono** è una figura geometrica piana delimitata da una linea spezzata chiusa. I segmenti che compongono la spezzata chiusa si chiamano **lati** del poligono. Il **vertice** è il punto di incontro di due lati del poligono.
-
-Si dicono **adiacenti** due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche in uno spazio a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
-<!-- vedi https://it.wikipedia.org/wiki/Tassellazione_dello_spazio -->
-
-Si dicono **tangenti** due oggetti geometrici che si toccano ma non si intersecano. Il punto di contatto tra curve e/o linee e/o facce della figura che si toccano senza attraversarsi è detto punto di tangenza. Ad esempio due circonferenze oppure un'ellisse ed un rettangolo che si toccano senza attraversarsi sono tangenti.
-
-<!-- TODO aggiungere le immagini delle figure indicate -->
-
 Dal precedente capitolo abbiamo imparato che ogni funzione (e le primitive sono funzioni) ha una firma composta dal nome e dalla lista di parametri formali. La lista di parametri formali è riportata tra parentesi tonde, ogni parametro può essere obbligatorio o facoltativo. Di seguito le varie primitive saranno descritte indicando la firma.
 
 ## Creazione dell'area da disegno
@@ -98,7 +87,7 @@ La funzione viene quindi invocata nel seguente modo:
 point(20, 20);
 ```
 
-## Disegno di una linea
+## Disegno di un segmento
 
 Geometricamente una linea è un insieme illimitato di punti che si estendono in una direzione. Non ha larghezza o spessore. Può essere retta, curva, inclinata o ondulata, a seconda delle sue proprietà specifiche. Dal punto di vista matematico, una linea è descritta da un'equazione, ad esempio un'equazione lineare genera una retta, un'equazione quadratica produce una curva.
 
@@ -135,7 +124,16 @@ La funzione viene quindi invocata nel seguente modo:
 line(80, 20, 120, 40);
 ```
 
-## Disegno di un triangolo
+## Disegno di figure poligonali
+
+Un **poligono** è una figura geometrica piana delimitata da una linea spezzata chiusa. I segmenti che compongono la spezzata chiusa si chiamano **lati** del poligono. Il **vertice** è il punto di incontro di due lati del poligono.
+
+Si dicono **adiacenti** due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche in uno spazio a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
+<!-- vedi https://it.wikipedia.org/wiki/Tassellazione_dello_spazio -->
+
+<!-- TODO aggiungere le immagini delle figure indicate -->
+
+### Disegno di un triangolo
 
 Un triangolo è un poligono che ha tre lati e tre angoli. Può essere descritto da tre punti in cui originano e terminano i tre lati che lo vanno a formare.
 
@@ -170,44 +168,7 @@ La funzione viene quindi invocata nel seguente modo:
 triangle(20, 60, 20, 100, 60, 100);
 ```
 
-## Disegno di un cerchio
-
-Un **cerchio** è una parte di piano delimitata da una circonferenza.
-
-Una **circonferenza** è il luogo geometrico di punti del piano equidistanti da un punto fisso detto centro. La circonferenza è quindi una linea curva chiusa.
-
-La distanza di qualsiasi punto della circonferenza dal centro si definisce **raggio**. Il **diametro** è il segmento che passa per il centro del cerchio e ha come estremità due punti sulla circonferenza.
-
-Due cerchi che hanno un solo punto in comune si dicono **tangenti**.
-
-L'area del piano delimitata da due circonferenze che hanno lo stesso centro è detta **corona**.
-
-La primitiva grafica che permette di disegnare un cerchio è ``circle`` la cui firma è la seguente:
-
-```plaintext
-Syntax: circle(x, y, diameter)
-
-Parameters:
-    x           Number: x-coordinate of the centre of the circle.
-    y           Number: y-coordinate of the centre of the circle.
-    diameter    Number: diameter of the circle.
-```
-
-I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``diameter`` è la dimensione del diametro.
-
-Per creare un cerchio con centro nel punto (100, 80) e diametro 40, sostituiamo:
-
-- al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``;
-- al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``80``;
-- al parametro formale ``diameter`` (che indica il diametro) il valore ``40``.
-
-La funzione viene quindi invocata nel seguente modo:
-
-```javascript
-circle(100, 80, 40);
-```
-
-## Disegno di un quadrato
+### Disegno di un quadrato
 
 Un quadrato è un poligono regolare che ha quattro lati uguali e quattro angoli retti.
 
@@ -236,7 +197,7 @@ La funzione viene quindi invocata nel seguente modo:
 square(20, 140, 40);
 ```
 
-## Disegno di un rettangolo
+### Disegno di un rettangolo
 
 Il rettangolo è un poligono che ha quattro lati e quattro angoli retti. I lati opposti del rettangolo sono uguali e paralleli.
 
@@ -267,7 +228,82 @@ La funzione viene quindi invocata nel seguente modo:
 rect(80, 140, 80, 20);
 ```
 
-## Disegno di un ellisse
+### Disegno di un generico poligono
+
+Un poligono ha più vertici, che sono i punti di incontro di due lati del poligono. E' possibile indicare quindi tutti i vertici di un poligono per poterlo disegnare.
+
+La primitiva grafica che permette di disegnare un vertice in una certa posizione dell'area da disegno è ``vertex`` la cui firma (è molto simile alla firma della primitiva ``point``) è la seguente:
+
+```plaintext
+Syntax: vertex(x, y)
+
+Parameters:
+    x   Number: the x-coordinate
+    y   Number: the y-coordinate
+```
+
+I parametri formali sono ``x`` ed ``y`` e rappresentano le coordinate del vertice.
+
+Per disegnare un poligono è quindi necessario indicare i vari vertici, invocare più volte la funzione. Ma non basta.
+
+Per indicare che si vuole disegnare un poligono, bisogna invocare la funzione ``beginShape()`` che indica l'inizio dei vertici, poi bisogna indicare i vari vertici ed infine invocare la funzione ``endShape(CLOSE);`` per terminare il disegno del poligono, come di seguito:
+
+```javascript
+beginShape();
+  vertex(100, 100);
+  vertex(100, 200);
+  vertex(200, 100);
+endShape(CLOSE);
+```
+
+Il parametro ``CLOSE`` della funzione ``endShape`` serve ad indicare che si vuole realizzare un poligono con una linea spezzata chiusa. Se questo parametro non viene passato alla funzione, si realizza una linea spezzata aperta, di conseguenza mancherà un lato al poligono.
+
+## Disegno di figure non poligonali
+
+Sono dette **non poligonali** le figure che non sono descritte da una linea spezzata chiusa, come la circonferenza o l'ellisse.
+
+Si dicono **tangenti** due oggetti geometrici che si toccano ma non si intersecano. Il punto di contatto tra curve e/o linee e/o facce della figura che si toccano senza attraversarsi è detto punto di tangenza.
+
+Un poligono è tangente ad un'ellisse o ad una circonferenza se ha un lato toccato ma non attraversato dall'ellisse o dalla circonferenza.
+
+Due cerchi che hanno un solo punto in comune sono tangenti.
+
+### Disegno di un cerchio
+
+Un **cerchio** è una parte di piano delimitata da una circonferenza.
+
+Una **circonferenza** è il luogo geometrico di punti del piano equidistanti da un punto fisso detto centro. La circonferenza è quindi una linea curva chiusa.
+
+La distanza di qualsiasi punto della circonferenza dal centro si definisce **raggio**. Il **diametro** è il segmento che passa per il centro del cerchio e ha come estremità due punti sulla circonferenza.
+
+L'area del piano delimitata da due circonferenze che hanno lo stesso centro è detta **corona**.
+
+La primitiva grafica che permette di disegnare un cerchio è ``circle`` la cui firma è la seguente:
+
+```plaintext
+Syntax: circle(x, y, diameter)
+
+Parameters:
+    x           Number: x-coordinate of the centre of the circle.
+    y           Number: y-coordinate of the centre of the circle.
+    diameter    Number: diameter of the circle.
+```
+
+I parametri formali ``x`` ed ``y`` sono le coordinate del centro, ``diameter`` è la dimensione del diametro.
+
+Per creare un cerchio con centro nel punto (100, 80) e diametro 40, sostituiamo:
+
+- al parametro formale ``x`` (che indica la coordinata x del centro del cerchio) il valore ``100``;
+- al parametro formale ``y`` (che indica la coordinata y del centro del cerchio) il valore ``80``;
+- al parametro formale ``diameter`` (che indica il diametro) il valore ``40``.
+
+La funzione viene quindi invocata nel seguente modo:
+
+```javascript
+circle(100, 80, 40);
+```
+
+### Disegno di un ellisse
 
 Un ellisse è una sorta di "circonferenza schiacciata", la si può interpretare come una sorta di "circonferenza" con larghezza ed altezza differenti. Nel caso in cui la larghezza è uguale all'altezza, la figura risultante è una vera e propria circonferenza.
 
@@ -298,7 +334,7 @@ La funzione viene quindi invocata nel seguente modo:
 ellipse(60, 220, 80, 40);
 ```
 
-## Disegno di un arco di circonferenza e d'ellisse
+### Disegno di un arco di circonferenza e d'ellisse
 
 Un **arco di circonferenza** è il tratto di linea curva che ha le due estremità definite da due raggi della circonferenza stessa. Un **arco d'ellisse** è simile ad un arco di circonferenza, con la differenza che il tratto di linea curva è parte dell'ellisse.
 
