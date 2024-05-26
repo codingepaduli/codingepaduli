@@ -51,7 +51,7 @@ Aprendo una breve parentesi di approfondimento, sappiamo che i fotoni sono media
 Oggi, sempre più spesso, il colore della luce è espresso come temperatura di colore correlata ed è misurato in gradi Kelvin. Il simbolo di questa unità di misura è la lettera "K" maiuscola.Un corpo solido, man mano che viene portato all'incandescenza, inizia ad emettere una radiazione elettromagnetica che assume un:
 
 - colore non visibile (infrarosso) quando la temperatura è inferiore ai 600K (considerando che la temperatura ambientale a 30 gradi centigradi è 303K, cioè molto inferiore ai 600K, questo spiega perché non è visibile il calore irradiato sotto forma di onda elettromagnetica da un oggetto);
-- colore rosso quando la temperatura è intorno ai 600K (gradi Kelvin);
+- colore rosso quando la temperatura è intorno ai 600K;
 - colore arancione quando la temperatura aumenta raggiungendo i 2000K;
 - colore giallo quando la temperatura aumenta raggiungendo i 3500K;
 - colore bianco freddo quando la temperatura aumenta raggiungendo i 4000K;
