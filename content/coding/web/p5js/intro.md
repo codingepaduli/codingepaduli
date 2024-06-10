@@ -188,7 +188,7 @@ Nel caso sia necessario, è possibile creare un progetto web in una nuova cartel
 
     function draw() {
       background(220);
-        circle(100, 150, 50);
+      circle(100, 150, 50);
     }
     ```
 
@@ -285,22 +285,22 @@ Nella tabella seguente è riportata la descrizione delle varie categorie:
 
 Area | Descrizione
 --- | ---
-Color       | Gestione colori di contorno, di riempimento, di sfondo
-Constants     | Costanti disponibili
-DOM       | Interazione con gli elementi della pagina web
-Data      | Gestione dei dati
-Environment   | Informazioni sull'ambiente di esecuzione
-Events      | Gestione eventi della tastiera, del mouse e del touch-screen
-Foundation    | Basi di JavaScript
-IO        | Gestione Input / Output
-Image       | Gestione immagini
+Color           | Gestione colori di contorno, di riempimento, di sfondo
+Constants       | Costanti disponibili
+DOM             | Interazione con gli elementi della pagina web
+Data            | Gestione dei dati
+Environment     | Informazioni sull'ambiente di esecuzione
+Events          | Gestione eventi della tastiera, del mouse e del touch-screen
+Foundation      | Basi di JavaScript
+IO              | Gestione Input / Output
+Image           | Gestione immagini
 Lights, Camera  | Gestione luci, camera, materiali, ombre
-Math      | Funzioni matematiche
-Rendering     | Informazioni sul processo di disegno (rendering)
-Shape       | Funzioni per il disegno di forme 2D, 3D e curve
-Structure     | Informazioni sul ciclo di esecuzione
-Transform     | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
-Typography    | Caratteri, stili e formattazione testo
+Math            | Funzioni matematiche
+Rendering       | Informazioni sul processo di disegno (rendering)
+Shape           | Funzioni per il disegno di forme 2D, 3D e curve
+Structure       | Informazioni sul ciclo di esecuzione
+Transform       | Trasformazioni matematiche nel piano (2D) e nello spazio (3D)
+Typography      | Caratteri, stili e formattazione testo
 
 Ogni categoria mostra le costanti e le funzioni disponibili, con un link alla documentazione specifica.
 
@@ -447,7 +447,7 @@ Queste istruzioni devono essere inserite o nel blocco ``setup`` oppure nel blocc
 ```javascript
 function setup() {
   createCanvas(400, 400);
-    circle(100,150, 50);
+  circle(100,150, 50);
 }
 
 function draw() {
