@@ -469,6 +469,33 @@ smontaPhone() {
 }
 export -f smontaPhone
 
+############################
+#          FFmpeg          #
+############################
+
+# Test: 
+# Run: convertAllWavToMp3
+convertAllWavToMp3() {
+
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.wav, *.Wav, *.WaV etc
+  shopt -s nullglob nocaseglob
+
+  for file in *.wav
+  do
+    #  -vn   disable video conversion 
+    # -ar    - Set the audio sampling frequency.
+    # -ac    - Set the number of audio channels
+    # The quality argument "-q:a Value" has a range 0-9 (lower value is higher quality).
+    # It sets the variable bit rate, see https://trac.ffmpeg.org/wiki/Encode/MP3
+    #   - 0-3 will normally produce transparent results
+    #   - 4 (default) should be close to perceptual transparency
+    #   - 6 usually produces an "acceptable" quality.
+    ffmpeg -i "${file}" -vn -ar 44100 -ac 2 -q:a 2 "new-${file}.mp3";
+  done
+}
+export -f convertAllWavToMp3
+
 ########################
 # Beautiful interfaces #
 ########################
