@@ -27,9 +27,10 @@ Si sviluppi il progetto "Sistema Solare", utilizzando la libreria grafica ``p5.j
 6. Seguendo i passi dal 2 al 5, disegnare gli altri pianeti del Sistema Solare;
 7. Seguendo i passi dal 2 al 5 e prendendo di riferimento il pianeta Terra anziché il Sole, disegnare la Luna e verificare che ruoti intorno alla Terra.
 
-Di seguito, un'immagine del progetto da realizzare.
+Di seguito, delle immagini del progetto da realizzare.
 
 ![p5.js - progetto Sistema Solare](/static/coding/web/p5js/progettoSistemaSolare.png "p5.js - progetto Sistema Solare")
+![p5.js - progetto Sistema Solare](/static/coding/web/p5js/progettoSistemaSolare2.png "p5.js - progetto Sistema Solare")
 
 ## Fasi di realizzazione
 

@@ -10,7 +10,7 @@ keywords: ["coding", "web", "p5.js"]
 draft: false
 toc: false
 summary: 'Soluzione del progetto "Sistema Solare"'
-customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/p5Utils.js", "/static/coding/web/p5js/progettoSistemaSolare.js"]
+customJS: ["/static/js/p5-1.2.0-min.js", "/static/js/p5.sound-1.2.0-min.js", "/static/coding/web/p5js/p5Utils.js", "/static/coding/web/p5js/progettoSistemaSolareSoluzione2.js"]
 weight: 8662
 ---
 
@@ -18,4 +18,4 @@ weight: 8662
 
 Di seguito, l'implementazione del progetto "Sistema Solare".
 
-<div id="sistema"></div>
+<div id="solarSystem"></div>
