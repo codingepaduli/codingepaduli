@@ -435,8 +435,6 @@ git config --local merge.tool "meld"
 git config --local mergetool.prompt false
 ```
 
-
-
 ### Configurazione chiave SSH per firma e verifica
 
 Creata la coppia di chiavi pubblica/privata e registrata su GitHub, è possibile utilizzare queste chiavi anche per firmare e verificare i commit, configurando il client locale con i seguenti comandi:
