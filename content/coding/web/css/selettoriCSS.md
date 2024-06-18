@@ -227,9 +227,9 @@ Il selettore posizionale ``nth-child(Xn+Y)`` permette di selezionare le etichett
 - per selezionare tutti gli elementi in posizione maggiore o uguale ad ``n``, ad esempio ``6``, si può utilizzare ``nth-child(n+6)``;
 - per selezionare tutti gli elementi in posizione minore o uguale ad ``n``, ad esempio ``6``, si può utilizzare un passo negativo ``X=-1``, quindi il selettore risultante è ``nth-child(-1n+6)``;
 
-Facciamo un esempio di tre liste. Nella prima lista applichiamo il colore blu agli elementi in posizione minore di tre e agli elementi in posizione maggiore di sei, poi al primo e all'ultimo elemento sovrascriviamo il colore applicando il verde ed infine all'elemento in posizione cinque elemento applichiamo un testo più grande. Nella seconda lista applichiamo il colore blu agli elementi pari ed il verde sottolineatp agli elementi in posizione dispari. Nell'ultima lista applichiamo evidenziamo e sottolineamo l'unico elemento presente. Lo stile risultante è il seguente:
+Facciamo un esempio di tre liste. Nella prima lista applichiamo il colore blu agli elementi in posizione minore di tre e agli elementi in posizione maggiore di sei, poi al primo e all'ultimo elemento sovrascriviamo il colore applicando il verde ed infine all'elemento in posizione cinque elemento applichiamo un testo più grande. Nella seconda lista applichiamo il colore blu agli elementi pari ed il verde sottolineato agli elementi in posizione dispari. Nell'ultima lista applichiamo evidenziamo e sottolineiamo l'unico elemento presente. Lo stile risultante è il seguente:
 
-```css
+```html
 <style>
 #list1 li:nth-child(-1n+3), #list1 li:nth-child(1n+6) {
   color: blue;
@@ -241,10 +241,10 @@ Facciamo un esempio di tre liste. Nella prima lista applichiamo il colore blu ag
   font-size: larger;
   font-weight: bold;
 }
-#list2 li:nth-child(2n) { /* even (pari) */ 
+#list2 li:nth-child(2n) { /* even (pari) */
   color: blue;
 }
-#list2 li:nth-child(odd) { /* odd (dispari) */ 
+#list2 li:nth-child(odd) { /* odd (dispari) */
   color: green;
   text-decoration: underline;
 }
@@ -255,6 +255,7 @@ Facciamo un esempio di tre liste. Nella prima lista applichiamo il colore blu ag
 }
 </style>
 ```
+<!-- markdownlint-disable MD033 -->
 
 <table>
   <tr>
@@ -289,31 +290,32 @@ Facciamo un esempio di tre liste. Nella prima lista applichiamo il colore blu ag
   </tr>
 </table>
 
-
 <style>
-#list1 li:nth-child(-1n+3), #list1 li:nth-child(1n+6) {
-  color: blue;
-}
-#list1 li:first-child, #list1 li:last-child {
-  color: green;
-}
-#list1 li:nth-child(5) {
-  font-size: larger;
-  font-weight: bold;
-}
-#list2 li:nth-child(2n) { /* even (pari) */ 
-  color: blue;
-}
-#list2 li:nth-child(odd) { /* odd (dispari) */ 
-  color: green;
-  text-decoration: underline;
-}
-#list3 li:only-child {
-  text-decoration: underline;
-  background-color:yellow;
-  padding:0.1em 0.2em;
-}
+  #list1 li:nth-child(-1n+3), #list1 li:nth-child(1n+6) {
+    color: blue;
+  }
+  #list1 li:first-child, #list1 li:last-child {
+    color: green;
+  }
+  #list1 li:nth-child(5) {
+    font-size: larger;
+    font-weight: bold;
+  }
+  #list2 li:nth-child(2n) { /* even (pari) */
+    color: blue;
+  }
+  #list2 li:nth-child(odd) { /* odd (dispari) */
+    color: green;
+    text-decoration: underline;
+  }
+  #list3 li:only-child {
+    text-decoration: underline;
+    background-color:yellow;
+    padding:0.1em 0.2em;
+  }
 </style>
+
+<!-- markdownlint-enable MD033 -->
 
 ## Selettori per pseudo-elementi
 
