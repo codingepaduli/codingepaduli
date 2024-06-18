@@ -332,9 +332,13 @@ Esprimi le misure nella lista seguente in notazione scientifica (potenze del 10)
 
 Ad esempio: 158.123.000.000 grammi -> Kg
 
+<!-- markdownlint-disable MD033 -->
+
 158.123.000.000 g = 158.123 * 10<sup>6</sup> g
 
 Calcolo equivalenza: 158.123.000 Kg = 158.123 * 10<sup>3</sup> Kg
+
+<!-- markdownlint-enable MD033 -->
 
 Lista:
 

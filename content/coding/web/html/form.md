@@ -508,6 +508,8 @@ Il risultato è il seguente:
 
 Popovers created using the Popover API are always non-modal. If you want to create a modal popover, a ``<dialog>`` element is the right way to go. There is significant overlap between the two — you might for example want to create a popover that persists, but control it using declarative HTML. You can turn a ``<dialog>`` element into a popover (``<dialog popover>`` is perfectly valid) if you want to combine popover control with dialog semantics.
 
+<!-- markdownlint-disable MD033 -->
+
 <style>
   div::backdrop {
     background-color: salmon;
@@ -524,6 +526,8 @@ Popovers created using the Popover API are always non-modal. If you want to crea
     <button type="button" popovertarget="mypopover">Chiudi</button>
   </form>
 </div>
+
+<!-- markdownlint-enable MD033 -->
 
 <!-- perchè non funziona ?
 

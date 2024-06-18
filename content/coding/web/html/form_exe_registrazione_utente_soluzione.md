@@ -18,15 +18,15 @@ weight: 9302
 <!-- markdownlint-disable MD036 MD033 -->
 
 <style>
-form fieldset {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  gap: 10px;
-}
-  
-form button {
-  grid-column: 1 / 3;
-}
+  form fieldset {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10px;
+  }
+
+  form button {
+    grid-column: 1 / 3;
+  }
 </style>
 
 <form action="www.server.com/login">
@@ -216,4 +216,4 @@ form button {
    </fieldset>
 </form>
 
-<!-- markdownlint-enable MD036 -->
+<!-- markdownlint-enable MD033 MD036 -->

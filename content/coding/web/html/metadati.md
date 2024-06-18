@@ -467,7 +467,7 @@ Un'esempio d'uso dell'etichetta è il seguente:
 </figure>
 ```
 
-E' preferibile utilizzarla con gli elementi ``picture``, ad esempio: 
+E' preferibile utilizzarla con gli elementi ``picture``, ad esempio:
 
 ```html
 <figure>

@@ -433,7 +433,6 @@ Per accedere ai valori che l'utente inserisce nei campi di input e per modificar
 
 La proprietà che dobbiamo utilizzare per accedere e modificare il valore di un campo di input è ``value`` ed è un valore testuale. Dato che bisogna fare la somma tra numeri, dobbiamo convertire il valore in numerico utilizzando la funzione ``parseInt()``.
 
-
 ```html
 <script>
   function somma() {
@@ -567,6 +566,8 @@ ele.classList.add(...class);
 ele.classList.remove(...class);
 ```
 
+<!-- markdownlint-disable MD033 -->
+
 <script>
   const text = document.createTextNode('Hello World!');
   let elemento = document.createElement('div');
@@ -597,3 +598,5 @@ ele.classList.remove(...class);
   elemento.id = { id : "v1" };
 
 </script>
+
+<!-- markdownlint-enable MD033 -->
