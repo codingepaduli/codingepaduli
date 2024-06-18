@@ -26,6 +26,8 @@ Uno dei primi trattati scientifici sul funzionamento della luce e dei colori è 
 
 Anche Newton nel 1704 pubblicò il suo trattato scientifico "Opticks", uno studio nel quale concluse che la luce è composta da particelle colorate, che si combinano apparendo bianche. Introdusse il termine **spettro dei colori** e decise di suddividerlo in sette colori: rosso, arancione, giallo, verde, blu, indaco e violetto. Il suo esperimento del fascio di luce che attraversava due prismi di vetro, il primo che suddivideva il fascio di luce nei suoi colori primari, ed il secondo che ricomponeva questi colori in un unico fascio di luce bianca, è molto famoso.
 
+![p5.js - Spettro dei colori](/static/coding/web/p5js/colors_and_styles_color_spectrum.png "p5.js - Spettro dei colori")
+
 <!-- Fonte: Fisicast - Una chiacchierata sul Sole -->
 Nel 1800 il fisico William Herschel utilizzò un termometro a mercurio per misurare il calore delle differenti bande di luce colorate risultanti dal passaggio della luce attraverso il prisma di vetro. Scoprì che il termometro misurava una temperatura maggiore di quella ambientale anche dopo la banda rossa, dove non c'era più luce visibile, e quindi concluse che doveva esserci una luce invisibile, che chiamò “raggi calorifici”, oggi conosciuti come raggi infrarossi.
 
