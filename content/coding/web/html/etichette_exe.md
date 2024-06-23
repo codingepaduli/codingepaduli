@@ -67,17 +67,17 @@ weight: 9820
     3. migliorare la leggibilità dei contenuti;
     4. scoprire piú facilmente errori nei contenuti.
 
-<!-- markdownlint-disable MD009 MD036 -->
+<!-- markdownlint-disable MD036 -->
 
- |        |     |     |     |     |     |     |     |     | 
----       | --- | --- | --- | --- | --- | --- | --- | --- 
-Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  | Totale Punti
-Max punti |  2  |  2  |  1  |  1  |  1  |  2  |  1  |     |
-Punti     |     |     |     |     |     |     |     |     |
+|           |     |     |     |     |     |     |     |              |
+| --------- | --- | --- | --- | --- | --- | --- | --- | ------------ |
+| Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  | Totale Punti |
+| Max punti |  2  |  2  |  1  |  1  |  1  |  2  |  1  |              |
+| Punti     |     |     |     |     |     |     |     |              |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
-<!-- markdownlint-enable MD009 MD036 -->
+<!-- markdownlint-enable MD036 -->
 
 ## Esercizio 2
 

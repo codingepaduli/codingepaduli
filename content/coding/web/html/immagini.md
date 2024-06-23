@@ -118,7 +118,7 @@ nell'attributo `usemap` del tag `img`, come nel seguente esempio:
 Cliccare su uno dei pianeti per collegarsi sulla pagina corrispondente
 al pianeta scelto.
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD044 -->
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Terrestrial_Planets_Size_Comp_True_Color.png/320px-Terrestrial_Planets_Size_Comp_True_Color.png" width="145" height="126" alt="Planets" usemap="#planetmap" />
 
@@ -128,7 +128,7 @@ al pianeta scelto.
     <area shape="circle" coords="124,58,8" alt="Venus" title="Venus" href="https://it.m.wikipedia.org/wiki/Venere_(astronomia)" />
 </map>
 
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD033 MD044 -->
 
 Ricapitolando quindi gli attributi del tag img, abbiamo:
 

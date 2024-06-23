@@ -27,15 +27,16 @@ I selettori possono essere combinati in modo da formare combinazioni molto poten
 
 ## Selettore universale
 
-Selettore | Descrizione
---- | ---
-\*  | Seleziona tutti gli elementi;
+| Selettore | Descrizione
+| --------- | ---
+| \*        | Seleziona tutti gli elementi;
 
 ### Esempio d'uso del selettore universale
 
 <!-- markdownlint-disable MD033 -->
 
 Supponendo che la pagina HTML contenga solo gli elementi:
+
 <div id="univ">
   <p>paragrafo1</p>
   <p>paragrafo2</p>
@@ -48,13 +49,14 @@ let elements = document.querySelectorAll('*');
 ```
 
 Esempio di selezione:
+
 <input type="button" onclick="seleziona('#univ *')" value="seleziona">
 
 ## Selettore per id
 
-Selettore | Descrizione
---- | ---
-\#E | Seleziona il tag con id E;
+| Selettore | Descrizione
+| --------- | ---
+| \#E       | Seleziona il tag con id E;
 
 ### Esempio d'uso del selettore per id
 
@@ -78,9 +80,9 @@ Esempio di selezione:
 
 ## Selettore per classe
 
-Selettore | Descrizione
---- | ---
-.C  | Seleziona i tag che hanno classe C;
+| Selettore | Descrizione
+| --------- | ---
+| .C        | Seleziona i tag che hanno classe C;
 
 ### Esempio d'uso del selettore per classe
 
@@ -106,9 +108,9 @@ Esempio di selezione:
 
 ## Selettore per elemento (tag)
 
-Selettore | Descrizione
---- | ---
-E  | Seleziona i tag E;
+| Selettore | Descrizione
+| --------- | ---
+| E         | Seleziona i tag E;
 
 ### Esempio d'uso del selettore per elemento
 
@@ -136,17 +138,17 @@ Esempio di selezione:
 
 ## Selettori per attributi
 
-Selettore | Descrizione
---- | ---
-[A]       | Seleziona i tag con attributo A avente qualsiasi valore;
-[A="V"]   | Seleziona i tag con attributo A il cui valore è V (case-sensitive);
-[A="V" s] | Seleziona i tag con attributo A il cui valore è V (case-sensitive);
-[A="V" i] | Seleziona i tag con attributo A il cui valore è V (case-insensitive);
-[A^="V"]  | Seleziona i tag con attributo A il cui valore inizia per V;
-[A$="V"]  | Seleziona i tag con attributo A il cui valore termina per V;
-[A\*="V"] | Seleziona i tag con attributo A il cui valore contiene V;
-[A\|="V"]  | Seleziona i tag con attributo A il cui valore è V oppure è V seguito immediatamente da un carattere "trattino" ``-``;
-[A~="V"]  | Seleziona i tag con attributo A il cui valore è una lista di stringhe separata da uno spazio contenente, tra i vari valori, il valore V;
+| Selettore  | Descrizione
+| ---------  | ---
+| [A]        | Seleziona i tag con attributo A avente qualsiasi valore;
+| [A="V"]    | Seleziona i tag con attributo A il cui valore è V (case-sensitive);
+| [A="V" s]  | Seleziona i tag con attributo A il cui valore è V (case-sensitive);
+| [A="V" i]  | Seleziona i tag con attributo A il cui valore è V (case-insensitive);
+| [A^="V"]   | Seleziona i tag con attributo A il cui valore inizia per V;
+| [A$="V"]   | Seleziona i tag con attributo A il cui valore termina per V;
+| [A\*="V"]  | Seleziona i tag con attributo A il cui valore contiene V;
+| [A\|="V"]  | Seleziona i tag con attributo A il cui valore è V oppure è V seguito immediatamente da un carattere "trattino" ``-``;
+| [A~="V"]   | Seleziona i tag con attributo A il cui valore è una lista di stringhe separata da uno spazio contenente, tra i vari valori, il valore V;
 
 ### Esempio d'uso del selettore per attributi
 
@@ -237,9 +239,9 @@ Esempio di selezione:
 
 ## Selettori per raggruppamento
 
-Selettore | Descrizione
---- | ---
-S1,S2       | Seleziona i tag selezionati dal selettore S1 o dal selettore S2;
+| Selettore | Descrizione
+| --------- | ---
+| S1,S2     | Seleziona i tag selezionati dal selettore S1 o dal selettore S2;
 
 ### Esempio d'uso del selettore per raggruppamento
 
@@ -267,12 +269,12 @@ Esempio di selezione:
 
 ## Selettori per relazione di "parentela"
 
-Selettore | Descrizione
---- | ---
- S1 S2   | Seleziona i tag selezionati dal selettore S2 discendenti dei tag selezionati dal selettore S1;
-S1 > S2  | Seleziona i tag selezionati dal selettore S2 figli diretti dei tag selezionati dal selettore S1;
-S1 + S2  | Seleziona i tag selezionati dal selettore S2 che seguono, direttamente e sullo stesso livello di profondità, i tag selezionati dal selettore S1;
-S1 ~ S2  | Seleziona i tag selezionati dal selettore S2 che seguono, anche non immediatamente ma che sono sullo stesso livello di profondità, i tag selezionati dal selettore S1;
+| Selettore | Descrizione
+| --------- | ---
+|  S1 S2    | Seleziona i tag selezionati dal selettore S2 discendenti dei tag selezionati dal selettore S1;
+| S1 > S2   | Seleziona i tag selezionati dal selettore S2 figli diretti dei tag selezionati dal selettore S1;
+| S1 + S2   | Seleziona i tag selezionati dal selettore S2 che seguono, direttamente e sullo stesso livello di profondità, i tag selezionati dal selettore S1;
+| S1 ~ S2   | Seleziona i tag selezionati dal selettore S2 che seguono, anche non immediatamente ma che sono sullo stesso livello di profondità, i tag selezionati dal selettore S1;
 
 ### Esempio d'uso del selettore per relazione di "parentela"
 
@@ -329,60 +331,64 @@ Esempio di selezione:
 
 ## Selettori per posizione
 
-Selettore | Descrizione
---- | ---
-:first-child  | Seleziona il primo figlio (diretto);
-:last-child   | Seleziona l'ultimo figlio (diretto);
-:only-child   | Seleziona gli elementi che sono figli unici (senza fratelli);
-:nth-child(I) | Seleziona l'**I**-esimo figlio;
-:nth-child(even|odd) | Seleziona i figli in posizione pari o dispari;
-:nth-child(Xn+Y)  | Seleziona i figli multipli di X con spiazzamento Y;
-:nth-last-child(even|odd) | Seleziona i figli in posizione pari o dispari partendo dall'ultimo elemento ed andando a ritroso;
-:nth-last-child(Xn+Y) | Seleziona i figli multipli di X con spiazzamento Y partendo dall'ultimo elemento ed andando a ritroso;
-S1:first-of-type | Seleziona il primo elemento del tipo specificato dal selettore S1;
-S1:last-of-type | Seleziona l'ultimo elemento del tipo specificato dal selettore S1;
-S1:only-of-type | Seleziona l'unico figlio del tipo specificato dal selettore S1;
-S1:nth-of-type(I) | Seleziona l'elemento in posizione **I**-esima del tipo specificato dal selettore S
-S1:nth-of-type(even|odd) | Seleziona gli elementi in posizione pari del tipo specificato dal selettore S1;
-S1:nth-of-type(Xn+Y) | Seleziona gli elementi in posizione che è multiplo di X con spiazzamento Y del tipo specificato dal selettore S1;
-S1:nth-last-of-type(I) | Seleziona l'elemento in posizione **I**-esima del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
-S1:nth-last-of-type(even|odd) | Seleziona gli elementi in posizione pari del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
-S1:nth-last-of-type(Xn+Y) | Seleziona gli elementi in posizione che è multiplo di X con spiazzamento Y del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
+<!-- markdownlint-disable MD056 -->
+
+| Selettore                         | Descrizione
+| ---------                         | ---
+| ``:first-child``                  | Seleziona il primo figlio (diretto);
+| ``:last-child``                   | Seleziona l'ultimo figlio (diretto);
+| ``:only-child``                   | Seleziona gli elementi che sono figli unici (senza fratelli);
+| ``:nth-child(I)``                 | Seleziona l'**I**-esimo figlio;
+| ``:nth-child(even|odd)``          | Seleziona i figli in posizione pari o dispari;
+| ``:nth-child(Xn+Y)``              | Seleziona i figli multipli di X con spiazzamento Y;
+| ``:nth-last-child(even|odd)``     | Seleziona i figli in posizione pari o dispari partendo dall'ultimo elemento ed andando a ritroso;
+| ``:nth-last-child(Xn+Y)``         | Seleziona i figli multipli di X con spiazzamento Y partendo dall'ultimo elemento ed andando a ritroso;
+| ``S1:first-of-type``              | Seleziona il primo elemento del tipo specificato dal selettore S1;
+| ``S1:last-of-type``               | Seleziona l'ultimo elemento del tipo specificato dal selettore S1;
+| ``S1:only-of-type``               | Seleziona l'unico figlio del tipo specificato dal selettore S1;
+| ``S1:nth-of-type(I)``             | Seleziona l'elemento in posizione **I**-esima del tipo specificato dal selettore S
+| ``S1:nth-of-type(even|odd)``      | Seleziona gli elementi in posizione pari del tipo specificato dal selettore S1;
+| ``S1:nth-of-type(Xn+Y)``          | Seleziona gli elementi in posizione che è multiplo di X con spiazzamento Y del tipo specificato dal selettore S1;
+| ``S1:nth-last-of-type(I)``        | Seleziona l'elemento in posizione **I**-esima del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
+| ``S1:nth-last-of-type(even|odd)`` | Seleziona gli elementi in posizione pari del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
+| ``S1:nth-last-of-type(Xn+Y)``     | Seleziona gli elementi in posizione che è multiplo di X con spiazzamento Y del tipo specificato dal selettore S1, partendo dall'ultimo elemento ed andando a ritroso;
+
+<!-- markdownlint-enable MD056 -->
 
 ## Selettori per pseudo-classi
 
-Selettore | Descrizione
---- | ---
-:active       | Seleziona gli elementi attivati, come link o pulsanti;
-:any-link     | Seleziona i link visitati (``:visited``) o meno (``:link``);
-:checked      | Seleziona le checkbox, i radio o gli option che sono selezionati;
-:disabled     | Seleziona gli elementi disabilitati;
-:empty        | Seleziona gli elementi senza figli;
-:enabled      | Seleziona gli elementi abilitati;
-:focus        | Seleziona l'elemento che ha il focus;
-:focus-within | Seleziona gli elementi che contengono l'elemento che ha il focus;
-:has(S1)      | Seleziona gli elementi solo se il selettore S1 seleziona un elemento;
-:hover        | Seleziona gli elementi che si trovano sotto il puntatore del mouse;
-:indeterminate | Seleziona le checkbox ed i radio che hanno valore indeterminato;
-:in-range     | Seleziona gli input con valore compreso tra i min e max specificati;
-:invalid      | Seleziona gli elementi del form con errori di validazione;
-:link         | Seleziona i link non ancora visitati;
-:not(S1)      | Seleziona gli elementi non selezionati dal selettore S1;
-:optional     | Seleziona gli elementi del form non obbligatori (senza attributo ``required``);
-:out-of-range | Seleziona gli input con valore non compreso tra i min e max specificati;
-:read-only    | Seleziona gli elementi del form non editabili;
-:read-write   | Seleziona gli elementi del form editabili;
-:required     | Seleziona gli elementi del form obbligatori (con attributo ``required``);
-:valid        | Seleziona gli elementi del form validati;
-:visited      | Seleziona i link visitati;
+| Selettore       | Descrizione
+| -------------   | ---
+| :active         | Seleziona gli elementi attivati, come link o pulsanti;
+| :any-link       | Seleziona i link visitati (``:visited``) o meno (``:link``);
+| :checked        | Seleziona le checkbox, i radio o gli option che sono selezionati;
+| :disabled       | Seleziona gli elementi disabilitati;
+| :empty          | Seleziona gli elementi senza figli;
+| :enabled        | Seleziona gli elementi abilitati;
+| :focus          | Seleziona l'elemento che ha il focus;
+| :focus-within   | Seleziona gli elementi che contengono l'elemento che ha il focus;
+| :has(S1)        | Seleziona gli elementi solo se il selettore S1 seleziona un elemento;
+| :hover          | Seleziona gli elementi che si trovano sotto il puntatore del mouse;
+| :indeterminate  | Seleziona le checkbox ed i radio che hanno valore indeterminato;
+| :in-range       | Seleziona gli input con valore compreso tra i min e max specificati;
+| :invalid        | Seleziona gli elementi del form con errori di validazione;
+| :link           | Seleziona i link non ancora visitati;
+| :not(S1)        | Seleziona gli elementi non selezionati dal selettore S1;
+| :optional       | Seleziona gli elementi del form non obbligatori (senza attributo ``required``);
+| :out-of-range   | Seleziona gli input con valore non compreso tra i min e max specificati;
+| :read-only      | Seleziona gli elementi del form non editabili;
+| :read-write     | Seleziona gli elementi del form editabili;
+| :required       | Seleziona gli elementi del form obbligatori (con attributo ``required``);
+| :valid          | Seleziona gli elementi del form validati;
+| :visited        | Seleziona i link visitati;
 
 ## Selettori per pseudo-elementi
 
-Selettore | Descrizione
---- | ---
-::after     | Seleziona lo pseudo-elemento ``::after``;
-::before    | Seleziona lo pseudo-elemento ``::before``;
-::selection | Seleziona lo pseudo-elemento corrispondente al testo selezionato;
+| Selettore   | Descrizione
+| ---------   | ---
+| ::after     | Seleziona lo pseudo-elemento ``::after``;
+| ::before    | Seleziona lo pseudo-elemento ``::before``;
+| ::selection | Seleziona lo pseudo-elemento corrispondente al testo selezionato;
 
 ## Combinazioni
 

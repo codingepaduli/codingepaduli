@@ -124,6 +124,8 @@ ele.classList.add(...class);
 ele.classList.remove(...class);
 ```
 
+<!-- markdownlint-disable MD033 -->
+
 <script>
   const text = document.createTextNode('Hello World!');
   let elemento = document.createElement('div');
@@ -154,3 +156,5 @@ ele.classList.remove(...class);
   elemento.id = { id : "v1" };
 
 </script>
+
+<!-- markdownlint-enable MD033 -->

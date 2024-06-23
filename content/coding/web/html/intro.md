@@ -130,17 +130,17 @@ Nel seguente esempio verrà mostrato l'uso di entrambe le etichette:
     3. l'indirizzo web di una risorsa;
     4. l'insieme di regole che client e server seguono per poter comunicare.
 
-<!-- markdownlint-disable MD009 MD036 -->
+<!-- markdownlint-disable MD036 -->
 
- |        |     |     |     |     |     |     |     |     | 
----       | --- | --- | --- | --- | --- | --- | --- | --- 
-Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  | Totale Punti
-Max punti |  2  |  2  |  1  |  1  |  1  |  2  |  1  |     |
-Punti     |     |     |     |     |     |     |     |     |
+|           |     |     |     |     |     |     |     |              |
+| --------- | --- | --- | --- | --- | --- | --- | --- | ------------ |
+| Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  | Totale Punti |
+| Max punti |  2  |  2  |  1  |  1  |  1  |  2  |  1  |              |
+| Punti     |     |     |     |     |     |     |     |              |
 
 **Cognome ______________ Nome ______________ Classe __________ Data __________**
 
-<!-- markdownlint-enable MD009 MD036 -->
+<!-- markdownlint-enable MD036 -->
 
 ## Esercizi sulle caratteristiche di un sito web
 
