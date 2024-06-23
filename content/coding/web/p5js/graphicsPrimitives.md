@@ -154,7 +154,10 @@ I segmenti visualizzati sono i seguenti:
 Un **poligono** è una figura geometrica piana delimitata da una linea spezzata chiusa. I segmenti che compongono la spezzata chiusa si chiamano **lati** del poligono. Il **vertice** è il punto di incontro di due lati consecutivi del poligono.
 
 Si dicono **consecutivi** o **adiacenti** due segmenti che appartengono alla stessa retta e che hanno un solo punto in comune. Allo stesso modo, due poligoni che condividono lo stesso lato si dicono adiacenti. Anche in uno spazio a tre dimensioni, due parallelepipedi che condividono la stessa faccia si dicono adiacenti.
+
+<!-- markdownlint-disable MD044 -->
 <!-- vedi https://it.wikipedia.org/wiki/Tassellazione_dello_spazio -->
+<!-- markdownlint-enable MD044 -->
 
 <!-- La **simmetria** è una proprietà geometrica che indica l'equilibrio e uguaglianza di parti che si riflettono o si corrispondono rispetto a un asse, un punto o un piano; è una proprietà presente in natura per cui è considerata esteticamente piacevole e armoniosa, e per questo motivo è utilizzata spesso nell'arte, nel design, nell'architettura e nell'ingegneria. -->
 
