@@ -12,4 +12,8 @@ toc: false
 summary: "Lezioni sul linguaggio CSS nella sezione <a href='/coding/web/css'>CSS</a>"
 ---
 
+<!-- markdownlint-disable MD044 -->
+
 Lezioni sul linguaggio CSS nella sezione <a href='/coding/web/css'>CSS</a>.
+
+<!-- markdownlint-enable MD044 -->

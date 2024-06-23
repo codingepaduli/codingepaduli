@@ -12,4 +12,8 @@ toc: false
 summary: "Lezioni sul linguaggio HTML nella sezione <a href='/coding/web/html'>HTML</a>"
 ---
 
+<!-- markdownlint-disable MD044 -->
+
 Lezioni sul linguaggio HTML nella sezione <a href='/coding/web/html'>HTML</a>.
+
+<!-- markdownlint-enable MD044 -->

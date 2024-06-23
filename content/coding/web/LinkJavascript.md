@@ -12,4 +12,8 @@ toc: false
 summary: "Lezioni sul linguaggio JavaScript nella sezione <a href='/coding/web/javascript'>JavaScript</a>"
 ---
 
+<!-- markdownlint-disable MD044 -->
+
 Lezioni sul linguaggio JavaScript nella sezione <a href='/coding/web/javascript'>JavaScript</a>.
+
+<!-- markdownlint-enable MD044 -->
