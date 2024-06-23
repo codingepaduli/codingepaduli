@@ -1,0 +1,29 @@
+name: Check Markdown (markdownlint-cli2)
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  schedule:
+  # Run everyday at 4:00 AM
+  - cron: "0 4 * * *"
+
+jobs:
+  markdown-check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v4
+      # See https://github.com/DavidAnson/markdownlint
+      # See https://github.com/DavidAnson/markdownlint-cli2
+      # See https://github.com/DavidAnson/markdownlint-cli2-action
+      # See https://github.com/marketplace/actions/markdownlint-cli2-action
+      # See https://github.com/OnkarRuikar/markdownlint-rule-search-replace for removing non breaking spaces (&nbsp)
+    - name: Run markdownlint-cli2
+      uses: DavidAnson/markdownlint-cli2-action@v16
+      with:
+        globs: '**/*.md'
+        config: ".markdownlint.yml"
+        continue-on-error: true
+        # ignore_files: "content/interesting
