@@ -25,5 +25,5 @@ jobs:
       with:
         globs: '**/*.md'
         config: ".markdownlint.yml"
-        continue-on-error: true
         # ignore_files: "content/interesting
+
