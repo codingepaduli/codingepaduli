@@ -12,7 +12,7 @@ toc: false
 summary: "Question and Answer WebApp, per domande sul diritto allo studio."
 ---
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD044 -->
   
 <script type="text/javascript" src="/static/webApp/questionAndAnswer.js"></script>
 
@@ -57,4 +57,4 @@ summary: "Question and Answer WebApp, per domande sul diritto allo studio."
     </fieldset>
 </form>
 
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD033 MD044 -->

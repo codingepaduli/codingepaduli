@@ -76,6 +76,6 @@ Copyright © 2010 codingepaduli. All right reserved.
 
 ## Contact
 
-codingepaduli - email@example.com
+Use GitHub Issues and Pull Requests.
 
 Project Link: [GitHub - codingepaduli/codingepaduli](https://github.com/codingepaduli/codingepaduli "Project link")

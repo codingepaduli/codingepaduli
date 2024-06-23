@@ -12,7 +12,7 @@ toc: false
 summary: "Codifica e decodifica RSA di un messaggio."
 ---
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD044 -->
 
 <script type="text/javascript" src="/static/webApp/codificaRSA.js"></script>
 
@@ -100,4 +100,4 @@ summary: "Codifica e decodifica RSA di un messaggio."
     }
 </style>
 
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD033 MD044 -->
