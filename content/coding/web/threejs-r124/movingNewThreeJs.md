@@ -19,6 +19,8 @@ Il nuovo Three.js ES6 (versione > r125) [rimuove le geometrie, lasciando solo le
 
 Questa esercitazione è un'iniziale migrazione a ES6, da studiare e completare.
 
+<!-- markdownlint-disable MD033 -->
+
 <script type="importmap">
   {
     "imports": {
@@ -165,3 +167,5 @@ animate();
 </script>
 
 <canvas id="canvas" style="width: 100%; height: 100%;"></canvas>
+
+<!-- markdownlint-enable MD033 -->
