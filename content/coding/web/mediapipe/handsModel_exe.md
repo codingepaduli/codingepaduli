@@ -20,7 +20,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 # Riconoscimento mano
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD011 -->
 
 <!-- L'errore su Firefox sembra simile a questo 
   <a href="https://github.com/google/mediapipe/issues/2704">https://github.com/google/mediapipe/issues/2704</a>  
@@ -128,4 +128,4 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 </script>
 
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD033 MD011 -->

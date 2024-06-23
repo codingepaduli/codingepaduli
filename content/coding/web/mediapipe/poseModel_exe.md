@@ -20,7 +20,7 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 # Riconoscimeto posa
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD011 -->
 
 ![Pose landmarks (punti di riferimento della posa)](https://mediapipe.dev/images/mobile/pose_tracking_full_body_landmarks.png)
 
@@ -127,4 +127,4 @@ externalJS: ["https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.
 
 </script>
 
-<!-- markdownlint-enable MD033 -->
+<!-- markdownlint-enable MD033 MD011 -->
