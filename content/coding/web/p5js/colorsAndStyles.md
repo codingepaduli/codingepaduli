@@ -24,6 +24,8 @@ references:
 <!-- Fonte: Fisicast - La luce -->
 Uno dei primi trattati scientifici sul funzionamento della luce e dei colori è il "Kitab al-Manazir" (Manuale di Ottica) pubblicato nel 1015 da Ibn Al-Haytham, uno scienziato vissuto in una zona corrispondente all'attuale Iraq. Questo trattato spiegava già alcuni fenomeni, come il funzionamento della vista o la creazione di un arcobaleno.
 
+![p5.js - Arcobaleno](/static/coding/web/p5js/colors_and_styles_color_rainbow.png "p5.js - Arcobaleno")
+
 Anche Newton nel 1704 pubblicò il suo trattato scientifico "Opticks", uno studio nel quale concluse che la luce è composta da particelle colorate, che si combinano apparendo bianche. Introdusse il termine **spettro dei colori** e decise di suddividerlo in sette colori: rosso, arancione, giallo, verde, blu, indaco e violetto. Il suo esperimento del fascio di luce che attraversava due prismi di vetro, il primo che suddivideva il fascio di luce nei suoi colori primari, ed il secondo che ricomponeva questi colori in un unico fascio di luce bianca, è molto famoso.
 
 ![p5.js - Spettro dei colori](/static/coding/web/p5js/colors_and_styles_color_spectrum.png "p5.js - Spettro dei colori")
