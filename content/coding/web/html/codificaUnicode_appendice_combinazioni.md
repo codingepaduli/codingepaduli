@@ -17,6 +17,17 @@ weight: 9358
 
 Di seguito troviamo una tabella con le Combinazioni Unicode aggiornata alla specifica "Recommended Emoji ZWJ Sequences, v15.1".
 
+<!-- markdownlint-disable MD033 -->
+
+<style>
+  table tr td:nth-of-type(2) {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+</style>
+
+<!-- markdownlint-enable MD033 -->
+
 | Code Points                   | Browser | CLDR Short Name              |
 |----------------------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------------------------|
 | U+1F636 U+200D U+1F32B U+FE0F                                              | 😶 + 200D + 🌫 + FE0F = 😶‍🌫️                                      | face in clouds                                                                   |

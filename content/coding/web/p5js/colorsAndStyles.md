@@ -24,6 +24,8 @@ references:
 <!-- Fonte: Fisicast - La luce -->
 Uno dei primi trattati scientifici sul funzionamento della luce e dei colori è il "Kitab al-Manazir" (Manuale di Ottica) pubblicato nel 1015 da Ibn Al-Haytham, uno scienziato vissuto in una zona corrispondente all'attuale Iraq. Questo trattato spiegava già alcuni fenomeni, come il funzionamento della vista o la creazione di un arcobaleno.
 
+![p5.js - Arcobaleno](/static/coding/web/p5js/colors_and_styles_color_rainbow.png "p5.js - Arcobaleno")
+
 Anche Newton nel 1704 pubblicò il suo trattato scientifico "Opticks", uno studio nel quale concluse che la luce è composta da particelle colorate, che si combinano apparendo bianche. Introdusse il termine **spettro dei colori** e decise di suddividerlo in sette colori: rosso, arancione, giallo, verde, blu, indaco e violetto. Il suo esperimento del fascio di luce che attraversava due prismi di vetro, il primo che suddivideva il fascio di luce nei suoi colori primari, ed il secondo che ricomponeva questi colori in un unico fascio di luce bianca, è molto famoso.
 
 ![p5.js - Spettro dei colori](/static/coding/web/p5js/colors_and_styles_color_spectrum.png "p5.js - Spettro dei colori")
@@ -124,13 +126,22 @@ Il modello Hue-Saturation-Brightness è un modello computerizzato, non basato su
 
 L'angolo definisce la tonalità del colore, detta anche tinta. Quindi troviamo la tonalità rossa a 0 gradi, la tonalità verde a 120 gradi e la tonalità blu a 240 gradi, e nel mezzo tutte le altre sfumature di tonalità di colori.
 
-La saturazione indica quanto forte o, al contrario, pallida si vuole la tonalità di colore. Saturazioni forti rendono la tonalità di colore molto accesa, saturazioni deboli la rendono vicina ad un colore bianco.
+La saturazione indica quanto forte o, al contrario, pallida si vuole la tonalità di colore. Saturazioni forti rendono la tonalità di colore molto accesa, saturazioni deboli la rendono spenta, quindi tra il bianco ed il nero passando per il grigio a seconda della brillantezza.
 
-La brillantezza indica quanto luminosa si vuole la tonalità di colore.
+La brillantezza indica quanto luminosa si vuole la tonalità di colore, valori alti portano ad un colore acceso, valori bassi portano ad un colore spento.
 
 Ogni colore è, quindi, definito come una combinazione delle tre componenti elencate. Il valore applicabile per la tonalità va da 0 (zero) a 360, mentre per saturazione e brillantezza vanno da da 0 (zero) a 100, quindi un colore lo si può esprimere come una terna di quantità (**h**, **s**, **b**), in cui **h** è il valore che esprime la tonalità, **s** è il valore che indica la saturazione e **b** è il valore che definisce la brillantezza.
 
-Come ci si può aspettare, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
+Come ci si può aspettare, in questo modello:
+
+- il colore rosso si esprime impostando la tonalità del rosso (a zero gradi) e la quantità massima di saturazione e brillantezza: (0, 100, 100);
+- il colore verde si esprime impostando la tonalità del verde (a 120 gradi) e la quantità massima di saturazione e brillantezza: (120, 100, 100);
+- il colore blue si esprime impostando la tonalità del blu (a 240 gradi) e la quantità massima di saturazione e brillantezza: (240, 100, 100);
+- il colore nero si esprime impostando una qualsiasi tonalità e saturazione ed impostando a zero la brillantezza: (34, 20, 0);
+- il colore bianco si esprime impostando una qualsiasi tonalità, saturazione a zero e massima brillantezza: (47, 0, 100);
+- il colore grigio si esprime impostando una qualsiasi tonalità, saturazione a zero e valore medio di brillantezza: (47, 0, 50);
+
+La facilità d'uso di questo modello è dovuta al fatto che, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
 
 ## Impostare il modello di colori
 

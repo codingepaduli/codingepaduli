@@ -4,10 +4,9 @@
 # Functions based on docker apps installed
 ################################################
 
-dockerRun() {
- podman "$@"
-}
-export -f dockerRun
+# Set in $HOME/.config/my_env.conf
+#   unset USE_PODMAN
+
 
 # A basic docker function
 dockerContainer() {
@@ -49,7 +48,12 @@ dockerContainer() {
 
   my_uid=$(id -u $USER)
   my_gid=$(id -g $USER)
-  dockerRun container run --rm -it -u $(id -u $USER):$(id -g $USER) --userns keep-id:uid=$my_uid,gid=$my_gid -v "$PWD":"$PWD":Z -w "$PWD" "$@"
+
+  if [ -z "$USE_PODMAN" ]; then
+    docker container run --rm -it -u $my_uid:$my_gid -v "$PWD":"$PWD" -w "$PWD" "$@"
+  else
+    podman container run --rm -it -u $my_uid:$my_gid --userns keep-id:uid=$my_uid,gid=$my_gid -v "$PWD":"$PWD":Z -w "$PWD" "$@"
+  fi
 }
 export -f dockerContainer
 

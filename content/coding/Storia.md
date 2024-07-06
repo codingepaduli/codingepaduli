@@ -48,6 +48,8 @@ Nel 1895 **Marconi** inventa la presa di terra e le antenne radio e nel 1896 in 
 
 Nel 1925 **Baird** trovò un modo per trasmettere immagini in movimento con una vasta gamma di grigi e nel 1926 effettuò con successo quella che viene ritenuta la prima vera dimostrazione pubblica di trasmissione televisiva senza fili.
 
+Nel 1945 **Hedy Lamarr**, famosa attrice di Hollywood, invento e brevetto la tecnica di trasmissione radio detta "spettro diffuso per salti di frequenza" (FHSS). Ispirandosi alle tecnologie musicali che permettevano di accordare (sincronizzare) una canzone ai continui cambi di melodia suonati al pianoforte, realizzò una tecnica che permetteva di trasmettere un segnale elettromagnetico facendolo saltare ad intervalli regolari da una frequenza ad un'altra e rendendolo indifferente ai segnali di disturbo esterni. Tentò di convincere il governo Americano ad utilizzare questa tecnica per la guida dei siluri sottomarini contro le navi naziste, ma il governo non credette nella sua invenzione. Decenni dopo, questa tecnica fu utilizzata nelle comunicazioni wireless, bluetooth e nelle reti cellulari.
+
 ## Storia di internet
 
 Internet nasce agli anni sessanta con Arpanet, che collegava l'Università della California di Los Angeles, l'SRI di Stanford, l'Università della California di Santa Barbara, e l'Università dello Utah. Nel tempo sempre più enti universitari e governativi collegarono le loro reti locali, rendendo internet la rete delle reti.
