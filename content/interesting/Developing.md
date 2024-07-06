@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-04-30
-publishdate: 2024-04-30
-lastmod: 2024-04-30
+date: 2024-07-05
+publishdate: 2024-07-05
+lastmod: 2024-07-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -212,7 +212,7 @@ summary: "Set di link relativi al coding"
 [10 syntax in Java You should know](https://dev.to/luanvu/10-syntax-in-java-you-should-know-1e2h) - DEV Community\
 [Processing IDE and p5.js in Java](https://happycoding.io/tutorials/java/processing-in-java) - Happy Coding\
 [Graphics for JVM @ tonsky.me](https://tonsky.me/blog/skija/) - \
-[GitHub](https://github.com/binkley/modern-java-practices#leverage-unit-testing-and-coverage) - binkley/modern-java-practices: Modern Java/JVM Build Practices\
+[binkley/modern-Java-practices](https://github.com/binkley/modern-java-practices#leverage-unit-testing-and-coverage) - Modern Java/JVM Build Practices\
 
 #### JDBC e JPA
 
@@ -659,8 +659,7 @@ summary: "Set di link relativi al coding"
 ##### JS DOM
 
 [HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
-[HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/) - JakeArchibald.com\
-[DOM Traversal](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - Deep in Javascript DOM Traversal 2 - DEV Community\
+[DOM Traversal](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - Deep in JavaScript DOM Traversal 2 - DEV Community\
 
 ##### JS Fetch Promise and Async Await
 
