@@ -14,6 +14,15 @@
 #    fi
 # fi
 
+# Get the system info from /etc/os-release and /usr/lib/os-release
+## PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+## NAME="Debian GNU/Linux"
+## VERSION_ID="12"
+## VERSION="12 (bookworm)"
+## VERSION_CODENAME=bookworm
+## ID=debian
+. /etc/os-release
+
 # Nota:
 #
 # Variabili di shell, visibili sono nella shell corrente, sono create con MYVAR=1729
