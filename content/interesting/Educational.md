@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-04-30
-publishdate: 2024-04-30
-lastmod: 2024-04-30
+date: 2024-07-05
+publishdate: 2024-07-05
+lastmod: 2024-07-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -59,6 +59,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Soft skills](https://www.tuttoscuola.com/soft-skills-cosa-inserirle-nella-tua-programmazione-didattica/) - cosa sono e come inserirle nella tua programmazione didattica - Tuttoscuola\
 [Cyberbullismo](https://www.youtube.com/watch?v=_pgwLhSYA7o) - Cosa puoi fare per evitare il cyberbullismo? - YouTube\
 [Intelligenza Artificiale: come funziona e perché è già nelle nostre vite](https://www.youtube.com/watch?v=HdMhPu1BH5U) - What a Digital World EP 4 - YouTube\
+[Laura Pirotta](https://www.youtube.com/@LauraPirotta) - docente di scienze umane, storia e filosofia\
 
 ##### Fake news
 
@@ -190,6 +191,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Come creare più partizioni in un hard disk](https://www.youtube.com/watch?v=t5Zr19mson0) - YouTube\
 [ryunosinfx/reedsolomon.es](https://github.com/ryunosinfx/reedsolomon.es) - This is Reed-Solomon coding module which is porting from Zxing open source project written in Java.\
 [ESP8266](https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html) - A Beginner's Guide\
+[Maffucci](https://www.maffucci.it/) - docente, formatore, lavora con arduino, robotica ed elettronica\
 [Computer Networking Introduction](https://iximiuz.com/en/posts/computer-networking-101/) - Ethernet and IP (Heavily Illustrated)\
 [Ethernet crossover cable](https://en.wikipedia.org/wiki/Ethernet_crossover_cable) - Wikipedia\
 [Networking cables](https://en.wikipedia.org/wiki/Networking_cables) - Wikipedia\
@@ -260,6 +262,7 @@ summary: "Set di link relativi all'istruzione di base"
 [PhpMyAdmin GUI](https://www.youtube.com/watch?v=fxEHOl5Nbco&t=34s) - 3 Operazioni sui dati\
 [PhpMyAdmin GUI](https://www.youtube.com/watch?v=evokXvZFWgo) - 2 Prima tabella\
 [PhpMyAdmin GUI](https://www.youtube.com/watch?v=z0_tr8r61eE&t=35s) - 1 XAMPP\
+[digital marketing con Google](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - \
 
 #### Eventi
 
