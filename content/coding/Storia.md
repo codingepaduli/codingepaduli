@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "La nascita del computer e delle telecomunicazioni"
-description: "La nascita del computer e delle telecomunicazioni"
+title: "L'evoluzione delle comunicazioni"
+description: "L'evoluzione delle comunicazioni"
 date: 2022-12-13
 publishdate: 2022-12-13
 lastmod: 2022-12-13
@@ -10,11 +10,57 @@ categories: ["coding"]
 keywords: ["coding"]
 draft: false
 toc: false
-summary: "La nascita del computer e delle telecomunicazioni"
+summary: "L'evoluzione delle comunicazioni"
 weight: 1
 ---
 
-# La nascita del computer e delle telecomunicazioni
+# L'evoluzione delle comunicazioni
+
+## Segni di evoluzione
+
+Nel corso dell'evoluzione, le forme di vita hanno sviluppato diversi sistemi per poter trasmettere o reperire informazioni dall'ambiente circostante. La selezione naturale ha contribuito ad affinare sempre di più queste tecniche e le specie o gli esemplari che le avevano meno sviluppate non sopravvivevano.
+
+Avvistare ad ampia distanza una preda, fare sentire la propria pericolosa presenza con un ruggito o un rumore caratteristico (come ad esempio fa il serpente a sonagli), annusare la presenza d'acqua o di cibo, udire la minaccia di un predatore ed avere i riflessi pronti favorisce la sopravvivenza e gli individui che hanno maggiormente sviluppato queste doti hanno maggiori probabilità di sopravvivere.
+
+La prima forma di comunicazione è rappresentata quindi dall'insieme di modalità con le quali si interagisce con l'ambiente circostante, emanando i propri odori, esponendo i tratti caratteristici del proprio essere, ad esempio gli artigli o le zanne, esprimendo la propria mimica facciale, per riportarne alcune a titolo esemplificativo.
+
+Quando più esemplari iniziano a convivere in uno stesso insieme, come uno stormo o un branco, allora tutti questi mezzi iniziano a formare una sorta di rudimentale linguaggio che favorisce l'integrazione tra gli individui e ne determina il ruolo.
+
+## La scrittura
+
+30000 anni fa l'uomo primitivo volle rappresentare le battute di caccia attraverso dei disegni che eseguì graffiando la pietra, dando origine ai graffiti, la prima forma di comunicazione attraverso dei segni.
+
+Millenni dopo, nelle città stato sumere c'era la necessità di tenere traccia delle merci che entravano ed uscivano dai depositi, è in questa civiltà che si inizia a trovare traccia dei primi sistemi di scrittura su tavolette d'argilla: i pittogrammi.
+
+La scrittura nasce quindi dalla pittura e dal disegno e segna il passaggio dalla protostoria, un periodo temporale successivo alla preistoria, alla storia. I graffiti ed i pittogrammi sono catalogati come scrittura pittografica, una forma di comunicazione immediata e comprensibile da tutti poiché basata sull'interpretazione delle immagini riportate. Ovviamente non esistevano regole grammaticali e non era possibile esprimere concetti astratti.
+
+Col tempo i pittogrammi sono stati semplificati, molti disegni sono stati sostituiti con dei segni piú semplici da realizzare e sono stati inventati nuovi segni per esprimere idee, azioni e i concetti più astratti. Nasce quindi la scrittura ideografica, che lega al segno un'idea o un significato, nascono le prime regole grammaticali, che indicano la composizione delle frasi attraverso un soggetto, un'azione ed un oggetto.
+
+La scrittura idrografica è una forma di comunicazione molto meno intuitiva, è necessario conoscere quale idea è legata ad uno specifico segno, per cui la scrittura idrografica inizia ad essere praticata solo da sacerdoti e da chi amministrava la città. Solo gli scribi sono a conoscenza del significato celato dietro questi segni, per impararlo nascono le scuole in cui gli scribi si esercitavano alla scrittura, con una tavoletta d'argilla ed un cuneo detto stilo, da cui il nome della scrittura cuneiforme.
+
+Furono i fenici a dare un valore fonetico poi ai segni, inventando l'alfabeto fonetico, composto da 22 segni ad ognuno dei quali corrispondeva poi un suono di' una consonante. L'introduzione delle vocali è dovuta ai Greci che adottarono l'alfabeto fenicio aggiunsero i segni delle vocali, e contribuirono alla diffusione dell'alfabeto greco che poi si è evoluto nell'alfabeto latino.
+
+## Il calcolo
+
+La necessità di contare e di tenere traccia dei propri beni e dei propri possedimenti porta l'uomo a sviluppare il sistema primordiale del conteggio basato sui ciottoli, ogni sassolino rappresentava un elemento da contare, quindi ad esempio a sei sassolini corrispondevano sei capi di bestiame.
+
+La parola calcolare deriva dal greco calculus e significa proprio "sassolino". In Mesopotamia questi sassolini erano realizzati con l'argilla e col tempo iniziarono ad avere forme diverse a seconda del numero che si voleva rappresentare. Con la scrittura, anche i segni che indicavano i numeri erano diversi a seconda della quantità che si voleva riportare.
+
+Furono i cinesi ad assegnare una quantità diversa allo stesso segno, inventando il sistema numerico posizionale. Dato che utilizzarono 10 segni diversi, si trattava di un sistema numerico decimale Purtroppo utilizzarono questo sistema solo nei calcoli, e non nella scrittura corrente. Inoltre non avevano il segno per indicare lo zero, quindi nella scrittura dovettero inventare nuovi segni per decine centinaia e migliaia.
+
+Furono gli indiani che introdussero lo zero nel sistema di conteggio, dandogli un vero significato matematico a seconda anche della posizione. Gli indiani introdussero anche il concetto di "debito" attraverso i numeri negativi.
+
+Il sistema numerico posizionale ed Il significato matematico attribuito allo zero arrivarono parecchi secoli dopo in occidente, poiché il sistema numerico Romano utilizzava ancora segni diversi per indicare grandezze diverse volte.
+
+## Scrittura automatica
+
+Nei primi secoli dopo Cristo in Cina si sviluppò la stampa xilografica, che consentiva di produrre centinaia di copie di un documento. Questa tecnica utilizzava delle matrici di legno sulle quali si intagliavano i testi e i disegni da produrre in serie, queste matrici venivano poi inchiostrate e quindi pressate sui fogli di carta come fossero stampini. In Europa sia la carta sia la tecnica xilografica arrivarono molti secoli dopo.
+
+Dopo l'anno mille in Cina si sviluppò la tecnica di stampa a caratteri mobili, che in maniera simile alla xilografia, permetteva di produrre centinaia di copie di un documento. L'innovazione era dovuta al fatto che la matrice era composta da più righe contenenti i singoli caratteri delle frasi da stampare. Questa tecnica consentiva di riutilizzare i singoli caratteri e migliorò con la realizzazione dei caratteri che prima in porcellana, poi in legno, poi in bronzo e in acciaio.
+
+Nel 1460 fu Gutenberg in Europa ad inventare la stessa stampa a caratteri mobili con caratteristiche in metallo.
+
+Nel 1800 il tacheografo e il cembalo scrivano (che prendeva spunto dal cembalo musicale, una sorta di antenato del pianoforte) furono i precursori delle macchina da scrivere. Entrambe le invenzioni erano delle evoluzioni della stampa a caratteri mobili e permettevano di stampare su un foglio di carta i singoli caratteri battuti attraverso dei tasti.
 
 ## Storia dei calcolatori
 
