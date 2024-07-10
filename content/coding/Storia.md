@@ -38,6 +38,11 @@ Col tempo i pittogrammi sono stati semplificati, molti disegni sono stati sostit
 
 La scrittura idrografica è una forma di comunicazione molto meno intuitiva, è necessario conoscere quale idea è legata ad uno specifico segno, per cui la scrittura idrografica inizia ad essere praticata solo da sacerdoti e da chi amministrava la città. Solo gli scribi sono a conoscenza del significato celato dietro questi segni, per impararlo nascono le scuole in cui gli scribi si esercitavano alla scrittura, con una tavoletta d'argilla ed un cuneo detto stilo, da cui il nome della scrittura cuneiforme.
 
+
+Gli antichi egizi utilizzarono la foglia di papiro ed il calamo, essenzialmente un giunco oppure un bambù con una fessura su una punta stretta, che veniva intinto nell’inchiostro per poter realizzare i loro documenti, all’epoca erano scritti con i famosi segni geroglifici.
+
+Il calamo fu sostituito o affiancato dalla penna d’oca, mentre il papiro e poi le pergamene o le pelli d’animale furono sostituite dalla carta, all’epoca molto scadente e degradabile.
+
 Furono i fenici a dare un valore fonetico poi ai segni, inventando l'alfabeto fonetico, composto da 22 segni ad ognuno dei quali corrispondeva poi un suono di' una consonante. L'introduzione delle vocali è dovuta ai Greci che adottarono l'alfabeto fenicio aggiunsero i segni delle vocali, e contribuirono alla diffusione dell'alfabeto greco che poi si è evoluto nell'alfabeto latino.
 
 ## Il calcolo
@@ -59,6 +64,8 @@ Nei primi secoli dopo Cristo in Cina si sviluppò la stampa xilografica, che con
 Dopo l'anno mille in Cina si sviluppò la tecnica di stampa a caratteri mobili, che in maniera simile alla xilografia, permetteva di produrre centinaia di copie di un documento. L'innovazione era dovuta al fatto che la matrice era composta da più righe contenenti i singoli caratteri delle frasi da stampare. Questa tecnica consentiva di riutilizzare i singoli caratteri e migliorò con la realizzazione dei caratteri che prima in porcellana, poi in legno, poi in bronzo e in acciaio.
 
 Nel 1460 fu Gutenberg in Europa ad inventare la stessa stampa a caratteri mobili con caratteristiche in metallo.
+
+Nel tentativo di creare una penna che non macchi, ci sono state diverse innovazioni che hanno sostituito la piuma d'oca con la penna stilografica prima e poi la penna a sfera odierna.
 
 Nel 1800 il tacheografo e il cembalo scrivano (che prendeva spunto dal cembalo musicale, una sorta di antenato del pianoforte) furono i precursori delle macchina da scrivere. Entrambe le invenzioni erano delle evoluzioni della stampa a caratteri mobili e permettevano di stampare su un foglio di carta i singoli caratteri battuti attraverso dei tasti.
 
