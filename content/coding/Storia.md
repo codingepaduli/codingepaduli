@@ -38,7 +38,6 @@ Col tempo i pittogrammi sono stati semplificati, molti disegni sono stati sostit
 
 La scrittura idrografica è una forma di comunicazione molto meno intuitiva, è necessario conoscere quale idea è legata ad uno specifico segno, per cui la scrittura idrografica inizia ad essere praticata solo da sacerdoti e da chi amministrava la città. Solo gli scribi sono a conoscenza del significato celato dietro questi segni, per impararlo nascono le scuole in cui gli scribi si esercitavano alla scrittura, con una tavoletta d'argilla ed un cuneo detto stilo, da cui il nome della scrittura cuneiforme.
 
-
 Gli antichi egizi utilizzarono la foglia di papiro ed il calamo, essenzialmente un giunco oppure un bambù con una fessura su una punta stretta, che veniva intinto nell’inchiostro per poter realizzare i loro documenti, all’epoca erano scritti con i famosi segni geroglifici.
 
 Il calamo fu sostituito o affiancato dalla penna d’oca, mentre il papiro e poi le pergamene o le pelli d’animale furono sostituite dalla carta, all’epoca molto scadente e degradabile.
@@ -130,3 +129,21 @@ Le pagine web originariamente erano scritte nel solo linguaggio HTML (versione 1
 - Il linguaggio **HTML** (HyperText Markup Language), attualmente in versione 5, definisce la struttura delle pagine web, come titoli, liste e tabelle, ma non indica la formattazione, cioè non indica gli stili del testo, i colori e gli effetti grafici.
 - Il linguaggio **CSS** (Cascading Style Sheets) definisce la formattazione dei documenti HTML, ovvero stili, colori, animazioni di ogni elemento del documento HTML.
 - Il linguaggio **JavaScript** è usato per poter elaborare le informazioni sul client e per poter interagire con l'utente (ad esempio nei videogiochi online). E' un linguaggio di programmazione, a differenza di linguaggi HTML e CSS.
+
+## Informazione genetica
+
+Nel 1860 viene scoperto l'acido desossiribonucleico e abbreviato col termine DNA, una molecola che contiene i segreti della vita e della sua riproduzione, fotografata per la prima volta nel 1950 da Rosalind Franklin.
+
+Sono la microbiologa francese Emmanuelle Charpentier e alla biochimica statunitense Jennifer Doudna, premi Nobel 2020 per la chimica, a scoprire il metodo CRISPR/Cas9 per l’editing genetico, ovvero per individuare all'interno delle cellule una parte del DNA e sostituirla con una nuova sequenza.
+
+## Sviluppi futuri
+
+L'uomo oggi si trova a riavvolgere il cerchio e sperimentare in prima persona la creazione di macchinari sempre più simili a una forma di vita vera e propria.
+
+Nella robotica il reperimento delle informazioni dell'ambiente circostante e la reazione alla corretta elaborazione permettono la guida autonoma di auto e droni, le case domotiche, le aziende di produzione senza operai.
+
+L'intelligenza artificiale permette di realizzare sistemi di analisi e di produzione non supervisionata.
+
+L'editing genetico permette di progettare organismi geneticamente modificati con le caratteristiche desiderate.
+
+È difficile prevedere quale sarà il futuro, la padronanza di queste tecnologie che alla base hanno l'elaborazione e la comunicazione delle informazioni Come nei film di fantascienza forse della vita a dei biorobot, i famosi cyborg programmati in laboratorio non più realizzati in metallo bensí in carne ed ossa.
