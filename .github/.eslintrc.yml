@@ -48,4 +48,5 @@ globals:
   drawMathAxes: true
   drawGrid: true
   square: true
+  THREE: true
   
