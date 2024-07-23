@@ -14,15 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v2
     - name: Installing node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v2
       with:
-        node-version: 20
+        node-version: 16
     - name: Creating the NPM project
       run: npm init --yes # (project.json created extracting info from current dir)
     - name: Install ESLint (and plugins) as project dependency
-      run: npm install --save-dev eslint @eslint/js eslint-plugin-p5js eslint-plugin-jsdoc
+      run: npm install --save-dev eslint eslint-plugin-p5js eslint-plugin-jsdoc
     - name: Running ESLint
       run: npx eslint . --config .github/.eslintrc.yml --ext .js --ignore-pattern 'static/static/js' --ignore-pattern 'static/static/coding/web/threejs-r124/lib/'
       # --output-file style\wrongstyle.html --format html
