@@ -17,6 +17,14 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://unicode-table.com/en/blocks/egyptian-hieroglyphs/"
         description: "Unicode - Egyptian Hieroglyphs"
+    -   title: "Proto-cuneiform script"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://en.wikipedia.org/wiki/Proto-cuneiform"
+        description: "scrittura Proto cuneiforme"
+    -   title: "Unicode - Cuneiform Numbers and Punctuation"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.unicode.org/charts/PDF/U12400.pdf"
+        description: "Unicode - Egyptian Hieroglyphs"
 ---
 
 # Sistemi numerici
@@ -49,6 +57,36 @@ Un **sistema di numerazione** è un modo di esprimere e rappresentare i numeri a
 Un sistema numerico **additivo** è un sistema numerico nel quale non importa l'ordine con cui sono scritte le cifre numeriche, ogni cifra (simbolo) esprime una determinata quantità ed è addizionando le quantità espresse da tutte le cifre (tutti i simboli) ad indicare la quantità complessiva. La quantità espressa è la stessa, indipendentemente dall'ordine in cui si trovavano i simboli.
 
 Lo svantaggio di questi sistemi numerici additivi è che lo svolgimento delle operazioni matematiche come la moltiplicazione o la divisione non è immediato, ma è abbastanza lungo e macchinoso.
+
+### Il sistema numerico additivo sumero
+
+La scrittura proto-cuneiforme è un sistema di scrittura nato in mesopotamia che poi si è evoluto nella scrittura cuneiforme.
+
+Si tratta di un sistema numerico con base mista, sia base dieci che base sei.
+
+Le cifre del sistema numerico sumero in scrittura proto-cuneiforme sono le seguenti:
+
+![proto](https://upload.wikimedia.org/wikipedia/commons/1/1d/Proto-cuneiform_sexagesimal_type_Sa.svg)
+
+<!-- TODO wait Unicode accepts Proto-cuneiform script and replace signs -->
+
+Con la scrittura cuneiforme si utilizzano simboli a forma di cuneo, tipicamente impressi su tavole di argilla con lo "stilus" (lo stilo), uno strumento appuntito realizzato in canna o legno.
+
+Il sistema numerico, con la scrittura cuneiforme, si evolve rappresentando le quantità come di seguito:
+
+| Simbolo     | Valore     | Descrizione     |
+|-------------|------------|-----------------|
+| &#x12079;   | 1          | Chiodo          |
+| &#x1230B;   | 10         | Punzone         |
+| &#x12415;   | 60         | Ges             |
+| &#x1241E;   | 600        | Totalità        |
+| &#x1212D;   | 3600       | Grande Totalità |
+| &#x1242C;   | 36000      | Grande Totalità |
+| &#x12131;   | 216000     | Grande Totalità |
+
+<!--  &#x12132;    36000 * 36000 ?  -->
+
+I numeri sumeri sono rappresentati come successione delle cifre sopra indicate. Da notare come non esisteva un simbolo per rappresentare lo zero.
 
 ### Il sistema numerico additivo egizio
 
@@ -98,9 +136,7 @@ La quantità 3.220.005 è indicata dal numero &#x13068; &#x13068; &#x13068; &#x1
 
 Sommate le quantità indicate da ogni cifra, si ottiene che il numero rappresenta la quantità 3.220.005.
 
-### Sistema numerico additivo Romano
-
-### Il sistema numerico additivo sumero
+### Sistema numerico additivo romano
 
 ## Sistemi numerici posizionali
 
