@@ -25,6 +25,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.unicode.org/charts/PDF/U12400.pdf"
         description: "Unicode - Egyptian Hieroglyphs"
+    -   title: "A descriptive grammar of Sumerian"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.unicode.org/charts/PDF/U12400.pdf"
+        description: "Leiden University - Jagersma Bram Doctoral Thesis - A descriptive grammar of Sumerian"
 ---
 
 # Sistemi numerici
@@ -136,10 +140,88 @@ La quantità 3.220.005 è indicata dal numero &#x13068; &#x13068; &#x13068; &#x1
 
 Sommate le quantità indicate da ogni cifra, si ottiene che il numero rappresenta la quantità 3.220.005.
 
-### Sistema numerico additivo romano
-
 ## Sistemi numerici posizionali
 
-I sistemi numerici posizionali nacquero già nella civiltà cinese che poi li diffuse nelle altre civiltà asiatiche.
+I sistemi numerici posizionali nacquero già nella civiltà babilonese, ma furono dimenticati per poi essere reinventati in quella cinese che li diffuse nelle altre civiltà asiatiche.
 
-In un sistema numerico posizionale la posizione di ogni simbolo all'interno del numero è importante perché modifica la quantità espressa da ogni simbolo, attribuendo un peso maggiore o minore a seconda della posizione.
+In un sistema numerico **posizionale** la posizione di ogni cifra numerica nella rappresentazione del numero è importante perché modifica la quantità espressa dalla cifra stessa, attribuendo un peso maggiore o minore a seconda della posizione.
+
+Per convenzione le posizioni delle cifre numeriche sono indicate da sinistra verso destra e contate a partire dalla posizione 0 a seguire. Ad esempio, nel nostro sistema numerico decimale le cifre del numero 21035 hanno le seguenti posizioni:
+
+| 4 | 3 | 2 | 1 | 0 | posizione |
+|---|---|---|---|---|-----------|
+| 2 | 1 | 0 | 3 | 5 | cifra     |
+
+La quantità espressa da ogni posizione è la seguente:
+
+| 4         | 3         | 2         | 1         | 0         | posizione |
+|-----------|-----------|-----------|-----------|-----------|-----------|
+| 2         | 1         | 0         | 3         | 5         | cifra     |
+| 2 * 10^4^ | 1 * 10^3^ | 0 * 10^2^ | 3 * 10^1^ | 5 * 10^0^ | quantità  |
+
+Come si può notare, la quantità espressa dalla cifra 3 non è tre, ma è tremila poiché la posizione ha il ruolo di modificare la quantità espressa.
+
+### Sistema numerico posizionale babilonese
+
+Il sistema numerico posizionale babilonese è stato in parte ereditato dai sumeri e dalla scrittura cuneiforme ed è stato sviluppato ulteriormente con idee innovative per l'epoca.
+
+Si trattava di un sistema numerico che poggiava le basi su un secondo sistema numerico, un sistema additivo che permetteva di contare fino a cinquantanove. Le cifre utilizzate per rappresentare i cinquantanove numeri sono le seguenti:
+
+| Simbolo     | Valore     | Descrizione      |
+|-------------|------------|------------------|
+| &#x12470;   | 1          | chiodo verticale |
+| &#x1230B;   | 10         | un punzone       |
+
+Da notare come non esisteva un simbolo per rappresentare lo zero (solo verso il finire della loro società ne fu adottato uno) e che i due segni sono gli stessi della scrittura cuneiforme dei sumeri, combinati solo fino al valore cinquantanove.
+
+Il numero 5 era espresso da cinque cifre numeriche rappresentanti l'unità, quindi cinque chiodi verticali disegnati in linea o sovrapposti:
+
+5 = &#x12470;&#x12470;&#x12470;&#x12470;&#x12470; = &#x1240A;
+
+Il numero 9 era espresso da nove cifre numeriche rappresentanti l'unità, quindi nove chiodi verticali disegnati in linea o sovrapposti:
+
+9 = &#x12470;&#x12470;&#x12470;&#x12470;&#x12470;&#x12470;&#x12470;&#x12470;&#x12470; = &#x12446;
+
+Il numero 21 era espresso da una cifra numerica rappresentante l'unità e da due cifre numeriche rappresentanti le decine, quindi due punzoni e un chiodo. Essendo questa rappresentazione additiva, non importava la posizione dei simboli:
+
+21 = &#x12399;&#x12470; = &#x12470;&#x12399;
+
+Il numero 57 era espresso da cinque cifre numeriche rappresentanti le decine e sette cifre numeriche rappresentanti le unità, quindi cinque punzoni e sette chiodi disegnati sovrapposti o in linea:
+
+57 = &#x1230B;&#x1230B;&#x1230B;&#x1230B;&#x1230B; &#x12470;&#x12470;&#x12470;&#x12470; &#x12470;&#x12470;&#x12470; = &#x12410;&#x12442;
+
+Dal numero sessanta in poi si utilizzava un sistema posizionale le cui le cifre sono rappresentate con il sistema additivo appena citato, ma nel quale la quantità espressa dalla cifra era modificata a seconda della posizione della cifra stessa.
+
+Il numero 61 veniva espresso con le cifre dell'uno e dell'uno, questa volta l'ordine di posizione da sinistra a destra era importante perché modificava la quantità espressa dalla cifra numerica.
+
+| 1         | 0         | posizione |
+|-----------|-----------|-----------|
+| &#x12470; | &#x12470; | cifra     |
+
+La quantità espressa da ogni posizione è la seguente:
+
+| 1         | 0         | posizione |
+|-----------|-----------|-----------|
+| 1         | 1         | cifra     |
+| 1 * 60^1^ | 1 * 60^0^ | quantità  |
+
+&#x12470;&#x12470; = 1 * 60^1^ + 1 * 60^0^ = 60 + 1 = 61
+
+Il numero 71 veniva espresso con le cifre dell'uno e dell'undici, in ordine di posizione da sinistra a destra.
+
+| 1         | 0                  | posizione |
+|-----------|--------------------|-----------|
+| &#x12470; | &#x1230B;&#x12470; | cifra     |
+
+La quantità espressa da ogni posizione è la seguente:
+
+| 1         | 0          | posizione |
+|-----------|------------|-----------|
+| 1         | 11         | cifra     |
+| 1 * 60^1^ | 11 * 60^0^ | quantità  |
+
+&#x12470; &#x1230B;&#x12470; = 1 &#x22C5; 60^1^ + 11 &#x22C5; 60^0^ = 60 + 11 = 71
+
+La rappresentazione può sembrare errata a prima vista, ma questo sistema numerico permette con una sola cifra numerica di contare fino a sessanta, con due cifre numeriche di contare fino a 3600.
+
+Il concetto alla base è quello dell'arrotolamento, se con una sola cifra numerica si può contare fino a cinquantanove, per contare dal sessanta in poi devo aggiungere una seconda cifra numerica.
