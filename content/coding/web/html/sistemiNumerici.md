@@ -140,17 +140,84 @@ La quantità 3.220.005 è indicata dal numero &#x13068; &#x13068; &#x13068; &#x1
 
 Sommate le quantità indicate da ogni cifra, si ottiene che il numero rappresenta la quantità 3.220.005.
 
+### Il sistema numerico additivo romano
+
+Il sistema numerico romano è un sistema numerico additivo, la posizione di una cifra all'interno del numero non conta, una cifra ha sempre lo stesso valore ovunque sia posizionata.
+
+| Simbolo | Valore | Descrizione |
+|---------|--------|-------------|
+| I       | 1      | Uno         |
+| V       | 5      | Cinque      |
+| X       | 10     | Dieci       |
+| L       | 50     | Cinquanta   |
+| C       | 100    | Cento       |
+| D       | 500    | Cinquecento |
+| M       | 1000   | Mille       |
+
+I numeri romani sono rappresentati come successione delle cifre sopra indicate. Da notare come non esisteva un simbolo per rappresentare lo zero.
+
+Una regola di composizione dei numeri romana indicava che i simboli I, X, C e M possono essere ripetuti al massimo tre volte, mentre i simboli V, L e D possono essere presenti solo una volta.
+
+La quantità 126 nel sistema numerico romano è indicata dal numero CXXVI, rappresentato come una successione composta da:
+
+- la cifra C indicante un centinaio;
+- due cifre X indicanti le decine;
+- la cifra V indicante una cinquina;
+- la cifra I indicante un'unità;
+
+Sommate le quantità indicate da ogni cifra, si ottiene che il numero rappresenta la quantità 126.
+
+La quantità 3585 nel sistema numerico romano è indicata dal numero MMMDLXXXV, rappresentato come una successione composta da:
+
+- tre cifre M indicante le migliaia;
+- una cifra D indicante cinquecento;
+- una cifra L indicante cinquanta;
+- tre cifre X indicanti le decine;
+- una cifra V indicante una cinquina;
+
+Sommate le quantità indicate da ogni cifra, si ottiene che il numero rappresenta la quantità 3585.
+
+Una regola particolare del sistema romano è la regola "sottrattiva": una cifra seguita da un'altra con valore superiore denota una quantità data dalla differenza tra le due. Solo I, X e C possono essere usate in senso sottrattivo.
+
+Alcuni esempi di questa regola sottrattiva sono:
+
+- 4 = IV;
+- 9 = IX;
+- 40 = XL;
+- 90 = XC;
+- 400 = CD;
+- 900 = CM.
+
+Nel sistema numerico romano, il numero 954 viene rappresentato come CMLIV, rappresentato come una successione composta da:
+
+- le cifre CM indicanti, secondo il principio sottrattivo, un migliaio meno un centinaio, cioè novecento;
+- una cifra L indicante cinquanta;
+- le cifre IV indicanti, secondo il principio sottrattivo, una cinquina meno un'unità, cioè quattro;
+
+Sommate le quantità indicate dalle cifre indicate, si ottiene che il numero rappresenta la quantità 954.
+
+Il numero 2494 viene rappresentato come MMCDXCIV, rappresentato come una successione composta da:
+
+- le cifre MM indicanti le migliaia;
+- le cifre CD indicanti, secondo il principio sottrattivo, cinquecento meno cento, cioè quattrocento;
+- una cifra XC indicanti, secondo il principio sottrattivo,  cento meno dieci, cioè novanta;
+- le cifre IV indicanti, secondo il principio sottrattivo, una cinquina meno un'unità, cioè quattro;
+
+Sommate le quantità indicate dalle cifre indicate, si ottiene che il numero rappresenta la quantità 2494.
+
 ## Sistemi numerici posizionali
 
-I sistemi numerici posizionali nacquero già nella civiltà babilonese, ma furono dimenticati per poi essere reinventati in quella cinese che li diffuse nelle altre civiltà asiatiche.
+I sistemi numerici posizionali nacquero già nella civiltà babilonese, ma furono dimenticati per poi essere reinventati in quella cinese che li diffuse nelle altre civiltà asiatiche. Furono poi gli indiani a creare l'odierno sistema numerico che oggi conosciamo, introducendo il concetto innovativo di zero numerico.
 
 In un sistema numerico **posizionale** la posizione di ogni cifra numerica nella rappresentazione del numero è importante perché modifica la quantità espressa dalla cifra stessa, attribuendo un peso maggiore o minore a seconda della posizione.
 
-Per convenzione le posizioni delle cifre numeriche sono indicate da sinistra verso destra e contate a partire dalla posizione 0 a seguire. Ad esempio, nel nostro sistema numerico decimale le cifre del numero 21035 hanno le seguenti posizioni:
+Per convenzione le posizioni delle cifre numeriche sono indicate da sinistra verso destra e contate a partire dalla posizione zero. Ad esempio, nel nostro sistema numerico decimale le cifre del numero 21035 hanno le seguenti posizioni:
 
 | 4 | 3 | 2 | 1 | 0 | posizione |
 |---|---|---|---|---|-----------|
 | 2 | 1 | 0 | 3 | 5 | cifra     |
+
+Ogni cifra occupa una posizione all'interno del numero.
 
 La quantità espressa da ogni posizione è la seguente:
 
