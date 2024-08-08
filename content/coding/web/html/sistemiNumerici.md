@@ -211,22 +211,58 @@ I sistemi numerici posizionali nacquero già nella civiltà babilonese, ma furon
 
 In un sistema numerico **posizionale** la posizione di ogni cifra numerica nella rappresentazione del numero è importante perché modifica la quantità espressa dalla cifra stessa, attribuendo un peso maggiore o minore a seconda della posizione.
 
+La **base** di un sistema numerico posizionale è l'insieme dei simboli (cifre numeriche) utilizzati per rappresentare i numeri. Ad esempio nel sistema numerico decimale che utilizziamo, la base è composta dall'insieme di numeri da 0 (zero) a 9 (nove). Nel sistema numerico binario, la base è composta dai soli numeri 0 (zero) e 1 (uno).
+
+Ogni numero è quindi rappresentato da una sequenza di cifre numeriche scelte tra quelle presenti nella base, ad esempio il numero 3413 espresso in un sistema numerico posizionale decimale è rappresentato da una sequenza di cifre 3, 4, 1 e 3, ognuna appartenente all'insieme dei simboli base.
+
+In un sistema numerico **posizionale**, il concetto cardine alla base del conteggio è quello dell'arrotolamento: nella rappresentazione di un numero, quando in una determinata posizione si arriva alla cifra che indica la quantità massima, per rappresentare il numero successivo in quella stessa posizione si ricomincia dalla cifra che indica la quantità minima, ma nella posizione successiva si incrementa la cifra.
+
+Questo concetto di **arrotolamento** nel sistema numerico decimale è molto intuitivo: quando si raggiunge il 9 (la cifra che indica la quantità massima), per rappresentare il numero successivo in quella stessa posizione si ricomincia dalla cifra che indica la quantità minima (lo 0) ma nella posizione successiva si incrementa la cifra (da zero si incrementa ad 1). Il numero successivo è il 10.
+
+Allo stesso modo, quando si raggiunge il 19, per rappresentare il numero successivo arrotolo la posizione del 9, che torna a 0, e incremento la cifra nella posizione successiva, quindi (da 1 si incrementa a 2). Il numero successivo è il 20.
+
+## Sistema numerico decimale posizionale
+
+La **base** del nostro sistema numerico posizionale decimale è composta dall'insieme di numeri da 0 (zero) a 9 (nove).
+
+Questo sistema numerico fu inventato dagli indiani ma solo molti secoli dopo si diffuse in Europa, ma le cifre originarie erano leggermente differenti:
+
+| Numero | Simbolo | Codice Unicode   |
+|--------|---------|-----------------|
+| 0      | ०       | U+0966          |
+| 1      | १       | U+0967          |
+| 2      | २       | U+0968          |
+| 3      | ३       | U+0969          |
+| 4      | ४       | U+096A          |
+| 5      | ५       | U+096B          |
+| 6      | ६       | U+096C          |
+| 7      | ७       | U+096D          |
+| 8      | ८       | U+096E          |
+| 9      | ९       | U+096F          |
+
+Come si può notare, esiste un simbolo per lo zero, ad indicare nessuna quantità.
+
 Per convenzione le posizioni delle cifre numeriche sono indicate da sinistra verso destra e contate a partire dalla posizione zero. Ad esempio, nel nostro sistema numerico decimale le cifre del numero 21035 hanno le seguenti posizioni:
 
 | 4 | 3 | 2 | 1 | 0 | posizione |
 |---|---|---|---|---|-----------|
 | 2 | 1 | 0 | 3 | 5 | cifra     |
 
-Ogni cifra occupa una posizione all'interno del numero.
+Ogni cifra occupa una posizione all'interno del numero. Ogni posizione esprime la cifra numerica moltiplicata per una potenza del dieci, potenza che viene indicata dalla posizione stessa:
 
-La quantità espressa da ogni posizione è la seguente:
+- in posizione zero, la cifra numerica è moltiplicata per la potenza 10^0^;
+- in posizione uno, la cifra numerica è moltiplicata per la potenza 10^1^;
+- in posizione due, la cifra numerica è moltiplicata per la potenza 10^2^;
+- e cosi via per le altre posizioni.
+
+Ad esempio, nel sistema numerico decimale, ogni cifra del numero 21035 esprime la quantità indicata nella seguente tabella:
 
 | 4         | 3         | 2         | 1         | 0         | posizione |
 |-----------|-----------|-----------|-----------|-----------|-----------|
 | 2         | 1         | 0         | 3         | 5         | cifra     |
-| 2 * 10^4^ | 1 * 10^3^ | 0 * 10^2^ | 3 * 10^1^ | 5 * 10^0^ | quantità  |
+| 2 ⋅ 10^4^ | 1 ⋅ 10^3^ | 0 ⋅ 10^2^ | 3 ⋅ 10^1^ | 5 ⋅ 10^0^ | quantità  |
 
-Come si può notare, la quantità espressa dalla cifra 3 non è tre, ma è tremila poiché la posizione ha il ruolo di modificare la quantità espressa.
+Come si può notare, la quantità espressa dalla cifra 3 non è tre, ma è tremila poiché la posizione ha il ruolo di modificare la quantità espressa, in posizione tre la cifra numerica è moltiplicata per la potenza 10^3^;
 
 ### Sistema numerico posizionale babilonese
 
@@ -270,9 +306,9 @@ La quantità espressa da ogni posizione è la seguente:
 | 1         | 0         | posizione |
 |-----------|-----------|-----------|
 | 1         | 1         | cifra     |
-| 1 * 60^1^ | 1 * 60^0^ | quantità  |
+| 1 ⋅ 60^1^ | 1 ⋅ 60^0^ | quantità  |
 
-&#x12470;&#x12470; = 1 * 60^1^ + 1 * 60^0^ = 60 + 1 = 61
+&#x12470;&#x12470; = 1 ⋅ 60^1^ + 1 ⋅ 60^0^ = 60 + 1 = 61
 
 Il numero 71 veniva espresso con le cifre dell'uno e dell'undici, in ordine di posizione da sinistra a destra.
 
@@ -285,9 +321,9 @@ La quantità espressa da ogni posizione è la seguente:
 | 1         | 0          | posizione |
 |-----------|------------|-----------|
 | 1         | 11         | cifra     |
-| 1 * 60^1^ | 11 * 60^0^ | quantità  |
+| 1 ⋅ 60^1^ | 11 ⋅ 60^0^ | quantità  |
 
-&#x12470; &#x1230B;&#x12470; = 1 &#x22C5; 60^1^ + 11 &#x22C5; 60^0^ = 60 + 11 = 71
+&#x12470; &#x1230B;&#x12470; = 1 ⋅ 60^1^ + 11 ⋅ 60^0^ = 60 + 11 = 71
 
 La rappresentazione può sembrare errata a prima vista, ma questo sistema numerico permette con una sola cifra numerica di contare fino a sessanta, con due cifre numeriche di contare fino a 3600.
 
