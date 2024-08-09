@@ -37,6 +37,15 @@ La necessita di contare nasce probabilmente tra il Paleolitico e il Neolitico co
 
 Di conseguenza i sistemi numerici nascono con l'esigenza di tenere traccia dei beni posseduti o scambiati.
 
+Una **cifra numerica** è un simbolo (o un segno) utilizzato per rappresentare un valore all’interno di un sistema di numerazione. Differenti civiltà hanno sviluppato differenti sistemi numerici con differenti cifre numeriche. Nel nostro sistema numerico decimale, le cifre da 0 a 9 sono i segni fondamentali, nel sistema numerico romano le cifre numeriche erano le lettere I, V, X, L, C, D ed M, ognuna indicante una determinata quantità.
+
+Un **numero** è una sequenza di cifre numeriche utilizzata per esprimere una quantità, ad esempio:
+
+- 1034 nel sistema numerico decimale è rappresentato dalle cifre numeriche 1, 0, 3 e 4;
+- DCL nel sistema numerico romano è rappresentato dalle cifre numeriche D, C ed L ed esprime la quantità 450.
+
+Un **sistema di numerazione** è un modo di esprimere e rappresentare i numeri attraverso le cifre numeriche.
+
 ## Sistemi numerici additivi
 
 I primi metodi di conteggio erano basati sulla comparazione, il numero di beni ed il numero di sassolini (o di pietre d'argilla) dovevano corrispondere. Il singolo sassolino aveva il valore di un unità ed il numero complessivo di sassolini indicava il numero di merci o di beni scambiati o posseduti.
@@ -48,15 +57,6 @@ L'esigenza di contare numeri alti portò all'uso di elementi diversi che nel con
 Questo sistema per indicare le quantità era molto pratico e di facile utilizzo, man mano che si contavano i beni venivano aggiunte le pietre (grandi o piccole) nei contenitori o i segni sulle tavolette d'argilla o sui papiri, addizionando alla quantità precedentemente contata la nuova quantità. Dovendo scambiare una dozzina di pecore, queste venivano contate, per 10 pecore si disegnava una pietra grande, le 2 pecore rimanenti erano contate singolarmente ed indicate con due pietre piccole. Da notare che se si indicava prima una sola pecora con una pietra piccola, poi la decina di pecore con la pietra grande e poi l'ultima pecora con la pietra piccola, la quantità espressa era sempre una dozzina. Rappresentate su una tavoletta d'argilla o su un papiro, i segni "pietra piccola, pietra grande, pietra piccola" oppure i segni "pietra grande, pietra piccola, pietra piccola" indicavano la stessa quantità, non faceva distinzione l'ordine.
 
 Questo sistema di conteggio abbastanza elementare è stato sviluppato da diverse civiltà, ogni civiltà attribuiva una determinata quantità ad un determinato simbolo, portando alla nascita del concetto di cifra numerica.
-
-Una **cifra numerica** è un simbolo (o un segno) utilizzato per rappresentare un valore all’interno di un sistema di numerazione. Differenti civiltà hanno sviluppato differenti sistemi numerici con differenti cifre numeriche. Nel nostro sistema numerico decimale, le cifre da 0 a 9 sono i segni fondamentali, nel sistema numerico romano le cifre numeriche erano le lettere I, V, X, L, C, D ed M, ognuna indicante una determinata quantità.
-
-Un **numero** è un modo di esprimere una quantità utilizzando una sequenza di cifre numeriche, ad esempio:
-
-- 1034 nel sistema numerico decimale è rappresentato dalle cifre numeriche 1, 0, 3 e 4;
-- DCL nel sistema numerico romano è rappresentato dalle cifre numeriche D, C ed L.
-
-Un **sistema di numerazione** è un modo di esprimere e rappresentare i numeri attraverso le cifre numeriche.
 
 Un sistema numerico **additivo** è un sistema numerico nel quale non importa l'ordine con cui sono scritte le cifre numeriche, ogni cifra (simbolo) esprime una determinata quantità ed è addizionando le quantità espresse da tutte le cifre (tutti i simboli) ad indicare la quantità complessiva. La quantità espressa è la stessa, indipendentemente dall'ordine in cui si trovavano i simboli.
 
@@ -177,7 +177,7 @@ La quantità 3585 nel sistema numerico romano è indicata dal numero MMMDLXXXV, 
 
 Sommate le quantità indicate da ogni cifra, si ottiene che il numero rappresenta la quantità 3585.
 
-Una regola particolare del sistema romano è la regola "sottrattiva": una cifra seguita da un'altra con valore superiore denota una quantità data dalla differenza tra le due. Solo I, X e C possono essere usate in senso sottrattivo.
+Una regola particolare del sistema romano è la regola "sottrattiva": una cifra seguita da un'altra con valore superiore denota una quantità (positiva) data dalla differenza tra le due. Solo I, X e C possono essere usate in senso sottrattivo.
 
 Alcuni esempi di questa regola sottrattiva sono:
 
@@ -207,40 +207,46 @@ Sommate le quantità indicate dalle cifre indicate, si ottiene che il numero rap
 
 ## Sistemi numerici posizionali
 
-I sistemi numerici posizionali nacquero già nella civiltà babilonese, ma furono dimenticati per poi essere reinventati in quella cinese che li diffuse nelle altre civiltà asiatiche. Furono poi gli indiani a creare l'odierno sistema numerico che oggi conosciamo, introducendo il concetto innovativo di zero numerico.
+I sistemi numerici posizionali nacquero già nella civiltà babilonese, ma furono dimenticati per poi essere reinventati in quella cinese che li diffuse nelle altre civiltà asiatiche. Furono gli indiani a creare l'odierno sistema numerico che oggi conosciamo, introducendo il concetto innovativo di zero numerico.
 
 In un sistema numerico **posizionale** la posizione di ogni cifra numerica nella rappresentazione del numero è importante perché modifica la quantità espressa dalla cifra stessa, attribuendo un peso maggiore o minore a seconda della posizione.
 
-La **base** di un sistema numerico posizionale è l'insieme dei simboli (cifre numeriche) utilizzati per rappresentare i numeri. Ad esempio nel sistema numerico decimale che utilizziamo, la base è composta dall'insieme di numeri da 0 (zero) a 9 (nove). Nel sistema numerico binario, la base è composta dai soli numeri 0 (zero) e 1 (uno).
+La **base** di un sistema numerico posizionale è il numero di differenti simboli (cifre numeriche) utilizzati per rappresentare i numeri. Ad esempio nel sistema numerico decimale che utilizziamo, la base è 10 perché le differenti cifre numeriche sono 10, da 0 (zero) a 9 (nove). Nel sistema numerico binario la base è due perché sono 2 le differenti cifre numeriche: zero (0) ed uno (1)).
 
-Ogni numero è quindi rappresentato da una sequenza di cifre numeriche scelte tra quelle presenti nella base, ad esempio il numero 3413 espresso in un sistema numerico posizionale decimale è rappresentato da una sequenza di cifre 3, 4, 1 e 3, ognuna appartenente all'insieme dei simboli base.
+Ogni numero è quindi rappresentato da una sequenza di cifre numeriche scelte tra quelle presenti nell'insieme dei simboli base, ad esempio il numero 3413 espresso in un sistema numerico posizionale decimale è rappresentato da una sequenza di cifre 3, 4, 1 e 3, ognuna appartenente all'insieme dei simboli base.
 
 In un sistema numerico **posizionale**, il concetto cardine alla base del conteggio è quello dell'arrotolamento: nella rappresentazione di un numero, quando in una determinata posizione si arriva alla cifra che indica la quantità massima, per rappresentare il numero successivo in quella stessa posizione si ricomincia dalla cifra che indica la quantità minima, ma nella posizione successiva si incrementa la cifra.
 
-Questo concetto di **arrotolamento** nel sistema numerico decimale è molto intuitivo: quando si raggiunge il 9 (la cifra che indica la quantità massima), per rappresentare il numero successivo in quella stessa posizione si ricomincia dalla cifra che indica la quantità minima (lo 0) ma nella posizione successiva si incrementa la cifra (da zero si incrementa ad 1). Il numero successivo è il 10.
+Questo concetto di **arrotolamento** nel sistema numerico decimale è molto intuitivo: quando una posizione e tutte le posizioni precedenti raggiungono il valore 9 (la cifra che indica la quantità massima), il conteggio del numero successivo avviene azzerando la posizione interessata e tutte le posizioni precedenti (in cui si è raggiunto il 9) ed incrementando la cifra della posizione successiva.
 
-Allo stesso modo, quando si raggiunge il 19, per rappresentare il numero successivo arrotolo la posizione del 9, che torna a 0, e incremento la cifra nella posizione successiva, quindi (da 1 si incrementa a 2). Il numero successivo è il 20.
+Ad esempio, quando si raggiunge il numero 199, dato che in posizione 1 ed in posizione 0 si è raggiunto il valore 9, queste due posizioni vengono azzerate, passando da 9 a 0, e la posizione successiva viene incrementata, passando da 1 a 2. Il numero successivo a 199 è 200.
+
+Allo stesso modo, quando si raggiunge il 19, per rappresentare il numero successivo arrotolo la posizione del 9, che viene azzerata, e incremento la cifra nella posizione successiva, che da 1 diventa 2. Il numero successivo è il 20.
 
 ## Sistema numerico decimale posizionale
 
-La **base** del nostro sistema numerico posizionale decimale è composta dall'insieme di numeri da 0 (zero) a 9 (nove).
+Il sistema numerico posizionale decimale fu inventato dagli indiani e solo molti secoli dopo si diffuse in Europa. Le cifre originarie erano leggermente differenti:
 
-Questo sistema numerico fu inventato dagli indiani ma solo molti secoli dopo si diffuse in Europa, ma le cifre originarie erano leggermente differenti:
-
-| Numero | Simbolo | Codice Unicode   |
-|--------|---------|-----------------|
-| 0      | ०       | U+0966          |
-| 1      | १       | U+0967          |
-| 2      | २       | U+0968          |
-| 3      | ३       | U+0969          |
-| 4      | ४       | U+096A          |
-| 5      | ५       | U+096B          |
-| 6      | ६       | U+096C          |
-| 7      | ७       | U+096D          |
-| 8      | ८       | U+096E          |
-| 9      | ९       | U+096F          |
+| Simbolo attuale | Simbolo originario | Codice Unicode  |
+|-----------------|--------------------|-----------------|
+| 0               | ०                  | U+0966          |
+| 1               | १                  | U+0967          |
+| 2               | २                  | U+0968          |
+| 3               | ३                  | U+0969          |
+| 4               | ४                  | U+096A          |
+| 5               | ५                  | U+096B          |
+| 6               | ६                  | U+096C          |
+| 7               | ७                  | U+096D          |
+| 8               | ८                  | U+096E          |
+| 9               | ९                  | U+096F          |
 
 Come si può notare, esiste un simbolo per lo zero, ad indicare nessuna quantità.
+
+I simboli basilari del nostro sistema numerico posizionale decimale rappresentano graficamente i numeri da 0 (zero) a 9 (nove), nel tempo si sono evoluti graficamente nei simboli che conosciamo noi. Questi simboli sono le cifre decimali del sistema numerico posizionale decimale.
+
+La **base**, detta anche radice, del nostro sistema numerico posizionale decimale è **10**, poiché le cifre sono 10, quindi la base è decimale.
+
+Un numero espresso nel nostro sistema numerico posizionale decimale è una sequenza di cifre decimali.
 
 Per convenzione le posizioni delle cifre numeriche sono indicate da sinistra verso destra e contate a partire dalla posizione zero. Ad esempio, nel nostro sistema numerico decimale le cifre del numero 21035 hanno le seguenti posizioni:
 
@@ -255,6 +261,12 @@ Ogni cifra occupa una posizione all'interno del numero. Ogni posizione esprime l
 - in posizione due, la cifra numerica è moltiplicata per la potenza 10^2^;
 - e cosi via per le altre posizioni.
 
+Una cifra che nella rappresentazione numerica è posta in posizione i-esima esprime una quantità pari alla cifra moltiplicata per la potenza 10^i^. La somma delle cifre indica poi la quantità espressa dalla rappresentazione numerica.
+
+La cifra 7 posta in posizione 0 esprime una quantità pari a 7 ⋅ 10^0^, cioè sette unità. La stessa cifra 7 posta in posizione 2 esprime una quantità pari a 7 ⋅ 10^2^, cioè sette centinaia. In un sistema posizionale la posizione influisce sulla quantità espressa da ogni singola cifra.
+
+Questo sistema di rappresentare i numeri è detto polinomiale.
+
 Ad esempio, nel sistema numerico decimale, ogni cifra del numero 21035 esprime la quantità indicata nella seguente tabella:
 
 | 4         | 3         | 2         | 1         | 0         | posizione |
@@ -268,7 +280,7 @@ Come si può notare, la quantità espressa dalla cifra 3 non è tre, ma è tremi
 
 Il sistema numerico posizionale babilonese è stato in parte ereditato dai sumeri e dalla scrittura cuneiforme ed è stato sviluppato ulteriormente con idee innovative per l'epoca.
 
-Si trattava di un sistema numerico che poggiava le basi su un secondo sistema numerico, un sistema additivo che permetteva di contare fino a cinquantanove. Le cifre utilizzate per rappresentare i cinquantanove numeri sono le seguenti:
+Si trattava di un sistema numerico che poggiava le basi su un secondo sistema numerico, un sistema additivo che permetteva di contare fino a cinquantanove, e quindi la base è 60. Le cifre utilizzate per rappresentare i cinquantanove numeri sono le seguenti:
 
 | Simbolo     | Valore     | Descrizione      |
 |-------------|------------|------------------|
@@ -276,6 +288,8 @@ Si trattava di un sistema numerico che poggiava le basi su un secondo sistema nu
 | &#x1230B;   | 10         | un punzone       |
 
 Da notare come non esisteva un simbolo per rappresentare lo zero (solo verso il finire della loro società ne fu adottato uno) e che i due segni sono gli stessi della scrittura cuneiforme dei sumeri, combinati solo fino al valore cinquantanove.
+
+Dal numero sessanta in poi si utilizzava un sistema posizionale con base 60 in cui le cifre sono rappresentate con il sistema additivo appena citato
 
 Il numero 5 era espresso da cinque cifre numeriche rappresentanti l'unità, quindi cinque chiodi verticali disegnati in linea o sovrapposti:
 
@@ -292,6 +306,17 @@ Il numero 21 era espresso da una cifra numerica rappresentante l'unità e da due
 Il numero 57 era espresso da cinque cifre numeriche rappresentanti le decine e sette cifre numeriche rappresentanti le unità, quindi cinque punzoni e sette chiodi disegnati sovrapposti o in linea:
 
 57 = &#x1230B;&#x1230B;&#x1230B;&#x1230B;&#x1230B; &#x12470;&#x12470;&#x12470;&#x12470; &#x12470;&#x12470;&#x12470; = &#x12410;&#x12442;
+
+Questi 59 numeri (più lo zero mancante e poi aggiunto successivamente) forma l'insieme  basilare delle cifre numeriche sulle quali si poggiava il sistema numerico posizionale babilonese.
+
+Ogni cifra era rappresentabile con uno dei 59 numeri (60 con l'aggiunta dello zero).
+
+Il sistema è posizionale e ogni cifra occupa una posizione all'interno del numero. Ogni posizione esprime la cifra numerica moltiplicata per una potenza di **sessanta**, potenza che viene indicata dalla posizione stessa:
+
+- in posizione zero, la cifra numerica è moltiplicata per la potenza 60^0^;
+- in posizione uno, la cifra numerica è moltiplicata per la potenza 60^1^;
+- in posizione due, la cifra numerica è moltiplicata per la potenza 60^2^;
+- e cosi via per le altre posizioni.
 
 Dal numero sessanta in poi si utilizzava un sistema posizionale le cui le cifre sono rappresentate con il sistema additivo appena citato, ma nel quale la quantità espressa dalla cifra era modificata a seconda della posizione della cifra stessa.
 
