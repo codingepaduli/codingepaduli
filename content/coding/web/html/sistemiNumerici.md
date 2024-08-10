@@ -37,14 +37,21 @@ La necessita di contare nasce probabilmente tra il Paleolitico e il Neolitico co
 
 Di conseguenza i sistemi numerici nascono con l'esigenza di tenere traccia dei beni posseduti o scambiati.
 
-Una **cifra numerica** è un simbolo (o un segno) utilizzato per rappresentare un valore all’interno di un sistema di numerazione. Differenti civiltà hanno sviluppato differenti sistemi numerici con differenti cifre numeriche. Nel nostro sistema numerico decimale, le cifre da 0 a 9 sono i segni fondamentali, nel sistema numerico romano le cifre numeriche erano le lettere I, V, X, L, C, D ed M, ognuna indicante una determinata quantità.
+Un **sistema di numerazione** è un modo di esprimere le quantità rappresentandole attraverso un suo insieme di simboli, detti cifre numeriche, seguendo determinate regole di composizione.
 
-Un **numero** è una sequenza di cifre numeriche utilizzata per esprimere una quantità, ad esempio:
+Una **cifra numerica** è un simbolo (o un segno) utilizzato per rappresentare una quantità all’interno di un sistema di numerazione.
 
-- 1034 nel sistema numerico decimale è rappresentato dalle cifre numeriche 1, 0, 3 e 4;
-- DCL nel sistema numerico romano è rappresentato dalle cifre numeriche D, C ed L ed esprime la quantità 450.
+Ogni sistema numerico ha il suo insieme di cifre numeriche, ovvero il suo insieme di simboli utilizzati per rappresentare i numeri. Quando si parla di "rappresentazione numerica" si intende proprio il concetto di come si disegna il numero su un foglio di carta, con quali cifre numeriche lo si disegna.
 
-Un **sistema di numerazione** è un modo di esprimere e rappresentare i numeri attraverso le cifre numeriche.
+Differenti civiltà hanno sviluppato differenti sistemi numerici con differenti cifre numeriche. Nel nostro sistema numerico decimale le cifre numeriche sono i segni fondamentali da 0 a 9. Nel sistema numerico romano le cifre numeriche sono le lettere I, V, X, L, C, D ed M.
+
+Un **numero** è un'entità astratta che esprime una quantità. Ha una rappresentazione diversa a seconda del sistema numerico utilizzato.
+
+Nella tabella seguente si osserva il numero 10 rappresentato in differenti sistemi numerici:
+
+| Sistema indiano | Sistema romano | Sistema egizio | Sistema babilonese  |
+|-----------------|----------------|----------------|---------------------|
+|  10             | X              | &#x13386;      | &#x1230B;           |
 
 ## Sistemi numerici additivi
 
