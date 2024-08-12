@@ -268,6 +268,10 @@ Le quantità sono poi espresse in una forma detta **polinomiale**, perché espre
 
 n = c~p~ ⋅ b^p^ + c~p-1~ ⋅ b^p-1^ + ... + c~2~ ⋅ b^2^ + c~1~ ⋅ b^1^ + c~0~ ⋅ b^0^
 
+La **cifra meno significativa** (in inglese Least Significative Digit) di un numero intero è la cifra in posizione zero.
+
+La **cifra più significativa** (in inglese Most Significative Digit) di un numero intero è la cifra in posizione maggiore.
+
 Ad esempio, nel sistema numerico decimale, ogni cifra del numero 21035 esprime la quantità indicata nella seguente tabella:
 
 | posizione | 4         | 3         | 2         | 1         | 0         |
@@ -281,6 +285,8 @@ Tenuto conto che il numero 21035~10~ è composto da cinque cifre in cinque posiz
 
 n = c~4~ ⋅ 10^4^ + c~3~ ⋅ 10^3^ + c~2~ ⋅ 10^2^ + c~1~ ⋅ 10^1^ + c~0~ ⋅ 10^0^ = 2 ⋅ 10^4^ + 1 ⋅ 10^3^ + 0 ⋅ 10^2^ + 3 ⋅ 10^1^ + 5 ⋅ 10^0^ = 21035~10~
 
+Nel numero intero 21035~10~ la cifra meno significativa è la cifra in posizione zero, cioè la cifra cinque, mentre la cifra più significativa è la cifra in posizione maggiore, cioè due.
+
 Altro esempio, nel sistema numerico decimale, ogni cifra del numero 1300089 esprime la quantità indicata nella seguente tabella:
 
 | posizione | 6         | 5         | 4         | 3         | 2         | 1         | 0         |
@@ -293,6 +299,8 @@ Come si può notare, la quantità espressa dalla cifra 3 non è tre, ma è trece
 Tenuto conto che il numero 1300089~10~ è composto da sette cifre in sette posizioni partendo dalla posizione zero e che è rappresentato con base **b=10**, la quantità espressa in forma **polinomiale** è la seguente:
 
 n = c~6~ ⋅ 10^6^ + c~5~ ⋅ 10^5^ + c~4~ ⋅ 10^4^ + c~3~ ⋅ 10^3^ + c~2~ ⋅ 10^2^ + c~1~ ⋅ 10^1^ + c~0~ ⋅ 10^0^ = 1 ⋅ 10^6^ + 3 ⋅ 10^5^ + 0 ⋅ 10^4^ + 0 ⋅ 10^3^ + 0 ⋅ 10^2^ + 8 ⋅ 10^1^ + 9 ⋅ 10^0^ = 1300089~10~
+
+Nel numero intero 1300089~10~ la cifra meno significativa è la cifra in posizione zero, cioè la cifra nove, mentre la cifra più significativa è la cifra in posizione maggiore, cioè uno.
 
 ### Sistema numerico posizionale babilonese
 
