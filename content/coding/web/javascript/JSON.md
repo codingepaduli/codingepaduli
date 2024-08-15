@@ -9,7 +9,13 @@ categories: ["coding", "web", "javascript"]
 keywords: ["coding", "web", "javascript"]
 draft: true
 toc: false
-summary: "10 - JSON"
+summary: "JSON, un formato per lo scambio testuale di dati tra sistemi informatici e per la memorizzazione testuale di dati su file"
+
+references:
+    -   title: "jsonpath.com"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://jsonpath.com/"
+        description: "Valutazione online di selettori JSONPath"
 ---
 
 # JavaScript Object Notation
@@ -145,7 +151,7 @@ E' possibile verificare se il documento rispetta le regole di sintassi salvando 
 
 In alternativa si possono usare i servizi online di validazione JSON, che svolgono lo stesso compito.
 
-Nel caso il documento non rispetti le regole di sintassi, tipicamente viene mostrato l'errore corrispondente, indicando la riga e la colonna, ad esempio il messaggio "SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 12 column 4 of the JSON data".
+Nel caso il documento non rispetti le regole di sintassi, tipicamente viene mostrato l'errore corrispondente, indicando presumibilmente il numero di riga e di colonna colonna dell'errore. Un esempio di messaggio d'errore è "SyntaxError: JSON.parse: unexpected non-whitespace character after JSON data at line 12 column 4 of the JSON data".
 
 ## Uso del formato JSON
 
@@ -232,29 +238,106 @@ JSON Path è un linguaggio per l'analisi, la trasformazione e l'estrazione selet
 
 Questo linguaggio nasce ispirandosi ad XPath, che è utilizzato per lo stesso scopo su documenti XML.
 
+JSON Path è un modello che descrive la struttura del documento JSON come come una struttura gerarchica ad albero, consentendo le operazioni di selezione dei nodi dell'albero attraverso i selettori ed i filtri.
+
+La struttura gerarchica ad albero la si può immaginare simile al DOM (dall'inglese Document Object Model), utilizzato in un contesto che tratta di JavaScript o HTML.
+
+In questo modello gerarchico, ogni elemento del documento JSON è detto **nodo** ed ha una posizione ben definita all’interno di un albero (tipica struttura gerarchica).
+
+La **radice** dell’albero è il nodo più esterno, che contiene al suo interno tutti gli altri nodi.
+
+Dalla radice si estendono poi i nodi di “primo livello”, ovvero tutti i nodi contenuti nella radice. Da questi nodi di primo livello si estendono i nodi di secondo livello, ovvero i nodi contenuti in quelli di primo livello, e così via per i successivi livelli.
+
+Le **foglie** dell’albero sono i nodi che non posseggono altri nodi.
+
+Data la struttura gerarchica, è possibile stabilire delle relazioni tra gli elementi. Un elemento che contiene altri elementi è detto elemento padre, e di conseguenza gli elementi contenuti in quel nodo sono detti figli. Gli elementi che si trovano nello stesso livello si dicono fratelli, e così via con le altre relazioni.
+
 ### Selettori JSON Path
 
-La selezione ed i filtri avvengono attraverso le espressioni.
+I selettori consentono di selezionare e restituire l'oggetto o gli oggetti del documento JSON (i nodi dell'albero) specificando il loro percorso nell'albero.
 
-Il **selettore dell'elemento radice** è indicato con il simbolo ``$``, ogni espressione deve selezionare questo elemento.
+Il **selettore dell'elemento radice** è indicato con il simbolo ``$``. Tipicamente si parte dalla radice per selezionare i nodi interni.
 
-Il **selettore di una proprietà** può essere specificato sia con la "notazione punto", sia con la "notazione a parentesi" e permette selezionare una proprietà di un elemento. La "notazione punto" permette di selezionare una proprietà attraverso il simbolo del punto seguito dal nome della proprietà ``.proprieta``. La "notazione a parentesi" permette di selezionare una proprietà specificandola nelle parentesi quadre tra singoli apici ``['proprieta']``.
+Il **selettore figlio** può essere specificato sia con la "notazione punto", sia con la "notazione a parentesi" e permette di selezionare l'elemento figlio attraverso il nome. La "notazione punto" permette di selezionare l'elemento figlio utilizzando il simbolo del punto seguito dal nome dell'elemento figlio ``.child``. La "notazione a parentesi" permette di selezionare l'elemento figlio specificando il nome nelle parentesi quadre tra singoli apici ``['child']``.
 
-Il **selettore universale** ``*`` restituisce tutti gli elementi o le proprietà di un elemento selezionato.
+Il **selettore universale** ``*`` seleziona tutti i figli dell'elemento selezionato.
 
 Il **selettore di un indice dell'array** ``[i]`` restituisce l'elemento in posizione ``i`` dell'array selezionato.
 
-Il **selettore di un intervallo dell'array** ``[a:b:s]`` definisce un intervallo tra gli indici (numerici) ``a`` e ``b`` ed uno step ``s`` ed è utilizzato per filtrare gli elementi di un array, partendo dall'indice ``a`` ed arrivando all'indice ``b`` con step ``s``.
+Il **selettore di un intervallo dell'array** ``[a:b:s]`` definisce un intervallo tra gli indici (numerici) ``a`` e ``b`` ed uno step ``s`` ed è utilizzato per selezionare gli elementi di un array, partendo dall'elemento con indice ``a`` ed arrivando all'elemento indice ``b`` con step ``s``.
 
-Il **selettore ricorsivo universale**  `'$..*'` restituisce tutti gli elementi o le proprietà a qualsiasi livello siano innestati nell'elemento radice.
+Il **selettore ricorsivo universale**  `'..*'` restituisce tutti gli elementi a qualsiasi livello di profondità nell'albero, la ricerca avviene ricorsivamente a partire dal nodo selezionato.
 
-Il **selettore ricorsivo di una proprietà** ``$..proprietà`` permette selezionare una proprietà di un elemento a qualsiasi profondità si trovi l'elemento nell'albero.
+Il **selettore ricorsivo di una proprietà** ``..child`` permette di selezionare l'elemento utilizzando il simbolo del punto seguito dal nome dell'elemento ``.child``. L'elemento da selezionare può trovarsi a qualsiasi livello di profondità nell'albero, la ricerca avviene ricorsivamente a partire dal nodo selezionato.
 
-Il **selettore ricorsivo di un indice dell'array** ``$..[i]`` restituisce l'elemento in posizione ``i`` di qualsiasi array.
+Il **selettore ricorsivo di un indice dell'array** ``..[i]`` restituisce l'elemento in posizione ``i`` dell'array. L'array da selezionare può trovarsi a qualsiasi livello di profondità nell'albero, la ricerca avviene ricorsivamente a partire dal nodo selezionato.
+
+Il **selettore di unione** ``[selettore1, selettore2]`` restituisce sia gli elementi selezionati dal selettore ``selettore1``,  sia gli elementi selezionati dal selettore  ``selettore2``. Se si tratta di un array, i due selettori possono essere degli indici, ad esempio ``[0,1]``.
 
 ### Esempio di selettori JSON Path
 
-Riprendendo l'esempio della libreria che contiene i libri:
+Prendendo l'esempio (ufficiale) di un negozio di libri e biciclette:
+
+```javascript
+{
+  "store": {
+    "book": [ 
+      {
+        "category": "reference",
+        "author": "Nigel Rees",
+        "title": "Sayings of the Century",
+        "price": 8.95
+      }, {
+        "category": "fiction",
+        "author": "Evelyn Waugh",
+        "title": "Sword of Honour",
+        "price": 12.99
+      }, {
+        "category": "fiction",
+        "author": "Herman Melville",
+        "title": "Moby Dick",
+        "isbn": "0-553-21311-3",
+        "price": 8.99
+      }, {
+         "category": "fiction",
+        "author": "J. R. R. Tolkien",
+        "title": "The Lord of the Rings",
+        "isbn": "0-395-19395-8",
+        "price": 22.99
+      }
+    ],
+    "bicycle": {
+      "color": "red",
+      "price": 19.95
+    }
+  }
+}
+```
+
+Ecco la selezione degli elementi attraverso i selettori:
+
+- ``$.store.book[*].author`` gli autori di tutti i libri nel negozio;
+- ``$..author`` tutti gli autori;
+- ``$.store.*`` tutte le cose nel negozio;
+- ``$.store..price`` il prezzo di tutte le cose nel negozio;
+- ``$..book[2]`` il terzo libro;
+- ``$..book[0,1]`` o ``$..book[:2]`` i primi due libri.
+
+Il selettore ``$`` seleziona la radice, cioè l'intero documento.
+
+Il selettore ``$.store`` è composto da ``$`` e da ``.store`` e seleziona la radice, poi nella radice seleziona il nodo con nome ``store``.
+
+Il selettore ``$.store.book`` è composto da ``$``, da ``.store`` e da ``book`` e seleziona la radice, poi nella radice seleziona il nodo con nome ``store`` ed in questo nodo seleziona il nodo con nome ``book``.
+
+Il selettore ``$.store.*`` è composto da ``$``, da ``.store`` e da ``.*`` e seleziona la radice, poi nella radice seleziona il nodo con nome ``store`` ed in questo nodo seleziona tutti i nodi.
+
+Il selettore ``$..author`` è composto da ``$`` e da ``..author`` e seleziona la radice, poi nella radice cerca ricorsivamente tutti i nodi con nome ``author``, a qualsiasi livello si trovino, e quindi li seleziona.
+
+Il selettore ``$..book[2]`` è composto da ``$`` e, ``..book`` e da ``[2]`` e seleziona la radice, poi nella radice cerca ricorsivamente tutti i nodi con nome ``book``, a qualsiasi livello si trovino, e quindi li seleziona, in questi nodi seleziona poi l'elemento con indice ``2``, cioè il terzo libro dell'array ``book``.
+
+Lo stesso avviene per i selettori ``$..book[0,1]`` o ``$..book[:2]`` che però selezionano l'elemento dell'array in posizione ``0`` ed ``1``, cioè il primo ed il secondo libro nell'array ``book``.
+
+Ed ancora lo stesso avviene per il selettore ``$.store.book[*]`` che seleziona tutti gli elementi dell'array, cioè tutti i libri nell'array ``book``.
 
 Il selettore ``$.*.personaggi`` seleziona nella radice ``$`` tutti gli oggetti ``.*`` e da questi seleziona la proprieta "personaggi" ``.personaggi``, restituendo l'oggetto seguente:
 
@@ -297,47 +380,42 @@ Il selettore ``$[*].personaggi[0:3:2]`` seleziona nella radice ``$`` tutti gli o
 
 Come si nota, manca l'elemento pari dell'array.
 
-Ecco alcuni esempi ripresi dalla documentazione ufficiale di JSON Path:
-
-``$.store.book[*].author`` gli autori di tutti i libri nel negozio;
-``$..author`` tutti gli autori;
-``$.store.*`` tutte le cose nel negozio;
-``$.store..price`` il prezzo di tutte le cose nel negozio;
-``$..book[2]`` il terzo libro;
-``$..book[0,1]`` o ``$..book[:2]`` i primi due libri.
-
 ### Filtri JSON Path
 
-I filtri lavorano iterando sugli elementi selezionati attraverso i selettori. Per ogni iterazione è possibile identificare l'elemento corrente con il simbolo ``@``, che funziona come un selettore. Il filtro agisce sull'elemento corrente applicando una condizione che se verificata filtra, e quindi seleziona l'elemento corrente. Il simbolo del filtro è ``?`` che funziona come test.
+I filtri lavorano sull'insieme dei nodi selezionati, iterando su ogni elemento per applicare la condizione. E' possibile identificare l'elemento corrente con il simbolo ``@``. All'elemento corrente è possibile applicare un filtro, ovvero una condizione che se verificata filtra, e quindi lascia selezionato l'elemento corrente, altrimenti scarta l'elemento.
 
-Dato che serve un selettore, possiamo fare l'esempio di una selezione di tutti gli elementi della radice, utilizzando il selettore ``$.*``, a questi oggetti poi applichiamo il filtro.
+Il simbolo del filtro è ``?()`` che tipicamente è inserito tra parentesi quadre ``[?()]``
 
-Il filtro di esistenza ``?@.proprieta`` permette di filtrare (e quindi selezionare) l'elemento corrente se ha la proprietà indicata. Questo filtro agisce solo sugli oggetti. Applicato al selettore di tutti gli elementi della radice ``$.*``, la sintassi è ``$.*[?@.proprieta]``.
+Dato che serve un insieme di nodi selezionati sul quale applicare un filtro, nel corso di questi esempi useremo il selettore ``$.*`` per creare l'insieme di tutti gli elementi della radice, e su questi elementi poi applicheremo un filtro.
 
-Il filtro di comparazione permette di comparare l'elemento corrente utilizzando gli operatori logici ``!``, ``==``, ``!=``, ``<``, ``<=``, ``>``, ``>=``, ``&&`` e ``||`` con la priorità con cui sono appena stati scritti. La comparazione deve essere possibile secondo le regole del linguaggio JavaScript. La sintassi è quindi ``?@ operatore valore``, con valore compatibile a valutare l'espressione. Dato che i filtri si applicano agli elementi selezionati, useremo ancora una volta il selettore di tutti gli elementi della radice ``$.*`` negli esempi:
+Il filtro di esistenza ``?(@.proprieta)`` permette di filtrare (e quindi selezionare) l'elemento corrente se ha la proprietà indicata. Questo filtro agisce solo sugli oggetti. Applicato al selettore di tutti gli elementi della radice ``$.*``, la sintassi è ``$.*[?(@.proprieta)]``.
+
+Il filtro di comparazione permette di comparare l'elemento corrente utilizzando gli operatori logici ``!``, ``==``, ``!=``, ``<``, ``<=``, ``>``, ``>=``, ``&&`` e ``||`` con la priorità con cui sono appena stati scritti. La comparazione deve essere possibile secondo le regole del linguaggio JavaScript. La sintassi è quindi ``?(@ operatore valore)``, con valore compatibile a valutare l'espressione. Dato che i filtri si applicano agli elementi selezionati, useremo ancora una volta il selettore di tutti gli elementi della radice ``$.*`` negli esempi:
 
 ```javascript
-$.*[?@ == 2]
-$.*[?@.proprieta == 'g']
-$.*[?@>1 && @<=4]
-$.*[?@.u || @.x]
-$.*[?@.proprieta >= 'f']
-$.*[?@>$.x]
+$.*[?(@ == 2)]
+$.*[?(@.proprieta == 'g')]
+$.*[?(@>1 && @<=4)]
+$.*[?(@.u || @.x)]
+$.*[?(@.proprieta >= 'f')]
+$.*[?(@>$.x)]
 ```
 
-Inoltre è possibile definire e quindi specificare una funzione nel filtro. Tra le funzioni gia definite troviamo ``lenght`` e ``count``. Il filtro con funzione filtro ha sintassi ``?funzione(selettore)``. Useremo ancora una volta il selettore di tutti gli elementi della radice ``$.*`` negli esempi: esempio:
+Inoltre è possibile definire e quindi specificare due proprietà particolari: ``@.lenght`` e ``@.count``.
 
 ```javascript
-$.*[?length(@) < 3]
-$.*[?count(@.*) == 1]
+$.*[?(@.length < 3]
+$.*[?(@.count == 1]
 ```
 
 L'elemento corrente deve essere un elemento su cui è possibile calcolare la lunghezza, come una stringa o un array, o un elemento che contenga a sua volta altri elementi in modo tale che sia possibile poterli contare.
 
-Ecco alcuni esempi ripresi dalla documentazione ufficiale di JSON Path:
+Ecco alcuni esempi di filtri riportati dall'esempio (ufficiale) di un negozio di libri e biciclette:
 
-``$..book[?@.isbn]`` tutti i libri con un numero ISBN;
-``$..book[?@.price<10]`` tutti i libri con prezzo minore di 10 dollari.
+- ``$..book[?@.isbn]`` tutti i libri con un numero ISBN;
+- ``$..book[?(@.price<10)]`` tutti i libri con prezzo minore di 10;
+- ``$..book[?(@.price==8.95)]`` tutti i libri con prezzo 8.95
+- ``$..book[?(@.price<30 && @.category=="fiction")]`` tutti i libri con prezzo minore di 30 e categoria "fiction".
 
 <!-- markdownlint-disable MD033 -->
 
