@@ -268,7 +268,9 @@ Il paragrafo selezionato sarà quindi modificato nel seguente modo:
 <p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>
 ```
 
-La proprietà ``ele.textContent`` visualizzerà il testo ``nuovo paragrafo``, mentre la proprietà ``elemento.outerHTML`` visualizzerà il testo ``<p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>``
+La proprietà ``ele.textContent`` visualizzerà il testo ``nuovo paragrafo``, mentre la proprietà ``elemento.outerHTML`` visualizzerà il testo ``<p id="paragrafo1" proprieta-esistente="p1">nuovo paragrafo</p>``.
+
+Una nota importante per il recupero del testo: per questioni di performance, quando si aggiungono più elementi testuali ad un nodo, questi rimangono separati perché inseriti in due nodi testuali differenti. Accedendo al testo di un nodo con la proprietà ``ele.textContent``, si ottiene solo una parte del testo. Per poter unificare i nodi è necessario invocare la funzione ``el.normalize();`` prima di accedere al testo con ``ele.textContent``.
 
 ### Proprietà ``defaultValue``
 
@@ -458,11 +460,19 @@ La proprietà che dobbiamo utilizzare per accedere e modificare il valore di un 
 
 ## Operazioni sul DOM
 
+Le operazioni sul DOM sono le operazioni di creazione, lettura, modifica e cancellazione di un nodo dell’albero (le operazioni sono dette CRUD, dall’inglese Create, Read, Update e Delete) e di creazione, lettura, modifica e cancellazione di uno degli attributi o dalle proprietà di un nodo.
+
+E' possibile sfruttare le relazioni tra i nodi, come quella di "padre/figlio" o di "nodo fratello" per poter inserire i nodi nella posizione desiderata.
+
+### Gestione dei nodi
+
 Per creare un elemento di testo, si utilizza la seguente funzione:
 
 ```javascript
 const ele = document.createTextNode('Hello World!');
 ```
+
+Come gia descritto in precedenza, quando si aggiungono più elementi testuali ad un nodo, questi rimangono separati (per questioni di performance) perché inseriti in due nodi testuali differenti. Accedendo al testo di un nodo con la proprietà ``ele.textContent``, si ottiene solo una parte del testo. Per poter unificare i nodi è necessario invocare la funzione ``ele.normalize();`` prima di accedere al testo con ``ele.textContent``.
 
 Per creare un elemento che fa da contenitore, si utilizza la seguente funzione:
 
@@ -474,6 +484,12 @@ Per aggiungere un elemento all'interno di un secondo elemento, si utilizza la se
 
 ```javascript
 target.appendChild(ele);
+```
+
+Si può scegliere di aggiungere un elemento in fondo alla pagina web, sebbene ciò sia sconsigliato per via del footer della pagina, utilizzando il riferimento:
+
+```javascript
+document.body.appendChild(elemento);
 ```
 
 Per rimuovere un elemento dall'interno di un secondo elemento, si utilizza la seguente funzione:
@@ -500,7 +516,7 @@ Per aggiungere un elemento dopo un secondo elemento, si utilizza la seguente fun
 refEle.insertAdjacentElement('afterend', ele);
 ```
 
-## Gestione dello stile di un elemento
+### Gestione dello stile di un elemento
 
 Per aggiungere una proprietà di stile ad un elemento, si utilizza la funzione:
 
@@ -520,7 +536,7 @@ Per ottenere il valore di una proprietà di stile da un elemento, si utilizza la
 const attr = ele.style['backgroundColor'];
 ```
 
-## Gestione delle classi di un elemento
+### Gestione delle classi di un elemento
 
 Per aggiungere delle classi ad un elemento, si utilizza la funzione:
 
@@ -566,37 +582,112 @@ ele.classList.add(...class);
 ele.classList.remove(...class);
 ```
 
-<!-- markdownlint-disable MD033 -->
+## Template HTML e gestione nodi
 
-<script>
-  const text = document.createTextNode('Hello World!');
-  let elemento = document.createElement('div');
-  elemento.appendChild(text);
-  document.body.appendChild(elemento);
+Il linguaggio HTML permette di creare dei template, cioè dei modelli, di sezioni della pagina web nei quali inserire i propri dati. Sono principalmente utilizzati dai "web components", ma possono essere utilizzati facilmente anche negli script.
 
-  // imposto l'attributo
-  elemento.setAttribute('proprieta-esistente', 'p1');
-  elemento.proprietaEsistente="p2";
+Il vantaggio di utilizzare un template consiste nella separazione della struttura HTML dai dati, tipicamente inseriti utilizzando JavaScript.
+
+Il template è generato dall'etichetta ``template`` che ha il simbolo di apertura ``<template>`` ed il simbolo di chiusura ``</template>``. In questo elemento è possibile inserire qualsiasi altro elemento senza dover rispettare le regole di relazione "padre-figlio" del linguaggio HTML, proprio perché questo contenitore serve da modello. Ad esempio è possibile inserire  nell'etichetta ``template`` un'etichetta ``<li>`` senza che sia presente un'etichetta ``<ul>`` .
+
+Un template deve essere identificato per ``id`` per poi clonare il contenuto, per poterlo poi utilizzare:
+
+```javascript
+const template = document.querySelector(templateID);
+templateContent = template.content.cloneNode(true);
+```
+
+Per poter inserire il contenuto di un template in un nodo "target" possiamo utilizzare la seguente funzione, che controlla se gli identificativi sono stringhe, seleziona gli elementi e se entrambi trovati inserisce il template nel nodo "target":
+
+```javascript
+function addTemplate(targetId, templateID) {
+  if (typeof targetId !== 'string' && ! (targetId instanceof String) ) {
+    throw new Error("param 'targetId' is not a string");
+  }
+  if (typeof templateID !== 'string' && ! (templateID instanceof String) ) {
+    throw new Error("param 'templateID' is not a string");
+  }
   
-  // imposto le proprietà
-  elemento.proprietaEsistente = "p1";
-  elemento.proprietaNuova = "valoreProprieta2";
-  elemento.proprietaOggetto = { p1 : "v1", p2: 1 };
-  console.log(elemento.proprietaEsistente);
-  console.log(elemento.proprietaNuova);
-  console.dir(elemento.proprietaOggetto);
+  const target = document.querySelector(targetId);
+  const template = document.querySelector(templateID);
+  
+  if (target != null && template != null) {
+    target.append(template.content.cloneNode(true));
+  }
+}
+```
 
-  console.log(elemento.hasAttributes());
-  console.table(elemento.getAttributeNames());
-  console.log(elemento.hasAttribute("proprieta-esistente"));
-  elemento.removeAttribute("proprieta-esistente");
+Nel template possiamo inserire i segnaposto nei quali inserire i dati nella forma ``${nome}``, come nel seguente esempio:
 
-  elemento.setAttribute("proprieta-nuova", "valoreProprieta2");
-  console.log(elemento.getAttribute("proprieta-nuova"));
+```html
+<template id="tableDataRowTemplate">
+  <tr id="tableDataRow">
+    <th class="replaceData">${Extra}</th>
+    <th class="replaceData">${Giorno}</th>
+    <th class="replaceData">${Ora}</th>
+    <th class="replaceData">${Classe}</th>
+    <th class="replaceData">${Aula}</th>
+    <th class="replaceData">${Piano}</th>
+  </tr>
+</template>
+```
 
-  elemento.toggleAttribute("proprieta-esistente");
-  elemento.id = { id : "v1" };
+I dati da inserire possono poi essere contenuti in un oggetto in cui il nome delle proprietà corrisponde con il nome inserito nel segnaposto dei dati da sostituire. Un esempio di oggetto è il seguente:
 
-</script>
+```javascript
+{
+  "Extra": "SI",
+  "Giorno": "LUNEDI",
+  "Ora": "1°",
+  "Classe": "4A_INF",
+  "Aula": "123",
+  "Piano": null
+}
+```
 
-<!-- markdownlint-enable MD033 -->
+In questo modo si crea una corrispondenza tra il segnaposto ``${Giorno}`` e l'oggetto che ha proprietà ``Giorno``.
+
+L'identificativo ``#tableDataRow .replaceData`` può essere utilizzato per selezionare tutti i nodi nei quali è necessario effettuare la sostituzione dei dati secondo il modello appena descritto.
+
+La funzione seguente può essere utilizzata per:
+
+- controllare se il primo parametro è una stringa da usare per identificare la sezione;
+- controllare se il secondo parametro è un oggetto che contiene le proprietà, nella forma nome-valore, da utilizzare per sostituire i dati;
+- selezionare tutti i nodi contenenti i segnaposti da sostituire con i dati;
+- sostituire tutti i segnaposti.
+
+```javascript
+function replaceTemplateData(dataNodesID, dataToReplace={}) {
+  if (typeof dataNodesID !== 'string' && ! (dataNodesID instanceof String) ) {
+    throw new Error("param 'targetId' is not a string");
+  }
+  if (!dataToReplace instanceof Object || Array.isArray(dataToReplace) || dataToReplace === null) {
+    throw new Error("param 'dataToReplace' is not an object (empty object is allowed)");
+  }
+
+  const nodeToReplace = document.querySelectorAll(dataNodesID + " .replaceData");
+  console.debug(`Found ${nodeToReplace.length} elements to replace in node ${dataNodesID}`);
+
+  nodeToReplace.forEach(node => {
+    Object.entries(dataToReplace).forEach(([key, val]) => {
+      console.debug(`Replacing \$\{${key}\} --> ${val}`);
+      node.textContent = node.textContent.replace(`\$\{${key}\}` , `${val}`);
+    });
+  });
+}
+```
+
+Creato l'oggetto contenente i dati da sostituire, si può invocare la funzione nel seguente modo:
+
+```javascript
+let oggetto = {
+  "Extra": "SI",
+  "Giorno": "LUNEDI",
+  "Ora": "1°",
+  "Classe": "4A_INF",
+  "Aula": "123",
+  "Piano": null
+}
+
+replaceTemplateData('#tableDataRow', oggetto)
+```
