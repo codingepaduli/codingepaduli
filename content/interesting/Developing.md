@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-07-05
-publishdate: 2024-07-05
-lastmod: 2024-07-05
+date: 2024-08-22
+publishdate: 2024-08-22
+lastmod: 2024-08-22
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -127,6 +127,8 @@ summary: "Set di link relativi al coding"
 [AI](https://dev.to/mankavelda/10-machine-learning-algorithms-to-know-in-2024-1p8j) - 10 Machine Learning Algorithms to Know in 2024 - DEV Community\
 [collabora/WhisperSpeech](https://github.com/collabora/WhisperSpeech) - An Open Source text-to-speech system built by inverting Whisper.\
 [andrewnguonly/Lumos](https://github.com/andrewnguonly/Lumos) - A RAG LLM co-pilot for browsing the web, powered by local LLMs\
+[THUDM/CogVideo](https://github.com/THUDM/CogVideo#readme) - Text-to-video generation CogVideo\
+[AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - Stable Diffusion web UI\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -324,6 +326,7 @@ summary: "Set di link relativi al coding"
 [Sandboxing](https://www.ralfj.de/blog/2024/04/14/bubblebox.html) - Sandboxing All The Things with Flatpak and BubbleBox\
 [BubbleBox](https://www.ralfj.de/projects/bubblebox/) - Simple Application Sandboxing\
 [igo95862/bubblejail](https://github.com/igo95862/bubblejail) - Bubblewrap based sandboxing for desktop applications\
+[SadServers](https://sadservers.com/) - Linux & DevOps Troubleshooting Interviews\
 
 #### Hardware
 
@@ -331,6 +334,10 @@ summary: "Set di link relativi al coding"
 [Lenovo's Latest ThinkPad L Series and X Series Laptops](https://news.lenovo.com/pressroom/press-releases/unleashing-innovation-and-better-sustainability-of-lenovos-latest-thinkpad-l-series-and-x-series-laptops/) - Lenovo StoryHub\
 [Framework Laptop 16 Delivers Great Linux Support & Performance, Excellent Customizability Review](https://www.phoronix.com/review/framework-laptop-16) - Phoronix\
 [HDMI Driver Rejected](https://www.phoronix.com/news/HDMI-2.1-OSS-Rejected) - HDMI Forum Rejects Open-Source HDMI 2.1 Driver Support Sought By AMD - Phoronix\
+[mjg59](https://mjg59.dreamwidth.org/60248.html) - Responsible stewardship of the UEFI secure boot ecosystem\
+[HW](https://www.stderr.nl/Blog/Hardware/Thunderbolt/TechnologyOverview.html) - USB, Thunderbolt, Displayport & docks\
+[Main Linux problems](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html?) - 2023 edition or why Linux sucks on the desktop\
+[Linux Hardware Database](https://linux-hardware.org/) - collect hardware details of Linux-powered computers\
 
 #### Old computer
 
@@ -362,6 +369,7 @@ summary: "Set di link relativi al coding"
 
 ### Mozilla Firefox
 
+[Firefox mobile](chrome://geckoview/content/config.xhtml) - about:config page\
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
 [Get Bookmark Add-ons](https://addons.mozilla.org/en-US/firefox/bookmarks/) - \
 [Improving DNS Privacy in Firefox – Firefox Nightly News](https://blog.nightly.mozilla.org/2018/06/01/improving-dns-privacy-in-firefox/) - \
@@ -370,6 +378,7 @@ summary: "Set di link relativi al coding"
 [Collabora con noi](https://www.mozilla.org/it/contribute/) - \
 [Come iniziare](https://www.mozilla.org/it/firefox/central/) - \
 [Firefox Voice](https://voice.mozilla.org/firefox-voice/) - browse the internet with your voice\
+[LibRedirect](https://libredirect.github.io/) - A web extension that redirects YouTube, Instagram, Reddit, TikTok and other websites to alternative privacy-friendly frontends\
 
 ### Network
 
@@ -475,7 +484,6 @@ summary: "Set di link relativi al coding"
 [trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
 [mermaid-js/mermaid-cli](https://github.com/mermaid-js/mermaid-cli) - Command line tool for the Mermaid library\
 [Quarto](https://quarto.org/) - an open-source scientific and technical publishing system built on Pandoc\
-[Sublist Issue #2575](https://github.com/jgm/pandoc/issues/2575) - Pandoc expect 4 spaces while Markdown can have 2 · Issue #2575 · jgm/pandoc\
 
 #### Hugo static site generator
 
@@ -521,7 +529,6 @@ summary: "Set di link relativi al coding"
 [schema.org](http://www.google.com/webmasters/tools/richsnippets) - Google Structured Data Testing Tool (see schema.org)\
 [Using CORS](https://www.html5rocks.com/en/tutorials/cors/) - \
 [Test CORS Request](http://www.test-cors.org/) - Cross-Origin Resource Sharing\
-[jsonbox.io](https://jsonbox.io/) - HTTP based JSON storage\
 [Strapi](https://www.infracloud.io/strapi-api-quickstart/) - APIs in less than 5 minutes with\
 [RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api) - Best Practices for Designing a Pragmatic RESTful API. A pragmatic answers to design an API easy to use, easy to adopt and flexible enough for your client\
 [Frontend Developers Books](https://frontendmasters.com/books/) - updated every year, can be read online\
@@ -626,6 +633,9 @@ summary: "Set di link relativi al coding"
 
 [Pantry](https://getpantry.cloud/) - Free Cloud JSON Storage API\
 [Pantry](https://documenter.getpostman.com/view/3281832/SzmZeMLC#98b35ee9-9d11-417e-8739-21a4ac9893ed) - Use pantry with postman\
+[npoint.io](https://www.npoint.io/) - JSON storage with schema validation\
+[JSONsilo.com: Free 5 MB JSON Storage & Unlimited requests](https://jsonsilo.com/) - \
+[JSONsty](https://json.psty.io/) - free data storage for small projects\
 [Rapid API Hub](https://rapidapi.com/hub/) - Free Public & Open Rest APIs | RapidAPI\
 [jumpjack/greenpass](https://github.com/jumpjack/greenpass) - Pure JavaScript greenpass QR code decoder in browser\
 [JS Telegram](https://dev.to/sh4yy/use-python-or-javascript-to-send-your-events-and-logs-to-telegram-via-their-chatbot-api-3243) - Use Python or JavaScript to Send Your Events and Logs to Telegram via their Chatbot API - DEV Community\
