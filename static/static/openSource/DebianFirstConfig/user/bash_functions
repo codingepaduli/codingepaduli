@@ -186,7 +186,7 @@ export -f userDefinedFunctions
 # Show user biggest file in current dir
 # Usage: biggestFiles
 biggestFiles() {
-  find  -type f  -exec  du -Sh {} +  |  sort -rh  |  head -n 50
+  find . -type f  -exec  du -Sh {} +  |  sort -rh  |  head -n 50
 }
 export -f biggestFiles
 
