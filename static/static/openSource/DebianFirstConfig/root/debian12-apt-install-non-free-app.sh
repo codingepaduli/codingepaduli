@@ -57,7 +57,10 @@ apt-get install $APT_OPTS mame-extra
 if [ $? -ne 0 ]; then
     exit 1
 fi
-
+#
+# Check your firmware with:
+#  - sudo update-initramfs -u
+#
 # In case of warning messages like:
 #  - Possible missing firmware /lib/firmware/i915/icl_guc_32
 #
