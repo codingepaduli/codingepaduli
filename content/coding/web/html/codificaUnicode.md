@@ -30,6 +30,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.unicode.org/emoji/charts/full-emoji-list.html"
         description: "A full list of Emoji"
+    -   title: "Whitespace character"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://en.wikipedia.org/wiki/Whitespace_character"
+        description: "A list of whitespace character"
 ---
 
 # Codifica Unicode
@@ -176,7 +180,7 @@ Questi codici mnemonici devono essere sempre inseriti tra il simbolo ``&`` ed il
 Con la nascita dello standard Unicode, la rappresentazione di un grafema avviene attraverso i punti di codice. Ogni punto di codice può essere inserito nel documento HTML utilizzando il corrispondente valore numerico espresso in formato decimale o esadecimale. La regola prevede che:
 
 - se si utilizza il valore numerico espresso in formato decimale, allora è necessario inserirlo tra il simbolo ``&#`` ed il simbolo ``;``;
--se si utilizza il valore numerico espresso in formato esadecimale, allora è necessario inserirlo tra il simbolo ``&#x`` ed il simbolo ``;``.
+- se si utilizza il valore numerico espresso in formato esadecimale, allora è necessario inserirlo tra il simbolo ``&#x`` ed il simbolo ``;``.
 
 Ad esempio, il grafema "lettera greca delta" &Delta; <!-- Δ --> può essere rappresentato con il codice numerico decimale 916 e con codice numerico esadecimale 394, quindi possiamo scrivere questo grafema sia con la notazione decimale ``&#916;`` (con risultato &#916;) sia con quella esadecimale ``&#x394;`` (con risultato &#x394;).
 
@@ -229,6 +233,39 @@ Dato che due grafemi distinti possono visualizzare lo stesso "carattere", la ric
 Unicode è ancora legato alla localizzazione di chi scrive, lo stesso grafema può essere visualizzato in maniera molto differente a seconda che sia visualizzato su un computer con localizzazione Cinese, Giapponese o Koreana. E la localizzazione non può essere salvata in un messaggio Unicode.
 
 Purtroppo alcune scelte risultano incomprensibili, ma lo standard Unicode è diffusissimo ed utilizzato ovunque, quindi bisogna conviverci e imparare a gestire queste situazioni utilizzando gli strumenti opportuni.
+
+### Caratteri invisibili
+
+Molti caratteri non hanno una rappresentazione visibile e possono essere problematici perché possono causare spazi o righe vuote inaspettate, problemi nella ricerca di parole o frasi e problemi nella formattazione e nella lettura del testo. Di seguito sono elencati alcuni di questi caratteri:
+
+- U+0009: tabulazione orizzontale (Horizontal Tab ``&Tab;``);
+- U+000A: fine riga (Line Feed ``&NewLine;``);
+- U+000B: tabulazione verticale (Vertical Tab) è un fine riga;
+- U+000C: interruzione di pagina (Form Feed) è un fine riga;
+- U+000D: fine riga (Carriage Return) è un fine riga;
+- U+0020: Spazio;
+- U+0085: Interruzione di riga;
+- U+00A0: Spazio che impedisce la divisione di parola (No-Break Space);
+- U+00AD: Trattino di sillabazione (syllable hyphen) per spezzare una parola e andare a capo, è visibile solo se la parola si trova a fine riga e viene divisa in sillabe per andare a capo;
+- da U+2000 a U+200A: spazi a larghezza variabile;
+- U+200B: Spazio a "larghezza zero" (zero-width space);
+- U+200E: Indicatore di direzione del testo da sinistra a destra (Left-to-right mark);
+- U+200F: Indicatore di direzione del testo da destra a sinistra (Right-to-left mark);
+- U+2028: Separatore di riga (Line Separator);
+- U+2029: Separatore di paragrafo (Paragraph Separator);
+- U+205F: Spazio matematico (medium mathematical space);
+- U+3000: Spazio usato con caratteri ideografici (ideographic space);
+- U+FEFF: Byte Order Mark;
+
+Se scriviamo nel seguente modo la frase:
+
+Al``&#x200B;``fa``&#x00A0;``be``&#x00AD;``t``&#x200E;&#x200F;``o clas``&#x200A;``sico;
+
+il risultato sarà:
+
+Al&#x200B;fa&#x00A0;be&#x00AD;t&#x200E;&#x200F;o clas&#x200A;sico
+
+ma per gli strumenti di ricerca testo, lettura e scrittura sarà difficile la ricerca delle parole "alfa" e "classico".
 
 ## Unicode e byte-order mark (BOM)
 
