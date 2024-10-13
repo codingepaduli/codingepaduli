@@ -1,13 +1,13 @@
 baseURL = "http://codingepaduli.github.io/"
 defaultContentLanguage = "it"
-title = "Coding e Paduli"
+title = "Lab. informatica"
 paginate = "20"
 
 theme = "mainroad" # hugo-academic mainroad watercss
 
 [params]
   author = "codingepaduli"
-  subtitle = "Ennesimo sito/blog di programmazione ed informatica in generale"
+  subtitle = "Sito web del laboratorio di informatica"
   description = "Ennesimo sito/blog di programmazione ed informatica in generale"
   toc = true # Enable Table of Contents
   opengraph = true # Enable OpenGraph if true
@@ -39,4 +39,20 @@ theme = "mainroad" # hugo-academic mainroad watercss
       hardWraps = false     # render \n as <br> elements
       unsafe = true         # render HTML code
       xHTML = false         # render as XHTML
-    
+    [markup.goldmark.extensions]
+      strikethrough = true
+      table = true
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.delete]
+          enable = false
+        [markup.goldmark.extensions.extras.insert]
+          enable = false
+        [markup.goldmark.extensions.extras.mark]
+          enable = false
+        [markup.goldmark.extensions.extras.subscript]
+          enable = true
+        [markup.goldmark.extensions.extras.superscript]
+          enable = true
+      [markup.goldmark.extensions.typographer]
+        leftAngleQuote = '&lt;&lt;'
+        rightAngleQuote = '&gt;&gt;'
