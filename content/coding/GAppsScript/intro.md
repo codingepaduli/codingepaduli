@@ -16,9 +16,15 @@ summary: "Introduzione a Google App Script"
 
 Apps Script ( [https://script.google.com/](https://script.google.com/) ) è una piattaforma JavaScript basata su cloud che consente di integrare e automatizzare le attività in tutti i prodotti Google.
 
-Ogni progetto Apps Script utilizza Google Cloud per gestire le autorizzazioni, servizi avanzati e altri dettagli. Per configurare e gestire queste impostazioni, ogni progetto Apps Script ha un progetto Google Cloud associato
+Ogni progetto Apps Script utilizza Google Cloud per gestire le autorizzazioni, servizi avanzati e altri dettagli. Per configurare e gestire queste impostazioni, ogni progetto Apps Script ha un progetto Google Cloud associato.
 
-L'ambiente di lavoro si presenta così:
+Si può associare uno script di Apps Script ad un prodotto Google, come Google Documenti, Google Fogli o Google Moduli, attraverso il menù "estensioni" del prodotto:
+
+![Nuovo progetto - aggiunta script](/static/coding/GAppsScript/GAppsScript-newProject-addScript.png)
+
+E' importante sottolineare che solo i file dei prodotti Google sono associabili agli Apps Script, se si prova ad aprire un file Excel o un file di Word (caricato su Drive ed aperto attraverso un prodotto Google), questa associazione non è disponibile.
+
+Creando o aprendo uno script, l'ambiente di lavoro si presenta così:
 
 ![Nuovo progetto - step 1](/static/coding/GAppsScript/GAppsScript-newProject-step1.png)
 
