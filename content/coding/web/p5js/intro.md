@@ -271,15 +271,17 @@ Per poter utilizzare correttamente la libreria p5.js, è necessario conoscere l'
 
 Il termine **interfaccia**, nelle discipline tecniche, indica l'area (la "faccia") esposta da un sistema, al fine di potervi interagire. Un esempio sono le interfacce grafiche di Microsoft Windows, che permettono di interagire con i calcolatori, oppure le interfacce vocali di iPhone ed Android, con "Siri" ed "OK Google", che permettono di interagire con gli smartphone.
 
-Nello sviluppo di applicazioni, le interfacce esposte da librerie e linguaggi di programmazione, e quindi anche dalla libreria p5.js, prendono il nome di **Application Programming Interface** (API).
+Nello sviluppo di applicazioni, le interfacce esposte da librerie e linguaggi di programmazione prendono il nome di **Application Programming Interface** (API). Le API espongono strutture, funzioni, costanti e tanti altri elementi che il programmatore può usare per realizzare la propria applicazione.
 
-Le API espongono strutture, funzioni, costanti e tanti altri elementi che il programmatore può usare per realizzare la propria applicazione.
+La documentazione delle API descrive cosa rappresenta e come utilizzare ogni singolo oggetto esposto, come ad esempio una costante o una funzione.
 
-La documentazione delle API descrive cosa rappresenta e come utilizzare ogni singolo oggetto esposto, come ad esempio una costante o una funzione, ed è consultabile all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
+La libreria p5.js espone le proprie API, in particolare funzioni e costanti, e le documenta accuratamente. La documentazione è consultabile all'indirizzo [https://p5js.org/reference/](https://p5js.org/reference/ "Documentazione di p5.js").
 
-La documentazione è organizzata per aree di interesse, come si può vedere nell'immagine seguente:
+La documentazione è organizzata per sezioni ed è disponibile anche un piccolo motore di ricerca per trovare uno specifico elemento, come si può vedere dall'immagine seguente:
 
-![p5.js - API](/static/coding/web/p5js/intro-api-references.png "p5.js - API")
+![p5.js - API](/static/coding/web/p5js/intro-api-references-2024.png "p5.js - API")
+
+<!-- Rimossa dalla documentazione 
 
 Nella tabella seguente è riportata la descrizione delle varie categorie:
 
@@ -304,9 +306,13 @@ Typography      | Caratteri, stili e formattazione testo
 
 Ogni categoria mostra le costanti e le funzioni disponibili, con un link alla documentazione specifica.
 
+-->
+
 ### Documentazione delle costanti
 
-Le **costanti**, nell'ambito informatico come nell'ambito matematico, sono dei valori che non variano nel tempo, ed ai quali è associato un nome, come ad esempio la costante fisica **c** che definisce la velocità della luce nel vuoto pari a 299792458 m/s. Per conoscere il nome, il compito e la descrizione di una costante è necessario consultare la documentazione.
+Le **costanti**, nell'ambito informatico come nell'ambito matematico, sono dei valori che non variano nel tempo, ed ai quali è associato un nome, come ad esempio la costante fisica **c** che definisce la velocità della luce nel vuoto pari a 299792458 m/s. Per conoscere il nome, il compito e la descrizione di una costante è necessario consultare la documentazione, come da immagine seguente:
+
+![p5.js - API](/static/coding/web/p5js/intro-api-references-constants-2024.png "p5.js - API - Constants")
 
 Ogni costante è documentata indicando uno o più esempi d'uso, il nome, la descrizione ed il valore.
 
