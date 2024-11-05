@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-08-22
-publishdate: 2024-08-22
-lastmod: 2024-08-22
+date: 2024-11-04
+publishdate: 2024-11-04
+lastmod: 2024-11-04
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -303,6 +303,7 @@ summary: "Set di link relativi al coding"
 [mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
 [Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
+[Tunnelmole, an ngrok alternative (open source)](https://softwareengineeringstandard.com/2024/03/19/ngrok-alternative-open-source/) - SES\
 
 #### Administration
 
@@ -344,7 +345,6 @@ summary: "Set di link relativi al coding"
 [old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
 [antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
 [Super LTS Kernel](https://www.prnewswire.com/news-releases/civil-infrastructure-platform-expands-super-long-term-stable-kernel-program-with-a-6-1-based-series-301955086.html) - Civil Infrastructure Platform Expands Super-Long-Term Stable Kernel Program with a 6.1-Based Series\
-[Tunnelmole, an ngrok alternative (open source)](https://softwareengineeringstandard.com/2024/03/19/ngrok-alternative-open-source/) - SES\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -366,9 +366,12 @@ summary: "Set di link relativi al coding"
 [Synpse platform](https://synpse.net/) - setup and control applications across hundreds or thousands of machines from a single place\
 [OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 [PiBox](https://pibox.io/) - a NAS that lets you use a standard operating system\
+[Setup NAS](https://dev.to/koditkarvedant/setup-nas-on-raspberry-pi-part-2-37p) - on Raspberry Pi 4 Part 2\
 
 ### Mozilla Firefox
 
+[Remove all iframes](javascript: (function() { let iframes = document.querySelectorAll("iframe"); let parentElement;  iframes.forEach(element => { parentElement = element.parentNode; parentElement.removeChild(element); });  })();) - \
+[Show all links](javascript: (function() { let links = document.querySelectorAll("a[href]"); let parentElement;  links.forEach(element => { console.log(element.href); });  })();) - \
 [Firefox mobile](chrome://geckoview/content/config.xhtml) - about:config page\
 [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Electronic Frontier Foundation\
 [Get Bookmark Add-ons](https://addons.mozilla.org/en-US/firefox/bookmarks/) - \
@@ -379,6 +382,7 @@ summary: "Set di link relativi al coding"
 [Come iniziare](https://www.mozilla.org/it/firefox/central/) - \
 [Firefox Voice](https://voice.mozilla.org/firefox-voice/) - browse the internet with your voice\
 [LibRedirect](https://libredirect.github.io/) - A web extension that redirects YouTube, Instagram, Reddit, TikTok and other websites to alternative privacy-friendly frontends\
+[Custom Site JS – Get this Extension for 🦊 Firefox (en-US)](https://addons.mozilla.org/en-US/firefox/addon/custom-site-js/) - \
 
 ### Network
 
@@ -509,6 +513,7 @@ summary: "Set di link relativi al coding"
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
 [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer 🔥\
 [MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown\
+[GitHub](https://github.com/mb21/panwriter) - mb21/panwriter: Markdown editor with pandoc integration and paginated preview.\
 
 ### UML, architetture ed ingegneria del software
 
@@ -539,6 +544,8 @@ summary: "Set di link relativi al coding"
 [Responsively App](https://responsively.app/) - A Web developer's browser to improve the developing of responsive design\
 [Nodesign.dev](https://nodesign.dev/) - A collection of tools for developers who have little to no artistic talent\
 [Webvisum](http://www.webvisum.com/) - your web helper (also for captcha)\
+[Expo](https://expo.dev/) - Create universal native apps with React that run on Android, iOS, and the web\
+[Authorization in Strapi](https://dev.to/strapi/a-beginners-guide-to-authentication-and-authorization-in-strapi-1hnh) - A Beginner's Guide to Authentication and Authorization\
 
 #### HTML
 

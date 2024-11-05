@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-07-05
-publishdate: 2024-07-05
-lastmod: 2024-07-05
+date: 2024-11-04
+publishdate: 2024-11-04
+lastmod: 2024-11-04
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -19,6 +19,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 ## Scuola
 
+[Ambito Territoriale di Caserta](https://www.uat-caserta.it/) - \
 [Competenze e Contenuti – Scuoladigitale](https://scuoladigitale.istruzione.it/pnsd/ambiti/competenze-e-contenuti/) - \
 [Scheda progettazione PCTO.pdf](https://www.istitutomajoranagela.edu.it/attachments/article/1952/Strumenti-Scheda-progettazione-PCTO.pdf) - \
 
@@ -60,6 +61,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Cyberbullismo](https://www.youtube.com/watch?v=_pgwLhSYA7o) - Cosa puoi fare per evitare il cyberbullismo? - YouTube\
 [Intelligenza Artificiale: come funziona e perché è già nelle nostre vite](https://www.youtube.com/watch?v=HdMhPu1BH5U) - What a Digital World EP 4 - YouTube\
 [Laura Pirotta](https://www.youtube.com/@LauraPirotta) - docente di scienze umane, storia e filosofia\
+[Prospettive di prevenzione dei comportamenti sfidanti dalla scuola dell’infanzia alla scuola secondaria – L'integrazione scolastica e sociale](https://rivistedigitali.erickson.it/integrazione-scolastica-sociale/archivio/vol-21-n-1/prospettive-di-prevenzione-dei-comportamenti-sfidanti-dalla-scuola-dellinfanzia-alla-scuola-secondaria1/) - \
 
 ##### Fake news
 
