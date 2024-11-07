@@ -69,14 +69,21 @@ untarz() {
 export -f untarz
 
 # test the checksum for sha, md5 and Blade3 files
+
+# Usage: sha512check file.txt.sha512
+sha512check() {
+  shasum --quiet --warn -a 512 --check "$@"
+}
+export -f sha512check
+
+# Usage: sha256check file.txt.sha256
+sha256check() {
+  shasum --quiet --warn -a 256 --check "$@"
+}
+export -f sha256check
+
 # BUG md5sum's option --quiet and --warn are incompatible
 # https://lists.gnu.org/r/bug-coreutils/2010-10/msg00104.html
-# Usage: shacheck file.txt.sha
-shacheck() {
-  shasum --quiet -a 512 --check "$@"
-}
-export -f shacheck
-
 # Usage: md5check file.txt.md5
 md5check() {
   md5sum --quiet --check "$@"
@@ -93,9 +100,9 @@ b3check() {
 }
 export -f b3check
 
-# Make .iso.md5 files from .iso file
-# Usage: md5MakeAllFromIsoFile
-md5MakeAllFromIsoFile() {
+# Make .iso.md5 files from .iso files
+# Usage: md5HashingAllIsoFiles
+md5HashingAllIsoFiles() {
   
   # nullglob: if there is no file, don't output anything
   # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
@@ -103,12 +110,58 @@ md5MakeAllFromIsoFile() {
 
   while IFS= read -r fileIso
   do
-    echo "calculating md5 of $fileIso"
-    touch "$fileIso.md5"
-    md5sum "$fileIso" > "$fileIso.md5"
+    if [ -f "$fileIso.md5" ]; then
+      echo "    Md5 hash exists: $fileIso.md5"
+    else
+      echo "    $(date) - Hashing (MD5) $fileIso"
+      touch "$fileIso.md5"
+      md5sum "$fileIso" > "$fileIso.md5"
+    fi
   done < <(ls ./*.iso)
 }
-export -f md5MakeAllFromIsoFile
+export -f md5HashingAllIsoFiles
+
+# Make .iso.b3 files from .iso files
+# Usage: blake3HashingAllIsoFiles
+blake3HashingAllIsoFiles() {
+  
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
+  shopt -s nullglob nocaseglob
+
+  while IFS= read -r fileIso
+  do
+    if [ -f "$fileIso.b3" ]; then
+      echo "    b3 hash exists: $fileIso.b3"
+    else
+      echo "    $(date) - Hashing (b3) $fileIso"
+      touch "$fileIso.b3"
+      b3sum "$fileIso" > "$fileIso.b3"
+    fi
+  done < <(ls ./*.iso)
+}
+export -f blake3HashingAllIsoFiles
+
+# Make .iso.sha256 files from .iso files
+# Usage: sha256HashingAllIsoFiles
+sha256HashingAllIsoFiles() {
+  
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
+  shopt -s nullglob nocaseglob
+
+  while IFS= read -r fileIso
+  do
+    if [ -f "$fileIso.sha256" ]; then
+      echo "    sha256 hash exists: $fileIso.sha256"
+    else
+      echo "    $(date) - Hashing (sha256) $fileIso"
+      touch "$fileIso.sha256"
+      sha256sum "$fileIso" > "$fileIso.sha256"
+    fi
+  done < <(ls ./*.iso)
+}
+export -f sha256HashingAllIsoFiles
 
 # elimina con wipe (sovrascrive N volte, f=force no confirmation, r=recoursive, i=verbose mode, q=quick wipe)
 # Usage: wipe file.txt
