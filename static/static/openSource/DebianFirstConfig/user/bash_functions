@@ -153,6 +153,48 @@ biggestDir() {
 }
 export -f biggestDir
 
+##########################################
+# Ricerca e sostituzione testo nei files #
+##########################################
+
+# visualizza tutti i file contenenti il testo
+# Usage: grepSearch "testo"
+grepSearch() {
+  grep -H -e "$@" ./*
+}
+export -f grepSearch
+
+# visualizza ricorsivamente tutti i file contenenti il testo
+# Usage: grepRecursiveSearch "testo" .
+grepRecursiveSearch() {
+  grep --include "*" --recursive "$@"
+}
+export -f grepRecursiveSearch
+
+# Usa ripgrep per effettuare una sostituzione
+# Usage: command | grepRgReplace "testo1" "testo2"
+grepRgReplace() {
+  ## -N: ingnora i file nascosti
+  ## --passthru: restituisce anche le righe che non corrispondono 
+  ## -r: pattern di ricerca
+  rg -N --passthru "$1" -r "$2" 
+}
+export -f grepRgReplace
+
+# Usa tr per effettuare una sostituzione
+# Usage: command | grepReplaceLowerWithUpper
+grepReplaceLowerWithUpper() {
+  tr '[:lower:]' '[:upper:]'
+}
+export -f grepReplaceLowerWithUpper
+
+# Usa tr per effettuare una sostituzione
+# Usage: command | grepReplaceUpperWithLower
+grepReplaceUpperWithLower() {
+  tr '[:upper:]' '[:lower:]'
+}
+export -f grepReplaceUpperWithLower
+
 ######################################################
 # Hashing functions (sha256, sha512, md5 and Blade3) #
 ######################################################
@@ -471,6 +513,70 @@ gitGrep() {
   git grep --untracked -n -i "$@"
 }
 export -f gitGrep
+
+# Check the status of all repository
+gitStatusOfAllRepo() {
+  endColor='\033[0m]'
+  foregroundColor='35' 
+  backgroundColor='44'
+  boldStyle='1'
+  color="\033[${boldStyle};${foregroundColor};${backgroundColor}m"
+
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
+  shopt -s nullglob nocaseglob
+
+  while IFS= read -r repo
+  do
+    # SC2103 – ShellCheck Wiki - Use a ( subshell ) to avoid having to cd back.
+    # You can run commands in a subshell using parenthesis ( command )
+    (
+      cd "$repo" || exit
+      echo -e "${color} ${PWD} \033[0m"
+
+      # Verifico se è un repo git
+      if [ -d ".git" ]; then
+        git status --short --branch
+        # git pull origin
+      fi
+    ) # close subshell
+  done < <(ls -d ./*/)
+}
+export -f gitStatusOfAllRepo
+
+# Updates all repository
+gitUpdateAllRepo() {
+  endColor='\033[0m]'
+  foregroundColor='35' 
+  backgroundColor='44'
+  boldStyle='1'
+  color="\033[${boldStyle};${foregroundColor};${backgroundColor}m"
+
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
+  shopt -s nullglob nocaseglob
+
+  # Check if ssh-add is running
+  if [ -n "$SSH_AGENT_PID" ] && kill -0 "$SSH_AGENT_PID" 2>/dev/null; then
+    while IFS= read -r repo
+    do
+      # SC2103 – ShellCheck Wiki - Use a ( subshell ) to avoid having to cd back.
+      # You can run commands in a subshell using parenthesis ( command )
+      (
+        cd "$repo" || exit
+        echo -e "${color} ${PWD} \033[0m"
+
+        # Verifico se è un repo git
+        if [ -d ".git" ]; then
+          git pull origin
+        fi
+      ) # close subshell
+    done < <(ls -d ./*/)
+  else
+    echo "run ssh-add"
+  fi
+}
+export -f gitUpdateAllRepo
 
 ########################
 #         SVN          #
