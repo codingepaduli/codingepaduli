@@ -294,6 +294,27 @@ sha256HashingAllIsoFiles() {
 }
 export -f sha256HashingAllIsoFiles
 
+## rhash - calculate recoursive hash:
+## rhash --md5 --recursive  --verbose --output=checksum.md5 *
+
+# Make a report of file status against the file checksum.md5
+# Usage: md5VerboseReport --file=checksum.md5
+md5VerboseReport() {
+  ## --batch : non interactive mode
+  ## --check : check the hashes
+  ## --type : check the hash type MD5, sha256 or sha512
+  digup --batch --check --type=md5 "$@"
+}
+export -f md5VerboseReport
+
+# Make a report of file status against the file checksum.md5
+# Usage: md5Report --file=checksum.md5
+md5Report() {
+  ## --modified : print only "new", "CHANGED" or deleted file
+  md5VerboseReport --modified "$@"
+}
+export -f md5Report
+
 ########################
 #        ntfy          #
 ########################
