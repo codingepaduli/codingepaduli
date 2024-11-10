@@ -766,6 +766,72 @@ convertAllWebmToMp4() {
 export -f convertAllWebmToMp4
 
 ########################
+# Check files to burn  #
+########################
+
+checkFilesToBurn() {
+
+  # Ultimo aggiornamento 2022-06-20
+  # 
+  # Script che visualizza i file nascosti, i file di cache windows "thumbs.db"
+  # ed i file che hanno dei caratteri nel nome che non sono accettabili per noi.
+  #
+  # News:
+  # Versione 1.5 : Ricerca incompatibilità Windows, nomi dei file con piu di 64 caratteri.
+  # Versione 1.4 : Ricarca di cartelle annidate per piu di sette livelli
+  # Versione 1.3 : Ricerca file di cache windows "thumbs.db".
+  # Versione 1.2 : Ricerca file che hanno dei caratteri nel nome non accettabili.
+  # Versione 1.1 : Ricerca file con nome che finisce per "tilde" (~).
+  # Versione 1.0 : Ricerca file con nome che inizia per "punto" (.).
+
+  # Elenco dei caratteri accettati:
+  Alfabetici="a-zA-Z"
+  Numerici="0-9"
+  Punto="\."
+  Spazio="\ "
+  Slash="\/"
+  Trattino="-"
+  Under="_"
+  Dollaro='$'
+
+  # Talvolta l'ordine dei caratteri accettati crea confusione nel riconoscimento.
+  # Assicurarsi che cio non avvenga.
+  Accettati="$Dollaro$Under$Alfabetici$Numerici$Punto$Spazio$Slash$Trattino"
+
+  echo -e "Script che visualizza i file nascosti, i file di cache windows \"thumbs.db\" "
+  echo -e "ed i file che hanno dei caratteri nel nome che non sono accettabili per noi. "
+
+  echo -e "\n I file nascosti nelle varie directory e sottodirectory sono: "
+  find ./ -regextype posix-egrep -regex "\./.*\/['.'].*$" 
+  find ./ -regextype posix-egrep -regex "\./.*~.*"
+
+  echo -e "\n I file Thumbs.db nelle varie directory e sottodirectory sono: "
+  find ./ -iname '*thumbs.db'
+
+  echo -e "\n I file che hanno caratteri non accettati sono: "
+  find ./ -regextype posix-egrep -regex "\./.*[^$Accettati].*"
+
+  echo -e "\n I file che hanno un nome con più di 64 caratteri sono: "
+  find ./ -regextype posix-egrep -regex ".*" | sed 's/^.*\///g' | grep -E "^.{64,}"
+
+  echo -e "\n Le cartelle annidate per piu di 7 livelli sono: "
+
+  elenco=$(find ./ -type d -ls)
+  elenco2=$(echo "$elenco" | cut -d\. -f2 | sed "s/[^/]//g")
+
+  numDir=$(echo "$elenco" | wc --lines)
+
+  for i in $(seq 1 "$numDir")
+  do
+    nomeFile=$(echo "$elenco" | sed -n "$i"p\;"$i"q | cut -d\. -f2) #sed stampa solo la riga i-esima
+    numSlash=$(echo "$elenco2" | cut -d\  -f"$i") #Ricerca dell'ennesima riga di slash
+    numLivelli=$(echo "$numSlash" | wc --chars)
+    echo -e "\"$nomeFile\"*\t*$((numLivelli - 1))livelli." | sed 's/\\//g' | grep -e "8livelli."
+  done
+}
+export -f checkFilesToBurn
+
+########################
 # Beautiful interfaces #
 ########################
 
