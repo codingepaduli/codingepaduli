@@ -153,6 +153,17 @@ biggestDir() {
 }
 export -f biggestDir
 
+####################################
+# VLC - Metadata Extraction Tool   #
+####################################
+
+# Auto reconnect to the server when connection drops
+# Usage: vlcStreamingWithAutoReconnection file.m3u
+vlcStreamingWithAutoReconnection() {
+  vlc --loop --repeat --http-reconnect --http-continuous  --fullscreen "$@"
+}
+export -f vlcStreamingWithAutoReconnection
+
 ##########################################
 # Exif Tool - Metadata Extraction Tool   #
 ##########################################
