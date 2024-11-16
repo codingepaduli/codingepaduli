@@ -102,7 +102,8 @@ fi
 ## net-tools: controllo del sottosistema di rete
 ## traceroute: traccia la rotta dei pacchetti
 ## fail2ban python3-systemd: nega l'accesso agli host che causano molteplici errori di autenticazione, controllando i log di systemd
-apt-get install $APT_OPTS ufw gufw iptraf-ng nmap net-tools traceroute fail2ban python3-systemd
+## whois: protocollo di rete che individua il provider internet a cui appartiene un indirizzo IP o DNS.
+apt-get install $APT_OPTS ufw gufw iptraf-ng nmap net-tools traceroute fail2ban python3-systemd whois
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -289,6 +290,24 @@ apt-get install $APT_OPTS boxes cowsay lolcat cmatrix
 if [ $? -ne 0 ]; then
     exit 1
 fi
+
+# Installa le guide
+## abs-guide: The Advanced Bash-Scripting Guide.
+## debian-reference-it: Debian system administration guide.
+## Developers-reference: guidelines and information for Debian developers.
+## ebook-dev—alp: Advanced Linux Programming
+
+# Installa i giochi
+## Gbrainy: Test di logica, matematica e memoria.
+## Hedgewars : Clone di worms multiplayer. 
+## OpenArena : Sparatutto 3D
+## PokerTH : Client per poker on line.
+## Quadrapassel : Tetris.
+## Super Tux 2 (clone GPL di Super Mario Bros)
+## Tanglet : gioco tipo paroliere.   
+## Torcs : Corse automobilistiche.
+	
+# apt-get install $APT_OPTS abs-guide debian-reference-it developers-reference ebook-dev—alp
 
 apt-get autoremove $APT_OPTS --purge
 
