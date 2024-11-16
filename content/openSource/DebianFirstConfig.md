@@ -186,3 +186,19 @@ In Thunar (XFCE file manager) è possibile aggiungere delle azioni personalizzat
 - Comando di esempio: ``/usr/bin/wipe -fqsF %f``.
 
 **BUG**: La modifica al nome di un file (da shell o da altri processi) mentre Thunar visualizza il file causa il blocco di Thunar. Ad esempio il comando wipe senza l'opzione -F (non rinominare il file) blocca completamente Thunar.
+
+## Ripristinare il MBR di Windows
+
+Il pacchetto ``ms-sys`` permette di ripristinare il Master Boot Record di Windows. E' necessario identificare il disco o la partizione Windows sulla quale installare il MBR, usando un programma grafico come GParted oppure eseguendo il comando:
+
+```bash
+sudo fdisk -l
+```
+
+Visualizzato il nome del disco, tipicamente ``/dev/sda`` oppure il nome della partizione, tipicamente ``/dev/sda1``, si può ripristinare il MBR eseguendo il comando ``ms-sys`` ed indicando il disco o la partizione individuata, come nell'esempio seguente:
+
+```bash
+sudo ms-sys -m /dev/sda
+```
+
+Riavviando il sistema, il boot loader GRUB sarà scomparso ed il PC si avvierà con Windows.
