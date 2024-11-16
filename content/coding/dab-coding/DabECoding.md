@@ -4,10 +4,10 @@ title: "DAB e coding"
 description: "Esercizi sui diagrammi a blocchi e sul coding"
 date: 2023-07-23
 publishdate: 2023-07-23
-lastmod: 2023-07-23
+lastmod: 2024-11-16
 categories: ["coding", "dab-coding"]
 keywords: ["coding", "dab-coding"]
-draft: true
+draft: false
 toc: false
 summary: "Esercizi sui diagrammi a blocchi e sul coding"
 weight: 12020
@@ -20,26 +20,15 @@ weight: 12020
 Analizzare il problema descritto in calce e quindi realizzare e consegnare:
 
 1. il diagramma a blocchi (file di flowgorithm con estensione "``.fprg``");
-2. l'immagine vettoriale del diagramma a blocchi (file con estensione "``.svg``");;
+2. l'immagine vettoriale del diagramma a blocchi (file con estensione "``.svg``");
 3. l'immagine del diagramma a blocchi in formato bitmap (file con estensione "``.bmp``");
 4. l'immagine della finestra delle variabili (file con estensione "``.png``);
-5. l'immagine della finestra di esecuzione  (file con estensione "``.png``);
+5. l'immagine della finestra di esecuzione (file con estensione "``.png``);
 6. la codifica nel linguaggio di programmazione (file con estensione "``.c``" o "``.cpp``").
 
 Ogni nome di file deve iniziare con il proprio ``cognome`` (non il nome) seguito dalla data (in formato ``aaaa-mm-gg``, usando il carattere "trattino" ``-``, e non la barra, per separare i campi), dalla descrizione del file e dalla relativa estensione, ad esempio "``Rossi 2022-03-01 finestra variabili.png``".
 
 Se espressamente indicato, la consegna deve avvenire in un unico pacchetto compresso (file in formato "``.zip``"), con nome del file che rispetta sempre la regola indicata in precedenza (``cognome`` seguito dalla data in formato ``aaaa-mm-gg``, dalla descrizione e dall'estensione "``.zip``").
-
-Al termine dell'esercitazione, indicare in un commento ogni punto che è stato rispettato, come nel seguente esempio:
-
-```plaintext
-punto 1 - rispettato;
-punto 2 - rispettato;
-punto 3 - rispettato;
-punto 4 - rispettato;
-punto 5 - rispettato;
-punto 6 - rispettato;
-```
 
 L'esercitazione deve terminare 15 minuti prima del termine delle ore a disposizione; Prima di iniziare il lavoro, smartphone e smartwatch devono essere lasciati sulla cattedra o nello zaino nella zona comune.
 
@@ -48,7 +37,18 @@ L'esercitazione sarà annullata per:
 - chi viene sorpreso in possesso di smartphone e/o smartwatch, anche se in tasca o sulla scrivania;
 - chi viene sorpreso ad utilizzare le chat online o a inviarsi la soluzione via email;
 - chi viene richiamato più di una volta a parlare con i propri compagni;
-- chi viola le regole di laboratorio o le regole di comportamento condivise.
+- chi viola le regole di laboratorio o le regole di comportamento condivise con l'insegnante.
+
+Superato la scadenza temporale impostata, la piattaforma impedisce la consegna di ulteriori lavori. E' compito dello studente organizzarsi per consegnare nel tempo previsto.
+
+Per ogni problema assegnato sarà valutata la correttezza della consegna e la qualità del codice prodotto, in particolare sarà valutato:
+
+- se tutti i file sono stati consegnati;
+- se il nome e l'estensione di ogni file consegnato sono corretti;
+- se l'eventuale file compresso contiene tutti i file ed il nome è corretto;
+- se nel DAB e nel codice sono presenti i commenti;
+- se nel primo commento sono indicati autore, data, traccia, input ed output.
+- se il codice consegnato compila ed esegue correttamente il programma.
 
 ## Equazione di secondo grado
 
@@ -65,33 +65,34 @@ Sia nel caso del delta maggiore di zero, sia nel caso di delta uguale a zero, ca
 - ``x1 = (-b -Sqrt(delta))/(2*a)``;
 - ``x2 = (-b +Sqrt(delta))/(2*a)``;
 
-File da consegnare:
+## Calcolatrice
 
-- [Cognome-2023-07-23 DAB equazioni2Grado.fprg](/static/coding/dab-coding/equazioni2Grado.fprg);
-- [Cognome-2023-07-23 Immagine DAB equazioni2Grado.svg](/static/coding/dab-coding/equazioni2Grado.svg);
-- [Cognome-2023-07-23 Immagine DAB equazioni2Grado.png](/static/coding/dab-coding/equazioni2Grado.png);
-- [Cognome-2023-07-23 Immagine finestra variabili equazioni2Grado.png](/static/coding/dab-coding/equazioni2Grado-variabili.png);
-- [Cognome-2023-07-23 Immagine finestra esecuzione equazioni2Grado.png](/static/coding/dab-coding/equazioni2Grado-esecuzione.png);
-- [Cognome-2023-07-23 sorgenti equazioni2Grado.cpp](/static/coding/dab-coding/equazioni2Grado.cpp);
+Realizzare un programma che permetta di creare una semplice calcolatrice che svolge un operazione ``T`` su 2 numeri.
 
-## Selezione operazione
+A partire dai due numeri, svolgere l'operazione richiesta secondo questo schema:
 
-A partire da 2 numeri e dal tipo operazione ``T``, se ``T = 1`` determinare la somma dei 2 numeri altrimenti se ``T = 2`` determinare la differenza dei 2 numeri altrimenti se ``T = 3`` determinare il prodotto dei 2 numeri altrimenti se ``T = 4`` determinare la divisione dei 2 numeri.
+- se ``T = 1`` calcolare e visualizzare la somma dei 2 numeri;
+- se ``T = 2`` calcolare e visualizzare la differenza dei 2 numeri;
+- se ``T = 3`` calcolare e visualizzare il prodotto dei 2 numeri;
+- se ``T = 4`` calcolare e visualizzare la divisione dei 2 numeri.
 
 ## Distanza tra due punti
 
-Calcolare la distanza tra due punti A di coordinate (x1, y1) e B di
- coordinate (x2, y2), utilizzando il teorema di Pitagora.
+Realizzare un programma che permetta di calcolare la distanza tra due punti, ``A`` di coordinate (x1, y1) e ``B`` di coordinate (x2, y2), utilizzando il teorema di Pitagora.
 
-File da consegnare:
+## Calcolo dell'area e del perimetro delle figure geometriche indicate
 
-- [Cognome-2023-07-23 sorgenti distanza2punti.cpp](/static/coding/dab-coding/distanza2punti.cpp);
+Realizzare un programma che, a partire da un numero ``D`` inserito dall'utente, permetta di calcolare:
+
+- perimetro ed area del quadrato di lato D;
+- circonferenza ed area del cerchio di raggio D;
+- perimetro ed area del triangolo equilatero di lato D, utilizzando la formula di calcolo dell'area ``SQRT(3/4) * D * D``.
 
 ## Maggiore del limite
 
-Progettare un programma che prenda in input 3 numeri. Per ogni numero verifichi se è maggiore di 400 ed in caso positivo lo reinizializzi a zero, altrimenti lo incrementi di 10;
+Realizzare un programma che permetta di inserire 3 numeri e reinizializzare a zero quelli maggiori di 400 e di incrementare di 10 quelli minori o uguali a 400.
 
-Al termine visualizzi i numeri.
+Al termine visualizzare i numeri risultanti.
 
 ## Media settimanale delle temperature
 
@@ -112,8 +113,11 @@ Traccia extra: Verificare le date per il mese di Febbraio (giorni 30 e 31 non so
 
 Traccia extra - extra: Verificare che la data sia valida in caso di anno bisestile;
 
-File da consegnare:
+## Ordine crescente o decrescente 2 numeri
 
-- [Cognome-2023-07-23 sorgenti dataValida.cpp](/static/coding/dab-coding/dataValida.cpp);
+Realizzare un programma che permetta di visualizzare in ordine crescente o decrescente i due 2 numeri inseriti dall'utente.
 
-- [Cognome-2023-07-23 sorgenti dataValida extra.cpp](/static/coding/dab-coding/dataValidaExtra.cpp);
+Svolgere l'operazione richiesta secondo questo schema:
+
+- se il tipo di ordinamento ``TO`` è uguale a ``C``, allora  visualizzare i 2 numeri con ordine crescente;
+- se il tipo di ordinamento ``TO`` è uguale a ``D``, allora  visualizzare i 2 numeri con ordine decrescente.
