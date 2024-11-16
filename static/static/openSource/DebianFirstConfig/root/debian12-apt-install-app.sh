@@ -246,7 +246,9 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-apt-get install $APT_OPTS bash bash-completion curl dash diffutils tldr-py
+## screen: gestisce le sessioni di terminale, quando la connessione cade o si chiude
+##         involontariamente un terminale, ci si può ricollegare e riprendere.
+apt-get install $APT_OPTS bash bash-completion curl dash diffutils tldr-py screen
 
 if [ $? -ne 0 ]; then
     exit 1
