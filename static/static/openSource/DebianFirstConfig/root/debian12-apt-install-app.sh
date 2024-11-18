@@ -137,7 +137,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # acpi info, list-hardware info, linux standard base reporting utilities
-apt-get install $APT_OPTS acpi cpufrequtils lshw lshw-gtk lsb-base lsb-release
+## gsmartcontrol: ispeziona i dati SMART delle unità a disco rigido per determinarne lo stato di salute
+apt-get install $APT_OPTS acpi cpufrequtils lshw lshw-gtk lsb-base lsb-release gsmartcontrol
 
 if [ $? -ne 0 ]; then
     exit 1
@@ -152,7 +153,8 @@ fi
 ## jmtpfs: Filesystem USErmode for MTP devices
 ## wipe: secure deletion of files (overwriting it more times)
 ## rmlint-gui: GUI for finding duplicate files & directories
-apt-get install $APT_OPTS gparted testdisk ntfs-3g gnome-disk-utility gvfs gvfs-backends ifuse jmtpfs wipe rmlint-gui
+## exfat-utils: tools to create, check and label exFAT filesystems
+apt-get install $APT_OPTS gparted testdisk ntfs-3g gnome-disk-utility gvfs gvfs-backends ifuse jmtpfs wipe rmlint-gui exfat-utils
 
 if [ $? -ne 0 ]; then
     exit 1
