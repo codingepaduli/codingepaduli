@@ -52,6 +52,7 @@ org.kde.krename
 org.kde.marble
 org.libreoffice.LibreOffice
 org.mozilla.firefox
+org.musicbrainz.Picard
 # org.nextcloud.Nextcloud ## deprecated name
 # org.nomacs.ImageLounge
 org.processing.processingide
