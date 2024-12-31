@@ -7,7 +7,7 @@ publishdate: 2023-02-04
 lastmod: 2023-02-04
 categories: [""]
 keywords: [""]
-draft: true
+draft: false
 toc: false
 summary: "Esercizi sulla progettazione di diagrammi a blocchi e relativa codifica nella sezione <a href='/coding/dab-coding'>diagrammi a blocchi e coding</a>"
 ---
