@@ -876,6 +876,21 @@ convertAllMp4VideoToMp3Audio() {
 }
 export -f convertAllMp4VideoToMp3Audio
 
+# Run: convertAllFlvVideoToMp3Audio
+convertAllFlvVideoToMp3Audio() {
+
+  # nullglob: if there is no file, don't output anything
+  # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
+  shopt -s nullglob nocaseglob
+
+  for file in *.flv
+  do
+    
+    ffmpeg -i "${file}" -vn -ar 44100 -ac 2 -q:a 2 "new-${file}.mp3";
+  done
+}
+export -f convertAllFlvVideoToMp3Audio
+
 ########################
 # Check files to burn  #
 ########################
