@@ -114,3 +114,21 @@ output: 0 6 6 4 4 0
 Si realizzi uno script ``tipo_tasto.sh`` che prenda come argomento di input un carattere ed indichi se si tratta di una lettera minuscola, lettera maiuscola, cifra numerica o altro.
 
 - [tipo_tasto.sh](/static/coding/shell/bash/tipo_tasto.sh "Tipo di tasto").
+
+## Controlla utente
+
+Si realizzi uno script ``controlla_utenti_loggati.sh`` che prenda come parametro ``n`` (gli ultimi n accessi al sistema) ed ``UserName`` (l’utente), controlli se l’utente ``UserName`` esiste (quindi il suo UserName è contenuto all’interno del file ``/etc/passwd``) e, nel caso esista, controlli se risulta tra gli ultimi ``n`` utenti collegati al sistema (``who | tail --lines=$n`` visualizza gli ultimi).
+
+Esempio:
+
+```plaintext
+$ ./controlla.sh 5 io
+```
+
+L'output deve essere:
+
+```plaintext
+L’utente UserName esiste ed è collegato al sistema.
+```
+
+- [controlla_utenti_loggati.sh](/static/coding/shell/bash/controlla_utenti_loggati.sh "Controlla utente loggato").
