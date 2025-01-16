@@ -61,7 +61,7 @@ Lo script ``num_subdir_prepare.sh`` servirà a preparare la cartella ``ambiente`
 
 ## Seleziona righe
 
-Scrivere uno script shell ``seleziona_righe.sh`` che, dato un file di testo esistente ``elenco.txt``, visualizza la riga di tale file che viene lessicograficamente per seconda.
+Si realizzi uno script ``seleziona_righe.sh`` che, dato un file di testo esistente ``elenco.txt``, visualizza la riga di tale file che viene lessicograficamente per seconda.
 
 Ad esempio se il contenuto di un file elenco è il seguente:
 
@@ -85,3 +85,32 @@ Tale script dovrà inoltre prendere come argomento di input il nome di un file n
 - [seleziona_righe.sh](/static/coding/shell/bash/seleziona_righe.sh "Seleziona righe").
 - [seleziona_righe_elenco.txt](/static/coding/shell/bash/seleziona_righe_elenco.txt "Seleziona righe - elenco").
 - [seleziona_righe_lista.txt](/static/coding/shell/bash/seleziona_righe_lista.txt "Seleziona righe - lista").
+
+## Stringa da cellulare
+
+Si realizzi uno script ``stringa_da_cellulare.sh`` che prenda come parametri una sequenza di caratteri, separati tra loro da uno spazio, e li trasformi in numeri tramite la seguente regola (simile a quella dei cellulari):
+
+0=ABC, 1=DEF, 2=GHI, 3=JKL, 4=MNO, 5=PQR, 6=STU, 7=VWX, 8=YZ
+
+E' OBBLIGATORIO usare la struttura di controllo case (e NON l’if).
+L'output deve essere stampato sia su più righe, che su un'unica riga.
+
+Esempio:
+
+```plaintext
+$ ./stringa_da_cellulare.sh A S T N O B
+```
+
+L'output deve essere:
+
+```plaintext
+output: 0 6 6 4 4 0
+```
+
+- [stringa_da_cellulare.sh](/static/coding/shell/bash/stringa_da_cellulare.sh "Stringa da cellulare").
+
+## Tipo di tasto
+
+Si realizzi uno script ``tipo_tasto.sh`` che prenda come argomento di input un carattere ed indichi se si tratta di una lettera minuscola, lettera maiuscola, cifra numerica o altro.
+
+- [tipo_tasto.sh](/static/coding/shell/bash/tipo_tasto.sh "Tipo di tasto").
