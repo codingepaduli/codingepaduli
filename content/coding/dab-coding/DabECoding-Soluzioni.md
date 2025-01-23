@@ -30,7 +30,10 @@ Da realizzare.
 
 ## Soluzione distanza tra due punti
 
-- DAB da realizzare;
+- [Cognome-2023-07-23 distanza2punti-DAB.fprg](/static/coding/dab-coding/distanza2punti-DAB.fprg);
+- [Cognome-2023-07-23 Immagine DAB distanza2punti.png](/static/coding/dab-coding/distanza2punti-DAB.png);
+- [Cognome-2023-07-23 Immagine finestra variabili distanza2punti.png](/static/coding/dab-coding/distanza2punti-variabili.png);
+- [Cognome-2023-07-23 Immagine finestra esecuzione distanza2punti.png](/static/coding/dab-coding/distanza2punti-esecuzione.png);
 - [Cognome-2023-07-23 sorgenti distanza2punti.cpp](/static/coding/dab-coding/distanza2punti.cpp);
 
 ## Soluzione Calcolo dell'area e del perimetro delle figure geometriche indicate
