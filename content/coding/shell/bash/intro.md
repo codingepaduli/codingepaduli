@@ -14,6 +14,55 @@ summary: "Esercizi in bash"
 
 # Esercizi in bash
 
+## Script colorati
+
+Lo schema per usare i colori è:
+
+```bash
+echo -e "\033[STYLE;COLORE_TXT;COLORE_BACKm Qui va inserito il testo. "
+```
+
+Per compatibilita, ``\033`` in ``sh`` corrisponde a ``\E`` di ``bash``.
+
+I valori applicabili per la variabile``STYLE`` sono:
+
+- ``0`` ripristina il testo semplice;
+- ``1`` imposta il grassetto;
+- ``2`` imposta la bassa luminosita;
+- ``4`` imposta il testo sottolineato;
+- ``5`` imposta il testo lampeggiante;
+- ``6`` imposta il testo lampeggiante;
+- ``7`` imposta i colori invertiti;
+
+| Colore | Colore se grassetto | Codice testo | Codice sfondo |
+| ------ | ------------------- | ------------ | ------------- |
+| nero   |     grigio scuro    |      30      |      40       |
+| rosso  |    rosso chiaro     |      31      |      41       |
+| verde  |    verde chiaro     |      32      |      42       |
+| marrone |       giallo       |      33      |      43       |
+| blu    |      blu chiaro     |      34      |      44       |
+| viola  |    viola chiaro     |      35      |      45       |
+| cyan   |     ciano chiaro    |      36      |      46       |
+| grigio chiaro |  bianco      |      37      |      47       |
+
+Se al termine si vuole ripristinare lo stile predefinito allora
+è necessario specificarlo applicando un secondo stile ``\033[0m``:
+
+```bash
+echo -e "\033[STYLE;COLORE_TXT;COLORE_BACKm Testo colorato \033[0m Testo normale"
+```
+
+Per impostare il terminale i maniera predefinita si può impostare la variabile ``PS1``:
+
+```bash
+PS1='\033[0;33;45m prompt_voluto \033[0m >]'
+export PS1
+```
+
+Esempio di script per l'uso dei colori nel terminale:
+
+[script_colorati.sh](/static/coding/shell/bash/script_colorati.sh "Script colorati").
+
 ## Controllo esistenza file
 
 Si realizzi uno script ``controlla_esistenza_file.sh`` che prende come parametro il nome di un file ed, ad intervalli di 20 secondi, controlli che il file sia stato creato, restando in attesa fino alla creazione.
