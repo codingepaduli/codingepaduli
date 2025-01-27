@@ -181,3 +181,9 @@ L’utente UserName esiste ed è collegato al sistema.
 ```
 
 - [controlla_utenti_loggati.sh](/static/coding/shell/bash/controlla_utenti_loggati.sh "Controlla utente loggato").
+
+## Conta presenza carattere
+
+Si realizzi uno script ``contaPresenzaCarattere.sh`` che prenda due parametri, una lettera e una frase, e conti il numero di volte in cui la lettera è presente nella frase passata.
+
+- [contaPresenzaCarattere.sh](/static/coding/shell/bash/contaPresenzaCarattere.sh "Conta presenza carattere").
