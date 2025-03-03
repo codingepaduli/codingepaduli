@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2024-11-04
-publishdate: 2024-11-04
-lastmod: 2024-11-04
+date: 2025-03-02
+publishdate: 2025-03-02
+lastmod: 2025-03-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -94,11 +94,14 @@ summary: "Set di link relativi all'istruzione di base"
 [Come trascrivere le registrazioni in modo automatico e semplice](https://newsmondo.it/come-trascrivere-le-registrazioni-in-modo-automatico-e-semplice/tech/?refresh_ce) - \
 [LibrePCB](https://librepcb.org/) - develop your printed circuit board\
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
+[Edoardo Midali](https://www.youtube.com/@EdoardoMidali) - YouTube\
 
 ##### Hardware
 
 [Tecnologie informatiche per le superiori 1](https://it.wikiversity.org/wiki/Materia:Tecnologie_informatiche_per_le_superiori_1) - Wikiversità\
 [Procedure di assemblaggio delle varie componenti](https://www.youtube.com/watch?v=7QW479E4vxE) - \
+[Prefissi del Sistema internazionale di unità di misura](https://it.wikipedia.org/wiki/Prefissi_del_Sistema_internazionale_di_unit%C3%A0_di_misura) - Wikipedia\
+[Notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica) - Wikipedia\
 
 ##### Windows
 
@@ -260,10 +263,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Top 9 Lessons learned in 12 years as a software developer.](https://dev.to/tyaga001/top-9-lessons-learned-in-12-years-as-a-software-developer-4o9h) - DEV Community\
 [Corso PHP/MYSQL Tutorial Italiano 03](https://www.youtube.com/watch?v=2BMEAsJwBxI) - Connessione al Database\
 [Corso PHP/MYSQL Tutorial Italiano 08](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Selezionare dati con SELECT - YouTube\
-[PhpMyAdmin GUI](https://www.youtube.com/watch?v=x1Hwm9cwihs&t=692s) - 8 Relazione Tra Tabelle\
-[PhpMyAdmin GUI](https://www.youtube.com/watch?v=fxEHOl5Nbco&t=34s) - 3 Operazioni sui dati\
-[PhpMyAdmin GUI](https://www.youtube.com/watch?v=evokXvZFWgo) - 2 Prima tabella\
-[PhpMyAdmin GUI](https://www.youtube.com/watch?v=z0_tr8r61eE&t=35s) - 1 XAMPP\
+[Corso PHP MySql](https://www.youtube.com/watch?v=QZo3LBajSds&list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - \
 [digital marketing con Google](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - \
 
 #### Eventi

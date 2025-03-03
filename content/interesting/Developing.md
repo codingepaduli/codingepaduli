@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2024-11-04
-publishdate: 2024-11-04
-lastmod: 2024-11-04
+date: 2025-03-02
+publishdate: 2025-03-02
+lastmod: 2025-03-02
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -36,7 +36,6 @@ summary: "Set di link relativi al coding"
 [Deskreen](https://deskreen.com/lang-en) - Turn any device into a secondary screen\
 [index | TIOBE](https://www.tiobe.com/tiobe-index/) - The Software Quality Company\
 [FlutterFlow](https://flutterflow.io/) - Build Flutter Apps Visually\
-[Popularity](https://www.zdnet.com/article/programming-language-popularity-javascript-leads-5-million-new-developers-since-2017/) - Programming language with JavaScript, 5 million new developers since 2017 | ZDNet\
 
 ### C/C++
 
