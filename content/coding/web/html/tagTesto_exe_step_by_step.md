@@ -15,6 +15,21 @@ weight: 9734
 
 # Creazione prima pagina web
 
+## Software da utilizzare
+
+Per creare una semplice pagina HTML è sufficiente di un semplice editor di testo, da notare che **non sono proprio adatti** ne il blocco note di Windows (Notepad) ne il programma Word di Office.
+
+Tra gli editor consigliati vi sono:
+
+- [Notepad++](https://notepad-plus-plus.org/ "Collegamento all'editor Notepad++")
+- [VSCodium](https://vscodium.com/ "Collegamento all'editor VSCodium"), meglio se con l'estensione [Live Server](https://github.com/ritwickdey/vscode-live-server "Collegamento all'estensione Live Server");
+- Visual Studio Code.
+
+E' possibile utilizzare anche editor di testi basati sul web, come:
+
+- [Visual Studio Code online](https://code.visualstudio.com/ "Collegamento all'editor Visual Studio Code online");
+- [Phoenix Code] (https://phcode.io/ "Collegamento all'editor Phoenix Code");
+
 ## Crea la cartella
 
 Click con il secondo tasto del mouse, nel menu a comparsa scegliere il menù "Nuovo" e poi scegliere la voce "nuova cartella"
