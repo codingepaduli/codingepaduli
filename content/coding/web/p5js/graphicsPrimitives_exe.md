@@ -57,7 +57,7 @@ La funzione ``triangle`` serve a disegnare un triangolo nell'area da disegno. Qu
 
 Dati i punti indicati nella figura in calce ed un'area da disegno delle dimensioni di 1000 punti per 1000 punti, calcolare le coordinate dei punti A, B, C, ..., P, Q ed R indicati nella figura. Indicare i punti di partenza e di arrivo delle linee indicate nella figura in calce.
 
-![p5.js - Calcolo delle coordinate del tris](/static/coding/web/p5js/graphics-primitives_exe_tris.png "p5.js - Calcolo delle coordinate del tris")
+![p5.js - Calcolo delle coordinate del tris](/static/coding/web/p5js/graphics-primitives_exe_tris_1.png "p5.js - Calcolo delle coordinate del tris")
 
 ## Disegno di una stella a 6 punte
 
