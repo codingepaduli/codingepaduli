@@ -148,6 +148,19 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
 
 Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto, soprattutto per questioni di Accessibilità (illustrata in un successivo capitolo).
 
+### Altri elementi di struttura
+
+L'etichetta ``div`` definisce un contenitore generico utilizzato per raggruppare altri elementi. Lo si utilizza molto per stilizzare meglio la pagina.
+
+L'etichetta ``span`` definisce un contenitore utilizzato per raggruppare tipicamente porzioni di testo senza andare a capo, occupa solo lo spazio necessario per il suo contenuto. Lo si utilizza molto per stilizzare la pagina o per identificare una porzione di testo.
+
+Un esempio d'uso è il seguente:
+
+```html
+<p>Questo prodotto arriverà tra <span class="seleziona">12 giorni</span>.</p>
+<div>La descrizione del prodotto è ...</div>
+```
+
 ## Metadati
 
 I **metadati** sono informazioni relative alla pagina web, come l'autore, l'icona, la descrizione e l'immagine di anteprima. Questi [metadati](https://it.wikipedia.org/wiki/Metadato "Link a Wikipedia sui metadati") non sono mostrati all'utente, ma sono utilizzati dai motori di ricerca e dai social network per presentare e catalogare la pagina web.
