@@ -62,6 +62,31 @@ Il layout grafico è gestito attraverso i "CSS", ovvero i fogli di stile grafico
 
 A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile selezionare gli **elementi multimediali** (immagini o video) che meglio si adattano, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
 
+## Flusso di layout
+
+Il flusso di layout determina come gli elementi si dispongono nella pagina. Esistono due categorie di elementi:
+
+- gli elementi "di blocco" occupano l'intera larghezza disponibile e iniziano su una nuova riga;
+- gli elementi "in linea" occupano solo lo spazio necessario al contenuto, non iniziano su una nuova riga ma si dispongono all'interno della riga presente.
+
+Gli elementi "in linea" sono pochi, tra questi troviamo l'etichetta della data e dell'ora, tutte le etichette di formattazione del carattere, e poche altre.
+
+L'etichetta ``span`` è la classica etichetta "in linea". Definisce un contenitore generico utilizzato per raggruppare tipicamente porzioni di testo senza andare a capo ed occupa solo lo spazio necessario per il suo contenuto. La si utilizza molto per stilizzare la pagina o per identificare una porzione di testo. Un esempio d'uso è il seguente:
+
+```html
+<p>Questo prodotto arriverà tra <span class="seleziona">12 giorni</span>.</p>
+```
+
+Gli elementi "di blocco" sono tutte le etichette di formattazione del paragrafo, le etichette multimediali, quelle di struttura, quelle dei moduli di invio dati.
+
+L'etichetta ``div`` è la classica etichetta "di blocco". Definisce un contenitore generico utilizzato per raggruppare altri elementi. Lo si utilizza molto per stilizzare meglio la pagina. Un esempio d'uso è il seguente:
+
+```html
+<div>La descrizione del prodotto è ...</div>
+```
+
+Il flusso di layout è modificabile attraverso i CSS, che permettono di specificare se e quando andare a capo, se occupare solo lo spazio necessario o in che percentuale, ecc..
+
 ## Struttura basilare
 
 La struttura basilare di una pagina web è definita dalle seguenti etichette HTML:
@@ -74,6 +99,8 @@ La struttura basilare di una pagina web è definita dalle seguenti etichette HTM
 - L'etichetta ``section`` definisce una sezione generica di contenuto in un documento HTML. È utilizzata per raggruppare insieme contenuti correlati. Può essere utilizzata per creare una struttura gerarchica nel documento.
 - L'etichetta ``aside`` rappresenta un contenuto non strettamente attinente, separato dal contenuto principale del documento. Solitamente contiene informazioni correlate, come barre laterali, note o contenuti pubblicitari.
 - L'etichetta ``footer`` rappresenta una sezione di contenuto di un documento HTML che contiene informazioni di chiusura, come i dettagli di contatto, i link ai social media o le informazioni di copyright. È spesso posizionata alla fine della pagina web.
+
+Tutte queste etichette sono etichette "di blocco", quindi il contenuto di ogni etichetta va a capo.
 
 Un esempio di struttura di una pagina web che utilizza queste etichette è la seguente:
 
@@ -147,19 +174,6 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
 ```
 
 Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto, soprattutto per questioni di Accessibilità (illustrata in un successivo capitolo).
-
-### Altri elementi di struttura
-
-L'etichetta ``div`` definisce un contenitore generico utilizzato per raggruppare altri elementi. Lo si utilizza molto per stilizzare meglio la pagina.
-
-L'etichetta ``span`` definisce un contenitore utilizzato per raggruppare tipicamente porzioni di testo senza andare a capo, occupa solo lo spazio necessario per il suo contenuto. Lo si utilizza molto per stilizzare la pagina o per identificare una porzione di testo.
-
-Un esempio d'uso è il seguente:
-
-```html
-<p>Questo prodotto arriverà tra <span class="seleziona">12 giorni</span>.</p>
-<div>La descrizione del prodotto è ...</div>
-```
 
 ## Metadati
 
