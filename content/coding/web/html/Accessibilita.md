@@ -239,6 +239,21 @@ Ad esempio, le etichette di strutturazione della pagina hanno associati i seguen
 - ``aside``: ruolo di contenuti complementari (il ruolo ARIA corrispondente è ``role=”complementary”``);
 - ``footer``: ruolo di piè di pagina (il ruolo ARIA corrispondente è ``role=”contentinfo”``);
 
+Un'altra applicazione delle linee guida ARIA consiste nell'avere un collegamento che porta l'utente al contenuto principale della pagina. Questo collegamento deve essere il primo (o il secondo) collegamento presente nella navigazione ed utilizzabile usando la tastiera.
+
+```html
+<a href="#main-content">Vai al contenuto principale</a>
+```
+
+In questo modo, gli utenti che fanno uso di tecnologie assistive non sono costretti ad ascoltare tutti i collegamenti presenti nella barra di navigazione, ma possono velocemente spostarsi sul contenuto che gli interessa.
+
+Anche l'etichetta di data/ora permette di migliorare l'esperienza utente, dato permette alle tecnologie assistive di comprendere che si tratta di una data o un orario e leggerlo di conseguenza.
+
+```html
+<p>Appuntamento per il giorno:
+<time datetime="2021-08-22">August 22</time></p>
+```
+
 ### Esempio di applicazione delle linee guida ARIA per la visualizzazione dei contenuti basata su schede
 
 In questo esempio vediamo la creazione di un elemento complesso per la visualizzazione dei contenuti basata su schede (come le schede di navigazione di un browser).
