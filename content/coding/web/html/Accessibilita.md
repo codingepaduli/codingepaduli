@@ -164,10 +164,6 @@ La WAI fornisce le linee guida conosciute come "Accessible Rich Internet Applica
 
 Per informazioni semantiche si intendono quelle che indicano il ruolo di una determinata etichetta, lo stato o le relazioni con le altre etichette. Ad esempio un menu di navigazione può essere strutturato come una lista a due o tre livelli, ed una determinata voce può essere visibile all'utente, mentre le altre no. Queste informazioni possono essere molto utili per indirizzare il "comportamento" delle tecnologie assistive, ma non è possibile fornirle utilizzando il solo codice HTML. Le linee guida vanno proprio a standardizzare queste informazioni e a definire in che modo devono essere inserite nel codice HTML.
 
-Molte etichette del linguaggio HTML hanno già un informazione semantica, ad esempio l'etichetta del titolo ``h1`` indica l'inizio e la fine del titolo, l'etichetta dei collegamenti ``a`` indica l'inizio e la fine del collegamento, e come queste molte altre. Per inserire un titolo o un collegamento nella pagina non è necessario indicare che il ruolo dell'elemento è "titolo" o "collegamento", è la stessa etichetta a sottintendere questo ruolo.
-
-In molti altri casi, invece, si usano le etichette per creare elementi più complessi, come una sezione per la ricerca (filtri compresi) o una visualizzazione dei contenuti basata su schede (come le schede di navigazione di un browser). In questo caso, dobbiamo associare all'etichetta il ruolo, in modo da indicare alle tecnologie assistive il ruolo svolto dall'etichetta, quindi associamo il ruolo "sezione per la ricerca" o il ruolo "lista di schede";
-
 Le linee guida inoltre indicano per ogni ruolo un elenco di attributi (o proprietà) che il ruolo possiede. Ad esempio un menù può essere disabilitato, una sezione per la ricerca può essere nascosta, un banner pubblicitario può essere legato ad un popup (finestra a comparsa).
 
 ### Ruoli
@@ -212,9 +208,44 @@ Agli utenti che non utilizzano il mouse viene fornita in alternativa la possibil
 
 Lo sviluppatore può indicare quali componenti vuole che ricevano il focus, aggiungendo nel codice HTML di questi componenti l'attributo HTML ``tabindex="0"``.
 
-### Esempio di applicazione delle linee guida ARIA
+### Applicazione delle linee guida ARIA
 
-Supponendo che lo sviluppatore crei un componente con tre schede (tab) in modo tale che quando si clicca su una viene visualizzato uno dei tre pannelli. Supponiamo che il codice HTML usato per sviluppare tale componente sia il seguente:
+La prima applicazione corretta delle linee guida ARIA per le pagine web consiste nell'utilizzare correttamente le etichette HTML, perché già hanno associata una informazione semantica.
+
+Ad esempio il ruolo di "titolo della pagina" è indicato con ``role="heading"`` ed il ruolo di "testo evidenziato" è indicato con ``role="mark"``, ma questi ruoli non sono quasi mai indicati, se non in casi eccezionali, perché esistono già delle etichette HTML adatte a descrivere il titolo della pagina ed il testo evidenziato e sono rispettivamente l'etichetta del titolo ``h1`` e l'etichetta del testo evidenziato ``mark``.
+
+Molte etichette del linguaggio HTML hanno già un informazione semantica, ad esempio l'etichetta del titolo ``h1`` indica l'inizio e la fine del titolo, l'etichetta dei collegamenti ``a`` indica l'inizio e la fine del collegamento, e come queste molte altre. Per inserire un titolo o un collegamento nella pagina non è necessario indicare che il ruolo dell'elemento è "titolo" o "collegamento", è la stessa etichetta a sottintendere questo ruolo.
+
+E' corretto quindi utilizzare:
+
+```html
+<h1>Titolo della pagina</h1>
+<p>Il testo <mark>evidenziato</mark> ...</p>
+```
+
+Nel caso appena descritto, non è corretto utilizzare delle etichette inappropriate e poi applicare il ruolo, l'esempio seguente mostra un uso improprio ed errato dei ruoli:
+
+```html
+<div role="heading">Titolo della pagina</div>
+<p>Il testo <span role="mark">evidenziato</span> ...</p>
+```
+
+Ad esempio, le etichette di strutturazione della pagina hanno associati i seguenti ruoli:
+
+- ``header``: ruolo di intestazione (il ruolo ARIA corrispondente è ``role=”banner”``);
+- ``nav``: ruolo di navigazione dei contenuti (il ruolo ARIA corrispondente è ``role=”contentinfo”``);
+- ``search``: ruolo di ricerca (il ruolo ARIA corrispondente è ``role=”main”``);
+- ``main``: ruolo di contenuto principale (il ruolo ARIA corrispondente è ``role=”main”``);
+- ``aside``: ruolo di contenuti complementari (il ruolo ARIA corrispondente è ``role=”complementary”``);
+- ``footer``: ruolo di piè di pagina (il ruolo ARIA corrispondente è ``role=”contentinfo”``);
+
+### Esempio di applicazione delle linee guida ARIA per la visualizzazione dei contenuti basata su schede
+
+In questo esempio vediamo la creazione di un elemento complesso per la visualizzazione dei contenuti basata su schede (come le schede di navigazione di un browser).
+
+Questo esempio può risultare complesso ed il codice HTML poco chiaro, ma può essere utile a dare un'idea allo sviluppatore di come si progetta un componente che sia maggiormente accessibile. E' chiaro che per uno studente alle prime armi è necessaria una maggiore esperienza e delle lezioni più specifiche per imparare, lo scopo è di questo esempio è stimolare la curiosità-
+
+Supponiamo che lo sviluppatore vuole creare un componente con tre schede (dette "tab") in modo tale che quando si clicca su una viene visualizzato uno dei tre pannelli. Supponiamo che il codice HTML usato per sviluppare tale componente sia il seguente:
 
 ```html
 <ul>
@@ -229,7 +260,9 @@ Supponendo che lo sviluppatore crei un componente con tre schede (tab) in modo t
 </div>
 ```
 
-Le tecnologie assistive non hanno modo di interpretare il codice HTML e estrapolare che la lista indica delle schede e che i pannelli siano legati alle schede. Per fornire queste informazioni alle tecnologie assistive, è necessario che sia lo sviluppatore a fornirle indicandole opportunamente come di seguito:
+Le tecnologie assistive non hanno modo di interpretare il codice HTML e estrapolare che la lista indica delle schede e che i pannelli siano legati alle schede. Per fornire queste informazioni alle tecnologie assistive, è necessario che sia lo sviluppatore a specificare per ogni etichetta il ruolo, in modo da aggiungere informazioni su come gestire il contenuto.
+
+I ruoli e le proprietà da aggiungere integrano il codice come di seguito:
 
 ```html
 <ul role="tablist">
@@ -261,7 +294,7 @@ Per aggiungere anche la possibilità di applicare il focus alle tre schede, si p
 </div>
 ```
 
-In questo modo, è possibile navigare sugli elementi della lista (ogni elemento rappresenta un pulsante per visualizzare la scheda corrispondente) attraverso la tastiera e selezionare una scheda da leggere.
+In questo modo, è possibile navigare sugli elementi della lista attraverso la tastiera e selezionare una scheda da leggere.
 
 <!-- TODO 
 
@@ -272,6 +305,8 @@ la percezione di una pagina web per un utente non vedente è completamente diver
 -->
 
 ### Framework CSS e per app
+
+<!-- TODO Unifica come si crea una pagina web -->
 
 I siti web e le app difficilmente utilizzano dei componenti dell'interfaccia costruiti da zero, piuttosto si basano sempre più su dei framework che forniscono linee guida, componenti precostruiti e strumenti che permettono il disegno di interfacce grafiche secondo le "best practice" internazionali.
 
