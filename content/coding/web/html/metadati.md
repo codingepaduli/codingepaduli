@@ -68,6 +68,7 @@ La struttura basilare di una pagina web è definita dalle seguenti etichette HTM
 
 - L'etichetta ``header`` rappresenta un contenuto introduttivo o un gruppo di contenuti introduttivi in un documento o in una sezione. Solitamente contiene elementi come il logo del sito, il titolo della pagina o la navigazione principale;
 - L'etichetta ``nav`` definisce una sezione di navigazione all'interno di un documento HTML. Solitamente contiene link a diverse pagine o sezioni del sito web.
+- L'etichetta ``search`` definisce una sezione per la ricerca di contenuti.
 - L'etichetta ``main`` rappresenta il contenuto principale di un documento HTML. È unico all'interno del documento e dovrebbe contenere solo il contenuto direttamente correlato a quella pagina specifica.
 - L'etichetta ``article`` rappresenta un contenuto autonomo e indipendente all'interno di un documento HTML. Può essere utilizzato per articoli di notizie, post di blog, commenti o altre sezioni di contenuto simili.
 - L'etichetta ``section`` definisce una sezione generica di contenuto in un documento HTML. È utilizzata per raggruppare insieme contenuti correlati. Può essere utilizzata per creare una struttura gerarchica nel documento.
@@ -76,7 +77,7 @@ La struttura basilare di una pagina web è definita dalle seguenti etichette HTM
 
 Un esempio di struttura di una pagina web che utilizza queste etichette è la seguente:
 
-![Esempio di struttura di una pagina web](/static/coding/web/html/webPageStructure.png "Esempio di struttura di una pagina web")
+![Esempio di struttura di una pagina web](/static/coding/web/html/webPageFullStructure.png "Esempio di struttura di una pagina web")
 
 La struttura mostrata nell'esempio precedente viene realizzata attraverso il codice HTML seguente:
 
@@ -84,10 +85,13 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- metadati obbligatori, vanno nelle prime posizioni -->
+    <!-- metadati obbligatori, in questo ordine -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Esempio di struttura</title>
+    
+    <!-- metadati facoltativi, sempre dopo i metadati obbligatori -->
+    <meta name="author" content="Bill Gates">
   </head>
   <body>
     <!-- contenuto introduttivo -->
@@ -103,7 +107,15 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
         <li><a href="#">Contatti</a></li>
       </ul>
     </nav>
-  
+
+    <!-- sezione di ricerca -->
+    <search>
+      <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Cerca</button>
+      </form>
+    </search>
+
     <!-- contenuto principale -->
     <main>
     
@@ -120,12 +132,13 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
       </article>
     </main>
   
-    <!-- informazioni separate -->
+    <!-- sezione con informazioni non strettamente attinenti -->
     <aside>
       <h3>Informazioni correlate</h3>
       <p>contenuto non strettamente attinente</p>
     </aside>
 
+    <!-- informazioni a piè di pagina -->
     <footer>
       <p>informazioni di chiusura</p>
     </footer>
@@ -133,7 +146,7 @@ La struttura mostrata nell'esempio precedente viene realizzata attraverso il cod
 </html>
 ```
 
-Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto.
+Sia lo sviluppatore, sia il grafico devono conoscere queste regole e rispettare la struttura basilare della pagina web utilizzando le etichette in maniera coerente al contenuto, soprattutto per questioni di Accessibilità (illustrata in un successivo capitolo).
 
 ## Metadati
 
