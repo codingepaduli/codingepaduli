@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 05 - Struttura e layout"
-description: "HTML Lez. 05 - Struttura e layout di una pagina web"
+title: "HTML Lez. 05 - Struttura, metadati e validazione"
+description: "HTML Lez. 05 - Struttura, metadati e validazione di una pagina web"
 date: 2019-07-27
 publishdate: 2019-07-27
 lastmod: 2019-07-27
@@ -10,7 +10,7 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 05 - Struttura e layout di una pagina web"
+summary: "HTML Lez. 05 - Struttura, metadati e validazione di una pagina web"
 weight: 9550
 
 references:
@@ -26,18 +26,6 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.matuzo.at/blog/html-boilerplate/"
         description: "Articolo (in inglese) sugli elementi basilari utilizzati per costruire un template di una pagina HTML"
-    -   title: "HTML images done right - Web graphics, good to the last byte"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://evilmartians.com/chronicles/images-done-right-web-graphics-good-to-the-last-byte-optimization-techniques"
-        description: "HTML images done right - Web graphics, good to the last byte"
-    -   title: "HTML images with srcset"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://www.sitepoint.com/how-to-build-responsive-images-with-srcset/"
-        description: "How to Build Responsive Images with srcset"
-    -   title: "HTML images srcset and sizes"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://ericportis.com/posts/2014/srcset-sizes/"
-        description: "media queries aren’t the right tool for responsive images, srcset and sizes are"
     -   title: "Facebook Sharing Debugger"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://developers.facebook.com/tools/debug"
@@ -50,9 +38,13 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://metatags.io/"
         description: "Meta Tags Toolkit consente di visualizzare l'anteprima del contenuto che sarà pubblicato sui social"
+    -   title: "W3C Markup Validation Service"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "http://validator.w3.org/nu/"
+        description: "A W3C Markup Validation Service for your web pages"
 ---
 
-# Struttura, layout ed elementi multimediali
+# Struttura, metadati e validazione
 
 Un documento HTML generalmente contiene **informazioni** relative alla pagina web, come l'autore della pagina, la descrizione dei contenuti o un'immagine di anteprima ed ha un proprio **layout**, ovvero una propria impaginazione e struttura grafica che serve ad indicare la posizione e la dimensione degli elementi sugli schermi di computer, smartphone e tablet.
 
@@ -60,7 +52,6 @@ Le informazioni aggiuntive sono dette "metadati" e, sebbene quasi tutte facoltat
 
 Il layout grafico è gestito attraverso i "CSS", ovvero i fogli di stile grafico che definiscono colore, dimensione e posizione degli elementi della pagina web. Il layout si poggia su una struttura basilare che indica ad esempio l'area in cui è situato il menu laterale, l'area destinata al piè di pagina e l'area dei contenuti pubblicitari. Ognuno di questi elementi della struttura basilare è descritto attraverso un'apposita etichetta del linguaggio HTML.
 
-A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile selezionare gli **elementi multimediali** (immagini o video) che meglio si adattano, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
 
 ## Flusso di layout
 
@@ -328,255 +319,43 @@ Il file ``manifest.webmanifest`` descrive le icone da utilizzare attraverso le s
 }
 ```
 
-## Elementi multimediali
+## Validazione del codice HTML
 
-La multimedialità è una forma di comunicazione caratterizzata dalla compresenza e interazione di più linguaggi (testi scritti, immagini, suoni, animazioni) in uno stesso supporto o contesto informativo.
+La validazione di una pagina web serve sia a risolvere eventuali errori presenti, sia ad evitare l'uso di pratiche non piú al passo con gli ultimi standard.
 
-Il termine multimedialità si sta progressivamente sovrapponendo a quello di interattività, dato che i contenuti multimediali, che una volta erano fruibili su TV, radio o telefono oggi sono fruibili su dispositivi sempre più interattivi, dal computer al palmare, al telefono, alla LIM (lavagna interattiva multimediale).
+La validazione puó essere inclusa all'interno dell'editor, oppure ci si puó servire di servizi esterni, come il [W3C Validator](https://validator.w3.org/ "Link al validatore W3C").
 
-### Immagini
+Il servizio di validazione della W3C permette di validare il codice HTML di una pagina web, caricando il file online, inserendo in input (con copia e incolla) il codice HTML da validare, oppure inserendo l'URL della pagina, come da immagine seguente:
+![immagine del validatore](/static/coding/web/html/html-W3C-validator.png "immagine del validatore")
 
-Smartphone e dispositivi IoT spesso sono dotati di connessioni lente e a
-pagamento, come il 3G, e di schermi piccoli con risoluzioni ridotte, per
-cui su questi dispositivi è consigliato mostrare immagini di qualità
-ridotta, che siano adatte come dimensioni e che possano al contempo
-ridurre i tempi di caricamento dal server. In caso di monitor per PC e smart TV 8K con schermi grandi e ad altissima risoluzione è invece preferibile mostrare immagini ad alta qualità, poiché generalmente questi dispositivi sono collegati in wi-fi o a reti veloci.
+Nel caso il servizio di validazione della W3C non rilevi errori nella pagina web, un messaggio di conferma della validità del codice HTML viene riportato all'utente, come da immagine seguente:
+![immagine del validatore senza errori](/static/coding/web/html/html-W3C-validator-OK.png "immagine del validatore senza errori")
 
-Inoltre i dispositivi sono dotati tipicamente di uno schermo rettangolare che viene letto in verticale per smartphone e tablet e in orizzontale nel caso di smart TV e monitor per PC.
+Nel caso siano presenti errori, vengono elencati uno ad uno, e viene riportata sia la presunta riga d'errore, sia viene evidenziato il codice con tutti gli errori, come nella seguente immagine:
+![immagine del validatore con errori](/static/coding/web/html/html-W3C-validator-Errors.png "immagine del validatore con errori")
 
-Per permettere la selezione dell'immagine adatta allo schermo del
-dispositivo è necessario conoscere alcuni concetti. Ogni
-dispositivo, a seconda della risoluzione dello schermo, ha una propria
-**pixel density**, ovvero un numero di pixel presenti su una linea di un
-pollice (PPI), descritta talvolta anche come punti presenti su una linea
-di un pollice (DPI). Piú la pixel density è alta, piú la qualità dello
-schermo è alta. Il browser, però, utilizza una propria misura, detta
-**pixel CSS**, calcolata a partire dalla pixel density.
+Tra i diversi messaggi, di avviso o di errore, abbiamo:
 
-Il rapporto tra **pixel density** e **pixel CSS** è detto
-**pixel-ratio**, ed è un secondo valore da considerare, oltre alla
-larghezza dello schermo, per la selezione dell'immagine.
+**Consider adding a lang attribute to the HTML start tag to declare the language of this document**: È un messaggio di avviso per indicare che l'etichetta ``html`` manca dell'attributo che indica la lingua in cui è scritta la pagina, quindi bisogna correggere con: ``<html lang="it">``.
 
-Su uno schermo di 1200px, un'immagine di 1200px occupa:
+**Non-space characters found without seeing a doctype first. Expected ``<!DOCTYPE html>``**: Manca la prima riga di intestazione, che indica che il documento è un HTML. Deve essere aggiunta come prima riga.
 
-- l'intero schermo se la pixel ratio è 1x;
-- metà schermo se la pixel ratio è 2x;
-- un terzo dello schermo se la pixel ratio è 3x;
-- e cosi via...
-
-Si deve tener presente che ogni browser puó leggere a proprio modo larghezza
-e pixel ratio. Quindi, data la stessa immagine salvata in risoluzioni diverse (per
-mostrarle su schermi con pixel ratio differenti), ad esempio
-"immagine1.png, immagine2.png ed immagine3.png", e dato uno schermo con
-pixel ratio di 1x, puó il browser selezionare l'immagine che piú si
-adatta ad occupare l'intera larghezza del dispositivo?
-
-Non puó, perché non conosce la larghezza delle immagini "immagine1.png, immagine2.png ed immagine3.png".
-Per conoscere la risoluzione di ogni immagine, dovrebbe scaricarle tutte
-dal server. Per evitare questo spreco di tempo e risorse, è necessario
-che sia lo sviluppatore ad indicare, per ogni immagine, la rispettiva
-risoluzione.
-
-Ad oggi l'unico parametro che viene considerato della risoluzione è la
-larghezza (in futuro forse lo sarà anche l'altezza?), che viene indicata
-esplicitamente aggiungendo al valore la lettera **w** (che sta per
-"width" ovvero "larghezza"). Quindi, per permettere al browser di
-scegliere l'immagine con la larghezza adatta allo spazio da riempire
-sullo schermo, il programmatore deve indicare nell'attributo ``srcset`` dell'etichetta ``img`` la lista di immagini, con
-rispettive larghezze, come nel seguente esempio:
-
-``srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w"``
-
-Indicate le immagini e le rispettive larghezze, ad esempio img1 di
-200px, img2 di 600px e img3 di 1200px, dobbiamo associare queste
-immagini ai vari dispositivi. Si tenga presente che, su uno schermo di
-1200px di larghezza, non è detto si debba visualizzare un immagine di
-1200px, perché magari si ha una pagina con 6 colonne e quindi la
-larghezza adatta per ogni colonna è 1200px/6 = 200px. Caricando quindi
-un'immagine di 200px x 150px (invece che una da 1200px x 900px) si ha un
-risparmio di tempo (e dati trasmessi di rete) di 35 volte\! Considerando
-che le colonne dell'esempio sono 6, il risparmio è considerevole.
-
-Inoltre c'è da considerare la pixel ratio, quindi come indicare
-l'associazione delle immagini al dispositivo? Per indicare il
-dispositivo, si usano le media query, che però saranno trattate nelle lezioni sui CSS, ed alle quali si rimanda per una completa descrizione. Per indicare invece
-la dimensione che deve occupare l'immagine, si usano i descrittori
-**vw**, che descrive la percentuale di larghezza da occupare sullo
-schermo (in termini di pixel CSS), e **vh**, che descrive la percentuale
-di altezza da occupare sullo schermo (in termini di pixel CSS).
-
-L'attributo ``sizes`` dell'etichetta ``img`` serve appunto a descrivere le associazioni tra schermo e larghezza desiderata per l'immagine, di seguito se ne fa un esempio d'uso:
-
-``sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm"``
-
-Il codice indicato descrive 3 associazioni: la prima indica che a
-schermi con risoluzione massima di 500 pixel, l'immagine deve essere
-presentata a schermo intero; la seconda indica che a schermi con
-risoluzione massima di 1500 pixel, l'immagine deve essere presentata a
-metà schermo, nell'ultimo caso, con schermi piú grandi di 1500 (per
-esclusione), l'immagine deve essere presentata ad un quarto dello
-schermo.
-
-Il browser, quindi, conoscendo la grandezza del display e la
-pixel-ratio, conoscendo le dimensioni che deve occupare l'immagine per
-lo schermo utilizzato, descritte nell'attributo ``sizes``, puó scegliere
-l'immagine appropriata tra quelle
-indicate nell'attributo ``srcset`` e quindi mostrarla alla dimensione indicata (come da associazione indicata sempre nell'attributo ``srcset``). Se nessuna delle immagini viene selezionata,
-il browser di default visualizza l'immagine descritta nell'attributo ``src``.
-
-L'esempio completo è il seguente:
+**Element head is missing a required instance of child element title**: Indica che nella pagina web deve essere presente l'etichetta ``head`` che a sua volta deve contenere l'etichetta ``title`` come di seguito:
 
 ```html
-<img srcset="immagine1.png 200w, immagine2.png 600w, immagine3.png 1200w"
-  sizes="(max-width: 500px) 100vw, (max-width: 1500px) 50vw, 25vm"
-  src="immagine.png" alt="esempio etichetta immagine" />
+<head>
+    <title>Titolo pagina web </title>
+</head>
 ```
 
-che genera l'immagine:
-<!-- markdown-link-check-disable-next-line -->
-![esempio etichetta immagine](/static/coding/web/html/program_CC0.png "immagine generata dal codice HTML")
+<!-- markdownlint-disable MD033 -->
 
-### Picture e source
+**The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment** Indica che non si possono mettere due trattini consecutivi all'interno di un commento, quindi i due trattini vanno rimossi. Spesso si sbaglia a scrivere il commento, aggiungendo uno spazio di troppo, che deve essere rimosso, come nel seguente esempio, nel quale sono evidenziati gli spazi da rimuovere: ``<!``<mark> </mark>``−− commento −−``<mark> </mark>``>``.
 
-Quando si devono visualizzare versioni alternative di una stessa immagine per dispositivi o schermi differenti, si utilizza l'etichetta ``picture`` che sceglie tra differenti elementi ``source``, se nessuno è adeguato la scelta di default (di fallback) ricade sull'elemento ``img``.
+**No <mark>p</mark> element in scope but a <mark>p end tag</mark> seen** indica che l'etichetta evidenziata è stata aperta (ad esempio ``<p>``) e non è stata chiusa correttamente (con ``</p>``).
 
-Ad esempio, se i tipi di immagine "AVIF" e "WEBP" non sono supportate dai browser, si ricade su quella di default "JPG":
+<!-- markdownlint-enable MD033 -->
 
-```html
-<picture>
-  <source srcset="photo.avif" type="image/avif" />
-  <source srcset="photo.webp" type="image/webp" />
-  <img src="photo.jpg" alt="photo" />
-</picture>
-```
+**The center element is obsolete. Use CSS instead.** indica che gli ultimi standard sconsigliano l'uso dell'etichetta evidenziata (in questo caso, l'etichetta ``<center>``). In questo caso si consiglia di sostituirla facendo uso dei CSS.
 
-Un secondo esempio è la scelta dell'immagine effettuata con delle media query, utilizzando l'attributo  ``media``. Ad esempio, se l'orientamento dello schermo è "orizzontale" si usa un immagine, in alternativa si ricade su quella di default "JPG":
-
-```html
-<picture>
-  <source srcset="photo-240-200.jpg" media="(orientation: portrait)" />
-  <img src="photo-200-240.jpg" alt="photo" />
-</picture>
-```
-
-Se la scelta dell'immagine deve essere effettuata in base alla densità del display si utilizza l'attributo ``srcset``:
-
-```html
-<picture>
-  <source srcset="photo.avif 1x, photo2x.avif 2x, photo3x.avif 3x" type="image/avif" />
-  <source srcset="photo.webp 1x, photo2x.webp 2x, photo3x.webp 3x" type="image/webp" />
-  <img src="photo.jpg" alt="photo" height="320" width="320"  />
-</picture>
-```
-
-Se la scelta dell'immagine deve essere effettuata in base alla dimensione dell'immagine che si adatta meglio alla densità del display, si utilizza l'attributo ``sizes``:
-
-```html
-<picture>
-  <source sizes="photo.avif 50vw, photo2x.avif 70vw, photo3x.avif 100vw" type="image/avif" />
-  <source srcset="photo.webp 50vw, photo2x.webp 70vw, photo3x.webp 100vw" type="image/webp" />
-  <img src="photo.jpg" alt="photo" height="320" width="320"  />
-</picture>
-```
-
-Si possono anche combinare le scelte, ad esempio:
-
-```html
-<picture>
-  <source media="(min-width: 1920px)" srcset="image-big.png" type="image/avif" />
-  <source media="(min-width: 1200px)" srcset="image-medium.png" type="image/avif" />
-  <source media="(min-width: 700px)" srcset="image-small.png" type="image/avif" />
-  <source media="(min-width: 1920px)" srcset="image-big.png" type="image/webp" />
-  <source media="(min-width: 1200px)" srcset="image-medium.png" type="image/webp" />
-  <source media="(min-width: 700px)" srcset="image-small.png" type="image/webp" />
-  <img src="photo.jpg" alt="photo" height="320" width="320"  />
-</picture>
-```
-
-### Figure
-
-Questa etichetta prevede che al suo interno siano presenti uno o più elementi multimediali (``img``, ``picture``, ``video``, ...) e l'etichetta ``figcaption`` che consente di aggiungere una didascalia o una descrizione testuale all'elemento. Questo la rende più adatta a legare l'elemento multimediale con la sua descrizione associata.
-
-Un'esempio d'uso dell'etichetta è il seguente:
-
-```html
-<figure>
-  <img src="imageMele.jpg" alt="Mela">
-  <img src="imagePere.jpg" alt="Pera">
-  <figcaption>Frutta tipica</figcaption>
-</figure>
-```
-
-E' preferibile utilizzarla con gli elementi ``picture``, ad esempio:
-
-```html
-<figure>
-  <picture>
-    <source srcset="photo.avif" type="image/avif" />
-    <source srcset="photo.webp" type="image/webp" />
-    <img src="photo.jpg" alt="photo" />
-  </picture>
-
-   <figcaption>Didascalia della foto</figcaption>
-</figure>
-```
-
-### Etichette audio e video
-
-È consigliabile, per questioni di performance, proporre i contenuti audio e video attraverso servizi **streaming**, in modo che la risoluzione dei contenuti si adatti alla velocità di trasmissione dati della linea dell'utente.
-
-Volendo, però, evitare lo streaming ed inserire direttamente un file audio nella pagina web, si utilizza il seguente codice:
-
-```html
-<audio controls autoplay>
-    <source src="horse.ogg" type="audio/ogg">
-    <source src="horse.mp3" type="audio/mpeg">
-    <source src="horse.wav" type="audio/wav">
-</audio>
-```
-
-Allo stesso modo, per inserire direttamente un file video, si utilizza il seguente codice:
-
-```html
-<video controls autoplay width="800px" height="600px" poster="poster.png">
-    <source src="horse.mp4" type="video/mp4">
-    <source src="horse.ogg" type="video/ogg">
-    <source src="horse.webm" type="video/webm">
-    <track label="English" kind="subtitles" srclang="en" src="captions/vtt/sintel-en.vtt" default>
-</video>
-```
-
-Come si vede, entrambe le etichette ``audio`` e ``video`` hanno gli attributi:
-
-- ``mute``, per silenziare il video;
-- ``loop``, per riavviare l'audio o il video una volta terminato;
-- ``autoplay``, per avviare automaticamente l'audio o il video; Le specifiche indicano che deve essere usato insieme all'attributo
-  ``mute`` per poter effettuare l'autoplay sui dispositivi mobile;
-- ``controls``, per visualizzare i pulsanti di controllo "play", "pause", "stop", ....
-- ``controlsList``, una lista di tre possibili valori:
-    1. ``nodownload`` non permette all'utente di scaricare il file;
-    2. ``nofullscreen`` non permette all'utente di vedere il video a tutto schermo;
-    3. ``noremoteplayback``, non permette all'utente di riprodurre il contenuto in remoto.
-
-Essendo una lista, l'attributo ``controlsList`` può avere uno o più valori, come nel seguente esempio: ``controlsList="nodownload nofullscreen noremoteplayback"``.
-
-Ovviamente, solo l'etichetta video ha gli attributi:
-
-- ``poster``, l'immagine di anteprima da mostrare;
-- ``width``, la larghezza del video (in pixel);
-- ``height``, l'altezza del video (in pixel).
-
-Entrambe le etichette ``audio`` e ``video`` fanno uso dell'etichetta ``source``, per indicare i video o gli audio da riprodurre. Di questi, solo uno viene effettivamente riprodotto: il browser sceglie (nell'ordine indicato) il primo file che riesce a riprodurre (in base ai formati supportati).
-
-L'etichetta ``source`` prevede diversi attributi, ma alcuni sono ad uso esclusivo per le immagini, per cui quelli maggiormente utilizzabili per **audio e video** sono:
-
-- ``src``, per indicare il percorso del file da riprodurre;
-- ``type``, per indicare il mime-type del file da riprodurre. Tra i possibili mime-type **audio** abbiamo ``audio/mpeg`` (per i file mp3), ``audio/wav`` e ``audio/ogg`` per i file audio wav/ogg. Tra i possibili mime-type **video** abbiamo ``video/mp4``, ``video/webm`` e ``video/ogg`` per i rispettivi file.
-
-L'etichetta ``video`` permette anche di specificare dei possibili sottotitoli da mostrare sopra il video. I sottotitoli sono indicati nelle etichette ``track``, che prevede i seguenti attributi:
-
-- ``label``, una descrizione, generalmente la lingua del sottotitolo;
-- ``kind``, il tipo di traccia (per ora subtitles);
-- ``srclang`` il codice del linguaggio;
-- ``src`` il percorso del file di sottotitoli; Il formato del file è VTT;
-- ``default`` il sottotitolo da mostrare di default.
+**Bad character after ``<``. Probable cause: Unescaped. Try escaping it as ``&#xxxx;``** indica che il carattere evidenziato deve essere codificato come "HTML entity" oppure rappresentato con codifica Unicode decimale o esadecimale.
