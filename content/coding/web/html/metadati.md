@@ -4,7 +4,7 @@ title: "HTML Lez. 05 - Struttura, metadati e validazione"
 description: "HTML Lez. 05 - Struttura, metadati e validazione di una pagina web"
 date: 2019-07-27
 publishdate: 2019-07-27
-lastmod: 2019-07-27
+lastmod: 2025-03-08
 spellcheck: 2022-10-08
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]

@@ -1,6 +1,6 @@
 ---
 type: "html"
-title: "HTML Lez. 04 - Multimedialità e interattività"
+title: "HTML Lez. 04 - Elementi multimediali e interattività"
 description: "HTML Lez. 04 - Etichette per audio, video, immagini e collegamenti a risorse esterne"
 date: 2019-08-26
 publishdate: 2019-08-26
@@ -39,7 +39,7 @@ references:
         description: "A list of mime types"
 ---
 
-## Elementi multimediali
+## Elementi multimediali e interattività
 
 La multimedialità è una forma di comunicazione caratterizzata dalla compresenza e interazione di più linguaggi (testi scritti, immagini, suoni, animazioni) in uno stesso supporto o contesto informativo.
 
