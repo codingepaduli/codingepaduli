@@ -42,8 +42,7 @@ Questi titoli vengono poi visualizzati come di seguito:
 
 ## Formattazione carattere
 
-Il paragrafo è generato dall'etichetta ``p`` che ha il simbolo di apertura ``<p>``
-ed il simbolo di chiusura ``</p>``;
+Il paragrafo è generato dall'etichetta ``p`` che ha il simbolo di apertura ``<p>`` ed il simbolo di chiusura ``</p>``; Questa etichetta indica anche che dopo il paragrafo il testo deve andare a capo. Quindi se in una frase si vuole andare a capo piu volte, è necessario scriverla in più paragrafi.
 
 <!-- markdownlint-disable MD033 -->
 
