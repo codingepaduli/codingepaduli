@@ -101,7 +101,7 @@ console.info(x);
 
 L'operatore di assegnazione, rappresentato dal simbolo ``=``, non deve essere confuso con l'operatore di uguaglianza, che nei linguaggi di programmazione è rappresentato dal simbolo ``==``, questi due concetti sono distinti ed indicano al calcolatore di effettuare due azioni differenti:
 
-- il primo indica al calcolatore di copiare nella locazione di memoria della variabile il valore assegnato, come nel caso dell'assegnazione ``x=5``;
+- il primo indica al calcolatore di copiare nella locazione di memoria della variabile il valore assegnato, come nel caso dell'assegnazione ``x = 5``;
 - il secondo è utilizzato per verificare che due espressioni siano uguali, come nel caso dell'espressione ``x + 3 == y - 2``.
 
 In ambito matematico non vi è questa distinzione, il simbolo ``=`` è usato sia come assegnazione che come uguaglianza. L'espressione ``x = 5`` indica al tempo stesso che i due valori sono uguali e che la variabile ``x`` assume valore ``5``.
@@ -661,4 +661,77 @@ Per calcolare il coseno dell'angolo che misura ``3`` radianti, sostituiamo al pa
 
 ```javascript
 let i = Math.cos(3);
+```
+
+### Funzione di valore assoluto
+
+La funzione progettata per il calcolo del valore assoluto di un numero ``x`` è ``abs(x)``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.abs(x)
+
+Parameters:
+    x    Number: the number
+
+Returns:
+    Number: the absolute value of the number x.
+```
+
+Il parametro formale ``x`` il numero.
+
+Il valore restituito è il valore assoluto del numero ``x``.
+
+Per calcolare il valore assoluto del numero ``-3``, sostituiamo al parametro formale ``x`` il valore ``-3`` ed opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.abs(-3);
+```
+
+### Funzioni di massimo e minimo
+
+La funzione progettata per restituire il maggiore dei valori passati come argomento è `max(x, y, w, ...)`, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.max(x, y, w, ...)
+
+Parameters:
+    x, y, w, ...  Numbers: the numbers to compare
+
+Returns:
+  Number: the greatest value of the numbers x, v, w, ... .
+```
+
+I parametri formali ``x``, ``y``, ``w`` e gli altri indicati dai puntini sospensivi sono i numeri da confrontare.
+
+Il valore restituito è il valore più alto tra i numeri passati come argomento ``x``.
+
+Per calcolare il valore maggiore tra i numeri ``-3``, ``-23``, ``33``,``-60`` e ``13`` sostituiamo al parametro formale ``x`` il valore ``-3``,  al parametro formale ``y`` il valore ``-23``, al parametro formale ``w`` il valore ``33``, agli altri parametri indicati con i puntini sospensivi i valori ``-60`` e ``13``, opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.max(-3, -23, 33, -60, 13)
+```
+
+### Funzione `min`
+
+La funzione progettata per restituire il minore dei valori passati come argomento è `min(x, y, w, ...)`, la cui firma è la seguente:
+
+```plaintext
+Syntax: Math.min(x, y, w, ...)
+
+Parameters:
+    x, y, w, ...  Numbers: the numbers to compare
+
+Returns:
+  Number: the lowest value of the numbers x, v, w, ... .
+
+```
+
+I parametri formali ``x``, ``y``, ``w`` e gli altri indicati dai puntini sospensivi sono i numeri da confrontare.
+
+Il valore restituito è il valore più basso tra i numeri passati come argomento ``x``.
+
+Per calcolare il valore minore tra i numeri ``-3``, ``-23``, ``33``,``-60`` e ``13`` sostituiamo al parametro formale ``x`` il valore ``-3``,  al parametro formale ``y`` il valore ``-23``, al parametro formale ``w`` il valore ``33``, agli altri parametri indicati con i puntini sospensivi i valori ``-60`` e ``13``, opzionalmente salviamo in una variabile ``i`` il risultato, invocando la funzione nel seguente modo:
+
+```javascript
+let i = Math.min(-3, -23, 33, -60, 13)
 ```
