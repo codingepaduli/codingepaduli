@@ -81,31 +81,6 @@ L'ordine delle operazioni da svolgere può essere chiarito o modificato utilizza
 
 Ad esempio, data l'espressione ``((3 + 4) - 5) * 6``, le parentesi tonde hanno la precedenza, per cui viene prima valutato il risultato della somma tra ``3`` e ``4``, restituendo ``7``. Vi è ancora una parentesi tonda che ha precedenza, quindi viene valutato il risultato della sottrazione tra ``7`` e ``5``, restituendo ``2``. Quindi viene svolta la moltiplicazione tra ``2`` e ``6``, restituendo ``12``. Per cui, la valutazione dell'espressione restituisce il risultato ``12``.
 
-### Operatore di assegnazione
-
-L'operatore di assegnazione è utilizzata per impostare il valore di una variabile, copiandolo nella relativa locazione di memoria. E' rappresentato dal simbolo ``=``, ed ha una regola di sintassi precisa:
-
-- a **sinistra** dell'operatore deve essere presente **una variabile già dichiarata**;
-- a **destra** dell'operatore deve essere presente un valore o un'espressione matematica (senza variabili o con variabili già dichiarate).
-
-Esistono molteplici operatori di assegnazione, che saranno trattati in dettaglio nei successivi paragrafi.
-
-Due esempi di assegnazione sono i seguenti:
-
-```javascript
-let y = 5;
-let x = 5 * (6 + y);
-console.info(y);
-console.info(x);
-```
-
-L'operatore di assegnazione, rappresentato dal simbolo ``=``, non deve essere confuso con l'operatore di uguaglianza, che nei linguaggi di programmazione è rappresentato dal simbolo ``==``, questi due concetti sono distinti ed indicano al calcolatore di effettuare due azioni differenti:
-
-- il primo indica al calcolatore di copiare nella locazione di memoria della variabile il valore assegnato, come nel caso dell'assegnazione ``x = 5``;
-- il secondo è utilizzato per verificare che due espressioni siano uguali, come nel caso dell'espressione ``x + 3 == y - 2``.
-
-In ambito matematico non vi è questa distinzione, il simbolo ``=`` è usato sia come assegnazione che come uguaglianza. L'espressione ``x = 5`` indica al tempo stesso che i due valori sono uguali e che la variabile ``x`` assume valore ``5``.
-
 ### Operatori aritmetici
 
 Gli operatori aritmetici, utilizzati per svolgere le operazioni aritmetiche di base, sono i seguenti:

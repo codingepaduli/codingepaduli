@@ -235,6 +235,36 @@ let variabileIndefinita;
 let variabileIndefinita2 = undefined;
 ```
 
+### Operatore di assegnazione
+
+L'operatore di assegnazione è utilizzata per impostare il valore di una variabile, copiandolo nella relativa locazione di memoria. E' rappresentato dal simbolo ``=`` ed ha una regola di sintassi precisa:
+
+- a **sinistra** dell'operatore deve essere presente **una variabile già dichiarata**;
+- a **destra** dell'operatore deve essere presente un valore o un'espressione matematica (senza variabili o con variabili già dichiarate).
+
+Un esempio di assegnazione è il seguente:
+
+```javascript
+let y = 5;
+```
+
+In questo esempio, a sinistra troviamo la variabile ``y``, a destra troviamo il valore ``5`` che sarà copiato nella locazione di memoria della variabile.
+
+Un secondo esempio di assegnazione è il seguente:
+
+```javascript
+let x = 5 * (6 + y);
+```
+
+In questo esempio, a sinistra troviamo la variabile ``x``, a destra troviamo l'espressione ``5 * (6 + y)`` in cui è presente la variabile ``x``, alla quale è stato assegnato il valore ``5`` nell'esempio precedente. L'espressione ha quindi risultato ``55`` che sarà copiato nella locazione di memoria della variabile ``x``.
+
+L'operatore di assegnazione, rappresentato dal simbolo ``=``, non deve essere confuso con l'operatore di uguaglianza, che nei linguaggi di programmazione è rappresentato dal simbolo ``==``, questi due concetti sono distinti ed indicano al calcolatore di effettuare due azioni differenti:
+
+- il primo indica al calcolatore di copiare nella locazione di memoria della variabile il valore assegnato, come nel caso dell'assegnazione ``x = 5``;
+- il secondo è utilizzato per verificare che due espressioni siano uguali, come nel caso dell'espressione ``x + 3 == y - 2``.
+
+In ambito matematico non vi è questa distinzione, il simbolo ``=`` è usato sia come assegnazione che come uguaglianza. L'espressione ``x = 5`` indica al tempo stesso che i due valori sono uguali e che la variabile ``x`` assume valore ``5``.
+
 ## Operatori basilari
 
 Una volta dichiarata una variabile, è possibile inizializzarne il valore iniziale e, successivamente, modificarne il valore utilizzando l'operatore di assegnazione ``=``. Ad esempio:
