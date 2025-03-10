@@ -173,51 +173,47 @@ Metodi | Operazione | Esempio d'uso
 
 ## Costanti e funzioni matematiche
 
-Per tutte le altre operazioni sui numeri si utilizzano le proprietà ed i metodi della libreria ``Math`` e dell'oggetto ``Number``.
+Riepilogo delle proprietà e dei metodi più utilizzati della libreria ``Math``. Per un elenco completo si rimanda alla documentazione della libreria.
 
-Le costanti ed i metodi resi disponibili dalla libreria ``Math`` sono numerosissimi, per un elenco completo si rimanda alla documentazione della libreria. Di seguito un elenco delle costanti e dei metodi più utilizzati:
+Costante       | Operazione                            | Valore
+-------------- | ------------------------------------- | ---------------------
+``Math.E``     | Costante e di Eulero / Nepero         | ``2.718281828459045``
+``Math.PI``    | Costante di Archimede &Pi; (pi greco) | ``3.141592653589793``
+``Math.SQRT2`` | Valore della radice quadrata di 2     | ``1.414213562373095``
 
-Costante | Operazione | Esempio d'uso
---- | --- | ---
-``Math.E`` | Costante e di Eulero / Nepero | ``"La costante E vale" + Math.E``
-``Math.PI`` | Costante &Pi; (pi greco) / Costante di Archimede | ``"La costante &Pi; vale" + Math.PI``
-``Math.SQRT2`` | Valore della radice quadrata di 2 | ``"La costante SQRT2 vale" + Math.SQRT2``
+Metodi                | Operazione                             | Esempio d'uso
+--------------------- | -------------------------------------- | -------------------------
+``abs(x)``            | Valore assoluto                      | ``Math.abs(-2)``
+``cbrt(x)``           | Radice cubica                        | ``Math.cbrt(-2)``
+``ceil(x)``           | Arrotondamento per eccesso           | ``Math.ceil(-2.12)``
+``cos(x)``            | Coseno dell'angolo(in radianti)      | ``Math.cos(-2)``
+``exp(x)``            | Esponenziale in base E               | ``Math.exp(2)``
+``floor(x)``          | Arrotondamento per difetto           | ``Math.floor(-2)``
+``log(x)``            | Logaritmo in base E                  | ``Math.log(2)``
+``max(x, y, w, ...)`` | Maggiore dei valori passati          | ``Math.max(-2, 3, 4, -8)``
+``min(x, y, w, ...)`` | Minore dei valori passati            | ``Math.min(-2, 3, 4, -8)``
+``pow(x, y)``         | x elevato a y                        | ``Math.pow(2, 3)``
+``random()``          | Valore casuale tra zero ed uno       | ``Math.random()``
+``round(x)``          | Arrotondamento all'intero più vicino | ``Math.round(3.12)``
+``sin(x)``            | Seno dell'angolo (in radianti)       | ``Math.sin(2)``
+``sqrt(x)``           | Radice quadrata                      | ``Math.sqrt(2)``
+``trunc(x)``          | Valore senza parte decimale          | ``Math.trunc(3.2)``
 
-Metodi | Operazione | Esempio d'uso
---- | --- | ---
-``abs(x)`` | restituisce il valore assoluto del numero x | ``Math.abs(-2)``
-``cbrt(x)`` | restituisce la radice cubica del numero x | ``Math.cbrt(-2)``
-``ceil(x)`` | restituisce l'arrotondamento di x al numero intero più grande | ``Math.ceil(-2.12)``
-``cos(x)`` | restituisce il coseno dell'angolo x (espresso in radianti) | ``Math.cos(-2)``
-``exp(x)`` | restituisce l'esponenziale in base E del numero x | ``Math.exp(2)``
-``floor(x)`` | restituisce l'arrotondamento di x al numero intero più piccolo | ``Math.floor(-2)``
-``log(x)`` | restituisce il logaritmo in base E del numero x | ``Math.log(2)``
-``max(x, y, w, ...)`` | restituisce il maggiore dei valori passati come argomento | ``Math.max(-2, 3, 4, -8)``
-``min(x, y, w, ...)`` | restituisce il minore dei valori passati come argomento | ``Math.min(-2, 3, 4, -8)``
-``pow(x, y)`` | restituisce il valore di x elevato ad y | ``Math.pow(2, 3)``
-``random()`` | restituisce un valore casuale tra zero ed uno | ``Math.random()``
-``round(x)`` | restituisce l'arrotondamento di x al numero intero più vicino | ``Math.round(3.12)``
-``sin(x)`` | restituisce il seno dell'angolo x (espresso in radianti) | ``Math.sin(2)``
-``sqrt(x)`` | restituisce la radice quadrata di x | ``Math.sqrt(2)``
-``trunc(x)`` | restituisce il valore di x senza la parte decimale | ``Math.trunc(3.2)``
+Riepilogo delle proprietà e dei metodi dell'oggetto ``Number``. Per maggiori dettagli si rimanda alla documentazione dell'oggetto Math'.
 
-## Le costanti e i metodi numerici
-
-Le costanti ed i metodi comunemente utilizzati dell'oggetto ``Number`` sono di seguito descritti:
-
-Costante | Operazione | Esempio d'uso
---- | --- | ---
-``Number.NaN`` | Valore speciale indicante 'Not a Number' | ``"Il valore NaN vale" + Number.NaN``
+Costante                     | Operazione                                    | Esempio d'uso
+---------------------------- | --------------------------------------------- | ---
+``Number.NaN``               | Valore speciale indicante 'Not a Number'      | ``"Il valore NaN vale" + Number.NaN``
 ``Number.NEGATIVE_INFINITY`` | Valore speciale indicante 'Infinito negativo' | ``" -Infinito " + Number.NEGATIVE_INFINITY``
 ``Number.POSITIVE_INFINITY`` | Valore speciale indicante 'Infinito positivo' | ``" +Infinito " + Number.POSITIVE_INFINITY``
 
-Metodi | Operazione | Esempio d'uso
---- | --- | ---
-``isNaN()`` | indica se il valore è 'NaN' | ``Number.isNaN(-2)``
-``isFinite()()`` | indica se il valore è un numero finito | ``Number.isFinite()``
-``isInteger()`` | indica se il valore è un numero intero | ``Number.isInteger()``
+Metodi                 | Operazione                                | Esempio d'uso
+---------------------- | ----------------------------------------- | ---
+``isNaN()``            | indica se il valore è 'NaN'               | ``Number.isNaN(-2)``
+``isFinite()()``       | indica se il valore è un numero finito    | ``Number.isFinite()``
+``isInteger()``        | indica se il valore è un numero intero    | ``Number.isInteger()``
 ``parseFloat(string)`` | converte la stringa in un numero decimale | ``Number.parseFloat("2.15")``
-``parseInt(string)`` | converte la stringa in un numero intero | ``Number.parseInt("2.15")``
+``parseInt(string)``   | converte la stringa in un numero intero   | ``Number.parseInt("2.15")``
 
 ## La data e l'orario
 
