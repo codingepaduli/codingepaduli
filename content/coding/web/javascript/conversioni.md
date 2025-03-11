@@ -69,13 +69,13 @@ Una precisazione però è da fare sulla variabile inizializzata a ``null``: la s
 
 Diversi operatori possono lavorare sulle stringhe:
 
-Simbolo operatore | Operatore | Esempio d'uso
---- | --- | ---
-``+`` | concatenazione tra due stringhe | ``x = "una " + "stringa."``
-``==`` | confronto di eguaglianza di due stringhe | ``"una " == "stringa"``
-``>`` | confronto di due stringhe in base all'ordinamento naturale | ``"una " > "stringa"``
+Simbolo operatore             | Operatore                           | Esempio d'uso
+------ | ---------------------------------------------------------- | ---
+``+``  | concatenazione tra due stringhe                            | ``x = "una " + "stringa"``
+``==`` | confronto di eguaglianza di due stringhe                   | ``"una " == "stringa"``
+``>``  | confronto di due stringhe in base all'ordinamento naturale | ``"una " > "stringa"``
 ``>=`` | confronto di due stringhe in base all'ordinamento naturale | ``"una " >= "stringa"``
-``<`` | confronto di due stringhe in base all'ordinamento naturale | ``"una " < "stringa"``
+``<``  | confronto di due stringhe in base all'ordinamento naturale | ``"una " < "stringa"``
 ``<=`` | confronto di due stringhe in base all'ordinamento naturale | ``"una " <= "stringa"``
 
 ## Proprietà e funzioni su stringhe
