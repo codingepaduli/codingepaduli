@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "JavaScript - Operatori ed operazioni matematiche"
+title: "Espressioni matematiche"
 description: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
 date: 2021-08-26
 publishdate: 2021-08-26
@@ -9,9 +9,10 @@ spellcheck: 2020-01-01
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
-toc: true
+toc: false
 summary: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
 customJS: ["/static/coding/web/javascript/espressioniMatematiche.js"]
+weight: 8940
 
 references:
     -   title: "Algebra di Boole"
@@ -30,13 +31,9 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
         description: "Firma e descrizione delle varie funzioni matematiche"
-    -   title: "Libreria matematica Number"
-        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
-        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
-        description: "Firma e descrizione delle varie funzioni sui numeri"
 ---
 
-# JavaScript - Operatori ed espressioni matematiche
+# Espressioni matematiche
 
 I moderni sistemi informatici sono notoriamente chiamati sistemi **digitali**, in quanto i numeri sono rappresentati utilizzando il sistema numerico binario, che fa uso di due soli simboli (0 e 1), e non il sistema numerico decimale, che ne utilizza dieci (da 0 a 9).
 

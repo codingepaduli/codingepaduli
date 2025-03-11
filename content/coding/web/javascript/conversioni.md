@@ -10,6 +10,16 @@ keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "I metodi e gli operatori"
+
+references:
+    -   title: "Libreria matematica Math"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
+        description: "Firma e descrizione delle varie funzioni matematiche"
+    -   title: "Libreria matematica Number"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number"
+        description: "Firma e descrizione delle varie funzioni sui numeri"
 ---
 
 # I metodi e gli operatori
