@@ -664,7 +664,7 @@ let i = Math.abs(-3);
 
 ### Funzioni di massimo e minimo
 
-La funzione progettata per restituire il maggiore dei valori passati come argomento è `max(x, y, w, ...)`, la cui firma è la seguente:
+La funzione progettata per restituire il maggiore dei valori passati come argomento è ``max(x, y, w, ...)``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: Math.max(x, y, w, ...)
@@ -686,9 +686,7 @@ Per calcolare il valore maggiore tra i numeri ``-3``, ``-23``, ``33``,``-60`` e 
 let i = Math.max(-3, -23, 33, -60, 13)
 ```
 
-### Funzione `min`
-
-La funzione progettata per restituire il minore dei valori passati come argomento è `min(x, y, w, ...)`, la cui firma è la seguente:
+La funzione progettata per restituire il minore dei valori passati come argomento è ``min(x, y, w, ...)``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: Math.min(x, y, w, ...)
