@@ -158,28 +158,28 @@ Simbolo operatore | Operatore | Esempio d'uso
 ``<`` | confronto di due stringhe in base all'ordinamento naturale | ``"una " < "stringa"``
 ``<=`` | confronto di due stringhe in base all'ordinamento naturale | ``"una " <= "stringa"``
 
-Per tutte le altre operazioni sulle stringhe si utilizzano le proprietà ed i metodi dell'oggetto ``String``. Tutte le stringhe sono istanze di questo oggetto (come le istanze di una classe nella programmazione OOP), e quindi le proprietà ed i metodi di questo oggetto ``String`` sono disponibili alle istanze.
+## Proprietà e funzioni su stringhe
+
+Riepilogo delle proprietà e dei metodi più utilizzati degli oggetti di tipo ``String``. Per un elenco completo si rimanda alla documentazione ufficiale.
 
 L'unica proprietà disponibile nelle stringhe è ``length``, ed è di sola lettura.
 
-Proprietà | Operazione | Esempio d'uso
---- | --- | ---
-``lenghth`` | lunghezza della stringa | ``"Questa è una stringa".length``
+Proprietà   | Operazione              | Esempio d'uso
+----------- | ----------------------- | -------------
+``length`` | lunghezza della stringa | ``"una stringa".length``
 
-I metodi disponibili sono numerosissimi, per un elenco completo si rimanda alla documentazione della classe ``String``. Di seguito un elenco dei metodi più utilizzati:
-
-Metodi | Operazione | Esempio d'uso
---- | --- | ---
-``charAt(index)`` | restituisce il carattere alla posizione passata come argomento | ``"Questa è una stringa".charAt(0)``
-``endsWith(stringa)`` | indica se termina con la stringa passata come argomento | ``"Questa è una stringa".endsWith("inga")``
-``indexOf(stringa)`` | restituisce l'indice in cui appare la stringa passata come argomento | ``"Questa è una stringa".indexOf("inga")``
-``lastIndexOf(stringa)`` | restituisce l'ultimo indice in cui appare la stringa passata come argomento | ``"Questa è una stringa".lastIndexOf("ga")``
-``replace(stringa1, stringa2)`` | sostituisce tutte le occorrenze della prima stringa passata come argomento con la seconda stringa passata come argomento | ``"Questa è una stringa".replace("a", "altra stringa")``
-``startsWith(stringa)`` | indica se inizia con la stringa passata come argomento | ``"Questa è una stringa".startsWith("inga")``
-``substring(inizio, fine)`` | restituisce la stringa inclusa tra le posizioni di inizio e fine | ``"Questa è una stringa".substring(1,4)``
-``toLowerCase()`` | restituisce la stringa con tutti i caratteri in minuscolo | ``"Questa è una stringa".toLowerCase()``
-``toUpperCase()`` | restituisce la stringa con tutti i caratteri in maiuscolo | ``"Questa è una stringa".toUpperCase()``
-``trim()`` | rimuove tutti gli spazi iniziali e finali | ``"Questa è una stringa".trim()``
+Metodi                   | Operazione                                                    | Esempio d'uso
+-------------------------|---------------------------------------------------------------|--------------
+``charAt(index)``        | restituisce il carattere alla posizione indicata              | ``"una stringa".charAt(0)``
+``endsWith(stringa)``    | indica se termina con la stringa indicata                     | ``"una stringa".endsWith("inga")``
+``indexOf(stringa)``     | restituisce l'indice in cui appare la stringa indicata        | ``"una stringa".indexOf("inga")``
+``lastIndexOf(stringa)`` | restituisce l'ultimo indice in cui appare la stringa indicata | ``"una stringa".lastIndexOf("ga")``
+``replace(stringa1, stringa2)`` | sostituisce tutte le occorrenze della prima stringa con la seconda stringa | ``"una stringa".replace("a", "altra stringa")``
+``startsWith(stringa)``  | indica se inizia con la stringa indicata                      | ``"una stringa".startsWith("inga")``
+``substring(inizio, fine)`` | restituisce la stringa inclusa tra le posizioni di inizio e fine      | ``"una stringa".substring(1,4)``
+``toLowerCase()``        | restituisce la stringa con tutti i caratteri in minuscolo     | ``"una stringa".toLowerCase()``
+``toUpperCase()``        | restituisce la stringa con tutti i caratteri in maiuscolo     | ``"una stringa".toUpperCase()``
+``trim()``               | rimuove tutti gli spazi iniziali e finali                     | ``"una stringa".trim()``
 
 ## Costanti e funzioni matematiche
 
@@ -214,8 +214,8 @@ Riepilogo delle proprietà e dei metodi dell'oggetto ``Number``. Per maggiori de
 Costante                     | Operazione                                    | Esempio d'uso
 ---------------------------- | --------------------------------------------- | ---
 ``Number.NaN``               | Valore speciale indicante 'Not a Number'      | ``"Il valore NaN vale" + Number.NaN``
-``Number.NEGATIVE_INFINITY`` | Valore speciale indicante 'Infinito negativo' | ``" -Infinito " + Number.NEGATIVE_INFINITY``
-``Number.POSITIVE_INFINITY`` | Valore speciale indicante 'Infinito positivo' | ``" +Infinito " + Number.POSITIVE_INFINITY``
+``Number.NEGATIVE_INFINITY`` | Valore speciale indicante 'Infinito negativo' | ``" -Infinito: " + Number.NEGATIVE_INFINITY``
+``Number.POSITIVE_INFINITY`` | Valore speciale indicante 'Infinito positivo' | ``" +Infinito: " + Number.POSITIVE_INFINITY``
 
 Metodi                 | Operazione                                | Esempio d'uso
 ---------------------- | ----------------------------------------- | ---
