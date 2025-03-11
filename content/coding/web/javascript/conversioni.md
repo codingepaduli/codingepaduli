@@ -210,7 +210,7 @@ Costante                     | Operazione                                    | E
 Metodi                 | Operazione                                | Esempio d'uso
 ---------------------- | ----------------------------------------- | ---
 ``isNaN()``            | indica se il valore è 'NaN'               | ``Number.isNaN(-2)``
-``isFinite()()``       | indica se il valore è un numero finito    | ``Number.isFinite()``
+``isFinite()``         | indica se il valore è un numero finito    | ``Number.isFinite()``
 ``isInteger()``        | indica se il valore è un numero intero    | ``Number.isInteger()``
 ``parseFloat(string)`` | converte la stringa in un numero decimale | ``Number.parseFloat("2.15")``
 ``parseInt(string)``   | converte la stringa in un numero intero   | ``Number.parseInt("2.15")``
