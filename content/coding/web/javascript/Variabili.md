@@ -11,6 +11,7 @@ keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "Dichiarazione di costanti e variabili per i vari tipi di dato"
+weight: 8960
 ---
 
 # Costanti e variabili
@@ -325,6 +326,47 @@ In questo caso il messaggio è unito alle variabili ``base`` ed ``altezza`` ed i
 ```plaintext
 perimetro = base * altezza = 2 * 4 = 8
 ```
+
+## Parola chiave ``typeof`` per l'identificazione del tipo di dato
+
+E' possibile identificare il tipo di una variabile utilizzando la parola chiave ``typeof``.
+
+Supponendo di aver dichiarato le seguenti variabili:
+
+```javascript
+'use strict'
+
+// variabili primitive
+let naturalNumber = 10;
+let realNumber = 10.5;
+let toBeOrNotToBe = true;
+let word = "paragraph";
+var undefinedThing = undefined;
+let thing = null;
+
+// variabili wrapper
+var naturalNumberObj = new Number(10);
+let realNumberObj = new Number(10.5);
+let toBeOrNotToBeObj = new Boolean(true);
+let wordObj = new String("paragraph");
+```
+
+Il codice necessario ad individuare i tipi di dato delle variabili dichiarate è il seguente:
+
+- ``typeof naturalNumber;``     // restituisce ``number``
+- ``typeof realNumber;``        // restituisce ``number``
+- ``typeof toBeOrNotToBe;``     // restituisce ``boolean``
+- ``typeof word;``              // restituisce ``string``
+- ``typeof undefinedThing;``    // restituisce ``undefined``
+- ``typeof thing;``             // restituisce ``object``
+- ``typeof naturalNumberObj;``  // restituisce ``object``
+- ``typeof realNumberObj;``     // restituisce ``object``
+- ``typeof toBeOrNotToBeObj;``  // restituisce ``object``
+- ``typeof wordObj;``           // restituisce ``object``
+
+Come si può notare, sia la variabile oggetto, sia le variabili con valore ``null``, sia la variabile sia tutte le variabili "wrapper" sono di tipo oggetto.
+
+Una precisazione però è da fare sulla variabile inizializzata a ``null``: la specifica di ECMAScript prevede che, nonostante la variabile sia da considerare come tipo "null", l'operazione ``typeof null`` restituisca ``object``.
 
 ## Istruzioni di input
 
