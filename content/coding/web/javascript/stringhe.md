@@ -7,7 +7,7 @@ publishdate: 2025-03-10
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
 draft: false
-toc: true
+toc: false
 summary: "Descrizione delle stringhe, degli operatori e delle operazioni sulle stringhe per il calcolo automatico"
 weight: 8910
 ---
@@ -61,7 +61,9 @@ let stringVariable = `Una
 stringa`;
 ```
 
-Questo tipo di definizione è utilizzato anche per concatenare variabili o il risultato di un'espressione all'interno della stringa. Le variabili e le espressioni devono essere racchiuse tra simboli ``${`` e ``}``, come nel seguente esempio:
+Questo tipo di definizione è utilizzato anche per concatenare variabili o il risultato di un'espressione all'interno della stringa. Svolge una operazione simile alla formattazione, ovvero la sostituzione dei segnaposto presenti nella stringa con i valori specificati nelle variabili.
+
+I simboli ``${`` e ``}`` possono racchiudere variabili ed espressioni, nella stringa risultante questi simboli saranno sostituiti con il valore della variabile indicata o dal risultato dell'espressione, come nel seguente esempio:
 
 ```javascript
 let num1 = 9;
@@ -71,7 +73,7 @@ numeri ${num1} e ${num2}
 vale ${num1 + num2}.`;
 ```
 
-L'esempio precedente produce il seguente output (su più righe):
+La variabile ``messaggio`` contiene la seguente sequenza di caratteri (su più righe):
 
 ```output
 La somma dei
@@ -81,14 +83,20 @@ vale 27.
 
 ## Operatori di concatenazione e relazionali
 
-Gli operatori utilizzati per svolgere le operazioni sulle stringhe sono i seguenti:
+Per svolgere le operazioni sulle stringhe sono utilizzati i seguenti operatori:
 
-- L'operatore di concatenazione `+` unisce due o più stringhe in una sola;
-- L'operatore relazionale di eguaglianza (`==`) verifica se due stringhe sono uguali;
-- L'operatore relazionale di maggioranza (`>`) controlla se la prima stringa è "maggiore" della seconda in base all'ordinamento naturale;
-- L'operatore relazionale di maggioranza o uguaglianza (`>=`) verifica se la prima stringa è "maggiore o uguale" alla seconda in base all'ordinamento naturale;
-- L'operatore relazionale di minoranza `<` controlla se la prima stringa è "minore" della seconda in base all'ordinamento naturale;
-- L'operatore relazionale di minoranza o uguaglianza (`>=`) verifica se la prima stringa è "minore o uguale" alla seconda in base all'ordinamento naturale;
+- di concatenazione `+` unisce due o più stringhe in una sola;
+- relazionale di eguaglianza (`==`) verifica se due stringhe sono uguali;
+- relazionale di maggioranza (`>`) controlla se la prima stringa è "maggiore" della seconda in base all'ordinamento naturale;
+- relazionale di maggioranza o uguaglianza (`>=`) verifica se la prima stringa è "maggiore o uguale" alla seconda in base all'ordinamento naturale;
+- relazionale di minoranza `<` controlla se la prima stringa è "minore" della seconda in base all'ordinamento naturale;
+- relazionale di minoranza o uguaglianza (`>=`) verifica se la prima stringa è "minore o uguale" alla seconda in base all'ordinamento naturale.
+
+L'ordinamento naturale delle stringhe avviene sulla base all'ordine lessicografico. Ad esempio la lettera ``a`` viene prima della lettera ``b`` e quindi è vera l'affermazione la lettera ``a`` è più piccola della lettera ``b`` (l'affermazione ``a < b`` è vera). In generale:
+
+- i numeri (0-9) vengono prima delle lettere (A-Z, a-z).
+- le lettere maiuscole (A-Z) vengono prima delle minuscole (a-z);
+- caratteri speciali come spazi, punteggiatura e simboli vengono ordinati in base ai loro valori Unicode. Per maggiori informazioni si rimanda al capitolo dedicato alla codifica Unicode.
 
 Un esempio d'uso degli operatori relazionali è il seguente:
 
@@ -96,9 +104,9 @@ Un esempio d'uso degli operatori relazionali è il seguente:
 let x = "una " + "stringa.";
 console.info(x); // Output: una stringa.
 console.info("una " == "stringa"); // Output: false
-console.info("una " > "stringa"); // Output: false
+console.info("una " > "stringa");  // Output: false
 console.info("una " >= "stringa"); // Output: false
-console.info("una " < "stringa"); // Output: true
+console.info("una " < "stringa");  // Output: true
 console.info("una " <= "stringa"); // Output: true
 ```
 
