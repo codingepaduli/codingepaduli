@@ -24,29 +24,19 @@ references:
 
 # Utilizzare data e ora usando l'oggetto ``Date``
 
-Le variabili possono aver assegnata una data ed un orario. Questi tipi di dati di uso molto comune sono oggetti che rappresentano un singolo momento temporale in un formato indipendente dalla piattaforma.
+Ogni data ed orario su internet deve essere rappresentato secondo le regole dello standard internazionale
+[ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601) del 2019, che su internet è specificato dalle RFC 3339 del 2004 e dall'aggiornamento tramite RFC 9557 del 2024.
 
-La rappresentazione di date e orari su internet deve seguire le regole dello standard internazionale
-[ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601). Questo standard nasce per risolvere problemi di comprensione dei formati di date e ore utilizzati nei vari paesi, ad esempio la data rappresentata con 04-09-03 può indicare il:
+Lo standard internazionale definisce il seguente formato in cui scrivere date e orari: ``YYYY``-``MM``-``DD``T``hh``:``mm``:``ss``.``KKK`` ``timezone``, come nel seguente esempio:
 
-- 4 settembre 2003 (o addirittura 1903) in Europa e altri Paesi,
-- 9 aprile 2003 negli Stati Uniti d'America,
-- 3 settembre 2004 secondo lo standard ISO 8601.
+```plaintext
+2022-07-08T00:14:07Z[Europe/London]
+2022-07-08T00:14:07:03.30[Europe/London]
+```
 
-Il formato in cui scrivere date e ore deve essere ``YYYY``-``MM``-``DD``T``hh``:``mm``:``ss``.``KKK``, con il seguente significato:
+Per maggiori informazioni si rimanda al capitolo sulle etichette di HTML, alle specifiche del W3C ed agli standard sopra menzionati.
 
-- ``YYYY``: Anno;
-- ``MM``: Mese;
-- ``GG``: Giorno;
-- T: è un carattere di separazione, deve essere inserito per separare la data dall'ora;
-- ``hh``: Ora;
-- ``mm``: Minuti;
-- ``ss``: Secondi;
-- ``kkk``: Millisecondi.
-
-Alcuni campi possono essere omessi, per maggiori informazioni si rimanda alle specifiche del W3C.
-
-Le date e gli orari in JavaScript sono implementate utilizzando fino a qualche anno fa l'oggetto ``Date``, mentre da qualche anno si utilizza l'oggetto ``Temporal``, entrambi gli oggetti rappresentano un singolo momento nel tempo in un formato indipendente dalla piattaforma.
+Le date e gli orari in JavaScript sono implementati utilizzando fino a qualche anno fa l'oggetto ``Date``, mentre da qualche anno si utilizza l'oggetto ``Temporal``, entrambi gli oggetti rappresentano un singolo momento nel tempo in un formato indipendente dalla piattaforma.
 
 L'oggetto ``Date`` basa su delle specifiche di più di 30 anni fa, per cui sono emersi alcuni problemi nell'utilizzare questo oggetto:
 
@@ -74,10 +64,14 @@ const date = Temporal.PlainDate.from('2023-10-01');
 const time = Temporal.PlainTime.from('14:30:00');
 const dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
 const yearMonth = Temporal.PlainYearMonth.from('2023-10');
-const monthDay = Temporal.PlainMonthDay.from('10-15');
+const monthDay = Temporal.PlainMonthDay.from('02-29');
 const zonedDateTime = Temporal.ZonedDateTime.from('2023-10-01T14:30:00[Europe/Rome]');
 const duration = Temporal.Duration.from( {days: 2, hours: 3, minutes: 15} );
 const instantNow = Temporal.Instant.from('2023-10-01T14:30:00Z');
+const dateTime2 = date.add({ months: 3 }); // 2024-01-01
+dateTime.equals(dateTime2); // false
+monthDay.toPlainDate(2023); // undefined
+monthDay.toPlainDate(2024); // 2024-02-29
 ```
 
 ## Utilizzo dell'oggetto ``Date``
