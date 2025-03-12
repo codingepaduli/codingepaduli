@@ -22,7 +22,7 @@ references:
         description: "Documentazione dell'oggetto Temporal, che semplifica, corregge e modernizza la gestione delle date e dell'ora. Proprietà e metodi disponibili"
 ---
 
-# Orari e date
+# Utilizzare data e ora usando l'oggetto ``Date``
 
 Le variabili possono aver assegnata una data ed un orario. Questi tipi di dati di uso molto comune sono oggetti che rappresentano un singolo momento temporale in un formato indipendente dalla piattaforma.
 
@@ -46,15 +46,7 @@ Il formato in cui scrivere date e ore deve essere ``YYYY``-``MM``-``DD``T``hh``:
 
 Alcuni campi possono essere omessi, per maggiori informazioni si rimanda alle specifiche del W3C.
 
-Le date e gli orari in JavaScript sono implementate utilizzando fino a qualche anno fa l'oggetto ``Date``, mentre da qualche anno si utilizza l'oggetto ``Temporal``, entrambi gli oggetti rappresentano un singolo momento nel tempo in un formato indipendente dalla piattaforma. Un esempio d'uso è il seguente:
-
-```javascript
-const date1 = new Date('1995-12-17T03:24:00');
-const dt = Temporal.PlainDateTime.from("2021-07-01T12:34:56");
-const zdt = Temporal.ZonedDateTime.from("2021-07-01T12:34:56-04:00[America/New_York]");
-```
-
-## Problematiche emerse
+Le date e gli orari in JavaScript sono implementate utilizzando fino a qualche anno fa l'oggetto ``Date``, mentre da qualche anno si utilizza l'oggetto ``Temporal``, entrambi gli oggetti rappresentano un singolo momento nel tempo in un formato indipendente dalla piattaforma.
 
 L'oggetto ``Date`` basa su delle specifiche di più di 30 anni fa, per cui sono emersi alcuni problemi nell'utilizzare questo oggetto:
 
@@ -63,9 +55,32 @@ L'oggetto ``Date`` basa su delle specifiche di più di 30 anni fa, per cui sono 
 - la conversione da stringa a data/ora è inaffidabile e può portare a degli errori difficili da rintracciare;
 - i calcoli in cui è coinvolta l'ora legale (DST) e i cambiamenti del calendario storico non sono calcoli affidabili.
 
-L'oggetto ``Temporal`` modernizza e semplifica la gestione delle date, nonostante le quasi 300 pagine di documentazione che stanno ad indicare quanto il concetto della data e dell'ora sia importante nella nostra società.
+L'oggetto ``Temporal`` modernizza e semplifica la gestione delle date, degli orari, dei fusi orari e delle nonostante le quasi 300 pagine di documentazione che stanno ad indicare quanto il concetto della data e dell'ora sia importante nella nostra società. Prevede oggetti differenti per poter:
 
-## L'oggetto Date
+- rappresentare un'ora senza informazioni sulla data e sul fuso orario, utilizzando l'oggetto ``Temporal.PlainDate``;
+- rappresentare una data senza informazioni sull'ora e sul fuso orario, utilizzando l'oggetto ``Temporal.PlainTime``;
+- rappresentare data e ora senza informazioni sul fuso orario, utilizzando l'oggetto ``Temporal.PlainDateTime``;
+- rappresentare un mese dell'anno, senza informazioni sul giorno, sull'ora e sul fuso orario, utilizzando l'oggetto ``Temporal.PlainYearMonth``;
+- rappresentare un giorno del mese, senza informazioni sull'anno, sull'ora e sul fuso orario, utilizzando l'oggetto ``Temporal.PlainMonthDay``;
+- rappresentare data e ora con informazioni sul fuso orario, utilizzando l'oggetto ``Temporal.ZonedDateTime``;
+- rappresentare una durata di tempo (ad esempio, giorni, ore, minuti), utilizzando l'oggetto ``Temporal.Duration``;
+- rappresentare un punto specifico nel tempo, espresso in millisecondi dall'epoca Unix (1 gennaio 1970) utilizzando l'oggetto ``Temporal.Instant``.
+
+Ecco un esempio sull'uso di ``Date`` e ``Temporal``:
+
+```javascript
+const date1 = new Date('1995-12-17T03:24:00');
+const date = Temporal.PlainDate.from('2023-10-01');
+const time = Temporal.PlainTime.from('14:30:00');
+const dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
+const yearMonth = Temporal.PlainYearMonth.from('2023-10');
+const monthDay = Temporal.PlainMonthDay.from('10-15');
+const zonedDateTime = Temporal.ZonedDateTime.from('2023-10-01T14:30:00[Europe/Rome]');
+const duration = Temporal.Duration.from( {days: 2, hours: 3, minutes: 15} );
+const instantNow = Temporal.Instant.from('2023-10-01T14:30:00Z');
+```
+
+## Utilizzo dell'oggetto ``Date``
 
 Per creare un oggetto che memorizza il momento temporale:
 
@@ -157,17 +172,4 @@ I metodi setter con parametri per le date in JavaScript sono:
 6. ``setSeconds(seconds)``: Imposta i secondi della data (0-59).
 7. ``setMilliseconds(milliseconds)``: Imposta i millisecondi della data (0-999).
 
-## L'oggetto Temporal
-
-I concetti su cui si basa questo oggetto sono i seguenti:
-
-- Durata, gestita dall'oggetto ``Temporal.Duration``, rappresenta un intervallo definito tra due punti nel tempo;
-- Punti unici nel tempo:
-    ``Temporal.Instant`` L'ora senza fuso orario;
-    ``Temporal.ZonedDateTime`` Una data o ora considerando anche il un fuso orario;
-- ``Temporal.PlainDateTime``: Data e ora completi;
-    ``Temporal.PlainDate`` Solo la data;
-        ``Temporal.PlainYearMonth``: Solo Anno e mese;
-        ``Temporal.PlainMonthDay``: Solo il mese e il giorno;
-    ``Temporal.PlainTime``: Solo il momento
-``Temporal.now()``: Per ottenere l'ora corrente come varie istanze di classe, o in un formato specifico;
+## Utilizzare data e ora usando l'oggetto ``Temporal``
