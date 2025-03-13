@@ -61,6 +61,51 @@ Metodi                   | Operazione                                           
 ``toUpperCase()``        | restituisce la stringa con tutti i caratteri in maiuscolo     | ``"una stringa".toUpperCase()``
 ``trim()``               | rimuove tutti gli spazi iniziali e finali                     | ``"una stringa".trim()``
 
+## Operazioni ed operatori numerici
+
+Simbolo operatore        | Operatore                   | Esempio d'uso
+-------- | ------------------------------------------- | --------------
+``+``    | somma tra numeri                            | ``x = 2 + 1;``
+``-``    | differenza tra numeri                       | ``x = 2 - 1;``
+``*``    | moltiplicazione tra numeri                  | ``"x = 2 * 1;"``
+``/``    | divisione tra numeri                        | ``x = 2 / 1;``
+``%``    | resto della divisione tra numeri            | ``x = 2 % 1;``
+``++``   | incremento di una singola unità             | ``x++;``
+``--``   | decremento di una singola unità             | ``x--;``
+
+Operatori relazionali:
+
+Simbolo operatore        | Operatore                   | Esempio d'uso
+-------- | ------------------------------------------- | --------------
+``>``    | relazione di maggioranza                    | ``2 > 1;``
+``<``    | relazione di minoranza                      | ``2 < 1;``
+``==``   | relazione di uguaglianza                    | ``2 == 1;``
+``>=``   | relazione di maggioranza o uguaglianza      | ``2 >= 1;``
+``<=``   | relazione di minoranza o uguaglianza        | ``2 <= 1;``
+``!=``   | relazione di disuguaglianza                 | ``2 != 1;``
+``===``  | relazione di uguaglianza stretta            | ``2 === 1;``
+``!==``  | relazione di disuguaglianza stretta         | ``2 !== 1;``
+
+Operatori logici:
+
+Simbolo operatore        | Operatore                   | Esempio d'uso
+------ | ------------------------------------------- | --------------------
+``&&`` | congiunzione logica AND                     | ``(2>10) && (2<40)``
+``!``  | negazione logica NOT                        | ``!(2>10)``
+``\|\|`` | disgiunzione logica OR                      | ``(2>10) \|\| (2<0)``
+
+Operatori binari:
+
+Simbolo operatore        | Operatore                   | Esempio d'uso
+-------- | ------------------------------------------- | --------------
+``&``    | operazione di and booleano tra due sequenze di bit | ``3 & 5``
+``\|``   | operazione di or booleano tra due sequenze di bit  | ``3 \| 5``
+``^``    | operazione di xor booleano tra due sequenze di bit | ``3 ^ 5``
+``~``    | operazione di not booleano su una sequenza di bit  | ``~ 5;``
+``<<``   | shift sinistro di n posizioni                      | ``3 << 5``
+``>>``   | shift destro di n posizioni                        | ``3 >> 5``
+``>>>``  | shift destro senza segno di n posizioni            | ``3 >>> 5``
+
 ## Costanti e funzioni matematiche
 
 Riepilogo delle proprietà e dei metodi più utilizzati della libreria ``Math``. Per un elenco completo si rimanda alla documentazione della libreria.
