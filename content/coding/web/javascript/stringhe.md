@@ -1,15 +1,15 @@
 ---
 type: "javascript"
-title: "Le stringhe"
+title: "JavaScript Lez. 05 - Approfondimento - Le stringhe"
 description: "Descrizione delle stringhe, degli operatori e delle operazioni sulle stringhe per il calcolo automatico"
 date: 2025-03-10
 publishdate: 2025-03-10
-categories: ["coding", "web", "p5.js"]
-keywords: ["coding", "web", "p5.js"]
+categories: ["coding", "web", "javascript"]
+keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "Descrizione delle stringhe, degli operatori e delle operazioni sulle stringhe per il calcolo automatico"
-weight: 8910
+weight: 8940
 ---
 
 # Le stringhe

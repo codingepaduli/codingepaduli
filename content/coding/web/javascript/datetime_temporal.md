@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "Orari e date"
+title: "JavaScript Lez. 06 - Approfondimento - Orari e date"
 description: "Descrizione degli orari, delle date, dell'internazionalizzazione, delle operazioni possibili per la manipolazione"
 date: 2025-03-10
 publishdate: 2025-03-10
@@ -9,7 +9,7 @@ keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "Orari e date"
-weight: 8900
+weight: 8930
 
 references:
     -   title: "L'oggetto Date"

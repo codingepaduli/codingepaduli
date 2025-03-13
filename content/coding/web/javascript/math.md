@@ -1,18 +1,18 @@
 ---
 type: "javascript"
-title: "Espressioni matematiche"
+title: "JavaScript Lez. 04 - Approfondimento - Espressioni matematiche"
 description: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
 date: 2021-08-26
 publishdate: 2021-08-26
 lastmod: 2025-03-10
 spellcheck: 2020-01-01
-categories: ["coding", "web", "p5.js"]
-keywords: ["coding", "web", "p5.js"]
+categories: ["coding", "web", "javascript"]
+keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "Descrizione degli standard, degli operatori e delle operazioni matematiche per il calcolo automatico, descrizione delle precedenze degli operatori nelle espressioni matematiche"
 customJS: ["/static/coding/web/javascript/espressioniMatematiche.js"]
-weight: 8940
+weight: 8950
 
 references:
     -   title: "Algebra di Boole"

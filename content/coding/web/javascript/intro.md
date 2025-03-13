@@ -11,6 +11,7 @@ keywords: ["coding", "web", "javascript"]
 draft: false
 toc: false
 summary: "JavaScript"
+weight: 8980
 
 references:
     -   title: "HTML.it"

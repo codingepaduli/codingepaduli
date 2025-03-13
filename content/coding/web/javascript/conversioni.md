@@ -1,6 +1,6 @@
 ---
 type: "javascript"
-title: "Riepilogo dei metodi e degli operatori per manipolare i tipi primitivi"
+title: "JavaScript Riepilogo Lez. 04, 05, 06"
 description: "Riepilogo dei metodi e degli operatori per manipolare i tipi primitivi"
 date: 2020-04-06
 publishdate: 2020-04-06
@@ -10,6 +10,7 @@ keywords: ["coding", "web", "javascript"]
 draft: true
 toc: false
 summary: "Riepilogo dei metodi e degli operatori per manipolare i tipi primitivi"
+weight: 8926
 
 references:
     -   title: "Libreria matematica Math"
