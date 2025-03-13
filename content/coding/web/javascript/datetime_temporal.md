@@ -423,7 +423,7 @@ console.log(sonoUguali2); // Output: false
 
 In questo esempio, la prima comparazione restituisce `true` perché `dataOra1` e `dataOra2` rappresentano la stessa data e ora, mentre la seconda comparazione restituisce `false` perché `dataOra1` e `dataOra3` rappresentano date diverse.
 
-#### Formattazione
+#### Conversione in una rappresentazione testuale localizzata
 
 La funzione progettata per eseguire la conversione di un'istanza di ``Temporal`` in una stringa formattata secondo le convenzioni locali è ``toLocaleString()``, la cui firma è la seguente:
 
