@@ -152,3 +152,29 @@ Metodi                 | Operazione                                | Esempio d'u
 ``toString(base)``     | converte il numero in stringa e specifica la base numerica nella quale rappresentare il numero | ``x.toString(16)``
 ``toExponential(digits)`` | converte il numero in stringa con rappresentazione esponenziale (mantissa ed esponente), specificando opzionalmente il numero di cifre decimali da utilizzare per la mantissa | ``z.toExponential(16)``
 
+## Metodi della classe Date
+
+Metodo             | Descrizione dell'operazione             | Esempio d'uso
+-------------------|-----------------------------------------|-------------------------------
+`toLocaleString()` | Converte la data e l'ora in una stringa | `date.toLocaleString('en-US')`
+
+Metodo                | Descrizione dell'operazione        | Esempio d'uso
+----------------------|---------------------------------   |-------------------------
+`setFullYear(year)`   | Imposta l'anno.                    | `date.setFullYear(2023)`
+`setMonth(month)`     | Imposta il mese (0 per gennaio).   | `date.setMonth(0)`
+`setDate(day)`        | Imposta il giorno del mese (1-31). | `date.setDate(15)`
+`setHours(hours)`     | Imposta le ore (0-23).             | `date.setHours(10)`
+`setMinutes(minutes)` | Imposta i minuti (0-59).           | `date.setMinutes(30)`
+`setSeconds(seconds)` | Imposta i secondi (0-59).          | `date.setSeconds(45)`
+`setMilliseconds(ms)` | Imposta i millisecondi             | `date.setMilliseconds(500)`  
+
+Metodo          | Descrizione dell'operazione            | Esempio d'uso
+----------------|--------------------------------------- |--------------------------------
+`getFullYear()` | Restituisce l'anno.                    | `let anno = date.getFullYear();`
+`getMonth()`    | Restituisce il mese (0-11).            | `let mese = date.getMonth();`
+`getDate()`     | Restituisce il giorno del mese (1-31). | `let giorno = date.getDate();`
+`getDay()` | Restituisce il giorno della settimana (0-6). | `let gS = date.getDay();`
+`getHours()`    | Restituisce l'ora (0-23).              | `let ore = date.getHours();`
+`getMinutes()`  | Restituisce i minuti (0-59).           | `let minuti = date.getMinutes();`
+`getMilliseconds()`   | Restituisce i millisecondi.      | `let ms = date.getMilliseconds();`
+`getTimezoneOffset()` | Restituisce il fuso orario       | `let to = date.getTimezoneOffset();`
