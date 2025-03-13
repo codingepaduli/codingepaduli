@@ -31,7 +31,7 @@ Lo standard internazionale definisce il seguente formato in cui scrivere date e 
 
 ```plaintext
 2022-07-08T00:14:07Z[Europe/London]
-2022-07-08T00:14:07:03.30[Europe/London]
+2022-07-08T00:14:07+03.30[Europe/London]
 ```
 
 Per maggiori informazioni si rimanda al capitolo sulle etichette di HTML, alle specifiche del W3C ed agli standard sopra menzionati.
@@ -76,40 +76,65 @@ monthDay.toPlainDate(2024); // 2024-02-29
 
 ## Utilizzo dell'oggetto ``Date``
 
-Per creare un oggetto che memorizza il momento temporale:
+E' possibile creare una variabile a cui assegnare un momento temporale utilizzando l'oggetto ``Date``. Possiamo indicare in formato stringa il momento temporale desiderato, se non indichiamo nulla viene assegnata la data, l'ora  ed il fuso orario attuale:
 
 ```javascript
 const date2 = new Date();
-const date1 = new Date('1995-12-17T03:24:00');
+const date1 = new Date('1995-12-17T03:24:00+01:00');
 ```
 
-Per convertire la data in una rappresentazione testuale localizzata:
+### Conversione in una rappresentazione testuale localizzata
+
+La funzione progettata per convertire la data in una rappresentazione testuale localizzata è ``toLocaleString``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Date.toLocaleString([locales[, options]])
+
+Parameters:
+    locales    String | Array: a string with a BCP 47 language tag or an array of such strings
+    options    Object (optional): an object that can specify formatting options
+
+Returns:
+    String: the locale-specific string representation of the date
+```
+
+Il parametro formale ``locales`` è opzionale e rappresenta il codice IETF (il codice di lingua ed il codice del paese) da utilizzare per indicare le usanze locali di scrittura delle date.
+Il parametro formale ``options`` è opzionale e rappresenta le opzioni di formattazione.
+
+Il valore restituito è la rappresentazione in stringa specifica per le usanze locali di scrittura delle data. Può essere salvato in una variabile.
+
+Di seguito alcuni esempi che, utilizzando il parametro ``locales``, convertono la data in una stringa secondo le usanze Americane e secondo quelle della Gran Bretagna, :
 
 ```javascript
-let orario1 = date.toLocaleString('en-US'); //  2/11/2020,  1:04:52 PM
-let orario2 = date.toLocaleString('en-GB'); // 11/02/2020, 13:04:52
+let date = new Date('2022-11-02T13:02:00+00:00');
+let orario1 = date.toLocaleString('en-US'); // 02/11/2022,  1:02:00 PM
+let orario2 = date.toLocaleString('en-GB'); // 11/02/2022, 13:02:00
 ```
 
-Per convertire la data in una rappresentazione testuale localizzata e specificare il formato:
-
-```javascript
-let orario1 = date.toLocaleString('en-US'); //  2/11/2020,  1:04:52 PM
-let orario2 = date.toLocaleString('it-IT', {
-  'dateStyle': 'long',
-  'timeStyle': 'long'
-}); // 11 aprile 2024 alle ore 19:19:15 UTC
-
-console.log(new Date().toLocaleString('it-IT', {'dateStyle': 'full', 'timeStyle': 'full'}))
-```
-
-Le proprietà ``dateStyle`` e ``timeStyle`` possono essere specificate per indicare il formato della data e dell'ora, non necessariamente devono essere inserite entrambe, possono assumere uno dei seguenti valori:
+Le proprietà ``dateStyle`` e ``timeStyle`` del parametro ``options`` indicano rispettivamente il formato della data e dell'ora, non necessariamente devono essere inserite entrambe, possono assumere uno dei seguenti valori:
 
 - ``full`` indica tutti i dati in formato testuale completo, ad esempio ``giovedì 11 aprile 2024 alle ore 19:20:42 Tempo coordinato universale``;
 - ``long`` indica tutti i dati in formato testuale abbreviato, ad esempio ``11 aprile 2024 alle ore 19:21:18 UTC``;
 - ``medium`` indica tutti i dati in formato numerico, ad esempio ``11 apr 2024, 19:21:18``;
 - ``short`` indica tutti i dati in formato numerico ridotto, ad esempio ``11/04/24, 19:21``.
 
-Se si vuole specificare il formato solo per una parte della data e dell'orario, si possono utilizzare le seguenti proprietà:
+Un esempio è il seguente:
+
+```javascript
+let date = new Date('2022-11-02T13:02:00+00:00');
+let orario1 = date.toLocaleString('en-US'); // 02/11/2022,  1:02:00 PM
+let orario2 = date.toLocaleString('it-IT', {
+  'dateStyle': 'long',
+  'timeStyle': 'long'
+}); // 11 novembre 2024 alle ore 13:02:00 UTC
+
+let orario3 = new Date().toLocaleString('it-IT', {
+  'dateStyle': 'full', 
+  'timeStyle': 'full'
+}); // giovedì 13 marzo 2025 alle ore 08:32:58 Ora del meridiano di Greenwich
+```
+
+Se si vuole specificare il formato per una specifica parte della data e dell'orario, si possono utilizzare le seguenti proprietà del parametro ``options``:
 
 - ``day``, ``month``, ``year``, ``hour``, ``minute``, ``second`` permettono di visualizzare il campo numerico nel formato seguente:
   - ``numeric`` a una o due cifre;
@@ -129,7 +154,7 @@ Se si vuole specificare il formato solo per una parte della data e dell'orario, 
   - ``short`` nome abbreviato del campo;
   - ``narrow`` iniziale del nome del campo;
 
-Ad esempio, per specificare data e ora con le informazioni "aprile 2024 dopo Cristo sabato alle ore 14:35:50,777" è necessario specificare le seguenti proprietà:
+Ad esempio, per specificare data e ora con le informazioni ``aprile 2024 dopo Cristo sabato alle ore 14:35:50,777`` è necessario specificare le seguenti proprietà:
 
 ```javascript
 console.log(new Date().toLocaleString('it-IT', {
@@ -145,25 +170,76 @@ console.log(new Date().toLocaleString('it-IT', {
 }));
 ```
 
-I metodi getter con parametri per le date in JavaScript sono:
+### Accesso e modifica dei campi
 
-1. ``getFullYear()``: Restituisce l'anno della data.
-2. ``getMonth()``: Restituisce il mese della data (0-11).
-3. ``getDate()``: Restituisce il giorno del mese della data (1-31).
-4. ``getDay()``: Restituisce il giorno della settimana della data (0-6, dove 0 è Domenica e 6 è Sabato).
-5. ``getHours()``: Restituisce l'ora della data (0-23).
-6. ``getMinutes()``: Restituisce i minuti della data (0-59).
-7. ``getSeconds()``: Restituisce i secondi della data (0-59).
-8. ``getMilliseconds()``: Restituisce i millisecondi della data (0-999).
+I metodi che permettono di accedere ad uno specifico campo della data sono:
 
-I metodi setter con parametri per le date in JavaScript sono:
+1. ``getFullYear()``: Restituisce l'anno della data;
+2. ``getMonth()``: Restituisce il mese della data (0-11);
+3. ``getDate()``: Restituisce il giorno del mese della data (1-31);
+4. ``getDay()``: Restituisce il giorno della settimana della data (0-6, dove 0 è Domenica e 6 è Sabato);
+5. ``getHours()``: Restituisce l'ora della data (0-23);
+6. ``getMinutes()``: Restituisce i minuti della data (0-59);
+7. ``getSeconds()``: Restituisce i secondi della data (0-59);
+8. ``getMilliseconds()``: Restituisce i millisecondi della data (0-999);
+9. ``getTimezoneOffset()``: Restituisce il fuso orario in minuti.
 
-1. ``setFullYear(year)``: Imposta l'anno della data.
-2. ``setMonth(month)``: Imposta il mese della data (0 per gennaio, 1 per febbraio, ecc.).
-3. ``setDate(day)``: Imposta il giorno del mese della data.
-4. ``setHours(hours)``: Imposta le ore della data (0-23).
-5. ``setMinutes(minutes)``: Imposta i minuti della data (0-59).
-6. ``setSeconds(seconds)``: Imposta i secondi della data (0-59).
+Un esempio d'uso è il seguente:
+
+```javascript
+let date = new Date('2023-03-15T10:30:45.000+01:00');
+
+// Utilizziamo i metodi getter per ottenere informazioni sulla data
+let year = date.getFullYear();   // Ottiene l'anno (2023)
+let month = date.getMonth();     // Ottiene il mese (2 per marzo, 0-based)
+let day = date.getDate();        // Ottiene il giorno del mese (15)
+let dayOfWeek = date.getDay();   // Ottiene il giorno della settimana (3 per mercoledì, 0-based)
+let hours = date.getHours();     // Ottiene le ore (10)
+let minutes = date.getMinutes(); // Ottiene i minuti (30)
+let seconds = date.getSeconds(); // Ottiene i secondi (45)
+let milliseconds = date.getMilliseconds(); // Ottiene i millisecondi (0)
+let timezoneOffset = date.getTimezoneOffset(); // Ottiene il fuso orario in minuti (60)
+```
+
+I metodi che permettono di impostare uno specifico campo della data sono:
+
+1. ``setFullYear(year)``: Imposta l'anno della data;
+2. ``setMonth(month)``: Imposta il mese della data (0 per gennaio, 1 per febbraio, ecc.);
+3. ``setDate(day)``: Imposta il giorno del mese della data;
+4. ``setHours(hours)``: Imposta le ore della data (0-23);
+5. ``setMinutes(minutes)``: Imposta i minuti della data (0-59);
+6. ``setSeconds(seconds)``: Imposta i secondi della data (0-59);
 7. ``setMilliseconds(milliseconds)``: Imposta i millisecondi della data (0-999).
+
+Un esempio d'uso è il seguente:
+
+```javascript
+date.setFullYear(2024);    // Imposta l'anno a 2024
+date.setMonth(5);          // Imposta il mese a giugno (5, 0-based)
+date.setDate(20);          // Imposta il giorno del mese a 20
+date.setHours(15);         // Imposta le ore a 15 (3 PM)
+date.setMinutes(45);       // Imposta i minuti a 45
+date.setSeconds(30);       // Imposta i secondi a 30
+date.setMilliseconds(500); // Imposta i millisecondi a 500
+```
+
+### Sommare o sottrarre periodi di tempo
+
+La classe Date non fornisce metodi specifici per sommare o sottrarre periodi di tempo direttamente. Ma la modifica di una proprietà avviene aggiornando di conseguenza tutte le altre proprietà. Ad esempio:
+
+- quando si sommano o si sottraggono mesi, è gestito automaticamente il passaggio tra gli anni. Ad esempio, se si somma un mese a dicembre, il mese diventerà gennaio dell'anno successivo, e viceversa;
+- quando si sommano o si sottraggono giorni, è gestito automaticamente il passaggio tra i mesi e gli anni;
+
+Un esempio di somma e sottrazione dei periodi di tempo è il seguente:
+
+```javascript
+let date = new Date('2023-03-15T10:30:45.000+01:00');
+// sommo 12 ore, 20 giorni, 11 mesi ed 1 anno 
+date.setHours(date.getHours() + 12);
+date.setDate(date.getDate() + 20);
+date.setMonth(date.getMonth() + 11);
+date.setFullYear(date.getFullYear() + 1);
+// output 04/03/2025, 21:30:45
+```
 
 ## Utilizzare data e ora usando l'oggetto ``Temporal``
