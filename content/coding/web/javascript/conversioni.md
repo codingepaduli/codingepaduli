@@ -154,9 +154,21 @@ Metodi                 | Operazione                                | Esempio d'u
 
 ## Metodi della classe Date
 
-Metodo             | Descrizione dell'operazione             | Esempio d'uso
--------------------|-----------------------------------------|-------------------------------
-`toLocaleString()` | Converte la data e l'ora in una stringa | `date.toLocaleString('en-US')`
+Metodo                   | Descrizione dell'operazione             | Esempio d'uso
+-------------------------|-----------------------------------------|---------------------
+`toLocaleString(locale)` | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione fornite | `date.toLocaleString('en-US')`
+`toLocaleString(locale, options)` | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione e le opzioni di formattazione fornite | `date.toLocaleString('en-US')`
+
+Metodo          | Descrizione dell'operazione            | Esempio d'uso
+----------------|--------------------------------------- |---------------------------
+`getFullYear()` | Restituisce l'anno.                    | `date.getFullYear();`
+`getMonth()`    | Restituisce il mese (0-11).            | `date.getMonth();`
+`getDate()`     | Restituisce il giorno del mese (1-31). | `date.getDate();`
+`getDay()` | Restituisce il giorno della settimana (0-6). | `date.getDay();`
+`getHours()`    | Restituisce l'ora (0-23).              | `date.getHours();`
+`getMinutes()`  | Restituisce i minuti (0-59).           | `date.getMinutes();`
+`getMilliseconds()`   | Restituisce i millisecondi.      | `date.getMilliseconds();`
+`getTimezoneOffset()` | Restituisce il fuso orario       | `date.getTimezoneOffset();`
 
 Metodo                | Descrizione dell'operazione        | Esempio d'uso
 ----------------------|---------------------------------   |-------------------------
@@ -168,13 +180,14 @@ Metodo                | Descrizione dell'operazione        | Esempio d'uso
 `setSeconds(seconds)` | Imposta i secondi (0-59).          | `date.setSeconds(45)`
 `setMilliseconds(ms)` | Imposta i millisecondi             | `date.setMilliseconds(500)`  
 
-Metodo          | Descrizione dell'operazione            | Esempio d'uso
-----------------|--------------------------------------- |--------------------------------
-`getFullYear()` | Restituisce l'anno.                    | `let anno = date.getFullYear();`
-`getMonth()`    | Restituisce il mese (0-11).            | `let mese = date.getMonth();`
-`getDate()`     | Restituisce il giorno del mese (1-31). | `let giorno = date.getDate();`
-`getDay()` | Restituisce il giorno della settimana (0-6). | `let gS = date.getDay();`
-`getHours()`    | Restituisce l'ora (0-23).              | `let ore = date.getHours();`
-`getMinutes()`  | Restituisce i minuti (0-59).           | `let minuti = date.getMinutes();`
-`getMilliseconds()`   | Restituisce i millisecondi.      | `let ms = date.getMilliseconds();`
-`getTimezoneOffset()` | Restituisce il fuso orario       | `let to = date.getTimezoneOffset();`
+La classe ``Date`` non fornisce metodi specifici per sommare o sottrarre periodi di tempo direttamente, ma la modifica di una proprietà comporta l'aggiornando a cascata di tutte le altre proprietà, permettendo quindi la somma o la sottrazione di periodi da una data. Ad esempio:
+
+```javascript
+let date = new Date('2023-03-15T10:30:45.000+01:00');
+// sommo 12 ore, 20 giorni, 11 mesi ed 1 anno 
+date.setHours(date.getHours() + 12);
+date.setDate(date.getDate() + 20);
+date.setMonth(date.getMonth() + 11);
+date.setFullYear(date.getFullYear() + 1);
+// output 04/03/2025, 21:30:45
+```
