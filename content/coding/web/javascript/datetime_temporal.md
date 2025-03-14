@@ -60,6 +60,7 @@ Ecco un esempio sull'uso di ``Date`` e ``Temporal``:
 
 ```javascript
 const date1 = new Date('1995-12-17T03:24:00');
+const dateNow = Temporal.PlainDate.now();
 const date = Temporal.PlainDate.from('2023-10-01');
 const time = Temporal.PlainTime.from('14:30:00');
 const dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
@@ -225,7 +226,7 @@ date.setMilliseconds(500); // Imposta i millisecondi a 500
 
 ### Sommare o sottrarre periodi di tempo
 
-La classe Date non fornisce metodi specifici per sommare o sottrarre periodi di tempo direttamente. Ma la modifica di una proprietà avviene aggiornando di conseguenza tutte le altre proprietà. Ad esempio:
+La classe ``Date`` non fornisce metodi specifici per sommare o sottrarre periodi di tempo direttamente, ma la modifica di una proprietà comporta l'aggiornando a cascata di tutte le altre proprietà, permettendo quindi la somma o la sottrazione di periodi da una data. Ad esempio:
 
 - quando si sommano o si sottraggono mesi, è gestito automaticamente il passaggio tra gli anni. Ad esempio, se si somma un mese a dicembre, il mese diventerà gennaio dell'anno successivo, e viceversa;
 - quando si sommano o si sottraggono giorni, è gestito automaticamente il passaggio tra i mesi e gli anni;
@@ -259,11 +260,12 @@ E' possibile creare una variabile a cui assegnare un momento temporale utilizzan
 
 Tutti gli oggetti ``Temporal`` ereditano gli stessi metodi:
 
-``from()``: Crea un'istanza di Temporal da una stringa o un oggetto;
-``add()``: Aggiunge un periodo di tempo;
-``subtract()``: Sottrae un periodo di tempo;
-``toString()``: Restituisce una rappresentazione in stringa;
-``equals()``: Confronta due date e ore per verificare se sono uguali.
+- ``now()``: Crea un'istanza di Temporal con la data e l'ora odierna;
+- ``from()``: Crea un'istanza di Temporal da una stringa o un oggetto;
+- ``add()``: Aggiunge un periodo di tempo;
+- ``subtract()``: Sottrae un periodo di tempo;
+- ``toString()``: Restituisce una rappresentazione in stringa;
+- ``equals()``: Confronta due date e ore per verificare se sono uguali.
 
 Per creare un'istanza di ``Temporal`` dobbiamo innanzitutto indicare quale specializzazione vogliamo. Come abbiamo gia descritto, ogni specializzazione ha la sua informazione:
 
@@ -273,17 +275,41 @@ Per creare un'istanza di ``Temporal`` dobbiamo innanzitutto indicare quale speci
 
 Una volta scelta la specializzazione dell'oggetto ``Temporal``, possiamo invocare i metodi, come nell'esempio successivo:
 
-``Temporal.PlainTime.from()``
-``Temporal.PlainDate.add()``
-``Temporal.PlainDateTime.subtract()``
-``Temporal.ZonedDateTime.toString()``
-``Temporal.Duration.equals()``
+- ``Temporal.PlainTime.now()``
+- ``Temporal.PlainTime.from()``
+- ``Temporal.PlainDate.add()``
+- ``Temporal.PlainDateTime.subtract()``
+- ``Temporal.ZonedDateTime.toString()``
+- ``Temporal.Duration.equals()``
 
 Andiamo a vedere nel dettaglio i metodi disponibili.
 
 #### Creazione di un momento temporale
 
-La funzione progettata per eseguire la creazione di una qualsiasi istanza di ``Temporal`` è ``from()``, la cui firma è la seguente:
+La funzione progettata per eseguire la creazione di una qualsiasi istanza di ``Temporal`` contenente data ed ora attuali è ``now()``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Temporal.now()
+
+Parameters:
+    None
+
+Returns:
+    Temporal: an instance of Temporal representing the specified date and time
+```
+
+Non sono previsti parametri formali
+
+Il valore restituito è un'istanza di ``Temporal`` che rappresenta la data e/o l'ora attuali. Può essere salvato in una variabile.
+
+Scegliamo la specializzazione di ``Temporal`` ed invochiamo il metodo come nel seguente esempio:
+
+```javascript
+let dataOra = Temporal.PlainDateTime.now();
+let data = Temporal.PlainDate.now();
+```
+
+La funzione progettata per eseguire la creazione di una qualsiasi istanza di ``Temporal`` a partire da una data o un ora indicata è ``from()``, la cui firma è la seguente:
 
 ```plaintext
 Syntax: Temporal.from(item)
@@ -319,6 +345,7 @@ Di seguito un esempio per ogni specializzazione:
 
 ```javascript
 const date1 = new Date('1995-12-17T03:24:00');
+const dateNow = Temporal.PlainDate.now();
 const date = Temporal.PlainDate.from('2023-10-01');
 const time = Temporal.PlainTime.from('14:30:00');
 const dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
