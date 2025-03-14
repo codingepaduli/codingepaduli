@@ -156,8 +156,12 @@ Metodi                 | Operazione                                | Esempio d'u
 
 Metodo                   | Descrizione dell'operazione             | Esempio d'uso
 -------------------------|-----------------------------------------|---------------------
+``new Date(string)``     | Crea la data partendo da una stringa    | ``new Date('2023-03-15T10:30:45.000+01:00')``
+
+Metodo                   | Descrizione dell'operazione             | Esempio d'uso
+-------------------------|-----------------------------------------|---------------------
 `toLocaleString(locale)` | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione fornite | `date.toLocaleString('en-US')`
-`toLocaleString(locale, options)` | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione e le opzioni di formattazione fornite | `date.toLocaleString('en-US')`
+`toLocaleString(locale, options)` | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione e le opzioni di formattazione fornite | `date.toLocaleString('en-US', { 'dateStyle': 'long', 'timeStyle': 'long' });`
 
 Metodo          | Descrizione dell'operazione            | Esempio d'uso
 ----------------|--------------------------------------- |---------------------------
@@ -191,3 +195,16 @@ date.setMonth(date.getMonth() + 11);
 date.setFullYear(date.getFullYear() + 1);
 // output 04/03/2025, 21:30:45
 ```
+
+## Metodi della classe ``Temporal``
+
+Metodo       | Descrizione dell'operazione                               | Esempio d'uso
+-------------|-----------------------------------------------------------|------------------------------------------------
+`now()`     | Crea un'istanza di Temporal con la data e l'ora odierna.  | `Temporal.PlainDate .now();`
+`from()`     | Crea un'istanza di Temporal da una stringa o un oggetto.  | `Temporal.PlainDate .from('2023-01-01');`
+`add()`      | Aggiunge un periodo di tempo.                             | `data.add({ days: 5 });`
+`subtract()` | Sottrae un periodo di tempo.                              | `data.subtract({ months: 1 });`
+`toString()` | Restituisce una rappresentazione in stringa.              | `data.toString();`
+`equals()`   | Confronta due date e ore per verificare se sono uguali.   | `data.equals(Temporal .PlainDate.from('2023-01-01'));`
+`toLocaleString( locale)`            | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione fornite                               | `date.toLocaleString('en-US')`
+`toLocaleString( locale, options)`   | Converte la data e l'ora in una stringa seguendo le indicazioni di localizzazione e le opzioni di formattazione fornite | `date.toLocaleString('en-US', { 'dateStyle': 'long', 'timeStyle': 'long' });`
