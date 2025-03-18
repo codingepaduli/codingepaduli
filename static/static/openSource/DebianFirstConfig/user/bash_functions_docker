@@ -58,6 +58,7 @@ dockerContainer() {
 export -f dockerContainer
 
 # Running GUI applications directly in containers.
+# See: https://github.com/hemashushu/docker-archlinux-gui
 dockerContainerGUI() {
   # Running GUI applications directly in containers.
   # Requirements:
