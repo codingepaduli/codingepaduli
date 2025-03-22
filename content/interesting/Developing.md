@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-03-02
-publishdate: 2025-03-02
-lastmod: 2025-03-02
+date: 2025-03-21
+publishdate: 2025-03-21
+lastmod: 2025-03-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -74,7 +74,6 @@ summary: "Set di link relativi al coding"
 
 ### Shell, CI, CD ed automazione
 
-[mountebank](https://www.mbtest.org/) - open source tool for cross-platform, multi-protocol test;\
 [xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
 
 #### PowerShell
@@ -91,7 +90,6 @@ summary: "Set di link relativi al coding"
 [Chocolatey](https://chocolatey.org/docs) - Software Management for Windows, great community packages\
 [Chocolatey](https://blog.ipswitch.com/installing-chocolatey-packages-remotely-with-powershell) - Installing Packages Remotely with PowerShell\
 [Cargo](https://opensource.com/article/20/3/rust-cargo) - the Rust package manager\
-[Appimage, Snapcraft e Flatpak](https://www.lffl.org/2020/04/appimage-snapcraft-e-flatpak-i-formati-di-distribuzione-per-linux-a-confronto.html) - i formati di distribuzione per Linux a confronto\
 [Windows Package Manager](https://devblogs.microsoft.com/commandline/windows-package-manager-preview/) - Preview\
 
 ### AI
@@ -106,8 +104,6 @@ summary: "Set di link relativi al coding"
 [ml5js](https://ml5js.org/) - Friendly Machine Learning For The Web\
 [Teachable Machine](https://teachablemachine.withgoogle.com/) - Google\
 [Python Machine Learning Projects](https://www.digitalocean.com/community/books/python-machine-learning-projects-a-digitalocean-ebook) - A DigitalOcean eBook | DigitalOcean\
-[Deeplearning4j](https://www.infoworld.com/article/3567055/deeplearning4j-deep-learning-and-etl-for-the-jvm.html) - Deep learning and ETL for the JVM | InfoWorld\
-[PIFuHD](https://shunsukesaito.github.io/PIFuHD/) - Multi-Level Pixel-Aligned Implicit Function for High-Resolution 3D Human Digitization\
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 [Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
@@ -259,8 +255,8 @@ summary: "Set di link relativi al coding"
 [Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [Why Windows uses \r\n newlines instead of \n](https://dev.to/pieter/why-windows-uses-rn-newlines-instead-of-n-126l) - DEV Community\
+[Full Circle | An Independent Magazine For The Ubuntu Linux Community.](https://fullcirclemagazine.org/) - \
 [DistroWatch.com](https://distrowatch.com/) - Put the fun back into computing. Use Linux, BSD.\
-[Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
 [securing a Linux server](https://opensource.com/article/21/4/securing-linux-servers) - 6 open source tools and tips to securing a Linux server for beginners | Opensource.com\
 [KDE Store](https://store.kde.org/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
@@ -332,12 +328,16 @@ summary: "Set di link relativi al coding"
 
 [Minifree Laptops Ltd](https://minifree.org/) - \
 [Lenovo's Latest ThinkPad L Series and X Series Laptops](https://news.lenovo.com/pressroom/press-releases/unleashing-innovation-and-better-sustainability-of-lenovos-latest-thinkpad-l-series-and-x-series-laptops/) - Lenovo StoryHub\
-[Framework Laptop 16 Delivers Great Linux Support & Performance, Excellent Customizability Review](https://www.phoronix.com/review/framework-laptop-16) - Phoronix\
+[Framework Laptop 16 Review](https://www.phoronix.com/review/framework-laptop-16) - Phoronix\
 [HDMI Driver Rejected](https://www.phoronix.com/news/HDMI-2.1-OSS-Rejected) - HDMI Forum Rejects Open-Source HDMI 2.1 Driver Support Sought By AMD - Phoronix\
 [mjg59](https://mjg59.dreamwidth.org/60248.html) - Responsible stewardship of the UEFI secure boot ecosystem\
 [HW](https://www.stderr.nl/Blog/Hardware/Thunderbolt/TechnologyOverview.html) - USB, Thunderbolt, Displayport & docks\
 [Main Linux problems](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html?) - 2023 edition or why Linux sucks on the desktop\
 [Linux Hardware Database](https://linux-hardware.org/) - collect hardware details of Linux-powered computers\
+[Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
+[Orphaning bcachefs-tools in Debian – Jonathan Carter](https://jonathancarter.org/2024/08/29/orphaning-bcachefs-tools-in-debian/) - \
+[Don’t Support the Coreboot Project : MALIBAL](https://www.malibal.com/features/dont-support-the-coreboot-project/) - \
+[Dell XPS](https://www.dell.com/it-it/shop/laptops/xps-13-plus/spd/xps-13-9320-laptop/cn93328cc) - Notebook XPS 13 Plus\
 
 #### Old computer
 
@@ -580,8 +580,6 @@ summary: "Set di link relativi al coding"
 [WAVE](https://wave.webaim.org/) - Web Accessibility Evaluation Tool\
 [Non Visual Access](https://www.nvaccess.org/download/) - a screen reader for testing pages for every Blind + Vision Impaired person\
 [web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
-[Web Accessibility](https://bootcamp.uxdesign.cc/beginners-guide-to-web-accessibility-514644750b0f?gi=301fe74f3075) - A Beginner’s Guide To Web Accessibility | by Samantha Lurio | Bootcamp\
-[WAI](https://dev.to/natclark/4-ways-to-improve-your-website-s-accessibility-today-33ad) - 4 Ways To Improve Your Website's Accessibility Today - DEV Community\
 [Screen readers](https://dev.to/livechat/screen-readers-hearing-the-unseen-55nb) - hearing the unseen - DEV Community\
 
 #### CSS
@@ -708,6 +706,7 @@ summary: "Set di link relativi al coding"
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
 [PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
+[From SPA to PWA | Mainmatter](https://mainmatter.com/blog/2018/07/24/from-spa-to-pwa/) - \
 [PWABuilder](https://www.pwabuilder.com/) - \
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
 [nativefier/nativefier](https://github.com/nativefier/nativefier) - Make any web page a desktop application\

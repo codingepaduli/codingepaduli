@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2024-03-30
-publishdate: 2024-03-30
-lastmod: 2024-03-30
+date: 2025-03-21
+publishdate: 2025-03-21
+lastmod: 2025-03-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -114,6 +114,8 @@ summary: "Set di link interessanti"
 [Cardiopatie](https://www.youtube.com/watch?app=desktop&v=GICkFZ68BUE) - Dottor Oppido - Unità operativa complessa di Cardiologia del Monaldi - YouTube\
 [vanadium battery technology](https://text.npr.org/1114964240) - The U.S. made a breakthrough battery discovery, then gave the technology to China\
 [sun exposure](https://www.outsideonline.com/health/wellness/sunscreen-sun-exposure-skin-cancer-science/) - exposing skin to sunlight lower blood pressure and activate nitric oxide production - Outside Online\
+[Bird Flu](https://nautil.us/the-unnatural-history-of-bird-flu-1189930/) - The Unnatural History - Nautilus\
+[weight-loss drug](https://wildfirelabs.substack.com/p/the-100-trillion-disruption-the-unforeseen) - The $100 Trillion Disruption - Unforeseen Economic Earthquake\
 
 ### Tech
 
