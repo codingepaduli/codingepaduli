@@ -60,6 +60,12 @@ La funzione ``fill(30, 100, 255)`` indica il colore da utilizzare, espresso come
 3. quantità di rosso=30, quantità di giallo=100, quantità di blu=255;
 4. quantità di rosso=30, quantità di grigio=100, quantità di blu=255;
 
+## Disegno di un personaggio di un cartone animato
+
+Creare una pagina web contenente un disegno a piacere di un personaggio (inventato) di un cartone animato, con occhi, bocca, naso, corpo. Dimensione massima del personaggio deve essere 300 per 300 punti, i colori dei vari componenti sono a scelta dell'autore.
+
+![p5.js - Disegno di un personaggio di un cartone animato](/static/coding/web/p5js/colors_and_styles_exe_cartoons.png "p5.js - Disegno di un personaggio di un cartone animato")
+
 ## Disegno di un robot a colori
 
 Creare una pagina web contenente un disegno a piacere di un robot con occhi, bocca, naso, antenne, corpo, braccia, ruote o gambe. Dimensione massima del robot deve essere 300 per 300 punti, i colori dei vari componenti sono a scelta dell'autore. La parte destra e sinistra del robot devono essere simmetriche.
