@@ -453,6 +453,15 @@ La tabella viene visualizzata di seguito:
 
 <!-- markdownlint-enable MD033 -->
 
+<!-- TODO Valutare se inserire lo stile CSS seguente come consiglio: 
+<style>
+table, th, td {
+    border: 1px solid green;
+    border-collapse: collapse; // doppio bordo collassa in singolo bordo
+} 
+<style>
+-->
+
 ## Collegamenti
 
 L'etichetta ``a`` serve a creare un collegamento (in inglese "link") verso un
