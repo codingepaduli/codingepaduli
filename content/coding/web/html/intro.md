@@ -1,16 +1,14 @@
 ---
 type: "html"
-title: "Siti web + esercizi "
-description: "Siti web + esercizi"
-date: 2019-07-15
-publishdate: 2019-07-15
-lastmod: 2019-07-15
-spellcheck: 2022-10-08
+title: "Siti web "
+description: "Il World Wide Web, i siti web, i cookies, i browser"
+date: 2025-03-22
+publishdate: 2025-03-22
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
-draft: true
-toc: true
-summary: "Siti web + esercizi"
+draft: false
+toc: false
+summary: "Il World Wide Web, i siti web, i cookies, i browser"
 weight: 10000
 mainfont: "Noto Sans Regular"
 sansfont: "Noto Sans Regular"
@@ -142,156 +140,89 @@ Dal punto di vista tecnico, un sito web deve rispondere ad una serie di requisit
 
 Opzionalmente si può adattare al semantic web [semantic-web](https://it.m.wikipedia.org/wiki/Web_semantico "Collegamento all'articolo sul Web semantico su wikipedia.it").
 
+### Organizzazioni chiave e nuove funzionalità
+
+Il W3C (World Wide Web Consortium) è l'organizzazione principale che stabilisce gli standard globali per il web. Si occupa di definire le specifiche per linguaggi come HTML e CSS, oltre a promuovere pratiche di accessibilità per garantire che il web sia fruibile da tutti, inclusi gli utenti con disabilità.
+
+Il WHATWG (Web Hypertext Application Technology Working Group) è un gruppo di lavoro che si concentra sulla modernizzazione delle specifiche di HTML e del Document Object Model (DOM). Si è formato per rispondere alla necessità di un'evoluzione continua di HTML, in particolare per supportare le nuove tecnologie e le pratiche di sviluppo web.
+
+Il TC39 (Technical Committee 39) è il comitato tecnico responsabile della definizione degli standard per JavaScript. Questo include l'evoluzione del linguaggio attraverso versioni come ES6 (ECMAScript 2015) e le versioni successive (ESNext), che introducono nuove funzionalità e miglioramenti.
+
+Il processo per la realizzazione di una nuova funzionalità per il web è il seguente:
+
+Proposal Stage: In questa fase iniziale, sviluppatori e fornitori di browser propongono nuove funzionalità. Queste proposte possono derivare da esigenze emergenti nel campo dello sviluppo web o da innovazioni tecnologiche.
+
+Experimental Implementation: Una volta che una proposta è stata accettata, un browser (come Chrome o FireFox) implementa la funzionalità in modo sperimentale. Questo consente agli sviluppatori di testare la nuova funzionalità senza influenzare gli utenti finali.
+
+Cross-Browser Adoption: Se la funzionalità si dimostra utile e stabile, altri browser iniziano a implementarla. Questo passaggio è cruciale per garantire che la nuova funzionalità venga adottata in modo ampio e non rimanga limitata a un solo browser.
+
+Standardization by W3C/WHATWG: Una volta che la funzionalità è stata adottata da più browser e ha dimostrato di essere utile, viene formalmente standardizzata dal W3C o dal WHATWG. Questo processo implica la revisione e l'approvazione delle specifiche tecniche.
+
+Full Browser Support: La funzionalità viene abilitata per impostazione predefinita in tutti i principali browser. Questo significa che gli utenti possono utilizzare la nuova funzionalità senza dover attivare manualmente alcuna impostazione.
+
+L'obiettivo di questo processo è garantire che ogni browser implementi la nuova funzionalità in modo coerente, in modo che gli sviluppatori possano contare su un comportamento uniforme attraverso diverse piattaforme.
+
 ## I cookies
 
-<!-- TODO -->
+I siti web utilizzano i cookie per l'autenticazione dell'utente e per la memorizzazione di alcune informazioni. Quando un utente visita un sito web che utilizza cookie, spesso si imbatte in un messaggio o un banner informativo che lo informa che il sito web utilizza cookie per migliorare l'esperienza dell'utente e per personalizzare i contenuti in base alle preferenze dell'utente. Presentano anche importanti problemi di privacy.
 
-## Il copyright
+Il termine "cookie" è spesso associato a "magic cookie", in ambito informatico si riferisce a un pezzo di informazione che viene scambiato tra due parti.
 
-<!-- TODO -->
+In origine servivano per memorizzare la sessione di navigazione, ovvero impedivano al browser di dover chiedere all'utente di autenticarsi (di effettuare il login) ogni volta che l'utente visitava una nuova pagina. Col tempo permettevano al browser di ricordare anche le preferenze dell'utente: la lingua, il tema. Ogni volta che l'utente clicca su un collegamento per navigare su una nuova pagina del sito web, i cookie di quel sito vengono inviati al server, che riconosce l'utente, la lingua, il tema e restituisce la pagina web con queste impostazioni (e non richiede di effettuare il login all'utente).
 
-## Altre etichette
+Esploriamo cosa sono i cookie, come funzionano e perché sono importanti.
 
-Sono numerose le etichette HTML utili a descrivere i contenuti di una pagina web. Di seguito elenchiamo le etichette  che non sono state descritte nei capitoli precedenti, ma che possono risultare utili in più di una situazione e che possono aggiungere preziose informazioni per i motori di ricerca e per i lettori audio.
+### Tipi di cookie
 
-## Etichetta per le variabili matematiche
+Le tipologie di cookie sono descritte di seguito.
 
-Le variabili matematiche possono essere indicate dall'etichetta **var**, come di seguito:
+- cookie di sessione: sono cookie temporanei che scompaiono una volta chiuso il browser. Identificano la singola sessione di navigazione dell'utente e garantiscono una navigazione fluida.
+- cookie persistenti: rimangono sul dispositivo fino alla loro scadenza o finché l'utente non li elimina. Aiutano i siti web a ricordare le impostazioni per le visite future.
+- cookie di prima parte: sono impostati dal sito web che stai visitando. Gestiscono la personalizzazione e qualsiasi altra preferenza impostata su quel sito.
+- cookie di terze parti: sono stabiliti da entità esterne al sito web come gli inserzionisti pubblicitari. Tracciano le abitudini di navigazione degli utenti sui diversi siti che questi visitano, costruendo un profilo degli interessi degli utenti. Possono essere utili, ma sollevano anche preoccupazioni sulla privacy.
+- cookie sicuri: funzionano solo su connessioni crittografate (HTTPS), rendendole essenziali per proteggere le informazioni sensibili come password o dettagli bancari durante le transazioni.
 
-```html
-<var>i</var> * <var>i</var> = -1
-```
+### La privacy ed il marketing
 
-## Etichette per l'input e l'output di un programma
+I cookie oggi sono principalmente utilizzati per ottimizzare le strategie di marketing delle piattaforme web e per presentare contenuti e pubblicità adatti alle preferenze dell'utente.
 
-Quando si vuole indicare l'input di un software, si usa l'etichetta **kbd** (dall'inglese "keyboard input").
+I grandi inserzionisti pubblicitari prendono accordi con i siti web per effettuare il tracciamento e l’analisi delle abitudini degli utenti. Quando l'utente naviga su un sito web, i cookie vengono inviati al sito. Se si conoscono le preferenze e i gusti dell'utente, gli vengono mostrate le pubblicità adatte ai suoi gusti. Quando l'utente naviga su un secondo sito web che usa gli stessi cookie, le preferenze e i gusti espressi sul primo sito vengono aggiunte alle preferenze ed ai gusti espressi sul secondo sito. A lungo andare si crea una profilazione dell'utente: cosa gli piace, quali generi legge, che film guarda, quale squadra tifa.
 
-Allo stesso modo, quando si vuole indicare l'output di un software, si usa l'etichetta **samp** (dall'inglese "sample output element").
+Ad esempio, se un utente visita un sito di e-commerce e guarda un prodotto senza acquistarlo, i cookie possono essere utilizzati per mostrare annunci di quel prodotto su altri siti web che l'utente visita in seguito.
 
-Nel seguente esempio verrà mostrato l'uso di entrambe le etichette:
+Da un lato le pubblicità mostrate all'utente permettono ai siti web di finanziarsi e di vendere. Dall'altro la profilazione dell'utente solleva anche diverse preoccupazioni legate alla privacy.
 
-```html
-<samp>Keyboard not found. Press F1 to continue</samp>
-<kbd>F</kbd>
-<samp>Invalid key. Press F1 to continue</samp>
-<kbd>F1</kbd>
-```
+I cookie, in particolare i cookie di terze parti, possono essere utilizzati per tracciare gli utenti attraverso diversi siti web. Questo significa che le aziende possono raccogliere informazioni dettagliate sulle abitudini di navigazione degli utenti, creando profili comportamentali. Questo tipo di tracciamento può avvenire senza il consenso esplicito degli utenti e può portare a una sensazione di invasione della privacy.
 
-## Esercizi sui siti web
+Le informazioni raccolte tramite i cookie possono essere utilizzate per creare profili dettagliati degli utenti, che possono includere dati su interessi, comportamenti e preferenze. Questi profili possono essere utilizzati per pubblicità mirata, ma possono anche sollevare preoccupazioni etiche riguardo alla manipolazione delle scelte degli utenti e alla mancanza di trasparenza su come vengono utilizzati i dati.
 
-1. Il World Wide Web è:
+Molti utenti non sono consapevoli di come i cookie vengono utilizzati o di quali dati vengono raccolti. Anche se le normative come il GDPR richiedono che i siti informino gli utenti sull'uso dei cookie e ottengano il loro consenso, non tutti i siti rispettano queste normative in modo adeguato. Questo porta a una mancanza di trasparenza e a una scarsa comprensione da parte degli utenti.
 
-    1. un servizio di trasmissione dati su internet;
-    2. un servizio di navigazione su internet;
-    3. un servizio di memorizzazione dati su internet;
-    4. un servizio di geolocalizzazione su internet.
+## La guerra dei browser
 
-2. Il server è generalmente un:
+Per navigare su internet serve un browser. Un browser è composto principalmente da un motore per la visualizzazione delle pagine web e l'esecuzione dei programmi contenuti. Con l'evoluzione del web, i motori continuano a svilupparsi per supportare le nuove tecnologie.
 
-    1. computer con una grande capacità di elaborazione e memorizzazione dati;
-    2. computer con una capacità di elaborazione e memorizzazione dati non elevata;
-    3. software per la connessione ad internet;
-    4. software per la navigazione sul web.
+Il browser Mozilla Firefox, sviluppato dalla Mozilla Foundation, è nato con l'obiettivo di rispettare la privacy degli utenti e che permettesse la personalizzazione. Utilizza il motore Gecko per la visualizzazione delle pagine web.
 
-3. Il client è generalmente un:
+Il browser Safari, sviluppato dalla Apple, è nato con l'obiettivo di garantire un'esperienza utente coerente su tutti i dispositivi Apple. Utilizza il motore WebKit per la visualizzazione delle pagine web.
 
-    1. computer con una grande capacità di elaborazione e memorizzazione dati;
-    2. computer con una capacità di elaborazione e memorizzazione dati non elevata;
-    3. software per la connessione ad internet;
-    4. software per la navigazione sul web.
+Quasi tutti gli altri browser attualmente esistenti utilizzano il motore Blink di Google:
 
-4. Il protocollo è:
+- il browser Microsoft Edge si basa su Blink;
+- il browser Opera si basa su Blink;
+- il browser Opera GX si basa su Blink;
+- il browser Vivaldi si basa su Blink;
+- il browser Brave si basa su Blink;
+- il browser Google Chrome si basa su Blink;
+- il browser Samsung Internet si basa su Blink;
+- il browser Amazon Silk si basa su Blink;
+- il browser Arc si basa su Blink;
+- il browser Yandex si basa su Blink.
 
-    1. il software usato per poter navigare sul web;
-    2. il software che "ospita" uno i piú siti web;
-    3. l'indirizzo web di una risorsa;
-    4. l'insieme di regole che client e server seguono per poter comunicare.
+Blink di Google è anche il motore che alimenta Electron e Chromium Embedded Framework (CEF), strumenti molto diffusi che sono utilizzati per creare applicazioni desktop come Discord, VS Code, Figma, Obsidian, Signal, Slack, Steam, Spotify, ecc...
 
-5. Il browser è:
+Non c'è scelta nel mercato dei browser. Il motore che li alimenta è quasi sempre Blink, e Blink è sviluppato da Google. Unita questa tecnologia con il motore di ricerca più popolare al mondo significa che Google ha un controllo quasi completo e assoluto della navigazione sul web, creando preoccupazioni relative alla libertà di navigazione e alla sorveglianza. Google è una società che realizza la maggior parte delle sue entrate attraverso la pubblicità e la raccolta di dati.
 
-    1. il software usato per poter navigare sul web;
-    2. il software che "ospita" uno i piú siti web;
-    3. l'indirizzo web di una risorsa;
-    4. l'insieme di regole che client e server seguono per poter comunicare.
+Il Web Design System degli Stati Uniti impone il supporto ufficiale ai browser che superano l’utilizzo del 2% sui siti web gestiti dal governo degli Stati Uniti. Un requisito simile è fissato dal governo britannico. Firefox sta scendendo sotto questa soglia, una volta sotto significa che non sarà più supportato e che si perderà ancor di più libertà di scelta.
 
-6. Il web server è:
-
-    1. il software usato per poter navigare sul web;
-    2. il software che "ospita" uno i piú siti web;
-    3. l'indirizzo web di una risorsa;
-    4. l'insieme di regole che client e server seguono per poter comunicare.
-
-7. Un URL è:
-
-    1. il software usato per poter navigare sul web;
-    2. il software che "ospita" uno i piú siti web;
-    3. l'indirizzo web di una risorsa;
-    4. l'insieme di regole che client e server seguono per poter comunicare.
-
-<!-- markdownlint-disable MD036 -->
-
-|           |     |     |     |     |     |     |     |              |
-| --------- | --- | --- | --- | --- | --- | --- | --- | ------------ |
-| Esercizio |  1  |  2  |  3  |  4  |  5  |  6  |  7  | Totale Punti |
-| Max punti |  2  |  2  |  1  |  1  |  1  |  2  |  1  |              |
-| Punti     |     |     |     |     |     |     |     |              |
-
-**Cognome ______________ Nome ______________ Classe __________ Data __________**
-
-<!-- markdownlint-enable MD036 -->
-
-## Esercizi sulle caratteristiche di un sito web
-
-1. L'attività di validazione viene svolta per:
-
-    1. ridurre il rischio di errori su un sito web;
-    2. permettere l’utilizzo del sito web anche a chi ha difficoltà visive o motorie;
-    3. rendere il sito web fruibile su schermi con differenti risoluzioni e formati;
-    4. migliorare l'esperienza utente sul sito web anche nel caso di connessioni lente.
-
-2. L'accessibilità viene realizzata per:
-
-    1. ridurre il rischio di errori su un sito web;
-    2. permettere l’utilizzo del sito web anche a chi ha difficoltà visive o motorie;
-    3. rendere il sito web fruibile su schermi con differenti risoluzioni e formati;
-    4. migliorare l'esperienza utente sul sito web anche nel caso di connessioni lente.
-
-3. Un sito web è "responsive" se:
-
-    1. gli errori presenti sono stati rilevati e corretti;
-    2. permette l’utilizzo anche a chi ha difficoltà visive o motorie;
-    3. è fruibile su schermi con differenti risoluzioni e formati;
-    4. migliora l'esperienza utente anche nel caso di connessioni lente.
-
-4. La rapidità di un sito web serve a:
-
-    1. ridurre il rischio di errori;
-    2. permetterne l’utilizzo anche a chi ha difficoltà visive o motorie;
-    3. renderlo fruibile su schermi con differenti risoluzioni e formati;
-    4. migliorare l'esperienza utente anche nel caso di connessioni lente.
-
-5. L'ottimizzazione per i motori di ricerca serve a:
-
-    1. migliorare la ricerca dei contenuti presenti nel sito web;
-    2. migliorare il posizionamento del sito web rispetto agli altri siti risultanti nelle ricerche;
-    3. far si che i video del sito siano visualizzabili su youtube e le immagini siano visualizzate nella ricerca per immagini;
-    4. tradurre il sito web in altre lingue grazie ad un motore di ricerca.
-
-6. Un CMS è un software che serve a:
-
-    1. disegnare, configurare ed amministrare un sito web mediante interfacce grafiche;
-    2. ospitare un sito web su un dominio;
-    3. validare un sito web in modo da evitare la pubblicazioni di errori;
-    4. rendere "responsive" un sito web in modo che sia fruibile su schermi con differenti risoluzioni e formati.
-
-<!-- markdownlint-disable MD009 MD036 -->
-
- |        |     |     |     |     |     |     |     | 
----       | --- | --- | --- | --- | --- | --- | --- | --- 
-Esercizio |  1  |  2  |  3  |  4  |  5  |  6  | Totale Punti
-Max punti |  2  |  2  |  1  |  2  |  2  |  1  |     |
-Punti     |     |     |     |     |     |     |     |
-
-**Cognome ______________ Nome ______________ Classe __________ Data __________**
-
-<!-- markdownlint-enable MD009 MD036 -->
+Poiché il futuro del web dipende dalla diversità nei motori dei browser, si può invitare gli utenti a considerare l'utilizzo di browser alternativi maturi e consolidati, come FireFox o Safari, e di supportare lo sviluppo e la crescita di browser poco diffusi e non basati su Blink, come Servo e Ladybird, ancora non maturi per una navigazione fluida e priva di errori.
