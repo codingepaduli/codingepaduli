@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-03-21
-publishdate: 2025-03-21
-lastmod: 2025-03-21
+date: 2025-03-25
+publishdate: 2025-03-25
+lastmod: 2025-03-25
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -137,6 +137,8 @@ summary: "Set di link interessanti"
 [Microsoft Pluton](https://gabrielsieben.tech/2022/07/25/the-power-of-microsoft-pluton-2/) - The dangers of (updated) – Gabriel Sieben\
 [polyaramide](https://scitechdaily.com/mit-engineers-create-the-impossible-new-material-that-is-stronger-than-steel-and-as-light-as-plastic/) - MIT Engineers Create the “Impossible” New Material That Is Stronger Than Steel and As Light as Plastic\
 [Costo teleriscaldamento](https://www.ilfattoquotidiano.it/2022/08/27/caro-energia-teleriscaldamento-bollette-triplicate-promessa-risparmio-trappola/6773180/) - Caro energia, per chi ha scelto il teleriscaldamento bollette triplicate. Così la promessa del risparmio (grazie a rifiuti e rinnovabili) si è trasformata in trappola - Il Fatto Quotidiano\
+[Artificial intelligence learns to reason | Science](https://www.science.org/doi/10.1126/science.adw5211) - \
+[FBI suggest ad-blocker](https://www.ic3.gov/PSA/2022/PSA221221) - Cyber Criminals Impersonating Brands Using Search Engine Advertisement Services to Defraud Users\
 
 ### History
 
@@ -156,3 +158,13 @@ summary: "Set di link interessanti"
 [Anarch](https://drummyfish.gitlab.io/anarch/) - an experimental game from 1990. No build system, library, internet connection or package manager is inherently required for compilation as the whole game is written in pure C language\
 [Fire_and_Ice_1993](https://archive.org/details/msdos_Fire_and_Ice_1993) - DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE\
 [PrinceJS](https://princejs.com/) - Prince of Persia\
+[A New Sudoku Layout With 81 Uniquely Shaped Cells ・ Daniel Hooper](https://danielchasehooper.com/posts/cracked-sudoku/) - \
+
+### Places
+
+[Castello di Gesualdo](https://it.m.wikipedia.org/wiki/Castello_di_Gesualdo) - Wikipedia\
+[Reale tenuta (reggia) di Carditello](https://it.wikipedia.org/wiki/Reale_tenuta_di_Carditello) - Wikipedia\
+[Marteniza](https://it.m.wikipedia.org/wiki/Marteniza) - Wikipedia\
+[Isola del Liri](https://it.wikipedia.org/wiki/Isola_del_Liri) - Wikipedia\
+[Fontana Liri](https://it.wikipedia.org/wiki/Fontana_Liri) - Wikipedia\
+[Giardino di Ninfa](https://it.wikipedia.org/wiki/Giardino_di_Ninfa) - Wikipedia\

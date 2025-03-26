@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-03-21
-publishdate: 2025-03-21
-lastmod: 2025-03-21
+date: 2025-03-25
+publishdate: 2025-03-25
+lastmod: 2025-03-25
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -124,6 +124,7 @@ summary: "Set di link relativi al coding"
 [andrewnguonly/Lumos](https://github.com/andrewnguonly/Lumos) - A RAG LLM co-pilot for browsing the web, powered by local LLMs\
 [THUDM/CogVideo](https://github.com/THUDM/CogVideo#readme) - Text-to-video generation CogVideo\
 [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - Stable Diffusion web UI\
+[OpenAI.fm](https://www.openai.fm/) - \
 
 ### Database SQL e NoSql - GraphQL
 
@@ -716,6 +717,8 @@ summary: "Set di link relativi al coding"
 
 [LTC4](https://dev.to/rpalo/ltc4---falling-in-love-with-vectors-182) - Falling in Love with Vectors - DEV Community\
 [ashwins-code/New-Years-Fireworks](https://github.com/ashwins-code/New-Years-Fireworks) - Interactive fireworks with New Year's countdown made with p5.js\
+[Release v2.0.0-beta.1 · processing/p5.js · GitHub](https://github.com/processing/p5.js/releases/tag/v2.0.0-beta.1) - \
+[p5.js 2.0 Update: Beta, Timeline, and Compatibility Addons · Issue #7488 · processing/p5.js](https://github.com/processing/p5.js/issues/7488) - \
 
 ##### Three JS 3D
 
