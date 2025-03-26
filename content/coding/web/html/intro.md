@@ -83,6 +83,8 @@ Ogni dominio di primo livello è gestito da un'organizzazione chiamata **registr
 9. **.fr** gestito dal Registry "AFNIC (Association Française pour le Nommage Internet en Coopération)", il ccTLD per la Francia, utilizzato da aziende e utenti francesi.
 10. **.it** gestito dal Registry "Registro.it", il ccTLD per l'Italia, utilizzato da aziende e utenti italiani.
 
+Il dominio ``localhost`` è un nome di dominio speciale che si riferisce all'indirizzo IP di loopback **127.0.0.1**, è utilizzato per riferirsi al computer stesso su cui è in esecuzione un'applicazione o un servizio.
+
 ### Domini di secondo livello e nomi di dominio
 
 I domini di secondo livello (SLD, Second-Level Domain) possono rappresentare aziende, marchi, persone, progetti o qualsiasi altro tipo di contenuto online.
