@@ -41,13 +41,99 @@ Ovviamente se il sistema di AI è stato addestrato su cani e gatti, non potra ca
 
 ## Riconoscimento dell'audio
 
-TODO
+Un sistema audio deve tener conto del rumore di fondo, per cui questo tipo di progetti prevede la registrazione di almeno 20 secondi di solo rumore di fondo.
+
+I progetti di Teachable Machine non permettono di caricare ``.mp3``, ma solo di registrarli e di scaricarli successivamente per riutilizzarli.
+
+Il processo di catalogazione è simile a quello delle immagini.
 
 ## Riconoscimento della posa
 
-TODO
+Il riconoscimento della posa si basa su sistemi gia addestrati al riconoscimento dei punti del corpo ed a stimare per ogni punto la posizione rispetto all'immagine.
 
-## Esportazione del modello
+I sistemi di AI su cui si basa sono due:
+
+- il sistema **BlazePose** che riconosce 33 punti del corpo;
+- il sistema **MoveNet** che riconosce 17 punti del corpo;
+
+![Teachable Machine](/static/coding/web/mediapipe/bodyPose-Keypoints.png)
+
+Per utilizzare questo modello non è necessario effettuare il training. Al momento in cui si scrive, il progetto non è esportabile per il linguaggio ``p5.js``.
+
+Il sistema di AI come da documentazione è utilizzabile nel seguente modo:
+
+- la funzione ``bodyPose.detectStart(video, gotPoses);`` è invocata per il riconoscimento di un modello presente nel video;
+- la funzione ``gotPoses(results)`` è invocata per restituire la posa, in particolare:
+  1. ``poses[0].keypoints`` contiene l'insieme di punti, ognuno accessibile con la sintassi ``poses[0].keypoints[0]``, ``poses[0].keypoints[1]``, ..., oppure accessibile per nome, come ad esempio ``poses[0].left_eye``, ``poses[0].right_shoulder``;
+  2. ogni punto è identificato da una coppia di coordinate (x, y) utilizzabili con entrambe le sintassi evidenziate al punto precedente, sia ``poses[0].keypoints[0].x`` e ``poses[0].keypoints[0].y``, sia ``poses[0].left_eye.x`` ed ``poses[0].left_eye.y``.
+
+In allegato un archivio del progetto in formato compresso con estensione ``.zip``.
+
+[Progetto di posa](/static/coding/web/mediapipe/progettoAI-pose.zip)
+
+### Lista punti noti per MoveNet
+
+0. ``nose``;
+1. ``left_eye``;
+2. ``right_eye``;
+3. ``left_ear``;
+4. ``right_ear``;
+5. ``left_shoulder``;
+6. ``right_shoulder``;
+7. ``left_elbow``;
+8. ``right_elbow``;
+9. ``left_wrist``;
+10. ``right_wrist``;
+11. ``left_hip``;
+12. ``right_hip``;
+13. ``left_knee``;
+14. ``right_knee``;
+15. ``left_ankle``;
+16. ``right_ankle``;
+
+### Lista punti noti per BlazePose
+
+0. ``nose``
+1. ``left_eye_inner``
+2. ``left_eye``
+3. ``left_eye_outer``
+4. ``right_eye_inner``
+5. ``right_eye``
+6. ``right_eye_outer``
+7. ``left_ear``
+8. ``right_ear``
+9. ``mouth_left``
+10. ``mouth_right``
+11. ``left_shoulder``
+12. ``right_shoulder``
+13. ``left_elbow``
+14. ``right_elbow``
+15. ``left_wrist``
+16. ``right_wrist``
+17. ``left_pinky``
+18. ``right_pinky``
+19. ``left_index``
+20. ``right_index``
+21. ``left_thumb``
+22. ``right_thumb``
+23. ``left_hip``
+24. ``right_hip``
+25. ``left_knee``
+26. ``right_knee``
+27. ``left_ankle``
+28. ``right_ankle``
+29. ``left_heel``
+30. ``right_heel``
+31. ``left_foot_index``
+32. ``right_foot_index``
+33. ``bodyCenter``
+34. ``forehead``
+35. ``leftThumb``
+36. ``leftHand``
+37. ``rightThumb``
+38. ``rightHand``
+
+## Esportazione`` del modello
 
 Nell'ambiente di Teachable Machine è possibile esportare il modello addestrato per utilizzarlo nello sviluppo dei propri programmi.
 
