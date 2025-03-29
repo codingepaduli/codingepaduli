@@ -19,6 +19,30 @@ L'intelligenza artificiale è un ramo della computer science che si occupa di cr
 
 Possiamo dire che gli algoritmi di intelligenza artificiale simulano il comportamento umano.
 
+Si basa sul machine learning (apprendimento automatico), un campo di studio che consente ai computer di imparare senza scrivere esplicitamente il programma per risolvere il problema, bensì utilizzando dei dati dai quali apprendere.
+
+Le tecniche di machine learning si dividono in supervisionate o non supervisionate.
+
+## Apprendimento supervisionato
+
+L'apprendimento supervisionato si riferisce ad algoritmi che imparano dai dati etichettati, mappando l'ingresso (X) all'output (Y). Ciò significa che l'algoritmo è fornito con esempi da cui imparare prima di fare previsioni.
+
+L'apprendimento supervisionato è classificato in due tipi principali: regressione e classificazione.
+
+- La regressione viene utilizzata quando l'obiettivo è quello di prevedere un numero reale.
+- La classificazione viene utilizzata per prevedere le categorie, il risultato di output è finito e limitato.
+
+## Apprendimento non supervisionato
+
+L'apprendimento non supervisionato funziona con dati che non hanno etichette. L'algoritmo deve trovare modelli e struttura nei dati da solo.
+
+Tra le tecniche di apprendimento non supervisionato troviamo:
+
+- il clustering, ovvero si raggruppano i dati nei cluster (negli insieme) in base alle somiglianze;
+- gli alberi decisionali, utilizza una struttura ad albero per categorizzare i dati in base a degli attributi dei dati. Le foglie dell'albero rappresentano le classi finali in cui sono divisi i dati.
+
+## Teachable Machine
+
 [Teachable Machine](https://teachablemachine.withgoogle.com/ "Sito web di Teachable Machine") è un ambiente didattico per apprendere, insegnare e realizzare lavori con l'intelligenza artificiale, in un contesto creativo e multimediale.
 
 In questo ambiente possiamo creare progetti che sfruttino il riconoscimento audio, video e della posa del corpo.
