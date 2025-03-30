@@ -77,6 +77,8 @@ Il processo di catalogazione è simile a quello delle immagini.
 
 Il riconoscimento della posa si basa su sistemi gia addestrati al riconoscimento dei punti del corpo ed a stimare per ogni punto la posizione rispetto all'immagine.
 
+Al momento in cui si scrive, il progetto non è esportabile per il linguaggio ``p5.js``.
+
 I sistemi di AI su cui si basa sono due:
 
 - il sistema **MoveNet** che riconosce 17 punti del corpo e ne fornisce le coordinate in uno spazio 2D;
@@ -84,7 +86,13 @@ I sistemi di AI su cui si basa sono due:
 
 ![Teachable Machine](/static/coding/web/mediapipe/bodyPose-Keypoints.png)
 
-Per utilizzare questo modello non è necessario effettuare il training. Al momento in cui si scrive, il progetto non è esportabile per il linguaggio ``p5.js``.
+Cliccando sul pulsante centrale di addestramento, viene effettuato il **training** del sistema di AI, un processo attraverso il quale il computer impara a riconoscere i vari modelli e a catalogarli come indicato dall'utente.
+
+Effettuato il training, è possibile revisionare le immagini caricate e visualizzare i punti riconosciuti.
+
+![Teachable Machine](/static/coding/web/mediapipe/teachableMachine-pose-check.png)
+
+E' consigliabile cancellare le immagini sulle quali non è stato riconosciuto quasi nessun punto ed effettuare nuovamente il training su quelle rimanenti.
 
 Il sistema di AI come da documentazione è utilizzabile nel seguente modo:
 
@@ -258,3 +266,54 @@ function draw() {
 
 A questo punto è necessario aggiungere il riconoscimento dei movimenti con ``Teachable Machine``, quindi è necessario modificare il file ``mk.js``.
 
+In particolare la funzione ``start()`` definita nel file è realizzata in questo modo:
+
+```javascript
+mk.start = function (options) {
+    var type = options.gameType || 'basic',
+      promise = new mk.Promise();
+    type = type.toLowerCase();
+    switch (type) {
+      case 'basic':
+        mk.game = new mk.controllers.Basic(options);
+        break;
+      case 'network':
+        mk.game = new mk.controllers.Network(options);
+        break;
+      case 'multiplayer':
+        mk.game = new mk.controllers.Multiplayer(options);
+        break;
+      case 'webcaminput':
+        mk.game = new mk.controllers.WebcamInput(options);
+        break;
+      default:
+        mk.game = new mk.controllers.Basic(options);
+    }
+    mk.game.init(promise);
+    return promise;
+  };
+```
+
+In particolare ci interessa la creazione di un controller per ogni modalità di gioco. Possiamo quindi aggiungere la nostra modalità:
+
+```javascript
+case 'p5js':
+  mk.game = new mk.controllers.P5JS(options);
+  break;
+```
+
+E poi definire le funzioni di movimento per P5JS:
+
+```javascript
+mk.controllers.P5JS.prototype = new mk.controllers.Basic();
+
+
+mk.controllers.P5JS.prototype._initialize = function () {
+  this._player = 0;
+  this._addHandlers();
+};
+
+mk.controllers.Basic.prototype._addHandlers = function () {
+  console.log("handler added")
+}
+```
