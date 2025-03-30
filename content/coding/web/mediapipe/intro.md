@@ -29,8 +29,8 @@ L'apprendimento supervisionato si riferisce ad algoritmi che imparano dai dati e
 
 L'apprendimento supervisionato è classificato in due tipi principali: regressione e classificazione.
 
-- La regressione viene utilizzata quando l'obiettivo è quello di prevedere un numero reale.
-- La classificazione viene utilizzata per prevedere le categorie, il risultato di output è finito e limitato.
+- La regressione viene utilizzata quando l'obiettivo è quello di "prevedere" o "calcolare" un numero reale partendo dai dati forniti. Può essere utilizzata per fare previsioni, stime, calcoli statistici. Un esempio sono i sistemi di AI che, in base ai dati satellitari e delle stazioni metereologiche terrestri stimano che al **77,40%** possa piovere in una determinata località ad una determinata ora.
+- La classificazione viene utilizzata per prevedere le categorie, il risultato di output è finito e limitato. Un esempio sono i sistemi di AI che, in base ai dati satellitari e delle stazioni metereologiche terrestri stimano che una tromba d'aria sia di categoria **A** oppure **B**.
 
 ## Apprendimento non supervisionato
 
@@ -47,7 +47,7 @@ Tra le tecniche di apprendimento non supervisionato troviamo:
 
 In questo ambiente possiamo creare progetti che sfruttino il riconoscimento audio, video e della posa del corpo.
 
-## Riconoscimento delle immagini
+### Riconoscimento delle immagini
 
 L'ambiente guida l'utente nella creazione delle categorie da riconoscere, per poi effettuare il training e visualizzare l'esito.
 
@@ -63,9 +63,11 @@ Sulla destra dell'interfaccia si può verificare, attraverso la webcam oppure un
 
 Ovviamente se il sistema di AI è stato addestrato su cani e gatti, non potra catalogare delfini o giraffe.
 
-## Riconoscimento dell'audio
+### Riconoscimento dell'audio
 
 Un sistema audio deve tener conto del rumore di fondo, per cui questo tipo di progetti prevede la registrazione di almeno 20 secondi di solo rumore di fondo.
+
+![Teachable Machine](/static/coding/web/mediapipe/teachableMachine-audio-noise.png)
 
 I progetti di Teachable Machine non permettono di caricare ``.mp3``, ma solo di registrarli e di scaricarli successivamente per riutilizzarli.
 
@@ -77,8 +79,8 @@ Il riconoscimento della posa si basa su sistemi gia addestrati al riconoscimento
 
 I sistemi di AI su cui si basa sono due:
 
-- il sistema **BlazePose** che riconosce 33 punti del corpo;
-- il sistema **MoveNet** che riconosce 17 punti del corpo;
+- il sistema **MoveNet** che riconosce 17 punti del corpo e ne fornisce le coordinate in uno spazio 2D;
+- il sistema **BlazePose** che riconosce 33 punti del corpo e ne fornisce le coordinate in uno spazio 3D di 2 metri cubi.
 
 ![Teachable Machine](/static/coding/web/mediapipe/bodyPose-Keypoints.png)
 
