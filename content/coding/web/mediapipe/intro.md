@@ -73,7 +73,7 @@ I progetti di Teachable Machine non permettono di caricare ``.mp3``, ma solo di 
 
 Il processo di catalogazione è simile a quello delle immagini.
 
-## Riconoscimento della posa
+### Riconoscimento della posa
 
 Il riconoscimento della posa si basa su sistemi gia addestrati al riconoscimento dei punti del corpo ed a stimare per ogni punto la posizione rispetto all'immagine.
 
@@ -97,7 +97,7 @@ In allegato un archivio del progetto in formato compresso con estensione ``.zip`
 
 [Progetto di posa](/static/coding/web/mediapipe/progettoAI-pose.zip)
 
-### Lista punti noti per MoveNet
+#### Lista punti noti per MoveNet
 
 0. ``nose``;
 1. ``left_eye``;
@@ -117,7 +117,7 @@ In allegato un archivio del progetto in formato compresso con estensione ``.zip`
 15. ``left_ankle``;
 16. ``right_ankle``;
 
-### Lista punti noti per BlazePose
+#### Lista punti noti per BlazePose
 
 0. ``nose``
 1. ``left_eye_inner``
@@ -159,7 +159,7 @@ In allegato un archivio del progetto in formato compresso con estensione ``.zip`
 37. ``rightThumb``
 38. ``rightHand``
 
-## Esportazione`` del modello
+### Esportazione`` del modello
 
 Nell'ambiente di Teachable Machine è possibile esportare il modello addestrato per utilizzarlo nello sviluppo dei propri programmi.
 
@@ -212,3 +212,49 @@ if (label == 'Uccelli') {
 In allegato un archivio del progetto in formato compresso con estensione ``.zip``.
 
 [Teachable Machine](/static/coding/web/mediapipe/teachableMachine-export-model.zip)
+
+## Playing Mortal kombat
+
+Il progetto didattico per utilizzare l'AI con mortal kombat  al link:
+
+[https://github.com/mgechev/mk.js](https://github.com/mgechev/mk.js)
+
+Il progetto prevede 4 tipi di modalità di gioco:
+
+- ``basic``: un solo giocatore si muove utilizzando la tastiera;
+- ``multiplayer``: due giocatori in movimento utilizzando entrambi la tastiera;
+- ``network``: si gioca online, è necessario avere il server;
+- ``webcaminput``: due giocatori in movimento utilizzando la webcam.
+
+Il progetto non prevede l'utilizzo di ``p5.js`` ne di ``Teachable Machine``, ma lo sviluppatore può aggiungere facilmente questa casistica.
+
+La pagina principale ``index.html`` riporta la configurazione ed avvia il gioco. Le variabili che configurano la modalità di gioco sono le seguenti:
+
+```html
+isHost: 'no',
+gameName: "mortalKombat",
+gameType: 'basic'
+```
+
+Aggiungendo le librerie di p5.js ed un esempio basilare alla pagina, si può far convivere entrambi gli ambienti:
+
+```html
+<!--  FIX VERSION FOR ALL PATH  -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.7.3/lib/addons/p5.dom.min.js"></script>
+```
+
+```javascript
+function setup() {
+  createCanvas(320, 260);
+}
+
+function draw() {
+  background(0);
+  
+  circle(200, 200, 20);
+}
+```
+
+A questo punto è necessario aggiungere il riconoscimento dei movimenti con ``Teachable Machine``, quindi è necessario modificare il file ``mk.js``.
+
