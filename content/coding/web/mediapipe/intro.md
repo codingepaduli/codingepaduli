@@ -223,7 +223,7 @@ In allegato un archivio del progetto in formato compresso con estensione ``.zip`
 
 ## Playing Mortal kombat
 
-Il progetto didattico per utilizzare l'AI con mortal kombat  al link:
+Il progetto didattico per utilizzare l'AI con mortal kombat al link:
 
 [https://github.com/mgechev/mk.js](https://github.com/mgechev/mk.js)
 
@@ -234,23 +234,221 @@ Il progetto prevede 4 tipi di modalità di gioco:
 - ``network``: si gioca online, è necessario avere il server;
 - ``webcaminput``: due giocatori in movimento utilizzando la webcam.
 
-Il progetto non prevede l'utilizzo di ``p5.js`` ne di ``Teachable Machine``, ma lo sviluppatore può aggiungere facilmente questa casistica.
-
-La pagina principale ``index.html`` riporta la configurazione ed avvia il gioco. Le variabili che configurano la modalità di gioco sono le seguenti:
+Il progetto è presentato dalla pagina web ``index.html`` che contiene il codice di avvio del gioco. In particolare in questa pagina è impostata la variabile ``option`` che indica la configurazione con la modalità di gioco:
 
 ```html
-isHost: 'no',
-gameName: "mortalKombat",
-gameType: 'basic'
+var options = {
+  arena: {
+      container: document.getElementById('arena'),
+      arena: mk.arenas.types.THRONE_ROOM
+  },
+  fighters: [{ name: 'Subzero' }, { name: 'Kano' }],
+  callbacks: { ... }
+  isHost: 'no',
+  gameName: "mortalKombat",
+  gameType: 'basic'
+}
 ```
 
-Aggiungendo le librerie di p5.js ed un esempio basilare alla pagina, si può far convivere entrambi gli ambienti:
+In particolare la variabile ``gameType`` indica la modalità di gioco sopra elencate, la variabile ``isHost``si imposta solo se la modalità di gioco è online.
+
+L'arena può essere ``TOWER`` oppure ``THRONE_ROOM``, mentre i nomi dei combattenti sono indicati.
+
+Il progetto non prevede l'utilizzo di ``p5.js`` ne di ``Teachable Machine``, ma lo sviluppatore può aggiungere facilmente questa casistica.
+
+## Struttura del codice
+
+### Controller del gioco
+
+Nel file ``mk.js`` è definita la funzione di avvio del gioco ``start()`` che a seconda della modalità di gioco configurata (nella variabile ``option.gameType``), crea il controller di movimento specifico. La funzione è realizzata in questo modo:
+
+```javascript
+mk.start = function (options) {
+  var type = options.gameType || 'basic',
+      promise = new mk.Promise();
+  type = type.toLowerCase();
+  switch (type) {
+    case 'basic':
+      mk.game = new mk.controllers.Basic(options);
+      break;
+    case 'network':
+      mk.game = new mk.controllers.Network(options);
+      break;
+    case 'multiplayer':
+      mk.game = new mk.controllers.Multiplayer(options);
+      break;
+    case 'webcaminput':
+      mk.game = new mk.controllers.WebcamInput(options);
+      break;
+    default:
+      mk.game = new mk.controllers.Basic(options);
+  }
+  mk.game.init(promise);
+  return promise;
+};
+```
+
+E' facile intuire che a seconda della modalità di gioco configurata, viene **creato** uno specifico controller del gioco. In particolare il codice è strutturato per **definire** i controller di movimento ``Base``, ``Basic``, ``WebcamInput``, ``Multiplayer`` e  ``Network``, ognuno con un metodo ``prototype()`` e un metodo ``prototype._initialize()``, di seguito elencati.
+
+```javascript
+mk.controllers.Base
+mk.controllers.Basic
+mk.controllers.Basic.prototype
+mk.controllers.Basic.prototype._initialize
+mk.controllers.WebcamInput
+mk.controllers.WebcamInput.prototype
+mk.controllers.WebcamInput.prototype._initialize
+mk.controllers.Multiplayer
+mk.controllers.Multiplayer.prototype
+mk.controllers.Multiplayer.prototype._initialize
+mk.controllers.Network
+mk.controllers.Network.prototype
+mk.controllers.Network.prototype._initialize
+```
+
+### Mosse dei combattenti
+
+I combattenti sono 2 e sono definiti nell'array di gioco chiamato ``fighters``. E' possibile indicare il primo o il secondo combattente per posizione: ``fighters[0]`` e ``fighters[1]``.
+
+Le "mosse" che un combattente può effettuare sono definite nel file ``mk.js`` nella seguente sezione di codice:
+
+```javascript
+mk.moves.types = {
+  STAND              : 'stand',
+  WALK               : 'walking',
+  WALK_BACKWARD      : 'walking-backward',
+  SQUAT              : 'squating',
+  STAND_UP           : 'stand-up',
+  HIGH_KICK          : 'high-kick',
+  JUMP               : 'jumping',
+  FORWARD_JUMP       : 'forward-jump',
+  BACKWARD_JUMP      : 'backward-jump',
+  LOW_KICK           : 'low-kick',
+  LOW_PUNCH          : 'low-punch',
+  HIGH_PUNCH         : 'high-punch',
+  FALL               : 'fall',
+  WIN                : 'win',
+  ENDURE             : 'endure',
+  SQUAT_ENDURE       : 'squat-endure',
+  UPPERCUT           : 'uppercut',
+  SQUAT_LOW_KICK     : 'squat-low-kick',
+  SQUAT_HIGH_KICK    : 'squat-high-kick',
+  SQUAT_LOW_PUNCH    : 'squat-low-punch',
+  KNOCK_DOWN         : 'knock-down',
+  ATTRACTIVE_STAND_UP: 'attractive-stand-up',
+  SPIN_KICK          : 'spin-kick',
+  BLOCK              : 'blocking',
+  FORWARD_JUMP_KICK  : 'forward-jump-kick',
+  BACKWARD_JUMP_KICK : 'backward-jump-kick',
+  BACKWARD_JUMP_PUNCH: 'backward-jump-punch',
+  FORWARD_JUMP_PUNCH : 'forward-jump-punch'
+};
+```
+
+Il metodo per far effettuare una mossa ad un combattente è ``._moveFighter(f, mossa)``, questa funzione prende in input un combattente ed una mossa e realizza l'animazione grafica.
+
+Ogni controller definisce un proprio metodo per selezionare la mossa tra le mosse indicate precedentemente, selezionare il combattente dall'array indicato precedentemente ed applicare l'azione.
+
+## Aggiungere P5JS e Teachable Machine
+
+Tenendo presente la struttura del codice descritta precedentemente, per aggiungere un controller per P5JS dobbiamo modificare il file ``mk.js`` creando:
+
+1. un opzione nel metodo ``start`` per **creare** un controller:
+
+```javascript
+case 'p5js':
+  mk.game = new mk.controllers.P5JS(options);
+  break;
+```
+
+2. il controller ``P5JS``, conservando la stessa struttura degli altri controller di gioco:
+
+```javascript
+mk.controllers.P5JS = function (options) {
+  mk.controllers.Basic.call(this, options);
+  mk.classifier = options.classifier;
+};
+
+mk.controllers.P5JS.prototype = new mk.controllers.Basic();
+
+mk.controllers.P5JS.prototype._initialize = function () {
+  this._player = 0;
+  this._callbacks.setMK(mk);
+  this._callbacks.setP5JS(this);
+};
+```
+
+3. il metodo per selezionare la mossa tra le mosse indicate precedentemente, selezionare il combattente dall'array indicato precedentemente ed applicare il movimento al combattente:
+
+```javascript
+mk.controllers.P5JS.prototype.movimento = function (categoriaAI) {
+  // per ora non fa nulla
+  let mossa = mk.moves.types.STAND;
+
+  // se trovo il movimento, lo fa
+  if (categoriaAI == 'pugno') {
+    mossa = mk.moves.types.HIGH_PUNCH;
+  }
+  if (categoriaAI == 'calcio') {
+    mossa = mk.moves.types.HIGH_KICK;
+  }
+  
+  var self = this;
+  let f = this.fighters[0];
+  this._moveFighter(f, mossa);
+  return mossa;
+}
+```
+
+4. Creato il controller, dobbiamo modificare il file ``index.html`` per aggiungere sia il progetto di ``p5.js`` sia quello di ``Teachable Machine``.
+
+Aggiungiamo le librerie di p5.js e di AI per farle convivere con ``mk``:
 
 ```html
 <!--  FIX VERSION FOR ALL PATH  -->
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@0.7.3/lib/addons/p5.dom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@0.7.3/lib/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
 ```
+
+Nello script di Mortal Kombat aggiungiamo le variabili per il gioco e per la modalità specifica di gioco ``P5JS``:
+
+```javascript
+let mortalKombat;
+let p5js;
+```
+
+Aggiungiamo le funzioni per controllare il gioco dall'esterno, tramite configurazione:
+
+```javascript
+var options = {
+  arena: {
+      container: document.getElementById('arena'),
+      arena: mk.arenas.types.THRONE_ROOM
+  },
+  fighters: [{ name: 'Subzero' }, { name: 'Kano' }],
+  callbacks: {
+      attack: function (f, o, l) {
+          if (o.getName() === 'kano') {
+              setLife($('player2Life'), o.getLife());
+          } else {
+              setLife($('player1Life'), o.getLife());
+          }
+      },
+      setMK : function(g) {
+        mortalKombat = g;
+      },
+      setP5JS : function(g) {
+        p5js = g;
+      }
+  },
+  isHost: 'no',
+  gameName: "mortalKombat",
+  gameType: 'p5js'
+};
+```
+
+Aggiungiamo lo script standard di ``p5.js``
 
 ```javascript
 function setup() {
@@ -264,56 +462,21 @@ function draw() {
 }
 ```
 
-A questo punto è necessario aggiungere il riconoscimento dei movimenti con ``Teachable Machine``, quindi è necessario modificare il file ``mk.js``.
-
-In particolare la funzione ``start()`` definita nel file è realizzata in questo modo:
+Verifichiamo che funzioni aggiungendo l'istruzione ``p5js.movimento(key)``
 
 ```javascript
-mk.start = function (options) {
-    var type = options.gameType || 'basic',
-      promise = new mk.Promise();
-    type = type.toLowerCase();
-    switch (type) {
-      case 'basic':
-        mk.game = new mk.controllers.Basic(options);
-        break;
-      case 'network':
-        mk.game = new mk.controllers.Network(options);
-        break;
-      case 'multiplayer':
-        mk.game = new mk.controllers.Multiplayer(options);
-        break;
-      case 'webcaminput':
-        mk.game = new mk.controllers.WebcamInput(options);
-        break;
-      default:
-        mk.game = new mk.controllers.Basic(options);
-    }
-    mk.game.init(promise);
-    return promise;
-  };
-```
-
-In particolare ci interessa la creazione di un controller per ogni modalità di gioco. Possiamo quindi aggiungere la nostra modalità:
-
-```javascript
-case 'p5js':
-  mk.game = new mk.controllers.P5JS(options);
-  break;
-```
-
-E poi definire le funzioni di movimento per P5JS:
-
-```javascript
-mk.controllers.P5JS.prototype = new mk.controllers.Basic();
-
-
-mk.controllers.P5JS.prototype._initialize = function () {
-  this._player = 0;
-  this._addHandlers();
-};
-
-mk.controllers.Basic.prototype._addHandlers = function () {
-  console.log("handler added")
+function draw() {
+  background(0);
+  
+  circle(200, 200, 20);
 }
 ```
+
+A questo punto è necessario aggiungere il riconoscimento dei movimenti con ``Teachable Machine``, incollando il codice necessario ed utilizzando il metodo ``gotResult(error, results)`` per recuperare il movimento:
+
+```javascript
+let categoriaAI = results[0].label;
+let movimentoMK = p5js.movimento(categoriaAI);
+```
+
+Un esempio di progetto è in allegato.
