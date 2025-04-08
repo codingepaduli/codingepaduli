@@ -4,7 +4,7 @@ title: "p5play Lez. 01 - Introduzione al motore di gioco p5play"
 description: "Introduzione al motore di gioco p5play"
 date: 2023-03-21
 publishdate: 2023-03-21
-lastmod: 2023-04-10
+lastmod: 2025-04-08
 categories: ["coding", "web", "p5play"]
 keywords: ["coding", "web", "p5play"]
 draft: true
@@ -13,53 +13,77 @@ summary: "Introduzione al motore di gioco p5play"
 weight: 1040
 ---
 
-# P5.play
+# p5play
 
-P5.play è un motore di giochi 2D.
+p5play è un motore di giochi 2D. E' un progetto, supportato dalla Processing Foundation, che ha lo scopo di introdurre gli utenti alla programmazione di videogiochi ed al paradigma ad oggetti.
 
-Usa la libreria **p5.js** per il rendering delle scene grafiche e **plank** come motore di fisica per tener traccia delle posizioni, delle velocità e delle forze applicate sugli oggetti e per rilevare le collisioni tra oggetti.
+p5play usa la libreria **p5.js** (o l'alternativa **q5.js**) per il rendering delle scene grafiche e **plank.js** (una riscrittura di **Box2D* in JavaScript) come motore di fisica per tener traccia delle posizioni, delle velocità e delle forze applicate sugli oggetti e per rilevare le collisioni tra oggetti.
 
-Questo progetto, supportato dalla Processing Foundation, introduce gli utenti alla programmazione di videogiochi ed al paradigma ad oggetti.
+La struttura basilare del progetto rimane la stessa di ``p5.js``, una pagina web contenente le seguenti librerie JS:
 
-La struttura basilare del programma rimane quasi la stessa, con l'unica differenza di utilizzare un oggetto Canvas per creare l'area del disegno.
+```html
+<script src="q5.js"></script>
+<script src="p5.sound.js"></script>
+<script src="planck.js"></script>
+<script src="p5play.js"></script>
+```
+
+Anche lo script è molto simile, utilizza un oggetto ``Canvas`` per creare l'area del disegno:
 
 ```javascript
 function setup() {
-    new Canvas(250, 100);
+  new Canvas(250, 100);
 }
 
 function draw() {
-    background('blue');
+  background('blue');
 }
 ```
 
-L'inclusione di un progetto p5.play in una pagina web richiede l'inclusione nel header della pagina delle seguenti librerie:
+Un esempio completo di pagina web è la seguente:
 
 ```javascript
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>p5play Example</title>
-    </head>
-    <body>
+  <head>
+    <title>p5play Example</title>
+  </head>
+  <body>
+    <script src="https://q5js.org/q5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.sound@0.2.0/dist/p5.sound.js">
+    <script src="https://p5play.org/v3/planck.min.js"></script>
+    <script src="https://p5play.org/v3/p5play.js"></script>
+    <script>
+      let ball, floor;
 
-        <script src="p5.min.js"></script>
-        <script src="p5.sound.min.js"></script>
-        <script src="planck.min.js"></script>
-        <script src="p5play.js"></script>
-        <script>
-            function setup() {
-                new Canvas(250, 100);
-                new Sprite();
-            }
+      function setup() {
+        createCanvas(400, 400);
+        background(0.7);
 
-            function draw() {
-                background('blue');
-            }
-        </script>
-    </body>
+        world.gravity.y = 10;
+
+        ball = new Sprite(200, 30, 50);
+        ball.color = 'red';
+        ball.vel.x = -5;
+
+        floor = new Sprite(40, 155, 480, 5, 'static');
+        floor.color = 'yellow';
+        floor.rotation = 30;
+      }
+
+      function draw() {
+
+      }
+
+      function update() {
+        clear();
+      }
+    </script>
+  </body>
 </html>
 ```
+
+E' possibile provare questo progetto sia copiando questo esempio in un file di testo HTML per poi aprire il file nel browser, sia avviando [il progetto](/static/coding/web/p5play/p5PlayExample.zip) su un server locale.
 
 ## Oggetti principali
 
@@ -67,18 +91,20 @@ Nel mondo dei videogiochi si riferisce alla parola **Sprite** per indicare quals
 
 Nei videogiochi come Mario Bros, Sonic, Arknoid i vari livelli sono composti dai mattoncini da rompere o su cui saltare. Questi mattoncini prendono il nome di **tiles**, dall'inglese "piastrelle", e possono essere creati a partire da una rappresentazione testuale (anche di più righe). Ogni carattere di questo testo sarà poi trasformato in una mattonella o monetina o elemento del videogioco.
 
-La parola **world**, dall'inglese "mondo" rappresenta tutti gli oggetti sui quali il motore fisico calcola gli spostamenti, le collisioni e sui quali applica la forza di gravità per ogni frame da disegnare. Questo calcolo avviene anche per gli oggetti fuori dallo schermo, a patto che la loro posizione nel piano non superi un certo limite. Quando un qualsiasi oggetto supera questo limite, avviene l'operazione di **cull**, dall'inglese "abbattimento selettivo", con la quale si mette l'oggetto in uno stato di riposo e considerato "fuori" dal mondo escluso dai calcoli del motore fisico.
+La parola **world**, dall'inglese "mondo", rappresenta tutti gli oggetti sui quali il motore fisico calcola gli spostamenti, le collisioni e sui quali applica la forza di gravità per ogni frame da disegnare. Questo calcolo avviene anche per gli oggetti fuori dallo schermo, a patto che la loro posizione nel piano non superi un certo limite. Quando un qualsiasi oggetto supera questo limite, avviene l'operazione di **cull**, dall'inglese "abbattimento selettivo", con la quale si mette l'oggetto in uno stato di riposo e considerato "fuori" dal mondo escluso dai calcoli del motore fisico.
 
-<!-- Todo Concetti di programmazione a oggetti ? -->
+<!-- Todo Concetti di programmazione a oggetti ? No, li aggiungo alle lezioni di JS, in particolare negli approfondimenti -->
 
 ## Sprite
 
 Nel mondo dei videogiochi la parola Sprite è usata per indicare qualsiasi personaggio, cosa o oggetto si muove sopra lo sfondo. In pratica è un contenitore che può avere una componente visuale (grafica) e/o un corpo fisico (cioè che interagisce con il motore di fisica).
 
-Per creare uno sprite e specificare le proprietà, si può far riferimento al seguente codice:
+### Proprietà relative alla posizione
+
+Le proprietà relative alla posizione sono simili a quelle utilizzate in p5js. Si può far riferimento al seguente codice per utilizzarle:
 
 ```javascript
-sprite = new Sprite();
+let sprite = new Sprite();
 
 sprite.x = 150;
 sprite.y = 30;
@@ -91,9 +117,15 @@ sprite.d = 40;              // diameter
 sprite.radius = 60;         // alias di sprite.r
 sprite.diameter = 60;       // alias di sprite.d
 
-sprite.rotation = 45;       // rotazione rispetto all'asse X
+sprite.pos.x = 150;         // alias di sprite.x
+sprite.pos.y = 80;          // alias di sprite.y
+sprite.position.x = 150;    // alias di sprite.x
+sprite.position.y = 80;     // alias di sprite.y
 
-sprite.direction = 'up';    // direzione di movimento
+sprite.scale.x = 2;         // scala la dimensione x
+sprite.scale.y = 2;         // scala la dimensione y
+
+sprite.rotation = 45;       // rotazione rispetto all'asse X
 
 sprite.color = 'pink';
 sprite.fill = 'pink';       // alias di sprite.color
@@ -105,18 +137,33 @@ sprite.textColor = 'blue';
 sprite.textSize = 40;
 sprite.text = "Hello!";
 
-sprite.visible = false;
+sprite.img = 'immagi.jpg';  // immagine dello sprite
+sprite.image = 'img.jpg';   // alias di sprite.img
+sprite.image.scale = 2;     // scala l'immagine
 
-sprite.pos.x = 150;         // alias di sprite.x
-sprite.pos.y = 80;          // alias di sprite.y
-sprite.position.x = 150;    // alias di sprite.x
-sprite.position.y = 80;     // alias di sprite.y
+sprite.visible = false;
+```
+
+### Proprietà relative al movimento
+
+Uno Sprite può avere una velocità di movimento lungo gli assi X e Y, misurate in pixel al secondo, una direzione di movimento, una velocità di rotazione rispetto all'asse X, misurata in gradi al secondo. Queste velocità possono essere modificate dalla forza di gravità, dalle forze applicate e dalle collisioni dovute all'ambiente circostante.
+
+Per utilizzarle, si può far riferimento al codice sottostante:
+
+```javascript
+let sprite = new Sprite();
+
+sprite.direction = 145;     // direzione di movimento (angolo)
 
 sprite.vel.x = 1;           // velocity (pixel / seconds)
 sprite.vel.y = 2;
+
+sprite.rotationSpeed = 45;  // rotazione continua rispetto all'asse X
+sprite.offset.x = 20;       // sposta il punto di rotazione di x
+sprite.offset.y = 20;       // sposta il punto di rotazione di y
 ```
 
-La proprietà ``sprite.direction`` specifica una direzione di movimento dello sprite. Il valore è una stringa (e quindi deve essere indicata tra apici singoli o doppi) che indica la direzione e può assumere solo uno dei seguenti valori:
+La proprietà ``sprite.direction`` specifica una direzione di movimento dello sprite. Il valore può essere numerico, quindi l'angolo della direzione, oppure una stringa (e quindi deve essere indicata tra apici singoli o doppi) che indica la direzione e può assumere solo uno dei seguenti valori:
 
 - ``up``: -90 gradi;
 - ``down``: 90 gradi;
@@ -133,73 +180,43 @@ La proprietà ``sprite.direction`` specifica una direzione di movimento dello sp
 - ``forward``: this.rotation;
 - ``backward``: this.rotation + 180 gradi;
 
-## Proprietà legate al motore di fisica
+### Proprietà legate al motore di fisica
 
-Un collisore (dall'inglese collider) è un'area invisibile intorno ad un oggetto che viene utilizzata per rilevare collisioni con altri oggetti, ovvero per capire quando un oggetto si incontra con un altro oggetto.
+Un **collisore** (dall'inglese collider) è un'area invisibile intorno ad un oggetto che viene utilizzata per rilevare collisioni con altri oggetti.
 
 Uno Sprite si relaziona con gli altri Sprite a seconda del tipo di collisore specificato:
 
-- ``none`` lo Sprite non subisce collisioni, viene completamente attraversato dagli altri Sprite;
-- ``static`` lo Sprite subisce collisioni, ma non può essere spostato o ruotato ne attraverso istruzioni di programmazione, ne dalle collisioni con altri Sprite;
-- ``kinematic`` lo Sprite subisce collisioni, può essere spostato solo attraverso istruzioni di programmazione, non viene spostato o ruotato dalle collisioni con altri Sprite;
-- ``dynamic`` lo Sprite subisce collisioni, può essere spostato o ruotato attraverso istruzioni di programmazione e dalle collisioni con altri Sprite.
+- ``none``: lo Sprite non subisce collisioni, viene completamente attraversato dagl```
+i altri Sprite;
+- ``static``: lo Sprite subisce collisioni, ma non può essere spostato o ruotato ne attraverso istruzioni di programmazione, ne dalle collisioni con altri Sprite;
+- ``kinematic``: lo Sprite subisce collisioni, può essere spostato solo attraverso istruzioni di programmazione, non viene spostato o ruotato dalle collisioni con altri Sprite;
+- ``dynamic``: lo Sprite subisce collisioni, può essere spostato o ruotato attraverso istruzioni di programmazione e dalle collisioni con altri Sprite.
 
-Una volta creato lo Sprite, può essere specificato il collisore attraverso la proprietà ``collider``, come nel seguente esempio:
+Una volta creato lo Sprite, può essere specificato il collisore attraverso la proprietà ``collider``.
 
-```javascript
-let circle = new Sprite(40, 155, 80);
-circle.collider = 'dynamic';
-```
+Uno Sprite può avere una **massa** che determina la sua resistenza alle forze applicate e alle collisioni con altri oggetti. Maggiore è la massa, maggiore sarà l'effetto di una forza applicata. Si può assegnare ad uno Sprite una massa attraverso la proprietà ``mass``.
 
-Le proprietà fisiche di uno Sprite sono le seguenti:
+Uno Sprite può avere una **frizione di strofinamento** che rappresenta il coefficiente di attrito quando lo Sprite si muove su una superficie. Non si applica se lo Sprite rotola su questa superficie. Il coefficiente di attrito si imposta attraverso la proprietà ``friction``.
 
-Uno Sprite può avere una **velocità** di movimento lungo gli assi X e Y, misurate in pixel al secondo, ed una velocità di rotazione rispetto all'asse X, misurata in gradi al secondo. Queste velocità possono essere modificate dalla forza di gravità e dalle collisioni che il motore fisico applica.
+Per indicare una **frizione di rotolamento** nelle situazioni in cui lo Sprite rotola su una superficie bisogna impostare la proprietà ``rotationDrag``.
 
-Per ad uno Sprite le velocità di movimento e di rotazione si può far riferimento al seguente esempio:
+Uno Sprite può avere un coefficiente di **rimbalzo**, che determina quanto lontano rimbalzerà dopo una collisione con un altro oggetto. Per indicare una coefficiente di rimbalzo, bisogna impostare la proprietà ``bounciness``.
 
-```javascript
-let rectangle = new Sprite(40, 30, 50, 80);
-rectangle.vel.x = 2;
-rectangle.vel.y = 2;
-rectangle.rotationSpeed = 45;  // rotazione continua rispetto all'asse X
-```
+Uno Sprite può essere bloccato rispetto alle rotazioni utilizzando la proprietà ``rotationLock``.
 
-Uno Sprite può avere una **massa** che determina la sua resistenza ai movimenti e alle collisioni con altri oggetti. Maggiore è la massa, maggiore sarà l'effetto di una forza applicata.
-
-Si può assegnare ad uno Sprite una certa massa, come nel seguente esempio:
+Le proprietà sopra citate si possono applicare ad uno Sprite come nel seguente esempio:
 
 ```javascript
-let circle = new Sprite(40, 155, 80);
-circle.mass = 2;
-```
-
-Uno Sprite può avere una **frizione** che rappresenta il coefficiente di attrito. L'attrito di uno Sprite determina la velocità di scorrimento quando si muove su una superficie e si imposta attraverso la proprietà ``friction``.
-
-Ci si può aspettare che questa frizione faccia effetto anche sugli sprite circolari, ma in realtà non è così. Per indicare una frizione di rotazione, bisogna imposta la proprietà ``rotationDrag``.
-
-A seconda quindi dello Sprite, si può assegnare un certo coefficiente di attrito che interessa lo scorrimento o il rotolamento, come nel seguente esempio:
-
-```javascript
-let rectangle = new Sprite(40, 30, 50, 80);
-rectangle.friction = 10;
-let circle = new Sprite(40, 155, 80);
-rectangle.rotationDrag = 8;
-```
-
-Uno Sprite può avere un coefficiente di **rimbalzo**, che determina quanto lontano rimbalzerà dopo una collisione con un altro oggetto.
-
-Si può assegnare ad uno Sprite un certo coefficiente di rimbalzo, come nel seguente esempio:
-
-```javascript
-let circle = new Sprite(40, 155, 80);
-circle.bounciness = 1; // 100%
-```
-
-Uno Sprite può essere bloccato rispetto alle rotazioni, tale proprietà si imposta come nel seguente esempio:
-
-```javascript
-let circle = new Sprite(40, 155, 80);
-circle.rotationLock = true;
+let circle = new Sprite();
+circle.x = 100;             // posizione
+circle.y = 100;
+circle.d = 100;             // diametro
+circle.collider = 'dynamic';// collisore
+circle.mass = 2;            // massa
+circle.friction = 10;       // frizione di trascinamento
+circle.rotationDrag = 8;    // frizione di rotolamento
+circle.bounciness = 3;      // 300 %
+circle.rotationLock = true; // blocca il rotolamento
 ```
 
 ## Costruttori
@@ -278,7 +295,7 @@ let sprite = new Sprite(80, 30, [35, 45], 'static');
 Costruttore di poligoni regolari permette la costruzione di poligoni a partire dal nome del poligono. Ha la seguente firma:
 
 ```plaintext
-Syntax: new Sprite(x, y, length, polygonName, colliderType)
+Syntax: new Sprite(x, y, sideLength, polygonName, colliderType)
 
 Parameters:
   x             Number: the x-coordinate
@@ -288,9 +305,9 @@ Parameters:
   colliderType  String: the collider type
 ```
 
-I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, il parametro formale ``length`` rappresenta la lunghezza del lato del poligono, il parametro formale ``polygonName`` rappresenta il nome (in inglese) del poligono ed infine il parametro formale ``colliderType`` indica il tipo di collisore.
+I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinistra dal quale disegnare lo Sprite, il parametro formale ``sideLength`` rappresenta la lunghezza del lato del poligono, il parametro formale ``polygonName`` rappresenta il nome (in inglese) del poligono ed infine il parametro formale ``colliderType`` indica il tipo di collisore.
 
-Il parametro formale polygonName può assumere solo uno dei seguenti valori: ``triangle`` (triangolo), ``square`` (quadrato), ``pentagon`` (pentagono), ``hexagon`` (esagono), ``septagon`` (ettagono), ``octagon`` (ottagono), ``enneagon`` (ennagono), ``decagon`` (decagono), ``endecagono`` (endecagono) ed infine ``dodecagon`` (dodecagono).
+Il parametro formale polygonName può assumere solo uno dei seguenti valori: ``triangle`` (triangolo), ``square`` (quadrato), ``pentagon`` (pentagono), ``hexagon`` (esagono), ``septagon`` (ettagono), ``octagon`` (ottagono), ``enneagon`` (ennagono), ``decagon`` (decagono), ``hendecagon`` (endecagono) ed infine ``dodecagon`` (dodecagono).
 
 Per creare uno Sprite con collisore cinematico a coordinate x=120 ed y=30 di forma esagonale con lato 40, sostituiamo al parametro formale ``x`` il valore ``80``, al parametro formale ``y`` il valore ``30``, al parametro formale ``length`` il valore 40, al parametro formale ``polygonName`` il valore ``hexagon`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi). L'ultimo parametro formale ``colliderType`` assegniamo il valore ``kinematic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
 
@@ -330,22 +347,18 @@ Per creare uno Sprite dell'esadecagono con collisore cinematico a coordinate x=1
 let sprite = new Sprite(20, 30, [25, 360/16, 16], 'kinematic');
 ```
 
-## Metodi di movimento e rotazione
+## Movimento e rotazione
 
-<!-- TODO check it 
+Esistono molte modalità di movimento e di rotazione di uno Sprite.
 
-Nella programmazione ad oggetti, un metodo è una funzione o procedura appartenente ad un oggetto, per cui deve essere invocato indicando l'oggetto. La classe Sprite definisce molti metodi, ognuno adatto ad un particolare scopo.
-
--->
-
-Il movimento di uno Sprite può essere realizzato in diversi modi. Si può modificare la sua posizione, cambiando i valori delle sue proprietà, come nel seguente esempio:
+Si può modificare la posizione di uno Sprite cambiando i valori delle sue proprietà, come nel seguente esempio:
 
 ```javascript
 player.x = player.x + 1;
 player.y = player.y + 2;
 ```
 
-Si può modificare la sua velocità, come nel seguente esempio:
+Si può modificare la velocità di uno Sprite come nel seguente esempio:
 
 ```javascript
 player.vel.x = -2;
@@ -359,9 +372,23 @@ player.direction = 187;
 player.speed = 3;
 ```
 
-I metodi di movimento permettono di muovere uno Sprite in una certa direzione o verso un determinato oggetto in maniera accurata ed evitando molti calcoli.
+Si può modificare l'inclinazione, come nel seguente esempio:
 
-### Metodo ``move``
+```javascript
+sprite.rotation = sprite.rotation + 20;
+```
+
+Si può modificare la velocità di rotazione, come nel seguente esempio:
+
+```javascript
+sprite.rotationSpeed = 5;
+```
+
+Esistono poi i metodi di movimento e di rotazione, che non tengono conto dell'ambiente fisico in cui si trova uno Sprite, vengono applicati senza condizioni.
+
+I metodi di movimento e di rotazione permettono di muovere uno Sprite in una certa direzione o verso un determinato oggetto in maniera accurata.
+
+### Metodo ``move(distance, direction, speed)``
 
 Per muovere uno Sprite in una direzione specificata per una certa distanza, si utilizza il metodo ``move``, che ha la seguente firma:
 
@@ -382,7 +409,7 @@ Per muovere uno Sprite di 50 pixel verso destra con velocità di 5 frame / secon
 sprite.move(50, 'right', 5);
 ```
 
-### Metodo ``moveTowards``
+### Metodo ``moveTowards(position, tracking)``
 
 Per muovere uno Sprite verso un secondo oggetto con una certa percentuale di distanza da coprire per ogni frame, si utilizza il metodo ``moveTowards``, che ha la seguente firma:
 
@@ -402,7 +429,7 @@ Per muovere uno Sprite verso il mouse con una percentuale di distanza da coprire
 sprite.moveTowards(mouse, 0.10);
 ```
 
-### Metodo ``moveAway``
+### Metodo ``moveAway(position, repel)``
 
 Per muovere uno Sprite allontanandolo da un secondo oggetto con una certa percentuale di distanza da coprire per ogni frame, si utilizza il metodo ``moveAway``, che ha la seguente firma:
 
@@ -422,7 +449,7 @@ Per muovere uno Sprite allontanandolo dal mouse con una percentuale di distanza 
 sprite.moveAway(mouse, 0.05);
 ```
 
-### Metodo ``moveTo``
+### Metodo ``moveTo(position, speed)``
 
 Per dare ad uno Sprite un impulso di movimento verso un secondo oggetto con una certa velocità costante, si utilizza il metodo ``moveTo``, che ha la seguente firma:
 
@@ -442,25 +469,7 @@ Per muovere uno Sprite verso il mouse con una velocità di movimento di un frame
 sprite.moveTo(mouse, 1);
 ```
 
-## Metodi di rotazione
-
-La rotazione di uno Sprite può essere realizzata in diversi modi.
-
-Si può impostare l'inclinazione iniziale, come nel seguente esempio:
-
-```javascript
-sprite.rotation = 0;
-```
-
-Si può impostare la velocità di rotazione iniziale, come nel seguente esempio:
-
-```javascript
-sprite.rotationSpeed = 1;
-```
-
-I metodi di rotazione permettono di ruotare uno Sprite di un certo angolo o verso un determinato oggetto in maniera accurata ed evitando molti calcoli.
-
-### Metodo ``rotate``
+### Metodo ``rotate(angle, rotationSpeed)``
 
 Per ruotare uno Sprite di un angolo specificato e con una certa velocità, si utilizza il metodo ``rotate``, che ha la seguente firma:
 
@@ -480,7 +489,7 @@ Per ruotare uno Sprite di 15 gradi con una velocità di rotazione di 5 fps, sost
 sprite.rotate(15, 5);
 ```
 
-### Metodo ``rotateTo``
+### Metodo ``rotateTo(position, speed, [facing])``
 
 Per ruotare uno Sprite verso un oggetto specificato, con una certa velocità e posizionandolo con uno specifico angolo rispetto all'oggetto, si utilizza il metodo ``rotateTo``, che ha la seguente firma:
 
@@ -507,7 +516,7 @@ Per ruotare uno Sprite verso il mouse con una velocità di rotazione di 4 fps, f
 sprite.rotateTo(mouse, 4, 30);
 ```
 
-### Metodo ``rotateTowards``
+### Metodo ``rotateTowards(position, tracking, [facing])``
 
 Per ruotare uno Sprite verso un oggetto specificato, con una certa percentuale della distanza angolare da coprire per ogni frame e posizionandolo con uno specifico angolo rispetto all'oggetto, si utilizza il metodo ``rotateTowards``, che ha la seguente firma:
 
@@ -528,7 +537,7 @@ Per ruotare uno Sprite verso il mouse con una percentuale della distanza angolar
 sprite.rotateTo(mouse, 0.03, 90);
 ```
 
-### Metodo ``offsetCenter``
+### Metodo ``offsetCenter(x, y)``
 
 Per cambiare il centro di rotazione di uno Sprite ad un punto specificato, si utilizza il metodo ``offsetCenter``, che ha la seguente firma:
 
@@ -548,7 +557,7 @@ Per impostare il punto di rotazione di uno Sprite a coordinate x=30 e y=50, sost
 sprite.offsetCenter(30, 50);
 ```
 
-## Metodi per movimenti in serie
+### Metodi per movimenti in serie
 
 E' possibile definire una sequenza di movimenti ed invocarla una volta o ripetutamente. Per creare una sequenza di movimenti, semplicemente si dichiara una funzione ed in questa funzione si inseriscono tutte le istruzioni di movimento desiderate.
 
@@ -598,5 +607,30 @@ async function movimentoConAngolo() {
     await sprite.rotate(90);
     await sprite.move(100);
     movimentoConAngolo();    // ciclo continuo
+}
+```
+
+## Applicare forze per il movimento
+
+I metodi per applicare una forze tengono conto dell'ambiente fisico, come la gravità applicata, la massa dei corpi, gli attriti e le resistenze intrinseche dei corpi rispetto alla rotazione, al rimbalzo, ecc... L'insieme delle forze modifica infine la direzione e la velocità di movimento dello Sprite.
+
+La proprietà ``bearing`` di uno Sprite indica la direzione (o angolo di movimento) di una forza.
+
+I metodi ``applyForce()`` e ``applyForceScaled()`` applicano una forza in direzione ``x`` ed ``y`` sullo Sprite, il primo metodo non tiene conto della massa, il secondo tiene conto della massa dell'oggetto.
+
+```javascript
+if (mouse.pressing()) {
+  sprite.mass = 10;
+  sprite.bearing = -90;
+  sprite.applyForce(6, 5);
+  sprite.applyForceScaled(0, 10);
+}
+```
+
+Il metodo ``attractTo()`` attrae uno sprite verso un altro o verso una posizione (x, y) con una certa forza:
+
+```javascript
+if (mouse.pressing()) {
+  sprite1.attractTo(sprite2, 5);
 }
 ```
