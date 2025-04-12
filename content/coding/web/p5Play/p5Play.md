@@ -309,10 +309,10 @@ I parametri formali ``x`` ed ``y`` sono le coordinate del punto in alto a sinist
 
 Il parametro formale polygonName può assumere solo uno dei seguenti valori: ``triangle`` (triangolo), ``square`` (quadrato), ``pentagon`` (pentagono), ``hexagon`` (esagono), ``septagon`` (ettagono), ``octagon`` (ottagono), ``enneagon`` (ennagono), ``decagon`` (decagono), ``hendecagon`` (endecagono) ed infine ``dodecagon`` (dodecagono).
 
-Per creare uno Sprite con collisore cinematico a coordinate x=120 ed y=30 di forma esagonale con lato 40, sostituiamo al parametro formale ``x`` il valore ``80``, al parametro formale ``y`` il valore ``30``, al parametro formale ``length`` il valore 40, al parametro formale ``polygonName`` il valore ``hexagon`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi). L'ultimo parametro formale ``colliderType`` assegniamo il valore ``kinematic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
+Per creare uno Sprite con collisore cinematico a coordinate x=120 ed y=30 di forma esagonale con lato 40, sostituiamo al parametro formale ``x`` il valore ``120``, al parametro formale ``y`` il valore ``30``, al parametro formale ``length`` il valore ``40``, al parametro formale ``polygonName`` il valore ``hexagon`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi). L'ultimo parametro formale ``colliderType`` assegniamo il valore ``kinematic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
 
 ```javascript
-let sprite = new Sprite(20, 30, 'hexagon', 'kinematic');
+let sprite = new Sprite(120, 30, 40, 'hexagon', 'kinematic');
 ```
 
 ### Costruttore per ripetizione
