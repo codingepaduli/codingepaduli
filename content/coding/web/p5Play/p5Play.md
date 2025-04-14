@@ -315,6 +315,40 @@ Per creare uno Sprite con collisore cinematico a coordinate x=120 ed y=30 di for
 let sprite = new Sprite(120, 30, 40, 'hexagon', 'kinematic');
 ```
 
+### Costruttore di poligoni per punti
+
+Costruttore di poligoni per punti permette la costruzione di poligoni irregolari a partire dai punti. Ha la seguente firma:
+
+```plaintext
+Syntax: new Sprite(punti[][], colliderType)
+
+Parameters:
+  puntiArray[][]   array: the points
+  colliderType     String: the collider type
+```
+
+Il parametro formale ``punti`` è una lista di punti. Il parametro formale ``colliderType`` indica il tipo di collisore.
+
+Per prima cosa è necessario creare tutti i punti, ad esempio tre punti per creare un triangolo:
+
+```javascript
+let A = [100, 500];
+let B = [100, 450];
+let C = [300, 500];
+```
+
+Poi è necessario creare la figura, avendo cura che il primo e l'ultimo punto siano lo stesso punto, in modo da creare una figura chiusa:
+
+```javascript
+let triangleSp = [A, B, C, A];
+```
+
+Per creare lo Sprite con collisore cinematico, sostituiamo al parametro formale ``punti`` la lista ``triangleSp`` e al parametro formale ``colliderType`` il valore ``kinematic`` (è di tipo ``String``, quindi deve essere indicato tra apici singoli o doppi), invocando il costruttore nel seguente modo:
+
+```javascript
+let sprite = new Sprite(triangleSp, 'kinematic');
+```
+
 ### Costruttore per ripetizione
 
 Il costruttore per ripetizione permette di costruire uno Sprite ripetendo due semplici passi:
