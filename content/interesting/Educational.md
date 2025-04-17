@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-03-02
-publishdate: 2025-03-02
-lastmod: 2025-03-02
+date: 2025-04-16
+publishdate: 2025-04-16
+lastmod: 2025-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -102,6 +102,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Procedure di assemblaggio delle varie componenti](https://www.youtube.com/watch?v=7QW479E4vxE) - \
 [Prefissi del Sistema internazionale di unità di misura](https://it.wikipedia.org/wiki/Prefissi_del_Sistema_internazionale_di_unit%C3%A0_di_misura) - Wikipedia\
 [Notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica) - Wikipedia\
+[Simultarore circuiti elettronici](https://lushprojects.com/circuitjs/circuitjs.html) - \
 
 ##### Windows
 
@@ -186,7 +187,7 @@ summary: "Set di link relativi all'istruzione di base"
 [IEEE 754](https://it.wikipedia.org/wiki/IEEE_754) - IEEE Standard for Binary Floating-Point Arithmetic\
 [How many registers does an x86-64 CPU have?](https://blog.yossarian.net/2020/11/30/How-many-registers-does-an-x86-64-cpu-have) - \
 [PCIe Gen 4 vs. Gen 3 Slots, Speeds](https://www.trentonsystems.com/blog/pcie-gen4-vs-gen3-slots-speeds) - \
-[What Every Developer Should Know About GPU Computing](https://codeconfessions.substack.com/p/gpu-computing) - \
+[What Every Developer Should Know About GPU Computing](https://blog.codingconfessions.com/p/gpu-computing) - \
 [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) - GitHub Docs\
 [PlayStation Architecture](https://www.copetti.org/writings/consoles/playstation/) - A Practical Analysis\
 [SSDs](https://databasearchitects.blogspot.com/2021/06/what-every-programmer-should-know-about.html?m=1) - What Every Programmer Should Know About - Database Architects\
@@ -219,6 +220,7 @@ summary: "Set di link relativi all'istruzione di base"
 [LED COLORATI costruiamo un cubo NEOPIXEL con ESP32-WROOM EDITION](https://www.youtube.com/watch?v=euQQkNXCGPU) - YouTube\
 [decode QR](https://qr.blinry.org/) - Reading QR codes without a computer!\
 [LED cube](https://willempennings.nl/miniature-3456-led-cube/) - Miniature 3456 LED cube – Willem Pennings\
+[Install Telegraph on Linux | Flathub](https://flathub.org/apps/io.github.fkinoshita.Telegraph) - \
 
 #### Sistemi e reti 4anno
 
@@ -241,6 +243,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Understanding Network things: part 5](https://dev.to/aurelievache/understanding-network-things-part-5-tls-mtls-554n) - TLS & mTLS - DEV Community\
 [Let's learn about few networking side command in Linux/Unix](https://dev.to/payalsasmal/let-s-learn-about-few-networking-side-command-in-linux-unix-3b7d) - DEV Community\
 [Voip solution](http://www.vors.stargrave.org/) - Create a Voip server and clients\
+[rsa](https://crypto.stackexchange.com/questions/31807/why-does-my-ssh-private-key-still-work-after-changing-some-bytes-in-the-file) - Why does my SSH private key still work after changing some bytes in the file? - Cryptography Stack Exchange\
 
 #### TPSIT 4 anno
 

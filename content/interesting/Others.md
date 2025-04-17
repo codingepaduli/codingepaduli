@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-03-25
-publishdate: 2025-03-25
-lastmod: 2025-03-25
+date: 2025-04-16
+publishdate: 2025-04-16
+lastmod: 2025-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -24,7 +24,7 @@ summary: "Set di link interessanti"
 
 [Fisicast](https://www.radioscienza.it/fisicast/) - Radio Scienza\
 [Fottuti geni](https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc3ByZWFrZXIuY29tL3Nob3cvMjk1MjYwMC9lcGlzb2Rlcy9mZWVk) - Podcast\
-[Teorie MOND](https://it.m.wikipedia.org/wiki/Teorie_MOND) - MOdified Newtonian Dynamics\
+[Teorie MOND](https://it.wikipedia.org/wiki/Teorie_MOND) - MOdified Newtonian Dynamics\
 [A New Map of the Standard Model of Particle Physics](https://www.quantamagazine.org/a-new-map-of-the-standard-model-of-particle-physics-20201022) - Quanta Magazine\
 [What Is the Geometry of the Universe?](https://www.quantamagazine.org/what-is-the-geometry-of-the-universe-20200316/) - \
 [Gravity Is Not A Force](https://timhutton.github.io/GravityIsNotAForce/) - Under general relativity, gravity is a distortion of spacetime, not a force. See it in this simulation.\
@@ -53,11 +53,14 @@ summary: "Set di link interessanti"
 [General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity\
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
 [What did Einstein mean by “spooky action at a distance”?](https://backreaction.blogspot.com/2021/05/what-did-einstein-mean-by-spooky-action.html?m=1) - \
+[Why Einstein's E = mc² is only half of the equation](https://bigthink.com/starts-with-a-bang/einsteins-e-mc-squared-half-equation/) - Big Think\
 [The muon is more magnetic than predicted](https://www.sciencemag.org/news/2021/04/particle-mystery-deepens-physicists-confirm-muon-more-magnetic-predicted) - Science | AAAS\
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
+[Time: Yes, it's a dimension, but no, it's not like space](https://bigthink.com/starts-with-a-bang/time-yes-dimension-not-like-space/) - Big Think\
 [Quantum](https://it.wikipedia.org/wiki/Paradosso_del_gatto_di_Schr%C3%B6dinger) - Paradosso del gatto di Schrödinger - Wikipedia\
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
 [Quantum](https://www.sciencemag.org/news/2020/09/one-quantum-physics-greatest-paradoxes-may-have-lost-its-leading-explanation) - One of quantum physics’ greatest paradoxes may have lost its leading explanation\
+[The most powerful cosmic ray since the Oh-My-God particle puzzles scientists](https://www.nature.com/articles/d41586-023-03677-0) - \
 [Incomplete Quantum Field Theory](https://www.quantamagazine.org/what-is-quantum-field-theory-and-why-is-it-incomplete-20220810/) - What Is Quantum Field Theory and Why Is It Incomplete? | Quanta Magazine\
 [The Real Problem with Quantum Mechanics](https://backreaction.blogspot.com/2022/05/chaos-real-problem-with-quantum.html?m=1) - \
 [Black hole information loss paradox](https://backreaction.blogspot.com/2022/04/i-stopped-working-on-black-hole.html?m=1) - I stopped working on black hole information loss. Here’s why.\
@@ -68,6 +71,7 @@ summary: "Set di link interessanti"
 [Thread by @MarkusDeserno on Thread Reader App – Thread Reader App](https://threadreaderapp.com/thread/1482811504424542211.html) - \
 [The Algebra of Grand Unified Theories](https://math.ucr.edu/~huerta/guts/guts.html) - \
 [The Magnetar](https://arstechnica.com/science/2022/06/behold-the-magnetar-natures-ultimate-superweapon/) - a neutron star with the strongest magnetic fields in the Universe, nature’s ultimate superweapon | Ars Technica\
+[Oh-My-God particle](https://en.wikipedia.org/wiki/Oh-My-God_particle) - Wikipedia\
 
 ### Math
 
@@ -89,6 +93,7 @@ summary: "Set di link interessanti"
 [Curves and Surfaces – Bartosz Ciechanowski](https://ciechanow.ski/curves-and-surfaces/) - \
 [An Ancient Geometry Problem Falls to New Mathematical Techniques | Quanta Magazine](https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/) - \
 [Sound – Bartosz Ciechanowski](https://ciechanow.ski/sound/) - \
+[Hyperbolic coordinates](https://en.m.wikipedia.org/wiki/Hyperbolic_coordinates) - Wikipedia\
 
 ### Medicine
 
@@ -162,9 +167,11 @@ summary: "Set di link interessanti"
 
 ### Places
 
-[Castello di Gesualdo](https://it.m.wikipedia.org/wiki/Castello_di_Gesualdo) - Wikipedia\
+[Castello di Gesualdo](https://it.wikipedia.org/wiki/Castello_di_Gesualdo) - Wikipedia\
 [Reale tenuta (reggia) di Carditello](https://it.wikipedia.org/wiki/Reale_tenuta_di_Carditello) - Wikipedia\
-[Marteniza](https://it.m.wikipedia.org/wiki/Marteniza) - Wikipedia\
+[Marteniza](https://it.wikipedia.org/wiki/Marteniza) - Wikipedia\
 [Isola del Liri](https://it.wikipedia.org/wiki/Isola_del_Liri) - Wikipedia\
 [Fontana Liri](https://it.wikipedia.org/wiki/Fontana_Liri) - Wikipedia\
 [Giardino di Ninfa](https://it.wikipedia.org/wiki/Giardino_di_Ninfa) - Wikipedia\
+[Madonna della Seggiola](https://it.wikipedia.org/wiki/Madonna_della_Seggiola) - Wikipedia\
+[Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-03-25
-publishdate: 2025-03-25
-lastmod: 2025-03-25
+date: 2025-04-16
+publishdate: 2025-04-16
+lastmod: 2025-04-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -71,6 +71,7 @@ summary: "Set di link relativi al coding"
 [Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
 [Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 [dockur/windows](https://github.com/dockur/windows) - Windows in a Docker container.\
+[GitHub](https://github.com/dockur/windows) - dockur/windows: Windows inside a Docker container.\
 
 ### Shell, CI, CD ed automazione
 
@@ -144,6 +145,7 @@ summary: "Set di link relativi al coding"
 [SQLite tool](https://dev.to/danilsa0109/sqlite-a-tool-that-allows-creating-databases-from-the-terminal-78j) - create databases from the terminal - DEV Community\
 [incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
 [Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
+[SQLite](https://antonz.org/sqlite-is-not-a-toy-database/) - import from JSON, CSV and more\
 
 ### Giochi
 
@@ -180,6 +182,7 @@ summary: "Set di link relativi al coding"
 [Create or Update PR Action](https://dev.to/mheap/create-or-update-pr-action-2bd7) - DEV Community\
 [Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
 [How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
+[Setting up Git for several Github or Gitlab accounts](https://dev.to/gealber/setting-up-git-for-several-github-or-gitlab-accounts-6io) - DEV Community\
 
 ### Java
 
@@ -324,6 +327,7 @@ summary: "Set di link relativi al coding"
 [BubbleBox](https://www.ralfj.de/projects/bubblebox/) - Simple Application Sandboxing\
 [igo95862/bubblejail](https://github.com/igo95862/bubblejail) - Bubblewrap based sandboxing for desktop applications\
 [SadServers](https://sadservers.com/) - Linux & DevOps Troubleshooting Interviews\
+[binpash/try: Inspect a command's effects before modifying your live system](https://github.com/binpash/try) - \
 
 #### Hardware
 
@@ -339,6 +343,11 @@ summary: "Set di link relativi al coding"
 [Orphaning bcachefs-tools in Debian – Jonathan Carter](https://jonathancarter.org/2024/08/29/orphaning-bcachefs-tools-in-debian/) - \
 [Don’t Support the Coreboot Project : MALIBAL](https://www.malibal.com/features/dont-support-the-coreboot-project/) - \
 [Dell XPS](https://www.dell.com/it-it/shop/laptops/xps-13-plus/spd/xps-13-9320-laptop/cn93328cc) - Notebook XPS 13 Plus\
+[KDE Slimbook VI](https://kde.slimbook.es/) - \
+[GitHub](https://github.com/linux-surface/linux-surface) - linux-surface/linux-surface: Linux Kernel for Surface Devices\
+[How To Update 8BitDo SF30 Pro Firmware on Ubuntu](https://www.omgubuntu.co.uk/2019/06/8bitdo-sn30-pro-controller-linux-firmware) - OMG! Ubuntu\
+[LVFS: Home](https://fwupd.org/) - \
+[How Ubuntu Linux snuck into high-end Dell laptops (and why it's called 'Project Sputnik') | ZDNET](https://www.zdnet.com/article/how-ubuntu-linux-snuck-into-high-end-dell-laptops-and-why-its-called-project-sputnik/) - \
 
 #### Old computer
 
@@ -367,6 +376,7 @@ summary: "Set di link relativi al coding"
 [OpenRGB](https://openrgb.org/) - Open source RGB lighting control\
 [PiBox](https://pibox.io/) - a NAS that lets you use a standard operating system\
 [Setup NAS](https://dev.to/koditkarvedant/setup-nas-on-raspberry-pi-part-2-37p) - on Raspberry Pi 4 Part 2\
+[PiBox NAS: Network Attached Storage](https://getpibox.com/) - \
 
 ### Mozilla Firefox
 
@@ -383,6 +393,8 @@ summary: "Set di link relativi al coding"
 [Firefox Voice](https://voice.mozilla.org/firefox-voice/) - browse the internet with your voice\
 [LibRedirect](https://libredirect.github.io/) - A web extension that redirects YouTube, Instagram, Reddit, TikTok and other websites to alternative privacy-friendly frontends\
 [Custom Site JS – Get this Extension for 🦊 Firefox (en-US)](https://addons.mozilla.org/en-US/firefox/addon/custom-site-js/) - \
+[About:config entries](https://kb.mozillazine.org/About:config_entries) - MozillaZine Knowledge Base\
+[User.js file](https://kb.mozillazine.org/User.js_file) - MozillaZine Knowledge Base\
 
 ### Network
 
@@ -415,6 +427,7 @@ summary: "Set di link relativi al coding"
 [Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [Python 3.12 Preview](https://realpython.com/python312-typing/) - Static Typing Improvements – Real Python\
+[uv](https://docs.astral.sh/uv/) - \
 
 ### Privacy, Security and Hacking
 
@@ -458,6 +471,7 @@ summary: "Set di link relativi al coding"
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
 [Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
 [Nabu Casa](https://www.nabucasa.com/) -  Control your Home Assistant from anywhere\
+[GitHub](https://github.com/ZSWatch/ZSWatch) - ZSWatch/ZSWatch: ZSWatch - the Open Source Zephyr™ based Smartwatch, including both HW and FW.\
 
 #### Security vulnerability and privacy abuse
 
@@ -468,6 +482,8 @@ summary: "Set di link relativi al coding"
 [Brave browser](https://davidgerard.co.uk/blockchain/2020/06/06/the-brave-web-browser-is-hijacking-links-and-inserting-affiliate-codes/) - it is hijacking links, and inserting affiliate codes | Attack of the 50 Foot Blockchain\
 [Brave browser](https://github.com/brave/brave-browser/issues/9929) - it doesn't remove "Top Sites" in the homepage when clearing "History" . · Issue #9929 · brave/brave-browser\
 [ClearURLs Addon](https://github.com/ClearURLs/Addon/issues/102) - Unavailable on Google Chrome · Issue #102\
+[0x192/universal-android-debloater](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.\
+[GitHub](https://github.com/Genymobile/scrcpy) - Genymobile/scrcpy: Display and control your Android device\
 
 ### Scrivere documenti e conversione tra formati
 
@@ -558,6 +574,7 @@ summary: "Set di link relativi al coding"
 [HTML link](https://dev.to/atulcodex/how-to-send-whatsapp-message-through-html-link-23f8) - How to send WhatsApp message - DEV Community\
 [HTML link](https://create.wa.link/) - Create WhatsApp links | Walink\
 [HTML link](https://bernard.app/) - Bernard No more broken links\
+[HTML redirects](https://apitman.com/18/#html-redirects) - \
 [base64 data-URI](https://websemantics.uk/tools/image-to-data-uri-converter/) - Image to base64 data-URI converter\
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
@@ -582,6 +599,7 @@ summary: "Set di link relativi al coding"
 [Non Visual Access](https://www.nvaccess.org/download/) - a screen reader for testing pages for every Blind + Vision Impaired person\
 [web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
 [Screen readers](https://dev.to/livechat/screen-readers-hearing-the-unseen-55nb) - hearing the unseen - DEV Community\
+[A11Y 101: Evaluation tools](https://dev.to/dailydevtips1/a11y-101-evaluation-tools-38km) - DEV Community\
 
 #### CSS
 
@@ -619,20 +637,17 @@ summary: "Set di link relativi al coding"
 
 #### JavaScript
 
-[JavaScript skills](https://zendev.com/2019/06/04/top-skills-to-learn-junior-javascript-developer.html) - Top 5 skills to learn as a junior JavaScript developer\
 [PracticeJS](https://practicejs.com/) - mini JavaScript coding exercises that can be done on a phone\
 [Deep JavaScript](https://exploringjs.com/deep-js/index.html) - Theory and techniques\
-[JavaScript The Modern Parts](https://amontalenti.com/2019/08/10/javascript-the-modern-parts) - JavaScript book in 2018-2019; \
 [jamiebuilds/tinykeys](https://github.com/jamiebuilds/tinykeys) - A tiny and modern library for keybindings.\
 [JS app](https://dev.to/posandu/how-to-create-a-snowfall-with-javascript-caa) - How to create a snowfall with JavaScript - DEV Community\
 [JS app](https://dev.to/j471n/colorful-rain-with-js-514j) - Colorful Rain with JS - DEV Community\
-[JS and SEO](https://buttercms.com/blog/javascript-seo-best-practices) - an overview to essential SEO tags that every page should have, and implications using frameworks\
-[DroidScript](https://droidscript.org/#page-content) - Rapid development of mobile Apps, using JavaScript\
-[JS ES6](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - 7 ES6 Features all JavaScript Programmers Should Learn to Use - DEV Community\
 [JS PDF](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - Download Browser Page as PDF using JavaScript - DEV Community\
 [JS Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [JS Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
-[JS ES6 Features](https://dev.to/ubahthebuilder/7-es6-features-all-javascript-programmers-should-learn-to-use-4cpg) - ES6 Features all JavaScript Programmers Should Learn to Use - DEV Community\
+[Optimizing JavaScript Event Handling: Bubbling and Delegation](https://dev.to/satyaveer_jaligama/optimizing-javascript-event-handling-bubbling-and-delegation-2681) - DEV Community\
+[Using ES modules in browsers with import-maps](https://blog.logrocket.com/es-modules-in-browsers-with-import-maps/) - LogRocket Blog\
+[JS Projects Utilizing TypeScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html) - \
 
 ##### Cloud and libraries
 
@@ -663,6 +678,7 @@ summary: "Set di link relativi al coding"
 
 [JavaScript OOP is weird](https://dev.to/josephkabemba/javascript-oop-is-weird-4h9j) - DEV Community\
 [JS OOP](https://dev.to/nehal_mahida/oops-in-javascript-with-easy-to-understand-examples-2ppn) - OOPS in JavaScript with easy to understand examples 🔥🔥 - DEV Community\
+[🚀 Mastering Object.groupBy(): The Game-Changer for JavaScript Data Handling!](https://dev.to/sharma572/mastering-objectgroupby-the-game-changer-for-javascript-data-handling-2neg) - DEV Community\
 
 ##### JS Collection framework
 
@@ -670,11 +686,13 @@ summary: "Set di link relativi al coding"
 [JS Array](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - Understanding the array methods Array.some() and Array.every() in JavaScript - DEV Community\
 [JS Array](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - JavaScript Array Methods - DEV Community\
 [JS Array](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - 5 Useful Array Methods in JavaScript - DEV Community\
+[The Ultimate JavaScript Array Cheat Sheet](https://dev.to/logannford/the-ultimate-javascript-array-cheat-sheet-5daj) - DEV Community\
 
 ##### JS DOM
 
 [HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
 [DOM Traversal](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - Deep in JavaScript DOM Traversal 2 - DEV Community\
+[Deep in Javascript DOM Traversal 2](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - DEV Community\
 
 ##### JS Fetch Promise and Async Await
 
@@ -683,6 +701,7 @@ summary: "Set di link relativi al coding"
 [JS async-await](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - Migrating from promise chains to async-await and escaping the try catch hell - DEV Community\
 [Fetch](https://dev.to/nombrekeff/think-like-a-pro-grammer-10k1) - from simple to scalable implementation - DEV Community\
 [Fetch](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - This Is Your Complete Guide For Sending Requests Using fetch in JS - DEV Community\
+[Promises: Five Tips to Work Smarter](https://dev.to/oculus42/promises-five-tips-to-work-smarter-mme) - DEV Community\
 
 ##### JS API
 
@@ -694,6 +713,7 @@ summary: "Set di link relativi al coding"
 [APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding web APIs\
 [JS modules](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - Working with modules in JavaScript. - DEV Community\
 [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) - Web APIs | MDN\
+[Things not available when someone blocks all cookies](https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies/) - \
 
 ##### JS web components
 
