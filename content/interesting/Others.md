@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-04-16
-publishdate: 2025-04-16
-lastmod: 2025-04-16
+date: 2025-04-21
+publishdate: 2025-04-21
+lastmod: 2025-04-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -54,6 +54,7 @@ summary: "Set di link interessanti"
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
 [What did Einstein mean by “spooky action at a distance”?](https://backreaction.blogspot.com/2021/05/what-did-einstein-mean-by-spooky-action.html?m=1) - \
 [Why Einstein's E = mc² is only half of the equation](https://bigthink.com/starts-with-a-bang/einsteins-e-mc-squared-half-equation/) - Big Think\
+[A Supermassive Test for Einstein’s Famous Theory](https://nautil.us/a-supermassive-test-for-einsteins-famous-theory-312691/) - Nautilus\
 [The muon is more magnetic than predicted](https://www.sciencemag.org/news/2021/04/particle-mystery-deepens-physicists-confirm-muon-more-magnetic-predicted) - Science | AAAS\
 [Hidden Neutrino Particles](https://www.scientificamerican.com/article/hidden-neutrino-particles-may-be-a-link-to-the-dark-sector/) - After dark matter and dark energy, the dark Neutrino\
 [Time: Yes, it's a dimension, but no, it's not like space](https://bigthink.com/starts-with-a-bang/time-yes-dimension-not-like-space/) - Big Think\
@@ -61,6 +62,7 @@ summary: "Set di link interessanti"
 [Quantum](https://www.sciencealert.com/a-new-quantum-paradox-throws-the-foundations-of-observed-reality-into-question) - Physicists Just Found a New Quantum Paradox That Casts Doubt on a Pillar of Reality\
 [Quantum](https://www.sciencemag.org/news/2020/09/one-quantum-physics-greatest-paradoxes-may-have-lost-its-leading-explanation) - One of quantum physics’ greatest paradoxes may have lost its leading explanation\
 [The most powerful cosmic ray since the Oh-My-God particle puzzles scientists](https://www.nature.com/articles/d41586-023-03677-0) - \
+[The Physicist Who Denies that Dark Matter Exists](https://nautil.us/the-physicist-who-denies-that-dark-matter-exists-236444/) - Nautilus\
 [Incomplete Quantum Field Theory](https://www.quantamagazine.org/what-is-quantum-field-theory-and-why-is-it-incomplete-20220810/) - What Is Quantum Field Theory and Why Is It Incomplete? | Quanta Magazine\
 [The Real Problem with Quantum Mechanics](https://backreaction.blogspot.com/2022/05/chaos-real-problem-with-quantum.html?m=1) - \
 [Black hole information loss paradox](https://backreaction.blogspot.com/2022/04/i-stopped-working-on-black-hole.html?m=1) - I stopped working on black hole information loss. Here’s why.\
@@ -72,6 +74,13 @@ summary: "Set di link interessanti"
 [The Algebra of Grand Unified Theories](https://math.ucr.edu/~huerta/guts/guts.html) - \
 [The Magnetar](https://arstechnica.com/science/2022/06/behold-the-magnetar-natures-ultimate-superweapon/) - a neutron star with the strongest magnetic fields in the Universe, nature’s ultimate superweapon | Ars Technica\
 [Oh-My-God particle](https://en.wikipedia.org/wiki/Oh-My-God_particle) - Wikipedia\
+[Comment](https://www.futilitycloset.com/2023/11/10/comment-8/) - Futility Closet\
+[Inside the Proton, the ‘Most Complicated Thing’ Imaginable | Quanta Magazine](https://www.quantamagazine.org/inside-the-proton-the-most-complicated-thing-imaginable-20221019/) - \
+[The revisited mass of the Milky Way is much smaller than expectations from cosmology](https://observatoiredeparis.psl.eu/the-revisited-mass-of-the.html?lang=en) - Observatoire de Paris - PSL - Centre de recherche en astronomie et astrophysique\
+[The universe is expanding faster than it should be](https://www.nationalgeographic.com/science/article/the-universe-is-expanding-faster-than-it-should-be) - \
+[Something in space has been lighting up every 20 minutes since 1988](https://arstechnica.com/science/2023/07/new-slow-repeating-radio-source-we-have-no-idea-what-it-is/) - Ars Technica\
+[Special relativity and Middle-Earth | What's new](https://terrytao.wordpress.com/2022/12/18/special-relativity-and-middle-earth/) - \
+[Physicist Claims Universe Has No Dark Matter And Is 27 Billion Years Old : ScienceAlert](https://www.sciencealert.com/physicist-claims-universe-has-no-dark-matter-and-is-27-billion-years-old) - \
 
 ### Math
 
@@ -93,7 +102,7 @@ summary: "Set di link interessanti"
 [Curves and Surfaces – Bartosz Ciechanowski](https://ciechanow.ski/curves-and-surfaces/) - \
 [An Ancient Geometry Problem Falls to New Mathematical Techniques | Quanta Magazine](https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/) - \
 [Sound – Bartosz Ciechanowski](https://ciechanow.ski/sound/) - \
-[Hyperbolic coordinates](https://en.m.wikipedia.org/wiki/Hyperbolic_coordinates) - Wikipedia\
+[Hyperbolic coordinates](https://en.wikipedia.org/wiki/Hyperbolic_coordinates) - Wikipedia\
 
 ### Medicine
 
@@ -121,6 +130,8 @@ summary: "Set di link interessanti"
 [sun exposure](https://www.outsideonline.com/health/wellness/sunscreen-sun-exposure-skin-cancer-science/) - exposing skin to sunlight lower blood pressure and activate nitric oxide production - Outside Online\
 [Bird Flu](https://nautil.us/the-unnatural-history-of-bird-flu-1189930/) - The Unnatural History - Nautilus\
 [weight-loss drug](https://wildfirelabs.substack.com/p/the-100-trillion-disruption-the-unforeseen) - The $100 Trillion Disruption - Unforeseen Economic Earthquake\
+[An Invasive Tick](https://www.smithsonianmag.com/smart-news/an-invasive-tick-that-can-clone-itself-is-spreading-across-us-threatening-livestock-180983323/) - Can Clone Itself, It Is Spreading Across the U.S., Threatening Livestock\
+[Scientists discover the first new antibiotics in over 60 years using AI | Euronews](https://www.euronews.com/health/2023/12/31/scientists-discover-the-first-new-antibiotics-in-over-60-years-using-ai) - \
 
 ### Tech
 
@@ -144,6 +155,7 @@ summary: "Set di link interessanti"
 [Costo teleriscaldamento](https://www.ilfattoquotidiano.it/2022/08/27/caro-energia-teleriscaldamento-bollette-triplicate-promessa-risparmio-trappola/6773180/) - Caro energia, per chi ha scelto il teleriscaldamento bollette triplicate. Così la promessa del risparmio (grazie a rifiuti e rinnovabili) si è trasformata in trappola - Il Fatto Quotidiano\
 [Artificial intelligence learns to reason | Science](https://www.science.org/doi/10.1126/science.adw5211) - \
 [FBI suggest ad-blocker](https://www.ic3.gov/PSA/2022/PSA221221) - Cyber Criminals Impersonating Brands Using Search Engine Advertisement Services to Defraud Users\
+[Quantum Computing’s Hard, Cold Reality Check](https://spectrum.ieee.org/quantum-computing-skeptics) - IEEE Spectrum\
 
 ### History
 
@@ -154,6 +166,7 @@ summary: "Set di link interessanti"
 [The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
 [The Little-Known Story of Violet Gibson](https://www.smithsonianmag.com/smart-news/1926-irish-woman-shot-benito-mussolini-and-almost-altered-history-forever-180977286/) - the Irish Woman Who Shot Mussolini | Smart News | Smithsonian Magazine\
 [The Fine Art of Italian Hand Gestures](https://www.themarginalian.org/2012/12/13/bruno-munari-speak-italian-gestures/) - A Vintage Visual Dictionary by Bruno Munari – The Marginalian\
+[Hear the World's Oldest Known Song, "Hurrian Hymn No. 6" Written 3,400 Years Ago | Open Culture](https://www.openculture.com/2025/04/hear-the-worlds-oldest-known-song-hurrian-hymn-no-6.html) - \
 
 ### Games
 
@@ -164,6 +177,7 @@ summary: "Set di link interessanti"
 [Fire_and_Ice_1993](https://archive.org/details/msdos_Fire_and_Ice_1993) - DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE\
 [PrinceJS](https://princejs.com/) - Prince of Persia\
 [A New Sudoku Layout With 81 Uniquely Shaped Cells ・ Daniel Hooper](https://danielchasehooper.com/posts/cracked-sudoku/) - \
+[Rediscovering Ikigai: What We Got Wrong & How to Find Meaning in Life](https://nesslabs.com/ikigai) - \
 
 ### Places
 

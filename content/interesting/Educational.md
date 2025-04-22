@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-04-16
-publishdate: 2025-04-16
-lastmod: 2025-04-16
+date: 2025-04-21
+publishdate: 2025-04-21
+lastmod: 2025-04-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -22,6 +22,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Ambito Territoriale di Caserta](https://www.uat-caserta.it/) - \
 [Competenze e Contenuti – Scuoladigitale](https://scuoladigitale.istruzione.it/pnsd/ambiti/competenze-e-contenuti/) - \
 [Scheda progettazione PCTO.pdf](https://www.istitutomajoranagela.edu.it/attachments/article/1952/Strumenti-Scheda-progettazione-PCTO.pdf) - \
+[Kahoot! | Learning games | Make learning awesome!](https://kahoot.com/) - \
 
 ### Lezioni
 
@@ -35,6 +36,7 @@ summary: "Set di link relativi all'istruzione di base"
 [LearningApps.org](https://learningapps.org/) - Moduli e-learning per il tuo sito internet\
 [OER Commons](https://www.oercommons.org/) - a public digital library of open educational resources. Explore, create, and collaborate with educators around the world to improve curriculum. \
 [il Curriculum dello Studente](https://curriculumstudente.istruzione.it/) - \
+[PhET: Free online physics, chemistry, biology, earth science and math simulations](https://phet.colorado.edu/) - \
 
 #### Google suite
 
@@ -95,6 +97,9 @@ summary: "Set di link relativi all'istruzione di base"
 [LibrePCB](https://librepcb.org/) - develop your printed circuit board\
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [Edoardo Midali](https://www.youtube.com/@EdoardoMidali) - YouTube\
+[PhET Simulations](https://phet.colorado.edu/) - \
+[myPhysicsLab Home Page](https://www.myphysicslab.com/) - \
+[Wokwi](https://wokwi.com/) - World's most advanced ESP32 Simulator\
 
 ##### Hardware
 
@@ -221,6 +226,20 @@ summary: "Set di link relativi all'istruzione di base"
 [decode QR](https://qr.blinry.org/) - Reading QR codes without a computer!\
 [LED cube](https://willempennings.nl/miniature-3456-led-cube/) - Miniature 3456 LED cube – Willem Pennings\
 [Install Telegraph on Linux | Flathub](https://flathub.org/apps/io.github.fkinoshita.Telegraph) - \
+[Submarine Cable Map 2023](https://submarine-cable-map-2023.telegeography.com/) - \
+[Filter](https://phet.colorado.edu/en/simulations/filter?subjects=physics&type=html) - PhET Simulations\
+[QR Code development story｜Technologies｜DENSO WAVE](https://www.denso-wave.com/en/technology/vol1.html) - \
+[Introduction to GPUs with OpenGL | Welcome to Monstarlab’s Engineering Blog](https://engineering.monstar-lab.com/en/post/2022/03/01/Introduction-To-GPUs-With-OpenGL/) - \
+[owc-thunderbolt-3-dock-v2-ports-updated.png (immagine PNG, 1640 × 1200 pixel)](https://macandegg-us.b-cdn.net/files/2018/11/owc-thunderbolt-3-dock-v2-ports-updated.png) - Riscalata (47%)\
+[crafting qr codes](https://kylezhe.ng/posts/crafting_qr_codes) - kyle zheng\
+[QR Code Demystify. I decided to do a QR code just for the… | by Ivan | Medium](https://ivantay2003.medium.com/qr-code-demystify-2a5263ab136e) - \
+[QR codes | Dan Hollick](https://typefully.com/DanHollick/qr-codes-T7tLlNi) - \
+[GitHub](https://github.com/kochrt/qr-designer) - kochrt/qr-designer: QR designer web app with a novel method of designing qr codes that does not take advantage of error correction\
+[Reading QR codes without a computer!](https://qr.blinry.org/) - \
+[Motors for Makers: A Guide to Steppers, Servos, and Other Electrical Machines](https://www.motorsformakers.com/) - \
+[Best Raspberry Pi Projects: March 2025 | Tom's Hardware](https://www.tomshardware.com/features/best-raspberry-pi-projects) - \
+[A Beginner's Guide to the ESP8266](https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html) - \
+[Arduino® UNO R4 WiFi — Arduino Official Store](https://store.arduino.cc/products/uno-r4-wifi) - \
 
 #### Sistemi e reti 4anno
 
@@ -244,6 +263,9 @@ summary: "Set di link relativi all'istruzione di base"
 [Let's learn about few networking side command in Linux/Unix](https://dev.to/payalsasmal/let-s-learn-about-few-networking-side-command-in-linux-unix-3b7d) - DEV Community\
 [Voip solution](http://www.vors.stargrave.org/) - Create a Voip server and clients\
 [rsa](https://crypto.stackexchange.com/questions/31807/why-does-my-ssh-private-key-still-work-after-changing-some-bytes-in-the-file) - Why does my SSH private key still work after changing some bytes in the file? - Cryptography Stack Exchange\
+[BLAKE3-team/BLAKE3: the official Rust and C implementations of the BLAKE3 cryptographic hash function](https://github.com/BLAKE3-team/BLAKE3) - \
+[An Introduction to Computer Networks — An Introduction to Computer Networks, desktop edition 2.0.11](https://intronetworks.cs.luc.edu/current2/html/) - \
+[mitmproxy](https://mitmproxy.org/) - an interactive HTTPS proxy\
 
 #### TPSIT 4 anno
 

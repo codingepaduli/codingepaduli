@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-04-16
-publishdate: 2025-04-16
-lastmod: 2025-04-16
+date: 2025-04-21
+publishdate: 2025-04-21
+lastmod: 2025-04-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -43,6 +43,7 @@ summary: "Set di link relativi al coding"
 
 ### Cloud, Containers, Emulators and Virtual Machines
 
+[Welcome to IRATA.ONLINE](https://irata.online/) - a PLATO Service for Retro Computing Enthusiasts\
 
 #### Android
 
@@ -51,6 +52,7 @@ summary: "Set di link relativi al coding"
 [remote-android/redroid-doc](https://github.com/remote-android/redroid-doc) - Android In Container solution about Remote anDroid projects\
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
 [Sxmo](https://sxmo.org/) - Simple X Mobile\
+[Home | KernelSU](https://kernelsu.org/) - \
 
 #### Cloud
 
@@ -72,6 +74,7 @@ summary: "Set di link relativi al coding"
 [Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 [dockur/windows](https://github.com/dockur/windows) - Windows in a Docker container.\
 [GitHub](https://github.com/dockur/windows) - dockur/windows: Windows inside a Docker container.\
+[GitHub](https://github.com/runtipi/runtipi?tab=readme-ov-file) - runtipi/runtipi: Runtipi is a homeserver for everyone! One command setup, one click installs for your favorites self-hosted apps. ✨\
 
 ### Shell, CI, CD ed automazione
 
@@ -95,6 +98,7 @@ summary: "Set di link relativi al coding"
 
 ### AI
 
+[https://duck.ai duckduckgo AI](https://duck.ai/) - \
 [Amazon CodeWhisperer](https://aws.amazon.com/it/codewhisperer/) - AI Code Generator\
 [fast.ai](http://www.fast.ai/) - Making neural nets uncool again\
 [PizzaGPT](https://www.pizzagpt.it/) - ChatGPT per l'Italia\
@@ -118,7 +122,6 @@ summary: "Set di link relativi al coding"
 [Stable Diffusion Image generation](https://huggingface.co/spaces/stabilityai/stable-diffusion) - a Hugging Face Space by stabilityai\
 [Scribble Diffusion](https://scribblediffusion.com/) - \
 [Audiobox](https://audiobox.metademolab.com/) - Meta’s new foundation research model for audio generation. It can generate voices and sound effects using a combination of voice inputs and natural language text prompts\
-[Suno AI](https://www.suno.ai/) - A ChatGPT for Music\
 [Hyper SDXL](https://fastsdxl.ai/) - Stable Diffusion Image generation\
 [AI](https://dev.to/mankavelda/10-machine-learning-algorithms-to-know-in-2024-1p8j) - 10 Machine Learning Algorithms to Know in 2024 - DEV Community\
 [collabora/WhisperSpeech](https://github.com/collabora/WhisperSpeech) - An Open Source text-to-speech system built by inverting Whisper.\
@@ -126,6 +129,11 @@ summary: "Set di link relativi al coding"
 [THUDM/CogVideo](https://github.com/THUDM/CogVideo#readme) - Text-to-video generation CogVideo\
 [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - Stable Diffusion web UI\
 [OpenAI.fm](https://www.openai.fm/) - \
+[Sonauto | New Music by You](https://sonauto.ai/) - \
+[Welcome to LastMile AI! | LastMile AI](https://lastmileai.dev/workbooks/clj2y933l000mr0avd2ck42s9) - \
+[Suno AI Music](https://suno.com/) - A ChatGPT for Music\
+[Lettore da Testo a Audio gratuito e online](https://www.textfromtospeech.com/it/text-to-voice/) - Lettore di testo gratuito - Da testo a Audio\
+[Stable Diffusion is a really big deal](https://simonwillison.net/2022/Aug/29/stable-diffusion/) - \
 
 ### Database SQL e NoSql - GraphQL
 
@@ -146,6 +154,9 @@ summary: "Set di link relativi al coding"
 [incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
 [Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
 [SQLite](https://antonz.org/sqlite-is-not-a-toy-database/) - import from JSON, CSV and more\
+[GitHub](https://github.com/phiresky/sql.js-httpvfs) - phiresky/sql.js-httpvfs: Hosting read-only SQLite databases on static file hosters like Github Pages\
+[PRQL](https://prql-lang.org/) - Pipelined Relational Query Language compiles to SQL\
+[How to read MySQL EXPLAINs — PlanetScale](https://planetscale.com/blog/how-read-mysql-explains) - \
 
 ### Giochi
 
@@ -168,6 +179,8 @@ summary: "Set di link relativi al coding"
 [microStudio](https://microstudio.dev/it/) - Impara a programmare, crea giochi\
 [Complete Guide to Building Games in the Browser](https://dev.to/zippcodder/complete-guide-to-building-games-in-the-browser-kp6#chapter-23) - DEV Community\
 [matteobruni/tsparticles: tsParticles](https://github.com/matteobruni/tsparticles#Migrating-from-Particlesjs) - Easily create highly customizable particles animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.\
+[Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/) - \
+[Scratchapixel 4.0, Learn Computer Graphics Programming](https://www.scratchapixel.com/index.html) - \
 
 ### GIT
 
@@ -214,6 +227,7 @@ summary: "Set di link relativi al coding"
 [Processing IDE and p5.js in Java](https://happycoding.io/tutorials/java/processing-in-java) - Happy Coding\
 [Graphics for JVM @ tonsky.me](https://tonsky.me/blog/skija/) - \
 [binkley/modern-Java-practices](https://github.com/binkley/modern-java-practices#leverage-unit-testing-and-coverage) - Modern Java/JVM Build Practices\
+[Randoop: Automatic unit test generation for Java](https://randoop.github.io/randoop/) - \
 
 #### JDBC e JPA
 
@@ -303,6 +317,11 @@ summary: "Set di link relativi al coding"
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
 [Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
 [Tunnelmole, an ngrok alternative (open source)](https://softwareengineeringstandard.com/2024/03/19/ngrok-alternative-open-source/) - SES\
+[8 Things You Can Do With KDE Connect on Linux](https://www.makeuseof.com/things-you-can-do-with-kde-connect-on-linux/) - \
+[GNU Parallel, where have you been all my life? | Alex Plescan](https://alexplescan.com/posts/2023/08/20/gnu-parallel/) - \
+[Use a laptop as a 2nd display on Linux using FreeRDP](https://blog.jacobstoner.com/use-a-laptop-or-tablet-as-a-2nd-display-on-linux-with-a-dummy-monitor-and-rdp/) - \
+[GitHub](https://github.com/pkolaczk/fclones) - pkolaczk/fclones: Efficient Duplicate File Finder\
+[xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
 
 #### Administration
 
@@ -328,6 +347,15 @@ summary: "Set di link relativi al coding"
 [igo95862/bubblejail](https://github.com/igo95862/bubblejail) - Bubblewrap based sandboxing for desktop applications\
 [SadServers](https://sadservers.com/) - Linux & DevOps Troubleshooting Interviews\
 [binpash/try: Inspect a command's effects before modifying your live system](https://github.com/binpash/try) - \
+[Note di rilascio per Debian 12 (bookworm), PC a 64 bit](https://www.debian.org/releases/bookworm/amd64/release-notes/index.it.html) - \
+[Why Linux is not ready for the desktop, the final edition](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.final.html) - \
+[Linux Hardening Guide | Madaidan's Insecurities](https://madaidans-insecurities.github.io/guides/linux-hardening.html) - \
+[SSH Server Hardening Guide v2](https://ittavern.com/ssh-server-hardening/) - ITTAVERN.COM\
+[A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding](https://iximiuz.com/en/posts/ssh-tunnels/) - \
+[Closing a stale SSH connection | ~/.didev](https://davidisaksson.dev/posts/closing-stale-ssh-connections/) - \
+[Desktop Linux Hardening | PrivSec](https://privsec.dev/posts/linux/desktop-linux-hardening/) - A practical approach to Privacy and Security\
+[SSH over HTTPS](https://trofi.github.io/posts/295-ssh-over-https.html) - \
+[GRUB2](https://www.linuxbabe.com/desktop-linux/boot-from-iso-files-using-grub2-boot-loader) - How to Boot ISO Files From GRUB2 Boot Loader - LinuxBabe\
 
 #### Hardware
 
@@ -348,12 +376,23 @@ summary: "Set di link relativi al coding"
 [How To Update 8BitDo SF30 Pro Firmware on Ubuntu](https://www.omgubuntu.co.uk/2019/06/8bitdo-sn30-pro-controller-linux-firmware) - OMG! Ubuntu\
 [LVFS: Home](https://fwupd.org/) - \
 [How Ubuntu Linux snuck into high-end Dell laptops (and why it's called 'Project Sputnik') | ZDNET](https://www.zdnet.com/article/how-ubuntu-linux-snuck-into-high-end-dell-laptops-and-why-its-called-project-sputnik/) - \
+[PineTime](https://pine64.org/devices/pinetime/) - PINE64\
+[Fwupd 1.9.6 Brings Linux Firmware Updating For AMD Graphics Cards](https://www.phoronix.com/news/Fwupd-1.9.6-Released) - Phoronix\
+[mini](https://system76.com/desktops/meerkat/) - \
+[Minisforum GK41 Mini PC Intel Celeron J4125 processor](https://store.minisforum.com/products/minisforum-gk41-mini-pc?variant=39499606524065) - \
+[sipeed 矽速科技 官网](https://sipeed.com/licheepi4a) - \
+[Kubuntu Focus: Home Page](https://kfocus.org/) - \
+[Hisense Hi Reader Pro is an Android smartphone with a 6.1 inch E Ink display](https://liliputing.com/hisense-hi-reader-pro-is-an-android-smartphone-with-a-6-1-inch-e-ink-display/) - Liliputing\
+[PINE64](https://pine64.org/) - \
+[Murena](https://murena.com/) - deGoogled and privacy by design smartphones and cloud services.\
+[8BitDo](https://www.8bitdo.com/) - \
 
 #### Old computer
 
 [old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
 [antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
 [Super LTS Kernel](https://www.prnewswire.com/news-releases/civil-infrastructure-platform-expands-super-long-term-stable-kernel-program-with-a-6-1-based-series-301955086.html) - Civil Infrastructure Platform Expands Super-Long-Term Stable Kernel Program with a 6.1-Based Series\
+[Lightweight Linux Distributions For Older PCs](https://www.freecodecamp.org/news/lightweight-linux-distributions-for-your-pc/) - \
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -377,6 +416,9 @@ summary: "Set di link relativi al coding"
 [PiBox](https://pibox.io/) - a NAS that lets you use a standard operating system\
 [Setup NAS](https://dev.to/koditkarvedant/setup-nas-on-raspberry-pi-part-2-37p) - on Raspberry Pi 4 Part 2\
 [PiBox NAS: Network Attached Storage](https://getpibox.com/) - \
+[Orangepi.com](https://www.orangepi.com/) - Distributor of Orange Pi products in Europe and the UK\
+[Build a Raspberry Pi NAS — Raspberry Pi Official Magazine](https://magazine.raspberrypi.com/articles/build-a-raspberry-pi-nas) - \
+[Building a Budget Homelab NAS Server (2022 Edition) · mtlynch.io](https://mtlynch.io/budget-nas/) - \
 
 ### Mozilla Firefox
 
@@ -395,6 +437,9 @@ summary: "Set di link relativi al coding"
 [Custom Site JS – Get this Extension for 🦊 Firefox (en-US)](https://addons.mozilla.org/en-US/firefox/addon/custom-site-js/) - \
 [About:config entries](https://kb.mozillazine.org/About:config_entries) - MozillaZine Knowledge Base\
 [User.js file](https://kb.mozillazine.org/User.js_file) - MozillaZine Knowledge Base\
+[pyllyukko/user.js: user.js -- Firefox configuration hardening](https://github.com/pyllyukko/user.js/) - \
+[yokoffing/Betterfox: Firefox user.js for speed, privacy, and security. Your favorite browser, but better.](https://github.com/yokoffing/Betterfox) - \
+[YouTube Ad Accelerator & EasySpeed – Scarica l’estensione per 🦊 Firefox (it)](https://addons.mozilla.org/it/firefox/addon/youtube-ad-accelerator/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) - \
 
 ### Network
 
@@ -428,6 +473,11 @@ summary: "Set di link relativi al coding"
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [Python 3.12 Preview](https://realpython.com/python312-typing/) - Static Typing Improvements – Real Python\
 [uv](https://docs.astral.sh/uv/) - \
+[Mojo](https://www.fast.ai/posts/2023-05-03-mojo-launch.html) - the biggest programming language advance in decades – fast.ai\
+[GitHub](https://github.com/nicfit/eyeD3) - nicfit/eyeD3: eyeD3 is a Python module and command line program for processing ID3 tags. Information about mp3 files (i.e bit rate, sample frequency, play time, etc.) is also provided. The formats supported are ID3v1 (1.0/1.1) and ID3v2 (2.3/2.4).\
+[Bashing Python](https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989) - Replacing Shell Scripts with Python | by Steven F. Lott | Capital One Tech | Medium\
+[PEP 723 – Inline script metadata | peps.python.org](https://peps.python.org/pep-0723/) - \
+[Pynguin—PYthoN General UnIt test geNerator — pynguin 0.41.0.dev documentation](https://pynguin.readthedocs.io/en/latest/) - \
 
 ### Privacy, Security and Hacking
 
@@ -472,6 +522,10 @@ summary: "Set di link relativi al coding"
 [Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
 [Nabu Casa](https://www.nabucasa.com/) -  Control your Home Assistant from anywhere\
 [GitHub](https://github.com/ZSWatch/ZSWatch) - ZSWatch/ZSWatch: ZSWatch - the Open Source Zephyr™ based Smartwatch, including both HW and FW.\
+[GitHub](https://github.com/mrash/psad) - mrash/psad: psad: Intrusion Detection and Log Analysis with iptables\
+[GitHub](https://github.com/GyulyVGC/sniffnet) - GyulyVGC/sniffnet: Comfortably monitor your Internet traffic 🕵️‍♂️\
+[SSH Configuration Auditor](https://www.ssh-audit.com/) - \
+[Public Money, Public Code](https://publiccode.eu/en/) - \
 
 #### Security vulnerability and privacy abuse
 
@@ -484,6 +538,11 @@ summary: "Set di link relativi al coding"
 [ClearURLs Addon](https://github.com/ClearURLs/Addon/issues/102) - Unavailable on Google Chrome · Issue #102\
 [0x192/universal-android-debloater](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.\
 [GitHub](https://github.com/Genymobile/scrcpy) - Genymobile/scrcpy: Display and control your Android device\
+[Web fingerprinting is worse than I thought](https://www.bitestring.com/posts/2023-03-19-web-fingerprinting-is-worse-than-I-thought.html) - Bitestring's Blog\
+[Fairphone 3 gets seven years of updates, besting every other Android OEM](https://arstechnica.com/gadgets/2023/07/fairphone-3-gets-seven-years-of-updates-besting-every-other-android-oem/) - Ars Technica\
+[Ask HN: IP cameras that don't require an app or internet? | Hacker News](https://news.ycombinator.com/item?id=36447024) - \
+[offsec.tools](https://offsec.tools/) - A vast collection of security tools\
+[Weakening TLS protection, South Korean style | Almost Secure](https://palant.info/2023/02/06/weakening-tls-protection-south-korean-style/) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -504,6 +563,10 @@ summary: "Set di link relativi al coding"
 [trailofbits/graphtage](https://github.com/trailofbits/graphtage) - A semantic diff utility and library for tree-like files such as JSON, JSON5, XML, HTML, YAML, and CSV\
 [mermaid-js/mermaid-cli](https://github.com/mermaid-js/mermaid-cli) - Command line tool for the Mermaid library\
 [Quarto](https://quarto.org/) - an open-source scientific and technical publishing system built on Pandoc\
+[mb21/panwriter](https://github.com/mb21/panwriter) - Markdown editor with pandoc integration and paginated preview.\
+[AsciiDoc](https://mattrighetti.com/2023/02/22/asciidoc-liquid-and-jekyll) - Liquid and Jekyll\
+[MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown doc\
+[Markdown, Asciidoc, or reStructuredText](https://www.dewanahmed.com/markdown-asciidoc-restructuredtext/) - a tale of docs-as-code - Dewan’s Blog\
 
 #### Hugo static site generator
 
@@ -529,7 +592,8 @@ summary: "Set di link relativi al coding"
 [ffs](https://mgree.github.io/ffs/) - mount a file like a fileystem | ffs\
 [antonmedv/fx](https://github.com/antonmedv/fx) - Command-line tool and terminal JSON viewer 🔥\
 [MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown\
-[GitHub](https://github.com/mb21/panwriter) - mb21/panwriter: Markdown editor with pandoc integration and paginated preview.\
+[GitHub](https://github.com/tidwall/jj) - tidwall/jj: JSON Stream Editor (command line utility)\
+[Mermaid | Diagramming and charting tool](https://mermaid.js.org/) - \
 
 ### UML, architetture ed ingegneria del software
 
@@ -588,6 +652,7 @@ summary: "Set di link relativi al coding"
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/) - Manuel Matuzović\
 [preloading](https://web.dev/apply-instant-loading-with-prpl/) - Apply instant loading with the PRPL pattern\
 [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) - Wikipedia\
+[HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/) - JakeArchibald.com\
 
 ##### WAI and ARIA
 
@@ -648,6 +713,7 @@ summary: "Set di link relativi al coding"
 [Optimizing JavaScript Event Handling: Bubbling and Delegation](https://dev.to/satyaveer_jaligama/optimizing-javascript-event-handling-bubbling-and-delegation-2681) - DEV Community\
 [Using ES modules in browsers with import-maps](https://blog.logrocket.com/es-modules-in-browsers-with-import-maps/) - LogRocket Blog\
 [JS Projects Utilizing TypeScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html) - \
+[importMap example](https://kofi.sexy/blog/modern-spas) - \
 
 ##### Cloud and libraries
 
@@ -702,6 +768,7 @@ summary: "Set di link relativi al coding"
 [Fetch](https://dev.to/nombrekeff/think-like-a-pro-grammer-10k1) - from simple to scalable implementation - DEV Community\
 [Fetch](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - This Is Your Complete Guide For Sending Requests Using fetch in JS - DEV Community\
 [Promises: Five Tips to Work Smarter](https://dev.to/oculus42/promises-five-tips-to-work-smarter-mme) - DEV Community\
+[GitHub](https://github.com/henriqueinonhe/promises-training) - henriqueinonhe/promises-training: Practice working with promises through a curated collection of interactive challenges. This repository provides a platform to refine your skills, complete with automated tests to to give you instant feedback and validate your progress.\
 
 ##### JS API
 
@@ -739,6 +806,10 @@ summary: "Set di link relativi al coding"
 [ashwins-code/New-Years-Fireworks](https://github.com/ashwins-code/New-Years-Fireworks) - Interactive fireworks with New Year's countdown made with p5.js\
 [Release v2.0.0-beta.1 · processing/p5.js · GitHub](https://github.com/processing/p5.js/releases/tag/v2.0.0-beta.1) - \
 [p5.js 2.0 Update: Beta, Timeline, and Compatibility Addons · Issue #7488 · processing/p5.js](https://github.com/processing/p5.js/issues/7488) - \
+[GitHub](https://github.com/JSLegendDev/Pokemon-p5js) - JSLegendDev/Pokemon-p5js: Pokemon game made with JavaScript + p5.js library\
+[Color: From Hexcodes to Eyeballs](https://jamie-wong.com/post/color/) - \
+[GitHub](https://github.com/antiboredom/p5.vscode) - antiboredom/p5.vscode: A VS Code extension to generate new p5.js project files.\
+[GitHub](https://github.com/processing/p5.js/) - processing/p5.js: p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. http://twitter.com/p5xjs —\
 
 ##### Three JS 3D
 
@@ -755,3 +826,4 @@ summary: "Set di link relativi al coding"
 ##### p5Play
 
 [quinton-ashley/p5play](https://github.com/quinton-ashley/p5play/) - p5play is a JavaScript game engine that uses p5.js for rendering and Box2D for simulating physics.\
+[molleindustria/p5.play: A p5.js library for making games and interactive art!](https://github.com/molleindustria/p5.play) - \
