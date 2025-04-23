@@ -91,6 +91,27 @@ summary: "Set di link relativi all'istruzione di base"
 [GDPR & PRIVACY NEL 2021](https://www.youtube.com/watch?v=PKgdhaWZ_80) - COSA DEVI SAPERE - YouTube\
 [Advanced Data Protection Control (ADPC)](https://www.dataprotectioncontrol.org/spec/) - \
 
+##### Identità digitale
+
+[Identità digitale](https://www.youtube.com/watch?v=yfka29CiMWs&list=PLnkQoyGMXSFGfsW29-RT-PLTttIXS_Loy&index=6) - YouTube\
+[Difesa dei dati](https://www.youtube.com/watch?v=40-I64zxN4U&list=PLnkQoyGMXSFGfsW29-RT-PLTttIXS_Loy&index=7) - YouTube\
+[Protezione dei dispositivi](https://www.youtube.com/watch?v=tsJiGL5teIo&list=PLnkQoyGMXSFGfsW29-RT-PLTttIXS_Loy&index=8) - YouTube\
+[Pagamenti Digitali](https://www.youtube.com/watch?v=0RVD3huonGo) - YouTube\
+[Pagamenti con Wallet Digitale](https://www.youtube.com/watch?v=-GA5VWHlTD4) - YouTube\
+[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=gvk5CDfNmHs) - Super cittadino digitale - YouTube\
+[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=chQ5z7OgFZ4) - Segui le tracce digitali - YouTube\
+[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=ffomzDVkeCk) - Il potere delle parole - YouTube\
+[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=zCalzUMcQuM) - Il mio quartiere digitale - YouTube\
+[I diritti del nativo digitale](https://www.youtube.com/watch?v=YWg-d8WPXk0) - YouTube\
+
+#### Olimpiadi iformatica
+
+[Olimpiadi Italiane di Informatica](https://olimpiadi-informatica.it/) - \
+[Wiki delle Olimpiadi di Informatica](https://wiki.olinfo.it/) - materiale didattico, lezioni, tutorial per allenarsi in vista delle Olimpiadi di Informatica.\
+[AlgoBadge](https://training.olinfo.it/algobadge) - percorso di allenamento per apprendere algoritmi e tecniche essenziali per affrontare le fasi Territoriali e Nazionali\
+[Portale di allenamento Olimpiadi Italiane di Informatica](https://training.olinfo.it/) - \
+[Olimpiadi Scolastiche 2024](https://scolastiche2024.olinfo.it/teacher/oii-scolastiche) - Accesso insegnanti\
+
 #### Informatica 1anno
 
 [Come trascrivere le registrazioni in modo automatico e semplice](https://newsmondo.it/come-trascrivere-le-registrazioni-in-modo-automatico-e-semplice/tech/?refresh_ce) - \
@@ -175,6 +196,11 @@ summary: "Set di link relativi all'istruzione di base"
 [Cosa fa l'ingegniere SRE](https://sre.google/) - Site Reliability Engineering - Google\
 [Software architect](https://www.atlantedelleprofessioni.it/professioni/software-architect) - Atlante Delle Professioni\
 [What makes a great SRE](https://opensource.com/article/18/5/what-makes-great-sre) - Site Reliability Engineering | Opensource.com\
+
+#### Informatica 4 anno
+
+[Java 8 and Java 11 on Debian 12 bookworm](https://unix.stackexchange.com/questions/749903/how-can-i-install-java-8-on-debian-12-bookworm) - Unix & Linux Stack Exchange\
+[Latest Java OpenJDK Releases | Adoptium](https://adoptium.net/temurin/releases/?version=11) - \
 
 #### Informatica 3 anno
 
@@ -266,6 +292,12 @@ summary: "Set di link relativi all'istruzione di base"
 [BLAKE3-team/BLAKE3: the official Rust and C implementations of the BLAKE3 cryptographic hash function](https://github.com/BLAKE3-team/BLAKE3) - \
 [An Introduction to Computer Networks — An Introduction to Computer Networks, desktop edition 2.0.11](https://intronetworks.cs.luc.edu/current2/html/) - \
 [mitmproxy](https://mitmproxy.org/) - an interactive HTTPS proxy\
+
+#### TPSIT 3 anno
+
+[Egyptian Hieroglyphs](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - Test for Unicode support in Web browsers\
+[ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
+[CSS Snow flakes](https://pajasevi.github.io/CSSnowflakes/) - \
 
 #### TPSIT 4 anno
 
