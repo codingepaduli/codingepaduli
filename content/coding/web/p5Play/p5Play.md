@@ -7,8 +7,8 @@ publishdate: 2023-03-21
 lastmod: 2025-04-08
 categories: ["coding", "web", "p5play"]
 keywords: ["coding", "web", "p5play"]
-draft: true
-toc: true
+draft: false
+toc: false
 summary: "Introduzione al motore di gioco p5play"
 weight: 1040
 
@@ -127,7 +127,30 @@ Nel mondo dei videogiochi la parola Sprite è usata per indicare qualsiasi perso
 
 ### Proprietà relative alla posizione
 
-Le proprietà relative alla posizione sono simili a quelle utilizzate in p5js. Si può far riferimento al seguente codice per utilizzarle:
+Si può creare uno Sprite rotondo o rettangolare utilizzando le proprietà di posizione.
+
+![proprietà fisiche](/static/coding/web/p5play/p5play-sprite-position-properties.png)
+
+Ad esempio per creare un cerchio si può impostare le coordinate del centro (x, y) ed il diametro, come nel seguente esempio:
+
+```javascript
+let ball = new Sprite();
+ball.x = 60;
+ball.y = 80;
+ball.diameter = 60;
+```
+
+Per creare un rettangolo, si può impostare le coordinate (x, y) della posizione, larghezza ed altezza, come nel seguente esempio:
+
+```javascript
+let rectangle = new Sprite();
+rectangle.x = 60;
+rectangle.y = 80;
+rectangle.width = 60;
+rectangle.height = 80;
+```
+
+Per le altre proprietà posizionali, si può far riferimento al seguente codice per utilizzarle:
 
 ```javascript
 let sprite = new Sprite();
@@ -185,8 +208,8 @@ sprite.vel.x = 1;           // velocity (pixel / seconds)
 sprite.vel.y = 2;
 
 sprite.rotationSpeed = 45;  // rotazione continua rispetto all'asse X
-sprite.offset.x = 20;       // sposta il punto di rotazione di x
-sprite.offset.y = 20;       // sposta il punto di rotazione di y
+sprite.offset.x = 20;       // sposta le coordinate x
+sprite.offset.y = 20;       // sposta le coordinate y
 ```
 
 La proprietà ``sprite.direction`` specifica una direzione di movimento dello sprite. Il valore può essere numerico, quindi l'angolo della direzione, oppure una stringa (e quindi deve essere indicata tra apici singoli o doppi) che indica la direzione e può assumere solo uno dei seguenti valori:
@@ -207,6 +230,8 @@ La proprietà ``sprite.direction`` specifica una direzione di movimento dello sp
 - ``backward``: this.rotation + 180 gradi;
 
 ### Proprietà legate al motore di fisica
+
+![proprietà fisiche](/static/coding/web/p5play/p5play-sprite-physical-properties.png)
 
 Un **collisore** (dall'inglese collider) è un'area invisibile intorno ad un oggetto che viene utilizzata per rilevare collisioni con altri oggetti.
 
