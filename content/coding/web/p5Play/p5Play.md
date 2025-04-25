@@ -109,7 +109,7 @@ Un esempio completo di pagina web è la seguente:
 </html>
 ```
 
-E' possibile provare questo progetto sia copiando questo esempio in un file di testo HTML per poi aprire il file nel browser, sia avviando [il progetto](/static/coding/web/p5play/p5PlayExample.zip) su un server locale.
+E' possibile provare questo progetto sia copiando questo esempio in un file di testo HTML per poi aprire il file nel browser, sia avviando [il progetto](/static/coding/web/p5play/p5PlaySample.zip) su un server locale.
 
 ## Oggetti principali
 
