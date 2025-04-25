@@ -30,6 +30,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://github.com/q5js/q5.js"
         description: "libreria di rendering grafico compatibile con p5.js - Sito GitHub"
+    -   title: "p5.vscode"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/antiboredom/p5.vscode"
+        description: "p5.vscode helps you create p5.js projects in Visual Studio Code. It also includes autocompletion, a simple tool to browse and install third-party p5 libraries, and the Live Server extension"
     -   title: "p5.js v2.0.0"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://github.com/processing/p5.js/releases/tag/v2.0.0-beta.1"
