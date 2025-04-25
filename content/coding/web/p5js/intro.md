@@ -12,6 +12,36 @@ draft: false
 toc: false
 summary: "Introduzione alla libreria grafica p5.js"
 weight: 9040
+
+references:
+    -   title: "p5.js"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://p5js.org/"
+        description: "libreria di rendering grafico"
+    -   title: "p5.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/processing/p5.js/"
+        description: "libreria di rendering grafico - Sito GitHub"
+    -   title: "q5.js"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://q5js.org/"
+        description: "libreria di rendering grafico compatibile con p5.js"
+    -   title: "q5.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/q5js/q5.js"
+        description: "libreria di rendering grafico compatibile con p5.js - Sito GitHub"
+    -   title: "p5.js v2.0.0"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/processing/p5.js/releases/tag/v2.0.0-beta.1"
+        description: "p5.js Cambiamenti versione 2.0.0 - Sito GitHub"
+    -   title: "p5.js v2.0.0"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/processing/p5.js/issues/7488"
+        description: "p5.js versione 2.0.0 update: Beta, Timeline, and Compatibility Addons - Sito GitHub"
+    -   title: "p5.js-svg"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/zenozeng/p5.js-svg"
+        description: "The main goal of p5.SVG is to provide a SVG runtime for p5.js, so that we can draw using p5's powerful API in <svg> tag, save things to svg file and manipulating existing SVG file without rasterization"
 ---
 
 # Processing e p5.js

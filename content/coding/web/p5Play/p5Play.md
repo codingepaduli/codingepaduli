@@ -11,6 +11,32 @@ draft: true
 toc: true
 summary: "Introduzione al motore di gioco p5play"
 weight: 1040
+
+references:
+    -   title: "Planck.js"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://piqnt.com/planck.js/"
+        description: "Motore di fisica 2D in Javascript"
+    -   title: "Planck.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/piqnt/planck.js/"
+        description: "Motore di fisica 2D in Javascript - Sito GitHub"
+    -   title: "p5play.js"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://p5play.org/"
+        description: "p5play is a JavaScript game engine that uses p5.js for rendering and Planck.js for simulating physics."
+    -   title: "p5play.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/quinton-ashley/p5play/"
+        description: "p5play is a JavaScript game engine that uses p5.js for rendering and Planck.js for simulating physics - Sito GitHub"
+    -   title: "p5play.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/molleindustria/p5.play"
+        description: "p5play is a JavaScript game engine that uses p5.js for rendering and Planck.js for simulating physics - Sito GitHub"
+    -   title: "p5play.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/molleindustria/p5.play"
+        description: "p5play is a JavaScript game engine that uses p5.js for rendering and Planck.js for simulating physics - Sito GitHub"
 ---
 
 # p5play
