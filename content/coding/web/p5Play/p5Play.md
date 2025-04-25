@@ -622,26 +622,6 @@ Per ruotare uno Sprite verso il mouse con una percentuale della distanza angolar
 sprite.rotateTo(mouse, 0.03, 90);
 ```
 
-### Metodo ``offsetCenter(x, y)``
-
-Per cambiare il centro di rotazione di uno Sprite ad un punto specificato, si utilizza il metodo ``offsetCenter``, che ha la seguente firma:
-
-```plaintext
-Syntax: offsetCenter(x, y)
-
-Parameters:
-  x             Number: the x-coordinate
-  y             Number: the y-coordinate
-```
-
-I parametri formali ``x`` ed ``y`` sono le coordinate del punto sul quale lo Sprite dovrà ruotare.
-
-Per impostare il punto di rotazione di uno Sprite a coordinate x=30 e y=50, sostituiamo al parametro formale ``x`` il valore ``30`` ed al parametro formale ``y`` il valore ``50``, invocando il metodo nel seguente modo:
-
-```javascript
-sprite.offsetCenter(30, 50);
-```
-
 ### Metodi per movimenti in serie
 
 E' possibile definire una sequenza di movimenti ed invocarla una volta o ripetutamente. Per creare una sequenza di movimenti, semplicemente si dichiara una funzione ed in questa funzione si inseriscono tutte le istruzioni di movimento desiderate.
