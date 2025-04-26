@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-04-21
-publishdate: 2025-04-21
-lastmod: 2025-04-21
+date: 2025-04-25
+publishdate: 2025-04-25
+lastmod: 2025-04-25
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -53,6 +53,7 @@ summary: "Set di link relativi al coding"
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
 [Sxmo](https://sxmo.org/) - Simple X Mobile\
 [Home | KernelSU](https://kernelsu.org/) - \
+[Xfce on Android](https://mrs-th.medium.com/transform-your-android-device-into-a-linux-desktop-110a3d084ac6) - Transform Your Android Device into a Linux Desktop | by Mrs. Th | Medium\
 
 #### Cloud
 
@@ -73,8 +74,10 @@ summary: "Set di link relativi al coding"
 [Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
 [Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
 [dockur/windows](https://github.com/dockur/windows) - Windows in a Docker container.\
-[GitHub](https://github.com/dockur/windows) - dockur/windows: Windows inside a Docker container.\
 [GitHub](https://github.com/runtipi/runtipi?tab=readme-ov-file) - runtipi/runtipi: Runtipi is a homeserver for everyone! One command setup, one click installs for your favorites self-hosted apps. ✨\
+[Mastering the Docker networking](https://dev.to/leandronsp/mastering-the-docker-networking-2h57) - DEV Community\
+[Docker Compose](https://dev.to/mitul3737/docker-series-part-14-docker-compose-2pcd) - Docker series (Part 14): Docker Compose - DEV Community\
+[GitHub](https://github.com/hemashushu/docker-archlinux-gui) - hemashushu/docker-archlinux-gui: This tutorial introduces a method for running GUI applications directly in containers (such as Docker and Podman) without installing any additional software.\
 
 ### Shell, CI, CD ed automazione
 
@@ -134,6 +137,11 @@ summary: "Set di link relativi al coding"
 [Suno AI Music](https://suno.com/) - A ChatGPT for Music\
 [Lettore da Testo a Audio gratuito e online](https://www.textfromtospeech.com/it/text-to-voice/) - Lettore di testo gratuito - Da testo a Audio\
 [Stable Diffusion is a really big deal](https://simonwillison.net/2022/Aug/29/stable-diffusion/) - \
+[ML Models](https://medium.com/@akash.y888/parametric-vs-non-parametric-ml-models-65f3174937b0) - Parametric vs. Non-Parametric ML Models | by Akash Yede | Mar, 2025 | Medium\
+[Csound](https://csound.com/) - Free and Open Source Audio Programming Language\
+[Machine Learning](https://dev.to/sarko07/introduction-to-machine-learning-for-everyone-5d5f) - Introduction to Machine Learning for Everyone! - DEV Community\
+[UNIGE 14x050 – Deep Learning Course](https://fleuret.org/dlc/) - \
+[MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning: This is the homepage of a new book entitled "Mathematical Foundations of Reinforcement Learning."](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) - \
 
 ### Database SQL e NoSql - GraphQL
 
@@ -157,6 +165,7 @@ summary: "Set di link relativi al coding"
 [GitHub](https://github.com/phiresky/sql.js-httpvfs) - phiresky/sql.js-httpvfs: Hosting read-only SQLite databases on static file hosters like Github Pages\
 [PRQL](https://prql-lang.org/) - Pipelined Relational Query Language compiles to SQL\
 [How to read MySQL EXPLAINs — PlanetScale](https://planetscale.com/blog/how-read-mysql-explains) - \
+[Read & Export SQLite Data in a JavaScript-enabled Browser Locally | by Charmaine Chui | Webtips | Medium](https://medium.com/weekly-webtips/read-export-sqlite-data-in-a-javascript-enabled-browser-locally-b655deda879d) - \
 
 ### Giochi
 
@@ -181,6 +190,7 @@ summary: "Set di link relativi al coding"
 [matteobruni/tsparticles: tsParticles](https://github.com/matteobruni/tsparticles#Migrating-from-Particlesjs) - Easily create highly customizable particles animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.\
 [Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/) - \
 [Scratchapixel 4.0, Learn Computer Graphics Programming](https://www.scratchapixel.com/index.html) - \
+[Gamedev.city](https://gamedev.city/) - \
 
 ### GIT
 
@@ -196,6 +206,9 @@ summary: "Set di link relativi al coding"
 [Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
 [How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
 [Setting up Git for several Github or Gitlab accounts](https://dev.to/gealber/setting-up-git-for-several-github-or-gitlab-accounts-6io) - DEV Community\
+[git-sim](https://initialcommit.com/blog/git-sim) - Visually simulate Git operations in your own repos\
+[Git Config](https://blog.gitbutler.com/how-git-core-devs-configure-git/) - How Core Git Developers Configure Git\
+[Git](https://dev.to/yonkeltron/is-it-time-to-look-past-git-ah4) - Is it time to look past Git? - DEV Community\
 
 ### Java
 
@@ -228,6 +241,7 @@ summary: "Set di link relativi al coding"
 [Graphics for JVM @ tonsky.me](https://tonsky.me/blog/skija/) - \
 [binkley/modern-Java-practices](https://github.com/binkley/modern-java-practices#leverage-unit-testing-and-coverage) - Modern Java/JVM Build Practices\
 [Randoop: Automatic unit test generation for Java](https://randoop.github.io/randoop/) - \
+[Java 23 News](https://horstmann.com/unblog/2024-12-11/index.html) - Horstmann's Unblog\
 
 #### JDBC e JPA
 
@@ -322,6 +336,7 @@ summary: "Set di link relativi al coding"
 [Use a laptop as a 2nd display on Linux using FreeRDP](https://blog.jacobstoner.com/use-a-laptop-or-tablet-as-a-2nd-display-on-linux-with-a-dummy-monitor-and-rdp/) - \
 [GitHub](https://github.com/pkolaczk/fclones) - pkolaczk/fclones: Efficient Duplicate File Finder\
 [xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
+[Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
 
 #### Administration
 
@@ -330,14 +345,9 @@ summary: "Set di link relativi al coding"
 [50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
 [Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
-[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
 [The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
 [VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
 [VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
-[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
-[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
-[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
-[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
 [hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
 [cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
 [systemd by example](https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization/) - Part 1: Minimization - Sebastian Jambor's blog\
@@ -346,16 +356,16 @@ summary: "Set di link relativi al coding"
 [BubbleBox](https://www.ralfj.de/projects/bubblebox/) - Simple Application Sandboxing\
 [igo95862/bubblejail](https://github.com/igo95862/bubblejail) - Bubblewrap based sandboxing for desktop applications\
 [SadServers](https://sadservers.com/) - Linux & DevOps Troubleshooting Interviews\
-[binpash/try: Inspect a command's effects before modifying your live system](https://github.com/binpash/try) - \
-[Note di rilascio per Debian 12 (bookworm), PC a 64 bit](https://www.debian.org/releases/bookworm/amd64/release-notes/index.it.html) - \
-[Why Linux is not ready for the desktop, the final edition](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.final.html) - \
-[Linux Hardening Guide | Madaidan's Insecurities](https://madaidans-insecurities.github.io/guides/linux-hardening.html) - \
-[SSH Server Hardening Guide v2](https://ittavern.com/ssh-server-hardening/) - ITTAVERN.COM\
-[A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding](https://iximiuz.com/en/posts/ssh-tunnels/) - \
-[Closing a stale SSH connection | ~/.didev](https://davidisaksson.dev/posts/closing-stale-ssh-connections/) - \
-[Desktop Linux Hardening | PrivSec](https://privsec.dev/posts/linux/desktop-linux-hardening/) - A practical approach to Privacy and Security\
-[SSH over HTTPS](https://trofi.github.io/posts/295-ssh-over-https.html) - \
+[binpash/try](https://github.com/binpash/try) - Inspect a command's effects before modifying your live system\
+[Debian 12](https://www.debian.org/releases/bookworm/amd64/release-notes/index.it.html) - Note di rilascio per Debian 12 (bookworm), PC a 64 bit\
+[Linux](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.final.html) - Why Linux is not ready for the desktop, the final edition\
+[Linux Hardening Guide](https://madaidans-insecurities.github.io/guides/linux-hardening.html) - Madaidan's Insecurities\
+[Desktop Linux Hardening](https://privsec.dev/posts/linux/desktop-linux-hardening/) - A practical approach to Privacy and Security\
 [GRUB2](https://www.linuxbabe.com/desktop-linux/boot-from-iso-files-using-grub2-boot-loader) - How to Boot ISO Files From GRUB2 Boot Loader - LinuxBabe\
+[systemd by example](https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization/) - Part 1: Minimization - Sebastian Jambor's blog\
+[Shell Script](https://sharats.me/posts/shell-script-best-practices/) - Best Practices - The Sharat's\
+[Swap File](https://linuxize.com/post/create-a-linux-swap-file/) - Create a Linux Swap File | Linuxize\
+[Linux CLI](https://www.linuxcommand.org/tlcl.php) - Command Line Books by William Shotts\
 
 #### Hardware
 
@@ -386,6 +396,7 @@ summary: "Set di link relativi al coding"
 [PINE64](https://pine64.org/) - \
 [Murena](https://murena.com/) - deGoogled and privacy by design smartphones and cloud services.\
 [8BitDo](https://www.8bitdo.com/) - \
+[StarFighter 16-inch – Linux-exclusive laptop that sets a new standard for privacy and performance Star Labs®](https://it.starlabs.systems/pages/starfighter?shpxid=b9bf3a49-c8db-4c56-aa69-a838edff15ab) - \
 
 #### Old computer
 
@@ -393,6 +404,20 @@ summary: "Set di link relativi al coding"
 [antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
 [Super LTS Kernel](https://www.prnewswire.com/news-releases/civil-infrastructure-platform-expands-super-long-term-stable-kernel-program-with-a-6-1-based-series-301955086.html) - Civil Infrastructure Platform Expands Super-Long-Term Stable Kernel Program with a 6.1-Based Series\
 [Lightweight Linux Distributions For Older PCs](https://www.freecodecamp.org/news/lightweight-linux-distributions-for-your-pc/) - \
+
+#### SSH
+
+[jtesta/ssh-audit: SSH server & client security auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)](https://github.com/jtesta/ssh-audit) - \
+[ssh](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-local-vs-remote/) - SSH tunnelling for fun and profit - local vs remote\
+[Simple SSH Security | Disk Notifier](https://disknotifier.com/blog/simple-ssh-security/) - \
+[OpenSSH](https://infosec.mozilla.org/guidelines/openssh) - non-default settings from Mozilla\
+[How to SSH Properly](https://dev.to/goteleport/how-to-ssh-properly-4eg2) - DEV Community\
+[PowerShell Remoting Over SSH](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ssh-remoting-in-powershell-core?view=powershell-7.1#authentication) - PowerShell | Microsoft Docs\
+[SSH Server Hardening Guide v2](https://ittavern.com/ssh-server-hardening/) - ITTAVERN.COM\
+[SSH Tunnels](https://iximiuz.com/en/posts/ssh-tunnels/) - A Visual Guide to SSH Tunnels, Local and Remote Port Forwarding\
+[SSH](https://davidisaksson.dev/posts/closing-stale-ssh-connections/) - Closing a stale SSH connection\
+[SSH over HTTPS](https://trofi.github.io/posts/295-ssh-over-https.html) - \
+[SSH](https://hackertarget.com/ssh-examples-tunnels/) - 22 SSH Examples, Practical Tips & Tunnels | HackerTarget.com\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -419,6 +444,9 @@ summary: "Set di link relativi al coding"
 [Orangepi.com](https://www.orangepi.com/) - Distributor of Orange Pi products in Europe and the UK\
 [Build a Raspberry Pi NAS — Raspberry Pi Official Magazine](https://magazine.raspberrypi.com/articles/build-a-raspberry-pi-nas) - \
 [Building a Budget Homelab NAS Server (2022 Edition) · mtlynch.io](https://mtlynch.io/budget-nas/) - \
+[Zimaboard](https://ounapuu.ee/posts/2023/10/09/zimaboard/) - the closest thing to my dream home server setup :: ./techtipsy\
+[Raspberry Pi 5 vs. Orange Pi 5 Plus vs. Rock 5 Model B | PiCockpit](https://picockpit.com/raspberry-pi/raspberry-pi-5-vs-orange-pi-5-plus-vs-rock-5-model-b/) - \
+[The AirGradient DIY Air Quality Sensor (Pro Version PCB Version 3.7)](https://www.airgradient.com/documentation/diy-pro-v37/) - \
 
 ### Mozilla Firefox
 
@@ -440,6 +468,8 @@ summary: "Set di link relativi al coding"
 [pyllyukko/user.js: user.js -- Firefox configuration hardening](https://github.com/pyllyukko/user.js/) - \
 [yokoffing/Betterfox: Firefox user.js for speed, privacy, and security. Your favorite browser, but better.](https://github.com/yokoffing/Betterfox) - \
 [YouTube Ad Accelerator & EasySpeed – Scarica l’estensione per 🦊 Firefox (it)](https://addons.mozilla.org/it/firefox/addon/youtube-ad-accelerator/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) - \
+[Everything Is Chrome | Vale.Rocks](https://vale.rocks/posts/everything-is-chrome) - \
+[Browser](https://dev.to/martinrojas/browser-interoperability-standardization-why-consistency-matters-more-than-ever-471o) - Interoperability & Standardization: Why Consistency Matters More Than Ever - DEV Community\
 
 ### Network
 
@@ -452,6 +482,45 @@ summary: "Set di link relativi al coding"
 [Tor proxy](https://opensource.com/article/20/4/tor-proxy-raspberry-pi) - Set up a Tor proxy with Raspberry Pi to control internet traffic | Opensource.com\
 [ProtonDrive](https://protonmail.com/blog/centalized-vs-p2p-protondrive/?utm_campaign=ww-en-2c-generic-coms_email-monthly_newsletter&utm_source=proton_users&utm_medium=link&utm_content=2020_-_sept) - Centralized vs. P2P Inside ProtonDrive’s security\
 [Use open source tools to set up a private VPN | Opensource.com](https://opensource.com/article/21/5/open-source-private-vpn) - \
+[Using PSAD and UFW · analyze iptables log messages to detect port scans and other suspicious traffic](https://gist.github.com/netson/c45b2dc4e835761fbccc) - \
+[GitHub](https://github.com/StevenBlack/hosts) - StevenBlack/hosts: 🔒 Consolidating and extending hosts files from several well-curated sources. Optionally pick extensions for porn, social media, and other categories.\
+
+### programmi
+
+
+#### ffmpeg
+
+[ffmprovisr](https://amiaopensource.github.io/ffmprovisr/#basic-structure) - FFmpeg from basics to advanced\
+[FFmpeg](https://img.ly/blog/ultimate-guide-to-ffmpeg/) - Ultimate Guide | IMG.LY Blog\
+
+#### youtube
+
+[YouTube](https://blog.0x7d0.dev/history/how-they-bypass-youtube-video-download-throttling/) - How They Bypass YouTube Video Download Throttling | 0x7D0\
+[d3vr/yt-siphon: Firefox add-on to open YouTube videos in open alternative frontends (e.g: Piped)](https://github.com/d3vr/yt-siphon) - \
+[NotJoeMartinez/yt-fts](https://github.com/NotJoeMartinez/yt-fts) - YouTube Full Text Search - Search all of a YouTube channel from the command line\
+[obra/Youtube2Webpage: I learn much better from text than from videos](https://github.com/obra/Youtube2Webpage) - \
+[TL;DW](https://tldw.tube/) - Too Long; Didn't Watch!\
+[you-tldr](https://www.you-tldr.com/) - Fetch YouTube transcripts in your native language\
+
+#### multimedia
+
+[dvdisaster](https://dvdisaster.jcea.es/) - Developer site\
+[speed47/dvdisaster](https://github.com/speed47/dvdisaster) - A tool providing additional ECC protection for optical media (unofficial version)\
+[eyeD3](https://eyed3.readthedocs.io/en/latest/) - working with MP3 files containing ID3 metadata \
+[cleanup photos](https://cleanupphotos.com/) - Remove unwanted objects from photos by dragging boxes\
+[Exploring EXIF – Harley Turan](https://hturan.com/writing/exploring-exif) - \
+[Edit your photos with open source artificial intelligence | Opensource.com](https://opensource.com/article/23/4/edit-photos-open-source-ai) - \
+[Remove the background from an image with this Linux command | Opensource.com](https://opensource.com/article/23/4/image-editing-linux-python) - \
+[Fix scanned images with ImageMagick | Opensource.com](https://opensource.com/article/22/11/fixing-scanned-images-imagemagick) - \
+[GitHub](https://github.com/OmarShehata/google-earth-as-gltf) - OmarShehata/google-earth-as-gltf\
+[GitHub](https://github.com/intel/openvino-plugins-ai-audacity) - intel/openvino-plugins-ai-audacity: A set of AI-enabled effects, generators, and analyzers for Audacity®.\
+[Google Earth as glTF](https://omarshehata.github.io/google-earth-as-gltf/) - \
+[grassmunk/Chicago95](https://github.com/grassmunk/Chicago95) - A rendition of everyone's favorite 1995 Microsoft operating system for Linux.\
+[joxeankoret/diaphora](https://github.com/joxeankoret/diaphora) - Diaphora, the most advanced Free and Open Source program diffing tool.\
+[LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.\
+[monasticacademy/httptap](https://github.com/monasticacademy/httptap) - View HTTP/HTTPS requests made by any Linux program\
+[TemporalAgent7/awesome-windows-privacy](https://github.com/TemporalAgent7/awesome-windows-privacy) - A list of awesome tools, documentation and scripts for better privacy on Microsoft Windows\
+[Instantly create a GitHub repository to take screenshots of a web page](https://simonwillison.net/2022/Mar/14/shot-scraper-template/) - \
 
 ### PHP
 
@@ -472,12 +541,14 @@ summary: "Set di link relativi al coding"
 [Run Shell Commands](https://martinheinz.dev/blog/98) - The Right Way to Run Shell Commands From Python - Martin Heinz - Personal Website & Blog\
 [Gooey](https://chriskiehl.com/article/gooey-as-a-universal-frontend) - an Universal frontend for any Language or CLI Application\
 [Python 3.12 Preview](https://realpython.com/python312-typing/) - Static Typing Improvements – Real Python\
-[uv](https://docs.astral.sh/uv/) - \
+[uv](https://docs.astral.sh/uv/) - managing virtual environments, large projects, multiple Python versions and platforms\
 [Mojo](https://www.fast.ai/posts/2023-05-03-mojo-launch.html) - the biggest programming language advance in decades – fast.ai\
-[GitHub](https://github.com/nicfit/eyeD3) - nicfit/eyeD3: eyeD3 is a Python module and command line program for processing ID3 tags. Information about mp3 files (i.e bit rate, sample frequency, play time, etc.) is also provided. The formats supported are ID3v1 (1.0/1.1) and ID3v2 (2.3/2.4).\
+[nicfit/eyeD3](https://github.com/nicfit/eyeD3) - eyeD3 is a Python module and command line program for processing ID3 tags. Information about mp3 files (i.e bit rate, sample frequency, play time, etc.) is also provided. The formats supported are ID3v1 (1.0/1.1) and ID3v2 (2.3/2.4).\
 [Bashing Python](https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989) - Replacing Shell Scripts with Python | by Steven F. Lott | Capital One Tech | Medium\
 [PEP 723 – Inline script metadata | peps.python.org](https://peps.python.org/pep-0723/) - \
-[Pynguin—PYthoN General UnIt test geNerator — pynguin 0.41.0.dev documentation](https://pynguin.readthedocs.io/en/latest/) - \
+[Pynguin](https://pynguin.readthedocs.io/en/latest/) - PYthoN General UnIt test geNerator — pynguin 0.41.0.dev documentation\
+[python.logging](https://stackoverflow.com/questions/53249304/how-to-list-all-existing-loggers-using-python-logging-module#53250066) - How to list all existing loggers using python.logging module - Stack Overflow\
+[Python dependencies](https://akrabat.com/defining-python-dependencies-at-the-top-of-the-file/) - Defining Python dependencies at the top of the file – Rob Allen\
 
 ### Privacy, Security and Hacking
 
@@ -526,6 +597,9 @@ summary: "Set di link relativi al coding"
 [GitHub](https://github.com/GyulyVGC/sniffnet) - GyulyVGC/sniffnet: Comfortably monitor your Internet traffic 🕵️‍♂️\
 [SSH Configuration Auditor](https://www.ssh-audit.com/) - \
 [Public Money, Public Code](https://publiccode.eu/en/) - \
+[Memory Safe Languages](https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html?m=1) - A significant drop in memory safety vulnerabilities and an associated drop in the severity of our vulnerabilities thanks to memory Safe Languages - Google Online Security Blog\
+[DuckDuckGo's privacy abuses-- current, historic, and by proxy](https://lemmy.ml/post/31321) - Lemmy\
+[Update disposable_email_blocklist.conf by tuptuptuu · Pull Request #244 · disposable-email-domains/disposable-email-domains · GitHub](https://github.com/disposable-email-domains/disposable-email-domains/pull/244) - \
 
 #### Security vulnerability and privacy abuse
 
@@ -543,6 +617,7 @@ summary: "Set di link relativi al coding"
 [Ask HN: IP cameras that don't require an app or internet? | Hacker News](https://news.ycombinator.com/item?id=36447024) - \
 [offsec.tools](https://offsec.tools/) - A vast collection of security tools\
 [Weakening TLS protection, South Korean style | Almost Secure](https://palant.info/2023/02/06/weakening-tls-protection-south-korean-style/) - \
+[Termux and Android 10 · termux/termux-packages Wiki · GitHub](https://github.com/termux/termux-packages/wiki/Termux-and-Android-10) - \
 
 ### Scrivere documenti e conversione tra formati
 
@@ -567,6 +642,9 @@ summary: "Set di link relativi al coding"
 [AsciiDoc](https://mattrighetti.com/2023/02/22/asciidoc-liquid-and-jekyll) - Liquid and Jekyll\
 [MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown doc\
 [Markdown, Asciidoc, or reStructuredText](https://www.dewanahmed.com/markdown-asciidoc-restructuredtext/) - a tale of docs-as-code - Dewan’s Blog\
+[Laying Out a Print Book With CSS | Ian G McDowell's Blog](https://iangmcdowell.com/blog/posts/laying-out-a-book-with-css/) - \
+[Using Pandoc and Typst to Produce PDFs](https://imaginarytext.ca/posts/2024/pandoc-typst-tutorial/) - \
+[GitHub](https://github.com/typst/typst) - typst/typst: A new markup-based typesetting system that is powerful and easy to learn.\
 
 #### Hugo static site generator
 
@@ -581,7 +659,11 @@ summary: "Set di link relativi al coding"
 [Hugo comments](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) - Adding comments to your static blog with Mastodon\
 [site.Params.mainSections](https://gohugo.io/functions/where/#mainsections) - To list the most relevant pages on the front page | Hugo\
 [razonyang/hugo-theme-bootstrap](https://github.com/razonyang/hugo-theme-bootstrap) - A fast, responsive, multipurpose and feature-rich Hugo theme.\
-[Universal | Hugo Themes](https://themes.gohugo.io/themes/hugo-universal-theme/) - \
+[Universal](https://themes.gohugo.io/themes/hugo-universal-theme/) - Hugo Themes\
+[Hugo themes](https://dev.to/cloudcannon/fifty-of-2022s-most-popular-hugo-themes-5foi) - Fifty of 2022's most popular Hugo themes - DEV Community\
+[Hugo Tutorial](https://docs.gitlab.com/tutorials/hugo/) - Build, test, and deploy your Hugo site with GitLab | GitLab Docs\
+[How I Got Twitter Cards Working in Hugo with the Mainroad theme](https://kendralittle.com/2021/05/07/how-i-got-twitter-cards-working-hugo-mainroad/) - \
+[Opengraph help](https://discourse.gohugo.io/t/opengraph-help/44282/9) - support - HUGO\
 
 #### YAML - JSON - TOML - CSV - altri
 
@@ -594,6 +676,7 @@ summary: "Set di link relativi al coding"
 [MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown\
 [GitHub](https://github.com/tidwall/jj) - tidwall/jj: JSON Stream Editor (command line utility)\
 [Mermaid | Diagramming and charting tool](https://mermaid.js.org/) - \
+[GitHub](https://github.com/ken-matsui/jyt) - ken-matsui/jyt: A tridirectional converter between Json, Yaml, and Toml\
 
 ### UML, architetture ed ingegneria del software
 
@@ -653,6 +736,7 @@ summary: "Set di link relativi al coding"
 [preloading](https://web.dev/apply-instant-loading-with-prpl/) - Apply instant loading with the PRPL pattern\
 [UTM parameters](https://en.wikipedia.org/wiki/UTM_parameters) - Wikipedia\
 [HTML attributes vs DOM properties](https://jakearchibald.com/2024/attributes-vs-properties/) - JakeArchibald.com\
+[urin/vscode-web-visual-editor](https://github.com/urin/vscode-web-visual-editor) - Edit HTML files visually.\
 
 ##### WAI and ARIA
 
@@ -699,6 +783,7 @@ summary: "Set di link relativi al coding"
 [CSS Images](https://dev.to/fidalmathew/css-tips-on-images-you-need-to-know-33b1) - CSS tips on Images you need to know - DEV Community\
 [Dark/Light Mode](https://opensource.com/article/21/10/dark-themes-websites) - A simple CSS trick for dark mode | Opensource.com\
 [Dark/Light Mode](https://dev.to/codewithsnowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - How to toggle Dark/Light Mode using JavaScript - DEV Community\
+[trigonometriche](https://web.dev/articles/css-trig-functions?hl=it) - Funzioni trigonometriche in CSS  |  Articles  |  web.dev\
 
 #### JavaScript
 
@@ -769,6 +854,7 @@ summary: "Set di link relativi al coding"
 [Fetch](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - This Is Your Complete Guide For Sending Requests Using fetch in JS - DEV Community\
 [Promises: Five Tips to Work Smarter](https://dev.to/oculus42/promises-five-tips-to-work-smarter-mme) - DEV Community\
 [GitHub](https://github.com/henriqueinonhe/promises-training) - henriqueinonhe/promises-training: Practice working with promises through a curated collection of interactive challenges. This repository provides a platform to refine your skills, complete with automated tests to to give you instant feedback and validate your progress.\
+[Why I avoid async/await. Whatever your stance on async/await… | by Cory | Medium](https://uniqname.medium.com/why-i-avoid-async-await-7be98014b73e) - \
 
 ##### JS API
 
@@ -788,6 +874,8 @@ summary: "Set di link relativi al coding"
 [github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
 [Shoelace](https://shoelace.style/) - A forward-thinking library of web components.\
 [Web Components](https://binaryigor.com/htmx-and-web-components-a-perfect-match.html) - HTMX and Web Components: a Perfect Match\
+[kgscialdone/facet: Web components made simple and declarative](https://github.com/kgscialdone/facet) - \
+[web-padawan/awesome-web-components: A curated list of awesome Web Components resources.](https://github.com/web-padawan/awesome-web-components?tab=readme-ov-file) - \
 
 ##### PWA
 
@@ -799,31 +887,20 @@ summary: "Set di link relativi al coding"
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
 [nativefier/nativefier](https://github.com/nativefier/nativefier) - Make any web page a desktop application\
 [What PWA Can Do Today](https://whatpwacando.today/info/) - \
+[What PWA Can Do Today](https://whatpwacando.today/info/) - \
 
 ##### p5JS
 
 [LTC4](https://dev.to/rpalo/ltc4---falling-in-love-with-vectors-182) - Falling in Love with Vectors - DEV Community\
 [ashwins-code/New-Years-Fireworks](https://github.com/ashwins-code/New-Years-Fireworks) - Interactive fireworks with New Year's countdown made with p5.js\
-[Release v2.0.0-beta.1 · processing/p5.js · GitHub](https://github.com/processing/p5.js/releases/tag/v2.0.0-beta.1) - \
-[p5.js 2.0 Update: Beta, Timeline, and Compatibility Addons · Issue #7488 · processing/p5.js](https://github.com/processing/p5.js/issues/7488) - \
 [GitHub](https://github.com/JSLegendDev/Pokemon-p5js) - JSLegendDev/Pokemon-p5js: Pokemon game made with JavaScript + p5.js library\
-[Color: From Hexcodes to Eyeballs](https://jamie-wong.com/post/color/) - \
-[GitHub](https://github.com/antiboredom/p5.vscode) - antiboredom/p5.vscode: A VS Code extension to generate new p5.js project files.\
-[GitHub](https://github.com/processing/p5.js/) - processing/p5.js: p5.js is a client-side JS platform that empowers artists, designers, students, and anyone to learn to code and express themselves creatively on the web. It is based on the core principles of Processing. http://twitter.com/p5xjs —\
+[Color](https://jamie-wong.com/post/color/) - From Hexcodes to Eyeballs\
+[Why does the chromaticity diagram look like that?](https://jlongster.com/why-chromaticity-shape) - \
+[Color](https://jamie-wong.com/post/color/) - From Hexcodes to Eyeballs\
+[GitHub](https://github.com/miciwan/PaintMixing) - miciwan/PaintMixing\
+[Make Your Own Website](https://web.pixelshannon.com/make/#software) - \
 
-##### Three JS 3D
+##### JS AI
 
-[chandlerprall/Physijs](https://github.com/chandlerprall/Physijs) - Physics plugin for Three.js\
-[Space globe](https://dev.to/jayantgoel001/space-globe-threejs-47ee) - Three.js - DEV Community\
-[Physics engine](https://discourse.threejs.org/t/preferred-physics-engine-cannon-js-ammo-js-diy/1565/9) - cannon.js, ammo.js, DIY..., in three.js forum\
-[Google Earth as glTF](https://omarshehata.github.io/google-earth-as-gltf/) - \
-
-##### HandsFree
-
-[Handsfree.js](https://handsfree.js.org/) - \
 [flap.js – flappy-pose](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - \
-
-##### p5Play
-
-[quinton-ashley/p5play](https://github.com/quinton-ashley/p5play/) - p5play is a JavaScript game engine that uses p5.js for rendering and Box2D for simulating physics.\
-[molleindustria/p5.play: A p5.js library for making games and interactive art!](https://github.com/molleindustria/p5.play) - \
+[GitHub](https://github.com/ml5js/ml5-library/) - ml5js/ml5-library: Friendly machine learning for the web! 🤖\

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-04-21
-publishdate: 2025-04-21
-lastmod: 2025-04-21
+date: 2025-04-25
+publishdate: 2025-04-25
+lastmod: 2025-04-25
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -30,7 +30,6 @@ summary: "Set di link interessanti"
 [Gravity Is Not A Force](https://timhutton.github.io/GravityIsNotAForce/) - Under general relativity, gravity is a distortion of spacetime, not a force. See it in this simulation.\
 [How Gravity Is a Double Copy of Other Forces | Quanta Magazine](https://www.quantamagazine.org/how-gravity-is-a-double-copy-of-other-forces-20210504/) - \
 [Faster than Light in Our Model of Physics](https://writings.stephenwolfram.com/2020/10/faster-than-light-in-our-model-of-physics-some-preliminary-thoughts/) - Some Preliminary Thoughts on Space, Time, Geometry of the Universe,  \
-[Machine Learning Tackles Spacetime](https://physics.aps.org/articles/v13/40) - To unify general relativity and quantum mechanics\
 [A star exploded so violently that it completely annihilated itself](https://www.syfy.com/syfywire/across-the-universe-a-star-exploded-so-violently-that-it-completely-annihilated-itself) - \
 [Twenty New Moons Found Orbiting Saturn](https://dtm.carnegiescience.edu/news/twenty-new-moons-found-orbiting-saturn) - \
 [The most detailed 3D map of the Universe ever made](https://www.nature.com/articles/d41586-021-01466-1) - \
@@ -40,7 +39,7 @@ summary: "Set di link interessanti"
 [Maybe 'dark matter' doesn't exist after all](https://www.nbcnews.com/science/space/maybe-dark-matter-doesn-t-exist-after-all-new-research-n1252995) - new research suggests\
 [The assumption that the corrected luminosity supernovae would not evolve with redshift is wrong](https://phys.org/news/2020-01-evidence-key-assumption-discovery-dark.html) - This is the most direct and strongest evidence for the accelerating universe with dark energy is most likely in error. Astrophysical Journal - January 2020\
 [Dark Matter](https://backreaction.blogspot.com/2021/05/dark-matter-situation-has-changed.html?m=1) - The Situation Has Changed\
-[Dark Matter Doesn't Exist](https://iai.tv/articles/dark-matter-doesnt-exist-auid-2180) - Pavel Kroupa » IAI TV\
+[Dark Matter](https://iai.tv/articles/dark-matter-doesnt-exist-auid-2180) - It Doesn't Exist - Pavel Kroupa » IAI TV\
 [axial Higgs boson](https://www.livescience.com/magnetic-higgs-relative-discovered) - Physicists discover never-before seen particle sitting on a tabletop | Live Science\
 [Cosmology Has Some Big Problems](https://blogs.scientificamerican.com/observations/cosmology-has-some-big-problems/) - The field relies on a conceptual framework that has trouble accounting for new observations\
 [Physics is stuck and needs another Einstein to revolutionize it](https://www.salon.com/2020/09/06/physics-is-stuck--and-needs-another-einstein-to-revolutionize-it-physicist-avi-loeb-says/) -  there is a very good chance that we are missing some very important ingredients that a brilliant person might recognize\
@@ -49,7 +48,7 @@ summary: "Set di link interessanti"
 [Dark Matter Alternative Passes Big Test](https://physics.aps.org/articles/v14/143) - a MOND-inspired model that accounts for the cosmic microwave background while also being consistent with gravitational lensing observations and gravitational-wave speed measurements\
 [The Janus cosmological model](https://januscosmologicalmodel.com/) - a paradigm shift (Modello cosmologico del Giano Bifronte)\
 [savoir-sans-frontieres.com](https://savoir-sans-frontieres.com/) - \
-[The engine of the universe- For the first time, scientists detect the ghostly signal that reveals the engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - \
+[The engine of the universe](https://www.nbcnews.com/science/space/first-time-scientists-detect-ghostly-signal-reveals-engine-universe-n1248982) - For the first time, scientists detect the ghostly signal that reveals the engine of the universe\
 [General Relativity](https://nautil.us/issue/93/forerunners/when-einstein-tilted-at-windmills-rp) - Albert Einstein, Michele Besso, and Ernst Mach Were All Vital to the Theory of General Relativity\
 [Einstein's missed opportunity to rid us of 'spooky actions at a distance'](https://sciencex.com/news/2020-10-einstein-opportunity-spooky-actions-distance.html) - The mysteries of length contraction and time dilation follow from the relativity principle applied to the measurement of the speed of light c, the mystery of quantum entanglement follows from the relativity principle applied to the measurement of Planck's constant h.\
 [What did Einstein mean by “spooky action at a distance”?](https://backreaction.blogspot.com/2021/05/what-did-einstein-mean-by-spooky-action.html?m=1) - \
@@ -103,6 +102,7 @@ summary: "Set di link interessanti"
 [An Ancient Geometry Problem Falls to New Mathematical Techniques | Quanta Magazine](https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/) - \
 [Sound – Bartosz Ciechanowski](https://ciechanow.ski/sound/) - \
 [Hyperbolic coordinates](https://en.wikipedia.org/wiki/Hyperbolic_coordinates) - Wikipedia\
+[prime numbers](https://www.3blue1brown.com/lessons/prime-spirals) - 3Blue1Brown - Why do prime numbers make these spirals?\
 
 ### Medicine
 
@@ -116,22 +116,24 @@ summary: "Set di link interessanti"
 [Influenza spagnola](https://it.wikipedia.org/wiki/Influenza_spagnola) - Pandemia influenzale causata dal virus H1N1\
 [Artificial intelligence yields new antibiotic](https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220) - A deep-learning model identifies a powerful new drug that can kill many species of antibiotic-resistant bacteria\
 [Legalizzazione Cannabis e Big Pharma](https://www.ilfattoquotidiano.it/2022/09/09/cannabis-la-legalizzazione-delle-droghe-leggere-e-un-duro-colpo-per-big-pharma-uno-studio-spiega-perche/6793612/) - la legalizzazione delle droghe leggere è un duro colpo per Big Pharma. Uno studio spiega perché - Il Fatto Quotidiano\
-[Why We Have So Many Problems with Our Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - \
-[A whopping 91% of plastic isn't recycled](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - say national geographic\
-[Japan to release Fukushima's contaminated water into sea](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - reports | Reuters\
+[Teeth](https://www.scientificamerican.com/article/why-we-have-so-many-problems-with-our-teeth/) - Why We Have So Many Problems with Our Teeth\
+[plastic- A whopping 91% of plastic isn't recycled](https://www.nationalgeographic.com/news/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/) - say national geographic\
+[Fukushima's contaminated water](https://uk.reuters.com/article/japan-disaster-water/update-2-japan-to-release-fukushimas-contaminated-water-into-sea-reports-idUKL4N2H70L4) - Japan to release Fukushima's contaminated water into sea - reports | Reuters\
+[Fukushima's contaminated water](https://www.aljazeera.com/news/2023/8/24/japan-prepares-to-start-release-of-fukushima-radioactive-water) - ‘Not Japan’s trash bin’: Anger as Fukushima water released into Pacific | Fukushima News | Al Jazeera\
 [The Earth Is Pulsating Every 26 Seconds](https://www.discovermagazine.com/environment/the-earth-is-pulsating-every-26-seconds-and-seismologists-dont-agree-why) - and Seismologists Don't Agree Why\
 [Diluting blood plasma rejuvenates tissue, reverses aging in mice](https://www.sciencedaily.com/releases/2020/06/200615115724.htm) - Plasma exchange could be the key to unlocking the body's regenerative capacities\
-[The poison found in everyone, even unborn babies](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - and who is responsible for it | Environment | The Guardian\
+[poison](https://www.theguardian.com/commentisfree/2020/dec/17/dark-waters-pfas-ticking-chemical-time-bomb-in-your-blood) - The poison found in everyone, even unborn babies - and who is responsible for it | Environment | The Guardian\
 [FuelCellsWorks](https://fuelcellsworks.com/news/photocatalyst-that-can-split-water-into-hydrogen-and-oxygen-at-a-quantum-efficiency-close-to-100/) - Photocatalyst that can Split Water into Hydrogen and oxygen at a Quantum Efficiency Close to 100%\
-[Reversing The Aging Clock With Epigenetic Reprogramming](https://www.bio-itworld.com/news/2021/01/13/reversing-the-aging-clock-with-epigenetic-reprogramming) - \
-[Humans Used to Sleep in Two Shifts, And Maybe We Should Do It Again](https://www.sciencealert.com/humans-used-to-sleep-in-two-shifts-maybe-we-should-again) - \
+[Reversing Aging](https://www.bio-itworld.com/news/2021/01/13/reversing-the-aging-clock-with-epigenetic-reprogramming) - Reversing The Aging Clock With Epigenetic Reprogramming\
+[Sleep](https://www.sciencealert.com/humans-used-to-sleep-in-two-shifts-maybe-we-should-again) - Humans Used to Sleep in Two Shifts, And Maybe We Should Do It Again\
 [Cardiopatie](https://www.youtube.com/watch?app=desktop&v=GICkFZ68BUE) - Dottor Oppido - Unità operativa complessa di Cardiologia del Monaldi - YouTube\
 [vanadium battery technology](https://text.npr.org/1114964240) - The U.S. made a breakthrough battery discovery, then gave the technology to China\
 [sun exposure](https://www.outsideonline.com/health/wellness/sunscreen-sun-exposure-skin-cancer-science/) - exposing skin to sunlight lower blood pressure and activate nitric oxide production - Outside Online\
 [Bird Flu](https://nautil.us/the-unnatural-history-of-bird-flu-1189930/) - The Unnatural History - Nautilus\
 [weight-loss drug](https://wildfirelabs.substack.com/p/the-100-trillion-disruption-the-unforeseen) - The $100 Trillion Disruption - Unforeseen Economic Earthquake\
 [An Invasive Tick](https://www.smithsonianmag.com/smart-news/an-invasive-tick-that-can-clone-itself-is-spreading-across-us-threatening-livestock-180983323/) - Can Clone Itself, It Is Spreading Across the U.S., Threatening Livestock\
-[Scientists discover the first new antibiotics in over 60 years using AI | Euronews](https://www.euronews.com/health/2023/12/31/scientists-discover-the-first-new-antibiotics-in-over-60-years-using-ai) - \
+[antibiotics](https://www.euronews.com/health/2023/12/31/scientists-discover-the-first-new-antibiotics-in-over-60-years-using-ai) - Scientists discover the first new antibiotics in over 60 years using AI | Euronews\
+[Protein-Designing](https://singularityhub.com/2022/07/26/protein-designing-ai-opens-door-to-medicines-humans-couldnt-dream-up/) - AI Opens Door to Medicines Humans Couldn’t Dream Up\
 
 ### Tech
 
@@ -156,6 +158,8 @@ summary: "Set di link interessanti"
 [Artificial intelligence learns to reason | Science](https://www.science.org/doi/10.1126/science.adw5211) - \
 [FBI suggest ad-blocker](https://www.ic3.gov/PSA/2022/PSA221221) - Cyber Criminals Impersonating Brands Using Search Engine Advertisement Services to Defraud Users\
 [Quantum Computing’s Hard, Cold Reality Check](https://spectrum.ieee.org/quantum-computing-skeptics) - IEEE Spectrum\
+[The Case Against Quantum Computing](https://spectrum.ieee.org/the-case-against-quantum-computing) - IEEE Spectrum\
+[MIT Engineers Create the “Impossible” – New Material That Is Stronger Than Steel and As Light as Plastic](https://scitechdaily.com/mit-engineers-create-the-impossible-new-material-that-is-stronger-than-steel-and-as-light-as-plastic/) - \
 
 ### History
 
@@ -189,3 +193,4 @@ summary: "Set di link interessanti"
 [Giardino di Ninfa](https://it.wikipedia.org/wiki/Giardino_di_Ninfa) - Wikipedia\
 [Madonna della Seggiola](https://it.wikipedia.org/wiki/Madonna_della_Seggiola) - Wikipedia\
 [Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
+[Museo Casa Vasari](https://museiarezzo.it/museo-casa-vasari/) - Musei di Arezzo | MUAR\

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-04-21
-publishdate: 2025-04-21
-lastmod: 2025-04-21
+date: 2025-04-25
+publishdate: 2025-04-25
+lastmod: 2025-04-25
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -19,10 +19,6 @@ summary: "Set di link relativi all'istruzione di base"
 
 ## Scuola
 
-[Ambito Territoriale di Caserta](https://www.uat-caserta.it/) - \
-[Competenze e Contenuti – Scuoladigitale](https://scuoladigitale.istruzione.it/pnsd/ambiti/competenze-e-contenuti/) - \
-[Scheda progettazione PCTO.pdf](https://www.istitutomajoranagela.edu.it/attachments/article/1952/Strumenti-Scheda-progettazione-PCTO.pdf) - \
-[Kahoot! | Learning games | Make learning awesome!](https://kahoot.com/) - \
 
 ### Lezioni
 
@@ -37,6 +33,9 @@ summary: "Set di link relativi all'istruzione di base"
 [OER Commons](https://www.oercommons.org/) - a public digital library of open educational resources. Explore, create, and collaborate with educators around the world to improve curriculum. \
 [il Curriculum dello Studente](https://curriculumstudente.istruzione.it/) - \
 [PhET: Free online physics, chemistry, biology, earth science and math simulations](https://phet.colorado.edu/) - \
+[Kahoot! | Learning games | Make learning awesome!](https://kahoot.com/) - \
+[Orb.Farm](https://orb.farm/) - \
+[BOINC](https://boinc.berkeley.edu/index.php) - help cutting-edge science research using your computer\
 
 #### Google suite
 
@@ -91,20 +90,7 @@ summary: "Set di link relativi all'istruzione di base"
 [GDPR & PRIVACY NEL 2021](https://www.youtube.com/watch?v=PKgdhaWZ_80) - COSA DEVI SAPERE - YouTube\
 [Advanced Data Protection Control (ADPC)](https://www.dataprotectioncontrol.org/spec/) - \
 
-##### Identità digitale
-
-[Identità digitale](https://www.youtube.com/watch?v=yfka29CiMWs&list=PLnkQoyGMXSFGfsW29-RT-PLTttIXS_Loy&index=6) - YouTube\
-[Difesa dei dati](https://www.youtube.com/watch?v=40-I64zxN4U&list=PLnkQoyGMXSFGfsW29-RT-PLTttIXS_Loy&index=7) - YouTube\
-[Protezione dei dispositivi](https://www.youtube.com/watch?v=tsJiGL5teIo&list=PLnkQoyGMXSFGfsW29-RT-PLTttIXS_Loy&index=8) - YouTube\
-[Pagamenti Digitali](https://www.youtube.com/watch?v=0RVD3huonGo) - YouTube\
-[Pagamenti con Wallet Digitale](https://www.youtube.com/watch?v=-GA5VWHlTD4) - YouTube\
-[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=gvk5CDfNmHs) - Super cittadino digitale - YouTube\
-[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=chQ5z7OgFZ4) - Segui le tracce digitali - YouTube\
-[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=ffomzDVkeCk) - Il potere delle parole - YouTube\
-[Cittadinanza digitale consapevole](https://www.youtube.com/watch?v=zCalzUMcQuM) - Il mio quartiere digitale - YouTube\
-[I diritti del nativo digitale](https://www.youtube.com/watch?v=YWg-d8WPXk0) - YouTube\
-
-#### Olimpiadi iformatica
+#### Olimpiadi informatica
 
 [Olimpiadi Italiane di Informatica](https://olimpiadi-informatica.it/) - \
 [Wiki delle Olimpiadi di Informatica](https://wiki.olinfo.it/) - materiale didattico, lezioni, tutorial per allenarsi in vista delle Olimpiadi di Informatica.\
@@ -197,11 +183,6 @@ summary: "Set di link relativi all'istruzione di base"
 [Software architect](https://www.atlantedelleprofessioni.it/professioni/software-architect) - Atlante Delle Professioni\
 [What makes a great SRE](https://opensource.com/article/18/5/what-makes-great-sre) - Site Reliability Engineering | Opensource.com\
 
-#### Informatica 4 anno
-
-[Java 8 and Java 11 on Debian 12 bookworm](https://unix.stackexchange.com/questions/749903/how-can-i-install-java-8-on-debian-12-bookworm) - Unix & Linux Stack Exchange\
-[Latest Java OpenJDK Releases | Adoptium](https://adoptium.net/temurin/releases/?version=11) - \
-
 #### Informatica 3 anno
 
 [Corso JavaScript Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9FUx06-avV66mS8LXz7_Bb) - YouTube\
@@ -211,6 +192,24 @@ summary: "Set di link relativi all'istruzione di base"
 [GitHub](https://github.com/SamueleLonghin/FlowgorithmJS) - SamueleLonghin/FlowgorithmJS: *.fprg file viewer for the Web\
 [Pantone](https://it.wikipedia.org/wiki/Pantone) - Wikipedia\
 [miciwan/PaintMixing](https://github.com/miciwan/PaintMixing) - On Light, Colors, Mixing Paints, and Numerical Optimization.\
+
+#### Informatica 4 anno
+
+[Java 8 and Java 11 on Debian 12 bookworm](https://unix.stackexchange.com/questions/749903/how-can-i-install-java-8-on-debian-12-bookworm) - Unix & Linux Stack Exchange\
+[Latest Java OpenJDK Releases | Adoptium](https://adoptium.net/temurin/releases/?version=11) - \
+
+#### Informatica 5 anno
+
+[XAMPP](https://www.youtube.com/watch?v=AiZFtd8mLBE) - web server Apache / MySQL / PHP con XAMPP su Windows - YouTube\
+[PHP](https://www.html.it/guide/guida-php-di-base/) - guida al linguaggio lato server | HTML.it\
+[Corso Php MySQL Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - YouTube\
+[MYSQL CORSO BASE (con PhpMyAdmin)](https://www.youtube.com/playlist?list=PLaguh5H6_Ux1e7JS7Ly3SCTuKWL-0CLDV) - YouTube\
+[Corso Wordpress Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-uRmdwRr05WOq_ZEdbbhEF) - YouTube\
+[Top 9 Lessons learned in 12 years as a software developer.](https://dev.to/tyaga001/top-9-lessons-learned-in-12-years-as-a-software-developer-4o9h) - DEV Community\
+[Corso PHP/MYSQL Tutorial Italiano 03](https://www.youtube.com/watch?v=2BMEAsJwBxI) - Connessione al Database\
+[Corso PHP/MYSQL Tutorial Italiano 08](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Selezionare dati con SELECT - YouTube\
+[Corso PHP MySql](https://www.youtube.com/watch?v=QZo3LBajSds&list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - \
+[digital marketing con Google](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - \
 
 #### Sistemi e reti 3 anno
 
@@ -267,7 +266,7 @@ summary: "Set di link relativi all'istruzione di base"
 [A Beginner's Guide to the ESP8266](https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html) - \
 [Arduino® UNO R4 WiFi — Arduino Official Store](https://store.arduino.cc/products/uno-r4-wifi) - \
 
-#### Sistemi e reti 4anno
+#### Sistemi e reti 4 anno
 
 [CISCO PACKET TRACER 1](https://www.youtube.com/watch?v=GkdHam-9Tko) - due PC collegati fra loro - YouTube\
 [CISCO PACKET TRACER 2](https://www.youtube.com/watch?v=uebyxZH1Fao) - tre PC collegati insieme con un HUB - YouTube\
@@ -292,6 +291,7 @@ summary: "Set di link relativi all'istruzione di base"
 [BLAKE3-team/BLAKE3: the official Rust and C implementations of the BLAKE3 cryptographic hash function](https://github.com/BLAKE3-team/BLAKE3) - \
 [An Introduction to Computer Networks — An Introduction to Computer Networks, desktop edition 2.0.11](https://intronetworks.cs.luc.edu/current2/html/) - \
 [mitmproxy](https://mitmproxy.org/) - an interactive HTTPS proxy\
+[Cracking a hashed password with hashcat](https://dev.to/wrongbyte/cracking-a-hashed-password-with-hashcat-4bfe) - DEV Community\
 
 #### TPSIT 3 anno
 
@@ -309,19 +309,6 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Cloud IDE](https://paiza.cloud/en/) - PaizaCloud - Just 3 seconds to start Cloud IDE\
 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Fake online REST API for developers\
-
-#### Informatica 5 anno
-
-[XAMPP](https://www.youtube.com/watch?v=AiZFtd8mLBE) - web server Apache / MySQL / PHP con XAMPP su Windows - YouTube\
-[PHP](https://www.html.it/guide/guida-php-di-base/) - guida al linguaggio lato server | HTML.it\
-[Corso Php MySQL Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - YouTube\
-[MYSQL CORSO BASE (con PhpMyAdmin)](https://www.youtube.com/playlist?list=PLaguh5H6_Ux1e7JS7Ly3SCTuKWL-0CLDV) - YouTube\
-[Corso Wordpress Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-uRmdwRr05WOq_ZEdbbhEF) - YouTube\
-[Top 9 Lessons learned in 12 years as a software developer.](https://dev.to/tyaga001/top-9-lessons-learned-in-12-years-as-a-software-developer-4o9h) - DEV Community\
-[Corso PHP/MYSQL Tutorial Italiano 03](https://www.youtube.com/watch?v=2BMEAsJwBxI) - Connessione al Database\
-[Corso PHP/MYSQL Tutorial Italiano 08](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Selezionare dati con SELECT - YouTube\
-[Corso PHP MySql](https://www.youtube.com/watch?v=QZo3LBajSds&list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - \
-[digital marketing con Google](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - \
 
 #### Eventi
 
