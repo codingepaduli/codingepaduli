@@ -1,28 +1,58 @@
 ---
 type: "html"
-title: "Shoelace - Libreria di componenti web personalizzati"
-description: "Shoelace, una libreria di componenti web personalizzati che fornisce molti componenti fondamentali per la realizzazione di interfacce utenti moderne"
+title: "Componenti web personalizzati"
+description: "Librerie di componenti web personalizzati per la realizzazione di interfacce utenti moderne"
 date: 2025-03-27
 publishdate: 2025-03-27
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "Shoelace, una libreria di componenti web personalizzati che fornisce molti componenti fondamentali per la realizzazione di interfacce utenti moderne"
+summary: "Librerie di componenti web personalizzati per la realizzazione di interfacce utenti moderne"
 weight: 9280
+
+references:
+    -   title: "Shoelace"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://shoelace.style/"
+        description: "Libreria di Web Components"
+    -   title: "GitHub Web Components"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/github/github-elements"
+        description: "Sviluppata da GitHub"
+    -   title: "Ionic"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://ionicframework.com/docs/components"
+        description: "Libreria di Web Components sviluppata da Ionic"
 ---
 
-# Shoelace - Libreria di componenti web personalizzati
+# Componenti web personalizzati
 
 I componenti web (Web Components) personalizzati sono delle etichette HTML non standard che ci consentono di costruire interfacce utente flessibili, moderne e modulari, facilitando lo sviluppo e la manutenzione delle applicazioni web.
 
 Sono basati su standard riconosciuti e sono supportati da tutti i principali browser moderni, per cui garantiscono una buona compatibilità.
 
-Estendono le funzionalità degli elementi HTML standard, aggiungendo proprietà e stili grafici specifici, comportamenti personalizzati e riutilizzabili che li rendono in termini di progettazione e sviluppo degli ottimi componenti su cui sviluppare i siti web, evitando la necessità di soluzioni proprietarie e framework specifici.
+Estendono le funzionalità degli elementi HTML standard, aggiungendo proprietà e stili grafici specifici, comportamenti personalizzati e riutilizzabili che li rendono degli ottimi componenti su cui progettare e sviluppare i siti web, evitando la necessità di soluzioni proprietarie e framework specifici.
+
+## Librerie di Web Components
+
+Esistono diverse librerie di Web Components che offrono elementi già pronti per l'uso, facilitando lo sviluppo di interfacce utente senza doverli creare da zero. Ecco alcune delle più note:
+
+**Shoelace**: Shoelace è una libreria di componenti UI basati su Web Components che include una serie di elementi pronti all'uso, come bottoni, modali, schede e altro. È progettata per essere facilmente personalizzabile e integrabile in qualsiasi progetto.
+
+**Material Web Components**: Questa libreria fornisce componenti basati sulle linee guida di Material Design di Google. Include elementi come bottoni, schede, menu e altro, tutti progettati per seguire le best practice di design. **Purtroppo Google non la sta più sviluppando.** Material Web Components attualmente è in [maintenance mode](https://github.com/material-components/material-web/discussions/5642)#5642
+
+**Ionic Web Components**: Ionic offre una serie di componenti UI per applicazioni web e mobili, molti dei quali sono basati su Web Components. Include elementi come barre di navigazione, schede, moduli e altro, ed è particolarmente utile per lo sviluppo di applicazioni ibride.
+
+**Wokwi Web Components**: Componenti Web per Arduino e per vari componenti elettroniche.
+
+**Wired Elements**: una serie di Componenti Web con un aspetto disegnato a mano, che possono essere utilizzati per wireframe, mockup o solo per dare un look disegnato a mano.
+
+## Libreria Shoelace
 
 Una delle librerie di componenti web oggi in circolazione è **Shoelace**, che fornisce una collezione di componenti UI progettati professionalmente e altamente personalizzabili, costruiti sulla tecnologia dei Web Component così da essere indipendente dal framework e dal linguaggio utilizzato. Questa libreria fornisce molti componenti fondamentali dell'interfaccia utente, pronti per essere personalizzati e adattati alle esigenze, è un ottimo punto di partenza dal quale progettazione l'interfaccia utente.
 
-## Utilizzare Shoelace nelle pagine web
+### Utilizzare Shoelace nelle pagine web
 
 L'uso dei componenti nelle pagine web prevede l'aggiunta degli script della libreria nella pagina web:
 
@@ -42,7 +72,7 @@ In alternativa si può utilizzare il tema "dark":
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css" />
 ```
 
-## Utilizzo dei componenti
+### Utilizzo dei componenti
 
 Nel menu è possibile visualizzare i componenti web utilizzabili:
 
@@ -83,3 +113,41 @@ Dalla documentazione del componente e dagli esempi riportati è possibile dedurr
 ```
 
 [esempio di componenti di shoelace](/static/coding/web/html/webComponents-shoelace-example.html)
+
+## Libreria Ionic Web Components
+
+Una delle librerie di componenti web oggi in circolazione è **Ionic Web Components**, che fornisce una collezione di componenti UI progettati professionalmente e altamente personalizzabili, costruiti sulla tecnologia dei Web Component così da essere indipendente dal framework e dal linguaggio utilizzato. Questa libreria fornisce molti componenti fondamentali dell'interfaccia utente, pronti per essere personalizzati e adattati alle esigenze, è un ottimo punto di partenza dal quale progettazione l'interfaccia utente.
+
+### Utilizzare Ionic nelle pagine web
+
+L'uso dei componenti nelle pagine web prevede l'aggiunta degli script della libreria nella pagina web:
+
+```html
+<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+<!-- Ionic icons -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"></script>
+```
+
+### Utilizzo dei componenti
+
+Nel menu è possibile visualizzare i componenti web utilizzabili:
+
+![Lista componenti](/static/coding/web/html/webComponents-ionic-menu.png)
+
+Tra i componenti utilizzabili ne troviamo molti che estendono i componenti web esistenti.
+
+Una volta scelto un componente dal menù, si possono visualizzare i dettagli, come la sintassi da utilizzare, la descrizione dell'etichetta, le proprietà, gli eventi, gli esempi di come utilizzarlo. Di seguito un esempio di documentazione:
+
+![Dettaglio componenti](/static/coding/web/html/webComponents-ionic-details.png)
+
+Dalla documentazione del componente e dagli esempi riportati è possibile dedurre l'utilizzo del componente, come dagli esempi riportati e di seguito riproposti:
+
+```html
+<ion-progress-bar type="indeterminate"></ion-progress-bar>
+```
+
+[esempio di componenti di Ionic](/static/coding/web/html/webComponents-ionic-example.html)
