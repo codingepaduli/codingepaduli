@@ -44,7 +44,11 @@ Estendono le funzionalità degli elementi HTML standard, aggiungendo proprietà 
 
 Il vantaggio principale di utilizzo dei Web Components è che consente agli sviluppatori di definire e di utilizzare nuove etichette HTML con funzionalità e comportamenti specifici, che non fanno parte delle etichette HTML standard.
 
-Con i web components è possibile estendere le etichette HTML esistenti, aggiungendo nuove funzionalità e stili, oppure è possibile creare etichette HTML del tutto nuove. Tra gli elementi dell'interfaccia utente mancanti nello standard HTML in particolare abbiamo:
+Con i web components è possibile estendere le etichette HTML esistenti, aggiungendo nuove funzionalità e stili, oppure è possibile creare etichette HTML del tutto nuove.
+
+Nonostante sia una tecnologia recente, esistono numerose librerie di componenti web che personalizzano gli elementi HTML esistenti e che creano nuovi componenti dell'interfaccia utente, mancanti nello standard HTML.
+
+Tra i componenti creati nelle varie librerie abbiamo:
 
 - **Alert**: Etichetta HTML per realizzare un messaggio informativo che comunica agli utenti un avviso o una notifica. Può essere di diversi tipi, come successo, errore, avviso, ecc.
 - **Card**: Etichetta HTML per realizzare un contenitore flessibile che può contenere contenuti come testo, immagini e pulsanti. Utilizzato per presentare informazioni in modo visivamente accattivante.
@@ -55,10 +59,13 @@ Con i web components è possibile estendere le etichette HTML esistenti, aggiung
 - **Tooltip**: Etichetta HTML per realizzare un piccolo messaggio informativo che appare quando l'utente passa il mouse su un elemento. Utilizzato per fornire ulteriori dettagli senza occupare spazio visivo.
 - **Progress Bar**: Etichetta HTML per realizzare un indicatore visivo che mostra il progresso di un'operazione in corso, come il caricamento di un file o il completamento di un'attività.
 - **Toast**: Etichetta HTML per realizzare un messaggio temporaneo che appare in un angolo dello schermo per informare l'utente su un'azione completata o un evento. Scompare automaticamente dopo un breve periodo.
-- **Menu**: Etichetta HTML per realizzare un elenco di opzioni o azioni che gli utenti possono selezionare. Può essere un menù laterale, un menù a scorrimento dall'alto, è principalmente utilizzato per la navigazione o per azioni contestuali.  
+- **Menu**: Etichetta HTML per realizzare un elenco di opzioni o azioni che gli utenti possono selezionare. Può essere un menù laterale, un menù a scorrimento dall'alto, è principalmente utilizzato per la navigazione o per azioni contestuali.
 - **Badge**: Etichetta HTML per realizzare un piccolo elemento visivo che fornisce informazioni aggiuntive, come un conteggio o uno stato, spesso utilizzato per notifiche o avvisi.
+- **QR Codes**: Etichetta HTML per realizzare codici QR, utilizzati per indicare siti web e reti WiFi.
 
 Poiché la tecnologia per la creazione di componenti è uno standard, tutti possono creare le proprie etichette HTML personalizzate per qualsiasi scopo. Ad esempio, Google ha creato il proprio componente, chiamato ``model-viewer`` per visualizzare interattivamente modelli 3D sia via web, sia utilizzando gli occhiali AR.
+
+Un altro vantaggio dei componenti web è che si possono utilizzare singolarmente, prendendone alcuni da una libreria, altri da una seconda libreria e altri ancora da una terza, e così via.
 
 ## Librerie di Web Components
 
