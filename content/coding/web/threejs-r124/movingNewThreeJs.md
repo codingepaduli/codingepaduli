@@ -11,6 +11,28 @@ draft: false
 toc: false
 summary: "Transizione al nuovo Three.js ES6"
 weight: 8980
+
+references:
+    -   title: "three.js"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://threejs.org/"
+        description: "libreria di rendering grafico 3D"
+    -   title: "three.js - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/mrdoob/three.js/"
+        description: "libreria di rendering grafico 3D - Sito GitHub"
+    -   title: "enable3d.io"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://enable3d.io/"
+        description: "enable3d.io brings physics to your three.js project and the third dimension to your Phaser 3 game"
+    -   title: "enable3d.io - Sito GitHub"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://github.com/enable3d/enable3d"
+        description: "enable3d.io brings physics to your three.js project and the third dimension to your Phaser 3 game - Sito GitHub"
+    -   title: "Google Earth 3D Tiles as GLTF file"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://omarshehata.github.io/google-earth-as-gltf/"
+        description: "fetching & rendering Google Earth 3D Tiles in ThreeJS"
 ---
 
 # Transizione al nuovo Three.js ES6
