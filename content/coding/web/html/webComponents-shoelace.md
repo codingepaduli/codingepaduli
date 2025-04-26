@@ -1,14 +1,14 @@
 ---
 type: "html"
-title: "Componenti web personalizzati"
-description: "Librerie di componenti web personalizzati per la realizzazione di interfacce utenti moderne"
+title: "Progressive Web App (PWA) e Web Components"
+description: "Progressive Web App (PWA) e Web Components"
 date: 2025-03-27
 publishdate: 2025-03-27
 categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "Librerie di componenti web personalizzati per la realizzazione di interfacce utenti moderne"
+summary: "Progressive Web App (PWA) e Web Components per lo sviluppo di applicazioni"
 weight: 9280
 
 references:
@@ -34,17 +34,78 @@ references:
         description: "Elenco di librerie di web components"
 ---
 
-# Componenti web personalizzati
+# Progressive Web App (PWA) e Web Components
 
-I componenti web (Web Components) personalizzati sono delle etichette HTML non standard che ci consentono di costruire interfacce utente flessibili, moderne e modulari, facilitando lo sviluppo e la manutenzione delle applicazioni web.
+Le Progressive Web App sono applicazioni web (siti web) che sembrano e si comportano come app native, sfruttando tutte le potenzialità del dispositivo, possa questo essere un computer con Windows, uno smartphone Apple, o un tablet Android. Offrono una ricca esperienza utente ed una buona integrazione col dispositivo, caratteristiche tipiche delle app native, e la combinano con i vantaggi forniti dalle applicazioni web. Per la maggior parte delle aziende le PWA sono una valida alternativa alle app native, permettendo di realizzare con un unico team di sviluppo una sola app che sia utilizzabile su Windows, Linux, Apple e Android.
 
-Sono basati su standard riconosciuti e sono supportati da tutti i principali browser moderni, per cui garantiscono una buona compatibilità.
+I componenti web (Web Components) personalizzati ci consentono di costruire interfacce utente flessibili, moderne e modulari, facilitando lo sviluppo e la manutenzione delle applicazioni web. Sono basati su standard riconosciuti e sono supportati da tutti i principali browser moderni.
 
-Estendono le funzionalità degli elementi HTML standard, aggiungendo proprietà e stili grafici specifici, comportamenti personalizzati e riutilizzabili che li rendono degli ottimi componenti su cui progettare e sviluppare i siti web, evitando la necessità di soluzioni proprietarie e framework specifici.
+I Web Components permettono di creare nuovi componenti associati a nuove etichette HTML, ognuno con funzionalità, comportamenti e stili specifici. Permettono anche di estendere le funzionalità degli elementi HTML standard, aggiungendo proprietà, comportamenti e stili grafici specifici alle etichette HTML esistenti.
 
-Il vantaggio principale di utilizzo dei Web Components è che consente agli sviluppatori di definire e di utilizzare nuove etichette HTML con funzionalità e comportamenti specifici, che non fanno parte delle etichette HTML standard.
+## Caratteristiche di una PWA
 
-Con i web components è possibile estendere le etichette HTML esistenti, aggiungendo nuove funzionalità e stili, oppure è possibile creare etichette HTML del tutto nuove.
+Le app Web progressive hanno alcune caratteristiche:
+
+- Progressive: si adattano al dispositivo o al browser che le esegue. A seconda delle capacità di tale ambiente, consentono più o meno funzionalità all'utente;
+- Responsive: si adattano alla forma e alle dimensioni dello schermo;
+- Installabili: possono essere installate senza un app store; Quando si rilascia un aggiornamento, tutti gli utenti ottengono automaticamente la nuova versione;
+- Offline: possono essere avviate senza connessione, a differenza di un sito web;
+
+### Installazione di una PWA
+
+Per poter essere trasformato in PWA, un sito web deve definire un file di descrizione chiamato ``manifest.webmanifest`` e lo deve indicare tra i metadati presenti nelle proprie pagine web, nel seguente modo:
+
+```html
+<link rel="manifest" href="/manifest.webmanifest" />
+```
+
+Il file di descrizione è un file JSON contenente queste informazioni:
+
+```javascript
+{
+  "name": "Nome App",
+  "short_name": "Nome App",
+  "description": "Descrizione app",
+  "theme_color": "#002eb8",
+  "background_color": "#002eb8",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/app-images/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/app-images/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
+```
+
+L'informazione più importante riguarda la voce ``start_url`` che indica la pagina web principale dalla presentare quando si installa e si avvia l'applicazione sul dispositivo.
+
+### Avvio senza connessione
+
+Per un sito web, progettato per caricare tutte le risorse da remoto, non è un compito facile poter essere mostrato senza connessione. Eppure questo è uno dei requisiti di una PWA, essere in grado di avviarsi mentre non esiste connessione e il dispositivo è offline.
+
+Per risolvere questa problematica, i browser hanno implementato l'esecuzione di un server locale interno in grado di gestire le richieste fatte dai siti web. L'accesso a questo server è dato da una tecnologia chiamata ``Service Worker``, che si occupa di gestire l'evento di installazione di una PWA e di salvare tutte le risorse necessarie all'avvio. Queste risorse sono indicate dal sito web in un file apposito:
+
+```javascript
+const RISORSE_AVVIO = [
+  '/app.js',
+  '/app.css',
+  '/index.html'
+];
+```
+
+La tecnologia delle PWA permette inoltre di memorizzare i dati recuperati durante la navigazione per poi renderli disponibili quando il dispositivo è offline.
+
+### Librerie di Web Components
 
 Nonostante sia una tecnologia recente, esistono numerose librerie di componenti web che personalizzano gli elementi HTML esistenti e che creano nuovi componenti dell'interfaccia utente, mancanti nello standard HTML.
 
