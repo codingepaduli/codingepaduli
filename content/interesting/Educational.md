@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-04-25
-publishdate: 2025-04-25
-lastmod: 2025-04-25
+date: 2025-04-29
+publishdate: 2025-04-29
+lastmod: 2025-04-29
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -98,7 +98,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Portale di allenamento Olimpiadi Italiane di Informatica](https://training.olinfo.it/) - \
 [Olimpiadi Scolastiche 2024](https://scolastiche2024.olinfo.it/teacher/oii-scolastiche) - Accesso insegnanti\
 
-#### Informatica 1anno
+#### Informatica 1 anno
 
 [Come trascrivere le registrazioni in modo automatico e semplice](https://newsmondo.it/come-trascrivere-le-registrazioni-in-modo-automatico-e-semplice/tech/?refresh_ce) - \
 [LibrePCB](https://librepcb.org/) - develop your printed circuit board\

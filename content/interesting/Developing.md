@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-04-25
-publishdate: 2025-04-25
-lastmod: 2025-04-25
+date: 2025-04-29
+publishdate: 2025-04-29
+lastmod: 2025-04-29
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -795,7 +795,6 @@ summary: "Set di link relativi al coding"
 [JS PDF](https://dev.to/drsimplegraffiti/generate-invoice-pdf-dmd) - Download Browser Page as PDF using JavaScript - DEV Community\
 [JS Error recording](https://dev.to/sargalias/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
 [JS Error recording](https://dev.to/programmingduck/error-recording-how-to-record-errors-in-your-application-to-debug-later-24i9) - How to record errors in your application to debug later - DEV Community\
-[Optimizing JavaScript Event Handling: Bubbling and Delegation](https://dev.to/satyaveer_jaligama/optimizing-javascript-event-handling-bubbling-and-delegation-2681) - DEV Community\
 [Using ES modules in browsers with import-maps](https://blog.logrocket.com/es-modules-in-browsers-with-import-maps/) - LogRocket Blog\
 [JS Projects Utilizing TypeScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html) - \
 [importMap example](https://kofi.sexy/blog/modern-spas) - \
@@ -837,24 +836,25 @@ summary: "Set di link relativi al coding"
 [JS Array](https://dev.to/sajithpradeep/understanding-the-array-methods-some-and-every-in-javascript-5c0i) - Understanding the array methods Array.some() and Array.every() in JavaScript - DEV Community\
 [JS Array](https://dev.to/ajaysharma12799/javascript-array-methods-94e) - JavaScript Array Methods - DEV Community\
 [JS Array](https://dev.to/ayabouchiha/5-useful-array-methods-in-javascript-43c8) - 5 Useful Array Methods in JavaScript - DEV Community\
-[The Ultimate JavaScript Array Cheat Sheet](https://dev.to/logannford/the-ultimate-javascript-array-cheat-sheet-5daj) - DEV Community\
+[JS Array](https://dev.to/logannford/the-ultimate-javascript-array-cheat-sheet-5daj) - The Ultimate JavaScript Array Cheat Sheet - DEV Community\
 
 ##### JS DOM
 
 [HTML DOM](https://blog.logrocket.com/8-dom-features-you-didnt-know-existed-ec2a0a28fd89/) - 8 DOM features you didn’t know existed - LogRocket Blog\
 [DOM Traversal](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - Deep in JavaScript DOM Traversal 2 - DEV Community\
 [Deep in Javascript DOM Traversal 2](https://dev.to/fpaghar/deep-in-javascript-dom-traversal-2-300g) - DEV Community\
+[Event Handling](https://dev.to/satyaveer_jaligama/optimizing-javascript-event-handling-bubbling-and-delegation-2681) - Optimizing JavaScript Event Handling: Bubbling and Delegation - DEV Community\
 
 ##### JS Fetch Promise and Async Await
 
-[JS Promises chaining](https://javascript.info/promise-chaining) - \
+[JS Promises](https://javascript.info/promise-chaining) - chaining\
 [JS Promises](https://dev.to/duhbhavesh/javascript-promise-methods-explained-1f0l) - JavaScript Promise methods Explained! - DEV Community\
 [JS async-await](https://dev.to/avishkardalvi/migrating-from-promise-chains-to-async-await-and-escaping-the-try-catch-hell-191l) - Migrating from promise chains to async-await and escaping the try catch hell - DEV Community\
 [Fetch](https://dev.to/nombrekeff/think-like-a-pro-grammer-10k1) - from simple to scalable implementation - DEV Community\
 [Fetch](https://dev.to/ayabouchiha/this-is-you-complete-guide-for-sending-requests-using-fetch-in-js-53ae) - This Is Your Complete Guide For Sending Requests Using fetch in JS - DEV Community\
-[Promises: Five Tips to Work Smarter](https://dev.to/oculus42/promises-five-tips-to-work-smarter-mme) - DEV Community\
-[GitHub](https://github.com/henriqueinonhe/promises-training) - henriqueinonhe/promises-training: Practice working with promises through a curated collection of interactive challenges. This repository provides a platform to refine your skills, complete with automated tests to to give you instant feedback and validate your progress.\
-[Why I avoid async/await. Whatever your stance on async/await… | by Cory | Medium](https://uniqname.medium.com/why-i-avoid-async-await-7be98014b73e) - \
+[Promises](https://dev.to/oculus42/promises-five-tips-to-work-smarter-mme) - Five Tips to Work Smarter - DEV Community\
+[henriqueinonhe/promises-training: Practice working with promises through a curated collection of interactive challenges. This repository provides a platform to refine your skills, complete with automated tests to to give you instant feedback and validate your progress.](https://github.com/henriqueinonhe/promises-training) - \
+[Why I avoid async/await](https://uniqname.medium.com/why-i-avoid-async-await-7be98014b73e) - Whatever your stance on async/await… | by Cory | Medium\
 
 ##### JS API
 
@@ -866,36 +866,28 @@ summary: "Set di link relativi al coding"
 [APIs](https://codecoda.com/en/blog/entry/a-guide-to-understanding-html-apis) - A guide to understanding web APIs\
 [JS modules](https://dev.to/swastikyadav/working-with-modules-in-javascript-4jgp) - Working with modules in JavaScript. - DEV Community\
 [Vibration API](https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API) - Web APIs | MDN\
-[Things not available when someone blocks all cookies](https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies/) - \
+[cookies](https://blog.tomayac.com/2022/08/30/things-not-available-when-someone-blocks-all-cookies/) - Things not available when someone blocks all cookies\
 
 ##### JS web components
 
 [JS Web Components](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - How we use Web Components at GitHub | The GitHub Blog\
-[github/github-elements](https://github.com/github/github-elements) - GitHub's Web Component collection.\
-[Shoelace](https://shoelace.style/) - A forward-thinking library of web components.\
 [Web Components](https://binaryigor.com/htmx-and-web-components-a-perfect-match.html) - HTMX and Web Components: a Perfect Match\
-[kgscialdone/facet: Web components made simple and declarative](https://github.com/kgscialdone/facet) - \
-[web-padawan/awesome-web-components: A curated list of awesome Web Components resources.](https://github.com/web-padawan/awesome-web-components?tab=readme-ov-file) - \
 
 ##### PWA
 
 [PWA](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app) - How to make your web app work offline - @adlrocha Weekly Newsletter\
 [PWA](https://blog.jeremylikness.com/blog/implement-progressive-web-app-hugo/) - Implement a Progressive Web App (PWA) in your Static Website | Developer for Life\
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
-[From SPA to PWA | Mainmatter](https://mainmatter.com/blog/2018/07/24/from-spa-to-pwa/) - \
-[PWABuilder](https://www.pwabuilder.com/) - \
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
 [nativefier/nativefier](https://github.com/nativefier/nativefier) - Make any web page a desktop application\
-[What PWA Can Do Today](https://whatpwacando.today/info/) - \
-[What PWA Can Do Today](https://whatpwacando.today/info/) - \
 
 ##### p5JS
 
 [LTC4](https://dev.to/rpalo/ltc4---falling-in-love-with-vectors-182) - Falling in Love with Vectors - DEV Community\
 [ashwins-code/New-Years-Fireworks](https://github.com/ashwins-code/New-Years-Fireworks) - Interactive fireworks with New Year's countdown made with p5.js\
-[GitHub](https://github.com/JSLegendDev/Pokemon-p5js) - JSLegendDev/Pokemon-p5js: Pokemon game made with JavaScript + p5.js library\
+[JSLegendDev/Pokemon-p5js](https://github.com/JSLegendDev/Pokemon-p5js) - Pokemon game made with JavaScript + p5.js library\
 [Color](https://jamie-wong.com/post/color/) - From Hexcodes to Eyeballs\
-[Why does the chromaticity diagram look like that?](https://jlongster.com/why-chromaticity-shape) - \
+[chromaticity diagram](https://jlongster.com/why-chromaticity-shape) - Why does the chromaticity diagram look like that?\
 [Color](https://jamie-wong.com/post/color/) - From Hexcodes to Eyeballs\
 [GitHub](https://github.com/miciwan/PaintMixing) - miciwan/PaintMixing\
 [Make Your Own Website](https://web.pixelshannon.com/make/#software) - \
