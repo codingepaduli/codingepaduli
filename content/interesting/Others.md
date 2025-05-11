@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-04-25
-publishdate: 2025-04-25
-lastmod: 2025-04-25
+date: 2025-05-10
+publishdate: 2025-05-10
+lastmod: 2025-05-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -134,6 +134,7 @@ summary: "Set di link interessanti"
 [An Invasive Tick](https://www.smithsonianmag.com/smart-news/an-invasive-tick-that-can-clone-itself-is-spreading-across-us-threatening-livestock-180983323/) - Can Clone Itself, It Is Spreading Across the U.S., Threatening Livestock\
 [antibiotics](https://www.euronews.com/health/2023/12/31/scientists-discover-the-first-new-antibiotics-in-over-60-years-using-ai) - Scientists discover the first new antibiotics in over 60 years using AI | Euronews\
 [Protein-Designing](https://singularityhub.com/2022/07/26/protein-designing-ai-opens-door-to-medicines-humans-couldnt-dream-up/) - AI Opens Door to Medicines Humans Couldn’t Dream Up\
+[Cells mitochondria and cancer](https://www.nature.com/articles/d41586-025-01064-5) - Cells are swapping their mitochondria. What does this mean for our health?\
 
 ### Tech
 

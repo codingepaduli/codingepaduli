@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-04-29
-publishdate: 2025-04-29
-lastmod: 2025-04-29
+date: 2025-05-10
+publishdate: 2025-05-10
+lastmod: 2025-05-10
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -65,6 +65,7 @@ summary: "Set di link relativi al coding"
 
 [KVM/qemu](https://stackoverflow.com/questions/42155213/using-vagrant-to-set-up-a-vm-with-kvm-qemu-without-virtualbox) - Using Vagrant to set up a VM with KVM/qemu without VirtualBox\
 [vagrant-libvirt/vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt#qemu-session-support) - Vagrant provider for libvirt.\
+[virt-manager/virt-manager](https://github.com/virt-manager/virt-manager) - Desktop tool for managing virtual machines via libvirt\
 
 #### Containers
 
@@ -366,6 +367,7 @@ summary: "Set di link relativi al coding"
 [Shell Script](https://sharats.me/posts/shell-script-best-practices/) - Best Practices - The Sharat's\
 [Swap File](https://linuxize.com/post/create-a-linux-swap-file/) - Create a Linux Swap File | Linuxize\
 [Linux CLI](https://www.linuxcommand.org/tlcl.php) - Command Line Books by William Shotts\
+[Ubuntu CLI cheat sheet](https://dev.to/jeztn/ubuntu-cli-cheat-sheet-igl) - DEV Community\
 
 #### Hardware
 
@@ -549,6 +551,7 @@ summary: "Set di link relativi al coding"
 [Pynguin](https://pynguin.readthedocs.io/en/latest/) - PYthoN General UnIt test geNerator — pynguin 0.41.0.dev documentation\
 [python.logging](https://stackoverflow.com/questions/53249304/how-to-list-all-existing-loggers-using-python-logging-module#53250066) - How to list all existing loggers using python.logging module - Stack Overflow\
 [Python dependencies](https://akrabat.com/defining-python-dependencies-at-the-top-of-the-file/) - Defining Python dependencies at the top of the file – Rob Allen\
+[virtual env](https://blog.dusktreader.dev/2025/03/29/self-contained-python-scripts-with-uv/) - Self-contained Python scripts with uv - the.dusktreader blog\
 
 ### Privacy, Security and Hacking
 
@@ -829,6 +832,7 @@ summary: "Set di link relativi al coding"
 [JavaScript OOP is weird](https://dev.to/josephkabemba/javascript-oop-is-weird-4h9j) - DEV Community\
 [JS OOP](https://dev.to/nehal_mahida/oops-in-javascript-with-easy-to-understand-examples-2ppn) - OOPS in JavaScript with easy to understand examples 🔥🔥 - DEV Community\
 [🚀 Mastering Object.groupBy(): The Game-Changer for JavaScript Data Handling!](https://dev.to/sharma572/mastering-objectgroupby-the-game-changer-for-javascript-data-handling-2neg) - DEV Community\
+[JS OOP Inheritance](https://dev.to/matheusjulidori/javascript-inheritance-do-you-know-how-it-works-1kao) - Do you know how it works? - JavaScript Inheritance - DEV Community\
 
 ##### JS Collection framework
 
@@ -880,6 +884,8 @@ summary: "Set di link relativi al coding"
 [From SPA to PWA | simplabs](https://simplabs.com/blog/2018/07/24/from-spa-to-pwa.html) - \
 [nativefier](https://opensource.com/article/21/11/linux-apps-nativefier) - Turn any website into a Linux desktop app with open source tools | Opensource.com\
 [nativefier/nativefier](https://github.com/nativefier/nativefier) - Make any web page a desktop application\
+[PWA](https://www.digitalocean.com/community/tutorials/js-vanilla-pwa) - How to Build a PWA in Vanilla JavaScript | DigitalOcean\
+[PWA caching strategy](https://ranjithnair.github.io/2018/04/30/workbox-react.html) - How to use Workbox to implement Service worker in your React app? · Ranjith Nair - Programming World\
 
 ##### p5JS
 
