@@ -51,6 +51,22 @@ Le app Web progressive hanno alcune caratteristiche:
 - Installabili: possono essere installate senza un app store; Quando si rilascia un aggiornamento, tutti gli utenti ottengono automaticamente la nuova versione;
 - Offline: possono essere avviate senza connessione, a differenza di un sito web;
 
+Le app Web possono utilizzare la cache (lo spazio sul dispositivo) per memorizzare i dati recuperati durante la navigazione e ripresentarli all'utente nelle varie situazioni, ad esempio quando la connessione non è presente. Le diverse strategie per presentare i dati all'utente sono:
+
+- Cache Only: Mostra solo le pagine web presenti nella cache e non effettua mai richieste di rete;
+Network Only: Mostra solo le pagine web recuperate dalla rete, non utilizza mai la cache;
+- Cache First: Se la pagina web è già presente nella cache, la mostra all'utente, altrimenti tenta di recuperarla dalla rete.
+- Network First: Tenta di recuperare la pagina web dalla rete, se non riesce allora cerca la pagina web nella cache.
+- Stale While Revalidate: Mostra immediatamente la pagina web prendendola dalla cache (se disponibile), poi aggiorna la cache recuperando di nuovo la pagina web dalla rete, se riesce aggiorna la pagina web mostrata all'utente.
+
+La cache può avere una durata di diversi giorni o mesi, a seconda della frequenza di aggiornamento del sito. E le risorse possono essere suddivise per tipologia e per indirizzo, in modo tale da migliorare notevolmente l'esperienza utente.
+
+Ad esempio, si può scegliere di utilizzare la strategia "Cache First" per tutte le immagini in modo che gli utenti possano visualizzarle rapidamente, senza aspettare i tempi di caricamento. Con una durata della cache di 30 giorni, le immagini non saranno caricate dalla rete per un mese intero.
+
+La strategia "Stale While Revalidate" può essere applicata per i commenti degli utenti, in modo che vengano caricati quelli in cache e poi, se si riescono ad aggiornare attraverso la rete, saranno mostrati all'utente anche i nuovi commenti.
+
+In sintesi, le appropriate strategie di caching applicate ai diversi tipi di risorse rendono le app Web più veloci e reattive per l'utente, riducendo le attese dei dati dalla rete, il consumo di Giga del dispositivo e permettono la visualizzazione delle pagine anche quando si è offline.
+
 ### Installazione di una PWA
 
 Per poter essere trasformato in PWA, un sito web deve definire un file di descrizione chiamato ``manifest.webmanifest`` e lo deve indicare tra i metadati presenti nelle proprie pagine web, nel seguente modo:
