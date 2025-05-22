@@ -699,3 +699,72 @@ if (mouse.pressing()) {
   sprite1.attractTo(sprite2, 5);
 }
 ```
+
+## Rilevare collisioni
+
+Il motore di fisica genera gli eventi di inizio collisione, collisione in corso e termine della collisione tra due sprite. Questi tre eventi sono quindi lanciati in tre momenti diversi (si può anche dire in frame grafici distinti).
+
+Le collisioni devono essere rilevate nel metodo ``update()`` attraverso i seguenti metodi:
+
+Il metodo ``collides()`` rileva l'inizio di una collisione. Questo evento si attiva una volta sola.
+
+Il metodo ``colliding()`` rileva la durata della collisione. Se uno sprite trascina un secondo sprite per più frame, la collisione sarà rilevata per ogni frame.
+
+Il metodo ``collided()`` rileva il termine della collisione, quando i due sprite si sono separati.
+
+### Metodo ``sprite.collides(target)``
+
+Il metodo ``collides()`` rileva l'inizio di una collisione dell'oggetto ``sprite`` con l'oggetto o il gruppo ``target`` indicato come parametro.
+
+```plaintext
+Syntax: collides(target)
+
+Parameters:
+  target        Sprite | Group: the sprite or group to check for collision with
+
+Returns:        Boolean: true on the first frame that the sprite collides with the target sprite or group
+```
+
+Per rilevare e gestire l'inizio di collisione tra l'oggetto ``palla`` e l'oggetto ``racchetta``, indichiamo l'oggetto ``palla`` sul quale invocare il metodo e sostituiamo al parametro formale ``target`` l'oggetto ``racchetta``, come nel seguente codice:
+
+```javascript
+let num = palla.collides(racchetta);
+```
+
+### Metodo ``sprite.colliding(target)``
+
+Il metodo ``colliding()`` rileva la collisione in corso dell'oggetto ``sprite`` con l'oggetto o il gruppo ``target`` indicato come parametro.
+
+```plaintext
+Syntax: colliding(target)
+
+Parameters:
+  target        Sprite | Group: the sprite or group to check for collision with
+
+Returns:        Number: return a number while the sprite is colliding with the target sprite or group. The value is the number of frames that the sprite has been colliding with the target. 
+```
+
+Per rilevare e gestire la collisione in corso tra l'oggetto ``palla`` e l'oggetto ``racchetta``, indichiamo l'oggetto ``palla`` sul quale invocare il metodo e sostituiamo al parametro formale ``target`` l'oggetto ``racchetta``, come nel seguente codice:
+
+```javascript
+let num = palla.colliding(racchetta);
+```
+
+### Metodo ``sprite.collided(target)``
+
+Il metodo ``collided()`` rileva la collisione terminata dell'oggetto ``sprite`` con l'oggetto o il gruppo ``target`` indicato come parametro.
+
+```plaintext
+Syntax: collided(target)
+
+Parameters:
+  target        Sprite | Group: the sprite or group to check for collision with
+
+Returns:        Boolean: true on the first frame that the sprite no longer overlaps with the target sprite or group.  
+```
+
+Per rilevare e gestire la fine della collisione tra l'oggetto ``palla`` e l'oggetto ``racchetta``, indichiamo l'oggetto ``palla`` sul quale invocare il metodo e sostituiamo al parametro formale ``target`` l'oggetto ``racchetta``, come nel seguente codice:
+
+```javascript
+palla.collided(racchetta);
+```
