@@ -1,7 +1,6 @@
 baseURL = "http://codingepaduli.github.io/"
 defaultContentLanguage = "it"
 title = "Lab. informatica"
-paginate = "20"
 
 theme = "mainroad" # hugo-academic mainroad watercss
 
@@ -16,6 +15,9 @@ theme = "mainroad" # hugo-academic mainroad watercss
   post_meta = ["date", "categories", "translations"] # Order of post meta information
   mainSections = ["html", "javascript", "p5js", "tools"]
   seoKeyword = ["coding", "programmazione", "open-source", "sviluppo", "web"]
+
+[pagination]
+  pagerSize = "20"
 
 # [[menu.main]] not needed, use "menu" in content/_index.html
 
