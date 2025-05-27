@@ -25,9 +25,12 @@ org.chromium.Chromium
 # org.gnome.meld
 org.inkscape.Inkscape
 org.kde.kdiff3
+org.gnome.Totem
+org.kde.kate
 org.kde.kolourpaint
 org.kde.krename
 org.kde.marble
+org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.mozilla.firefox
 org.musicbrainz.Picard
@@ -38,4 +41,5 @@ org.processing.processingide
 org.videolan.VLC
 # rs.ruffle.Ruffle ## open source Flash Player emulator
 tv.kodi.Kodi
+org.virt_manager.virt-manager
 
