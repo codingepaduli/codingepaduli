@@ -26,7 +26,9 @@ weight: 12024
 
 ## Soluzione Calcolatrice
 
-Da realizzare.
+### Variante con funzioni
+
+- [Cognome-2023-07-23 calcolatrice con funzioni.c](/static/coding/dab-coding/calcolatriceFunzioni.c);
 
 ## Soluzione distanza tra due punti
 

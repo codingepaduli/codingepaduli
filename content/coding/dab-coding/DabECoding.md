@@ -76,6 +76,19 @@ A partire dai due numeri, svolgere l'operazione richiesta secondo questo schema:
 - se ``T = 3`` calcolare e visualizzare il prodotto dei 2 numeri;
 - se ``T = 4`` calcolare e visualizzare la divisione dei 2 numeri.
 
+### Variante con funzioni
+
+Realizzare la calcolatrice indicata precedentemente, con le seguenti varianti:
+
+- la variabile ``operazione`` deve essere di tipo ``char``;
+- le operazioni devono essere realizzate creando le funzioni seguenti:
+
+  1. calcolatrice(num1, num2, operazione);
+  2. somma(num1, num2);
+  3. sottrazione(num1, num2);
+  4. moltiplicazione(num1, num2);
+  5. divisione(num1, num2).
+
 ## Distanza tra due punti
 
 Realizzare un programma che permetta di calcolare la distanza tra due punti, ``A`` di coordinate (x1, y1) e ``B`` di coordinate (x2, y2), utilizzando il teorema di Pitagora.
