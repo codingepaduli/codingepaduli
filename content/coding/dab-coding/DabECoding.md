@@ -144,3 +144,7 @@ Svolgere l'operazione richiesta secondo questo schema:
 - assegnare ad una variabile il valore massimo tra i primi due numeri;
 - assegnare ad una seconda variabile "massimo" il valore massimo tra il terzo numero e la variabile precedentemente utilizzata;
 - visualizzare la seconda variabile "massimo".
+
+## Prezzo totale tolto lo sconto e la tassa di lusso
+
+Chiedere all'utente di inserire il prezzo di un articolo e la percentuale di sconto da applicare. Calcola il prezzo finale dell'articolo applicando la percentuale di sconto e, se il prezzo totale supera i 10.000 dollari, applica una tassa pari alla radice quadrata del prezzo.

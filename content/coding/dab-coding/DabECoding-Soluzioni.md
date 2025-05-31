@@ -85,3 +85,9 @@ Coding da realizzare.
 DAB da realizzare.
 
 - [Cognome-2023-07-23 massimoTra3Numeri.cpp](/static/coding/dab-coding/massimoTra3Numeri.cpp);
+
+## Prezzo totale tolto lo sconto e la tassa di lusso
+
+DAB da realizzare.
+
+- [Cognome-2023-07-23 prezzoScontatoTassato.cpp](/static/coding/dab-coding/prezzoScontatoTassato.cpp);
