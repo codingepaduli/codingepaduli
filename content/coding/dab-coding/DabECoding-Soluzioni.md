@@ -78,4 +78,10 @@ DAB Da realizzare.
 
 - [Cognome-2023-07-23 ordinamento2numeri-variabili.png](/static/coding/dab-coding/ordinamento2numeri-variabili.png);
 
-Coding Da realizzare.
+Coding da realizzare.
+
+## Numero massimo tra 3 numeri
+
+DAB da realizzare.
+
+- [Cognome-2023-07-23 massimoTra3Numeri.cpp](/static/coding/dab-coding/massimoTra3Numeri.cpp);

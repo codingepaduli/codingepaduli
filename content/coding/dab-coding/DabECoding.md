@@ -134,3 +134,13 @@ Svolgere l'operazione richiesta secondo questo schema:
 
 - se il tipo di ordinamento ``TO`` è uguale a ``C``, allora  visualizzare i 2 numeri con ordine crescente;
 - se il tipo di ordinamento ``TO`` è uguale a ``D``, allora  visualizzare i 2 numeri con ordine decrescente.
+
+## Numero massimo tra 3 numeri
+
+Realizzare un programma che permetta di visualizzare il massimo tra i 3 numeri inseriti dall'utente.
+
+Svolgere l'operazione richiesta secondo questo schema:
+
+- assegnare ad una variabile il valore massimo tra i primi due numeri;
+- assegnare ad una seconda variabile "massimo" il valore massimo tra il terzo numero e la variabile precedentemente utilizzata;
+- visualizzare la seconda variabile "massimo".
