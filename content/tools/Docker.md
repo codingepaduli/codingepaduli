@@ -186,6 +186,28 @@ docker container run --name hugo --entrypoint "" node bash -l -c "/usr/bin/pando
 docker container run --name hugo --entrypoint "" node bash
 ```
 
+### Livello di informazioni di logging
+
+Le informazioni in output di podman e docker sono selezionate dai seguenti livelli:
+
+- **debug**: Fornisce informazioni dettagliate, utili per il debug delle operazioni;
+- **info**: Fornisce informazioni generali, è il livello predefinito;
+- **warn**: Mostra avvisi riguardanti situazioni che non sono errori, ma che potrebbero richiedere attenzione;
+- **error**: Registra errori che si sono verificati durante l'esecuzione delle operazioni;
+- **fatal**: Indica errori critici che causano l'interruzione dell'operazione.
+
+E' possibile selezionare un livello con l'opzione seguente:
+
+```bash
+--log-level debug
+```
+
+ad esempio:
+
+```bash
+docker --log-level debug image ls
+```
+
 ## Container inspection
 
 Per poter ispezionare un container, guardando i processi in esecuzione, la configurazione e le statistiche in tempo reale, si usano i comandi:
