@@ -1,3 +1,15 @@
+/* 
+Autore: _______ Data: _________
+Traccia: Questo programma realizza una calcolatrice che svolge una delle
+  quattro operazioni, scelta dall'utente, su due numeri inseriti dall'utente.
+
+INPUT i due numeri ed il carattere che indica l'operazione;
+OUTPUT il risultato dell'operazione
+
+VARIABILI INPUT: num1, num2, operazione
+VARIABILI OUTPUT: risultato
+*/
+
 #include <stdio.h>
 
 float somma(float a, float b) 
@@ -40,9 +52,13 @@ float calcolatrice(float a, float b, char operazione)
 
 int main() 
 {
+    // variabili input
     int num1, num2, risultato;
+
+    // variabili output
     char operazione;
 
+    // Leggo input dall'utente
     printf("Inserisci il primo numero: ");
     scanf("%f", &num1);
     printf("Inserisci il secondo numero: ");
@@ -50,8 +66,11 @@ int main()
     printf("Inserisci l'operazione");
     scanf("%c", &operazione);
 
+    // Svolgo l'operazione scelta
     risultato = calcolatrice(num1, num2, operazione);
-    printf("il risultato dell'operazione �:%d",risultato);
+
+    // Output del risultato
+    printf("il risultato dell'operazione e':%d",risultato);
 
     return 0;
 }
