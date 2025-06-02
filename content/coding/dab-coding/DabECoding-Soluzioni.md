@@ -26,6 +26,12 @@ weight: 12024
 
 ## Soluzione Calcolatrice
 
+- [Cognome-2023-07-23 calcolatrice2Numeri.cpp](/static/coding/dab-coding/calcolatrice2Numeri.cpp);
+
+### Variante con carattere
+
+- [Cognome-2023-07-23 calcolatriceCarattere.cpp](/static/coding/dab-coding/calcolatriceCarattere.cpp);
+
 ### Variante con funzioni
 
 - [Cognome-2023-07-23 calcolatrice con funzioni.c](/static/coding/dab-coding/calcolatriceFunzioni.c);

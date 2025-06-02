@@ -67,14 +67,21 @@ Sia nel caso del delta maggiore di zero, sia nel caso di delta uguale a zero, ca
 
 ## Calcolatrice
 
-Realizzare un programma che permetta di creare una semplice calcolatrice che svolge un operazione ``T`` su 2 numeri.
+Realizzare un programma che permetta di creare una semplice calcolatrice che svolge un operazione ``T`` su due numeri, secondo questo schema:
 
-A partire dai due numeri, svolgere l'operazione richiesta secondo questo schema:
+- se ``T = 1`` calcola e visualizza la somma dei 2 numeri;
+- se ``T = 2`` calcola e visualizza la differenza dei 2 numeri;
+- se ``T = 3`` calcola e visualizza il prodotto dei 2 numeri;
+- se ``T = 4`` calcola e visualizza la divisione dei 2 numeri.
 
-- se ``T = 1`` calcolare e visualizzare la somma dei 2 numeri;
-- se ``T = 2`` calcolare e visualizzare la differenza dei 2 numeri;
-- se ``T = 3`` calcolare e visualizzare il prodotto dei 2 numeri;
-- se ``T = 4`` calcolare e visualizzare la divisione dei 2 numeri.
+### Variante con carattere
+
+Realizzare un programma che permetta di creare una semplice calcolatrice che svolge un operazione ``T`` su due numeri, secondo questo schema:
+
+- se ``T`` è il carattere ``+``, allora calcola e visualizza la somma dei 2 numeri;
+- se ``T`` è il carattere ``-``, allora calcola e visualizza la differenza dei 2 numeri;
+- se ``T`` è il carattere ``*``, allora calcola e visualizza il prodotto dei 2 numeri;
+- se ``T`` è il carattere ``/``, allora calcola e visualizza la divisione dei 2 numeri.
 
 ### Variante con funzioni
 
