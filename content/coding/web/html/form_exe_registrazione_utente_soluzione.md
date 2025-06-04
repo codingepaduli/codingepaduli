@@ -15,6 +15,8 @@ weight: 9302
 
 # Soluzione modulo di registrazione utente
 
+[Puoi visualizzare la pagina e salvarla a questo link](/static/coding/web/html/form_registrane_utente.html "Modulo di registrazione utente")
+
 <!-- markdownlint-disable MD036 MD033 -->
 
 <style>
