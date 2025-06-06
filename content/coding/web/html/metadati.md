@@ -52,7 +52,6 @@ Le informazioni aggiuntive sono dette "metadati" e, sebbene quasi tutte facoltat
 
 Il layout grafico è gestito attraverso i "CSS", ovvero i fogli di stile grafico che definiscono colore, dimensione e posizione degli elementi della pagina web. Il layout si poggia su una struttura basilare che indica ad esempio l'area in cui è situato il menu laterale, l'area destinata al piè di pagina e l'area dei contenuti pubblicitari. Ognuno di questi elementi della struttura basilare è descritto attraverso un'apposita etichetta del linguaggio HTML.
 
-
 ## Flusso di layout
 
 Il flusso di layout determina come gli elementi si dispongono nella pagina. Esistono due categorie di elementi:
@@ -353,6 +352,8 @@ Tra i diversi messaggi, di avviso o di errore, abbiamo:
 **The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment** Indica che non si possono mettere due trattini consecutivi all'interno di un commento, quindi i due trattini vanno rimossi. Spesso si sbaglia a scrivere il commento, aggiungendo uno spazio di troppo, che deve essere rimosso, come nel seguente esempio, nel quale sono evidenziati gli spazi da rimuovere: ``<!``<mark> </mark>``−− commento −−``<mark> </mark>``>``.
 
 **No <mark>p</mark> element in scope but a <mark>p end tag</mark> seen** indica che l'etichetta evidenziata è stata aperta (ad esempio ``<p>``) e non è stata chiusa correttamente (con ``</p>``).
+
+**End tag for body seen, but there were unclosed elements**: è stata aperta un'etichetta ma non è stata chiusa prima della chiusura di body.
 
 <!-- markdownlint-enable MD033 -->
 
