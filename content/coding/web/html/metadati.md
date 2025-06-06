@@ -14,6 +14,10 @@ summary: "HTML Lez. 05 - Struttura, metadati e validazione di una pagina web"
 weight: 9550
 
 references:
+    -   title: "Metadati"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://it.wikipedia.org/wiki/Metadato"
+        description: "Guida ai metadati su Wikipedia"
     -   title: "Sito htmlhead.dev"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://htmlhead.dev/"
@@ -171,8 +175,6 @@ I **metadati** sono informazioni relative alla pagina web, come l'autore, l'icon
 
 Ad esempio, quando si condivide agli amici un articolo sui social, questi visualizzano, oltre al collegamento, sia il titolo dell'articolo, sia la descrizione, sia un'immagine o un video di anteprima. Queste informazioni di anteprima i social le recuperano dai metadati allegati alla pagina web.
 
-Per un riferimento completo ai metadati si rimanda al link [https://htmlhead.dev/](https://htmlhead.dev/ "Link al sito di riferimento per i metadati") ed alle specifiche del linguaggio HTML.
-
 Tutti i metadati devono essere contenuti nell'etichetta ``head`` della pagina web, ad eccezione dell'icona principale del sito web: non è descritta da nessun etichetta, deve essere semplicemente salvata nel file ``favicon.ico`` nella cartella principale del sito per poter essere recuperata.
 
 Una volta inseriti tutti i metadata nelle pagine web, è possibile visualizzare le anteprime di condivisione sui social utilizzando gli strumenti indicati di seguito:
@@ -180,6 +182,8 @@ Una volta inseriti tutti i metadata nelle pagine web, è possibile visualizzare 
 - [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug);
 - [Social Media Preview](https://socialsharepreview.com/);
 - [Meta Tags Toolkit](https://metatags.io/).
+
+Nelle sezioni successive sono spiegati i principali metadati utilizzati, per un riferimento completo si rimanda alle specifiche del linguaggio HTML.
 
 ### Metadati obbligatori
 
