@@ -34,6 +34,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://en.wikipedia.org/wiki/Whitespace_character"
         description: "A list of whitespace character"
+    -   title: "HTML entity references"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references"
+        description: "List of XML and HTML character entity references"
 ---
 
 # Codifica Unicode
