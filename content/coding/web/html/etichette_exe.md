@@ -95,6 +95,27 @@ weight: 9820
     3. le azioni da eseguire su un ipertesto;
     4. le elaborazioni da eseguire su un ipertesto.
 
+3. Che cos'e' l'HTML?
+
+    Un software per visualizzare siti web
+    Un linguaggio di markup (Corretta)
+    Un linguaggio di programmazione
+    Un linguaggio per programmare macchine virtuali
+
+4. Cosa significa HTML? 
+
+    Hyperlinks and Text Markup Language
+    Hyper Text Markup Language (Corretta)
+    Hyperlinks Tools Markup Language
+    Home Tool Markup Language
+
+5. Qual è la funzione principale del server in un'architettura client-server?
+
+    Gestire le richieste dei client e fornire loro le risorse richieste. (Corretta)
+    Eseguire le applicazioni lato server senza necessità di interazione con i client.
+    Elaborare i dati esclusivamente sul dispositivo client.
+    Fornire un'interfaccia grafica per i client
+
 ## Esercizi sui siti web
 
 1. Il World Wide Web è:
