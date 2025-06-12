@@ -142,3 +142,18 @@ fi
 #
 # Le fix di XDG non rispettate si trovano a questa pagina:
 # https://wiki.archlinux.org/title/XDG_Base_Directory
+
+# NODE 
+export NODENV_ROOT="$XDG_DATA_HOME"/nodenv 
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+# The file $XDG_CONFIG_HOME/npm/npmrc should contains this:
+## prefix=${XDG_DATA_HOME}/npm
+## cache=${XDG_CACHE_HOME}/npm
+## init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
+## logs-dir=${XDG_STATE_HOME}/npm/logs
+
+# JAVA
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+
