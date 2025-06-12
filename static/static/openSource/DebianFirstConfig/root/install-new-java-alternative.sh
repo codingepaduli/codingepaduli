@@ -10,8 +10,7 @@
 # Alcuni ambienti come JAVA hanno bisogno di piu collegamenti da impostare, java, javac, javadoc...
 # Questo script li installa e li configura tutti.
 
-# Per installare un'alternativa nuova:
-#
+# Per installare un'alternativa JAVA nuova:
 ## Download openjdk-17-x64.tar.gz file
 ## Create as root the folders:
 ## 	mkdir -p /usr/lib/jvm/
@@ -20,6 +19,16 @@
 ##    sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-11-openjdk-amd64/bin/java 1111
 ##    sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-17-openjdk-amd64/bin/java 1711
 ##    sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-21-openjdk-amd64/bin/java 2111
+## Run this script
+
+# Per installare un'alternativa NODE nuova:
+## Download node-v22.16.0-linux-x64.tar.xz (prebuilt file)
+## Create as root the folders:
+## 	mkdir -p /usr/lib/node/
+## Extract in folder /usr/lib/node/node-22-x64/
+## Install the alternative (aggiorna il file /var/lib/dpkg/alternatives/node):
+##    sudo update-alternatives --install /usr/bin/node node /usr/lib/node/node-24-x64/bin/node 2411
+##    sudo update-alternatives --install /usr/bin/node node /usr/lib/node/node-22-x64/bin/node 2211
 ## Run this script
 
 # Per visualizzare i collegamenti di Java:
@@ -33,11 +42,20 @@
 ## javac --version
 ## jar --version
 
-## Set the variable VERSION=17
-VERSION="21"
-JDK_DIR="/usr/lib/jvm/java-$VERSION-openjdk-amd64"
-TARGET_BIN_DIR="$JDK_DIR/bin"
+## Set the java version
+JDK_VERSION="21"
+JDK_DIR="/usr/lib/jvm/java-$JDK_VERSION-openjdk-amd64"
+JDK_BIN_DIR="$JDK_DIR/bin"
+
+## Set the node version
+NODE_VERSION="24"
+NODE_DIR="/usr/lib/node/node-$NODE_VERSION-x64"
+NODE_BIN_DIR="$NODE_DIR/bin"
+
+## ALL
 TARGET_DIR="/usr/bin"
+TARGET_BIN_DIR="$NODE_BIN_DIR" # JDK_BIN_DIR
+VERSION="$NODE_VERSION" # JDK_VERSION
 
 for filepath in "$TARGET_BIN_DIR"/*; do
   file=$(basename "$filepath")
