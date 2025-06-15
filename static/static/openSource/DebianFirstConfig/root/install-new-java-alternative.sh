@@ -47,6 +47,11 @@ JDK_VERSION="21"
 JDK_DIR="/usr/lib/jvm/java-$JDK_VERSION-openjdk-amd64"
 JDK_BIN_DIR="$JDK_DIR/bin"
 
+## Set the gradle version
+GRADLE_VERSION="814"
+GRADLE_DIR="/usr/lib/gradle/gradle-8.14.2"
+GRADLE_BIN_DIR="$GRADLE_DIR/bin"
+
 ## Set the node version
 NODE_VERSION="24"
 NODE_DIR="/usr/lib/node/node-$NODE_VERSION-x64"
@@ -54,8 +59,8 @@ NODE_BIN_DIR="$NODE_DIR/bin"
 
 ## ALL
 TARGET_DIR="/usr/bin"
-TARGET_BIN_DIR="$NODE_BIN_DIR" # JDK_BIN_DIR
-VERSION="$NODE_VERSION" # JDK_VERSION
+TARGET_BIN_DIR="$GRADLE_BIN_DIR" # JDK_BIN_DIR
+VERSION="$GRADLE_VERSION" # JDK_VERSION
 
 for filepath in "$TARGET_BIN_DIR"/*; do
   file=$(basename "$filepath")
