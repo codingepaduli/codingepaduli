@@ -32,9 +32,20 @@ La WebView (Rendering Engine) è il componente che si occupa di presentare l'app
 La versione 11.x di Apache Cordova prevede i seguenti requisiti per lo sviluppo di app Android:
 
 - una versione uguale o successiva di ``Gradle 7.4.2``;
-- Java 11 che supporta lo sviluppo di app per Android 12 (API-Levels: 32);
+- Java 11 per lo sviluppo di app per Android 12 (API-Levels: 32);
+- Node.js con versione maggiore o uguale a ``14``;
 
-Apache Cordova non supporta ancora la versione Java 17 necessaria allo sviluppo di app per Android 14(API-Levels: 34);
+La versione 12.x di Apache Cordova prevede i seguenti requisiti per lo sviluppo di app Android:
+
+- una versione uguale o successiva di ``Gradle 7.6``;
+- Java 11 per lo sviluppo di app per Android 13 (API-Levels: 33);
+- Node.js con versione maggiore o uguale a ``16.13``;
+
+La versione 13.x di Apache Cordova prevede i seguenti requisiti per lo sviluppo di app Android:
+
+- una versione uguale o successiva di ``Gradle 8.7``;
+- Java 17 per lo sviluppo di app per Android 14 (API-Levels: 34);
+- Node.js con versione maggiore o uguale a ``16.13``;
 
 ## Build ed esecuzione
 
