@@ -49,6 +49,12 @@ La versione 13.x di Apache Cordova prevede i seguenti requisiti per lo sviluppo 
 
 ## Build ed esecuzione
 
+Per creare un progetto:
+
+```bash
+cordova create hello com.example.hello HelloWorld
+```
+
 Per visualizzare le piattaforme sulle quali si può sviluppare:
 
 ```bash
@@ -74,6 +80,16 @@ Per verificare i requisiti di un progetto Android:
 ```bash
 cordova requirements android
 ```
+
+Nel caso sia mostrato questo specifico errore di incompatibilità, bisogna controllare la versione di Java:
+
+```plaintext
+Errore: LinkageError durante il caricamento della classe principale com.android.sdklib.tool.AvdManagerCli
+	java.lang.UnsupportedClassVersionError: com/android/sdklib/tool/AvdManagerCli has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0"
+```
+
+La versione del JRE 61.0 si riferisce a Java 17, mentre la versione JRE installata è la 55.0 (Java 11).
+Allo stesso modo, alla versione del JRE 65.0 corrisponde Java 21.
 
 Per effettuare la build di un progetto Android:
 
