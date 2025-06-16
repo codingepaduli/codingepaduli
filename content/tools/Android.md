@@ -18,7 +18,7 @@ Gli ambienti di sviluppo Android possono essere scaricati come unico pacchetto c
 
 ![Android SDK - CLI](/static/coding/tools/Android-CLI-tools.png "Android SDK - CLI")
 
-## CLI
+## Installazione Android SDK - CLI Tools
 
 Supponiamo di voler installare gli SDK Android nella cartella ``$HOME/Sviluppo/AndroidSDK``.
 
@@ -107,22 +107,36 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
 ```
 
+## Creazione dispositivo virtuale Android (adv)
+
 Per creare un dispositivo virtuale Android (avd), assicurarsi di aver installato una ``system-images`` con la stessa versione del pacchetto ``platforms;android`` installato.
 
-Si può creare il dispositivo virtuale ``Pixel2`` basato sull'immagine indicata e il cui stato sarà salvato nella cartella indicata dal parametro ``--path``:
+Per visualizzare le specifiche hardware dei dispositivi disponibili, si usa il comando:
 
 ```bash
-avdmanager create avd --name Pixel2 --package "system-images;android-33;aosp_atd;x86_64" --path "$HOME/Sviluppo/AndroidSDK/avd/"
+avdmanager list device
 ```
 
 Per visualizzare i dispositivi virtuali creati:
 
 ```bash
-avdmanager list adv
+avdmanager list avd
+```
+
+Si può creare un nuovo dispositivo virtuale ``myTablet`` basato sull'immagine ``system-images`` installata, specificando opzionalmente:
+
+- la cartella in cui salvare lo stato e la configurazione con il parametro ``--path FOLDER``;
+- il dispositivo di riferimento (scelto tra quelli disponibili) con il parametro ``--device NAME``.
+
+Il comando completo è il seguente:
+
+```bash
+avdmanager create avd --name myTablet --package "system-images;android-35;aosp_atd;x86_64" --path "$HOME/Sviluppo/AndroidSDK/avd/myTablet" --device "medium_tablet"
 ```
 
 Per avviare un dispositivo virtuale:
 
+```bash
 emulator -avd "Pixel2"
 ```
 
@@ -138,6 +152,12 @@ Per accelerazione grafica simulata:
 
 ```bash
 emulator -avd "Pixel2" -gpu swiftshader_indirect
+```
+
+Per cancellare un dispositivo virtuale:
+
+```bash
+avdmanager delete avd --name myTablet
 ```
 
 ## Comandi adb
