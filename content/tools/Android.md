@@ -16,6 +16,8 @@ summary: "Android SDK e ADB - installare gli strumenti di sviluppo e debug di An
 
 Gli ambienti di sviluppo Android possono essere scaricati come unico pacchetto con Android Studio oppure singolarmente con gli strumenti a linea di comando Android.
 
+![Android SDK - CLI](/static/coding/tools/Android-CLI-tools.png "Android SDK - CLI")
+
 ## CLI
 
 Supponiamo di voler installare gli SDK Android nella cartella ``$HOME/Sviluppo/AndroidSDK``.
