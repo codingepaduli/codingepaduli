@@ -16,7 +16,9 @@ summary: "Android SDK e ADB - installare gli strumenti di sviluppo e debug di An
 
 Gli ambienti di sviluppo Android possono essere scaricati come unico pacchetto con Android Studio oppure singolarmente con gli strumenti a linea di comando Android.
 
-## CLI
+![Android SDK - CLI](/static/coding/tools/Android-CLI-tools.png "Android SDK - CLI")
+
+## Installazione Android SDK - CLI Tools
 
 Supponiamo di voler installare gli SDK Android nella cartella ``$HOME/Sviluppo/AndroidSDK``.
 
@@ -71,10 +73,10 @@ Dalla cartella ``latest/bin`` è possibile lanciare i seguenti comandi per insta
 
 ```bash
 ./sdkmanager "platform-tools"
-./sdkmanager "platforms;android-32"
-./sdkmanager "build-tools;32.0.0"
+./sdkmanager "platforms;android-33"
+./sdkmanager "build-tools;33.0.0"
 ./sdkmanager "emulator"
-./sdkmanager "system-images;android-32;aosp_atd;x86_64"
+./sdkmanager "system-images;android-33;aosp_atd;x86_64"
 ```
 
 E' possibile verificare i pacchetti istallati con il comando:
@@ -100,17 +102,62 @@ export ANDROID_HOME="$HOME/Sviluppo/AndroidSDK"
 export ANDROID_SDK_ROOT="$HOME/Sviluppo/AndroidSDK"
 
 export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
-export PATH=$PATH:$ANDROID_SDK_ROOT/emulator/
-export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools/
-export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools/
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools
 ```
+
+## Creazione dispositivo virtuale Android (adv)
 
 Per creare un dispositivo virtuale Android (avd), assicurarsi di aver installato una ``system-images`` con la stessa versione del pacchetto ``platforms;android`` installato.
 
-Si può creare il dispositivo virtuale su questa immagine:
+Per visualizzare le specifiche hardware dei dispositivi disponibili, si usa il comando:
 
 ```bash
-avdmanager create avd --name Pixel2 --package "system-images;android-32;google_apis;x86" --path "$HOME/Sviluppo/AndroidSDK/avd/"
+avdmanager list device
+```
+
+Per visualizzare i dispositivi virtuali creati:
+
+```bash
+avdmanager list avd
+```
+
+Si può creare un nuovo dispositivo virtuale ``myTablet`` basato sull'immagine ``system-images`` installata, specificando opzionalmente:
+
+- la cartella in cui salvare lo stato e la configurazione con il parametro ``--path FOLDER``;
+- il dispositivo di riferimento (scelto tra quelli disponibili) con il parametro ``--device NAME``.
+
+Il comando completo è il seguente:
+
+```bash
+avdmanager create avd --name myTablet --package "system-images;android-35;aosp_atd;x86_64" --path "$HOME/Sviluppo/AndroidSDK/avd/myTablet" --device "medium_tablet"
+```
+
+Per avviare un dispositivo virtuale:
+
+```bash
+emulator -avd "Pixel2"
+```
+
+In caso di errore "ERROR | Unable to connect to adb daemon on port: 5037", stoppare e riavviare il server e verificare la porta:
+
+```bash
+adb kill-server
+adb start-server
+netstat -aon | grep 5037
+```
+
+Per accelerazione grafica simulata:
+
+```bash
+emulator -avd "Pixel2" -gpu swiftshader_indirect
+```
+
+Per cancellare un dispositivo virtuale:
+
+```bash
+avdmanager delete avd --name myTablet
 ```
 
 ## Comandi adb
