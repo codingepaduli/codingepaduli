@@ -14,6 +14,13 @@
 #    fi
 # fi
 
+# Nota:
+#
+# Variabili di shell, visibili sono nella shell corrente, sono create con MYVAR=1729
+# Variabili di ambiente, esportarte nei sottoprocessi, sono create con export MYVAR=1729
+# Per evitare l'esportazione nel sottoprocesso, export-n MYVAR=1729
+# Per cancellare una variabile, unset MYVAR
+
 # Get the system info from /etc/os-release and /usr/lib/os-release
 ## PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
 ## NAME="Debian GNU/Linux"
@@ -23,11 +30,30 @@
 ## ID=debian
 . /etc/os-release
 
-# Nota:
+# Valori di default delle variabili di XDG BASE DIRECTORY 
+# SPECIFICATION, le applicazioni dovrebbero usarli gia e
+# non serve impostarli nuovamente. Verifica col comando
+#  printenv | grep XDG
 #
-# Variabili di shell, visibili sono nella shell corrente, sono create con MYVAR=1729
-# Variabili di ambiente, esportarte nei sottoprocessi, sono create con export MYVAR=1729
-# Per evitare l'esportazione nel sottoprocesso, export-n MYVAR=1729
+# XDG_DATA_HOME="$HOME/.local/share"  # user-specific data files
+# XDG_CONFIG_HOME="$HOME/.config"     # user-specific config files
+# XDG_STATE_HOME="$HOME/.local/state" # user-specific state data
+# XDG_CACHE_HOME="$HOME/.cache"       # user-specific cached data
+# XDG_DATA_DIRS="/usr/local/share/:/usr/share/" # search for data files
+# XDG_CONFIG_DIRS="/etc:/usr/etc:/etc/xdg"      # search for config files
+#
+# Each XDG variable has a correspondence for multiple values:
+# $XDG_DATA_DIRS, $XDG_CONFIG_DIRS, 
+#
+# Le fix di XDG non rispettate si trovano a questa pagina:
+# https://wiki.archlinux.org/title/XDG_Base_Directory
+
+# [[ -v XDG_DATA_HOME ]]         && echo "var XDG_DATA_HOME set TO $XDG_DATA_HOME"             || echo "var XDG_DATA_HOME not set"
+
+unset XDG_DATA_HOME
+unset XDG_CONFIG_HOME
+unset XDG_STATE_HOME
+unset XDG_CACHE_HOMEs
 
 #########################################################
 # Default value, overriden in $HOME/.config/my_env.conf #
@@ -143,29 +169,11 @@ if [[ -n "$ANDROID_HOME" && -d "$ANDROID_HOME" ]]; then
     export PATH="$PATH:$ANDROID_SDK_ROOT/build-tools"
 fi
 
-# Valori di default delle variabili di XDG BASE DIRECTORY 
-# SPECIFICATION, le applicazioni dovrebbero usarli gia e
-# non serve impostarli nuovamente. Verifica col comando
-#  printenv | grep XDG
-#
-# XDG_DATA_HOME="$HOME/.local/share"  # user-specific data files
-# XDG_CONFIG_HOME="$HOME/.config"     # user-specific config files
-# XDG_STATE_HOME="$HOME/.local/state" # user-specific state data
-# XDG_CACHE_HOME="$HOME/.cache"       # user-specific cached data
-# XDG_DATA_DIRS="/usr/local/share/:/usr/share/" # search for data files
-# XDG_CONFIG_DIRS="/etc:/usr/etc:/etc/xdg"      # search for config files
-#
-# Each XDG variable has a correspondence for multiple values:
-# $XDG_DATA_DIRS, $XDG_CONFIG_DIRS, 
-#
-# Le fix di XDG non rispettate si trovano a questa pagina:
-# https://wiki.archlinux.org/title/XDG_Base_Directory
-
 # NODE 
 export NODENV_ROOT="${XDG_DATA_HOME:="$HOME/.local/share"}/nodenv" 
 export NODE_REPL_HISTORY="${XDG_DATA_HOME:="$HOME/.local/share"}/node_repl_history"
 export NPM_CONFIG_USERCONFIG="${XDG_CONFIG_HOME:="$HOME/.config"}/npm/npmrc"
-# The file $XDG_CONFIG_HOME/npm/npmrc should contains this:
+# The file $XDG_CONFIG_HOME/npm/npmrc should contains these variables:
 ## prefix=${XDG_DATA_HOME}/npm
 ## cache=${XDG_CACHE_HOME}/npm
 ## init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
