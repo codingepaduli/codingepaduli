@@ -52,6 +52,12 @@ export RAYON_NUM_THREADS=4
 export GIT_CONFIG_NOSYSTEM=1 # Ignore /etc/gitconfig
 export GIT_CONFIG_NOGLOBAL=1 # Ignore ~/.gitconfig
 
+unset GRADLE_HOME
+unset CORDOVA_JAVA_HOME
+unset NODE_HOME
+unset ANDROID_HOME
+unset ANDROID_SDK_ROOT
+
 # Overwrite default options for specific environment
 ###
 ### For example, sets
@@ -60,6 +66,13 @@ export GIT_CONFIG_NOGLOBAL=1 # Ignore ~/.gitconfig
 if [ -f "$HOME/.config/my_env.conf" ]; then
   . "$HOME/.config/my_env.conf"
 fi
+
+# Use this command to check if a var is set or not
+# [[ -v GRADLE_HOME ]]         && echo "var GRADLE_HOME set TO $GRADLE_HOME"             || echo "var GRADLE_HOME not set"
+# [[ -v CORDOVA_JAVA_HOME ]]   && echo "var CORDOVA_JAVA_HOME set TO $CORDOVA_JAVA_HOME" || echo "var CORDOVA_JAVA_HOME not set"
+# [[ -v NODE_HOME ]]           && echo "var NODE_HOME set TO $NODE_HOME"                 || echo "var NODE_HOME not set"
+# [[ -v ANDROID_HOME ]]        && echo "var ANDROID_HOME set TO $ANDROID_HOME"           || echo "var ANDROID_HOME not set"
+# [[ -v ANDROID_SDK_ROOT ]]    && echo "var ANDROID_SDK_ROOT set TO $ANDROID_SDK_ROOT"   || echo "var ANDROID_SDK_ROOT not set"
 
 ###############################
 # Custom commands and options #
@@ -102,9 +115,10 @@ if [ -f "/usr/bin/micro" ]; then
     export EDITOR="/usr/bin/micro"
 fi
 
-# Aggiungo Gradle al PATH
-if [ -d "/opt/gradle/gradle-8.0" ]; then
-  export GRADLE_HOME="/opt/gradle/gradle-8.0"
+# Se la lunghezza di stringa è diversa da zero ed è una directory esistente
+if [[ -n "$GRADLE_HOME" && -d "$GRADLE_HOME" ]]; then
+
+  # Aggiungo Gradle al PATH
   export PATH="$PATH:$GRADLE_HOME/bin/"
 
   # Fix XDG BASE DIRECTORY SPECIFICATION non rispettata per Gradle
@@ -112,21 +126,21 @@ if [ -d "/opt/gradle/gradle-8.0" ]; then
   export GRADLE_USER_HOME
 fi
 
-# Aggiungo Apache Cordova al PATH
-if [ -d "/usr/lib/jvm/java-11-openjdk-amd64" ]; then
+# Se la lunghezza di stringa è diversa da zero ed è una directory esistente
+if [[ -n "$CORDOVA_JAVA_HOME" && -d "$CORDOVA_JAVA_HOME" ]]; then
   # set in place of JAVA_HOME, to be used specifically for Cordova development
-  export CORDOVA_JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+  export CORDOVA_JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
 fi
 
 # Aggiungo l'SDK di Android al PATH
-if [ -d "$HOME/Sviluppo/AndroidSDK" ]; then
+if [[ -n "$ANDROID_HOME" && -d "$ANDROID_HOME" ]]; then
     export ANDROID_HOME="$HOME/Sviluppo/AndroidSDK"
     export ANDROID_SDK_ROOT="$HOME/Sviluppo/AndroidSDK"
 
     export PATH="$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin"
-    export PATH="$PATH:$ANDROID_SDK_ROOT/emulator/"
-    export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools/"
-    export PATH="$PATH:$ANDROID_SDK_ROOT/build-tools/"
+    export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
+    export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
+    export PATH="$PATH:$ANDROID_SDK_ROOT/build-tools"
 fi
 
 # Valori di default delle variabili di XDG BASE DIRECTORY 
