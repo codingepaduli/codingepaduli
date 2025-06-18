@@ -83,6 +83,9 @@ unset CORDOVA_JAVA_HOME  # "/usr/lib/jvm/java-17-openjdk-amd64"
 unset NODE_HOME          # "/usr/lib/node/node-24-x64"
 unset ANDROID_HOME       # "$HOME/Sviluppo/AndroidSDK"
 unset ANDROID_SDK_ROOT   # "$HOME/Sviluppo/AndroidSDK"
+unset GAM_HOME           # "$HOME/Sviluppo/GAM"
+unset GAMCFGDIR          # "${XDG_CONFIG_HOME:="$HOME/.config"}/GAMConfig"
+unset GAMWORKINGDIR      # "${XDG_DATA_HOME:="$HOME/.local/share"}/GAMWorkingDir"
 
 # Overwrite default options for specific environment
 ###
@@ -161,6 +164,12 @@ if [[ -n "$ANDROID_HOME" && -d "$ANDROID_HOME" ]]; then
     export PATH="$PATH:$ANDROID_SDK_ROOT/emulator"
     export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools"
     export PATH="$PATH:$ANDROID_SDK_ROOT/build-tools"
+fi
+
+if [[ -n "$GAM_HOME" && -d "$GAM_HOME" ]]; then
+    # Aggiungo Google Admin Manager al PATH
+    export PATH="$PATH:$GAM_HOME/gam7/bin"
+    alias gam="$GAM_HOME/gam7/gam"
 fi
 
 # NODE 
