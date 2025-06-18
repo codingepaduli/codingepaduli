@@ -152,12 +152,6 @@ if [[ -n "$GRADLE_HOME" && -d "$GRADLE_HOME" ]]; then
   export GRADLE_USER_HOME
 fi
 
-# Se la lunghezza di stringa è diversa da zero ed è una directory esistente
-if [[ -n "$CORDOVA_JAVA_HOME" && -d "$CORDOVA_JAVA_HOME" ]]; then
-  # set in place of JAVA_HOME, to be used specifically for Cordova development
-  export CORDOVA_JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
-fi
-
 # Aggiungo l'SDK di Android al PATH
 if [[ -n "$ANDROID_HOME" && -d "$ANDROID_HOME" ]]; then
     export ANDROID_HOME="$HOME/Sviluppo/AndroidSDK"
