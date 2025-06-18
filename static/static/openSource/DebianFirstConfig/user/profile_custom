@@ -50,10 +50,10 @@
 
 # [[ -v XDG_DATA_HOME ]]         && echo "var XDG_DATA_HOME set TO $XDG_DATA_HOME"             || echo "var XDG_DATA_HOME not set"
 
-unset XDG_DATA_HOME
-unset XDG_CONFIG_HOME
-unset XDG_STATE_HOME
-unset XDG_CACHE_HOMEs
+unset XDG_DATA_HOME     # "$HOME/.local/share"
+unset XDG_CONFIG_HOME   # "$HOME/.config" 
+unset XDG_STATE_HOME    # "$HOME/.local/state"
+unset XDG_CACHE_HOMEs   # "$HOME/.cache" 
 
 #########################################################
 # Default value, overriden in $HOME/.config/my_env.conf #
@@ -78,11 +78,11 @@ export RAYON_NUM_THREADS=4
 export GIT_CONFIG_NOSYSTEM=1 # Ignore /etc/gitconfig
 export GIT_CONFIG_NOGLOBAL=1 # Ignore ~/.gitconfig
 
-unset GRADLE_HOME
-unset CORDOVA_JAVA_HOME
-unset NODE_HOME
-unset ANDROID_HOME
-unset ANDROID_SDK_ROOT
+unset GRADLE_HOME        # "/usr/lib/gradle/gradle-8.14.2"
+unset CORDOVA_JAVA_HOME  # "/usr/lib/jvm/java-17-openjdk-amd64"
+unset NODE_HOME          # "/usr/lib/node/node-24-x64"
+unset ANDROID_HOME       # "$HOME/Sviluppo/AndroidSDK"
+unset ANDROID_SDK_ROOT   # "$HOME/Sviluppo/AndroidSDK"
 
 # Overwrite default options for specific environment
 ###
