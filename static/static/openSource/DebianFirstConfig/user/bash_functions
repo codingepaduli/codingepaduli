@@ -251,7 +251,7 @@ export -f grepRgReplaceAccentedCharacters
 
 # Rimuove i caratteri non ammessi
 # Usage: command | grepRgReplaceAccenture "testo1" "testo2"
-grepRgRemoveUnallowedCharacters() {
+grepRgRemoveForbiddenCharacters() {
 
   # Necessita che sia definita la variabile ALLOWED_CHARS_IN_FILENAME
   if [ -z "$ALLOWED_CHARS_IN_FILENAME" ]; then
@@ -263,7 +263,7 @@ grepRgRemoveUnallowedCharacters() {
   ## -d: delete other char
   tr -cd "[:alnum:][:cntrl:]$ALLOWED_CHARS_IN_FILENAME"
 }
-export -f grepRgRemoveUnallowedCharacters
+export -f grepRgRemoveForbiddenCharacters
 
 # Usa tr per effettuare una sostituzione
 # Usage: command | grepReplaceLowerWithUpper
@@ -278,6 +278,18 @@ grepReplaceUpperWithLower() {
   tr '[:upper:]' '[:lower:]'
 }
 export -f grepReplaceUpperWithLower
+
+# Rinomina un file eliminando caratteri proibiti e sostituendo accenti
+# Usage: renameFileRemovingForbiddenAndAccentedCharacters *.txt
+renameFileRemovingForbiddenAndAccentedCharacters() {
+  for file in "$@"; do
+    if [ -f "$file" ]; then
+      newFile=$( echo "$file" | grepRgReplaceAccentedCharacters | grepRgRemoveForbiddenCharacters )
+      mv "$file" "$newFile"
+    fi
+  done
+}
+export -f renameFileRemovingForbiddenAndAccentedCharacters
 
 ######################################################
 # Hashing functions (sha256, sha512, md5 and Blade3) #
