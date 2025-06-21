@@ -78,6 +78,10 @@ export RAYON_NUM_THREADS=4
 export GIT_CONFIG_NOSYSTEM=1 # Ignore /etc/gitconfig
 export GIT_CONFIG_NOGLOBAL=1 # Ignore ~/.gitconfig
 
+# Set the allowed characters in filename
+# Used in function grepRgRemoveUnallowedCharacters()
+export ALLOWED_CHARS_IN_FILENAME=" .-_)("
+
 unset GRADLE_HOME        # "/usr/lib/gradle/gradle-8.14.2"
 unset CORDOVA_JAVA_HOME  # "/usr/lib/jvm/java-17-openjdk-amd64"
 unset NODE_HOME          # "/usr/lib/node/node-24-x64"

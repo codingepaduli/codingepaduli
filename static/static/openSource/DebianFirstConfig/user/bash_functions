@@ -8,7 +8,7 @@
 
 # In order to avoid a function calls itself, you can specify
 # to execute the original command. Example: to call the 'clear'
-# command insede a function "clear", you need to use:
+# command inside a function "clear", you need to use:
 #   command clear;
 
 # Show the rows -rw------- 1 io casa 15491 2023-08-17 14:35 file
@@ -235,12 +235,35 @@ export -f grepRecursiveSearch
 # Usa ripgrep per effettuare una sostituzione
 # Usage: command | grepRgReplace "testo1" "testo2"
 grepRgReplace() {
-  ## -N: ingnora i file nascosti
+  ## -N: non mostra il numero di linea
   ## --passthru: restituisce anche le righe che non corrispondono 
   ## -r: pattern di ricerca
   rg -N --passthru "$1" -r "$2" 
 }
 export -f grepRgReplace
+
+# Rimuove le lettere accentate e l'accento
+# Usage: echo "testo1àèéìòù" | grepRgReplaceAccentedCharacters
+grepRgReplaceAccentedCharacters() {
+  grepRgReplace 'à' 'a' | grepRgReplace 'è' 'e' | grepRgReplace 'é' 'e' | grepRgReplace 'ì' 'i' | grepRgReplace 'ò' 'o' | grepRgReplace 'ù' 'u' | grepRgReplace "'" ' '
+}
+export -f grepRgReplaceAccentedCharacters
+
+# Rimuove i caratteri non ammessi
+# Usage: command | grepRgReplaceAccenture "testo1" "testo2"
+grepRgRemoveUnallowedCharacters() {
+
+  # Necessita che sia definita la variabile ALLOWED_CHARS_IN_FILENAME
+  if [ -z "$ALLOWED_CHARS_IN_FILENAME" ]; then
+    echo "Variabile non definita: 'ALLOWED_CHARS_IN_FILENAME'" >&2
+    exit 1
+  fi
+
+  ## -c: complement the search pattern
+  ## -d: delete other char
+  tr -cd "[:alnum:][:cntrl:]$ALLOWED_CHARS_IN_FILENAME"
+}
+export -f grepRgRemoveUnallowedCharacters
 
 # Usa tr per effettuare una sostituzione
 # Usage: command | grepReplaceLowerWithUpper
@@ -292,7 +315,6 @@ b3check() {
 }
 export -f b3check
 
-
 # Make .md5 .sha256 .b3 files from file
 # Usage: hashFile file.txt
 hashFile() {
@@ -319,7 +341,6 @@ hashFile() {
   fi
 }
 export -f hashFile
-
 
 # Make .iso.md5 files from .iso files
 # Usage: md5HashingAllIsoFiles
