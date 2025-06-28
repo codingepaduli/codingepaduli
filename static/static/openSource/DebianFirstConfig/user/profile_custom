@@ -195,5 +195,9 @@ export PYTHONPYCACHEPREFIX="${XDG_CACHE_HOME:="$HOME/.cache"}/python"
 export PYTHONUSERBASE="${XDG_DATA_HOME:="$HOME/.local/share"}/python"
 
 # tealdeer (TLDR client) config DIR
-TEALDEER_CONFIG_DIR=="${XDG_CONFIG_HOME:="$HOME/.config"}/tealdeer/config.toml"
+export TEALDEER_CONFIG_DIR=="${XDG_CONFIG_HOME:="$HOME/.config"}/tealdeer/config.toml"
+
+# Oh my bash
+export OSH="${XDG_DATA_HOME:="$HOME/.local/share"}/oh-my-bash";
+export DISABLE_AUTO_UPDATE=true #oh-my-bash
 
