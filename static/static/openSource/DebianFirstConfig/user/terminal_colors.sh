@@ -1,5 +1,55 @@
+# Colori:
+# Il terminale può supportare differenti palette di colore
+# - ANSI 8 bit (solo 7 colori di testo e 7 di sfondo, piu formattazione grassetto, corsivo, ...)
+# - 256 colori
+# - 16 milioni di colori (truecolor)
+#
+# Verifica il tuo terminale stampando la variabile $TERM, echo $TERM restituisce 
+# solo uno dei seguenti valori (che identifica il numero di colori):
+# - xterm
+# - xterm-256color
+# - xterm-truecolor
+#
+# Il reset allo stile predefinito è reset_code="\033[0m"; Per applicare uno stile dei colori si usa:
+# text_colored="\033[${background_code};${foreground_code};${formatting_code};${formatting_code}m  TEXT  ${reset_code}"
+
 # Assegnazione dei colori e dei loro codici
-colors=(
+foregroundAnsiColors=(
+    [30]="black"
+    [31]="red"
+    [32]="green"
+    [33]="yellow"
+    [34]="blue"
+    [35]="magenta"
+    [36]="cyan"
+    [37]="white"
+)
+
+backgroundAnsiColors=(
+    [40]="black"
+    [41]="red"
+    [42]="green"
+    [43]="yellow"
+    [44]="blue"
+    [45]="magenta"
+    [46]="cyan"
+    [47]="white"
+)
+
+formatting=(
+    [0]="reset"             # Reset
+    [1]="bold"              # Grassetto
+    [2]="dim"               # Attenuato (dimmed)
+    [3]="italic"            # Corsivo
+    [4]="underline"         # Sottolineato
+    [5]="blink"             # Lampeggiante (non si applica)
+    [6]="hidden"            # Nascosto, ma si applica Inverse
+    [7]="inverse"           # Inverso
+    [8]="hidden"            # Nascosto
+    [9]="strikethrough"     # Soprascritto
+)
+
+colors256=(
     [0]="black"
     [1]="red"
     [2]="green"
@@ -258,11 +308,11 @@ colors=(
     [255]="light turquoise"
 )
 
-## Run: getColorIndexByName "blu"
-getColorIndexByName() {
+## Run: get256ColorIndexByName "blue"
+get256ColorIndexByName() {
     local color_name="$1"
-    for i in "${!colors[@]}"; do
-        if [[ "${colors[$i]}" == "$color_name" ]]; then
+    for i in "${!colors256[@]}"; do
+        if [[ "${colors256[$i]}" == "$color_name" ]]; then
             echo "$i"
             return 0 # OK
         fi
@@ -271,16 +321,71 @@ getColorIndexByName() {
     return 2 # error
 }
 
-## Run: getColorNameByIndex "123"
-getColorNameByIndex() {
+## Run: get256ColorNameByIndex "123"
+get256ColorNameByIndex() {
     local code=$1
 
     # Controlla se il valore è vuoto
-    if [[ -z "${colors[$code]}" ]]; then
+    if [[ -z "${colors256[$code]}" ]]; then
         echo ""
         return 2 # error
     fi
     
-    echo "${colors[$code]}"
+    echo "${colors256[$code]}"
+    return 0
+}
+
+## Run: getAnsiForegroundColorIndexByName "blue"
+getAnsiForegroundColorIndexByName() {
+    local color_name="$1"
+    for i in "${!foregroundAnsiColors[@]}"; do
+        if [[ "${foregroundAnsiColors[$i]}" == "$color_name" ]]; then
+            echo "$i"
+            return 0 # OK
+        fi
+    done
+    echo "0"
+    return 2 # error
+}
+
+## Run: getAnsiForegroundColorNameByIndex "123"
+getAnsiForegroundColorNameByIndex() {
+    local code=$1
+
+    # Controlla se il valore è vuoto
+    if [[ -z "${foregroundAnsiColors[$code]}" ]]; then
+        echo ""
+        return 2 # error
+    fi
+    
+    echo "${foregroundAnsiColors[$code]}"
+    return 0
+}
+
+
+## Run: getAnsiBackgroundColorIndexByName "blue"
+getAnsiBackgroundColorIndexByName() {
+    local color_name="$1"
+    for i in "${!backgroundAnsiColors[@]}"; do
+        if [[ "${backgroundAnsiColors[$i]}" == "$color_name" ]]; then
+            echo "$i"
+            return 0 # OK
+        fi
+    done
+    echo "0"
+    return 2 # error
+}
+
+## Run: getAnsiBackgroundColorNameByIndex "123"
+getAnsiBackgroundColorNameByIndex() {
+    local code=$1
+
+    # Controlla se il valore è vuoto
+    if [[ -z "${backgroundAnsiColors[$code]}" ]]; then
+        echo ""
+        return 2 # error
+    fi
+    
+    echo "${backgroundAnsiColors[$code]}"
     return 0
 }
