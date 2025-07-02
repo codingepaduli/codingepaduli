@@ -497,7 +497,7 @@ getColorByName() {
 ## Run applyStyleByCodes "255:255;255" "255:255;255" "1" 
 applyStyleByCodes() {
     # If $NO_COLOR not defined or empty
-    if [[ ! -v $NO_COLOR || -z "${!NO_COLOR}" ]]; then
+    if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
         # Parametri
         local foreground_code=$1
         local background_color=$2
@@ -512,7 +512,7 @@ applyStyleByCodes() {
 # Reset color styles
 resetStyle() {
     # If $NO_COLOR not defined or empty
-    if [[ ! -v $NO_COLOR || -z "${!NO_COLOR}" ]]; then
+    if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
         echo -ne "\033[0m"
     fi
 }
@@ -521,7 +521,7 @@ resetStyle() {
 ## Run: applyStyleByName "sea green" "vivid light magenta" "bold" "dim" "blink"
 applyStyleByName() {
     # If $NO_COLOR not defined or empty
-    if [[ ! -v $NO_COLOR || -z "${!NO_COLOR}" ]]; then
+    if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
         
         # colors
         local foreground_name="$1"
