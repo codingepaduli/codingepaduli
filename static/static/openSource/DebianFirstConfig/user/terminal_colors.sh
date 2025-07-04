@@ -397,7 +397,7 @@ get256ColorIndexByName() {
 
 ## Run: get256ColorNameByIndex "123"
 get256ColorNameByIndex() {
-    local code=$1
+    local code="$1"
 
     # Controlla se il valore è vuoto
     if [[ -z "${colors256[$code]}" ]]; then
@@ -424,7 +424,7 @@ getAnsiColorIndexByName() {
 
 ## Run: getAnsiColorNameByIndex "123"
 getAnsiColorNameByIndex() {
-    local code=$1
+    local code="$1"
 
     # Controlla se il valore è vuoto
     if [[ -z "${ansiColors[$code]}" ]]; then
@@ -456,7 +456,8 @@ getFormattingCodeByNames() {
     local formatting_codes=""
 
     for paramName in "${formatting_names[@]}"; do
-        local param_code=$(getFormattingCodeByName "$paramName")
+        local param_code
+        param_code="$(getFormattingCodeByName "$paramName")"
         if [[ -n "${param_code}" ]]; then
 
             # split elements by ";"
@@ -472,36 +473,15 @@ getFormattingCodeByNames() {
     echo "$formatting_codes"
 }
 
-# Funzione per selezionare il tipo di colore
-# getColorByName "sea green"
-getColorByName() {
-     # Parametri
-    local colorName="$1"
-
-    if [[ "$TERM" == *"truecolor"* || "$TERM" == *"24bit"* ]]; then
-        # True Color (24 bit) - No color names
-        echo ""
-    elif [[ "$TERM" == *"256color"* ]]; then
-        # ANSI 256 colors
-        echo "$(get256ColorIndexByName "$colorName")"
-    elif [[ "$TERM" == *"color"* ]]; then
-        # ANSI 8 colors
-        echo "$(getAnsiColorIndexByName "$colorName")"
-    else
-        # No color
-        echo ""
-    fi
-}
-
 # Apply a style by code
 ## Run applyStyleByCodes "255:255;255" "255:255;255" "1" 
 applyStyleByCodes() {
     # If $NO_COLOR not defined or empty
     if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
         # Parametri
-        local foreground_code=$1
-        local background_code=$2
-        local formatting_codes=$3
+        local foreground_code="$1"
+        local background_code="$2"
+        local formatting_codes="$3"
 
         local foreground_command=""
         local background_command=""
@@ -516,12 +496,12 @@ applyStyleByCodes() {
             if [[ $foreground_code == *";"* ]]; then
                 foreground_command="38;2;${foreground_code}m" # 38;2;r;g;b
             else
-                background_command="38;5;${foreground_code}m" # 38;5;n (index n in a 256-colour palette)
+                foreground_command="38;5;${foreground_code}m" # 38;5;n (index n in a 256-colour palette)
             fi
             if [[ $foreground_code == *";"* ]]; then
-                foreground_command="38;2;${background_code}m" # 48;2;r;g;b
+                background_command="48;2;${background_code}m" # 48;2;r;g;b
             else
-                background_command="38;5;${background_code}m" # 48;5;n (index n in a 256-colour palette)
+                background_command="48;5;${background_code}m" # 48;5;n (index n in a 256-colour palette)
             fi
             echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
         elif [[ "$TERM" == *"color"* ]]; then
@@ -548,7 +528,6 @@ resetStyle() {
 applyStyleByName() {
     # If $NO_COLOR not defined or empty
     if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
-        
         # colors
         local foreground_name="$1"
         local background_name="$2"
@@ -558,29 +537,57 @@ applyStyleByName() {
 
         # formatting styles
         local formatting_names=("$@")
+        local formatting_codes
+        formatting_codes=$(getFormattingCodeByNames "${formatting_names[@]}")
 
-        local foreground_code=$(getColorByName "$foreground_name")
-        local background_code=$(getColorByName "$background_name")
-        local formatting_codes=$(getFormattingCodeByNames "${formatting_names[@]}")
-        
-        echo -ne "\033[38;5;${foreground_code}m\033[48;5;${background_code}m"
-        echo -ne "\033[${formatting_codes}m"
+        local foreground_command=""
+        local background_command=""
+
+        if [[ "$TERM" == *"truecolor"* || "$TERM" == *"24bit"* ]]; then
+            :  # True Color (24 bit)
+            # No color names for True Color
+        elif [[ "$TERM" == *"256color"* ]]; then
+            # ANSI 256 colors
+            # No color names for the format 38;2;r;g;b
+            # color names only for the format 38;5;n
+            local foreground_code
+            local background_code
+            foreground_code="$(get256ColorIndexByName "$foreground_name")"
+            background_code="$(get256ColorIndexByName "$background_name")"
+            foreground_command="38;5;${background_code}m"
+            background_command="48;5;${background_code}m" # 48;5;n (index n in a 256-colour palette)
+            echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
+        elif [[ "$TERM" == *"color"* ]]; then
+            # ANSI 8 colors
+            local foreground_code
+            local background_code
+            foreground_code="$(getAnsiColorIndexByName "$foreground_name")"
+            background_code="$(getAnsiColorIndexByName "$background_name")"
+            foreground_command="${foreground_code}m" # 30m ... 37m - 90m ... 97m
+            background_command="${background_code}m" # 40m ... 47m - 100m ... 107m
+            echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
+        else
+            :  # No color ( : is no operation in Bash)
+        fi
     fi
 }
 
-applyStyleByCodes "212" "122" "1" 
-echo -n " RGB "
+: ' multiline comment
+
+applyStyleByCodes "202" "122" "1" 
+echo -n " RGB text "
 resetStyle
 echo ""
 
-applyStyleByName "sea green" "vivid light magenta" "bold" "dim" 
-echo -ne " sea green - vivid light magenta - bold dim "
+applyStyleByName "sea green" "pearl white" "bold" "dim" 
+echo -ne " sea green - pearl white - bold dim "
 resetStyle
 echo ""
 
 TERM="xterm-color"
+
 applyStyleByCodes "30" "46" "1" "2" 
-echo -n " ANSI black - background cyan - bold dim"
+echo -n " ANSI black - background cyan - bold"
 resetStyle
 echo ""
 
@@ -595,26 +602,6 @@ echo -ne " ANSI bright green - bright background cyan - bold dim "
 resetStyle
 echo ""
 
+TERM="xterm-256color"
 
-
-# Funzione per stampare il testo con formattazioni multiple
-print_colored_text() {
-    local background_code="$1"  # Codice di sfondo (da 0 a 7 o da 0 a 255)
-    local foreground_code="$2" 
-    local format_codes="$3"  # Accetta più codici di formattazione
-    local message="$4"
-    
-    # Creazione della sequenza di escape
-    local color_code="\033[${background_code}m \033[${foreground_code}m \033[${format_codes}m"
-    local reset_code="\033[0m"  # Reset
-
-    # Stampa il messaggio
-    # echo -e "${color_code}${message}${reset_code}"
-
-    echo -e "\033[48;2;0;0;255m\033[38;5;116m${message}${reset_code}"
-}
-
-# Esempio di utilizzo
-# print_colored_text "32" "44" "1" "grassetto e sottolineato bianco su sfondo blu"
-print_colored_text "48;5;88" "38;5;176" "1;2" " sottolineato e soprascritto nero su sfondo rosso"
-
+'
