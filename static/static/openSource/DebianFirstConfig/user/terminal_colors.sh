@@ -500,12 +500,38 @@ applyStyleByCodes() {
     if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
         # Parametri
         local foreground_code=$1
-        local background_color=$2
+        local background_code=$2
         local formatting_codes=$3
 
-        echo -ne "\033[38;5;${foreground_code}m\033[48;2;${background_color}m"
+        local foreground_command=""
+        local background_command=""
 
-        echo -ne "\033[38;5;${formatting_codes}m"
+        if [[ "$TERM" == *"truecolor"* || "$TERM" == *"24bit"* ]]; then
+            # True Color (24 bit) - No color names
+            foreground_command="38;2;${foreground_code}m" # 38;2;r;g;b
+            background_command="48;2;${background_code}m" # 48;2;r;g;b
+            echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
+        elif [[ "$TERM" == *"256color"* ]]; then
+            # ANSI 256 colors
+            if [[ $foreground_code == *";"* ]]; then
+                foreground_command="38;2;${foreground_code}m" # 38;2;r;g;b
+            else
+                background_command="38;5;${foreground_code}m" # 38;5;n (index n in a 256-colour palette)
+            fi
+            if [[ $foreground_code == *";"* ]]; then
+                foreground_command="38;2;${background_code}m" # 48;2;r;g;b
+            else
+                background_command="38;5;${background_code}m" # 48;5;n (index n in a 256-colour palette)
+            fi
+            echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
+        elif [[ "$TERM" == *"color"* ]]; then
+            # ANSI 8 colors
+            foreground_command="${foreground_code}m" # 30m ... 37m - 90m ... 97m
+            background_command="${background_code}m" # 40m ... 47m - 100m ... 107m
+            echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
+        else
+            :  # No color ( : is no operation in Bash)
+        fi
     fi
 }
 
