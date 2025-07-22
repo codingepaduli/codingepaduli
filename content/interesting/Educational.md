@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-04-29
-publishdate: 2025-04-29
-lastmod: 2025-04-29
+date: 2025-07-21
+publishdate: 2025-07-21
+lastmod: 2025-07-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,7 +14,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 <!-- markdownlint-disable MD012 -->
 
-# Menu segnalibri
+# menu
 
 
 ## Scuola
@@ -192,6 +192,9 @@ summary: "Set di link relativi all'istruzione di base"
 [GitHub](https://github.com/SamueleLonghin/FlowgorithmJS) - SamueleLonghin/FlowgorithmJS: *.fprg file viewer for the Web\
 [Pantone](https://it.wikipedia.org/wiki/Pantone) - Wikipedia\
 [miciwan/PaintMixing](https://github.com/miciwan/PaintMixing) - On Light, Colors, Mixing Paints, and Numerical Optimization.\
+[Flowgorithm 1](https://www.youtube.com/watch?v=YPjylT5c5hw) - Scrivere ed eseguire un flowchart - YouTube\
+[Flowgorithm 2](https://www.youtube.com/watch?v=jdkZEEI7U4c) - Eseguire l'algoritmo step by step - YouTube\
+[Flowgorithm 3](https://www.youtube.com/watch?v=KlNq6BNQYec) - Finestra delle variabili - YouTube\
 
 #### Informatica 4 anno
 
@@ -279,6 +282,22 @@ summary: "Set di link relativi all'istruzione di base"
 [CISCO PACKET TRACER 8](https://www.youtube.com/watch?v=HF5Ds7Fzpjo) - http e DNS server - YouTube\
 [CISCO PACKET TRACER 9](https://www.youtube.com/watch?v=rhj-zlrtAdw) - NAT - YouTube\
 [CISCO PACKET TRACER 10](https://www.youtube.com/watch?v=ZaSJoiHppZg) - Protocolli e livelli di rete - YouTube\
+[Lezione 1](https://www.youtube.com/watch?v=2rYx1hU5hG8) - Due PC collegati in rete - YouTube\
+[Lezione 2](https://www.youtube.com/watch?v=osu3dW91uG4) - Rete a stella con un Hub - YouTube\
+[Lezione 3](https://www.youtube.com/watch?v=4OjEUOVcaKE) - Rete a stella con uno switch - YouTube\
+[Lezione 4](https://www.youtube.com/watch?v=wHGfx2vjfwg) - Il router - YouTube\
+[Lezione 5](https://www.youtube.com/watch?v=l0GYVpDkt9Q) - Routing table (prima parte) - YouTube\
+[Lezione 6](https://www.youtube.com/watch?v=dwaLTHmXLKY) - Routing table (seconda parte) - YouTube\
+[Lezione 7](https://www.youtube.com/watch?v=UEP2XgiS7H4) - La rete Internet - YouTube\
+[Lezione 8](https://www.youtube.com/watch?v=9G4gca8L_g8) - Server HTTP e DNS - YouTube\
+[Lezione 9](https://www.youtube.com/watch?v=CdpaYp0-r1A) - Il NAT - YouTube\
+[Lezione 10](https://www.youtube.com/watch?v=84cXrhkmp1M) - Email - YouTube\
+[Lezione 11- Wireless](https://www.youtube.com/watch?v=Pae5L1i4Qv0) - YouTube\
+[Lezione 12](https://www.youtube.com/watch?v=KQuFA-XAC_o) - DHCP - YouTube\
+[Lezione 13](https://www.youtube.com/watch?v=Gglhc9SrmAc) - Physical view - YouTube\
+[Lezione 14](https://www.youtube.com/watch?v=rp4aqespb8w) - ARP - YouTube\
+[Lezione 15](https://www.youtube.com/watch?v=bs-Xevx2sa4) - Porte e cavi di rete - YouTube\
+[LEZIONE 16: Protocolli e livelli](https://www.youtube.com/watch?v=x_8Ro2yDtyY) - YouTube\
 [Creare una rete domestica](https://www.youtube.com/watch?v=7Z0ku4ZUKRI) - Daniele Castelletti | Corso computer AssMaggiolina - YouTube\
 [Understanding Network things: part 1](https://dev.to/aurelievache/understanding-network-things-part-1-l4-l7-layers-j47) - L4 / L7 layers - DEV Community\
 [Understanding Network things: part 2](https://dev.to/aurelievache/understanding-network-things-part-2-ip-address-cidr-3d49) - IP address & CIDR - DEV Community\
@@ -295,6 +314,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 #### TPSIT 3 anno
 
+[Neocities](https://www.neocities.org/) - Hosting gratuito - 1 GB di spazio archiviazione\
 [Egyptian Hieroglyphs](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - Test for Unicode support in Web browsers\
 [ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
 [CSS Snow flakes](https://pajasevi.github.io/CSSnowflakes/) - \

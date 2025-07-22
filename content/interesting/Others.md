@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-05-10
-publishdate: 2025-05-10
-lastmod: 2025-05-10
+date: 2025-07-21
+publishdate: 2025-07-21
+lastmod: 2025-07-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,7 +14,7 @@ summary: "Set di link interessanti"
 
 <!-- markdownlint-disable MD012 -->
 
-# Menu segnalibri
+# menu
 
 
 ## Scienze
@@ -187,11 +187,23 @@ summary: "Set di link interessanti"
 ### Places
 
 [Castello di Gesualdo](https://it.wikipedia.org/wiki/Castello_di_Gesualdo) - Wikipedia\
+[Villetta Barrea](https://it.wikipedia.org/wiki/Villetta_Barrea) - sul lago di Barrea con passeggiata pedonale lungofiume- Wikipedia\
+[Cantine Storiche degli eredi di Angelo Mastroberardino](https://cantinestoricheama.it/chi-siamo/) - Aveliino\
 [Reale tenuta (reggia) di Carditello](https://it.wikipedia.org/wiki/Reale_tenuta_di_Carditello) - Wikipedia\
 [Marteniza](https://it.wikipedia.org/wiki/Marteniza) - Wikipedia\
+[Madonna della Seggiola](https://it.wikipedia.org/wiki/Madonna_della_Seggiola) - Wikipedia\
 [Isola del Liri](https://it.wikipedia.org/wiki/Isola_del_Liri) - Wikipedia\
 [Fontana Liri](https://it.wikipedia.org/wiki/Fontana_Liri) - Wikipedia\
+[Lago di Posta Fibreno valle del Liri](https://it.wikipedia.org/wiki/Lago_di_Posta_Fibreno) - Wikipedia\
 [Giardino di Ninfa](https://it.wikipedia.org/wiki/Giardino_di_Ninfa) - Wikipedia\
-[Madonna della Seggiola](https://it.wikipedia.org/wiki/Madonna_della_Seggiola) - Wikipedia\
-[Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
+[Arpino](https://it.wikipedia.org/wiki/Arpino) - citta medioevale e mura ciclopiche - Wikipedia\
+[Sermoneta](https://it.wikipedia.org/wiki/Sermoneta) - Wikipedia\
 [Museo Casa Vasari](https://museiarezzo.it/museo-casa-vasari/) - Musei di Arezzo | MUAR\
+[Piazza Grande (Arezzo)](https://it.wikipedia.org/wiki/Piazza_Grande_(Arezzo)) - Wikipedia\
+[Duomo di Arezzo](https://it.wikipedia.org/wiki/Cattedrale_dei_Santi_Pietro_e_Donato) - Cattedrale dei Santi Pietro e Donato - Wikipedia\
+[Chimera di Arezzo](https://it.wikipedia.org/wiki/Chimera_di_Arezzo) - Wikipedia\
+[Anfiteatro romano di Arezzo](https://it.wikipedia.org/wiki/Anfiteatro_romano_di_Arezzo) - Wikipedia\
+[Fiera Antiquaria di Arezzo](https://fieraantiquaria.org/) - \
+[Basilica di San Francesco (Arezzo)](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo)) - Wikipedia\
+[Castelsecco –  Parco Archeologico Etrusco di Castelsecco](https://www.castelsecco.org/) - \
+[Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \

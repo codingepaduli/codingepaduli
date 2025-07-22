@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-05-10
-publishdate: 2025-05-10
-lastmod: 2025-05-10
+date: 2025-07-21
+publishdate: 2025-07-21
+lastmod: 2025-07-21
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -14,7 +14,7 @@ summary: "Set di link relativi al coding"
 
 <!-- markdownlint-disable MD012 -->
 
-# Menu segnalibri
+# menu
 
 
 ## Programmazione
@@ -167,6 +167,7 @@ summary: "Set di link relativi al coding"
 [PRQL](https://prql-lang.org/) - Pipelined Relational Query Language compiles to SQL\
 [How to read MySQL EXPLAINs — PlanetScale](https://planetscale.com/blog/how-read-mysql-explains) - \
 [Read & Export SQLite Data in a JavaScript-enabled Browser Locally | by Charmaine Chui | Webtips | Medium](https://medium.com/weekly-webtips/read-export-sqlite-data-in-a-javascript-enabled-browser-locally-b655deda879d) - \
+[Kexi](https://docs.kde.org/stable5/en/kexi/kexi/index.html) - Open Ms Access databases\
 
 ### Giochi
 
@@ -517,6 +518,8 @@ summary: "Set di link relativi al coding"
 [GitHub](https://github.com/OmarShehata/google-earth-as-gltf) - OmarShehata/google-earth-as-gltf\
 [GitHub](https://github.com/intel/openvino-plugins-ai-audacity) - intel/openvino-plugins-ai-audacity: A set of AI-enabled effects, generators, and analyzers for Audacity®.\
 [Google Earth as glTF](https://omarshehata.github.io/google-earth-as-gltf/) - \
+[Freesound](https://freesound.org/search/?f=license%3A%22Creative+Commons+0%22) - Search sounds by license\
+[Openclipart](https://openclipart.org/) - Clipping Culture\
 [grassmunk/Chicago95](https://github.com/grassmunk/Chicago95) - A rendition of everyone's favorite 1995 Microsoft operating system for Linux.\
 [joxeankoret/diaphora](https://github.com/joxeankoret/diaphora) - Diaphora, the most advanced Free and Open Source program diffing tool.\
 [LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.\
@@ -647,7 +650,8 @@ summary: "Set di link relativi al coding"
 [Markdown, Asciidoc, or reStructuredText](https://www.dewanahmed.com/markdown-asciidoc-restructuredtext/) - a tale of docs-as-code - Dewan’s Blog\
 [Laying Out a Print Book With CSS | Ian G McDowell's Blog](https://iangmcdowell.com/blog/posts/laying-out-a-book-with-css/) - \
 [Using Pandoc and Typst to Produce PDFs](https://imaginarytext.ca/posts/2024/pandoc-typst-tutorial/) - \
-[GitHub](https://github.com/typst/typst) - typst/typst: A new markup-based typesetting system that is powerful and easy to learn.\
+[typst/typst](https://github.com/typst/typst) - A new markup-based typesetting system that is powerful and easy to learn.\
+[How I use Kate Editor](https://akselmo.dev/posts/how-i-use-kate-editor/) - \
 
 #### Hugo static site generator
 
