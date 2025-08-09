@@ -558,8 +558,10 @@ applyStyleByName() {
             local background_code
             foreground_code="$(get256ColorIndexByName "$foreground_name")"
             background_code="$(get256ColorIndexByName "$background_name")"
-            foreground_command="38;5;${background_code}m"
+            foreground_command="38;5;${foreground_code}m"
             background_command="48;5;${background_code}m" # 48;5;n (index n in a 256-colour palette)
+            # echo -e "${foreground_command} - ${background_command} - ${formatting_codes} FIXXX"
+
             echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
         elif [[ "$TERM" == *"color"* ]]; then
             # ANSI 8 colors
@@ -609,3 +611,24 @@ echo ""
 TERM="xterm-256color"
 
 '
+
+# Print a colored text, if the terminal allows it
+## Run: printColored CIAOOO :silver :aquamarine_087 bold dim
+printColored() {
+
+    #FIXME, doesn't work
+
+    local text="$1"
+    local foreground_color="$2"
+    local background_color="$3"
+
+    shift 3
+    local formatting_style_names="${@}"
+
+    local style
+    local reset_style
+
+    style="$(applyStyleByName "$foreground_color" "$background_color" "$formatting_style_names")"
+    reset_style="$(resetStyle)"
+    echo -e "$style$text$reset_style"
+}
