@@ -523,7 +523,7 @@ applyStyleByCodes() {
 resetStyle() {
     # If $NO_COLOR not defined or empty
     if [[ ! -v "NO_COLOR" || -z "$NO_COLOR" ]]; then
-        echo -ne "\033[0m"
+        echo -n "\033[0m"
     fi
 }
 
@@ -542,7 +542,7 @@ applyStyleByName() {
         # formatting styles
         local formatting_names=("$@")
         local formatting_codes
-        formatting_codes=$(getFormattingCodeByNames "${formatting_names[@]}")
+        formatting_codes="$(getFormattingCodeByNames "${formatting_names[@]}")"  # FIXME, function not invoked
 
         local foreground_command=""
         local background_command=""
@@ -562,7 +562,7 @@ applyStyleByName() {
             background_command="48;5;${background_code}m" # 48;5;n (index n in a 256-colour palette)
             # echo -e "${foreground_command} - ${background_command} - ${formatting_codes} FIXXX"
 
-            echo -ne "\033[${foreground_command}\033[${background_command}\033[${formatting_codes}m"
+            echo -n "\033[${foreground_command}\033[${background_command}" #\033[${formatting_codes}m" # FIXME
         elif [[ "$TERM" == *"color"* ]]; then
             # ANSI 8 colors
             local foreground_code
@@ -629,6 +629,7 @@ printColored() {
     local reset_style
 
     style="$(applyStyleByName "$foreground_color" "$background_color" "$formatting_style_names")"
-    reset_style="$(resetStyle)"
+    reset_style="$(resetStyle "")"
+    # echo "style : $style$text$reset_style"
     echo -e "$style$text$reset_style"
 }
