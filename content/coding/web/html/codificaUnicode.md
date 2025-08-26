@@ -18,6 +18,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "/tools/editorconfig/"
         description: "Articolo per la configurazione di Editorconfig"
+    -   title: "The Unicode Standard - Core Specification"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "https://www.unicode.org/versions/latest/core-spec/"
+        description: "The Unicode Standard - Core Specification"
     -   title: "Unicode Converter - Unicodes and text converter"
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://www.branah.com/unicode-converter"
@@ -42,22 +46,57 @@ references:
 
 # Codifica Unicode
 
-Nelle prime fasi dello sviluppo di internet, all'incirca del 1963, le comunicazioni si avvalevano del codice ASCII a 7 bit che si basa su 95 caratteri stampabili, come i numeri, lettere ed i simboli di punteggiatura, e dai restanti caratteri di controllo, come l'invio a capo, che servivano a controllare le telescriventi dell'epoca.
+Nelle prime fasi dello sviluppo di internet, all'incirca del 1963, le comunicazioni si avvalevano del codice ASCII a 7 bit che si basa su 95 caratteri stampabili, come i numeri, lettere ed i simboli di punteggiatura, e dai restanti caratteri di controllo, come l'invio a capo e la tabulazione, che servivano a controllare le telescriventi dell'epoca.
 
 Il codice ASCII non era un vero e proprio standard in quanto con l'estendersi della rete internet molte nazioni iniziarono ad adattarlo per includere quei caratteri che non facevano parte dell'alfabeto USA, ad esempio il Canada sostituì alcuni caratteri con quelli francesi, la Gran Bretagna aggiunse il simbolo della sterlina. Nel mondo iniziarono ad adottare delle codifiche simili all'ASCII, ad esempio in India si utilizzo la codifica ISCII mentre in Vietnam la codifica VISCII.
 
-Nel tentativo di utilizzare una codifica dei caratteri che comprendesse più caratteri possibili, si crearono diversi standard, come la codifica ASCII a 8 bit e successive codifiche ISO prima a 12 bit, poi a 16 e così via. Vi furono notevoli problemi di incompatibilità a causa dei vari adattamenti dei codici delle varie nazioni.
+Questi adattamenti portarono notevoli problemi di incompatibilità nel trasferimento delle informazioni, ad esempio via email, perché i caratteri inviati con il sistema di codifica del mittente venivano ricevuti ed interpretati utilizzando il sistema di codifica del ricevente, che era differente. Nel concreto, un messaggio contenente il simbolo della sterlina e lettere accentate inviato usando la codifica ASCII, una volta ricevuto ed interpretato da un sistema che utilizzava la codifica VISCII poteva risultare con il simbolo della sterlina sostituito con quello della moneta del Vietnam e con i caratteri accentati sostituiti dai simboli da quelli di punteggiatura del sistema VISCII.
 
-Nel tentativo di realizzare un sistema che potesse codificare qualsiasi carattere esistente di qualsiasi alfabeto, nacque il consorzio Unicode, un'organizzazione che aveva lo scopo di coordinare questi lavori.
+Nel tentativo di realizzare un sistema che potesse codificare qualsiasi carattere esistente di qualsiasi alfabeto, si crearono diversi standard, come la codifica ASCII a 8 bit e successive codifiche ISO prima a 12 bit, poi a 16 e così via, fino alla nascita del consorzio Unicode, un'organizzazione che aveva lo scopo di coordinare questi lavori.
 
-Nacque quindi nel 1991 la prima versione del sistema Unicode, un sistema di codifica dei caratteri progettato per supportare a livello internazionale lo scambio, l'elaborazione e la visualizzazione dei testi scritti in linguaggi diversi, compresi i linguaggi tecnici delle varie discipline e le lingue morte. La parte visuale come ad esempio la dimensione del carattere, la forma, lo stile, eccetera, non fanno parte delle specifiche Unicode.
+La prima versione del sistema Unicode nacque nel 1991, un sistema di codifica dei caratteri progettato per supportare a livello internazionale lo scambio, l'elaborazione e la visualizzazione dei testi scritti in linguaggi diversi, compresi i linguaggi tecnici delle varie discipline e le lingue morte.
 
-Il sistema Unicode assegna ad ogni carattere, numero, segno di punteggiatura o segno diacritico **un numero univoco in formato esadecimale**, detto **punto di codice** che è utilizzato per identificare il carattere. I caratteri, intesi come numeri, lettere, segni di punteggiatura, segni diacritici, emoji, sono detti **grafemi**.
+La Codifica Unicode è progettata per essere:
+
+- Universale: deve includere tutti i caratteri utilizzati nelle codifiche internazionali, nazionali e di settore;
+- Efficiente: la codifica è in formato testuale, facile da analizzare, senza stati o "sequenze di escape" speciali, che consente una rapida sincronizzazione dei caratteri in un flusso di testo. Ordinamento, ricerca, visualizzazione e modifica del testo devono essere efficienti.
+- Univoco: ogni carattere deve essere interpretato univocamente.
+
+Il sistema Unicode assegna ad ogni carattere, numero, segno di punteggiatura o segno diacritico **un numero univoco in formato esadecimale**, detto **punto di codice** che è utilizzato per identificare il carattere.
 
 Nella specifica Unicode, il **punto di codice** è l'unità atomica di informazione ed è identificata da **un numero univoco in formato esadecimale** indicato nella forma **U+numeroEsadecimale**.
-Il **grafema** è una sequenza di uno o più punti di codice che compongono una singola unità grafica.
 
-Ad esempio il punto di codice "U+0079" è utilizzato per identificare il grafema "lettera &#x0079;" <!-- lettera y --> ed il punto di codice "U+0039" è utilizzato per identificare il grafema "numero &#x0039;" <!-- numero 9 -->.
+Ad esempio il punto di codice "U+0079" è utilizzato per identificare la "lettera &#x0079;" <!-- lettera y --> ed il punto di codice "U+0039" è utilizzato per identificare il "numero &#x0039;" <!-- numero 9 -->.
+
+Nel sistema Unicode i caratteri, identificati dai punti di codice, sono trattati come entità astratte, come "LATIN CAPITAL LETTER A" o "BENGALI DIGIT FIVE".
+
+Il termine **glifo** si riferisce invece al segno visivo che appare su uno schermo o su carta, un glifo è quindi una rappresentazione grafica concreta del carattere, ciò che gli utenti vedono e riconoscono visivamente.
+
+**Il sistema Unicode non definisce la forma, la dimensione o la formattazione dei caratteri visualizzati su schermo o su carta, quindi non indica come disegnare i glifi.**. Questo compito è demandato ai software di scrittura e stampa, che utilizzano i "font" (termine usato in contesto tipografico) di caratteri per definire le proprietà grafiche dei caratteri.
+
+Le specifiche Unicode forniscono istruzioni dettagliate e una vasta quantità di dati riguardanti la gestione del testo, in particolare:
+
+- Divisione delle parole e interruzione delle righe: informazioni per gestire correttamente la separazione delle parole e delle righe in modo che il testo appaia leggibile e ben formattato;
+- Ordinamento del testo in diverse lingue: informazioni su come ordinare correttamente il testo in base alle regole specifiche di ciascuna lingua, tenendo conto delle differenze culturali e linguistiche;
+- Formattazione di numeri, date e orari: informazioni su come formattare correttamente numeri, date e orari in modo che siano appropriati per diverse località, rispettando le convenzioni locali;
+- Visualizzazione del testo per lingue con scrittura da destra a sinistra: indicazioni su come visualizzare correttamente il testo in lingue come l'arabo o l'ebraico, che si scrivono da destra a sinistra;
+- Gestione del testo con forme scritte che si dividono, combinano e riordinano: Le specifiche affrontano le complessità delle lingue del Sud Asia, dove i caratteri possono cambiare forma e posizione a seconda del contesto;
+- Sicurezza riguardo ai caratteri simili: Viene trattata la questione della sicurezza, in particolare per quanto riguarda i caratteri che possono sembrare simili tra loro provenienti da diversi sistemi di scrittura, il che è cruciale per evitare confusione e potenziali problemi di sicurezza.
+
+I punti di codice sono divisi in queste categorie:
+
+- Grafici: Lettere, segni, numeri, punteggiatura, simboli e spazi;
+- Formattazione: caratteri invisibili ma che influiscono sui caratteri vicini; un esempio sono i separatori di linea e di paragrafo;
+- Controllo: sono definiti da protocolli o standard esterni al Sistema Unicode. Sono definiti in due intervalli specifici:
+  1. da U+0000 a U+001F (codici di controllo C0) per compatibilità con il sistema ASCII;
+  2. da U+007F a U+009F (codici di controllo C1) per compatibilità con il set di caratteri ISO/IEC 8859;
+- Uso privato: uso definito da accordi privati al di fuori del Sistema Unicode; Sono definiti in tre intervalli specifici:
+  1. da U+E000 a U+F8FF (Primary Private Use Area);
+  2. da U+100000 a U+100FFF (Supplementary Private Use Area A - Supplemental Multilingual Plane);
+  3. da U+200000 a U+2FFFFF (Supplementary Private Use Area A - Supplemental Ideographic Plane);
+- Surrogati: Riservati solo ed esclusivamente alla codifica UTF-16; Definiti nell'intervallo da U+D800 a U+DFFF;
+- Non character: Riservati per uso interno; Definiti nell'intervallo da U+FDD0 a U+FDEF più tutti i caratteri terminanti con codifica FFFE ed FFFF;
+- Riservato, interscambio ristretto: Riservato per future assegnazioni.
 
 ## Piani di codifica
 
@@ -66,8 +105,10 @@ Attualmente il codice Unicode prevede 17 piani di codifica, ma solo 3 sono utili
 1. piano multilinguistico base (BMP) con caratteri identificati nell'intervallo da U+000000 ad U+00​FFFF;
 2. piano multilinguistico supplementare (SMP) con caratteri identificati nell'intervallo da U+010000 ad U+01FFFF;
 3. piano del codici ideografici supplementari (SIP) con caratteri identificati nell'intervallo da U+020000 ad U+02FFFF;
-4. piani di codifica non utilizzati, da U+030000 a U+0EFFFF;
-5. piani di codifica supplementari ad uso privato, da U+0F0000 ad U+10FFFF;
+4. dodici piani di codifica non utilizzati, da U+030000 a U+0EFFFF;
+5. due piani di codifica supplementari ad uso privato, il piano 16 da U+0F0000 a U+0FFFFF ed il piano 17 da U+100000 ad U+10FFFF;
+
+Attualmente solo 21 bit sono utilizzati per identificare i caratteri, con l'ultimo carattere dell'ultimo piano di codifica identificato da U+10FFFF, che codificato in binario da ``0001 0000 1111 1111 1111 1111``.
 
 Il BMP contiene quasi tutti i sistemi di scrittura utilizzati, come l'arabo, il cirillico, l'esperanto, il greco, il latino, il mongolo, il thailandese, il persiano, il fenicio, il runico, la scrittura cuneiforme e tanti altri. Per ogni sistema di scrittura sono presenti i nomi (con annesso significato) di ogni carattere, il corrispondente codice numerico assegnato e le possibili varianti del carattere.
 
@@ -110,9 +151,11 @@ Nel Basic Latin Unicode block si possono notare:
 
 ## Grafemi come sequenza di punti di codice
 
-Un **grafema** è una sequenza di uno o più punti di codice che vengono visualizzati insieme come una singola unità grafica. Di seguito vediamo come un grafema può essere realizzato una sequenza di punti di codice:
+Un **grafema** è un'unità minima di un sistema di scrittura che rappresenta un suono o un'idea ed ha una propria funzione linguistica. Ad esempio la lettera "a" (con lo stesso suono) oppure le combinazioni di caratteri come "ch", "gn" e "sc" che formano i suoni come "chi", "gnu" e "sci". I grafemi "ch", "gn" e "sc" sono rappresentati da due glifi, ma rappresentano un solo grafema. Una lettera accentata è tipicamente considerata un grafema perché rappresenta un suono specifico e ha un significato proprio nel contesto linguistico.
 
-<!-- Grapheme clusters: Quando un grafema è composto da una sequenza di più punti di codice, spesso ci si riferisce con il termine "cluster di grafemi". -->
+Nella standard Unicode un grafema può essere individuato da una sequenza di uno o più punti di codice che possono essere visualizzati insieme come una singola unità grafica. In questo contesto si parla di **gruppo di grafemi** o **cluster di grafemi** ed è specificato che **un grafema o un cluster di grafemi devono essere considerati unità indivisibili nei processi di visualizzazione e manipolazione del testo**, al fine di mantenerne il significato e l'integrità , poiché la divisione dei singoli punti di codice potrebbe portare a una rappresentazione o interpretazione errata o confusa del testo.
+
+Di seguito vediamo come un grafema o un cluster di grafemi può essere realizzato con una sequenza di punti di codice:
 
 - Il grafema "è" può essere composto dal punto di codice "U+0065" (che rappresenta il grafema ``"``&#x0065;``"``) seguito dal punto di codice "U+0301" (che rappresenta un "accento acuto" ``"``&#x0301;``"``) e che insieme permettono di rappresentare il grafema ``"``&#x0065;&#x0301;``"``;
 - Il grafema ``"``&#x1F468;&#x200D;&#x1F3ED;``"`` può essere composto dal punto di codice "U+1F468" (che rappresenta il grafema "uomo" ``"``&#x1F468;``"``) seguito dal punto di codice "U+200D" (che rappresenta una indicazione di combinazione ``"``&#x200D;``"``) seguito dal punto di codice "U+1F3ED" (che rappresenta il grafema "fabbrica" ``"``&#x1F3ED;``"``);
@@ -136,7 +179,7 @@ Un grafema può essere composto da un numero illimitato di punti di codice e qui
 
 Le regole Unicode consentono ad un grafema composto da più punti di codice di essere interpretato come un grafema che ha già il proprio singolo punto di codice. Un esempio appena visto è il grafema che rappresenta la "lettera e accentata" che puo essere composto sia da una sequenza di un solo punto di codice "U+00E8", sia dalla sequenza di due punti di codice "U+0065" e "U+0301".
 
-Dato che in Unicode esiste più di un modo per rappresentare un grafema, esiste anche la "forma normalizzata" che consente di capire se due grafemi sono equivalenti e di conseguenza se due frasi lo sono.
+Dato che in Unicode esiste più di un modo per rappresentare un grafema, esiste la **forma normalizzata** che consente di capire se due grafemi (o cluster di grafemi) sono equivalenti e di conseguenza se due frasi lo sono.
 
 ## Unicode Transformation Format (UTF)
 
