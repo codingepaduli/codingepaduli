@@ -70,6 +70,26 @@ Oggi, sempre più spesso, il colore della luce è espresso come temperatura di c
 <!-- TODO da sistemare
 In chimica si utilizza una tecnica di analisi detta test della fiamma (o saggio alla fiamma) per verificare la presenza di determinati elementi chimici in base al colore della fiamma. Sullo stesso principio si basano i fuochi d'artificio. La spettroscopia è lo studio di uno spettro elettromagnetico al fine di identificare la natura chimica di una sostanza -->
 
+## Percezione e riproduzione digitale dei colori
+
+I colori non sono una proprietà della luce, ma un'interpretazione (una percezione) che il cervello realizza basandosi sui segnali che arrivano dagli occhi, in particolare dai coni e dai bastoncelli. I bastoncelli non rilevano i colori, ma riescono a operare in condizioni di scarsa illuminazione, sono indispensabili alla visione notturna. I coni permettono di distinguere i colori e sono utili per la visione diurna.
+
+L'occhio umano ha la massima sensibilità per la luce verde, intermedia per la luce rossa e bassa per quella blu. Questo significa che piccoli cambi di intensità di luce verde portano ad una percezione di grande cambiamento del colore, mentre piccoli cambi di intensità di luce blu portano ad una percezione di minore cambiamento del colore. Una conseguenza è che l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità o saturazione.
+
+La riproduzione digitale dei colori inizia con la CIE (Commission Internationale de l'Éclairage) che sviluppo lo spazio dei colori CIE XYZ color space, una sorta di spazio completo di colori che l'occhio umano può vedere. I primi schermi a colori non erano ovviamente capaci di mostrare tutti i colori che l'occhio umano può vedere ed inoltre un colore poteva essere visualizzato su schermi e stampanti di diversi modelli con una tonalità differente tra un dispositivo e l'altro.
+
+Per risolvere il problema della rappresentazione su dispositivi differenti le aziende crearono la International Color Consortium (ICC) che sviluppò i **profili ICC**. Ogni dispositivo ha uno specifico profilo ICC che permette di visualizzare un colore con le stesse caratteristiche di brillantezza e tonalità mostrate su un dispositivo diverso.
+
+Per risolvere il problema di come indicare i colori in maniera indipendente da qualsiasi dispositivo o formato digitale, Microsoft and Hewlett-Packard si allearono e svilupparono lo **spazio di colori sRGB** (standard Red Green Blue). La riproduzione dei colori era coerente su monitor, stampanti, fotocamere digitali e sul web, ogni colore era individuato da tre componenti primarie, il Rosso, il Verde ed Blu.
+
+Da allora la tecnologia di realizzazione dei dispositivi digitali è migliorata ed i moderni schermi riproducono uno spazio di colori molto piu grande ed accurato. L'industria cinematografica oggi usa lo spazio dei colori DCI-P3, mentre i consumatori utilizzano schermi con spazio colori Display P3.
+
+Per lavorare con i colori si usa mappare lo spazio dei colori con un **modello di colori**. Ogni modello ha una forma e delle caratteristiche particolari, come i gradienti risultanti.
+
+Un gradiente è una transizione graduale e progressiva tra due o più valori, come due colori o due intensità di colore. I modelli di colore non permettono gradienti uniformi, quindi i passaggi da un colore ad un altro risultano con intermezzi piu o meno saturi o piu o meno luminosi rispetto all'intero gradiente. Inoltre, oltre al modello di colore, anche l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità (hue) o saturazione.
+
+Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridurre al minimo i salti di luminosità nella realizzazione dei gradienti. In particolare abbiamo nel 2020 **oklab** e lo spazio dei colori **oklch**, uno spazio di colore percettivamente uniforme (compensa anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano) che viene anche aggiunto alle specifiche CSS4 e CSS5, in modo da essere uno standard anche per il web.
+
 ## Modello di colori RGB
 
 Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu.
