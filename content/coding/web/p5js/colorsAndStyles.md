@@ -88,7 +88,7 @@ Per lavorare con i colori si usa mappare lo spazio dei colori con un **modello d
 
 Un gradiente è una transizione graduale e progressiva tra due o più valori, come due colori o due intensità di colore. I modelli di colore non permettono gradienti uniformi, quindi i passaggi da un colore ad un altro risultano con intermezzi piu o meno saturi o piu o meno luminosi rispetto all'intero gradiente. Inoltre, oltre al modello di colore, anche l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità (hue) o saturazione.
 
-Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridurre al minimo i salti di luminosità nella realizzazione dei gradienti. In particolare abbiamo nel 2020 **oklab** e lo spazio dei colori **oklch**, uno spazio di colore percettivamente uniforme (compensa anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano) che viene anche aggiunto alle specifiche CSS4 e CSS5, in modo da essere uno standard anche per il web.
+Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridurre al minimo i salti di luminosità nella realizzazione dei gradienti. In particolare abbiamo nel 2020 lo spazio dei colori **oklab** ed il relativo modello di colori (cilindrico)  **oklch**, uno spazio di colore percettivamente uniforme (compensa anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano) che viene anche aggiunto alle specifiche CSS4 e CSS5, in modo da essere uno standard anche per il web.
 
 ## Modello di colori RGB
 
