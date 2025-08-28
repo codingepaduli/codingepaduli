@@ -72,11 +72,23 @@ In chimica si utilizza una tecnica di analisi detta test della fiamma (o saggio 
 
 ## Percezione e riproduzione digitale dei colori
 
-I colori non sono una proprietà della luce, ma un'interpretazione (una percezione) che il cervello realizza basandosi sui segnali che arrivano dagli occhi, in particolare dai coni e dai bastoncelli. I bastoncelli non rilevano i colori, ma riescono a operare in condizioni di scarsa illuminazione, sono indispensabili alla visione notturna. I coni permettono di distinguere i colori e sono utili per la visione diurna.
+I colori non sono una proprietà della luce, ma un'interpretazione (una percezione) che il cervello realizza basandosi sui segnali che arrivano dagli occhi, in particolare dai coni e dai bastoncelli, le cellule fotosensibili della retina. I bastoncelli non rilevano i colori, operano in condizioni di scarsa illuminazione per realizzare la "visione notturna". I coni permettono di distinguere i colori in condizione di sufficiente illuminazione, permettendo la "visione diurna".
 
-L'occhio umano ha la massima sensibilità per la luce verde, intermedia per la luce rossa e bassa per quella blu. Questo significa che piccoli cambi di intensità di luce verde portano ad una percezione di grande cambiamento del colore, mentre piccoli cambi di intensità di luce blu portano ad una percezione di minore cambiamento del colore. Una conseguenza è che l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità o saturazione.
+L'occhio umano ha la massima sensibilità per la luce verde, intermedia per la luce rossa e bassa per quella blu. Questo significa che piccoli cambi di intensità di luce verde portano ad una percezione di grande cambiamento del colore, mentre piccoli cambi di intensità di luce blu portano ad una percezione di minore cambiamento del colore. Di conseguenza l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità o saturazione.
 
-La riproduzione digitale dei colori inizia con la CIE (Commission Internationale de l'Éclairage) che sviluppo lo spazio dei colori CIE XYZ color space, una sorta di spazio completo di colori che l'occhio umano può vedere. I primi schermi a colori non erano ovviamente capaci di mostrare tutti i colori che l'occhio umano può vedere ed inoltre un colore poteva essere visualizzato su schermi e stampanti di diversi modelli con una tonalità differente tra un dispositivo e l'altro.
+I colori non sono una proprietà degli oggetti. Li vediamo colorati grazie alla luce che si riflette su di essi. Un foglio bianco riflette quasi tutta la luce che riceve. Un foglio nero la assorbe quasi del tutto.
+
+Quando applichiamo il colore "giallo" ad un foglio bianco, parte della luce bianca viene assorbita dall'inchiostro del pennarello, quindi la luce riflessa è solo quella "gialla". Si può affermare che allo spettro visibile viene sottratta una parte di spettro e rimane solo la parte relativa alla luce "gialla", che viene riflessa. Più colori si sovrappongono, maggiore è la quantità di spettro visibile che viene sottratta, maggiore è il buio che si percepisce, fino ad arrivare al colore risultante nero (viene sottratto tutto lo spettro visibile, la luce non viene riflessa, c'è il buio).
+
+Se i colori che si sovrappongono non sottraggono ma si sommano e vanno ad aumentare la quantità di spettro visibile, allora maggiore è la quantità, maggiore è la luminosità che si percepisce, fino ad arrivare al colore risultante bianco (tutto lo spettro è visibile, c'è "luce").
+
+Gli schermi si basano su questo principio **additivo**, ogni pixel dello schermo è colorato attraverso tre LED, che accesi insieme formano la luce bianca.
+
+Le stampanti e i lettori di ebook ad inchiostro si basano invece sul principio **sottrattivo**, stampando piu colori sovrapposti sullo stesso punto di un foglio di carta si forma il colore nero, i colori sottraggono tutto lo spettro visibile e nessuna parte viene riflessa.
+
+![p5.js - Principio additivo e sottrattivo dei colori](/static/coding/web/p5js/colors_and_styles_rgb_and_cymk.png "p5.js - Principio additivo e sottrattivo dei colori")
+
+Per sviluppare la riproduzione digitale dei colori, la CIE (Commission Internationale de l'Éclairage) sviluppò lo spazio dei colori CIE XYZ, una sorta di spazio completo di colori che l'occhio umano può vedere. I primi schermi a colori non erano ovviamente capaci di mostrare tutti i colori che l'occhio umano può vedere ed inoltre un colore poteva essere visualizzato su schermi e stampanti di diversi modelli con una tonalità differente tra un dispositivo e l'altro.
 
 Per risolvere il problema della rappresentazione su dispositivi differenti le aziende crearono la International Color Consortium (ICC) che sviluppò i **profili ICC**. Ogni dispositivo ha uno specifico profilo ICC che permette di visualizzare un colore con le stesse caratteristiche di brillantezza e tonalità mostrate su un dispositivo diverso.
 
@@ -92,15 +104,11 @@ Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridu
 
 ## Modello di colori RGB
 
-Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu.
+Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
 
-E' un modello additivo perché quando questi tre colori primari sono miscelati insieme, (cioè se l'intero spettro visibile arriva all'occhio umano), il colore percepito è il bianco. Se nessuna parte dello spettro visibile arriva all'occhio umano, c'è il "buio" che è percepito come colore nero.
+<!-- TODO disegna la forma 3D del modello -->
 
-Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
-
-![p5.js - Modello di colori RGB](/static/coding/web/p5js/colors_and_styles_rgb.png "p5.js - Modello di colori RGB")
-
-Su questo modello di colori è basato un modello computerizzato, chiamato appunto modello RGB. In questo modello computerizzato, la quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
+La quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
 Come ci si può aspettare, in questo modello:
 
@@ -110,19 +118,13 @@ Come ci si può aspettare, in questo modello:
 - il colore nero si esprime impostando a zero tutte le quantità: (0, 0, 0);
 - il colore bianco si esprime impostando al massimo tutte le quantità: (255, 255, 255), ovvero sommando tutti i colori (il modello è additivo);
 
-Il problema principale di questo modello consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste.
-
 Come nota di approfondimento, un corpo solido portato a temperatura quasi infinita emette una luce con colore denominato "Perano" che nel modello RGB è identificato con la combinazione (148, 177, 255);
+
+Il problema principale di questo modello consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste. Un altro problema è che i gradienti tendono a passare per una fascia grigiastra.
 
 ## Modello di colori CMYK
 
 Il modello **CMYK** è un modello di colori **sottrattivo**, esprime i colori come combinazione di colori "primari", che in questo modello sono il ciano, il magenta, il giallo ed il nero.
-
-E' un modello sottrattivo perché questi tre colori primari sottraggono alla luce bianca una parte del colore. Infatti, miscelando insieme questi colori primari, il colore risultante che percepiamo è il nero (cioè l'intero spettro visibile viene "sottratto" prima di arrivare all'occhio umano).
-
-E' un modello che nasce dal fatto che gli oggetti non hanno un colore proprio, sono visti grazie alla luce che si riflette su di essi. Un foglio bianco riflette quasi tutta la luce che riceve. Un foglio nero la assorbe quasi del tutto.
-
-Quando applichiamo il colore "giallo" ad un foglio bianco, parte della luce bianca viene assorbita dall'inchiostro del pennarello, quindi la luce riflessa è solo quella "gialla". Si può affermare che l'inchiostro giallo "sottrae", in un certo qual modo, una parte dello spettro visibile e riflette solo la luce "gialla".
 
 Il colore ciano è il colore complementare al rosso, ovvero il colore che si ottiene sottraendo il colore rosso dalla luce bianca.
 
@@ -130,17 +132,15 @@ Il colore magenta è il colore complementare al verde, ovvero il colore che si o
 
 Il colore giallo è il colore complementare al viola, ovvero il colore che si ottiene sottraendo il colore viola dalla luce bianca.
 
-![p5.js - Modello di colori CMYK](/static/coding/web/p5js/colors_and_styles_cymk.png "p5.js - Modello di colori CMYK")
+Miscelando ciano, magenta e giallo si ottiene un colore molto scuro (il modello è sottrattivo, l'intero spettro visibile viene "sottratto" prima di arrivare all'occhio umano), ma dato che non è un vero e proprio nero, per completare lo spettro di colori visibili in questo modello si è aggiunto il colore nero (identificato dalla lettera K, perché la lettera B è per il blue).
 
-Dato che miscelando ciano, magenta e giallo si ottiene un colore molto scuro (il modello è sottrattivo), ma non un vero e proprio nero, in questo modello si è aggiunto il colore nero per completare lo spettro di colori visibili.
-
-Anche per questo modello, il problema principale consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste.
+Anche per questo modello, il problema principale consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste. I gradienti fanno enormi sbalzi di luminosità.
 
 In p5.js non esiste un modello computerizzato che ci permette di usare il modello di colori **CMYK**.
 
 ## Modello di colori HSB
 
-Il modello Hue-Saturation-Brightness è un modello computerizzato, non basato su concetti fisici ma su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
+Il modello Hue-Saturation-Brightness è un modello computerizzato, nè additivo nè sottrattivo, non basato su concetti fisici ma su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
 
 ![p5.js - Modello di colori HSB](/static/coding/web/p5js/colors_and_styles_hsb.png "p5.js - Modello di colori HSB")
 
