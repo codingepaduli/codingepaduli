@@ -88,7 +88,7 @@ Le stampanti e i lettori di ebook ad inchiostro si basano invece sul principio *
 
 ![p5.js - Principio additivo e sottrattivo dei colori](/static/coding/web/p5js/colors_and_styles_rgb_and_cymk.png "p5.js - Principio additivo e sottrattivo dei colori")
 
-Per sviluppare la riproduzione digitale dei colori, la CIE (Commission Internationale de l'Éclairage) sviluppò lo spazio dei colori CIE XYZ, una sorta di spazio completo di colori che l'occhio umano può vedere. I primi schermi a colori non erano ovviamente capaci di mostrare tutti i colori che l'occhio umano può vedere ed inoltre un colore poteva essere visualizzato su schermi e stampanti di diversi modelli con una tonalità differente tra un dispositivo e l'altro.
+Per sviluppare la riproduzione digitale dei colori, nel 1931 la CIE (Commission Internationale de l'Éclairage) sviluppò lo spazio dei colori CIE XYZ, una sorta di spazio completo di colori che l'occhio umano può vedere. I primi schermi a colori non erano ovviamente capaci di mostrare tutti i colori che l'occhio umano può vedere ed inoltre un colore poteva essere visualizzato su schermi e stampanti di diversi modelli con una tonalità differente tra un dispositivo e l'altro.
 
 Per risolvere il problema della rappresentazione su dispositivi differenti le aziende crearono la International Color Consortium (ICC) che sviluppò i **profili ICC**. Ogni dispositivo ha uno specifico profilo ICC che permette di visualizzare un colore con le stesse caratteristiche di brillantezza e tonalità mostrate su un dispositivo diverso.
 
@@ -96,13 +96,19 @@ Per risolvere il problema di come indicare i colori in maniera indipendente da q
 
 Da allora la tecnologia di realizzazione dei dispositivi digitali è migliorata ed i moderni schermi riproducono uno spazio di colori molto piu grande ed accurato. L'industria cinematografica oggi usa lo spazio dei colori DCI-P3, mentre i consumatori utilizzano schermi con spazio colori Display P3.
 
-Per lavorare con i colori si usa mappare lo spazio dei colori con un **modello di colori**. Ogni modello ha una forma e delle caratteristiche particolari, come i gradienti risultanti.
+Un gradiente è una transizione graduale e progressiva tra due o più valori, come due colori o due intensità di colore. Gli spazi di colore non sempre permettono gradienti uniformi, quindi i passaggi da un colore ad un altro risultano con intermezzi piu o meno saturi o piu o meno luminosi rispetto all'intero gradiente. Inoltre, oltre ai salti di luminosità presenti in uno spazio di colore, anche l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità (hue) o saturazione.
 
-Un gradiente è una transizione graduale e progressiva tra due o più valori, come due colori o due intensità di colore. I modelli di colore non permettono gradienti uniformi, quindi i passaggi da un colore ad un altro risultano con intermezzi piu o meno saturi o piu o meno luminosi rispetto all'intero gradiente. Inoltre, oltre al modello di colore, anche l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità (hue) o saturazione.
+Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridurre al minimo i salti di luminosità nella realizzazione dei gradienti. Gia nel 1976 la CIE (Commission Internationale de l'Éclairage) crea lo spazio di colori percettivamente uniforme **CIE LAB**, ma non risulta completamente corretto. Gli spazi di colore **oklab** e **oklch**, basati proprio sul CIE LAB, nascono nel 2020 proprio per correggere questi errori, compensando anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano.
 
-Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridurre al minimo i salti di luminosità nella realizzazione dei gradienti. In particolare abbiamo nel 2020 lo spazio dei colori **oklab** ed il relativo modello di colori (cilindrico)  **oklch**, uno spazio di colore percettivamente uniforme (compensa anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano) che viene anche aggiunto alle specifiche CSS4 e CSS5, in modo da essere uno standard anche per il web.
+## Modelli di colore
 
-## Modello di colori RGB
+Un **modello di colore** è un modello matematico astratto che descrive un modo per rappresentare i colori come combinazioni di **componenti di colore**, tipicamente tre o quattro valori numerici; Ogni modello ha una forma e delle caratteristiche particolari, come i gradienti risultanti.
+
+Una volta definito un colore come combinazione delle **componenti di colore** utilizzando uno specifico modello di colori, il software sottostante si occupa di identificare il colore nello spazio di colori utilizzato.
+
+Un modello ha una forma caratteristica, come un cubo, un cilindro o un cono, che rende più o meno intuitiva la scelta dei colori ed i passaggi (i gradienti) da un colore all'altro. Il percorso da un colore all'altro è vincolato o reso più agevole dalla forma del modello, ad esempio tracciando una linea retta lungo una diagonale del cubo oppure seguendo la linea curva della base del cilindro.
+
+### Modello di colori RGB
 
 Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
 
@@ -122,7 +128,7 @@ Come nota di approfondimento, un corpo solido portato a temperatura quasi infini
 
 Il problema principale di questo modello consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste. Un altro problema è che i gradienti tendono a passare per una fascia grigiastra.
 
-## Modello di colori CMYK
+### Modello di colori CMYK
 
 Il modello **CMYK** è un modello di colori **sottrattivo**, esprime i colori come combinazione di colori "primari", che in questo modello sono il ciano, il magenta, il giallo ed il nero.
 
@@ -132,13 +138,15 @@ Il colore magenta è il colore complementare al verde, ovvero il colore che si o
 
 Il colore giallo è il colore complementare al viola, ovvero il colore che si ottiene sottraendo il colore viola dalla luce bianca.
 
+<!-- TODO disegna la forma 3D del modello -->
+
 Miscelando ciano, magenta e giallo si ottiene un colore molto scuro (il modello è sottrattivo, l'intero spettro visibile viene "sottratto" prima di arrivare all'occhio umano), ma dato che non è un vero e proprio nero, per completare lo spettro di colori visibili in questo modello si è aggiunto il colore nero (identificato dalla lettera K, perché la lettera B è per il blue).
 
 Anche per questo modello, il problema principale consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste. I gradienti fanno enormi sbalzi di luminosità.
 
 In p5.js non esiste un modello computerizzato che ci permette di usare il modello di colori **CMYK**.
 
-## Modello di colori HSB
+### Modello di colori HSB
 
 Il modello Hue-Saturation-Brightness è un modello computerizzato, nè additivo nè sottrattivo, non basato su concetti fisici ma su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
 
@@ -163,9 +171,16 @@ Come ci si può aspettare, in questo modello:
 
 La facilità d'uso di questo modello è dovuta al fatto che, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
 
-## Impostare il modello di colori
+### Impostare il modello di colori
 
-Solo i modelli ``RGB`` ed ``HSB`` sono implementati dalla libreria p5.js.
+Solo i modelli ``RGB`` ed ``HSB`` sono implementati dalla libreria p5.js in versione ``1.0``.
+
+Dalla versione ``2.0`` abbiamo:
+
+- ``RGBHDR``, cioè RGB ad ampio intervallo, implementato per fare uso dello spazio di colori definito da **Display P3**;
+- ``HWB`` è una variante di ``HSB``;
+- ``LAB`` ed ``LCH`` per lo spazio di colori **quasi** percettivamente uniforme **CIE LAB**, gli errori sono presenti;
+- ``OKLAB`` ed ``OKLCH`` che si basano sullo spazio di colore **CIE LAB** e ne correggono gli errori, rendendoli realmente spazi di colore percettivamente uniformi, senza errori.
 
 Per impostare un modello di colori, è necessario utilizzare la funzione ``colorMode``, che prende come parametro una costante rappresentativa del modello da utilizzare. Le costanti sono le seguenti:
 
