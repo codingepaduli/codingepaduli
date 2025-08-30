@@ -110,9 +110,9 @@ Un modello ha una forma caratteristica, come un cubo, un cilindro o un cono, che
 
 ### Modello di colori RGB
 
-Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
+Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati. La forma caratteristica di questo modello è il **cubo**, di seguito vediamo le due angolazioni, una che mostra lo spigolo "bianco", l'altra che mostra lo spigolo "nero".
 
-<!-- TODO disegna la forma 3D del modello -->
+![p5.js - Forma del modello di colori RGB](/static/coding/web/p5js/colors_and_styles_color_model_rgb_cube_A_B.png "p5.js - Forma del modello di colori RGB")
 
 La quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
