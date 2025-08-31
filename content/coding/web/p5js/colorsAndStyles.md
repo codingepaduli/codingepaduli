@@ -98,7 +98,7 @@ Da allora la tecnologia di realizzazione dei dispositivi digitali è migliorata 
 
 Un gradiente è una transizione graduale e progressiva tra due o più valori, come due colori o due intensità di colore. Gli spazi di colore non sempre permettono gradienti uniformi, quindi i passaggi da un colore ad un altro risultano con intermezzi piu o meno saturi o piu o meno luminosi rispetto all'intero gradiente. Inoltre, oltre ai salti di luminosità presenti in uno spazio di colore, anche l'occhio umano è significativamente più sensibile alle variazioni di luminosità rispetto ai cambiamenti di tonalità (hue) o saturazione.
 
-Gli **spazi di colore percettivamente uniformi** nascono con l'obiettivo di ridurre al minimo i salti di luminosità nella realizzazione dei gradienti. Gia nel 1976 la CIE (Commission Internationale de l'Éclairage) crea lo spazio di colori percettivamente uniforme **CIE LAB**, ma non risulta completamente corretto. Gli spazi di colore **oklab** e **oklch**, basati proprio sul CIE LAB, nascono nel 2020 proprio per correggere questi errori, compensando anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano.
+Gli **spazi di colore percettivamente uniformi** nascono per far si che alle differenze di quantità delle componenti di un colore corrispondano effettivamente delle differenze visivamente percepite, riducendo al minimo le differenze di luminosità percepite tra due eguali differenze di quantità. Gia nel 1976 la CIE (Commission Internationale de l'Éclairage) crea lo spazio di colori percettivamente uniforme **CIE LAB**, ma non risulta completamente corretto. Gli spazi di colore **oklab** e **oklch**, basati proprio sul CIE LAB, nascono nel 2020 proprio per correggere questi errori, compensando anche la differenza di sensibilità dovuta al funzionamento dell'occhio umano.
 
 ## Modelli di colore
 
@@ -112,7 +112,7 @@ Un modello ha una forma caratteristica, come un cubo, un cilindro o un cono, che
 
 Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
 
-Il modello **RGB-HDR** è una versione del modello RGB ad intervallo ampio, cioè usa lo spazio di colori **Display P3** (e non sRGB) per mostrare una gamma di colori piu ampia;
+Il modello **RGBHDR** è una versione del modello RGB ad intervallo ampio, cioè usa lo spazio di colori **Display P3** (e non sRGB) per mostrare una gamma di colori piu ampia;
 
 La forma caratteristica di questi modelli è il **cubo**, di seguito vediamo le due angolazioni, una che mostra lo spigolo "bianco", l'altra che mostra lo spigolo "nero".
 
@@ -154,7 +154,7 @@ In p5.js non è possibile indicare i modelli di colori CMY e CMYK, ma si pu faci
 
 ### Modelli di colori HSB (HSV), HSL (HSI) e HBL
 
-Il modello **Hue-Saturation-Brightness**, conosciuto anche come **Hue-Saturation-Value**, è un modello computerizzato basato su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. Questo modello e le sue varianti hanno forma cilindrica.
+Il modello di colori **HSB** Hue-Saturation-Brightness, conosciuto anche come **HSV** Hue-Saturation-Value, è un modello computerizzato basato su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. Questo modello e le sue varianti hanno forma cilindrica.
 
 ![p5.js - Modello di colori HSB](/static/coding/web/p5js/colors_and_styles_color_models_hsb_hsl_hwb.png "p5.js - Modello di colori HSB")
 
@@ -177,33 +177,37 @@ Come ci si può aspettare, in questo modello:
 
 La facilità d'uso di questo modello è dovuta al fatto che, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
 
-Il modello **Hue-Saturation-Lightness**, conosciuto anche come **Hue-Saturation-Intensity** è un modello computerizzato molto simile al modello HSB, ha la stessa forma e le stesse componenti **H** per la tinta del colore ed **S** per la saturazione. Cambia l'ultima componente, sostituita dal valore di luminosità **L**, che ha la precedenza sulla saturazione S. Se L è un valore alto, il colore risultante è bianco, non importa la saturazione espressa.
+Il modello **HSL** Hue-Saturation-Lightness, conosciuto anche come **HSI** Hue-Saturation-Intensity è un modello computerizzato molto simile al modello HSB, ha la stessa forma e le stesse componenti **H** per la tinta del colore ed **S** per la saturazione. Cambia l'ultima componente, sostituita dal valore di luminosità **L**, che ha la precedenza sulla saturazione S. Se L è un valore alto, il colore risultante è bianco, non importa la saturazione espressa.
 
-Il modello **Hue-Whiteness-Blackness** è un modello computerizzato molto simile ai due precedenti, ha la stessa forma, conserva la componente **H** per la tinta del colore ed utilizza i valori di "chiarezza" e "oscurità". Una volta espressa la tonalità di colore, il colore è mescolato con bianco e nero. Valori alti di oscurità portano al nero, valori alti di chiarezza portano al bianco, entrambi alti portando ad un grigio intenso.
+Il modello **HWB** Hue-Whiteness-Blackness è un modello computerizzato molto simile ai due precedenti, ha la stessa forma, conserva la componente **H** per la tinta del colore ed utilizza i valori di "chiarezza" e "oscurità". Una volta espressa la tonalità di colore, il colore è mescolato con bianco e nero. Valori alti di oscurità portano al nero, valori alti di chiarezza portano al bianco, entrambi alti portando ad un grigio intenso.
 
-### Impostare il modello di colori
+### Modelli di colori LAB (CIE LAB), LCH, OKLAB ed OKLCH
 
-Solo i modelli ``RGB`` ed ``HSB`` sono implementati dalla libreria p5.js in versione ``1.0``.
+Il modello di colori **LAB** è un modello computerizzato basato sullo spazio di colori CIE LAB per identificare i colori. I componenti di colore di questo modello sono:
 
-Dalla versione ``2.0`` abbiamo:
+- L (Luminosità): da 0 (nero) a 100 (bianco);
+- a ("verde-rosso"): rappresenta le componenti di verde a rosso (negativo per verde, positivo per rosso);
+- b ("blu-giallo"): rappresenta le componenti di blu a giallo (negativo per blu, positivo per giallo);
 
-- ``RGBHDR``, cioè RGB ad ampio intervallo, implementato per fare uso dello spazio di colori definito da **Display P3**;
-- ``HWB`` è una variante di ``HSB``;
-- ``LAB`` ed ``LCH`` per lo spazio di colori **quasi** percettivamente uniforme **CIE LAB**, gli errori sono presenti;
-- ``OKLAB`` ed ``OKLCH`` che si basano sullo spazio di colore **CIE LAB** e ne correggono gli errori, rendendoli realmente spazi di colore percettivamente uniformi, senza errori.
+Il modello di colori **LCH** è la versione di forma cilindrica del modello LAB. I componenti di colore di questo modello sono:
 
-Per impostare un modello di colori, è necessario utilizzare la funzione ``colorMode``, che prende come parametro una costante rappresentativa del modello da utilizzare. Le costanti sono le seguenti:
+- L (Luminosità): da 0 (nero) a 100 (bianco);
+- C (Cromaticità): indica quanto un colore è saturo o vivace;
+- H (Hue): la grandezza angolare (da 0° a 360°) che rappresenta il colore (rosso, giallo, verde, blu, ecc.).
 
-- ``RGB``, costante che indica di utilizzare il modello RGB;
-- ``HSB``, costante che indica di utilizzare il modello HSB.
+I modelli **OKLAB** e **OKLCH** sono modelli percettivamente uniformi e vanno a correggere gli errori di progettazione dei modelli LAB e LCH. Utilizzano le stesse componenti di colore dei modelli LAB e LCH, ma i colori risultanti sono ovviamente differenti.
 
-Un esempio d'uso per impostare il modello di colori da utilizzare è il seguente:
+## Utilizzare i colori ed i modelli di colore in p5.js
+
+### Impostare il modello di colori in p5.js
+
+Solo i modelli ``RGB`` ed ``HSB`` sono implementati dalla libreria p5.js in versione ``1.0``. Dalla versione ``2.0`` sono stati implementati gli altri spazi di colore sopra descritti, tranne CYM e CYMK.
+
+Per impostare un modello di colori, è necessario utilizzare la funzione ``colorMode``, che prende come parametro una costante rappresentativa del nome del modello di colori da utilizzare.Un esempio d'uso è il seguente:
 
 ```javascript
 colorMode(RGB);
 ```
-
-## Disegnare testi e figure colorati
 
 ### Usare un colore di sfondo
 
