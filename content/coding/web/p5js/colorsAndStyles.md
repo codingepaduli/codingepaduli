@@ -108,11 +108,15 @@ Una volta definito un colore come combinazione delle **componenti di colore** ut
 
 Un modello ha una forma caratteristica, come un cubo, un cilindro o un cono, che rende più o meno intuitiva la scelta dei colori ed i passaggi (i gradienti) da un colore all'altro. Il percorso da un colore all'altro è vincolato o reso più agevole dalla forma del modello, ad esempio tracciando una linea retta lungo una diagonale del cubo oppure seguendo la linea curva della base del cilindro.
 
-### Modello di colori RGB
+### Modelli di colori RGB e RGB-HDR
 
-Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati. La forma caratteristica di questo modello è il **cubo**, di seguito vediamo le due angolazioni, una che mostra lo spigolo "bianco", l'altra che mostra lo spigolo "nero".
+Il modello **RGB** è un modello di colori **additivo**, esprime i colori come somma di colori "primari", che in questo modello sono il Rosso, il Verde ed il Blu. Ogni altro colore è definito come una somma delle quantità dei tre colori elencati.
 
-![p5.js - Forma del modello di colori RGB](/static/coding/web/p5js/colors_and_styles_color_model_rgb_cube_A_B.png "p5.js - Forma del modello di colori RGB")
+Il modello **RGB-HDR** è una versione del modello RGB ad intervallo ampio, cioè usa lo spazio di colori **Display P3** (e non sRGB) per mostrare una gamma di colori piu ampia;
+
+La forma caratteristica di questi modelli è il **cubo**, di seguito vediamo le due angolazioni, una che mostra lo spigolo "bianco", l'altra che mostra lo spigolo "nero".
+
+![p5.js - Forma dei modelli di colore RGB e RGB-HDR](/static/coding/web/p5js/colors_and_styles_color_model_rgb_cube_A_B.png "p5.js - Forma dei modelli di colore RGB e RGB-HDR")
 
 La quantità applicabile per ogni colore primario va da 0 (zero) a 255, quindi un colore lo si può esprimere come una terna di quantità (**r**, **g**, **b**), in cui **r** è la quantità di rosso, **g** è la quantità di verde e **b** è la quantità di blu.
 
@@ -128,9 +132,9 @@ Come nota di approfondimento, un corpo solido portato a temperatura quasi infini
 
 Il problema principale di questo modello consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste. Un altro problema è che i gradienti tendono a passare per una fascia grigiastra.
 
-### Modello di colori CMYK
+### Modelli di colori CMY e CMYK
 
-Il modello **CMYK** è un modello di colori **sottrattivo**, esprime i colori come combinazione di colori "primari", che in questo modello sono il ciano, il magenta, il giallo ed il nero.
+Il modello **CMY** è un modello di colori **sottrattivo**, esprime i colori come combinazione di colori "primari", che in questo modello sono il ciano, il magenta ed il giallo.
 
 Il colore ciano è il colore complementare al rosso, ovvero il colore che si ottiene sottraendo il colore rosso dalla luce bianca.
 
@@ -138,17 +142,19 @@ Il colore magenta è il colore complementare al verde, ovvero il colore che si o
 
 Il colore giallo è il colore complementare al viola, ovvero il colore che si ottiene sottraendo il colore viola dalla luce bianca.
 
-<!-- TODO disegna la forma 3D del modello -->
+Il modello CMY è "l'inverso" del modello RGB (ed RGB-HDR) in termini di complemento del colore, quindi ha la stessa forma cubica e gli stessi colori, solo con gli spigoli del bianco e del nero in posizioni inverse.
 
-Miscelando ciano, magenta e giallo si ottiene un colore molto scuro (il modello è sottrattivo, l'intero spettro visibile viene "sottratto" prima di arrivare all'occhio umano), ma dato che non è un vero e proprio nero, per completare lo spettro di colori visibili in questo modello si è aggiunto il colore nero (identificato dalla lettera K, perché la lettera B è per il blue).
+In teoria, miscelando ciano, magenta e giallo nelle massime quantità si ottiene il colore nero (il modello è sottrattivo, l'intero spettro visibile viene "sottratto" prima di arrivare all'occhio umano), nella realtà il processo di stampa produce un colore molto scuro, un nero non abbastanza profondo, e la produzione del nero consuma molto inchiostro colorato.
+
+Il modello **CYMK** aggiunge al modello CMY il colore nero, identificato dalla lettera **K** (perché la lettera B è per il blue). Se la somma delle quantità di colori primari supera una certa soglia, piuttosto che combinare i colori primari si utilizza direttamente l'inchiostro nero per ottenere ombreggiature più profonde e ridurre il consumo di inchiostro colorato.
 
 Anche per questo modello, il problema principale consiste nel fatto che non è intuitivo indicare le quantità dei colori primari necessari per ottenere un qualsiasi altro colore, come il viola, il marrone o il celeste. I gradienti fanno enormi sbalzi di luminosità.
 
-In p5.js non esiste un modello computerizzato che ci permette di usare il modello di colori **CMYK**.
+In p5.js non è possibile indicare i modelli di colori CMY e CMYK, ma si pu facilmente implementare a partire dal modello RGB.
 
-### Modello di colori HSB
+### Modelli di colori HSB (HSV), HSL (HSI) e HBL
 
-Il modello Hue-Saturation-Brightness è un modello computerizzato, nè additivo nè sottrattivo, non basato su concetti fisici ma su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
+Il modello **Hue-Saturation-Brightness**, conosciuto anche come **Hue-Saturation-Value**, è un modello computerizzato basato su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
 
 ![p5.js - Modello di colori HSB](/static/coding/web/p5js/colors_and_styles_hsb.png "p5.js - Modello di colori HSB")
 
@@ -170,6 +176,10 @@ Come ci si può aspettare, in questo modello:
 - il colore grigio si esprime impostando una qualsiasi tonalità, saturazione a zero e valore medio di brillantezza: (47, 0, 50);
 
 La facilità d'uso di questo modello è dovuta al fatto che, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
+
+Il modello **Hue-Saturation-Lightness**, conosciuto anche come **Hue-Saturation-Intensity** è un modello computerizzato molto simile al modello HSB, ha la stessa forma e le stesse componenti **H** per la tinta del colore ed **S** per la saturazione. Cambia l'ultima componente, sostituita dal valore di luminosità L, che ha la precedenza sulla saturazione S. Se L è un valore alto, il colore risultante è bianco, non importa la saturazione espressa.
+
+Il modello **Hue-Whiteness-Blackness** è un modello computerizzato molto simile ai due precedenti, ha la stessa forma, conserva la componente **H** per la tinta del colore ed utilizza i valori di "chiarezza" e "oscurità". Una volta espressa la tonalità di colore, il colore è mescolato con bianco e nero. Valori alti di oscurità portano al nero, valori alti di chiarezza portano al bianco, entrambi alti portando ad un grigio intenso.
 
 ### Impostare il modello di colori
 
