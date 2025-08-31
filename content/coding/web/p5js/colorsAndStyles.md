@@ -154,9 +154,9 @@ In p5.js non è possibile indicare i modelli di colori CMY e CMYK, ma si pu faci
 
 ### Modelli di colori HSB (HSV), HSL (HSI) e HBL
 
-Il modello **Hue-Saturation-Brightness**, conosciuto anche come **Hue-Saturation-Value**, è un modello computerizzato basato su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. In questo modello, ogni colore è definito nel seguente spazio curvo:
+Il modello **Hue-Saturation-Brightness**, conosciuto anche come **Hue-Saturation-Value**, è un modello computerizzato basato su trasformazioni matematiche, ed è utilizzato al fine di rendere più intuitivo la definizione di un colore. Questo modello e le sue varianti hanno forma cilindrica.
 
-![p5.js - Modello di colori HSB](/static/coding/web/p5js/colors_and_styles_hsb.png "p5.js - Modello di colori HSB")
+![p5.js - Modello di colori HSB](/static/coding/web/p5js/colors_and_styles_color_models_hsb_hsl_hwb.png "p5.js - Modello di colori HSB")
 
 L'angolo definisce la tonalità del colore, detta anche tinta. Quindi troviamo la tonalità rossa a 0 gradi, la tonalità verde a 120 gradi e la tonalità blu a 240 gradi, e nel mezzo tutte le altre sfumature di tonalità di colori.
 
@@ -177,7 +177,7 @@ Come ci si può aspettare, in questo modello:
 
 La facilità d'uso di questo modello è dovuta al fatto che, una volta scelta la tonalità, ad esempio il rosso, è facile ottenere un rosso forte e carico impostando valori alti di saturazione e brillantezza; viceversa, è altrettanto intuitivo ottenere un colore rosa scuro (che è un rosso pallido) impostando valori bassi di saturazione e brillantezza.
 
-Il modello **Hue-Saturation-Lightness**, conosciuto anche come **Hue-Saturation-Intensity** è un modello computerizzato molto simile al modello HSB, ha la stessa forma e le stesse componenti **H** per la tinta del colore ed **S** per la saturazione. Cambia l'ultima componente, sostituita dal valore di luminosità L, che ha la precedenza sulla saturazione S. Se L è un valore alto, il colore risultante è bianco, non importa la saturazione espressa.
+Il modello **Hue-Saturation-Lightness**, conosciuto anche come **Hue-Saturation-Intensity** è un modello computerizzato molto simile al modello HSB, ha la stessa forma e le stesse componenti **H** per la tinta del colore ed **S** per la saturazione. Cambia l'ultima componente, sostituita dal valore di luminosità **L**, che ha la precedenza sulla saturazione S. Se L è un valore alto, il colore risultante è bianco, non importa la saturazione espressa.
 
 Il modello **Hue-Whiteness-Blackness** è un modello computerizzato molto simile ai due precedenti, ha la stessa forma, conserva la componente **H** per la tinta del colore ed utilizza i valori di "chiarezza" e "oscurità". Una volta espressa la tonalità di colore, il colore è mescolato con bianco e nero. Valori alti di oscurità portano al nero, valori alti di chiarezza portano al bianco, entrambi alti portando ad un grigio intenso.
 
