@@ -38,9 +38,15 @@ Click con il secondo tasto del mouse, nel menu a comparsa scegliere il menù "Nu
 
 ## Visualizza le estensioni dei file
 
-Apriamo la cartella col doppio click, poi clicchiamo sul menu "visualizza" e ci assicuriamo che la voce "estensioni nomi file" sia selezionata.
+Apriamo la cartella col doppio click 
 
-![Menù visualizza](/static/coding/web/html/tagTesto_exe_EstensioniFile.png)
+Su Windows 10 clicchiamo sul menu "visualizza" e ci assicuriamo che la voce "estensioni nomi file" sia selezionata.
+ 
+![Menù visualizza - Windows 10](/static/coding/web/html/tagTesto_exe_EstensioniFile_win10.png)
+
+Su Windows 11 clicchiamo sul menu "visualizza", clicchiamo sul menu "Mostra" e ci assicuriamo che la voce "estensioni nomi file" sia selezionata.
+
+![Menù visualizza - Windows 11](/static/coding/web/html/tagTesto_exe_EstensioniFile_win11.png)
 
 ## Crea il file HTML
 
