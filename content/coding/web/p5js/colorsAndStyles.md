@@ -186,8 +186,8 @@ Il modello **HWB** Hue-Whiteness-Blackness è un modello computerizzato molto si
 Il modello di colori **LAB** è un modello computerizzato basato sullo spazio di colori CIE LAB per identificare i colori. I componenti di colore di questo modello sono:
 
 - L (Luminosità): da 0 (nero) a 100 (bianco);
-- a ("verde-rosso"): rappresenta le componenti di verde a rosso (negativo per verde, positivo per rosso);
-- b ("blu-giallo"): rappresenta le componenti di blu a giallo (negativo per blu, positivo per giallo);
+- a ("verde-rosso"): rappresenta le componenti di verde a rosso (negativo per verde, positivo per rosso), da -128 a 127;
+- b ("blu-giallo"): rappresenta le componenti di blu a giallo (negativo per blu, positivo per giallo), da -128 a 127;
 
 Il modello di colori **LCH** è la versione di forma cilindrica del modello LAB. I componenti di colore di questo modello sono:
 
