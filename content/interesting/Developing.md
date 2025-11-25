@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-07-21
-publishdate: 2025-07-21
-lastmod: 2025-07-21
+date: 2025-11-24
+publishdate: 2025-11-24
+lastmod: 2025-11-24
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -901,6 +901,8 @@ summary: "Set di link relativi al coding"
 [Color](https://jamie-wong.com/post/color/) - From Hexcodes to Eyeballs\
 [GitHub](https://github.com/miciwan/PaintMixing) - miciwan/PaintMixing\
 [Make Your Own Website](https://web.pixelshannon.com/make/#software) - \
+[Making Software: What is a color space?](https://www.makingsoftware.com/chapters/color-spaces-models-and-gamuts) - \
+[What are OKLCH colors?](https://jakub.kr/components/oklch-colors) - \
 
 ##### JS AI
 

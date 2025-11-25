@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-07-21
-publishdate: 2025-07-21
-lastmod: 2025-07-21
+date: 2025-11-24
+publishdate: 2025-11-24
+lastmod: 2025-11-24
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -206,4 +206,17 @@ summary: "Set di link interessanti"
 [Fiera Antiquaria di Arezzo](https://fieraantiquaria.org/) - \
 [Basilica di San Francesco (Arezzo)](https://it.wikipedia.org/wiki/Basilica_di_San_Francesco_(Arezzo)) - Wikipedia\
 [Castelsecco –  Parco Archeologico Etrusco di Castelsecco](https://www.castelsecco.org/) - \
+[Rocca Sanvitale a Fontanellato](https://it.wikipedia.org/wiki/Stufetta_di_Diana_e_Atteone) - Stufetta di Diana e Atteone - Wikipedia\
+[Borgo dei Saraceni, Agropoli](https://www.borgodeisaraceni.it/) - Ospitalità diffusa nel Cilento\
 [Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
+
+### Poems
+
+[Foscolo](https://it.wikipedia.org/wiki/Alla_sera) - Alla sera - Wikipedia\
+[Foscolo](https://it.wikipedia.org/wiki/Cos%C3%AC_gl%27interi_giorni_in_lungo_incerto) - Così gl'interi giorni in lungo incerto - Wikipedia\
+[Leopardi](https://it.wikipedia.org/wiki/A_Silvia) - A Silvia - Wikipedia\
+[Leopardi](https://it.wikipedia.org/wiki/Il_passero_solitario) - Il passero solitario - Wikipedia\
+[Leopardi](https://it.wikipedia.org/wiki/Il_sabato_del_villaggio) - Il sabato del villaggio - Wikipedia\
+[Leopardi](https://it.wikipedia.org/wiki/La_quiete_dopo_la_tempesta) - La quiete dopo la tempesta - Wikipedia\
+[Leopardi](https://it.wikipedia.org/wiki/L%27infinito) - L'infinito - Wikipedia\
+[Yanez](https://www.angolotesti.it/D/testi_canzoni_davide_van_de_sfroos_4035/testo_canzone_yanez_1387220.html) - Davide Van De Sfroos\
