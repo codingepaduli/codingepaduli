@@ -38,10 +38,10 @@ Click con il secondo tasto del mouse, nel menu a comparsa scegliere il menù "Nu
 
 ## Visualizza le estensioni dei file
 
-Apriamo la cartella col doppio click 
+Apriamo la cartella col doppio click
 
 Su Windows 10 clicchiamo sul menu "visualizza" e ci assicuriamo che la voce "estensioni nomi file" sia selezionata.
- 
+
 ![Menù visualizza - Windows 10](/static/coding/web/html/tagTesto_exe_EstensioniFile_win10.png)
 
 Su Windows 11 clicchiamo sul menu "visualizza", clicchiamo sul menu "Mostra" e ci assicuriamo che la voce "estensioni nomi file" sia selezionata.
@@ -170,7 +170,7 @@ Per creare la lista dobbiamo inserire l'etichetta ``ul``:
 <ul>
 
 </ul>
-```html
+```
 
 Ogni elemento della lista deve essere inserito nelle etichette ``li``:
 
@@ -181,7 +181,3 @@ Ogni elemento della lista deve essere inserito nelle etichette ``li``:
   <li>Angelina</li>
 </ul>
 ```
-
-## Creiamo la tabella della classifica
-
-<!-- TODO -->
