@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-07-21
-publishdate: 2025-07-21
-lastmod: 2025-07-21
+date: 2025-12-20
+publishdate: 2025-12-20
+lastmod: 2025-12-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -200,6 +200,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Java 8 and Java 11 on Debian 12 bookworm](https://unix.stackexchange.com/questions/749903/how-can-i-install-java-8-on-debian-12-bookworm) - Unix & Linux Stack Exchange\
 [Latest Java OpenJDK Releases | Adoptium](https://adoptium.net/temurin/releases/?version=11) - \
+[💻 Tutorial Java: Creare il Primo Progetto su Eclipse da Zero](https://www.youtube.com/watch?v=wS5eWP7OmEk) - YouTube\
 
 #### Informatica 5 anno
 

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-11-24
-publishdate: 2025-11-24
-lastmod: 2025-11-24
+date: 2025-12-20
+publishdate: 2025-12-20
+lastmod: 2025-12-20
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -36,6 +36,7 @@ summary: "Set di link relativi al coding"
 [Deskreen](https://deskreen.com/lang-en) - Turn any device into a secondary screen\
 [index | TIOBE](https://www.tiobe.com/tiobe-index/) - The Software Quality Company\
 [FlutterFlow](https://flutterflow.io/) - Build Flutter Apps Visually\
+[CheatSheets.zip](https://cheatsheets.zip/) - Ultimate Cheat for Developers\
 
 ### C/C++
 
@@ -215,7 +216,7 @@ summary: "Set di link relativi al coding"
 ### Java
 
 [Free web hosting for Java+MySQL websites?](https://www.quora.com/Free-web-hosting-for-Java+MySQL-websites) - Quora\
-[AdoptOpenJDK](https://adoptium.net/) - Open source, prebuilt OpenJDK binaries\
+[Adoptium AdoptOpenJDK](https://adoptium.net/) - Open source, prebuilt OpenJDK binaries\
 [Wikibooks, manuali e libri di testo liberi](https://it.wikibooks.org/wiki/Java) - \
 [MokaByte 111](http://www.mokabyte.it/2006/09/javawebapp-1/) - Le applicazioni web e Java\
 [HttpClient](http://hc.apache.org/httpclient-3.x/methods/multipartpost.html) - Multipart Post Method\
@@ -244,6 +245,7 @@ summary: "Set di link relativi al coding"
 [binkley/modern-Java-practices](https://github.com/binkley/modern-java-practices#leverage-unit-testing-and-coverage) - Modern Java/JVM Build Practices\
 [Randoop: Automatic unit test generation for Java](https://randoop.github.io/randoop/) - \
 [Java 23 News](https://horstmann.com/unblog/2024-12-11/index.html) - Horstmann's Unblog\
+[JUnit 5 tutorial, part 2](https://www.javaworld.com/article/3543268/junit-5-tutorial-part-2-unit-testing-spring-mvc-with-junit-5.html) - Unit testing Spring MVC with JUnit 5\
 
 #### JDBC e JPA
 
@@ -252,35 +254,11 @@ summary: "Set di link relativi al coding"
 [Standardized schema generation and data loading with JPA 2.1](https://www.thoughts-on-java.org/standardized-schema-generation-data-loading-jpa-2-1/) - \
 [Understanding JDBC Connection Pooling](http://www.developer.com/java/data/understanding-jdbc-connection-pooling.html) - \
 
-#### Containers
-
-[Quarkus](https://quarkus.io/) - Supersonic Subatomic Java\
-[Using Docker from Maven and Maven from Docker](https://codefresh.io/howtos/using-docker-maven-maven-docker/) - \
-
 #### IO NIO NIO2 XML e serializzazione
 
 [How to Validate XML using Java](http://www.edankert.com/validate.html) - configure SAX, DOM, dom4j and XOM to validate XML Documents with DTD and Schema(s)\
 [Java.nio](https://www.javadevjournal.com/java/write-to-file-java/) - Read and write file | nio Java 1.4 Path and channels | Java Development Journal\
 [Java.nio2](http://www.baeldung.com/java-nio2-async-file-channel) - Read and write file | nio2 Java 1.7 Asynchronous file channel | Baeldung\
-
-#### Spring
-
-[How to handle static content in Spring MVC?](https://stackoverflow.com/questions/1483063/how-to-handle-static-content-in-spring-mvc#4423844) - \
-[read value from application properties in spring-log4j2.xml file](https://stackoverflow.com/questions/48639930/read-value-from-application-properties-in-spring-log4j2-xml-file) - \
-[JUnit 5 tutorial, part 2](https://www.javaworld.com/article/3543268/junit-5-tutorial-part-2-unit-testing-spring-mvc-with-junit-5.html) - Unit testing Spring MVC with JUnit 5\
-[Spring Boot | GraphQLize](https://www.graphqlize.org/docs/getting_started/java/springboot) - \
-[Implementing HTTP byte-range requests in Spring 4 and other framework](https://gist.github.com/davinkevin/b97e39d7ce89198774b4) - \
-[Best Ways to Run Spring Boot app Via Console or Terminal](https://dev.to/frugalisminds/best-ways-to-run-spring-boot-app-via-console-or-terminal-360o) - DEV Community\
-[Spring Boot With GraphQL](https://dev.to/keyholesoftware/spring-boot-with-graphql-what-the-cool-kids-are-doing-1m2b) - What The Cool Kids Are Doing - DEV Community\
-[JWT authentication in Spring Security and Angular](https://dev.to/pavankjadda/jwt-authentication-in-spring-security-and-angular-2ehk) - DEV Community\
-[ccoloradoc/OAuth2Sample](https://github.com/ccoloradoc/OAuth2Sample) - Simple demo of Spring Security + Facebook Login\
-[Spring Boot @ControllerAdvice & @ExceptionHandler example](https://www.bezkoder.com/spring-boot-controlleradvice-exceptionhandler/) - BezKoder\
-
-#### Java to native or WebAssembly
-
-[Mandrel](https://www.infoq.com/news/2020/07/mandrel-graalvm/) - Red Hat Makes Java Native\
-[CheerpJ](https://www.infoworld.com/article/3536576/cheerpj-java-to-javascript-compiler-boosts-exception-handling-native-methods.html) - the CheerpJ compiler converts Java clients to HTML, JavaScript, and WebAssembly\
-[i-net-software/JWebAssembly · JWebAssembly is a Java bytecode to WebAssembly compiler](https://github.com/i-net-software/JWebAssembly/wiki/Getting-Started) - \
 
 ### Linux
 
@@ -339,6 +317,8 @@ summary: "Set di link relativi al coding"
 [GitHub](https://github.com/pkolaczk/fclones) - pkolaczk/fclones: Efficient Duplicate File Finder\
 [xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
 [Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
+[onceupon/Bash-Oneliner: A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.](https://github.com/onceupon/Bash-Oneliner) - \
+[dylanaraps/pure-bash-bible: 📖 A collection of pure bash alternatives to external processes.](https://github.com/dylanaraps/pure-bash-bible?tab=readme-ov-file#pure-bash-bible) - \
 
 #### Administration
 
