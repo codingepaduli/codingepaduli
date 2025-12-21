@@ -1,7 +1,7 @@
 ---
 type: "html"
-title: "HTML Lez. 07.6 - Conversioni numeriche"
-description: "HTML Lez. 07.6 - Conversioni numeriche"
+title: "HTML Lez. 07.5 - Esercizi sulle conversioni numeriche e Unicode"
+description: "HTML Lez. 07.5 - Esercizi sulle conversioni numeriche e Unicode"
 date: 2023-11-03
 publishdate: 2023-11-03
 lastmod: 2023-11-03
@@ -9,11 +9,11 @@ categories: ["coding", "web", "HTML"]
 keywords: ["coding", "web", "HTML"]
 draft: false
 toc: false
-summary: "HTML Lez. 07.6 - Conversioni numeriche"
+summary: "HTML Lez. 07.5 - Esercizi sulle conversioni numeriche e Unicode"
 weight: 9348
 ---
 
-# Conversioni numeriche
+# Esercizi sulle conversioni numeriche e Unicode
 
 <!-- 
 Richiesta Chat-GPT
