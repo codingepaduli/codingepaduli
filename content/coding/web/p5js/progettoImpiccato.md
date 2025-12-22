@@ -7,10 +7,10 @@ publishdate: 2023-11-19
 lastmod: 2023-11-19
 categories: ["coding", "web", "p5.js"]
 keywords: ["coding", "web", "p5.js"]
-draft: true
+draft: false
 toc: false
 summary: 'Requisiti del progetto "Impiccato"'
-weight: 8452
+weight: 8506
 ---
 
 # Progetto "L'impiccato"
@@ -25,6 +25,8 @@ Si sviluppi il progetto "L'impiccato", utilizzando la libreria grafica ``p5.js``
 4. Il programma verifica se la lettera è presente, visualizzandola al posto del trattino, o se manca, visualizzando quindi la ghigliottina con un elemento in più;
 5. Il gioco termina con una sconfitta quando l'utente supera il numero di tentativi impostato; termina con una vittoria quando l'utente indovina tutte le lettere e non supera il numero di tentativi impostato;
 6. Ad ogni tentativo dell'utente si deve riprodurre un suono di successo o fallimento, se l'utente vince si deve riprodurre un suono di vittoria, se l'utente perde, si deve riprodurre un suono di sconfitta;
+
+![p5.js - progetto impiccato](/static/coding/web/p5js/progettoImpiccato_fasi.png "p5.js - progetto impiccato")
 
 ## Fasi di realizzazione
 
@@ -46,7 +48,7 @@ Nella funzione ``draw()`` gestisci le varie scene da visualizzare (tasto '-' per
 function draw() {-
   background(220);
   
-  text(tasto, 20, 20);
+  text(`Tasto premuto: ${tasto}`, 20, 20);
 
   if (tasto == '>') {
     menu();
@@ -65,9 +67,13 @@ function draw() {-
 
 **Fase 2:**
 
+Implementa le funzioni menu e classifica ispirandoti all'immagine precedente. Inserisci colori e stili a tuo piacere.
+
+**Fase 3:**
+
 Inserisci una variabile ``tentativi`` ed inizializzala ad un valore a tuo piacere;
 
-Modifica quindi la funzione ``gioco()`` in modo tale che se l'utente sceglie una lettera, allora il numero di tentativi si riduce e la variabile ``tasto`` si assegna il valore ``-`` (visualizza sempre il gioco);
+Modifica quindi la funzione ``gioco()`` in modo tale che se l'utente sceglie una lettera, allora il numero di tentativi si riduce e la variabile ``tasto`` si assegna il valore ``-`` (in modo da visualizzare sempre la fase di gioco);
 
 ```javascript
 function gioco() {
@@ -81,7 +87,7 @@ function gioco() {
 }
 ```
 
-**Fase 3:**
+**Fase 4:**
 
 Modifica la funzione ``gioco``, mostrando la ghigliottina adatta al numero di tentativi effettuato dall'utente. Dichiara le funzioni ``ghigliottina1()``, ``ghigliottina2()`` e ``ghigliottina3()`` ecc.. scegliendo colori e stili a proprio piacere.
 
@@ -110,7 +116,9 @@ function gioco() {
 
 Dichiara la variabile ``parola`` che rappresenta la parola da indovinare e completa la logica del gioco come spiegato dal proprio docente.
 
-**Fase 4:** Inserire i suoni per i tentativi a buon fine, i tentativi errati, la vittoria (per la parola indovinata) e la sconfitta (per aver terminato il numero di tentativi a disposizione).
+**Fase 5:** Inserire i suoni per i tentativi a buon fine, i tentativi errati, la vittoria (per la parola indovinata) e la sconfitta (per aver terminato il numero di tentativi a disposizione). Il risultato deve essere simile al seguente:
+
+![p5.js - progetto impiccato](/static/coding/web/p5js/progettoImpiccato_gioco.png "p5.js - progetto impiccato")
 
 ## Criteri di valutazione
 
