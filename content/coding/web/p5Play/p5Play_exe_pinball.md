@@ -6,8 +6,8 @@ date: 2025-04-12
 publishdate: 2023-03-21
 categories: ["coding", "web", "p5play"]
 keywords: ["coding", "web", "p5play"]
-draft: true
-toc: true
+draft: false
+toc: false
 summary: "Esercizio pinball"
 weight: 1040
 ---
