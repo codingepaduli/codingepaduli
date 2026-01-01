@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-12-20
-publishdate: 2025-12-20
-lastmod: 2025-12-20
+date: 2025-12-31
+publishdate: 2025-12-31
+lastmod: 2025-12-31
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -377,6 +377,7 @@ summary: "Set di link relativi al coding"
 [Kubuntu Focus: Home Page](https://kfocus.org/) - \
 [Hisense Hi Reader Pro is an Android smartphone with a 6.1 inch E Ink display](https://liliputing.com/hisense-hi-reader-pro-is-an-android-smartphone-with-a-6-1-inch-e-ink-display/) - Liliputing\
 [PINE64](https://pine64.org/) - \
+[repebble](https://repebble.com/) - Wearable smartwatch\
 [Murena](https://murena.com/) - deGoogled and privacy by design smartphones and cloud services.\
 [8BitDo](https://www.8bitdo.com/) - \
 [StarFighter 16-inch – Linux-exclusive laptop that sets a new standard for privacy and performance Star Labs®](https://it.starlabs.systems/pages/starfighter?shpxid=b9bf3a49-c8db-4c56-aa69-a838edff15ab) - \
@@ -516,6 +517,7 @@ summary: "Set di link relativi al coding"
 
 ### Python
 
+[PyTogether](https://pytogether.org/) - Free Online Python IDE & Collaborative Editor\
 [chriskiehl/Gooey](https://github.com/chriskiehl/Gooey) - Turn (almost) any Python command line program into a full GUI application with one line\
 [se2p/pynguin](https://github.com/se2p/pynguin) - The PYthoN General UnIt Test geNerator is a test-generation tool for Python\
 [Learning Python](https://dev.to/aatmaj/learning-python-intermediate-course-day-10-complex-numbers-part-2-48jh) - Intermediate course Day 10, Complex numbers part 2 - DEV Community\
@@ -669,8 +671,6 @@ summary: "Set di link relativi al coding"
 
 [Computer science is not software engineering](https://swizec.com/blog/computer-science-is-not-software-engineering) - \
 [Class Visualizer](http://www.class-visualizer.net/index.html) - interactive class diagrams generator from Java bytecode and Kotlin bytecode\
-[gleek.io](https://www.gleek.io/) - Diagram maker for developers\
-[eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to Java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
 [AOSA Book](https://aosabook.org/en/index.html) - The Architecture of Open Source Applications\
 [How I write backends](https://github.com/fpereiro/backendlore) - A document summarizes many aspects of how I write these pieces of code\
 
@@ -712,6 +712,7 @@ summary: "Set di link relativi al coding"
 [base64 data-URI](https://websemantics.uk/tools/image-to-data-uri-converter/) - Image to base64 data-URI converter\
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
+[RFC 9839:](https://www.rfc-editor.org/rfc/rfc9839.html#legacy-controls) - Unicode Character Repertoire Subsets\
 [MIME Types](https://www.asciitable.it/mime-types) - \
 [Unincode Emoji](https://unicode.org/emoji/charts/index.html) - Emoji List, latest added and proposal emoji\
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/) - an open-source, automated tool for improving the quality of web pages\

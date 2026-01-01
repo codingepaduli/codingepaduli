@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-12-20
-publishdate: 2025-12-20
-lastmod: 2025-12-20
+date: 2025-12-31
+publishdate: 2025-12-31
+lastmod: 2025-12-31
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -19,6 +19,8 @@ summary: "Set di link relativi all'istruzione di base"
 
 ## Scuola
 
+[Cosvitec](https://www.cosvitec.eu/erasmus/) - Progetto ERASMUS+\
+[DM_14_2024](https://www.istruzioneer.gov.it/wp-content/uploads/2024/06/CERTIFICAZIONE_DM_14_2024.pdf) - Modelli di certificazione competenze.pdf\
 
 ### Lezioni
 
@@ -313,6 +315,12 @@ summary: "Set di link relativi all'istruzione di base"
 [mitmproxy](https://mitmproxy.org/) - an interactive HTTPS proxy\
 [Cracking a hashed password with hashcat](https://dev.to/wrongbyte/cracking-a-hashed-password-with-hashcat-4bfe) - DEV Community\
 
+#### Sistemi e reti 5 anno
+
+[ISO/OSI](https://dev.to/shotvpro/what-actually-happens-when-you-type-a-url-into-the-browser-hint-more-than-you-think-41po) - What Actually Happens When You Type a URL into the Browser? (Hint: More Than You Think) - DEV Community\
+[ISO/OSI](https://dev.to/raajaryan/part-1-how-google-routes-your-search-in-milliseconds-a-realistic-devs-perspective-213k) - Part 1: How Google Routes Your Search in Milliseconds – A Realistic Dev's Perspective - DEV Community\
+[Port 80 (HTTP) vs. Port 443 (HTTPS): Understanding the Differences](https://dev.to/hardy_mervana/port-80-http-vs-port-443-https-understanding-the-differences-4ag3) - DEV Community\
+
 #### TPSIT 3 anno
 
 [Neocities](https://www.neocities.org/) - Hosting gratuito - 1 GB di spazio archiviazione\
@@ -330,6 +338,8 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Cloud IDE](https://paiza.cloud/en/) - PaizaCloud - Just 3 seconds to start Cloud IDE\
 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Fake online REST API for developers\
+[gleek.io](https://www.gleek.io/) - Diagram maker for developers\
+[eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to Java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
 
 #### Eventi
 
