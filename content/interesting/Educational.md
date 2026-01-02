@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2025-12-31
-publishdate: 2025-12-31
-lastmod: 2025-12-31
+date: 2026-01-01
+publishdate: 2026-01-01
+lastmod: 2026-01-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -117,6 +117,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Prefissi del Sistema internazionale di unità di misura](https://it.wikipedia.org/wiki/Prefissi_del_Sistema_internazionale_di_unit%C3%A0_di_misura) - Wikipedia\
 [Notazione scientifica](https://it.wikipedia.org/wiki/Notazione_scientifica) - Wikipedia\
 [Simultarore circuiti elettronici](https://lushprojects.com/circuitjs/circuitjs.html) - \
+[Lista dei dispositivi compatibili con eSIM | eSIM.sm](https://esim.sm/it/compatible-devices) - \
 
 ##### Windows
 

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2025-11-24
-publishdate: 2025-11-24
-lastmod: 2025-11-24
+date: 2026-01-01
+publishdate: 2026-01-01
+lastmod: 2026-01-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -80,6 +80,7 @@ summary: "Set di link interessanti"
 [Something in space has been lighting up every 20 minutes since 1988](https://arstechnica.com/science/2023/07/new-slow-repeating-radio-source-we-have-no-idea-what-it-is/) - Ars Technica\
 [Special relativity and Middle-Earth | What's new](https://terrytao.wordpress.com/2022/12/18/special-relativity-and-middle-earth/) - \
 [Physicist Claims Universe Has No Dark Matter And Is 27 Billion Years Old : ScienceAlert](https://www.sciencealert.com/physicist-claims-universe-has-no-dark-matter-and-is-27-billion-years-old) - \
+[How to Measure the Universe](https://nautil.us/how-to-measure-the-universe-1235873/) - \
 
 ### Math
 
@@ -135,6 +136,10 @@ summary: "Set di link interessanti"
 [antibiotics](https://www.euronews.com/health/2023/12/31/scientists-discover-the-first-new-antibiotics-in-over-60-years-using-ai) - Scientists discover the first new antibiotics in over 60 years using AI | Euronews\
 [Protein-Designing](https://singularityhub.com/2022/07/26/protein-designing-ai-opens-door-to-medicines-humans-couldnt-dream-up/) - AI Opens Door to Medicines Humans Couldn’t Dream Up\
 [Cells mitochondria and cancer](https://www.nature.com/articles/d41586-025-01064-5) - Cells are swapping their mitochondria. What does this mean for our health?\
+[Gel for tooth repair](https://www.nottingham.ac.uk/news/new-gel-restores-dental-enamel-and-could-revolutionise-tooth-repair) - New gel restores dental enamel and could revolutionise tooth repair - University of Nottingham\
+[prevent heart disease](https://myticker.com/) - Don’t Die of Heart Disease, preventative measures\
+[prevent heart disease](https://www.empirical.health/blog/inflammation-and-heart-health/) - Inflammation hs-CRP now predicts heart disease better than cholesterol | Empirical Health\
+[ultrasound cancer treatment](https://www.bbc.com/future/article/20251007-how-ultrasound-is-ushering-a-new-era-of-surgery-free-cancer-treatment) - How ultrasound is ushering a new era of surgery-free cancer treatment\
 
 ### Tech
 
@@ -161,6 +166,10 @@ summary: "Set di link interessanti"
 [Quantum Computing’s Hard, Cold Reality Check](https://spectrum.ieee.org/quantum-computing-skeptics) - IEEE Spectrum\
 [The Case Against Quantum Computing](https://spectrum.ieee.org/the-case-against-quantum-computing) - IEEE Spectrum\
 [MIT Engineers Create the “Impossible” – New Material That Is Stronger Than Steel and As Light as Plastic](https://scitechdaily.com/mit-engineers-create-the-impossible-new-material-that-is-stronger-than-steel-and-as-light-as-plastic/) - \
+[electrification infrastructure in Africa](https://climatedrift.substack.com/p/why-solarpunk-is-already-happening) - 20th century VS 21st century electrification infrastructure \
+[results from privatisation of Britain’s energy](https://www.theguardian.com/politics/2025/sep/17/privatisation-premium-billions-from-uk-energy-bills-paid-to-shareholders) - billions from UK energy bills paid to shareholders | Privatisation | The Guardian\
+[electric car batteries](https://www.sustainabilitybynumbers.com/p/electric-car-battery-degradation) - How much do electric car batteries degrade?\
+[Metamaterials, AI, and the Road to Invisibility Cloaks](https://thepotentialsurface.substack.com/p/metamaterials-ai-and-the-road-to?triedRedirect=true) - \
 
 ### History
 
@@ -208,6 +217,7 @@ summary: "Set di link interessanti"
 [Castelsecco –  Parco Archeologico Etrusco di Castelsecco](https://www.castelsecco.org/) - \
 [Rocca Sanvitale a Fontanellato](https://it.wikipedia.org/wiki/Stufetta_di_Diana_e_Atteone) - Stufetta di Diana e Atteone - Wikipedia\
 [Borgo dei Saraceni, Agropoli](https://www.borgodeisaraceni.it/) - Ospitalità diffusa nel Cilento\
+[Cardito Parco Taglia](https://fondoambiente.it/luoghi/parco-taglia?ldc) - Luogo FAI\
 [Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
 
 ### Poems
