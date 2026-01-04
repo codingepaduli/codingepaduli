@@ -138,8 +138,8 @@ Ulteriore esempio, ci comunicano via email che il cliente in Giappone ha fissato
 
 Per risolvere problemi di comprensione di date e orari utilizzati nei vari paesi, il fuso orario internazionale di riferimento è il **tempo coordinato universale**, abbreviato con la sigla **UTC**, uno standard di Internet e del World Wide Web che è utilizzato per le comunicazioni internazionali, la navigazione, il commercio, i voli.
 
-Ogni data ed orario su internet deve essere indicato in UTC e rappresentato secondo le regole dello standard internazionale
-[ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601) del 2019, che su internet è specificato dalle RFC 3339 del 2004 e dall'aggiornamento tramite RFC 9557 del 2024.
+Per essere universalmente comprensibili, date ed orari devono essere rappresentati secondo le regole dello standard internazionale
+[ISO-8601-2019 Information interchange - Representation of dates and times](https://www.iso.org/obp/ui#iso:std:iso:8601:-1:ed-1:v1:en) del 2019, che aggiorna la versione precedenti dello standard [ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601) del 2004.
 
 Lo standard internazionale definisce il seguente formato in cui scrivere date e orari: ``YYYY``-``MM``-``DD``T``hh``:``mm``:``ss``.``KKK`` ``timezone``.
 
@@ -220,6 +220,27 @@ L'aggiornamento del 2024 del formato di rappresentazione della data e dell'ora p
 ``2024-06-10T09:30:00.000-08:00[America/Los_Angeles]``
 
 ``2022-07-08T00:14:07Z[Europe/London]``
+
+Lo standard ISO-8601-2019 definisce, inoltre, i formati per descrivere i periodi temporali, che però non sono validi nei protocolli internet (in questi protocolli i periodi temporali sono stati esclusi, secondo la RFC 9557 del 2024 e la RFC 3339 del 2004). Il primo formato è P```yYmMdD```T```hHmMsS``` in cui:
+
+- la lettera "P" è un carattere che indica che si tratta di un periodo;
+- ``yY`` y indica il numero di anni, seguito dal carattere ```Y``` che indica che si tratta di anni, ad esempio ```3Y``` indica trer anni;
+- ``mM`` m indica il numero di mesi, seguito dal carattere ```M``` che indica che si tratta di mesi, ad esempio ```4M``` indica quattro mesi;
+- ``dD`` d indica il numero di giorni, seguito dal carattere ```D``` che indica che si tratta di giorni, ad esempio ```5D``` indica che si tratta di cinque giorni;
+- la lettera "T" è un carattere che indica che le cifre seguenti rappresentano un orario;
+- ``hH`` h indica il numero di ore, seguito dal carattere ```H``` che indica che si tratta di ore, ad esempio ```6H``` indica che si tratta di sei ore;
+- ``mM`` m indica il numero di minuti, seguito dal carattere ```M``` che indica che si tratta di minuti, ad esempio ```7M``` indica che si tratta di sette minuti;
+- ``sS`` s indica il numero di secondi, seguito dal carattere ```S``` che indica che si tratta di secondi, ad esempio ```8S``` indica che si tratta di otto secondi.
+
+Specificare quindi ``P4Y3M2DT1H1M`` significa indicare un periodo di 4 anni, 3 mesi, 2 giorni, 1 ora, 1 minuto. Specificare ``PT1M`` significa indicare un periodo di 1 minuto.
+
+E' possibile anche specificare un periodo a partire da una data di partenza, con il formato ``dataInizio``/P``periodo``, in cui la data di inizio ``dataInizio`` è indicata secondo le regole per la rappresentazione della data, mentre ``periodo`` è indicato secondo le regole di rappresentazione di un periodo. Ad esempio ``2020-01-24T23:00/P2Y3M`` indica un periodo di 2 anni e 3 mesi (``P2Y3M``) a partire dalla data ``2020-01-24`` e dall'ora ``T23:00``.
+
+E' possibile anche specificare un periodo indicando una data di inizio ed una di fine, separate dal carattere ``/``, utilizzando il formato ``dataInizio``/``dataFine``.
+
+Ad esempio ``2020-01-24T21:00/2020-09-25T23:50`` indica un periodo di 8 mesi ed un giorno (da ``2020-01-24`` fino a ``2020-09-25``) e di 2 ore e 50 minuto (con l'orario da ``T21:00`` fino a ``T23:50``.
+
+E' utile ripetere che l'uso dei periodi è permesso dallo standard ISO-8601-2019 mentre è stato escluso dagli standard dei protocolli internet, secondo la  RFC 9557 del 2024 e la RFC 3339 del 2004.
 
 ### Etichetta per data e ora
 

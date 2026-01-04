@@ -24,14 +24,24 @@ references:
 
 # Data e ora
 
-Ogni data ed orario su internet deve essere rappresentato secondo le regole dello standard internazionale
-[ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601) del 2019, che su internet è specificato dalle RFC 3339 del 2004 e dall'aggiornamento tramite RFC 9557 del 2024.
+Per essere universalmente comprensibili, date ed orari devono essere rappresentati secondo le regole dello standard internazionale
+[ISO-8601-2019 Information interchange - Representation of dates and times](https://www.iso.org/obp/ui#iso:std:iso:8601:-1:ed-1:v1:en) del 2019, che aggiorna la versione precedenti dello standard [ISO 8601 Information interchange - Representation of dates and times](https://it.wikipedia.org/wiki/ISO_8601) del 2004.
+
+In particolare sui protocolli internet le rappresentazioni di date ed orari sono ulteriormente ristrette dalla specifica [RFC 9557 del 2024](https://www.rfc-editor.org/rfc/rfc9557.pdf) che estende la [RFC 3339 del 2004](https://datatracker.ietf.org/doc/html/rfc3339). Queste specifiche escludono la rappresentazione di formati settimanali o con date ordinali.
 
 Lo standard internazionale definisce il seguente formato in cui scrivere date e orari: ``YYYY``-``MM``-``DD``T``hh``:``mm``:``ss``.``KKK`` ``timezone``, come nel seguente esempio:
 
 ```plaintext
 2022-07-08T00:14:07Z[Europe/London]
 2022-07-08T00:14:07+03.30[Europe/London]
+```
+
+Definisce inoltre i periodo con i formati ``PyYmMdDThHmMsS``, ```dataInizio/Pperiodo``` e ``dataInizio/dataFine`` come nel seguente esempio:
+
+```plaintext
+P4Y3M2DT1H1M
+2022-07-08T00:14:07Z[Europe/London]/P4Y3M
+2022-07-08T00:14:07Z[Europe/London]/2023-09-08[Europe/London]
 ```
 
 Per maggiori informazioni si rimanda al capitolo sulle etichette di HTML, alle specifiche del W3C ed agli standard sopra menzionati.
@@ -45,7 +55,7 @@ L'oggetto ``Date`` basa su delle specifiche di più di 30 anni fa, per cui sono 
 - la conversione da stringa a data/ora è inaffidabile e può portare a degli errori difficili da rintracciare;
 - i calcoli in cui è coinvolta l'ora legale (DST) e i cambiamenti del calendario storico non sono calcoli affidabili.
 
-L'oggetto ``Temporal`` modernizza e semplifica la gestione delle date, degli orari, dei fusi orari e delle nonostante le quasi 300 pagine di documentazione che stanno ad indicare quanto il concetto della data e dell'ora sia importante nella nostra società. Prevede oggetti differenti per poter:
+L'oggetto ``Temporal`` modernizza e semplifica la gestione delle date, degli orari, dei fusi orari e delle nonostante le quasi 300 pagine di documentazione che stanno ad indicare quanto il concetto della data e dell'ora sia importante nella nostra società. Permette di:
 
 - rappresentare un'ora senza informazioni sulla data e sul fuso orario, utilizzando l'oggetto ``Temporal.PlainDate``;
 - rappresentare una data senza informazioni sull'ora e sul fuso orario, utilizzando l'oggetto ``Temporal.PlainTime``;
@@ -56,25 +66,6 @@ L'oggetto ``Temporal`` modernizza e semplifica la gestione delle date, degli ora
 - rappresentare una durata di tempo (ad esempio, giorni, ore, minuti), utilizzando l'oggetto ``Temporal.Duration``;
 - rappresentare un punto specifico nel tempo, espresso in millisecondi dall'epoca Unix (1 gennaio 1970) utilizzando l'oggetto ``Temporal.Instant``.
 
-Ecco un esempio sull'uso di ``Date`` e ``Temporal``:
-
-```javascript
-const date1 = new Date('1995-12-17T03:24:00');
-const dateNow = Temporal.PlainDate.now();
-const date = Temporal.PlainDate.from('2023-10-01');
-const time = Temporal.PlainTime.from('14:30:00');
-const dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
-const yearMonth = Temporal.PlainYearMonth.from('2023-10');
-const monthDay = Temporal.PlainMonthDay.from('02-29');
-const zonedDateTime = Temporal.ZonedDateTime.from('2023-10-01T14:30:00[Europe/Rome]');
-const duration = Temporal.Duration.from( {days: 2, hours: 3, minutes: 15} );
-const instantNow = Temporal.Instant.from('2023-10-01T14:30:00Z');
-const dateTime2 = date.add({ months: 3 }); // 2024-01-01
-dateTime.equals(dateTime2); // false
-monthDay.toPlainDate(2023); // undefined
-monthDay.toPlainDate(2024); // 2024-02-29
-```
-
 ## Utilizzo dell'oggetto ``Date``
 
 E' possibile creare una variabile a cui assegnare un momento temporale utilizzando l'oggetto ``Date``. Possiamo indicare in formato stringa il momento temporale desiderato, se non indichiamo nulla viene assegnata la data, l'ora  ed il fuso orario attuale:
@@ -82,6 +73,24 @@ E' possibile creare una variabile a cui assegnare un momento temporale utilizzan
 ```javascript
 const date2 = new Date();
 const date1 = new Date('1995-12-17T03:24:00+01:00');
+```
+
+### Conversione in una rappresentazione ISO-8601-2019
+
+La funzione progettata per convertire la data in una rappresentazione testuale ISO-8601-2019 è ``toISOString()``, la cui firma è la seguente:
+
+```plaintext
+Syntax: Date.toISOString()
+
+Returns:
+    String: the ISO-8601 representation of the date
+```
+
+Un esempio d'uso è il seguente:
+
+```javascript
+let date = new Date('2022-11-02T13:02:00+00:00');
+let orario1 = date.toISOString); // 2022-11-02T13:02:00Z
 ```
 
 ### Conversione in una rappresentazione testuale localizzata
@@ -243,12 +252,14 @@ date.setFullYear(date.getFullYear() + 1);
 // output 04/03/2025, 21:30:45
 ```
 
+<!-- Esempio completo: /static/coding/web/javascript/dateTime.js -->
+
 ## Utilizzo dell'oggetto ``Temporal``
 
 E' possibile creare una variabile a cui assegnare un momento temporale utilizzando le varie specializzazioni dell'oggetto ``Temporal``, che sono:
 
-- ``Temporal.PlainDate``: rappresenta un'ora senza informazioni sulla data e sul fuso orario;
-- ``Temporal.PlainTime``: rappresenta una data senza informazioni sull'ora e sul fuso orario;
+- ``Temporal.PlainDate``: rappresenta una data senza informazioni sull'orario e sul fuso orario;
+- ``Temporal.PlainTime``: rappresenta un'orario senza informazioni sulla data e sul fuso orario;
 - ``Temporal.PlainDateTime``: rappresenta data e ora senza informazioni sul fuso orario;
 - ``Temporal.PlainYearMonth``: rappresenta un mese dell'anno, senza informazioni sul giorno, sull'ora e sul fuso orario;
 - ``Temporal.PlainMonthDay``: rappresenta un giorno del mese, senza informazioni sull'anno, sull'ora e sul fuso orario;
