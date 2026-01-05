@@ -82,13 +82,13 @@ Allo stesso modo dell'esempio precedente, per memorizzare il numero ``12`` nella
 v[1] = 12;
 ```
 
-Per poter leggere un elemento dall'array si utilizza la stessa sintassi. Ad esempio, per poter scrivere nella console il valore in prima posizione, si utilizza l'istruzione seguente:
+Per poter accedere ad un elemento dall'array si utilizza la stessa sintassi. Ad esempio, per poter scrivere nella console il valore in prima posizione, si utilizza l'istruzione seguente:
 
 ```javascript
 console.info(v[1]);
 ```
 
-Per poter leggere tutto l'array (e mostrarlo in console), è necessario effettuare l'operazione di lettura per tutte le posizioni:
+Per poter accedere passo dopo passo ad ogni elemento dell'array (e mostrarlo in console), è necessario effettuare l'operazione di lettura per tutte le posizioni:
 
 ```javascript
 console.info(v[0]);
@@ -118,17 +118,13 @@ v[8] = 0;
 v[9] = 0;
 ```
 
-## Automazione delle operazioni su un array
+## Cicli iterativi per operazioni su un array
 
 Il vantaggio di utilizzare un array come struttura dati è quello di poter elaborare i dati contenuti senza la necessità di scrivere una ad una le operazioni sui dati.
 
-L'istruzione di dichiarazione dell'array permette di allocare lo spazio necessario a contenere il numero desiderato di elementi, evitando la dichiarazione delle singole variabili una per volta.
-
-Nell'esempio seguente, si confrontano le istruzioni necessarie a dichiarare un array di lunghezza 5 con quelle necessarie alla dichiarazione di 5 variabili.
+L'istruzione di dichiarazione dell'array permette di allocare lo spazio necessario a contenere il numero desiderato di elementi, evitando la dichiarazione delle singole variabili una per volta. Non abbiamo più questo codice:
 
 ```javascript
-let etaPersona = [5];
-
 let etaPersona0 = 0;
 let etaPersona1 = 0;
 let etaPersona2 = 0;
@@ -136,8 +132,40 @@ let etaPersona3 = 0;
 let etaPersona4 = 0;
 ```
 
-Come si può notare, creare un alto numero di dati può essere un'operazione lunga, mentre creare un array con il numero desiderato di elementi è un'operazione molto veloce.
+Utilizzando gli array, indicare il numero desiderato di elementi è un'operazione molto veloce, come nel seguente esempio:
 
-Allo stesso modo, scrivere in console tutti i valori delle singole variabili è un operazione noiosa, mentre gli array permettono l'uso dei cicli iterativi per automatizzare le operazioni.
+```javascript
+let etaPersona = [5];
+```
 
-Per poter scrivere un ciclo iterativo che esegua le operazioni su un array, è necessario indi l'operazione su una
+Gli array permettono l'uso dei cicli iterativi per automatizzare le operazioni. Per poter scrivere un ciclo iterativo che esegua le operazioni su un array, è necessario scrivere il codice in modo tale da svolgere un'operazione alla volta, utilizzando la tecnica della variabile contatore oppure la tecnica della variabile accumulatore.
+
+Ad esempio, per sommare gli elementi di un array utilizziamo la tecnica della variabile accumulatore. Il primo passo consiste nel dichiarare e inizializzare la variabile accumulatore.
+
+```javascript
+let acc = 0;
+```
+
+Il secondo passo prevede di indicare le operazioni da effettuare, utilizzando la variabile accumulatore:
+
+```javascript
+acc = acc + etaPersona[0];
+acc = acc + etaPersona[1];
+acc = acc + etaPersona[2];
+acc = acc + etaPersona[3];
+acc = acc + etaPersona[4];
+```
+
+A questo punto è chiaro che l'unica cosa che cambia tra le istruzioni indicate è l'indice dell'array, che indica la posizione dell'elemento nell'array. Si può quindi generalizzare la formula nel seguente modo:
+
+```javascript
+acc = acc + etaPersona[i];
+```
+
+Possiamo creare il ciclo iterativo utilizzando una variabile di appoggio, tenendo presente che ``i`` parte da ``0`` e termina a ``5``, con un passo di ``1`` elemento alla volta:
+
+```javascript
+for (i=0; i<5; i=i+1) {
+  acc = acc + etaPersona[i];
+}
+
