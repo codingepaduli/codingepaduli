@@ -267,58 +267,65 @@ E' possibile creare una variabile a cui assegnare un momento temporale utilizzan
 - ``Temporal.Duration``: rappresenta una durata di tempo (ad esempio, giorni, ore, minuti);
 - ``Temporal.Instant``: rappresenta un punto specifico nel tempo, espresso in millisecondi dall'epoca Unix (1 gennaio 1970);
 
-### Metodi degli oggetti Temporal
+Inoltre è disponibile un oggetto ``Temporal.Now`` per riferirsi all'attuale istante di tempo (data, ora e fuso orario).
 
-Tutti gli oggetti ``Temporal`` ereditano gli stessi metodi:
+Tutte le specializzazioni dell'oggetto ``Temporal`` ereditano gli stessi metodi:
 
-- ``now()``: Crea un'istanza di Temporal con la data e l'ora odierna;
 - ``from()``: Crea un'istanza di Temporal da una stringa o un oggetto;
 - ``add()``: Aggiunge un periodo di tempo;
 - ``subtract()``: Sottrae un periodo di tempo;
-- ``toString()``: Restituisce una rappresentazione in stringa;
+- ``toString()``: Restituisce una rappresentazione di tipo stringa;
+- ``toLocaleString()``: Restituisce una rappresentazione di tipo stringa;
 - ``equals()``: Confronta due date e ore per verificare se sono uguali.
 
-Per creare un'istanza di ``Temporal`` dobbiamo innanzitutto indicare quale specializzazione vogliamo. Come abbiamo gia descritto, ogni specializzazione ha la sua informazione:
+Ogni specializzazione contiene inoltre proprietà e metodi specifici per gestire la specifica informazione. Andiamo a vedere nel dettaglio i metodi disponibili.
 
-- ``PlainTime`` ha l'informazione solo della data;
-- ``PlainDate``ha l'informazione solo dell'ora;
-- e cosi via;
+### Creazione del momento temporale attuale
 
-Una volta scelta la specializzazione dell'oggetto ``Temporal``, possiamo invocare i metodi, come nell'esempio successivo:
+Per accedere all'attuale momento temporale, si usa l'oggetto ``Temporal.Now`` che può essere poi convertito in una delle specializzazioni seguenti, a seconda delle informazioni che si necessita:
 
-- ``Temporal.PlainTime.now()``
-- ``Temporal.PlainTime.from()``
-- ``Temporal.PlainDate.add()``
-- ``Temporal.PlainDateTime.subtract()``
-- ``Temporal.ZonedDateTime.toString()``
-- ``Temporal.Duration.equals()``
+- ``Temporal.Now.instant()``: Restituisce il tempo corrente come ``Temporal.Instant``.
+- ``Temporal.Now.plainDateISO()``: Restituisce la data corrente come ``Temporal.PlainDate``, nel calendario ISO 8601 e nel fuso orario specificato.
+- ``Temporal.Now.plainDateTimeISO()``: Restituisce la data e l'ora corrente come ``Temporal.PlainDateTime``, nel calendario ISO 8601 e nel fuso orario specificato.
+- ``Temporal.Now.plainTimeISO()``: Restituisce il tempo corrente come ``Temporal.PlainTime``, nel fuso orario specificato.
+- ``Temporal.Now.timeZoneId()``: Restituisce un identificatore del fuso orario che rappresenta il fuso orario corrente del sistema.
+- ``Temporal.Now.zonedDateTimeISO()``: Restituisce la data e l'ora corrente come ``Temporal.ZonedDateTime``, nel calendario ISO 8601 e nel fuso orario specificato.
 
-Andiamo a vedere nel dettaglio i metodi disponibili.
-
-#### Creazione di un momento temporale
-
-La funzione progettata per eseguire la creazione di una qualsiasi istanza di ``Temporal`` contenente data ed ora attuali è ``now()``, la cui firma è la seguente:
-
-```plaintext
-Syntax: Temporal.now()
-
-Parameters:
-    None
-
-Returns:
-    Temporal: an instance of Temporal representing the specified date and time
-```
-
-Non sono previsti parametri formali
-
-Il valore restituito è un'istanza di ``Temporal`` che rappresenta la data e/o l'ora attuali. Può essere salvato in una variabile.
-
-Scegliamo la specializzazione di ``Temporal`` ed invochiamo il metodo come nel seguente esempio:
+Vediamo degli esempi d'uso:
 
 ```javascript
-let dataOra = Temporal.PlainDateTime.now();
-let data = Temporal.PlainDate.now();
+let istantanea = Temporal.Now.instant();
+let istantaneaString = istantanea.toString();
+console.log("Rappresentazione Istant as ZonedDateTime: " + istantaneaString);
+
+let dataCorrente = Temporal.Now.plainDateISO();
+let dataCorrenteString = dataCorrente.toString();
+console.log("Rappresentazione PlainDate: " + dataCorrenteString);
+
+let dataOraCorrente = Temporal.Now.plainDateTimeISO();
+let dataOraCorrenteString = dataOraCorrente.toString();
+console.log("Rappresentazione PlainDateTime: " + dataOraCorrenteString);
+
+let tempoCorrente = Temporal.Now.plainTimeISO();
+let tempoCorrenteString = tempoCorrente.toString();
+console.log("Rappresentazione PlainTime: " + tempoCorrenteString);
+
+let fusoOrario = Temporal.Now.timeZoneId();
+console.log("Rappresentazione timeZoneId: " + fusoOrario);
+
+let dataOraFuso = Temporal.Now.zonedDateTimeISO();
+let dataOraFusoString = dataOraFuso.toString();
+console.log("Rappresentazione ZonedDateTime: " + dataOraFusoString);
 ```
+
+Nello specifico, gli oggetti di tipo ``Temporal.Instant`` hanno la proprietà ``epochMilliseconds`` che indica il numero di millisecondi trascorsi dal'orario UTC. Si può visualizzare il valore di questa proprietà come nel seguente esempio:
+
+```javascript
+let istantaneaString = istantanea.toString();
+console.log("Rappresentazione Istant in millisecondi: " + istantanea.epochMilliseconds);
+```
+
+### Creazione di un momento temporale
 
 La funzione progettata per eseguire la creazione di una qualsiasi istanza di ``Temporal`` a partire da una data o un ora indicata è ``from()``, la cui firma è la seguente:
 
@@ -332,39 +339,63 @@ Returns:
     Temporal: an instance of Temporal representing the specified date and time
 ```
 
-Il parametro formale ``item`` rappresenta una stringa che rappresenta una data e un'ora, oppure un oggetto con proprietà che definiscono la data e l'ora (come ``year``, ``month``, ``day``, ``hour``, ``minute``, ``second``, e ``millisecond``).
+Il parametro formale ``item`` è una stringa indicante la rappresentazione, come previsto dallo standard ISO, del momento temporale da creare.
+In alternativa, il parametro formale ``item`` può essere un oggetto con proprietà che definiscono la data e l'ora (che sono ``year``, ``month``, ``day``, ``hour``, ``minute``, ``second``, e ``millisecond``).
 
 Il valore restituito è un'istanza di ``Temporal`` che rappresenta l'oggetto' specificate. Può essere salvato in una variabile.
 
 Al parametro formale ``item`` dobbiamo quindi sostituire la stringa che rappresenta l'informazione desiderata, ovvero quella solo con la data o quella solo con l'ora, ad esempio.
 
-Scegliamo la specializzazione di ``Temporal`` ed invochiamo il metodo passando i parametri, come nel seguente esempio:
+Nel seguente esempio creiamo le varie istanze di Temporal invocando il metodo ``from`` e passando come valore del parametro ``item`` la stringa che rappresenta, secondo lo standard ISO, l'informazione desiderata:
 
 ```javascript
-let dataOra = Temporal.PlainDateTime.from("2023-03-15T10:30:45");
-let data = Temporal.PlainDate.from("2023-03-15");
+let date = Temporal.PlainDate.from('2023-10-01');
+let time = Temporal.PlainTime.from('14:30:00');
+let dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
+let yearMonth = Temporal.PlainYearMonth.from('2023-10');
+let monthDay = Temporal.PlainMonthDay.from('02-29');
+let zonedDateTime = Temporal.ZonedDateTime.from('2023-10-01T14:30:00[Europe/Rome]');
+let instantNow = Temporal.Instant.from('2023-10-01T14:30:00Z');
+
+console.log("Rappresentazione PlainDate: " + date.toString())
+console.log("Rappresentazione PlainTime: " + time.toString())
+console.log("Rappresentazione PlainDateTime: " + dateTime.toString())
+console.log("Rappresentazione PlainYearMonth: " + yearMonth.toString())
+console.log("Rappresentazione PlainMonthDay: " + monthDay.toString())
+console.log("Rappresentazione ZonedDateTime: " + zonedDateTime.toString())
+console.log("Rappresentazione Instant: " + instantNow.toString())
 ```
 
-In alternativa, per creare un'istanza di `PlainDateTime` utilizzando un oggetto, possiamo sostituire al parametro formale ``item`` un oggetto come ``{ year: 2023, month: 3, day: 15, hour: 10, minute: 30, second: 45 }``. Salviamo in una variabile ``dataOraOggetto`` il risultato, invocando la funzione nel seguente modo:
+In alternativa, possiamo creare il parametro formale ``item`` come oggetto con le proprietà ed i valori necessari, invocando la funzione nel seguente modo:
 
 ```javascript
-let dataOraOggetto = Temporal.PlainDateTime.from({ year: 2023, month: 3, day: 15, hour: 10, minute: 30, second: 45 });
-let dataOggetto = Temporal.PlainDate.from({ year: 2023, month: 3, day: 15 });
+let item1 = { year: 2023, month: 3, day: 15, hour: 10, minute: 30, second: 45 }
+let dataOraOggetto = Temporal.PlainDateTime.from(item1);
+console.log("Rappresentazione PlainDateTime: " + dataOraOggetto.toString())
+
+let item2 = { year: 2023, month: 3, day: 15 }
+let dataOggetto = Temporal.PlainDate.from(item2);
+console.log("Rappresentazione PlainDate: " + dataOggetto.toString())
 ```
 
-Di seguito un esempio per ogni specializzazione:
+Nello specifico, è possibile creare un oggetto ``Temporal.Instant`` utilizzando il metodo ``fromEpochMilliseconds`` che prende come parametro il numero di millisecondi trascorsi dal'orario UTC, come nel seguente esempio:
 
 ```javascript
-const date1 = new Date('1995-12-17T03:24:00');
-const dateNow = Temporal.PlainDate.now();
-const date = Temporal.PlainDate.from('2023-10-01');
-const time = Temporal.PlainTime.from('14:30:00');
-const dateTime = Temporal.PlainDateTime.from('2023-10-01T14:30:00');
-const yearMonth = Temporal.PlainYearMonth.from('2023-10');
-const monthDay = Temporal.PlainMonthDay.from('02-29');
-const zonedDateTime = Temporal.ZonedDateTime.from('2023-10-01T14:30:00[Europe/Rome]');
-const duration = Temporal.Duration.from( {days: 2, hours: 3, minutes: 15} );
-const instantNow = Temporal.Instant.from('2023-10-01T14:30:00Z');
+let instantNowMillis = Temporal.Instant.fromEpochMilliseconds(1696170600000);
+console.log("Rappresentazione Instant: " + instantNowMillis..toString());
+```
+
+### Creazione di un periodo
+
+La creazione di un periodo può essere realizzata invocando il metodo ``from`` e passando come valore del parametro ``item`` la stringa che rappresenta, secondo lo standard ISO, il periodo, come nel seguente esempio:
+
+```javascript
+const duration1 = Temporal.Duration.from("P1Y");
+const duration2 = Temporal.Duration.from({ years: 1 });
+let duration3 = Temporal.Duration.from("P2DT3H15M");
+console.log("Rappresentazione Duration 1: " + duration1.toString());
+console.log("Rappresentazione Duration 2: " + duration2.toString());
+console.log("Rappresentazione Duration 3: " + duration3.toString());
 ```
 
 #### Aggiunta o sottrazione di un momento temporale
@@ -385,14 +416,13 @@ Il parametro formale ``temporalDuration`` rappresenta un'istanza di `Temporal.Du
 
 Il valore restituito è un'istanza di ``Temporal`` che rappresenta il momento temporale risultante dopo l'aggiunta del periodo specificato. Può essere salvato in una variabile.
 
-Per aggiungere un periodo di tempo a un'istanza di ``Temporal``, dobbiamo quindi sostituire il parametro formale ``temporalDuration`` con un'istanza di `Temporal.Duration`, ad esempio ``Temporal.Duration.from({ days: 5, hours: 2 })`` per aggiungere 5 giorni e 2 ore.
-
-Ecco un esempio di utilizzo del metodo ``add()``:
+Ecco un esempio di utilizzo del metodo ``add()`` per aggiungere 5 giorni e 2 ore:
 
 ```javascript
 let dataOra = Temporal.PlainDateTime.from("2023-03-15T10:30:45");
-let nuovaDataOra = dataOra.add(Temporal.Duration.from({ days: 5, hours: 2 }));
-console.log(nuovaDataOra.toString()); // Output: "2023-03-20T12:30:45"
+let durationD = Temporal.Duration.from("P5DT2H");
+let nuovaDataOra = dataOra.add(durationD);
+console.log("Aggiunta periodo: " + nuovaDataOra.toString());
 ```
 
 La funzione progettata per eseguire la sottrazione di un periodo di tempo da un'istanza di ``Temporal`` è ``subtract()``, la cui firma è la seguente:
@@ -411,21 +441,16 @@ Il parametro formale ``temporalDuration`` rappresenta un'istanza di `Temporal.Du
 
 Il valore restituito è un'istanza di ``Temporal`` che rappresenta il momento temporale risultante dopo la sottrazione del periodo specificato. Può essere salvato in una variabile.
 
-Per sottrarre un periodo di tempo da un'istanza di ``Temporal``, dobbiamo quindi sostituire il parametro formale ``temporalDuration`` con un'istanza di `Temporal.Duration`, ad esempio ``Temporal.Duration.from({ days: 3, hours: 1 })`` per sottrarre 3 giorni e 1 ora.
-
-Ecco un esempio di utilizzo del metodo ``subtract()``:
+Ecco un esempio di utilizzo del metodo ``subtract()`` per sottrarre 3 giorni ed 1 ora:
 
 ```javascript
 let dataOra = Temporal.PlainDateTime.from("2023-03-15T10:30:45");
-let nuovaDataOra = dataOra.subtract(Temporal.Duration.from({ days: 3, hours: 1 }));
-console.log(nuovaDataOra.toString()); // Output: "2023-03-12T09:30:45"
+let durationS = Temporal.Duration.from("P3DT1H");
+let nuovaDataOraS = dataOra.add(durationS);
+console.log("Aggiunta periodo: " + nuovaDataOraS.toString());
 ```
 
-dateTime.equals(dateTime2); // false
-monthDay.toPlainDate(2023); // undefined
-monthDay.toPlainDate(2024); // 2024-02-29
-
-#### Confronto tra date
+### Confronto tra date
 
 La funzione progettata per eseguire il confronto di uguaglianza tra due istanze di ``Temporal`` è ``equals()``, la cui firma è la seguente:
 
@@ -461,7 +486,7 @@ console.log(sonoUguali2); // Output: false
 
 In questo esempio, la prima comparazione restituisce `true` perché `dataOra1` e `dataOra2` rappresentano la stessa data e ora, mentre la seconda comparazione restituisce `false` perché `dataOra1` e `dataOra3` rappresentano date diverse.
 
-#### Conversione in una rappresentazione testuale localizzata
+### Conversione in una rappresentazione testuale localizzata
 
 La funzione progettata per eseguire la conversione di un'istanza di ``Temporal`` in una stringa formattata secondo le convenzioni locali è ``toLocaleString()``, la cui firma è la seguente:
 
