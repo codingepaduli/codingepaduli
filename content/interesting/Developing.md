@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2025-12-31
-publishdate: 2025-12-31
-lastmod: 2025-12-31
+date: 2026-01-07
+publishdate: 2026-01-07
+lastmod: 2026-01-07
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -75,6 +75,7 @@ summary: "Set di link relativi al coding"
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 [Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
 [Docker, Docker Compose & Swarm](https://dev.to/bazenteklehaymanot/understanding-docker-docker-compose-swarm-i31) - DEV Community\
+[Docker Swarm](https://dev.to/ankit_kumar_5e2e417bf7e3d/deploying-scalable-applications-with-docker-swarm-and-docker-compose-3pim) - Deploying Scalable Applications with Docker Swarm and Docker Compose - DEV Community\
 [dockur/windows](https://github.com/dockur/windows) - Windows in a Docker container.\
 [GitHub](https://github.com/runtipi/runtipi?tab=readme-ov-file) - runtipi/runtipi: Runtipi is a homeserver for everyone! One command setup, one click installs for your favorites self-hosted apps. ✨\
 [Mastering the Docker networking](https://dev.to/leandronsp/mastering-the-docker-networking-2h57) - DEV Community\
@@ -83,7 +84,7 @@ summary: "Set di link relativi al coding"
 
 ### Shell, CI, CD ed automazione
 
-[xonsh](https://xon.sh/tutorial.html) - xon shell is based on Python, with additional syntax added that makes calling subprocess commands, manipulating the environment, and dealing with the file system easy. \
+[Jujutsu For Busy Devs | maddie, wtf?!](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs) - \
 
 #### PowerShell
 
@@ -144,6 +145,7 @@ summary: "Set di link relativi al coding"
 [Machine Learning](https://dev.to/sarko07/introduction-to-machine-learning-for-everyone-5d5f) - Introduction to Machine Learning for Everyone! - DEV Community\
 [UNIGE 14x050 – Deep Learning Course](https://fleuret.org/dlc/) - \
 [MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning: This is the homepage of a new book entitled "Mathematical Foundations of Reinforcement Learning."](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) - \
+[Automation 102 with Google Apps Script](https://dev.to/toniaderibigbe/automation-102-with-google-apps-script-2kc5) - DEV Community\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -169,6 +171,7 @@ summary: "Set di link relativi al coding"
 [How to read MySQL EXPLAINs — PlanetScale](https://planetscale.com/blog/how-read-mysql-explains) - \
 [Read & Export SQLite Data in a JavaScript-enabled Browser Locally | by Charmaine Chui | Webtips | Medium](https://medium.com/weekly-webtips/read-export-sqlite-data-in-a-javascript-enabled-browser-locally-b655deda879d) - \
 [Kexi](https://docs.kde.org/stable5/en/kexi/kexi/index.html) - Open Ms Access databases\
+[SQLite Date & Time](https://w3schools.tech/it/tutorial/sqlite/sqlite_date_time) - SQLite Avanzato - W3schools\
 
 ### Giochi
 
@@ -349,6 +352,8 @@ summary: "Set di link relativi al coding"
 [Swap File](https://linuxize.com/post/create-a-linux-swap-file/) - Create a Linux Swap File | Linuxize\
 [Linux CLI](https://www.linuxcommand.org/tlcl.php) - Command Line Books by William Shotts\
 [Ubuntu CLI cheat sheet](https://dev.to/jeztn/ubuntu-cli-cheat-sheet-igl) - DEV Community\
+[A Comprehensive Guide to Checking Logs in a Linux Server](https://dev.to/msnmongare/a-comprehensive-guide-to-checking-logs-in-a-linux-server-1pl3) - DEV Community\
+[🖥️ Linux Process Management for Beginners: A Day in the Life of a Junior Sysadmin](https://dev.to/ldwit/linux-process-management-for-beginners-a-day-in-the-life-of-a-junior-sysadmin-41fm) - DEV Community\
 
 #### Hardware
 
@@ -427,6 +432,7 @@ summary: "Set di link relativi al coding"
 [PiBox NAS: Network Attached Storage](https://getpibox.com/) - \
 [Orangepi.com](https://www.orangepi.com/) - Distributor of Orange Pi products in Europe and the UK\
 [Build a Raspberry Pi NAS — Raspberry Pi Official Magazine](https://magazine.raspberrypi.com/articles/build-a-raspberry-pi-nas) - \
+[DIY NAS](https://blog.briancmoses.com/2025/11/diy-nas-2026-edition.html) - 2026 Edition - briancmoses.com\
 [Building a Budget Homelab NAS Server (2022 Edition) · mtlynch.io](https://mtlynch.io/budget-nas/) - \
 [Zimaboard](https://ounapuu.ee/posts/2023/10/09/zimaboard/) - the closest thing to my dream home server setup :: ./techtipsy\
 [Raspberry Pi 5 vs. Orange Pi 5 Plus vs. Rock 5 Model B | PiCockpit](https://picockpit.com/raspberry-pi/raspberry-pi-5-vs-orange-pi-5-plus-vs-rock-5-model-b/) - \
@@ -468,9 +474,18 @@ summary: "Set di link relativi al coding"
 [Use open source tools to set up a private VPN | Opensource.com](https://opensource.com/article/21/5/open-source-private-vpn) - \
 [Using PSAD and UFW · analyze iptables log messages to detect port scans and other suspicious traffic](https://gist.github.com/netson/c45b2dc4e835761fbccc) - \
 [GitHub](https://github.com/StevenBlack/hosts) - StevenBlack/hosts: 🔒 Consolidating and extending hosts files from several well-curated sources. Optionally pick extensions for porn, social media, and other categories.\
+[Setting Up a WireGuard VPN Client on Linux](https://dev.to/joshrothe/setting-up-a-wireguard-vpn-client-on-linux-3aan) - DEV Community\
+[WireGuard topologies for self-hosting at home](https://garrido.io/notes/wireguard-topologies-for-self-hosting-at-home/#fnref:2) - \
 
 ### programmi
 
+[grassmunk/Chicago95](https://github.com/grassmunk/Chicago95) - A rendition of everyone's favorite 1995 Microsoft operating system for Linux.\
+[joxeankoret/diaphora](https://github.com/joxeankoret/diaphora) - Diaphora, the most advanced Free and Open Source program diffing tool.\
+[LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.\
+[monasticacademy/httptap](https://github.com/monasticacademy/httptap) - View HTTP/HTTPS requests made by any Linux program\
+[TemporalAgent7/awesome-windows-privacy](https://github.com/TemporalAgent7/awesome-windows-privacy) - A list of awesome tools, documentation and scripts for better privacy on Microsoft Windows\
+[Instantly create a GitHub repository to take screenshots of a web page](https://simonwillison.net/2022/Mar/14/shot-scraper-template/) - \
+[When curl Fails You: Why aria2 is Your Download Hero](https://dev.to/bruceowenga/when-curl-fails-you-why-aria2-is-your-download-hero-n36) - DEV Community\
 
 #### ffmpeg
 
@@ -501,12 +516,7 @@ summary: "Set di link relativi al coding"
 [Google Earth as glTF](https://omarshehata.github.io/google-earth-as-gltf/) - \
 [Freesound](https://freesound.org/search/?f=license%3A%22Creative+Commons+0%22) - Search sounds by license\
 [Openclipart](https://openclipart.org/) - Clipping Culture\
-[grassmunk/Chicago95](https://github.com/grassmunk/Chicago95) - A rendition of everyone's favorite 1995 Microsoft operating system for Linux.\
-[joxeankoret/diaphora](https://github.com/joxeankoret/diaphora) - Diaphora, the most advanced Free and Open Source program diffing tool.\
-[LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.\
-[monasticacademy/httptap](https://github.com/monasticacademy/httptap) - View HTTP/HTTPS requests made by any Linux program\
-[TemporalAgent7/awesome-windows-privacy](https://github.com/TemporalAgent7/awesome-windows-privacy) - A list of awesome tools, documentation and scripts for better privacy on Microsoft Windows\
-[Instantly create a GitHub repository to take screenshots of a web page](https://simonwillison.net/2022/Mar/14/shot-scraper-template/) - \
+[Organizing an Image Library | F2](https://f2.freshman.tech/guide/organizing-image-library) - \
 
 ### PHP
 
@@ -537,6 +547,8 @@ summary: "Set di link relativi al coding"
 [python.logging](https://stackoverflow.com/questions/53249304/how-to-list-all-existing-loggers-using-python-logging-module#53250066) - How to list all existing loggers using python.logging module - Stack Overflow\
 [Python dependencies](https://akrabat.com/defining-python-dependencies-at-the-top-of-the-file/) - Defining Python dependencies at the top of the file – Rob Allen\
 [virtual env](https://blog.dusktreader.dev/2025/03/29/self-contained-python-scripts-with-uv/) - Self-contained Python scripts with uv - the.dusktreader blog\
+[Fun with uv and PEP 723](https://www.cottongeeks.com/articles/2025-06-24-fun-with-uv-and-pep-723) - \
+[Running scripts | uv](https://docs.astral.sh/uv/guides/scripts/) - \
 
 ### Privacy, Security and Hacking
 
@@ -560,6 +572,8 @@ summary: "Set di link relativi al coding"
 [ZoneMinder](https://www.zoneminder.com/) - a state-of-the-art video surveillance software system.\
 [Session](https://getsession.org/) - Private Messenger like Signal\
 [Privacy Tools](https://www.privacytools.io/) - Encryption Against Mass Surveillance\
+[Browser Fingerprint](https://neberej.github.io/exposedbydefault/) - ExposedByDefault What Your Browser Reveals About You\
+[How 73 of Your E-commerce Visitors Could Be Fake](https://joindatacops.com/resources/how-73-of-your-e-commerce-visitors-could-be-fake) - \
 
 #### Enhancing privacy
 
@@ -628,6 +642,7 @@ summary: "Set di link relativi al coding"
 [Quarto](https://quarto.org/) - an open-source scientific and technical publishing system built on Pandoc\
 [mb21/panwriter](https://github.com/mb21/panwriter) - Markdown editor with pandoc integration and paginated preview.\
 [AsciiDoc](https://mattrighetti.com/2023/02/22/asciidoc-liquid-and-jekyll) - Liquid and Jekyll\
+[AsciiDocR](https://github.com/delfanbaum/asciidocr) - delfanbaum/asciidocr: A pure-rust CLI and library for processing Asciidoc files.\
 [MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown doc\
 [Markdown, Asciidoc, or reStructuredText](https://www.dewanahmed.com/markdown-asciidoc-restructuredtext/) - a tale of docs-as-code - Dewan’s Blog\
 [Laying Out a Print Book With CSS | Ian G McDowell's Blog](https://iangmcdowell.com/blog/posts/laying-out-a-book-with-css/) - \
@@ -710,6 +725,7 @@ summary: "Set di link relativi al coding"
 [HTML link](https://bernard.app/) - Bernard No more broken links\
 [HTML redirects](https://apitman.com/18/#html-redirects) - \
 [base64 data-URI](https://websemantics.uk/tools/image-to-data-uri-converter/) - Image to base64 data-URI converter\
+[UTF-8](https://iamvishnu.com/posts/utf8-is-brilliant-design) - a Brilliant Design — Vishnu's Pages\
 [Unicode Converter](https://www.branah.com/unicode-converter) - Unicode, decimal, and text converter\
 [Unicode code converter](https://r12a.github.io/app-conversion/) - \
 [RFC 9839:](https://www.rfc-editor.org/rfc/rfc9839.html#legacy-controls) - Unicode Character Repertoire Subsets\
@@ -737,6 +753,8 @@ summary: "Set di link relativi al coding"
 [web accessibility](https://sericaia.me/blog/2020-06-08/how-i-fixed-accessibility-on-my-website-and-how-you-can-fix-yours) - How I fixed accessibility on my website and how you can fix yours | Daniela Matos de Carvalho\
 [Screen readers](https://dev.to/livechat/screen-readers-hearing-the-unseen-55nb) - hearing the unseen - DEV Community\
 [A11Y 101: Evaluation tools](https://dev.to/dailydevtips1/a11y-101-evaluation-tools-38km) - DEV Community\
+[output e A11Y](https://denodell.com/blog/html-best-kept-secret-output-tag) - HTML’s Best Kept Secret: The &lt;output&gt; Tag — Den Odell\
+[Basic – Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/basic/) - \
 
 #### CSS
 
@@ -772,6 +790,8 @@ summary: "Set di link relativi al coding"
 [Dark/Light Mode](https://opensource.com/article/21/10/dark-themes-websites) - A simple CSS trick for dark mode | Opensource.com\
 [Dark/Light Mode](https://dev.to/codewithsnowbit/how-to-toggle-darklight-mode-using-javascript-2ecn) - How to toggle Dark/Light Mode using JavaScript - DEV Community\
 [trigonometriche](https://web.dev/articles/css-trig-functions?hl=it) - Funzioni trigonometriche in CSS  |  Articles  |  web.dev\
+[CSS](https://lyra.horse/blog/2025/08/you-dont-need-js/) - You no longer need JavaScript Ʊ lyra's epic blog\
+[Traps to Developers | qouteall notes](https://qouteall.fun/qouteall-blog/2025/Traps%20to%20Developers) - \
 
 #### JavaScript
 
@@ -818,6 +838,8 @@ summary: "Set di link relativi al coding"
 [JS OOP](https://dev.to/nehal_mahida/oops-in-javascript-with-easy-to-understand-examples-2ppn) - OOPS in JavaScript with easy to understand examples 🔥🔥 - DEV Community\
 [🚀 Mastering Object.groupBy(): The Game-Changer for JavaScript Data Handling!](https://dev.to/sharma572/mastering-objectgroupby-the-game-changer-for-javascript-data-handling-2neg) - DEV Community\
 [JS OOP Inheritance](https://dev.to/matheusjulidori/javascript-inheritance-do-you-know-how-it-works-1kao) - Do you know how it works? - JavaScript Inheritance - DEV Community\
+[JS Date](https://ijmacd.github.io/rfc3339-iso8601/) - RFC 3339 vs ISO 8601\
+[JS UTF-16 String split](https://github.com/ushakov-igor/chonkify) - GitHub - ushakov-igor/chonkify\
 
 ##### JS Collection framework
 
@@ -884,6 +906,12 @@ summary: "Set di link relativi al coding"
 [Make Your Own Website](https://web.pixelshannon.com/make/#software) - \
 [Making Software: What is a color space?](https://www.makingsoftware.com/chapters/color-spaces-models-and-gamuts) - \
 [What are OKLCH colors?](https://jakub.kr/components/oklch-colors) - \
+[Athena](https://jslegenddev.substack.com/p/you-can-now-make-ps2-games-in-javascript) - You Can Now Make Playstation PS2 Games in JavaScript\
+
+##### Three JS 3D
+
+[Strange Attractors | Shashank Tomar](https://blog.shashanktomar.com/posts/strange-attractors) - \
+[AI](https://github.com/collidingScopes/3d-model-playground?tab=readme-ov-file) - collidingScopes/3d-model-playground: Control 3D models using hand gestures and voice commands in real-time. Threejs / mediapipe computer vision\
 
 ##### JS AI
 

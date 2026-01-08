@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2026-01-01
-publishdate: 2026-01-01
-lastmod: 2026-01-01
+date: 2026-01-07
+publishdate: 2026-01-07
+lastmod: 2026-01-07
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -129,6 +129,8 @@ summary: "Set di link relativi all'istruzione di base"
 [Lo Strumento Cattura](https://www.youtube.com/watch?v=MGZ54Kn2KFM&list=PLTZhWSINdiMwHu4z-SzGgsfwplQ3SubMc) - Come Salvare Quello che Vediamo sullo Schermo del PC\
 [Download a Windows 10 21H2 ISO from Microsoft](https://www.bleepingcomputer.com/news/microsoft/how-to-download-a-windows-10-21h2-iso-from-microsoft/) - \
 [This PC Can’t Run Windows 11: It Doesn’t Meet the Minimal System Requirements](https://dev.to/hetmansoftware/this-pc-can-t-run-windows-11-it-doesn-t-meet-the-minimal-system-requirements-4bjh) - DEV Community\
+[GitHub](https://github.com/Raphire/Win11Debloat) - Raphire/Win11Debloat: A simple, lightweight PowerShell script to remove pre-installed apps, disable telemetry, as well as perform various other changes to customize, declutter and improve your Windows experience. Win11Debloat works for both Windows 10 and Windows 11.\
+[GNOME  Insanity](https://medium.com/@fulalas/gnome-the-insanity-never-ends-f84a77ec3e13) - The Insanity Never Ends. After publishing three articles about… | by fulalas | Medium\
 
 ##### Office
 
@@ -185,6 +187,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Cosa fa l'ingegniere SRE](https://sre.google/) - Site Reliability Engineering - Google\
 [Software architect](https://www.atlantedelleprofessioni.it/professioni/software-architect) - Atlante Delle Professioni\
 [What makes a great SRE](https://opensource.com/article/18/5/what-makes-great-sre) - Site Reliability Engineering | Opensource.com\
+[AI Work](https://www.sify.com/ai-analytics/greatest-irony-of-the-ai-age-humans-being-increasingly-hired-to-clean-ai-slop/) - Greatest irony of the AI age: Humans being increasingly hired to clean AI slop - Sify\
 
 #### Informatica 3 anno
 
@@ -217,6 +220,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Corso PHP/MYSQL Tutorial Italiano 08](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Selezionare dati con SELECT - YouTube\
 [Corso PHP MySql](https://www.youtube.com/watch?v=QZo3LBajSds&list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - \
 [digital marketing con Google](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - \
+[SQL Online IDE](https://sqliteonline.com/) - Fast SQL Editor | SQL Compiler\
 
 #### Sistemi e reti 3 anno
 
@@ -315,12 +319,16 @@ summary: "Set di link relativi all'istruzione di base"
 [An Introduction to Computer Networks — An Introduction to Computer Networks, desktop edition 2.0.11](https://intronetworks.cs.luc.edu/current2/html/) - \
 [mitmproxy](https://mitmproxy.org/) - an interactive HTTPS proxy\
 [Cracking a hashed password with hashcat](https://dev.to/wrongbyte/cracking-a-hashed-password-with-hashcat-4bfe) - DEV Community\
+[How to Change MAC Address in Linux [Easily]](https://itsfoss.com/change-mac-address-linux/) - \
+[WharpDOS – I Built an ARP-Based DoS Tool in Python to Learn Network Attacks (Ethically)](https://dev.to/lucifron28/wharpdos-i-built-an-arp-based-dos-tool-in-python-to-learn-network-attacks-ethically-in2) - DEV Community\
 
 #### Sistemi e reti 5 anno
 
 [ISO/OSI](https://dev.to/shotvpro/what-actually-happens-when-you-type-a-url-into-the-browser-hint-more-than-you-think-41po) - What Actually Happens When You Type a URL into the Browser? (Hint: More Than You Think) - DEV Community\
 [ISO/OSI](https://dev.to/raajaryan/part-1-how-google-routes-your-search-in-milliseconds-a-realistic-devs-perspective-213k) - Part 1: How Google Routes Your Search in Milliseconds – A Realistic Dev's Perspective - DEV Community\
 [Port 80 (HTTP) vs. Port 443 (HTTPS): Understanding the Differences](https://dev.to/hardy_mervana/port-80-http-vs-port-443-https-understanding-the-differences-4ag3) - DEV Community\
+[Scammers](https://dev.to/copyleftdev/dear-scammers-you-picked-the-wrong-developer-46m6) - 🎯 Dear Scammers: You Picked the Wrong Developer - DEV Community\
+[Using the Internet without IPv4 connectivity](https://jamesmcm.github.io/blog/no-ipv4/) - \
 
 #### TPSIT 3 anno
 
@@ -334,6 +342,9 @@ summary: "Set di link relativi all'istruzione di base"
 [01](https://www.youtube.com/watch?v=ExWnJftRdWY) - Maven: introduzione, plugins, goals e lifecycle - [Tutorial su Maven in italiano] - YouTube\
 [Corso Java Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9wbmTi6c4-tmqzyOtLglGP) - YouTube\
 [Politecnico Torino](https://softeng.polito.it/courses/09CBIPC/screencast/) - Screencast delle lezioni\
+[Add Use Case diagram type · Issue #4628 · mermaid-js/mermaid](https://github.com/mermaid-js/mermaid/issues/4628) - \
+[🔒 CountDownLatch in Java — A Complete Guide with Robust Example](https://dev.to/devcorner/countdownlatch-in-java-a-complete-guide-with-robust-example-8kb) - DEV Community\
+[Proxies and Reverse Proxies](https://dev.to/vincenttommi/proxies-and-reverse-proxies-your-guide-to-the-internets-middlemen-day-23-of-system-design-basics-568a) - Your Guide to the Internet’s Middlemen , day 23 of system design basics - DEV Community\
 
 #### TPSIT 5 anno
 
@@ -341,6 +352,9 @@ summary: "Set di link relativi all'istruzione di base"
 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Fake online REST API for developers\
 [gleek.io](https://www.gleek.io/) - Diagram maker for developers\
 [eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to Java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
+[README | HTTP/3 explained](https://http3-explained.haxx.se/) - \
+[Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/) - \
+[Mechanical Watch – Bartosz Ciechanowski](https://ciechanow.ski/mechanical-watch/) - \
 
 #### Eventi
 
