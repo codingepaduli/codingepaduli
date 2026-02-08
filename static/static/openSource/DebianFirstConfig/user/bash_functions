@@ -1053,7 +1053,7 @@ tagAllMp3File()  {
 # export -f tagAllMp3File
 
 ########################
-# Mencoder      #
+# Mencoder             #
 ########################
 
 # Download streamed file from mms and rtsp protocol
@@ -1088,6 +1088,34 @@ mencoderMixAviFileListInALoneAviFile() {
   shift 1
   parts=$@
   mencoder -oac copy -ovc copy "$parts" -o "$aviFileOutput"
+}
+
+########################
+# Screen               #
+########################
+
+screenSessionStart() {
+  screenSessionName="${1:-myScreenSession}"
+  screen -S "$screenSessionName"
+}
+
+screenSessionLs() {
+  screen -ls
+}
+
+screenSessionDetach() {
+  screenSessionName="${1:-myScreenSession}"
+  screen -S "$screenSessionName" -X detach
+}
+
+screenSessionReattach() {
+  screenSessionName="${1:-myScreenSession}"
+  screen -r "$screenSessionName"
+}
+
+screenSessionClose() {
+  screenSessionName="${1:-myScreenSession}"
+  screen -X -S "$screenSessionName" quit
 }
 
 ########################
