@@ -1,18 +1,58 @@
 ---
 type: "interesting"
-title: "Google Moduli checker"
-description: "Google Moduli checker"
-date: 2024-10-30
-publishdate: 2024-10-30
-lastmod: 2024-10-30
+title: "Bookmarklets"
+description: "Bookmarklets"
+date: 2026-03-01
+publishdate: 2026-03-01
+lastmod: 2026-03-01
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
 toc: false
-summary: "Google Moduli checker"
+summary: "Bookmarklets"
 ---
 
-# Google Moduli checker
+# Bookmarklets
+
+## Alohomora - Show the hidden things
+
+```javascript
+javascript:(function() {
+  const allElements = document.querySelectorAll('*');
+  const hiddenElements = Array.from(allElements).filter(element => {
+    return window.getComputedStyle(element).display === 'none';
+  });
+  hiddenElements.forEach(element => {
+    element.style.display='block';
+  });
+})();
+```
+
+## iframe Remover
+
+```javascript
+javascript:(function() {
+  let iframes = document.querySelectorAll("iframe");
+  let parentElement;
+  iframes.forEach(element => {
+    parentElement = element.parentNode;
+    parentElement.removeChild(element);
+  });
+})();
+```
+
+## Link viewer
+
+```javascript
+javascript:(function() {
+  let links = document.querySelectorAll("a[href]");
+  links.forEach(element => {
+    console.log(element.href);
+  });
+})();
+```
+
+## Google Moduli checker
 
 ```javascript
 javascript:(function() {
@@ -37,3 +77,5 @@ javascript:(function() {
 
 })();
 ```
+
+<!-- others -->
