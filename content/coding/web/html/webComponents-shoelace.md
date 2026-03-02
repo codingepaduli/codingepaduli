@@ -247,3 +247,28 @@ Dalla documentazione del componente e dagli esempi riportati è possibile dedurr
 ```
 
 [esempio di componenti di Ionic](/static/coding/web/html/webComponents-ionic-example.html)
+
+## Libreria [nfreear](https://nfreear.github.io)
+
+Una delle librerie in fase di costruzione è **nfreear**[nfreear](https://nfreear.github.io), che fornisce una collezione di componenti UI progettati sulla tecnologia dei Web Component basati su quelli di [webcomponents.org](https://www.webcomponents.org/). E' particolarmente utile per definire le mappe di google con i punti di interesse.
+
+### Utilizzare nfreear nelle pagine web
+
+L'uso dei componenti nelle pagine web prevede l'aggiunta degli script dei singoli componenti della libreria nella pagina web:
+
+```html
+<!-- Content Security Policy che permette gli script "unsafe" online -->
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'  https://unpkg.com https://cdn.jsdelivr.net ;">
+
+<script src="https://unpkg.com/@nfreear/my-map@1" type="module"></script>
+```
+
+### Utilizzo dei componenti
+
+Nella home page è possibile visualizzare i componenti web utilizzabili. Gli esempi d'uso fanno da documentazione da cui dedurre l'utilizzo del componente:
+
+```html
+<my-map latlng="40.8363100,14.2464100" zoom="12.5">
+  <marker latlng="40.8363100, 14.2464100">Napoli</marker>
+</my-map>
+```
