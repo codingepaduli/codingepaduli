@@ -187,7 +187,7 @@ hugoRun() {
   declare -A tailParams
   tailParams=$@
 
-  dockerContainer --name hugo $headParams -p 1313:1313 hugomods/hugo:std-base-non-root-0.147.5 hugo  --noBuildLock $tailParams
+  dockerContainer --name hugo $headParams -p 1313:1313 hugomods/hugo:std-base-non-root-0.156.0 hugo  --noBuildLock $tailParams
 } 
 export -f hugoRun
 
