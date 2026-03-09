@@ -22,7 +22,7 @@ summary: "Naples"
 <!-- load the element https://www.webcomponents.org/element/@nfreear/my-map -->
 <script src="https://unpkg.com/@nfreear/my-map@1" type="module"></script>
 
-<my-map latlng="40.8363100,14.2464100" zoom="12.5">
+<my-map id="myMap" latlng="40.8363100,14.2464100" zoom="12.5">
   <marker latlng="40.8363100, 14.2464100">Napoli</marker>
 </my-map>
 
@@ -40,5 +40,29 @@ summary: "Naples"
     gps
   </a>
 </p>
+
+<script type="application/javascript">
+  /* Geolocalizzo l'utente */
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const latitude = position.coords.latitude;
+      const longitude = position.coords.longitude;
+
+      console.log(`Latitudine: ${latitude}, Longitudine: ${longitude}`);
+
+      // Crea un nuovo marcatore
+      const newMarker = document.createElement('marker');
+      newMarker.setAttribute('latlng', `${latitude}, ${longitude}`);
+      newMarker.setAttribute('popup', 'Tu sei qua!');
+      newMarker.innerText = 'Tu sei qua';
+
+      // Aggiunge il nuovo marcatore al componente my-map
+      const myMap = document.getElementById('myMap');
+      myMap.appendChild(newMarker);
+    }, (error) => {
+      console.error("Errore nella geolocalizzazione:", error);
+    });
+  }
+</script>
 
 <!-- markdownlint-enable MD033 -->
