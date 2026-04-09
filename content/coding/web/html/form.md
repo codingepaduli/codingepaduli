@@ -502,8 +502,6 @@ Il risultato è il seguente:
 
 ![Input di tipo selezione singola](/static/coding/web/html/inputSelectGroup.png "Input di tipo selezione singola")
 
-<!-- TODO verifica perchè non funziona -->
-
 ### Finestre di dialogo
 
 Popovers created using the Popover API are always non-modal. If you want to create a modal popover, a ``<dialog>`` element is the right way to go. There is significant overlap between the two — you might for example want to create a popover that persists, but control it using declarative HTML. You can turn a ``<dialog>`` element into a popover (``<dialog popover>`` is perfectly valid) if you want to combine popover control with dialog semantics.
@@ -518,28 +516,35 @@ Popovers created using the Popover API are always non-modal. If you want to crea
 
 <button popovertarget="mypopover" popovertargetaction="show">Apri la finestra popover</button>
 <button popovertarget="mypopover" popovertargetaction="hide">Chiudi la finestra popover</button>
-<button popovertarget="mypopover">Cambia stato alla finestra popover</button>
+<button popovertarget="mypopover" popovertargetaction="toggle">Cambia stato alla finestra popover</button>
 
 <div id="mypopover" popover>
   <p>Finestra di dialogo</p>
   <form>
-    <button type="button" popovertarget="mypopover">Chiudi</button>
+    <button type="button" popovertarget="mypopover" popovertargetaction="hide">Chiudi</button>
   </form>
 </div>
 
 <!-- markdownlint-enable MD033 -->
 
-<!-- perchè non funziona ?
+<!-- perchè non funziona ? pare un problema di Hugo e del CSS Mainroad
 
 <button popovertarget="mypopover2" popovertargetaction="show">Apri la finestra popover</button>
 <button popovertarget="mypopover2" popovertargetaction="hide">Chiudi la finestra popover</button>
-<button popovertarget="mypopover2">Cambia stato alla finestra popover</button>
+<button popovertarget="mypopover2" popovertargetaction="toggle">Cambia stato alla finestra popover</button>
 
 <dialog id="mypopover2" popover>
   <p>Altra finestra modale</p>
   <form>
-    <button type="button" popovertarget="mypopover2">Chiudi</button>
+    <button type="button" popovertarget="mypopover2" popovertargetaction="hide">Chiudi</button>
   </form>
 </dialog>
 
--->
+<button command="show-modal" commandfor="my-dialog">Open Modal dialog</button>
+
+<dialog id="my-dialog">
+  <p>This dialog was opened using an invoker command.</p>
+  <button commandfor="my-dialog" command="close">Close</button>
+</dialog>
+
+ -->
