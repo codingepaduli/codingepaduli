@@ -159,15 +159,21 @@ Chiedere all'utente di inserire il prezzo di un articolo e la percentuale di sco
 ## Mano di poker
 
 Scrivere un programma C che prenda in input le 5 carte del giocatore di poker e stampi la classificazione della mano, indicata nella lista in calce.
-Si ricorda che il valore della singola carta va da 1 (asso) a 10 e da Jack a Kappa. I semi delle carte possono essere cuori quadri fiori e picche La classificazione della mano è la seguente:
+Il valore della singola carta va da 1 (asso) a 10 e prosegue con Jack, Queen (donna o regina) e King (Kappa o Re). I semi delle carte possono essere cuori quadri fiori e picche.
 
-- Coppia: esattamente una coppia (esempio 2 di picche e 2 di quadri);
-- Doppia coppia: due coppie distinte (esempio una coppia 2 di picche e 2 di quadri ed una seconda coppia donna di fiori e donna di quadri);
-- Tris: tre carte dello stesso valore (esempio 8 di fiori, 8 di cuori e 8 di picche);
-- Poker: quattro carte dello stesso valore (esempio 8 di fiori, 8 di cuori, 8 di quadri e 8 di picche);
-- Full: tris + coppia (esempio 8 di fiori, 8 di cuori e 8 di picche più 2 di picche e 2 di quadri);
-- Colore (flush): tutte e 5 le carte dello stesso seme;
-- Scala (straight): 5 valori consecutivi (incluso A basso o alto);
-- Scala a colori (straight flush): colore piu scala;
+- Il programma deve indicare se l'utente ha poker;
+- Il programma deve indicare se l'utente ha colore;
+- Il programma deve indicare se l'utente ha una coppia;
+
+La classificazione della mano (in ordine di punteggio) è la seguente:
+
 - Scala reale a colori: 10-J-Q-K-A tutti dello stesso seme;
+- Scala a colori (straight flush): colore piu scala;
+- Scala (straight): 5 valori consecutivi (incluso Asso "basso" o "alto");
+- Colore (flush): tutte e 5 le carte dello stesso seme;
+- Full: tris + coppia (esempio 8 di fiori, 8 di cuori e 8 di picche più 2 di picche e 2 di quadri);
+- Poker: quattro carte dello stesso valore (esempio 8 di fiori, 8 di cuori, 8 di quadri e 8 di picche);
+- Tris: tre carte dello stesso valore (esempio 8 di fiori, 8 di cuori e 8 di picche);
+- Doppia coppia: due coppie distinte (esempio una coppia 2 di picche e 2 di quadri ed una seconda coppia donna di fiori e donna di quadri);
+- Coppia: esattamente una coppia (esempio 2 di picche e 2 di quadri);
 - Niente: nessuna delle precedenti.
