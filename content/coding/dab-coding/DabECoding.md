@@ -155,3 +155,19 @@ Svolgere l'operazione richiesta secondo questo schema:
 ## Prezzo totale tolto lo sconto e la tassa di lusso
 
 Chiedere all'utente di inserire il prezzo di un articolo e la percentuale di sconto da applicare. Calcola il prezzo finale dell'articolo applicando la percentuale di sconto e, se il prezzo totale supera i 10.000 dollari, applica una tassa pari alla radice quadrata del prezzo.
+
+## Mano di poker
+
+Scrivere un programma C che prenda in input le 5 carte del giocatore di poker e stampi la classificazione della mano, indicata nella lista in calce.
+Si ricorda che il valore della singola carta va da 1 (asso) a 10 e da Jack a Kappa. I semi delle carte possono essere cuori quadri fiori e picche La classificazione della mano è la seguente:
+
+- Coppia: esattamente una coppia (esempio 2 di picche e 2 di quadri);
+- Doppia coppia: due coppie distinte (esempio una coppia 2 di picche e 2 di quadri ed una seconda coppia donna di fiori e donna di quadri);
+- Tris: tre carte dello stesso valore (esempio 8 di fiori, 8 di cuori e 8 di picche);
+- Poker: quattro carte dello stesso valore (esempio 8 di fiori, 8 di cuori, 8 di quadri e 8 di picche);
+- Full: tris + coppia (esempio 8 di fiori, 8 di cuori e 8 di picche più 2 di picche e 2 di quadri);
+- Colore (flush): tutte e 5 le carte dello stesso seme;
+- Scala (straight): 5 valori consecutivi (incluso A basso o alto);
+- Scala a colori (straight flush): colore piu scala;
+- Scala reale a colori: 10-J-Q-K-A tutti dello stesso seme;
+- Niente: nessuna delle precedenti.
