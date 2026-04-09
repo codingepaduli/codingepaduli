@@ -21,15 +21,22 @@ summary: "Naples"
 
 <!-- load the element https://www.webcomponents.org/element/@nfreear/my-map -->
 <script src="https://unpkg.com/@nfreear/my-map@1" type="module"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
 <my-map id="myMap" latlng="40.8363100,14.2464100" zoom="12.5">
   <marker latlng="40.8363100, 14.2464100">Napoli</marker>
 </my-map>
 
-<!-- Come documentato, le immagini si trovano ai link:
+<!-- Come documentato al link
   https://github.com/nfreear/elements/blob/main/src/components/MyMapElement.js
+
+  le immagini sono queste:
+
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png'
+
+  quindi o si sovrascrive /marker-icon-2x.png oppure si usa il CSS:
+  https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 -->
 
 <p>
