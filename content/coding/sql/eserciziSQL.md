@@ -73,7 +73,7 @@ Inserisci nella tabella vittorie il Napoli e l'Inter come vincitrici degli ultim
 Interroga il database selezionando:
 
 - Il nome di tutte le squadre;
-- La squadra che gioca nello stadio "Diego Armando"
-- Le squadre che ha vinto i rispettivi campionati nel 2025
-- La squadra che ha vinto il campionato di serie A nel 2025
-- La squadra che ha vinto il campionato di liga spagnola nel 2024
+- La squadra che gioca nello stadio "Diego Armando";
+- Le squadre che ha vinto i rispettivi campionati nel 2025;
+- La squadra che ha vinto il campionato di serie A nel 2025;
+- La squadra che ha vinto il campionato di Liga spagnola nel 2024;

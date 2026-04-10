@@ -102,7 +102,7 @@ weight: 9820
     Un linguaggio di programmazione
     Un linguaggio per programmare macchine virtuali
 
-4. Cosa significa HTML? 
+4. Cosa significa HTML?
 
     Hyperlinks and Text Markup Language
     Hyper Text Markup Language (Corretta)

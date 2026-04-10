@@ -34,6 +34,8 @@ I valori applicabili per la variabile``STYLE`` sono:
 - ``6`` imposta il testo lampeggiante;
 - ``7`` imposta i colori invertiti;
 
+<!-- markdownlint-disable MD060  -->
+
 | Colore | Colore se grassetto | Codice testo | Codice sfondo |
 | ------ | ------------------- | ------------ | ------------- |
 | nero   |     grigio scuro    |      30      |      40       |
@@ -44,6 +46,8 @@ I valori applicabili per la variabile``STYLE`` sono:
 | viola  |    viola chiaro     |      35      |      45       |
 | cyan   |     ciano chiaro    |      36      |      46       |
 | grigio chiaro |  bianco      |      37      |      47       |
+
+<!-- markdownlint-enable MD060  -->
 
 Se al termine si vuole ripristinare lo stile predefinito allora
 è necessario specificarlo applicando un secondo stile ``\033[0m``:
@@ -73,7 +77,7 @@ Si realizzi uno script ``controlla_esistenza_file.sh`` che prende come parametro
 
 Si realizzi uno script ``crea_nodi_html.sh`` che genera 30 file vuoti denominati ``node1.html``, ``node2.html``, ... , ``node30.html``.
 
-In ogni file ``nodeXXX.html`` inserire poi la stringa 
+In ogni file ``nodeXXX.html`` inserire poi la stringa
 ``<HTML> <HEAD> <TITLE> nodoXXX.html </TITLE> </HEAD> <BODY> nodoXXX.html </BODY> </HTML>``.
 
 Per ciascun file HTML aggiungere all'inizio del file una riga di commento che indica il proprietario del file e la data di ultima modifica del file. Nota che commenti HTML si applicano nella forma <!-- Commento -->.

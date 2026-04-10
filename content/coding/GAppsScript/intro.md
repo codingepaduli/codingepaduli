@@ -100,5 +100,3 @@ Una volta aggiunto un servizio aggiuntivo, questo viene aggiunto al file di mani
   "runtimeVersion": "V8"
 }
 ```
-
-

@@ -28,7 +28,7 @@ Tra gli editor consigliati vi sono:
 E' possibile utilizzare anche editor di testi basati sul web, come:
 
 - [Visual Studio Code online](https://code.visualstudio.com/ "Collegamento all'editor Visual Studio Code online");
-- [Phoenix Code] (https://phcode.io/ "Collegamento all'editor Phoenix Code");
+- [Phoenix Code](https://phcode.io/ "Collegamento all'editor Phoenix Code");
 
 ## Crea la cartella
 

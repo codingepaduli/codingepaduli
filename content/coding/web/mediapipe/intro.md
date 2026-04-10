@@ -354,129 +354,129 @@ Ogni controller definisce un proprio metodo per selezionare la mossa tra le moss
 Tenendo presente la struttura del codice descritta precedentemente, per aggiungere un controller per P5JS dobbiamo modificare il file ``mk.js`` creando:
 
 1. un opzione nel metodo ``start`` per **creare** un controller:
-
-```javascript
-case 'p5js':
-  mk.game = new mk.controllers.P5JS(options);
-  break;
-```
-
-2. il controller ``P5JS``, conservando la stessa struttura degli altri controller di gioco:
-
-```javascript
-mk.controllers.P5JS = function (options) {
-  mk.controllers.Basic.call(this, options);
-  mk.classifier = options.classifier;
-};
-
-mk.controllers.P5JS.prototype = new mk.controllers.Basic();
-
-mk.controllers.P5JS.prototype._initialize = function () {
-  this._player = 0;
-  this._callbacks.setMK(mk);
-  this._callbacks.setP5JS(this);
-};
-```
-
-3. il metodo per selezionare la mossa tra le mosse indicate precedentemente, selezionare il combattente dall'array indicato precedentemente ed applicare il movimento al combattente:
-
-```javascript
-mk.controllers.P5JS.prototype.movimento = function (categoriaAI) {
-  // per ora non fa nulla
-  let mossa = mk.moves.types.STAND;
-
-  // se trovo il movimento, lo fa
-  if (categoriaAI == 'pugno') {
-    mossa = mk.moves.types.HIGH_PUNCH;
-  }
-  if (categoriaAI == 'calcio') {
-    mossa = mk.moves.types.HIGH_KICK;
-  }
   
-  var self = this;
-  let f = this.fighters[0];
-  this._moveFighter(f, mossa);
-  return mossa;
-}
-```
-
+  ```javascript
+  case 'p5js':
+    mk.game = new mk.controllers.P5JS(options);
+    break;
+  ```
+  
+2. il controller ``P5JS``, conservando la stessa struttura degli altri controller di gioco:
+  
+  ```javascript
+  mk.controllers.P5JS = function (options) {
+    mk.controllers.Basic.call(this, options);
+    mk.classifier = options.classifier;
+  };
+  
+  mk.controllers.P5JS.prototype = new mk.controllers.Basic();
+  
+  mk.controllers.P5JS.prototype._initialize = function () {
+    this._player = 0;
+    this._callbacks.setMK(mk);
+    this._callbacks.setP5JS(this);
+  };
+  ```
+  
+3. il metodo per selezionare la mossa tra le mosse indicate precedentemente, selezionare il combattente dall'array indicato precedentemente ed applicare il movimento al combattente:
+  
+  ```javascript
+  mk.controllers.P5JS.prototype.movimento = function (categoriaAI) {
+    // per ora non fa nulla
+    let mossa = mk.moves.types.STAND;
+    
+    // se trovo il movimento, lo fa
+    if (categoriaAI == 'pugno') {
+      mossa = mk.moves.types.HIGH_PUNCH;
+    }
+    if (categoriaAI == 'calcio') {
+      mossa = mk.moves.types.HIGH_KICK;
+    }
+    
+    var self = this;
+    let f = this.fighters[0];
+    this._moveFighter(f, mossa);
+    return mossa;
+  }
+  ```
+  
 4. Creato il controller, dobbiamo modificare il file ``index.html`` per aggiungere sia il progetto di ``p5.js`` sia quello di ``Teachable Machine``.
 
-Aggiungiamo le librerie di p5.js e di AI per farle convivere con ``mk``:
+  Aggiungiamo le librerie di p5.js e di AI per farle convivere con ``mk``:
 
-```html
-<!--  FIX VERSION FOR ALL PATH  -->
-<script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/p5@0.7.3/lib/addons/p5.dom.min.js"></script>
-<script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
-```
+  ```html
+  <!--  FIX VERSION FOR ALL PATH  -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.7.3/lib/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js"></script>
+  ```
 
-Nello script di Mortal Kombat aggiungiamo le variabili per il gioco e per la modalità specifica di gioco ``P5JS``:
+  Nello script di Mortal Kombat aggiungiamo le variabili per il gioco e per la modalità specifica di gioco ``P5JS``:
 
-```javascript
-let mortalKombat;
-let p5js;
-```
+  ```javascript
+  let mortalKombat;
+  let p5js;
+  ```
 
-Aggiungiamo le funzioni per controllare il gioco dall'esterno, tramite configurazione:
+  Aggiungiamo le funzioni per controllare il gioco dall'esterno, tramite configurazione:
 
-```javascript
-var options = {
-  arena: {
-      container: document.getElementById('arena'),
-      arena: mk.arenas.types.THRONE_ROOM
-  },
-  fighters: [{ name: 'Subzero' }, { name: 'Kano' }],
-  callbacks: {
-      attack: function (f, o, l) {
-          if (o.getName() === 'kano') {
-              setLife($('player2Life'), o.getLife());
-          } else {
-              setLife($('player1Life'), o.getLife());
-          }
-      },
-      setMK : function(g) {
-        mortalKombat = g;
-      },
-      setP5JS : function(g) {
-        p5js = g;
-      }
-  },
-  isHost: 'no',
-  gameName: "mortalKombat",
-  gameType: 'p5js'
-};
-```
+  ```javascript
+  var options = {
+    arena: {
+        container: document.getElementById('arena'),
+        arena: mk.arenas.types.THRONE_ROOM
+    },
+    fighters: [{ name: 'Subzero' }, { name: 'Kano' }],
+    callbacks: {
+        attack: function (f, o, l) {
+            if (o.getName() === 'kano') {
+                setLife($('player2Life'), o.getLife());
+            } else {
+                setLife($('player1Life'), o.getLife());
+            }
+        },
+        setMK : function(g) {
+          mortalKombat = g;
+        },
+        setP5JS : function(g) {
+          p5js = g;
+        }
+    },
+    isHost: 'no',
+    gameName: "mortalKombat",
+    gameType: 'p5js'
+  };
+  ```
 
-Aggiungiamo lo script standard di ``p5.js``
+  Aggiungiamo lo script standard di ``p5.js``
 
-```javascript
-function setup() {
-  createCanvas(320, 260);
-}
+  ```javascript
+  function setup() {
+    createCanvas(320, 260);
+  }
 
-function draw() {
-  background(0);
-  
-  circle(200, 200, 20);
-}
-```
+  function draw() {
+    background(0);
+    
+    circle(200, 200, 20);
+  }
+  ```
 
-Verifichiamo che funzioni aggiungendo l'istruzione ``p5js.movimento(key)``
+  Verifichiamo che funzioni aggiungendo l'istruzione ``p5js.movimento(key)``
 
-```javascript
-function draw() {
-  background(0);
-  
-  circle(200, 200, 20);
-}
-```
+  ```javascript
+  function draw() {
+    background(0);
+    
+    circle(200, 200, 20);
+  }
+  ```
 
-A questo punto è necessario aggiungere il riconoscimento dei movimenti con ``Teachable Machine``, incollando il codice necessario ed utilizzando il metodo ``gotResult(error, results)`` per recuperare il movimento:
+  A questo punto è necessario aggiungere il riconoscimento dei movimenti con ``Teachable Machine``, incollando il codice necessario ed utilizzando il metodo ``gotResult(error, results)`` per recuperare il movimento:
 
-```javascript
-let categoriaAI = results[0].label;
-let movimentoMK = p5js.movimento(categoriaAI);
-```
+  ```javascript
+  let categoriaAI = results[0].label;
+  let movimentoMK = p5js.movimento(categoriaAI);
+  ```
 
 Un esempio di progetto è in allegato.
