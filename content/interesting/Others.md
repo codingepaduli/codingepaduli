@@ -170,7 +170,7 @@ summary: "Set di link interessanti"
 [results from privatisation of Britain’s energy](https://www.theguardian.com/politics/2025/sep/17/privatisation-premium-billions-from-uk-energy-bills-paid-to-shareholders) - billions from UK energy bills paid to shareholders | Privatisation | The Guardian\
 [electric car batteries](https://www.sustainabilitybynumbers.com/p/electric-car-battery-degradation) - How much do electric car batteries degrade?\
 [Metamaterials, AI, and the Road to Invisibility Cloaks](https://thepotentialsurface.substack.com/p/metamaterials-ai-and-the-road-to?triedRedirect=true) - \
-[ Hundreds of robots move Shanghai city block ](https://m.youtube.com/watch?v=7ZccC9BnT8k) - \
+[ Hundreds of robots move Shanghai city block](https://m.youtube.com/watch?v=7ZccC9BnT8k) - \
 
 ### History
 
