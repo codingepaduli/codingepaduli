@@ -311,7 +311,7 @@ fi
 ## Super Tux 2 (clone GPL di Super Mario Bros)
 ## Tanglet : gioco tipo paroliere.   
 ## Torcs : Corse automobilistiche.
-	
+  
 # apt-get install $APT_OPTS abs-guide debian-reference-it developers-reference ebook-dev—alp
 
 apt-get autoremove $APT_OPTS --purge
