@@ -1091,7 +1091,7 @@ mencoderMixAviFileListInALoneAviFile() {
 }
 
 ########################
-# Screen               #
+# Screen e Tmux        #
 ########################
 
 screenSessionStart() {
@@ -1116,6 +1116,30 @@ screenSessionReattach() {
 screenSessionClose() {
   screenSessionName="${1:-myScreenSession}"
   screen -X -S "$screenSessionName" quit
+}
+
+tmuxSessionStart() {
+  tmuxSessionName="${1:-myTmuxSession}"
+  tmux new -s "$tmuxSessionName"
+}
+
+tmuxSessionLs() {
+  tmux ls
+}
+
+tmuxSessionDetach() {
+  tmuxSessionName="${1:-myTmuxSession}"
+  tmux detach-client -t "$tmuxSessionName" 2>/dev/null || tmux detach -s "$tmuxSessionName" 2>/dev/null
+}
+
+tmuxSessionReattach() {
+  tmuxSessionName="${1:-myTmuxSession}"
+  tmux attach -t "$tmuxSessionName"
+}
+
+tmuxSessionClose() {
+  tmuxSessionName="${1:-myTmuxSession}"
+  tmux kill-session -t "$tmuxSessionName"
 }
 
 ########################
