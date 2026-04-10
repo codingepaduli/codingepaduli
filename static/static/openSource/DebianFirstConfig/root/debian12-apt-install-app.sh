@@ -250,8 +250,9 @@ fi
 
 ## tealdeer : gestisce le pagine TLDR
 ## screen: gestisce le sessioni di terminale, quando la connessione cade o si chiude
+## tmux:   gestisce le sessioni di terminale, quando la connessione cade o si chiude
 ##         involontariamente un terminale, ci si può ricollegare e riprendere.
-apt-get install $APT_OPTS bash bash-completion curl dash diffutils tealdeer screen
+apt-get install $APT_OPTS bash bash-completion curl dash diffutils tealdeer screen tmux
 
 if [ $? -ne 0 ]; then
     exit 1
