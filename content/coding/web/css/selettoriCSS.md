@@ -333,8 +333,8 @@ Una lista che elenca i principali pseudo-elementi con relativa descrizione è la
 - ``:header``: Seleziona gli elementi che sono titoli (le etichette da ``h1`` ad ``h6``);
 
 <!-- 
-:contains(foo) 	Seleziona solo gli elementi containing the text foo.
-:not(filter) 	Negates the specified filter.
+:contains(foo)   Seleziona solo gli elementi containing the text foo.
+:not(filter)   Negates the specified filter.
 -->
 
 lista completa di colori la si trova sulla pagina web di [Wikipedia - List of colors](https://en.wikipedia.org/wiki/List_of_colors_(alphabetical))

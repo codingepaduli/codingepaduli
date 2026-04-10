@@ -85,7 +85,7 @@ Nel caso sia mostrato questo specifico errore di incompatibilità, bisogna contr
 
 ```plaintext
 Errore: LinkageError durante il caricamento della classe principale com.android.sdklib.tool.AvdManagerCli
-	java.lang.UnsupportedClassVersionError: com/android/sdklib/tool/AvdManagerCli has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0"
+  java.lang.UnsupportedClassVersionError: com/android/sdklib/tool/AvdManagerCli has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 55.0"
 ```
 
 La versione del JRE 61.0 si riferisce a Java 17, mentre la versione JRE installata è la 55.0 (Java 11).

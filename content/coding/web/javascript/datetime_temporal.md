@@ -252,7 +252,7 @@ date.setFullYear(date.getFullYear() + 1);
 // output 04/03/2025, 21:30:45
 ```
 
-<!-- Esempio completo: /static/coding/web/javascript/dateTime.js -->
+<!-- Esempio completo: /static/coding/web/JavaScript/dateTime.js -->
 
 ## Utilizzo dell'oggetto ``Temporal``
 

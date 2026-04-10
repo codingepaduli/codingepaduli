@@ -168,4 +168,3 @@ Possiamo creare il ciclo iterativo utilizzando una variabile di appoggio, tenend
 for (i=0; i<5; i=i+1) {
   acc = acc + etaPersona[i];
 }
-

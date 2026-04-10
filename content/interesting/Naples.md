@@ -14,7 +14,7 @@ summary: "Naples"
 
 # Places in Naples
 
-<!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD033 MD044 -->
 
 <!-- Content Security Policy che permette gli script "unsafe" online -->
 <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'  https://unpkg.com https://cdn.jsdelivr.net ;">

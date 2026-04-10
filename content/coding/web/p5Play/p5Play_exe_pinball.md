@@ -14,4 +14,8 @@ weight: 1040
 
 # Esercizio pinball
 
+<!-- markdownlint-disable MD044 -->
+
 <a href="/static/coding/web/p5play/p5Play-pinball.html">Esercizio pinball</a>
+
+<!-- markdownlint-enable MD044 -->
