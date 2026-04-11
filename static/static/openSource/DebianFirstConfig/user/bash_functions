@@ -11,6 +11,22 @@
 # command inside a function "clear", you need to use:
 #   command clear;
 
+chown() {
+  # A recursive -R chown without -h can do random damage to owners and
+  # groups because when it encounter a symlink, chown will change the 
+  # ownership of the file that those symlinks point to.
+  # "chown ./symlinkToEtcFile" change the owner of /etc/file
+  chown -h "$@"
+}
+
+chgrp() {
+  # A recursive -R chgrp without -h can do random damage to owners and
+  # groups because when it encounter a symlink, chgrp will change the 
+  # group of the file that those symlinks point to.
+  # "chgrp ./symlinkToEtc" change the group of /etc directory
+  chgrp -h "$@"
+}
+
 # Show the rows -rw------- 1 io casa 15491 2023-08-17 14:35 file
 # Usage: ll
 ll() {
