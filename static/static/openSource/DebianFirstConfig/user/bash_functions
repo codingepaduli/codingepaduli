@@ -43,6 +43,11 @@ lsDisksUUID() {
 }
 export -f lsDisksUUID
 
+# shutdown the pc
+poweroff() {
+  systemctl poweroff
+}
+
 #alias la='ls -A' # show hidden files BUT NOT "." and ".."
 #alias lc='ls -C' # show quoted file name (between apostrophes)
 #alias lh='ls --human' # bytes measured as human readable
@@ -136,7 +141,7 @@ clearCache() {
 }
 export -f clearCache
 
-# clear and regenerate onts
+# clear and regenerate fonts
 # Usage: clearAndRegenerateFonts
 clearAndRegenerateFonts() {
     # Pulisce e rigenera la cache dei fonts (i tipi di carattere)
@@ -220,9 +225,26 @@ biggestDir() {
 }
 export -f biggestDir
 
+### Jobs
+# job        : visualizza background Jobs
+# sleep 60 & : manda in background un job
+# fg %1      : manda in foreground un job
+# bg %1      : manda in background un job
+
+### Jobs priority
+# Range: [ -20 (Massima priorità) - 19 (Minima priorità) ]
+# nice -n 10 ./prog.sh : avvia ./prog con priorità 10 (bassa)
+# renice -n 5 -p 1234  : cambia la priorità a 5 (bassa)
+
 ####################################
 # VLC - Metadata Extraction Tool   #
 ####################################
+
+## play a video and exit
+vlcPlayAndExit() {
+  vlc --play-and-exit "$@"
+}
+export -f vlcPlayAndExit
 
 # Auto reconnect to the server when connection drops
 # Usage: vlcStreamingWithAutoReconnection file.m3u
