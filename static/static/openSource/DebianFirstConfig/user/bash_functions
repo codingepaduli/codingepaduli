@@ -528,6 +528,127 @@ md5Report() {
 export -f md5Report
 
 ########################
+#       alarm          #
+########################
+
+# Play an alarm
+function alarmPlay() {
+  local ALARM_FILE="/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga"
+  paplay "$ALARM_FILE" || echo -e "\a" # \a is ASCII BEL
+}
+export -f alarmPlay
+
+# Check the alarm time is set
+function alarmCheck() {
+  local ALARM_FILE="/tmp/sveglia_time"
+
+  local now
+  local alarmTime
+  local remainingMins
+  local remainingSecs
+  local human
+
+  while true; do
+    # il file NON esiste o non è regolare
+    if [[ ! -f $ALARM_FILE ]]; then
+      echo "Sveglia non impostata"
+      return 1
+    fi
+
+    now=$(date +%s)
+    alarmTime=$(cat "$ALARM_FILE")
+    human=$(date -d "@$alarmTime" '+%Y-%m-%d %H:%M:%S')
+
+    remaining=$(( alarmTime - now ))
+    remainingMins=$(( remaining / 60 ))
+    remainingSecs=$(( remaining % 60 ))
+
+    echo "Sveglia impostata alle $human: Mancano ${remainingMins}m e ${remainingSecs}s"
+    
+    if (( alarmTime > now )); then
+      sleep $(( remaining > 30 ? 30 : (remaining / 2) )) # $(( alarmTime - now ))
+    else
+      # tempo scaduto: esegui comando allarme e rimuovi file
+      rm -f "$ALARM_FILE"
+      echo "DRIIIIINNNNNN"
+      return 0
+    fi
+  done
+  return 0
+}
+export -f alarmCheck
+
+# Imposta la sveglia dopo un certo numero di minuti
+function alarmSetMin() {
+  # Il parametro $1 e' vuoto oppure contiene caratteri non numerici
+  if [[ -z $1 || ! $1 =~ ^[0-9]+$ ]]; then
+    echo "Sveglia non impostata. Inserisci i minuti in formato numerico."
+    return 1
+  fi
+
+  local ALARM_FILE="/tmp/sveglia_time"
+  local alarmTime
+
+  # Se esiste il file della sveglia, recupero l'orario (suppongo corretto),
+  # altrimenti imposto l'orario attuale 
+  if [[ -f $ALARM_FILE ]]; then
+    alarmTime=$(cat "$ALARM_FILE")
+  else
+    alarmTime=$(date +%s)
+  fi
+
+  # All'orario di partenza aggiungo i minuti
+  alarmTime=$(( alarmTime + $1 * 60 ))
+
+  # Salvo nel file
+  echo "$alarmTime" > "$ALARM_FILE"
+
+  # Visualizzo il messaggio e esco
+  echo "Sveglia impostata alle: " "$(date -d "@$alarmTime" '+%Y-%m-%d %H:%M:%S')"
+  return 0
+}
+export -f alarmSetMin
+
+# Rimuove la sveglia
+function alarmRemove() {
+  local ALARM_FILE="/tmp/sveglia_time"
+
+  if [[ -f $ALARM_FILE ]]; then
+    rm -f "$ALARM_FILE"
+    echo "Sveglia cancellata."
+  else
+    echo "Nessuna sveglia presente"
+  fi
+}
+export -f alarmRemove
+
+# Visualizza la sveglia impostata
+function alarmStatus() {
+  local ALARM_FILE="/tmp/sveglia_time"
+  local alarmTime
+
+  # Se esiste il file della sveglia, recupero l'orario (suppongo corretto),
+  # altrimenti restituisco errore 
+  if [[ -f $ALARM_FILE ]]; then
+    alarmTime=$(cat "$ALARM_FILE")
+  else
+    echo "Sveglia non impostata"
+    return 1
+  fi
+
+  local now
+  local human
+  
+  now=$(date +%s)
+  human=$(date -d "@$alarmTime" '+%Y-%m-%d %H:%M:%S')
+
+  local remainingMins=$(( (alarmTime - now)/60 ))
+  local remainingSecs=$(( (alarmTime - now)%60 ))
+  echo "Sveglia impostata alle $human: Mancano ${remainingMins}m e ${remainingSecs}s"
+}
+export -f alarmStatus
+
+########################
 #        ntfy          #
 ########################
 
