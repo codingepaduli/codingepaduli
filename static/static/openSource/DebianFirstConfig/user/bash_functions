@@ -1231,6 +1231,28 @@ tagAllMp3File()  {
 }
 # export -f tagAllMp3File
 
+# Estrae le informazioni di codifica video e audio di un file
+## -show_format mostra informazioni del contenitore: filename, 
+##    durata, numero di stream audio/video, bitrate complessivo
+## -show_streams mostra informazioni di ogni stream: indice, 
+##    codec, risoluzione (w, h), frame_rate, bitrate, colorspace
+ffprobeMediaInfoAsPlainText() {
+  ffprobe -v error -show_format -show_streams -print_format flat "$@"
+}
+export -f ffprobeMediaInfoAsPlainText
+
+# Estrae le informazioni del contenitore del file
+ffprobeMediaContainerInfoAsCSV() {
+  ffprobe -v error -show_format -print_format csv "$@"
+}
+export -f ffprobeMediaContainerInfoAsCSV
+
+# Estrae le informazioni degli stream audio/video del file
+ffprobeMediaStreamsInfoAsCSV() {
+  ffprobe -v error -show_streams -print_format csv "$@"
+}
+export -f ffprobeMediaStreamsInfoAsCSV
+
 ########################
 # Mencoder             #
 ########################
