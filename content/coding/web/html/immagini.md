@@ -39,7 +39,7 @@ references:
         description: "A list of mime types"
 ---
 
-## Elementi multimediali e interattività
+# Elementi multimediali e interattività
 
 La multimedialità è una forma di comunicazione caratterizzata dalla compresenza e interazione di più linguaggi (testi scritti, immagini, suoni, animazioni) in uno stesso supporto o contesto informativo.
 
@@ -47,9 +47,66 @@ Il termine multimedialità si sta progressivamente sovrapponendo a quello di int
 
 Da questi dispositivi oramai detti "smart", cioè collegabili in rete, si può usufruire di servizi internet e si può navigare sulle pagine web, che devono avere un layout adeguato.
 
-A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile selezionare gli **elementi multimediali** (immagini o video) che meglio si adattano, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
+A seconda del layout scelto e della risoluzione dello schermo del dispositivo è possibile selezionare gli **elementi multimediali** (immagini, audio o video) che meglio si adattano, ad esempio un'immagine verticale in risoluzione media si adatta meglio a smartphone e tablet, mentre un immagine orizzontale ad altissima risoluzione si adatta meglio a TV e monitor PC. I dispositivi più recenti possono poi sfruttare le ultime tecnologie, ad esempio video ad altissima risoluzione in 8K.
 
-### Immagini
+Lavorare con file multimediali è complicato, ci sono molti concetti e parametri da conoscere e considerare, richiede molto tempo, una buona potenza di calcolo, molto spazio di archiviazione, il software giusto, e per chi si occupa di effettuare foto e riprese video, anche gli strumenti giusti, come macchine fotografiche professionali, obiettivi e droni per le riprese.
+
+## Definizioni e caratteristiche principali
+
+Un'**immagine digitale** è una rappresentazione "visiva" (in realtà è numerica) delle informazioni di luminosità e colore su una griglia discreta di punti chiamati **pixel**.
+
+Un **video digitale** è una sequenza di immagini digitali, dette **frame**.
+
+Un **audio digitale** è una sequenza di valori nel tempo, detti **campioni** (samples).
+
+Un'immagine digitale ha proprietà come:
+
+- la **risoluzione**, ovvero la grandezza e l'altezza delle immagini riprodotte, la dimensione è espressa in pixel;
+- lo **spazio di colori** e la **profondità di colore**, determinano la brillantezza dei colori, la vivacità. Una profondità ridotta comporta poche sfumature (ad esempio poche sfumature dal rosa al rosso); Per approfondimento sugli spazi di colore e la profondità di colore si rimanda al capitolo sui colori.
+
+Un video digitale ha proprietà come:
+
+- la **risoluzione**, lo  **spazio di colori** e la **profondità di colore**, che derivano dai frame che lo compongono;
+- il **numero di frame per secondo** indica la fluidità visiva; Per il cinema lo standard è 24 fps, nelle TV lo standard è 25 fps, su web può arrivare a 120 fps.
+
+Un audio digitale ha proprietà come:
+
+- la **frequenza di campionamento**, ovvero il numero di campioni riprodotti al secondo; Cinema e TV usano 48 kHz. Gli esseri umani percepiscono circa 20kHz.
+- la **profondità del suono**, indica quando può essere ampio l'intervallo sonoro da riprodurre.
+- il **numero di canali** indica quanti canali di riproduzione sono presenti.
+
+Le configurazioni del numero di canali audio sono le seguenti:
+
+- mono: un solo canale, lo stesso segnale è riprodotto su tutti gli speaker;
+- stereo: due canali separati, il canale destro riprodotto sugli speaker a destra, quello sinistro riprodotto sugli speaker a sinistra;
+- 5.1 (6 canali): sei canali separati per la configurazione "surround", ovvero uno per la riproduzione fronte-sinistra, uno fronte-destra, uno retro-sinistra, uno retro-destra, uno centrale e uno "subwoofer" (informalmente la cassa del "basso");
+- 7.1 (8 canali): estende il "5.1" aggiungendo due canali per i diffusori posteriori (altoparlanti "surround" per suono avvolgente).
+
+La **dimensione** del file (o del singolo flusso) dipende dalle proprietà sopra elencate. Supponiamo che ogni frame (immagine) è 5 megabyte. Con lo standard TV (25fps), per realizzare un secondo di trasmissione abbiamo bisogno di 25 frame, quindi moltiplicando 25 per 5 otteniamo 125 megabyte per un secondo. Se consideriamo un minuto, moltiplicando 125 megabyte per 60 secondi otteniamo 7,5 gigabyte. Un'ora di trasmissione comporta 450 gigabyte di spazio.
+
+Se le immagini (i frame) fossero di 1 megabyte, un'ora di trasmissione comporterebbe 90 gigabyte di spazio, risparmieremmo spazio, ma perderemmo qualità (perché le immagini passano da 5Mb ad 1Mb).
+
+### Formati ed estensioni dei file immagine
+
+Il **formato** di un file immagine definisce la struttura interna con cui sono memorizzate le informazioni: spazio di colori, profondità, colori per ogni pixel dell'immagine, e metadati. Ad esempio lo spazio dei colori e la profondità possono indicare che l'immagine è monocromatica (bianco e nero) oppure in scala di grigi, mentre i metadati possono indicare l'autore, il dispositivo, il rapporto d'aspetto (4:3 oppure 16:9), la posizione GPS, ...
+
+L'**estensione del file** ci suggerisce il formato di memorizzazione dell'immagine, ad esempio ``.jpeg``, ``.png``, ``.tiff``, ``.heif``, e cosi via...
+
+### Formati ed estensioni dei file audio e video
+
+File audio e file video sono memorizzati in un **formato contenitore**. Il compito di un contenitore è impacchettare i flussi audio, i flussi video, i sottotitoli ed i metadati in un unico file in maniera standard in modo che i lettori audio (come i lettori mp3) ed i lettori video (come i lettori dvd) possano riprodurli.
+
+Parliamo di più flussi perché un video può essere suddiviso in capitoli, oppure perché possiamo avere più file audio, uno per ogni lingua, o più sottotitoli, sempre uno per ogni lingua.
+
+Inoltre il contenitore memorizza i metadati, come autore, regista, casa produttrice, anno, ecc..
+
+L'**estensione del file** ci suggerisce il formato contenitore utilizzato per memorizzazione i vari flussi, i sottotitoli ed i metadati all'interno del file multimediale, ad esempio ``.mp3`` ``.mp4``, ``.mkv`` e ne esistono molte altre, ``.mov``, ``.avi``, `.mpeg` e così via. Queste estensioni di file non rappresentano un audio o un video, ma rappresentano il formato **contenitore** che contiene i flussi audio e video.
+
+I **formati di codifica** servono a memorizzare le proprietà ed i dati (i frame o i campioni) di ogni singolo flusso audio o video.
+
+Il formato di codifica memorizza tutte le proprietà del flusso, come la risoluzione video o la profondità di colore o del suono oppure ancora la frequenza di campionamento audio o il numero di canali audio.
+
+## Selezione dell'immagine
 
 Smartphone e dispositivi IoT spesso sono dotati di connessioni lente e a
 pagamento, come il 3G, e di schermi piccoli con risoluzioni ridotte, per
@@ -91,6 +148,8 @@ Per conoscere la risoluzione di ogni immagine, dovrebbe scaricarle tutte
 dal server. Per evitare questo spreco di tempo e risorse, è necessario
 che sia lo sviluppatore ad indicare, per ogni immagine, la rispettiva
 risoluzione.
+
+### Etichette di selezione dell'immagine
 
 Ad oggi l'unico parametro che viene considerato della risoluzione è la
 larghezza (in futuro forse lo sarà anche l'altezza?), che viene indicata
@@ -151,7 +210,7 @@ che genera l'immagine:
 <!-- markdown-link-check-disable-next-line -->
 ![esempio etichetta immagine](/static/coding/web/html/program_CC0.png "immagine generata dal codice HTML")
 
-### Picture e source
+### Etichette picture e source
 
 Quando si devono visualizzare versioni alternative di una stessa immagine per dispositivi o schermi differenti, si utilizza l'etichetta ``picture`` che sceglie tra differenti elementi ``source``, se nessuno è adeguato la scelta di default (di fallback) ricade sull'elemento ``img``.
 
@@ -208,7 +267,7 @@ Si possono anche combinare le scelte, ad esempio:
 </picture>
 ```
 
-### Figure
+### Etichetta figure
 
 Questa etichetta prevede che al suo interno siano presenti uno o più elementi multimediali (``img``, ``picture``, ``video``, ...) e l'etichetta ``figcaption`` che consente di aggiungere una didascalia o una descrizione testuale all'elemento. Questo la rende più adatta a legare l'elemento multimediale con la sua descrizione associata.
 
@@ -236,7 +295,7 @@ E' preferibile utilizzarla con gli elementi ``picture``, ad esempio:
 </figure>
 ```
 
-### Etichette audio e video
+## Etichette audio e video
 
 È consigliabile, per questioni di performance, proporre i contenuti audio e video attraverso servizi **streaming**, in modo che la risoluzione dei contenuti si adatti alla velocità di trasmissione dati della linea dell'utente.
 
@@ -296,27 +355,7 @@ L'etichetta ``video`` permette anche di specificare dei possibili sottotitoli da
 - ``src`` il percorso del file di sottotitoli; Il formato del file è VTT;
 - ``default`` il sottotitolo da mostrare di default.
 
-## Immagini ed aree
-
-L'aggiunta di immagini ad una pagina web è semplice, ma si deve
-garantire un'esperienza utente soddisfacente in termini di
-visualizzazione e tempi di caricamento.
-
-Sempre nell'ottica dell'ottimizzazione dei tempi, si possono utilizzare
-tecniche di **lazy loading**, ovvero di caricamento delle immagini solo
-su richiesta.
-
-Partendo dal caso piú semplice, ovvero per mostrare un'unica immagine
-sempre alle stesse dimensioni qualsiasi sia il dispositivo, il tag delle
-immagini `img` prevede, per questo specifico compito, gli attributi
-`src` per indicare l'URL dell'immagine, `width` per indicare la
-larghezza ed `height` per l'altezza.
-
-Il codice di esempio è il seguente:
-
-```html
-<img src="/static/immagine.png" width="145" height="126" alt="Immagine" />
-```
+<!-- FIXME 
 
 Il risultato si puó apprezzare qua:
 
@@ -326,10 +365,16 @@ Il risultato si puó apprezzare qua:
 Licenza
 [CC0 1.0](https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html "Logo licenza CC0")
 
+-->
+
+### Immagini codificate in base64
+
 Ci possono essere casi in cui l'immagine non puó trovarsi su un file a
 parte e non puó essere scaricata da internet, perché magari il
 dispositivo IoT è collegato ad una rete locale senza accesso ad
-internet, quindi l'immagine puó essere contenuta direttamente nel tag, ma a
+internet.
+
+L'immagine puó essere contenuta direttamente nella pagina web, a
 patto che sia stata convertita in base 64 data-URI e che sia specificato
 il tipo con `data:image/png;base64,`, come nel seguente esempio:
 
@@ -338,18 +383,23 @@ il tipo con `data:image/png;base64,`, come nel seguente esempio:
 AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Immagine" />
 ```
 
-Il risultato dell'esempio è il seguente:
+Il risultato dell'esempio è il seguente punto rosso:
 
 ![Red dot](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg== "immagine di un punto rosso")
 
-Per la conversione dell'immagine in base64 data-URI si puó usare uno dei numerosi
-servizi on-line, come il seguente:
+Per la conversione dell'immagine in base64 data-URI si puó usare uno dei numerosi servizi on-line, come il seguente:
 [https://websemantics.uk/tools/image-to-data-uri-converter](https://websemantics.uk/tools/image-to-data-uri-converter "servizio di conversione immagine in base64")
+
+<!-- FIXME 
 
 Si tenga presente che ogni browser puó leggere a proprio modo larghezza
 e pixel ratio. Per valutare quelle del proprio schermo, si puó navigare
 con browser diversi questo sito:
 [www.mydevice.io](https://www.mydevice.io/ "sito web per ottenere informazioni sul dispositivo").
+
+-->
+
+### Mappa delle aree dell'immagine
 
 Le immagini possono essere arricchite di **mappe**, cioè di aree
 cliccabili sovrapposte all'immagine. Le mappe sono descritte dal tag
@@ -413,7 +463,7 @@ Ricapitolando quindi gli attributi del tag img, abbiamo:
   a quando l'utente arriva a visualizzare il contenuto;
 - `usemap` per indicare l'id della mappa da sovrapporre all'immagine;
 
-## Etichette di progresso
+### Etichette di progresso
 
 Quando si vuole visualizzare graficamente lo stato di avanzamento di un'attività o la quantità attuale in un determinato intervallo, si usano le etichette **progress** e **meter**. La prima etichetta è pensata per una visualizzazione in percentuale (quindi da zero a cento), la seconda permette di personalizzare l'intervallo.
 
