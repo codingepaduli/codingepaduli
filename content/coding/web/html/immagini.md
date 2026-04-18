@@ -51,6 +51,8 @@ A seconda del layout scelto e della risoluzione dello schermo del dispositivo è
 
 Lavorare con file multimediali è complicato, ci sono molti concetti e parametri da conoscere e considerare, richiede molto tempo, una buona potenza di calcolo, molto spazio di archiviazione, il software giusto, e per chi si occupa di effettuare foto e riprese video, anche gli strumenti giusti, come macchine fotografiche professionali, obiettivi e droni per le riprese.
 
+<!-- Inizio copia di ffmpeg.md -->
+
 ## Definizioni e caratteristiche principali
 
 Un'**immagine digitale** è una rappresentazione "visiva" (in realtà è numerica) delle informazioni di luminosità e colore su una griglia discreta di punti chiamati **pixel**.
@@ -61,13 +63,13 @@ Un **audio digitale** è una sequenza di valori nel tempo, detti **campioni** (s
 
 Un'immagine digitale ha proprietà come:
 
-- la **risoluzione**, ovvero la grandezza e l'altezza delle immagini riprodotte, la dimensione è espressa in pixel;
+- la **risoluzione**, ovvero la grandezza e l'altezza delle immagini riprodotte, la dimensione è espressa in pixel; Lo standard cinematografico DCI 4K è 4096×2160 pixel. Lo standard 4K Ultra HD (o UHD) è 3840×2160 pixel. Il Full HD (o "FHD" o "1K" o "1080p") è 1920×1080 pixel. Etichettare un dispositivo "4K" senza specificare altro genera solo confusione.
 - lo **spazio di colori** e la **profondità di colore**, determinano la brillantezza dei colori, la vivacità. Una profondità ridotta comporta poche sfumature (ad esempio poche sfumature dal rosa al rosso); Per approfondimento sugli spazi di colore e la profondità di colore si rimanda al capitolo sui colori.
 
 Un video digitale ha proprietà come:
 
 - la **risoluzione**, lo  **spazio di colori** e la **profondità di colore**, che derivano dai frame che lo compongono;
-- il **numero di frame per secondo** indica la fluidità visiva; Per il cinema lo standard è 24 fps, nelle TV lo standard è 25 fps, su web può arrivare a 120 fps.
+- il **numero di frame per secondo** indica la fluidità visiva; Per il cinema lo standard è 24 fps, nelle TV lo standard è 25 fps. Quando il video lo supporta, si può arrivare a 60 fps per dispositivi "Full HD" e proiezioni "DCI 4K" ed a 120 fps su dispositivi "4K UHD".
 
 Un audio digitale ha proprietà come:
 
@@ -98,13 +100,15 @@ File audio e file video sono memorizzati in un **formato contenitore**. Il compi
 
 Parliamo di più flussi perché un video può essere suddiviso in capitoli, oppure perché possiamo avere più file audio, uno per ogni lingua, o più sottotitoli, sempre uno per ogni lingua.
 
-Inoltre il contenitore memorizza i metadati, come autore, regista, casa produttrice, anno, ecc..
+Inoltre il contenitore memorizza i metadati, come autore, regista, casa produttrice, anno, ecc... e memorizza gli indici per il posizionamento, ad esempoio l'indice del trailer, del primo e del secondo tempo, oppure degli episodi o delle parti del video.
 
-L'**estensione del file** ci suggerisce il formato contenitore utilizzato per memorizzazione i vari flussi, i sottotitoli ed i metadati all'interno del file multimediale, ad esempio ``.mp3`` ``.mp4``, ``.mkv`` e ne esistono molte altre, ``.mov``, ``.avi``, `.mpeg` e così via. Queste estensioni di file non rappresentano un audio o un video, ma rappresentano il formato **contenitore** che contiene i flussi audio e video.
+L'**estensione del file** ci suggerisce il formato contenitore utilizzato per memorizzazione i vari flussi, i sottotitoli, i metadati e gli indici presenti all'interno del file multimediale, ad esempio ``.mp3`` ``.mp4``, ``.mkv`` e ne esistono molte altre, ``.mov``, ``.avi``, `.mpeg` e così via. Queste estensioni di file non rappresentano un audio o un video, ma rappresentano il formato **contenitore** che contiene i flussi audio e video.
 
 I **formati di codifica** servono a memorizzare le proprietà ed i dati (i frame o i campioni) di ogni singolo flusso audio o video.
 
 Il formato di codifica memorizza tutte le proprietà del flusso, come la risoluzione video o la profondità di colore o del suono oppure ancora la frequenza di campionamento audio o il numero di canali audio.
+
+<!-- Fine copia di ffmpeg.md -->
 
 ## Selezione dell'immagine
 
