@@ -51,9 +51,9 @@ A seconda del layout scelto e della risoluzione dello schermo del dispositivo è
 
 Lavorare con file multimediali è complicato, ci sono molti concetti e parametri da conoscere e considerare, richiede molto tempo, una buona potenza di calcolo, molto spazio di archiviazione, il software giusto, e per chi si occupa di effettuare foto e riprese video, anche gli strumenti giusti, come macchine fotografiche professionali, obiettivi e droni per le riprese.
 
-<!-- Inizio copia di ffmpeg.md -->
-
 ## Definizioni e caratteristiche principali
+
+<!-- Inizio copia di ffmpeg.md -->
 
 Un'**immagine digitale** è una rappresentazione "visiva" (in realtà è numerica) delle informazioni di luminosità e colore su una griglia discreta di punti chiamati **pixel**.
 
@@ -64,7 +64,8 @@ Un **audio digitale** è una sequenza di valori nel tempo, detti **campioni** (s
 Un'immagine digitale ha proprietà come:
 
 - la **risoluzione**, ovvero la grandezza e l'altezza delle immagini riprodotte, la dimensione è espressa in pixel; Lo standard cinematografico DCI 4K è 4096×2160 pixel. Lo standard 4K Ultra HD (o UHD) è 3840×2160 pixel. Il Full HD (o "FHD" o "1K" o "1080p") è 1920×1080 pixel. Etichettare un dispositivo "4K" senza specificare altro genera solo confusione.
-- lo **spazio di colori** e la **profondità di colore**, determinano la brillantezza dei colori, la vivacità. Una profondità ridotta comporta poche sfumature (ad esempio poche sfumature dal rosa al rosso); Per approfondimento sugli spazi di colore e la profondità di colore si rimanda al capitolo sui colori.
+- lo **spazio di colori** indica quanti colori si possono rappresentare, attualmente lo si suddivide impropriamente in tre "canali" (RGB, HSB, LAB, LCH, si rimanda al capitolo sui colori per i dettagli) più un eventuale canale "alfa" per indicare la trasparenza dei singoli punti;
+- la **profondità di colore**, determinano la brillantezza dei colori, la vivacità. Una profondità ridotta comporta poche sfumature (ad esempio poche sfumature dal rosa al rosso); Attualmente è indicato con "8bit" ad intendere 16 milioni di colori, oppure con "10bit" ad intendere un miliardo di colori differenti. Per approfondimento sugli spazi di colore e la profondità di colore si rimanda al capitolo sui colori.
 
 Un video digitale ha proprietà come:
 
@@ -108,9 +109,21 @@ I **formati di codifica** servono a memorizzare le proprietà ed i dati (i frame
 
 Il formato di codifica memorizza tutte le proprietà del flusso, come la risoluzione video o la profondità di colore o del suono oppure ancora la frequenza di campionamento audio o il numero di canali audio.
 
+### Codec
+
+Codec è il termine che indica codificatore ("co") e decodificatore ("dec").
+
+Sono algoritmi che memorizzano il video nel formato di codifica e, viceversa, dal formato di codifica ricompongono il video per la riproduzione di ogni frame. Il lavoro maggiore consiste nella codifica delle informazioni da salvare, perché consente di ridurre veramente di molto la dimensione del file.
+
+I trucchi che i codec sfruttano sono molteplici e permettono di ridurre il numero di informazioni da salvare nel flusso, e quindi la dimensione totale del file. Alcuni trucchi utilizzati sono:
+
+- la maggior parte dei fotogrammi in un video sono abbastanza simili, contengono solo piccole differenze (è il concetto di movimento, piccole differenze che ci inducono a pensare che il soggetto si stia muovendo). I codec memorizzano il primo frame e poi solo le differenze successive. Questo processo è ripetuto ogni tot frame;
+- l'occhio umano è più sensibile ai cambiamenti di intensità della luce rispetto ai cambiamenti di colore, e questo dettaglio viene sfruttato dai codec;
+- l'orecchio umano sente un intervallo frequenze limitato, i codec tagliano via le frequenze che non possiamo percepire.
+
 <!-- Fine copia di ffmpeg.md -->
 
-## Selezione dell'immagine
+## Selezione dell'immagine nelle pagine web
 
 Smartphone e dispositivi IoT spesso sono dotati di connessioni lente e a
 pagamento, come il 3G, e di schermi piccoli con risoluzioni ridotte, per
