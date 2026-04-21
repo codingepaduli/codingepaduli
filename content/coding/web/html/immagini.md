@@ -109,9 +109,9 @@ I **formati di codifica** servono a memorizzare le proprietà ed i dati (i frame
 
 Il formato di codifica memorizza tutte le proprietà del flusso, come la risoluzione video o la profondità di colore o del suono oppure ancora la frequenza di campionamento audio o il numero di canali audio.
 
-### Codec
+### Codec codificatori e decodificatori
 
-Codec è il termine che indica codificatore ("co") e decodificatore ("dec").
+Codec è il termine che indica codificatore ("co") e decodificatore ("dec"). Il termine codificatore è indicato con "encoder".
 
 Sono algoritmi che memorizzano il video nel formato di codifica e, viceversa, dal formato di codifica ricompongono il video per la riproduzione di ogni frame. Il lavoro maggiore consiste nella codifica delle informazioni da salvare, perché consente di ridurre veramente di molto la dimensione del file.
 
