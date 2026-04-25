@@ -181,15 +181,51 @@ Il modello **HSL** Hue-Saturation-Lightness, conosciuto anche come **HSI** Hue-S
 
 Il modello **HWB** Hue-Whiteness-Blackness è un modello computerizzato molto simile ai due precedenti, ha la stessa forma, conserva la componente **H** per la tinta del colore ed utilizza i valori di "chiarezza" e "oscurità". Una volta espressa la tonalità di colore, il colore è mescolato con bianco e nero. Valori alti di oscurità portano al nero, valori alti di chiarezza portano al bianco, entrambi alti portando ad un grigio intenso.
 
+### Modelli di colori YUV, YCbCr e simili
+
+Il modello di colori **YUV** è basato sul fatto che l'occhio umano è più sensibile alla luminosità che al cambiamento di colore. In questo modello di colori, si separa l'intensità della luce (Y) dalla crominanza (le due componenti di colore U e V).
+
+Il vantaggio di questo modello è che si può applicare il "sottocampionamento della crominanza", ovvero si possono memorizzare più informazioni relative alla luminanza (Y) e meno informazioni relative alla crominanza, permettendo di risparmiare spazio senza ridurre la qualità dell'immagine.
+
+Il modello **YCbCr** è la versione digitale del modello YUV, le componenti di colore sono:
+
+- Y (intensità della luce): da 0 (nero) a 255 (bianco o colori accesi);
+- Cb (Componente cromatica blu): spostamento del colore verso il blu, i valori vanno da 0 a 255;
+- Cr (Componente cromatica rossa): spostamento del colore verso il rosso, i valori vanno da 0 a 255;
+
+Di questo modello esistono molte varianti, ma principalmente la tecnica per memorizzare le informazioni dell'immagine si basa su queste varianti:
+
+- **YCbCr 4:4:4**, ovvero per ogni pixel si memorizza l'intensità della luce Y e le componenti cromatiche Cb e Cr. In pratica con quattro pixel A, B, C e D avremo:
+
+  1. quattro valori dell'intensità di luce, uno per ogni pixel;
+  2. quattro valori di cromaticità per Cb, uno per ogni pixel;
+  3. quattro valori di cromaticità per Cr, uno per ogni pixel.
+
+- **YCbCr 4:2:2**, ovvero per ogni pixel si memorizza l'intensità della luce Y, mentre le coppie di pixel condividono lo stesso valore per le componenti cromatiche Cb e Cr. In pratica con quattro pixel A, B, C e D avremo:
+
+  1. quattro valori dell'intensità di luce, uno per ogni pixel;
+  2. due valori di cromaticità per Cb, uno condiviso tra i pixel A e B ed uno condiviso tra i pixel C e D;
+  3. due valori di cromaticità per Cr, uno condiviso tra i pixel A e B ed uno condiviso tra i pixel C e D.
+
+- **YCbCr 4:2:0**, ovvero per ogni pixel si memorizza l'intensità della luce Y, mentre i quartetti di pixel condividono lo stesso valore per le componenti cromatiche Cb e Cr. In pratica con quattro pixel A, B, C e D avremo:
+
+  1. quattro valori dell'intensità di luce, uno per ogni pixel;
+  2. un solo valore di cromaticità per Cb, condiviso tra i quattro pixel;
+  3. un solo valore di cromaticità per Cr, condiviso tra i quattro pixel.
+
+Il risparmio di dati è evidente, la variante "YCbCr 4:2:0" descrive 4 pixel con 6 valori, la variante "YCbCr 4:2:2" descrive 4 pixel con 8 valori e la variante "YCbCr 4:4:4" la descrive fedelmente con 16 valori (senza risparmio). La qualità percepita dall'occhio umano è comunque molto alta per il principio su cui si basa questo modello, cioe la maggiore sensibilità dell'occhio umano alla luminosità rispetto al colore.
+
+Nello standard cinematografico DCI 4K, la produzione avviene con YCbCr 4:4:4, mentre la distribuzione al cinema avviene in YCbCr 4:2:2. I video in standard 4K Ultra HD (o UHD) e Full HD (o FHD) utilizzano YCbCr 4:2:2.
+
 ### Modelli di colori LAB (CIE LAB), LCH, OKLAB ed OKLCH
 
-Il modello di colori **LAB** è un modello computerizzato basato sullo spazio di colori CIE LAB per identificare i colori. I componenti di colore di questo modello sono:
+Il modello di colori **LAB** è un modello computerizzato basato sullo spazio di colori CIE LAB per identificare i colori. Le componenti di colore di questo modello sono:
 
 - L (Luminosità): da 0 (nero) a 100 (bianco);
 - a ("verde-rosso"): rappresenta le componenti di verde a rosso (negativo per verde, positivo per rosso), da -128 a 127;
 - b ("blu-giallo"): rappresenta le componenti di blu a giallo (negativo per blu, positivo per giallo), da -128 a 127;
 
-Il modello di colori **LCH** è la versione di forma cilindrica del modello LAB. I componenti di colore di questo modello sono:
+Il modello di colori **LCH** è la versione di forma cilindrica del modello LAB. Le componenti di colore di questo modello sono:
 
 - L (Luminosità): da 0 (nero) a 100 (bianco);
 - C (Cromaticità): indica quanto un colore è saturo o vivace;
