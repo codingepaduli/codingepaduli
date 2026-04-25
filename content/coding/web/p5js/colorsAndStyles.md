@@ -183,9 +183,13 @@ Il modello **HWB** Hue-Whiteness-Blackness è un modello computerizzato molto si
 
 ### Modelli di colori YUV, YCbCr e simili
 
-Il modello di colori **YUV** è basato sul fatto che l'occhio umano è più sensibile alla luminosità che al cambiamento di colore. In questo modello di colori, si separa l'intensità della luce (Y) dalla crominanza (le due componenti di colore U e V).
+Lo spazio di colori **YUV** è basato sul fatto che l'occhio umano è più sensibile alla luminosità (intensità della luce Y) che al cambiamento di colore, detto crominanza (fatto da due componenti di colore U e V).
 
-Il vantaggio di questo modello è che si può applicare il "sottocampionamento della crominanza", ovvero si possono memorizzare più informazioni relative alla luminanza (Y) e meno informazioni relative alla crominanza, permettendo di risparmiare spazio senza ridurre la qualità dell'immagine.
+I modelli basati su questo spazio di colori cercano di sfruttare questo fatto biologico, memorizzando più informazioni relative alla luminosità e meno informazioni relative al cambiamento di colore, e quindi senza ridurre la qualità dell'immagine.
+
+Alcuni modelli possono quindi utilizzare più bit per memorizzare la luminanza e meno bit per memorizzare il cambiamento di colore. Ad esempio utilizzando per ogni pixel 8 bit di luminanza (quindi 256 valori), 4 bit per la componente di colore U e 4 bit per la componente di colore V (quindi 16 valori), ogni pixel sarebbe memorizzato con 16 bit. Considerando che il modello RGB utilizza 24 bit di memorizzazione, il risparmio per singolo pixel (e quindi dell'intera immagine) è di un terzo dello spazio.
+
+L'industria però ha scelto un'altra direzione, ovvero di applicare il "sottocampionamento della crominanza" e utilizzare i modelli di colore spiegati di seguito.
 
 Il modello **YCbCr** è la versione digitale del modello YUV, le componenti di colore sono:
 
@@ -215,7 +219,7 @@ Di questo modello esistono molte varianti, ma principalmente la tecnica per memo
 
 Il risparmio di dati è evidente, la variante "YCbCr 4:2:0" descrive 4 pixel con 6 valori, la variante "YCbCr 4:2:2" descrive 4 pixel con 8 valori e la variante "YCbCr 4:4:4" la descrive fedelmente con 16 valori (senza risparmio). La qualità percepita dall'occhio umano è comunque molto alta per il principio su cui si basa questo modello, cioe la maggiore sensibilità dell'occhio umano alla luminosità rispetto al colore.
 
-Nello standard cinematografico DCI 4K, la produzione avviene con YCbCr 4:4:4, mentre la distribuzione al cinema avviene in YCbCr 4:2:2. I video in standard 4K Ultra HD (o UHD) e Full HD (o FHD) utilizzano YCbCr 4:2:2.
+La tecnica utilizzata nei modelli **YCbCr 4:2:2** e **YCbCr 4:2:0** dell'avere meno campioni (valori di cromaticità), che sono condivisi tra più pixel, è detta "sottocampionamento della crominanza" e, come accennato in precedenza, è utilizzata sia nello standard cinematografico DCI 4K, dato che la produzione avviene con YCbCr 4:4:4, mentre la distribuzione al cinema avviene in YCbCr 4:2:2, sia negli standard video 4K Ultra HD (o UHD) e Full HD (o FHD), che utilizzano YCbCr 4:2:2.
 
 ### Modelli di colori LAB (CIE LAB), LCH, OKLAB ed OKLCH
 
