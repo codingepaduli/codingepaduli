@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-01-07
-publishdate: 2026-01-07
-lastmod: 2026-01-07
+date: 2026-04-24
+publishdate: 2026-04-24
+lastmod: 2026-04-24
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -84,7 +84,6 @@ summary: "Set di link relativi al coding"
 
 ### Shell, CI, CD ed automazione
 
-[Jujutsu For Busy Devs | maddie, wtf?!](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs) - \
 
 #### PowerShell
 
@@ -146,6 +145,7 @@ summary: "Set di link relativi al coding"
 [UNIGE 14x050 – Deep Learning Course](https://fleuret.org/dlc/) - \
 [MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning: This is the homepage of a new book entitled "Mathematical Foundations of Reinforcement Learning."](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) - \
 [Automation 102 with Google Apps Script](https://dev.to/toniaderibigbe/automation-102-with-google-apps-script-2kc5) - DEV Community\
+[LLM Holdem](https://llmholdem.com/) - Watch AIs Play Texas Hold'em Poker\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -215,6 +215,7 @@ summary: "Set di link relativi al coding"
 [git-sim](https://initialcommit.com/blog/git-sim) - Visually simulate Git operations in your own repos\
 [Git Config](https://blog.gitbutler.com/how-git-core-devs-configure-git/) - How Core Git Developers Configure Git\
 [Git](https://dev.to/yonkeltron/is-it-time-to-look-past-git-ah4) - Is it time to look past Git? - DEV Community\
+[Jujutsu For Busy Devs | maddie, wtf?!](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs) - \
 
 ### Java
 
@@ -268,11 +269,9 @@ summary: "Set di link relativi al coding"
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
 [Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
-[tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 [Why Windows uses \r\n newlines instead of \n](https://dev.to/pieter/why-windows-uses-rn-newlines-instead-of-n-126l) - DEV Community\
 [Full Circle | An Independent Magazine For The Ubuntu Linux Community.](https://fullcirclemagazine.org/) - \
 [DistroWatch.com](https://distrowatch.com/) - Put the fun back into computing. Use Linux, BSD.\
-[securing a Linux server](https://opensource.com/article/21/4/securing-linux-servers) - 6 open source tools and tips to securing a Linux server for beginners | Opensource.com\
 [KDE Store](https://store.kde.org/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
@@ -281,44 +280,23 @@ summary: "Set di link relativi al coding"
 [Eyecandy for your XFCE-Desktop](https://www.xfce-look.org/) - xfce-look.org\
 [Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
 [Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
-[The script command](https://www.ostechnix.com/record-everything-terminal/) - How To Record Everything You Do In Terminal\
-[critic.sh](https://github.com/Checksum/critic.sh) - Dead simple testing framework for Bash with coverage reporting\
-[viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL - Hashes, digital signatures, and more\
 [OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL - Cryptography basics | Opensource.com\
-[gocryptfs](https://opensource.com/article/19/8/how-encrypt-files-gocryptfs) - How to encrypt files with gocryptfs on Linux | Opensource.com\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
 [tcpdump](https://opensource.com/article/18/10/introduction-tcpdump) - An introduction to using tcpdump at the Linux command line | Opensource.com\
 [awk](https://developer.ibm.com/tutorials/l-awk1/) - An intro to the great language with the strange name – IBM Developer\
-[mplayer](https://opensource.com/article/18/12/linux-toy-youtube-dl) - Watch YouTube videos at the Linux terminal | Opensource.com\
 [linrunner.de TLP – Linux Advanced Power Management](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - \
-[An important safety note about chown and symlinks (also chmod and chgrp)](https://utcc.utoronto.ca/~cks/space/blog/sysadmin/ChownSymlinkSafety) - \
 [Building binary deb packages](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - a practical guide - Internal Pointers\
 [Access control lists and external drives on Linux](https://opensource.com/article/20/3/external-drives-linux) - What you need to know | Opensource.com\
 [WhyTheName](https://wiki.debian.org/WhyTheName) - It explains the strange name of linux packages\
-[WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
-[ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
-[Hosted Weblate](https://hosted.weblate.org/) - \
-[ip](https://opensource.com/article/21/4/network-management) - A beginner's guide to network management | Opensource.com\
-[UFW](https://www.html.it/articoli/ufw-configurare-il-firewall-su-linux/) - configurare i limiti di connessione sul firewall\
-[Log Management Tools](https://www.tecmint.com/open-source-centralized-linux-log-management-tools/) - The 5 Most Notable Open Source Centralized Log Management Tools\
-[Log Management Tools](https://www.tecmint.com/best-linux-log-monitoring-and-management-tools/) - 4 Good Open Source Log Monitoring and Management Tools for Linux\
-[ShellCheck – shell script analysis tool](https://www.shellcheck.net/) - \
-[voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
-[GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
-[Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
 [How to write idempotent Bash scripts · Fatih Arslan](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - \
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
 [mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
 [5 UNIX / Linux Anacron Command Example for Background Jobs](https://linux.101hacks.com/unix/anacron/) - \
-[Which open source backup solution do you use](https://opensource.com/article/19/2/linux-backup-solutions) - \
-[Tunnelmole, an ngrok alternative (open source)](https://softwareengineeringstandard.com/2024/03/19/ngrok-alternative-open-source/) - SES\
 [8 Things You Can Do With KDE Connect on Linux](https://www.makeuseof.com/things-you-can-do-with-kde-connect-on-linux/) - \
 [GNU Parallel, where have you been all my life? | Alex Plescan](https://alexplescan.com/posts/2023/08/20/gnu-parallel/) - \
 [Use a laptop as a 2nd display on Linux using FreeRDP](https://blog.jacobstoner.com/use-a-laptop-or-tablet-as-a-2nd-display-on-linux-with-a-dummy-monitor-and-rdp/) - \
-[GitHub](https://github.com/pkolaczk/fclones) - pkolaczk/fclones: Efficient Duplicate File Finder\
-[xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
 [Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
 [onceupon/Bash-Oneliner: A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.](https://github.com/onceupon/Bash-Oneliner) - \
 [dylanaraps/pure-bash-bible: 📖 A collection of pure bash alternatives to external processes.](https://github.com/dylanaraps/pure-bash-bible?tab=readme-ov-file#pure-bash-bible) - \
@@ -331,8 +309,6 @@ summary: "Set di link relativi al coding"
 [Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
-[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
-[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
 [hms5232/ufw-log-to-csv](https://github.com/hms5232/ufw-log-to-csv) - Convert UFW log file to csv.\
 [cockpit-project/cockpit](https://github.com/cockpit-project/cockpit/) - Cockpit is a web-based graphical interface for servers.\
 [systemd by example](https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization/) - Part 1: Minimization - Sebastian Jambor's blog\
@@ -351,9 +327,7 @@ summary: "Set di link relativi al coding"
 [Shell Script](https://sharats.me/posts/shell-script-best-practices/) - Best Practices - The Sharat's\
 [Swap File](https://linuxize.com/post/create-a-linux-swap-file/) - Create a Linux Swap File | Linuxize\
 [Linux CLI](https://www.linuxcommand.org/tlcl.php) - Command Line Books by William Shotts\
-[Ubuntu CLI cheat sheet](https://dev.to/jeztn/ubuntu-cli-cheat-sheet-igl) - DEV Community\
 [A Comprehensive Guide to Checking Logs in a Linux Server](https://dev.to/msnmongare/a-comprehensive-guide-to-checking-logs-in-a-linux-server-1pl3) - DEV Community\
-[🖥️ Linux Process Management for Beginners: A Day in the Life of a Junior Sysadmin](https://dev.to/ldwit/linux-process-management-for-beginners-a-day-in-the-life-of-a-junior-sysadmin-41fm) - DEV Community\
 
 #### Hardware
 
@@ -476,6 +450,7 @@ summary: "Set di link relativi al coding"
 [GitHub](https://github.com/StevenBlack/hosts) - StevenBlack/hosts: 🔒 Consolidating and extending hosts files from several well-curated sources. Optionally pick extensions for porn, social media, and other categories.\
 [Setting Up a WireGuard VPN Client on Linux](https://dev.to/joshrothe/setting-up-a-wireguard-vpn-client-on-linux-3aan) - DEV Community\
 [WireGuard topologies for self-hosting at home](https://garrido.io/notes/wireguard-topologies-for-self-hosting-at-home/#fnref:2) - \
+[WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
 
 ### programmi
 
@@ -486,6 +461,9 @@ summary: "Set di link relativi al coding"
 [TemporalAgent7/awesome-windows-privacy](https://github.com/TemporalAgent7/awesome-windows-privacy) - A list of awesome tools, documentation and scripts for better privacy on Microsoft Windows\
 [Instantly create a GitHub repository to take screenshots of a web page](https://simonwillison.net/2022/Mar/14/shot-scraper-template/) - \
 [When curl Fails You: Why aria2 is Your Download Hero](https://dev.to/bruceowenga/when-curl-fails-you-why-aria2-is-your-download-hero-n36) - DEV Community\
+[ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
+[viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
+[tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
 
 #### ffmpeg
 
@@ -517,6 +495,14 @@ summary: "Set di link relativi al coding"
 [Freesound](https://freesound.org/search/?f=license%3A%22Creative+Commons+0%22) - Search sounds by license\
 [Openclipart](https://openclipart.org/) - Clipping Culture\
 [Organizing an Image Library | F2](https://f2.freshman.tech/guide/organizing-image-library) - \
+[mplayer](https://opensource.com/article/18/12/linux-toy-youtube-dl) - Watch YouTube videos at the Linux terminal | Opensource.com\
+[VNC to access Kali Linux on Raspberry Pi](https://blog.sevagas.com/?VNC-to-access-Kali-Linux-on-Raspberry-Pi) - \
+[VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
+[xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
+[GitHub](https://github.com/pkolaczk/fclones) - pkolaczk/fclones: Efficient Duplicate File Finder\
+[voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
+[GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
+[Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
 
 ### PHP
 
@@ -883,6 +869,7 @@ summary: "Set di link relativi al coding"
 
 [JS Web Components](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - How we use Web Components at GitHub | The GitHub Blog\
 [Web Components](https://binaryigor.com/htmx-and-web-components-a-perfect-match.html) - HTMX and Web Components: a Perfect Match\
+[webcomponents.org](https://www.webcomponents.org/) - new HTML custom element that you can use in your web pages and web applications.\
 
 ##### PWA
 

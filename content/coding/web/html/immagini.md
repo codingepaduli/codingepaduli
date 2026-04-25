@@ -95,31 +95,49 @@ Il **formato** di un file immagine definisce la struttura interna con cui sono m
 
 L'**estensione del file** ci suggerisce il formato di memorizzazione dell'immagine, ad esempio ``.jpeg``, ``.png``, ``.tiff``, ``.heif``, e cosi via...
 
+L'uso commerciale di uno specifico formato oppure l’implementazione in software disponibili online e in dispositivi in commercio può richiedere il pagamento delle licenze collegate. La semplice creazione o riproduzione personale in genere non comporta nessun costo.
+
 ### Formati ed estensioni dei file audio e video
 
-File audio e file video sono memorizzati in un **formato contenitore**. Il compito di un contenitore è impacchettare i flussi audio, i flussi video, i sottotitoli ed i metadati in un unico file in maniera standard in modo che i lettori audio (come i lettori mp3) ed i lettori video (come i lettori dvd) possano riprodurli.
+File audio e file video sono memorizzati in un **formato contenitore**. Il compito di un contenitore è memorizzare i flussi audio, i flussi video, i sottotitoli ed i metadati in un unico file in maniera standard in modo che i lettori audio (come i lettori mp3) ed i lettori video (come i lettori dvd) possano riprodurli.
 
 Parliamo di più flussi perché un video può essere suddiviso in capitoli, oppure perché possiamo avere più file audio, uno per ogni lingua, o più sottotitoli, sempre uno per ogni lingua.
 
-Inoltre il contenitore memorizza i metadati, come autore, regista, casa produttrice, anno, ecc... e memorizza gli indici per il posizionamento, ad esempoio l'indice del trailer, del primo e del secondo tempo, oppure degli episodi o delle parti del video.
+Inoltre il contenitore memorizza i metadati, come autore, regista, casa produttrice, anno, ecc... e memorizza gli indici per il posizionamento, ad esempio l'indice del trailer, del primo e del secondo tempo, oppure degli episodi o delle parti del video.
 
 L'**estensione del file** ci suggerisce il formato contenitore utilizzato per memorizzazione i vari flussi, i sottotitoli, i metadati e gli indici presenti all'interno del file multimediale, ad esempio ``.mp3`` ``.mp4``, ``.mkv`` e ne esistono molte altre, ``.mov``, ``.avi``, `.mpeg` e così via. Queste estensioni di file non rappresentano un audio o un video, ma rappresentano il formato **contenitore** che contiene i flussi audio e video.
+
+L'uso commerciale di uno specifico formato oppure l’implementazione in software disponibili online e in dispositivi in commercio può richiedere il pagamento delle licenze collegate. La semplice creazione o riproduzione personale in genere non comporta nessun costo.
+
+I **muxer** si occupano di scrivere un flusso in un formato contenitore.
+
+I **demuxer** si occupano di leggere un flusso contenuto in un formato contenitore.
+
+L'operazione di **transmuxing** è l'operazione di convertire da un formato contenitore ad un altro formato contenitore, senza modificare i flussi audio e video presenti all'interno.
+
+### Codec codificatori e decodificatori
 
 I **formati di codifica** servono a memorizzare le proprietà ed i dati (i frame o i campioni) di ogni singolo flusso audio o video.
 
 Il formato di codifica memorizza tutte le proprietà del flusso, come la risoluzione video o la profondità di colore o del suono oppure ancora la frequenza di campionamento audio o il numero di canali audio.
 
-### Codec codificatori e decodificatori
+Il termine **codec** è l'unione delle abbreviazioni di codifica ("co") e decodifica ("dec") e rappresenta gli algoritmi che trasformano il video nel formato di codifica e, viceversa, dal formato di codifica ricompongono il video per la riproduzione di ogni frame.
 
-Codec è il termine che indica codificatore ("co") e decodificatore ("dec"). Il termine codificatore è indicato con "encoder".
+I **codificatori** (encoder) sono algoritmi che trasformano l'audio e/o il video nel formato di codifica.
 
-Sono algoritmi che memorizzano il video nel formato di codifica e, viceversa, dal formato di codifica ricompongono il video per la riproduzione di ogni frame. Il lavoro maggiore consiste nella codifica delle informazioni da salvare, perché consente di ridurre veramente di molto la dimensione del file.
+I **decodificatori** (decoder) sono algoritmi che dal formato di codifica ricompongono il video per la riproduzione di ogni frame.
 
-I trucchi che i codec sfruttano sono molteplici e permettono di ridurre il numero di informazioni da salvare nel flusso, e quindi la dimensione totale del file. Alcuni trucchi utilizzati sono:
+L'operazione di **transcoding** è l'operazione di convertire un flusso audio/video da un formato di codifica ad un altro formato di codifica.
 
-- la maggior parte dei fotogrammi in un video sono abbastanza simili, contengono solo piccole differenze (è il concetto di movimento, piccole differenze che ci inducono a pensare che il soggetto si stia muovendo). I codec memorizzano il primo frame e poi solo le differenze successive. Questo processo è ripetuto ogni tot frame;
-- l'occhio umano è più sensibile ai cambiamenti di intensità della luce rispetto ai cambiamenti di colore, e questo dettaglio viene sfruttato dai codec;
-- l'orecchio umano sente un intervallo frequenze limitato, i codec tagliano via le frequenze che non possiamo percepire.
+Il lavoro del codificatore consiste nel salvare quante più informazioni possibili cercando di ridurre il più possibile la dimensione del file, bilanciando quindi la qualità con la dimensione del flusso (e del file).
+
+I trucchi che i codec (gli encoder) sfruttano per avere alta qualità in dimensione ridotta sono molteplici, tra quelli maggiormente utilizzati abbiamo:
+
+- la maggior parte dei fotogrammi in un video sono abbastanza simili, contengono solo piccole differenze (è il concetto di movimento, piccole differenze che ci inducono a pensare che il soggetto si stia muovendo). Memorizzano il primo frame e poi solo le differenze successive si riduce la dimensione del flusso. Questo processo è ripetuto ogni tot frame;
+- l'occhio umano è più sensibile ai cambiamenti di intensità della luce rispetto ai cambiamenti di colore, e quindi si salvano maggiori informazioni sull'intensità e meno informazioni sul colore;
+- l'orecchio umano sente un intervallo frequenze limitato, tagliando via le frequenze che non possiamo percepire si riduce la dimensione del flusso.
+
+Il processo di decodifica deve poi tenere presente tutte queste accortezze per poter ricostruire il flusso.
 
 <!-- Fine copia di ffmpeg.md -->
 

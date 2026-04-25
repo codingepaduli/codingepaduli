@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2026-01-07
-publishdate: 2026-01-07
-lastmod: 2026-01-07
+date: 2026-04-24
+publishdate: 2026-04-24
+lastmod: 2026-04-24
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -171,6 +171,7 @@ summary: "Set di link interessanti"
 [electric car batteries](https://www.sustainabilitybynumbers.com/p/electric-car-battery-degradation) - How much do electric car batteries degrade?\
 [Metamaterials, AI, and the Road to Invisibility Cloaks](https://thepotentialsurface.substack.com/p/metamaterials-ai-and-the-road-to?triedRedirect=true) - \
 [Hundreds of robots move Shanghai city block](https://m.youtube.com/watch?v=7ZccC9BnT8k) - \
+[Portale degli annunci di vendita](https://pvp.giustizia.it/pvp/it/homepage.page) - beni mobili e immobili provenienti da procedure esecutive individuali e liquidazione in ambito fallimentare\
 
 ### History
 
@@ -219,6 +220,7 @@ summary: "Set di link interessanti"
 [Rocca Sanvitale a Fontanellato](https://it.wikipedia.org/wiki/Stufetta_di_Diana_e_Atteone) - Stufetta di Diana e Atteone - Wikipedia\
 [Borgo dei Saraceni, Agropoli](https://www.borgodeisaraceni.it/) - Ospitalità diffusa nel Cilento\
 [Cardito Parco Taglia](https://fondoambiente.it/luoghi/parco-taglia?ldc) - Luogo FAI\
+[Oasi della caccia](https://www.vallesele.it/oasi-valle-della-caccia-senerchia.htm) - Oasi WWF a Senerchia AV\
 [Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
 
 ### Poems
