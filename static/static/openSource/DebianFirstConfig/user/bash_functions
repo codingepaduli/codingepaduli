@@ -1130,18 +1130,14 @@ convertAllWmaToMp3() {
 export -f convertAllWmaToMp3
 
 # Test: 
-# Run: convertAllM4aToMp3
+# Run: convertM4aToMp3 *.m4a
 convertAllM4aToMp3() {
+  if [ "$#" -eq 0 ]; then
+    echo "Missing parameters ";
+    return 1
+  fi
 
-  # nullglob: if there is no file, don't output anything
-  # nocaseglob: will match *.m4a, *.M4a, *.m4A etc
-  shopt -s nullglob nocaseglob
-
-  for file in *.m4a
-  do
-    
-    ffmpeg -i "${file}" -vn -ar 44100 -ac 2 -q:a 2 "new-${file}.mp3";
-  done
+  parallel --jobs 4 --delay 1 --timeout 3600 --progress ffmpeg -loglevel warning -hide_banner -nostats -y -i {} -vn -ar 44100 -ac 2 -q:a 2 "new-{}.mp3" ::: "$@"
 }
 export -f convertAllM4aToMp3
 
