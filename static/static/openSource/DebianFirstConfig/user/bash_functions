@@ -16,7 +16,7 @@ chown() {
   # groups because when it encounter a symlink, chown will change the 
   # ownership of the file that those symlinks point to.
   # "chown ./symlinkToEtcFile" change the owner of /etc/file
-  chown -h "$@"
+  command chown -h "$@"
 }
 export -f chown
 
@@ -25,7 +25,7 @@ chgrp() {
   # groups because when it encounter a symlink, chgrp will change the 
   # group of the file that those symlinks point to.
   # "chgrp ./symlinkToEtc" change the group of /etc directory
-  chgrp -h "$@"
+  command chgrp -h "$@"
 }
 export -f chgrp
 
