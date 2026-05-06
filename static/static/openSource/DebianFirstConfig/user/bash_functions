@@ -189,6 +189,10 @@ export -f distroReleaseNumber
 # show the distro's info, the cpu, the mounted devices and the memory status
 # Usage: computer
 computer() {
+  echo "hostname: $(uname -n)"
+  echo "kernel name: $(uname -s)"
+  echo "kernel release: $(uname -r)"
+  echo "kernel version: $(uname -v)"
   lsb_release -a
   lscpu
   df -h
