@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2026-04-24
-publishdate: 2026-04-24
-lastmod: 2026-04-24
+date: 2026-05-05
+publishdate: 2026-05-05
+lastmod: 2026-05-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -81,6 +81,9 @@ summary: "Set di link interessanti"
 [Special relativity and Middle-Earth | What's new](https://terrytao.wordpress.com/2022/12/18/special-relativity-and-middle-earth/) - \
 [Physicist Claims Universe Has No Dark Matter And Is 27 Billion Years Old : ScienceAlert](https://www.sciencealert.com/physicist-claims-universe-has-no-dark-matter-and-is-27-billion-years-old) - \
 [How to Measure the Universe](https://nautil.us/how-to-measure-the-universe-1235873/) - \
+[Higgs Field](https://www.quantamagazine.org/how-the-higgs-field-actually-gives-mass-to-elementary-particles-20240903/) - How the Higgs Field (Actually) Gives Mass to Elementary Particles | Quanta Magazine\
+[dark matter](https://www.sciencenews.org/article/dark-matter-wimps-lz) - The possibilities for dark matter have just shrunk — by a lot \
+[Physics](https://physics.aps.org/) - spotlighting exceptional research\
 
 ### Math
 
@@ -104,6 +107,7 @@ summary: "Set di link interessanti"
 [Sound – Bartosz Ciechanowski](https://ciechanow.ski/sound/) - \
 [Hyperbolic coordinates](https://en.wikipedia.org/wiki/Hyperbolic_coordinates) - Wikipedia\
 [prime numbers](https://www.3blue1brown.com/lessons/prime-spirals) - 3Blue1Brown - Why do prime numbers make these spirals?\
+[Circle and epicycles](https://www.andreinc.net/2024/04/24/from-the-circle-to-epicycles/#multiplying-with-i-is-a-rotation-by-fracpi2) - Personal Site of Andrei N. Ciobanu\
 
 ### Medicine
 
@@ -140,6 +144,7 @@ summary: "Set di link interessanti"
 [prevent heart disease](https://myticker.com/) - Don’t Die of Heart Disease, preventative measures\
 [prevent heart disease](https://www.empirical.health/blog/inflammation-and-heart-health/) - Inflammation hs-CRP now predicts heart disease better than cholesterol | Empirical Health\
 [ultrasound cancer treatment](https://www.bbc.com/future/article/20251007-how-ultrasound-is-ushering-a-new-era-of-surgery-free-cancer-treatment) - How ultrasound is ushering a new era of surgery-free cancer treatment\
+[tooth regrowth medicine](https://mainichi.jp/english/articles/20240503/p2a/00m/0sc/012000c) - tested in Japan from Sept. 2024 - The Mainichi\
 
 ### Tech
 
@@ -170,8 +175,14 @@ summary: "Set di link interessanti"
 [results from privatisation of Britain’s energy](https://www.theguardian.com/politics/2025/sep/17/privatisation-premium-billions-from-uk-energy-bills-paid-to-shareholders) - billions from UK energy bills paid to shareholders | Privatisation | The Guardian\
 [electric car batteries](https://www.sustainabilitybynumbers.com/p/electric-car-battery-degradation) - How much do electric car batteries degrade?\
 [Metamaterials, AI, and the Road to Invisibility Cloaks](https://thepotentialsurface.substack.com/p/metamaterials-ai-and-the-road-to?triedRedirect=true) - \
-[Hundreds of robots move Shanghai city block](https://m.youtube.com/watch?v=7ZccC9BnT8k) - \
+[robots](https://m.youtube.com/watch?v=7ZccC9BnT8k) - Hundreds of robots move Shanghai city block\
 [Portale degli annunci di vendita](https://pvp.giustizia.it/pvp/it/homepage.page) - beni mobili e immobili provenienti da procedure esecutive individuali e liquidazione in ambito fallimentare\
+[Lab-grown diamonds](https://worksinprogress.co/issue/lab-grown-diamonds/) - Works in Progress Magazine\
+[Colored Fire](https://sciencenotes.org/how-to-make-colored-fire/) - How to Make Colored Fire at Home\
+[Own a Weather Station](https://www.weather.gov/iln/cwop) - We Want Your Data!\
+[ADHD Treatment For Kids](https://www.endeavorrx.com/about-endeavorrx/) - Digital Therapeutic Video Game for ADHD\
+[tellows.it](https://www.tellows.it/) - Community contro lo spam telefonico\
+[Saristore](https://saristoreitalia.it/) - E-commerce italiano – Spedizione rapida dall’Italia – SariStoreItalia\
 
 ### History
 
@@ -182,7 +193,8 @@ summary: "Set di link interessanti"
 [The Sound So Loud That It Circled the Earth Four Times](https://englishtopic.ru/the-sound-so-loud-that-it-circled-the-earth-four-times/) - The 1883 eruption on Krakatoa island\
 [The Little-Known Story of Violet Gibson](https://www.smithsonianmag.com/smart-news/1926-irish-woman-shot-benito-mussolini-and-almost-altered-history-forever-180977286/) - the Irish Woman Who Shot Mussolini | Smart News | Smithsonian Magazine\
 [The Fine Art of Italian Hand Gestures](https://www.themarginalian.org/2012/12/13/bruno-munari-speak-italian-gestures/) - A Vintage Visual Dictionary by Bruno Munari – The Marginalian\
-[Hear the World's Oldest Known Song, "Hurrian Hymn No. 6" Written 3,400 Years Ago | Open Culture](https://www.openculture.com/2025/04/hear-the-worlds-oldest-known-song-hurrian-hymn-no-6.html) - \
+[Hear the World's Oldest Known Song](https://www.openculture.com/2025/04/hear-the-worlds-oldest-known-song-hurrian-hymn-no-6.html) - "Hurrian Hymn No. 6" Written 3,400 Years Ago | Open Culture\
+[eHammurabi](https://ehammurabi.org/) - The Law Code of Hammurabi is one of the oldest legal texts from ancient Mesopotamia\
 
 ### Games
 
@@ -221,6 +233,7 @@ summary: "Set di link interessanti"
 [Borgo dei Saraceni, Agropoli](https://www.borgodeisaraceni.it/) - Ospitalità diffusa nel Cilento\
 [Cardito Parco Taglia](https://fondoambiente.it/luoghi/parco-taglia?ldc) - Luogo FAI\
 [Oasi della caccia](https://www.vallesele.it/oasi-valle-della-caccia-senerchia.htm) - Oasi WWF a Senerchia AV\
+[Webcam a Latina](https://www.skylinewebcams.com/it/webcam/italia/lazio/latina.html) - Serapo Formia Gaeta Sperlonga Terracina\
 [Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
 
 ### Poems

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2026-01-07
-publishdate: 2026-01-07
-lastmod: 2026-01-07
+date: 2026-05-05
+publishdate: 2026-05-05
+lastmod: 2026-05-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -102,13 +102,14 @@ summary: "Set di link relativi all'istruzione di base"
 
 #### Informatica 1 anno
 
-[Come trascrivere le registrazioni in modo automatico e semplice](https://newsmondo.it/come-trascrivere-le-registrazioni-in-modo-automatico-e-semplice/tech/?refresh_ce) - \
+[Documenti Google](https://newsmondo.it/come-trascrivere-le-registrazioni-in-modo-automatico-e-semplice/tech/?refresh_ce) - Come trascrivere le registrazioni in modo automatico e semplice\
 [LibrePCB](https://librepcb.org/) - develop your printed circuit board\
 [BlockLike.js](https://www.blocklike.org/) - educational js library for bridging the gap between block programming and JavaScript\
 [Edoardo Midali](https://www.youtube.com/@EdoardoMidali) - YouTube\
-[PhET Simulations](https://phet.colorado.edu/) - \
-[myPhysicsLab Home Page](https://www.myphysicslab.com/) - \
+[PhET](https://phet.colorado.edu/) - interactive Simulations\
+[myPhysicsLab](https://www.myphysicslab.com/) - Home Page\
 [Wokwi](https://wokwi.com/) - World's most advanced ESP32 Simulator\
+[STEMFIE – Play freely and build endless fun at home with STEMFIE, the free 3D-printable educational toy](https://www.stemfie.org/) - News\
 
 ##### Hardware
 
@@ -150,6 +151,7 @@ summary: "Set di link relativi all'istruzione di base"
 
 ###### Powerpoint
 
+[panglesd/slipshow](https://github.com/panglesd/slipshow/) - Alternativa alle slides\
 [PowerPoint](https://www.youtube.com/watch?v=2HAmS7QXtkc) - slide, caselle di testo, frecce, collegamenti ipertestuali - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=oxCCWRhYRRo) - guida 01 / prima presentazione - YouTube\
 [Corso Power Point 2013](https://www.youtube.com/watch?v=NDC8firp0k4) - guida 02 / le note e il menu visualizza - YouTube\
@@ -326,9 +328,12 @@ summary: "Set di link relativi all'istruzione di base"
 
 [ISO/OSI](https://dev.to/shotvpro/what-actually-happens-when-you-type-a-url-into-the-browser-hint-more-than-you-think-41po) - What Actually Happens When You Type a URL into the Browser? (Hint: More Than You Think) - DEV Community\
 [ISO/OSI](https://dev.to/raajaryan/part-1-how-google-routes-your-search-in-milliseconds-a-realistic-devs-perspective-213k) - Part 1: How Google Routes Your Search in Milliseconds – A Realistic Dev's Perspective - DEV Community\
-[Port 80 (HTTP) vs. Port 443 (HTTPS): Understanding the Differences](https://dev.to/hardy_mervana/port-80-http-vs-port-443-https-understanding-the-differences-4ag3) - DEV Community\
+[Port 80 (HTTP) vs. Port 443 (HTTPS)](https://dev.to/hardy_mervana/port-80-http-vs-port-443-https-understanding-the-differences-4ag3) - Understanding the Differences - DEV Community\
 [Scammers](https://dev.to/copyleftdev/dear-scammers-you-picked-the-wrong-developer-46m6) - 🎯 Dear Scammers: You Picked the Wrong Developer - DEV Community\
-[Using the Internet without IPv4 connectivity](https://jamesmcm.github.io/blog/no-ipv4/) - \
+[IPv6](https://jamesmcm.github.io/blog/no-ipv4/) - Using the Internet without IPv4 connectivity\
+[HTTPS](https://devonperoutky.super.site/blog-posts/mediocre-engineers-guide-to-https) - Mediocre Engineer’s guide to HTTPS\
+[Certificates](https://www.pixelstech.net/article/1722050582-All-I-Know-About-Certificates----Clients) - All I Know About Certificates -- Clients | PixelsTech\
+[Certificate Authority](https://www.pixelstech.net/article/1722045726-All-I-Know-About-Certificates----Certificate-Authority) - All I Know About Certificate Authority | PixelsTech\
 
 #### TPSIT 3 anno
 
@@ -336,15 +341,22 @@ summary: "Set di link relativi all'istruzione di base"
 [Egyptian Hieroglyphs](http://www.alanwood.net/unicode/egyptian-hieroglyphs.html) - Test for Unicode support in Web browsers\
 [ASCII and Unicode character encoding standards](https://dev.to/localizely/unicode-3kp7) - DEV Community\
 [CSS Snow flakes](https://pajasevi.github.io/CSSnowflakes/) - \
+[Computer Graphics from Scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/) - Gabriel Gambetta\
+[the @ sign](https://www.bbc.com/future/article/20250923-the-3000-year-old-story-hidden-in-your-keyboard) - The 3,000-year-old story hidden in the @ sign\
+[4K resolution](https://en.wikipedia.org/wiki/4K_resolution) - Wikipedia\
+[Scratchapixel 4.0](https://www.scratchapixel.com/index.html) - Learn Computer Graphics Programming\
+[CIE 1931 color space](https://en.wikipedia.org/wiki/CIE_1931_color_space) - Wikipedia\
+[Color vision](https://en.wikipedia.org/wiki/Color_vision) - Wikipedia\
 
 #### TPSIT 4 anno
 
-[01](https://www.youtube.com/watch?v=ExWnJftRdWY) - Maven: introduzione, plugins, goals e lifecycle - [Tutorial su Maven in italiano] - YouTube\
-[Corso Java Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9wbmTi6c4-tmqzyOtLglGP) - YouTube\
+[Maven](https://www.youtube.com/watch?v=ExWnJftRdWY) - introduzione, plugins, goals e lifecycle - [Tutorial su Maven in italiano] - YouTube\
+[Corso Java](https://www.youtube.com/playlist?list=PLP5MAKLy8lP9wbmTi6c4-tmqzyOtLglGP) - Completo 2021 - YouTube\
 [Politecnico Torino](https://softeng.polito.it/courses/09CBIPC/screencast/) - Screencast delle lezioni\
 [Add Use Case diagram type · Issue #4628 · mermaid-js/mermaid](https://github.com/mermaid-js/mermaid/issues/4628) - \
-[🔒 CountDownLatch in Java — A Complete Guide with Robust Example](https://dev.to/devcorner/countdownlatch-in-java-a-complete-guide-with-robust-example-8kb) - DEV Community\
+[CountDownLatch in Java](https://dev.to/devcorner/countdownlatch-in-java-a-complete-guide-with-robust-example-8kb) - A Complete Guide with Robust Example - DEV Community\
 [Proxies and Reverse Proxies](https://dev.to/vincenttommi/proxies-and-reverse-proxies-your-guide-to-the-internets-middlemen-day-23-of-system-design-basics-568a) - Your Guide to the Internet’s Middlemen , day 23 of system design basics - DEV Community\
+[louis-e/arnis](https://github.com/louis-e/arnis) - Generate any location from the real world in Minecraft with a high level of detail. · GitHub\
 
 #### TPSIT 5 anno
 
@@ -352,9 +364,10 @@ summary: "Set di link relativi all'istruzione di base"
 [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Fake online REST API for developers\
 [gleek.io](https://www.gleek.io/) - Diagram maker for developers\
 [eUML2 Modeler](http://www.soyatec.com/euml2/features/eUML2%20Modeler/) - an UML flavour to Java development within Eclipse. It's easy to generate Class and Sequence diagram from code.\
-[README | HTTP/3 explained](https://http3-explained.haxx.se/) - \
-[Mozilla SSL Configuration Generator](https://ssl-config.mozilla.org/) - \
+[HTTP/3](https://http3-explained.haxx.se/) - explained\
+[SSL Configuration](https://ssl-config.mozilla.org/) - Generator by Mozilla\
 [Mechanical Watch – Bartosz Ciechanowski](https://ciechanow.ski/mechanical-watch/) - \
+[JSON Path](https://bump.sh/blog/how-to-use-json-path/) - How to use JSON Path · Bump.sh\
 
 #### Eventi
 
