@@ -229,6 +229,14 @@ biggestDir() {
 }
 export -f biggestDir
 
+#Debian Security Analyzer
+debSecurityAnalyzer() {
+  local distroName="$(distroReleaseName)"
+  echo "$distroName"
+  debsecan --suite "$distroName"
+}
+export -f debSecurityAnalyzer
+
 ### Jobs
 # job        : visualizza background Jobs
 # sleep 60 & : manda in background un job
@@ -935,7 +943,7 @@ export -f gitStatusOfAllRepo
 
 # Updates all repository
 gitUpdateAllRepo() {
-  endColor='\033[0m]'
+  endColor='\033[0m'
   foregroundColor='35' 
   backgroundColor='44'
   boldStyle='1'
@@ -1287,7 +1295,7 @@ mencoderAddSubtitlesToAvi() {
 mencoderMixAviFileListInALoneAviFile() {
   aviFileOutput="$1"
   shift 1
-  parts=$@
+  parts="$*"
   mencoder -oac copy -ovc copy "$parts" -o "$aviFileOutput"
 }
 
