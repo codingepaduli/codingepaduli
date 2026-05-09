@@ -913,7 +913,7 @@ export -f gitGrep
 
 # Check the status of all repository
 gitStatusOfAllRepo() {
-  endColor='\033[0m]'
+  endColor='\033[0m'
   foregroundColor='35' 
   backgroundColor='44'
   boldStyle='1'
@@ -929,7 +929,7 @@ gitStatusOfAllRepo() {
     # You can run commands in a subshell using parenthesis ( command )
     (
       cd "$repo" || exit
-      echo -e "${color} ${PWD} \033[0m"
+      echo -e "${color} ${PWD} ${endColor}"
 
       # Verifico se è un repo git
       if [ -d ".git" ]; then
@@ -961,7 +961,7 @@ gitUpdateAllRepo() {
       # You can run commands in a subshell using parenthesis ( command )
       (
         cd "$repo" || exit
-        echo -e "${color} ${PWD} \033[0m"
+        echo -e "${color} ${PWD} ${endColor}"
 
         # Verifico se è un repo git
         if [ -d ".git" ]; then
