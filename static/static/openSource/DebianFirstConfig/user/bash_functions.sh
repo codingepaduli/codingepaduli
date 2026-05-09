@@ -231,7 +231,8 @@ export -f biggestDir
 
 #Debian Security Analyzer
 debSecurityAnalyzer() {
-  local distroName="$(distroReleaseName)"
+  local distroName
+  distroName="$(distroReleaseName)"
   echo "$distroName"
   debsecan --suite "$distroName"
 }
