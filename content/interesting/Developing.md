@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-05-05
-publishdate: 2026-05-05
-lastmod: 2026-05-05
+date: 2026-05-08
+publishdate: 2026-05-08
+lastmod: 2026-05-08
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -53,14 +53,18 @@ summary: "Set di link relativi al coding"
 [remote-android/redroid-doc](https://github.com/remote-android/redroid-doc) - Android In Container solution about Remote anDroid projects\
 [CopperheadOS](https://opensource.com/article/18/1/copperheados-delivers-mobile-freedom-privacy-and-security) - Security features, installing apps, and more | Opensource.com\
 [Sxmo](https://sxmo.org/) - Simple X Mobile\
-[Home | KernelSU](https://kernelsu.org/) - \
+[KernelSU](https://kernelsu.org/) - kernel-based root solution for Android\
 [Xfce on Android](https://mrs-th.medium.com/transform-your-android-device-into-a-linux-desktop-110a3d084ac6) - Transform Your Android Device into a Linux Desktop | by Mrs. Th | Medium\
+[ADB](https://www.xda-developers.com/install-adb-windows-macos-linux/) - How to install ADB on Windows, macOS, and Linux\
 
 #### Cloud
 
 [localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack\
 [Google Cloud Run](https://alexolivier.me/posts/deploy-container-stateless-cheap-google-cloud-run-serverless) - Deploy your side-projects at scale for basically nothing\
 [infracost/infracost](https://github.com/infracost/infracost) - hourly and monthly cost estimates for a Terraform or AWS project\
+[GAM-team/GAM](https://github.com/GAM-team/GAM) - command line management for Google Workspace\
+[Google Workspace](https://developers.google.com/workspace/guides/get-started?hl=it) - Sviluppare su Google Workspace  |  Google for Developers\
+[API Client Libraries - Google for Developers](https://developers.google.com/api-client-library?hl=it) - \
 
 #### Vagrant and Virtual Machines
 
@@ -78,10 +82,11 @@ summary: "Set di link relativi al coding"
 [Docker Swarm](https://dev.to/ankit_kumar_5e2e417bf7e3d/deploying-scalable-applications-with-docker-swarm-and-docker-compose-3pim) - Deploying Scalable Applications with Docker Swarm and Docker Compose - DEV Community\
 [dockur/windows](https://github.com/dockur/windows) - Windows in a Docker container.\
 [linuxserver/webtop](https://hub.docker.com/r/linuxserver/webtop/tags?name=debian-xfce) - Docker Image of full desktop environments\
-[GitHub](https://github.com/runtipi/runtipi?tab=readme-ov-file) - runtipi/runtipi: Runtipi is a homeserver for everyone! One command setup, one click installs for your favorites self-hosted apps. ✨\
-[Mastering the Docker networking](https://dev.to/leandronsp/mastering-the-docker-networking-2h57) - DEV Community\
+[runtipi/runtipi](https://github.com/runtipi/runtipi?tab=readme-ov-file) - Runtipi is a homeserver for everyone! One command setup, one click installs for your favorites self-hosted apps. ✨\
+[Docker networking](https://dev.to/leandronsp/mastering-the-docker-networking-2h57) - Mastering the Docker networking - DEV Community\
 [Docker Compose](https://dev.to/mitul3737/docker-series-part-14-docker-compose-2pcd) - Docker series (Part 14): Docker Compose - DEV Community\
-[GitHub](https://github.com/hemashushu/docker-archlinux-gui) - hemashushu/docker-archlinux-gui: This tutorial introduces a method for running GUI applications directly in containers (such as Docker and Podman) without installing any additional software.\
+[hemashushu/docker-archlinux-gui](https://github.com/hemashushu/docker-archlinux-gui) - This tutorial introduces a method for running GUI applications directly in containers (such as Docker and Podman) without installing any additional software.\
+[kernalix7/winpodx](https://github.com/kernalix7/winpodx) - Windows pod system for Linux · GitHub\
 
 ### Shell, CI, CD ed automazione
 
@@ -104,11 +109,10 @@ summary: "Set di link relativi al coding"
 
 ### AI
 
-[https://duck.ai duckduckgo AI](https://duck.ai/) - \
+[https://duck.ai/](https://duck.ai/) - duckduckgo AI\
 [Amazon CodeWhisperer](https://aws.amazon.com/it/codewhisperer/) - AI Code Generator\
 [fast.ai](http://www.fast.ai/) - Making neural nets uncool again\
 [PizzaGPT](https://www.pizzagpt.it/) - ChatGPT per l'Italia\
-[Michael A. Alcorn](https://sites.google.com/view/michaelaalcorn) - Red Hat\
 [Dataset list](https://www.datasetlist.com/) - A list of the biggest datasets for machine learning\
 [Playing Mortal Kombat with TensorFlow.js.](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/) - Transfer learning and data augmentation\
 [CNN Explainer](https://poloclub.github.io/cnn-explainer/) - Learn Convolutional Neural Network\
@@ -118,32 +122,29 @@ summary: "Set di link relativi al coding"
 [MediaPipe](https://mediapipe.dev/) - customizable ML solutions for live and streaming media\
 [TensorFlow, Keras and deep learning, without a PhD](https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist/#0) - \
 [Kaggle](https://www.kaggle.com/) - Your Machine Learning and Data Science Community with over 50,000 public datasets and 400,000 public notebooks to conquer any analysis in no time\
-[This Anime Does Not Exist](https://thisanimedoesnotexist.ai/) - \
-[Predicting sex from retinal fundus photographs using automated deep learning | Scientific Reports](https://www.nature.com/articles/s41598-021-89743-x.epdf?sharing_token=Fe891D30KtzWj086Mix2BtRgN0jAjWel9jnR3ZoTv0MtpAfo4k5SUyr2ANoiCUj48aDnaVS1oiRvWR5Jq3W5vp2Xty3aFDSimt06-04o22tCkZ62X__WtnMTTtit3At8eCD1Y4VRife50LtwBhS8nU--GtD10XpQBfLSJk9Tc1tdTUwF5RuI--pQYDk9R8IJ) - \
-[The Fourier transform is a neural network | sidsite](https://sidsite.com/posts/fourier-nets/) - \
+[generative AI](https://thisanimedoesnotexist.ai/) - This Anime Does Not Exist\
+[Predicting sex](https://www.nature.com/articles/s41598-021-89743-x.epdf?sharing_token=Fe891D30KtzWj086Mix2BtRgN0jAjWel9jnR3ZoTv0MtpAfo4k5SUyr2ANoiCUj48aDnaVS1oiRvWR5Jq3W5vp2Xty3aFDSimt06-04o22tCkZ62X__WtnMTTtit3At8eCD1Y4VRife50LtwBhS8nU--GtD10XpQBfLSJk9Tc1tdTUwF5RuI--pQYDk9R8IJ) - from retinal fundus photographs using automated deep learning | Scientific Reports\
+[FFT](https://sidsite.com/posts/fourier-nets/) - The Fourier transform is a neural network | sidsite\
 [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) - 12 weeks, 25 lessons, 50 quizzes, classic Machine Learning for all\
 [Use Mozilla DeepSpeech](https://opensource.com/article/22/1/voice-text-mozilla-deepspeech) - Enable speech to text in your application | Opensource.com\
-[Text To Speech Converter](https://dev.to/valeshgopal/text-to-speech-converter-4i2j) - DEV Community\
-[Skeletonise yourself with AI pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - DEV Community\
+[TTS](https://dev.to/valeshgopal/text-to-speech-converter-4i2j) - Text To Speech Converter - DEV Community\
+[pose detection](https://dev.to/jozefmaxted/skeletonise-yourself-with-ai-pose-detection-5c6a) - Skeletonise yourself with AI pose detection - DEV Community\
 [Stable Diffusion Image generation](https://huggingface.co/spaces/stabilityai/stable-diffusion) - a Hugging Face Space by stabilityai\
-[Scribble Diffusion](https://scribblediffusion.com/) - \
 [Audiobox](https://audiobox.metademolab.com/) - Meta’s new foundation research model for audio generation. It can generate voices and sound effects using a combination of voice inputs and natural language text prompts\
-[Hyper SDXL](https://fastsdxl.ai/) - Stable Diffusion Image generation\
 [AI](https://dev.to/mankavelda/10-machine-learning-algorithms-to-know-in-2024-1p8j) - 10 Machine Learning Algorithms to Know in 2024 - DEV Community\
 [collabora/WhisperSpeech](https://github.com/collabora/WhisperSpeech) - An Open Source text-to-speech system built by inverting Whisper.\
 [andrewnguonly/Lumos](https://github.com/andrewnguonly/Lumos) - A RAG LLM co-pilot for browsing the web, powered by local LLMs\
 [THUDM/CogVideo](https://github.com/THUDM/CogVideo#readme) - Text-to-video generation CogVideo\
 [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) - Stable Diffusion web UI\
-[OpenAI.fm](https://www.openai.fm/) - \
+[OpenAI.fm](https://www.openai.fm/) - interactive demo to try the new text-to-speech model\
 [Sonauto](https://sonauto.ai/) - New Music by You\
 [Welcome to LastMile AI](https://lastmileai.dev/workbooks/clj2y933l000mr0avd2ck42s9) - LastMile AI\
 [Suno AI Music](https://suno.com/) - A ChatGPT for Music\
 [Lettore da Testo a Audio gratuito e online](https://www.textfromtospeech.com/it/text-to-voice/) - Lettore di testo gratuito - Da testo a Audio\
 [Stable Diffusion](https://simonwillison.net/2022/Aug/29/stable-diffusion/) - is a really big deal\
 [ML Models](https://medium.com/@akash.y888/parametric-vs-non-parametric-ml-models-65f3174937b0) - Parametric vs. Non-Parametric ML Models | by Akash Yede | Mar, 2025 | Medium\
-[Csound](https://csound.com/) - Free and Open Source Audio Programming Language\
 [Machine Learning](https://dev.to/sarko07/introduction-to-machine-learning-for-everyone-5d5f) - Introduction to Machine Learning for Everyone! - DEV Community\
-[UNIGE 14x050 – Deep Learning Course](https://fleuret.org/dlc/) - \
+[UNIGE 14x050](https://fleuret.org/dlc/) - Deep Learning Course\
 [MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning](https://github.com/MathFoundationRL/Book-Mathematical-Foundation-of-Reinforcement-Learning) - This is the homepage of a new book entitled "Mathematical Foundations of Reinforcement Learning."\
 [Automation 102](https://dev.to/toniaderibigbe/automation-102-with-google-apps-script-2kc5) - Google Apps Script - DEV Community\
 [LLM Holdem](https://llmholdem.com/) - Watch AIs Play Texas Hold'em Poker\
@@ -152,6 +153,7 @@ summary: "Set di link relativi al coding"
 [Black Forest Labs FLUX.1 [dev]](https://fal.ai/models/fal-ai/flux/dev/playground?ref=blog.fal.ai) - Text-to-Image AI Generator | fal.ai\
 [Black Forest Labs](https://github.com/black-forest-labs/flux) - Production-grade AI image generation and editing model with 4MP photorealistic output and multi-reference control\
 [Black Forest Labs](https://blog.fal.ai/flux-the-largest-open-sourced-text2img-model-now-available-on-fal/) - Announcing Flux, The Next Leap in Text-to-Image Models\
+[Copyrights](https://legallayer.substack.com/p/who-owns-the-claude-code-wrote) - Who Owns the Code Claude Wrote? - by Sena Evren\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -163,9 +165,9 @@ summary: "Set di link relativi al coding"
 [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns) - This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes\
 [EXPLAIN ANALYZE](https://www.cybertec-postgresql.com/en/how-to-interpret-postgresql-explain-analyze-output/) - how to interpret it in PostgreSQL - Cybertec\
 [pg_stat_statements](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/) - Tracking down slow queries in PostgreSQL\
-[Joining CSV and JSON data with an in-memory SQLite database](https://simonwillison.net/2021/Jun/19/sqlite-utils-memory/) - \
-[What does First Normal Form actually mean?](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - \
-[Do You Need Redis? PostgreSQL Does Queuing, Locking, & Pub/Sub](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - \
+[Joining CSV and JSON data](https://simonwillison.net/2021/Jun/19/sqlite-utils-memory/) - with an in-memory SQLite database\
+[DB normalization](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - What does First Normal Form actually mean?\
+[Do You Need Redis?](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - PostgreSQL Does Queuing, Locking, & Pub/Sub\
 [SQLite tool](https://dev.to/danilsa0109/sqlite-a-tool-that-allows-creating-databases-from-the-terminal-78j) - create databases from the terminal - DEV Community\
 [incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
 [Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
@@ -175,6 +177,7 @@ summary: "Set di link relativi al coding"
 [How to read MySQL EXPLAINs — PlanetScale](https://planetscale.com/blog/how-read-mysql-explains) - \
 [Read & Export SQLite Data in a JavaScript-enabled Browser Locally | by Charmaine Chui | Webtips | Medium](https://medium.com/weekly-webtips/read-export-sqlite-data-in-a-javascript-enabled-browser-locally-b655deda879d) - \
 [Kexi](https://docs.kde.org/stable5/en/kexi/kexi/index.html) - Open Ms Access databases\
+[Honker](https://honker.dev/) - sqlite with queues, streams, pub/sub, and time-trigger scheduling, all inside your SQLite file\
 
 ### Giochi
 
@@ -187,7 +190,6 @@ summary: "Set di link relativi al coding"
 [Build a game this November with GitHub Game Off](https://github.blog/2020-10-27-github-game-off-2020/) - The GitHub Blog\
 [Learn the basics of Raycasting with JavaScript](https://courses.pikuma.com/courses/raycasting) - Learn the mathematics behind the ray casting technique used in the Wolfenstein 3D source code and implement it using JavaScript -pikuma course\
 [Introduction](https://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html) - Computer Graphics from scratch - Gabriel Gambetta\
-[Kaboom!!](https://replit.com/kaboom) - a fun JavaScript game programming library & environment\
 [Coding Challenges · The Coding Train](https://thecodingtrain.com/CodingChallenges/) - \
 [LDtk](https://deepnight.itch.io/ldtk) - Level designer Toolkit by Deepnight Games\
 [Code Zelda in JavaScript and Kaboom.js](https://dev.to/ania_kubow/code-zelda-in-javascript-and-kaboom-js-i3n) - DEV Community\
@@ -198,25 +200,24 @@ summary: "Set di link relativi al coding"
 [Complete Guide to Building Games in the Browser](https://dev.to/zippcodder/complete-guide-to-building-games-in-the-browser-kp6#chapter-23) - DEV Community\
 [matteobruni/tsparticles: tsParticles](https://github.com/matteobruni/tsparticles#Migrating-from-Particlesjs) - Easily create highly customizable particles animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.\
 [Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/) - \
-[Gamedev.city](https://gamedev.city/) - \
 
 ### GIT
 
 [ARCHITECTURE.md](https://matklad.github.io//2021/02/06/ARCHITECTURE.md.html) - \
-[Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
-[How to use GitHub Pages to host your website, even with multiple repos](https://dev.to/github/how-to-use-github-pages-to-host-your-website-even-with-multiple-repos-27k2) - DEV Community\
-[Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) - GitHub Docs\
-[How to create a Personal Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - GitHub - DEV Community\
+[GitHub Pages](https://dev.to/github/how-to-use-github-pages-to-host-your-website-even-with-multiple-repos-27k2) - How to use GitHub Pages to host your website, even with multiple repos - DEV Community\
+[Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) - Creating a personal access token - GitHub Docs\
+[Access Token](https://dev.to/n3wt0n/how-to-create-a-personal-access-token-pg7) - How to create a Personal Access Token - GitHub - DEV Community\
 [Release Drafter · Actions · GitHub Marketplace · GitHub](https://github.com/marketplace/actions/release-drafter) - \
 [Add and Commit action](https://dev.to/mheap/add-and-commit-action-1nh6) - DEV Community\
 [Create or Update PR Action](https://dev.to/mheap/create-or-update-pr-action-2bd7) - DEV Community\
-[Generate semantic-release notes with GitHub Actions](https://dev.to/github/generate-semantic-release-with-github-actions-2lll) - DEV Community\
-[Automated versioning and package publishing using GitHub Actions and semantic-release](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - DEV Community\
-[Setting up Git for several Github or Gitlab accounts](https://dev.to/gealber/setting-up-git-for-several-github-or-gitlab-accounts-6io) - DEV Community\
+[release notes](https://dev.to/github/generate-semantic-release-with-github-actions-2lll) - Generate semantic-release notes with GitHub Actions - DEV Community\
+[Automated](https://dev.to/kouts/automated-versioning-and-package-publishing-using-github-actions-and-semantic-release-1kce) - versioning and package publishing using GitHub Actions and semantic-release - DEV Community\
+[Setting up Git](https://dev.to/gealber/setting-up-git-for-several-github-or-gitlab-accounts-6io) - for several Github or Gitlab accounts - DEV Community\
 [git-sim](https://initialcommit.com/blog/git-sim) - Visually simulate Git operations in your own repos\
 [Git Config](https://blog.gitbutler.com/how-git-core-devs-configure-git/) - How Core Git Developers Configure Git\
 [Git](https://dev.to/yonkeltron/is-it-time-to-look-past-git-ah4) - Is it time to look past Git? - DEV Community\
-[Jujutsu For Busy Devs | maddie, wtf?!](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs) - \
+[Jujutsu](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs) - For Busy Devs | maddie, wtf?!\
+[steveklabnik/jujutsu-tutorial](https://github.com/steveklabnik/jujutsu-tutorial) - trying to figure out this jujutsu thing · GitHub\
 
 ### Java
 
@@ -269,46 +270,34 @@ summary: "Set di link relativi al coding"
 
 [Interactive map of Linux kernel](https://makelinux.github.io/kernel/map/) - \
 [Linux Kernel Teaching](https://linux-kernel-labs.github.io/refs/heads/master/index.html) - The Linux Kernel documentation\
-[Common pronunciations of Linux directories, commands, etc | Linux.org](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - \
+[Common pronunciations](https://www.linux.org/threads/common-pronunciations-of-linux-directories-commands-etc.4445/) - Linux directories, commands, etc | Linux.org\
 [Why Windows uses \r\n newlines instead of \n](https://dev.to/pieter/why-windows-uses-rn-newlines-instead-of-n-126l) - DEV Community\
-[Full Circle | An Independent Magazine For The Ubuntu Linux Community.](https://fullcirclemagazine.org/) - \
+[Full Circle](https://fullcirclemagazine.org/) - An Independent Magazine For The Ubuntu Linux Community.\
 [DistroWatch.com](https://distrowatch.com/) - Put the fun back into computing. Use Linux, BSD.\
-[KDE Store](https://store.kde.org/) - \
 [cron](https://crontab.guru/) - Crontab.guru is the cron schedule expression editor\
 [cron](https://opensource.com/article/17/11/how-use-cron-linux) - How to use cron in Linux\
 [cron](https://opensource.com/article/20/7/systemd-timers) - use systemd timers instead of cronjob | Opensource.com\
 [cron](https://opensource.com/article/20/7/systemd-calendar-timespans) - Analyzing systemd calendar and timespans | Opensource.com\
-[Eyecandy for your XFCE-Desktop](https://www.xfce-look.org/) - xfce-look.org\
-[Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
-[Technical reasons to choose FreeBSD over GNU/Linux](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - \
-[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL - Hashes, digital signatures, and more\
-[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL - Cryptography basics | Opensource.com\
+[Anacron](https://linux.101hacks.com/unix/anacron/) - 5 UNIX / Linux Anacron Command Example for Background Jobs\
+[FreeBSD](https://unixsheikh.com/articles/technical-reasons-to-choose-freebsd-over-linux.html) - Technical reasons to choose FreeBSD over GNU/Linux\
 [An introduction to Udev](https://opensource.com/article/18/11/udev) - The Linux subsystem for managing device events | Opensource.com\
-[tcpdump](https://opensource.com/article/18/10/introduction-tcpdump) - An introduction to using tcpdump at the Linux command line | Opensource.com\
-[awk](https://developer.ibm.com/tutorials/l-awk1/) - An intro to the great language with the strange name – IBM Developer\
-[linrunner.de TLP – Linux Advanced Power Management](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - \
+[linrunner.de TLP](https://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html) - Linux Advanced Power Management\
 [Building binary deb packages](https://www.internalpointers.com/post/build-binary-deb-package-practical-guide) - a practical guide - Internal Pointers\
 [Access control lists and external drives on Linux](https://opensource.com/article/20/3/external-drives-linux) - What you need to know | Opensource.com\
 [WhyTheName](https://wiki.debian.org/WhyTheName) - It explains the strange name of linux packages\
-[idempotent Bash scripts](https://arslan.io/2019/07/03/how-to-write-idempotent-bash-scripts/) - How to write idempotent Bash scripts · Fatih Arslan\
 [Schneegans/Desktop-Cube](https://github.com/Schneegans/Desktop-Cube/) - A Desktop Cube for GNOME Shell\
 [Schneegans/Burn-My-Windows](https://github.com/Schneegans/Burn-My-Windows) - Disintegrate your windows with burning style.\
 [mvdan/sh](https://github.com/mvdan/sh) - A shell parser, formatter, and interpreter with bash support; includes shfmt\
-[Anacron](https://linux.101hacks.com/unix/anacron/) - 5 UNIX / Linux Anacron Command Example for Background Jobs\
 [KDE Connect](https://www.makeuseof.com/things-you-can-do-with-kde-connect-on-linux/) - 8 Things You Can Do With KDE Connect on Linux\
 [GNU Parallel](https://alexplescan.com/posts/2023/08/20/gnu-parallel/) - where have you been all my life? | Alex Plescan\
 [2nd display](https://blog.jacobstoner.com/use-a-laptop-or-tablet-as-a-2nd-display-on-linux-with-a-dummy-monitor-and-rdp/) - Use a laptop as a 2nd display on Linux using FreeRDP\
-[Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
 [onceupon/Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner) - A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.\
-[dylanaraps/pure-bash-bible](https://github.com/dylanaraps/pure-bash-bible?tab=readme-ov-file#pure-bash-bible) - A collection of pure bash alternatives to external processes.\
 [Trinity](https://lwn.net/Articles/973130/) - keeps KDE 3 on life support [LWN.net]\
 [TerminalTextEffects](https://chrisbuilds.github.io/terminaltexteffects/showroom/) - terminal visual effects engine\
 
 #### Administration
 
-[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
 [The Debian Administrator's Handbook](https://debian-handbook.info/) - \
-[50 UNIX](https://www.thegeekstuff.com/2010/12/50-unix-linux-sysadmin-tutorials/) - Linux Sysadmin Tutorials\
 [Capitolo 4 - Aggiornamenti da Debian 9 (stretch)](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.it.html) - \
 [Release Notes for Debian 10 (buster), 64-bit PC](https://www.debian.org/releases/stable/amd64/release-notes/) - \
 [The SOCKS Proxy](https://blog.gwlab.page/vpn-over-ssh-the-socks-proxy-8a8d7bdc7028) - VPN over SSH. Some resources on the internet might be only accessible from clients with particular IP addresses\
@@ -327,11 +316,13 @@ summary: "Set di link relativi al coding"
 [Desktop Linux Hardening](https://privsec.dev/posts/linux/desktop-linux-hardening/) - A practical approach to Privacy and Security\
 [GRUB2](https://www.linuxbabe.com/desktop-linux/boot-from-iso-files-using-grub2-boot-loader) - How to Boot ISO Files From GRUB2 Boot Loader - LinuxBabe\
 [systemd by example](https://seb.jambor.dev/posts/systemd-by-example-part-1-minimization/) - Part 1: Minimization - Sebastian Jambor's blog\
-[Shell Script](https://sharats.me/posts/shell-script-best-practices/) - Best Practices - The Sharat's\
 [Swap File](https://linuxize.com/post/create-a-linux-swap-file/) - Create a Linux Swap File | Linuxize\
-[Linux CLI](https://www.linuxcommand.org/tlcl.php) - Command Line Books by William Shotts\
 [Logs](https://dev.to/msnmongare/a-comprehensive-guide-to-checking-logs-in-a-linux-server-1pl3) - A Comprehensive Guide to Checking Logs in a Linux Server - DEV Community\
 [evilsocket/opensnitch](https://github.com/evilsocket/opensnitch) - OpenSnitch is a GNU/Linux interactive application firewall inspired by Little Snitch. · GitHub\
+[sos-vault](https://sos-vault.com/blog/sos-command) - The most secure, fastest and friendliest Linux sosreport analysis tool\
+[apt](https://dev.to/lyraalishaikh/stop-letting-apt-autoremove-surprise-you-practical-apt-mark-for-debian-and-ubuntu-3fmj) - Stop Letting `apt autoremove` Surprise You: Practical `apt-mark` for Debian and Ubuntu - DEV Community\
+[Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
+[Cockpit](http://localhost:9090/system) - solydxk\
 
 #### Hardware
 
@@ -344,11 +335,11 @@ summary: "Set di link relativi al coding"
 [Main Linux problems](https://itvision.altervista.org/why.linux.is.not.ready.for.the.desktop.current.html?) - 2023 edition or why Linux sucks on the desktop\
 [Linux Hardware Database](https://linux-hardware.org/) - collect hardware details of Linux-powered computers\
 [Linux UVC driver & tools](https://www.ideasonboard.org/uvc/) - \
-[Orphaning bcachefs-tools in Debian – Jonathan Carter](https://jonathancarter.org/2024/08/29/orphaning-bcachefs-tools-in-debian/) - \
+[Orphaning bcachefs-tools in Debian](https://jonathancarter.org/2024/08/29/orphaning-bcachefs-tools-in-debian/) - Jonathan Carter\
 [Don’t Support the Coreboot Project : MALIBAL](https://www.malibal.com/features/dont-support-the-coreboot-project/) - \
 [Dell XPS](https://www.dell.com/it-it/shop/laptops/xps-13-plus/spd/xps-13-9320-laptop/cn93328cc) - Notebook XPS 13 Plus\
 [KDE Slimbook VI](https://kde.slimbook.es/) - \
-[GitHub](https://github.com/linux-surface/linux-surface) - linux-surface/linux-surface: Linux Kernel for Surface Devices\
+[linux-surface/linux-surface](https://github.com/linux-surface/linux-surface) - Linux Kernel for Surface Devices\
 [How To Update 8BitDo SF30 Pro Firmware on Ubuntu](https://www.omgubuntu.co.uk/2019/06/8bitdo-sn30-pro-controller-linux-firmware) - OMG! Ubuntu\
 [LVFS: Home](https://fwupd.org/) - \
 [How Ubuntu Linux snuck into high-end Dell laptops (and why it's called 'Project Sputnik') | ZDNET](https://www.zdnet.com/article/how-ubuntu-linux-snuck-into-high-end-dell-laptops-and-why-its-called-project-sputnik/) - \
@@ -363,14 +354,17 @@ summary: "Set di link relativi al coding"
 [repebble](https://repebble.com/) - Wearable smartwatch\
 [Murena](https://murena.com/) - deGoogled and privacy by design smartphones and cloud services.\
 [8BitDo](https://www.8bitdo.com/) - \
-[StarFighter 16-inch – Linux-exclusive laptop that sets a new standard for privacy and performance Star Labs®](https://it.starlabs.systems/pages/starfighter?shpxid=b9bf3a49-c8db-4c56-aa69-a838edff15ab) - \
+[StarFighter 16-inch](https://it.starlabs.systems/pages/starfighter?shpxid=b9bf3a49-c8db-4c56-aa69-a838edff15ab) - Linux-exclusive laptop that sets a new standard for privacy and performance Star Labs®\
 [Fujitsu LIFEBOOK A530](https://icecat.biz/it/p/fujitsu/a5300mp501it/lifebook-laptops-a530-13193507.html) - Intel® Pentium® P6200 39,6 cm (15.6") 2 GB DDR3-SDRAM 320 GB HDD FreeDOS Nero, Argento A5300MP501IT\
 [HDMI open-source driver rejects](https://www.tomshardware.com/pc-components/gpus/hdmi-forum-rejects-amds-hdmi-21-open-source-driver) - HDMI Forum rejects AMD's HDMI 2.1 open-source driver | Tom's Hardware\
+[Graphic Tablets](https://dev.to/zakariachahboun/gaomon-finally-released-full-featured-linux-drivers-for-their-graphic-tablets-4e0l) - Gaomon Finally Released Full-Featured Linux Drivers for Their Graphic Tablets - DEV Community\
+[Linux PC](https://it.starlabs.systems/?shpxid=1836ba03-95c4-4a00-8a3d-da69ef21fa20) - Premium Linux laptops and mini PCs | Star Labs – Star Labs®\
+[Introducing the PinePhone](https://kde.org/announcements/pinephone-plasma-mobile-edition/) - KDE Community edition\
 
 #### Old computer
 
 [old computer](https://opensource.com/article/23/3/refurbish-old-computer-linux) - 8 steps to refurbish a pc with Linux\
-[antiX Linux – an environment suitable for old computers](https://antixlinux.com/) - \
+[antiX Linux](https://antixlinux.com/) - an environment suitable for old computers\
 [Super LTS Kernel](https://www.prnewswire.com/news-releases/civil-infrastructure-platform-expands-super-long-term-stable-kernel-program-with-a-6-1-based-series-301955086.html) - Civil Infrastructure Platform Expands Super-Long-Term Stable Kernel Program with a 6.1-Based Series\
 [Lightweight Linux Distributions For Older PCs](https://www.freecodecamp.org/news/lightweight-linux-distributions-for-your-pc/) - \
 [Xterm 256 colors and examples](https://robotmoon.com/256-colors/) - \
@@ -388,6 +382,7 @@ summary: "Set di link relativi al coding"
 [SSH](https://davidisaksson.dev/posts/closing-stale-ssh-connections/) - Closing a stale SSH connection\
 [SSH over HTTPS](https://trofi.github.io/posts/295-ssh-over-https.html) - \
 [SSH](https://hackertarget.com/ssh-examples-tunnels/) - 22 SSH Examples, Practical Tips & Tunnels | HackerTarget.com\
+[opsdisk/the_cyber_plumbers_handbook](https://github.com/opsdisk/the_cyber_plumbers_handbook) - Free copy of The Cyber Plumber's Handbook - The definitive guide to Secure Shell (SSH) tunneling, port redirection, and bending traffic like a boss\
 
 ### Microcontrollori arduino esp8266 e simulatori
 
@@ -430,16 +425,18 @@ summary: "Set di link relativi al coding"
 [Firefox](https://www.mozilla.org/it/contribute/) - Collabora con noi\
 [Firefox](https://www.mozilla.org/it/firefox/central/) - Come iniziare\
 [LibRedirect](https://libredirect.github.io/) - A web extension that redirects YouTube, Instagram, Reddit, TikTok and other websites to alternative privacy-friendly frontends\
-[Custom Site JS – Get this Extension for 🦊 Firefox (en-US)](https://addons.mozilla.org/en-US/firefox/addon/custom-site-js/) - \
+[Custom Site JS](https://addons.mozilla.org/en-US/firefox/addon/custom-site-js/) - Get this Extension for 🦊 Firefox (en-US)\
 [About:config entries](https://kb.mozillazine.org/About:config_entries) - MozillaZine Knowledge Base\
 [User.js file](https://kb.mozillazine.org/User.js_file) - MozillaZine Knowledge Base\
 [pyllyukko/user.js](https://github.com/pyllyukko/user.js/) - user.js - Firefox configuration hardening\
 [yokoffing/Betterfox](https://github.com/yokoffing/Betterfox) - Firefox user.js for speed, privacy, and security. Your favorite browser, but better.\
-[YouTube Ad Accelerator & EasySpeed – Scarica l’estensione per 🦊 Firefox (it)](https://addons.mozilla.org/it/firefox/addon/youtube-ad-accelerator/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) - \
+[YouTube Ad Accelerator & EasySpeed](https://addons.mozilla.org/it/firefox/addon/youtube-ad-accelerator/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) - Scarica l’estensione per 🦊 Firefox (it)\
 [Everything Is Chrome](https://vale.rocks/posts/everything-is-chrome) - Vale.Rocks\
 [dessant/buster](https://github.com/dessant/buster?tab=readme-ov-file) - Captcha solver extension for humans, available for Chrome, Edge and Firefox · GitHub\
 [kuba2k2/firefox-webserial](https://github.com/kuba2k2/firefox-webserial) - WebSerial API Polyfill for Mozilla Firefox browser · GitHub\
 [extension-js/extension.js](https://github.com/extension-js/extension.js) - The cross-browser extension framework. · GitHub\
+[sonnyp/Junction](https://github.com/sonnyp/Junction) - Application/browser chooser · GitHub\
+[Firefox](http://blog.vlad1.com/) - Blog Vladimir\
 
 ### Network
 
@@ -465,11 +462,15 @@ summary: "Set di link relativi al coding"
 [LibreTranslate/LibreTranslate](https://github.com/LibreTranslate/LibreTranslate) - Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.\
 [monasticacademy/httptap](https://github.com/monasticacademy/httptap) - View HTTP/HTTPS requests made by any Linux program\
 [TemporalAgent7/awesome-windows-privacy](https://github.com/TemporalAgent7/awesome-windows-privacy) - A list of awesome tools, documentation and scripts for better privacy on Microsoft Windows\
-[Instantly create a GitHub repository to take screenshots of a web page](https://simonwillison.net/2022/Mar/14/shot-scraper-template/) - \
-[When curl Fails You: Why aria2 is Your Download Hero](https://dev.to/bruceowenga/when-curl-fails-you-why-aria2-is-your-download-hero-n36) - DEV Community\
+[screenshots](https://simonwillison.net/2022/Mar/14/shot-scraper-template/) - Instantly create a GitHub repository to take screenshots of a web page\
+[When curl Fails You](https://dev.to/bruceowenga/when-curl-fails-you-why-aria2-is-your-download-hero-n36) - Why aria2 is Your Download Hero - DEV Community\
 [ventoy/Ventoy](https://github.com/ventoy/Ventoy) - A new bootable USB solution\
 [viu](https://github.com/atanunq/viu) - Simple terminal image viewer written in Rust.\
 [tldr pages](https://tldr.sh/) - A community effort to simplify the beloved man pages with practical examples\
+[voice2json](https://voice2json.org/) - Command-line tools for speech and intent recognition on Linux\
+[GitHub orhun/gpg-tui](https://github.com/orhun/gpg-tui) - Manage your GnuPG keys with ease! 🔐\
+[Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
+[System Tray](https://dev.to/kolkov/we-built-a-pure-go-system-tray-library-because-every-alternative-requires-cgo-gogpu-may-2026-3h2i) - We Built a Pure Go System Tray Library Because Every Alternative Requires CGO, GoGPU May 2026 - DEV Community\
 
 #### ffmpeg
 
@@ -506,9 +507,8 @@ summary: "Set di link relativi al coding"
 [VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
 [xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
 [pkolaczk/fclones](https://github.com/pkolaczk/fclones) - Efficient Duplicate File Finder\
-[voice2json | Command-line tools for speech and intent recognition on Linux](https://voice2json.org/) - \
-[GitHub orhun/gpg-tui: Manage your GnuPG keys with ease! 🔐](https://github.com/orhun/gpg-tui) - \
-[Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
+[Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
+[Adding a subscribed/shared Google Calendar to iPhone- Apple Community](https://discussions.apple.com/thread/8608896) - \
 
 ### PHP
 
@@ -534,7 +534,7 @@ summary: "Set di link relativi al coding"
 [Mojo](https://www.fast.ai/posts/2023-05-03-mojo-launch.html) - the biggest programming language advance in decades – fast.ai\
 [nicfit/eyeD3](https://github.com/nicfit/eyeD3) - eyeD3 is a Python module and command line program for processing ID3 tags. Information about mp3 files (i.e bit rate, sample frequency, play time, etc.) is also provided. The formats supported are ID3v1 (1.0/1.1) and ID3v2 (2.3/2.4).\
 [Bashing Python](https://medium.com/capital-one-tech/bashing-the-bash-replacing-shell-scripts-with-python-d8d201bc0989) - Replacing Shell Scripts with Python | by Steven F. Lott | Capital One Tech | Medium\
-[PEP 723 – Inline script metadata | peps.python.org](https://peps.python.org/pep-0723/) - \
+[PEP 723](https://peps.python.org/pep-0723/) - Inline script metadata | peps.python.org\
 [Pynguin](https://pynguin.readthedocs.io/en/latest/) - PYthoN General UnIt test geNerator — pynguin 0.41.0.dev documentation\
 [python.logging](https://stackoverflow.com/questions/53249304/how-to-list-all-existing-loggers-using-python-logging-module#53250066) - How to list all existing loggers using python.logging module - Stack Overflow\
 [Python dependencies](https://akrabat.com/defining-python-dependencies-at-the-top-of-the-file/) - Defining Python dependencies at the top of the file – Rob Allen\
@@ -592,7 +592,7 @@ summary: "Set di link relativi al coding"
 [SSH Configuration Auditor](https://www.ssh-audit.com/) - \
 [Public Money, Public Code](https://publiccode.eu/en/) - \
 [Memory Safe Languages](https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html?m=1) - A significant drop in memory safety vulnerabilities and an associated drop in the severity of our vulnerabilities thanks to memory Safe Languages - Google Online Security Blog\
-[DuckDuckGo's privacy abuses-- current, historic, and by proxy](https://lemmy.ml/post/31321) - Lemmy\
+[DuckDuckGo's privacy abuses](https://lemmy.ml/post/31321) - current, historic, and by proxy - Lemmy\
 [Update disposable_email_blocklist.conf by tuptuptuu · Pull Request #244 · disposable-email-domains/disposable-email-domains · GitHub](https://github.com/disposable-email-domains/disposable-email-domains/pull/244) - \
 
 #### Security vulnerability and privacy abuse
@@ -641,6 +641,7 @@ summary: "Set di link relativi al coding"
 [Using Pandoc and Typst to Produce PDFs](https://imaginarytext.ca/posts/2024/pandoc-typst-tutorial/) - \
 [typst/typst](https://github.com/typst/typst) - A new markup-based typesetting system that is powerful and easy to learn.\
 [How I use Kate Editor](https://akselmo.dev/posts/how-i-use-kate-editor/) - \
+[Mermaid diagrams can be displayed within Markdown · Issue #372 · github/roadmap](https://github.com/github/roadmap/issues/372) - \
 [dunyakirkali/letterpress](https://github.com/dunyakirkali/letterpress) - a project aimed at simplifying the self-publishing process for books\
 [vale-cli/vale](https://github.com/vale-cli/vale) - :pencil: A markup-aware linter for prose built with speed and extensibility in mind. · GitHub\
 [dunyakirkali/letterpress](https://github.com/dunyakirkali/letterpress/) - a project aimed at simplifying the self-publishing process for books\
@@ -679,6 +680,7 @@ summary: "Set di link relativi al coding"
 [ken-matsui/jyt](https://github.com/ken-matsui/jyt) - A tridirectional converter between Json, Yaml, and Toml\
 [TomWright/dasel](https://github.com/TomWright/dasel) - Select, put and delete data from JSON, TOML, YAML, XML, INI, HCL and CSV files with a single tool. Also available as a go mod. · GitHub\
 [JSON Path](https://bump.sh/blog/how-to-use-json-path/) - How to use JSON Path · Bump.sh\
+[Mermaid diagrams can be displayed within Markdown · Issue #372 · github/roadmap](https://github.com/github/roadmap/issues/372) - \
 
 ### UML, architetture ed ingegneria del software
 
@@ -752,7 +754,7 @@ summary: "Set di link relativi al coding"
 [Screen readers](https://dev.to/livechat/screen-readers-hearing-the-unseen-55nb) - hearing the unseen - DEV Community\
 [A11Y 101: Evaluation tools](https://dev.to/dailydevtips1/a11y-101-evaluation-tools-38km) - DEV Community\
 [output e A11Y](https://denodell.com/blog/html-best-kept-secret-output-tag) - HTML’s Best Kept Secret: The &lt;output&gt; Tag — Den Odell\
-[Basic – Game Accessibility Guidelines](https://gameaccessibilityguidelines.com/basic/) - \
+[Basic](https://gameaccessibilityguidelines.com/basic/) - Game Accessibility Guidelines\
 
 #### CSS
 
@@ -913,6 +915,9 @@ summary: "Set di link relativi al coding"
 [Making Software: What is a color space?](https://www.makingsoftware.com/chapters/color-spaces-models-and-gamuts) - \
 [What are OKLCH colors?](https://jakub.kr/components/oklch-colors) - \
 [Athena](https://jslegenddev.substack.com/p/you-can-now-make-ps2-games-in-javascript) - You Can Now Make Playstation PS2 Games in JavaScript\
+[processing/p5.js v2.0.0 on GitHub](https://newreleases.io/project/github/processing/p5.js/release/v2.0.0) - \
+[Status board · p5.js 2.x 🌱🌳](https://github.com/orgs/processing/projects/21/views/8) - \
+[alptugan/p5.utils: A set of utilities and additional features for my creative coding class aiming to help students while introducing the algorithmic thinking.](https://github.com/alptugan/p5.utils/issues) - \
 
 ##### Three JS 3D
 
@@ -921,5 +926,6 @@ summary: "Set di link relativi al coding"
 
 ##### JS AI
 
-[flap.js – flappy-pose](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - \
+[flap.js](https://glitch.com/edit/#!/flappy-pose?path=src%2Fflap.js%3A32%3A4) - flappy-pose\
 [GitHub](https://github.com/ml5js/ml5-library/) - ml5js/ml5-library: Friendly machine learning for the web! 🤖\
+[Csound](https://csound.com/) - Free and Open Source Audio Programming Language\

@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2026-05-05
-publishdate: 2026-05-05
-lastmod: 2026-05-05
+date: 2026-05-08
+publishdate: 2026-05-08
+lastmod: 2026-05-08
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -21,6 +21,37 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Cosvitec](https://www.cosvitec.eu/erasmus/) - Progetto ERASMUS+\
 [DM_14_2024](https://www.istruzioneer.gov.it/wp-content/uploads/2024/06/CERTIFICAZIONE_DM_14_2024.pdf) - Modelli di certificazione competenze.pdf\
+[I sei giorni di ferie nei periodi di attività didattica equiparati ai tre gg di permesso retribuito . Due sentenze – Gilda degli insegnanti di Lucca e Massa Carrara](https://www.gildalucca.it/i-sei-giorni-di-ferie-nei-periodi-di-attivita-didattica-equiparati-ai-tre-gg-di-permesso-retribuito-due-sentenze/) - \
+[Ore collegio docenti e consigli di classe proporzionale al numero di ore a contratto. Sentenza](https://www.orizzontescuola.it/attivita-funzionali-allinsegnamento-docente-su-piu-scuole-riduzione-proporzionale-sia-ore-per-collegio-docenti-che-per-consigli-di-classe/) - \
+[Visite fiscali ripetute e restrizioni su chi è escluso da obbligo di reperibilità. Orari invariati e visite anche di domenica](https://www.orizzontescuola.it/guida/visite-fiscali-ripetute-restrizioni-escluso-obbligo-reperibilita-orari-invariati-visite-anche-domenica/) - Orizzonte Scuola\
+[Procedure concorsuali docenti: TUTTE LE COMUNICAZIONI – Ministero dell’Istruzione, dell’Università e della Ricerca – Ufficio Scolastico Regionale per la Lombardia](http://usr.istruzione.lombardia.gov.it/procedure-concorsuali-docenti-tutte-le-comunicazioni/) - \
+[Docenti assenti alle riunioni pomeridiane: come devono giustificare](https://www.orizzontescuola.it/guida/docenti-assenti-alle-riunioni-pomeridiane-come-devono-giustificare/) - \
+[Docente o ATA assente a causa del maltempo, come giustificare](https://www.orizzontescuola.it/guida/assenza-per-causa-di-forza-maggiore-come-giustificare/) - \
+[Stipendio, come leggere il cedolino?](https://www.orizzontescuola.it/guida/come-leggere-il-cedolino-dello-stipendio-la-guida-gratuita/) - Orizzonte Scuola\
+[Dirigente scolastico contro permessi e certificati medici](https://www.orizzontescuola.it/dirigente-concede-permessi-solo-per-grava-malattia-e-chiede-ancora-certificato-inviato-per-raccomandata-uil-calabria-interpretazione-creativa/) - \
+[Permessi personali e per visite mediche. Alcune indicazioni utili](https://www.orizzontescuola.it/guida/permessi-personali-e-per-visite-mediche-alcune-indicazioni-utili/) - \
+[Permesso retribuito personale e familiare](https://www.orizzontescuola.it/guida/permesso-retribuito-personale-e-familiare-autocertificazione/) - autocertificazione\
+[Permessi retribuiti dei prof per motivi familiari e personali, c'è la privacy](https://www.tecnicadellascuola.it/permessi-retribuiti-dei-prof-per-motivi-familiari-e-personali-ce-la-privacy) - Notizie Scuola\
+[Attività di formazione neoassunti: è obbligo di servizio](https://www.orizzontescuola.it/attivita-di-formazione-neoassunti-e-obbligo-di-servizio/) - Orizzonte Scuola\
+[Permessi brevi retribuiti, per esigenze personali. Si recuperano](https://www.orizzontescuola.it/guida/permessi-brevi-retribuiti-per-esigenze-personali-si-recuperano/) - \
+[Accesso agli atti, i vari tipi. Facciamo chiarezza sulla normativa](https://www.orizzontescuola.it/guida/accesso-agli-atti-vari-tipi-facciamo-chiarezza-sulla-normativa/) - Orizzonte Scuola\
+[Anno sabbatico per docenti e Dirigenti. La guida](https://www.orizzontescuola.it/guida/aspettativa-non-retribuita-anno-sabbatico-modalit-e-criteri-fruizione/) - Orizzonte Scuola\
+[Permesso per esame o concorso: quando spetta. Orario di servizio](https://www.orizzontescuola.it/guida/permesso-per-esame-o-concorso/) - \
+[Permessi docenti](https://www.orizzontescuola.it/permessi-docenti-differenze-tra-personale-di-ruolo-e-non/) - differenze tra personale di ruolo e non\
+[Permessi brevi docenti](https://www.orizzontescuola.it/permessi-brevi-docenti-di-ruolo-e-supplenti-non-e-richiesta-giustificazione-le-esigenze-non-devono-essere-documentate/) - di ruolo e supplenti, non è richiesta giustificazione: le esigenze non devono essere documentate - Orizzonte Scuola Notizie\
+[Permessi brevi docenti](https://www.orizzontescuola.it/permessi-brevi-docenti-supplenti-e-di-ruolo-non-sempre-vengono-concessi-il-dirigente-valuta-le-esigenze-di-servizio/) - supplenti e di ruolo: non sempre vengono concessi, il dirigente valuta le esigenze di servizio - Orizzonte Scuola Notizie\
+[Presenza a scuola](https://www.orizzontescuola.it/impegni-dei-docenti-fino-allinizio-delle-lezioni-solo-attivita-programmate-no-semplice-presenza-a-scuola/) - Impegni dei docenti fino all’inizio delle lezioni - solo attività programmate, no semplice presenza a scuola - Orizzonte Scuola Notizie\
+[Ferie](https://www.orizzontescuola.it/ferie-quali-assenze-riducono-i-giorni-spettanti/) - quali assenze riducono i giorni spettanti - Orizzonte Scuola Notizie\
+[PDP](https://www.orizzontescuola.it/inclusione-degli-alunni-in-situazioni-di-svantaggio-economico-sociale-fisico-piscologico-un-modello-di-pdp/) - Inclusione degli alunni in situazioni di svantaggio economico-sociale, fisico, piscologico: un modello di PDP - Orizzonte Scuola Notizie\
+[ITP](https://www.orizzontescuola.it/legittimo-escludere-gli-itp-dalla-ii-fascia-a-dirlo-il-consiglio-di-stato/) - Legittimo escludere gli ITP dalla ex seconda fascia graduatorie di istituto, a dirlo il Consiglio di Stato - Orizzonte Scuola Notizie\
+[Coordinatore di classe](https://www.orizzontescuola.it/coordinatore-di-classe-incarico-si-puo-rifiutare-nomina-segretario-no-e-si-rischiano-sanzioni/) - incarico si può rifiutare. Nomina Segretario no e si rischiano sanzioni - Orizzonte Scuola Notizie\
+[Stipendi scuola](https://www.orizzontescuola.it/stipendi-scuola-guida-al-cedolino-cosa-sono-le-addizionali-comunali-e-regionali-le-info-utili-video/) - guida al cedolino: cosa sono le addizionali comunali e regionali. Le info utili. [VIDEO] - Orizzonte Scuola Notizie\
+[Il giorno libero](https://www.orizzontescuola.it/il-giorno-libero-dei-docenti-e-un-diritto-guida-alla-normativa/) - è un diritto? Guida alla normativa - Orizzonte Scuola Notizie\
+[PCTO](https://www.orizzontescuola.it/percorsi-per-le-competenze-trasversali-e-per-lorientamento-pcto-in-allegato-griglia-di-valutazione-e-scheda-valutazione-dei-rischi-per-lattivita-di-pcto/) - Percorsi per le competenze trasversali e per l’orientamento-PCTO: in allegato griglia di valutazione e scheda valutazione dei rischi per l’attività di PCTO - Orizzonte Scuola Notizie\
+[Studenti con carenze formative](https://www.orizzontescuola.it/studenti-con-carenze-formative-recupero-ruolo-genitori-certificazione-esito-certificazione-esempio-di-regolamento-da-scaricare/) - recupero, ruolo genitori, certificazione esito, certificazione. Esempio di regolamento da scaricare - Orizzonte Scuola Notizie\
+[6 giorni di ferie commutati in permessi](https://www.orizzontescuola.it/6-giorni-di-ferie-dopo-i-3-giorni-per-motivi-personali-e-familiari-i-casi-in-cui-e-possibile-non-trovarsi-il-sostituto/) - 3 di permessi per motivi personali e familiari - Orizzonte Scuola Notizie\
+[Tribunale Vicenza vieta i licenziamenti entro un anno dal matrimonio](http://www.ilfattoquotidiano.it/2017/04/30/vicenza-licenziato-alcune-settimane-dopo-le-nozze-reintegrato-dal-giudice-grazie-a-una-legge-del-1963-pensata-per-le-donne/3553279/) - \
+[In caso di licenziamento](http://www.ilfattoquotidiano.it/2016/10/05/licenziati-in-tronco-come-evitare-di-commettere-reati-informatici/3075424/) - Accesso ai propri dati sul sistema informatico dell azienda\
 
 ### Lezioni
 
@@ -28,15 +59,15 @@ summary: "Set di link relativi all'istruzione di base"
 [La mia scuola differente](https://www.lamiascuoladifferente.it/) - materiali e strumenti che supportino la didattica a distanza\
 [edutecnica.it](https://www.edutecnica.it/#gsc.tab=0) - annotazioni e appunti sparsi di Matematica, Fisica, Chimica, Elettrologia e Termologia\
 [Indire](https://www.indire.it/gli-enti-pubblici-di-ricerca-a-supporto-degli-studenti/) - Webinar multidisciplinari condotti dai ricercatori degli enti di ricerca\
-[The Essence of Mathematics Through Elementary Problems](https://www.openbookpublishers.com/product/979) - Open Book Publishers\
+[The Essence](https://www.openbookpublishers.com/product/979) - Mathematics Through Elementary Problems - Open Book Publishers\
 [Matematicapovolta](https://www.matematicapovolta.it/index.html) - Didattica a distanza Matematica Scuole Medie e Superiori (flipped classroom liceo scientifico)\
 [GeoSTAC](https://stac.astrogeology.usgs.gov/geostac/) - a map for finding planetary data\
 [LearningApps.org](https://learningapps.org/) - Moduli e-learning per il tuo sito internet\
 [OER Commons](https://www.oercommons.org/) - a public digital library of open educational resources. Explore, create, and collaborate with educators around the world to improve curriculum. \
-[il Curriculum dello Studente](https://curriculumstudente.istruzione.it/) - \
-[PhET: Free online physics, chemistry, biology, earth science and math simulations](https://phet.colorado.edu/) - \
-[Kahoot! | Learning games | Make learning awesome!](https://kahoot.com/) - \
-[Orb.Farm](https://orb.farm/) - \
+[CV](https://curriculumstudente.istruzione.it/) - il Curriculum dello Studente\
+[PhET](https://phet.colorado.edu/) - Free online physics, chemistry, biology, earth science and math simulations\
+[Kahoot!](https://kahoot.com/) - Learning games | Make learning awesome!\
+[Orb.Farm](https://orb.farm/) - personal aquatic ecosystem\
 [BOINC](https://boinc.berkeley.edu/index.php) - help cutting-edge science research using your computer\
 
 #### Google suite
@@ -91,6 +122,8 @@ summary: "Set di link relativi all'istruzione di base"
 [Privacy e GDPR](https://www.youtube.com/watch?v=ZlcMTtwBeec) - Nuovo Regolamento Europeo sui dati personali - YouTube\
 [GDPR & PRIVACY NEL 2021](https://www.youtube.com/watch?v=PKgdhaWZ_80) - COSA DEVI SAPERE - YouTube\
 [Advanced Data Protection Control (ADPC)](https://www.dataprotectioncontrol.org/spec/) - \
+[Selfie porno: se amici minorenni fanno girare...non è reato](http://www.blitzquotidiano.it/photogallery/selfie-porno-se-amici-minorenni-fanno-girare-non-e-reato-2418561/) - \
+[Privacy](https://www.ilfattoquotidiano.it/premium/articoli/da-google-ad-amazon-che-cosa-sa-lalter-ego-virtuale-di-tutti-noi/) - Google, Facebook e Amazon: che cosa sanno di tutti noi e come lo usano\
 
 #### Olimpiadi informatica
 
@@ -278,6 +311,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Best Raspberry Pi Projects: March 2025 | Tom's Hardware](https://www.tomshardware.com/features/best-raspberry-pi-projects) - \
 [A Beginner's Guide to the ESP8266](https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html) - \
 [Arduino® UNO R4 WiFi — Arduino Official Store](https://store.arduino.cc/products/uno-r4-wifi) - \
+[PROGETTI E TUTORIAL](https://www.progettiarduino.com/progetti-e-tutorial.html) - PROGETTI ARDUINO\
 
 #### Sistemi e reti 4 anno
 
@@ -334,6 +368,10 @@ summary: "Set di link relativi all'istruzione di base"
 [HTTPS](https://devonperoutky.super.site/blog-posts/mediocre-engineers-guide-to-https) - Mediocre Engineer’s guide to HTTPS\
 [Certificates](https://www.pixelstech.net/article/1722050582-All-I-Know-About-Certificates----Clients) - All I Know About Certificates -- Clients | PixelsTech\
 [Certificate Authority](https://www.pixelstech.net/article/1722045726-All-I-Know-About-Certificates----Certificate-Authority) - All I Know About Certificate Authority | PixelsTech\
+[TryHackMe](https://tryhackme.com/) - learn cyber security with TryHackMe\
+[SudoRank](https://sudorank.com/) - Hands-on Linux, Kubernetes & DevOps Challenges\
+[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-2) - How to use OpenSSL - Hashes, digital signatures, and more\
+[OpenSSL](https://opensource.com/article/19/6/cryptography-basics-openssl-part-1) - Getting started with OpenSSL - Cryptography basics | Opensource.com\
 
 #### TPSIT 3 anno
 

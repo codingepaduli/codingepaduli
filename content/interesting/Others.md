@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2026-05-05
-publishdate: 2026-05-05
-lastmod: 2026-05-05
+date: 2026-05-08
+publishdate: 2026-05-08
+lastmod: 2026-05-08
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -183,6 +183,10 @@ summary: "Set di link interessanti"
 [ADHD Treatment For Kids](https://www.endeavorrx.com/about-endeavorrx/) - Digital Therapeutic Video Game for ADHD\
 [tellows.it](https://www.tellows.it/) - Community contro lo spam telefonico\
 [Saristore](https://saristoreitalia.it/) - E-commerce italiano – Spedizione rapida dall’Italia – SariStoreItalia\
+[VVVVID](https://www.vvvvid.it/register) - \
+[DYNITchannel](http://www.youtube.com/user/DYNITchannel#p/p) - YouTube\
+[webcompat/web-bugs](https://github.com/webcompat/web-bugs/) - A place to report bugs on websites\
+[OpenStreetMap](https://opensource.com/article/21/8/openstreetmap) - how do I contribute?\
 
 ### History
 
@@ -205,7 +209,7 @@ summary: "Set di link interessanti"
 [Fire_and_Ice_1993](https://archive.org/details/msdos_Fire_and_Ice_1993) - DOSBox SVN, CPU speed: 3000 cycles, Frameskip 0, Program: FIRE\
 [PrinceJS](https://princejs.com/) - Prince of Persia\
 [A New Sudoku Layout With 81 Uniquely Shaped Cells ・ Daniel Hooper](https://danielchasehooper.com/posts/cracked-sudoku/) - \
-[Rediscovering Ikigai: What We Got Wrong & How to Find Meaning in Life](https://nesslabs.com/ikigai) - \
+[Rediscovering Ikigai](https://nesslabs.com/ikigai) - What We Got Wrong & How to Find Meaning in Life\
 
 ### Places
 
