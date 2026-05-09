@@ -390,6 +390,8 @@ L'etichetta ``video`` permette anche di specificare dei possibili sottotitoli da
 - ``src`` il percorso del file di sottotitoli; Il formato del file è VTT;
 - ``default`` il sottotitolo da mostrare di default.
 
+<!-- markdownlint-disable MD044 -->
+
 <!-- FIXME 
 
 Il risultato si puó apprezzare qua:
@@ -401,6 +403,8 @@ Licenza
 [CC0 1.0](https://creativecommons.org/licenses/cc0/1.0/?ref=ccsearch&atype=html "Logo licenza CC0")
 
 -->
+
+<!-- markdownlint-enable MD044 -->
 
 ### Immagini codificate in base64
 
