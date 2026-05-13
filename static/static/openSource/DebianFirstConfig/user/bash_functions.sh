@@ -250,6 +250,29 @@ export -f debSecurityAnalyzer
 # renice -n 5 -p 1234  : cambia la priorità a 5 (bassa)
 
 ####################################
+# String utils                     #
+####################################
+
+# Unisce array con stringhe tra elementi
+# Esempio: joinArrayBySeparator '__' 1 2 3 4 -> "1__2__3__4"
+joinArrayBySeparator() {
+  # Prendo il separatore
+  local sep="$1";
+  shift
+  
+  # Se non ho l'array, non stampo nulla
+  [ $# -eq 0 ] && { printf ''; return; }
+
+  local -a arr=( "$@" )
+  local lastIndex=$(( ${#arr[@]} - 1 ))
+
+  local join
+  join="$(printf "%s$sep" "${arr[@]:0:$lastIndex}")${arr[lastIndex]}"
+  echo "$join"
+}
+export -f joinArrayBySeparator
+
+####################################
 # VLC - Metadata Extraction Tool   #
 ####################################
 
