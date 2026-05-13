@@ -194,7 +194,7 @@ computer() {
   echo "kernel release: $(uname -r)"
   echo "kernel version: $(uname -v)"
   lsb_release -a
-  lscpu
+  lscpu  | grep -v '^Vulnerability' | grep -v '^Flags' 
   df -h
   free -h
 }
