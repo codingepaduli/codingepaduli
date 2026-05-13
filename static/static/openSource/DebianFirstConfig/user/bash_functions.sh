@@ -229,6 +229,58 @@ biggestDir() {
 }
 export -f biggestDir
 
+# findVideosRecursive "~/Video"
+findVideosRecursive() {
+  local workDir="${1:-$(pwd)}"
+  local videoExts=(mp4 mkv mov avi flv wmv webm mpeg mpg m4v 3gp 3g2 ts m2ts ogv)
+  local extRegex # crea la stringa "mp4\|mkv\|mov\|..."
+  extRegex="$(joinArrayBySeparator '\|' "${videoExts[@]}")"
+  # Debug printf '%s\n' "$extRegex" | sed -n '1,5p'
+  find "$workDir" -type f -iregex ".*\.\($extRegex\)$"  -print
+}
+export -f findVideosRecursive
+
+# findVideosRecursiveAndShowSize "~/Video"
+findVideosRecursiveAndShowSize() {
+  local workDir="${1:-$(pwd)}"
+  local videoExts=(mp4 mkv mov avi flv wmv webm mpeg mpg m4v 3gp 3g2 ts m2ts ogv)
+  local extRegex # crea la stringa "mp4\|mkv\|mov\|..."
+  extRegex="$(joinArrayBySeparator '\|' "${videoExts[@]}")"
+  # Debug printf '%s\n' "$extRegex" | sed -n '1,5p'
+  find "$workDir" -type f -iregex ".*\.\($extRegex\)$" -exec du -Sh {} +  |  sort -rh 
+}
+export -f findVideosRecursiveAndShowSize
+
+# findVideoAndFFprobeFormat "~/Video"
+findVideoAndFFprobeFormat() {
+  local workDir="${1:-$(pwd)}"
+  # Il separatore newline è indicato cosi: $'\n'
+  mapfile -d $'\n' -t files < <(findVideosRecursive "$workDir")
+  
+  # se nessun file, esci
+  [ ${#files[@]} -eq 0 ] && { echo "Nessun file trovato."; exit 0; }
+
+  for f in "${files[@]}"; do
+    ffprobe -v error -print_format csv -show_entries format=filename,duration,format_name,format_long_name,size "$f"
+  done
+}
+export -f findVideoAndFFprobeFormat
+
+# findVideoAndFFprobeStreams "~/Video"
+findVideoAndFFprobeStreams() {
+  local workDir="${1:-$(pwd)}"
+  # Il separatore newline è indicato cosi: $'\n'
+  mapfile -d $'\n' -t files < <(findVideosRecursive "$workDir")
+  
+  # se nessun file, esci
+  [ ${#files[@]} -eq 0 ] && { echo "Nessun file trovato."; exit 0; }
+
+  for f in "${files[@]}"; do
+    ffprobe -v error -print_format csv -show_entries stream=index,codec_type,codec_name,codec_long_name,width,height,channels,sample_rate "$f"  | sed "s|^stream,|stream,${f},|"  # sed usa il delimitatore "|" invece di "/"
+  done
+}
+export -f findVideoAndFFprobeStreams
+
 #Debian Security Analyzer
 debSecurityAnalyzer() {
   local distroName
