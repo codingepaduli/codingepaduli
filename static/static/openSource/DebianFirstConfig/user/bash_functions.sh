@@ -324,7 +324,6 @@ export -f debSecurityAnalyzer
 # sqliteImportCsvAndExecuteQuery "" *.csv
 # sqliteImportCsvAndExecuteQuery "SELECT 'OK';" *.csv
 # sqliteImportCsvAndExecuteQuery "SELECT * FROM t1 INNER JOIN t2 ON t1.a = t2.b;" *.csv
-.mode csv
 
 sqliteImportCsvAndExecuteQuery() {
   local query="${1:-SELECT 'OK';}"
