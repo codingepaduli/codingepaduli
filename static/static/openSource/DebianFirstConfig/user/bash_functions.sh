@@ -251,17 +251,20 @@ findVideosRecursiveAndShowSize() {
 }
 export -f findVideosRecursiveAndShowSize
 
-# findVideoAndFFprobeFormat "~/Video"
+# findVideoAndFFprobeFormat "LABEL" "~/Video"
 findVideoAndFFprobeFormat() {
-  local workDir="${1:-$(pwd)}"
+  local label="${1:-LABEL}"
+  local workDir="${2:-$(pwd)}"
   # Il separatore newline è indicato cosi: $'\n'
   mapfile -d $'\n' -t files < <(findVideosRecursive "$workDir")
   
   # se nessun file, esci
   [ ${#files[@]} -eq 0 ] && { echo "Nessun file trovato."; exit 0; }
 
+  # BUG ffprobe doesn't respect the order of entries to show
+  echo "label,type,filename,format_name,format_long_name,duration,size"
   for f in "${files[@]}"; do
-    ffprobe -v error -print_format csv -show_entries format=filename,duration,format_name,format_long_name,size "$f"
+    ffprobe -v error -pretty -print_format csv -show_entries format=format_name,format_long_name,duration,size "$f"  | sed "s|^format,|${label},format,${f},|"  # sed usa il delimitatore "|" invece di "/"
   done
 }
 export -f findVideoAndFFprobeFormat
@@ -275,8 +278,10 @@ findVideoAndFFprobeStreams() {
   # se nessun file, esci
   [ ${#files[@]} -eq 0 ] && { echo "Nessun file trovato."; exit 0; }
 
+  # BUG ffprobe doesn't respect the order of entries to show
+  echo "type,filename,index,codec_name,codec_long_name,codec_type,time_base,bit_rate,max_bit_rate"
   for f in "${files[@]}"; do
-    ffprobe -v error -print_format csv -show_entries stream=index,codec_type,codec_name,codec_long_name,width,height,channels,sample_rate "$f"  | sed "s|^stream,|stream,${f},|"  # sed usa il delimitatore "|" invece di "/"
+    ffprobe -v error -print_format csv -show_entries stream=index,codec_name,codec_long_name,codec_type,time_base,bit_rate,max_bit_rate "$f"  | sed "s|^stream,|stream,${f},|"  # sed usa il delimitatore "|" invece di "/"
   done
 }
 export -f findVideoAndFFprobeStreams
