@@ -318,6 +318,55 @@ export -f debSecurityAnalyzer
 # renice -n 5 -p 1234  : cambia la priorità a 5 (bassa)
 
 ####################################
+# sqlite                           #
+####################################
+
+# sqliteImportCsvAndExecuteQuery "" *.csv
+# sqliteImportCsvAndExecuteQuery "SELECT 'OK';" *.csv
+# sqliteImportCsvAndExecuteQuery "SELECT * FROM t1 INNER JOIN t2 ON t1.a = t2.b;" *.csv
+.mode csv
+
+sqliteImportCsvAndExecuteQuery() {
+  local query="${1:-SELECT 'OK';}"
+  shift
+
+  if [ $# -lt 1 ]; then
+    echo "Usage: sqliteImportCsvAndExecuteQuery \"SQL_QUERY\" file1.csv [file2.csv ...]" >&2
+    return 1
+  fi
+
+  query="${query%"${query##*[![:space:]]}"}"  # rimuove spazi finali
+  if [[ $query != *';' ]]; then
+    echo "Errore: la query non termina con ';'" >&2
+    return 1
+  fi
+
+  # Espandi percorsi assoluti
+  local imports
+  imports+=(".mode csv")
+
+  for file in "$@"; do
+    local filename="${file%.*}"   # doc.txt -> doc
+    imports+=(".import $(realpath "$file") $filename")
+  done
+
+  # imports+=( ".schema" )
+  # imports+=( ".tables" )
+  imports+=( ".headers ON") # header CSV
+  imports+=( " $query" )
+  imports+=( ".quit" )
+
+  local sqlCommands
+  sqlCommands="$(printf '%s\n' "${imports[@]}")"
+
+  printf '%s\n' "$sqlCommands"
+  
+  # Non rimuovere \n finale
+  printf '%s\n' "$sqlCommands" | sqlite3 :memory:
+}
+export -f sqliteImportCsvAndExecuteQuery
+
+####################################
 # String utils                     #
 ####################################
 
