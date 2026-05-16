@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-05-08
-publishdate: 2026-05-08
-lastmod: 2026-05-08
+date: 2026-05-15
+publishdate: 2026-05-15
+lastmod: 2026-05-15
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -87,6 +87,7 @@ summary: "Set di link relativi al coding"
 [Docker Compose](https://dev.to/mitul3737/docker-series-part-14-docker-compose-2pcd) - Docker series (Part 14): Docker Compose - DEV Community\
 [hemashushu/docker-archlinux-gui](https://github.com/hemashushu/docker-archlinux-gui) - This tutorial introduces a method for running GUI applications directly in containers (such as Docker and Podman) without installing any additional software.\
 [kernalix7/winpodx](https://github.com/kernalix7/winpodx) - Windows pod system for Linux · GitHub\
+[JSLinux](https://bellard.org/jslinux/) - Run Linux or other Operating Systems in your browser\
 
 ### Shell, CI, CD ed automazione
 
@@ -154,6 +155,8 @@ summary: "Set di link relativi al coding"
 [Black Forest Labs](https://github.com/black-forest-labs/flux) - Production-grade AI image generation and editing model with 4MP photorealistic output and multi-reference control\
 [Black Forest Labs](https://blog.fal.ai/flux-the-largest-open-sourced-text2img-model-now-available-on-fal/) - Announcing Flux, The Next Leap in Text-to-Image Models\
 [Copyrights](https://legallayer.substack.com/p/who-owns-the-claude-code-wrote) - Who Owns the Code Claude Wrote? - by Sena Evren\
+[Self-Hosted AI Ollama](https://dev.to/lyraalishaikh/self-hosted-ai-in-2026-automating-your-linux-workflow-with-ollama-and-bash-3ibh) - Automating Your Linux Workflow with Ollama and Bash - DEV Community\
+[Kiro from AWS](https://kiro.dev/) - Bring engineering rigor to agentic development\
 
 ### Database SQL e NoSql - GraphQL
 
@@ -172,7 +175,7 @@ summary: "Set di link relativi al coding"
 [incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
 [Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
 [SQLite](https://antonz.org/sqlite-is-not-a-toy-database/) - import from JSON, CSV and more\
-[GitHub](https://github.com/phiresky/sql.js-httpvfs) - phiresky/sql.js-httpvfs: Hosting read-only SQLite databases on static file hosters like Github Pages\
+[phiresky/sql.js-httpvfs: Hosting read-only SQLite databases on static file hosters like Github Pages](https://github.com/phiresky/sql.js-httpvfs) - \
 [PRQL](https://prql-lang.org/) - Pipelined Relational Query Language compiles to SQL\
 [How to read MySQL EXPLAINs — PlanetScale](https://planetscale.com/blog/how-read-mysql-explains) - \
 [Read & Export SQLite Data in a JavaScript-enabled Browser Locally | by Charmaine Chui | Webtips | Medium](https://medium.com/weekly-webtips/read-export-sqlite-data-in-a-javascript-enabled-browser-locally-b655deda879d) - \
@@ -323,6 +326,7 @@ summary: "Set di link relativi al coding"
 [apt](https://dev.to/lyraalishaikh/stop-letting-apt-autoremove-surprise-you-practical-apt-mark-for-debian-and-ubuntu-3fmj) - Stop Letting `apt autoremove` Surprise You: Practical `apt-mark` for Debian and Ubuntu - DEV Community\
 [Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
 [Cockpit](http://localhost:9090/system) - solydxk\
+[mambuzrrr/Xyra-Core](https://github.com/mambuzrrr/Xyra-Core) - A modern desktop-style SSH/SFTP dashboard for Linux servers and VPS workflows. · GitHub\
 
 #### Hardware
 
@@ -360,6 +364,7 @@ summary: "Set di link relativi al coding"
 [Graphic Tablets](https://dev.to/zakariachahboun/gaomon-finally-released-full-featured-linux-drivers-for-their-graphic-tablets-4e0l) - Gaomon Finally Released Full-Featured Linux Drivers for Their Graphic Tablets - DEV Community\
 [Linux PC](https://it.starlabs.systems/?shpxid=1836ba03-95c4-4a00-8a3d-da69ef21fa20) - Premium Linux laptops and mini PCs | Star Labs – Star Labs®\
 [Introducing the PinePhone](https://kde.org/announcements/pinephone-plasma-mobile-edition/) - KDE Community edition\
+[Plasma Bigscreen](https://plasma-bigscreen.org/it/) - Un'interfaccia TV open source per Linux. La tua TV, a modo tuo.\
 
 #### Old computer
 
@@ -437,6 +442,7 @@ summary: "Set di link relativi al coding"
 [extension-js/extension.js](https://github.com/extension-js/extension.js) - The cross-browser extension framework. · GitHub\
 [sonnyp/Junction](https://github.com/sonnyp/Junction) - Application/browser chooser · GitHub\
 [Firefox](http://blog.vlad1.com/) - Blog Vladimir\
+[d3vr/yt-siphon](https://github.com/d3vr/yt-siphon) - Firefox add-on to open YouTube videos in open alternative frontends (e.g: Piped)\
 
 ### Network
 
@@ -454,6 +460,7 @@ summary: "Set di link relativi al coding"
 [Setting Up a WireGuard VPN Client on Linux](https://dev.to/joshrothe/setting-up-a-wireguard-vpn-client-on-linux-3aan) - DEV Community\
 [WireGuard topologies for self-hosting at home](https://garrido.io/notes/wireguard-topologies-for-self-hosting-at-home/#fnref:2) - \
 [WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
+[IP Configuration](https://dev.to/manoj_kumarvemula_31e045/ip-configuration-in-linux-a-beginner-friendly-guide-31an) - in Linux: A Beginner-Friendly Guide - DEV Community\
 
 ### programmi
 
@@ -479,12 +486,11 @@ summary: "Set di link relativi al coding"
 
 #### youtube
 
-[YouTube](https://blog.0x7d0.dev/history/how-they-bypass-youtube-video-download-throttling/) - How They Bypass YouTube Video Download Throttling | 0x7D0\
-[d3vr/yt-siphon: Firefox add-on to open YouTube videos in open alternative frontends (e.g: Piped)](https://github.com/d3vr/yt-siphon) - \
 [NotJoeMartinez/yt-fts](https://github.com/NotJoeMartinez/yt-fts) - YouTube Full Text Search - Search all of a YouTube channel from the command line\
 [obra/Youtube2Webpage: I learn much better from text than from videos](https://github.com/obra/Youtube2Webpage) - \
 [TL;DW](https://tldw.tube/) - Too Long; Didn't Watch!\
 [you-tldr](https://www.you-tldr.com/) - Fetch YouTube transcripts in your native language\
+[YouTube](https://blog.0x7d0.dev/history/how-they-bypass-youtube-video-download-throttling/) - How They Bypass YouTube Video Download Throttling | 0x7D0\
 
 #### multimedia
 
@@ -586,9 +592,9 @@ summary: "Set di link relativi al coding"
 [The PGP Problem](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html) - Serious cryptographers don’t spend much time publishing on PGP anymore\
 [Signal](https://signal.org/bigbrother/central-california-grand-jury/) - Government Requests - Grand jury subpoena for Signal user data, Central District of California\
 [Nabu Casa](https://www.nabucasa.com/) -  Control your Home Assistant from anywhere\
-[GitHub](https://github.com/ZSWatch/ZSWatch) - ZSWatch/ZSWatch: ZSWatch - the Open Source Zephyr™ based Smartwatch, including both HW and FW.\
-[GitHub](https://github.com/mrash/psad) - mrash/psad: psad: Intrusion Detection and Log Analysis with iptables\
-[GitHub](https://github.com/GyulyVGC/sniffnet) - GyulyVGC/sniffnet: Comfortably monitor your Internet traffic 🕵️‍♂️\
+[ZSWatch/ZSWatch: ZSWatch](https://github.com/ZSWatch/ZSWatch) - the Open Source Zephyr™ based Smartwatch, including both HW and FW.\
+[mrash/psad:](https://github.com/mrash/psad) - Intrusion Detection and Log Analysis with iptables\
+[GyulyVGC/sniffnet: Comfortably monitor your Internet traffic 🕵️‍♂️](https://github.com/GyulyVGC/sniffnet) - \
 [SSH Configuration Auditor](https://www.ssh-audit.com/) - \
 [Public Money, Public Code](https://publiccode.eu/en/) - \
 [Memory Safe Languages](https://security.googleblog.com/2022/12/memory-safe-languages-in-android-13.html?m=1) - A significant drop in memory safety vulnerabilities and an associated drop in the severity of our vulnerabilities thanks to memory Safe Languages - Google Online Security Blog\
@@ -605,7 +611,7 @@ summary: "Set di link relativi al coding"
 [Brave browser](https://github.com/brave/brave-browser/issues/9929) - it doesn't remove "Top Sites" in the homepage when clearing "History" . · Issue #9929 · brave/brave-browser\
 [ClearURLs Addon](https://github.com/ClearURLs/Addon/issues/102) - Unavailable on Google Chrome · Issue #102\
 [0x192/universal-android-debloater](https://github.com/0x192/universal-android-debloater) - Cross-platform GUI written in Rust using ADB to debloat non-rooted android devices. Improve your privacy, the security and battery life of your device.\
-[GitHub](https://github.com/Genymobile/scrcpy) - Genymobile/scrcpy: Display and control your Android device\
+[Genymobile/scrcpy: Display and control your Android device](https://github.com/Genymobile/scrcpy) - \
 [Web fingerprinting is worse than I thought](https://www.bitestring.com/posts/2023-03-19-web-fingerprinting-is-worse-than-I-thought.html) - Bitestring's Blog\
 [Fairphone 3 gets seven years of updates, besting every other Android OEM](https://arstechnica.com/gadgets/2023/07/fairphone-3-gets-seven-years-of-updates-besting-every-other-android-oem/) - Ars Technica\
 [Ask HN: IP cameras that don't require an app or internet? | Hacker News](https://news.ycombinator.com/item?id=36447024) - \
@@ -637,15 +643,15 @@ summary: "Set di link relativi al coding"
 [AsciiDocR](https://github.com/delfanbaum/asciidocr) - delfanbaum/asciidocr: A pure-rust CLI and library for processing Asciidoc files.\
 [MarkdownDown](https://markdowndown.vercel.app/) - Convert any webpage to a clean markdown doc\
 [Markdown, Asciidoc, or reStructuredText](https://www.dewanahmed.com/markdown-asciidoc-restructuredtext/) - a tale of docs-as-code - Dewan’s Blog\
-[Laying Out a Print Book With CSS | Ian G McDowell's Blog](https://iangmcdowell.com/blog/posts/laying-out-a-book-with-css/) - \
-[Using Pandoc and Typst to Produce PDFs](https://imaginarytext.ca/posts/2024/pandoc-typst-tutorial/) - \
+[Print Book With CSS](https://iangmcdowell.com/blog/posts/laying-out-a-book-with-css/) - Laying Out a Print Book With CSS | Ian G McDowell's Blog\
+[Typst](https://imaginarytext.ca/posts/2024/pandoc-typst-tutorial/) - Using Pandoc and Typst to Produce PDFs\
 [typst/typst](https://github.com/typst/typst) - A new markup-based typesetting system that is powerful and easy to learn.\
-[How I use Kate Editor](https://akselmo.dev/posts/how-i-use-kate-editor/) - \
-[Mermaid diagrams can be displayed within Markdown · Issue #372 · github/roadmap](https://github.com/github/roadmap/issues/372) - \
-[dunyakirkali/letterpress](https://github.com/dunyakirkali/letterpress) - a project aimed at simplifying the self-publishing process for books\
-[vale-cli/vale](https://github.com/vale-cli/vale) - :pencil: A markup-aware linter for prose built with speed and extensibility in mind. · GitHub\
+[Kate Editor](https://akselmo.dev/posts/how-i-use-kate-editor/) - How I use Kate Editor\
+[Mermaid diagrams](https://github.com/github/roadmap/issues/372) - can be displayed within Markdown · Issue #372 · github/roadmap\
+[vale-cli/vale](https://github.com/vale-cli/vale) - pencil: A markup-aware linter for prose built with speed and extensibility in mind. · GitHub\
 [dunyakirkali/letterpress](https://github.com/dunyakirkali/letterpress/) - a project aimed at simplifying the self-publishing process for books\
 [Writing](https://blog.incrementalforgetting.tech/p/sculpting-a-book-the-chisel) - Writing a book in the age of open source - by Dunya Kirkali\
+[OlaProeis/Ferrite](https://github.com/OlaProeis/Ferrite) - A fast, lightweight text editor for Markdown, JSON, YAML, and TOML files. Built with Rust and egui for a native, responsive experience. · GitHub\
 
 #### Hugo static site generator
 
@@ -680,7 +686,6 @@ summary: "Set di link relativi al coding"
 [ken-matsui/jyt](https://github.com/ken-matsui/jyt) - A tridirectional converter between Json, Yaml, and Toml\
 [TomWright/dasel](https://github.com/TomWright/dasel) - Select, put and delete data from JSON, TOML, YAML, XML, INI, HCL and CSV files with a single tool. Also available as a go mod. · GitHub\
 [JSON Path](https://bump.sh/blog/how-to-use-json-path/) - How to use JSON Path · Bump.sh\
-[Mermaid diagrams can be displayed within Markdown · Issue #372 · github/roadmap](https://github.com/github/roadmap/issues/372) - \
 
 ### UML, architetture ed ingegneria del software
 
@@ -755,6 +760,7 @@ summary: "Set di link relativi al coding"
 [A11Y 101: Evaluation tools](https://dev.to/dailydevtips1/a11y-101-evaluation-tools-38km) - DEV Community\
 [output e A11Y](https://denodell.com/blog/html-best-kept-secret-output-tag) - HTML’s Best Kept Secret: The &lt;output&gt; Tag — Den Odell\
 [Basic](https://gameaccessibilityguidelines.com/basic/) - Game Accessibility Guidelines\
+[elemento HTML &lt;geolocation&gt;  |  Blog  |  Chrome for Developers](https://developer.chrome.com/blog/geolocation-html-element?hl=it) - \
 
 #### CSS
 
@@ -836,6 +842,7 @@ summary: "Set di link relativi al coding"
 [LibreTranslate API](https://libretranslate.com/#) - Free and Open Source Machine Translation API\
 [SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
+[Video.js](https://videojs.org/) - Open Source Video Player\
 
 ##### JS Object Oriented
 

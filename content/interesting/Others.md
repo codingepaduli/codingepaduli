@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2026-05-08
-publishdate: 2026-05-08
-lastmod: 2026-05-08
+date: 2026-05-15
+publishdate: 2026-05-15
+lastmod: 2026-05-15
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -187,6 +187,8 @@ summary: "Set di link interessanti"
 [DYNITchannel](http://www.youtube.com/user/DYNITchannel#p/p) - YouTube\
 [webcompat/web-bugs](https://github.com/webcompat/web-bugs/) - A place to report bugs on websites\
 [OpenStreetMap](https://opensource.com/article/21/8/openstreetmap) - how do I contribute?\
+[European Alternatives](https://european-alternatives.eu/) - European alternatives for digital products\
+[Flight Viz](https://flight-viz.com/) - Real-Time 3D Flight Tracker | Live Flight Map & Airport Departures\
 
 ### History
 
@@ -238,6 +240,7 @@ summary: "Set di link interessanti"
 [Cardito Parco Taglia](https://fondoambiente.it/luoghi/parco-taglia?ldc) - Luogo FAI\
 [Oasi della caccia](https://www.vallesele.it/oasi-valle-della-caccia-senerchia.htm) - Oasi WWF a Senerchia AV\
 [Webcam a Latina](https://www.skylinewebcams.com/it/webcam/italia/lazio/latina.html) - Serapo Formia Gaeta Sperlonga Terracina\
+[Eventi Caserta](https://www.solocaserta.it/eventi/) - Eventi Sagre e Concerti 2026 a Caserta e Provincia | SoloCaserta\
 [Explore interesting places nearby listed](https://en.nearbywiki.org/map/discover/30555931) - \
 
 ### Poems

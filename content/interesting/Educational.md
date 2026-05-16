@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2026-05-08
-publishdate: 2026-05-08
-lastmod: 2026-05-08
+date: 2026-05-15
+publishdate: 2026-05-15
+lastmod: 2026-05-15
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -21,13 +21,13 @@ summary: "Set di link relativi all'istruzione di base"
 
 [Cosvitec](https://www.cosvitec.eu/erasmus/) - Progetto ERASMUS+\
 [DM_14_2024](https://www.istruzioneer.gov.it/wp-content/uploads/2024/06/CERTIFICAZIONE_DM_14_2024.pdf) - Modelli di certificazione competenze.pdf\
-[I sei giorni di ferie nei periodi di attività didattica equiparati ai tre gg di permesso retribuito . Due sentenze – Gilda degli insegnanti di Lucca e Massa Carrara](https://www.gildalucca.it/i-sei-giorni-di-ferie-nei-periodi-di-attivita-didattica-equiparati-ai-tre-gg-di-permesso-retribuito-due-sentenze/) - \
-[Ore collegio docenti e consigli di classe proporzionale al numero di ore a contratto. Sentenza](https://www.orizzontescuola.it/attivita-funzionali-allinsegnamento-docente-su-piu-scuole-riduzione-proporzionale-sia-ore-per-collegio-docenti-che-per-consigli-di-classe/) - \
-[Visite fiscali ripetute e restrizioni su chi è escluso da obbligo di reperibilità. Orari invariati e visite anche di domenica](https://www.orizzontescuola.it/guida/visite-fiscali-ripetute-restrizioni-escluso-obbligo-reperibilita-orari-invariati-visite-anche-domenica/) - Orizzonte Scuola\
-[Procedure concorsuali docenti: TUTTE LE COMUNICAZIONI – Ministero dell’Istruzione, dell’Università e della Ricerca – Ufficio Scolastico Regionale per la Lombardia](http://usr.istruzione.lombardia.gov.it/procedure-concorsuali-docenti-tutte-le-comunicazioni/) - \
-[Docenti assenti alle riunioni pomeridiane: come devono giustificare](https://www.orizzontescuola.it/guida/docenti-assenti-alle-riunioni-pomeridiane-come-devono-giustificare/) - \
-[Docente o ATA assente a causa del maltempo, come giustificare](https://www.orizzontescuola.it/guida/assenza-per-causa-di-forza-maggiore-come-giustificare/) - \
-[Stipendio, come leggere il cedolino?](https://www.orizzontescuola.it/guida/come-leggere-il-cedolino-dello-stipendio-la-guida-gratuita/) - Orizzonte Scuola\
+[permesso retribuito](https://www.gildalucca.it/i-sei-giorni-di-ferie-nei-periodi-di-attivita-didattica-equiparati-ai-tre-gg-di-permesso-retribuito-due-sentenze/) - I sei giorni di ferie nei periodi di attività didattica equiparati ai tre gg di permesso retribuito . Due sentenze – Gilda degli insegnanti di Lucca e Massa Carrara\
+[Ore](https://www.orizzontescuola.it/attivita-funzionali-allinsegnamento-docente-su-piu-scuole-riduzione-proporzionale-sia-ore-per-collegio-docenti-che-per-consigli-di-classe/) - ore collegio docenti e consigli di classe proporzionale al numero di ore a contratto. Sentenza\
+[Visite fiscali](https://www.orizzontescuola.it/guida/visite-fiscali-ripetute-restrizioni-escluso-obbligo-reperibilita-orari-invariati-visite-anche-domenica/) - ripetute e restrizioni su chi è escluso da obbligo di reperibilità. Orari invariati e visite anche di domenica - Orizzonte Scuola\
+[Procedure concorsuali docenti](http://usr.istruzione.lombardia.gov.it/procedure-concorsuali-docenti-tutte-le-comunicazioni/) - TUTTE LE COMUNICAZIONI – Ministero dell’Istruzione, dell’Università e della Ricerca – Ufficio Scolastico Regionale per la Lombardia\
+[Docenti assenti alle riunioni pomeridiane](https://www.orizzontescuola.it/guida/docenti-assenti-alle-riunioni-pomeridiane-come-devono-giustificare/) - come devono giustificare\
+[Docente o ATA assente](https://www.orizzontescuola.it/guida/assenza-per-causa-di-forza-maggiore-come-giustificare/) - a causa del maltempo, come giustificare\
+[cedolino](https://www.orizzontescuola.it/guida/come-leggere-il-cedolino-dello-stipendio-la-guida-gratuita/) - Stipendio, come leggere il cedolino? - Orizzonte Scuola\
 [Dirigente scolastico contro permessi e certificati medici](https://www.orizzontescuola.it/dirigente-concede-permessi-solo-per-grava-malattia-e-chiede-ancora-certificato-inviato-per-raccomandata-uil-calabria-interpretazione-creativa/) - \
 [Permessi personali e per visite mediche. Alcune indicazioni utili](https://www.orizzontescuola.it/guida/permessi-personali-e-per-visite-mediche-alcune-indicazioni-utili/) - \
 [Permesso retribuito personale e familiare](https://www.orizzontescuola.it/guida/permesso-retribuito-personale-e-familiare-autocertificazione/) - autocertificazione\
@@ -50,8 +50,9 @@ summary: "Set di link relativi all'istruzione di base"
 [PCTO](https://www.orizzontescuola.it/percorsi-per-le-competenze-trasversali-e-per-lorientamento-pcto-in-allegato-griglia-di-valutazione-e-scheda-valutazione-dei-rischi-per-lattivita-di-pcto/) - Percorsi per le competenze trasversali e per l’orientamento-PCTO: in allegato griglia di valutazione e scheda valutazione dei rischi per l’attività di PCTO - Orizzonte Scuola Notizie\
 [Studenti con carenze formative](https://www.orizzontescuola.it/studenti-con-carenze-formative-recupero-ruolo-genitori-certificazione-esito-certificazione-esempio-di-regolamento-da-scaricare/) - recupero, ruolo genitori, certificazione esito, certificazione. Esempio di regolamento da scaricare - Orizzonte Scuola Notizie\
 [6 giorni di ferie commutati in permessi](https://www.orizzontescuola.it/6-giorni-di-ferie-dopo-i-3-giorni-per-motivi-personali-e-familiari-i-casi-in-cui-e-possibile-non-trovarsi-il-sostituto/) - 3 di permessi per motivi personali e familiari - Orizzonte Scuola Notizie\
-[Tribunale Vicenza vieta i licenziamenti entro un anno dal matrimonio](http://www.ilfattoquotidiano.it/2017/04/30/vicenza-licenziato-alcune-settimane-dopo-le-nozze-reintegrato-dal-giudice-grazie-a-una-legge-del-1963-pensata-per-le-donne/3553279/) - \
+[matrimonio](http://www.ilfattoquotidiano.it/2017/04/30/vicenza-licenziato-alcune-settimane-dopo-le-nozze-reintegrato-dal-giudice-grazie-a-una-legge-del-1963-pensata-per-le-donne/3553279/) - Tribunale Vicenza vieta i licenziamenti entro un anno dal matrimonio\
 [In caso di licenziamento](http://www.ilfattoquotidiano.it/2016/10/05/licenziati-in-tronco-come-evitare-di-commettere-reati-informatici/3075424/) - Accesso ai propri dati sul sistema informatico dell azienda\
+[Permessi retribuiti, autocertificazione](https://www.orizzontescuola.it/permessi-retribuiti-autocertificazione-ecco-perche-i-docenti-non-sono-soggetti-a-controlli/) -  ecco perché i docenti non sono soggetti a controlli\
 
 ### Lezioni
 
@@ -247,15 +248,16 @@ summary: "Set di link relativi all'istruzione di base"
 
 [XAMPP](https://www.youtube.com/watch?v=AiZFtd8mLBE) - web server Apache / MySQL / PHP con XAMPP su Windows - YouTube\
 [PHP](https://www.html.it/guide/guida-php-di-base/) - guida al linguaggio lato server | HTML.it\
-[Corso Php MySQL Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - YouTube\
-[MYSQL CORSO BASE (con PhpMyAdmin)](https://www.youtube.com/playlist?list=PLaguh5H6_Ux1e7JS7Ly3SCTuKWL-0CLDV) - YouTube\
-[Corso Wordpress Completo 2021](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-uRmdwRr05WOq_ZEdbbhEF) - YouTube\
-[Top 9 Lessons learned in 12 years as a software developer.](https://dev.to/tyaga001/top-9-lessons-learned-in-12-years-as-a-software-developer-4o9h) - DEV Community\
-[Corso PHP/MYSQL Tutorial Italiano 03](https://www.youtube.com/watch?v=2BMEAsJwBxI) - Connessione al Database\
-[Corso PHP/MYSQL Tutorial Italiano 08](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Selezionare dati con SELECT - YouTube\
-[Corso PHP MySql](https://www.youtube.com/watch?v=QZo3LBajSds&list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - \
-[digital marketing con Google](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - \
+[MYSQL](https://www.youtube.com/playlist?list=PLaguh5H6_Ux1e7JS7Ly3SCTuKWL-0CLDV) - CORSO BASE (con PhpMyAdmin) - YouTube\
+[Wordpress](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-uRmdwRr05WOq_ZEdbbhEF) - Corso Wordpress Completo 2021 - YouTube\
+[Lessons learned](https://dev.to/tyaga001/top-9-lessons-learned-in-12-years-as-a-software-developer-4o9h) - Top 9 Lessons learned in 12 years as a software developer. - DEV Community\
+[PHP/MYSQL](https://www.youtube.com/watch?v=2BMEAsJwBxI) - Corso PHP/MYSQL Tutorial Italiano 03 - Connessione al Database\
+[PHP/MYSQL](https://www.youtube.com/watch?v=gbmnWbDnoCQ) - Corso PHP/MYSQL Tutorial Italiano 08 - Selezionare dati con SELECT - YouTube\
+[PHP/MYSQL](https://www.youtube.com/playlist?list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - Completo 2021 - YouTube\
+[PHP/MYSQL](https://www.youtube.com/watch?v=QZo3LBajSds&list=PLP5MAKLy8lP-N9xzZ6485EBWEsGj1EJ5h) - Corso PHP MySql\
+[digital marketing](https://learndigital.withgoogle.com/digitaltraining/course/digital-marketing) - con Google\
 [SQL Online IDE](https://sqliteonline.com/) - Fast SQL Editor | SQL Compiler\
+[Pretty Fish](https://pretty.fish/) - A Better Mermaid Diagram Editor\
 
 #### Sistemi e reti 3 anno
 
