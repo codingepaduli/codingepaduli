@@ -286,6 +286,17 @@ findVideoAndFFprobeStreams() {
 }
 export -f findVideoAndFFprobeStreams
 
+# findVideoInDvdAndGenerateCSV "DVD2" "DvdMountPath" "outputFolder"
+# test: findVideoInDvdAndGenerateCSV "DVD2" "/media/$USER/" "$HOME/Video"
+findVideoInDvdAndGenerateCSV() {
+  local label="${1:-"DVD"}"
+  local dvdMountPath="${2:-"/media/$USER/"}"
+  local outputFolder="${3:-"$HOME/Video"}"
+  findVideoAndFFprobeFormat "$label" "$dvdMountPath" > "${outputFolder}/Format${label}.csv"
+  findVideoAndFFprobeStreams "$dvdMountPath" > "${outputFolder}/Streams${label}.csv"
+}
+export -f findVideoInDvdAndGenerateCSV
+
 #Debian Security Analyzer
 debSecurityAnalyzer() {
   local distroName
