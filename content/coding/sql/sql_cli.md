@@ -14,15 +14,34 @@ weight: 11000
 
 # La linea di comando di MySQL
 
-## Collegamento al DBMS
+## DBMS Relazionali
 
-Per collegarsi ad un DBMS MySQL è necessario avere accesso al terminale ed eseguire il comando seguente, indicando l'utente ``root`` e la password vuota (per inserirla basta premere invio):
+I RDBMS (Relational Database Management Systems) sono sistemi per memorizzare e gestire le basi di dati relazionali, che sono organizzate in tabelle e relazioni tra tabelle (le chiavi tengono traccia delle relazioni). Utilizzano il linguaggio SQL per la gestione delle basi di dati e per gestire i dati che queste contengono.
+
+Il linguaggio SQL lo si può dividere in:
+
+- DDL (Data Definition Language): definisce i comandi SQL che gestiscono **la struttura** delle basi di dati (i database, composti da tabelle, indici, viste, schemi, ...).
+- DML (Data Manipulation Language): definisce i comandi SQL per gestire **i dati memorizzati** nelle basi di dati (nei database).
+
+Tra i RDBMS più comuni abbiamo:
+
+- **Oracle Database** e **Microsoft SQL Server**, rispettivamente di Oracle srl e di Microsoft srl, sono RDBMS enterprise con funzioni avanzate per sicurezza, scalabilità e gestione di grandi carichi di lavoro.
+- **PostgreSQL**, **MySQL** e **MariaDB**: RDBMS relazionali open source avanzati, veloci e semplici da usare, ampiamente utilizzati in applicazioni web e hosting.
+- **SQLite**: un RDBMS particolare, leggero, non prevede un server (serverless) ed ogni base di dati è memorizzata in un file; E' il DBMS ideale per applicazioni locali e per mobile.
+
+## Collegamento al DBMS MySQL e MariaDB
+
+Per collegarsi ad un server RDBMS è necessario conoscere l'indirizzo del server, ad esempio ``https://192.168.1.1/`` ed avere le credenziali di accesso (``username`` e ``password``).
+
+Con queste informazioni, si può fare accesso al terminale ed eseguire il comando seguente, indicando l'utente ``root`` e la password vuota (per inserirla basta premere invio).
+
+Per MySql e MariaDB è possibile eseguire:
 
 ```bash
 mysql -u root -p
 ```
 
-Se il comando è corretto e la password inserita è valida, accederai al prompt di MySQL, che apparirà simile a questo:
+Se il comando è corretto e la password inserita è valida, si accederà al prompt, che apparirà simile a questo:
 
 ```plaintext
 mysql>
