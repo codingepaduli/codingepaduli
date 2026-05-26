@@ -31,131 +31,140 @@ Tra i RDBMS più comuni abbiamo:
 
 ## Creazione database
 
-Per creare un file contenente il database tramite terminale, è possibile eseguire:
+In sqlite la creazione e cancellazione di un database corrisponde alla creazione e cancellazione di un file.
+
+Il database va creato con tramite terminale con il comando:
 
 ```bash
 sqlite3 /percorso/al/file.db
 ```
 
-Se il comando è corretto, si accederà al prompt, che apparirà simile a questo:
+Con questo comando, si entra anche nella shell di SQLite, si può uscire scrivendo ``.exit``:
 
-```plaintext
+```text
+SQLite version 3.x.x
+Enter ".help" for usage hints.
 sqlite>
 ```
 
-SQLite non prevede l'istruzione di creazione database, perchè il database è un file.
+Cancellando il file ``nome_db.sqlite``, si cancella anche il database.
 
-```sql
-CREATE DATABASE gaming;
+## Comandi con SQLite
+
+I comandi si possono invocare in due modalità:
+
+- eseguendoli direttamente dalla linea di comando:
+
+```bash
+sqlite3 nome_db.sqlite .schema
 ```
 
-## Crea la tabella
+- entrando nella shell e poi eseguendo i comandi:
 
-Per creare una nuova tabella, utilizza il comando CREATE TABLE. Ecco un esempio di come creare una tabella chiamata videogiochi:
+```bash
+sqlite3 nome_db.sqlite
+```
+
+Entrati nella shell, si eseguono i comandi:
+
+```text
+SQLite version 3.x.x
+Enter ".help" for usage hints.
+sqlite> .schema
+```
+
+## Gestione tabelle
+
+Comando per creare una tabella:
 
 ```sql
-CREATE TABLE videogiochi (
-    ID_Videogioco INTEGER PRIMARY KEY AUTOINCREMENT,
-    Titolo TEXT NOT NULL,
-    Genere TEXT,
-    Data_Uscita INTEGER,
-    Piattaforma TEXT
+CREATE TABLE tabella (
+  id INTEGER PRIMARY KEY,
+  numInt integer INTEGER,
+  numReal real REAL,
+  campi_binari BLOB, -- campo binario
+  numero NUMERIC,
+  testo TEXT,
+  date_time TEXT   -- campo TEXT anche per date, formato 'YYYY-MM-DD HH:MM:SS'
 ) STRICT;
 ```
 
-Nota: La parola ``STRICT`` impedisce dichiarazioni ambigue di tipo, assicura maggiore rigidità tipologica e prevedibilità dei dati.
+L'istruzione **STRICT** indica che si vuole una validazione stringente dei tipi e dei dati inseriti.
 
-Quando crei una tabella in SQLite utilizzando il comando ``CREATE TABLE``, se l'operazione ha successo riceverai un messaggio di conferma che appare come segue:
-
-```plaintext
-Query OK, 0 rows affected (0.01 sec)
-```
-
-Se c'è un errore di sintassi nel comando SQL, riceverai un messaggio di errore che indica la linea in cui è stato riscontrato l'errore. Ad esempio:
-
-```plaintext
-You have an error in your SQL syntax at line X;
-```
-
-## Visualizza schema e tabelle
-
-Per visualizzare lo schema del database, utilizza il comando:
+Cancellare una tabella:
 
 ```sql
-.schema
+DROP TABLE nome_tabella;
 ```
 
-Per visualizzare le tabelle presenti nel database selezionato, utilizza il comando:
+Rinominare una tabella:
 
 ```sql
-.tables
+ALTER TABLE nome_tabella RENAME TO nuovo_nome_tabella;
 ```
 
-Puoi utilizzare il comando ``.schema`` seguito dal nome della tabella per visualizzare la struttura della tabella, inclusi i nomi dei campi, i tipi di dati e altre informazioni.
+Aggiungere una colonna ad una tabella:
 
 ```sql
-.schema videogiochi;
+ALTER TABLE tipi_unici_sqlite ADD COLUMN nuova_text TEXT;
 ```
 
-## Inserire un dato nella tabella
+La cancellazione di una colonna di una tabella **non è supportata**.
 
-Per inserire un dato nella tabella del database selezionato, utilizza il comando:
+## Operazioni sui dati
+
+Le operazioni sui dati sono dette CRUD: Create (insert), Read, Update e Delete.
 
 ```sql
-INSERT INTO videogiochi (Titolo, Genere, Data_Uscita, Piattaforma)
-VALUES ('The Legend of Zelda', 'Avventura', 2017, 'Nintendo');
+INSERT INTO tabella (colonna1, colonna2)
+VALUES (valore1, valore2);
 ```
 
-## Visualizzare i dati presenti nella tabella
-
-Per visualizzare i dati presenti nella tabella del database selezionato, utilizza il comando:
+SQLite **non supporta** la sintassi ``INSERT INTO tabella SET colonna1=valore1;``.
 
 ```sql
-SELECT * FROM videogiochi;
+SELECT * FROM tabella WHERE condizione;
 ```
 
-## Consegnare lo script sql
-
-Tutti i comandi devono essere salvati in uno script sql, ovvero un file di testo contenente i comandi SQL, da consegnare all'amministratore del DBMS.
-
-E' possibile inserire i commenti usando il doppio trattino:
-
 ```sql
--- autore: mario rossi 
--- data: 28-12-2026
-
-CREATE TABLE videogiochi (
-    ID_Videogioco INT AUTO_INCREMENT PRIMARY KEY,
-    Titolo VARCHAR(255) NOT NULL,
-    Genere VARCHAR(100),
-    Data_Uscita INT,
-    Piattaforma VARCHAR(100)
-);
-
--- inserisco i giochi
-INSERT INTO videogiochi (Titolo, Genere, Data_Uscita, Piattaforma)
-VALUES ('The Legend of Zelda', 'Avventura', 2017, 'Nintendo');
-
--- query tutti i giochi
-SELECT * FROM videogiochi;
-
--- mostra database e tabelle
-.schema
-.tables
+UPDATE tabella SET colonna1 = valore1 WHERE condizione;
 ```
 
-## Eseguire uno script sql
-
-Per eseguire uno script sql, ovvero un file contenente i comandi SQL, è necessario assicurarsi di essere nella cartella corretta:
-
 ```sql
-.read script.sql
+DELETE FROM tabella; -- cancella tutti i dati
+DELETE FROM tabella WHERE condizione; -- cancella in base alla condizione
 ```
 
-## Uscire dall'ambiente sql
+## Operazioni sui vincoli
 
-Per scollegarsi dal DBMS SQLite è necessario eseguire il comando seguente:
+SQLite non supporta la modifica dei vincoli su una tabella. Queste istruzioni non sono valide:
 
 ```sql
-.quit;
+ALTER TABLE table_name ADD CONSTRAINT pk_name PRIMARY KEY (col);
+ALTER TABLE table_name DROP CONSTRAINT pk_name;
+ALTER TABLE table_name ADD CONSTRAINT uq_name UNIQUE (col);
+ALTER TABLE table_name DROP CONSTRAINT uq_name;
+```
+
+Le operazioni vanno fatte direttamente nell'istruzione di create table.
+
+```sql
+CREATE TABLE tabella (
+  ...
+  CONSTRAINT pk_esempio PRIMARY KEY (col_a, col_b),
+  CONSTRAINT uq_esempio UNIQUE (col_1, col_2),
+  CONSTRAINT chk_esempio CHECK (col_b >= col_a)
+) STRICT;
+```
+
+## CTE
+
+```sql
+WITH nome_query AS (
+  SELECT ...
+  FROM ...
+)
+SELECT *
+FROM nome_query
+WHERE condizione;
 ```
