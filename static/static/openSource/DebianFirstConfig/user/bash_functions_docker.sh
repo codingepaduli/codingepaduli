@@ -236,9 +236,14 @@ uglifyjs() {
 export -f uglifyjs
 
 # yt-dl
-# Test: youTubeDownload URL
+# Run: youTubeDownload URL_PLAYLIST
+# Run: youTubeDownload URL_VIDEO
+## NOTE: yt-dl scarica separatamente le tracce video e audio 
+## quando il formato richiesto è in DASH/HLS.
+## A seconda delle circostanze, mp4 è audio, webm è video.
+## yt-dl fa il merge nel file webm di audio e video.
 youTubeDownload() {
-  dockerContainer --name youtube-dl  -e PUID="$UID" -e PGID="$(id -g)"  mikenye/youtube-dl:2023.02.17_linux_amd64  "$@"
+  dockerContainer --name youtube-dl jauderho/yt-dlp:2026.03.17 "$@"
 }
 export -f youTubeDownload
 
