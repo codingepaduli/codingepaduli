@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-05-15
-publishdate: 2026-05-15
-lastmod: 2026-05-15
+date: 2026-05-31
+publishdate: 2026-05-31
+lastmod: 2026-05-31
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -171,7 +171,6 @@ summary: "Set di link relativi al coding"
 [Joining CSV and JSON data](https://simonwillison.net/2021/Jun/19/sqlite-utils-memory/) - with an in-memory SQLite database\
 [DB normalization](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - What does First Normal Form actually mean?\
 [Do You Need Redis?](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - PostgreSQL Does Queuing, Locking, & Pub/Sub\
-[SQLite tool](https://dev.to/danilsa0109/sqlite-a-tool-that-allows-creating-databases-from-the-terminal-78j) - create databases from the terminal - DEV Community\
 [incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
 [Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
 [SQLite](https://antonz.org/sqlite-is-not-a-toy-database/) - import from JSON, CSV and more\

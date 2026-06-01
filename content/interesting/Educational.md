@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2026-05-15
-publishdate: 2026-05-15
-lastmod: 2026-05-15
+date: 2026-05-31
+publishdate: 2026-05-31
+lastmod: 2026-05-31
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -53,6 +53,8 @@ summary: "Set di link relativi all'istruzione di base"
 [matrimonio](http://www.ilfattoquotidiano.it/2017/04/30/vicenza-licenziato-alcune-settimane-dopo-le-nozze-reintegrato-dal-giudice-grazie-a-una-legge-del-1963-pensata-per-le-donne/3553279/) - Tribunale Vicenza vieta i licenziamenti entro un anno dal matrimonio\
 [In caso di licenziamento](http://www.ilfattoquotidiano.it/2016/10/05/licenziati-in-tronco-come-evitare-di-commettere-reati-informatici/3075424/) - Accesso ai propri dati sul sistema informatico dell azienda\
 [Permessi retribuiti, autocertificazione](https://www.orizzontescuola.it/permessi-retribuiti-autocertificazione-ecco-perche-i-docenti-non-sono-soggetti-a-controlli/) -  ecco perché i docenti non sono soggetti a controlli\
+[Fascicolo digitale del Personale scolastico](https://www.mim.gov.it/-/fascicolo-digitale-del-personale-scolastico) - MIUR MIM\
+[Cruscotto Accantonamenti TFR](https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.cruscotto-accantonamenti-tfr-dipendenti-pubblici-54728.cruscotto-accantonamenti-tfr-dipendenti-pubblici.html) - Portale Inps\
 
 ### Lezioni
 
