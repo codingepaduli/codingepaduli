@@ -47,8 +47,9 @@ fi
 ## kchmviewer: visualizzatore di file CHM (il formato dei file d'aiuto Microsoft)
 ## imagination: crea presentazioni per DVD
 ## ginkgocadx: software per immagini medicali e visualizzatore di DICOM completo
+## dicomscope: software per immagini medicali e visualizzatore di DICOM completo
 ## amide: software per immagini medicali
-apt-get install $APT_OPTS simplescreenrecorder kchmviewer imagination  amide #ginkgocadx
+apt-get install $APT_OPTS simplescreenrecorder kchmviewer imagination  amide #ginkgocadx dicomscope
 
 if [ $? -ne 0 ]; then
     exit 1
