@@ -52,6 +52,42 @@ javascript:(function() {
 })();
 ```
 
+## Wall Remover
+
+```javascript
+javascript:(function(){
+  try{
+    let all=document.querySelectorAll('*');
+    all.forEach(el=>{
+      // valori finali applicati (el.style contiene solo quelli inline)
+      let cs=window.getComputedStyle(el);
+      let z=cs.getPropertyValue('z-index');
+      // z può essere 'auto', null, '', ecc..
+      // In tal caso parseInt(z, 10) restituisce NaN
+      // solo parseInt(z) con z="0x" è interpretato in base 16
+      let zi=parseInt(z,10); 
+      if(!isNaN(zi)&&zi!==0){
+        el.style.zIndex = String(-Math.abs(zi));
+      }
+    });
+  } catch(e){
+    console.error(e);
+  }
+})();
+```
+
+## Image Contrast
+
+```javascript
+javascript:(function() {
+  let imgs = document.querySelectorAll("img");
+  imgs.forEach(element => {
+    element.style.filter = "contrast(30%)";
+    console.log(element.src);
+  });
+})();
+```
+
 ## Google Moduli checker
 
 ```javascript
