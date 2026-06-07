@@ -14,11 +14,15 @@ weight: 1
 
 # Orientamento - Il Capolavoro
 
-E' un progetto personale, anche extrascolastico, svolto durante l'anno e di cui si è particolarmente fieri e che ha portato ad **una crescita personale**. Deve essere caricato sulla piattaforma ministeriale UNICA.
+E' un progetto personale, anche extrascolastico, svolto durante l'anno e di cui si è particolarmente fieri e che ha portato ad **una crescita personale**. Deve essere caricato sulla piattaforma ministeriale [UNICA](https://unica.istruzione.gov.it/).
 
 Il tutor orientatore descrive agli studenti le attività di orientamento (quadro delle competenze, e-portfolio, capolavoro, attività di orientamento, informativo e formativo) nell'incontro introduttivo.
 
-Esempi di capolavoro possono essere un'attività sportiva, un'esperienza all'estero, un'esperienza lavorativa o di volontariato, la realizzazione di un artefatto particolare, ad esempio una canzone, un testo, un disegno, un programma o sito web, un'esperienza di lettura di libri e così tanto altro.
+Esempi di capolavoro possono essere un'attività sportiva, un'esperienza all'estero, un'esperienza lavorativa o di volontariato, la realizzazione di un artefatto particolare, ad esempio una canzone, un testo, un disegno, un programma o sito web, un'esperienza di lettura di libri e così tanto altro. Ecco alcuni esempi:
+
+- [Capolavoro - Il GP di Formula1](https://www.youtube.com/watch?v=LyJ-Yw_ENkk)
+- [Capolavoro - Ginnastica artistica](https://www.youtube.com/watch?v=VCIrB8-isYI)
+- [Capolavoro - Voglio insegnare](https://www.youtube.com/watch?v=b9t65o2Bk6o)
 
 L'importante è spiegare **perché si sceglie** l'attività o l'esperienza
 e **quali competenze sono state acquisite** tra quelle in elenco (vedi
