@@ -14,15 +14,22 @@ summary: "Materie - Relazioni, programmi e recupero"
 
 # Materie - Relazioni, programmi e recupero
 
-## 3 anno - Informatica
+## Motivazione, partecipazione, profitto
 
-### Programmazione iniziale
+(Da quanto emerso dal primo mese di lezione, attraverso griglie, questionari conoscitivi e test di ingresso,) La classe si è dimostrata fortemente eterogenea per quanto riguarda la preparazione di partenza e i ritmi di studio. I ragazzi non mostrano tutti lo stesso livello: a un piccolo gruppo di studenti autonomi e propositivi si contrappongono diversi alunni che hanno incontrato difficoltà nell'apprendimento dei concetti base della materia.
+L'attenzione e l'interesse sono stati variabili. Solo pochi studenti hanno partecipato alle lezioni in modo costante e curioso. La maggior parte della classe ha mostrato una tendenza a distrarsi facilmente e ha richiesto continui stimoli da parte dei docenti per mantenere l'impegno sia durante la teoria sia nelle ore di laboratorio. A causa di questa forte differenza interna, è stato necessario proporre frequenti attività di recupero guidato e spiegare nuovamente gli argomenti più complessi per aiutare chi era rimasto indietro. Questo lavoro continuo ha comunque permesso alla maggior parte degli studenti di raggiungere gli obiettivi minimi previsti.
 
-Profilo generale della classe (caratteristiche cognitive, comportamentali, atteggiamento verso la materia, interessi, partecipazione..)
+Una buona parte della classe risulta essere attenta alle lezioni; poche sono state le situazioni di disturbo sia in aula che in laboratorio. La maggior parte degli alunni eseguono in modo abbastanza continuo i compiti assegnati. Rimane un piccolo gruppo la cui partecipazione ed impegno risultano essere scarsi.
 
-Da quanto emerso dal primo mese di lezione, attraverso griglie, questionari conoscitivi e test di ingresso, una buona parte della classe risulta essere attenta alle lezioni di informatica; poche sono state le situazioni di disturbo sia in aula che in laboratorio. La maggior parte degli alunni eseguono in modo abbastanza continuo i compiti assegnati. Rimane un piccolo gruppo la cui partecipazione ed impegno risultano essere scarsi.
+E' emerso che la maggior parte degli studenti ha incontrato diverse difficoltà nel comprendere e applicare correttamente i concetti di base della programmazione. Questo ha portato ad un ridimensionamento delle aspettative iniziali per garantire un apprendimento adeguato a tutti gli studenti.
 
-Obiettivi educativi:
+Sono state organizzate lezioni extra di recupero, sessioni con tutor individuale, è stato fornito materiale di studio aggiuntivo. Nonostante questi sforzi, un numero significativo di studenti ha continuato ad avere difficoltà nel comprendere i concetti fondamentali della materia.
+
+La classe ha evidenziando una significativa disomogeneità nei risultati raggiunti dagli studenti (nel corso dell'anno).
+
+Nonostante le difficoltà incontrate, alcuni studenti, purtroppo in minima parte, hanno dimostrato un impegno costante e una buona comprensione dei concetti di programmazione. Sono stati in grado di applicare le conoscenze acquisite per risolvere problemi complessi e hanno mostrato una notevole abilità nel creare programmi funzionanti. Questi studenti hanno ottenuto risultati eccellenti nei compiti assegnati e nei progetti, dimostrando una padronanza notevole delle competenze informatiche richieste.
+
+## Obiettivi educativi
 
 - Favorire l’instaurarsi di un clima sereno nella classe sollecitando una partecipazione attiva degli alunni;
 - Maturare atteggiamenti di comprensione, confronto e tolleranza verso gli altri e rispetto per l’ambiente;
@@ -35,13 +42,47 @@ Obiettivi educativi:
 - Maturare capacità logiche (relazioni causa-effetto e spazio-temporali);
 - Favorire l’acquisizione di un metodo di studio e di lavoro rigoroso, proficuo e gratificante.
 
-Metodologia
+## Metodologie e strategie
 
-Momento fondamentale dell’insegnamento rimane la lezione frontale in classe, in cui i vari argomenti vengono presentati ed approfonditi dal docente in modo chiaro, ma nel contempo rigoroso e problematico. Sarà costante il riferimento alle dispense fornite dal docente e appunti integrativi oltre al libro di testo, quale fondamentale strumento di lavoro dello studente.
+La lezione frontale in classe è il momento fondamentale dell’insegnamento, in cui i vari argomenti vengono presentati ed approfonditi dal docente in modo chiaro, ma nel contempo rigoroso e problematico. Sarà costante il riferimento alle dispense fornite dal docente e appunti integrativi oltre al libro di testo, quale fondamentale strumento di lavoro dello studente.
 
 L’attività didattica in laboratorio favorirà l’abitudine alla collaborazione, al confronto, al lavoro in gruppo, alla progettazione, oltre che alla ricerca di strategie operative e di soluzioni relative al problem solving.
 
+Al fine di garantire un apprendimento significativo per tutti gli studenti, è stato necessario adottare una strategia di insegnamento più flessibile e personalizzata. Gli insegnanti hanno cercato di individuare gli interessi e le competenze specifiche di ciascuno studente al fine di creare attività e progetti che potessero suscitare il loro interesse e motivazione.
+
 Si cercherà in ogni modo di coinvolgere gli studenti, sollecitando, incoraggiando e premiando, quando ve ne sia l’opportunità, la loro partecipazione critica e il loro apporto originale alle lezioni. Attraverso l’applicazione delle conoscenze e delle tecniche apprese, si guiderà l’allievo a scegliere tra pluralità di funzioni e percorsi alternativi per ottenere elaborati di qualità.
+
+Sono state utilizzate diverse metodologie didattiche, tra cui l'apprendimento basato sui problemi e il lavoro di gruppo, per stimolare la partecipazione attiva degli studenti e favorire l'apprendimento collaborativo. Anche se gli insegnanti hanno riprogrammato e adottato strategie inclusive, provando a motivare continuamente gli studenti, il disinteresse è rimasto costante.
+
+## 3 anno - Sistemi e reti
+
+### Programma ridotto
+
+**Le Architetture dei sistemi di elaborazione**: Unità di misura e prefissi internazionali; modello di Von Neumann; componenti di un sistema di elaborazione; memoria cache, centrale e secondaria ; BUS di sistema; motherboard e periferiche;
+
+**Scheda Arduino: hardware / breadboard**: Struttura della scheda Arduino; componenti di un sistema a microcontrollore; breadboard, sensori e attuatori; collegamenti elettrici; realizzazione di semplici prototipi con simulatore o scheda fisica.
+
+**Scheda Arduino: concetti di programmazione**: Tecniche di programmazione Arduino; istruzioni base per la programmazione Arduino; gestione dello stato interno; istruzioni condizionali; gestione di sensori e attuatori;
+
+**Fondamenti di Networking**: Elementi fondamentali di una rete; topologie e tipologie di rete: protocolli di comunicazione; modello ISO/OSI e TCP/IP; classificazione dei mezzi trasmissivi (cavi elettrici, PSTN, ISDN, xDSL, FTTx).
+
+## 3 anno - Tecnologia e progettazione di Sistemi IT
+
+### Programma ridotto
+
+**Informazione e comunicazione**: La comunicazione;  Tipologia dell’informazione; Simbologia e terminologia; Codifica dell’informazione; Codifica a lunghezza fissa e variabile; Protocollo di comunicazione.
+
+**Rappresentazione delle informazioni**: Sistemi di scrittura; Sistemi di numerazione; Analogico e digitale; Codifica in bit o binaria; Codifica Unicode;
+
+**Sistemi di numerazione**: Sistema di numerazione non posizionali: egizio,romano; Sistemi di numerazione posizionali: babilonese, indiano; Sistema di numerazione binario, ottale, decimale e esadecimale; Conversioni tra basi; 
+
+**Operazioni in binario**: addizione, sottrazione, moltiplicazione e divisione, complemento a uno e complemento a due;
+
+**HTML**: Struttura base, etichette e attributi, Unicode, Accessibilità, Moduli di inserimento.
+
+**Multimedialità**: Immagini, audio, video, codifiche, spazi e modelli di colore.
+
+## 3 anno - Informatica
 
 ### Programma completo
 
@@ -105,26 +146,6 @@ Modulo 5: Matrici e Stringhe
 - Funzioni e procedure su stringhe;
 
 ### Relazione finale
-
-Introduzione:
-
-Con la presente relazione finale, si intende fornire un'analisi completa del percorso formativo e dei risultati ottenuti dalla classe terza dell'Istituto Tecnico Informatico per la disciplina di Informatica. La classe ha affrontato diverse sfide, evidenziando una significativa disomogeneità nei risultati raggiunti dagli studenti nel corso dell'anno.
-
-Situazione iniziale:
-
-All'inizio dell'anno scolastico, la programmazione è stata definita come uno degli argomenti chiave del curriculum di Informatica per la classe terza. Tuttavia, è emerso che la maggior parte degli studenti ha incontrato diverse difficoltà nel comprendere e applicare correttamente i concetti di base della programmazione. Questo ha portato ad un ridimensionamento delle aspettative iniziali per garantire un apprendimento adeguato a tutti gli studenti.
-
-Difficoltà riscontrate:
-
-Durante l'anno, gli insegnanti hanno dedicato ulteriori risorse e tempo per supportare gli studenti che avevano difficoltà con la programmazione. Sono state organizzate lezioni extra, sessioni con tutor individuale, è stato fornito materiale di studio aggiuntivo. Nonostante questi sforzi, un numero significativo di studenti ha continuato ad avere difficoltà a comprendere i concetti fondamentali della programmazione, come l'uso delle variabili, le istruzioni condizionali e i cicli.
-
-Strategie adottate:
-
-Al fine di garantire un apprendimento significativo per tutti gli studenti, è stato necessario adottare una strategia di insegnamento più flessibile e personalizzata. Gli insegnanti hanno cercato di individuare gli interessi e le competenze specifiche di ciascuno studente al fine di creare attività e progetti che potessero suscitare il loro interesse e motivazione. Sono state utilizzate diverse metodologie didattiche, tra cui l'apprendimento basato sui problemi e il lavoro di gruppo, per stimolare la partecipazione attiva degli studenti e favorire l'apprendimento collaborativo. Anche se gli insegnanti hanno riprogrammato e adottato strategie inclusive, provando a motivare continuamente gli studenti, il disinteresse è rimasto costante.
-
-Risultati raggiunti:
-
-Nonostante le difficoltà incontrate, alcuni studenti, purtroppo in minima parte, hanno dimostrato un impegno costante e una buona comprensione dei concetti di programmazione. Sono stati in grado di applicare le conoscenze acquisite per risolvere problemi complessi e hanno mostrato una notevole abilità nel creare programmi funzionanti. Questi studenti hanno ottenuto risultati eccellenti nei compiti assegnati e nei progetti, dimostrando una padronanza notevole delle competenze informatiche richieste.
 
 Obiettivi conseguiti : Conoscenze
 
