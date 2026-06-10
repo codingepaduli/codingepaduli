@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-05-31
-publishdate: 2026-05-31
-lastmod: 2026-05-31
+date: 2026-06-09
+publishdate: 2026-06-09
+lastmod: 2026-06-09
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -157,6 +157,16 @@ summary: "Set di link relativi al coding"
 [Copyrights](https://legallayer.substack.com/p/who-owns-the-claude-code-wrote) - Who Owns the Code Claude Wrote? - by Sena Evren\
 [Self-Hosted AI Ollama](https://dev.to/lyraalishaikh/self-hosted-ai-in-2026-automating-your-linux-workflow-with-ollama-and-bash-3ibh) - Automating Your Linux Workflow with Ollama and Bash - DEV Community\
 [Kiro from AWS](https://kiro.dev/) - Bring engineering rigor to agentic development\
+
+### .Net
+
+[.NET Framework Tools](https://msdn.microsoft.com/it-it/library/d9kh6s92(v=vs.110).aspx) - \
+[C# per sviluppatori Java](http://msdn.microsoft.com/it-it/library/ms228602(v=VS.90).aspx) - \
+[Ensure.That v5.0.0](https://www.nuget.org/packages/Ensure.That/) - Library for validating arguments\
+[Entity Framework Tutorial](http://www.entityframeworktutorial.net/) - \
+[SQL Server Connection Pooling (ADO.NET)](https://msdn.microsoft.com/en-us/library/8xx3tyca(v=vs.110).aspx) - \
+[Asynchronous programming](https://docs.microsoft.com/en-us/dotnet/csharp/async) - \
+[XML comments](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc) - Documenting your code\
 
 ### Database SQL e NoSql - GraphQL
 
