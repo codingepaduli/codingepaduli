@@ -44,6 +44,8 @@ Nonostante le difficoltà incontrate, alcuni studenti, purtroppo in minima parte
 
 ## Metodologie e strategie
 
+### Descrizione
+
 La lezione frontale in classe è il momento fondamentale dell’insegnamento, in cui i vari argomenti vengono presentati ed approfonditi dal docente in modo chiaro, ma nel contempo rigoroso e problematico. Sarà costante il riferimento alle dispense fornite dal docente e appunti integrativi oltre al libro di testo, quale fondamentale strumento di lavoro dello studente.
 
 L’attività didattica in laboratorio favorirà l’abitudine alla collaborazione, al confronto, al lavoro in gruppo, alla progettazione, oltre che alla ricerca di strategie operative e di soluzioni relative al problem solving.
@@ -53,6 +55,54 @@ Al fine di garantire un apprendimento significativo per tutti gli studenti, è s
 Si cercherà in ogni modo di coinvolgere gli studenti, sollecitando, incoraggiando e premiando, quando ve ne sia l’opportunità, la loro partecipazione critica e il loro apporto originale alle lezioni. Attraverso l’applicazione delle conoscenze e delle tecniche apprese, si guiderà l’allievo a scegliere tra pluralità di funzioni e percorsi alternativi per ottenere elaborati di qualità.
 
 Sono state utilizzate diverse metodologie didattiche, tra cui l'apprendimento basato sui problemi e il lavoro di gruppo, per stimolare la partecipazione attiva degli studenti e favorire l'apprendimento collaborativo. Anche se gli insegnanti hanno riprogrammato e adottato strategie inclusive, provando a motivare continuamente gli studenti, il disinteresse è rimasto costante.
+
+### Elenco
+
+- **Lezione frontale**: L'insegnante espone i contenuti, è poco interattiva.
+- **Apprendimento cooperativo**: Gli studenti lavorano in piccoli gruppi con ruoli assegnati; favorisce abilità sociali, responsabilità condivisa e apprendimento peer-to-peer.
+- **Problem-based learning (PBL)**: Si assegna un problema reale, da analizzare e risolvere; sviluppa il pensiero critico, la ricerca autonoma e l'applicazione pratica delle conoscenze.
+- **Flipped classroom**: Le nozioni sono studiate a casa (video/letture), il tempo in classe è dedicato agli esercizi e agli approfondimenti guidati dall'insegnante.
+- **Learning by doing (laboratoriale)**: Le attività pratiche e la sperimentazione guidano l'apprendimento; rinforza competenze operative e collegamento teoria/pratica.
+- **Didattica per competenze**: La progettazione è centrata su risultati osservabili (competenze); integra saperi, abilità e atteggiamenti in attività autentiche e valutazione reale.
+- **Istruzione differenziata**: I contenuti, i processi e i prodotti sono adattati ai bisogni individuali degli studenti; massimizza l'apprendimento di ciascuno.
+- **Gamification**: Si usano elementi dei giochi (punti, livelli, sfide) in contesti didattici per aumentare motivazione, coinvolgimento e feedback immediato.
+- **Apprendimento basato su progetto (PjBL)**: Gli studenti sviluppano un progetto complesso; promuove pianificazione, ricerca interdisciplinare e presentazione finale.
+- **Didattica metacognitiva**: Insegnamento di strategie di riflessione sul proprio apprendimento (pianificazione, monitoraggio, valutazione); migliora autonomia e regolazione dello studio.
+
+## 1 anno - Informatica
+
+### Programma dettagliato
+
+1. Hardware del pc:
+
+    - La CPU: core, socket, ALU, control unit, cache, registri, unità di misura;
+    - Le memorie principali: RAM, ROM, cache, unità di misura;
+    - Le memorie secondarie ottiche: CD, DVD, Blu-ray;
+    - Le memorie secondarie magnetiche: Floppy disk, Hard Disk Drive (HDD);
+    - Le memorie secondarie elettroniche: SSD (Solid State Drive), Pen drive USB;
+    - La motherboard: funzionalità, tipi, chipset south bridge e north bridge;
+    - Case: tipi e dimensioni;
+    - Alimentatore: funzionalità, caratteristiche principali, unità di misura;
+    - Ii bus di comunicazione: Bus dati, bus indirizzi, bus di controllo, SATA, AGP, PCI, PCI Express, USB;
+    - Le periferiche di input e output;
+    - Le porte di connessione: IDE, SATA, SSD-M2, USB, HDMI, DisplayPort, VGA, SD/ microSD, PS/2 (COM), Ethernet (RJ-45), jack 3.5 mm per home theather,
+
+2. Procedure di assemblaggio:
+
+    - Assemblaggio della motherboard nel case, viti distanziatrici;
+    - Assemblaggio dell'alimentatore;
+    - Assemblaggio della CPU, pasta termica, raffreddamento;
+    - Assemblaggio della RAM;
+    - Assemblaggio delle memorie secondarie;
+    - Assemblaggio delle periferiche di input e output;
+    - I cavi di connessione;
+
+3. Software del computer
+
+    - Software di avvio: Firmware, BIOS, UEFI, Bootstrap;
+    - Software di boot loader;
+    - Il sistema operativo;
+    - Il software applicativo;
 
 ## 3 anno - Sistemi e reti
 
@@ -74,7 +124,7 @@ Sono state utilizzate diverse metodologie didattiche, tra cui l'apprendimento ba
 
 **Rappresentazione delle informazioni**: Sistemi di scrittura; Sistemi di numerazione; Analogico e digitale; Codifica in bit o binaria; Codifica Unicode;
 
-**Sistemi di numerazione**: Sistema di numerazione non posizionali: egizio,romano; Sistemi di numerazione posizionali: babilonese, indiano; Sistema di numerazione binario, ottale, decimale e esadecimale; Conversioni tra basi; 
+**Sistemi di numerazione**: Sistema di numerazione non posizionali: egizio,romano; Sistemi di numerazione posizionali: babilonese, indiano; Sistema di numerazione binario, ottale, decimale e esadecimale; Conversioni tra basi;
 
 **Operazioni in binario**: addizione, sottrazione, moltiplicazione e divisione, complemento a uno e complemento a due;
 
@@ -196,3 +246,7 @@ Gli alunni hanno conseguito, chi con maggiore chi con minore autonomia (ad eccez
 - Utilizzare i comandi DDL del linguaggio SQL;
 - Utilizzare i comandi DML del linguaggio SQL;
 - Creare pagine web in ambiente client-server;
+
+## 5 anno - Sistemi e reti
+
+### Programma ridotto
