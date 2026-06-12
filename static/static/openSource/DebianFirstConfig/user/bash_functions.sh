@@ -200,22 +200,26 @@ computer() {
 }
 export -f computer
 
-# show the computer space 
-## -h human readable
-## -d nested directories to show
-## -t treshold in byte (smaller files will be excluded)
-# Usage: homespace
-homespace() {
-  du -h -d 2 -t 9999 | sort -h
-}
-export -f homespace
-
 # Show user defined functions
 # Usage: userDefinedFunctions
 userDefinedFunctions() {
   declare -F
 }
 export -f userDefinedFunctions
+
+# Show disk usage sorted by size
+# Usage: diskUsageSortBySize
+diskUsageSortBySize() {
+  du -h --max-depth=1 "$@" | sort -h -t$'\t' -k1
+}
+export -f diskUsageSortBySize
+
+# Show disk usage sorted by filename
+# Usage: diskUsageSortByFilename
+diskUsageSortByFilename() {
+  du -h --max-depth=1 "$@" | sort -t$'\t' -k2
+}
+export -f diskUsageSortByFilename
 
 # Show user biggest file in current dir
 # Usage: biggestFiles
