@@ -262,7 +262,7 @@ convert() {
 export -f convert
 
 # Test: 
-# Run: convertAllImages $convertOption40x100 $convertOptionGreyscale
+# Run: convertAllImages $convertOptionQuality75 $convertOption40x100 $convertOptionGreyscale
 convertAllImages() {
 
   # nullglob: if there is no file, don't output anything
@@ -279,6 +279,7 @@ export -f convertAllImages
 export convertPdfOptionPageA4White=' -background white -page a4 '
 export convertPdfOptionDensity300=' -density 300 -alpha background -alpha off '
 export convertOption40x100=' -resize 40% '
+export convertOptionQuality75=' -quality 75 '
 export convertOptionGreyscale=' -set colorspace Gray -separate -average '
 export convertOptionIncreaseBrightness=' -alpha discrete -channel rgb -evaluate add 5% +channel '
 export convertOptionIncreaseContrast=' -contrast '
