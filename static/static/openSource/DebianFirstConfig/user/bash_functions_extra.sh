@@ -8,7 +8,7 @@
 
 # In order to avoid a function calls itself, you can specify
 # to execute the original command. Example: to call the 'clear'
-# command insede a function "clear", you need to use:
+# command inside a function "clear", you need to use:
 #   command clear;
 
 # Solves the bug https://github.com/flathub/org.gnome.Evince/issues/33
@@ -31,7 +31,7 @@ export -f flatpakListAllRemoteApp
 flatpakListAllInstalledApp() {
     defaultFields="application,version,size,runtime"
 
-    # $1 if not empty, defualt value if $1 is empty or unset
+    # $1 if not empty, default value if $1 is empty or unset
     fields=${1:-$defaultFields}
 
     if [ -z "$2" ]; then
@@ -47,6 +47,18 @@ flatpakListAllInstalledAppId() {
     flatpakListAllInstalledApp "application"
 }
 export -f flatpakListAllInstalledAppId
+
+# Display all the installed apps ID
+# Usage: flatpakListAllInstalledAppId
+flatpakListAllInstalledAppIdAndCommit() {
+  appsRef=$(flatpakListAllInstalledApp "ref" 2>/dev/null)
+  while IFS= read -r ref; do
+    # Recupera commit hash (se disponibile) e nome app
+    commit=$(flatpak info --show-commit "$ref" 2>/dev/null || echo "sconosciuto")
+    printf "%-60s  %s\n" "$commit" "$ref"
+  done <<< "$appsRef"
+}
+export -f flatpakListAllInstalledAppIdAndCommit
 
 # Display all the installed runtimes
 # Usage: flatpakListAllInstalledRuntimes [remoteRegex]
@@ -86,12 +98,12 @@ flatpakFilterUpdatableApps() {
     # Leggo le informazioni sul runtime corrente e remoto di ogni app
     updatableAppIdArray=()
 
-    while read -r appId usedRuntime remoteRuntime; do
+    while read -r appId _usedRuntime remoteRuntime; do
         if [[ -n "$1" ]]; then
             # If $1 is defined
             for runtime in "$@"; do
                 if [[ "$remoteRuntime" == "$runtime" ]]; then
-                    # TO DEBUG printf "%-40s %-40s %-40s %-4s \n\n" "$appId" "$usedRuntime" "$remoteRuntime" "EQUALS"
+                    # TO DEBUG printf "%-40s %-40s %-40s %-4s \n\n" "$appId" "$_usedRuntime" "$remoteRuntime" "EQUALS"
                     # If $1 matches any runtime in the array
                     updatableAppIdArray+=("$appId")
                     break
@@ -111,7 +123,7 @@ flatpakFilterUpdatableApps() {
 export -f flatpakFilterUpdatableApps
 
 # Update only the apps bounded to the specified runtime
-# If an App are stuck on a previous runtime (x86_64/22.08), it doensn't update it
+# If an App are stuck on a previous runtime (x86_64/22.08), it doesn't update it
 
 # Usage: flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop
 flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop() {
@@ -119,7 +131,7 @@ flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop() {
     if [ -z "$app" ]; then
       echo "Nessuna applicazione da aggiornare."
     else
-      flatpak update $app
+      flatpak update "$app"
     fi
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop
@@ -130,7 +142,7 @@ flatpakUpdateAppBasedOnCurrentRuntimeGnome() {
     if [ -z "$app" ]; then
       echo "Nessuna applicazione da aggiornare."
     else
-      flatpak update $app
+      flatpak update "$app"
     fi
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeGnome
@@ -141,7 +153,7 @@ flatpakUpdateAppBasedOnCurrentRuntimeKde() {
     if [ -z "$app" ]; then
       echo "Nessuna applicazione da aggiornare."
     else
-      flatpak update $app
+      flatpak update "$app"
     fi
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeKde
