@@ -14,6 +14,10 @@ summary: "Materie - Relazioni, programmi e recupero"
 
 # Materie - Relazioni, programmi e recupero
 
+## Reclami
+
+Il/La sottoscritto/a partecipante alla selezione per l'individuazione di ... per il progetto ... RECLAMA la rivalutazione della propria posizione / del proprio punteggio per le seguenti motivazioni: si osserva un incongruenza nella posizione assegnata / nel punteggio assegnato poiché ... .
+
 ## Motivazione, partecipazione, profitto
 
 (Da quanto emerso dal primo mese di lezione, attraverso griglie, questionari conoscitivi e test di ingresso,) La classe si è dimostrata fortemente eterogenea per quanto riguarda la preparazione di partenza e i ritmi di studio. I ragazzi non mostrano tutti lo stesso livello: a un piccolo gruppo di studenti autonomi e propositivi si contrappongono diversi alunni che hanno incontrato difficoltà nell'apprendimento dei concetti base della materia.
