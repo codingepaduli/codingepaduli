@@ -393,6 +393,26 @@ joinArrayBySeparator() {
 export -f joinArrayBySeparator
 
 ####################################
+# File utils                       #
+####################################
+
+getBaseDirWithoutSlash() {
+  if [ "$#" -lt "1" ] ; then
+    echo "missing path"
+    return 1
+  fi
+
+  local OUTPUT_DIR="$1"
+
+  shopt -s extglob # attiva regex per "+(/)"
+
+  # toglie slash finale /dir/ -> /dir , ./ -> . , / -> /
+  [ "$OUTPUT_DIR" != "/" ] && OUTPUT_DIR="${OUTPUT_DIR%%+(/)}"
+
+  echo "$OUTPUT_DIR"
+}
+
+####################################
 # VLC - Metadata Extraction Tool   #
 ####################################
 
@@ -1257,7 +1277,11 @@ pdf_compress() {
   local JPEG_QUALITY="$2"
   local OUTPUT_DIR="$3"
   shift 3
-  
+
+  shopt -s extglob # attiva regex per "+(/)"
+  # toglie slash finale /dir/ -> /dir , ./ -> . , / -> /
+  [ "$OUTPUT_DIR" != "/" ] && OUTPUT_DIR="${OUTPUT_DIR%%+(/)}" 
+
   mkdir -p "$OUTPUT_DIR"
 
   for file in "$@"; do
