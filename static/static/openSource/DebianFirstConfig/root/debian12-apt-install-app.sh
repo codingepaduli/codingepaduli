@@ -257,7 +257,8 @@ fi
 ## tmux:   gestisce le sessioni di terminale, quando la connessione cade o si chiude
 ##         involontariamente un terminale, ci si può ricollegare e riprendere.
 ## parallel: esegue i comandi in parallelo
-apt-get install $APT_OPTS bash bash-completion curl dash diffutils tealdeer screen tmux parallel
+## bats:   Test framework moderno per Bash
+apt-get install $APT_OPTS bash bash-completion curl dash diffutils tealdeer screen tmux parallel bats
 
 if [ $? -ne 0 ]; then
     exit 1
