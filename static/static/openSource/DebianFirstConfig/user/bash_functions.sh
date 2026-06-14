@@ -1233,6 +1233,69 @@ convertPdfToPpmImage() {
 }
 export -f convertPdfToPpmImage
 
+# Run: compress_pdf input.pdf .pdf DPI_DOWNSAMPLE JPEG_QUALITY OUTPUT_DIR FILES.PDF
+## usa Ghostscript per downsample/ricomprimere immagini nel pdf
+pdf_compress() {
+  if ! command -v gs >/dev/null 2>&1; then
+    echo "Ghostscript (gs) non trovato. Installa ghostscript e riprova." >&2
+    return 3
+  fi
+
+  if ! command -v qpdf >/dev/null 2>&1; then
+      echo "qpdf non trovato, non sarà utilizzato." >&2
+    return 4
+  fi
+
+  if [ "$#" -lt 4 ]; then
+    echo "Usage: gs_compress DPI_DOWNSAMPLE JPEG_QUALITY OUTPUT_DIR file.pdf [file2.pdf file3.pdf ... ] " >&2
+    echo "  DPI_DOWNSAMPLE -> risoluzione delle immagini raster. DPI (numero di punti per pollice) consigliato 72 (per anteprime web), 150 per ebook, 300 per stampe). Riducendo i dpi si riduce la dimensione del file" >&2
+    echo "  JPEG_QUALITY   -> qualità JPEG (0-100). Un valore più alto mantiene più dettagli, uno più basso comprime più aggressivamente" >&2
+    return 2
+  fi
+
+  local DPI_DOWNSAMPLE="$1"
+  local JPEG_QUALITY="$2"
+  local OUTPUT_DIR="$3"
+  shift 3
+  
+  mkdir -p "$OUTPUT_DIR"
+
+  for file in "$@"; do
+    local INPUT_FILENAME="${file##*/}"   # dir/doc.txt -> doc.txt
+    local OUTPUT="$OUTPUT_DIR/new-$INPUT_FILENAME"
+
+    echo "$file -> $OUTPUT "
+
+    gs -sDEVICE=pdfwrite \
+      -dCompatibilityLevel=1.4 \
+      -dAutoRotatePages=/None \
+      -dNOPAUSE -dQUIET -dBATCH \
+      -dColorImageDownsampleType=/Bicubic \
+      -dColorImageResolution="$DPI_DOWNSAMPLE" \
+      -dGrayImageDownsampleType=/Bicubic \
+      -dGrayImageResolution="$DPI_DOWNSAMPLE" \
+      -dMonoImageDownsampleType=/Subsample \
+      -dMonoImageResolution="$DPI_DOWNSAMPLE" \
+      -dDownsampleColorImages=true \
+      -dDownsampleGrayImages=true \
+      -dDownsampleMonoImages=true \
+      -dEncodeColorImages=true \
+      -dEncodeGrayImages=true \
+      -dEncodeMonoImages=true \
+      -dAutoFilterColorImages=false \
+      -dAutoFilterGrayImages=false \
+      -dColorImageFilter=/DCTEncode \
+      -dGrayImageFilter=/DCTEncode \
+      -dDCTQuality="$JPEG_QUALITY" \
+      -sOutputFile="$OUTPUT" "$INPUT_FILENAME"
+    
+    if command -v qpdf >/dev/null 2>&1; then
+      qpdf --stream-data=compress --replace-input "$OUTPUT"
+    fi
+  done
+}
+export -f pdf_compress
+
 ############################
 #          FFmpeg          #
 ############################
