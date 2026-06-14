@@ -7,7 +7,7 @@ cc.arduino.IDE2
 com.calibre_ebook.calibre
 com.dosbox_x.DOSBox-X
 com.github.jeromerobert.pdfarranger
-com.github.qarmin.czkawka
+com.github.qarmin.czkawka # nuovo nome: krokiet
 com.github.tchx84.Flatseal
 com.github.k4zmu2a.spacecadetpinball
 com.nextcloud.desktopclient.nextcloud
