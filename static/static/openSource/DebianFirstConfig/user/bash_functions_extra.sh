@@ -125,35 +125,38 @@ export -f flatpakFilterUpdatableApps
 # Update only the apps bounded to the specified runtime
 # If an App are stuck on a previous runtime (x86_64/22.08), it doesn't update it
 
-# Usage: flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop
+# Usage: flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop [--assumeyes]
 flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop() {
-    app=$(flatpakFilterUpdatableApps 'org.freedesktop.Platform/x86_64/24.08' 'org.freedesktop.Platform/x86_64/25.08' 'org.freedesktop.Sdk/x86_64/25.08')
-    if [ -z "$app" ]; then
+    app="$(flatpakFilterUpdatableApps 'org.freedesktop.Platform/x86_64/24.08' 'org.freedesktop.Platform/x86_64/25.08' 'org.freedesktop.Sdk/x86_64/25.08')"
+    mapfile -t apps <<< "$app" # converte in array
+    if [ ${#apps[@]} -eq 0  ]; then
       echo "Nessuna applicazione da aggiornare."
     else
-      flatpak update "$app"
+      flatpak update "$@" "${apps[@]}"
     fi
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop
 
-# Usage: flatpakUpdateAppBasedOnCurrentRuntimeGnome
+# Usage: flatpakUpdateAppBasedOnCurrentRuntimeGnome [--assumeyes]
 flatpakUpdateAppBasedOnCurrentRuntimeGnome() {
-    app=$(flatpakFilterUpdatableApps 'org.gnome.Platform/x86_64/48' 'org.gnome.Platform/x86_64/49')
-    if [ -z "$app" ]; then
+    app="$(flatpakFilterUpdatableApps 'org.gnome.Platform/x86_64/48' 'org.gnome.Platform/x86_64/49')"
+    mapfile -t apps <<< "$app" # converte in array
+    if [ ${#apps[@]} -eq 0  ]; then
       echo "Nessuna applicazione da aggiornare."
     else
-      flatpak update "$app"
+      flatpak update "$@" "${apps[@]}"
     fi
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeGnome
 
-# Usage: flatpakUpdateAppBasedOnCurrentRuntimeKde
+# Usage: flatpakUpdateAppBasedOnCurrentRuntimeKde [--assumeyes]
 flatpakUpdateAppBasedOnCurrentRuntimeKde() {
-    app=$(flatpakFilterUpdatableApps 'org.kde.Platform/x86_64/5.15-24.08' 'org.kde.Platform/x86_64/5.15-25.08' 'org.kde.Platform/x86_64/6.10')
-    if [ -z "$app" ]; then
+    app="$(flatpakFilterUpdatableApps 'org.kde.Platform/x86_64/5.15-24.08' 'org.kde.Platform/x86_64/5.15-25.08' 'org.kde.Platform/x86_64/6.10')"
+    mapfile -t apps <<< "$app" # converte in array
+    if [ ${#apps[@]} -eq 0  ]; then
       echo "Nessuna applicazione da aggiornare."
     else
-      flatpak update "$app"
+      flatpak update "$@" "${apps[@]}"
     fi
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeKde
