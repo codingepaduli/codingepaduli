@@ -95,29 +95,30 @@ export -f flatpakFilterRemoteRuntimeOfInstalledApps
 # Usage: flatpakFilterUpdatableApps
 # Usage: flatpakFilterUpdatableApps 'org.gnome.Platform/x86_64/40' 'org.gnome.Platform/x86_64/41' ...
 flatpakFilterUpdatableApps() {
+    if [ "$#" -eq 0  ]; then
+      echo "Nessun runtime specificato" >&2
+      return 1
+    fi
+
+    local installedApp
+    installedApp="$(flatpakFilterRemoteRuntimeOfInstalledApps)"
+
     # Leggo le informazioni sul runtime corrente e remoto di ogni app
     updatableAppIdArray=()
 
     while read -r appId _usedRuntime remoteRuntime; do
-        if [[ -n "$1" ]]; then
-            # If $1 is defined
-            for runtime in "$@"; do
-                if [[ "$remoteRuntime" == "$runtime" ]]; then
-                    # TO DEBUG printf "%-40s %-40s %-40s %-4s \n\n" "$appId" "$_usedRuntime" "$remoteRuntime" "EQUALS"
-                    # If $1 matches any runtime in the array
-                    updatableAppIdArray+=("$appId")
-                    break
-                fi
-            done
-        elif [[ -z "$1" ]]; then
-            # If $1 is not defined, add $appId to updatableAppIdArray
-            updatableAppIdArray+=("$appId")
+      for runtime in "$@"; do
+        if [[ "$remoteRuntime" == "$runtime" ]]; then
+          # TO DEBUG printf "%-40s %-40s %-40s %-4s \n\n" "$appId" "$_usedRuntime" "$remoteRuntime" "EQUALS"
+          updatableAppIdArray+=("$appId")
+          break
         fi
-    done < <(flatpakFilterRemoteRuntimeOfInstalledApps)
+      done
+    done <<< "$installedApp"
 
     for appId in "${updatableAppIdArray[@]}"
     do
-        printf "%s\n" "$appId"
+      printf "%s\n" "$appId"
     done
 }
 export -f flatpakFilterUpdatableApps
@@ -127,37 +128,40 @@ export -f flatpakFilterUpdatableApps
 
 # Usage: flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop [--assumeyes]
 flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop() {
-    app="$(flatpakFilterUpdatableApps 'org.freedesktop.Platform/x86_64/24.08' 'org.freedesktop.Platform/x86_64/25.08' 'org.freedesktop.Sdk/x86_64/25.08')"
-    mapfile -t apps <<< "$app" # converte in array
-    if [ ${#apps[@]} -eq 0  ]; then
-      echo "Nessuna applicazione da aggiornare."
-    else
-      flatpak update "$@" "${apps[@]}"
+    # var FLATPAK_RUNTIME_FREEDESKTOP defined in file my_env.conf
+    app="$(flatpakFilterUpdatableApps "${FLATPAK_RUNTIME_FREEDESKTOP[@]}")"
+    if [ -z "$app"  ]; then
+      echo "Nessuna applicazione da aggiornare." >&2
+      return 1
     fi
+    mapfile -t apps <<< "$app" # converte in array
+    flatpak update "$@" "${apps[@]}"
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeFreedesktop
 
 # Usage: flatpakUpdateAppBasedOnCurrentRuntimeGnome [--assumeyes]
 flatpakUpdateAppBasedOnCurrentRuntimeGnome() {
-    app="$(flatpakFilterUpdatableApps 'org.gnome.Platform/x86_64/48' 'org.gnome.Platform/x86_64/49')"
-    mapfile -t apps <<< "$app" # converte in array
-    if [ ${#apps[@]} -eq 0  ]; then
-      echo "Nessuna applicazione da aggiornare."
-    else
-      flatpak update "$@" "${apps[@]}"
+    # var FLATPAK_RUNTIME_GNOME defined in file my_env.conf
+    app="$(flatpakFilterUpdatableApps "${FLATPAK_RUNTIME_GNOME[@]}")"
+    if [ -z "$app"  ]; then
+      echo "Nessuna applicazione da aggiornare." >&2
+      return 1
     fi
+    mapfile -t apps <<< "$app" # converte in array
+    flatpak update "$@" "${apps[@]}"
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeGnome
 
 # Usage: flatpakUpdateAppBasedOnCurrentRuntimeKde [--assumeyes]
 flatpakUpdateAppBasedOnCurrentRuntimeKde() {
-    app="$(flatpakFilterUpdatableApps 'org.kde.Platform/x86_64/5.15-24.08' 'org.kde.Platform/x86_64/5.15-25.08' 'org.kde.Platform/x86_64/6.10')"
-    mapfile -t apps <<< "$app" # converte in array
-    if [ ${#apps[@]} -eq 0  ]; then
-      echo "Nessuna applicazione da aggiornare."
-    else
-      flatpak update "$@" "${apps[@]}"
+    # var FLATPAK_RUNTIME_KDE defined in file my_env.conf
+    app="$(flatpakFilterUpdatableApps "${FLATPAK_RUNTIME_KDE[@]}")"
+    if [ -z "$app"  ]; then
+      echo "Nessuna applicazione da aggiornare." >&2
+      return 1
     fi
+    mapfile -t apps <<< "$app" # converte in array
+    flatpak update "$@" "${apps[@]}"
 }
 export -f flatpakUpdateAppBasedOnCurrentRuntimeKde
 
