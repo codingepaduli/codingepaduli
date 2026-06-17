@@ -825,6 +825,85 @@ function alarmStatus() {
 export -f alarmStatus
 
 ########################
+#   File download      #
+########################
+# Run waitDownloadFinished *.part
+function waitDownloadFinished() {
+  local seconds=180
+  local parsed
+
+  # prende gli eventuali parametri -s 60 o --seconds 60
+  # si ferma a -- dopo sono file
+  parsed="$(getopt -o s: --long seconds: -- "$@")" || return 1
+
+  # trasforma -s 60 file in $1=-s, $2=60, $3=-- $4=file
+  eval set -- "$parsed"
+
+  while true; do
+    case "$1" in
+      -s|--seconds)
+        seconds="$2"
+        shift 2
+      ;;
+      --)
+        shift
+        break
+      ;;
+      *)
+        echo "Parametro non previsto: $1"
+        echo "Uso: waitDownloadFinished [-s S] file1 [file2 ...]" >&2
+        echo "     waitDownloadFinished [--seconds S] file1 [file2 ...]" >&2
+        return 2
+      ;;
+    esac
+  done
+
+  if [ "$#" -eq 0 ]; then
+    echo "Uso: waitDownloadFinished [-s S] file1 [file2 ...]" >&2
+    echo "     waitDownloadFinished [--seconds S] file1 [file2 ...]" >&2
+    return 2
+  fi
+
+  # validazione numerica (intero positivo)
+  case "$seconds" in
+    ''|*[!0-9]*)
+      echo "Errore: seconds deve essere un intero positivo" >&2
+      return 2
+    ;;
+  esac
+
+  local files=("$@")
+  local f
+  for f in "${files[@]}"; do
+    if [ ! -e "$f" ]; then
+      echo "Errore: il file '$f' non esiste (download non avviato)" >&2
+      return 2
+    fi
+  done
+
+  trap 'echo "Interrotto"; return 130' INT TERM
+
+  while :; do
+    local all_missing=true
+    for f in "${files[@]}"; do
+      if [ -e "$f" ]; then
+        all_missing=false
+        break
+      fi
+    done
+
+    if $all_missing; then
+      echo "Tutti i file sono stati scaricati (rinominati o spostati)."
+      return 0
+    fi
+
+    echo "Alcuni file esistono ancora, download in corso."
+    echo "Riprovo tra ${seconds} secondi..."
+    sleep "$seconds"
+  done
+}
+
+########################
 #        ntfy          #
 ########################
 
