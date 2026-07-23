@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-06-09
-publishdate: 2026-06-09
-lastmod: 2026-06-09
+date: 2026-06-16
+publishdate: 2026-06-16
+lastmod: 2026-06-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -190,6 +190,7 @@ summary: "Set di link relativi al coding"
 [Read & Export SQLite Data in a JavaScript-enabled Browser Locally | by Charmaine Chui | Webtips | Medium](https://medium.com/weekly-webtips/read-export-sqlite-data-in-a-javascript-enabled-browser-locally-b655deda879d) - \
 [Kexi](https://docs.kde.org/stable5/en/kexi/kexi/index.html) - Open Ms Access databases\
 [Honker](https://honker.dev/) - sqlite with queues, streams, pub/sub, and time-trigger scheduling, all inside your SQLite file\
+[HeidiSQL](https://www.heidisql.com/) - MariaDB/MySQL, MSSQL, PostgreSQL, SQLite and Interbase/Firebird made easy\
 
 ### Giochi
 
@@ -210,8 +211,9 @@ summary: "Set di link relativi al coding"
 [Phaser HTML5 Game Framework](https://phaserjs.com/) - \
 [microStudio](https://microstudio.dev/it/) - Impara a programmare, crea giochi\
 [Complete Guide to Building Games in the Browser](https://dev.to/zippcodder/complete-guide-to-building-games-in-the-browser-kp6#chapter-23) - DEV Community\
-[matteobruni/tsparticles: tsParticles](https://github.com/matteobruni/tsparticles#Migrating-from-Particlesjs) - Easily create highly customizable particles animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.\
+[matteobruni/tsparticles](https://github.com/matteobruni/tsparticles#Migrating-from-Particlesjs) - tsParticles - Easily create highly customizable particles animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.\
 [Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/) - \
+[Space Cadet Pinball](https://brennan.io/2026/05/09/pinball-and-escrow/) - on Linux Stephen Brennan\
 
 ### GIT
 
@@ -230,6 +232,8 @@ summary: "Set di link relativi al coding"
 [Git](https://dev.to/yonkeltron/is-it-time-to-look-past-git-ah4) - Is it time to look past Git? - DEV Community\
 [Jujutsu](https://maddie.wtf/posts/2025-07-21-jujutsu-for-busy-devs) - For Busy Devs | maddie, wtf?!\
 [steveklabnik/jujutsu-tutorial](https://github.com/steveklabnik/jujutsu-tutorial) - trying to figure out this jujutsu thing · GitHub\
+[local git remotes](https://cblgh.org/posts/local-git-remotes/) - alexander cobleigh / cblgh.org\
+[git fuse mount](https://github.com/jvns/git-commit-folders) - jvns/git-commit-folders · GitHub\
 
 ### Java
 
@@ -306,6 +310,10 @@ summary: "Set di link relativi al coding"
 [onceupon/Bash-Oneliner](https://github.com/onceupon/Bash-Oneliner) - A collection of handy Bash One-Liners and terminal tricks for data processing and Linux system maintenance.\
 [Trinity](https://lwn.net/Articles/973130/) - keeps KDE 3 on life support [LWN.net]\
 [TerminalTextEffects](https://chrisbuilds.github.io/terminaltexteffects/showroom/) - terminal visual effects engine\
+[systemd Timers](https://blog.tjll.net/you-dont-love-systemd-timers-enough/) - Tyblog | You Don't Love systemd Timers Enough\
+[Commands](https://dev.to/copyleftdev/the-linux-commands-you-forgot-exist-and-why-ai-workflows-make-them-relevant-again-25bn) - The Linux Commands You Forgot Exist (And Why AI Workflows Make Them Relevant Again) - DEV Community\
+[Great Stack](https://dev.to/turacthethinker/great-stack-to-doesnt-work-bonus-10-bash-scripting-golden-rules-1n65) - to Doesn't Work Bonus: 10 Bash Scripting Golden Rules - DEV Community\
+[procstat vs lsof](https://dev.to/vivian-voss/procstat-vs-lsof-asking-the-system-which-process-holds-what-9f0) - Asking the System Which Process Holds What - DEV Community\
 
 #### Administration
 
@@ -336,6 +344,8 @@ summary: "Set di link relativi al coding"
 [Linux Networking Shallow Dive](https://im.salty.fish/index.php/archives/linux-networking-shallow-dive.html) - WireGuard, Routing, TCP/IP and NAT - A Salty Blog\
 [Cockpit](http://localhost:9090/system) - solydxk\
 [mambuzrrr/Xyra-Core](https://github.com/mambuzrrr/Xyra-Core) - A modern desktop-style SSH/SFTP dashboard for Linux servers and VPS workflows. · GitHub\
+[AshBuk/dabri: Dabri](https://github.com/AshBuk/dabri) - Native Linux Speech-to-Text (STT) • Offline, Privacy-First · GitHub\
+[Linux development](https://dev.to/deepu105/my-fully-offline-ai-assisted-linux-development-machine-3lnl) - My fully offline AI-assisted Linux development machine - DEV Community\
 
 #### Hardware
 
@@ -374,6 +384,8 @@ summary: "Set di link relativi al coding"
 [Linux PC](https://it.starlabs.systems/?shpxid=1836ba03-95c4-4a00-8a3d-da69ef21fa20) - Premium Linux laptops and mini PCs | Star Labs – Star Labs®\
 [Introducing the PinePhone](https://kde.org/announcements/pinephone-plasma-mobile-edition/) - KDE Community edition\
 [Plasma Bigscreen](https://plasma-bigscreen.org/it/) - Un'interfaccia TV open source per Linux. La tua TV, a modo tuo.\
+[Asus and Linux](https://asus-linux.org/) - for ROG Notebooks\
+[BambuLab 3D printer](https://f.sfconservancy.org/baltobu) - Bringing Affero Licensed Things (On)to Bambu Users - Software Freedom Conservancy Forgejo\
 
 #### Old computer
 
@@ -470,6 +482,7 @@ summary: "Set di link relativi al coding"
 [WireGuard topologies for self-hosting at home](https://garrido.io/notes/wireguard-topologies-for-self-hosting-at-home/#fnref:2) - \
 [WireGuard](https://miguelmota.com/blog/getting-started-with-wireguard/) - Getting Started\
 [IP Configuration](https://dev.to/manoj_kumarvemula_31e045/ip-configuration-in-linux-a-beginner-friendly-guide-31an) - in Linux: A Beginner-Friendly Guide - DEV Community\
+[Linux-based network](https://github.com/brent0324-beep/practical-home-lab-starter-kit) - brent0324-beep/practical-home-lab-starter-kit: Build a secure Linux-based network engineering lab with GNS3, Ansible, remote access, and repeatable workflows. · GitHub\
 
 ### programmi
 
@@ -487,6 +500,9 @@ summary: "Set di link relativi al coding"
 [GitHub orhun/gpg-tui](https://github.com/orhun/gpg-tui) - Manage your GnuPG keys with ease! 🔐\
 [Introducing gpg-tui](https://orhun.dev/blog/introducing-gpg-tui/) - a Terminal User Interface for GnuPG – orhun's blog – Some place on the internet.\
 [System Tray](https://dev.to/kolkov/we-built-a-pure-go-system-tray-library-because-every-alternative-requires-cgo-gogpu-may-2026-3h2i) - We Built a Pure Go System Tray Library Because Every Alternative Requires CGO, GoGPU May 2026 - DEV Community\
+[Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
+[Google Calendar](https://discussions.apple.com/thread/8608896) - Adding a subscribed/shared Google Calendar to iPhone- Apple Community\
+[Local AI](https://www.blog.brightcoding.dev/2025/09/24/local-ai-code-completion-and-chat-for-vs-code-with-llama-vscode/) - Code Completion and Chat for VS Code with llama.vscode - BrightCoding\
 
 #### ffmpeg
 
@@ -522,8 +538,7 @@ summary: "Set di link relativi al coding"
 [VNC](https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-debian-10) - How to Install and Configure VNC on Debian 10 | DigitalOcean\
 [xfburn NEWS · master · Apps / xfburn · GitLab](https://gitlab.xfce.org/apps/xfburn/-/blob/master/NEWS) - \
 [pkolaczk/fclones](https://github.com/pkolaczk/fclones) - Efficient Duplicate File Finder\
-[Hosted Weblate](https://hosted.weblate.org/) - traduzione dei progetti software\
-[Adding a subscribed/shared Google Calendar to iPhone- Apple Community](https://discussions.apple.com/thread/8608896) - \
+[dav2d](https://jbkempf.com/blog/2026/dav2d/) - fast decoder for the new AV2 codec\
 
 ### PHP
 
@@ -556,6 +571,7 @@ summary: "Set di link relativi al coding"
 [virtual env](https://blog.dusktreader.dev/2025/03/29/self-contained-python-scripts-with-uv/) - Self-contained Python scripts with uv - the.dusktreader blog\
 [Fun with uv and PEP 723](https://www.cottongeeks.com/articles/2025-06-24-fun-with-uv-and-pep-723) - \
 [Running scripts | uv](https://docs.astral.sh/uv/guides/scripts/) - \
+[uv run](https://github.com/prostomarkeloff/ohbin) - Declarative GitHub-release binaries for uv projects — declare a tool in pyproject, ohbin run downloads, verifies, caches, and execs it. · GitHub\
 
 ### Privacy, Security and Hacking
 
@@ -661,6 +677,7 @@ summary: "Set di link relativi al coding"
 [dunyakirkali/letterpress](https://github.com/dunyakirkali/letterpress/) - a project aimed at simplifying the self-publishing process for books\
 [Writing](https://blog.incrementalforgetting.tech/p/sculpting-a-book-the-chisel) - Writing a book in the age of open source - by Dunya Kirkali\
 [OlaProeis/Ferrite](https://github.com/OlaProeis/Ferrite) - A fast, lightweight text editor for Markdown, JSON, YAML, and TOML files. Built with Rust and egui for a native, responsive experience. · GitHub\
+[pandoc-templates.org](https://pandoc-templates.org/) - Lots of templates for creating epub, books, slides from markdown using pandoc\
 
 #### Hugo static site generator
 
@@ -826,6 +843,8 @@ summary: "Set di link relativi al coding"
 [JS Projects Utilizing TypeScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html) - \
 [importMap example](https://kofi.sexy/blog/modern-spas) - \
 [WebGPU Unleashed](https://shi-yan.github.io/webgpuunleashed/) - A Practical Tutorial\
+[deno check](https://docs.deno.com/runtime/reference/cli/check/) - type-checks your TypeScript (or JavaScript) code\
+[deno transpile](https://docs.deno.com/runtime/reference/cli/transpile/) - emits JavaScript from TypeScript, JSX, or TSX sources\
 
 ##### Cloud and libraries
 
@@ -852,6 +871,7 @@ summary: "Set di link relativi al coding"
 [SuperTokens](https://supertokens.io/blog) - Open Source Alternative to Auth0\
 [tarent/loginsrv](https://github.com/tarent/loginsrv/) - JWT login microservice with plugable backends such as OAuth2, Google, Github, htpasswd, osiam, ..\
 [Video.js](https://videojs.org/) - Open Source Video Player\
+[PerryTS/perry](https://github.com/PerryTS/perry) - A native TypeScript compiler written in Rust. Compiles TypeScript directly to executables using SWC and LLVM. · GitHub\
 
 ##### JS Object Oriented
 
@@ -907,6 +927,8 @@ summary: "Set di link relativi al coding"
 [JS Web Components](https://github.blog/2021-05-04-how-we-use-web-components-at-github/) - How we use Web Components at GitHub | The GitHub Blog\
 [Web Components](https://binaryigor.com/htmx-and-web-components-a-perfect-match.html) - HTMX and Web Components: a Perfect Match\
 [webcomponents.org](https://www.webcomponents.org/) - new HTML custom element that you can use in your web pages and web applications.\
+[yukiyokotani/office-open-xml-viewer](https://github.com/yukiyokotani/office-open-xml-viewer) - A browser-based viewer for Office Open XML documents that renders to an HTML Canvas element. · GitHub\
+[wterm](https://wterm.dev/) - Terminal Emulator for the Web\
 
 ##### PWA
 

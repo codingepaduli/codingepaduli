@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Corsi e guide - istruzione di base"
 description: "Set di link relativi all'istruzione di base"
-date: 2026-05-31
-publishdate: 2026-05-31
-lastmod: 2026-05-31
+date: 2026-06-16
+publishdate: 2026-06-16
+lastmod: 2026-06-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -19,45 +19,11 @@ summary: "Set di link relativi all'istruzione di base"
 
 ## Scuola
 
-[Cosvitec](https://www.cosvitec.eu/erasmus/) - Progetto ERASMUS+\
-[DM_14_2024](https://www.istruzioneer.gov.it/wp-content/uploads/2024/06/CERTIFICAZIONE_DM_14_2024.pdf) - Modelli di certificazione competenze.pdf\
-[permesso retribuito](https://www.gildalucca.it/i-sei-giorni-di-ferie-nei-periodi-di-attivita-didattica-equiparati-ai-tre-gg-di-permesso-retribuito-due-sentenze/) - I sei giorni di ferie nei periodi di attività didattica equiparati ai tre gg di permesso retribuito . Due sentenze – Gilda degli insegnanti di Lucca e Massa Carrara\
-[Ore](https://www.orizzontescuola.it/attivita-funzionali-allinsegnamento-docente-su-piu-scuole-riduzione-proporzionale-sia-ore-per-collegio-docenti-che-per-consigli-di-classe/) - ore collegio docenti e consigli di classe proporzionale al numero di ore a contratto. Sentenza\
-[Visite fiscali](https://www.orizzontescuola.it/guida/visite-fiscali-ripetute-restrizioni-escluso-obbligo-reperibilita-orari-invariati-visite-anche-domenica/) - ripetute e restrizioni su chi è escluso da obbligo di reperibilità. Orari invariati e visite anche di domenica - Orizzonte Scuola\
-[Procedure concorsuali docenti](http://usr.istruzione.lombardia.gov.it/procedure-concorsuali-docenti-tutte-le-comunicazioni/) - TUTTE LE COMUNICAZIONI – Ministero dell’Istruzione, dell’Università e della Ricerca – Ufficio Scolastico Regionale per la Lombardia\
-[Docenti assenti alle riunioni pomeridiane](https://www.orizzontescuola.it/guida/docenti-assenti-alle-riunioni-pomeridiane-come-devono-giustificare/) - come devono giustificare\
-[Docente o ATA assente](https://www.orizzontescuola.it/guida/assenza-per-causa-di-forza-maggiore-come-giustificare/) - a causa del maltempo, come giustificare\
-[cedolino](https://www.orizzontescuola.it/guida/come-leggere-il-cedolino-dello-stipendio-la-guida-gratuita/) - Stipendio, come leggere il cedolino? - Orizzonte Scuola\
-[Dirigente scolastico contro permessi e certificati medici](https://www.orizzontescuola.it/dirigente-concede-permessi-solo-per-grava-malattia-e-chiede-ancora-certificato-inviato-per-raccomandata-uil-calabria-interpretazione-creativa/) - \
-[Permessi personali e per visite mediche. Alcune indicazioni utili](https://www.orizzontescuola.it/guida/permessi-personali-e-per-visite-mediche-alcune-indicazioni-utili/) - \
-[Permesso retribuito personale e familiare](https://www.orizzontescuola.it/guida/permesso-retribuito-personale-e-familiare-autocertificazione/) - autocertificazione\
-[Permessi retribuiti dei prof per motivi familiari e personali, c'è la privacy](https://www.tecnicadellascuola.it/permessi-retribuiti-dei-prof-per-motivi-familiari-e-personali-ce-la-privacy) - Notizie Scuola\
-[Attività di formazione neoassunti: è obbligo di servizio](https://www.orizzontescuola.it/attivita-di-formazione-neoassunti-e-obbligo-di-servizio/) - Orizzonte Scuola\
-[Permessi brevi retribuiti, per esigenze personali. Si recuperano](https://www.orizzontescuola.it/guida/permessi-brevi-retribuiti-per-esigenze-personali-si-recuperano/) - \
-[Accesso agli atti, i vari tipi. Facciamo chiarezza sulla normativa](https://www.orizzontescuola.it/guida/accesso-agli-atti-vari-tipi-facciamo-chiarezza-sulla-normativa/) - Orizzonte Scuola\
-[Anno sabbatico per docenti e Dirigenti. La guida](https://www.orizzontescuola.it/guida/aspettativa-non-retribuita-anno-sabbatico-modalit-e-criteri-fruizione/) - Orizzonte Scuola\
-[Permesso per esame o concorso: quando spetta. Orario di servizio](https://www.orizzontescuola.it/guida/permesso-per-esame-o-concorso/) - \
-[Permessi docenti](https://www.orizzontescuola.it/permessi-docenti-differenze-tra-personale-di-ruolo-e-non/) - differenze tra personale di ruolo e non\
-[Permessi brevi docenti](https://www.orizzontescuola.it/permessi-brevi-docenti-di-ruolo-e-supplenti-non-e-richiesta-giustificazione-le-esigenze-non-devono-essere-documentate/) - di ruolo e supplenti, non è richiesta giustificazione: le esigenze non devono essere documentate - Orizzonte Scuola Notizie\
-[Permessi brevi docenti](https://www.orizzontescuola.it/permessi-brevi-docenti-supplenti-e-di-ruolo-non-sempre-vengono-concessi-il-dirigente-valuta-le-esigenze-di-servizio/) - supplenti e di ruolo: non sempre vengono concessi, il dirigente valuta le esigenze di servizio - Orizzonte Scuola Notizie\
-[Presenza a scuola](https://www.orizzontescuola.it/impegni-dei-docenti-fino-allinizio-delle-lezioni-solo-attivita-programmate-no-semplice-presenza-a-scuola/) - Impegni dei docenti fino all’inizio delle lezioni - solo attività programmate, no semplice presenza a scuola - Orizzonte Scuola Notizie\
-[Ferie](https://www.orizzontescuola.it/ferie-quali-assenze-riducono-i-giorni-spettanti/) - quali assenze riducono i giorni spettanti - Orizzonte Scuola Notizie\
-[PDP](https://www.orizzontescuola.it/inclusione-degli-alunni-in-situazioni-di-svantaggio-economico-sociale-fisico-piscologico-un-modello-di-pdp/) - Inclusione degli alunni in situazioni di svantaggio economico-sociale, fisico, piscologico: un modello di PDP - Orizzonte Scuola Notizie\
-[ITP](https://www.orizzontescuola.it/legittimo-escludere-gli-itp-dalla-ii-fascia-a-dirlo-il-consiglio-di-stato/) - Legittimo escludere gli ITP dalla ex seconda fascia graduatorie di istituto, a dirlo il Consiglio di Stato - Orizzonte Scuola Notizie\
-[Coordinatore di classe](https://www.orizzontescuola.it/coordinatore-di-classe-incarico-si-puo-rifiutare-nomina-segretario-no-e-si-rischiano-sanzioni/) - incarico si può rifiutare. Nomina Segretario no e si rischiano sanzioni - Orizzonte Scuola Notizie\
-[Stipendi scuola](https://www.orizzontescuola.it/stipendi-scuola-guida-al-cedolino-cosa-sono-le-addizionali-comunali-e-regionali-le-info-utili-video/) - guida al cedolino: cosa sono le addizionali comunali e regionali. Le info utili. [VIDEO] - Orizzonte Scuola Notizie\
-[Il giorno libero](https://www.orizzontescuola.it/il-giorno-libero-dei-docenti-e-un-diritto-guida-alla-normativa/) - è un diritto? Guida alla normativa - Orizzonte Scuola Notizie\
-[PCTO](https://www.orizzontescuola.it/percorsi-per-le-competenze-trasversali-e-per-lorientamento-pcto-in-allegato-griglia-di-valutazione-e-scheda-valutazione-dei-rischi-per-lattivita-di-pcto/) - Percorsi per le competenze trasversali e per l’orientamento-PCTO: in allegato griglia di valutazione e scheda valutazione dei rischi per l’attività di PCTO - Orizzonte Scuola Notizie\
-[Studenti con carenze formative](https://www.orizzontescuola.it/studenti-con-carenze-formative-recupero-ruolo-genitori-certificazione-esito-certificazione-esempio-di-regolamento-da-scaricare/) - recupero, ruolo genitori, certificazione esito, certificazione. Esempio di regolamento da scaricare - Orizzonte Scuola Notizie\
-[6 giorni di ferie commutati in permessi](https://www.orizzontescuola.it/6-giorni-di-ferie-dopo-i-3-giorni-per-motivi-personali-e-familiari-i-casi-in-cui-e-possibile-non-trovarsi-il-sostituto/) - 3 di permessi per motivi personali e familiari - Orizzonte Scuola Notizie\
-[matrimonio](http://www.ilfattoquotidiano.it/2017/04/30/vicenza-licenziato-alcune-settimane-dopo-le-nozze-reintegrato-dal-giudice-grazie-a-una-legge-del-1963-pensata-per-le-donne/3553279/) - Tribunale Vicenza vieta i licenziamenti entro un anno dal matrimonio\
-[In caso di licenziamento](http://www.ilfattoquotidiano.it/2016/10/05/licenziati-in-tronco-come-evitare-di-commettere-reati-informatici/3075424/) - Accesso ai propri dati sul sistema informatico dell azienda\
-[Permessi retribuiti, autocertificazione](https://www.orizzontescuola.it/permessi-retribuiti-autocertificazione-ecco-perche-i-docenti-non-sono-soggetti-a-controlli/) -  ecco perché i docenti non sono soggetti a controlli\
-[Fascicolo digitale del Personale scolastico](https://www.mim.gov.it/-/fascicolo-digitale-del-personale-scolastico) - MIUR MIM\
-[Cruscotto Accantonamenti TFR](https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.cruscotto-accantonamenti-tfr-dipendenti-pubblici-54728.cruscotto-accantonamenti-tfr-dipendenti-pubblici.html) - Portale Inps\
 
 ### Lezioni
 
+[Physics Cup – Online Physics Competition](https://physicscup.ee/) - \
+[Olimpiadi Cybersicurezza iscrizioni 14 ott](https://olicyber.it/) - 14 dic, 2023\
 [Scientificando](https://www.tutto-scienze.org/) - curiosità dalla scienza\
 [La mia scuola differente](https://www.lamiascuoladifferente.it/) - materiali e strumenti che supportino la didattica a distanza\
 [edutecnica.it](https://www.edutecnica.it/#gsc.tab=0) - annotazioni e appunti sparsi di Matematica, Fisica, Chimica, Elettrologia e Termologia\
@@ -99,6 +65,7 @@ summary: "Set di link relativi all'istruzione di base"
 [Intelligenza Artificiale: come funziona e perché è già nelle nostre vite](https://www.youtube.com/watch?v=HdMhPu1BH5U) - What a Digital World EP 4 - YouTube\
 [Laura Pirotta](https://www.youtube.com/@LauraPirotta) - docente di scienze umane, storia e filosofia\
 [Prospettive di prevenzione dei comportamenti sfidanti dalla scuola dell’infanzia alla scuola secondaria – L'integrazione scolastica e sociale](https://rivistedigitali.erickson.it/integrazione-scolastica-sociale/archivio/vol-21-n-1/prospettive-di-prevenzione-dei-comportamenti-sfidanti-dalla-scuola-dellinfanzia-alla-scuola-secondaria1/) - \
+[Piattaforma Unica – I video tutorial](https://www.youtube.com/playlist?list=PLyrF_X3ZxmlXs97BAsFaX-I5PUBKZORno) - YouTube\
 
 ##### Fake news
 
@@ -316,6 +283,9 @@ summary: "Set di link relativi all'istruzione di base"
 [A Beginner's Guide to the ESP8266](https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html) - \
 [Arduino® UNO R4 WiFi — Arduino Official Store](https://store.arduino.cc/products/uno-r4-wifi) - \
 [PROGETTI E TUTORIAL](https://www.progettiarduino.com/progetti-e-tutorial.html) - PROGETTI ARDUINO\
+[CircuitPython](https://circuitpython.org/) - program microcontrollers\
+[PlayStation Architecture](https://www.copetti.org/writings/consoles/playstation/) - A Practical Analysis\
+[Understanding Wi-Fi 4/5/6/6E/7/8 (802.11 n/ac/ax/be/bn)](https://www.wiisfi.com/) - \
 
 #### Sistemi e reti 4 anno
 

@@ -378,17 +378,33 @@ export -f sqliteImportCsvAndExecuteQuery
 joinArrayBySeparator() {
   # Prendo il separatore
   local sep="$1";
+  
+  if [ -z "${sep+x}" ]; then # sep è definita (può essere anche vuota)
+    echo "Uso: joinArrayBySeparator 'sep' 'str1' ['str2' ...] " >&2
+    return 1
+  fi
+
   shift
   
-  # Se non ho l'array, non stampo nulla
-  [ $# -eq 0 ] && { printf ''; return; }
+  if [ "$#" -eq 0 ]; then
+    echo "Uso: joinArrayBySeparator 'sep' 'str1' ['str2' ...] " >&2
+    return 1
+  fi
 
   local -a arr=( "$@" )
-  local lastIndex=$(( ${#arr[@]} - 1 ))
+  # local lastIndex=$(( ${#arr[@]} - 1 )) # indice ultimo elemento
 
-  local join
-  join="$(printf "%s$sep" "${arr[@]:0:$lastIndex}")${arr[lastIndex]}"
-  echo "$join"
+  # "%s$sep": per ogni elemento stampa l'elemento %s e il separatore $sep
+  # "${arr[@]:0:$lastIndex}": considera l'array da 0 al penultimo
+  #   (attenzione, se $lastIndex vale 2, $arr[@]:0:2 prende 0 e 1, non 2) 
+  # "${arr[lastIndex]}" stampa l'ultimo elemento 
+  # join="$(printf "%s$sep" "${arr[@]:0:$lastIndex}")${arr[lastIndex]}"
+
+  local join="${arr[0]}"
+  for ((i=1; i<${#arr[@]}; i++)); do
+    join+="${sep}${arr[i]}"
+  done
+  printf '%s' "$join"
 }
 export -f joinArrayBySeparator
 

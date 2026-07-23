@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link interessanti"
 description: "Set di link interessanti"
-date: 2026-05-15
-publishdate: 2026-05-15
-lastmod: 2026-05-15
+date: 2026-06-16
+publishdate: 2026-06-16
+lastmod: 2026-06-16
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -189,6 +189,7 @@ summary: "Set di link interessanti"
 [OpenStreetMap](https://opensource.com/article/21/8/openstreetmap) - how do I contribute?\
 [European Alternatives](https://european-alternatives.eu/) - European alternatives for digital products\
 [Flight Viz](https://flight-viz.com/) - Real-Time 3D Flight Tracker | Live Flight Map & Airport Departures\
+[Spain power](https://janrosenow.substack.com/p/spain-just-became-one-of-europes) - Spain just became one of Europe's cheapest power markets. Here is how.\
 
 ### History
 
@@ -253,3 +254,4 @@ summary: "Set di link interessanti"
 [Leopardi](https://it.wikipedia.org/wiki/La_quiete_dopo_la_tempesta) - La quiete dopo la tempesta - Wikipedia\
 [Leopardi](https://it.wikipedia.org/wiki/L%27infinito) - L'infinito - Wikipedia\
 [Yanez](https://www.angolotesti.it/D/testi_canzoni_davide_van_de_sfroos_4035/testo_canzone_yanez_1387220.html) - Davide Van De Sfroos\
+[Referendum](https://firmereferendum.giustizia.it/referendum/open) - partecipazione democratica\
