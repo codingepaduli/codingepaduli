@@ -1,5 +1,6 @@
 sudo /usr/sbin/groupadd -g 2000 casa
 
+# Creo gli utenti
 sudo /usr/sbin/useradd --create-home --base-dir /home/ -s /bin/bash --gid casa --uid 1001 io
 sudo /usr/sbin/useradd --create-home --base-dir /home/ -s /bin/bash --gid casa --uid 1002 mamma
 sudo /usr/sbin/useradd --create-home --base-dir /home/ -s /bin/bash --gid casa --uid 1003 roberto
@@ -12,6 +13,15 @@ echo dario:dario | chpasswd
 echo roberto:roberto | chpasswd
 
 # Per visualizzare i gruppi: getent group | sort
+
+# Abilito il "linger" per i timer systemd 
+# Linger = avvio dei processi utente temporizzati senza necessita di login
+# Linger = evita kill dei processi utente al logout 
+loginctl enable-linger io
+loginctl enable-linger mamma
+loginctl enable-linger roberto
+loginctl enable-linger dario
+loginctl enable-linger daniele
 
 # Aggiungo gli utenti ai gruppi
 sudo /usr/sbin/usermod -a -G sudo daniele
