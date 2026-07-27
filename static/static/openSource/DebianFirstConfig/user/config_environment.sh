@@ -17,6 +17,9 @@ mkdir -p $HOME/.config/containers
 touch $HOME/.config/containers/registries.conf
 echo 'unqualified-search-registries=["docker.io"]' > "$HOME/.config/containers/registries.conf" 
 
+# Config ripgrep
+touch "$HOME/.config/ripgreprc"
+
 # make backup of .bashrc
 cp "$HOME/.bashrc" "$HOME/.bashrc_backup"
 
