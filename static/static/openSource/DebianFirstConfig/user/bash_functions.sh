@@ -527,6 +527,14 @@ export -f grepRgReplace
 # Usage: echo "testo1àèéìòù" | grepRgReplaceAccentedCharacters
 grepRgReplaceAccentedCharacters() {
   grepRgReplace 'à' 'a' | grepRgReplace 'è' 'e' | grepRgReplace 'é' 'e' | grepRgReplace 'ì' 'i' | grepRgReplace 'ò' 'o' | grepRgReplace 'ù' 'u' | grepRgReplace "'" ' '
+  
+  # rc = 1 significa che non ha trovato la stringa da sostituire.
+  # in questo caso non deve dare errore, ma andare avanti.
+  rc=$?
+  if [ "$rc" -eq 1 ]; then
+    return 0
+  fi
+  return "$rc"
 }
 export -f grepRgReplaceAccentedCharacters
 
