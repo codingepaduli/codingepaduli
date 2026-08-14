@@ -290,7 +290,8 @@ apt-get install $APT_OPTS ispell ienglish-common ibritish wbritish iitalian wita
 
 # Installa il tool per lavorare con i formati testuali (json, toml, xml)
 ## crudini: bash utility for reading ini file (used in Mozilla Bookmarks for loading profile.ini)
-apt-get install $APT_OPTS fd-find jq gawk grep ugrep ripgrep gron crudini
+## ripMIME: estrae allegati da email (file .eml) in codifica MIME
+apt-get install $APT_OPTS fd-find jq gawk grep ugrep ripgrep gron crudini ripmime
 
 if [ $? -ne 0 ]; then
     exit 1
