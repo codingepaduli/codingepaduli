@@ -189,13 +189,35 @@ export -f distroReleaseNumber
 # show the distro's info, the cpu, the mounted devices and the memory status
 # Usage: computer
 computer() {
+  echo "Modello PC:"
+  echo "    product_name: $(cat /sys/class/dmi/id/product_name)"
+  echo "    product_version: $(cat /sys/class/dmi/id/product_version)"
+  echo "    sys_vendor: $(cat /sys/class/dmi/id/sys_vendor)"
+  echo "    board_vendor: $(cat /sys/class/dmi/id/board_vendor)"
+  echo "    board_name: $(cat /sys/class/dmi/id/board_name)"
+
   echo "hostname: $(uname -n)"
-  echo "kernel name: $(uname -s)"
-  echo "kernel release: $(uname -r)"
-  echo "kernel version: $(uname -v)"
-  lsb_release -a
+  echo "    kernel name: $(uname -s)"
+  echo "    kernel release: $(uname -r)"
+  echo "    kernel version: $(uname -v)"
+
+  echo "distribution-specific informations"
+  echo "    $(lsb_release --id)"
+  echo "    $(lsb_release --description)"
+  echo "    $(lsb_release --release)"
+  echo "    $(lsb_release --codename)"
+  echo "    $(lsb_release --short)"
+
+  echo " CPU info"  
+  echo "  Filesystem info: "
   lscpu  | grep -v '^Vulnerability' | grep -v '^Flags' 
+
+  echo " "  
+  echo "  Filesystem info: "
   df -h
+
+  echo " "  
+  echo "  Memory info: "
   free -h
 }
 export -f computer
