@@ -16,17 +16,17 @@ summary: "Macchine virtuali, cosa sono, che vantaggi e svantaggi presentano."
 
 Una macchina virtuale è una macchina che ha tutte le componenti hardware simulate da un'altra macchina (la macchina "host", dall'inglese "macchina ospitante"). Hard disk, processore, RAM, scheda di rete e tutte le altre componenti sono disponibili come risorse virtuali. E' possibile eseguire più macchine virtuali (chiamate "guest", dall'inglese "ospite") sulla macchina ospitante ("host").
 
-## Vantaggi
-
 Il principale vantaggio nell'avere sistemi virtualizzati consiste nell'isolamento: tutte le azioni e le modifiche che avvengono nelle singole macchine virtuali restano confinate alle rispettive macchina virtuale. Se una macchina virtuale dovesse prendere un virus, questo sarebbe comunque confinato alla specifica macchina virtuale e non infetta nè la macchina ospitante, nè le altre macchine virtuali.
 
 Un altro vantaggio nell'avere un sistema virtualizzato consiste nell'emulazione: una macchina virtuale può avere un'architettura completamente differente dalla macchina ospitante. Si può emulare un personal computer, un server, uno smartphone, una X-Box, una playstation, un Game Boy, un Atari Lynx, uno smartwatch e così via..
 
 Infine, lo stato di una macchina virtuale può essere salvato e poi recuperato successivamente. Ad esempio, mentre è in corso un aggiornamento sulla macchina virtuale, questa può essere spenta (e lo stato viene salvato). Alla riaccensione, la macchina virtuale riparte dallo stato salvato e l'aggiornamento riprende dal punto in cui è stato salvato.
 
-## Interazione con l'hardware
-
 La virtualizzazione realizzata attraverso macchina virtuale è una virtualizzazione a livello hardware. Un punto da chiarire è come avviene la comunicazione tra la macchina virtuale e la macchina ospitante. In generale è necessario un software chiamato hypervisor (o anche Virtual Machine Monitor) che si occupa di gestire l'accesso della macchina virtuale alle risorse hardware della macchina ospitante. L'hypervisor si occupa anche di gestire la protezione della macchina ospitante e l'isolamento tra le diverse macchine virtuali che sono virtualizzate dalla macchina ospitante.
+
+L'architettura basata su macchine virtuali è la seguente:
+
+![/static/coding/tools/MacchineVirtuali-Architettura.svg](/static/coding/tools/MacchineVirtuali-Architettura.svg "Architettura basata su VM" )
 
 A partire dagli anni 2000 sono nate tecnologie hardware quali Intel® Virtualization Technology e AMD-V™ Technology for Client Virtualization che servono a rendere le CPU più efficienti nell'eseguire il processo di virtualizzazione.
 
@@ -47,8 +47,6 @@ e alla riga "Tecnologie supportate" troviamo compresa la tecnologia di virtualiz
 E' importante controllare che questa tecnologia sia abilitata nelle impostazioni del BIOS:
 
 ![VirtualMachine - impostazioni del BIOS](/static/coding/tools/MacchineVirtuali-BIOS-Settings.png "VirtualMachine - impostazioni del BIOS")
-
-## Svantaggi
 
 La nota negativa nell'uso di una macchina virtuale è che bisogna simulare l'intero hardware e software, sistema operativo compreso. Avere più macchine virtuali in esecuzione sulla stessa macchina ospite è molto dispendioso in termini di risorse necessarie per la macchina ospite. Se un sistema operativo richiede 8 GB di RAM e 16 GB di spazio su disco, con 5 macchine virtuali avremo necessari 40 GB di RAM e 80 GB di spazio su disco. Le risorse della macchina ospitante terminano facilmente. Per questo le aziende hanno iniziato a lavorare, quando possibile, con tecnologie meno "pesanti" in termini di risorse richieste.
 
