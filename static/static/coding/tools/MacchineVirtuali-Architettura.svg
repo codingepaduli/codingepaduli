@@ -1,8 +1,8 @@
 <svg
     xmlns="http://www.w3.org/2000/svg"
     width="690"
-    height="650"
-    viewBox="0 0 690 650"
+    height="780"
+    viewBox="0 0 690 780"
     role="img"
     aria-labelledby="title desc"
   >
@@ -30,17 +30,22 @@
       </style>
     </defs>
 
-    <rect width="690" height="650" fill="#999999"/>
+    <rect width="690" height="780" fill="#999999"/>
 
     <text x="350" y="50" text-anchor="middle" class="title">Architettura basata su Macchina Virtuale</text>
 
     <!-- Stack -->
     <g>
-      <!-- OS Macchina Virtuale 1 -->
-      <rect x="10" y="80" rx="15" ry="15" width="430" height="275" fill="#1E9766"/>
-      <text x="20" y="310" class="layer-label">Sistema operativo VM1 (80 GB)</text>
-      <text x="20" y="340" class="layer-note">Windows / Linux / MacOS in VM</text>
+      <!-- Macchina Virtuale 1 -->
+      <rect x="10" y="80" rx="15" ry="15" width="430" height="430" fill="#1E9766"/>
+      <text x="20" y="480" class="layer-label">Macchina Virtuale VM1</text>
+      <text x="20" y="340" class="layer-note"></text>
 
+      <!-- Macchina Virtuale 2 -->
+      <rect x="450" y="80" rx="15" ry="15" width="220" height="430" fill="#1E9766"/>
+      <text x="460" y="480" class="layer-label">VM2</text>
+      <text x="460" y="340" class="layer-note"></text>
+      
       <!-- Applicazione 1 -->
       <rect x="20" y="100" rx="15" ry="15" width="200" height="75" fill="#0000FF"/>
       <text x="30" y="135" class="layer-label">Applicazione</text>
@@ -51,7 +56,7 @@
       <text x="30" y="220" class="layer-label">Binari e Librerie</text>
       <text x="30" y="250" class="layer-note">Office</text>
 
-       <!-- Applicazione 2 -->
+      <!-- Applicazione 2 -->
       <rect x="230" y="100" rx="15" ry="15" width="200" height="75" fill="#0000FF"/>
       <text x="240" y="130" class="layer-label">Applicazione</text>
       <text x="240" y="160" class="layer-note">Minecraft, ...</text>
@@ -60,12 +65,17 @@
       <rect x="230" y="190" rx="15" ry="15" width="200" height="75" fill="#0F7766"/>
       <text x="240" y="220" class="layer-label">Binari e Librerie</text>
       <text x="240" y="250" class="layer-note">Motore grafico e di fisica</text>
-
-      <!-- OS Macchina Virtuale 2 -->
-      <rect x="450" y="80" rx="15" ry="15" width="220" height="275" fill="#1E9766"/>
-      <text x="460" y="310" class="layer-label">S.O. VM2 (80 GB)</text>
-      <text x="460" y="340" class="layer-note">Android / iPhone</text>
-
+      
+      <!-- OS Macchina Virtuale 1 -->
+      <rect x="20" y="280" rx="15" ry="15" width="410" height="75" fill="#3D9786"/>
+      <text x="30" y="310" class="layer-label">Sistema operativo 1</text>
+      <text x="30" y="340" class="layer-note">Windows / Linux / MacOS in VM</text>
+      
+	    <!-- Hardware Macchina Virtuale 1 -->
+      <rect x="20" y="370" rx="15" ry="15" width="410" height="75" fill="#3D9786"/>
+      <text x="30" y="400" class="layer-label">Hardware Virtuale</text>
+      <text x="30" y="430" class="layer-note">CPU, RAM, Hard disk, ...</text>
+      
       <!-- Applicazione 3 -->
       <rect x="460" y="100" rx="15" ry="15" width="200" height="75" fill="#0000FF"/>
       <text x="480" y="130" class="layer-label">Applicazione</text>
@@ -75,21 +85,31 @@
       <rect x="460" y="190" rx="15" ry="15" width="200" height="75" fill="#0F7766"/>
       <text x="470" y="220" class="layer-label">Binari e Librerie</text>
       <text x="470" y="250" class="layer-note">Navigazione web</text>
-
+      
+      <!-- OS Macchina Virtuale 2 -->
+      <rect x="460" y="280" rx="15" ry="15" width="200" height="75" fill="#3D9786"/>
+      <text x="470" y="310" class="layer-label">S.O. 2</text>
+      <text x="470" y="340" class="layer-note">Android / iPhone in VM</text>
+      
+	    <!-- Hardware Macchina Virtuale 2 -->
+      <rect x="460" y="370" rx="15" ry="15" width="200" height="75" fill="#3D9786"/>
+      <text x="470" y="400" class="layer-label">HW Virtuale VM2</text>
+      <text x="470" y="430" class="layer-note">CPU, RAM, Hard disk, ...</text>
+      
       <!-- Hypervisor -->
-      <rect x="10" y="370" rx="15" ry="15" width="660" height="75" fill="#3D9786"/>
-      <text x="20" y="400" class="layer-label">Hypervisor Macchina Virtuale</text>
-      <text x="20" y="430" class="layer-note">Virtualizza e gestisce le macchine virtuali</text>
-
+      <rect x="10" y="520" rx="15" ry="15" width="660" height="75" fill="#3D9786"/>
+      <text x="20" y="550" class="layer-label">Hypervisor Macchina Virtuale</text>
+      <text x="20" y="580" class="layer-note">Gestisce ed isola le macchine virtuali</text>
+      
       <!-- OS Macchina Reale -->
-      <rect x="10" y="460" rx="15" ry="15" width="660" height="75" fill="#5D97A6"/>
-      <text x="20" y="490" class="layer-label">Sistema operativo Reale (80 GB)</text>
-      <text x="20" y="520" class="layer-note">Windows / Linux / MacOS della macchina reale</text>
+      <rect x="10" y="610" rx="15" ry="15" width="660" height="75" fill="#5D97A6"/>
+      <text x="20" y="640" class="layer-label">Sistema operativo Reale (80 GB)</text>
+      <text x="20" y="670" class="layer-note">Windows / Linux / MacOS della macchina reale</text>
 
       <!-- Hardware -->
-      <rect x="10" y="550" rx="15" ry="15" width="660" height="75" fill="#7D77C6"/>
-      <text x="20" y="580" class="layer-label">Infrastruttura Hardware</text>
-      <text x="20" y="610" class="layer-note">Server fisico, CPU, RAM, disco, rete, ...</text>
+      <rect x="10" y="700" rx="15" ry="15" width="660" height="75" fill="#7D77C6"/>
+      <text x="20" y="730" class="layer-label">Infrastruttura Hardware</text>
+      <text x="20" y="760" class="layer-note">Server fisico, CPU, RAM, disco, rete, ...</text>
     </g>
 
 </svg>
