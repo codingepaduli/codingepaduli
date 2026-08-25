@@ -73,6 +73,56 @@ Enter ".help" for usage hints.
 sqlite> .schema
 ```
 
+### Script sqlite
+
+E' possibile eseguire sia script "SQL" sia script che contengono comandi di SQLite (che non saranno compatibili con altri ambienti SQL).
+
+Creato il file "script.sqlite" contenente le istruzioni:
+
+```sql
+.headers on
+.mode column
+
+SELECT *
+FROM prodotti
+WHERE anno = '2025';
+```
+
+Si può eseguire il file "script.sqlite" con il comando:
+
+```bash
+sqlite3 file.sqlite < script.sqlite
+```
+
+oppure dalla shell SQLite con:
+
+```bash
+sqlite3 nome_db.sqlite
+sqlite>
+      .read script.sqlite
+```
+
+E' anche possibile creare un file BATCH "sqlite.bat":
+
+```batch
+@echo off
+sqlite3.exe mio_db.sqlite -table "SELECT * FROM prodotti;"
+pause
+```
+
+### Database in memory
+
+Un database in memory è un database temporaneo che vive solo in RAM e sparisce quando si chiude il processo.
+
+```sql
+sqlite3 ":memory:" <<'SQL'
+  CREATE TABLE test(id INTEGER, name TEXT);
+  INSERT INTO test VALUES (1, 'A');
+  SELECT * FROM test;
+SQL
+```
+
+
 ## Gestione tabelle (DML)
 
 Comando per creare una tabella:
@@ -113,7 +163,7 @@ La cancellazione di una colonna di una tabella **non è supportata**.
 
 ~~ALTER TABLE nome_tabella DROP COLUMN colonna~~;
 
-## Operazioni sui dati (DDL)
+## Operazioni CRUD sui dati (DDL)
 
 Le operazioni sui dati sono dette CRUD: Create (insert), Read, Update e Delete.
 
@@ -125,7 +175,7 @@ VALUES (valore1, valore2);
 SQLite **non supporta** la sintassi ``INSERT INTO tabella SET colonna1=valore1;``.
 
 ```sql
-SELECT * FROM tabella WHERE condizione;
+SELECT * FROM tabella WHERE condizione ORDER BY colonne NULL FIRST;
 ```
 
 ```sql
@@ -157,18 +207,6 @@ CREATE TABLE tabella (
   CONSTRAINT uq_esempio UNIQUE (col_1, col_2),
   CONSTRAINT chk_esempio CHECK (col_b >= col_a)
 ) STRICT;
-```
-
-## Database in memory
-
-Un database in memory è un database temporaneo che vive solo in RAM e sparisce quando si chiude il processo.
-
-```sql
-sqlite3 ":memory:" <<'SQL'
-CREATE TABLE test(id INTEGER, name TEXT);
-INSERT INTO test VALUES (1, 'A');
-SELECT * FROM test;
-SQL
 ```
 
 ## Import ed export in CSV
@@ -230,6 +268,146 @@ sqlite3 mio.db ".mode markdown" ".headers on" "SELECT * FROM tabella;" > report.
 
 ```bash
 sqlite3 mio.db ".mode html" ".headers on" "SELECT * FROM tabella;" > report.html
+```
+
+## Raggruppamento dati
+
+E' possibile creare gruppi di dati suddivisi per colonne con lo stesso valore. Su ogni gruppo è possibile aggregare i dati attraverso le funzioni di somma, media, ecc...
+
+Il risultato dei raggruppamenti porta ad avere **una sola riga per ogni gruppo**, identificata dalle colonne sulle quali il gruppo è stato costruito, riga contenente i calcoli sui dati aggregati.
+
+Ad esempio si possono raggruppare i prodotti per colonna "categoria", creando i gruppi "Elettronica", "Abbigliamento", "Giochi", ...
+Su questi gruppi si può calcolare somma, media, conteggio, eccetera, portando ad avere, per esempio, 10 prodotti nel gruppo elettronica e 3 in quello di Abbigliamento.
+Infine si può visualizzare solo gruppi che rispettano determinati requisiti, ad esempio i gruppi con più di 100 prodotti.
+
+La query di raggruppamento appena descritta è la seguente, che seleziona **per categoria** i gruppi di prodotti venduti nel 2025 con piu di 100 elementi:
+
+```sql
+SELECT categoria, SUM(quantita) as numeroProdotti
+FROM prodotti
+WHERE anno = '2025'         -- Filtra solo i prodotti venduti del 2025
+  AND TIPO = 'venduto'
+GROUP BY categoria          -- Crea il gruppo (categoria)
+HAVING SUM(quantita) > 100; -- sceglie i gruppi con piu di 100 elementi 
+```
+
+La regola vuole che **le colonne presenti in ``GROUP BY`` siano sempre presenti anche in ``SELECT``**, perchè la riga deve essere identificata dalle colonne sulle quali il gruppo è stato costruito.
+
+## Filtri di aggregazione
+
+I filtri permettono di avere nella stessa riga più dati calcolati sullo stesso insieme ma con condizioni diverse per ogni filtro.
+
+```sql
+SELECT
+  COUNT(*) FILTER (WHERE tipo = 'venduto') AS venduti,
+  COUNT(*) FILTER (WHERE tipo = 'reso') AS resi
+FROM prodotti
+WHERE anno = '2025';
+```
+
+### Filtri e raggruppamento
+
+Filtri e raggruppamenti spesso sono associati.
+
+Un esempio di query di raggruppamento con filtri è la seguente, che seleziona **per categoria** i gruppi di prodotti nel 2025 **con piu di 100 elementi** e mostra per ogni gruppo il totale di vendite, resi e vendite in promozione:
+
+```sql
+SELECT 
+  categoria,
+    SUM(quantita) FILTER 
+      (WHERE tipo = 'venduto') AS tot_venduti,    -- calcola venduti 2025
+    SUM(quantita) FILTER 
+      (WHERE tipo = 'reso') AS tot_resi,          -- calcola resi del 2025
+    SUM(quantita) FILTER 
+      (WHERE tipo = 'venduto' 
+        AND promozione = 'si') AS tot_promozione  -- calcola venduti in promozione 2025
+FROM prodotti
+WHERE anno = '2025'                               -- Filtra solo i prodotti del 2025
+GROUP BY categoria
+HAVING SUM(quantita) FILTER 
+  (WHERE tipo = 'venduto') > 100;                 -- sceglie i gruppi con piu di 100 prodotti venduti
+```
+
+Nota sulla query: Se avessimo messo ``HAVING SUM(quantita) > 100`` anche i resi sarebbero finiti nella somma delle quantità, falsando la condizione "piu di 100 prodotti venduti";
+
+## Partizionamento con Window Function
+
+Le funzioni di aggregazione (``SUM``, ``AVG``, ...) collassano le righe in una sola riga, calcolando la somma o la media totale su un gruppo.
+
+E' possibile lasciare le righe inalterate, ma effettuare per ogni riga un'aggregazione (``SUM``, ``AVG``, ...) su una partizione di dati e mostrare il risultato come ulteriore colonna della riga.
+
+Un esempio di query è la seguente, che calcola il prezzo minimo annuale (su una partizione di dati per anno) e mostrare, per ogni prodotto venduto, il guadagno realizzato, calcolato come differenza tra il prezzo minimo e il prezzo di vendita.
+
+```sql
+SELECT nome, anno, prezzo,
+  MIN(prezzo) OVER (
+    PARTITION BY anno
+  ) AS prezzo_minimo_annuale,
+  prezzo - prezzo_minimo_annuale AS guadagno -- guadagno
+FROM prodotti
+WHERE tipo = 'venduto';
+```
+
+In questo caso la partizione è per anno, quindi il prezzo minimo è calcolato nell'anno.
+
+## Query parametriche
+
+I parametri in una query permettono di creare la query evitando di concatenare la stringa della query a mano. Evita problemi di SQL INJECTION. 
+
+SQLite sostituisce ai parametri i valori passati e poi esegue la query.
+
+Esistono due tipi di parametri: posizionali e nominali.
+
+### Parametri posizionali ``?`` e ``?n``
+
+L'uso dei parametri posizionali consiste nell'assegnare al parametro un segnaposto ``?``. Questo è l'unico standard SQL ufficiale ammesso.
+
+Se si vuole specificare la posizione del parametro passato, magari per utilizzarlo più volte nella stessa query, si può assegnare al parametro un segnaposto con indice, in cui il carattere ``?`` è seguito da un indice numerico che indica la posizione del valore passato, come in``?1``, ``?2``, ``?3``, ... . Questa sintassi non è standard.
+
+Le query parametriche diventano quindi:
+
+```sql
+SELECT * FROM persone WHERE nome = ? AND cognome = ?;
+
+SELECT * FROM utenti WHERE nome = ?1 OR alias = ?1 OR cognome=2;
+```
+
+SQLite sostituisce ai parametri ``?`` i valori nell'ordine esatto in cui sono passati. Ad esempio, da shell:
+
+```bash
+sqlite3 my.db <<SQL
+  .parameter init
+  .parameter set ?1 Mario
+  .parameter set ?2 Rossi
+
+  -- Sostituzione parametri nella query
+  SELECT * FROM utenti WHERE nome = ?1 OR alias = ?1 OR cognome = ?2;
+SQL
+```
+
+### Parametri nominali ``:par``, ``@par`` e ``$par``
+
+L'uso dei parametri nominali consiste nell'assegnare un nome identificativo al parametro, il che rende la query molto piu leggibile. Non c'è bisogno di gestire l'ordine di passaggio e tenere il conteggio degli indici. I parametri nominali non sono uno standard SQL.
+
+Esistono tre sintassi differenti per assegnare un nome ad un parametro:``@par``, ``:par`` e ``$par``. Ogni DBMS ne adotta una differente. Le query parametriche diventano quindi:
+
+```sql
+SELECT * FROM persone WHERE nome = @nome AND cognome = @cognome;
+
+SELECT * FROM utenti WHERE nome = :nome OR alias = :nome OR cognome = :cognome;
+```
+
+SQLite sostituisce ai parametri i valori in base al nome. Ad esempio, da shell:
+
+```bash
+sqlite3 my.db <<SQL
+  .parameter init
+  .parameter set @nome Mario
+  .parameter set @cognome Rossi
+
+  -- Sostituzione parametri nella query
+  SELECT * FROM utenti WHERE nome = :nome OR alias = :nome OR cognome = :cognome;
+SQL
 ```
 
 ## Common Table Expressions (CTE)
