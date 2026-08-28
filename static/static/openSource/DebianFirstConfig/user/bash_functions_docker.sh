@@ -1,5 +1,7 @@
 # shellcheck shell=bash
 
+. "$HOME/.config/my_env.conf"
+
 ################################################
 # Functions based on docker apps installed
 ################################################
@@ -52,7 +54,7 @@ dockerContainer() {
   if [ -z "$USE_PODMAN" ]; then
     docker container run --rm -it -u $my_uid:$my_gid -v "$PWD":"$PWD" -w "$PWD" "$@"
   else
-    podman container run --rm -it -u $my_uid:$my_gid --userns keep-id:uid=$my_uid,gid=$my_gid -v "$PWD":"$PWD":Z -w "$PWD" "$@"
+    podman --storage-driver=vfs container run --rm -it -u $my_uid:$my_gid --userns keep-id:uid=$my_uid,gid=$my_gid -v "$PWD":"$PWD":Z -w "$PWD" "$@"
   fi
 }
 export -f dockerContainer
@@ -215,7 +217,7 @@ export -f hugoProd
 # pandoc
 # TEST: pandoc --version
 pandoc() {
-  dockerContainer --name pandoc     -v "$HOME/Sviluppo/SVN2/codingepaduli:/usr/src/myapp/"  -v "$HOME/Sviluppo/SVN2/from-hugo-to-book":/usr/src/luaFilters  pandoc/extra:3.5 "$@" # --fail-if-warnings
+  dockerContainer --name pandoc     -v "$MY_SVN_REPO_FOLDER/codingepaduli":"/usr/src/myapp/"  -v "$MY_SVN_REPO_FOLDER/from-hugo-to-book":"/usr/src/luaFilters"  pandoc/extra:3.5 "$@" # --fail-if-warnings
 }
 export -f pandoc
 
