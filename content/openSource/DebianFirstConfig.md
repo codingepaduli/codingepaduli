@@ -106,7 +106,39 @@ Alla prima configurazione si può scegliere il software da installare o da rimuo
 
 ### Configurazione apt
 
-Il file che contiene i repository ``/etc/apt/sources.list`` dovrebbe avere le seguenti righe:
+#### Configurazione attuale
+
+La configurazione attuale prevede che tutti i riferimenti ai repository da utilizzare siano salvati nella cartella ``/etc/apt/sources.list.d/``. Ogni riferimento di repository deve essere salvato nel proprio file.
+
+File ``debian.sources``:
+
+```plaintext
+Types: deb
+URIs: https://deb.debian.org/debian
+Suites: trixie trixie-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+Types: deb
+URIs: https://security.debian.org/debian-security
+Suites: trixie-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+```
+
+File ``trixie-backports.sources``:
+
+```plaintext
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: trixie-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+```
+
+#### Configurazione obsoleta
+
+La "vecchia" configurazione APT era gestita dal file ``/etc/apt/sources.list`` che contiene i repository descritti con le seguenti righe:
 
 ```plaintext
 deb http://deb.debian.org/debian/ bookworm main contrib non-free non-free-firmware
@@ -129,11 +161,13 @@ apt-add-repository -y non-free-firmware
 apt-get update
 ```
 
-La connessione sicura ai repository e l'aggiunta di repository esterni richiede che siano installati i seguenti pacchetti:
+La "vecchia" configurazione APT prevedeva che la connessione sicura ai repository e l'aggiunta di repository esterni fossero installate attraverso i seguenti pacchetti:
 
 ```bash
 apt-get install -y apt-transport-https gnupg apt-show-versions apt-utils
 ```
+
+### Pacchetti da installare
 
 L'installazione dei codec non liberi deve essere effettuata con il seguente comando:
 
@@ -147,18 +181,52 @@ Possono anche esserci numerosi pacchetti installati di default e che si vuole ri
 
 ### Gestione pacchetti con flatpak
 
-Flatpak può essere un ottimo strumento per installare software aggiornato.
-
-L'installazione richiede i seguenti comandi:
+Flatpak può essere un ottimo strumento per installare software aggiornato. Si può visionare il software disponibile da [FlatHub](https://flathub.org/it) e scegliere cosa installare. Il comando per installare un programma è il seguente:
 
 ```bash
-apt-get install -y flatpak xdg-utils xdg-desktop-portal xdg-desktop-portal-kde xdg-desktop-portal-gtk # gnome-software-plugin-flatpak
+flatpak install --or-update -y flathub software.scelto.com
+```
+
+Flatpak è un ambiente più o meno isolato, funziona basandosi su:
+
+- XDG Desktop Portal;
+- Runtimes;
+
+Un’applicazione installata con Flatpak **NON accede direttamente a tutto il sistema** ma interagirsce in modo controllato e uniforme attraverso un **XDG Desktop Portal** per svolgere alcune operazioni “sensibili”. I XDG Desktop Portal espongono delle interfacce D-Bus di comunicazione usate dai programmi Linux per comunicare, ad esempio per accedere ad un documento o alla webcam.
+
+Ogni ambiente desktop ha il suo pacchetto XDG Desktop Portal da installare:
+
+- GTK: ``xdg-desktop-portal-gtk``;
+- GNOME: ``xdg-desktop-portal-gnome``;
+- KDE: ``xdg-desktop-portal-kde``;
+- LXQt: ``xdg-desktop-portal-lxqt``;
+- Pantheon: ``elementary OS) xdg-desktop-portal-pantheon``;
+- Deepin: ``xdg-desktop-portal-dde``;
+- Xapp: ``Cinnamon, MATE, Xfce) xdg-desktop-portal-xapp``;
+- COSMIC: ``xdg-desktop-portal-cosmic``;
+
+Scelto l'ambiente desktop, si procede ad installare ``flatpak`` con i seguenti comandi:
+
+```bash
+apt-get install -y flatpak xdg-utils xdg-desktop-portal xdg-desktop-portal-kde # oppure xdg-desktop-portal-lxqt gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 
-A questo punto si può visionare il software da [FlatHub](https://flathub.org/it) e scegliere cosa installare.
+I runtimes sono definiti nella documentazione ufficiale nella pagina delle estensioni [https://docs.flatpak.org/en/latest/extension.html](https://docs.flatpak.org/en/latest/extension.html).
 
-Di seguito lo [script](/static/openSource/DebianFirstConfig/flatpak-installAllScript.sh) per configurare flatpak e un [elenco](/static/openSource/DebianFirstConfig/flatpakInstalledApp.txt) di pacchetti software da installare.
+Sono installati automaticamente dalle applicazioni che li utilizzano, ma è bene chiarire lo scopo:
+
+- **`org.freedesktop.Platform.GL.default`** e **`org.freedesktop.Platform.GL32.default`** : Estensione per i driver grafici OpenGL a 64 bit e 32 bit gestiti dal runtime.
+- **`org.freedesktop.Platform.GL.default//...-extra`** : Variante OpenGL con codec aggiuntivi, soggetti a brevetti o restrizioni di distribuzione.
+- **`org.freedesktop.Platform.GL.nvidia-${DRIVER_VERSION}`** e **`org.freedesktop.Platform.GL32.nvidia-${DRIVER_VERSION}`**:  Driver OpenGL proprietari NVIDIA a 64 bit e 32 bit compatibili con una specifica versione del driver installato nel sistema.
+- **`org.freedesktop.Platform.VAAPI.nvidia`**, **`org.freedesktop.Platform.VAAPI.nvidia.i386`**, **`org.freedesktop.Platform.VAAPI.Intel`** e  **`org.freedesktop.Platform.VAAPI.Intel.i386`**: Driver VA-API (applicazioni che usano GStreamer o FFmpeg) a 64 bit e 32 bit per l’accelerazione video sulle GPU NVidia e Intel.
+- **`org.freedesktop.Platform.VulkanLayer`** : Punto di estensione per i layer Vulkan.
+- **`org.freedesktop.Platform.GStreamer`** : Punto di estensione per i plugin GStreamer, necessari per aggiungere il supporto a formati audio, video e protocolli multimediali.
+- **`org.freedesktop.Platform.Icontheme`** : Punto di estensione per i temi di icone utilizzati dalle applicazioni Flatpak.
+- **`org.gtk.Gtk3theme`** : Punto di estensione per i temi GTK 3. Flatpak può installare automaticamente il tema corrispondente a quello usato dal sistema.
+- ~~`org.freedesktop.Platform.openh264`~~ : Estensione che forniva il codec OpenH264. È stata dismessa a partire da Freedesktop SDK 25.08.
+- ~~`org.freedesktop.Platform.ffmpeg-full`~~ e ~~`org.freedesktop.Platform.ffmpeg_full.i386`~~ : Estensione che forniva FFmpeg con supporto a codec aggiuntivi, inclusi alcuni codec soggetti a brevetti. È stata dismessa da Freedesktop SDK 25.08.
+- **`org.freedesktop.Platform.codecs-extra`** e **`org.freedesktop.Platform.codecs_extra.i386`** : Fornisce codec multimediali aggiuntivi a 64 bit e 32 bit. Sostituisce `ffmpeg-full` dalle versioni recenti del Freedesktop SDK.
 
 ### Gestione containers con docker o podman
 
