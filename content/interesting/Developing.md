@@ -2,9 +2,9 @@
 type: "interesting"
 title: "Link relativi al coding"
 description: "Set di link relativi al coding"
-date: 2026-06-16
-publishdate: 2026-06-16
-lastmod: 2026-06-16
+date: 2026-09-05
+publishdate: 2026-09-05
+lastmod: 2026-09-05
 categories: ["interesting"]
 keywords: ["interesting"]
 draft: false
@@ -74,7 +74,6 @@ summary: "Set di link relativi al coding"
 
 #### Containers
 
-[Containers](https://cloudblogs.microsoft.com/opensource/2019/07/15/how-to-get-started-containers-docker-kubernetes/) - Mircosoft explains what Containers, Docker and Kubernetes are\
 [Broken by default](https://pythonspeed.com/articles/dockerizing-python-is-hard/) - why you should avoid most Dockerfile examples\
 [vsupalov.com](https://vsupalov.com/articles/) - A lot of Article about docker\
 [Best Practices](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose) - Production Ready Web Apps with Docker Compose — Nick Janetakis\
@@ -170,18 +169,14 @@ summary: "Set di link relativi al coding"
 
 ### Database SQL e NoSql - GraphQL
 
-[MySQL utf8mb4](https://medium.com/@adamhooper/in-mysql-never-use-utf8-use-utf8mb4-11761243e434) - MySQL, never use “utf8”. Use “utf8mb4”. - Adam Hooper - Medium\
 [Modern SQL](https://modern-sql.com/) - A lot has changed since SQL-92\
 [Learn SQL](https://sqlpd.com/) - while solving crimes! SQL Police Department\
-[Beekeeper Studio](https://www.beekeeperstudio.io/) - Free & Open Source SQL editor and database manager for MySQL, Postgres, SQLite, SQL Server, and more. Available for Windows, Mac, and Linux.\
 [PostgREST](https://postgrest.org/en/v7.0.0/) - a standalone web server that turns your PostgreSQL database directly into a RESTful API; \
 [SQL Antipatterns](https://pragprog.com/book/bksqla/sql-antipatterns) - This book shows you all the common mistakes and errors that let to SQL inefficient, hard to maintain, and sometimes just plain wrong. This book then leads you through the best fixes\
 [EXPLAIN ANALYZE](https://www.cybertec-postgresql.com/en/how-to-interpret-postgresql-explain-analyze-output/) - how to interpret it in PostgreSQL - Cybertec\
 [pg_stat_statements](https://www.cybertec-postgresql.com/en/pg_stat_statements-the-way-i-like-it/) - Tracking down slow queries in PostgreSQL\
 [Joining CSV and JSON data](https://simonwillison.net/2021/Jun/19/sqlite-utils-memory/) - with an in-memory SQLite database\
 [DB normalization](https://www.cargocultcode.com/what-does-first-normal-form-mean/) - What does First Normal Form actually mean?\
-[Do You Need Redis?](https://spin.atomicobject.com/2021/02/04/redis-postgresql/) - PostgreSQL Does Queuing, Locking, & Pub/Sub\
-[incentius-foss/WhatTheDuck](https://github.com/incentius-foss/WhatTheDuck) - WhatTheDuck is an open-source web application built on DuckDB. It allows users to upload CSV files, store them in tables, and perform SQL queries on the data.\
 [Screwtape / sqlite-schema-diagram · GitLab](https://gitlab.com/Screwtapello/sqlite-schema-diagram) - \
 [SQLite](https://antonz.org/sqlite-is-not-a-toy-database/) - import from JSON, CSV and more\
 [phiresky/sql.js-httpvfs: Hosting read-only SQLite databases on static file hosters like Github Pages](https://github.com/phiresky/sql.js-httpvfs) - \
@@ -453,6 +448,7 @@ summary: "Set di link relativi al coding"
 [LibRedirect](https://libredirect.github.io/) - A web extension that redirects YouTube, Instagram, Reddit, TikTok and other websites to alternative privacy-friendly frontends\
 [Custom Site JS](https://addons.mozilla.org/en-US/firefox/addon/custom-site-js/) - Get this Extension for 🦊 Firefox (en-US)\
 [About:config entries](https://kb.mozillazine.org/About:config_entries) - MozillaZine Knowledge Base\
+[About:profiles entries](about:profiles) - Informazioni sui profili\
 [User.js file](https://kb.mozillazine.org/User.js_file) - MozillaZine Knowledge Base\
 [pyllyukko/user.js](https://github.com/pyllyukko/user.js/) - user.js - Firefox configuration hardening\
 [yokoffing/Betterfox](https://github.com/yokoffing/Betterfox) - Firefox user.js for speed, privacy, and security. Your favorite browser, but better.\
