@@ -1,7 +1,7 @@
 ---
 type: "openSource"
-title: "Debian GNU/Linux"
-description: "Debian GNU/Linux, il sistema operativo universale e completamente Libero"
+title: "Debian GNU/Linux 11 Bullseye"
+description: "Debian GNU/Linux 11 Bullseye, il sistema operativo universale e completamente Libero"
 date: 2023-02-17
 publishdate: 2023-02-17
 lastmod: 2023-02-17
@@ -9,10 +9,10 @@ categories: ["open source", "software"]
 keywords: ["open source", "software"]
 draft: false
 toc: false
-summary: "Debian GNU/Linux, il sistema operativo universale e completamente Libero"
+summary: "Debian GNU/Linux 11 Bullseye, il sistema operativo universale e completamente Libero"
 ---
 
-# Debian GNU/Linux
+# Debian GNU/Linux 11 Bullseye
 
 [Debian GNU/Linux](https://www.debian.org/), il sistema operativo universale e completamente Libero.
 
