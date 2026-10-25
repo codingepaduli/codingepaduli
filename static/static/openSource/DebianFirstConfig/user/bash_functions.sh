@@ -536,20 +536,16 @@ grepRecursiveSearch() {
 export -f grepRecursiveSearch
 
 # Usa ripgrep per effettuare una sostituzione
-# Usage: command | grepRgReplace "testo1" "testo2"
+# Usage: command | grepRgReplace "testo1" "testo2" 
+# Usage: grepRgReplace "testo1" "testo2" file.txt
 grepRgReplace() {
-  ## -N: non mostra il numero di linea
-  ## --passthru: restituisce anche le righe che non corrispondono 
-  ## -r: pattern di ricerca
-  rg -N --passthru "$1" -r "$2" 
-}
-export -f grepRgReplace
+  file="${3:--}" # valore default: stdin "-"
 
-# Rimuove le lettere accentate e l'accento
-# Usage: echo "testo1àèéìòù" | grepRgReplaceAccentedCharacters
-grepRgReplaceAccentedCharacters() {
-  grepRgReplace 'à' 'a' | grepRgReplace 'è' 'e' | grepRgReplace 'é' 'e' | grepRgReplace 'ì' 'i' | grepRgReplace 'ò' 'o' | grepRgReplace 'ù' 'u' | grepRgReplace "'" ' '
-  
+  ## --no-line-number: non mostra il numero di linea
+  ## --passthru: restituisce anche le righe che non corrispondono 
+  ## --replace: pattern di ricerca
+  rg --no-line-number --passthru "$1" --replace "$2" "$file"
+
   # rc = 1 significa che non ha trovato la stringa da sostituire.
   # in questo caso non deve dare errore, ma andare avanti.
   rc=$?
@@ -558,7 +554,72 @@ grepRgReplaceAccentedCharacters() {
   fi
   return "$rc"
 }
+export -f grepRgReplace
+
+# Sostituisce gli accenti in forma decomposta con accenti in forma precomposta
+# Usage: echo "testo1àèéìòùÀÈÉÌÒÙ" | grepRgReplaceDecomposedAccentedWithPrecomposedAccentedCharacters
+# Usage: grepRgReplaceDecomposedAccentedWithPrecomposedAccentedCharacters file.txt
+grepRgReplaceDecomposedAccentedWithPrecomposedAccentedCharacters() {
+  # In Unicode, delle “lettere accentate” (cioè lettera con un diacritico) ci sono due “forme” principali:
+  # - Forma precomposta (un solo carattere, es: 'à')
+  # - Forma decomposta (lettera + “segno diacritico” combinante, sempre 'à' ma decomposta in U+0061 U+0301, a + COMBINING ACUTE ACCENT)
+
+  grepRgReplace $'a\u0300' 'à' "$file" |
+  grepRgReplace $'e\u0300' 'è' |
+  grepRgReplace $'e\u0301' 'é' |
+  grepRgReplace $'i\u0300' 'ì' |
+  grepRgReplace $'o\u0300' 'ò' |
+  grepRgReplace $'u\u0300' 'ù' |
+  grepRgReplace $'A\u0300' 'À' |
+  grepRgReplace $'E\u0300' 'È' |
+  grepRgReplace $'E\u0301' 'É' |
+  grepRgReplace $'I\u0300' 'Ì' |
+  grepRgReplace $'O\u0300' 'Ò' |
+  grepRgReplace $'U\u0300' 'Ù' 
+}
+export -f grepRgReplaceDecomposedAccentedWithPrecomposedAccentedCharacters
+
+# Rimuove le lettere accentate e l'accento
+# Usage: echo "testo1àèéìòùÀÈÉÌÒÙ" | grepRgReplaceAccentedCharacters
+# Usage: grepRgReplaceAccentedCharacters file.txt
+grepRgReplaceAccentedCharacters() {
+  grepRgReplace 'à' 'a' "$file" |
+  grepRgReplace 'è' 'e' |
+  grepRgReplace 'é' 'e' |
+  grepRgReplace 'ì' 'i' |
+  grepRgReplace 'ò' 'o' |
+  grepRgReplace 'ù' 'u' |
+  grepRgReplace 'À' 'A' |
+  grepRgReplace 'È' 'E' |
+  grepRgReplace 'É' 'E' |
+  grepRgReplace 'Ì' 'I' |
+  grepRgReplace 'Ò' 'O' |
+  grepRgReplace 'Ù' 'U' |
+  grepRgReplace "'" ' '
+}
 export -f grepRgReplaceAccentedCharacters
+
+# Rimuove alcuni caratteri tipografici
+# Usage: echo "testo“”«»‟„‹›‘’‛–…—èéìòù" | grepRgReplaceTypographicCharacter
+# Usage: grepRgReplaceTypographicCharacter file.txt
+grepRgReplaceTypographicCharacter() {
+  grepRgReplace '“' '"' "$file" |
+  grepRgReplace '”' '"' |
+  grepRgReplace '„' '"' |
+  grepRgReplace '‟' '"' |
+  grepRgReplace '«' '"' |
+  grepRgReplace '»' '"' |
+  grepRgReplace '‹' '"' |
+  grepRgReplace '›' '"' |
+  grepRgReplace '‘' "'" |
+  grepRgReplace '’' "'" |
+  grepRgReplace '‚' "'" |
+  grepRgReplace '‛' "'" |
+  grepRgReplace '…' '...' |
+  grepRgReplace '–' '-' |
+  grepRgReplace '—' '-'
+}
+export -f grepRgReplaceTypographicCharacterì
 
 # Rimuove i caratteri non ammessi
 # Usage: command | grepRgReplaceAccenture "testo1" "testo2"
