@@ -217,7 +217,7 @@ export -f hugoProd
 # pandoc
 # TEST: pandoc --version
 pandoc() {
-  dockerContainer --name pandoc     -v "$MY_SVN_REPO_FOLDER/codingepaduli":"/usr/src/myapp/"  -v "$MY_SVN_REPO_FOLDER/from-hugo-to-book":"/usr/src/luaFilters"  pandoc/extra:3.5 "$@" # --fail-if-warnings
+  dockerContainer --name pandoc     -v "$MY_SVN_REPO_FOLDER/codingepaduli":"/usr/src/myapp/"  -v "$MY_SVN_REPO_FOLDER/from-hugo-to-book":"/usr/src/luaFilters"  pandoc/extra:3.8 "$@" # --fail-if-warnings
 }
 export -f pandoc
 
