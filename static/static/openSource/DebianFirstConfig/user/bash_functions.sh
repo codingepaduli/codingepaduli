@@ -619,7 +619,7 @@ grepRgReplaceTypographicCharacter() {
   grepRgReplace '–' '-' |
   grepRgReplace '—' '-'
 }
-export -f grepRgReplaceTypographicCharacterì
+export -f grepRgReplaceTypographicCharacter
 
 # Rimuove i caratteri non ammessi
 # Usage: command | grepRgReplaceAccenture "testo1" "testo2"
