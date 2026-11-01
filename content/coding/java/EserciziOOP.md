@@ -31,3 +31,15 @@ Creare un progetto Java, basato su Gradle o Maven, contenente la classe Java ass
 - classe "Ippopotamo" con le proprietà nome, peso e percentuale di umidità dell'ambiente in cui vive;
 
 Una volta creata la classe, realizzare un metodo eseguibile "main" nel quale creare l'istanza della classe e ne stampa le proprietà. Il progetto deve essere corredato di documentazione (JavaDoc).
+
+## Esercizi Multi-Threads
+
+Realizzare un programma che riempe un vettore di 1.000.000 elementi con numeri casuali.
+Deve eseguire quindi 4 thread per la somma in parallelo degli elementi del vettore.
+Un semaforo attende il completamento delle operazioni dei threads, poi somma i 4 risultati.
+
+Soluzione:
+
+- [SommaMultithread.java](/static/coding/java/SommaMultithread.java);
+- [SommaMultithread.java](/static/coding/java/SommaThread.java);
+
