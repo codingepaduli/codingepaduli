@@ -176,11 +176,7 @@ Come si può notare, le parentesi graffe indicano l'oggetto radice, tutte le pro
 Una nota finale, gli spazi prima dell'elemento radice sono espressamente vietati.
 Gli spazi dopo l'elemento radice non sono vietati, ma sconsigliati perchè si potrebbe avere un interpretazione dello spazio come ulteriore elemento, e quindi rendere non valido il documento.
 
-### Oggetti annidati in un documento JSON
-
-Un **oggetto annidato** (o *dipendente*) è un elemento array o oggetto che contiene al suo interno altri array o oggetti.
-
-#### Oggetto che contiene array
+### Array in un oggetto
 
 Nel seguente esempio, vediamo come un oggetto contiene una proprietà personaggi che è un array:
 
@@ -204,7 +200,7 @@ Notiamo che:
 - l'ultimo elemento dell'array non è seguito da una virgola, poiché non deve essere separato da altri elementi successivi;
 - la proprietà "personaggi" non è seguita da una virgola, poiché non deve essere separato da altre proprietà successive;
 
-#### Array che contiene oggetti
+### Oggetti in un array
 
 Nel seguente esempio, vediamo come un array contiene una lista di oggetti "libri":
 
@@ -225,7 +221,7 @@ Nel seguente esempio, vediamo come un array contiene una lista di oggetti "libri
 
 Come si può notare, le parentesi quadre all'inizio ed alla fine indicano un array che è l'elemento radice. L'array contiene due oggetti, identificati dalle parentesi graffe e separati tra loro da una virgola. Gli oggetti libri contengono le proprietà, in forma chiave-valore, separate da una virgola.
 
-#### Array che contiene array
+### Array che contiene array
 
 Nel seguente esempio, vediamo come un array contiene una lista di array:
 
@@ -239,7 +235,7 @@ Nel seguente esempio, vediamo come un array contiene una lista di array:
 
 Come si può notare, le parentesi quadre all'inizio ed alla fine indicano un array che è l'elemento radice. L'array contiene due array, identificati dalle parentesi quadre e separati tra loro da una virgola. Gli elementi di ogni array sono a loro volta separati da una virgola.
 
-#### Oggetto che contiene oggetti
+### Oggetto che contiene oggetti
 
 Nel seguente esempio, vediamo come un oggetto "trilogia" contiene altri oggetti:
 
@@ -261,9 +257,43 @@ Nel seguente esempio, vediamo come un oggetto "trilogia" contiene altri oggetti:
 
 Come si può notare, le parentesi graffe all'inizio ed alla fine indicano un oggetto che è l'elemento radice. Questo oggetto contiene tre proprietà separate tra loro da una virgola. Ogni proprietà è specificata da un nome e un valore di tipo oggetto, infatti dopo il nome c'è la parentesi graffa. Ogni oggetto a sua volta contiene tre proprietà.
 
+### Annidamento
+
+Quando di parla di annidamento o di **oggetti annidati** (detti anche *dipendenti*), si intende che elementi di tipo array o oggetto contengono al loro interno altri elementi di tipo array o oggetti, come visto nei paragrafi precedenti. Ogni entità contenuta nella precedente si trova ad una profondità o a un livello di annidamento maggiore dell'oggetto che lo contiene.
+
+Non c'è nessun vincolo nell'organizzare i dati con più livelli di annidamento.
+
+Un esempio di documento JSON con 4 livelli di annidamento è il seguente array di due "libri" (quindi di tipo "oggetto"), ognuno contenente un array di personaggi composto da tre oggetti personaggio:
+
+
+```json
+[
+  {
+    "prezzo": 23.56,
+    "titolo": "Moby dick",
+    "personaggi": [
+      {"nome": "capitano Achab", "eta": 45},
+      {"nome": "Starbuck", "eta": 42},
+      {"nome": "Moby Dick", "eta": 137}
+    ]
+  },
+  {
+    "prezzo": 13.83,
+    "titolo": "L'isola del tesoro",
+    "personaggi": [
+      {"nome": "Jim", "eta": 22},
+      {"nome": "Billy Bones", "eta": 58},
+      {"nome": "Trelawney", "eta": 37}
+    ]
+  }
+]
+```
+
 ### Validazione
 
-E' possibile verificare se il documento rispetta le regole di sintassi salvando il file con estensione ``.json`` e aprendolo con il browser Firefox. Questo è un esempio di visualizzazione gerarchica con Firefox:
+Lo scopo della validazione è garantire la correttezza dei dati nella trasmissione e nell'utilizzo dei dati.
+
+E' possibile verificare manualmente se il documento rispetta le regole di sintassi salvando il file con estensione ``.json`` e aprendolo con il browser Firefox. Questo è un esempio di visualizzazione gerarchica con Firefox:
 
 ![JSON - visualizzazione](/static/coding/web/javascript/json.png "JSON - visualizzazione")
 
@@ -280,6 +310,8 @@ Gli errori comuni sono:
 - virgolette non chiuse correttamente;
 - proprietà con nome non racchiuso tra virgolette;
 - stringhe con caratteri che necessitano la tecnica di escape.
+
+Per una validazione efficace, si può utilizzare **JSON Schema**, uno standard utilizzato per scrivere uno schema di regole che il documento JSON deve soddisfare per poter essere ritenuto valido. Le regole definite nello schema permettono di verificare che ogni singolo dato nel documento JSON sia presente, sia di un certo tipo, sia o non sia vuoto, sia compreso in una lista o un intervallo di valori, e così via...
 
 ## Uso del formato JSON nel linguaggio JavaScript
 
