@@ -32,6 +32,10 @@ references:
         disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
         link: "https://github.com/web-padawan/awesome-web-components?tab=readme-ov-file#component-libraries"
         description: "Elenco di librerie di web components"
+    -   title: "Esempio di mappa con la libreria nfreear"
+        disableNextLineWorkaround: <!-- markdown-link-check-disable-next-line -->
+        link: "/static/coding/web/html/my-map.html"
+        description: "Esempio di mappa con la libreria nfreear"
 ---
 
 # Progressive Web App (PWA) e Web Components
