@@ -50,6 +50,10 @@ Per ogni problema assegnato sarà valutata la correttezza della consegna e la qu
 - se nel primo commento sono indicati autore, data, traccia, input ed output.
 - se il codice consegnato compila ed esegue correttamente il programma.
 
+## Acquisto scontato in contanti
+
+Realizzare un programma che permetta di inserire la quantità di prodotti, il prezzo del prodotto e la tipologia di pagamento a scelta tra "contanti" e "con carta". Calcolare il prezzo totale, se il pagamento è in contanti, applicare uno sconto di 10 euro.
+
 ## Equazione di secondo grado
 
 Realizzare un programma che permetta di risolvere un equazione di secondo grado ``ax^2 + bx + c = 0`` che ha ``delta = b b - 4ac``.
