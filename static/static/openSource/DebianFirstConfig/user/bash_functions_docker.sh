@@ -305,3 +305,16 @@ xampp() {
   dockerContainer --name myXampp -u root:root -p 41061:22 -p 41062:80 -v $HOME/lamp/apache/conf.d:/opt/lampp/conf.d -v $HOME/lamp/apache/htdocs:/opt/lampp/htdocs tomsik68/xampp:8.2.4 "$@"
 }
 export -f xampp
+
+# mcpserver
+## mcp.json configurato in lmStudio con
+## {
+##   "mcpServers": {
+##     "filesystem": {
+##       "url": "http://127.0.0.1:8015/mcp"
+##     }
+##   }
+## }
+mcpServer() {
+  dockerContainer --name filesystem-mcp  -p 127.0.0.1:8015:8015  -v $HOME/Documenti/Flatpak-documenti-condivisi:/projects/report:rw   -e FS_ALLOWED_DIRS=/projects/report   -e PUID=1001   -e PGID=2000   -e HOME=/tmp   -e NPM_CONFIG_CACHE=/tmp/npm-cache   -e PORT=8015   -e PROTOCOL=SHTTP   mekayelanik/filesystem-mcp:2026.8.31-01092026 "$@"
+}
